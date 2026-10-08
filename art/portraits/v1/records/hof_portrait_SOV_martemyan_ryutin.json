@@ -1,0 +1,12 @@
+{
+  "name": "hof_portrait_SOV_martemyan_ryutin",
+  "label": "Martemyan Ryutin / 马尔特米扬·里亚京",
+  "prompt": "Use case: identity-preserve. Create ONE finished HOI4 Soviet leader portrait, painted reconstruction/upscale from the supplied tiny game icon. Image 1 is the authoritative IDENTITY reference: preserve this specific face, apparent age, facial proportions, hairline, hair/facial hair and expression. Images 2 and 3 are STYLE and COMPOSITION references only (Kamenev and Trotsky); do not copy their faces. Remove all icon framing, document/paper overlays, bars and UI embellishments. Extend naturally into a head-and-shoulders portrait ending at upper chest, face prominent and fully visible, centered or slightly left, facing the same direction as the small reference. Match the large samples: restrained realistic hand-painted oil/colorized photograph, muted brown grey / cool slate palette, soft upper-left key light, fine subdued brush texture, believable skin, dignified unexaggerated features. Plain warm grey-beige background matching the reference portraits, faint subtle tonal variation only; no scenery, vignette frame, symbols, writing, borders or watermark. Portrait canvas ratio exactly 156:210, e.g. 936x1260, whole crown and shoulders inside. Final use is 156x210 px so clear recognizable facial landmarks matter more than tiny detail. PNG output; uniform background may be opaque as in samples.\nSubject: Martemyan Ryutin / 马尔特米扬·里亚京. Imprisoned small reference: REMOVE bars, papers and prison garb. Recover the SAME man's normal, healthy middle-aged appearance. Preserve his slim angular face, high forehead/receding dark hairline, strong nose and serious reserved expression from image 1. Clean dark civilian suit with off-white shirt and subdued tie. Do not invent glasses, a cap or a full beard. No emaciation, injury or prison atmosphere.",
+  "source": "C:\\Users\\xuwei\\.codex\\generated_images\\01a09af5-fd43-79a0-a3cc-72284cd67cbc\\exec-14b0a74e-c2ac-4fb2-845a-7e177bfa63ac.png",
+  "reference": "references/hof_portrait_SOV_martemyan_ryutin.png",
+  "size": [
+    156,
+    210
+  ],
+  "mode": "built-in image_gen"
+}

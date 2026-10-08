@@ -1,0 +1,17 @@
+{
+  "id": "hof_ic_voznesensky_the_placement_of_plants",
+  "name": "GFX_hof_ic_voznesensky_the_placement_of_plants",
+  "title": "安置疏散企业",
+  "concept": "Several tidy ROWS of large wooden-slatted transport CRATES holding packed machines, raw-wood yellow boards and rough straw rope bindings, anonymous abstract geometric markings only without letters/numbers. Beside them the SAME small black-lacquer brass-crank mechanical calculator from reference image, now secondary, its crank rotated fully to end-stop. Focus on crates. No railway, train, cart, map or mountains.",
+  "group": "voznesensky",
+  "size": [
+    100,
+    88
+  ],
+  "prompt": "Create ONE finished Hearts of Iron IV Soviet national focus icon. Use attached image as a reference for the common outer engraved gold laurel wreath, small red star, blank gold ribbon, and if present the recurring black-lacquer brass-crank mechanical calculator. Create a NEW central scene as specified. Several tidy ROWS of large wooden-slatted transport CRATES holding packed machines, raw-wood yellow boards and rough straw rope bindings, anonymous abstract geometric markings only without letters/numbers. Beside them the SAME small black-lacquer brass-crank mechanical calculator from reference image, now secondary, its crank rotated fully to end-stop. Focus on crates. No railway, train, cart, map or mountains. Central art style: restrained low-saturation 1930s historical sculptural relief with realistic tactile materials. Colors only from depicted objects, never full-image color grading. Clear iconic silhouette readable at 100×88. Exactly one centered emblem in square canvas. TRUE RGBA transparency outside wreath and ribbon, all four corners alpha 0, broad transparent exterior 20–50%. No readable letters, numerals or watermark, no ruler, slide rule, linear scale, ledger, ruled grid table, train, railway, city map, office room, person/face, propaganda banner, political badge or five-point star in central scene. Only ornamental frame's star. Output one final production icon, not mockup or sheet.",
+  "references": [
+    "D:/Users/xuwei/PycharmProjects/heart_of_Iron/art/focus/voznesensky/source/GFX_hof_ic_voznesensky_the_fight_for_the_plan.png"
+  ],
+  "generated_path": "C:\\Users\\xuwei\\.codex\\generated_images\\01a09af5-fd43-79a0-a3cc-72284cd67cbc\\exec-ef59457f-5da1-4381-8d59-7ff2a162d33b.png",
+  "mode": "built-in image_gen"
+}

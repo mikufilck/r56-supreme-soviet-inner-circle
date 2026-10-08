@@ -1,0 +1,536 @@
+# German Inner Circle personal-line focuses (R56) - reward dump
+# source: D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125\common\national_focus\germany.txt
+
+=====================================================================
+GER_form_organization_todt    cost=@inner_circle_time_tier_1    L21452..L21530
+---------------------------------------------------------------------
+	focus = {
+		id = GER_form_organization_todt
+		prerequisite = { focus = GER_ascension_of_todt }
+		text_icon = GER_inner_circle_focus_style
+		x = 0
+		y = 1
+		relative_position_id = GER_ascension_of_todt
+		cost = @inner_circle_time_tier_1
+		available = {
+					always = no 
+						FOCUS = GER_ascension_of_todt
+					always = no
+		completion_reward = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+			custom_effect_tooltip = generic_skip_one_line_tt
+				swap_ideas = {
+				effect_tooltip = {
+					custom_effect_tooltip = available_designer
+
+=====================================================================
+GER_autonomous_organization_todt    cost=@inner_circle_time_tier_2    L21532..L21652
+---------------------------------------------------------------------
+	focus = {
+		id = GER_autonomous_organization_todt
+		mutually_exclusive = { focus = GER_plenipotentiary_of_armaments focus = GER_plenipotentiary_of_the_four_year_plan }
+		prerequisite = { focus = GER_form_organization_todt }
+		text_icon = GER_inner_circle_focus_style
+		x = 0
+		y = 1
+		relative_position_id = GER_form_organization_todt
+		cost = @inner_circle_time_tier_2
+		available = {
+					always = no 
+						FOCUS = GER_ascension_of_todt
+					always = no
+						always = yes
+						always = no
+						always = no
+		completion_reward = {
+			custom_effect_tooltip = {
+			swap_ideas = {
+				swap_ideas = {
+				effect_tooltip = {
+					swap_ideas = {
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = {
+
+=====================================================================
+GER_employ_philipp_holzmann    cost=@inner_circle_time_tier_1    L21776..L21856
+---------------------------------------------------------------------
+	focus = {
+		id = GER_employ_philipp_holzmann
+		prerequisite = { focus = GER_ascension_of_speer }
+		text_icon = GER_inner_circle_focus_style
+		x = 0
+		y = 1
+		relative_position_id = GER_ascension_of_speer
+		cost = @inner_circle_time_tier_1
+		available = {
+					always = no 
+						FOCUS = GER_ascension_of_speer
+					always = no
+		completion_reward = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+			custom_effect_tooltip = generic_skip_one_line_tt
+				swap_ideas = {
+				effect_tooltip = {
+					swap_ideas = {
+
+=====================================================================
+GER_plenipotentiary_of_armaments    cost=@inner_circle_time_tier_2    L21858..L22001
+---------------------------------------------------------------------
+	focus = {
+		id = GER_plenipotentiary_of_armaments
+		mutually_exclusive = { focus = GER_autonomous_organization_todt focus = GER_plenipotentiary_of_the_four_year_plan }
+		prerequisite = { focus = GER_employ_philipp_holzmann }
+		text_icon = GER_inner_circle_focus_style
+		x = 0
+		y = 1
+		relative_position_id = GER_employ_philipp_holzmann
+		cost = @inner_circle_time_tier_2
+		available = {
+					always = no 
+						FOCUS = GER_ascension_of_speer
+					always = no
+						always = no
+						always = yes
+						always = no
+		completion_reward = {
+			custom_effect_tooltip = {
+			swap_ideas = {
+					swap_ideas = {
+					swap_ideas = {
+				effect_tooltip = {
+						swap_ideas = {
+						swap_ideas = {
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = {
+
+=====================================================================
+GER_wunderwaffe    cost=@inner_circle_time_tier_3    L22003..L22133
+---------------------------------------------------------------------
+	focus = {
+		id = GER_wunderwaffe
+		prerequisite = { focus = GER_autonomous_organization_todt focus = GER_plenipotentiary_of_armaments}
+		text_icon = GER_inner_circle_focus_style
+		x = 1
+		y = 1
+		relative_position_id = GER_autonomous_organization_todt
+		cost = @inner_circle_time_tier_3
+		available = {
+						always = no 
+						always = no 
+						FOCUS = GER_ascension_of_todt
+					always = no
+		completion_reward = {
+						level > 0
+					level = 1
+						level > 0
+					level = 1
+						level > 0
+					level = 1
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = available_military_high_command
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = GER_wunderwaffe_dornberger_trait_tt
+			hidden_effect = {
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_to_variable = { 
+			add_to_variable = { 
+
+=====================================================================
+GER_prioritize_the_four_year_plan    cost=@inner_circle_time_tier_1    L22269..L22445
+---------------------------------------------------------------------
+	focus = {
+		id = GER_prioritize_the_four_year_plan
+		prerequisite = { focus = GER_ascension_of_goring }
+		text_icon = GER_inner_circle_focus_style
+		x = 0
+		y = 1
+		relative_position_id = GER_ascension_of_goring
+		cost = @inner_circle_time_tier_1
+		available = {
+					always = no 
+						FOCUS = GER_ascension_of_goring
+					always = no
+		completion_reward = {
+						type = steel
+					add_dynamic_modifier = { 
+						modifier = GER_four_year_plan_initiative_modifier
+					add_dynamic_modifier = { 
+						modifier = GER_four_year_plan_initiative_modifier
+					add_dynamic_modifier = { 
+						modifier = GER_four_year_plan_initiative_modifier
+			custom_effect_tooltip = generic_skip_one_line_tt
+				swap_ideas = {
+				effect_tooltip = {
+					swap_ideas = {
+					idea = r56_GER_four_year_plan
+
+=====================================================================
+GER_plenipotentiary_of_the_four_year_plan    cost=@inner_circle_time_tier_2    L22447..L22593
+  add_ideas: r56_GER_four_year_plan_upgrade
+---------------------------------------------------------------------
+	focus = {
+		id = GER_plenipotentiary_of_the_four_year_plan
+		mutually_exclusive = { focus = GER_autonomous_organization_todt focus = GER_plenipotentiary_of_armaments }
+		prerequisite = { focus = GER_prioritize_the_four_year_plan }
+		text_icon = GER_inner_circle_focus_style
+		x = 0
+		y = 1
+		relative_position_id = GER_prioritize_the_four_year_plan
+		cost = @inner_circle_time_tier_2
+		available = {
+					always = no 
+						FOCUS = GER_ascension_of_goring
+					always = no
+						always = no
+						always = no
+						always = yes
+		completion_reward = {
+			custom_effect_tooltip = {
+			swap_ideas = {
+				swap_ideas = {
+				effect_tooltip = {
+					swap_ideas = {
+			add_tech_bonus = {
+				name = GER_plenipotentiary_of_the_four_year_plan
+				uses = 1
+				category = excavation_tech
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = {
+				custom_effect_tooltip = generic_skip_one_line_tt
+				custom_effect_tooltip = r56_GER_four_year_plan_upgrade_tt
+				custom_effect_tooltip = generic_skip_one_line_tt
+				effect_tooltip = {
+					swap_ideas = {
+				hidden_effect = {
+					remove_ideas = r56_GER_four_year_plan
+					add_ideas = r56_GER_four_year_plan_upgrade
+
+=====================================================================
+GER_integration_of_puppet_economies    cost=@inner_circle_time_tier_3    L22595..L22649
+---------------------------------------------------------------------
+	focus = {
+		id = GER_integration_of_puppet_economies
+		prerequisite = { focus = GER_plenipotentiary_of_the_four_year_plan }
+		text_icon = GER_inner_circle_focus_style
+		x = 0
+		y = 1
+		relative_position_id = GER_plenipotentiary_of_the_four_year_plan
+		cost = @inner_circle_time_tier_3
+		available = {
+					always = no 
+						FOCUS = GER_ascension_of_goring
+					always = no
+		completion_reward = {
+			custom_effect_tooltip = {
+				CATEGORY = GER_integration_of_puppet_economies_dec_cat
+
+=====================================================================
+GER_expand_gestapo    cost=@inner_circle_time_tier_1    L22776..L22845
+---------------------------------------------------------------------
+	focus = {
+		id = GER_expand_gestapo
+		prerequisite = { focus = GER_ascension_of_himmler }
+		mutually_exclusive = { focus = GER_expand_ss_security_duties }
+		text_icon = GER_inner_circle_focus_style
+		x = -1
+		y = 1
+		relative_position_id = GER_ascension_of_himmler
+		cost = @inner_circle_time_tier_1
+		available = {
+					always = no 
+						FOCUS = GER_ascension_of_himmler
+					always = no
+		completion_reward = {
+				add_to_variable = { 
+				add_to_variable = { 
+				add_to_variable = { 
+				add_to_variable = { 
+
+=====================================================================
+GER_absorb_the_abwehr    cost=@inner_circle_time_tier_2    L22847..L22906
+---------------------------------------------------------------------
+	focus = {
+		id = GER_absorb_the_abwehr
+		prerequisite = { focus = GER_expand_gestapo }
+		text_icon = GER_inner_circle_focus_style
+		x = 0
+		y = 1
+		relative_position_id = GER_expand_gestapo
+		cost = @inner_circle_time_tier_2
+		available = {
+					always = no 
+						FOCUS = GER_ascension_of_himmler
+					always = no
+		completion_reward = {
+			custom_effect_tooltip = {
+			swap_ideas = {
+
+=====================================================================
+GER_expand_ss_security_duties    cost=@inner_circle_time_tier_1    L22908..L22977
+---------------------------------------------------------------------
+	focus = {
+		id = GER_expand_ss_security_duties
+		prerequisite = { focus = GER_ascension_of_himmler }
+		mutually_exclusive = { focus = GER_expand_gestapo }
+		text_icon = GER_inner_circle_focus_style
+		x = 1
+		y = 1
+		relative_position_id = GER_ascension_of_himmler
+		cost = @inner_circle_time_tier_1
+		available = {
+					always = no 
+						FOCUS = GER_ascension_of_himmler
+					always = no
+		completion_reward = {
+			custom_effect_tooltip = {
+			swap_ideas = {
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_tech_bonus = {
+				name = GER_expand_ss_security_duties
+				bonus = 0.5
+				uses = 1
+				category = military_police_tech
+
+=====================================================================
+GER_strengthen_the_waffen_ss    cost=@inner_circle_time_tier_2    L22979..L23313
+---------------------------------------------------------------------
+	focus = {
+		id = GER_strengthen_the_waffen_ss
+		prerequisite = { focus = GER_expand_ss_security_duties }
+		text_icon = GER_inner_circle_focus_style
+		x = 0
+		y = 1
+		relative_position_id = GER_expand_ss_security_duties
+		cost = @inner_circle_time_tier_2
+		available = {
+					always = no 
+						FOCUS = GER_ascension_of_himmler
+					always = no
+		completion_reward = {
+			custom_effect_tooltip = {
+			custom_effect_tooltip = generic_skip_one_line_tt
+				name = GER_strengthen_the_waffen_ss
+				uses = 2
+				category = special_forces_doctrine
+			custom_effect_tooltip = generic_skip_one_line_tt
+			swap_ideas = {
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = generic_skip_one_line_tt
+				division_template = {
+					name = "Waffen-SS Division"
+				    division_template = "Waffen-SS Division"
+					custom_effect_tooltip = GER_create_two_militia_units_tt
+					hidden_effect = {
+						create_unit = {
+					custom_effect_tooltip = GER_create_two_militia_units_tt
+					hidden_effect = {
+						create_unit = {
+				division_template = {
+					name = "SS-Verfügungstruppe"
+				    division_template = "SS-Verfügungstruppe"
+					custom_effect_tooltip = GER_create_one_motorized_units_tt
+					hidden_effect = {
+						create_unit = {
+					custom_effect_tooltip = GER_create_one_motorized_units_tt
+					hidden_effect = {
+						create_unit = {
+				division_template = {
+					name = "Waffen-SS Leicht Panzer Division"
+						custom_effect_tooltip = GER_create_two_light_panzer_units_tt
+						hidden_effect = {
+							create_unit = {
+						custom_effect_tooltip = GER_create_two_light_panzer_units_tt
+						hidden_effect = {
+							create_unit = {
+				division_template = {
+					name = "Waffen-SS Panzer Division"
+						custom_effect_tooltip = GER_create_two_medium_panzer_units_tt
+						hidden_effect = {
+							create_unit = {
+						custom_effect_tooltip = GER_create_two_medium_panzer_units_tt
+						hidden_effect = {
+							create_unit = {
+
+=====================================================================
+GER_hegemony_of_the_ss    cost=@inner_circle_time_tier_3    L23315..L23384
+---------------------------------------------------------------------
+	focus = {
+		id = GER_hegemony_of_the_ss
+		prerequisite = { focus = GER_absorb_the_abwehr focus = GER_strengthen_the_waffen_ss }
+		text_icon = GER_inner_circle_focus_style
+		x = 1
+		y = 1
+		relative_position_id = GER_absorb_the_abwehr
+		cost = @inner_circle_time_tier_3
+		available = {
+					always = no 
+						FOCUS = GER_ascension_of_himmler
+					always = no
+		completion_reward = {
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_to_variable = { 
+			add_to_variable = { 
+			add_to_variable = { 
+
+=====================================================================
+GER_ministry_of_public_enlightenment    cost=@inner_circle_time_tier_1    L23508..L23564
+---------------------------------------------------------------------
+	focus = {
+		id = GER_ministry_of_public_enlightenment
+		prerequisite = { focus = GER_ascension_of_goebbels }
+		text_icon = GER_inner_circle_focus_style
+		x = 0
+		y = 1
+		relative_position_id = GER_ascension_of_goebbels
+		cost = @inner_circle_time_tier_1
+		available = {
+					always = no 
+						FOCUS = GER_ascension_of_goebbels
+					always = no
+		completion_reward = {
+			add_popularity = {
+			add_stability = 0.05
+			custom_effect_tooltip = generic_skip_one_line_tt
+			swap_ideas = {
+
+=====================================================================
+GER_fund_the_film_department    cost=@inner_circle_time_tier_2    L23566..L23625
+---------------------------------------------------------------------
+	focus = {
+		id = GER_fund_the_film_department
+		prerequisite = { focus = GER_ministry_of_public_enlightenment }
+		text_icon = GER_inner_circle_focus_style
+		x = 0
+		y = 1
+		relative_position_id = GER_ministry_of_public_enlightenment
+		cost = @inner_circle_time_tier_2
+		available = {
+					always = no 
+						FOCUS = GER_ascension_of_goebbels
+					always = no
+		completion_reward = {
+			add_popularity = {
+			add_war_support = 0.05
+			custom_effect_tooltip = generic_skip_one_line_tt
+			swap_ideas = {
+			custom_effect_tooltip = available_political_advisor
+
+=====================================================================
+GER_propaganda_master    cost=@inner_circle_time_tier_3    L23627..L23693
+---------------------------------------------------------------------
+	focus = {
+		id = GER_propaganda_master
+		prerequisite = { focus = GER_fund_the_film_department }
+		text_icon = GER_inner_circle_focus_style
+		x = 0
+		y = 1
+		relative_position_id = GER_fund_the_film_department
+		cost = @inner_circle_time_tier_3
+		available = {
+					always = no 
+						FOCUS = GER_ascension_of_goebbels
+					always = no
+		completion_reward = {
+				swap_ideas = {
+				swap_ideas = {
+
+=====================================================================
+GER_optimize_reich_labour_service    cost=@inner_circle_time_tier_1    L23947..L24009
+---------------------------------------------------------------------
+	focus = {
+		id = GER_optimize_reich_labour_service
+		prerequisite = { focus = GER_party_chancellor_hess focus = GER_party_chancellor_bormann }
+		text_icon = GER_inner_circle_focus_style
+		x = 1
+		y = 1
+		relative_position_id = GER_party_chancellor_hess
+		cost = @inner_circle_time_tier_1
+		available = {
+						always = no 
+						always = no 
+						FOCUS = GER_party_chancellor_hess
+					always = no
+		completion_reward = {
+
+=====================================================================
+GER_rally_the_industrialists    cost=@inner_circle_time_tier_2    L24011..L24075
+---------------------------------------------------------------------
+	focus = {
+		id = GER_rally_the_industrialists
+		prerequisite = { focus = GER_optimize_reich_labour_service }
+		prerequisite = { focus = GER_party_chancellor_hess }
+		text_icon = GER_inner_circle_focus_style
+		x = -1
+		y = 1
+		relative_position_id = GER_optimize_reich_labour_service
+		cost = @inner_circle_time_tier_2
+		available = {
+					always = no 
+						FOCUS = GER_party_chancellor_hess
+					always = no
+		completion_reward = {
+			add_political_power = 50
+			custom_effect_tooltip = generic_skip_one_line_tt
+				swap_ideas = {
+				swap_ideas = {
+			custom_effect_tooltip = GER_rally_the_industrialists_hess_stays_tt
+
+=====================================================================
+GER_glorify_party_rallies    cost=@inner_circle_time_tier_2    L24077..L24129
+---------------------------------------------------------------------
+	focus = {
+		id = GER_glorify_party_rallies
+		prerequisite = { focus = GER_optimize_reich_labour_service }
+		prerequisite = { focus = GER_party_chancellor_bormann }
+		text_icon = GER_inner_circle_focus_style
+		x = 1
+		y = 1
+		relative_position_id = GER_optimize_reich_labour_service
+		cost = @inner_circle_time_tier_2
+		available = {
+					always = no 
+						FOCUS = GER_party_chancellor_bormann
+					always = no
+		completion_reward = {
+			add_political_power = 50
+			custom_effect_tooltip = generic_skip_one_line_tt
+			swap_ideas = {
+
+=====================================================================
+GER_total_control_over_domestic_affairs    cost=@inner_circle_time_tier_3    L24131..L24247
+---------------------------------------------------------------------
+	focus = {
+		id = GER_total_control_over_domestic_affairs
+		prerequisite = { focus = GER_glorify_party_rallies focus = GER_rally_the_industrialists }
+		text_icon = GER_inner_circle_focus_style
+		x = 1
+		y = 1
+		relative_position_id = GER_rally_the_industrialists
+		cost = @inner_circle_time_tier_3
+		available = {
+						always = no 
+						always = no 
+						FOCUS = GER_party_chancellor_hess
+					always = no
+		completion_reward = {
+			add_political_power = 100
+			custom_effect_tooltip = generic_skip_one_line_tt
+				custom_effect_tooltip = GER_total_control_over_domestic_affairs_chancellors_tt
+				custom_effect_tooltip = generic_skip_one_line_tt
+					custom_effect_tooltip = {
+					swap_ideas = {
+					custom_effect_tooltip = {
+					swap_ideas = {
+				custom_effect_tooltip = {
+				swap_ideas = {
+
+TOTAL personal-line focuses with GER_inner_circle_focus_style : 20

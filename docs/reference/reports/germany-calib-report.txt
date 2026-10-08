@@ -1,0 +1,53 @@
+﻿文件: D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125\common\national_focus\germany.txt
+行数: 72008
+文件里 focus = { 行数: 909
+解析出 focus 块: 909
+  ? 一致，解析可信
+绝对坐标解析成功: 909 / 909
+
+树绝对坐标范围: X 2..182   Y 0..19
+
+===== 锚点 GER_the_fuhrer_principle 的绝对坐标 =====
+  找不到锚点或解析不了它的坐标。
+---- 德国 inlay_window 位置 ----
+
+> D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125\com
+mon\national_focus\germany.txt:36:	initial_show_position = {
+  D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125\com
+mon\national_focus\germany.txt:37:		x = 76
+  D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125\com
+mon\national_focus\germany.txt:38:		y = 0
+
+
+
+
+> D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125\com
+mon\national_focus\germany.txt:110:	continuous_focus_position = { x = 1550 y = 
+1300 } # R56
+  D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125\com
+mon\national_focus\germany.txt:111:
+
+
+
+
+> D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125\com
+mon\national_focus\germany.txt:112:	inlay_window = {
+
+
+
+
+> D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125\com
+mon\national_focus\germany.txt:113:		id = ger_inner_circle_inlay_window
+
+
+
+
+> D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125\com
+mon\national_focus\germany.txt:114:		position = { x = 4500 y = 1150 }
+  D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125\com
+mon\national_focus\germany.txt:115:	}
+  D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125\com
+mon\national_focus\germany.txt:116:	
+
+
+

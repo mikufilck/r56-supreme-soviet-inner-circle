@@ -1,0 +1,13 @@
+﻿PASS hof_ic_leader_frame: dimensions, DDS header, BGRA masks, file length, every pixel equals PNG
+PASS hof_ic_window_bg: dimensions, DDS header, BGRA masks, file length, every pixel equals PNG
+PASS hof_ic_seat_frame_empty: dimensions, DDS header, BGRA masks, file length, every pixel equals PNG
+PASS hof_ic_leader_ribbon: dimensions, DDS header, BGRA masks, file length, every pixel equals PNG
+PASS hof_ic_leader_title_box: dimensions, DDS header, BGRA masks, file length, every pixel equals PNG
+PASS hof_ic_seat_name_box: dimensions, DDS header, BGRA masks, file length, every pixel equals PNG
+PASS hof_ic_seat_frame_filled: dimensions, DDS header, BGRA masks, file length, every pixel equals PNG
+PASS hof_ic_seat_trait_box: dimensions, DDS header, BGRA masks, file length, every pixel equals PNG
+PASS hof_ic_candidate_slot: dimensions, DDS header, BGRA masks, file length, every pixel equals PNG
+PASS hof_ic_blank_portrait: dimensions, DDS header, BGRA masks, file length, every pixel equals PNG
+PASS hof_ic_spotlight: dimensions, DDS header, BGRA masks, file length, every pixel equals PNG
+PASS modified game files are UTF-8 without BOM
+Runtime game / error.log validation: PENDING (not run)

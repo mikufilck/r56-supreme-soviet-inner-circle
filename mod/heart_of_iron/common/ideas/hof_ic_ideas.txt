@@ -1,0 +1,959 @@
+# =============================================================================
+# 核心圈 · 人物职务 idea（由 build/gen-hof-ic-s3.ps1 生成，勿手改）
+# -----------------------------------------------------------------------------
+# 🚨 外层必须是 ideas = { <category> = { ... } }，不能把 idea 块直接写在文件根级。
+#    走 hidden_ideas（原版 common/idea_tags/00_idea.txt）：
+#        hidden = yes / cost = 0 / removal_cost = -1 / ledger = hidden
+#    -> 职务【不显示成民族精神】，不占核心圈的精神格。
+#    德国原版就是这么干的：common/ideas/GER.txt L11339 hidden_ideas。
+#    玩家看到的“谁的官衔”由容器精神 hof_ic_supreme_soviet_dm 的
+#    custom_modifier_tooltip（= hof_ic_dm_tt）经脚本本地化列出。
+#
+# 模板照原版德国职务 idea：
+#   allowed = { always = no } + removal_cost = -1  -> 只能由国策给出，不可手动移除
+#   modifier 第一条统一是政治点获取 -0.1（德国角色 idea 全有）
+#
+# ⚠️ 除"入圈代价"外的专长加成目前都是【占位值】，等核心圈数值统一定稿后改。
+#    改哪：本生成器 $roster 里每人的 Mod 字段。
+# =============================================================================
+
+ideas = {
+	hidden_ideas = {
+
+		# 列夫·托洛茨基
+		# 职务分级 4 级：每级 = 下级全部照抄 + 追加（德国实测规律）
+		#   hof_ic_idea_lev_trotsky  =  陆海军人民委员
+		hof_ic_idea_lev_trotsky = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.1
+				army_org_factor = 0.05
+			}
+		}
+		#   hof_ic_idea_lev_trotsky_2  =  革命军事委员会主席
+		hof_ic_idea_lev_trotsky_2 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.3
+				army_org_factor = 0.05
+				command_power_gain_mult = 0.10
+			}
+		}
+		#   hof_ic_idea_lev_trotsky_3a  =  共产国际执行委员会主席
+		hof_ic_idea_lev_trotsky_3a = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.3
+				army_org_factor = 0.05
+				command_power_gain_mult = 0.10
+				justify_war_goal_time = -0.25
+			}
+		}
+		#   hof_ic_idea_lev_trotsky_3b  =  人民委员会副主席
+		hof_ic_idea_lev_trotsky_3b = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.3
+				army_org_factor = 0.05
+				command_power_gain_mult = 0.10
+				improve_relations_maintain_cost_factor = -0.25
+			}
+		}
+
+		# 尼古拉·布哈林
+		# 职务分级 3 级：每级 = 下级全部照抄 + 追加（德国实测规律）
+		#   hof_ic_idea_nikolay_bukharin  =  《真理报》主编
+		hof_ic_idea_nikolay_bukharin = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.1
+				communism_drift = 0.03
+			}
+		}
+		#   hof_ic_idea_nikolay_bukharin_2  =  联共（布）中央政治局委员
+		hof_ic_idea_nikolay_bukharin_2 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.3
+				communism_drift = 0.03
+				political_power_factor = 0.05
+			}
+		}
+		#   hof_ic_idea_nikolay_bukharin_3  =  共产国际执行委员会主席
+		hof_ic_idea_nikolay_bukharin_3 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.3
+				communism_drift = 0.03
+				political_power_factor = 0.05
+				opinion_gain_monthly_factor = 0.10
+			}
+		}
+
+		# 阿列克谢·李可夫
+		# 职务分级 4 级：每级 = 下级全部照抄 + 追加（德国实测规律）
+		#   hof_ic_idea_aleksey_rykov  =  内务人民委员
+		hof_ic_idea_aleksey_rykov = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.1
+				industrial_capacity_factory = 0.03
+			}
+		}
+		#   hof_ic_idea_aleksey_rykov_2  =  最高国民经济委员会主席
+		hof_ic_idea_aleksey_rykov_2 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.3
+				industrial_capacity_factory = 0.05
+			}
+		}
+		#   hof_ic_idea_aleksey_rykov_3  =  人民委员会主席
+		hof_ic_idea_aleksey_rykov_3 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.3
+				industrial_capacity_factory = 0.05
+				political_power_factor = 0.05
+			}
+		}
+		#   hof_ic_idea_aleksey_rykov_4  =  劳动与国防委员会主席
+		hof_ic_idea_aleksey_rykov_4 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.3
+				industrial_capacity_factory = 0.05
+				political_power_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+
+		# 格里戈里·季诺维也夫
+		# 职务分级 3 级：每级 = 下级全部照抄 + 追加（德国实测规律）
+		#   hof_ic_idea_grigory_zinovyev  =  彼得格勒苏维埃主席
+		hof_ic_idea_grigory_zinovyev = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.1
+				communism_drift = 0.02
+			}
+		}
+		#   hof_ic_idea_grigory_zinovyev_2  =  共产国际执行委员会主席
+		hof_ic_idea_grigory_zinovyev_2 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.3
+				communism_drift = 0.02
+				opinion_gain_monthly_factor = 0.05
+			}
+		}
+		#   hof_ic_idea_grigory_zinovyev_3  =  联共（布）中央政治局委员
+		hof_ic_idea_grigory_zinovyev_3 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.3
+				communism_drift = 0.02
+				opinion_gain_monthly_factor = 0.05
+				political_power_factor = 0.05
+			}
+		}
+
+		# 列夫·加米涅夫
+		# 职务分级 3 级：每级 = 下级全部照抄 + 追加（德国实测规律）
+		#   hof_ic_idea_lev_kamenev  =  《列宁全集》编辑
+		hof_ic_idea_lev_kamenev = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.1
+				stability_factor = 0.03
+			}
+		}
+		#   hof_ic_idea_lev_kamenev_2  =  《列宁文集》主编
+		hof_ic_idea_lev_kamenev_2 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.3
+				stability_factor = 0.03
+				communism_drift = 0.05
+			}
+		}
+		#   hof_ic_idea_lev_kamenev_3  =  列宁研究院院长
+		hof_ic_idea_lev_kamenev_3 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.3
+				stability_factor = 0.03
+				communism_drift = 0.05
+				political_power_factor = 0.05
+			}
+		}
+
+		# 伊万·斯米尔诺夫
+		# 职务分级 3 级：每级 = 下级全部照抄 + 追加（德国实测规律）
+		#   hof_ic_idea_ivan_smirnov  =  第五集团军革命军事委员会委员
+		hof_ic_idea_ivan_smirnov = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.1
+				production_speed_buildings_factor = 0.03
+			}
+		}
+		#   hof_ic_idea_ivan_smirnov_2  =  西伯利亚革命委员会主席
+		hof_ic_idea_ivan_smirnov_2 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.3
+				production_speed_buildings_factor = 0.03
+				stability_factor = 0.05
+			}
+		}
+		#   hof_ic_idea_ivan_smirnov_3  =  苏联邮电人民委员
+		hof_ic_idea_ivan_smirnov_3 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.3
+				production_speed_buildings_factor = 0.03
+				stability_factor = 0.05
+				production_speed_infrastructure_factor = 0.05
+			}
+		}
+
+		# 列昂尼德·谢列布里亚科夫
+		# 职务分级 3 级：每级 = 下级全部照抄 + 追加（德国实测规律）
+		#   hof_ic_idea_leonid_serebryakov  =  全俄中央执行委员会主席团秘书
+		hof_ic_idea_leonid_serebryakov = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.1
+				industrial_capacity_factory = 0.03
+			}
+		}
+		#   hof_ic_idea_leonid_serebryakov_2  =  俄共（布）中央书记
+		hof_ic_idea_leonid_serebryakov_2 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.3
+				industrial_capacity_factory = 0.03
+				political_power_factor = 0.05
+			}
+		}
+		#   hof_ic_idea_leonid_serebryakov_3  =  公路与汽车运输总局局长
+		hof_ic_idea_leonid_serebryakov_3 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.3
+				industrial_capacity_factory = 0.03
+				political_power_factor = 0.05
+				production_speed_rail_way_factor = 0.05
+			}
+		}
+
+		# 叶夫根尼·普列奥布拉任斯基
+		# 职务分级 3 级：每级 = 下级全部照抄 + 追加（德国实测规律）
+		#   hof_ic_idea_yevgeny_preobrazhensky  =  党中央宣传鼓动部部长
+		hof_ic_idea_yevgeny_preobrazhensky = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.1
+				communism_drift = 0.03
+			}
+		}
+		#   hof_ic_idea_yevgeny_preobrazhensky_2  =  党中央与人民委员会财政委员会主席
+		hof_ic_idea_yevgeny_preobrazhensky_2 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.3
+				communism_drift = 0.03
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+		#   hof_ic_idea_yevgeny_preobrazhensky_3  =  苏联人民委员会租让事务总委员会副主席
+		hof_ic_idea_yevgeny_preobrazhensky_3 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.3
+				communism_drift = 0.03
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+
+		# 卡尔·拉狄克
+		# 职务分级 3 级：每级 = 下级全部照抄 + 追加（德国实测规律）
+		#   hof_ic_idea_karl_radek  =  外交人民委员部中欧司司长
+		hof_ic_idea_karl_radek = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.1
+				opinion_gain_monthly_factor = 0.03
+			}
+		}
+		#   hof_ic_idea_karl_radek_2  =  共产国际执行委员会书记
+		hof_ic_idea_karl_radek_2 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.3
+				opinion_gain_monthly_factor = 0.03
+				boost_ideology_mission_factor = 0.05
+			}
+		}
+		#   hof_ic_idea_karl_radek_3  =  中山大学校长
+		hof_ic_idea_karl_radek_3 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.3
+				opinion_gain_monthly_factor = 0.03
+				boost_ideology_mission_factor = 0.05
+				communism_drift = 0.05
+			}
+		}
+
+		# 伊瓦尔·斯米尔加
+		# 职务分级 3 级：每级 = 下级全部照抄 + 追加（德国实测规律）
+		#   hof_ic_idea_ivar_smilga  =  芬兰陆军、海军与工人区域执行委员会主席
+		hof_ic_idea_ivar_smilga = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.1
+				industrial_capacity_factory = 0.03
+			}
+		}
+		#   hof_ic_idea_ivar_smilga_2  =  最高国民经济委员会燃料总局局长
+		hof_ic_idea_ivar_smilga_2 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.3
+				industrial_capacity_factory = 0.03
+				fuel_gain_factor = 0.05
+			}
+		}
+		#   hof_ic_idea_ivar_smilga_3  =  苏联国家计划委员会副主席
+		hof_ic_idea_ivar_smilga_3 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.3
+				industrial_capacity_factory = 0.05
+				fuel_gain_factor = 0.05
+			}
+		}
+
+		# 米哈伊尔·托姆斯基
+		# 职务分级 3 级：每级 = 下级全部照抄 + 追加（德国实测规律）
+		#   hof_ic_idea_mikhail_tomsky  =  莫斯科工会理事会主席
+		hof_ic_idea_mikhail_tomsky = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.1
+				industrial_capacity_factory = 0.03
+			}
+		}
+		#   hof_ic_idea_mikhail_tomsky_2  =  全苏工会中央理事会主席
+		hof_ic_idea_mikhail_tomsky_2 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.3
+				industrial_capacity_factory = 0.03
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		#   hof_ic_idea_mikhail_tomsky_3  =  再任全苏工会中央理事会主席
+		hof_ic_idea_mikhail_tomsky_3 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.3
+				industrial_capacity_factory = 0.03
+				production_factory_efficiency_gain_factor = 0.05
+				political_power_factor = 0.05
+			}
+		}
+
+		# 马尔特米扬·里亚京
+		# 职务分级 3 级：每级 = 下级全部照抄 + 追加（德国实测规律）
+		#   hof_ic_idea_martemyan_ryutin  =  哈尔滨工人与士兵代表苏维埃主席
+		hof_ic_idea_martemyan_ryutin = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.1
+				war_support_factor = 0.03
+			}
+		}
+		#   hof_ic_idea_martemyan_ryutin_2  =  红军机关报《红星报》副编辑
+		hof_ic_idea_martemyan_ryutin_2 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.3
+				war_support_factor = 0.05
+			}
+		}
+		#   hof_ic_idea_martemyan_ryutin_3  =  苏联国家电影照相联合公司理事会主席
+		hof_ic_idea_martemyan_ryutin_3 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.3
+				war_support_factor = 0.05
+				drift_defence_factor = 0.05
+			}
+		}
+
+		# 亚历山大·施利亚普尼科夫
+		# 职务分级 3 级：每级 = 下级全部照抄 + 追加（德国实测规律）
+		#   hof_ic_idea_aleksandr_shlyapnikov  =  全俄金属工人工会中央委员会主席
+		hof_ic_idea_aleksandr_shlyapnikov = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.1
+				production_speed_buildings_factor = 0.03
+			}
+		}
+		#   hof_ic_idea_aleksandr_shlyapnikov_2  =  劳动人民委员
+		hof_ic_idea_aleksandr_shlyapnikov_2 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.3
+				production_speed_buildings_factor = 0.03
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		#   hof_ic_idea_aleksandr_shlyapnikov_3  =  俄共（布）中央委员
+		hof_ic_idea_aleksandr_shlyapnikov_3 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.3
+				production_speed_buildings_factor = 0.03
+				production_factory_efficiency_gain_factor = 0.05
+				political_power_factor = 0.05
+			}
+		}
+
+		# 米哈伊尔·加里宁
+		# 职务分级 4 级：每级 = 下级全部照抄 + 追加（德国实测规律）
+		#   hof_ic_idea_mikhail_kalinin  =  彼得格勒市长
+		hof_ic_idea_mikhail_kalinin = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.1
+				political_power_factor = 0.03
+			}
+		}
+		#   hof_ic_idea_mikhail_kalinin_2  =  全俄中央执行委员会主席
+		hof_ic_idea_mikhail_kalinin_2 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.3
+				political_power_factor = 0.03
+				stability_factor = 0.05
+			}
+		}
+		#   hof_ic_idea_mikhail_kalinin_3  =  苏联中央执行委员会主席
+		hof_ic_idea_mikhail_kalinin_3 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.3
+				political_power_factor = 0.03
+				stability_factor = 0.05
+				drift_defence_factor = 0.05
+			}
+		}
+		#   hof_ic_idea_mikhail_kalinin_4  =  苏联最高苏维埃主席团主席
+		hof_ic_idea_mikhail_kalinin_4 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.3
+				political_power_factor = 0.05
+				stability_factor = 0.05
+				drift_defence_factor = 0.05
+			}
+		}
+
+		# 马克西姆·李维诺夫
+		# 职务分级 4 级：每级 = 下级全部照抄 + 追加（德国实测规律）
+		#   hof_ic_idea_maksim_litvinov  =  驻爱沙尼亚代理全权外交代表
+		hof_ic_idea_maksim_litvinov = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.1
+				improve_relations_maintain_cost_factor = -0.03
+			}
+		}
+		#   hof_ic_idea_maksim_litvinov_2  =  外交副人民委员
+		hof_ic_idea_maksim_litvinov_2 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.3
+				improve_relations_maintain_cost_factor = -0.05
+			}
+		}
+		#   hof_ic_idea_maksim_litvinov_3  =  外交人民委员
+		hof_ic_idea_maksim_litvinov_3 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.3
+				improve_relations_maintain_cost_factor = -0.05
+				opinion_gain_monthly_factor = 0.05
+			}
+		}
+		#   hof_ic_idea_maksim_litvinov_4  =  驻国际联盟代表
+		hof_ic_idea_maksim_litvinov_4 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.3
+				improve_relations_maintain_cost_factor = -0.05
+				opinion_gain_monthly_factor = 0.05
+				trade_opinion_factor = 0.05
+			}
+		}
+
+		# 格里戈里·索柯里尼柯夫
+		# 职务分级 3 级：每级 = 下级全部照抄 + 追加（德国实测规律）
+		#   hof_ic_idea_grigory_sokolnikov  =  财政副人民委员
+		hof_ic_idea_grigory_sokolnikov = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.1
+				consumer_goods_factor = -0.03
+			}
+		}
+		#   hof_ic_idea_grigory_sokolnikov_2  =  财政人民委员
+		hof_ic_idea_grigory_sokolnikov_2 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.3
+				consumer_goods_factor = -0.05
+			}
+		}
+		#   hof_ic_idea_grigory_sokolnikov_3  =  驻英国全权代表
+		hof_ic_idea_grigory_sokolnikov_3 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.3
+				consumer_goods_factor = -0.05
+				trade_opinion_factor = 0.05
+			}
+		}
+
+		# 米哈伊尔·图哈切夫斯基
+		# 职务分级 4 级：每级 = 下级全部照抄 + 追加（德国实测规律）
+		#   hof_ic_idea_mikhail_tukhachevsky  =  工农红军军事学院院长
+		hof_ic_idea_mikhail_tukhachevsky = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.1
+				army_org_factor = 0.03
+			}
+		}
+		#   hof_ic_idea_mikhail_tukhachevsky_2  =  红军参谋长
+		hof_ic_idea_mikhail_tukhachevsky_2 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.3
+				army_org_factor = 0.03
+				land_doctrine_cost_factor = -0.05
+				experience_gain_army_factor = 0.05
+			}
+		}
+		#   hof_ic_idea_mikhail_tukhachevsky_3  =  国防第一副人民委员
+		hof_ic_idea_mikhail_tukhachevsky_3 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.3
+				army_org_factor = 0.03
+				land_doctrine_cost_factor = -0.05
+				experience_gain_army_factor = 0.05
+				army_armor_attack_factor = 0.05
+				special_forces_attack_factor = 0.05
+			}
+		}
+		#   hof_ic_idea_mikhail_tukhachevsky_4  =  苏联元帅
+		hof_ic_idea_mikhail_tukhachevsky_4 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.3
+				army_org_factor = 0.03
+				land_doctrine_cost_factor = -0.05
+				experience_gain_army_factor = 0.05
+				army_armor_attack_factor = 0.05
+				special_forces_attack_factor = 0.05
+				army_attack_factor = 0.05
+				breakthrough_factor = 0.05
+			}
+		}
+
+		# 尼古拉·沃兹涅先斯基
+		# 职务分级 4 级：每级 = 下级全部照抄 + 追加（德国实测规律）
+		#   hof_ic_idea_nikolay_voznesensky  =  列宁格勒市计划委员会主席
+		hof_ic_idea_nikolay_voznesensky = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.1
+				production_speed_buildings_factor = 0.03
+			}
+		}
+		#   hof_ic_idea_nikolay_voznesensky_2  =  苏联国家计划委员会主席
+		hof_ic_idea_nikolay_voznesensky_2 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.3
+				production_speed_buildings_factor = 0.03
+				industrial_capacity_factory = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		#   hof_ic_idea_nikolay_voznesensky_3  =  苏联人民委员会第一副主席
+		hof_ic_idea_nikolay_voznesensky_3 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.3
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				stability_factor = 0.05
+			}
+		}
+		#   hof_ic_idea_nikolay_voznesensky_4  =  苏联部长会议第一副主席
+		hof_ic_idea_nikolay_voznesensky_4 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.3
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				stability_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+
+		# 彼得·斯米尔诺夫
+		# 职务分级 4 级：每级 = 下级全部照抄 + 追加（德国实测规律）
+		#   hof_ic_idea_pyotr_smirnov  =  波罗的海舰队政治部主任
+		hof_ic_idea_pyotr_smirnov = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.1
+				war_support_factor = 0.03
+			}
+		}
+		#   hof_ic_idea_pyotr_smirnov_2  =  工农红军政治部主任
+		hof_ic_idea_pyotr_smirnov_2 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.3
+				war_support_factor = 0.03
+				political_power_factor = 0.05
+				naval_damage_factor = 0.05
+			}
+		}
+		#   hof_ic_idea_pyotr_smirnov_3  =  苏联国防副人民委员
+		hof_ic_idea_pyotr_smirnov_3 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.3
+				war_support_factor = 0.03
+				political_power_factor = 0.05
+				naval_damage_factor = 0.05
+				navy_org_factor = 0.05
+				stability_factor = 0.05
+			}
+		}
+		#   hof_ic_idea_pyotr_smirnov_4  =  苏联海军人民委员
+		hof_ic_idea_pyotr_smirnov_4 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.3
+				war_support_factor = 0.03
+				political_power_factor = 0.05
+				naval_damage_factor = 0.05
+				navy_org_factor = 0.05
+				stability_factor = 0.05
+				naval_coordination = 0.05
+			}
+		}
+
+		# 格奥尔基·马林科夫
+		# 职务分级 4 级：每级 = 下级全部照抄 + 追加（德国实测规律）
+		#   hof_ic_idea_georgy_malenkow  =  中央政治局技术秘书
+		hof_ic_idea_georgy_malenkow = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.1
+				political_power_factor = 0.03
+			}
+		}
+		#   hof_ic_idea_georgy_malenkow_2  =  中央领导干部部部长
+		hof_ic_idea_georgy_malenkow_2 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.3
+				political_power_factor = 0.03
+				political_advisor_cost_factor = -0.05
+				experience_gain_army_factor = 0.05
+			}
+		}
+		#   hof_ic_idea_georgy_malenkow_3  =  中央干部管理局局长
+		hof_ic_idea_georgy_malenkow_3 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.3
+				political_power_factor = 0.03
+				political_advisor_cost_factor = -0.05
+				experience_gain_army_factor = 0.05
+				industrial_capacity_factory = 0.05
+				stability_factor = 0.05
+			}
+		}
+		#   hof_ic_idea_georgy_malenkow_4  =  苏联部长会议主席
+		hof_ic_idea_georgy_malenkow_4 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.3
+				political_power_factor = 0.03
+				political_advisor_cost_factor = -0.05
+				experience_gain_army_factor = 0.05
+				industrial_capacity_factory = 0.05
+				stability_factor = 0.05
+				war_support_factor = 0.05
+			}
+		}
+
+		# 尼基塔·赫鲁晓夫
+		# 职务分级 4 级：每级 = 下级全部照抄 + 追加（德国实测规律）
+		#   hof_ic_idea_nikita_khrushchyov  =  鲁奇琴科沃矿的副矿长
+		hof_ic_idea_nikita_khrushchyov = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.1
+				production_speed_infrastructure_factor = 0.03
+			}
+		}
+		#   hof_ic_idea_nikita_khrushchyov_2  =  彼得罗夫-马林斯基县党委会书记
+		hof_ic_idea_nikita_khrushchyov_2 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.3
+				production_speed_infrastructure_factor = 0.05
+				political_power_factor = 0.05
+			}
+		}
+		#   hof_ic_idea_nikita_khrushchyov_3  =  乌克兰共产党中央委员会第一书记
+		hof_ic_idea_nikita_khrushchyov_3 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.3
+				production_speed_infrastructure_factor = 0.05
+				political_power_factor = 0.05
+				war_support_factor = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		#   hof_ic_idea_nikita_khrushchyov_4  =  苏联共产党中央委员会第一书记
+		hof_ic_idea_nikita_khrushchyov_4 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.3
+				production_speed_infrastructure_factor = 0.05
+				political_power_factor = 0.05
+				war_support_factor = 0.05
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+
+		# 克利门特·伏罗希洛夫
+		# 职务分级 4 级：每级 = 下级全部照抄 + 追加（德国实测规律）
+		#   hof_ic_idea_kliment_voroshilov  =  卢甘斯克苏维埃主席
+		hof_ic_idea_kliment_voroshilov = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.1
+				army_org_factor = 0.03
+			}
+		}
+		#   hof_ic_idea_kliment_voroshilov_2  =  苏联陆海军人民委员
+		hof_ic_idea_kliment_voroshilov_2 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.3
+				army_org_factor = 0.03
+				army_morale_factor = 0.05
+				political_power_factor = 0.05
+			}
+		}
+		#   hof_ic_idea_kliment_voroshilov_3  =  苏联国防人民委员
+		hof_ic_idea_kliment_voroshilov_3 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.3
+				army_org_factor = 0.03
+				army_morale_factor = 0.05
+				political_power_factor = 0.05
+				army_attack_factor = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		#   hof_ic_idea_kliment_voroshilov_4  =  苏联部长会议副主席
+		hof_ic_idea_kliment_voroshilov_4 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+				political_power_gain = -0.3
+				army_org_factor = 0.03
+				army_morale_factor = 0.05
+				political_power_factor = 0.05
+				army_attack_factor = 0.05
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+
+	}
+}

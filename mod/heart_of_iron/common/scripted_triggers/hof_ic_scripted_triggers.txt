@@ -1,0 +1,332 @@
+# =============================================================================
+# 核心圈 · 触发器（由 build/gen-hof-ic-s3.ps1 生成，勿手改）
+# -----------------------------------------------------------------------------
+# ⚠️ 本文件【没有】包装层，触发器直接顶层写 名称 = { }
+# =============================================================================
+
+# 还有至少一个空席 —— 入席脚本据此选"直接坐"还是"走替换事件"
+hof_ic_has_empty_seat = {
+	OR = {
+		check_variable = { hof_ic_slot_1 = 0 }
+		check_variable = { hof_ic_slot_2 = 0 }
+		check_variable = { hof_ic_slot_3 = 0 }
+		check_variable = { hof_ic_slot_4 = 0 }
+		check_variable = { hof_ic_slot_5 = 0 }
+		check_variable = { hof_ic_slot_6 = 0 }
+		check_variable = { hof_ic_slot_7 = 0 }
+	}
+}
+
+# 七席全满（compare = not_equals 是"该席已被占用"的原版惯用写法）
+hof_ic_all_seats_full = {
+	check_variable = { hof_ic_slot_1 = 0 compare = not_equals }
+	check_variable = { hof_ic_slot_2 = 0 compare = not_equals }
+	check_variable = { hof_ic_slot_3 = 0 compare = not_equals }
+	check_variable = { hof_ic_slot_4 = 0 compare = not_equals }
+	check_variable = { hof_ic_slot_5 = 0 compare = not_equals }
+	check_variable = { hof_ic_slot_6 = 0 compare = not_equals }
+	check_variable = { hof_ic_slot_7 = 0 compare = not_equals }
+}
+
+# ---------------------------------------------------------------------------
+# 任命冷却是否结束（原版 GER_inner_circle_is_ascension_cd_over 同款）
+# ---------------------------------------------------------------------------
+hof_ic_is_appointment_cd_over = {
+	NOT = {
+		has_country_flag = {
+			flag = hof_ic_appointment_cd
+			days < 60
+		}
+	}
+}
+
+# ---------------------------------------------------------------------------
+# 角色是否已经在席（防止同一人重复入席；也用作个人线驱动器的存活判定）
+# ---------------------------------------------------------------------------
+
+# 列夫·托洛茨基
+hof_ic_seated_lev_trotsky = {
+	OR = {
+		check_variable = { hof_ic_slot_1 = 1 }
+		check_variable = { hof_ic_slot_2 = 1 }
+		check_variable = { hof_ic_slot_3 = 1 }
+		check_variable = { hof_ic_slot_4 = 1 }
+		check_variable = { hof_ic_slot_5 = 1 }
+		check_variable = { hof_ic_slot_6 = 1 }
+		check_variable = { hof_ic_slot_7 = 1 }
+	}
+}
+
+# 尼古拉·布哈林
+hof_ic_seated_nikolay_bukharin = {
+	OR = {
+		check_variable = { hof_ic_slot_1 = 2 }
+		check_variable = { hof_ic_slot_2 = 2 }
+		check_variable = { hof_ic_slot_3 = 2 }
+		check_variable = { hof_ic_slot_4 = 2 }
+		check_variable = { hof_ic_slot_5 = 2 }
+		check_variable = { hof_ic_slot_6 = 2 }
+		check_variable = { hof_ic_slot_7 = 2 }
+	}
+}
+
+# 阿列克谢·李可夫
+hof_ic_seated_aleksey_rykov = {
+	OR = {
+		check_variable = { hof_ic_slot_1 = 3 }
+		check_variable = { hof_ic_slot_2 = 3 }
+		check_variable = { hof_ic_slot_3 = 3 }
+		check_variable = { hof_ic_slot_4 = 3 }
+		check_variable = { hof_ic_slot_5 = 3 }
+		check_variable = { hof_ic_slot_6 = 3 }
+		check_variable = { hof_ic_slot_7 = 3 }
+	}
+}
+
+# 格里戈里·季诺维也夫
+hof_ic_seated_grigory_zinovyev = {
+	OR = {
+		check_variable = { hof_ic_slot_1 = 4 }
+		check_variable = { hof_ic_slot_2 = 4 }
+		check_variable = { hof_ic_slot_3 = 4 }
+		check_variable = { hof_ic_slot_4 = 4 }
+		check_variable = { hof_ic_slot_5 = 4 }
+		check_variable = { hof_ic_slot_6 = 4 }
+		check_variable = { hof_ic_slot_7 = 4 }
+	}
+}
+
+# 列夫·加米涅夫
+hof_ic_seated_lev_kamenev = {
+	OR = {
+		check_variable = { hof_ic_slot_1 = 5 }
+		check_variable = { hof_ic_slot_2 = 5 }
+		check_variable = { hof_ic_slot_3 = 5 }
+		check_variable = { hof_ic_slot_4 = 5 }
+		check_variable = { hof_ic_slot_5 = 5 }
+		check_variable = { hof_ic_slot_6 = 5 }
+		check_variable = { hof_ic_slot_7 = 5 }
+	}
+}
+
+# 伊万·斯米尔诺夫
+hof_ic_seated_ivan_smirnov = {
+	OR = {
+		check_variable = { hof_ic_slot_1 = 6 }
+		check_variable = { hof_ic_slot_2 = 6 }
+		check_variable = { hof_ic_slot_3 = 6 }
+		check_variable = { hof_ic_slot_4 = 6 }
+		check_variable = { hof_ic_slot_5 = 6 }
+		check_variable = { hof_ic_slot_6 = 6 }
+		check_variable = { hof_ic_slot_7 = 6 }
+	}
+}
+
+# 列昂尼德·谢列布里亚科夫
+hof_ic_seated_leonid_serebryakov = {
+	OR = {
+		check_variable = { hof_ic_slot_1 = 7 }
+		check_variable = { hof_ic_slot_2 = 7 }
+		check_variable = { hof_ic_slot_3 = 7 }
+		check_variable = { hof_ic_slot_4 = 7 }
+		check_variable = { hof_ic_slot_5 = 7 }
+		check_variable = { hof_ic_slot_6 = 7 }
+		check_variable = { hof_ic_slot_7 = 7 }
+	}
+}
+
+# 叶夫根尼·普列奥布拉任斯基
+hof_ic_seated_yevgeny_preobrazhensky = {
+	OR = {
+		check_variable = { hof_ic_slot_1 = 8 }
+		check_variable = { hof_ic_slot_2 = 8 }
+		check_variable = { hof_ic_slot_3 = 8 }
+		check_variable = { hof_ic_slot_4 = 8 }
+		check_variable = { hof_ic_slot_5 = 8 }
+		check_variable = { hof_ic_slot_6 = 8 }
+		check_variable = { hof_ic_slot_7 = 8 }
+	}
+}
+
+# 卡尔·拉狄克
+hof_ic_seated_karl_radek = {
+	OR = {
+		check_variable = { hof_ic_slot_1 = 9 }
+		check_variable = { hof_ic_slot_2 = 9 }
+		check_variable = { hof_ic_slot_3 = 9 }
+		check_variable = { hof_ic_slot_4 = 9 }
+		check_variable = { hof_ic_slot_5 = 9 }
+		check_variable = { hof_ic_slot_6 = 9 }
+		check_variable = { hof_ic_slot_7 = 9 }
+	}
+}
+
+# 伊瓦尔·斯米尔加
+hof_ic_seated_ivar_smilga = {
+	OR = {
+		check_variable = { hof_ic_slot_1 = 10 }
+		check_variable = { hof_ic_slot_2 = 10 }
+		check_variable = { hof_ic_slot_3 = 10 }
+		check_variable = { hof_ic_slot_4 = 10 }
+		check_variable = { hof_ic_slot_5 = 10 }
+		check_variable = { hof_ic_slot_6 = 10 }
+		check_variable = { hof_ic_slot_7 = 10 }
+	}
+}
+
+# 米哈伊尔·托姆斯基
+hof_ic_seated_mikhail_tomsky = {
+	OR = {
+		check_variable = { hof_ic_slot_1 = 11 }
+		check_variable = { hof_ic_slot_2 = 11 }
+		check_variable = { hof_ic_slot_3 = 11 }
+		check_variable = { hof_ic_slot_4 = 11 }
+		check_variable = { hof_ic_slot_5 = 11 }
+		check_variable = { hof_ic_slot_6 = 11 }
+		check_variable = { hof_ic_slot_7 = 11 }
+	}
+}
+
+# 马尔特米扬·里亚京
+hof_ic_seated_martemyan_ryutin = {
+	OR = {
+		check_variable = { hof_ic_slot_1 = 12 }
+		check_variable = { hof_ic_slot_2 = 12 }
+		check_variable = { hof_ic_slot_3 = 12 }
+		check_variable = { hof_ic_slot_4 = 12 }
+		check_variable = { hof_ic_slot_5 = 12 }
+		check_variable = { hof_ic_slot_6 = 12 }
+		check_variable = { hof_ic_slot_7 = 12 }
+	}
+}
+
+# 亚历山大·施利亚普尼科夫
+hof_ic_seated_aleksandr_shlyapnikov = {
+	OR = {
+		check_variable = { hof_ic_slot_1 = 13 }
+		check_variable = { hof_ic_slot_2 = 13 }
+		check_variable = { hof_ic_slot_3 = 13 }
+		check_variable = { hof_ic_slot_4 = 13 }
+		check_variable = { hof_ic_slot_5 = 13 }
+		check_variable = { hof_ic_slot_6 = 13 }
+		check_variable = { hof_ic_slot_7 = 13 }
+	}
+}
+
+# 米哈伊尔·加里宁
+hof_ic_seated_mikhail_kalinin = {
+	OR = {
+		check_variable = { hof_ic_slot_1 = 14 }
+		check_variable = { hof_ic_slot_2 = 14 }
+		check_variable = { hof_ic_slot_3 = 14 }
+		check_variable = { hof_ic_slot_4 = 14 }
+		check_variable = { hof_ic_slot_5 = 14 }
+		check_variable = { hof_ic_slot_6 = 14 }
+		check_variable = { hof_ic_slot_7 = 14 }
+	}
+}
+
+# 马克西姆·李维诺夫
+hof_ic_seated_maksim_litvinov = {
+	OR = {
+		check_variable = { hof_ic_slot_1 = 15 }
+		check_variable = { hof_ic_slot_2 = 15 }
+		check_variable = { hof_ic_slot_3 = 15 }
+		check_variable = { hof_ic_slot_4 = 15 }
+		check_variable = { hof_ic_slot_5 = 15 }
+		check_variable = { hof_ic_slot_6 = 15 }
+		check_variable = { hof_ic_slot_7 = 15 }
+	}
+}
+
+# 格里戈里·索柯里尼柯夫
+hof_ic_seated_grigory_sokolnikov = {
+	OR = {
+		check_variable = { hof_ic_slot_1 = 16 }
+		check_variable = { hof_ic_slot_2 = 16 }
+		check_variable = { hof_ic_slot_3 = 16 }
+		check_variable = { hof_ic_slot_4 = 16 }
+		check_variable = { hof_ic_slot_5 = 16 }
+		check_variable = { hof_ic_slot_6 = 16 }
+		check_variable = { hof_ic_slot_7 = 16 }
+	}
+}
+
+# 米哈伊尔·图哈切夫斯基
+hof_ic_seated_mikhail_tukhachevsky = {
+	OR = {
+		check_variable = { hof_ic_slot_1 = 17 }
+		check_variable = { hof_ic_slot_2 = 17 }
+		check_variable = { hof_ic_slot_3 = 17 }
+		check_variable = { hof_ic_slot_4 = 17 }
+		check_variable = { hof_ic_slot_5 = 17 }
+		check_variable = { hof_ic_slot_6 = 17 }
+		check_variable = { hof_ic_slot_7 = 17 }
+	}
+}
+
+# 尼古拉·沃兹涅先斯基
+hof_ic_seated_nikolay_voznesensky = {
+	OR = {
+		check_variable = { hof_ic_slot_1 = 18 }
+		check_variable = { hof_ic_slot_2 = 18 }
+		check_variable = { hof_ic_slot_3 = 18 }
+		check_variable = { hof_ic_slot_4 = 18 }
+		check_variable = { hof_ic_slot_5 = 18 }
+		check_variable = { hof_ic_slot_6 = 18 }
+		check_variable = { hof_ic_slot_7 = 18 }
+	}
+}
+
+# 彼得·斯米尔诺夫
+hof_ic_seated_pyotr_smirnov = {
+	OR = {
+		check_variable = { hof_ic_slot_1 = 19 }
+		check_variable = { hof_ic_slot_2 = 19 }
+		check_variable = { hof_ic_slot_3 = 19 }
+		check_variable = { hof_ic_slot_4 = 19 }
+		check_variable = { hof_ic_slot_5 = 19 }
+		check_variable = { hof_ic_slot_6 = 19 }
+		check_variable = { hof_ic_slot_7 = 19 }
+	}
+}
+
+# 格奥尔基·马林科夫
+hof_ic_seated_georgy_malenkow = {
+	OR = {
+		check_variable = { hof_ic_slot_1 = 20 }
+		check_variable = { hof_ic_slot_2 = 20 }
+		check_variable = { hof_ic_slot_3 = 20 }
+		check_variable = { hof_ic_slot_4 = 20 }
+		check_variable = { hof_ic_slot_5 = 20 }
+		check_variable = { hof_ic_slot_6 = 20 }
+		check_variable = { hof_ic_slot_7 = 20 }
+	}
+}
+
+# 尼基塔·赫鲁晓夫
+hof_ic_seated_nikita_khrushchyov = {
+	OR = {
+		check_variable = { hof_ic_slot_1 = 21 }
+		check_variable = { hof_ic_slot_2 = 21 }
+		check_variable = { hof_ic_slot_3 = 21 }
+		check_variable = { hof_ic_slot_4 = 21 }
+		check_variable = { hof_ic_slot_5 = 21 }
+		check_variable = { hof_ic_slot_6 = 21 }
+		check_variable = { hof_ic_slot_7 = 21 }
+	}
+}
+
+# 克利门特·伏罗希洛夫
+hof_ic_seated_kliment_voroshilov = {
+	OR = {
+		check_variable = { hof_ic_slot_1 = 22 }
+		check_variable = { hof_ic_slot_2 = 22 }
+		check_variable = { hof_ic_slot_3 = 22 }
+		check_variable = { hof_ic_slot_4 = 22 }
+		check_variable = { hof_ic_slot_5 = 22 }
+		check_variable = { hof_ic_slot_6 = 22 }
+		check_variable = { hof_ic_slot_7 = 22 }
+	}
+}
+

@@ -1,0 +1,417 @@
+{
+  "mode": "built-in image_gen",
+  "assets": [
+    {
+      "id": "hof_ic_seat_lev_trotsky",
+      "name": "GFX_hof_ic_seat_lev_trotsky",
+      "title": "列夫·托洛茨基",
+      "group": "entry",
+      "description": "陆海军人民委员 / 革命军事委员会主席 / 最高国民经济委员会主席",
+      "portrait_source": "D:\\Program Files (x86)\\Steam\\steamapps\\workshop\\content\\394360\\2129897125\\gfx\\leaders\\SOV\\r56_portrait_SOV_Leon_Trotsky.dds",
+      "reference": "references/lev_trotsky.png",
+      "size": [
+        100,
+        88
+      ],
+      "status": "pending",
+      "prompt": "Use case: stylized-concept. Produce ONE production Hearts of Iron IV national focus icon, final canvas 100x88 pixels (width:height 25:22); generate high-resolution at same ratio for mechanical downsampling. Full emblem centered, bold primary silhouette fills 92 percent of canvas with all ornaments intact, no clipping. Strictly NO text, letters, numerals, pseudo-writing, watermarks or rectangular canvas border. The icon's own laurel/medallion ornament is allowed. Uniform solid very dark charcoal (#181b1e) background outside emblem, no transparency grid, no checkerboard, no backdrop texture outside emblem. Painted game UI relief, high contrast at tiny size, upper-left directional light, dark edge shadows, restrained material highlights; NOT a scene, not a poster, not a flat vector logo, no photoreal background. Match the supplied German DLC ENTRY references only for layout/style: prominent grayscale photographic/engraved head-and-shoulders face, COLOR ornamental medallion around and one small professional emblem beneath. Use the first image as exact Soviet person's face, preserve features and apparent age; do not use faces from German style references. Soviet crimson/plum and antique gold colored trim. Face remains grayscale and recognizable, uncluttered. Replace all German heraldry with Soviet-themed small details. Face/shoulders occupy upper 75 percent, professional emblem the lower 25 percent.\nSubject design: Trotsky: preserve reference face, swept grey hair, round dark spectacles, moustache and pointed goatee. Grayscale bust inside antique-gold round medallion with deep crimson inset; bottom badge is a compact crossed cavalry sabre and small locomotive wheel, no flags across face.\nFocus meaning (reference only; never render as text): 列夫·托洛茨基 — 陆海军人民委员 / 革命军事委员会主席 / 最高国民经济委员会主席",
+      "refs": [
+        "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\art\\focus\\references\\lev_trotsky.png",
+        "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\docs\\reference\\icon-refs-png\\real_asc_speer.png",
+        "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\docs\\reference\\icon-refs-png\\real_asc_goring.png"
+      ]
+    },
+    {
+      "id": "hof_ic_seat_nikolay_bukharin",
+      "name": "GFX_hof_ic_seat_nikolay_bukharin",
+      "title": "尼古拉·布哈林",
+      "group": "entry",
+      "description": "《真理报》《消息报》主编 / 共产国际执委会主席 / 1936 年宪法起草人",
+      "portrait_source": "F:\\Hearts of Iron IV\\dlc\\dlc034_no_step_back\\gfx\\leaders\\SOV\\portrait_SOV_nikolay_bukharin.dds",
+      "reference": "references/nikolay_bukharin.png",
+      "size": [
+        100,
+        88
+      ],
+      "status": "pending",
+      "prompt": "Use case: stylized-concept. Produce ONE production Hearts of Iron IV national focus icon, final canvas 100x88 pixels (width:height 25:22); generate high-resolution at same ratio for mechanical downsampling. Full emblem centered, bold primary silhouette fills 92 percent of canvas with all ornaments intact, no clipping. Strictly NO text, letters, numerals, pseudo-writing, watermarks or rectangular canvas border. The icon's own laurel/medallion ornament is allowed. Uniform solid very dark charcoal (#181b1e) background outside emblem, no transparency grid, no checkerboard, no backdrop texture outside emblem. Painted game UI relief, high contrast at tiny size, upper-left directional light, dark edge shadows, restrained material highlights; NOT a scene, not a poster, not a flat vector logo, no photoreal background. Match the supplied German DLC ENTRY references only for layout/style: prominent grayscale photographic/engraved head-and-shoulders face, COLOR ornamental medallion around and one small professional emblem beneath. Use the first image as exact Soviet person's face, preserve features and apparent age; do not use faces from German style references. Soviet crimson/plum and antique gold colored trim. Face remains grayscale and recognizable, uncluttered. Replace all German heraldry with Soviet-themed small details. Face/shoulders occupy upper 75 percent, professional emblem the lower 25 percent.\nSubject design: Bukharin: preserve reference cap, smiling lean face, small moustache and short beard. Grayscale bust within gold diamond medallion, plum/crimson laurel leaves; bottom emblem a blank open book and fountain-pen nib.\nFocus meaning (reference only; never render as text): 尼古拉·布哈林 — 《真理报》《消息报》主编 / 共产国际执委会主席 / 1936 年宪法起草人",
+      "refs": [
+        "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\art\\focus\\references\\nikolay_bukharin.png",
+        "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\docs\\reference\\icon-refs-png\\real_asc_speer.png",
+        "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\docs\\reference\\icon-refs-png\\real_asc_goring.png"
+      ]
+    },
+    {
+      "id": "hof_ic_seat_aleksey_rykov",
+      "name": "GFX_hof_ic_seat_aleksey_rykov",
+      "title": "阿列克谢·李可夫",
+      "group": "entry",
+      "description": "苏联人民委员会主席（1924–30）/ 最高国民经济委员会主席",
+      "portrait_source": "F:\\Hearts of Iron IV\\dlc\\dlc034_no_step_back\\gfx\\leaders\\SOV\\portrait_SOV_aleksey_rykov.dds",
+      "reference": "references/aleksey_rykov.png",
+      "size": [
+        100,
+        88
+      ],
+      "status": "pending",
+      "prompt": "Use case: stylized-concept. Produce ONE production Hearts of Iron IV national focus icon, final canvas 100x88 pixels (width:height 25:22); generate high-resolution at same ratio for mechanical downsampling. Full emblem centered, bold primary silhouette fills 92 percent of canvas with all ornaments intact, no clipping. Strictly NO text, letters, numerals, pseudo-writing, watermarks or rectangular canvas border. The icon's own laurel/medallion ornament is allowed. Uniform solid very dark charcoal (#181b1e) background outside emblem, no transparency grid, no checkerboard, no backdrop texture outside emblem. Painted game UI relief, high contrast at tiny size, upper-left directional light, dark edge shadows, restrained material highlights; NOT a scene, not a poster, not a flat vector logo, no photoreal background. Match the supplied German DLC ENTRY references only for layout/style: prominent grayscale photographic/engraved head-and-shoulders face, COLOR ornamental medallion around and one small professional emblem beneath. Use the first image as exact Soviet person's face, preserve features and apparent age; do not use faces from German style references. Soviet crimson/plum and antique gold colored trim. Face remains grayscale and recognizable, uncluttered. Replace all German heraldry with Soviet-themed small details. Face/shoulders occupy upper 75 percent, professional emblem the lower 25 percent.\nSubject design: Rykov: preserve strong dark swept hair, long face and tapered full beard. Grayscale bust in gold round frame with muted burgundy leaves, dark red inset; bottom small classical government portico backed by a single cog.\nFocus meaning (reference only; never render as text): 阿列克谢·李可夫 — 苏联人民委员会主席（1924–30）/ 最高国民经济委员会主席",
+      "refs": [
+        "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\art\\focus\\references\\aleksey_rykov.png",
+        "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\docs\\reference\\icon-refs-png\\real_asc_speer.png",
+        "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\docs\\reference\\icon-refs-png\\real_asc_goring.png"
+      ]
+    },
+    {
+      "id": "hof_ic_seat_grigory_zinovyev",
+      "name": "GFX_hof_ic_seat_grigory_zinovyev",
+      "title": "格里戈里·季诺维也夫",
+      "group": "entry",
+      "description": "共产国际**首任**执委会主席 / 列宁格勒苏维埃主席",
+      "portrait_source": "F:\\Hearts of Iron IV\\gfx\\leaders\\SOV\\portrait_SOV_grigory_zinovyev.dds",
+      "reference": "references/grigory_zinovyev.png",
+      "size": [
+        100,
+        88
+      ],
+      "status": "pending",
+      "prompt": "Use case: stylized-concept. Produce ONE production Hearts of Iron IV national focus icon, final canvas 100x88 pixels (width:height 25:22); generate high-resolution at same ratio for mechanical downsampling. Full emblem centered, bold primary silhouette fills 92 percent of canvas with all ornaments intact, no clipping. Strictly NO text, letters, numerals, pseudo-writing, watermarks or rectangular canvas border. The icon's own laurel/medallion ornament is allowed. Uniform solid very dark charcoal (#181b1e) background outside emblem, no transparency grid, no checkerboard, no backdrop texture outside emblem. Painted game UI relief, high contrast at tiny size, upper-left directional light, dark edge shadows, restrained material highlights; NOT a scene, not a poster, not a flat vector logo, no photoreal background. Match the supplied German DLC ENTRY references only for layout/style: prominent grayscale photographic/engraved head-and-shoulders face, COLOR ornamental medallion around and one small professional emblem beneath. Use the first image as exact Soviet person's face, preserve features and apparent age; do not use faces from German style references. Soviet crimson/plum and antique gold colored trim. Face remains grayscale and recognizable, uncluttered. Replace all German heraldry with Soviet-themed small details. Face/shoulders occupy upper 75 percent, professional emblem the lower 25 percent.\nSubject design: Zinovyev: preserve curly dark-grey hair, broad clean-shaven expressive face, serious brows. Grayscale bust in gold oval frame with dark crimson leaves; bottom tiny terrestrial globe flanked by two folded red banners.\nFocus meaning (reference only; never render as text): 格里戈里·季诺维也夫 — 共产国际**首任**执委会主席 / 列宁格勒苏维埃主席",
+      "refs": [
+        "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\art\\focus\\references\\grigory_zinovyev.png",
+        "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\docs\\reference\\icon-refs-png\\real_asc_speer.png",
+        "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\docs\\reference\\icon-refs-png\\real_asc_goring.png"
+      ]
+    },
+    {
+      "id": "hof_ic_seat_lev_kamenev",
+      "name": "GFX_hof_ic_seat_lev_kamenev",
+      "title": "列夫·加米涅夫",
+      "group": "entry",
+      "description": "全俄中央执行委员会**首任**主席 / 人民委员会副主席 / 莫斯科苏维埃主席",
+      "portrait_source": "F:\\Hearts of Iron IV\\gfx\\leaders\\SOV\\portrait_SOV_lev_kamenev.dds",
+      "reference": "references/lev_kamenev.png",
+      "size": [
+        100,
+        88
+      ],
+      "status": "pending",
+      "prompt": "Use case: stylized-concept. Produce ONE production Hearts of Iron IV national focus icon, final canvas 100x88 pixels (width:height 25:22); generate high-resolution at same ratio for mechanical downsampling. Full emblem centered, bold primary silhouette fills 92 percent of canvas with all ornaments intact, no clipping. Strictly NO text, letters, numerals, pseudo-writing, watermarks or rectangular canvas border. The icon's own laurel/medallion ornament is allowed. Uniform solid very dark charcoal (#181b1e) background outside emblem, no transparency grid, no checkerboard, no backdrop texture outside emblem. Painted game UI relief, high contrast at tiny size, upper-left directional light, dark edge shadows, restrained material highlights; NOT a scene, not a poster, not a flat vector logo, no photoreal background. Match the supplied German DLC ENTRY references only for layout/style: prominent grayscale photographic/engraved head-and-shoulders face, COLOR ornamental medallion around and one small professional emblem beneath. Use the first image as exact Soviet person's face, preserve features and apparent age; do not use faces from German style references. Soviet crimson/plum and antique gold colored trim. Face remains grayscale and recognizable, uncluttered. Replace all German heraldry with Soviet-themed small details. Face/shoulders occupy upper 75 percent, professional emblem the lower 25 percent.\nSubject design: Kamenev: preserve round spectacles, parted grey-brown hair and characteristic thick moustache/full beard. Grayscale bust in gold diamond medallion; bottom classical council portico with three ivory pillars and tiny red star.\nFocus meaning (reference only; never render as text): 列夫·加米涅夫 — 全俄中央执行委员会**首任**主席 / 人民委员会副主席 / 莫斯科苏维埃主席",
+      "refs": [
+        "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\art\\focus\\references\\lev_kamenev.png",
+        "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\docs\\reference\\icon-refs-png\\real_asc_speer.png",
+        "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\docs\\reference\\icon-refs-png\\real_asc_goring.png"
+      ]
+    },
+    {
+      "id": "hof_ic_seat_ivan_smirnov",
+      "name": "GFX_hof_ic_seat_ivan_smirnov",
+      "title": "伊万·斯米尔诺夫",
+      "group": "entry",
+      "description": "**首任**邮电人民委员 / 西伯利亚革命委员会主席",
+      "portrait_source": "F:\\Hearts of Iron IV\\gfx\\leaders\\SOV\\portrait_SOV_ivan_smirnov.dds",
+      "reference": "references/ivan_smirnov.png",
+      "size": [
+        100,
+        88
+      ],
+      "status": "pending",
+      "prompt": "Use case: stylized-concept. Produce ONE production Hearts of Iron IV national focus icon, final canvas 100x88 pixels (width:height 25:22); generate high-resolution at same ratio for mechanical downsampling. Full emblem centered, bold primary silhouette fills 92 percent of canvas with all ornaments intact, no clipping. Strictly NO text, letters, numerals, pseudo-writing, watermarks or rectangular canvas border. The icon's own laurel/medallion ornament is allowed. Uniform solid very dark charcoal (#181b1e) background outside emblem, no transparency grid, no checkerboard, no backdrop texture outside emblem. Painted game UI relief, high contrast at tiny size, upper-left directional light, dark edge shadows, restrained material highlights; NOT a scene, not a poster, not a flat vector logo, no photoreal background. Match the supplied German DLC ENTRY references only for layout/style: prominent grayscale photographic/engraved head-and-shoulders face, COLOR ornamental medallion around and one small professional emblem beneath. Use the first image as exact Soviet person's face, preserve features and apparent age; do not use faces from German style references. Soviet crimson/plum and antique gold colored trim. Face remains grayscale and recognizable, uncluttered. Replace all German heraldry with Soviet-themed small details. Face/shoulders occupy upper 75 percent, professional emblem the lower 25 percent.\nSubject design: Ivan Smirnov: preserve small round spectacles, side-parted short hair, moustache, no beard, upright jacket collar. Grayscale bust inside gold round medallion with plum/crimson leaves; bottom compact telegraph key with two lightning bolts.\nFocus meaning (reference only; never render as text): 伊万·斯米尔诺夫 — **首任**邮电人民委员 / 西伯利亚革命委员会主席",
+      "refs": [
+        "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\art\\focus\\references\\ivan_smirnov.png",
+        "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\docs\\reference\\icon-refs-png\\real_asc_speer.png",
+        "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\docs\\reference\\icon-refs-png\\real_asc_goring.png"
+      ]
+    },
+    {
+      "id": "hof_ic_seat_leonid_serebryakov",
+      "name": "GFX_hof_ic_seat_leonid_serebryakov",
+      "title": "列昂尼德·谢列布里亚科夫",
+      "group": "entry",
+      "description": "中央书记处书记 / 公路与汽车运输总局局长 / **车工出身**",
+      "portrait_source": "D:\\Program Files (x86)\\Steam\\steamapps\\workshop\\content\\394360\\2129897125\\gfx\\leaders\\SOV\\r56_portrait_SOV_Leonid_Serebryakov.dds",
+      "reference": "references/leonid_serebryakov.png",
+      "size": [
+        100,
+        88
+      ],
+      "status": "pending",
+      "prompt": "Use case: stylized-concept. Produce ONE production Hearts of Iron IV national focus icon, final canvas 100x88 pixels (width:height 25:22); generate high-resolution at same ratio for mechanical downsampling. Full emblem centered, bold primary silhouette fills 92 percent of canvas with all ornaments intact, no clipping. Strictly NO text, letters, numerals, pseudo-writing, watermarks or rectangular canvas border. The icon's own laurel/medallion ornament is allowed. Uniform solid very dark charcoal (#181b1e) background outside emblem, no transparency grid, no checkerboard, no backdrop texture outside emblem. Painted game UI relief, high contrast at tiny size, upper-left directional light, dark edge shadows, restrained material highlights; NOT a scene, not a poster, not a flat vector logo, no photoreal background. Match the supplied German DLC ENTRY references only for layout/style: prominent grayscale photographic/engraved head-and-shoulders face, COLOR ornamental medallion around and one small professional emblem beneath. Use the first image as exact Soviet person's face, preserve features and apparent age; do not use faces from German style references. Soviet crimson/plum and antique gold colored trim. Face remains grayscale and recognizable, uncluttered. Replace all German heraldry with Soviet-themed small details. Face/shoulders occupy upper 75 percent, professional emblem the lower 25 percent.\nSubject design: Serebryakov: preserve profile angled toward viewer's right, combed dark hair, distinctive long nose and moustache, dark high collar. Grayscale bust inside gold diamond medallion with dark crimson ribbon; bottom locomotive wheel crossed by machinist wrench.\nFocus meaning (reference only; never render as text): 列昂尼德·谢列布里亚科夫 — 中央书记处书记 / 公路与汽车运输总局局长 / **车工出身**",
+      "refs": [
+        "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\art\\focus\\references\\leonid_serebryakov.png",
+        "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\docs\\reference\\icon-refs-png\\real_asc_speer.png",
+        "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\docs\\reference\\icon-refs-png\\real_asc_goring.png"
+      ]
+    },
+    {
+      "id": "hof_ic_trotsky_build_the_red_army",
+      "name": "GFX_hof_ic_trotsky_build_the_red_army",
+      "title": "缔造红军",
+      "group": "trotsky",
+      "description": "这辆军用专列曾经是他的战地指挥部。在那决定命运的 3 年里，他乘坐这辆专列沿着 8000 公里的前线行进，哪里危险就冲向哪里，只有短暂的磋商或者出席莫斯科的公众集会才暂时打断他的行程。",
+      "size": [
+        100,
+        88
+      ],
+      "status": "pending",
+      "prompt": "Use case: stylized-concept. Produce ONE production Hearts of Iron IV national focus icon, final canvas 100x88 pixels (width:height 25:22); generate high-resolution at same ratio for mechanical downsampling. Full emblem centered, bold primary silhouette fills 92 percent of canvas with all ornaments intact, no clipping. Strictly NO text, letters, numerals, pseudo-writing, watermarks or rectangular canvas border. The icon's own laurel/medallion ornament is allowed. Uniform solid very dark charcoal (#181b1e) background outside emblem, no transparency grid, no checkerboard, no backdrop texture outside emblem. Painted game UI relief, high contrast at tiny size, upper-left directional light, dark edge shadows, restrained material highlights; NOT a scene, not a poster, not a flat vector logo, no photoreal background. Match the supplied SOVIET focus reference sheet: dark blood-crimson circular medallion, two antique-gold laurel branches forming an open-topped wreath, small red star at top and short blank gold ribbon at bottom. Central subject in ivory-white / plaster-grey carved monochrome sculptural relief, clear chiseled shading, NOT naturally colored objects. Every icon should have the same rim weight, red tone, gold patina and light direction. Prioritize 1-3 large readable forms over micro-detail. No characters or portraits unless requested.\nSubject design: An iconic steam ARMOURED COMMAND TRAIN locomotive coming forward on two foreshortened rails, small red star on front plate, train as ONE bold ivory-grey sculpted relief, small unfurled red flag behind. No tiny soldiers or landscape.\nFocus meaning (reference only; never render as text): 缔造红军 — 这辆军用专列曾经是他的战地指挥部。在那决定命运的 3 年里，他乘坐这辆专列沿着 8000 公里的前线行进，哪里危险就冲向哪里，只有短暂的磋商或者出席莫斯科的公众集会才暂时打断他的行程。",
+      "refs": [
+        "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\docs\\reference\\icon-refs-png\\sheet_sov_style.png"
+      ]
+    },
+    {
+      "id": "hof_ic_trotsky_military_specialists",
+      "name": "GFX_hof_ic_trotsky_military_specialists",
+      "title": "返聘沙俄军官",
+      "group": "trotsky",
+      "description": "1919 年初，他断然反对逮捕查京将军。他写道，查京帮助苏维埃所做的工作比那些关押他的人还多，蛮横地对待这样的人则会对军官的士气具有灾难性的影响。他要求释放将军，并愿在法庭给他定罪前亲自为他作保。",
+      "size": [
+        100,
+        88
+      ],
+      "status": "pending",
+      "prompt": "Use case: stylized-concept. Produce ONE production Hearts of Iron IV national focus icon, final canvas 100x88 pixels (width:height 25:22); generate high-resolution at same ratio for mechanical downsampling. Full emblem centered, bold primary silhouette fills 92 percent of canvas with all ornaments intact, no clipping. Strictly NO text, letters, numerals, pseudo-writing, watermarks or rectangular canvas border. The icon's own laurel/medallion ornament is allowed. Uniform solid very dark charcoal (#181b1e) background outside emblem, no transparency grid, no checkerboard, no backdrop texture outside emblem. Painted game UI relief, high contrast at tiny size, upper-left directional light, dark edge shadows, restrained material highlights; NOT a scene, not a poster, not a flat vector logo, no photoreal background. Match the supplied SOVIET focus reference sheet: dark blood-crimson circular medallion, two antique-gold laurel branches forming an open-topped wreath, small red star at top and short blank gold ribbon at bottom. Central subject in ivory-white / plaster-grey carved monochrome sculptural relief, clear chiseled shading, NOT naturally colored objects. Every icon should have the same rim weight, red tone, gold patina and light direction. Prioritize 1-3 large readable forms over micro-detail. No characters or portraits unless requested.\nSubject design: An old-style military officer's peaked cap above two neat epaulettes and a partially rolled staff map, all ivory-grey relief. A small red star badge marks their new service. No real insignia, no letters or lines of text on map.\nFocus meaning (reference only; never render as text): 返聘沙俄军官 — 1919 年初，他断然反对逮捕查京将军。他写道，查京帮助苏维埃所做的工作比那些关押他的人还多，蛮横地对待这样的人则会对军官的士气具有灾难性的影响。他要求释放将军，并愿在法庭给他定罪前亲自为他作保。",
+      "refs": [
+        "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\docs\\reference\\icon-refs-png\\sheet_sov_style.png"
+      ]
+    },
+    {
+      "id": "hof_ic_trotsky_against_partisan_warfare",
+      "name": "GFX_hof_ic_trotsky_against_partisan_warfare",
+      "title": "反对游击主义",
+      "group": "trotsky",
+      "description": "正如托洛茨基所指出的，游击战的混乱反映了革命下面的农民因素，而反对它的斗争同样是为了支持无产阶级国家组织，以抵制正在瓦解它的元素化的小资产阶级无政府状态。绝大部分的军队新兵都是农民，整个国家是一片起义的农民海洋，对于这种战争方式，他们不仅有着传统，而且本能地适应。",
+      "size": [
+        100,
+        88
+      ],
+      "status": "pending",
+      "prompt": "Use case: stylized-concept. Produce ONE production Hearts of Iron IV national focus icon, final canvas 100x88 pixels (width:height 25:22); generate high-resolution at same ratio for mechanical downsampling. Full emblem centered, bold primary silhouette fills 92 percent of canvas with all ornaments intact, no clipping. Strictly NO text, letters, numerals, pseudo-writing, watermarks or rectangular canvas border. The icon's own laurel/medallion ornament is allowed. Uniform solid very dark charcoal (#181b1e) background outside emblem, no transparency grid, no checkerboard, no backdrop texture outside emblem. Painted game UI relief, high contrast at tiny size, upper-left directional light, dark edge shadows, restrained material highlights; NOT a scene, not a poster, not a flat vector logo, no photoreal background. Match the supplied SOVIET focus reference sheet: dark blood-crimson circular medallion, two antique-gold laurel branches forming an open-topped wreath, small red star at top and short blank gold ribbon at bottom. Central subject in ivory-white / plaster-grey carved monochrome sculptural relief, clear chiseled shading, NOT naturally colored objects. Every icon should have the same rim weight, red tone, gold patina and light direction. Prioritize 1-3 large readable forms over micro-detail. No characters or portraits unless requested.\nSubject design: Three identical upright standard infantry rifles aligned in a rigid symmetrical military rank, joined by a single straight crossbar and restrained red banner behind. Ivory-grey relief; clear organization motif, no tiny figures, no words or 'no' sign.\nFocus meaning (reference only; never render as text): 反对游击主义 — 正如托洛茨基所指出的，游击战的混乱反映了革命下面的农民因素，而反对它的斗争同样是为了支持无产阶级国家组织，以抵制正在瓦解它的元素化的小资产阶级无政府状态。绝大部分的军队新兵都是农民，整个国家是一片起义的农民海洋，对于这种战争方式，他们不仅有着传统，而且本能地适应。",
+      "refs": [
+        "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\docs\\reference\\icon-refs-png\\sheet_sov_style.png"
+      ]
+    },
+    {
+      "id": "hof_ic_trotsky_uneven_and_combined_development",
+      "name": "GFX_hof_ic_trotsky_uneven_and_combined_development",
+      "title": "不平衡与综合发展律",
+      "group": "trotsky",
+      "description": "在一些情况下，从一开始就领先者可以加强其领先地位，而在另一些情况下，同样地由于发展的步调不同，一些落后者可以赶上甚至超过那些先前享有优势者。",
+      "size": [
+        100,
+        88
+      ],
+      "status": "pending",
+      "prompt": "Use case: stylized-concept. Produce ONE production Hearts of Iron IV national focus icon, final canvas 100x88 pixels (width:height 25:22); generate high-resolution at same ratio for mechanical downsampling. Full emblem centered, bold primary silhouette fills 92 percent of canvas with all ornaments intact, no clipping. Strictly NO text, letters, numerals, pseudo-writing, watermarks or rectangular canvas border. The icon's own laurel/medallion ornament is allowed. Uniform solid very dark charcoal (#181b1e) background outside emblem, no transparency grid, no checkerboard, no backdrop texture outside emblem. Painted game UI relief, high contrast at tiny size, upper-left directional light, dark edge shadows, restrained material highlights; NOT a scene, not a poster, not a flat vector logo, no photoreal background. Match the supplied SOVIET focus reference sheet: dark blood-crimson circular medallion, two antique-gold laurel branches forming an open-topped wreath, small red star at top and short blank gold ribbon at bottom. Central subject in ivory-white / plaster-grey carved monochrome sculptural relief, clear chiseled shading, NOT naturally colored objects. Every icon should have the same rim weight, red tone, gold patina and light direction. Prioritize 1-3 large readable forms over micro-detail. No characters or portraits unless requested.\nSubject design: A half terrestrial globe set behind three ascending unequal industrial steps; a tall gear at the advanced step and smaller gear at the earlier step connected by one flowing upward arrow. Ivory relief, simple readable forms; crimson medallion behind.\nFocus meaning (reference only; never render as text): 不平衡与综合发展律 — 在一些情况下，从一开始就领先者可以加强其领先地位，而在另一些情况下，同样地由于发展的步调不同，一些落后者可以赶上甚至超过那些先前享有优势者。",
+      "refs": [
+        "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\docs\\reference\\icon-refs-png\\sheet_sov_style.png"
+      ]
+    },
+    {
+      "id": "hof_ic_trotsky_permanent_revolution",
+      "name": "GFX_hof_ic_trotsky_permanent_revolution",
+      "title": "不断革命论",
+      "group": "trotsky",
+      "description": "在狱中，他完成了对俄国革命的见解——不断革命论。认为俄国的民主革命必然要由工人阶级来领导，以无产阶级专政来完成，并由此发展成社会主义革命。其奠基性的表述最初出自马克思，1906 年由托洛茨基针对俄国的情况重新加以表述，随后又在 1928 年进一步阐发。",
+      "size": [
+        100,
+        88
+      ],
+      "status": "pending",
+      "prompt": "Use case: stylized-concept. Produce ONE production Hearts of Iron IV national focus icon, final canvas 100x88 pixels (width:height 25:22); generate high-resolution at same ratio for mechanical downsampling. Full emblem centered, bold primary silhouette fills 92 percent of canvas with all ornaments intact, no clipping. Strictly NO text, letters, numerals, pseudo-writing, watermarks or rectangular canvas border. The icon's own laurel/medallion ornament is allowed. Uniform solid very dark charcoal (#181b1e) background outside emblem, no transparency grid, no checkerboard, no backdrop texture outside emblem. Painted game UI relief, high contrast at tiny size, upper-left directional light, dark edge shadows, restrained material highlights; NOT a scene, not a poster, not a flat vector logo, no photoreal background. Match the supplied SOVIET focus reference sheet: dark blood-crimson circular medallion, two antique-gold laurel branches forming an open-topped wreath, small red star at top and short blank gold ribbon at bottom. Central subject in ivory-white / plaster-grey carved monochrome sculptural relief, clear chiseled shading, NOT naturally colored objects. Every icon should have the same rim weight, red tone, gold patina and light direction. Prioritize 1-3 large readable forms over micro-detail. No characters or portraits unless requested.\nSubject design: A raised ivory hand holding a lit torch, encircled by two smoothly interlocking continuous curved arrows. Deep-red sculpted flame tips only, same ivory relief for hand and arrows. Represents permanent revolution as continuity, not a modern flat recycling logo.\nFocus meaning (reference only; never render as text): 不断革命论 — 在狱中，他完成了对俄国革命的见解——不断革命论。认为俄国的民主革命必然要由工人阶级来领导，以无产阶级专政来完成，并由此发展成社会主义革命。其奠基性的表述最初出自马克思，1906 年由托洛茨基针对俄国的情况重新加以表述，随后又在 1928 年进一步阐发。",
+      "refs": [
+        "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\docs\\reference\\icon-refs-png\\sheet_sov_style.png"
+      ]
+    },
+    {
+      "id": "hof_ic_trotsky_socialism_in_one_country",
+      "name": "GFX_hof_ic_trotsky_socialism_in_one_country",
+      "title": "驳「一国社会主义」",
+      "group": "trotsky",
+      "description": "斯大林的一国社会主义论，被他斥为放弃世界革命的借口。1926 年，他与昔日的对手季诺维也夫、加米涅夫联手组成联合反对派，主张党内民主与经济计划化，谴责领导层对资产阶级分子的让步。这场争论持续了约 18 个月。",
+      "size": [
+        100,
+        88
+      ],
+      "status": "pending",
+      "prompt": "Use case: stylized-concept. Produce ONE production Hearts of Iron IV national focus icon, final canvas 100x88 pixels (width:height 25:22); generate high-resolution at same ratio for mechanical downsampling. Full emblem centered, bold primary silhouette fills 92 percent of canvas with all ornaments intact, no clipping. Strictly NO text, letters, numerals, pseudo-writing, watermarks or rectangular canvas border. The icon's own laurel/medallion ornament is allowed. Uniform solid very dark charcoal (#181b1e) background outside emblem, no transparency grid, no checkerboard, no backdrop texture outside emblem. Painted game UI relief, high contrast at tiny size, upper-left directional light, dark edge shadows, restrained material highlights; NOT a scene, not a poster, not a flat vector logo, no photoreal background. Match the supplied SOVIET focus reference sheet: dark blood-crimson circular medallion, two antique-gold laurel branches forming an open-topped wreath, small red star at top and short blank gold ribbon at bottom. Central subject in ivory-white / plaster-grey carved monochrome sculptural relief, clear chiseled shading, NOT naturally colored objects. Every icon should have the same rim weight, red tone, gold patina and light direction. Prioritize 1-3 large readable forms over micro-detail. No characters or portraits unless requested.\nSubject design: A terrestrial globe emerging from a broken enclosing stone ring, two separated ring fragments at sides and a small crimson banner flowing outward. Ivory-grey sculpture; outward world orientation, no text, no literal map labels.\nFocus meaning (reference only; never render as text): 驳「一国社会主义」 — 斯大林的一国社会主义论，被他斥为放弃世界革命的借口。1926 年，他与昔日的对手季诺维也夫、加米涅夫联手组成联合反对派，主张党内民主与经济计划化，谴责领导层对资产阶级分子的让步。这场争论持续了约 18 个月。",
+      "refs": [
+        "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\docs\\reference\\icon-refs-png\\sheet_sov_style.png"
+      ]
+    },
+    {
+      "id": "hof_ic_trotsky_the_new_course",
+      "name": "GFX_hof_ic_trotsky_the_new_course",
+      "title": "新方针",
+      "group": "trotsky",
+      "description": "1923 年 10 月，他致信中央委员会提出广泛批评，特别强调党内民主遭到破坏、经济计划化不足。改革被承诺了，他随即以一封公开信详细说明改革应取的方向。而此后党组织在压制它的主要批评者时，其猛烈和狂怒在党内反对派的漫长历史上是前所未有的。",
+      "size": [
+        100,
+        88
+      ],
+      "status": "pending",
+      "prompt": "Use case: stylized-concept. Produce ONE production Hearts of Iron IV national focus icon, final canvas 100x88 pixels (width:height 25:22); generate high-resolution at same ratio for mechanical downsampling. Full emblem centered, bold primary silhouette fills 92 percent of canvas with all ornaments intact, no clipping. Strictly NO text, letters, numerals, pseudo-writing, watermarks or rectangular canvas border. The icon's own laurel/medallion ornament is allowed. Uniform solid very dark charcoal (#181b1e) background outside emblem, no transparency grid, no checkerboard, no backdrop texture outside emblem. Painted game UI relief, high contrast at tiny size, upper-left directional light, dark edge shadows, restrained material highlights; NOT a scene, not a poster, not a flat vector logo, no photoreal background. Match the supplied SOVIET focus reference sheet: dark blood-crimson circular medallion, two antique-gold laurel branches forming an open-topped wreath, small red star at top and short blank gold ribbon at bottom. Central subject in ivory-white / plaster-grey carved monochrome sculptural relief, clear chiseled shading, NOT naturally colored objects. Every icon should have the same rim weight, red tone, gold patina and light direction. Prioritize 1-3 large readable forms over micro-detail. No characters or portraits unless requested.\nSubject design: An open blank policy folio with a large fountain-pen nib placed diagonally over it and three small raised voting hands behind the top edge. Ivory-grey relief, folio pages have no writing, numbers or pseudo-text.\nFocus meaning (reference only; never render as text): 新方针 — 1923 年 10 月，他致信中央委员会提出广泛批评，特别强调党内民主遭到破坏、经济计划化不足。改革被承诺了，他随即以一封公开信详细说明改革应取的方向。而此后党组织在压制它的主要批评者时，其猛烈和狂怒在党内反对派的漫长历史上是前所未有的。",
+      "refs": [
+        "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\docs\\reference\\icon-refs-png\\sheet_sov_style.png"
+      ]
+    },
+    {
+      "id": "hof_ic_trotsky_against_the_bureaucracy",
+      "name": "GFX_hof_ic_trotsky_against_the_bureaucracy",
+      "title": "反对官僚化",
+      "group": "trotsky",
+      "description": "无产阶级专政将通过政党夺取政权而建立，托洛茨基认为这个政党在革命中起领导作用。但是，他警告说，一旦它的任务完成，这样的党要提防用自身代替无产阶级或是支配无产阶级。",
+      "size": [
+        100,
+        88
+      ],
+      "status": "pending",
+      "prompt": "Use case: stylized-concept. Produce ONE production Hearts of Iron IV national focus icon, final canvas 100x88 pixels (width:height 25:22); generate high-resolution at same ratio for mechanical downsampling. Full emblem centered, bold primary silhouette fills 92 percent of canvas with all ornaments intact, no clipping. Strictly NO text, letters, numerals, pseudo-writing, watermarks or rectangular canvas border. The icon's own laurel/medallion ornament is allowed. Uniform solid very dark charcoal (#181b1e) background outside emblem, no transparency grid, no checkerboard, no backdrop texture outside emblem. Painted game UI relief, high contrast at tiny size, upper-left directional light, dark edge shadows, restrained material highlights; NOT a scene, not a poster, not a flat vector logo, no photoreal background. Match the supplied SOVIET focus reference sheet: dark blood-crimson circular medallion, two antique-gold laurel branches forming an open-topped wreath, small red star at top and short blank gold ribbon at bottom. Central subject in ivory-white / plaster-grey carved monochrome sculptural relief, clear chiseled shading, NOT naturally colored objects. Every icon should have the same rim weight, red tone, gold patina and light direction. Prioritize 1-3 large readable forms over micro-detail. No characters or portraits unless requested.\nSubject design: A strong worker's hand lifting a heavy administrative rubber stamp away from a short stack of blank papers, small broken chain at base. Ivory-grey relief, emblem about reclaiming worker control; no text on stamp or paper.\nFocus meaning (reference only; never render as text): 反对官僚化 — 无产阶级专政将通过政党夺取政权而建立，托洛茨基认为这个政党在革命中起领导作用。但是，他警告说，一旦它的任务完成，这样的党要提防用自身代替无产阶级或是支配无产阶级。",
+      "refs": [
+        "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\docs\\reference\\icon-refs-png\\sheet_sov_style.png"
+      ]
+    },
+    {
+      "id": "hof_ic_trotsky_limited_market_reforms",
+      "name": "GFX_hof_ic_trotsky_limited_market_reforms",
+      "title": "有限市场化",
+      "group": "trotsky",
+      "description": "内战结束后，他把注意力转向俄国的经济重建。他首先提议放松战时共产主义严苛的集中制，允许市场力量运作。这个提议被否决之后，他才转而尝试把军事纪律应用于经济。",
+      "size": [
+        100,
+        88
+      ],
+      "status": "pending",
+      "prompt": "Use case: stylized-concept. Produce ONE production Hearts of Iron IV national focus icon, final canvas 100x88 pixels (width:height 25:22); generate high-resolution at same ratio for mechanical downsampling. Full emblem centered, bold primary silhouette fills 92 percent of canvas with all ornaments intact, no clipping. Strictly NO text, letters, numerals, pseudo-writing, watermarks or rectangular canvas border. The icon's own laurel/medallion ornament is allowed. Uniform solid very dark charcoal (#181b1e) background outside emblem, no transparency grid, no checkerboard, no backdrop texture outside emblem. Painted game UI relief, high contrast at tiny size, upper-left directional light, dark edge shadows, restrained material highlights; NOT a scene, not a poster, not a flat vector logo, no photoreal background. Match the supplied SOVIET focus reference sheet: dark blood-crimson circular medallion, two antique-gold laurel branches forming an open-topped wreath, small red star at top and short blank gold ribbon at bottom. Central subject in ivory-white / plaster-grey carved monochrome sculptural relief, clear chiseled shading, NOT naturally colored objects. Every icon should have the same rim weight, red tone, gold patina and light direction. Prioritize 1-3 large readable forms over micro-detail. No characters or portraits unless requested.\nSubject design: A balanced old-fashioned beam scale, one pan holding a compact gear and the other a bundle of wheat. Ivory-grey sculptural central scale; gold laurel is outside the medallion. Symbolize balanced limited market reform, no currency signs.\nFocus meaning (reference only; never render as text): 有限市场化 — 内战结束后，他把注意力转向俄国的经济重建。他首先提议放松战时共产主义严苛的集中制，允许市场力量运作。这个提议被否决之后，他才转而尝试把军事纪律应用于经济。",
+      "refs": [
+        "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\docs\\reference\\icon-refs-png\\sheet_sov_style.png"
+      ]
+    },
+    {
+      "id": "hof_ic_trotsky_labour_armies",
+      "name": "GFX_hof_ic_trotsky_labour_armies",
+      "title": "劳动军",
+      "group": "trotsky",
+      "description": "他转而尝试把军事纪律应用于经济：把士兵用作劳动军，并试图把交通运输系统的管理军事化。这个方向同样被党的十大否决，此后连他自己也不再主张它。",
+      "size": [
+        100,
+        88
+      ],
+      "status": "pending",
+      "prompt": "Use case: stylized-concept. Produce ONE production Hearts of Iron IV national focus icon, final canvas 100x88 pixels (width:height 25:22); generate high-resolution at same ratio for mechanical downsampling. Full emblem centered, bold primary silhouette fills 92 percent of canvas with all ornaments intact, no clipping. Strictly NO text, letters, numerals, pseudo-writing, watermarks or rectangular canvas border. The icon's own laurel/medallion ornament is allowed. Uniform solid very dark charcoal (#181b1e) background outside emblem, no transparency grid, no checkerboard, no backdrop texture outside emblem. Painted game UI relief, high contrast at tiny size, upper-left directional light, dark edge shadows, restrained material highlights; NOT a scene, not a poster, not a flat vector logo, no photoreal background. Match the supplied SOVIET focus reference sheet: dark blood-crimson circular medallion, two antique-gold laurel branches forming an open-topped wreath, small red star at top and short blank gold ribbon at bottom. Central subject in ivory-white / plaster-grey carved monochrome sculptural relief, clear chiseled shading, NOT naturally colored objects. Every icon should have the same rim weight, red tone, gold patina and light direction. Prioritize 1-3 large readable forms over micro-detail. No characters or portraits unless requested.\nSubject design: Crossed pickaxe and shovel above a short railroad sleeper segment, a simple military cap below their crossing. Ivory-grey tools and cap, one deep-red flag fold behind; labor mobilization, compact symmetrical composition.\nFocus meaning (reference only; never render as text): 劳动军 — 他转而尝试把军事纪律应用于经济：把士兵用作劳动军，并试图把交通运输系统的管理军事化。这个方向同样被党的十大否决，此后连他自己也不再主张它。",
+      "refs": [
+        "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\docs\\reference\\icon-refs-png\\sheet_sov_style.png"
+      ]
+    },
+    {
+      "id": "hof_ic_trotsky_state_planning",
+      "name": "GFX_hof_ic_trotsky_state_planning",
+      "title": "经济计划化",
+      "group": "trotsky",
+      "description": "他要求扩大国家计划委员会的权力，而李可夫和索柯里尼柯夫则怀疑计划性，公开指责他之所以要求扩大国家计划委员会的权力只是因为他觊觎它的领导权。他所作的报告和所提交的『提纲』是苏联经济史上最关键的文件，他在其中描绘了今后几十年的苏联经济远景。",
+      "size": [
+        100,
+        88
+      ],
+      "status": "pending",
+      "prompt": "Use case: stylized-concept. Produce ONE production Hearts of Iron IV national focus icon, final canvas 100x88 pixels (width:height 25:22); generate high-resolution at same ratio for mechanical downsampling. Full emblem centered, bold primary silhouette fills 92 percent of canvas with all ornaments intact, no clipping. Strictly NO text, letters, numerals, pseudo-writing, watermarks or rectangular canvas border. The icon's own laurel/medallion ornament is allowed. Uniform solid very dark charcoal (#181b1e) background outside emblem, no transparency grid, no checkerboard, no backdrop texture outside emblem. Painted game UI relief, high contrast at tiny size, upper-left directional light, dark edge shadows, restrained material highlights; NOT a scene, not a poster, not a flat vector logo, no photoreal background. Match the supplied SOVIET focus reference sheet: dark blood-crimson circular medallion, two antique-gold laurel branches forming an open-topped wreath, small red star at top and short blank gold ribbon at bottom. Central subject in ivory-white / plaster-grey carved monochrome sculptural relief, clear chiseled shading, NOT naturally colored objects. Every icon should have the same rim weight, red tone, gold patina and light direction. Prioritize 1-3 large readable forms over micro-detail. No characters or portraits unless requested.\nSubject design: A drafting compass and a slide rule over a blank folded blueprint with only two bold geometric factory outlines and one rising curve. Ivory-grey relief, absolutely no ruler graduations, numerals, text or pseudo-lettering.\nFocus meaning (reference only; never render as text): 经济计划化 — 他要求扩大国家计划委员会的权力，而李可夫和索柯里尼柯夫则怀疑计划性，公开指责他之所以要求扩大国家计划委员会的权力只是因为他觊觎它的领导权。他所作的报告和所提交的『提纲』是苏联经济史上最关键的文件，他在其中描绘了今后几十年的苏联经济远景。",
+      "refs": [
+        "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\docs\\reference\\icon-refs-png\\sheet_sov_style.png"
+      ]
+    },
+    {
+      "id": "hof_ic_trotsky_accelerated_industrialization",
+      "name": "GFX_hof_ic_trotsky_accelerated_industrialization",
+      "title": "加速工业化",
+      "group": "trotsky",
+      "description": "国家的大粮库有一半已见了底，城市居民面临着饥饿的威胁，连军队的给养都不充足，面包店外排着长队，面包价格不断上涨。正是在这样的处境下，联合反对派要求加快工业化、反对向富农让步。1928 年，斯大林开始了第一个五年计划。",
+      "size": [
+        100,
+        88
+      ],
+      "status": "pending",
+      "prompt": "Use case: stylized-concept. Produce ONE production Hearts of Iron IV national focus icon, final canvas 100x88 pixels (width:height 25:22); generate high-resolution at same ratio for mechanical downsampling. Full emblem centered, bold primary silhouette fills 92 percent of canvas with all ornaments intact, no clipping. Strictly NO text, letters, numerals, pseudo-writing, watermarks or rectangular canvas border. The icon's own laurel/medallion ornament is allowed. Uniform solid very dark charcoal (#181b1e) background outside emblem, no transparency grid, no checkerboard, no backdrop texture outside emblem. Painted game UI relief, high contrast at tiny size, upper-left directional light, dark edge shadows, restrained material highlights; NOT a scene, not a poster, not a flat vector logo, no photoreal background. Match the supplied SOVIET focus reference sheet: dark blood-crimson circular medallion, two antique-gold laurel branches forming an open-topped wreath, small red star at top and short blank gold ribbon at bottom. Central subject in ivory-white / plaster-grey carved monochrome sculptural relief, clear chiseled shading, NOT naturally colored objects. Every icon should have the same rim weight, red tone, gold patina and light direction. Prioritize 1-3 large readable forms over micro-detail. No characters or portraits unless requested.\nSubject design: A massive steel blast furnace and two factory chimneys, one bold upward arrow integrated into the furnace silhouette. Ivory-grey relief with a subtle red molten glow, no scene or industrial skyline beyond badge.\nFocus meaning (reference only; never render as text): 加速工业化 — 国家的大粮库有一半已见了底，城市居民面临着饥饿的威胁，连军队的给养都不充足，面包店外排着长队，面包价格不断上涨。正是在这样的处境下，联合反对派要求加快工业化、反对向富农让步。1928 年，斯大林开始了第一个五年计划。",
+      "refs": [
+        "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\docs\\reference\\icon-refs-png\\sheet_sov_style.png"
+      ]
+    },
+    {
+      "id": "hof_ic_trotsky_the_comintern_manifesto",
+      "name": "GFX_hof_ic_trotsky_the_comintern_manifesto",
+      "title": "共产国际宣言",
+      "group": "trotsky",
+      "description": "1919 年 3 月，他与列宁共同创立第三国际，并撰写了它的首篇宣言。",
+      "size": [
+        100,
+        88
+      ],
+      "status": "pending",
+      "prompt": "Use case: stylized-concept. Produce ONE production Hearts of Iron IV national focus icon, final canvas 100x88 pixels (width:height 25:22); generate high-resolution at same ratio for mechanical downsampling. Full emblem centered, bold primary silhouette fills 92 percent of canvas with all ornaments intact, no clipping. Strictly NO text, letters, numerals, pseudo-writing, watermarks or rectangular canvas border. The icon's own laurel/medallion ornament is allowed. Uniform solid very dark charcoal (#181b1e) background outside emblem, no transparency grid, no checkerboard, no backdrop texture outside emblem. Painted game UI relief, high contrast at tiny size, upper-left directional light, dark edge shadows, restrained material highlights; NOT a scene, not a poster, not a flat vector logo, no photoreal background. Match the supplied SOVIET focus reference sheet: dark blood-crimson circular medallion, two antique-gold laurel branches forming an open-topped wreath, small red star at top and short blank gold ribbon at bottom. Central subject in ivory-white / plaster-grey carved monochrome sculptural relief, clear chiseled shading, NOT naturally colored objects. Every icon should have the same rim weight, red tone, gold patina and light direction. Prioritize 1-3 large readable forms over micro-detail. No characters or portraits unless requested.\nSubject design: A terrestrial globe behind a blank unfurled proclamation scroll, flanked by two deep-red folded flags, small ivory speaking trumpet at bottom. Ivory sculptural globe and scroll, no text or map labels.\nFocus meaning (reference only; never render as text): 共产国际宣言 — 1919 年 3 月，他与列宁共同创立第三国际，并撰写了它的首篇宣言。",
+      "refs": [
+        "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\docs\\reference\\icon-refs-png\\sheet_sov_style.png"
+      ]
+    },
+    {
+      "id": "hof_ic_trotsky_the_chinese_question",
+      "name": "GFX_hof_ic_trotsky_the_chinese_question",
+      "title": "中国革命问题",
+      "group": "trotsky",
+      "description": "1927 年春天，党内斗争的火焰又一次燃烧起来。这次斗争是同到那时之前从未提出过的一个问题相联系的，但从此以后这个问题却自始至终都是斗争的中心，直到联合反对派最终被开除出党并解体为止。",
+      "size": [
+        100,
+        88
+      ],
+      "status": "pending",
+      "prompt": "Use case: stylized-concept. Produce ONE production Hearts of Iron IV national focus icon, final canvas 100x88 pixels (width:height 25:22); generate high-resolution at same ratio for mechanical downsampling. Full emblem centered, bold primary silhouette fills 92 percent of canvas with all ornaments intact, no clipping. Strictly NO text, letters, numerals, pseudo-writing, watermarks or rectangular canvas border. The icon's own laurel/medallion ornament is allowed. Uniform solid very dark charcoal (#181b1e) background outside emblem, no transparency grid, no checkerboard, no backdrop texture outside emblem. Painted game UI relief, high contrast at tiny size, upper-left directional light, dark edge shadows, restrained material highlights; NOT a scene, not a poster, not a flat vector logo, no photoreal background. Match the supplied SOVIET focus reference sheet: dark blood-crimson circular medallion, two antique-gold laurel branches forming an open-topped wreath, small red star at top and short blank gold ribbon at bottom. Central subject in ivory-white / plaster-grey carved monochrome sculptural relief, clear chiseled shading, NOT naturally colored objects. Every icon should have the same rim weight, red tone, gold patina and light direction. Prioritize 1-3 large readable forms over micro-detail. No characters or portraits unless requested.\nSubject design: A recognizable traditional Chinese gate with a double-eaved roof and stone arch passage, a small ivory rail segment leading through it and red banner behind. Monumental ivory-grey relief on crimson medallion, no writing, no flags with stars that imply later PRC flag.\nFocus meaning (reference only; never render as text): 中国革命问题 — 1927 年春天，党内斗争的火焰又一次燃烧起来。这次斗争是同到那时之前从未提出过的一个问题相联系的，但从此以后这个问题却自始至终都是斗争的中心，直到联合反对派最终被开除出党并解体为止。",
+      "refs": [
+        "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\docs\\reference\\icon-refs-png\\sheet_sov_style.png"
+      ]
+    },
+    {
+      "id": "hof_ic_trotsky_united_front",
+      "name": "GFX_hof_ic_trotsky_united_front",
+      "title": "反法西斯统一战线",
+      "group": "trotsky",
+      "description": "第三国际不顾托洛茨基自 1930 年以来不断的警告，大大低估了纳粹党的危险性，同时拒绝社会民主党建立统一战线对抗纳粹，结果使德国工人阶级的组织毫无抵抗地被粉碎，并使法西斯势力横行十余年。",
+      "size": [
+        100,
+        88
+      ],
+      "status": "pending",
+      "prompt": "Use case: stylized-concept. Produce ONE production Hearts of Iron IV national focus icon, final canvas 100x88 pixels (width:height 25:22); generate high-resolution at same ratio for mechanical downsampling. Full emblem centered, bold primary silhouette fills 92 percent of canvas with all ornaments intact, no clipping. Strictly NO text, letters, numerals, pseudo-writing, watermarks or rectangular canvas border. The icon's own laurel/medallion ornament is allowed. Uniform solid very dark charcoal (#181b1e) background outside emblem, no transparency grid, no checkerboard, no backdrop texture outside emblem. Painted game UI relief, high contrast at tiny size, upper-left directional light, dark edge shadows, restrained material highlights; NOT a scene, not a poster, not a flat vector logo, no photoreal background. Match the supplied SOVIET focus reference sheet: dark blood-crimson circular medallion, two antique-gold laurel branches forming an open-topped wreath, small red star at top and short blank gold ribbon at bottom. Central subject in ivory-white / plaster-grey carved monochrome sculptural relief, clear chiseled shading, NOT naturally colored objects. Every icon should have the same rim weight, red tone, gold patina and light direction. Prioritize 1-3 large readable forms over micro-detail. No characters or portraits unless requested.\nSubject design: Two distinct workers' hands firmly clasped at center above a snapped sword, joined red banner behind. Ivory-grey sculpted hands and broken blade; compact unity against fascism emblem, no Nazi symbols, no national flags, no letters.\nFocus meaning (reference only; never render as text): 反法西斯统一战线 — 第三国际不顾托洛茨基自 1930 年以来不断的警告，大大低估了纳粹党的危险性，同时拒绝社会民主党建立统一战线对抗纳粹，结果使德国工人阶级的组织毫无抵抗地被粉碎，并使法西斯势力横行十余年。",
+      "refs": [
+        "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\docs\\reference\\icon-refs-png\\sheet_sov_style.png"
+      ]
+    },
+    {
+      "id": "hof_ic_trotsky_the_permanent_revolutionary",
+      "name": "GFX_hof_ic_trotsky_the_permanent_revolutionary",
+      "title": "永久的革命者",
+      "group": "trotsky",
+      "description": "要求我放弃政治活动，意味着要求我放弃为全世界工人阶级利益而进行的斗争，而这一斗争我已孜孜不倦地进行了 32 年之久，也就是我自觉生命的全部时间。只有腐朽透顶的官僚集团才会要求做出这种放弃，只有卑鄙的叛徒才能做出这种承诺。",
+      "size": [
+        100,
+        88
+      ],
+      "status": "pending",
+      "prompt": "Use case: stylized-concept. Produce ONE production Hearts of Iron IV national focus icon, final canvas 100x88 pixels (width:height 25:22); generate high-resolution at same ratio for mechanical downsampling. Full emblem centered, bold primary silhouette fills 92 percent of canvas with all ornaments intact, no clipping. Strictly NO text, letters, numerals, pseudo-writing, watermarks or rectangular canvas border. The icon's own laurel/medallion ornament is allowed. Uniform solid very dark charcoal (#181b1e) background outside emblem, no transparency grid, no checkerboard, no backdrop texture outside emblem. Painted game UI relief, high contrast at tiny size, upper-left directional light, dark edge shadows, restrained material highlights; NOT a scene, not a poster, not a flat vector logo, no photoreal background. Match the supplied SOVIET focus reference sheet: dark blood-crimson circular medallion, two antique-gold laurel branches forming an open-topped wreath, small red star at top and short blank gold ribbon at bottom. Central subject in ivory-white / plaster-grey carved monochrome sculptural relief, clear chiseled shading, NOT naturally colored objects. Every icon should have the same rim weight, red tone, gold patina and light direction. Prioritize 1-3 large readable forms over micro-detail. No characters or portraits unless requested.\nSubject design: A resolute anonymous revolutionary figure shown from chest upward holding a torch high, deep-red flag sweeping behind, subtle continuous arc around figure. Ivory-grey monumental relief, no identifiable new portrait; slightly more ceremonial gold laurel for capstone, no text.\nFocus meaning (reference only; never render as text): 永久的革命者 — 要求我放弃政治活动，意味着要求我放弃为全世界工人阶级利益而进行的斗争，而这一斗争我已孜孜不倦地进行了 32 年之久，也就是我自觉生命的全部时间。只有腐朽透顶的官僚集团才会要求做出这种放弃，只有卑鄙的叛徒才能做出这种承诺。",
+      "refs": [
+        "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\docs\\reference\\icon-refs-png\\sheet_sov_style.png"
+      ]
+    },
+    {
+      "id": "hof_ic_trotsky_the_builder_of_the_state",
+      "name": "GFX_hof_ic_trotsky_the_builder_of_the_state",
+      "title": "国家建设者",
+      "group": "trotsky",
+      "description": "请告诉我还有哪个人能在一年之内建立起一支堪称模范的军队而且赢得军事专家的尊重；我们有这样的人，就有了一切，我们将创造出奇迹。",
+      "size": [
+        100,
+        88
+      ],
+      "status": "pending",
+      "prompt": "Use case: stylized-concept. Produce ONE production Hearts of Iron IV national focus icon, final canvas 100x88 pixels (width:height 25:22); generate high-resolution at same ratio for mechanical downsampling. Full emblem centered, bold primary silhouette fills 92 percent of canvas with all ornaments intact, no clipping. Strictly NO text, letters, numerals, pseudo-writing, watermarks or rectangular canvas border. The icon's own laurel/medallion ornament is allowed. Uniform solid very dark charcoal (#181b1e) background outside emblem, no transparency grid, no checkerboard, no backdrop texture outside emblem. Painted game UI relief, high contrast at tiny size, upper-left directional light, dark edge shadows, restrained material highlights; NOT a scene, not a poster, not a flat vector logo, no photoreal background. Match the supplied SOVIET focus reference sheet: dark blood-crimson circular medallion, two antique-gold laurel branches forming an open-topped wreath, small red star at top and short blank gold ribbon at bottom. Central subject in ivory-white / plaster-grey carved monochrome sculptural relief, clear chiseled shading, NOT naturally colored objects. Every icon should have the same rim weight, red tone, gold patina and light direction. Prioritize 1-3 large readable forms over micro-detail. No characters or portraits unless requested.\nSubject design: A builder's strong hand gripping a drafting square over a compact rising steel girder structure, single construction crane hook at top, a small red star crown. Ivory-grey sculpted industrial forms, ceremonial gold laurel capstone; no schematic text or numbers.\nFocus meaning (reference only; never render as text): 国家建设者 — 请告诉我还有哪个人能在一年之内建立起一支堪称模范的军队而且赢得军事专家的尊重；我们有这样的人，就有了一切，我们将创造出奇迹。",
+      "refs": [
+        "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\docs\\reference\\icon-refs-png\\sheet_sov_style.png"
+      ]
+    }
+  ]
+}

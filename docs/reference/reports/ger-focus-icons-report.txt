@@ -1,0 +1,53 @@
+﻿########  : F:\Hearts of Iron IV\common\national_focus
+  GER_fuhrerprinzip  (L18151)  <- germany.txt
+       alternate_icon = GFX_focus_GER_support_the_fuhrer_historical
+       icon = {
+  GER_ascension_of_todt  (L18283)  <- germany.txt
+       icon = GFX_focus_GER_ascension_of_todt
+  GER_fuhrerprinzip  (L18289)  <- germany.txt
+  GER_ascension_of_todt  (L18437)  <- germany.txt
+  GER_ascension_of_todt  (L18637)  <- germany.txt
+  GER_ascension_of_himmler  (L19615)  <- germany.txt
+       icon = GFX_focus_GER_ascension_of_himmler
+  GER_fuhrerprinzip  (L19620)  <- germany.txt
+  GER_ascension_of_himmler  (L19764)  <- germany.txt
+  GER_ascension_of_himmler  (L19896)  <- germany.txt
+  GER_fuhrerprinzip  (L20371)  <- germany.txt
+  GER_party_chancellor_hess  (L20689)  <- germany.txt
+       icon = GFX_focus_GER_party_chancellor_hess
+  GER_fuhrerprinzip  (L20695)  <- germany.txt
+  GER_party_chancellor_bormann  (L20834)  <- germany.txt
+       icon = GFX_focus_GER_party_chancellor_bormann
+  GER_party_chancellor_hess  (L20840)  <- germany.txt
+  GER_party_chancellor_hess  (L20987)  <- germany.txt
+  GER_fuhrerprinzip  (L21287)  <- germany.txt
+  GER_fuhrerprinzip  (L21398)  <- germany.txt
+
+########  : D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125\common\national_focus
+  GER_fuhrerprinzip  (L21204)  <- germany.txt
+       alternate_icon = GFX_focus_GER_support_the_fuhrer_historical
+       icon = {
+  GER_ascension_of_todt  (L21330)  <- germany.txt
+       icon = GFX_focus_GER_ascension_of_todt
+  GER_fuhrerprinzip  (L21336)  <- germany.txt
+  GER_ascension_of_todt  (L21461)  <- germany.txt
+  GER_ascension_of_todt  (L21661)  <- germany.txt
+  GER_ascension_of_himmler  (L22652)  <- germany.txt
+       icon = GFX_focus_GER_ascension_of_himmler
+  GER_fuhrerprinzip  (L22657)  <- germany.txt
+  GER_ascension_of_himmler  (L22786)  <- germany.txt
+  GER_ascension_of_himmler  (L22918)  <- germany.txt
+  GER_fuhrerprinzip  (L23393)  <- germany.txt
+  GER_party_chancellor_hess  (L23696)  <- germany.txt
+       icon = GFX_focus_GER_party_chancellor_hess
+  GER_fuhrerprinzip  (L23702)  <- germany.txt
+  GER_party_chancellor_bormann  (L23826)  <- germany.txt
+       icon = GFX_focus_GER_party_chancellor_bormann
+  GER_party_chancellor_hess  (L23832)  <- germany.txt
+  GER_party_chancellor_hess  (L23956)  <- germany.txt
+  GER_fuhrerprinzip  (L24256)  <- germany.txt
+  GER_fuhrerprinzip  (L24367)  <- germany.txt
+  GER_fuhrerprinzip  (L71932)  <- germany.txt
+
+########  : D:\Users\xuwei\PycharmProjects\heart_of_Iron\mod\heart_of_iron\common\national_focus
+

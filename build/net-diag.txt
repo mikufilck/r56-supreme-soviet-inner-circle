@@ -1,0 +1,11 @@
+﻿http://127.0.0.1:7993               : curl: (35) schannel: failed to receive handshake, SSL/TLS connection failed | 000
+http://127.0.0.1:7993          -k   : curl: (28) Connection timed out after 25013 milliseconds | 000
+socks5://127.0.0.1:7993             : curl: (28) Connection timed out after 25005 milliseconds | 000
+socks5://127.0.0.1:7993        -k   : curl: (35) schannel: failed to receive handshake, SSL/TLS connection failed | 000
+socks4://127.0.0.1:7993             : curl: (28) Connection timed out after 25011 milliseconds | 000
+socks4://127.0.0.1:7993        -k   : curl: (28) Connection timed out after 25012 milliseconds | 000
+socks5h://127.0.0.1:7993            : curl: (28) Connection timed out after 25014 milliseconds | 000
+socks5h://127.0.0.1:7993       -k   : curl: (35) schannel: failed to receive handshake, SSL/TLS connection failed | 000
+
+=== 直连 + IP 版本 ===
+ -4 直连 : curl: (35) schannel: failed to receive handshake, SSL/TLS connection failed|000

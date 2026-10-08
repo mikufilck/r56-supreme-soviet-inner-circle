@@ -1,0 +1,6 @@
+{
+  "prompt": "Remove background from this emblem. Return a transparent-background PNG with actual alpha transparency. Keep original emblem identical, all colors, portrait and geometry unchanged. Outside the emblem is empty transparent space. Do not visualize transparency using a checker pattern. Transparent background enabled. Isolated cutout asset.",
+  "source": "C:\\Users\\xuwei\\.codex\\generated_images\\01a09af5-fd43-79a0-a3cc-72284cd67cbc\\exec-db6ab8da-6208-4852-9b8b-f2c411f12082.png",
+  "reference": "D:/Users/xuwei/PycharmProjects/heart_of_Iron/art/focus/source/GFX_hof_ic_seat_lev_kamenev.png",
+  "mode": "built-in image_gen"
+}

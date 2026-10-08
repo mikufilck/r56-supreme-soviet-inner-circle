@@ -1,0 +1,17 @@
+{
+  "id": "hof_ic_radek_seven_pamphlets",
+  "name": "GFX_hof_ic_radek_seven_pamphlets",
+  "title": "狱中的七本小册子",
+  "concept": "A narrow barred window casts one diagonal pale light beam and barred shadows onto a narrow tabletop. EXACTLY SEVEN separate thin closed pamphlets laid side by side in a clear evenly spaced fan, all seven covers fully visible and countable. No extra paper or books. Covers plain ivory with subtle horizontal rules, no lettering or numerals. The seven pamphlets dominate lower two thirds of scene. Cold grey iron and stone, faint warm light on paper. No chains, shackles or people.",
+  "group": "radek",
+  "size": [
+    100,
+    88
+  ],
+  "prompt": "Create ONE Hearts of Iron IV Soviet national focus icon. Reference is engraved relief style and outer laurel silhouette ONLY. CRITICAL palette override: NO RED star or red medallion or red frame; star is antique GOLD, inner rim bronze. There must be NO saturated red anywhere. Subject: A narrow barred window casts one diagonal pale light beam and barred shadows onto a narrow tabletop. EXACTLY SEVEN separate thin closed pamphlets laid side by side in a clear evenly spaced fan, all seven covers fully visible and countable. No extra paper or books. Covers plain ivory with subtle horizontal rules, no lettering or numerals. The seven pamphlets dominate lower two thirds of scene. Cold grey iron and stone, faint warm light on paper. No chains, shackles or people. Gold laurel open at top, small GOLD star above, blank gold ribbon below. Sculptural engraved miniature relief, high readable contrast and clear shapes at final 100x88. No faces, readable text, letters, numbers, watermark. No archive cabinets, bookcase walls, printing machinery or bookbinding. Landscape100:88. TRUE transparent RGBA background, alpha0 outside emblem and all four corners,20-50% transparent area; emblem fills94%canvas. No fake checkerboard, no background rectangle or external shadow.",
+  "references": [
+    "D:/Users/xuwei/PycharmProjects/heart_of_Iron/art/focus/bukharin/source/GFX_hof_ic_bukharin_proportional_development.png"
+  ],
+  "generated_path": "C:\\Users\\xuwei\\.codex\\generated_images\\01a09af5-fd43-79a0-a3cc-72284cd67cbc\\exec-57b0a761-2daf-4556-bdb8-20de9d522286.png",
+  "mode": "built-in image_gen"
+}

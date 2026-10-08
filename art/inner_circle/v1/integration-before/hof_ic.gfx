@@ -1,0 +1,99 @@
+﻿# =============================================================================
+# 核心圈窗口的 sprite 注册（间接层）
+# -----------------------------------------------------------------------------
+# 设计意图：
+#   .gui 里一律使用 GFX_hof_ic_* 这些名字，而它们指向哪张纹理由本文件决定。
+#   将来美术到位时，**只需改这里的 texturefile 路径**，.gui 一行都不用动。
+#
+# ⚠️ 当前是【占位】状态：全部指向游戏通用的中性纹理，不含任何国徽。
+#    需替换的正式素材见 docs/16-art-spec-inner-circle.md（11 张图）。
+#
+# 替换时把 texturefile 改到：
+#     gfx/interface/hof_ic/<名字>.dds
+# 即可。
+# =============================================================================
+
+spriteTypes = {
+
+	# ---------------- 窗口底板 ----------------
+	# 九宫格瓦片：四角固定、中间平铺，窗口可任意缩放而不变形
+	corneredTileSpriteType = {
+		name = "GFX_hof_ic_window_bg"
+		size = { x = 192 y = 192 }
+		textureFile = "gfx/interface/tiles/tiled_plain_bg.dds"
+		borderSize = { x = 64 y = 64 }
+		tilingCenter = yes
+	}
+
+	# ---------------- 内嵌面板（领袖位 / 席位底衬）----------------
+	corneredTileSpriteType = {
+		name = "GFX_hof_ic_panel"
+		size = { x = 192 y = 192 }
+		textureFile = "gfx/interface/tiles/tiled_window_thin_border.dds"
+		borderSize = { x = 64 y = 64 }
+		tilingCenter = yes
+	}
+
+	# ---------------- 领袖位圆形框 ----------------
+	# 占位：用中性边框瓦片充当。正式素材应为 165x165、顶部带五角星浮雕的金属圆框。
+	spriteType = {
+		name = "GFX_hof_ic_leader_frame"
+		texturefile = "gfx/interface/tiles/tiled_window_thin_border.dds"
+	}
+
+	# ---------------- 领袖名牌绸带 ----------------
+	# 占位。正式素材：160x36，深红缎带。
+	spriteType = {
+		name = "GFX_hof_ic_leader_ribbon"
+		texturefile = "gfx/interface/tiles/tiled_plain_bg.dds"
+	}
+
+	# ---------------- 领袖头衔框 ----------------
+	# 占位。正式素材：115x22。
+	spriteType = {
+		name = "GFX_hof_ic_leader_title_box"
+		texturefile = "gfx/interface/tiles/tiled_plain_bg.dds"
+	}
+
+	# ---------------- 席位框（空席）----------------
+	# 占位。正式素材：131x139，中央有五角星浮水印的灰暗金属框。
+	spriteType = {
+		name = "GFX_hof_ic_seat_frame_empty"
+		texturefile = "gfx/interface/tiles/tiled_window_thin_border.dds"
+	}
+
+	# ---------------- 席位框（已占）----------------
+	# 占位。正式素材：131x139，提亮加高光版本。
+	spriteType = {
+		name = "GFX_hof_ic_seat_frame_filled"
+		texturefile = "gfx/interface/tiles/tiled_window_thin_border.dds"
+	}
+
+	# ---------------- 席位名牌底衬 ----------------
+	# 占位。正式素材：146x26。
+	spriteType = {
+		name = "GFX_hof_ic_seat_name_box"
+		texturefile = "gfx/interface/tiles/tiled_plain_bg.dds"
+	}
+
+	# ---------------- 席位特质框 ----------------
+	# 占位。正式素材：144x43。
+	spriteType = {
+		name = "GFX_hof_ic_seat_trait_box"
+		texturefile = "gfx/interface/tiles/tiled_plain_bg.dds"
+	}
+
+	# ---------------- 空席位人像占位（剪影）----------------
+	# 占位：直接用游戏的空白立绘。正式素材：156x210 的苏联冷色调剪影。
+	spriteType = {
+		name = "GFX_hof_ic_blank_portrait"
+		texturefile = "gfx/interface/inner_circle/blank_leader_portrait.dds"
+	}
+
+	# ---------------- 底部候选栏小头像框 ----------------
+	# 占位。正式素材：58x58 的空框（人像由游戏渲染）。
+	spriteType = {
+		name = "GFX_hof_ic_candidate_slot"
+		texturefile = "gfx/interface/tiles/tiled_window_thin_border.dds"
+	}
+}

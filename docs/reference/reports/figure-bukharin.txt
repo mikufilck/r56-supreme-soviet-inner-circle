@@ -1,0 +1,321 @@
+﻿扫描关键词：'bukharin'（不区分大小写）
+
+====================================================================================================
+### [原版] F:\Hearts of Iron IV
+====================================================================================================
+
+--- common\national_focus\soviet.txt  （26 处）
+  L7858   icon = GFX_focus_SOV_purge_bukharinists
+  L7893   #Bukharin
+  L7896   has_character = SOV_nikolay_bukharin
+  L7898   SOV_nikolay_bukharin = {
+  L8809   icon = GFX_focus_SOV_purge_bukharinists
+  L8833   SOV_nikolay_bukharin = { set_character_flag = SOV_potential_target_flag }
+  L8903   NOT = { has_trait = trait_SOV_bukharinist }
+  L8913   NOT = { has_trait = trait_SOV_bukharinist }
+  L8923   NOT = { has_trait = trait_SOV_bukharinist }
+  L8996   NOT = { has_trait = trait_SOV_bukharinist }
+  L9006   NOT = { has_trait = trait_SOV_bukharinist }
+  L9232   IF = { limit = { has_character = SOV_nikolay_bukharin } retire_character = SOV_nikolay_bukharin }
+  L9816   icon = GFX_focus_SOV_bukharinists
+  L9880   show_ideas_tooltip = SOV_nikolay_bukharin
+  L10462  NOT = { SOV_nikolay_bukharin = { is_country_leader = yes } }
+  L10484  SOV_nikolay_bukharin = { is_country_leader = yes }
+  L10492  limit = { has_character = SOV_nikolay_bukharin }
+  L10495  SOV_nikolay_bukharin = { is_country_leader = yes }
+  L10505  character = SOV_nikolay_bukharin
+  L11105  NOT = { has_trait = trait_SOV_bukharinist }
+  L11115  NOT = { has_trait = trait_SOV_bukharinist }
+  L11130  add_unit_leader_trait = trait_SOV_bukharinist
+  L11141  NOT = { has_trait = trait_SOV_bukharinist }
+  L11157  add_unit_leader_trait = trait_SOV_bukharinist
+        ...（还有 2 处未列）
+
+--- common\characters\SOV.txt  （5 处）
+  L3020   SOV_nikolay_bukharin = {
+  L3021   name = SOV_nikolay_bukharin
+  L3024   large = "GFX_portrait_SOV_nikolay_bukharin"
+  L3027   small = "GFX_idea_SOV_nikolay_bukharin"
+  L3048   idea_token = SOV_nikolay_bukharin
+
+--- common\scripted_effects\SOV_scripted_effects.txt  （13 处）
+  L751    NOT = { has_character = SOV_nikolay_bukharin }
+  L752    check_variable = { SOV.SOV_paranoia_photo_bukharin = 10 compare = not_equals }
+  L754    set_variable = { SOV.SOV_paranoia_photo_bukharin = 10 }
+  L7151   name = "Bukharinist Workers' Militia"
+  L7164   name = "Bukharinist Peasant Militia"
+  L7188   division = "name = \"Workers' Miltia Brigade\" division_template = \"Bukharinist Workers' Militia\" start_experience_factor = 0.09 start_equipment_factor = 0.85" owner = ROOT
+  L7197   division = "name = \"Peasant Militia brigade\" division_template = \"Bukharinist Peasant Militia\" start_experience_factor = 0.01 start_equipment_factor = 0.55" owner = ROOT
+  L7208   division = "name = \"Peasant Militia brigade\" division_template = \"Bukharinist Peasant Militia\" start_experience_factor = 0.01 start_equipment_factor = 0.55" owner = ROOT
+  L7387   SOV_promote_to_country_leader_bukharin = {
+  L7389   character = "SOV_nikolay_bukharin"
+  L7397   SOV = { set_country_flag = SOV_bukharin_country_leader_flag }
+  L7890   has_trait = trait_SOV_bukharinist
+  L8022   uncomplete_national_focus = { # Remove all traces of Bukharin's
+
+--- common\scripted_localisation\FR_SCRIPTING_FULL_AUTOMATED.txt  （2 处）
+  L940369 # Bukharinist
+  L940399 # Bukharinist
+
+--- common\scripted_localisation\NSB_soviet_scripted_loc.txt  （6 处）
+  L1395   SOV = { SOV_is_right_opposition = yes } # Bukharinist image
+  L1397   localization_key = GFX_report_event_SOV_negotiations_japan_bukharin
+  L1409   SOV = { SOV_is_right_opposition = yes } # Bukharinist image
+  L1411   localization_key = GFX_news_event_SOV_supreme_soviet_bukharin
+  L1745   # Bukharinist
+  L1774   # Bukharinist
+
+--- common\decisions\SOV.txt  （19 处）
+  L1748   set_variable = { SOV.SOV_paranoia_photo_bukharin = 10 }
+  L13593  NOT = { has_trait = trait_SOV_bukharinist }
+  L13638  NOT = { has_trait = trait_SOV_bukharinist }
+  L13675  NOT = { has_trait = trait_SOV_bukharinist }
+  L13718  NOT = { has_trait = trait_SOV_bukharinist }
+  L13790  NOT = { has_trait = trait_SOV_bukharinist }
+  L13805  NOT = { has_trait = trait_SOV_bukharinist }
+  L13809  add_unit_leader_trait = trait_SOV_bukharinist
+  L13820  NOT = { has_trait = trait_SOV_bukharinist }
+  L13893  NOT = { has_trait = trait_SOV_bukharinist }
+  L13908  NOT = { has_trait = trait_SOV_bukharinist }
+  L13912  add_unit_leader_trait = trait_SOV_bukharinist
+  L13923  NOT = { has_trait = trait_SOV_bukharinist }
+  L16179  has_trait = trait_SOV_bukharinist
+  L16239  has_trait = trait_SOV_bukharinist
+  L17172  #Bukharin
+  L17175  has_character = SOV_nikolay_bukharin
+  L17176  SOV_nikolay_bukharin = {
+  L17180  SOV_nikolay_bukharin = {
+
+--- common\unit_leader\NSB_traits.txt  （1 处）
+  L221    trait_SOV_bukharinist = {
+
+--- events\AAT_Finland.txt  （2 处）
+  L4764   #Send event to the other side of the civil war - Actual original SOV (Trotskyist or Bukharinist)
+  L5048   #Send event to the other side of the civil war - Actual original SOV (Trotskyist or Bukharinist)
+
+--- events\NSB_Soviet.txt  （16 处）
+  L8417   has_character = SOV_nikolay_bukharin
+  L8420   SOV_promote_to_country_leader_bukharin = yes
+  L8448   NOT = { has_character = SOV_nikolay_bukharin }
+  L8463   any_unit_leader = { has_trait = trait_SOV_bukharinist }
+  L8468   has_trait = trait_SOV_bukharinist
+  L8581   has_character = SOV_nikolay_bukharin
+  L8592   SOV_promote_to_country_leader_bukharin = yes
+  L8636   NOT = { has_character = SOV_nikolay_bukharin }
+  L8659   any_unit_leader = { has_trait = trait_SOV_bukharinist }
+  L8664   has_trait = trait_SOV_bukharinist
+  L9642   NOT = { has_trait = trait_SOV_bukharinist }
+  L9655   NOT = { has_trait = trait_SOV_bukharinist }
+  L10203  # Bukharino - Only if Right opposition, but Bukharin has been killed
+  L10212  SOV = { NOT = { has_character = SOV_nikolay_bukharin } }
+  L10217  name = SOV_Bukharino
+  L10219  hidden_effect = { 217 = { set_state_name = SOV_Bukharino } }
+
+--- events\PoliticalEvents.txt  （1 处）
+  L2260   has_global_flag = SOV_soviet_civil_war # Stalin doesn't really want to reconciliate with Trotsky/Bukharin at this point
+
+--- history\countries\SOV - Soviet union.txt  （5 处）
+  L48     recruit_character = SOV_nikolay_bukharin
+  L287    SOV_nikolay_bukharin = {
+  L470    set_variable = { SOV_paranoia_photo_bukharin = 1 }
+  L934    set_variable = { SOV_paranoia_photo_bukharin = 10 }
+  L984    SOV_nikolay_bukharin = { SOV_purge_character_effect = yes }
+
+====================================================================================================
+### [R56] D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125
+====================================================================================================
+
+--- common\national_focus\soviet.txt  （25 处）
+  L9320   icon = GFX_focus_SOV_purge_bukharinists
+  L9355   #Bukharin
+  L9358   has_character = SOV_nikolay_bukharin
+  L9360   SOV_nikolay_bukharin = {
+  L10698  icon = GFX_focus_SOV_purge_bukharinists
+  L10722  SOV_nikolay_bukharin = { set_character_flag = SOV_potential_target_flag }
+  L10797  NOT = { has_trait = trait_SOV_bukharinist }
+  L10807  NOT = { has_trait = trait_SOV_bukharinist }
+  L10817  NOT = { has_trait = trait_SOV_bukharinist }
+  L10900  NOT = { has_trait = trait_SOV_bukharinist }
+  L10910  NOT = { has_trait = trait_SOV_bukharinist }
+  L11141  IF = { limit = { has_character = SOV_nikolay_bukharin } retire_character = SOV_nikolay_bukharin }
+  L11998  icon = GFX_focus_SOV_bukharinists
+  L12062  show_ideas_tooltip = SOV_nikolay_bukharin
+  L12659  SOV_nikolay_bukharin = { is_country_leader = yes }
+  L12667  limit = { has_character = SOV_nikolay_bukharin }
+  L12670  SOV_nikolay_bukharin = { is_country_leader = yes }
+  L12680  character = SOV_nikolay_bukharin
+  L13286  NOT = { has_trait = trait_SOV_bukharinist }
+  L13296  NOT = { has_trait = trait_SOV_bukharinist }
+  L13311  add_unit_leader_trait = trait_SOV_bukharinist
+  L13322  NOT = { has_trait = trait_SOV_bukharinist }
+  L13338  add_unit_leader_trait = trait_SOV_bukharinist
+  L13481  SOV_nikolay_bukharin = {
+        ...（还有 1 处未列）
+
+--- common\ideas\SOV.txt  （3 处）
+  L135    character = SOV_nikolay_bukharin
+  L298    character = SOV_nikolay_bukharin
+  L433    character = SOV_nikolay_bukharin
+
+--- common\characters\SOV.txt  （5 处）
+  L4880   SOV_nikolay_bukharin = {
+  L4881   name = SOV_nikolay_bukharin
+  L4884   large = "GFX_portrait_SOV_nikolay_bukharin"
+  L4887   small = "GFX_idea_SOV_nikolay_bukharin"
+  L4908   idea_token = SOV_nikolay_bukharin
+
+--- common\scripted_effects\SOV_scripted_effects.txt  （13 处）
+  L751    NOT = { has_character = SOV_nikolay_bukharin }
+  L752    check_variable = { SOV.SOV_paranoia_photo_bukharin = 10 compare = not_equals }
+  L754    set_variable = { SOV.SOV_paranoia_photo_bukharin = 10 }
+  L7152   name = "Bukharinist Workers' Militia"
+  L7164   name = "Bukharinist Peasant Militia"
+  L7187   division = "name = \"Workers' Miltia Brigade\" division_template = \"Bukharinist Workers' Militia\" start_experience_factor = 0.09 start_equipment_factor = 0.85" owner = ROOT
+  L7196   division = "name = \"Peasant Militia brigade\" division_template = \"Bukharinist Peasant Militia\" start_experience_factor = 0.01 start_equipment_factor = 0.55" owner = ROOT
+  L7207   division = "name = \"Peasant Militia brigade\" division_template = \"Bukharinist Peasant Militia\" start_experience_factor = 0.01 start_equipment_factor = 0.55" owner = ROOT
+  L7402   SOV_promote_to_country_leader_bukharin = {
+  L7404   character = "SOV_nikolay_bukharin"
+  L7412   SOV = { set_country_flag = SOV_bukharin_country_leader_flag }
+  L7904   has_trait = trait_SOV_bukharinist
+  L8036   uncomplete_national_focus = { # Remove all traces of Bukharin's
+
+--- common\decisions\SOV.txt  （19 处）
+  L2136   set_variable = { SOV.SOV_paranoia_photo_bukharin = 10 }
+  L14172  NOT = { has_trait = trait_SOV_bukharinist }
+  L14217  NOT = { has_trait = trait_SOV_bukharinist }
+  L14253  NOT = { has_trait = trait_SOV_bukharinist }
+  L14296  NOT = { has_trait = trait_SOV_bukharinist }
+  L14368  NOT = { has_trait = trait_SOV_bukharinist }
+  L14383  NOT = { has_trait = trait_SOV_bukharinist }
+  L14387  add_unit_leader_trait = trait_SOV_bukharinist
+  L14398  NOT = { has_trait = trait_SOV_bukharinist }
+  L14471  NOT = { has_trait = trait_SOV_bukharinist }
+  L14486  NOT = { has_trait = trait_SOV_bukharinist }
+  L14490  add_unit_leader_trait = trait_SOV_bukharinist
+  L14501  NOT = { has_trait = trait_SOV_bukharinist }
+  L16848  has_trait = trait_SOV_bukharinist
+  L16908  has_trait = trait_SOV_bukharinist
+  L17894  #Bukharin
+  L17897  has_character = SOV_nikolay_bukharin
+  L17898  SOV_nikolay_bukharin = {
+  L17902  SOV_nikolay_bukharin = {
+
+--- events\AAT_Finland.txt  （2 处）
+  L4782   #Send event to the other side of the civil war - Actual original SOV (Trotskyist or Bukharinist)
+  L5066   #Send event to the other side of the civil war - Actual original SOV (Trotskyist or Bukharinist)
+
+--- events\NSB_Soviet.txt  （16 处）
+  L8181   has_character = SOV_nikolay_bukharin
+  L8184   SOV_promote_to_country_leader_bukharin = yes
+  L8211   NOT = { has_character = SOV_nikolay_bukharin }
+  L8225   any_unit_leader = { has_trait = trait_SOV_bukharinist }
+  L8230   has_trait = trait_SOV_bukharinist
+  L8351   has_character = SOV_nikolay_bukharin
+  L8362   SOV_promote_to_country_leader_bukharin = yes
+  L8405   NOT = { has_character = SOV_nikolay_bukharin }
+  L8427   any_unit_leader = { has_trait = trait_SOV_bukharinist }
+  L8432   has_trait = trait_SOV_bukharinist
+  L9402   NOT = { has_trait = trait_SOV_bukharinist }
+  L9415   NOT = { has_trait = trait_SOV_bukharinist }
+  L9861   # Bukharino - Only if Right opposition, but Bukharin has been killed
+  L9870   SOV = { NOT = { has_character = SOV_nikolay_bukharin } }
+  L9875   name = SOV_Bukharino
+  L9877   hidden_effect = { 217 = { set_state_name = SOV_Bukharino } }
+
+--- events\r56_Germany.txt  （1 处）
+  L5878   character = SOV_nikolay_bukharin
+
+--- history\countries\SOV - Soviet union.txt  （3 处）
+  L110    recruit_character = SOV_nikolay_bukharin
+  L500    SOV_nikolay_bukharin = {
+  L698    set_variable = { SOV_paranoia_photo_bukharin = 1 }
+
+====================================================================================================
+### [我们] D:\Users\xuwei\PycharmProjects\heart_of_Iron\mod\heart_of_iron
+====================================================================================================
+
+--- common\national_focus\soviet.txt  （29 处）
+  L50     id = hof_ic_seat_nikolay_bukharin
+  L51     icon = GFX_hof_ic_seat_nikolay_bukharin
+  L59     NOT = { hof_ic_seated_nikolay_bukharin = yes }
+  L62     hof_ic_appoint_nikolay_bukharin = yes
+  L10001  icon = GFX_focus_SOV_purge_bukharinists
+  L10036  #Bukharin
+  L10039  has_character = SOV_nikolay_bukharin
+  L10041  SOV_nikolay_bukharin = {
+  L11379  icon = GFX_focus_SOV_purge_bukharinists
+  L11403  SOV_nikolay_bukharin = { set_character_flag = SOV_potential_target_flag }
+  L11478  NOT = { has_trait = trait_SOV_bukharinist }
+  L11488  NOT = { has_trait = trait_SOV_bukharinist }
+  L11498  NOT = { has_trait = trait_SOV_bukharinist }
+  L11581  NOT = { has_trait = trait_SOV_bukharinist }
+  L11591  NOT = { has_trait = trait_SOV_bukharinist }
+  L11822  IF = { limit = { has_character = SOV_nikolay_bukharin } retire_character = SOV_nikolay_bukharin }
+  L12679  icon = GFX_focus_SOV_bukharinists
+  L12743  show_ideas_tooltip = SOV_nikolay_bukharin
+  L13340  SOV_nikolay_bukharin = { is_country_leader = yes }
+  L13348  limit = { has_character = SOV_nikolay_bukharin }
+  L13351  SOV_nikolay_bukharin = { is_country_leader = yes }
+  L13361  character = SOV_nikolay_bukharin
+  L13967  NOT = { has_trait = trait_SOV_bukharinist }
+  L13977  NOT = { has_trait = trait_SOV_bukharinist }
+        ...（还有 5 处未列）
+
+--- common\ideas\hof_ic_ideas.txt  （1 处）
+  L72     hof_ic_idea_nikolay_bukharin = {
+
+--- common\scripted_effects\hof_ic_scripted_effects.txt  （21 处）
+  L34     add_ideas = hof_ic_idea_nikolay_bukharin
+  L82     limit = { has_idea = hof_ic_idea_nikolay_bukharin }
+  L83     remove_ideas = hof_ic_idea_nikolay_bukharin
+  L147    limit = { has_idea = hof_ic_idea_nikolay_bukharin }
+  L148    remove_ideas = hof_ic_idea_nikolay_bukharin
+  L212    limit = { has_idea = hof_ic_idea_nikolay_bukharin }
+  L213    remove_ideas = hof_ic_idea_nikolay_bukharin
+  L277    limit = { has_idea = hof_ic_idea_nikolay_bukharin }
+  L278    remove_ideas = hof_ic_idea_nikolay_bukharin
+  L342    limit = { has_idea = hof_ic_idea_nikolay_bukharin }
+  L343    remove_ideas = hof_ic_idea_nikolay_bukharin
+  L407    limit = { has_idea = hof_ic_idea_nikolay_bukharin }
+  L408    remove_ideas = hof_ic_idea_nikolay_bukharin
+  L472    limit = { has_idea = hof_ic_idea_nikolay_bukharin }
+  L473    remove_ideas = hof_ic_idea_nikolay_bukharin
+  L624    hof_ic_appoint_nikolay_bukharin = {
+  L974    hof_ic_idea_nikolay_bukharin_sync_rank = {
+  L978    limit = { has_idea = hof_ic_idea_nikolay_bukharin }
+  L979    remove_ideas = hof_ic_idea_nikolay_bukharin
+  L984    limit = { hof_ic_seated_nikolay_bukharin = yes }
+  L986    add_ideas = hof_ic_idea_nikolay_bukharin
+
+--- common\scripted_triggers\hof_ic_scripted_triggers.txt  （1 处）
+  L61     hof_ic_seated_nikolay_bukharin = {
+
+--- common\scripted_localisation\hof_ic_scripted_loc.txt  （15 处）
+  L20     localization_key = hof_ic_name_nikolay_bukharin
+  L63     localization_key = hof_ic_trait_nikolay_bukharin
+  L106    localization_key = hof_ic_name_nikolay_bukharin
+  L149    localization_key = hof_ic_trait_nikolay_bukharin
+  L192    localization_key = hof_ic_name_nikolay_bukharin
+  L235    localization_key = hof_ic_trait_nikolay_bukharin
+  L278    localization_key = hof_ic_name_nikolay_bukharin
+  L321    localization_key = hof_ic_trait_nikolay_bukharin
+  L364    localization_key = hof_ic_name_nikolay_bukharin
+  L407    localization_key = hof_ic_trait_nikolay_bukharin
+  L450    localization_key = hof_ic_name_nikolay_bukharin
+  L493    localization_key = hof_ic_trait_nikolay_bukharin
+  L536    localization_key = hof_ic_name_nikolay_bukharin
+  L579    localization_key = hof_ic_trait_nikolay_bukharin
+  L625    localization_key = hof_ic_name_nikolay_bukharin
+
+====================================================================================================
+### 汇总
+====================================================================================================
+总命中 250 处
+
+与这个人物相关的**国策 id** (0 个)：
+
+**idea id** (1 个)：
+  hof_ic_idea_nikolay_bukharin
+
+**角色 id** (1 个)：
+  SOV_nikolay_bukharin

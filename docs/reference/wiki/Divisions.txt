@@ -1,0 +1,875 @@
+﻿Division - Hearts of Iron 4 Wiki
+15 captures
+15 Oct 2018 - 18 Nov 2025
+Feb
+MAR
+Apr
+13
+2023
+2024
+2025
+success
+fail
+About this capture
+COLLECTED BY
+Collection:
+Save Page Now Outlinks
+TIMESTAMPS
+The Wayback Machine - https://web.archive.org/web/20240313174635/https://hoi4.paradoxwikis.com/Divisions
+Forum list
+Trending
+Latest
+New posts
+Paradox
+Store
+Mods
+Forum
+Launcher
+PDXCON
+2019
+Paradox Wikis
+Hearts of Iron 4 Wiki
+Active Wikis
+Age of Wonders 4
+Empire of Sin
+Cities: Skylines 2
+Crusader Kings 3
+Europa Universalis 4
+Hearts of Iron 4
+Hunter: The Reckoning
+Imperator: Rome
+Prison Architect
+Stellaris
+Surviving Mars
+Surviving the Aftermath
+Vampire: The Masquerade
+Victoria 3
+Legacy Wikis
+AoW: Planetfall
+Cities: Skylines
+Crusader Kings 2
+Arsenal of Democracy
+Europa Universalis 2
+Europa Universalis 3
+Europa Universalis: Rome
+Hearts of Iron 2
+Hearts of Iron 3
+Tyranny
+Victoria 1
+Victoria 2
+Search
+Personal tools
+Log in
+Personal tools
+English
+Not logged in
+Talk
+Contributions
+Log in
+Navigation menu
+Namespaces
+Page
+Discussion
+English
+Views
+Read
+Edit
+Edit source
+View history
+More
+Navigation
+HoI4 Wiki Main Page
+Recent changes
+Random page
+Style guidelines
+Wiki support
+Paradox links
+- Wikis
+- Forums
+- Mods
+- Store
+- YouTube
+Tools
+What links here
+Related changes
+Special pages
+Printable version
+Permanent link
+Page information
+braze
+In other languages
+Deutsch
+Espa帽ol
+Fran莽ais
+Polski
+Portugu锚s
+袪褍褋褋泻懈泄
+Division
+From Hearts of Iron 4 Wiki
+(Redirected from
+Divisions
+)
+Jump to navigation
+Jump to search
+This is a community maintained wiki. If you spot a mistake, please help with fixing it.
+Hearts of Iron IV
+Land warfare
+Command group
+Division
+Land units
+Tank designer
+Battle plan
+Land battle
+Infantry technology
+Support technology
+Armor technology
+Artillery technology
+Land doctrine
+Special forces doctrine
+See also:
+Land units
+The
+division
+is the primary
+unit
+depicted on the map during gameplay.  Divisions operate inside of a
+province
+, may be transported via
+naval invasion
+, and may participate in
+land combat
+.
+Contents
+1
+Division template
+1.1
+Combat Battalions
+1.2
+Support Companies
+1.3
+Army experience costs
+1.4
+Armored Templates
+1.4.1
+Hardness
+1.5
+Sizing
+2
+Division unit type
+3
+Division Examples
+4
+Strategy
+4.1
+Stat optimizations
+4.1.1
+Understrength stats
+4.1.2
+Organization & recovery
+4.1.3
+Maximum speed
+4.1.4
+Suppression
+4.1.5
+Reliability
+4.1.6
+Soft attack
+4.1.7
+Hard attack
+4.1.8
+Air attack
+4.1.9
+Breakthrough
+4.1.10
+Defense
+4.1.11
+Armor
+4.1.12
+Piercing
+4.1.13
+Hardness rating
+4.1.14
+Forts
+4.1.15
+Amphibious assault
+4.1.16
+Rivers
+4.1.17
+Hill & mountain assault
+4.2
+External guides
+Division template
+[
+edit
+|
+edit source
+]
+This is a community maintained wiki. If you spot a mistake, please help with fixing it.
+The composition of each division is specified by its division template. Each country starts with one or more division templates that may be used to order recruiting and deployment of new land units. Division templates may be created and modified by spending
+army experience
+. New templates may be created by either using the Duplicate button to make a duplicate of a template, giving it a name different from existing templates, and then making modifications to a template as described below, or by selecting the name and pressing "Create Empty". Certain technologies that unlock new battalion types, such as mountaineers, also create basic templates for them. Land experience is not charged until the changes are saved using the Save button on which the total cost is also shown, so players can experiment and analyze the results of changes before making a decision.
+When a template is changed, all divisions that are based on that template immediately place orders for additional needed manpower and equipment and return any manpower or equipment that is now surplus to the national stockpile. It is wise to have any needed manpower and equipment ready in the national stockpile before changing the template of a division that may be expected to face combat in the near future. It may be prudent to upgrade units one at a time.
+Divisions can not be divided into smaller game units, but with
+Waking the Tiger
+, it is possible to merge understrength divisions of the same template in the Army window using the
+Consolidation
+button if the selected divisions are independent of any army command. Such consolidation can be extremely useful for a country low on manpower or equipment that needs to field adequately sized divisions.
+The template a division uses can be changed at any time by selecting the unit helmet, tank or other unit symbol icon in the Unit Details screen when that division's template is open and choosing any of the templates available there.
+Each division consists of up to
+five combat regiments
+and
+five support companies
+. In turn, each combat regiment is composed of up to five battalions. It costs 5 XP to add a battalion to a division; regardless if it is the same or new regiment. Adding a battalion of a different unit type (infantry, mobile, or armored) adds a penalty of 20 XP per additional unit type.
+Division
+Regiment
+Regiment
+Regiment
+Regiment
+Regiment
+Company
+Battalion
+Battalion
+Battalion
+Battalion
+Battalion
+Company
+Battalion
+Battalion
+Battalion
+Battalion
+Battalion
+Company
+Battalion
+Battalion
+Battalion
+Battalion
+Battalion
+Company
+Battalion
+Battalion
+Battalion
+Battalion
+Battalion
+Company
+Battalion
+Battalion
+Battalion
+Battalion
+Battalion
+A division may have any number of the same unit type for battalions, but only one of each unit type for support companies.
+A division template may be specified as reserve, regular, or elite. Elite divisions will be prioritized for better equipment, followed by regular divisions and finally reserves.
+Each division template can receive specific types of equipment if multiple types are available. An example would be elite divisions only using the latest weapons and reserve divisions using the oldest.
+Combat Battalions
+[
+edit
+|
+edit source
+]
+Each combat regiment in a division consists entirely of a mix of battalions within a single battalion type. The three battalion types are:
+Infantry battalions
+: Infantry, special forces, line (towed) artillery/anti-air/anti-tank
+Mobile battalions
+: Cavalry, motorized infantry, mechanized infantry, motorized rocket artillery, motorized artillery/anti-air/anti-tank, armored cars
+Armored battalion
+: Tanks, tank destroyers, self-propelled artillery/anti-air, amphibious tanks
+Increasing the number of battalions in a division modifies the stats of the division: for example new combat battalions increase the HP and combat width of the division, and typically increase  at least the different attack and defense statistics. Note that the division's organization is the average of the organization of the included battalions, thus it is possible that the division's (average) organization actually drops when adding new battalions. See
+§ Sizing
+for more discussion on this.
+For the armor, piercing and hardness stats there is a different calculation:
+Armor:
+40% * (Highest Armor of a Battalion) + 60% * (Average Armor for All Battalions and Companies) = Armor of the Division
+Example:
+If there are 3 Batallions, 2 Infantry (1936), and 1 Light Tank (1934), then the calculation would look like this:
+40% * [Highest Armor] + 60% * [Average]
+= 40% * [10.0] + 60% * [(0 + 0 + 10) / 3)]
+= 4 + 2
+= 6
+Piercing:
+40% * (Highest Piercing of a Battalion or Support Company) + 60% * (Average Piercing for All Battalions and Companies) = Piercing of the Division
+Hardness:
+Average of Hardness of Line Battalions = Hardness of the Division
+Example:
+If there are 4 Batallions, 2 Infantry (1936) and 2 Light Tanks (1934), then the calculations would look like this:
+Average of Hardness of Line Battalions = Hardness of the Division
+(80 + 80 + 0 + 0) / 4
+160 / 4
+= 40
+Combat battalion composition determines how
+military high command bonuses
+or
+commander traits
+applies to this division. Their bonuses are modified by the target battalion count in the total combat battalions.
+Support Companies
+[
+edit
+|
+edit source
+]
+Main article:
+Support Companies technology
+A division may have up to five different support companies. These are referred to in doctrines and elsewhere in the game as 'integrated support', distinguished from 'dispersed support' which is an Artillery, Anti-Air or Anti-Tank type regiment included in a combat regiment column.  Support company options are:
+Support Artillery
+: Gives a smaller bonus to soft attack than a line regiment's artillery battalion because it has fewer guns. It does not slow the division鈥?or affect paradrops.
+Support Anti-Air
+: Gives a smaller bonus to air attack than a line regiment's anti-air battalion because it has fewer guns. It does not slow the division鈥?or affect paradrops.
+Support Anti-Tank
+: Gives a smaller bonus to hard attack and piercing than a line regiment's anti-tank battalion because it has fewer guns. It does not slow the division鈥?or affect paradrops.
+Support Rocket Artillery
+: Similar to regular support artillery but it also gives a bonus to the division's breakthrough stat, used to avoid enemy attacks when attacking.
+Engineer Company
+: Increases the Entrenchment stat of the division and helps in attacking forts and river crossings.
+Cavalry Recon Company
+: Increases speed in difficult terrain and the division's Reconnaissance stat, making it easier to counter enemy combat tactics in battle.
+Motorized Recon Company
+: Increases speed in difficult terrain and the division's Reconnaissance stat, making it easier to counter enemy combat tactics in battle.
+Armored Car Recon Company
+: Increases speed in difficult terrain and the division's Reconnaissance stat, making it easier to counter enemy combat tactics in battle.
+Light Tank Recon Company
+: Increases speed in difficult terrain and the division's Reconnaissance stat, making it easier to counter enemy combat tactics in battle.
+Military Police
+: Gives a bonus to the Suppression stat of its division's line battalions, helping to reduce the effects of partisans. Military Police with 2-6 minimally equipped and trained Cavalry battalions makes an efficient and effective rear-area security division.
+Maintenance Company
+: Adds an equipment reliability bonus to the division, reducing equipment losses from training and combat. Advised for combat units using expensive equipment (like tanks).
+Field Hospital
+: Increases Trickleback stat (returns percentage of lost manpower to the pool) and reduces experience loss from taking casualties. Advised for front-line combat divisions.
+Logistics Company
+: Reduces the supply usage of the entire division. This is valuable in areas of low supply and for avoiding the need to disperse for supply reasons.
+Signal Company
+: Increases the Initiative stat of the division, speeding up planning and increasing the chance of reinforcement in battle from reserves.
+鈥?Note that support companies do not affect a division's speed and do not affect combat width as they are forces that remain behind the fighting front while the "front line" combat battalions engage. Therefore a towed antitank support company does not affect the 12 kph speed of a fast division but adding a towed antitank combat battalion to the regiment lines would slow that same division to the towed anti-tank's base speed of 4 KPH. So support Artillery, Anti-Air or Anti-Tank support units can add valuable capabilities to fast divisions.
+An infantry division marching at 4 kph is well-matched by combat battalions marching at 4 kph as well. Additional bonuses and effects of adding a support company to overall division stats can be seen in the tooltip in the division designer. Even though these companies may historically have been much larger than company size, they are referred  to as support companies to distinguish them from the battalions in line regiments.
+Army experience costs
+[
+edit
+|
+edit source
+]
+Modifying a division template may cost army experience.
+Action
+XP cost
+Notes
+Duplicate a template
+0
+Change a template's equipment
+0
+Change a template's name or icon
+0
+Change a template's priority
+0
+Add a combat regiment of an existing type
+5
+Includes one battalion.
+Add a combat regiment of a new type
+25
+Includes one battalion.
+Add/swap out a combat battalion
+5
+Remove a battalion
+5
+This can remove the last battalion in a regiment, removing the regiment.
+Change a combat battalion type to an existing type
+5 per battalion
+The existing battalions may be moved between regiments of the same type, or to new regiments, at no additional cost.
+Change a combat regiment type to a new type
+25 + 5 per battalion
+When changing the first (uppermost) battalion in a regiment, you first select the type. If a different type is selected, all of that regiment's battalions are changed to that battalion type.
+Add/swap out a support company
+10
+Remove a support company
+10
+Armored Templates
+[
+edit
+|
+edit source
+]
+Some countries already have some tank equipment researched in 1936, and these get an armored template at the start of the game. This is usually a historic template that matches the order of battle of one or more of their starting divisions. For example, Italy ("Divisione Celere" template) and the Soviet Union ("Mekhanizirovaniy Korpus" template) are both in this situation.  These templates allow you to create new armored divisions with light tanks. If you have any army experience, then you can change the historic template.
+A few countries have some tank equipment already researched when the game starts, but don't actually start with any historical armoured divisions.  For example, Commonwealth countries like Canada who get tank equipment researched in 1936 (shared with them by UK), though they have no armored divisions then. These countries get an armoured template at the start of the game (called "Armored-Division"), so they can create armored divisions later.
+All other countries get a free template (called "Armored-Division") when they research their first tank equipment.
+The free "Armored-Division" template, and those templates which some countries start with, are always light tank templates. To modify these, or modify a duplicate, for use with medium or heavy tanks costs some army experience. As soon as you complete the research, the Division Designer will allow you to replace the light tank battalions with medium or heavy. This costs 5 XP for each battalion.
+Hardness
+[
+edit
+|
+edit source
+]
+The Division Designer has a bar just below the stats, which shows the hardness of the divisions created with the template.
+Hardness represents how much of your division is made up of armored or at least protected vehicles. The free "Armored-Division" template has only 35% hardness, even though it has two light tank and two cavalry battalions. You can increase the hardness by adding more tank battalions, or replacing light with medium, or medium with heavy, or by replacing "soft" battalions (infantry or cavalry) with motorized or mechanized battalions.
+For example, replacing the two light tank battalions in the default "Armored-Division" template with medium tanks, and the two cavalry with mechanized, changes the hardness from 35% to 70%. Divisions with high hardness will suffer few hits in combat from divisions with low hard attack values 鈥?such as infantry with 1936 equipment and no anti-tank equipment.
+Sizing
+[
+edit
+|
+edit source
+]
+The
+values of land units
+combine in different ways in divisions, and these values have special implications for deciding whether one should "scale up" a division template, e.g. doubling up the battlions to go from a 20
+combat width
+to a whopping 40. Any modifications must be view in the context of the current
+land warfare damage system
+.
+As mentioned previously, soft/hard attack and defense/breakthrough are additive; doubling the width of the template doubles these values. In the current system, only 10% of the attacks are considered for damage if they are covered by the other unit's defense, but 40% is considered when the attack points have exhausted the defense points. In other words, an attack point not held back by the enemy's defense is four times as good as an attack point that is held back. Although units do drain the enemy units' defense together, having a larger division in this case still allows you to more effectively drain the enemy units' defense, compared to having two smaller divisions of the same smaller size, by removing a random element and allowing the draining to be concentrated.
+On the other hand, doubling the division size does not make the divisions two times more resistant to actual damage, since the organization does not scale up. Damage is two times more frequently dealt to organization instead of HP (which is additive), and defense is often easy to stack up for land units anyways. Having small divisions is additionally more versatile due to the sheer number of divisions, allowing one to run encirclements and cover up extending lines when needed; however this also takes up commanding official capabilities. Small divisions also allow more support weaponry companies to be used, many of which are more economical in their stats contribution per equipment than line companies; on the other hand, they increase the cost of non-weapon support companies, since more of them are needed to achieve the same percentage bonus.
+Thus, as a general rule, 20-width divisions are better at defense, and 40-width are better at attack. Composition will make or break this, of course, but having a breakthrough army of large divisions and several of standard-size for holding the actual line is a solid general rule.
+Division unit type
+[
+edit
+|
+edit source
+]
+This is a community maintained wiki. If you spot a mistake, please help with fixing it.
+The overall division unit type is indicated by its default division icon. Battalions all have one or more tags that indicate their type.  The division type is determined by multiplying an internal "priority" weight by the number of battalions of each type, and taking the type with the highest score as the exemplar unit that defines the division type. If there are multiple unit types with the same weighted priority, the first (top, left) unit in the template is used to determine the exemplar type.
+In the game files, unit type priority weights are found in the unit definition files in the ...\common\units\ directory.  Those values are reproduced here for reference.
+Unit
+Priority
+Types
+Anti-Air
+301
+Infantry
+Anti-Air
+Anti-Tank
+1197
+Infantry
+Anti-Tank
+Amphibious Mechanized
+610
+Mechanized
+Amphibious Tank
+2501
+Armor
+Armored Car
+501
+Motorized
+Artillery
+1198
+Infantry
+Artillery
+Cavalry
+599
+Infantry
+Cavalry
+Engineer Company
+0
+Infantry
+Support
+Field Hospital
+0
+Infantry
+Support
+Heavy SP Anti-Air
+301
+Armor
+Anti-Air
+Heavy SP Artillery
+1797
+Armor
+Artillery
+Heavy Tank
+2503
+Armor
+Heavy Tank Destroyer
+1797
+Armor
+Anti-Tank
+Infantry
+600
+Infantry
+Light SP Anti-Air
+301
+Armor
+Anti-Air
+Light SP Artillery
+1795
+Armor
+Artillery
+Light Tank
+2501
+Armor
+Light Tank Destroyer
+1795
+Armor
+Anti-Tank
+Logistics Company
+0
+Infantry
+Support
+Maintenance Company
+0
+Infantry
+Support
+Marines
+601
+Infantry
+Special Forces
+Mechanized Infantry
+610
+Mechanized
+Medium SP Anti-Air
+301
+Armor
+anti-Air
+Medium SP Artillery
+1796
+Armor
+Artillery
+Medium Tank
+2502
+Armor
+Medium Tank Destroyer
+1796
+Armor
+Anti-Tank
+Military Police
+0
+Infantry
+Support
+Modern SP Anti-Air
+301
+Armor
+Anti-Air
+Modern SP Artillery
+1796
+Armor
+Artillery
+Modern Tank
+2510
+Armor
+Modern Tank Destroyer
+1796
+Armor
+Anti-Tank
+Motorized Anti-Air
+301
+Motorized
+Anti-Air
+Motorized Anti-Tank
+1197
+Motorized
+Anti-Tank
+Motorized Artillery
+1198
+Motorized
+Artillery
+Motorized Infantry
+599
+Motorized
+Motorized Rocket Artillery
+1199
+Artillery
+Motorized
+Rocket
+Mountaineers
+601
+Infantry
+Special Forces
+Paratroopers
+2
+Infantry
+Special Forces
+Recon Company
+0
+Infantry
+Support
+Rocket Artillery
+1199
+Infantry
+Artillery
+Signal Company
+0
+Infantry
+Support
+Super Heavy SP Anti-Air
+301
+Armor
+Anti-Air
+Super Heavy SP Artillery
+1798
+Armor
+Artillery
+Super Heavy Tank Destroyer
+1798
+Armor
+Anti-Tank
+Super-Heavy Tank
+2520
+Armor
+Support Anti-Air
+0
+Infantry
+Support
+Support Anti-Tank
+0
+Infantry
+Support
+Support Artillery
+0
+Infantry
+Support
+Support Rocket Artillery
+0
+Infantry
+Support
+Truck-drawn Rocket Artillery
+1199
+Motorized
+Artillery
+Division Examples
+[
+edit
+|
+edit source
+]
+Historical Divisions
+from 1939-1941
+Strategy
+[
+edit
+|
+edit source
+]
+The below is
+one of many
+player suggested strategies for
+Division
+. Bear in mind, due to the dynamic nature of the game, it may unfold differently for other players.
+Stat optimizations
+[
+edit
+|
+edit source
+]
+Often it is necessary to optimize a Division for a certain, likely battlefield or role. Doing so requires the mixing of the right Battalions and Companies.
+Understrength stats
+[
+edit
+|
+edit source
+]
+When a division is understrength its stats are reduced in the principle of how many troops are present to operate how much available equipment. When out of combat the overall "Current Fighting Strength" ratio is determined by taking the minimum of the manpower ratio and the cost-weighted equipment ratio. The stats of the division are the stats of all its battalions and companies combined in ways described above, which are calculated differently from the overall strength ratio. For each battalion (company) the equipment stats are scaled by the lower one of the manpower ratio and the unweighted equipment ratio for each type of equipment the battalion uses, and the subunit stats (including terrain modifiers but excluding organization, recovery rate, and combat width) are scaled by the manpower ratio only, unless the battalion (company) uses "essential" equipment, in which case all the stats are further scaled by the cost-weighted ratio of the respective essential equipment. All the equipment of all support companies and the mechanized battalion is essential, except that infantry equipment is not essential to the engineers company.
+Organization & recovery
+[
+edit
+|
+edit source
+]
+This is perhaps the single most important stat. And there are two groups of battalions that are good at it: foot infantry and all mobile infantry.
+Tanks, artillery and support companies are the parts that are lacking, sometimes severely so. So you need to bring just enough manpower into the mix, to have an effective fighting force. However, note that a lot of doctrines actually offset those penalties for some specific elements, allowing you to use them much more freely.
+Maximum speed
+[
+edit
+|
+edit source
+]
+If you want anything more than the 4 km/h of an Infantry Batallion, you have to limit yourself to a combination of Tank and Mobile Battalions that suits your needs. Even just a pure mobile infantry. Artillery has to be limited to support companies, and/or provided by motorized/tank variants.
+Suppression
+[
+edit
+|
+edit source
+]
+Most infantry provides 1 to 1.5, while tanks provide 2.5 and artillery/Anti-Tanks provide 0.
+However, the cavalry and bicycle infantry provides 2 which can be buffed further with a Military Police Support Company. Yes, there is actually something Cavalry is good at - playing police! Do mind that they cost more supply and equipment, however. Considering that losses due to resistance are calculated by manpower factored vs (1-hardness), soft units like infantry and cavalry employed see a nation suffer higher casualties compared to light tanks or armoured cars.
+Reliability
+[
+edit
+|
+edit source
+]
+This is the average of all equipment. For a lot of cheap equipment (Infantry Gear, Support Gear, Motorized) the 80% default is enough. However mechanized and tank divisions can benefit a lot from it, as they have the most expensive equipment.
+Aside from investing XP into the reliability, the Maintenance company helps.
+Soft attack
+[
+edit
+|
+edit source
+]
+Infantry already provides plenty of soft attack/width. 1 Artillery easily provides 3 Infantry Battalions worth of Soft attack for half their width. Even light tanks and Mechanized lean more towards the Hard Attack side.
+Hard attack
+[
+edit
+|
+edit source
+]
+While everything - even the Infantry equipment - has some Hard attack, usually the soft/hard ratio is in favor of killing infantry.
+Tanks shift the balance more onto the side of hard, the heavier the better. Anything with Piercing will also do good Hard Attack. AA can also be somewhat effective at dealing hard attack, being half the damage of a AT Gun.
+Air might also be an option.
+Air attack
+[
+edit
+|
+edit source
+]
+Obviously AA is good at this. It seems unlikely that Armor, Hardness, Defense or Breakthrough has any effect.
+Breakthrough
+[
+edit
+|
+edit source
+]
+Simply put, tanks are the best at this stat. Heavier is generally better, but the Modern beats the superheavy. Artillery also provides a decent bit, but of course mechanized Infantry the most aside from tanks.
+Defense
+[
+edit
+|
+edit source
+]
+Infantry is the top thing here. The need for mobility limits the buffs from support weapons passive research.
+Mechanized Infantry actually adds it's defense to the equipment derived one, easily beating 80 per Battalion.
+As history has shown, tanks are not good defensive battalions (unless you can get an armor advantage).
+Armor
+[
+edit
+|
+edit source
+]
+If your armor can exceed the enemy's piercing, then relevant combat bonuses await. 40% of the armor value is determined by the single highest armor battalion, so throw in a single very high armor battalion for that. The rest depends on the average values; try going for high-level mechanized Infantry to provide a high "baseline".
+Piercing
+[
+edit
+|
+edit source
+]
+If the enemy fields heavy armor, then you need heavy piercing. Piercing works like Armor in that the highest value matters (40%), so always try to throw in one battalion of something powerful.
+AT guns provide the best piercing, up until the T2 Heavy Tank becomes available (1941). The T2 heavy tank actually has better AP then contemporary AT guns, especially on the Tank Destroyer (tank hunter) variant. Still, as you can field 2 AT guns per 2 width, that might still be enough to increase the average to what you need.
+The other 60% is provided by the weighted average of all battalions, and will mostly come from Infantry equipment (either Infantry gear or Mechanized). Do get the passive "Infantry Anti-Tank" upgrades, as they apply to both and can double the piercing values.
+Do be careful of mixing any AT gun companies with line battalions of either AT guns or tanks.  This is because AT companies have lower piercing which will lower the overall average division piercing and Organization.
+Hardness rating
+[
+edit
+|
+edit source
+]
+This is entirely based on how mechanized the army is. If you want a high value, then mix heavy tanks with higher mechanized infantry.
+Forts
+[
+edit
+|
+edit source
+]
+The Heavy Tank, Engineer Company and all Artillery except AA provides some bonuses. Super heavy tanks and to a lesser extent super heavy tank destroyers have by far the highest bonus. However, this uniquely has no penalties (as those are already rolled into the fortification mechanic itself).
+Amphibious assault
+[
+edit
+|
+edit source
+]
+Or "how to win D-Day".
+As their name implies, amphibious tanks and Marines are best for the job,with the amphibious tanks being better, followed by baseline infantry. All artillery Battalions suffer penalties as do Tanks based on heaviness. The engineer Company provides a huge bonus.
+You will be dependent on Support companies for many strategic needs.
+Rivers
+[
+edit
+|
+edit source
+]
+Every River is a little Amphibious assault. Units suffer half the penalty of Amphibious Assaults, but it is applied to movement as well. The only additional exception here is the Cavalry which actually performs worse than baseline infantry. Still, if an overrun is wanted, then it might be worth it.
+Hill & mountain assault
+[
+edit
+|
+edit source
+]
+The first choice of course are Mountaineers. Of the tanks, the lighter ones have a lower penalty. Mobile Battalions of all kinds also perform with lower penalties. All Infantry battalions only suffer movement penalties at worst.
+External guides
+[
+edit
+|
+edit source
+]
+Beginner's Guide to Unit Types & Division Design
+"Why 40 Width Divisions Are Better Than 20 Width"
+- A discussion on sizing.
+Warfare
+Land warfare
+Command group
+鈥?
+Division
+鈥?
+Land units
+鈥?
+Tank designer
+鈥?
+Battle plan
+鈥?
+Land battle
+鈥?
+Infantry technology
+鈥?
+Support technology
+鈥?
+Armor technology
+鈥?
+Artillery technology
+鈥?
+Land doctrine
+鈥?
+Special forces doctrine
+Naval warfare
+Navy
+鈥?
+Ship
+鈥?
+Ship designer
+鈥?
+Naval missions
+鈥?
+Naval battle
+鈥?
+Naval technology
+鈥?
+Naval support technology
+鈥?
+Naval doctrine
+Air warfare
+Aircraft designer
+鈥?
+Air missions
+鈥?
+Air combat
+鈥?
+Air technology
+鈥?
+Air doctrine
+Retrieved from "
+"
+Categories
+:
+1.9
+Military
+Hidden category:
+Articles with potentially outdated sections
+This page was last edited on 19 August 2023, at 13:25.
+Content is available under
+Attribution-ShareAlike 3.0
+unless otherwise noted.
+About Hearts of Iron 4 Wiki
+Mobile view
+Games
+Discover
+Our Brands
+Browse
+Play
+on Paradox technology
+Community
+Paradox Forums
+Paradox
+Wikis
+Support
+About
+News
+About us
+Careers
+Join our playtests
+Media contact
+Social Media
+Legal
+Information
+EU Online Dispute Resolution
+Terms & Policies
+Legal Information
+EU Online Dispute Resolution
+Frequently Asked
+Questions
+Paradox
+Interactive corporate website

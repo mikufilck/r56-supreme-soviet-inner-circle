@@ -1,0 +1,1829 @@
+﻿######## [R56] D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125\common\scripted_localisation
+######## [原版] F:\Hearts of Iron IV\common\scripted_localisation
+  common\scripted_localisation\WUW_GER_scripted_loc.txt  L963
+  ---- 定义块 L962..L1012
+      defined_text = {
+      	name = GetAscendedAdvisorName1
+      	text = { #NO ONE
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 0 }	
+      		}
+      		localization_key = empty_key
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 1 }
+      		}
+      		localization_key = GER_fritz_todt
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 2 }
+      		}
+      		localization_key = GER_albert_speer
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 3 }
+      		}
+      		localization_key = GER_hermann_goring
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 4 }
+      		}
+      		localization_key = GER_heinrich_himmler
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 5 }
+      		}
+      		localization_key = GER_joseph_goebbels
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 6 }
+      		}
+      		localization_key = GER_rudolf_hess
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 7 }
+      		}
+      		localization_key = GER_martin_bormann
+      	}
+      }
+
+  common\scripted_localisation\WUW_GER_scripted_loc.txt  L1015
+  ---- 定义块 L1014..L1064
+      defined_text = {
+      	name = GetAscendedAdvisorName2
+      	text = { #NO ONE
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 0 }	
+      		}
+      		localization_key = empty_key
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 1 }
+      		}
+      		localization_key = GER_fritz_todt
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 2 }
+      		}
+      		localization_key = GER_albert_speer
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 3 }
+      		}
+      		localization_key = GER_hermann_goring
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 4 }
+      		}
+      		localization_key = GER_heinrich_himmler
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 5 }
+      		}
+      		localization_key = GER_joseph_goebbels
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 6 }
+      		}
+      		localization_key = GER_rudolf_hess
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 7 }
+      		}
+      		localization_key = GER_martin_bormann
+      	}
+      }
+
+  common\scripted_localisation\WUW_GER_scripted_loc.txt  L1067
+  ---- 定义块 L1066..L1116
+      defined_text = {
+      	name = GetAscendedAdvisorName3
+      	text = { #NO ONE
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 0 }	
+      		}
+      		localization_key = empty_key
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 1 }
+      		}
+      		localization_key = GER_fritz_todt
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 2 }
+      		}
+      		localization_key = GER_albert_speer
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 3 }
+      		}
+      		localization_key = GER_hermann_goring
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 4 }
+      		}
+      		localization_key = GER_heinrich_himmler
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 5 }
+      		}
+      		localization_key = GER_joseph_goebbels
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 6 }
+      		}
+      		localization_key = GER_rudolf_hess
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 7 }
+      		}
+      		localization_key = GER_martin_bormann
+      	}
+      }
+
+  common\scripted_localisation\WUW_GER_scripted_loc.txt  L1119
+  ---- 定义块 L1118..L1294
+      defined_text = {
+      	name = GetAscendedAdvisorTrait1
+      	text = { #NO ONE
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 0 }	
+      		}
+      		localization_key = empty_key
+      	}
+      
+      	# TODT
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 1 }
+      			has_idea = GER_todt_reich_minister_of_armaments
+      		}
+      		localization_key = idea_desc|GER_todt_reich_minister_of_armaments
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 1 }
+      			has_idea = GER_todt_reich_engineer
+      		}
+      		localization_key = idea_desc|GER_todt_reich_engineer
+      	}
+      
+      	# SPEER
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 2 }
+      			has_idea = GER_speer_reich_minister_of_armaments
+      		}
+      		localization_key = idea_desc|GER_speer_reich_minister_of_armaments
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 2 }
+      			has_idea = GER_speer_reich_architect
+      		}
+      		localization_key = idea_desc|GER_speer_reich_architect
+      	}
+      
+      	#G?RING
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 3 }
+      			has_idea = GER_goring_four_year_plan_plenipotentiary
+      		}
+      		localization_key = idea_desc|GER_goring_four_year_plan_plenipotentiary
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 3 }
+      			has_idea = GER_goring_overseer_four_year_plan
+      		}
+      		localization_key = idea_desc|GER_goring_overseer_four_year_plan
+      	}
+      
+      	#HIMMLER
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 4 }
+      			has_idea = GER_himmler_reichsfuhrer_ss
+      		}
+      		localization_key = idea_desc|GER_himmler_reichsfuhrer_ss
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 4 }
+      			has_idea = GER_himmler_director_reich_security
+      		}
+      		localization_key = idea_desc|GER_himmler_director_reich_security
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 4 }
+      			has_idea = GER_himmler_chief_of_german_police
+      		}
+      		localization_key = idea_desc|GER_himmler_chief_of_german_police
+      	}
+      
+      	#GOEBBELS
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 5 }
+      			has_idea = GER_goebbels_reich_minister_of_propaganda_master
+      		}
+      		localization_key = idea_desc|GER_goebbels_reich_minister_of_propaganda_master
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 5 }
+      			has_idea = GER_goebbels_reich_minister_of_propaganda_master_no_lar
+      		}
+      		localization_key = idea_desc|GER_goebbels_reich_minister_of_propaganda_master_no_lar
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 5 }
+      			has_idea = GER_goebbels_reich_minister_of_propaganda_film
+      		}
+      		localization_key = idea_desc|GER_goebbels_reich_minister_of_propaganda_film
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 5 }
+      			has_idea = GER_goebbels_reich_minister_of_propaganda_ministry
+      		}
+      		localization_key = idea_desc|GER_goebbels_reich_minister_of_propaganda_ministry
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 5 }
+      			has_idea = GER_goebbels_reich_minister_of_propaganda
+      		}
+      		localization_key = idea_desc|GER_goebbels_reich_minister_of_propaganda
+      	}
+      
+      	#HESS
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 6 }
+      			has_idea = GER_hess_first_among_equals
+      		}
+      		localization_key = idea_desc|GER_hess_first_among_equals
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 6 }
+      			has_idea = GER_hess_first_among_equals_no_aat
+      		}
+      		localization_key = idea_desc|GER_hess_first_among_equals_no_aat
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 6 }
+      			has_idea = GER_hess_party_chancellor_improved
+      		}
+      		localization_key = idea_desc|GER_hess_party_chancellor_improved
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 6 }
+      			has_idea = GER_hess_party_chancellor_improved_no_aat
+      		}
+      		localization_key = idea_desc|GER_hess_party_chancellor_improved_no_aat
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 6 }
+      			has_idea = GER_hess_party_chancellor
+      		}
+      		localization_key = idea_desc|GER_hess_party_chancellor
+      	}
+      
+      	#BORMANN
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 7 }
+      			has_idea = GER_bormann_brown_eminence
+      		}
+      		localization_key = idea_desc|GER_bormann_brown_eminence
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 7 }
+      			has_idea = GER_bormann_secretary_to_the_fuhrer_improved
+      		}
+      		localization_key = idea_desc|GER_bormann_secretary_to_the_fuhrer_improved
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 7 }
+      			has_idea = GER_bormann_secretary_to_the_fuhrer
+      		}
+      		localization_key = idea_desc|GER_bormann_secretary_to_the_fuhrer
+      	}
+      }
+
+  common\scripted_localisation\WUW_GER_scripted_loc.txt  L1297
+  ---- 定义块 L1296..L1472
+      defined_text = {
+      	name = GetAscendedAdvisorTrait2
+      	text = { #NO ONE
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 0 }	
+      		}
+      		localization_key = empty_key
+      	}
+      
+      	# TODT
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 1 }
+      			has_idea = GER_todt_reich_minister_of_armaments
+      		}
+      		localization_key = idea_desc|GER_todt_reich_minister_of_armaments
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 1 }
+      			has_idea = GER_todt_reich_engineer
+      		}
+      		localization_key = idea_desc|GER_todt_reich_engineer
+      	}
+      
+      	# SPEER
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 2 }
+      			has_idea = GER_speer_reich_minister_of_armaments
+      		}
+      		localization_key = idea_desc|GER_speer_reich_minister_of_armaments
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 2 }
+      			has_idea = GER_speer_reich_architect
+      		}
+      		localization_key = idea_desc|GER_speer_reich_architect
+      	}
+      
+      	#G?RING
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 3 }
+      			has_idea = GER_goring_four_year_plan_plenipotentiary
+      		}
+      		localization_key = idea_desc|GER_goring_four_year_plan_plenipotentiary
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 3 }
+      			has_idea = GER_goring_overseer_four_year_plan
+      		}
+      		localization_key = idea_desc|GER_goring_overseer_four_year_plan
+      	}
+      
+      	#HIMMLER
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 4 }
+      			has_idea = GER_himmler_reichsfuhrer_ss
+      		}
+      		localization_key = idea_desc|GER_himmler_reichsfuhrer_ss
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 4 }
+      			has_idea = GER_himmler_director_reich_security
+      		}
+      		localization_key = idea_desc|GER_himmler_director_reich_security
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 4 }
+      			has_idea = GER_himmler_chief_of_german_police
+      		}
+      		localization_key = idea_desc|GER_himmler_chief_of_german_police
+      	}
+      
+      	#GOEBBELS
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 5 }
+      			has_idea = GER_goebbels_reich_minister_of_propaganda_master
+      		}
+      		localization_key = idea_desc|GER_goebbels_reich_minister_of_propaganda_master
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 5 }
+      			has_idea = GER_goebbels_reich_minister_of_propaganda_master_no_lar
+      		}
+      		localization_key = idea_desc|GER_goebbels_reich_minister_of_propaganda_master_no_lar
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 5 }
+      			has_idea = GER_goebbels_reich_minister_of_propaganda_film
+      		}
+      		localization_key = idea_desc|GER_goebbels_reich_minister_of_propaganda_film
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 5 }
+      			has_idea = GER_goebbels_reich_minister_of_propaganda_ministry
+      		}
+      		localization_key = idea_desc|GER_goebbels_reich_minister_of_propaganda_ministry
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 5 }
+      			has_idea = GER_goebbels_reich_minister_of_propaganda
+      		}
+      		localization_key = idea_desc|GER_goebbels_reich_minister_of_propaganda
+      	}
+      
+      	#HESS
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 6 }
+      			has_idea = GER_hess_first_among_equals
+      		}
+      		localization_key = idea_desc|GER_hess_first_among_equals
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 6 }
+      			has_idea = GER_hess_first_among_equals_no_aat
+      		}
+      		localization_key = idea_desc|GER_hess_first_among_equals_no_aat
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 6 }
+      			has_idea = GER_hess_party_chancellor_improved
+      		}
+      		localization_key = idea_desc|GER_hess_party_chancellor_improved
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 6 }
+      			has_idea = GER_hess_party_chancellor_improved_no_aat
+      		}
+      		localization_key = idea_desc|GER_hess_party_chancellor_improved_no_aat
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 6 }
+      			has_idea = GER_hess_party_chancellor
+      		}
+      		localization_key = idea_desc|GER_hess_party_chancellor
+      	}
+      
+      	#BORMANN
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 7 }
+      			has_idea = GER_bormann_brown_eminence
+      		}
+      		localization_key = idea_desc|GER_bormann_brown_eminence
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 7 }
+      			has_idea = GER_bormann_secretary_to_the_fuhrer_improved
+      		}
+      		localization_key = idea_desc|GER_bormann_secretary_to_the_fuhrer_improved
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 7 }
+      			has_idea = GER_bormann_secretary_to_the_fuhrer
+      		}
+      		localization_key = idea_desc|GER_bormann_secretary_to_the_fuhrer
+      	}
+      }
+
+  common\scripted_localisation\WUW_GER_scripted_loc.txt  L1475
+  ---- 定义块 L1474..L1650
+      defined_text = {
+      	name = GetAscendedAdvisorTrait3
+      	text = { #NO ONE
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 0 }	
+      		}
+      		localization_key = empty_key
+      	}
+      
+      	# TODT
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 1 }
+      			has_idea = GER_todt_reich_minister_of_armaments
+      		}
+      		localization_key = idea_desc|GER_todt_reich_minister_of_armaments
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 1 }
+      			has_idea = GER_todt_reich_engineer
+      		}
+      		localization_key = idea_desc|GER_todt_reich_engineer
+      	}
+      
+      	# SPEER
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 2 }
+      			has_idea = GER_speer_reich_minister_of_armaments
+      		}
+      		localization_key = idea_desc|GER_speer_reich_minister_of_armaments
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 2 }
+      			has_idea = GER_speer_reich_architect
+      		}
+      		localization_key = idea_desc|GER_speer_reich_architect
+      	}
+      
+      	#G?RING
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 3 }
+      			has_idea = GER_goring_four_year_plan_plenipotentiary
+      		}
+      		localization_key = idea_desc|GER_goring_four_year_plan_plenipotentiary
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 3 }
+      			has_idea = GER_goring_overseer_four_year_plan
+      		}
+      		localization_key = idea_desc|GER_goring_overseer_four_year_plan
+      	}
+      
+      	#HIMMLER
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 4 }
+      			has_idea = GER_himmler_reichsfuhrer_ss
+      		}
+      		localization_key = idea_desc|GER_himmler_reichsfuhrer_ss
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 4 }
+      			has_idea = GER_himmler_director_reich_security
+      		}
+      		localization_key = idea_desc|GER_himmler_director_reich_security
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 4 }
+      			has_idea = GER_himmler_chief_of_german_police
+      		}
+      		localization_key = idea_desc|GER_himmler_chief_of_german_police
+      	}
+      
+      	#GOEBBELS
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 5 }
+      			has_idea = GER_goebbels_reich_minister_of_propaganda_master
+      		}
+      		localization_key = idea_desc|GER_goebbels_reich_minister_of_propaganda_master
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 5 }
+      			has_idea = GER_goebbels_reich_minister_of_propaganda_master_no_lar
+      		}
+      		localization_key = idea_desc|GER_goebbels_reich_minister_of_propaganda_master_no_lar
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 5 }
+      			has_idea = GER_goebbels_reich_minister_of_propaganda_film
+      		}
+      		localization_key = idea_desc|GER_goebbels_reich_minister_of_propaganda_film
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 5 }
+      			has_idea = GER_goebbels_reich_minister_of_propaganda_ministry
+      		}
+      		localization_key = idea_desc|GER_goebbels_reich_minister_of_propaganda_ministry
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 5 }
+      			has_idea = GER_goebbels_reich_minister_of_propaganda
+      		}
+      		localization_key = idea_desc|GER_goebbels_reich_minister_of_propaganda
+      	}
+      
+      	#HESS
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 6 }
+      			has_idea = GER_hess_first_among_equals
+      		}
+      		localization_key = idea_desc|GER_hess_first_among_equals
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 6 }
+      			has_idea = GER_hess_first_among_equals_no_aat
+      		}
+      		localization_key = idea_desc|GER_hess_first_among_equals_no_aat
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 6 }
+      			has_idea = GER_hess_party_chancellor_improved
+      		}
+      		localization_key = idea_desc|GER_hess_party_chancellor_improved
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 6 }
+      			has_idea = GER_hess_party_chancellor_improved_no_aat
+      		}
+      		localization_key = idea_desc|GER_hess_party_chancellor_improved_no_aat
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 6 }
+      			has_idea = GER_hess_party_chancellor
+      		}
+      		localization_key = idea_desc|GER_hess_party_chancellor
+      	}
+      
+      	#BORMANN
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 7 }
+      			has_idea = GER_bormann_brown_eminence
+      		}
+      		localization_key = idea_desc|GER_bormann_brown_eminence
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 7 }
+      			has_idea = GER_bormann_secretary_to_the_fuhrer_improved
+      		}
+      		localization_key = idea_desc|GER_bormann_secretary_to_the_fuhrer_improved
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 7 }
+      			has_idea = GER_bormann_secretary_to_the_fuhrer
+      		}
+      		localization_key = idea_desc|GER_bormann_secretary_to_the_fuhrer
+      	}
+      }
+
+  common\scripted_localisation\WUW_GER_scripted_loc.txt  L1653
+  ---- 定义块 L1652..L1828
+      defined_text = {
+      	name = GetAscendedAdvisorTraitName1
+      	text = { #NO ONE
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 0 }	
+      		}
+      		localization_key = empty_key
+      	}
+      
+      	# TODT
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 1 }
+      			has_idea = GER_todt_reich_minister_of_armaments
+      		}
+      		localization_key = GER_todt_reich_minister_of_armaments
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 1 }
+      			has_idea = GER_todt_reich_engineer
+      		}
+      		localization_key = GER_todt_reich_engineer
+      	}
+      
+      	# SPEER
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 2 }
+      			has_idea = GER_speer_reich_minister_of_armaments
+      		}
+      		localization_key = GER_speer_reich_minister_of_armaments
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 2 }
+      			has_idea = GER_speer_reich_architect
+      		}
+      		localization_key = GER_speer_reich_architect
+      	}
+      
+      	#G?RING
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 3 }
+      			has_idea = GER_goring_four_year_plan_plenipotentiary
+      		}
+      		localization_key = GER_goring_four_year_plan_plenipotentiary
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 3 }
+      			has_idea = GER_goring_overseer_four_year_plan
+      		}
+      		localization_key = GER_goring_overseer_four_year_plan
+      	}
+      
+      	#HIMMLER
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 4 }
+      			has_idea = GER_himmler_reichsfuhrer_ss
+      		}
+      		localization_key = GER_himmler_reichsfuhrer_ss
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 4 }
+      			has_idea = GER_himmler_director_reich_security
+      		}
+      		localization_key = GER_himmler_director_reich_security
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 4 }
+      			has_idea = GER_himmler_chief_of_german_police
+      		}
+      		localization_key = GER_himmler_chief_of_german_police
+      	}
+      
+      	#GOEBBELS
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 5 }
+      			has_idea = GER_goebbels_reich_minister_of_propaganda_master
+      		}
+      		localization_key = GER_goebbels_reich_minister_of_propaganda_master
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 5 }
+      			has_idea = GER_goebbels_reich_minister_of_propaganda_master_no_lar
+      		}
+      		localization_key = GER_goebbels_reich_minister_of_propaganda_master_no_lar
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 5 }
+      			has_idea = GER_goebbels_reich_minister_of_propaganda_film
+      		}
+      		localization_key = GER_goebbels_reich_minister_of_propaganda_film
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 5 }
+      			has_idea = GER_goebbels_reich_minister_of_propaganda_ministry
+      		}
+      		localization_key = GER_goebbels_reich_minister_of_propaganda_ministry
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 5 }
+      			has_idea = GER_goebbels_reich_minister_of_propaganda
+      		}
+      		localization_key = GER_goebbels_reich_minister_of_propaganda
+      	}
+      
+      	#HESS
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 6 }
+      			has_idea = GER_hess_first_among_equals
+      		}
+      		localization_key = GER_hess_first_among_equals
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 6 }
+      			has_idea = GER_hess_first_among_equals_no_aat
+      		}
+      		localization_key = GER_hess_first_among_equals_no_aat
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 6 }
+      			has_idea = GER_hess_party_chancellor_improved
+      		}
+      		localization_key = GER_hess_party_chancellor_improved
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 6 }
+      			has_idea = GER_hess_party_chancellor_improved_no_aat
+      		}
+      		localization_key = GER_hess_party_chancellor_improved_no_aat
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 6 }
+      			has_idea = GER_hess_party_chancellor
+      		}
+      		localization_key = GER_hess_party_chancellor
+      	}
+      
+      	#BORMANN
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 7 }
+      			has_idea = GER_bormann_brown_eminence
+      		}
+      		localization_key = GER_bormann_brown_eminence
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 7 }
+      			has_idea = GER_bormann_secretary_to_the_fuhrer_improved
+      		}
+      		localization_key = GER_bormann_secretary_to_the_fuhrer_improved
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 7 }
+      			has_idea = GER_bormann_secretary_to_the_fuhrer
+      		}
+      		localization_key = GER_bormann_secretary_to_the_fuhrer
+      	}
+      }
+
+  common\scripted_localisation\WUW_GER_scripted_loc.txt  L1831
+  ---- 定义块 L1830..L2006
+      defined_text = {
+      	name = GetAscendedAdvisorTraitName2
+      	text = { #NO ONE
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 0 }	
+      		}
+      		localization_key = empty_key
+      	}
+      
+      	# TODT
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 1 }
+      			has_idea = GER_todt_reich_minister_of_armaments
+      		}
+      		localization_key = GER_todt_reich_minister_of_armaments
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 1 }
+      			has_idea = GER_todt_reich_engineer
+      		}
+      		localization_key = GER_todt_reich_engineer
+      	}
+      
+      	# SPEER
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 2 }
+      			has_idea = GER_speer_reich_minister_of_armaments
+      		}
+      		localization_key = GER_speer_reich_minister_of_armaments
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 2 }
+      			has_idea = GER_speer_reich_architect
+      		}
+      		localization_key = GER_speer_reich_architect
+      	}
+      
+      	#G?RING
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 3 }
+      			has_idea = GER_goring_four_year_plan_plenipotentiary
+      		}
+      		localization_key = GER_goring_four_year_plan_plenipotentiary
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 3 }
+      			has_idea = GER_goring_overseer_four_year_plan
+      		}
+      		localization_key = GER_goring_overseer_four_year_plan
+      	}
+      
+      	#HIMMLER
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 4 }
+      			has_idea = GER_himmler_reichsfuhrer_ss
+      		}
+      		localization_key = GER_himmler_reichsfuhrer_ss
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 4 }
+      			has_idea = GER_himmler_director_reich_security
+      		}
+      		localization_key = GER_himmler_director_reich_security
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 4 }
+      			has_idea = GER_himmler_chief_of_german_police
+      		}
+      		localization_key = GER_himmler_chief_of_german_police
+      	}
+      
+      	#GOEBBELS
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 5 }
+      			has_idea = GER_goebbels_reich_minister_of_propaganda_master
+      		}
+      		localization_key = GER_goebbels_reich_minister_of_propaganda_master
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 5 }
+      			has_idea = GER_goebbels_reich_minister_of_propaganda_master_no_lar
+      		}
+      		localization_key = GER_goebbels_reich_minister_of_propaganda_master_no_lar
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 5 }
+      			has_idea = GER_goebbels_reich_minister_of_propaganda_film
+      		}
+      		localization_key = GER_goebbels_reich_minister_of_propaganda_film
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 5 }
+      			has_idea = GER_goebbels_reich_minister_of_propaganda_ministry
+      		}
+      		localization_key = GER_goebbels_reich_minister_of_propaganda_ministry
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 5 }
+      			has_idea = GER_goebbels_reich_minister_of_propaganda
+      		}
+      		localization_key = GER_goebbels_reich_minister_of_propaganda
+      	}
+      
+      	#HESS
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 6 }
+      			has_idea = GER_hess_first_among_equals
+      		}
+      		localization_key = GER_hess_first_among_equals
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 6 }
+      			has_idea = GER_hess_first_among_equals_no_aat
+      		}
+      		localization_key = GER_hess_first_among_equals_no_aat
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 6 }
+      			has_idea = GER_hess_party_chancellor_improved
+      		}
+      		localization_key = GER_hess_party_chancellor_improved
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 6 }
+      			has_idea = GER_hess_party_chancellor_improved_no_aat
+      		}
+      		localization_key = GER_hess_party_chancellor_improved_no_aat
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 6 }
+      			has_idea = GER_hess_party_chancellor
+      		}
+      		localization_key = GER_hess_party_chancellor
+      	}
+      
+      	#BORMANN
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 7 }
+      			has_idea = GER_bormann_brown_eminence
+      		}
+      		localization_key = GER_bormann_brown_eminence
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 7 }
+      			has_idea = GER_bormann_secretary_to_the_fuhrer_improved
+      		}
+      		localization_key = GER_bormann_secretary_to_the_fuhrer_improved
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 7 }
+      			has_idea = GER_bormann_secretary_to_the_fuhrer
+      		}
+      		localization_key = GER_bormann_secretary_to_the_fuhrer
+      	}
+      }
+
+  common\scripted_localisation\WUW_GER_scripted_loc.txt  L2009
+  ---- 定义块 L2008..L2184
+      defined_text = {
+      	name = GetAscendedAdvisorTraitName3
+      	text = { #NO ONE
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 0 }	
+      		}
+      		localization_key = empty_key
+      	}
+      
+      	# TODT
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 1 }
+      			has_idea = GER_todt_reich_minister_of_armaments
+      		}
+      		localization_key = GER_todt_reich_minister_of_armaments
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 1 }
+      			has_idea = GER_todt_reich_engineer
+      		}
+      		localization_key = GER_todt_reich_engineer
+      	}
+      
+      	# SPEER
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 2 }
+      			has_idea = GER_speer_reich_minister_of_armaments
+      		}
+      		localization_key = GER_speer_reich_minister_of_armaments
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 2 }
+      			has_idea = GER_speer_reich_architect
+      		}
+      		localization_key = GER_speer_reich_architect
+      	}
+      
+      	#G?RING
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 3 }
+      			has_idea = GER_goring_four_year_plan_plenipotentiary
+      		}
+      		localization_key = GER_goring_four_year_plan_plenipotentiary
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 3 }
+      			has_idea = GER_goring_overseer_four_year_plan
+      		}
+      		localization_key = GER_goring_overseer_four_year_plan
+      	}
+      
+      	#HIMMLER
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 4 }
+      			has_idea = GER_himmler_reichsfuhrer_ss
+      		}
+      		localization_key = GER_himmler_reichsfuhrer_ss
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 4 }
+      			has_idea = GER_himmler_director_reich_security
+      		}
+      		localization_key = GER_himmler_director_reich_security
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 4 }
+      			has_idea = GER_himmler_chief_of_german_police
+      		}
+      		localization_key = GER_himmler_chief_of_german_police
+      	}
+      
+      	#GOEBBELS
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 5 }
+      			has_idea = GER_goebbels_reich_minister_of_propaganda_master
+      		}
+      		localization_key = GER_goebbels_reich_minister_of_propaganda_master
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 5 }
+      			has_idea = GER_goebbels_reich_minister_of_propaganda_master_no_lar
+      		}
+      		localization_key = GER_goebbels_reich_minister_of_propaganda_master_no_lar
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 5 }
+      			has_idea = GER_goebbels_reich_minister_of_propaganda_film
+      		}
+      		localization_key = GER_goebbels_reich_minister_of_propaganda_film
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 5 }
+      			has_idea = GER_goebbels_reich_minister_of_propaganda_ministry
+      		}
+      		localization_key = GER_goebbels_reich_minister_of_propaganda_ministry
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 5 }
+      			has_idea = GER_goebbels_reich_minister_of_propaganda
+      		}
+      		localization_key = GER_goebbels_reich_minister_of_propaganda
+      	}
+      
+      	#HESS
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 6 }
+      			has_idea = GER_hess_first_among_equals
+      		}
+      		localization_key = GER_hess_first_among_equals
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 6 }
+      			has_idea = GER_hess_first_among_equals_no_aat
+      		}
+      		localization_key = GER_hess_first_among_equals_no_aat
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 6 }
+      			has_idea = GER_hess_party_chancellor_improved
+      		}
+      		localization_key = GER_hess_party_chancellor_improved
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 6 }
+      			has_idea = GER_hess_party_chancellor_improved_no_aat
+      		}
+      		localization_key = GER_hess_party_chancellor_improved_no_aat
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 6 }
+      			has_idea = GER_hess_party_chancellor
+      		}
+      		localization_key = GER_hess_party_chancellor
+      	}
+      
+      	#BORMANN
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 7 }
+      			has_idea = GER_bormann_brown_eminence
+      		}
+      		localization_key = GER_bormann_brown_eminence
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 7 }
+      			has_idea = GER_bormann_secretary_to_the_fuhrer_improved
+      		}
+      		localization_key = GER_bormann_secretary_to_the_fuhrer_improved
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 7 }
+      			has_idea = GER_bormann_secretary_to_the_fuhrer
+      		}
+      		localization_key = GER_bormann_secretary_to_the_fuhrer
+      	}
+      }
+
+  common\scripted_localisation\WUW_GER_scripted_loc.txt  L2279
+  ---- 定义块 L2278..L2454
+      defined_text = {
+      	name = GetAscendedAdvisorDesc1
+      	text = { #NO ONE
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 0 }	
+      		}
+      		localization_key = empty_key
+      	}
+      
+      	# TODT
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 1 }
+      			has_idea = GER_todt_reich_minister_of_armaments
+      		}
+      		localization_key = idea_desc|GER_todt_reich_minister_of_armaments
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 1 }
+      			has_idea = GER_todt_reich_engineer
+      		}
+      		localization_key = idea_desc|GER_todt_reich_engineer
+      	}
+      
+      	# SPEER
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 2 }
+      			has_idea = GER_speer_reich_minister_of_armaments
+      		}
+      		localization_key = idea_desc|GER_speer_reich_minister_of_armaments
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 2 }
+      			has_idea = GER_speer_reich_architect
+      		}
+      		localization_key = idea_desc|GER_speer_reich_architect
+      	}
+      
+      	#G?RING
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 3 }
+      			has_idea = GER_goring_four_year_plan_plenipotentiary
+      		}
+      		localization_key = idea_desc|GER_goring_four_year_plan_plenipotentiary
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 3 }
+      			has_idea = GER_goring_overseer_four_year_plan
+      		}
+      		localization_key = idea_desc|GER_goring_overseer_four_year_plan
+      	}
+      
+      	#HIMMLER
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 4 }
+      			has_idea = GER_himmler_reichsfuhrer_ss
+      		}
+      		localization_key = idea_desc|GER_himmler_reichsfuhrer_ss
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 4 }
+      			has_idea = GER_himmler_director_reich_security
+      		}
+      		localization_key = idea_desc|GER_himmler_director_reich_security
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 4 }
+      			has_idea = GER_himmler_chief_of_german_police
+      		}
+      		localization_key = idea_desc|GER_himmler_chief_of_german_police
+      	}
+      
+      	#GOEBBELS
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 5 }
+      			has_idea = GER_goebbels_reich_minister_of_propaganda_master
+      		}
+      		localization_key = idea_desc|GER_goebbels_reich_minister_of_propaganda_master
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 5 }
+      			has_idea = GER_goebbels_reich_minister_of_propaganda_master_no_lar
+      		}
+      		localization_key = idea_desc|GER_goebbels_reich_minister_of_propaganda_master_no_lar
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 5 }
+      			has_idea = GER_goebbels_reich_minister_of_propaganda_film
+      		}
+      		localization_key = idea_desc|GER_goebbels_reich_minister_of_propaganda_film
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 5 }
+      			has_idea = GER_goebbels_reich_minister_of_propaganda_ministry
+      		}
+      		localization_key = idea_desc|GER_goebbels_reich_minister_of_propaganda_ministry
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 5 }
+      			has_idea = GER_goebbels_reich_minister_of_propaganda
+      		}
+      		localization_key = idea_desc|GER_goebbels_reich_minister_of_propaganda
+      	}
+      
+      	#HESS
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 6 }
+      			has_idea = GER_hess_first_among_equals
+      		}
+      		localization_key = idea_desc|GER_hess_first_among_equals
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 6 }
+      			has_idea = GER_hess_first_among_equals_no_aat
+      		}
+      		localization_key = idea_desc|GER_hess_first_among_equals_no_aat
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 6 }
+      			has_idea = GER_hess_party_chancellor_improved
+      		}
+      		localization_key = idea_desc|GER_hess_party_chancellor_improved
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 6 }
+      			has_idea = GER_hess_party_chancellor_improved_no_aat
+      		}
+      		localization_key = idea_desc|GER_hess_party_chancellor_improved_no_aat
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 6 }
+      			has_idea = GER_hess_party_chancellor
+      		}
+      		localization_key = idea_desc|GER_hess_party_chancellor
+      	}
+      
+      	#BORMANN
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 7 }
+      			has_idea = GER_bormann_brown_eminence
+      		}
+      		localization_key = idea_desc|GER_bormann_brown_eminence
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 7 }
+      			has_idea = GER_bormann_secretary_to_the_fuhrer_improved
+      		}
+      		localization_key = idea_desc|GER_bormann_secretary_to_the_fuhrer_improved
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 7 }
+      			has_idea = GER_bormann_secretary_to_the_fuhrer
+      		}
+      		localization_key = idea_desc|GER_bormann_secretary_to_the_fuhrer
+      	}
+      }
+
+  common\scripted_localisation\WUW_GER_scripted_loc.txt  L2457
+  ---- 定义块 L2456..L2632
+      defined_text = {
+      	name = GetAscendedAdvisorDesc2
+      	text = { #NO ONE
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 0 }	
+      		}
+      		localization_key = empty_key
+      	}
+      
+      	# TODT
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 1 }
+      			has_idea = GER_todt_reich_minister_of_armaments
+      		}
+      		localization_key = idea_desc|GER_todt_reich_minister_of_armaments
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 1 }
+      			has_idea = GER_todt_reich_engineer
+      		}
+      		localization_key = idea_desc|GER_todt_reich_engineer
+      	}
+      
+      	# SPEER
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 2 }
+      			has_idea = GER_speer_reich_minister_of_armaments
+      		}
+      		localization_key = idea_desc|GER_speer_reich_minister_of_armaments
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 2 }
+      			has_idea = GER_speer_reich_architect
+      		}
+      		localization_key = idea_desc|GER_speer_reich_architect
+      	}
+      
+      	#G?RING
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 3 }
+      			has_idea = GER_goring_four_year_plan_plenipotentiary
+      		}
+      		localization_key = idea_desc|GER_goring_four_year_plan_plenipotentiary
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 3 }
+      			has_idea = GER_goring_overseer_four_year_plan
+      		}
+      		localization_key = idea_desc|GER_goring_overseer_four_year_plan
+      	}
+      
+      	#HIMMLER
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 4 }
+      			has_idea = GER_himmler_reichsfuhrer_ss
+      		}
+      		localization_key = idea_desc|GER_himmler_reichsfuhrer_ss
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 4 }
+      			has_idea = GER_himmler_director_reich_security
+      		}
+      		localization_key = idea_desc|GER_himmler_director_reich_security
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 4 }
+      			has_idea = GER_himmler_chief_of_german_police
+      		}
+      		localization_key = idea_desc|GER_himmler_chief_of_german_police
+      	}
+      
+      	#GOEBBELS
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 5 }
+      			has_idea = GER_goebbels_reich_minister_of_propaganda_master
+      		}
+      		localization_key = idea_desc|GER_goebbels_reich_minister_of_propaganda_master
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 5 }
+      			has_idea = GER_goebbels_reich_minister_of_propaganda_master_no_lar
+      		}
+      		localization_key = idea_desc|GER_goebbels_reich_minister_of_propaganda_master_no_lar
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 5 }
+      			has_idea = GER_goebbels_reich_minister_of_propaganda_film
+      		}
+      		localization_key = idea_desc|GER_goebbels_reich_minister_of_propaganda_film
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 5 }
+      			has_idea = GER_goebbels_reich_minister_of_propaganda_ministry
+      		}
+      		localization_key = idea_desc|GER_goebbels_reich_minister_of_propaganda_ministry
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 5 }
+      			has_idea = GER_goebbels_reich_minister_of_propaganda
+      		}
+      		localization_key = idea_desc|GER_goebbels_reich_minister_of_propaganda
+      	}
+      
+      	#HESS
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 6 }
+      			has_idea = GER_hess_first_among_equals
+      		}
+      		localization_key = idea_desc|GER_hess_first_among_equals
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 6 }
+      			has_idea = GER_hess_first_among_equals_no_aat
+      		}
+      		localization_key = idea_desc|GER_hess_first_among_equals_no_aat
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 6 }
+      			has_idea = GER_hess_party_chancellor_improved
+      		}
+      		localization_key = idea_desc|GER_hess_party_chancellor_improved
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 6 }
+      			has_idea = GER_hess_party_chancellor_improved_no_aat
+      		}
+      		localization_key = idea_desc|GER_hess_party_chancellor_improved_no_aat
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 6 }
+      			has_idea = GER_hess_party_chancellor
+      		}
+      		localization_key = idea_desc|GER_hess_party_chancellor
+      	}
+      
+      	#BORMANN
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 7 }
+      			has_idea = GER_bormann_brown_eminence
+      		}
+      		localization_key = idea_desc|GER_bormann_brown_eminence
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 7 }
+      			has_idea = GER_bormann_secretary_to_the_fuhrer_improved
+      		}
+      		localization_key = idea_desc|GER_bormann_secretary_to_the_fuhrer_improved
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 7 }
+      			has_idea = GER_bormann_secretary_to_the_fuhrer
+      		}
+      		localization_key = idea_desc|GER_bormann_secretary_to_the_fuhrer
+      	}
+      }
+
+  common\scripted_localisation\WUW_GER_scripted_loc.txt  L2635
+  ---- 定义块 L2634..L2810
+      defined_text = {
+      	name = GetAscendedAdvisorDesc3
+      	text = { #NO ONE
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 0 }	
+      		}
+      		localization_key = empty_key
+      	}
+      
+      	# TODT
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 1 }
+      			has_idea = GER_todt_reich_minister_of_armaments
+      		}
+      		localization_key = idea_desc|GER_todt_reich_minister_of_armaments
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 1 }
+      			has_idea = GER_todt_reich_engineer
+      		}
+      		localization_key = idea_desc|GER_todt_reich_engineer
+      	}
+      
+      	# SPEER
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 2 }
+      			has_idea = GER_speer_reich_minister_of_armaments
+      		}
+      		localization_key = idea_desc|GER_speer_reich_minister_of_armaments
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 2 }
+      			has_idea = GER_speer_reich_architect
+      		}
+      		localization_key = idea_desc|GER_speer_reich_architect
+      	}
+      
+      	#G?RING
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 3 }
+      			has_idea = GER_goring_four_year_plan_plenipotentiary
+      		}
+      		localization_key = idea_desc|GER_goring_four_year_plan_plenipotentiary
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 3 }
+      			has_idea = GER_goring_overseer_four_year_plan
+      		}
+      		localization_key = idea_desc|GER_goring_overseer_four_year_plan
+      	}
+      
+      	#HIMMLER
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 4 }
+      			has_idea = GER_himmler_reichsfuhrer_ss
+      		}
+      		localization_key = idea_desc|GER_himmler_reichsfuhrer_ss
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 4 }
+      			has_idea = GER_himmler_director_reich_security
+      		}
+      		localization_key = idea_desc|GER_himmler_director_reich_security
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 4 }
+      			has_idea = GER_himmler_chief_of_german_police
+      		}
+      		localization_key = idea_desc|GER_himmler_chief_of_german_police
+      	}
+      
+      	#GOEBBELS
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 5 }
+      			has_idea = GER_goebbels_reich_minister_of_propaganda_master
+      		}
+      		localization_key = idea_desc|GER_goebbels_reich_minister_of_propaganda_master
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 5 }
+      			has_idea = GER_goebbels_reich_minister_of_propaganda_master_no_lar
+      		}
+      		localization_key = idea_desc|GER_goebbels_reich_minister_of_propaganda_master_no_lar
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 5 }
+      			has_idea = GER_goebbels_reich_minister_of_propaganda_film
+      		}
+      		localization_key = idea_desc|GER_goebbels_reich_minister_of_propaganda_film
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 5 }
+      			has_idea = GER_goebbels_reich_minister_of_propaganda_ministry
+      		}
+      		localization_key = idea_desc|GER_goebbels_reich_minister_of_propaganda_ministry
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 5 }
+      			has_idea = GER_goebbels_reich_minister_of_propaganda
+      		}
+      		localization_key = idea_desc|GER_goebbels_reich_minister_of_propaganda
+      	}
+      
+      	#HESS
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 6 }
+      			has_idea = GER_hess_first_among_equals
+      		}
+      		localization_key = idea_desc|GER_hess_first_among_equals
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 6 }
+      			has_idea = GER_hess_first_among_equals_no_aat
+      		}
+      		localization_key = idea_desc|GER_hess_first_among_equals_no_aat
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 6 }
+      			has_idea = GER_hess_party_chancellor_improved
+      		}
+      		localization_key = idea_desc|GER_hess_party_chancellor_improved
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 6 }
+      			has_idea = GER_hess_party_chancellor_improved_no_aat
+      		}
+      		localization_key = idea_desc|GER_hess_party_chancellor_improved_no_aat
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 6 }
+      			has_idea = GER_hess_party_chancellor
+      		}
+      		localization_key = idea_desc|GER_hess_party_chancellor
+      	}
+      
+      	#BORMANN
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 7 }
+      			has_idea = GER_bormann_brown_eminence
+      		}
+      		localization_key = idea_desc|GER_bormann_brown_eminence
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 7 }
+      			has_idea = GER_bormann_secretary_to_the_fuhrer_improved
+      		}
+      		localization_key = idea_desc|GER_bormann_secretary_to_the_fuhrer_improved
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 7 }
+      			has_idea = GER_bormann_secretary_to_the_fuhrer
+      		}
+      		localization_key = idea_desc|GER_bormann_secretary_to_the_fuhrer
+      	}
+      }
+
+  common\scripted_localisation\WUW_GER_scripted_loc.txt  L2813
+  ---- 定义块 L2812..L2823
+      defined_text = {
+      	name = GetAscendedAdvisor1
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 0 }
+      		}
+      		localization_key = empty_key
+      	}
+      	text = {
+      		localization_key = GER_the_inner_circle_tt_ascended_advisor_1
+      	}
+      }
+
+  common\scripted_localisation\WUW_GER_scripted_loc.txt  L2826
+  ---- 定义块 L2825..L2836
+      defined_text = {
+      	name = GetAscendedAdvisor2
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_2 = 0 }
+      		}
+      		localization_key = empty_key
+      	}
+      	text = {
+      		localization_key = GER_the_inner_circle_tt_ascended_advisor_2
+      	}
+      }
+
+  common\scripted_localisation\WUW_GER_scripted_loc.txt  L2839
+  ---- 定义块 L2838..L2849
+      defined_text = {
+      	name = GetAscendedAdvisor3
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_3 = 0 }
+      		}
+      		localization_key = empty_key
+      	}
+      	text = {
+      		localization_key = GER_the_inner_circle_tt_ascended_advisor_3
+      	}
+      }
+

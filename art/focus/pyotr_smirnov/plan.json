@@ -1,0 +1,68 @@
+[
+  {
+    "id": "hof_ic_pyotr_smirnov_the_naval_directorate",
+    "name": "GFX_hof_ic_pyotr_smirnov_the_naval_directorate",
+    "title": "工农红军海军局",
+    "concept": "A SMALL white enamel institutional nameplate mounted slightly CROOKED on a plain gray exterior doorpost. Plate is empty and UNLETTERED, with a screw hole in each of its four corners. Behind it only a short stretch of bare wall and a half-open plain door leading to pitch-black interior. The nameplate should look modest, subordinate and temporary. NO letters, ship, sea, dock, people or political symbol in central scene. Colors enamel-white, wall gray and doorway black.",
+    "group": "pyotr_smirnov",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_pyotr_smirnov_the_general_staff",
+    "name": "GFX_hof_ic_pyotr_smirnov_the_general_staff",
+    "title": "海军总参谋部",
+    "concept": "One opened cream-yellow nautical CHART spread flat, bearing ONLY abstract geometric depth-contour patches; absolutely NO coastline, place names, arrows or words. A steel-gray pair of DIVIDERS rests open on top of it, tips apart. Tight evidence still-life, no compass rose, ship or person. Restrained paper-yellow and steel blue-gray.",
+    "group": "pyotr_smirnov",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_pyotr_smirnov_the_naval_aviation",
+    "name": "GFX_hof_ic_pyotr_smirnov_the_naval_aviation",
+    "title": "海军航空兵",
+    "concept": "ONE gray-white 1930s floatplane with two deep-gray pontoons resting on calm blue-gray water, its wing extending LEFT beyond central relief scene edge but remaining inside outer laurels. Water has only a few straight low ripples. In far distance one very low dark ABSTRACT block-like naval silhouette without recognizable ship type. No people, combat, bombs, carrier, propeller closeup or detailed warship.",
+    "group": "pyotr_smirnov",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_pyotr_smirnov_the_declaration",
+    "name": "GFX_hof_ic_pyotr_smirnov_the_declaration",
+    "title": "建军宣示",
+    "concept": "One open gray newspaper that has been folded in half before, with a visibly worn fuzzy center seam. Its masthead space is only a BLANK gray rectangle, and all page detail is abstract short column rules and empty blocks with no readable text. Newspaper lies over half of a second simple sheet, only one paper corner emerging from underneath. No headline, ship photograph, typewriter, people or stack of manuscripts.",
+    "group": "pyotr_smirnov",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_pyotr_smirnov_the_military_council",
+    "name": "GFX_hof_ic_pyotr_smirnov_the_military_council",
+    "title": "海军军事委员会",
+    "concept": "An EMPTY dark-green felt-covered long meeting table viewed from a gentle elevated angle with EXACTLY SIX empty wooden chairs around it; the chair at the head has a slightly taller back. On tabletop ONLY one short pencil and one clear EMPTY water glass. Behind is an undecorated plain gray wall. No people, map, flag, military uniform, portraits, seal or text. Muted felt green and natural wood.",
+    "group": "pyotr_smirnov",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_pyotr_smirnov_the_commissariat",
+    "name": "GFX_hof_ic_pyotr_smirnov_the_commissariat",
+    "title": "海军人民委员部",
+    "concept": "A single formal white government resolution DOCUMENT with a thin dark-red border, vertical rows of abstract unreadable block marks (NO real writing). At bottom right one FRESH DARK-RED CIRCULAR INK SEAL, edges slightly bleeding into paper, bearing at most one simple abstract five-point star silhouette and no other recognizable insignia. The seal is the ONLY saturated red CENTRAL object. The document itself symbolizes creation of a government commissariat. No ship, anchor, Kremlin, human, legible letters or numbers.",
+    "group": "pyotr_smirnov",
+    "size": [
+      100,
+      88
+    ]
+  }
+]

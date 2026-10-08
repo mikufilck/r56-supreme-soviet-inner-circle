@@ -1,0 +1,108 @@
+﻿文件行数: 6382
+
+======== SOV_boris_shaposhnikov  (L330) ========
+		name = SOV_boris_shaposhnikov
+		portraits = {
+		advisor = {
+			traits = {
+		corps_commander = {
+			traits = { career_officer trait_cautious }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+  (块 L330-L361, 共 32 行)
+
+======== SOV_aleksandr_yegorov  (L2021) ========
+		name = SOV_aleksandr_yegorov
+		portraits = {
+		advisor = {
+			traits = {
+		field_marshal = {
+			traits = { career_officer inflexible_strategist trait_reckless }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 2
+  (块 L2021-L2066, 共 46 行)
+
+======== SOV_mikhail_tukhachevsky  (L533) ========
+		name = SOV_mikhail_tukhachevsky
+		portraits = {
+		advisor = {
+			traits = {
+		field_marshal = {
+			traits = { brilliant_strategist career_officer trait_reckless infantry_officer offensive_doctrine }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 2
+  (块 L533-L583, 共 51 行)
+
+======== SOV_august_kork  (L585) ========
+		name = "August Kork"
+		portraits = {
+		advisor = {
+			traits = {
+		field_marshal = {
+			traits = { old_guard career_officer organizer }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 3
+  (块 L585-L633, 共 49 行)
+
+======== SOV_aleksandr_verkhovsky  (L5653) ========
+		name = SOV_aleksandr_verkhovsky
+		portraits = {
+		advisor = {
+			traits = {
+  (块 L5653-L5689, 共 37 行)
+
+======== SOV_aleksandr_prokofyev_seversky  (L5839) ========
+		name = SOV_aleksandr_prokofyev_seversky
+		portraits = {
+		advisor = {
+			traits = { victory_through_airpower }
+  (块 L5839-L5883, 共 45 行)
+
+======== SOV_konstantin_rodzayevsky  (L6034) ========
+			name = SOV_konstantin_rodzayevsky
+			portraits = {
+			advisor = {
+				traits = {
+			country_leader = {
+				traits = { fascist_orchestrator }
+			name = SOV_konstantin_rodzayevsky
+			portraits = {
+			advisor = {
+				traits = {
+			country_leader = {
+				traits = { fascist_orchestrator }
+  (块 L6034-L6145, 共 112 行)
+
+======== SOV_vasily_blyukher  (L2068) ========
+		name = SOV_vasily_blyukher
+		portraits = {
+		advisor = {
+			traits = {
+		field_marshal = {
+			traits = { offensive_doctrine fast_planner career_officer trait_reckless politically_connected }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+  (块 L2068-L2113, 共 46 行)
+
+======== SOV_lev_trotsky  (L4414) ========
+		name = SOV_lev_trotsky
+		portraits = {
+		advisor = {
+			traits = {
+  (块 L4414-L4490, 共 77 行)
+

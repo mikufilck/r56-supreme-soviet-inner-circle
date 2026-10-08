@@ -1,0 +1,70 @@
+﻿扫描 .gfx 根目录 30 个
+
+扫了 312 个 .gfx 文件，共 56996 条 name= 注册
+其中名字里含 _shine 的：5925 条
+
+--- 前 40 条含 _shine 的行（原样）---
+  goals.gfx  ::  name = "GFX_goal_shine_test"
+  goals.gfx  ::  name = "GFX_country_selection_entry_shine"
+  goals.gfx  ::  name = "GFX_mini_country_selector_shine"
+  goals.gfx  ::  name = "GFX_minor_country_selector_shine"
+  goals_shine.gfx  ::  name = "GFX__shine"
+  goals_shine.gfx  ::  name = "GFX_goal_continuous_air_production_shine"
+  goals_shine.gfx  ::  name = "GFX_goal_continuous_non_factory_construct_shine"
+  goals_shine.gfx  ::  name = "GFX_goal_continuous_reduce_training_time_shine"
+  goals_shine.gfx  ::  name = "GFX_goal_continuous_boost_freedom_shine"
+  goals_shine.gfx  ::  name = "GFX_goal_continuous_suppression_shine"
+  goals_shine.gfx  ::  name = "GFX_goal_continuous_restrict_freedom_shine"
+  goals_shine.gfx  ::  name = "GFX_goal_continuous_def_against_influence_shine"
+  goals_shine.gfx  ::  name = "GFX_goal_continuous_research_shine"
+  goals_shine.gfx  ::  name = "GFX_goal_continuous_increase_nu_shine"
+  goals_shine.gfx  ::  name = "GFX_goal_continuous_repairments_shine"
+  goals_shine.gfx  ::  name = "GFX_goal_continuous_naval_production_shine"
+  goals_shine.gfx  ::  name = "GFX_goal_continuous_armor_production_shine"
+  goals_shine.gfx  ::  name = "GFX_focus_generic_steel_shine"
+  goals_shine.gfx  ::  name = "GFX_SOV_steel_casting_industry_ccp_2d_sov_compatibility_shine"
+  goals_shine.gfx  ::  name = "GFX_focus_generic_aluminum_shine"
+  goals_shine.gfx  ::  name = "GFX_focus_generic_tungsten_shine"
+  goals_shine.gfx  ::  name = "GFX_focus_research2_shine"
+  goals_shine.gfx  ::  name = "GFX_SOV_national_academies_of_sciences_ccp_2d_sov_compatibility_shine"
+  goals_shine.gfx  ::  name = "GFX_focus_generic_treaty_shine"
+  goals_shine.gfx  ::  name = "GFX_focus_generic_military_academy_shine"
+  goals_shine.gfx  ::  name = "GFX_focus_generic_military_mission_shine"
+  goals_shine.gfx  ::  name = "GFX_focus_generic_concessions_shine"
+  goals_shine.gfx  ::  name = "GFX_focus_generic_self_management_shine"
+  goals_shine.gfx  ::  name = "GFX_focus_generic_license_production_shine"
+  goals_shine.gfx  ::  name = "GFX_focus_smiling_buddha_shine"
+  goals_shine.gfx  ::  name = "GFX_focus_generic_join_comintern_shine"
+  goals_shine.gfx  ::  name = "GFX_focus_generic_home_defense_shine"
+  goals_shine.gfx  ::  name = "GFX_focus_generic_the_giant_wakes_shine"
+  goals_shine.gfx  ::  name = "GFX_focus_generic_cryptologic_bomb_shine"
+  goals_shine.gfx  ::  name = "GFX_focus_generic_socialist_science_shine"
+  goals_shine.gfx  ::  name = "GFX_focus_generic_italy_first_shine"
+  goals_shine.gfx  ::  name = "GFX_focus_generic_little_entente_shine"
+  goals_shine.gfx  ::  name = "GFX_focus_generic_soviet_politics_shine"
+  goals_shine.gfx  ::  name = "GFX_focus_generic_strike_at_democracy3_shine"
+  goals_shine.gfx  ::  name = "GFX_focus_generic_strike_at_democracy2_shine"
+
+################################################################################
+# 若上面有命中：把第一个 _shine spriteType 整块打出来看它指哪张贴图
+################################################################################
+
+--- HoI4\interface\goals.gfx  L266
+    	SpriteType = {
+    		name = "GFX_country_selection_entry_shine"
+    		texturefile = "gfx/interface/country_selection_entry.dds"
+    		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+    		noOfFrames = 2
+    		animation = {
+    			animationmaskfile = "gfx/interface/country_selection_entry.dds"
+    			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+
+--- HoI4\interface\goals_shine.gfx  L6
+    	SpriteType = {
+    		name = "GFX__shine"
+    		texturefile = "gfx/interface/goals/goal_unknown.dds"
+    				effectFile = "gfx/FX/buttonstate.lua"
+    		animation = {
+    			animationmaskfile = "gfx/interface/goals/goal_unknown.dds"
+    			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+    			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)

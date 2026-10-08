@@ -1,0 +1,39 @@
+﻿解析到 focus 节点: 449 个
+
+=== 苏联国策树绝对坐标包围盒（单位：国策网格）===
+  X: -11 .. 81   （宽 93 格）
+  Y: 0 .. 15   （高 16 格）
+  存在循环引用: 0 个
+
+=== 关键国策的绝对坐标 ===
+  SOV_the_peoples_revolution         绝对 (6, 2)
+  SOV_the_supreme_soviet             绝对 (6, 3)
+
+=== X 方向分布（每 20 格一档，找空白区）===
+  X   -20 ..    -1     81 个
+  X     0 ..    19    164 个
+  X     0 ..    19     54 个
+  X    20 ..    39      4 个
+  X    20 ..    39     94 个
+  X    40 ..    59     30 个
+  X    40 ..    59      6 个
+  X    60 ..    79     10 个
+  X    80 ..    99      4 个
+  X    80 ..    99      2 个
+
+=== 候选中性 sprite 的 DDS 实际尺寸 ===
+  GFX_tiled_plain_bg                 190 x 190   gfx//interface//tiles//tiled_plain_bg.dds
+  GFX_tiled_plain_bg2                182 x 186   gfx//interface//tiles//tiled_plain_bg2.dds
+  GFX_tiled_window_thin_border       190 x 190   gfx//interface//tiles//tiled_window_thin_border.dds
+  GFX_tiled_paper_bg                 192 x 192   gfx//interface//tiles//tiled_paper_bg.dds
+  GFX_tiled_header                    543 x 41   gfx//interface//header_bg.dds
+  GFX_generic_box                     102 x 26   gfx/interface/generic_box.dds
+  GFX_generic_box_small                88 x 26   gfx/interface/generic_box_small.dds
+  GFX_generic_box_96                   96 x 26   gfx/interface/generic_box_96.dds
+  GFX_generic_box_125                 124 x 26   gfx/interface/generic_box_125.dds
+  GFX_generic_circle_background        85 x 17   gfx/interface/generic_text_circle.dds
+  GFX_generic_bg                      271 x 55   gfx/interface/generic_bg.dds
+  GFX_empty_paper                      49 x 49   gfx/interface/officer_corp/empty_paper.dds
+  GFX_empty_green_frame                40 x 40   gfx/interface/tiles/green_frame_tile.dds
+  GFX_trait_box_fuhrer                115 x 22   gfx/interface/inner_circle/trait_box_fuhrer.dds
+  GFX_blank_leader_portrait          156 x 210   gfx/interface/inner_circle/blank_leader_portrait.dds

@@ -1,0 +1,30 @@
+﻿文件: D:\Users\xuwei\PycharmProjects\heart_of_Iron\mod\heart_of_iron\common\national_focus\soviet.txt
+行数: 29696
+文件里 focus = { 行数: 456
+解析出 focus 块: 456
+  ? 一致，解析可信
+绝对坐标解析成功: 456 / 456
+
+树绝对坐标范围: X 0..145   Y 0..20
+
+===== 锚点 SOV_the_supreme_soviet 的绝对坐标 =====
+  (65, 13)   [相对: SOV_the_peoples_revolution x=0 y=1]
+
+===== 入口国策目标格子（相对锚点 x=-6..6 步长2, y=2）=====
+  (  59,  15)  ? 空闲
+  (  61,  15)  ? 空闲
+  (  63,  15)  ? 空闲
+  (  65,  15)  ? 空闲
+  (  67,  15)  ? 空闲
+  (  69,  15)  ? 空闲
+  (  71,  15)  ? 空闲
+
+结论：7 个目标格子全部空闲，可以放心用 relative_position_id + y=2。
+
+===== 锚点下方 y = 13 .. 18 的占用情况（只列非空）=====
+  y=  13  x=59:SOV_international_union_of_soviet_republics   x=65:SOV_the_supreme_soviet   x=70:SOV_socialist_humanism
+  y=  14  （空）
+  y=  15  （空）
+  y=  16  （空）
+  y=  17  （空）
+  y=  18  （空）

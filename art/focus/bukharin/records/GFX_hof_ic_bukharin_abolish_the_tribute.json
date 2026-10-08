@@ -1,0 +1,11 @@
+{
+  "id": "hof_ic_bukharin_abolish_the_tribute",
+  "name": "GFX_hof_ic_bukharin_abolish_the_tribute",
+  "title": "取消「贡款」",
+  "group": "bukharin",
+  "concept": "A large broken tax-collection seal beside a completely BLANK folded requisition paper, a snapped rope around a wheat sheaf in foreground. Controlled confrontational symbolism, no readable marks on seal/paper, no money.",
+  "prompt": "Use case: stylized-concept. Create ONE new Hearts of Iron IV Soviet national focus icon, 取消「贡款」. The supplied image is a STYLE reference only; replace the center with this new concept: A large broken tax-collection seal beside a completely BLANK folded requisition paper, a snapped rope around a wheat sheaf in foreground. Controlled confrontational symbolism, no readable marks on seal/paper, no money. Keep family style: deep blood-red round medallion, two antique gold laurel branches open at top, small red star on top, entirely BLANK gold ribbon at bottom, central ivory/plaster grey sculpted objects, upper-left light, strong contrast, restrained aged metal. Whole emblem centered and fully inside canvas, aspect ratio 100:88, readable at final 100x88 pixels. Genuine transparent-background PNG, actual alpha transparency outside the emblem, transparent background ENABLED. Keep red backing only inside emblem. No rectangular backdrop, no painted checkerboard, no text, letters, numbers or watermark. No mockup, no sheet, one isolated cutout asset.",
+  "reference": "D:/Users/xuwei/PycharmProjects/heart_of_Iron/art/focus/transparent-v2/source/GFX_hof_ic_trotsky_limited_market_reforms.png",
+  "source": "C:\\Users\\xuwei\\.codex\\generated_images\\01a09af5-fd43-79a0-a3cc-72284cd67cbc\\exec-cd1a4bb8-9fe6-4b53-a976-e6bf981db289.png",
+  "mode": "built-in image_gen"
+}

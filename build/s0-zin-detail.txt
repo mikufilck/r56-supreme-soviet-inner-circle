@@ -1,0 +1,1008 @@
+﻿================================================================
+  原版 角色块 SOV_grigory_zinovyev
+  F:\Hearts of Iron IV\common\characters\SOV.txt
+================================================================
+  --- 命中于 L3240 ---
+    3238  	}
+    3239  
+    3240  	SOV_grigory_zinovyev = {
+    3241  		name = SOV_grigory_zinovyev
+    3242  		portraits = {
+    3243  			civilian = {
+    3244  				large = "GFX_portrait_SOV_grigory_zinovyev"
+    3245  			}
+    3246  			army = {
+    3247  				small = "GFX_idea_SOV_grigory_zinovyev_imprisoned"
+    3248  			}
+    3249  		}
+    3250  		allowed_civil_war = { 
+    3251  			OR = {
+    3252  				AND = {
+    3253  					tag = SOV 
+    3254  					has_government = communism
+    3255  				}
+    3256  				AND = {
+    3257  					SOV_is_exiles = yes 
+    3258  					has_government = communism 
+    3259  				}
+    3260  			}
+    3261  		}
+    3262  
+    3263  		advisor = {
+    3264  			slot = political_advisor
+    3265  			idea_token = SOV_grigory_zinovyev
+    3266  			allowed = {
+    3267  				original_tag = SOV
+    3268  			}
+    3269  			visible = {
+    3270  				NOT = {
+    3271  					has_character_flag = SOV_character_purged_flag 
+    3272  				}
+    3273  			}
+    3274  			available = {
+    3275  				has_completed_focus = SOV_align_the_zinovyevites
+    3276  				OR = {
+    3277  					has_global_flag = SOV_soviet_civil_war
+    3278  					has_global_flag = SOV_soviet_civil_war_over
+    3279  					AND = {
+    3280  						has_completed_focus = SOV_the_plan_for_the_coup
+    3281  						has_completed_focus = SOV_coup_detat
+    3282  					}
+    3283  				}
+    3284  				if = {
+    3285  					limit = {
+
+================================================================
+  原版 领袖特质 #ZINOVYEV
+  F:\Hearts of Iron IV\common\country_leader\00_traits.txt
+================================================================
+  --- 命中于 L7741 ---
+    7738  		research_speed_factor = -0.03
+    7739  	}
+    7740  
+    7741  	#ZINOVYEV
+    7742  	born_agitator = {
+    7743  		random = no
+    7744  		political_power_factor = 0.1
+    7745  		conscription_factor = 0.15
+    7746  		army_morale_factor = 0.05
+    7747  		stability_factor = -0.05
+    7748  		compliance_growth = -0.05
+    7749  	}
+    7750  
+    7751  	#KAMENEV
+    7752  	the_faded_star = {
+    7753  		random = no
+    7754  		research_speed_factor = 0.03
+    7755  		stability_factor = 0.1
+    7756  		compliance_gain = 0.05
+    7757  		political_power_factor = -0.1
+    7758  		drift_defence_factor = -0.1
+    7759  	}
+    7760  
+    7761  	defier_of_the_sun_god = {
+    7762  		random = no
+    7763  		army_morale_factor = 0.05
+    7764  		compliance_growth = 0.05
+    7765  		targeted_modifier = {
+    7766  			tag = JAP
+    7767  			attack_bonus_against = 0.1
+    7768  			defense_bonus_against = 0.1
+    7769  		}
+    7770  	}
+    7771  
+
+  --- 命中于 L8064 ---
+    8061  		land_reinforce_rate = 0.02
+    8062  	}
+    8063  
+    8064  	#Zinovyev
+    8065  	communist_theorist = {
+    8066  		random = no
+    8067  		sprite = 13
+    8068  		drift_defence_factor = 0.1
+    8069  		political_power_factor = 0.15
+    8070  	}
+    8071  
+    8072  	#Kamenev
+    8073  	appeasing_technocrat = {
+    8074  		random = no
+    8075  		sprite = 13
+    8076  		drift_defence_factor = -0.1
+    8077  		political_power_factor = 0.15
+    8078  		stability_factor = 0.1
+    8079  		compliance_gain = 0.02
+    8080  	}
+    8081  
+    8082  	#Ryutin
+    8083  	anti_stalinist_propagandist = {
+    8084  		random = no
+    8085  		sprite = 13
+    8086  		subversive_activites_upkeep = -0.15
+    8087  		boost_resistance_factor = 0.1
+    8088  		resistance_decay_on_our_occupied_states = -0.1
+    8089  		intel_from_operatives_factor = 0.1
+    8090  	}
+    8091  
+    8092  	#Sokolnikov
+    8093  	peoples_commissar_of_finance = {
+    8094  		random = no
+
+================================================================
+  R56 角色块（覆盖版？）
+  D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125\common\characters\SOV.txt
+================================================================
+  --- 命中于 L5121 ---
+    5119  	}
+    5120  
+    5121  	SOV_grigory_zinovyev = {
+    5122  		name = SOV_grigory_zinovyev
+    5123  		portraits = {
+    5124  			civilian = {
+    5125  				large = "GFX_portrait_SOV_grigory_zinovyev"
+    5126  			}
+    5127  			army = {
+    5128  				small = "GFX_idea_SOV_grigory_zinovyev_imprisoned"
+    5129  			}
+    5130  		}
+    5131  		allowed_civil_war = { 
+    5132  			OR = {
+    5133  				AND = {
+    5134  					tag = SOV 
+    5135  					has_government = communism
+    5136  				}
+    5137  				AND = {
+    5138  					SOV_is_exiles = yes 
+    5139  					has_government = communism 
+    5140  				}
+    5141  			}
+    5142  		}
+    5143  
+    5144  		advisor = {
+    5145  			slot = political_advisor
+    5146  			idea_token = SOV_grigory_zinovyev
+    5147  			allowed = {
+    5148  				original_tag = SOV
+    5149  			}
+    5150  			visible = {
+    5151  				NOT = {
+    5152  					has_character_flag = SOV_character_purged_flag
+    5153  					has_global_flag = sov_old_focus_tree
+    5154  				}
+    5155  			}
+    5156  			available = {
+    5157  				has_completed_focus = SOV_align_the_zinovyevites
+    5158  				OR = {
+    5159  					has_global_flag = SOV_soviet_civil_war
+    5160  					has_global_flag = SOV_soviet_civil_war_over
+    5161  					AND = {
+
+  --- 命中于 L5122 ---
+    5120  
+    5121  	SOV_grigory_zinovyev = {
+    5122  		name = SOV_grigory_zinovyev
+    5123  		portraits = {
+    5124  			civilian = {
+    5125  				large = "GFX_portrait_SOV_grigory_zinovyev"
+    5126  			}
+    5127  			army = {
+    5128  				small = "GFX_idea_SOV_grigory_zinovyev_imprisoned"
+    5129  			}
+    5130  		}
+    5131  		allowed_civil_war = { 
+    5132  			OR = {
+    5133  				AND = {
+    5134  					tag = SOV 
+    5135  					has_government = communism
+    5136  				}
+    5137  				AND = {
+    5138  					SOV_is_exiles = yes 
+    5139  					has_government = communism 
+    5140  				}
+    5141  			}
+    5142  		}
+    5143  
+    5144  		advisor = {
+    5145  			slot = political_advisor
+    5146  			idea_token = SOV_grigory_zinovyev
+    5147  			allowed = {
+    5148  				original_tag = SOV
+    5149  			}
+    5150  			visible = {
+    5151  				NOT = {
+    5152  					has_character_flag = SOV_character_purged_flag
+    5153  					has_global_flag = sov_old_focus_tree
+    5154  				}
+    5155  			}
+    5156  			available = {
+    5157  				has_completed_focus = SOV_align_the_zinovyevites
+    5158  				OR = {
+    5159  					has_global_flag = SOV_soviet_civil_war
+    5160  					has_global_flag = SOV_soviet_civil_war_over
+    5161  					AND = {
+    5162  						has_completed_focus = SOV_the_plan_for_the_coup
+
+  --- 命中于 L5125 ---
+    5123  		portraits = {
+    5124  			civilian = {
+    5125  				large = "GFX_portrait_SOV_grigory_zinovyev"
+    5126  			}
+    5127  			army = {
+    5128  				small = "GFX_idea_SOV_grigory_zinovyev_imprisoned"
+    5129  			}
+    5130  		}
+    5131  		allowed_civil_war = { 
+    5132  			OR = {
+    5133  				AND = {
+    5134  					tag = SOV 
+    5135  					has_government = communism
+    5136  				}
+    5137  				AND = {
+    5138  					SOV_is_exiles = yes 
+    5139  					has_government = communism 
+    5140  				}
+    5141  			}
+    5142  		}
+    5143  
+    5144  		advisor = {
+    5145  			slot = political_advisor
+    5146  			idea_token = SOV_grigory_zinovyev
+    5147  			allowed = {
+    5148  				original_tag = SOV
+    5149  			}
+    5150  			visible = {
+    5151  				NOT = {
+    5152  					has_character_flag = SOV_character_purged_flag
+    5153  					has_global_flag = sov_old_focus_tree
+    5154  				}
+    5155  			}
+    5156  			available = {
+    5157  				has_completed_focus = SOV_align_the_zinovyevites
+    5158  				OR = {
+    5159  					has_global_flag = SOV_soviet_civil_war
+    5160  					has_global_flag = SOV_soviet_civil_war_over
+    5161  					AND = {
+    5162  						has_completed_focus = SOV_the_plan_for_the_coup
+    5163  						has_completed_focus = SOV_coup_detat
+    5164  					}
+    5165  				}
+
+  --- 命中于 L5128 ---
+    5126  			}
+    5127  			army = {
+    5128  				small = "GFX_idea_SOV_grigory_zinovyev_imprisoned"
+    5129  			}
+    5130  		}
+    5131  		allowed_civil_war = { 
+    5132  			OR = {
+    5133  				AND = {
+    5134  					tag = SOV 
+    5135  					has_government = communism
+    5136  				}
+    5137  				AND = {
+    5138  					SOV_is_exiles = yes 
+    5139  					has_government = communism 
+    5140  				}
+    5141  			}
+    5142  		}
+    5143  
+    5144  		advisor = {
+    5145  			slot = political_advisor
+    5146  			idea_token = SOV_grigory_zinovyev
+    5147  			allowed = {
+    5148  				original_tag = SOV
+    5149  			}
+    5150  			visible = {
+    5151  				NOT = {
+    5152  					has_character_flag = SOV_character_purged_flag
+    5153  					has_global_flag = sov_old_focus_tree
+    5154  				}
+    5155  			}
+    5156  			available = {
+    5157  				has_completed_focus = SOV_align_the_zinovyevites
+    5158  				OR = {
+    5159  					has_global_flag = SOV_soviet_civil_war
+    5160  					has_global_flag = SOV_soviet_civil_war_over
+    5161  					AND = {
+    5162  						has_completed_focus = SOV_the_plan_for_the_coup
+    5163  						has_completed_focus = SOV_coup_detat
+    5164  					}
+    5165  				}
+    5166  				if = {
+    5167  					limit = {
+    5168  						has_character_flag = SOV_imprisoned_flag
+
+================================================================
+  R56 领袖特质 #ZINOVYEV
+  D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125\common\country_leader\00_traits.txt
+================================================================
+  --- 命中于 L7745 ---
+    7742  		research_speed_factor = -0.03
+    7743  	}
+    7744  
+    7745  	#ZINOVYEV
+    7746  	born_agitator = {
+    7747  		random = no
+    7748  		political_power_factor = 0.1
+    7749  		conscription_factor = 0.15
+    7750  		army_morale_factor = 0.05
+    7751  		stability_factor = -0.05
+    7752  		compliance_growth = -0.05
+    7753  	}
+    7754  
+    7755  	#KAMENEV
+    7756  	the_faded_star = {
+    7757  		random = no
+    7758  		research_speed_factor = 0.03
+    7759  		stability_factor = 0.1
+    7760  		compliance_gain = 0.05
+    7761  		political_power_factor = -0.1
+    7762  		drift_defence_factor = -0.1
+    7763  	}
+    7764  
+    7765  	defier_of_the_sun_god = {
+    7766  		random = no
+    7767  		army_morale_factor = 0.05
+    7768  		compliance_growth = 0.05
+    7769  		targeted_modifier = {
+    7770  			tag = JAP
+    7771  			attack_bonus_against = 0.1
+    7772  			defense_bonus_against = 0.1
+    7773  		}
+    7774  	}
+    7775  
+
+  --- 命中于 L8070 ---
+    8067  		production_speed_infrastructure_factor = 0.1 #r56
+    8068  	}
+    8069  
+    8070  	#Zinovyev
+    8071  	communist_theorist = {
+    8072  		random = no
+    8073  		sprite = 13
+    8074  		drift_defence_factor = 0.1
+    8075  		political_power_factor = 0.15
+    8076  	}
+    8077  
+    8078  	#Kamenev
+    8079  	appeasing_technocrat = {
+    8080  		random = no
+    8081  		sprite = 13
+    8082  		drift_defence_factor = -0.1
+    8083  		political_power_factor = 0.15
+    8084  		stability_factor = 0.1
+    8085  		compliance_gain = 0.02
+    8086  	}
+    8087  
+    8088  	#Ryutin
+    8089  	anti_stalinist_propagandist = {
+    8090  		random = no
+    8091  		sprite = 13
+    8092  		subversive_activites_upkeep = -0.15
+    8093  		boost_resistance_factor = 0.1
+    8094  		resistance_decay_on_our_occupied_states = -0.1
+    8095  		intel_from_operatives_factor = 0.1
+    8096  	}
+    8097  
+    8098  	#Sokolnikov
+    8099  	peoples_commissar_of_finance = {
+    8100  		random = no
+
+================================================================
+  原版 民族精神 idea_SOV_grigory_zinovyev
+  F:\Hearts of Iron IV\common\ideas\SOV.txt
+================================================================
+  (未命中)
+
+================================================================
+  原版 季诺维也夫派国策簇
+  F:\Hearts of Iron IV\common\national_focus\soviet.txt
+================================================================
+  --- 命中于 L7205 ---
+    7197  			add_political_power = 50
+    7198  			add_stability = 0.05
+    7199  
+    7200  			SOV_paranoia_low_decrease_effect = yes
+    7201  		}
+    7202  	}
+    7203  
+    7204  	focus = {
+    7205  		id = SOV_the_zinovyevite_terrorist_center
+    7206  		icon = GFX_focus_SOV_purge_zinovyevists
+    7207  		prerequisite = { focus = SOV_the_stalin_constitution }
+    7208  		x = 0
+    7209  		y = 1
+    7210  		relative_position_id = SOV_the_stalin_constitution
+    7211  		cost = 5
+    7212  
+    7213  		available = {
+    7214  
+    7215  		}
+    7216  		
+    7217  		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_SOV_POLITICAL_PARANOIA}
+    7218  
+    7219  		select_effect = {
+    7220  			set_country_flag = SOV_paranoia_do_not_cancel_focus_flag #This focus cannot be canceled
+    7221  		}
+    7222  
+    7223  		completion_reward = {
+    7224  			clr_country_flag = SOV_paranoia_do_not_cancel_focus_flag
+    7225  			set_country_flag = { flag = SOV_paranoia_random_purge_cooldown_from_focus_flag days = 15 } #Used to prevent random purges from popping up while this is active
+    7226  			set_country_flag = SOV_first_moscow_trial_flag #Used to unlock the next purge focus
+    7227  
+    7228  			add_political_power = 25
+    7229  
+    7230  			SOV_paranoia_high_increase_effect = yes
+    7231  
+    7232  			#HISTORICAL
+    7233  			#Zinovyev
+    7234  			if = {
+    7235  				limit = {
+    7236  					has_character = SOV_grigory_zinovyev
+    7237  				}
+    7238  				SOV_grigory_zinovyev = {
+    7239  					set_character_flag = SOV_targeted_for_purge_flag
+    7240  				}
+    7241  			}
+    7242  			else = {
+    7243  				SOV_add_random_character_to_purge_targets_effect = yes
+    7244  			}
+    7245  			#Kamenev
+    7246  			if = {
+    7247  				limit = {
+    7248  					has_character = SOV_lev_kamenev
+    7249  				}
+    7250  				SOV_lev_kamenev = {
+    7251  					set_character_flag = SOV_targeted_for_purge_flag
+    7252  				}
+    7253  			}
+    7254  			else = {
+    7255  				SOV_add_random_character_to_purge_targets_effect = yes
+    7256  			}
+    7257  			#Smirnov
+    7258  			if = {
+    7259  				limit = {
+    7260  					has_character = SOV_ivan_smirnov
+
+  --- 命中于 L7206 ---
+    7198  			add_stability = 0.05
+    7199  
+    7200  			SOV_paranoia_low_decrease_effect = yes
+    7201  		}
+    7202  	}
+    7203  
+    7204  	focus = {
+    7205  		id = SOV_the_zinovyevite_terrorist_center
+    7206  		icon = GFX_focus_SOV_purge_zinovyevists
+    7207  		prerequisite = { focus = SOV_the_stalin_constitution }
+    7208  		x = 0
+    7209  		y = 1
+    7210  		relative_position_id = SOV_the_stalin_constitution
+    7211  		cost = 5
+    7212  
+    7213  		available = {
+    7214  
+    7215  		}
+    7216  		
+    7217  		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_SOV_POLITICAL_PARANOIA}
+    7218  
+    7219  		select_effect = {
+    7220  			set_country_flag = SOV_paranoia_do_not_cancel_focus_flag #This focus cannot be canceled
+    7221  		}
+    7222  
+    7223  		completion_reward = {
+    7224  			clr_country_flag = SOV_paranoia_do_not_cancel_focus_flag
+    7225  			set_country_flag = { flag = SOV_paranoia_random_purge_cooldown_from_focus_flag days = 15 } #Used to prevent random purges from popping up while this is active
+    7226  			set_country_flag = SOV_first_moscow_trial_flag #Used to unlock the next purge focus
+    7227  
+    7228  			add_political_power = 25
+    7229  
+    7230  			SOV_paranoia_high_increase_effect = yes
+    7231  
+    7232  			#HISTORICAL
+    7233  			#Zinovyev
+    7234  			if = {
+    7235  				limit = {
+    7236  					has_character = SOV_grigory_zinovyev
+    7237  				}
+    7238  				SOV_grigory_zinovyev = {
+    7239  					set_character_flag = SOV_targeted_for_purge_flag
+    7240  				}
+    7241  			}
+    7242  			else = {
+    7243  				SOV_add_random_character_to_purge_targets_effect = yes
+    7244  			}
+    7245  			#Kamenev
+    7246  			if = {
+    7247  				limit = {
+    7248  					has_character = SOV_lev_kamenev
+    7249  				}
+    7250  				SOV_lev_kamenev = {
+    7251  					set_character_flag = SOV_targeted_for_purge_flag
+    7252  				}
+    7253  			}
+    7254  			else = {
+    7255  				SOV_add_random_character_to_purge_targets_effect = yes
+    7256  			}
+    7257  			#Smirnov
+    7258  			if = {
+    7259  				limit = {
+    7260  					has_character = SOV_ivan_smirnov
+    7261  				}
+
+  --- 命中于 L7320 ---
+    7312  				multiply_variable = { SOV_the_red_army_mastery_loss_factor_inverted = -1 }
+    7313  			}
+    7314  		}
+    7315  	}
+    7316  
+    7317  	focus = {
+    7318  		id = SOV_secure_the_administration
+    7319  		icon = GFX_focus_generic_join_comintern
+    7320  		prerequisite = { focus = SOV_the_zinovyevite_terrorist_center }
+    7321  		x = -1
+    7322  		y = 1
+    7323  		relative_position_id = SOV_the_zinovyevite_terrorist_center
+    7324  		cost = 10
+    7325  
+    7326  		available = {
+    7327  
+    7328  		}
+    7329  		
+    7330  		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_SOV_POLITICAL_PARANOIA}
+    7331  
+    7332  		completion_reward = {
+    7333  			add_to_variable = { SOV_the_politburo_economy_cost_factor = -0.2 }
+    7334  			add_to_variable = { SOV_the_politburo_trade_laws_cost_factor = -0.2 }
+    7335  			add_to_variable = { SOV_the_politburo_mobilization_laws_cost_factor = -0.2 }
+    7336  			custom_effect_tooltip = SOV_secure_the_administration_ns_tt
+    7337  
+    7338  			add_political_power = 50
+    7339  
+    7340  			SOV_paranoia_medium_decrease_effect = yes
+    7341  		}
+    7342  	}
+    7343  
+    7344  	focus = {
+    7345  		id = SOV_the_collectivization_process
+    7346  		icon = GFX_focus_prc_agrarian_socialism
+    7347  		prerequisite = { focus = SOV_socialism_in_one_country }
+    7348  		prerequisite = { focus = SOV_secure_the_administration }
+    7349  		x = 0
+    7350  		y = 3
+    7351  		relative_position_id = SOV_socialism_in_one_country
+    7352  		cost = 10
+    7353  
+    7354  		available = {
+    7355  
+    7356  		}
+    7357  		
+    7358  		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_SOV_POLITICAL_PARANOIA}
+    7359  
+    7360  		completion_reward = {
+    7361  			add_to_variable = { SOV_the_politburo_good_consumer_goods_factor = -0.02 }
+    7362  			add_to_variable = { SOV_the_politburo_production_speed_buildings_factor = 0.05 } 
+    7363  			add_to_variable = { SOV_the_politburo_global_building_slots_factor = 0.1 } 
+    7364  			custom_effect_tooltip = SOV_the_collectivization_process_ns_tt
+    7365  
+    7366  			add_stability = -0.05
+    7367  			add_war_support = -0.05
+    7368  
+    7369  			if = { #Target a rural state with no civs
+    7370  				limit = {
+    7371  					any_owned_state = {
+    7372  						OR = {
+    7373  							has_state_category = town #Developed Rural Region
+    7374  							has_state_category = rural #Rural Region
+    7375  						}
+
+  --- 命中于 L7323 ---
+    7315  	}
+    7316  
+    7317  	focus = {
+    7318  		id = SOV_secure_the_administration
+    7319  		icon = GFX_focus_generic_join_comintern
+    7320  		prerequisite = { focus = SOV_the_zinovyevite_terrorist_center }
+    7321  		x = -1
+    7322  		y = 1
+    7323  		relative_position_id = SOV_the_zinovyevite_terrorist_center
+    7324  		cost = 10
+    7325  
+    7326  		available = {
+    7327  
+    7328  		}
+    7329  		
+    7330  		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_SOV_POLITICAL_PARANOIA}
+    7331  
+    7332  		completion_reward = {
+    7333  			add_to_variable = { SOV_the_politburo_economy_cost_factor = -0.2 }
+    7334  			add_to_variable = { SOV_the_politburo_trade_laws_cost_factor = -0.2 }
+    7335  			add_to_variable = { SOV_the_politburo_mobilization_laws_cost_factor = -0.2 }
+    7336  			custom_effect_tooltip = SOV_secure_the_administration_ns_tt
+    7337  
+    7338  			add_political_power = 50
+    7339  
+    7340  			SOV_paranoia_medium_decrease_effect = yes
+    7341  		}
+    7342  	}
+    7343  
+    7344  	focus = {
+    7345  		id = SOV_the_collectivization_process
+    7346  		icon = GFX_focus_prc_agrarian_socialism
+    7347  		prerequisite = { focus = SOV_socialism_in_one_country }
+    7348  		prerequisite = { focus = SOV_secure_the_administration }
+    7349  		x = 0
+    7350  		y = 3
+    7351  		relative_position_id = SOV_socialism_in_one_country
+    7352  		cost = 10
+    7353  
+    7354  		available = {
+    7355  
+    7356  		}
+    7357  		
+    7358  		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_SOV_POLITICAL_PARANOIA}
+    7359  
+    7360  		completion_reward = {
+    7361  			add_to_variable = { SOV_the_politburo_good_consumer_goods_factor = -0.02 }
+    7362  			add_to_variable = { SOV_the_politburo_production_speed_buildings_factor = 0.05 } 
+    7363  			add_to_variable = { SOV_the_politburo_global_building_slots_factor = 0.1 } 
+    7364  			custom_effect_tooltip = SOV_the_collectivization_process_ns_tt
+    7365  
+    7366  			add_stability = -0.05
+    7367  			add_war_support = -0.05
+    7368  
+    7369  			if = { #Target a rural state with no civs
+    7370  				limit = {
+    7371  					any_owned_state = {
+    7372  						OR = {
+    7373  							has_state_category = town #Developed Rural Region
+    7374  							has_state_category = rural #Rural Region
+    7375  						}
+    7376  						is_fully_controlled_by = ROOT
+    7377  						industrial_complex < 1
+    7378  						arms_factory < 1
+
+================================================================
+  R56 季诺维也夫派国策簇
+  D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125\common\national_focus\soviet.txt
+================================================================
+  --- 命中于 L8636 ---
+    8628  			add_political_power = 50
+    8629  			add_stability = 0.05
+    8630  
+    8631  			SOV_paranoia_low_decrease_effect = yes
+    8632  		}
+    8633  	}
+    8634  
+    8635  	focus = {
+    8636  		id = SOV_the_zinovyevite_terrorist_center
+    8637  		icon = GFX_focus_SOV_purge_zinovyevists
+    8638  		prerequisite = { focus = SOV_the_stalin_constitution }
+    8639  		x = 0
+    8640  		y = 1
+    8641  		relative_position_id = SOV_the_stalin_constitution
+    8642  		cost = 5
+    8643  		
+    8644  		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_SOV_POLITICAL_PARANOIA}
+    8645  
+    8646  		select_effect = {
+    8647  			set_country_flag = SOV_paranoia_do_not_cancel_focus_flag #This focus cannot be canceled
+    8648  		}
+    8649  
+    8650  		completion_reward = {
+    8651  			clr_country_flag = SOV_paranoia_do_not_cancel_focus_flag
+    8652  			set_country_flag = { flag = SOV_paranoia_random_purge_cooldown_from_focus_flag days = 15 } #Used to prevent random purges from popping up while this is active
+    8653  			set_country_flag = SOV_first_moscow_trial_flag #Used to unlock the next purge focus
+    8654  
+    8655  			add_political_power = 25
+    8656  
+    8657  			SOV_paranoia_high_increase_effect = yes
+    8658  			
+    8659  			#HISTORICAL
+    8660  			#Zinovyev
+    8661  			if = {
+    8662  				limit = {
+    8663  					has_character = SOV_grigory_zinovyev
+    8664  				}
+    8665  				SOV_grigory_zinovyev = {
+    8666  					set_character_flag = SOV_targeted_for_purge_flag
+    8667  				}
+    8668  			}
+    8669  			else = {
+    8670  				SOV_add_random_character_to_purge_targets_effect = yes
+    8671  			}
+    8672  			#Kamenev
+    8673  			if = {
+    8674  				limit = {
+    8675  					has_character = SOV_lev_kamenev
+    8676  				}
+    8677  				SOV_lev_kamenev = {
+    8678  					set_character_flag = SOV_targeted_for_purge_flag
+    8679  				}
+    8680  			}
+    8681  			else = {
+    8682  				SOV_add_random_character_to_purge_targets_effect = yes
+    8683  			}
+    8684  			#Smirnov
+    8685  			if = {
+    8686  				limit = {
+    8687  					has_character = SOV_ivan_smirnov
+    8688  				}
+    8689  				SOV_ivan_smirnov = {
+    8690  					set_character_flag = SOV_targeted_for_purge_flag
+    8691  				}
+
+  --- 命中于 L8637 ---
+    8629  			add_stability = 0.05
+    8630  
+    8631  			SOV_paranoia_low_decrease_effect = yes
+    8632  		}
+    8633  	}
+    8634  
+    8635  	focus = {
+    8636  		id = SOV_the_zinovyevite_terrorist_center
+    8637  		icon = GFX_focus_SOV_purge_zinovyevists
+    8638  		prerequisite = { focus = SOV_the_stalin_constitution }
+    8639  		x = 0
+    8640  		y = 1
+    8641  		relative_position_id = SOV_the_stalin_constitution
+    8642  		cost = 5
+    8643  		
+    8644  		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_SOV_POLITICAL_PARANOIA}
+    8645  
+    8646  		select_effect = {
+    8647  			set_country_flag = SOV_paranoia_do_not_cancel_focus_flag #This focus cannot be canceled
+    8648  		}
+    8649  
+    8650  		completion_reward = {
+    8651  			clr_country_flag = SOV_paranoia_do_not_cancel_focus_flag
+    8652  			set_country_flag = { flag = SOV_paranoia_random_purge_cooldown_from_focus_flag days = 15 } #Used to prevent random purges from popping up while this is active
+    8653  			set_country_flag = SOV_first_moscow_trial_flag #Used to unlock the next purge focus
+    8654  
+    8655  			add_political_power = 25
+    8656  
+    8657  			SOV_paranoia_high_increase_effect = yes
+    8658  			
+    8659  			#HISTORICAL
+    8660  			#Zinovyev
+    8661  			if = {
+    8662  				limit = {
+    8663  					has_character = SOV_grigory_zinovyev
+    8664  				}
+    8665  				SOV_grigory_zinovyev = {
+    8666  					set_character_flag = SOV_targeted_for_purge_flag
+    8667  				}
+    8668  			}
+    8669  			else = {
+    8670  				SOV_add_random_character_to_purge_targets_effect = yes
+    8671  			}
+    8672  			#Kamenev
+    8673  			if = {
+    8674  				limit = {
+    8675  					has_character = SOV_lev_kamenev
+    8676  				}
+    8677  				SOV_lev_kamenev = {
+    8678  					set_character_flag = SOV_targeted_for_purge_flag
+    8679  				}
+    8680  			}
+    8681  			else = {
+    8682  				SOV_add_random_character_to_purge_targets_effect = yes
+    8683  			}
+    8684  			#Smirnov
+    8685  			if = {
+    8686  				limit = {
+    8687  					has_character = SOV_ivan_smirnov
+    8688  				}
+    8689  				SOV_ivan_smirnov = {
+    8690  					set_character_flag = SOV_targeted_for_purge_flag
+    8691  				}
+    8692  			}
+
+  --- 命中于 L8751 ---
+    8743  				multiply_variable = { SOV_the_red_army_mastery_loss_factor_inverted = -1 }
+    8744  			}
+    8745  		}
+    8746  	}
+    8747  
+    8748  	focus = {
+    8749  		id = SOV_secure_the_administration
+    8750  		icon = GFX_focus_generic_soviet_politics
+    8751  		prerequisite = { focus = SOV_the_zinovyevite_terrorist_center }
+    8752  		x = -1
+    8753  		y = 1
+    8754  		relative_position_id = SOV_the_zinovyevite_terrorist_center
+    8755  		cost = 5
+    8756  
+    8757  		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_SOV_POLITICAL_PARANOIA}
+    8758  
+    8759  		completion_reward = {
+    8760  			add_to_variable = { SOV_the_politburo_economy_cost_factor = -0.2 }
+    8761  			add_to_variable = { SOV_the_politburo_trade_laws_cost_factor = -0.2 }
+    8762  			add_to_variable = { SOV_the_politburo_mobilization_laws_cost_factor = -0.2 }
+    8763  			custom_effect_tooltip = SOV_secure_the_administration_ns_tt
+    8764  
+    8765  			add_political_power = 50
+    8766  
+    8767  			SOV_paranoia_medium_decrease_effect = yes
+    8768  		}
+    8769  	}
+    8770  
+    8771  	focus = {
+    8772  		id = SOV_the_collectivization_process
+    8773  		icon = GFX_focus_prc_agrarian_socialism
+    8774  		prerequisite = { focus = SOV_socialism_in_one_country }
+    8775  		prerequisite = { focus = SOV_secure_the_administration }
+    8776  		x = 0
+    8777  		y = 3
+    8778  		relative_position_id = SOV_socialism_in_one_country
+    8779  		cost = 10
+    8780  
+    8781  		completion_reward = {
+    8782  			add_to_variable = { SOV_the_politburo_good_consumer_goods_factor = -0.02 }
+    8783  			add_to_variable = { SOV_the_politburo_production_speed_buildings_factor = 0.05 } 
+    8784  			add_to_variable = { SOV_the_politburo_global_building_slots_factor = 0.1 } 
+    8785  			custom_effect_tooltip = SOV_the_collectivization_process_ns_tt
+    8786  
+    8787  			add_stability = -0.05
+    8788  			add_war_support = -0.05
+    8789  
+    8790  			if = { #Target a rural state with no civs
+    8791  				limit = {
+    8792  					any_owned_state = {
+    8793  						OR = {
+    8794  							has_state_category = town #Developed Rural Region
+    8795  							has_state_category = rural #Rural Region
+    8796  						}
+    8797  						is_fully_controlled_by = ROOT
+    8798  						industrial_complex < 1
+    8799  						arms_factory < 1
+    8800  						dockyard < 1
+    8801  						free_building_slots = {
+    8802  							building = industrial_complex
+    8803  							size > 1
+    8804  							include_locked = yes
+    8805  						}
+    8806  					}
+
+  --- 命中于 L8754 ---
+    8746  	}
+    8747  
+    8748  	focus = {
+    8749  		id = SOV_secure_the_administration
+    8750  		icon = GFX_focus_generic_soviet_politics
+    8751  		prerequisite = { focus = SOV_the_zinovyevite_terrorist_center }
+    8752  		x = -1
+    8753  		y = 1
+    8754  		relative_position_id = SOV_the_zinovyevite_terrorist_center
+    8755  		cost = 5
+    8756  
+    8757  		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_SOV_POLITICAL_PARANOIA}
+    8758  
+    8759  		completion_reward = {
+    8760  			add_to_variable = { SOV_the_politburo_economy_cost_factor = -0.2 }
+    8761  			add_to_variable = { SOV_the_politburo_trade_laws_cost_factor = -0.2 }
+    8762  			add_to_variable = { SOV_the_politburo_mobilization_laws_cost_factor = -0.2 }
+    8763  			custom_effect_tooltip = SOV_secure_the_administration_ns_tt
+    8764  
+    8765  			add_political_power = 50
+    8766  
+    8767  			SOV_paranoia_medium_decrease_effect = yes
+    8768  		}
+    8769  	}
+    8770  
+    8771  	focus = {
+    8772  		id = SOV_the_collectivization_process
+    8773  		icon = GFX_focus_prc_agrarian_socialism
+    8774  		prerequisite = { focus = SOV_socialism_in_one_country }
+    8775  		prerequisite = { focus = SOV_secure_the_administration }
+    8776  		x = 0
+    8777  		y = 3
+    8778  		relative_position_id = SOV_socialism_in_one_country
+    8779  		cost = 10
+    8780  
+    8781  		completion_reward = {
+    8782  			add_to_variable = { SOV_the_politburo_good_consumer_goods_factor = -0.02 }
+    8783  			add_to_variable = { SOV_the_politburo_production_speed_buildings_factor = 0.05 } 
+    8784  			add_to_variable = { SOV_the_politburo_global_building_slots_factor = 0.1 } 
+    8785  			custom_effect_tooltip = SOV_the_collectivization_process_ns_tt
+    8786  
+    8787  			add_stability = -0.05
+    8788  			add_war_support = -0.05
+    8789  
+    8790  			if = { #Target a rural state with no civs
+    8791  				limit = {
+    8792  					any_owned_state = {
+    8793  						OR = {
+    8794  							has_state_category = town #Developed Rural Region
+    8795  							has_state_category = rural #Rural Region
+    8796  						}
+    8797  						is_fully_controlled_by = ROOT
+    8798  						industrial_complex < 1
+    8799  						arms_factory < 1
+    8800  						dockyard < 1
+    8801  						free_building_slots = {
+    8802  							building = industrial_complex
+    8803  							size > 1
+    8804  							include_locked = yes
+    8805  						}
+    8806  					}
+    8807  				}
+    8808  				random_owned_state = {
+    8809  					limit = {
+
+================================================================
+  原版 角色引用处（谁排掉他）
+  F:\Hearts of Iron IV\common\scripted_effects\SOV_scripted_effects.txt
+================================================================
+  --- 命中于 L735 ---
+     727  SOV_purge_character_effect = { #Expected to be called in the character scope
+     728  	set_character_flag = SOV_character_purged_flag
+     729  	PREV = { retire_character = PREV }
+     730  }
+     731  
+     732  SOV_paranoia_update_portraits_ui = { #Expected to be called in the country scope
+     733  	if = {
+     734  		limit = {
+     735  			NOT = { has_character = SOV_grigory_zinovyev }
+     736  			check_variable = { SOV.SOV_paranoia_photo_zinovyev = 8 compare = not_equals }
+     737  		}
+     738  		set_variable = { SOV.SOV_paranoia_photo_zinovyev = 8 }
+     739  		set_country_flag = SOV_added_purged_portrait_flag
+     740  	}
+     741  	if = {
+     742  		limit = {
+     743  			NOT = { has_character = SOV_karl_radek }
+     744  			check_variable = { SOV.SOV_paranoia_photo_radek = 9 compare = not_equals }
+     745  		}
+     746  		set_variable = { SOV.SOV_paranoia_photo_radek = 9 }
+     747  		set_country_flag = SOV_added_purged_portrait_flag
+     748  	}
+     749  	if = {
+     750  		limit = {
+     751  			NOT = { has_character = SOV_nikolay_bukharin }
+     752  			check_variable = { SOV.SOV_paranoia_photo_bukharin = 10 compare = not_equals }
+     753  		}
+     754  		set_variable = { SOV.SOV_paranoia_photo_bukharin = 10 }
+     755  		set_country_flag = SOV_added_purged_portrait_flag
+
+  --- 命中于 L7415 ---
+    7407  		}
+    7408  		promote_leader = yes
+    7409  	}
+    7410  	SOV = { set_country_flag = SOV_rykov_country_leader_flag }
+    7411  }
+    7412  
+    7413  SOV_promote_to_country_leader_zinovyev = {
+    7414  	add_country_leader_role = {
+    7415  		character = "SOV_grigory_zinovyev"
+    7416  		country_leader = {
+    7417  			ideology = marxism
+    7418  			traits = { born_agitator }
+    7419  			expire = "1965.1.1.1"
+    7420  		}
+    7421  		promote_leader = yes
+    7422  	}
+    7423  	SOV = { set_country_flag = SOV_zinovyev_country_leader_flag }
+    7424  }
+    7425  
+    7426  SOV_promote_to_country_leader_kamenev = {
+    7427  	add_country_leader_role = {
+    7428  		character = "SOV_lev_kamenev"
+    7429  		country_leader = {
+    7430  			ideology = marxism
+    7431  			traits = { the_faded_star }
+    7432  			expire = "1965.1.1.1"
+    7433  		}
+    7434  		promote_leader = yes
+    7435  	}
+
+================================================================
+  这些 id 定义在哪（全 national_focus 目录扫）
+================================================================
+  [原版] common\national_focus\soviet.txt  L7205
+  [原版] common\national_focus\soviet.txt  L7323
+  [原版] common\national_focus\soviet.txt  L7486
+  [R56] common\national_focus\soviet.txt  L8636
+  [R56] common\national_focus\soviet.txt  L8754
+  [R56] common\national_focus\soviet.txt  L8908
+

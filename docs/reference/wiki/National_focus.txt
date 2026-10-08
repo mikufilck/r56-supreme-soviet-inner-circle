@@ -1,0 +1,634 @@
+﻿National focus - Hearts of Iron 4 Wiki
+142 captures
+13 Jan 2018 - 06 Sep 2026
+May
+JUN
+Jul
+06
+2025
+2026
+2027
+success
+fail
+About this capture
+COLLECTED BY
+Collection:
+Save Page Now
+TIMESTAMPS
+The Wayback Machine - https://web.archive.org/web/20260606062732/https://hoi4.paradoxwikis.com/National_focus
+Forum list
+Trending
+Latest
+New posts
+Paradox
+Store
+Mods
+Forum
+Launcher
+PDXCON
+2019
+Paradox Wikis
+Hearts of Iron 4 Wiki
+Active Wikis
+Age of Wonders 4
+Empire of Sin
+Cities: Skylines 2
+Crusader Kings 3
+Europa Universalis 5
+Hearts of Iron 4
+Hunter: The Reckoning
+Imperator: Rome
+Millennia
+Prison Architect
+Stellaris
+Surviving Mars
+Surviving the Aftermath
+Werewolf: the Apocalypse
+Vampire: The Masquerade
+Victoria 3
+Legacy Wikis
+AoW: Planetfall
+Cities: Skylines
+Crusader Kings 2
+Arsenal of Democracy
+Europa Universalis 2
+Europa Universalis 3
+Europa Universalis 4
+Europa Universalis: Rome
+Hearts of Iron 2
+Hearts of Iron 3
+Tyranny
+Victoria 1
+Victoria 2
+Search
+Personal tools
+Log in
+Personal tools
+English
+Not logged in
+Talk
+Contributions
+Log in
+Navigation menu
+Namespaces
+Page
+Discussion
+English
+Views
+Read
+Edit
+Edit source
+View history
+More
+Navigation
+Hearts of Iron 4 Wiki
+Recent changes
+Random page
+Paradox Wikis
+- Main portal
+- Wikis discord
+- Contact us
+- Style guidelines
+HoI4 links
+- Forums
+- Game discord
+- Mods
+- Store
+- YouTube
+Tools
+What links here
+Related changes
+Special pages
+Printable version
+Permanent link
+Page information
+braze
+National focus
+From Hearts of Iron 4 Wiki
+Jump to navigation
+Jump to search
+This is a community maintained wiki. If you spot a mistake, please help with fixing it.
+Load video
+YouTube
+YouTube might collect personal data.
+Privacy Policy
+Continue
+Dismiss
+HoI 4 Tutorial - Focus Trees
+. Time to focus! That's right, in this tutorial @TheSocialStreamers take you through the Political and National focuses!
+The focus trees allow the players (and the AI) to direct the development of their nation. Each country has a
+focus tree
+, representing a number of progression paths (branches) available to that nation. These paths may be based on actual historical situations or on alternative historical possibilities. The individual options can range from political, diplomatic and warfare-related focuses to more economic and research-related focuses.
+Due to the semi-random nature of the AI it ensures that no two games will play out in precisely the same way. Players wishing to have a more historical-based campaign can choose to do so by ticking the
+Historical AI Focuses
+option on the country selection screen (map) just before the start of a new game. It is important to note, however, that player nations are not bound by this and as such their in-game actions can still force the AI to pick somewhat less than historical choices.
+The seven
+great powers
+as well as
+Poland
+and
+Finland
+have a unique national focus tree in the base game. Additional countries -
+as detailed below
+- received a unique focus tree as part of different DLCs. All other nations use the
+generic national focus tree
+.
+Contents
+1
+Mechanic overview
+1.1
+Visual indicators
+1.2
+Continuous focus
+2
+Generic national focus tree
+3
+List of national focus trees
+4
+References
+The game map, showing only countries with non-generic focus trees.
+Mechanic overview
+[
+edit
+|
+edit source
+]
+This is a community maintained wiki. If you spot a mistake, please help with fixing it.
+The Generic national focus tree has 5 different branches.
+Branches in a focus tree revolve around a common theme or goal with the individual focuses within intended to help in achieving that goal. Although branches are mostly isolated from each other, they will be connected (locally) if they happen to coincide over a common point.
+Only a single focus can be taken at a time. A
+70 day focus requires
+70
+Political power to complete at a progress rate of
+鈥?
+Political power per day, and a
+35 day focus requires
+35
+Political power to complete. When completed, the player may go up to 10 days without picking a new focus and still have those days (and their accumulated
+Political power) count towards the new focus.
+Aside from the branches' top level focuses, most other focuses have additional requirements in need of fulfillment before they can be picked. If a requirement of an on-going focus has become invalidated, the focus will either be paused until the requirement is restored (if possible) or outright be cancelled when such a thing is not easily possible. For cases such as the latter, focuses will have bypass conditions to allow the player to proceed past them - the player will be notified of the bypass within a few days (they will display a golden bracket as if completed regularly). For example,
+Motorization Effort
+can be bypassed if the
+Motorized Infantry technology has already been researched beforehand.
+Once a focus has started, the player can manually stop it, unless explicitly prohibited. If stopped, a maximum of 10 days of focus progress is saved. If, due to circumstances, the focus has been invalidated, the political power already spent are lost. As such, it is recommended to check all requirements and conditions regarding a focus to assess if/how they may be affected within its completion time-frame.
+Accessing a focus' expanded details can be achieved by clicking or hovering over the focus. Among the information presented there are: the flavor description, its requirements, bypass conditions (if applicable) and the expected completion effects.
+Visual indicators
+[
+edit
+|
+edit source
+]
+Bracket color
+- Players can check at a glance a focus' completion status by the background color of its name bracket. Grey bracket means available for picking, brown bracket indicates as of yet unavailability and golden bracket denotes completed focuses. On-going focuses will feature a shining overlay effect over them.
+Connection lines
+- Focuses are connected by colored lines. The color indicates whether its preceding focus is completed (green) or not (light-blue). The connection may also appear as a solid or dotted line, with the former indicating a logical
+AND
+and the latter a logical
+OR
+. For example, to pick
+Special Forces
+would require all 3 of the focuses preceding it while picking
+Technology Sharing
+requires only one of the 2 preceding it.
+Mutually exclusive
+- Some focuses may have the
+mutually exclusive
+icon appearing in-between them. The icon denotes that only one of two may be selected. Further more, depending on the focuses outgoing connections it may also exclude from picking any of the focuses connected to them further down the line. For example, choosing between
+Collectivist Ethos
+or
+Liberty Ethos
+will make any of the other side's subsequent connected focuses unavailable for picking up until
+Technology Sharing
+(linked to both sides by an
+OR
+connection).
+Continuous focus
+[
+edit
+|
+edit source
+]
+The continuous focus panel.
+Main article:
+Continuous focus
+A
+continuous focus
+is a special type of focus that is unlocked once 10 regular focuses have been completed. There are a total of 9 continuous focuses available.
+Having an active continuous focus comes at the expense of pursuing a regular focus as only one focus can be picked at a time regardless of its type.
+As opposed to a regular focus which provides one-time effects, the effects of a continuous focus benefit the nation whilst the chosen focus remains active. An active focus requires a maintenance cost of
+鈥?
+Political power per day. The focus can, however, be deactivated or switched with another at any time for no additional cost.
+Generic national focus tree
+[
+edit
+|
+edit source
+]
+Generic national focus tree.
+Main article:
+Generic national focus tree
+All nations lacking a unique national focus tree use the generic national focus tree instead.
+The generic focus tree has 5 main branches:
+Army Effort branch
+Gives army experience and research bonuses to army research.
+Aviation Effort branch
+Gives air experience, builds air bases, and research bonuses to air research.
+Naval Effort branch
+Gives navy experience, builds naval dockyards, and research bonuses to navy research.
+Industrial Effort branch
+Builds civilian and military factories (usually even if building slots are already full), infrastructure and grants extra research slots.
+Political Effort branch
+Gives the country choices on which political path they will take.
+Note:
+The generic focus tree also acts as the default tree for nations which received a unique focus tree in a DLC if said DLC is
+not
+enabled.
+List of national focus trees
+[
+edit
+|
+edit source
+]
+National focus
+Generic
+Generic
+鈥?
+Continuous focus
+Base game
+France
+鈥?
+Germany
+(
+industrial/ historical
+,
+opposition
+) 鈥?
+Italy
+鈥?
+Japan
+鈥?
+Poland
+鈥?
+Soviet Union
+(
+industrial
+,
+political
+) 鈥?
+United Kingdom
+鈥?
+United States
+Base game
+Australia
+鈥?
+British Raj (base game)
+鈥?
+Canada
+鈥?
+New Zealand
+鈥?
+South Africa
+Base game
+Czechoslovakia (base game)
+鈥?
+Hungary (base game)
+鈥?
+Romania
+鈥?
+Yugoslavia
+Base game
+China (base game)
+鈥?
+Chinese Soviet Republic (base game)
+鈥?
+Manchukuo (base game)
+鈥?
+Warlords (base game)
+鈥?(
+Shared Chinese (base game)
+)
+Base game
+Mexico
+鈥?
+Netherlands
+La R茅sistance
+Free France
+鈥?
+Vichy France
+鈥?
+Portugal
+鈥?
+Nationalist Spain
+鈥?
+Republican Spain
+Battle for the Bosporus
+Bulgaria
+鈥?
+Greece
+鈥?
+Turkey
+No Step Back
+Estonia
+鈥?
+Latvia
+鈥?
+Lithuania
+鈥?(
+Shared Baltic
+)
+By Blood Alone
+Ethiopia
+鈥?
+Switzerland
+鈥?
+Horn of Africa nations
+Arms Against Tyranny
+Denmark
+鈥?
+Finland
+鈥?
+Iceland
+鈥?
+Norway
+鈥?
+Sweden
+鈥?(
+Joint Nordic
+)
+Trial of Allegiance
+Argentina
+鈥?
+Brazil
+鈥?
+Chile
+鈥?
+Paraguay
+鈥?
+Uruguay
+鈥?(
+Shared Military
+鈥?
+Paraguay/Uruguay Shared
+)
+G枚tterd盲mmerung
+Austria
+鈥?
+Belgian Congo
+鈥?
+Belgium
+鈥?
+Hungary
+鈥?(
+Joint Congo
+鈥?
+Joint Austro-Hungarian
+)
+Graveyard of Empires
+Afghanistan
+鈥?
+British Raj
+鈥?
+Iran
+鈥?
+Iraq
+鈥?(
+Joint Saadabad Pact
+)
+No Compromise, No Surrender
+China
+鈥?
+Chinese Soviet Republic
+鈥?
+Manchukuo
+鈥?
+Philippines
+鈥?
+Warlords
+((
+Nationalist Warlord
+鈥?
+Communist Warlord
+) 鈥? (
+Joint Liangguang Incident
+鈥?
+Joint Ma Clique
+鈥?
+Shared Chinese
+))
+Peace For Our Time
+Czechoslovakia
+References
+[
+edit
+|
+edit source
+]
+To update page content see reference files in folder
+/Hearts of Iron IV/common/national_focus
+:
+Each country (or group) has its own
+txt
+file.
+To update flavor text see reference files in folder
+/Hearts of Iron IV/localisation/english
+:
+For the main flavor text see reference file
+focus_l_english.yml
+.
+For focuses added in DLCs, see reference file
+DLC_focus_l_english.yml
+(replace DLC with DLC's abbreviated name).
+Mechanics
+Politics
+Ideology
+鈥?
+Faction
+鈥?
+National focus
+鈥?
+Ideas
+鈥?
+Government
+鈥?
+Puppet
+鈥?
+Governments in exile
+鈥?
+Diplomacy
+鈥?
+World tension
+鈥?
+Civil war
+鈥?
+Occupation
+鈥?
+Balance of power
+Production
+Trade
+鈥?
+Production
+鈥?
+Construction
+鈥?
+Equipment
+鈥?
+Fuel
+鈥?
+Military industrial organization
+鈥?
+International market
+Research and technology
+Research
+鈥?
+Infantry technology
+鈥?
+Support companies technology
+鈥?
+Armor technology
+(also
+without No Step Back
+) 鈥?
+Artillery technology
+鈥?
+Land doctrine
+鈥?
+Special forces doctrine
+鈥?
+Naval technology
+(also
+without Man the Guns
+) 鈥?
+Naval support technology
+鈥?
+Naval doctrine
+鈥?
+Air technology
+(also
+without By Blood Alone
+) 鈥?
+Air doctrine
+鈥?
+Engineering technology
+鈥?
+Industry technology
+鈥?
+Special project
+鈥?
+Scientist
+Military and warfare
+Warfare
+鈥?
+Peace conference
+鈥?
+Land units
+鈥?
+Land warfare
+鈥?
+Division designer
+鈥?
+Tank designer
+鈥?
+Army planner
+鈥?
+Command group
+鈥?
+Commander
+鈥?
+Battle plan
+鈥?
+Combat tactics
+鈥?
+Ship
+鈥?
+Ship designer
+(
+London Naval Treaty
+) 鈥?
+Naval warfare
+鈥?
+Aircraft designer
+鈥?
+Air warfare
+鈥?
+Experience
+鈥?
+Officer corps
+鈥?
+Attrition and accidents
+鈥?
+Logistics
+鈥?
+Manpower
+鈥?
+Nuclear bomb
+鈥?
+Raid
+Espionage
+Intel
+鈥?
+Intelligence agency
+鈥?
+Operatives
+鈥?
+Missions
+鈥?
+Operations
+Map
+Map
+鈥?
+Province
+鈥?
+Terrain
+鈥?
+Weather
+鈥?
+State
+Events and Decisions
+Events
+鈥?
+Decisions
+Retrieved from "
+"
+Categories
+:
+1.17
+National focus trees
+Game concepts
+Hidden category:
+Articles with potentially outdated sections
+This page was last edited on 27 March 2026, at 17:40.
+Content is available under
+Attribution-ShareAlike 3.0
+unless otherwise noted.
+About Hearts of Iron 4 Wiki
+Mobile view
+Games
+Discover
+Our Brands
+Browse
+Play
+on Paradox technology
+Community
+Paradox Forums
+Paradox
+Wikis
+Support
+About
+News
+About us
+Careers
+Join our playtests
+Media contact
+Social Media
+Legal
+Information
+EU Online Dispute Resolution
+Report Illegal Content
+Terms & Policies
+Legal Information
+EU Online Dispute Resolution
+Report Illegal Content
+Frequently Asked
+Questions
+Paradox
+Interactive corporate website

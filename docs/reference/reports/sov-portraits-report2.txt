@@ -1,0 +1,206 @@
+﻿=== A. 递归扫描 interface（含子目录），列出所有含 SOV 的人物立绘 sprite ===
+
+--- F:\Hearts of Iron IV ---
+   .gfx 文件数（递归）: 162
+   含 SOV 的 portrait sprite 共 66 个
+      GFX_portrait_SOV_abram_ioffe                         (_scientists_portraits.gfx)
+      GFX_portrait_SOV_aleksandr_vasilevsky                (_leader_portraits.gfx)
+      GFX_portrait_SOV_aleksandr_vasilevsky_small          (_leader_portraits.gfx)
+      GFX_portrait_SOV_aleksandr_yegorov                   (_leader_portraits.gfx)
+      GFX_portrait_SOV_aleksandr_yegorov_small             (_leader_portraits.gfx)
+      GFX_portrait_SOV_andrey_grechko                      (_leader_portraits.gfx)
+      GFX_portrait_SOV_andrey_grechko_small                (_leader_portraits.gfx)
+      GFX_portrait_SOV_andrey_shkuro                       (_leader_portraits.gfx)
+      GFX_portrait_SOV_andrey_yeryomenko                   (_leader_portraits.gfx)
+      GFX_portrait_SOV_andrey_yeryomenko_small             (_leader_portraits.gfx)
+      GFX_portrait_SOV_arkady_nazarov                      (_scientists_portraits.gfx)
+      GFX_portrait_SOV_blyukher                            (_leader_portraits.gfx)
+      GFX_portrait_SOV_blyukher_small                      (_leader_portraits.gfx)
+      GFX_portrait_SOV_boris_shteifon                      (_leader_portraits.gfx)
+      GFX_portrait_SOV_boris_shteifon_small                (ideas.gfx)
+      GFX_portrait_SOV_boris_stechkin                      (_scientists_portraits.gfx)
+      GFX_portrait_SOV_bronislav_kaminski                  (_leader_portraits.gfx)
+      GFX_portrait_SOV_bronislav_kaminski_small            (ideas.gfx)
+      GFX_portrait_SOV_filipp_golikov                      (_leader_portraits.gfx)
+      GFX_portrait_SOV_filipp_golikov_small                (_leader_portraits.gfx)
+      GFX_portrait_SOV_generic_marine_infantry             (_leader_portraits.gfx)
+      GFX_portrait_SOV_grigory_zinovyev                    (_leader_portraits.gfx)
+      GFX_portrait_SOV_grigory_zinovyev_small              (_leader_portraits.gfx)
+      GFX_portrait_SOV_igor_kurchatov                      (_scientists_portraits.gfx)
+      GFX_portrait_SOV_issa_pliyev                         (_leader_portraits.gfx)
+      GFX_portrait_SOV_issa_pliyev_small                   (_leader_portraits.gfx)
+      GFX_portrait_SOV_ivan_chernyakhovsky                 (_leader_portraits.gfx)
+      GFX_portrait_SOV_ivan_chernyakhovsky_small           (_leader_portraits.gfx)
+      GFX_portrait_SOV_ivan_konev                          (_leader_portraits.gfx)
+      GFX_portrait_SOV_ivan_konev_small                    (_leader_portraits.gfx)
+      GFX_portrait_SOV_ivan_smirnov                        (_leader_portraits.gfx)
+      GFX_portrait_SOV_ivan_smirnov_small                  (_leader_portraits.gfx)
+      GFX_portrait_SOV_konstantin_voskoboinik              (_leader_portraits.gfx)
+      GFX_portrait_SOV_konstantin_voskoboinik_small        (ideas.gfx)
+      GFX_portrait_SOV_lavrenty_beriya                     (_leader_portraits.gfx)
+      GFX_portrait_SOV_lavrenty_beriya_small               (_leader_portraits.gfx)
+      GFX_portrait_SOV_leonid_govorov                      (_leader_portraits.gfx)
+      GFX_portrait_SOV_leonid_govorov_small                (_leader_portraits.gfx)
+      GFX_portrait_SOV_lev_dovator                         (_leader_portraits.gfx)
+      GFX_portrait_SOV_lev_dovator_small                   (_leader_portraits.gfx)
+      GFX_portrait_SOV_lev_kamenev                         (_leader_portraits.gfx)
+      GFX_portrait_SOV_lev_kamenev_small                   (_leader_portraits.gfx)
+      GFX_portrait_SOV_maks_reyter                         (_leader_portraits.gfx)
+      GFX_portrait_SOV_maks_reyter_small                   (_leader_portraits.gfx)
+      GFX_portrait_SOV_pavel_rybalko                       (_leader_portraits.gfx)
+      GFX_portrait_SOV_pavel_rybalko_small                 (_leader_portraits.gfx)
+      GFX_portrait_SOV_pyotr_krasnov                       (_leader_portraits.gfx)
+      GFX_portrait_SOV_semyon_budyonny                     (_leader_portraits.gfx)
+      GFX_portrait_SOV_semyon_budyonny_small               (_leader_portraits.gfx)
+      GFX_portrait_SOV_semyon_timoshenko                   (_leader_portraits.gfx)
+      GFX_portrait_SOV_semyon_timoshenko_small             (_leader_portraits.gfx)
+      GFX_portrait_SOV_sergei_korolev                      (_scientists_portraits.gfx)
+      GFX_portrait_SOV_sidor_kovpak                        (_leader_portraits.gfx)
+      GFX_portrait_SOV_sidor_kovpak_small                  (_leader_portraits.gfx)
+      GFX_portrait_SOV_supreme_soviet                      (_leader_portraits.gfx)
+      GFX_portrait_SOV_vasily_flug                         (_leader_portraits.gfx)
+      GFX_portrait_SOV_vasily_flug_small                   (ideas.gfx)
+      GFX_portrait_SOV_vasily_korzh                        (_leader_portraits.gfx)
+      GFX_portrait_SOV_vasily_korzh_small                  (_leader_portraits.gfx)
+      GFX_portrait_SOV_vasily_kuznetsov                    (_leader_portraits.gfx)
+      GFX_portrait_SOV_vasily_kuznetsov_small              (_leader_portraits.gfx)
+      GFX_portrait_SOV_vasily_primakov                     (_leader_portraits.gfx)
+      GFX_portrait_SOV_vasily_primakov_small               (_leader_portraits.gfx)
+      GFX_portrait_SOV_vladimir_kotelnikov                 (_scientists_portraits.gfx)
+      GFX_portrait_SOV_yakov_cherevichenko                 (_leader_portraits.gfx)
+      GFX_portrait_SOV_yakov_cherevichenko_small           (_leader_portraits.gfx)
+
+--- D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125 ---
+   .gfx 文件数（递归）: 77
+   含 SOV 的 portrait sprite 共 57 个
+      GFX_portrait_SOV_aleksandr_vasilevsky                (_leader_portraits.gfx)
+      GFX_portrait_SOV_aleksandr_vasilevsky_small          (_leader_portraits.gfx)
+      GFX_portrait_SOV_aleksandr_yegorov                   (_leader_portraits.gfx)
+      GFX_portrait_SOV_aleksandr_yegorov_small             (_leader_portraits.gfx)
+      GFX_portrait_SOV_andrey_grechko                      (_leader_portraits.gfx)
+      GFX_portrait_SOV_andrey_grechko_small                (_leader_portraits.gfx)
+      GFX_portrait_SOV_andrey_shkuro                       (_leader_portraits.gfx)
+      GFX_portrait_SOV_andrey_yeryomenko                   (_leader_portraits.gfx)
+      GFX_portrait_SOV_andrey_yeryomenko_small             (_leader_portraits.gfx)
+      GFX_portrait_SOV_blyukher                            (_leader_portraits.gfx)
+      GFX_portrait_SOV_blyukher_small                      (_leader_portraits.gfx)
+      GFX_portrait_SOV_boris_shteifon                      (_leader_portraits.gfx)
+      GFX_portrait_SOV_bronislav_kaminski                  (_leader_portraits.gfx)
+      GFX_portrait_SOV_filipp_golikov                      (_leader_portraits.gfx)
+      GFX_portrait_SOV_filipp_golikov_small                (_leader_portraits.gfx)
+      GFX_portrait_SOV_generic_marine_infantry             (_leader_portraits.gfx)
+      GFX_portrait_SOV_grigory_zinovyev                    (_leader_portraits.gfx)
+      GFX_portrait_SOV_grigory_zinovyev_small              (_leader_portraits.gfx)
+      GFX_portrait_SOV_issa_pliyev                         (_leader_portraits.gfx)
+      GFX_portrait_SOV_issa_pliyev_small                   (_leader_portraits.gfx)
+      GFX_portrait_SOV_ivan_chernyakhovsky                 (_leader_portraits.gfx)
+      GFX_portrait_SOV_ivan_chernyakhovsky_small           (_leader_portraits.gfx)
+      GFX_portrait_SOV_ivan_konev                          (_leader_portraits.gfx)
+      GFX_portrait_SOV_ivan_konev_small                    (_leader_portraits.gfx)
+      GFX_portrait_SOV_ivan_smirnov                        (_leader_portraits.gfx)
+      GFX_portrait_SOV_ivan_smirnov_small                  (_leader_portraits.gfx)
+      GFX_portrait_SOV_konstantin_voskoboinik              (_leader_portraits.gfx)
+      GFX_portrait_SOV_lavrenty_beriya                     (_leader_portraits.gfx)
+      GFX_portrait_SOV_lavrenty_beriya_small               (_leader_portraits.gfx)
+      GFX_portrait_SOV_leonid_govorov                      (_leader_portraits.gfx)
+      GFX_portrait_SOV_leonid_govorov_small                (_leader_portraits.gfx)
+      GFX_portrait_SOV_lev_dovator                         (_leader_portraits.gfx)
+      GFX_portrait_SOV_lev_dovator_small                   (_leader_portraits.gfx)
+      GFX_portrait_SOV_lev_kamenev                         (_leader_portraits.gfx)
+      GFX_portrait_SOV_lev_kamenev_small                   (_leader_portraits.gfx)
+      GFX_portrait_SOV_maks_reyter                         (_leader_portraits.gfx)
+      GFX_portrait_SOV_maks_reyter_small                   (_leader_portraits.gfx)
+      GFX_portrait_SOV_pavel_rybalko                       (_leader_portraits.gfx)
+      GFX_portrait_SOV_pavel_rybalko_small                 (_leader_portraits.gfx)
+      GFX_portrait_SOV_pyotr_krasnov                       (_leader_portraits.gfx)
+      GFX_portrait_SOV_semyon_budyonny                     (_leader_portraits.gfx)
+      GFX_portrait_SOV_semyon_budyonny_small               (_leader_portraits.gfx)
+      GFX_portrait_SOV_semyon_timoshenko                   (_leader_portraits.gfx)
+      GFX_portrait_SOV_semyon_timoshenko_small             (_leader_portraits.gfx)
+      GFX_portrait_SOV_sidor_kovpak                        (_leader_portraits.gfx)
+      GFX_portrait_SOV_sidor_kovpak_small                  (_leader_portraits.gfx)
+      GFX_portrait_SOV_supreme_soviet                      (_leader_portraits.gfx)
+      GFX_portrait_SOV_vasily_flug                         (_leader_portraits.gfx)
+      GFX_portrait_SOV_vasily_korzh                        (_leader_portraits.gfx)
+      GFX_portrait_SOV_vasily_korzh_small                  (_leader_portraits.gfx)
+      GFX_portrait_SOV_vasily_kuznetsov                    (_leader_portraits.gfx)
+      GFX_portrait_SOV_vasily_kuznetsov_small              (_leader_portraits.gfx)
+      GFX_portrait_SOV_vasily_primakov                     (_leader_portraits.gfx)
+      GFX_portrait_SOV_vasily_primakov_small               (_leader_portraits.gfx)
+      GFX_portrait_SOV_yakov_cherevichenko                 (_leader_portraits.gfx)
+      GFX_portrait_SOV_yakov_cherevichenko_small           (_leader_portraits.gfx)
+      GFX_r56_portrait_SOV_vladimir_kirillovich            (_r56_leader_portraits.gfx)
+
+=== B. 逐个角色确认立绘 sprite（两边合起来找）===
+合并 gfx 文本 15691284 字符
+  SOV_lev_trotsky                        -> （未找到）
+  SOV_karl_radek                         -> （未找到）
+  SOV_yevgeny_preobrazhensky             -> （未找到）
+  SOV_ivar_smilga                        -> （未找到）
+  SOV_ivan_smirnov                       -> GFX_portrait_SOV_ivan_smirnov , GFX_portrait_SOV_ivan_smirnov_small
+  SOV_grigory_zinovyev                   -> GFX_portrait_SOV_grigory_zinovyev , GFX_portrait_SOV_grigory_zinovyev_small
+  SOV_lev_kamenev                        -> GFX_portrait_SOV_lev_kamenev , GFX_portrait_SOV_lev_kamenev_small
+  SOV_nikolay_bukharin                   -> （未找到）
+  SOV_aleksey_rykov                      -> （未找到）
+  SOV_mikhail_tomsky                     -> （未找到）
+  SOV_martemyan_ryutin                   -> （未找到）
+  SOV_grigory_sokolnikov                 -> （未找到）
+  SOV_aleksandr_shlyapnikov              -> （未找到）
+
+=== C. 看看 R56 里 SOV 角色立绘到底叫什么（抽样 40 个 SOV portrait）===
+   GFX_portrait_SOV_abram_ioffe
+   GFX_portrait_SOV_aleksandr_vasilevsky
+   GFX_portrait_SOV_aleksandr_vasilevsky_small
+   GFX_portrait_SOV_aleksandr_yegorov
+   GFX_portrait_SOV_aleksandr_yegorov_small
+   GFX_portrait_SOV_andrey_grechko
+   GFX_portrait_SOV_andrey_grechko_small
+   GFX_portrait_SOV_andrey_shkuro
+   GFX_portrait_SOV_andrey_yeryomenko
+   GFX_portrait_SOV_andrey_yeryomenko_small
+   GFX_portrait_SOV_arkady_nazarov
+   GFX_portrait_SOV_blyukher
+   GFX_portrait_SOV_blyukher_small
+   GFX_portrait_SOV_boris_shteifon
+   GFX_portrait_SOV_boris_shteifon_small
+   GFX_portrait_SOV_boris_stechkin
+   GFX_portrait_SOV_bronislav_kaminski
+   GFX_portrait_SOV_bronislav_kaminski_small
+   GFX_portrait_SOV_filipp_golikov
+   GFX_portrait_SOV_filipp_golikov_small
+   GFX_portrait_SOV_generic_marine_infantry
+   GFX_portrait_SOV_grigory_zinovyev
+   GFX_portrait_SOV_grigory_zinovyev_small
+   GFX_portrait_SOV_igor_kurchatov
+   GFX_portrait_SOV_issa_pliyev
+   GFX_portrait_SOV_issa_pliyev_small
+   GFX_portrait_SOV_ivan_chernyakhovsky
+   GFX_portrait_SOV_ivan_chernyakhovsky_small
+   GFX_portrait_SOV_ivan_konev
+   GFX_portrait_SOV_ivan_konev_small
+   GFX_portrait_SOV_ivan_smirnov
+   GFX_portrait_SOV_ivan_smirnov_small
+   GFX_portrait_SOV_konstantin_voskoboinik
+   GFX_portrait_SOV_konstantin_voskoboinik_small
+   GFX_portrait_SOV_lavrenty_beriya
+   GFX_portrait_SOV_lavrenty_beriya_small
+   GFX_portrait_SOV_leonid_govorov
+   GFX_portrait_SOV_leonid_govorov_small
+   GFX_portrait_SOV_lev_dovator
+   GFX_portrait_SOV_lev_dovator_small
+
+=== D. 关键线索：R56 里名字含 'Trotsky' / 'Bukharin' 的一切 sprite ===
+   Trotsky            -> GFX_focus_NOR_a_new_norway_Trotsky_communism , GFX_focus_NOR_a_new_norway_Trotsky_communism_shine
+   Bukharin           -> 无
+   Tomsky             -> 无
+   Rykov              -> 无
+   Radek              -> 无
+   Smirnov            -> 无
+   Sinovyev           -> 无
+   Zinovyev           -> 无
+   Kamenev            -> 无
+   Smilga             -> 无
+   Preobrazhensky     -> 无
+   Ryutin             -> 无
+   Sokolnikov         -> 无
+   Shlyapnikov        -> 无

@@ -1,0 +1,104 @@
+﻿==================== 雅科夫列夫 MIO ====================
+  --- common\military_industrial_organization （1 个文件命中）---
+    common\military_industrial_organization\organizations\SOV_organization.txt
+        SOV_yakovlev_design_bureau_organization = {
+  --- common\scripted_effects （1 个文件命中）---
+    common\scripted_effects\SOV_scripted_effects.txt
+        has_country_flag = SOV_yakovlev_design_bureau_dissolved_flag
+  --- common\national_focus （1 个文件命中）---
+    common\national_focus\australia_taog.txt
+        show_mio_tooltip = SOV_yakovlev_design_bureau_organization
+  --- localisation\simp_chinese （4 个文件命中）---
+    localisation\simp_chinese\ideas_l_simp_chinese.yml
+        yakovlev_design_bureau: "雅克夫列夫设计局"
+    localisation\simp_chinese\military_industrial_organization_l_simp_chinese.yml
+        SOV_yakovlev_design_bureau_organization: "$yakovlev_design_bureau$"
+    localisation\simp_chinese\nsb_decisions_l_simp_chinese.yml
+        SOV_reinstate_yakovlev_design_bureau: "恢复雅克夫列夫设计局"
+    localisation\simp_chinese\nsb_ideas_l_simp_chinese.yml
+        SOV_yakovlev_design_bureau_dissolved_flag: "$SOV_mig_design_bureau_dissolved_flag$"
+
+==================== 雅科夫列夫 MIO（R56） ====================
+  --- common\military_industrial_organization （1 个文件命中）---
+    common\military_industrial_organization\organizations\SOV_organization.txt
+        SOV_yakovlev_design_bureau_organization = {
+  --- common\scripted_effects （1 个文件命中）---
+    common\scripted_effects\SOV_scripted_effects.txt
+        has_country_flag = SOV_yakovlev_design_bureau_dissolved_flag
+  --- common\national_focus （3 个文件命中）---
+    common\national_focus\australia_taog.txt
+        show_mio_tooltip = SOV_yakovlev_design_bureau_organization
+    common\national_focus\soviet.txt
+        CHARACTER = SOV_joseph_yakovlevich_kotin
+    common\national_focus\soviet_old.txt
+        CHARACTER = SOV_joseph_yakovlevich_kotin
+  --- localisation\simp_chinese （1 个文件命中）---
+    localisation\simp_chinese\SOV_l_simp_chinese.yml
+        SOV_joseph_yakovlevich_kotin:0 "约瑟夫·雅科夫列维奇·科京"
+
+==================== 托特组织（原版） ====================
+  --- common\national_focus （1 个文件命中）---
+    common\national_focus\germany.txt
+        GFX_focus_GER_fuhrerprinzip_todt = {
+  --- common\scripted_effects （1 个文件命中）---
+    common\scripted_effects\GER_scripted_effects.txt
+        if = { # TODT REPLACED
+  --- localisation\simp_chinese （6 个文件命中）---
+    localisation\simp_chinese\ideas_l_simp_chinese.yml
+        todt: "弗里茨·托特"
+    localisation\simp_chinese\nsb_characters_l_simp_chinese.yml
+        GER_fritz_todt: "$todt$"
+    localisation\simp_chinese\traits_l_simp_chinese.yml
+        GER_organization_todt_trait: "$construction_company$"
+    localisation\simp_chinese\WUW_events_l_simp_chinese.yml
+        GER_inner_circle.03.b: "$GER_fritz_todt$具备处理这项事务的必要经验"
+    localisation\simp_chinese\WUW_focus_l_simp_chinese.yml
+        GER_form_organization_todt: "成立托特组织"
+    localisation\simp_chinese\WUW_ideas_l_simp_chinese.yml
+        GER_organization_todt: "托特组织"
+  --- events （1 个文件命中）---
+    events\WUW_Germany.txt
+        add_namespace = GER_inner_circle_todt
+
+==================== MIO 目录 ====================
+  common\military_industrial_organization\ai_bonus_weights\ai_bonus_weights.txt
+  common\military_industrial_organization\ai_bonus_weights\_documentation.md
+  common\military_industrial_organization\organizations\00_DEBUG_organization.txt
+  common\military_industrial_organization\organizations\00_generic_organization.txt
+  common\military_industrial_organization\organizations\AFG_organization.txt
+  common\military_industrial_organization\organizations\ARG_organization.txt
+  common\military_industrial_organization\organizations\AST_organization.txt
+  common\military_industrial_organization\organizations\AUS_organization.txt
+  common\military_industrial_organization\organizations\baltic_organization.txt
+  common\military_industrial_organization\organizations\BEL_organization.txt
+  common\military_industrial_organization\organizations\BRA_organization.txt
+  common\military_industrial_organization\organizations\BUL_organization.txt
+  common\military_industrial_organization\organizations\CAN_organization.txt
+  common\military_industrial_organization\organizations\CHI_organization.txt
+  common\military_industrial_organization\organizations\CHL_organization.txt
+  common\military_industrial_organization\organizations\COG_organization.txt
+  common\military_industrial_organization\organizations\CZE_organization.txt
+  common\military_industrial_organization\organizations\DEN_organization.txt
+  common\military_industrial_organization\organizations\ENG_organization.txt
+  common\military_industrial_organization\organizations\EST_organization.txt
+  common\military_industrial_organization\organizations\ETH_organization.txt
+  common\military_industrial_organization\organizations\FIN_organization.txt
+  common\military_industrial_organization\organizations\FRA_organization.txt
+  common\military_industrial_organization\organizations\GER_organization.txt
+  common\military_industrial_organization\organizations\GRE_organization.txt
+  common\military_industrial_organization\organizations\HOL_organization.txt
+  common\military_industrial_organization\organizations\HUN_organization.txt
+  common\military_industrial_organization\organizations\INS_organization.txt
+  common\military_industrial_organization\organizations\IRQ_organization.txt
+  common\military_industrial_organization\organizations\ITA_organization.txt
+  common\military_industrial_organization\organizations\JAP_organization.txt
+  common\military_industrial_organization\organizations\LAT_organization.txt
+  common\military_industrial_organization\organizations\LIT_organization.txt
+  common\military_industrial_organization\organizations\MAN_organization.txt
+  common\military_industrial_organization\organizations\MEX_organization.txt
+  common\military_industrial_organization\organizations\mio.txt
+  common\military_industrial_organization\organizations\NOR_organization.txt
+  common\military_industrial_organization\organizations\NZL_organization.txt
+  common\military_industrial_organization\organizations\PER_organization.txt
+  common\military_industrial_organization\organizations\PHI_organization.txt
+

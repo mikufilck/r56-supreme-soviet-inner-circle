@@ -1,0 +1,68 @@
+[
+  {
+    "id": "hof_ic_voznesensky_the_fight_for_the_plan",
+    "name": "GFX_hof_ic_voznesensky_the_fight_for_the_plan",
+    "title": "为实现当前阶段的计划而斗争",
+    "concept": "ONE compact 1930s black-lacquer hand-cranked mechanical calculating machine with brass side crank, stopped halfway through its turn, sits on a loose stack of blank ivory manuscript paper. All four paper corners curl slightly and one sheet is pulled halfway out. Show abstract number wheels with no legible digits. Calculator is dominant, no newspaper, masthead, typewriter or person. Old-paper ocher, black lacquer, brass crank.",
+    "group": "voznesensky",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_voznesensky_the_leningrad_plan",
+    "name": "GFX_hof_ic_voznesensky_the_leningrad_plan",
+    "title": "列宁格勒计划委员会",
+    "concept": "The SAME compact black-lacquer hand-cranked mechanical calculating machine with brass side crank from the reference image sits in foreground. Immediately behind it rises a small cluster of only FOUR or FIVE abstract geometric factory shed and chimney SILHOUETTES in cool steel gray, taller than machine but no city streets, skyline, ground horizon, smoke or geographic map. The machine is still very clear and relatively large.",
+    "group": "voznesensky",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_voznesensky_the_state_planning_committee",
+    "name": "GFX_hof_ic_voznesensky_the_state_planning_committee",
+    "title": "国家计划委员会",
+    "concept": "The SAME compact black-lacquer hand-cranked mechanical calculating machine with brass side crank from reference image is the first of a long equally spaced ROW of identical machines receding in perspective, each farther machine smaller and lighter steel gray, last almost fading into neutral background. Near first brass crank, only a small BACK OF HAND AND CUFF is just departing, no body or face. No office interior, desks, paperwork piles or cabinet.",
+    "group": "voznesensky",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_voznesensky_the_placement_of_plants",
+    "name": "GFX_hof_ic_voznesensky_the_placement_of_plants",
+    "title": "安置疏散企业",
+    "concept": "Several tidy ROWS of large wooden-slatted transport CRATES holding packed machines, raw-wood yellow boards and rough straw rope bindings, anonymous abstract geometric markings only without letters/numbers. Beside them the SAME small black-lacquer brass-crank mechanical calculator from reference image, now secondary, its crank rotated fully to end-stop. Focus on crates. No railway, train, cart, map or mountains.",
+    "group": "voznesensky",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_voznesensky_the_ammunition_plan",
+    "name": "GFX_hof_ic_voznesensky_the_ammunition_plan",
+    "title": "弹药生产计划",
+    "concept": "A single orderly ROW of five EMPTY brass artillery SHELL CASINGS standing upright from large to small, equidistant, highly visible warm brass reflections and machined concentric rings at casing bases. At the very front, smallest in image, the SAME little black-lacquer hand-cranked mechanical calculator with brass side crank, its crank freshly stopped. Shell cases are empty metal objects, no projectile tips, no guns, cannon, smoke, battle or people.",
+    "group": "voznesensky",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_voznesensky_the_war_economy",
+    "name": "GFX_hof_ic_voznesensky_the_war_economy",
+    "title": "卫国战争的政治经济学",
+    "concept": "One CLOSED thick hardbound scholarly volume, deep ink-green cover with abstract geometric embossing but NO text, lies horizontally. The SAME compact black-lacquer hand-cranked mechanical calculating machine with brass side crank rests directly ON TOP of the book, crank returned to its home position. One narrow blank paper tape protrudes slightly from the book edge. The calculator and book fill scene. No library, medals, people or political symbols.",
+    "group": "voznesensky",
+    "size": [
+      100,
+      88
+    ]
+  }
+]

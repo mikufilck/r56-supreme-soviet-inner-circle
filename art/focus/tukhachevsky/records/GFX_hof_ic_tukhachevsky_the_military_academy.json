@@ -1,0 +1,17 @@
+{
+  "id": "hof_ic_tukhachevsky_the_military_academy",
+  "name": "GFX_hof_ic_tukhachevsky_the_military_academy",
+  "title": "军事学院",
+  "concept": "A neatly ordered row of several newly made military officer SHOULDER BOARDS resting on an OPEN BOUND ACADEMY HANDOUT. Shoulder-board marks are abstract simple geometry, no stars or letters. Handout has tidy edges and plainly visible thread binding down its LEFT edge, only unreadable abstract marks. No person, classroom, blackboard or school building. Central colors old-paper yellow and dark brass insignia.",
+  "group": "tukhachevsky",
+  "size": [
+    100,
+    88
+  ],
+  "prompt": "Create ONE finished Hearts of Iron IV Soviet national focus icon. Use the attached image ONLY as stylistic reference for the common outer engraved gold laurel wreath, small red star and blank gold ribbon; create an entirely NEW central scene. A neatly ordered row of several newly made military officer SHOULDER BOARDS resting on an OPEN BOUND ACADEMY HANDOUT. Shoulder-board marks are abstract simple geometry, no stars or letters. Handout has tidy edges and plainly visible thread binding down its LEFT edge, only unreadable abstract marks. No person, classroom, blackboard or school building. Central colors old-paper yellow and dark brass insignia. Central art style: restrained 1930s Soviet sculptural relief, muted object-derived colors, ivory paper, worn steel and old leather, clean shapes readable at 100×88. Saturated red/gold belong only to common ornamental frame unless specified object itself bears gold. One centered emblem in a square canvas. TRUE RGBA transparent outside wreath/ribbon, alpha 0 at all four corners, 20–50 percent fully transparent exterior. No typography, readable text or numbers, watermark, face, portrait, battle action, trial, execution, flags, political insignia, emblems, maps, terrain contours, ledger, file drawer, coins, ruler, classroom, podium, parade, marching formation or broad overall color grading. Render one final production icon, not a mockup or sheet.",
+  "references": [
+    "D:/Users/xuwei/PycharmProjects/heart_of_Iron/art/focus/bukharin/source/GFX_hof_ic_bukharin_proportional_development.png"
+  ],
+  "generated_path": "C:\\Users\\xuwei\\.codex\\generated_images\\01a09af5-fd43-79a0-a3cc-72284cd67cbc\\exec-26b6aa80-055c-4f51-8f79-7533fa23274e.png",
+  "mode": "built-in image_gen"
+}

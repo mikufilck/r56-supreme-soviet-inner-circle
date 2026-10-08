@@ -1,0 +1,17 @@
+{
+  "id": "hof_ic_tukhachevsky_military_economic_mobilization",
+  "name": "GFX_hof_ic_tukhachevsky_military_economic_mobilization",
+  "title": "军事经济动员",
+  "concept": "A huge EMPTY GRID production-capacity SHEET fills the tabletop, dense fine horizontal and vertical lines but absolutely no numbers or words. One long silver slide rule crosses its upper middle, sliding part pushed to the extreme RIGHT. At lower right edge, two small scale models side by side: a larger stout muddy tractor WHEEL and a smaller thin THREE-BLADE AIRPLANE PROPELLER, clearly different sizes. No full tractor, plane, factory or people. Ivory paper and cool muted steel-gray tools.",
+  "group": "tukhachevsky",
+  "size": [
+    100,
+    88
+  ],
+  "prompt": "Create ONE finished Hearts of Iron IV Soviet national focus icon. Use attached image ONLY as stylistic reference for the common outer engraved gold laurel wreath, small red star and blank gold ribbon; create an entirely NEW central scene. A huge EMPTY GRID production-capacity SHEET fills the tabletop, dense fine horizontal and vertical lines but absolutely no numbers or words. One long silver slide rule crosses its upper middle, sliding part pushed to the extreme RIGHT. At lower right edge, two small scale models side by side: a larger stout muddy tractor WHEEL and a smaller thin THREE-BLADE AIRPLANE PROPELLER, clearly different sizes. No full tractor, plane, factory or people. Ivory paper and cool muted steel-gray tools. Central art style: low-saturation ivory/plaster-gray relief, fine historically plausible materials, realistic tactile evidence on a simple dark surface, coherent silhouette readable at 100×88. Color comes ONLY from the individual depicted object, never a full-image color wash. Keep important objects well within wreath. One centered emblem in square canvas. TRUE RGBA transparent outside wreath/ribbon, all four corners alpha 0, broad transparent exterior area 20–50%. No readable typography, letters, numbers or watermark. No real human, face, street, Chinese monument, Kremlin, flag, raised-hand propaganda, battle, live aircraft/tank in action, geographical map, stamped order, library shelves, bound collected works, poison-gas mask, or city skyline. Output one final production asset, not mockup or sheet.",
+  "references": [
+    "D:/Users/xuwei/PycharmProjects/heart_of_Iron/art/focus/bukharin/source/GFX_hof_ic_bukharin_proportional_development.png"
+  ],
+  "generated_path": "C:\\Users\\xuwei\\.codex\\generated_images\\01a09af5-fd43-79a0-a3cc-72284cd67cbc\\exec-08550c1d-e0b0-4920-84d4-d66bd91dcba4.png",
+  "mode": "built-in image_gen"
+}

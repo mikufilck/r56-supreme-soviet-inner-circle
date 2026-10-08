@@ -1,0 +1,4 @@
+﻿  [OK  ] en_prohibition       6416 字符 | Prohibition in the Russian Empire and the Soviet Union
+  [OK  ] en_vodka            19585 字符 | Vodka
+  [OK  ] ru_rykov            19227 字符 | Рыков, Алексей Иванович
+  [OK  ] ru_monopoly          7403 字符 | Алкогольная монополия

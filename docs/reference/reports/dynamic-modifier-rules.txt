@@ -1,0 +1,629 @@
+﻿##### 1. DM 块内「一层」字段名（按出现次数降序）#####
+# 说明：只统计恰好一个 Tab 缩进的 key，即 dynamic_modifiers = { <id> = { ... } } 里那一层
+
+（共扫 41 个 DM 文件）
+
+  icon                                                       1277
+  enable                                                     1067
+  remove_trigger                                             373
+  conscription_factor                                        174
+  consumer_goods_factor                                      172
+  state_production_speed_buildings_factor                    167
+  industrial_capacity_factory                                164
+  army_core_defence_factor                                   154
+  research_speed_factor                                      149
+  custom_modifier_tooltip                                    144
+  stability_factor                                           136
+  army_attack_factor                                         126
+  state_resources_factor                                     117
+  industrial_capacity_dockyard                               115
+  production_speed_buildings_factor                          114
+  local_manpower                                             111
+  political_power_factor                                     108
+  production_factory_max_efficiency_factor                   108
+  army_defence_factor                                        107
+  production_speed_arms_factory_factor                       100
+  production_speed_industrial_complex_factor                 96
+  local_resources_factor                                     96
+  army_org_factor                                            90
+  special_forces_cap                                         86
+  compliance_growth                                          84
+  war_support_factor                                         83
+  production_factory_efficiency_gain_factor                  81
+  army_core_attack_factor                                    76
+  training_time_factor                                       75
+  resistance_growth                                          73
+  resistance_target                                          66
+  production_speed_dockyard_factor                           64
+  local_factories                                            63
+  repair_speed_factor                                        62
+  democratic_drift                                           62
+  supply_consumption_factor                                  61
+  command_power_gain_mult                                    61
+  experience_gain_army_factor                                60
+  communism_drift                                            60
+  army_armor_attack_factor                                   59
+  breakthrough_factor                                        57
+  naval_coordination                                         56
+  max_planning_factor                                        55
+  max_dig_in_factor                                          55
+  screening_efficiency                                       54
+  army_artillery_attack_factor                               54
+  air_range_factor                                           53
+  production_speed_infrastructure_factor                     53
+  line_change_production_efficiency_factor                   50
+  production_factory_start_efficiency_factor                 49
+  air_ace_generation_chance_factor                           49
+  recruitable_population_factor                              48
+  conscription                                               48
+  local_supplies                                             48
+  neutrality_drift                                           47
+  air_agility_factor                                         45
+  local_building_slots_factor                                45
+  production_lack_of_resource_penalty_factor                 44
+  air_accidents_factor                                       44
+  acclimatization_hot_climate_gain_factor                    43
+  army_speed_factor                                          42
+  army_morale_factor                                         41
+  planning_speed                                             40
+  fascism_drift                                              40
+  out_of_supply_factor                                       39
+  mobilization_speed                                         39
+  resistance_decay                                           38
+  political_power_gain                                       38
+  naval_invasion_capacity                                    38
+  air_strategic_bomber_bombing_factor                        36
+  operative_slot                                             35
+  production_speed_supply_node_factor                        35
+  army_infantry_attack_factor                                35
+  air_mission_efficiency                                     34
+  air_cas_present_factor                                     34
+  max_command_power_mult                                     34
+  invasion_preparation                                       33
+  extra_marine_supply_grace                                  33
+  air_superiority_efficiency                                 32
+  max_dig_in                                                 31
+  surrender_limit                                            31
+  drift_defence_factor                                       31
+  dig_in_speed_factor                                        31
+  acclimatization_cold_climate_gain_factor                   31
+  org_loss_when_moving                                       31
+  refit_speed                                                30
+  convoy_retreat_speed                                       30
+  spotting_chance                                            30
+  local_resources                                            30
+  air_mission_xp_gain_factor                                 30
+  disable_strategic_redeployment                             30
+  air_nav_efficiency                                         29
+  production_speed_bunker_factor                             29
+  ground_attack_factor                                       28
+  special_forces_out_of_supply_factor                        28
+  state_production_speed_infrastructure_factor               28
+  land_doctrine_cost_factor                                  28
+  justify_war_goal_time                                      28
+  air_doctrine_cost_factor                                   28
+  air_intercept_efficiency                                   28
+  industry_repair_factor                                     27
+  army_speed_factor_for_controller                           27
+  cas_damage_reduction                                       27
+  convoy_escort_efficiency                                   27
+  air_training_xp_gain_factor                                27
+  global_building_slots_factor                               27
+  army_artillery_defence_factor                              26
+  industrial_concern_cost_factor                             26
+  naval_morale_factor                                        26
+  resource_trade_cost_bonus_per_factory                      25
+  experience_gain_navy                                       25
+  experience_loss_factor                                     25
+  conversion_cost_civ_to_mil_factor                          25
+  production_speed_rail_way_factor                           25
+  production_speed_coastal_bunker_factor                     25
+  navy_anti_air_attack_factor                                24
+  party_popularity_stability_factor                          24
+  refit_ic_cost                                              24
+  monthly_population                                         24
+  air_cas_efficiency                                         24
+  weekly_manpower                                            24
+  navy_max_range_factor                                      24
+  naval_accidents_chance                                     24
+  navy_org_factor                                            23
+  experience_gain_air                                        23
+  production_speed_anti_air_building_factor                  23
+  positioning                                                23
+  air_defence_factor                                         23
+  resistance_damage_to_garrison                              22
+  production_speed_air_base_factor                           22
+  air_weather_penalty                                        22
+  equipment_conversion_speed                                 22
+  navy_visibility                                            22
+  supply_combat_penalties_on_core_factor                     22
+  attrition                                                  21
+  experience_gain_navy_unit_factor                           21
+  special_forces_attack_factor                               20
+  navy_screen_defence_factor                                 20
+  motorized_attack_factor                                    20
+  political_advisor_cost_factor                              20
+  compliance_gain                                            19
+  navy_capital_ship_defence_factor                           19
+  army_armor_defence_factor                                  19
+  mechanized_attack_factor                                   19
+  resistance_activity                                        19
+  experience_gain_army                                       19
+  army_attack_speed_factor                                   19
+  equipment_capture_factor                                   19
+  non_core_manpower                                          18
+  economy_cost_factor                                        18
+  fuel_gain_factor                                           18
+  modifier_army_sub_unit_militia_defence_factor              18
+  mobilization_laws_cost_factor                              18
+  min_export                                                 18
+  air_night_penalty                                          18
+  aircraft_manufacturer_cost_factor                          18
+  air_attack_factor                                          18
+  mines_planting_by_fleets_factor                            17
+  air_wing_xp_loss_when_killed_factor                        17
+  pocket_penalty                                             17
+  modifier_army_sub_unit_militia_attack_factor               17
+  industry_free_repair_factor                                17
+  state_production_speed_bunker_factor                       17
+  convoy_raiding_efficiency_factor                           17
+  naval_mines_effect_reduction                               16
+  navy_spirit_category_type_cost_factor                      16
+  trade_laws_cost_factor                                     16
+  local_supplies_for_controller                              16
+  naval_equipment_upgrade_xp_cost                            16
+  initiative_factor                                          16
+  air_fuel_consumption_factor                                15
+  land_bunker_effectiveness_factor                           15
+  intelligence_agency_defense                                15
+  production_oil_factor                                      15
+  local_org_regain                                           15
+  special_project_speed_factor                               15
+  industry_air_damage_factor                                 15
+  autonomy_gain                                              15
+  enemy_attrition                                            15
+  army_armor_speed_factor                                    14
+  supply_node_range                                          14
+  strategic_bomb_visibility                                  14
+  heat_attrition_factor                                      14
+  navy_intel_factor                                          14
+  terrain_penalty_reduction                                  14
+  resistance_damage_to_garrison_on_our_occupied_states       14
+  modifier_army_sub_unit_cavalry_speed_factor                14
+  naval_doctrine_cost_factor                                 13
+  army_leader_cost_factor                                    13
+  coordination_bonus                                         13
+  naval_heavy_gun_hit_chance_factor                          13
+  experience_gain_navy_factor                                13
+  army_org_regain                                            13
+  naval_detection                                            13
+  decryption_factor                                          12
+  materiel_manufacturer_cost_factor                          12
+  navy_screen_attack_factor                                  12
+  amphibious_invasion                                        12
+  factory_energy_consumption                                 12
+  military_industrial_organization_research_bonus            12
+  max_command_power                                          12
+  state_production_speed_rail_way_factor                     12
+  fuel_gain_factor_from_states                               12
+  tank_manufacturer_cost_factor                              12
+  annex_cost_factor                                          11
+  modifier_army_sub_unit_militia_max_org_factor              11
+  resistance_growth_on_our_occupied_states                   11
+  modifier_army_sub_unit_militia_speed_factor                11
+  army_bonus_air_superiority_factor                          11
+  naval_invasion_prep_speed                                  11
+  defensive_war_stability_factor                             11
+  experience_gain_air_factor                                 11
+  state_production_speed_industrial_complex_factor           11
+  state_production_speed_coastal_bunker_factor               11
+  license_production_speed                                   11
+  sp_air_mothership_aircraft_speed_factor                    10
+  naval_manufacturer_cost_factor                             10
+  offensive_war_stability_factor                             10
+  weekly_casualties_war_support                              10
+  air_strategic_bomber_night_penalty                         10
+  sp_air_intercontinental_bomber_speed_factor                10
+  modifier_army_sub_unit_cavalry_attack_factor               10
+  join_faction_tension                                       10
+  land_mastery_gain_factor                                   10
+  local_building_slots                                       10
+  local_non_core_supply_impact_factor                        10
+  modifier_army_sub_unit_irregular_infantry_max_org_factor   10
+  faction_influence_contribution_factor                      10
+  naval_light_gun_hit_chance_factor                          10
+  modifier_army_sub_unit_infantry_defence_factor             10
+  modifier_army_sub_unit_cavalry_defence_factor              10
+  attrition_for_controller                                   10
+  land_night_attack                                          9
+  state_production_speed_arms_factory_factor                 9
+  air_manpower_requirement_factor                            9
+  production_speed_naval_base_factor                         9
+  military_industrial_organization_funds_gain                9
+  navy_submarine_attack_factor                               9
+  consumer_goods_expected_value                              9
+  production_speed_facility_factor                           9
+  naval_critical_score_chance_factor                         9
+  navy_intel_to_others                                       9
+  screening_without_screens                                  9
+  air_escort_efficiency                                      9
+  enemy_local_supplies                                       9
+  navy_capital_ship_attack_factor                            9
+  high_command_cost_factor                                   8
+  naval_hit_chance                                           8
+  air_untrained_pilots_penalty_factor                        8
+  local_supply_impact_factor                                 8
+  repair_speed_rail_way_factor                               8
+  repair_speed_infrastructure_factor                         8
+  modifier_army_sub_unit_mountaineers_max_org_factor         8
+  sortie_efficiency                                          8
+  local_intel_to_enemies                                     8
+  modifier_army_sub_unit_mountaineers_defence_factor         8
+  special_forces_defence_factor                              8
+  army_intel_to_others                                       8
+  army_defence_against_major_factor                          8
+  overlord_trade_cost_factor                                 8
+  enemy_army_bonus_air_superiority_factor                    8
+  civilian_intel_to_others                                   8
+  local_factory_sabotage                                     7
+  political_power_cost                                       7
+  mic_to_overlord_factor                                     7
+  command_power_gain                                         7
+  resistance_target_on_our_occupied_states                   7
+  experience_gain_factor                                     7
+  naval_defense_factor                                       7
+  promote_cost_factor                                        7
+  extra_trade_to_overlord_factor                             7
+  resistance_garrison_penetration_chance                     7
+  trade_opinion_factor                                       7
+  naval_strike_attack_factor                                 7
+  local_resources_coal_factor                                7
+  cavalry_attack_factor                                      7
+  state_resources_oil_factor                                 6
+  sp_tag_jet_speed_factor                                    6
+  unit_leader_as_advisor_cp_cost_factor                      6
+  naval_damage_factor                                        6
+  production_speed_fuel_silo_factor                          6
+  enemy_operative_capture_chance_factor                      6
+  modifier_army_sub_unit_paratrooper_max_org_factor          6
+  faction_influence_war_score_factor                         6
+  naval_strike_agility_factor                                6
+  naval_torpedo_hit_chance_factor                            6
+  modifier_army_sub_unit_blackshirt_assault_battalion_defence_factor 6
+  sp_tag_rocket_speed_factor                                 6
+  cic_construction_boost_factor                              6
+  sp_land_land_cruiser_speed_factor                          6
+  theorist_cost_factor                                       6
+  naval_invasion_division_cap                                6
+  unit_camelry_design_cost_factor                            6
+  encryption_factor                                          6
+  unit_cavalry_design_cost_factor                            6
+  minimum_training_level                                     6
+  intel_network_gain_factor                                  6
+  equipment_capture                                          6
+  sub_retreat_speed                                          6
+  winter_attrition_factor                                    6
+  subjects_autonomy_gain                                     6
+  modifier_army_sub_unit_blackshirt_assault_battalion_max_org_factor 6
+  land_reinforce_rate                                        6
+  subversive_activites_upkeep                                6
+  state_resources_steel_factor                               6
+  mines_planting_by_air_factor                               6
+  air_home_defence_factor                                    6
+  airforce_intel_factor                                      6
+  army_infantry_defence_factor                               6
+  naval_invasion_penalty                                     6
+  sp_naval_ice_carrier_speed_factor                          6
+  strike_force_movement_org_loss                             6
+  naval_has_potf_in_combat_attack                            6
+  country_resource_tungsten                                  5
+  cic_to_overlord_factor                                     5
+  country_resource_oil                                       5
+  air_bombing_targetting                                     5
+  supply_factor                                              5
+  army_fuel_consumption_factor                               5
+  attacker_modifier                                          5
+  state_resource_steel                                       5
+  military_leader_cost_factor                                5
+  local_factory_energy_consumption                           5
+  opinion_gain_monthly_same_ideology_factor                  5
+  production_speed_air_facility_factor                       5
+  weekly_convoys_war_support                                 5
+  state_production_speed_naval_base_factor                   5
+  country_resource_chromium                                  5
+  recon_factor_while_entrenched                              5
+  naval_strike_targetting_factor                             5
+  naval_mines_damage_factor                                  5
+  air_superiority_bonus_in_combat                            5
+  unit_artillery_brigade_design_cost_factor                  5
+  enemy_army_speed_factor                                    5
+  state_repair_speed_bunker_factor                           5
+  production_speed_nuclear_reactor_factor                    5
+  modifier_army_sub_unit_irregular_infantry_attack_factor    5
+  production_speed_radar_station_factor                      5
+  enemy_justify_war_goal_time                                5
+  modifier_army_sub_unit_irregular_infantry_defence_factor   5
+  army_attack_against_major_factor                           5
+  terrain_trait_xp_gain_factor                               5
+  no_supply_grace                                            5
+  port_strike                                                4
+  modifier_army_sub_unit_infantry_attack_factor              4
+  ships_at_battle_start                                      4
+  puppet_cost_factor                                         4
+  recon_factor                                               4
+  war_stability_factor                                       4
+  army_non_core_defence_factor                               4
+  global_building_slots                                      4
+  local_non_core_manpower                                    4
+  coastal_bunker_max_level_terrain_limit                     4
+  sp_tag_helicopter_speed_factor                             4
+  modifier_army_sub_unit_irregular_infantry_speed_factor     4
+  enemy_operative_intel_extraction_rate                      4
+  air_interception_detect_factor                             4
+  sp_nuclear_warheads_speed_factor                           4
+  state_resource_chromium                                    4
+  guarantee_tension                                          4
+  sp_commercial_nuclear_reactor_speed_factor                 4
+  max_surrender_limit_offset                                 4
+  exile_manpower_factor                                      4
+  sp_nuclear_bomb_speed_factor                               4
+  army_non_core_attack_factor                                4
+  weekly_bombing_war_support                                 4
+  required_garrison_factor                                   4
+  sp_tag_artillery_speed_factor                              4
+  state_production_speed_air_base_factor                     4
+  bunker_max_level_terrain_limit                             4
+  unit_infantry_design_cost_factor                           4
+  master_ideology_drift                                      4
+  naval_ship_recovery_chance                                 4
+  civilian_factory_use                                       4
+  ace_effectiveness_factor                                   4
+  army_chief_cost_factor                                     4
+  lend_lease_tension                                         4
+  enemy_operative_detection_chance_factor                    4
+  sp_tag_tank_speed_factor                                   4
+  send_volunteers_tension                                    4
+  naval_mine_hit_chance                                      4
+  production_speed_nuclear_facility_factor                   4
+  resources_to_overlord_factor                               4
+  stability_weekly                                           3
+  intel_from_combat_factor                                   3
+  production_speed_land_facility_factor                      3
+  conversion_cost_mil_to_civ_factor                          3
+  special_forces_min                                         3
+  static_anti_air_hit_chance_factor                          3
+  agency_upgrade_time                                        3
+  land_equipment_upgrade_xp_cost                             3
+  compliance_growth_on_our_occupied_states                   3
+  research_sharing_per_country_bonus_factor                  3
+  base_fuel_gain_factor                                      3
+  modifier_army_sub_unit_infantry_speed_factor               3
+  license_purchase_cost                                      3
+  army_org                                                   3
+  state_production_speed_supply_node_factor                  3
+  autonomy_manpower_share                                    3
+  enemy_operative_detection_chance_factor_over_occupied_tag  3
+  army_attack_against_minor_factor                           3
+  production_speed_synthetic_refinery_factor                 3
+  special_forces_training_time_factor                        3
+  cavalry_defence_factor                                     3
+  org_loss_at_low_org_factor                                 2
+  send_volunteer_size                                        2
+  modifier_army_sub_unit_armored_car_recon_max_org_factor    2
+  operation_cost                                             2
+  root_out_resistance_effectiveness_factor                   2
+  sp_naval_modern_carrier_speed_factor                       2
+  sp_tag_submarine_speed_factor                              2
+  cat_mass_mobilization_cost_factor                          2
+  sp_tag_nuclear_warfare_speed_factor                        2
+  unit_mechanized_design_cost_factor                         2
+  temporary_state_resource_rubber                            2
+  air_equipment_upgrade_xp_cost                              2
+  sp_tag_nuclear_power_speed_factor                          2
+  naval_speed_factor                                         2
+  naval_torpedo_reveal_chance_factor                         2
+  modifier_army_sub_unit_armored_car_max_org_factor          2
+  naval_enemy_fleet_size_ratio_penalty_factor                2
+  state_coastal_bunker_max_level_terrain_limit               2
+  navy_casualty_on_sink                                      2
+  experience_gain_army_unit_factor                           2
+  amphibious_invasion_defence                                2
+  state_bunker_max_level_terrain_limit                       2
+  sp_nuclear_engines_speed_factor                            2
+  state_resource_tungsten                                    2
+  temporary_state_resource_aluminium                         2
+  autonomy_manpower_share_from_subjects                      2
+  temporary_state_resource_oil                               2
+  autonomy_gain_warscore                                     2
+  exiled_government_weekly_manpower                          2
+  country_resource_cost_oil                                  2
+  temporary_state_resource_steel                             2
+  sp_tag_surface_ship_speed_factor                           2
+  naval_torpedo_screen_penetration_factor                    2
+  license_subject_master_purchase_cost                       2
+  autonomy_gain_global_factor                                2
+  state_repair_speed_infrastructure_factor                   2
+  state_resource_rubber                                      2
+  unit_motorized_design_cost_factor                          2
+  embargo_threshold_factor                                   2
+  air_power_projection_factor                                2
+  country_resource_rubber                                    2
+  air_close_air_support_org_damage_factor                    2
+  local_resource_gain_efficiency_per_infrastructure          2
+  enemy_truck_attrition_factor                               2
+  state_resource_oil                                         2
+  state_production_speed_dockyard_factor                     2
+  army_leader_start_defense_level                            2
+  temporary_state_resource_coal                              2
+  fascism_acceptance                                         2
+  sp_naval_modern_battleship_speed_factor                    2
+  state_production_speed_nuclear_facility_factor             2
+  modifier_army_sub_unit_armored_car_recon_attack_factor     2
+  temporary_state_resource_chromium                          2
+  disable_strategic_redeployment_for_controller              2
+  generate_wargoal_tension                                   2
+  navy_weather_penalty                                       2
+  state_production_speed_nuclear_reactor_factor              2
+  country_resource_cost_rubber                               2
+  state_production_speed_synthetic_refinery_factor           2
+  state_resource_aluminium                                   2
+  license_air_purchase_cost                                  2
+  navy_submarine_defence_factor                              2
+  modifier_army_sub_unit_armored_car_attack_factor           2
+  army_leader_start_logistics_level                          2
+  power_balance_weekly                                       2
+  boost_ideology_mission_factor                              2
+  legitimacy_gain_factor                                     2
+  state_repair_speed_supply_node_factor                      2
+  temporary_state_resource_tungsten                          2
+  decryption_power_factor                                    2
+  sp_air_helicopter_speed_factor                             2
+  air_ace_bonuses_factor                                     2
+  army_leader_start_planning_level                           2
+  airforce_intel_to_others                                   2
+  cat_deep_battle_cost_factor                                2
+  navy_leader_cost_factor                                    2
+  specialization_nuclear_speed_factor                        2
+  opinion_gain_monthly                                       1
+  special_forces_no_supply_grace                             1
+  state_production_speed_aluminum_mill_factor                1
+  army_spirit_category_type_cost_factor                      1
+  improve_relations_maintain_cost_factor                     1
+  trait_infantry_leader_xp_gain_factor                       1
+  country_resource_steel                                     1
+  modifier_army_sub_unit_long_range_patrol_support_defence_factor 1
+  country_resource_aluminium                                 1
+  modifier_army_sub_unit_mountaineers_attack_factor          1
+  air_spirit_category_type_cost_factor                       1
+  river_crossing_factor                                      1
+  modifier_army_sub_unit_marine_attack_factor                1
+  army_leader_start_attack_level                             1
+  state_production_speed_stronghold_network_factor           1
+  state_production_speed_anti_air_building_factor            1
+  max_fuel_factor                                            1
+  equipment_capture_for_controller                           1
+  field_officer_promotion_penalty                            1
+  starting_compliance                                        1
+  country_resource_coal                                      1
+  army_defence_against_minor_factor                          1
+  state_repair_speed_anti_air_building_factor                1
+  command_abilities_cost_factor                              1
+  enemy_intel_network_gain_factor_over_occupied_tag          1
+  equipment_upgrade_xp_cost                                  1
+  production_speed_industrial_infrastructure_factor          1
+  send_volunteer_divisions_required                          1
+  fortification_collateral_chance                            1
+  state_repair_speed_arms_factory_factor                     1
+  modifier_army_sub_unit_marine_max_org_factor               1
+  trait_cavalry_leader_xp_gain_factor                        1
+  experience_gain_infantry_combat_factor                     1
+  research_sharing_per_country_bonus                         1
+  truck_attrition_factor                                     1
+  air_volunteer_cap                                          1
+  request_lease_tension                                      1
+  out_of_power_impact_factor                                 1
+  production_speed_energy_infrastructure_factor              1
+  state_production_speed_steel_mill_factor                   1
+  production_speed_naval_facility_factor                     1
+  shore_bombardment_bonus                                    1
+  repair_speed_arms_factory_factor                           1
+  war_support_weekly                                         1
+  modifier_army_sub_unit_militia_org_recovery_cap_factor     1
+  modifier_army_sub_unit_long_range_patrol_support_attack_factor 1
+
+##### 2. 全部 DM 文件里出现 `name =` 的行（原样列出）#####
+# 若为空 → DM 没有 name 字段 → 显示名只能是 id 的本地化键，静态
+
+
+##### 3. dynamic_modifier 相关的效果效果（非修饰符）的权威定义 #####
+
+  --- ## add_dynamic_modifier（L1153）---
+      ## add_dynamic_modifier
+      
+      * Supported Scopes: STATE, COUNTRY, CHARACTER, SPECIAL_PROJECT
+      * Supported Targets: THIS, ROOT, PREV, FROM, OWNER, CONTROLLER, OCCUPIED, CAPITAL
+      
+      ```
+      adds a dynamic modifier to the containing scope (country / state / unit-leader / special-project).
+      Updates the cooldown if exists.
+      Optionaly you can give a scope that will restrict the dynamic modifier to it.
+      example :
+      12 = {
+        add_dynamic_modifier = {
+          modifier = dynamic_modifier_name
+          days = 42 # will be temporary if specified, can be variable
+          scope = GER # optional, state/countrytag or a variable containing that. 
+      				# if specified the dynamic variable will target that scope
+      				# in this example : adds the modifier to state 12 but only applies for country GER
+        }
+      }
+      ```
+
+  --- ## force_update_dynamic_modifier（L4372）---
+      ## force_update_dynamic_modifier
+      
+      * Supported Scopes: STATE, COUNTRY, CHARACTER, SPECIAL_PROJECT
+      * Supported Targets: THIS, ROOT, PREV, FROM, OWNER, CONTROLLER, OCCUPIED, CAPITAL
+      
+      ```
+      updates the modifiers in current scope (use if you don't want to wait for daily update to update them):
+      force_update_dynamic_modifier = yes
+      
+      ```
+      
+
+  --- ## remove_dynamic_modifier（L5978）---
+      ## remove_dynamic_modifier
+      
+      * Supported Scopes: STATE, COUNTRY, CHARACTER, SPECIAL_PROJECT
+      * Supported Targets: THIS, ROOT, PREV, FROM, OWNER, CONTROLLER, OCCUPIED, CAPITAL
+      
+      ```
+      removes a dynamic modifier from the containing scope (country / state / unit-leader / special-project).
+      example :
+      remove_dynamic_modifier = {
+        modifier = dynamic_modifier_name
+        scope = GER # optional, must match the scope input used in add_dynamic_modifier (if any)
+      }
+      ```
+      
+
+
+##### 4. has_dynamic_modifier 触发器是否存在、用得多不多 #####
+
+    ## has_dynamic_modifier
+    
+    * Supported Scopes: STATE, COUNTRY, CHARACTER
+    * Supported Targets: THIS, ROOT, PREV, FROM, OWNER, CONTROLLER, OCCUPIED, CAPITAL
+    
+    Checks if scope has a dynamic modifier.
+    
+    ### Example 1
+    ```
+    has_dynamic_modifier = dynamic_modifier_name
+    ```
+    
+    ### Example 2
+    ```
+    has_dynamic_modifier = {
+    	modifier = dynamic_modifier_name
+    	scope = GER #optional, if the original modifier has been targeted
+    }
+    ```
+    
+
+  [vanilla] has_dynamic_modifier 出现 1711 处
+  [R56] has_dynamic_modifier 出现 1699 处
+
+##### 5. scripted localisation 会不会被用来给 DM / idea 改名 #####
+# 判据：defined_text 的名字与 common/ideas 里的 id 有没有交集
+
+  defined_text 总数：2024
+  ideas 目录候选 id 总数：13382
+  交集数：0  → 交集为 0 则说明【没有任何 DM / idea 用过脚本本地化改名】
+
+##### 6. 一句话结论 #####
+  · DM 的「数值」靠 add_to_variable 改，每天自动重算，force_update_dynamic_modifier 可立即刷新
+  · DM 的「显示名」= id 的本地化键，静态；没有 name 字段，也没有脚本本地化的先例
+  · => 想在升级时改官衔名，只能换 DM id；但这跟数值完全无关
+  · 移除旧 id 时用 has_dynamic_modifier 条件块包起来，避免残留

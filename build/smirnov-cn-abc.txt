@@ -1,0 +1,12 @@
+=== tmp\smirnov\mia\cn-abc.html ===
+字节=15318  <a>总数=24  charset=gb2312
+  -- 含「斯米尔」 --
+    命中 0 条
+  -- 全部「斯」开头条目 --
+
+=== tmp\smirnov\mia\cn-search.html ===
+字节=2700  <a>总数=1  charset=UTF-8
+  -- 含「斯米尔」 --
+    命中 0 条
+  -- 全部「斯」开头条目 --
+

@@ -1,0 +1,206 @@
+=============================================================================
+ R56 里的托洛茨基 / 左翼反对派 家底勘查
+=============================================================================
+
+############ 1. 出现 "trotsky" 的文件（按文件统计命中数）############
+
+  common\ai_strategy\SOV.txt                                     1 处
+  common\ai_strategy\SPR.txt                                     2 处
+  common\ai_strategy_plans\CHL_historical_strategy_plan.txt      3 处
+  common\ai_strategy_plans\NOR_alternate_strategy_plan.txt       2 处
+  common\ai_strategy_plans\SOV_alternate_strategy_plan.txt      10 处
+  common\ai_strategy_plans\SOV_historical_strategy_plan.txt      5 处
+  common\ai_strategy_plans\SOV_old_alternate_strategy_plan.txt     4 处
+  common\ai_strategy_plans\SWE_r56_alternate_strategy_plan.txt     1 处
+  common\bookmarks\blitzkrieg.txt                                1 处
+  common\bookmarks\the_gathering_storm.txt                       1 处
+  common\characters\CHL.txt                                      1 处
+  common\characters\KAZ.txt                                      7 处
+  common\characters\MEX.txt                                     14 处
+  common\characters\NOR.txt                                     11 处
+  common\characters\PRU.txt                                      1 处
+  common\characters\SOV.txt                                     31 处
+  common\characters\SWE.txt                                      2 处
+  common\characters\VIN.txt                                      1 处
+  common\countries\cosmetic.txt                                  1 处
+  common\country_leader\00_traits.txt                            4 处
+  common\country_leader\r56_traits.txt                           1 处
+  common\decisions\categories\SOV_decision_categories.txt        1 处
+  common\decisions\CHL.txt                                       4 处
+  common\decisions\FRA.txt                                       2 处
+  common\decisions\MON.txt                                       6 处
+  common\decisions\political_decisions.txt                       4 处
+  common\decisions\r56_MEX_decisions.txt                         2 处
+  common\decisions\r56_POR_decisions.txt                         1 处
+  common\decisions\SOV.txt                                      55 处
+  common\dynamic_modifiers\toa_dynamic_modifiers.txt             1 处
+  common\dynamic_modifiers\wuw_dynamic_modifiers.txt             3 处
+  common\game_rules\00_game_rules.txt                            1 处
+  common\ideas\armenia.txt                                       1 处
+  common\ideas\brazil.txt                                        1 处
+  common\ideas\bulgaria.txt                                      1 处
+  common\ideas\czechoslovakia_old.txt                            3 处
+  common\ideas\france.txt                                        1 处
+  common\ideas\GER.txt                                           1 处
+  common\ideas\mongolia.txt                                      5 处
+  common\ideas\peru.txt                                          2 处
+  common\ideas\prc.txt                                           8 处
+  common\ideas\r56i_laws_leadership.txt                          1 处
+  common\ideas\r56_afghanistan.txt                               1 处
+  common\ideas\r56_argentina.txt                                 1 处
+  common\ideas\r56_australia.txt                                 1 处
+  common\ideas\r56_belgium.txt                                   1 处
+  common\ideas\r56_finland.txt                                   1 处
+  common\ideas\r56_japan.txt                                     1 处
+  common\ideas\r56_luxembourg.txt                                1 处
+  common\ideas\r56_portugal.txt                                  1 处
+  common\ideas\r56_soviet.txt                                    7 处
+  common\ideas\r56_spain_republic.txt                            2 处
+  common\ideas\saudi_arabia.txt                                  1 处
+  common\ideas\SOV.txt                                           8 处
+  common\ideas\turkey.txt                                        4 处
+  common\national_focus\armenia.txt                              7 处
+  common\national_focus\austria.txt                              9 处
+  common\national_focus\canada.txt                               3 处
+  common\national_focus\china_nationalist_warlord_TSR.txt        4 处
+  common\national_focus\hungary.txt                              1 处
+  common\national_focus\japan.txt                                4 处
+  common\national_focus\mexico.txt                              23 处
+  common\national_focus\mongolia.txt                             1 处
+  common\national_focus\norway.txt                              16 处
+  common\national_focus\portugal.txt                             1 处
+  common\national_focus\r56_luxembourg.txt                       1 处
+  common\national_focus\r56_philippines.txt                      1 处
+  common\national_focus\soviet.txt                              62 处
+  common\national_focus\soviet_old.txt                          43 处
+  common\national_focus\spain.txt                                3 处
+  common\national_focus\uk.txt                                   1 处
+  common\national_focus\Vietnam.txt                             10 处
+  common\on_actions\00_on_actions.txt                            4 处
+  common\on_actions\04_mtg_on_actions.txt                        1 处
+  common\on_actions\07_nsb_on_actions.txt                        2 处
+  common\on_actions\r56_on_actions.txt                           2 处
+  common\operations\NSB_historical_operations.txt               33 处
+  common\scripted_effects\NOR_scripted_effects.txt               1 处
+  common\scripted_effects\SOV_scripted_effects.txt              92 处
+  common\scripted_localisation\00_scripted_localisation.txt      2 处
+  common\scripted_triggers\00_scripted_triggers.txt             13 处
+  common\scripted_triggers\NOR_scripted_triggers.txt             4 处
+  common\scripted_triggers\SOV_scripted_triggers.txt             4 处
+  common\units\names_divisions\SOV_names_divisions.txt           1 处
+  events\AAT_Finland.txt                                         2 处
+  events\AAT_Norway.txt                                         38 处
+  events\BEL_events.txt                                         10 处
+  events\Bulgaria_events.txt                                     2 处
+  events\DOD_Hungary.txt                                         1 处
+  events\India.txt                                               2 处
+  events\LAR_NewsEvents.txt                                     12 处
+  events\Mexico.txt                                             45 处
+  events\Mongolia.txt                                            3 处
+  events\NewsEvents.txt                                         21 处
+  events\NSB_NewsEvents.txt                                     11 处
+  events\NSB_Soviet.txt                                         25 处
+  events\r56_news_events.txt                                     2 处
+  events\r56_prc.txt                                             1 处
+  events\r56_Soviet.txt                                          6 处
+  events\SovietUnion.txt                                        20 处
+  events\SPR_spain.txt                                           1 处
+  events\SWI_events.txt                                          2 处
+  events\TOA_Chile.txt                                           1 处
+  events\Vietnam.txt                                             1 处
+
+  合计 793 处，分布在 104 个文件。
+
+############ 2. 左翼 / 右翼反对派的状态旗标系统 ############
+
+  --- SOV_aligned_left_opposition_flag ---  命中 0 处
+
+  --- SOV_aligned_right_opposition_flag ---  命中 0 处
+
+  --- SOV_imprisoned_flag ---  命中 0 处
+
+  --- SOV_exiled_flag ---  命中 0 处
+
+  --- SOV_set_as_aligned_to_left_oppo ---  命中 0 处
+
+  --- SOV_is_left_opposition ---  命中 0 处
+
+  --- SOV_is_right_opposition ---  命中 0 处
+
+  --- SOV_potential_target_flag ---  命中 0 处
+
+  --- SOV_factionalism_modifier ---  命中 0 处
+
+############ 3. 名字里含 trotsky 的 idea / 修正 / 事件 ############
+
+  找到 19 个含 trotsky 的命名定义：
+
+    AUS_austrotrotskyism                                 common\dynamic_modifiers\wuw_dynamic_modifiers.txt : L297
+    is_trotsky_valid_for_mexico                          common\scripted_triggers\00_scripted_triggers.txt : L1290
+    MEX_leon_trotsky                                     common\characters\MEX.txt : L840
+    NOR_char_cw_trotskyist                               common\scripted_triggers\NOR_scripted_triggers.txt : L206
+    NOR_is_trotskyist_ai                                 common\scripted_triggers\NOR_scripted_triggers.txt : L267
+    NOR_lev_trotsky                                      common\characters\NOR.txt : L2432
+    NOR_trotsky_not_in_mex                               common\scripted_triggers\00_scripted_triggers.txt : L1328
+    NOR_trotsky_not_in_sov                               common\scripted_triggers\00_scripted_triggers.txt : L1320
+    SOV_kill_trotsky_effect                              common\scripted_effects\SOV_scripted_effects.txt : L4215
+    SOV_lev_trotsky                                      common\scripted_effects\SOV_scripted_effects.txt : L4227
+    SOV_promote_to_country_leader_trotsky                common\scripted_effects\SOV_scripted_effects.txt : L7360
+    SOV_trotskyist_revolutionary_agitation               common\ideas\SOV.txt : L3100
+    SOV_trotskyist_revolutionary_agitation_weakened      common\ideas\SOV.txt : L3117
+    SOV_trotskyite_narrative                             common\ideas\r56_soviet.txt : L621
+    trotskyite_plot                                      common\ideas\r56_soviet.txt : L1707
+    trotskyite_plot_nsb                                  common\ideas\SOV.txt : L53
+    trotskyite_plot_purged                               common\ideas\r56_soviet.txt : L1730
+
+############ 4. 苏联树里与反对派/平反相关的国策 id ############
+
+  文件: common\national_focus\soviet.txt（29564 行）
+
+  树内共 447 个 SOV_* 国策。下面是名字里带政治/反对派意味的：
+
+    SOV_soviet_artillery                                       L4855
+    SOV_soviet_atomic_bomb_project                             L5568
+    SOV_rehabilitated_military                                 L7822
+    SOV_the_zinovyevite_terrorist_center                       L8636
+    SOV_the_anti_soviet_trotskyist_center                      L8903
+    SOV_the_bloc_of_rights_and_trotskyites                     L9319
+    SOV_rehabilitate_stalins_legacy                            L9870
+    SOV_leader_of_the_party_and_the_people                     L10258
+    SOV_the_left_opposition                                    L10436
+    SOV_bring_old_trotskyists_back                             L10545
+    SOV_integrate_smirnovs_bloc                                L10596
+    SOV_left_opposition_coup                                   L10985
+    SOV_left_purges                                            L11124
+    SOV_trotskyite_narrative                                   L11155
+    SOV_all_power_to_the_soviets                               L11707
+    SOV_autonomous_soviet_republics                            L11773
+    SOV_international_union_of_soviet_republics                L11871
+    SOV_the_right_opposition                                   L11997
+    SOV_dissent_in_the_party                                   L12151
+    SOV_right_purges                                           L12552
+    SOV_the_trade_union_as_labor_organizer                     L12817
+    SOV_proclaim_soviet_hegemony                               L13199
+    SOV_gain_support_from_party_members                        L13371
+    SOV_align_the_zinovyevites                                 L13515
+    SOV_return_democracy_to_the_party                          L13643
+    SOV_begin_destalinization                                  L13734
+    SOV_status_of_labour_unions                                L13801
+    SOV_strengthen_the_trade_unions                            L13846
+    SOV_the_supreme_soviet                                     L13900
+    SOV_the_new_soviet_woman                                   L14071
+    SOV_restore_the_union                                      L15809
+    SOV_soviet_japanese_pact_against_usa_focus                 L18293
+    SOV_fascist_youth_union                                    L18833
+    SOV_offer_autonomy_to_former_soviet_republics              L19493
+    SOV_new_union_treaty_nsb                                   L19913
+    SOV_amnesty_for_political_opponents_nsb                    L21784
+    SOV_purge_religous_beurocracy_nsb                          L22030
+    SOV_purge_splinter_factions                                L22542
+    SOV_adopt_soviet_policies                                  L22679
+    SOV_impose_national_unions                                 L22956
+    SOV_union_of_fascist_little_ones                           L23067
+    SOV_new_union_treaty                                       L23149
+    SOV_amnesty_for_political_opponents                        L25075
+    SOV_purge_religous_beurocracy                              L25316
+    SOV_sino_soviet_treaty                                     L28529

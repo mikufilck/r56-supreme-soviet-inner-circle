@@ -1,0 +1,252 @@
+=============================================================================
+ joint_focus / shared_focus 机制勘查
+=============================================================================
+
+############ 1. 哪些国策文件含 joint_focus 块 ############
+
+  [原版] 扫描 F:\Hearts of Iron IV\common\national_focus 完毕
+  [R56] 扫描 D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125\common\national_focus 完毕
+
+  含 joint_focus 块的文件共 15 个，按块数排序（前 20）：
+
+  来源     文件                                               行数  joint shared
+  原版     indonesia_joint.txt                           12970     96      0
+  R56    indonesia_joint.txt                           13106     96      0
+  R56    congo_shared.txt                               9849     57     15
+  原版     congo_shared.txt                              10392     57     15
+  原版     nordic_shared.txt                              4095     51      1
+  R56    nordic_shared.txt                              3970     51      1
+  R56    habsburg_joint.txt                             3655     35      0
+  原版     habsburg_joint.txt                             3655     35      0
+  R56    goe_shared_saadabad_branch.txt                 1398     18      0
+  原版     goe_shared_saadabad_branch.txt                 1445     18      0
+  R56    abdacom_shared_branch.txt                      1109     11      0
+  原版     abdacom_shared_branch.txt                      1140     11      0
+  R56    TSR_lingguang_incident_joint_branch.txt         485      7      0
+  原版     TSR_lingguang_incident_joint_branch.txt         469      7      0
+  原版     ncns_ma_clique_joint_branch.txt                 590      5      0
+
+############ 2. 一个完整的 joint_focus 范例 ############
+
+  文件: [原版] ncns_ma_clique_joint_branch.txt
+  绝对路径: F:\Hearts of Iron IV\common\national_focus\ncns_ma_clique_joint_branch.txt
+
+  第 1 .. 167 行：
+
+       1: joint_focus = {
+       2: 	id = MA_develop_inter_province_ties
+       3: 	icon = GFX_goal_generic_national_unity
+       4: 
+       5: 	x = 31
+       6: 	y = 0
+       7: 
+       8: 	cost = 10
+       9: 
+      10: 	text_icon = MA_focus_style
+      11: 
+      12: 	allow_branch = {
+      13: 		has_dlc = "No Compromise, No Surrender"
+      14: 		OR = {
+      15: 			tag = XSM
+      16: 			tag = NXM
+      17: 			tag = GSM
+      18: 			tag = KHM
+      19: 		}
+      20: 		NOT = {
+      21: 			has_country_flag = cast_off_ma_ties_or_became_china_flag
+      22: 		}
+      23: 	}
+      24: 
+      25:     cancel_if_invalid = yes
+      26:     continue_if_invalid = no
+      27:     available_if_capitulated = no
+      28: 
+      29: 	bypass = {
+      30: 
+      31: 	}
+      32: 
+      33: 	ai_will_do = {
+      34: 		base = 15
+      35: 	}
+      36: 
+      37: 	search_filters = { FOCUS_FILTER_POLITICAL }
+      38: 
+      39: 	offset = {
+      40: 		x = 8
+      41: 		y = 0
+      42: 		trigger = {
+      43: 			tag = XSM
+      44: 		}
+      45: 	}
+      46: 
+      47: 	offset = {
+      48: 		x = 17
+      49: 		y = 0
+      50: 		trigger = {
+      51: 			tag = KHM
+      52: 		}
+      53: 	}
+      54: 
+      55: 	offset = {
+      56: 		x = 4
+      57: 		y = 0
+      58: 		trigger = {
+      59: 			OR = {
+      60: 				tag = GSM
+      61: 				tag = NXM
+      62: 			}
+      63: 		}
+      64: 	}
+      65: 
+      66: 	available = {
+      67: 		OR = {
+      68: 			original_tag = XSM
+      69: 			original_tag = NXM
+      70: 			original_tag = GSM
+      71: 			original_tag = KHM
+      72: 		}
+      73: 		NOT = {
+      74: 			has_country_flag = cast_off_ma_ties_or_became_china_flag
+      75: 		}
+      76: 	}
+      77: 
+      78: 	completion_reward_joint_originator = {
+      79: 
+      80: 	}
+      81: 
+      82: 	completion_reward = {
+      83: 
+      84: 		custom_effect_tooltip = CHI_modify_ma_clique_collective_modifier_tt
+      85: 		add_to_variable = { CHI_ma_clique_collective_political_power_factor = 0.05 tooltip = political_power_factor_tt }
+      86: 		add_to_variable = { CHI_ma_clique_collective_production_speed_infrastructure_factor = 0.05 tooltip = production_speed_infrastructure_factor_tt }
+      87: 
+      88: 		custom_effect_tooltip = generic_skip_one_line_tt
+      89: 
+      90: 		IF = {
+      91: 			limit = {
+      92: 				OR = {
+      93: 					original_tag = XSM
+      94: 					original_tag = NXM
+      95: 					original_tag = GSM
+      96: 					original_tag = KHM
+      97: 				}
+      98: 				NOT = {
+      99: 					original_tag = XSM
+     100: 				}
+     101: 			}
+     102: 			add_opinion_modifier = {
+     103: 				target = XSM
+     104: 				modifier = MA_family_ties_opm
+     105: 			}
+     106: 		}
+     107: 		IF = {
+     108: 			limit = {
+     109: 				OR = {
+     110: 					original_tag = XSM
+     111: 					original_tag = NXM
+     112: 					original_tag = GSM
+     113: 					original_tag = KHM
+     114: 				}
+     115: 				NOT = {
+     116: 					original_tag = NXM
+     117: 				}
+     118: 			}
+     119: 			add_opinion_modifier = {
+     120: 				target = NXM
+     121: 				modifier = MA_family_ties_opm
+     122: 			}
+     123: 		}
+     124: 		IF = {
+     125: 			limit = {
+     126: 				OR = {
+     127: 					original_tag = XSM
+     128: 					original_tag = NXM
+     129: 					original_tag = GSM
+     130: 					original_tag = KHM
+     131: 				}
+     132: 				NOT = {
+     133: 					original_tag = GSM
+     134: 				}
+     135: 			}
+     136: 			add_opinion_modifier = {
+     137: 				target = GSM
+     138: 				modifier = MA_family_ties_opm
+     139: 			}
+     140: 		}
+     141: 		IF = {
+     142: 			limit = {
+     143: 				OR = {
+     144: 					original_tag = XSM
+     145: 					original_tag = NXM
+     146: 					original_tag = GSM
+     147: 					original_tag = KHM
+     148: 				}
+     149: 				NOT = {
+     150: 					original_tag = KHM
+     151: 				}
+     152: 			}
+     153: 			add_opinion_modifier = {
+     154: 				target = KHM
+     155: 				modifier = MA_family_ties_opm
+     156: 			}
+     157: 		}
+     158: 
+     159: 	}
+     160: 
+     161: 	completion_reward_joint_member = {
+     162: 
+     163: 
+     164: 
+     165: 	}
+     166: 
+     167: }
+
+############ 3. shared_focus 在树内怎么引用 ############
+
+  文件: F:\Hearts of Iron IV\common\national_focus\china_communist.txt（1884 行）
+
+  shared_focus 引用共 1 处，前 3 处带上下文：
+
+       58: #		complete_tooltip = {
+       59: #
+       60: #		}
+       61: #
+       62: #		completion_reward = {
+       63: #
+       64: #		}
+       65: #	}
+ >>    66: 	shared_focus = CHI_invite_foreign_investors
+       67: 
+       68: 	focus = {
+       69: 		id = PRC_strengthen_the_central_secretariat
+       70: 		icon = GFX_goal_generic_intelligence_exchange
+       71: 		x = 2
+       72: 		y = 0
+       73: 
+       74: 		cost = 10
+
+
+############ 4. joint_trigger 里"同一阵营"的现成写法 ############
+
+  joint_trigger 内共采集到 267 行触发器写法。
+
+  按出现频次归类（看官方最常用哪些）：
+
+    NORDIC_basic_joint_trigger                   101
+    CONGO_is_a_congo_viable_nation                72
+    HABSBURG_joint_trigger                        70
+    is_in_faction_with                            16
+    SSB_basic_available_trigger                    4
+    OR                                             4
+
+  全部原始行（去重，前 60 条）：
+
+    CONGO_is_a_congo_viable_nation = yes
+    HABSBURG_joint_trigger = yes
+    is_in_faction_with = AFG
+    is_in_faction_with = IRQ
+    is_in_faction_with = PER
+    is_in_faction_with = TUR
+    NORDIC_basic_joint_trigger = yes
+    OR = {
+    SSB_basic_available_trigger = yes

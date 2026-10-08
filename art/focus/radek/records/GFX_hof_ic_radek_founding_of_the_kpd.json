@@ -1,0 +1,17 @@
+{
+  "id": "hof_ic_radek_founding_of_the_kpd",
+  "name": "GFX_hof_ic_radek_founding_of_the_kpd",
+  "title": "德国共产党的第一次代表大会",
+  "concept": "A small secret basement meeting room: joined wooden tables, a low-shaded kerosene lamp illuminating freshly printed loose leaflets with only abstract column marks. Windows tightly covered with opaque paper. A few empty chairs, intimate clandestine space mostly in dark brown shadow with one amber lamp. No stage, banners, flags or crowds. No printing machine.",
+  "group": "radek",
+  "size": [
+    100,
+    88
+  ],
+  "prompt": "Create ONE Hearts of Iron IV Soviet national focus icon. Reference is engraved relief style and outer laurel silhouette ONLY. CRITICAL palette override: NO RED star or red medallion or red frame; star is antique GOLD, inner rim bronze. There must be NO saturated red anywhere. Subject: A small secret basement meeting room: joined wooden tables, a low-shaded kerosene lamp illuminating freshly printed loose leaflets with only abstract column marks. Windows tightly covered with opaque paper. A few empty chairs, intimate clandestine space mostly in dark brown shadow with one amber lamp. No stage, banners, flags or crowds. No printing machine. Gold laurel open at top, small GOLD star above, blank gold ribbon below. Sculptural engraved miniature relief, high readable contrast and clear shapes at final 100x88. No faces, readable text, letters, numbers, watermark. No archive cabinets, bookcase walls, printing machinery or bookbinding. Landscape100:88. TRUE transparent RGBA background, alpha0 outside emblem and all four corners,20-50% transparent area; emblem fills94%canvas. No fake checkerboard, no background rectangle or external shadow.",
+  "references": [
+    "D:/Users/xuwei/PycharmProjects/heart_of_Iron/art/focus/bukharin/source/GFX_hof_ic_bukharin_proportional_development.png"
+  ],
+  "generated_path": "C:\\Users\\xuwei\\.codex\\generated_images\\01a09af5-fd43-79a0-a3cc-72284cd67cbc\\exec-ecd5727e-7d83-48d4-a98d-08b5fadf2461.png",
+  "mode": "built-in image_gen"
+}

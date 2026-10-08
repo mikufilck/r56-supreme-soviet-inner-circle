@@ -1,0 +1,8 @@
+PASS hof_portrait_SOV_karl_radek: 156x210; RGBA PNG; 32-bit uncompressed DDS; no mipmaps; decoded pixels identical; alpha=[255, 255]
+PASS hof_portrait_SOV_yevgeny_preobrazhensky: 156x210; RGBA PNG; 32-bit uncompressed DDS; no mipmaps; decoded pixels identical; alpha=[255, 255]
+PASS hof_portrait_SOV_ivar_smilga: 156x210; RGBA PNG; 32-bit uncompressed DDS; no mipmaps; decoded pixels identical; alpha=[255, 255]
+PASS hof_portrait_SOV_mikhail_tomsky: 156x210; RGBA PNG; 32-bit uncompressed DDS; no mipmaps; decoded pixels identical; alpha=[255, 255]
+PASS hof_portrait_SOV_martemyan_ryutin: 156x210; RGBA PNG; 32-bit uncompressed DDS; no mipmaps; decoded pixels identical; alpha=[255, 255]
+PASS hof_portrait_SOV_grigory_sokolnikov: 156x210; RGBA PNG; 32-bit uncompressed DDS; no mipmaps; decoded pixels identical; alpha=[255, 255]
+PASS hof_portrait_SOV_aleksandr_shlyapnikov: 156x210; RGBA PNG; 32-bit uncompressed DDS; no mipmaps; decoded pixels identical; alpha=[255, 255]
+7 / 7 format checks PASS. Visual status: all seven delivered; Smilga eyewear restored on 2026-09-14. Art-only delivery; no game scripts or sprite registrations changed.

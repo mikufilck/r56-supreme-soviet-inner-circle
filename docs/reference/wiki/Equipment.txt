@@ -1,0 +1,1652 @@
+﻿Equipment - Hearts of Iron 4 Wiki
+81 captures
+31 May 2018 - 24 Aug 2026
+Apr
+MAY
+Jun
+21
+2025
+2026
+2027
+success
+fail
+About this capture
+COLLECTED BY
+Collection:
+Save Page Now
+TIMESTAMPS
+The Wayback Machine - https://web.archive.org/web/20260521035106/https://hoi4.paradoxwikis.com/Equipment
+Forum list
+Trending
+Latest
+New posts
+Paradox
+Store
+Mods
+Forum
+Launcher
+PDXCON
+2019
+Paradox Wikis
+Hearts of Iron 4 Wiki
+Active Wikis
+Age of Wonders 4
+Empire of Sin
+Cities: Skylines 2
+Crusader Kings 3
+Europa Universalis 5
+Hearts of Iron 4
+Hunter: The Reckoning
+Imperator: Rome
+Millennia
+Prison Architect
+Stellaris
+Surviving Mars
+Surviving the Aftermath
+Werewolf: the Apocalypse
+Vampire: The Masquerade
+Victoria 3
+Legacy Wikis
+AoW: Planetfall
+Cities: Skylines
+Crusader Kings 2
+Arsenal of Democracy
+Europa Universalis 2
+Europa Universalis 3
+Europa Universalis 4
+Europa Universalis: Rome
+Hearts of Iron 2
+Hearts of Iron 3
+Tyranny
+Victoria 1
+Victoria 2
+Search
+Personal tools
+Log in
+Personal tools
+English
+Not logged in
+Talk
+Contributions
+Log in
+Navigation menu
+Namespaces
+Page
+Discussion
+English
+Views
+Read
+Edit
+Edit source
+View history
+More
+Navigation
+Hearts of Iron 4 Wiki
+Recent changes
+Random page
+Paradox Wikis
+- Main portal
+- Wikis discord
+- Contact us
+- Style guidelines
+HoI4 links
+- Forums
+- Game discord
+- Mods
+- Store
+- YouTube
+Tools
+What links here
+Related changes
+Special pages
+Printable version
+Permanent link
+Page information
+braze
+In other languages
+Deutsch
+Espa帽ol
+Fran莽ais
+Polski
+Portugu锚s
+袪褍褋褋泻懈泄
+Equipment
+From Hearts of Iron 4 Wiki
+Jump to navigation
+Jump to search
+This is a community maintained wiki. If you spot a mistake, please help with fixing it.
+See also:
+Air units
+See also:
+Naval units
+Equipment
+is the military hardware needed by
+units
+to operate and largely determines their stats. It gets unlocked by researching
+technologies
+and is produced by
+production lines
+. Support Equipment is an example of a type of equipment.
+Contents
+1
+Archetype
+2
+Type
+2.1
+Parent
+2.2
+Family
+3
+Variant
+4
+Designer
+5
+Statistics
+5.1
+Army values
+5.2
+Navy values
+5.3
+Air values
+5.4
+Common values
+5.5
+Special values
+6
+Land equipment
+7
+Armor equipment
+8
+References
+Archetype
+[
+edit
+|
+edit source
+]
+The equipment needs of units refer to general equipment
+archetypes
+. For example a German
+division
+that needs 100 medium tanks can use any mix of variants of Panzer IIIs, Panzer IVs, Panthers, or foreign medium tank equipment. By contrast, equipment of different archetypes, such as light and medium tanks, are never interchangeable.
+Type
+[
+edit
+|
+edit source
+]
+An equipment type belongs to an archetype and forms the basis of variants that countries create when they unlock it.
+Parent
+[
+edit
+|
+edit source
+]
+The parent of an equipment type is the type unlocked by the previous technology in the chain belonging to the same archetype. For example Infantry Equipment 1 is the parent of Infantry Equipment 2. This has an effect on
+production efficency retention
+.
+Family
+[
+edit
+|
+edit source
+]
+A family of equipment types share common mechanical parts that make transitioning production between them easier. Each tank equipment type and the armored vehicles based on it form a family.
+Variant
+[
+edit
+|
+edit source
+]
+Main article:
+Variant
+Researching an equipment technology unlocks a basic variant of the equipment type particular to that country. Equipment variants can alternatively be licensed from other countries. In either case, countries can further modify several types of equipment by spending the respective kind of experience.
+For example a country may create a variant of their light fighter 2 base variant, increasing its range, by spending air experience. Ship variants (ship classes) have a particular set of modules attached to them.
+Man the Guns
+makes designing variants an integral step of building ships, as only individual hulls and modules get researched that don't unlock ship variants (or classes) by themselves.
+Designer
+[
+edit
+|
+edit source
+]
+When a country unlocks a type of equipment while employing a matching
+design company
+, its bonuses will be attached to all variants of that equipment type.
+Statistics
+[
+edit
+|
+edit source
+]
+This is a community maintained wiki. If you spot a mistake, please help with fixing it.
+Statistics, stats, or equipment values are values that equipment types can carry. They form the basis of equipment variant stats, which in turn influence the combat abilities of units using them. While a unit can not operate without equipment, it is important to distinguish between equipment stats and unit stats. The latter are also influenced by many other factors such as additional and inherent stats, experience, leaders, supply etc.
+Army values
+[
+edit
+|
+edit source
+]
+Recovery Rate
+(or morale): How much extra organization can be regained hourly when not in combat.
+Defense
+: How many enemy attacks a division can attempt to avoid while on the defensive, effectively allowing it to hold the line longer.
+Breakthrough
+: How many enemy attacks a division can attempt to avoid while on the offensive, effectively allowing it to stay on the offense longer.
+Hardness
+: Hardness represents how much of a division is made up of armored or at least protected vehicles. It decreases the ratio of soft attacks received, while increasing the ratio of hard attacks.
+Soft attack
+: How many attacks a division can make versus enemies with low hardness.
+Hard attack
+: How many attacks a division can make versus enemies with high hardness.
+Reconnaissance
+: The ability to scout ahead and anticipate the enemy. Increases the chance that a division can pick better tactics in battle.
+Entrenchment
+: The ability to make proper defensive entrenchments before a hostile attack.
+Initiative
+: The higher the Initiative a unit has, the quicker it can reinforce into a battle, and the quicker it gets its planning done.
+Trickleback
+: The proportion of losses in combat that can be saved and returned to the manpower pool.
+Supply use
+: How much supply a unit consumes per day.
+Supply Usage
+: A modifier applied to
+Supply use
+.
+Suppression
+: Ability to suppress local resistance.
+Suppression Bonus
+: A modifier applied to
+Suppression
+.
+Exp. Loss
+: How much experience is lost in a division when they take casualties and have to replace them.
+Eq. Capture Ratio
+: Percentage of the equipment that will be captured from enemy loses.
+Fuel Capacity
+: How much fuel this unit can store. Higher fuel capacity means that the unit will be able to operate at full capacity longer when it lacks the fuel supply.
+Navy values
+[
+edit
+|
+edit source
+]
+Surface detection
+: Ability to detect surface vessels.
+Sub detection
+: Ability to detect submarines.
+Surface Visibility
+: How hard to find this ship is.
+Sub Visibility
+: How easy to detect a submarine is.
+Light Attack
+: Damage done by light guns. Light guns are better at targetting smaller ships.
+Light Piercing
+: Armor piercing of the light guns.
+Heavy Attack
+: Damage done by the heavy guns. Heavy guns are better at targetting bigger ships.
+Heavy Piercing
+: Armor piercing of the heavy guns.
+Torpedo attack
+: How much damage we can do when using the ship's torpedoes.
+Depth charges
+: How much damage we can do to the enemy submarines with depth charges.
+Anti-air
+: How much anti-air firepower the ship carries for shooting down enemy planes.
+Max Speed
+: A faster ship has an easier time disengaging from pursuers when attempting to retreat from combat. It is also less likely to be hit by enemy fire, can pursue contacts easier when spotting the enemy, and moves faster outside of battle.
+Max Range
+: A ship's range represents its onboard stores of fuel and foodstuffs, which limit how far it can travel from the nearest friendly Naval Base.
+Minelaying
+: Efficiency in laying the sea mines.
+Minesweeping
+: Efficiency in finding and neutralizing the sea mines.
+Air values
+[
+edit
+|
+edit source
+]
+Range
+: How far away the plane can perform missions.
+Air Defense
+: How many hits a plane can take before being shot down.
+Air Attack
+: How much damage we can do against airplanes. High Air Attack also helps to counter enemy Air Superiority effects.
+Agility
+: How agile a plane is. Agility affects how easy it is to hit another plane, and how easily it can avoid being hit.
+Strategic Bombing
+: How good a plane is at strategic bombing.
+Air Superiority
+: How much the plane helps the overall air superiority of a strategic area.
+Naval Attack
+: How much damage the plane inflicts upon hitting a ship.
+Naval Targeting
+: How likely the plane is to hit a ship.
+Ground Attack
+: How much damage the plane can do to enemy divisions on the ground when helping out in combat.
+Common values
+[
+edit
+|
+edit source
+]
+Organization
+: Organization indicates combat readiness and how organized a unit is. A unit with no organization can't fight or move effectively.
+HP
+: Strength represents how much damage this unit can suffer before it is destroyed.
+Max Speed
+: How quickly this division can traverse terrain under optimal circumstances. How quickly this unit can fly under optimal circumstances.
+Armor
+: Having armor that is higher than the opponents piercing value makes you take less damage and also makes it possible to perform more attacks in combat as the unit has more freedom of movement.
+Piercing
+: Having equal or greater 搂HPiercing搂! to the targets 搂HArmor搂! value allow you to do more damage and more effectively pin down their armored forces
+Reliability
+: The lower the value the more likely the equipment is of suffering random failure, accidents or exploding in a fiery ball of death when lightly bumped.
+Reliability
+: An extra reliability bonus from support companies. This bonus is applied to an equipment type's reliability and reduces the chance of breakdowns and accidents.
+Weight
+: How much the unit will weigh. Heavier units will require more transports to ship and perform invasions effectively.
+Fuel Usage
+: How much fuel this unit uses while it is operating. Air and Sea units will consume fuel while on active missions or during training. Land units with fuel consumption will consume fuel in idle as well, but the combat, movement or training will further increase the consumption.
+Special values
+[
+edit
+|
+edit source
+]
+Deck size
+: How many planes a carrier can fit on board.
+Hot acclimatization gain factor
+: The speed at which a unit acclimatizes in a warm climate.
+Cold acclimatization gain factor
+: The speed at which a unit acclimatizes in a cold climate.
+Production Cost
+: How much Factory Output a piece of equipment needs.
+Land equipment
+[
+edit
+|
+edit source
+]
+This is a community maintained wiki. If you spot a mistake, please help with fixing it.
+Equipment type
+Equipment
+Speed (km/h)
+[1]
+[2]
+Attack
+Armor
+Pierc.
+Hness.
+Fuel Usage
+Reli.
+Resources Per Factory
+Infantry Eq.
+Basic Eq.
+4
+3
+0.5
+20
+2
+1
+90%
+0.43
+2
+Weapons I
+4
+6
+1
+22
+3
+4
+90%
+0.5
+2
+Weapons II
+4
+9
+1.5
+28
+4
+5
+90%
+0.58
+3
+Weapons III
+4
+12
+2
+34
+5
+10
+80%
+0.69
+4
+Motorized
+Truck
+12
+5
+10%
+1.2
+80%
+2.5
+1
+1
+Motorized
+Armor Car 1
+9
+6
+2
+2
+12
+3
+6
+65%
+0.8
+80%
+4
+2
+Armor Car 2
+12
+13
+4
+3
+16
+10
+8
+65%
+1.8
+80%
+6
+2
+Armor Car 3
+15
+16
+8
+5
+28
+20
+36
+70%
+1.8
+80%
+8
+2
+1
+Armor Car Anti-Tank
+16
+12
+14
+6
+28
+20
+62
+70%
+1.8
+80%
+9
+2
+1
+Mot. R. Artillery
+Mot. R. Artillery
+鈥?
+36
+1
+15
+12
+2
+1.2
+80%
+12
+1
+2
+1
+Mechanized
+Mechanized I
+8
+26
+6
+10
+11
+60%
+2.4
+80%
+8
+2
+1
+Mechanized II
+10
+30
+8
+15
+16
+70%
+2.4
+80%
+10
+3
+1
+Mechanized III
+12
+34
+10
+20
+21
+75%
+2.4
+80%
+12
+4
+1
+Amphibious Mechanized
+Amphibious Mechanized 1
+7
+26
+4
+10
+11
+60%
+4
+80%
+8
+2
+1
+Amphibious Mechanized 2
+10
+30
+5
+15
+16
+70%
+4
+80%
+10
+3
+1
+Artillery
+Artillery
+鈥?
+25
+2
+10
+6
+5
+80%
+3.5
+2
+1
+Improved Artillery
+鈥?
+30
+2
+15
+7
+5
+80%
+4
+2
+1
+Advanced Artillery
+鈥?
+34
+2
+18
+8
+5
+80%
+4.5
+3
+1
+Rocket Artillery
+Rocket Artillery
+鈥?
+30
+1
+12
+9
+2
+80%
+4
+1
+2
+Advanced Rocket Artillery
+鈥?
+38
+1
+15
+12
+2
+80%
+5
+1
+2
+Anti-Tank
+Anti-Tank
+鈥?
+4
+20
+4
+60
+10%
+80%
+4
+2
+2
+Improved Anti-Tank
+鈥?
+4
+22
+4
+90
+10%
+80%
+5
+2
+2
+1
+Advanced Anti-Tank
+鈥?
+4
+30
+4
+125
+10%
+80%
+6
+3
+2
+1
+Anti-Air
+Anti-Air
+鈥?
+3
+7
+19
+4
+1
+25
+80%
+4
+2
+Improved Anti-Air
+鈥?
+3.5
+11
+25
+4
+1
+60
+80%
+5
+2
+Advanced Anti-Air
+鈥?
+4
+15
+32
+4
+1
+88
+80%
+6
+3
+Support Eq.
+Support Eq.
+鈥?
+80%
+4
+2
+1
+Armor equipment
+[
+edit
+|
+edit source
+]
+This is a community maintained wiki. If you spot a mistake, please help with fixing it.
+The table below
+excludes
+armor designed by the
+No Step Back
+DLC
+tank designer
+.
+Equipment type
+Equipment
+Speed (km/h)
+[2]
+Attack
+Armor
+Pierc.
+Hness.
+Fuel Usage
+Reli.
+Resources Per Factory
+Convertable from
+Light Tank
+Great War Tank
+6
+8
+4
+4
+18
+5
+15
+80%
+1.0
+80%
+7
+1
+L. Tank I
+10
+13
+4
+4
+26
+10
+10
+80%
+2.4
+80%
+8
+2
+L. Tank II
+12
+16
+6
+5
+36
+15
+30
+80%
+2.4
+80%
+9
+3
+L. Tank III
+14
+22
+9
+6
+46
+30
+50
+80%
+2.4
+80%
+10
+4
+Light SP Artillery
+L. SPG I
+10
+34
+0.5
+4
+2
+5
+4
+50%
+1.2
+80%
+8
+2
+1
+L. Tank I
+L. SPG II
+12
+42
+1
+5
+2.5
+10
+0
+50%
+1.2
+80%
+9
+3
+1
+L. Tank I, L. Tank II
+L. SPG III
+14
+46
+1.5
+7
+3.5
+25
+0
+50%
+1.2
+80%
+10
+4
+1
+L. Tank II, L. Tank III
+L. Tank Destroyer
+L. TD I
+10
+6
+10
+4
+1
+10
+50
+80%
+1.2
+80%
+8
+2
+2
+L. Tank I
+L. TD II
+12
+6
+16
+5
+1.3
+15
+77
+80%
+1.2
+80%
+9
+3
+2
+L. Tank I, L. Tank II
+L. TD III
+14
+8
+24
+7
+1.8
+30
+99
+80%
+1.2
+80%
+10
+4
+2
+L. Tank II, L. Tank III
+Light SP Anti-Air
+L. AA I
+10
+2
+1
+15
+2
+2
+5
+5
+50%
+0.6
+80%
+10
+2
+L. Tank I
+L. AA II
+12
+3
+1.5
+17
+2.5
+2.5
+10
+20
+50%
+0.6
+80%
+11
+3
+L. Tank I, L. Tank II
+L. AA III
+14
+4.5
+4
+32
+3.5
+3.5
+25
+35
+50%
+0.6
+80%
+12
+4
+L. Tank II, L. Tank III
+Medium Tank
+M. Tank I
+8
+19
+14
+5
+36
+60
+61
+90%
+3.6
+80%
+12
+2
+2
+M. Tank II
+9
+25
+19
+7
+51
+80
+81
+85%
+3.6
+80%
+13
+3
+2
+M. Tank III
+10
+32
+24
+9
+66
+90
+91
+85%
+3.6
+80%
+14
+4
+2
+M. SPG
+M. SPG I
+8
+42
+1
+5
+3
+45
+5
+65%
+1.8
+80%
+12
+2
+3
+M. Tank I,  M. Tank II
+M. SPG II
+9
+50
+1.5
+6
+3
+50
+0
+65%
+1.8
+80%
+13
+3
+3
+M. Tank I,  M. Tank II
+M. SPG III
+10
+55
+2
+7
+4
+58
+0
+65%
+1.8
+80%
+14
+4
+3
+M. Tank II, M. Tank III
+M. Tank Destroyer
+M. TD I
+8
+5
+20
+5
+1.3
+60
+88
+90%
+1.8
+80%
+12
+2
+4
+M. Tank I
+M. TD II
+9
+6
+26
+6
+1.5
+80
+110
+85%
+1.8
+80%
+13
+3
+4
+M. Tank I,  M. Tank II
+M. TD III
+10
+8
+32
+7
+1.8
+90
+120
+85%
+1.8
+80%
+14
+4
+4
+M. Tank II,  M. Tank III
+Medium SP Anti-Air
+M. AA I
+8
+4.5
+3
+22
+2.5
+2.5
+45
+40
+65%
+0.9
+80%
+12
+2
+2
+M. Tank I,  M. Tank II
+M. AA II
+9
+6
+4.5
+32
+3
+3
+50
+60
+65%
+0.9
+80%
+13
+3
+2
+M. Tank I,  M. Tank II
+M. AA III
+10
+7.5
+6
+43
+3.5
+3.5
+58
+70
+65%
+0.9
+80%
+14
+4
+2
+M. Tank II,  M. Tank III
+Heavy Tank
+H. Tank I
+5
+15
+12
+6
+36
+70
+35
+95%
+4.4
+80%
+25
+3
+3
+H. Tank II
+6
+27
+30
+8
+52
+110
+111
+95%
+4.4
+80%
+27
+3
+3
+H. Tank III
+6
+35
+40
+9
+67
+130
+131
+95%
+4.4
+80%
+30
+4
+3
+Heavy SP Artillery
+H. SPG I
+5
+55
+1
+4
+2
+45
+8
+80%
+2.2
+80%
+25
+3
+3
+H. Tank I
+H. SPG II
+6
+74
+2
+6
+3
+68
+0
+80%
+2.2
+80%
+27
+4
+3
+H. Tank I,  H. Tank II
+H. SPG III
+6
+80
+2.5
+7
+3.5
+90
+0
+80%
+2.2
+80%
+30
+5
+3
+H. Tank II,  H. Tank III
+H. Tank Destroyer
+H. TD I
+5
+6
+25
+4
+1
+70
+96
+95%
+2.2
+80%
+25
+3
+3
+H. Tank I
+H. TD II
+6
+8
+42
+6
+1.5
+110
+140
+95%
+2.2
+80%
+27
+4
+3
+H. Tank I,  H. Tank II
+H. TD III
+6
+10
+60
+7
+1.8
+130
+160
+95%
+2.2
+80%
+30
+4
+4
+H. Tank II,  H. Tank III
+Heavy SP Anti-Air
+H. AA I
+5
+4.5
+4
+17
+2
+2
+45
+25
+80%
+1.1
+80%
+25
+3
+3
+H. Tank I
+H. AA II
+6
+6
+4.5
+33
+3
+3
+68
+60
+80%
+1.1
+80%
+27
+3
+3
+H. Tank I,  H. Tank II
+H. AA III
+6
+7.5
+6
+44
+3.5
+3.5
+90
+88
+80%
+1.1
+80%
+30
+4
+3
+H. Tank II,  H. Tank III
+Super Heavy Tank
+SH. Tank
+4
+38
+45
+10
+74
+145
+146
+99%
+10.0
+80%
+100
+3
+4
+SH. SP Artillery
+SH. SPG
+4
+85
+3
+7
+3.5
+100
+9
+90%
+5.0
+80%
+100
+3
+4
+SH. Tank
+SH. Tank Destroyer
+SH. TD
+4
+12
+70
+7
+1.8
+145
+170
+99%
+5.0
+80%
+100
+3
+4
+SH. Tank
+Super Heavy SP Anti-Air
+SH. AA
+4
+11.5
+9
+50
+3.5
+3.5
+100
+98
+90%
+2.5
+80%
+100
+3
+4
+SH. Tank
+Modern Tank
+Mod. Tank
+10
+40
+32
+10
+84
+130
+131
+98%
+5.0
+80%
+28
+3
+4
+Modern SP Artillery
+Modern SPG
+10
+80
+3
+8
+4
+90
+10
+85%
+2.5
+80%
+28
+3
+4
+Mod. Tank
+Modern Tank Destroyer
+Modern TD
+10
+10
+42
+8
+2
+130
+165
+98%
+2.5
+80%
+28
+3
+4
+Mod. Tank
+Modern SP Anti-Air
+Modern AA
+10
+9
+7.5
+50
+4
+4
+90
+100
+85%
+1.25
+80%
+28
+3
+4
+Mod. Tank
+Amphibious Tank
+Amphibious Tank 1
+7
+13
+4
+4
+26
+20
+10
+80%
+4
+80%
+10
+2
+L. Tank II
+Amphibious Tank 2
+8
+19
+14
+5
+36
+80
+61
+90%
+4
+80%
+13
+2
+2
+M. Tank I
+References
+[
+edit
+|
+edit source
+]
+鈫?/a>
+These values for the maximum speed do
+not
+apply to
+support companies
+other than recon companies.
+鈫?
+2.0
+2.1
+Battalions have a maximum speed no slower than 4, regardless of equipment
+Mechanics
+Politics
+Ideology
+鈥?
+Faction
+鈥?
+National focus
+鈥?
+Ideas
+鈥?
+Government
+鈥?
+Puppet
+鈥?
+Governments in exile
+鈥?
+Diplomacy
+鈥?
+World tension
+鈥?
+Civil war
+鈥?
+Occupation
+鈥?
+Balance of power
+Production
+Trade
+鈥?
+Production
+鈥?
+Construction
+鈥?
+Equipment
+鈥?
+Fuel
+鈥?
+Military industrial organization
+鈥?
+International market
+Research and technology
+Research
+鈥?
+Infantry technology
+鈥?
+Support companies technology
+鈥?
+Armor technology
+(also
+without No Step Back
+) 鈥?
+Artillery technology
+鈥?
+Land doctrine
+鈥?
+Special forces doctrine
+鈥?
+Naval technology
+(also
+without Man the Guns
+) 鈥?
+Naval support technology
+鈥?
+Naval doctrine
+鈥?
+Air technology
+(also
+without By Blood Alone
+) 鈥?
+Air doctrine
+鈥?
+Engineering technology
+鈥?
+Industry technology
+鈥?
+Special project
+鈥?
+Scientist
+Military and warfare
+Warfare
+鈥?
+Peace conference
+鈥?
+Land units
+鈥?
+Land warfare
+鈥?
+Division designer
+鈥?
+Tank designer
+鈥?
+Army planner
+鈥?
+Command group
+鈥?
+Commander
+鈥?
+Battle plan
+鈥?
+Combat tactics
+鈥?
+Ship
+鈥?
+Ship designer
+(
+London Naval Treaty
+) 鈥?
+Naval warfare
+鈥?
+Aircraft designer
+鈥?
+Air warfare
+鈥?
+Experience
+鈥?
+Officer corps
+鈥?
+Attrition and accidents
+鈥?
+Logistics
+鈥?
+Manpower
+鈥?
+Nuclear bomb
+鈥?
+Raid
+Espionage
+Intel
+鈥?
+Intelligence agency
+鈥?
+Operatives
+鈥?
+Missions
+鈥?
+Operations
+Map
+Map
+鈥?
+Province
+鈥?
+Terrain
+鈥?
+Weather
+鈥?
+State
+Events and Decisions
+Events
+鈥?
+Decisions
+Retrieved from "
+"
+Categories
+:
+1.8
+Military
+Hidden category:
+Articles with potentially outdated sections
+This page was last edited on 9 April 2025, at 19:10.
+Content is available under
+Attribution-ShareAlike 3.0
+unless otherwise noted.
+About Hearts of Iron 4 Wiki
+Mobile view
+Games
+Discover
+Our Brands
+Browse
+Play
+on Paradox technology
+Community
+Paradox Forums
+Paradox
+Wikis
+Support
+About
+News
+About us
+Careers
+Join our playtests
+Media contact
+Social Media
+Legal
+Information
+EU Online Dispute Resolution
+Report Illegal Content
+Terms & Policies
+Legal Information
+EU Online Dispute Resolution
+Report Illegal Content
+Frequently Asked
+Questions
+Paradox
+Interactive corporate website

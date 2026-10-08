@@ -1,0 +1,5036 @@
+# Generated from gen-hof-ic-s3.ps1; personal bonuses belong to the current job idea.
+ideas = {
+	hidden_ideas = {
+		hof_ic_role_lev_trotsky_0 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.1
+				army_org_factor = 0.05
+			}
+		}
+		hof_ic_role_lev_trotsky_1 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.1
+				army_org_factor = 0.10
+				training_time_factor = -0.05
+			}
+		}
+		hof_ic_role_lev_trotsky_3 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.1
+				army_org_factor = 0.10
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+			}
+		}
+		hof_ic_role_lev_trotsky_7 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.10
+				command_power_gain_mult = 0.10
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.05
+				supply_consumption_factor = -0.05
+				attrition = -0.05
+			}
+		}
+		hof_ic_role_lev_trotsky_f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.10
+				command_power_gain_mult = 0.10
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.05
+				supply_consumption_factor = -0.05
+				attrition = -0.05
+				production_speed_industrial_complex_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+		hof_ic_role_lev_trotsky_1f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.10
+				command_power_gain_mult = 0.10
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.05
+				supply_consumption_factor = -0.05
+				attrition = -0.05
+				production_speed_industrial_complex_factor = 0.05
+				industrial_capacity_factory = 0.05
+				communism_drift = 0.02
+				drift_defence_factor = 0.10
+				no_supply_grace = 72
+			}
+		}
+		hof_ic_role_lev_trotsky_3f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.10
+				command_power_gain_mult = 0.10
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.05
+				supply_consumption_factor = -0.05
+				attrition = -0.05
+				production_speed_industrial_complex_factor = 0.05
+				industrial_capacity_factory = 0.05
+				communism_drift = 0.02
+				drift_defence_factor = 0.10
+				no_supply_grace = 72
+				send_volunteer_factor = 0.25
+				opinion_gain_monthly_same_ideology_factor = 0.25
+			}
+		}
+		hof_ic_role_lev_trotsky_7f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.10
+				command_power_gain_mult = 0.10
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.05
+				supply_consumption_factor = -0.05
+				attrition = -0.05
+				production_speed_industrial_complex_factor = 0.05
+				industrial_capacity_factory = 0.05
+				communism_drift = 0.02
+				drift_defence_factor = 0.10
+				no_supply_grace = 72
+				send_volunteer_factor = 0.25
+				opinion_gain_monthly_same_ideology_factor = 0.25
+				political_power_factor = 0.05
+			}
+		}
+		hof_ic_role_lev_trotsky_ff = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.10
+				command_power_gain_mult = 0.10
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.05
+				supply_consumption_factor = -0.05
+				attrition = -0.05
+				production_speed_industrial_complex_factor = 0.05
+				industrial_capacity_factory = 0.05
+				communism_drift = 0.02
+				drift_defence_factor = 0.10
+				no_supply_grace = 72
+				send_volunteer_factor = 0.25
+				opinion_gain_monthly_same_ideology_factor = 0.25
+				political_power_factor = 0.05
+				stability_factor = 0.05
+				political_advisor_cost_factor = -0.10
+			}
+		}
+		hof_ic_role_lev_trotsky_100 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.1
+				army_org_factor = 0.05
+				consumer_goods_factor = -0.05
+				stability_factor = 0.05
+				production_speed_industrial_complex_factor = 0.10
+				industrial_capacity_factory = 0.05
+			}
+		}
+		hof_ic_role_lev_trotsky_101 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.1
+				army_org_factor = 0.10
+				training_time_factor = -0.05
+				consumer_goods_factor = -0.05
+				stability_factor = 0.05
+				production_speed_industrial_complex_factor = 0.10
+				industrial_capacity_factory = 0.05
+			}
+		}
+		hof_ic_role_lev_trotsky_103 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.1
+				army_org_factor = 0.10
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				consumer_goods_factor = -0.05
+				stability_factor = 0.05
+				production_speed_industrial_complex_factor = 0.10
+				industrial_capacity_factory = 0.05
+			}
+		}
+		hof_ic_role_lev_trotsky_107 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.10
+				command_power_gain_mult = 0.10
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.05
+				supply_consumption_factor = -0.05
+				attrition = -0.05
+				consumer_goods_factor = -0.05
+				stability_factor = 0.05
+				production_speed_industrial_complex_factor = 0.10
+				industrial_capacity_factory = 0.05
+			}
+		}
+		hof_ic_role_lev_trotsky_10f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.10
+				command_power_gain_mult = 0.10
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.05
+				supply_consumption_factor = -0.05
+				attrition = -0.05
+				production_speed_industrial_complex_factor = 0.15
+				industrial_capacity_factory = 0.10
+				consumer_goods_factor = -0.05
+				stability_factor = 0.05
+			}
+		}
+		hof_ic_role_lev_trotsky_11f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.10
+				command_power_gain_mult = 0.10
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.05
+				supply_consumption_factor = -0.05
+				attrition = -0.05
+				production_speed_industrial_complex_factor = 0.15
+				industrial_capacity_factory = 0.10
+				communism_drift = 0.02
+				drift_defence_factor = 0.10
+				no_supply_grace = 72
+				consumer_goods_factor = -0.05
+				stability_factor = 0.05
+			}
+		}
+		hof_ic_role_lev_trotsky_13f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.10
+				command_power_gain_mult = 0.10
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.05
+				supply_consumption_factor = -0.05
+				attrition = -0.05
+				production_speed_industrial_complex_factor = 0.15
+				industrial_capacity_factory = 0.10
+				communism_drift = 0.02
+				drift_defence_factor = 0.10
+				no_supply_grace = 72
+				send_volunteer_factor = 0.25
+				opinion_gain_monthly_same_ideology_factor = 0.25
+				consumer_goods_factor = -0.05
+				stability_factor = 0.05
+			}
+		}
+		hof_ic_role_lev_trotsky_17f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.10
+				command_power_gain_mult = 0.10
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.05
+				supply_consumption_factor = -0.05
+				attrition = -0.05
+				production_speed_industrial_complex_factor = 0.15
+				industrial_capacity_factory = 0.10
+				communism_drift = 0.02
+				drift_defence_factor = 0.10
+				no_supply_grace = 72
+				send_volunteer_factor = 0.25
+				opinion_gain_monthly_same_ideology_factor = 0.25
+				political_power_factor = 0.05
+				consumer_goods_factor = -0.05
+				stability_factor = 0.05
+			}
+		}
+		hof_ic_role_lev_trotsky_1ff = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.10
+				command_power_gain_mult = 0.10
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.05
+				supply_consumption_factor = -0.05
+				attrition = -0.05
+				production_speed_industrial_complex_factor = 0.15
+				industrial_capacity_factory = 0.10
+				communism_drift = 0.02
+				drift_defence_factor = 0.10
+				no_supply_grace = 72
+				send_volunteer_factor = 0.25
+				opinion_gain_monthly_same_ideology_factor = 0.25
+				political_power_factor = 0.05
+				stability_factor = 0.10
+				political_advisor_cost_factor = -0.10
+				consumer_goods_factor = -0.05
+			}
+		}
+		hof_ic_role_lev_trotsky_200 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.1
+				army_org_factor = 0.05
+				industrial_capacity_factory = 0.05
+				war_support_factor = 0.05
+				stability_factor = -0.05
+			}
+		}
+		hof_ic_role_lev_trotsky_201 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.1
+				army_org_factor = 0.10
+				training_time_factor = -0.05
+				industrial_capacity_factory = 0.05
+				war_support_factor = 0.05
+				stability_factor = -0.05
+			}
+		}
+		hof_ic_role_lev_trotsky_203 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.1
+				army_org_factor = 0.10
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				industrial_capacity_factory = 0.05
+				war_support_factor = 0.05
+				stability_factor = -0.05
+			}
+		}
+		hof_ic_role_lev_trotsky_207 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.10
+				command_power_gain_mult = 0.10
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.05
+				supply_consumption_factor = -0.05
+				attrition = -0.05
+				industrial_capacity_factory = 0.05
+				war_support_factor = 0.05
+				stability_factor = -0.05
+			}
+		}
+		hof_ic_role_lev_trotsky_20f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.10
+				command_power_gain_mult = 0.10
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.05
+				supply_consumption_factor = -0.05
+				attrition = -0.05
+				production_speed_industrial_complex_factor = 0.05
+				industrial_capacity_factory = 0.10
+				war_support_factor = 0.05
+				stability_factor = -0.05
+			}
+		}
+		hof_ic_role_lev_trotsky_21f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.10
+				command_power_gain_mult = 0.10
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.05
+				supply_consumption_factor = -0.05
+				attrition = -0.05
+				production_speed_industrial_complex_factor = 0.05
+				industrial_capacity_factory = 0.10
+				communism_drift = 0.02
+				drift_defence_factor = 0.10
+				no_supply_grace = 72
+				war_support_factor = 0.05
+				stability_factor = -0.05
+			}
+		}
+		hof_ic_role_lev_trotsky_23f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.10
+				command_power_gain_mult = 0.10
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.05
+				supply_consumption_factor = -0.05
+				attrition = -0.05
+				production_speed_industrial_complex_factor = 0.05
+				industrial_capacity_factory = 0.10
+				communism_drift = 0.02
+				drift_defence_factor = 0.10
+				no_supply_grace = 72
+				send_volunteer_factor = 0.25
+				opinion_gain_monthly_same_ideology_factor = 0.25
+				war_support_factor = 0.05
+				stability_factor = -0.05
+			}
+		}
+		hof_ic_role_lev_trotsky_27f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.10
+				command_power_gain_mult = 0.10
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.05
+				supply_consumption_factor = -0.05
+				attrition = -0.05
+				production_speed_industrial_complex_factor = 0.05
+				industrial_capacity_factory = 0.10
+				communism_drift = 0.02
+				drift_defence_factor = 0.10
+				no_supply_grace = 72
+				send_volunteer_factor = 0.25
+				opinion_gain_monthly_same_ideology_factor = 0.25
+				political_power_factor = 0.05
+				war_support_factor = 0.05
+				stability_factor = -0.05
+			}
+		}
+		hof_ic_role_lev_trotsky_2ff = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.10
+				command_power_gain_mult = 0.10
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.05
+				supply_consumption_factor = -0.05
+				attrition = -0.05
+				production_speed_industrial_complex_factor = 0.05
+				industrial_capacity_factory = 0.10
+				communism_drift = 0.02
+				drift_defence_factor = 0.10
+				no_supply_grace = 72
+				send_volunteer_factor = 0.25
+				opinion_gain_monthly_same_ideology_factor = 0.25
+				political_power_factor = 0.05
+				political_advisor_cost_factor = -0.10
+				war_support_factor = 0.05
+			}
+		}
+		hof_ic_role_lev_trotsky_5ff = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.10
+				command_power_gain_mult = 0.10
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.05
+				supply_consumption_factor = -0.05
+				attrition = -0.05
+				production_speed_industrial_complex_factor = 0.15
+				industrial_capacity_factory = 0.15
+				communism_drift = 0.02
+				drift_defence_factor = 0.10
+				no_supply_grace = 72
+				send_volunteer_factor = 0.25
+				opinion_gain_monthly_same_ideology_factor = 0.25
+				political_power_factor = 0.05
+				stability_factor = 0.10
+				political_advisor_cost_factor = -0.10
+				consumer_goods_factor = -0.10
+				production_speed_buildings_factor = 0.05
+				line_change_production_efficiency_factor = -0.05
+			}
+		}
+		hof_ic_role_lev_trotsky_6ff = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.10
+				command_power_gain_mult = 0.10
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.05
+				supply_consumption_factor = -0.05
+				attrition = -0.05
+				production_speed_industrial_complex_factor = 0.05
+				industrial_capacity_factory = 0.15
+				communism_drift = 0.02
+				drift_defence_factor = 0.10
+				no_supply_grace = 72
+				send_volunteer_factor = 0.25
+				opinion_gain_monthly_same_ideology_factor = 0.25
+				political_power_factor = 0.05
+				political_advisor_cost_factor = -0.10
+				war_support_factor = 0.05
+				production_speed_buildings_factor = 0.05
+				consumer_goods_factor = -0.05
+				line_change_production_efficiency_factor = -0.05
+			}
+		}
+		hof_ic_role_lev_trotsky_dff = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.10
+				command_power_gain_mult = 0.10
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.05
+				supply_consumption_factor = -0.05
+				attrition = -0.05
+				production_speed_industrial_complex_factor = 0.15
+				industrial_capacity_factory = 0.15
+				communism_drift = 0.02
+				drift_defence_factor = 0.10
+				no_supply_grace = 72
+				send_volunteer_factor = 0.25
+				opinion_gain_monthly_same_ideology_factor = 0.25
+				political_power_factor = 0.05
+				stability_factor = 0.10
+				political_advisor_cost_factor = -0.10
+				consumer_goods_factor = -0.10
+				production_speed_buildings_factor = 0.15
+				line_change_production_efficiency_factor = -0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		hof_ic_role_lev_trotsky_eff = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.10
+				command_power_gain_mult = 0.10
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.05
+				supply_consumption_factor = -0.05
+				attrition = -0.05
+				production_speed_industrial_complex_factor = 0.05
+				industrial_capacity_factory = 0.15
+				communism_drift = 0.02
+				drift_defence_factor = 0.10
+				no_supply_grace = 72
+				send_volunteer_factor = 0.25
+				opinion_gain_monthly_same_ideology_factor = 0.25
+				political_power_factor = 0.05
+				political_advisor_cost_factor = -0.10
+				war_support_factor = 0.05
+				production_speed_buildings_factor = 0.15
+				consumer_goods_factor = -0.05
+				line_change_production_efficiency_factor = -0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		hof_ic_role_lev_trotsky_1dff = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.10
+				command_power_gain_mult = 0.10
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.05
+				supply_consumption_factor = -0.05
+				attrition = -0.05
+				production_speed_industrial_complex_factor = 0.15
+				industrial_capacity_factory = 0.15
+				communism_drift = 0.04
+				drift_defence_factor = 0.10
+				no_supply_grace = 72
+				send_volunteer_factor = 0.25
+				opinion_gain_monthly_same_ideology_factor = 0.50
+				political_power_factor = 0.05
+				stability_factor = 0.10
+				political_advisor_cost_factor = -0.10
+				consumer_goods_factor = -0.10
+				production_speed_buildings_factor = 0.15
+				line_change_production_efficiency_factor = -0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				opinion_gain_monthly_factor = 0.25
+				boost_ideology_mission_factor = 0.15
+			}
+		}
+		hof_ic_role_lev_trotsky_1eff = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.10
+				command_power_gain_mult = 0.10
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.05
+				supply_consumption_factor = -0.05
+				attrition = -0.05
+				production_speed_industrial_complex_factor = 0.05
+				industrial_capacity_factory = 0.15
+				communism_drift = 0.04
+				drift_defence_factor = 0.10
+				no_supply_grace = 72
+				send_volunteer_factor = 0.25
+				opinion_gain_monthly_same_ideology_factor = 0.50
+				political_power_factor = 0.05
+				political_advisor_cost_factor = -0.10
+				war_support_factor = 0.05
+				production_speed_buildings_factor = 0.15
+				consumer_goods_factor = -0.05
+				line_change_production_efficiency_factor = -0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				opinion_gain_monthly_factor = 0.25
+				boost_ideology_mission_factor = 0.15
+			}
+		}
+		hof_ic_role_lev_trotsky_3dff = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.10
+				command_power_gain_mult = 0.10
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.05
+				supply_consumption_factor = -0.10
+				attrition = -0.05
+				production_speed_industrial_complex_factor = 0.15
+				industrial_capacity_factory = 0.15
+				communism_drift = 0.04
+				drift_defence_factor = 0.10
+				no_supply_grace = 72
+				send_volunteer_factor = 0.50
+				opinion_gain_monthly_same_ideology_factor = 0.50
+				political_power_factor = 0.05
+				stability_factor = 0.10
+				political_advisor_cost_factor = -0.10
+				consumer_goods_factor = -0.10
+				production_speed_buildings_factor = 0.15
+				line_change_production_efficiency_factor = -0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				opinion_gain_monthly_factor = 0.50
+				boost_ideology_mission_factor = 0.15
+			}
+		}
+		hof_ic_role_lev_trotsky_3eff = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.10
+				command_power_gain_mult = 0.10
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.05
+				supply_consumption_factor = -0.10
+				attrition = -0.05
+				production_speed_industrial_complex_factor = 0.05
+				industrial_capacity_factory = 0.15
+				communism_drift = 0.04
+				drift_defence_factor = 0.10
+				no_supply_grace = 72
+				send_volunteer_factor = 0.50
+				opinion_gain_monthly_same_ideology_factor = 0.50
+				political_power_factor = 0.05
+				political_advisor_cost_factor = -0.10
+				war_support_factor = 0.05
+				production_speed_buildings_factor = 0.15
+				consumer_goods_factor = -0.05
+				line_change_production_efficiency_factor = -0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				opinion_gain_monthly_factor = 0.50
+				boost_ideology_mission_factor = 0.15
+			}
+		}
+		hof_ic_role_lev_trotsky_7dff = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.10
+				command_power_gain_mult = 0.10
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.05
+				supply_consumption_factor = -0.10
+				attrition = -0.05
+				production_speed_industrial_complex_factor = 0.15
+				industrial_capacity_factory = 0.15
+				communism_drift = 0.04
+				drift_defence_factor = 0.25
+				no_supply_grace = 72
+				send_volunteer_factor = 0.50
+				opinion_gain_monthly_same_ideology_factor = 0.50
+				political_power_factor = 0.05
+				stability_factor = 0.10
+				political_advisor_cost_factor = -0.10
+				consumer_goods_factor = -0.10
+				production_speed_buildings_factor = 0.15
+				line_change_production_efficiency_factor = -0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				opinion_gain_monthly_factor = 0.75
+				boost_ideology_mission_factor = 0.15
+				subversive_activites_upkeep = -0.10
+			}
+		}
+		hof_ic_role_lev_trotsky_7eff = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.10
+				command_power_gain_mult = 0.10
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.05
+				supply_consumption_factor = -0.10
+				attrition = -0.05
+				production_speed_industrial_complex_factor = 0.05
+				industrial_capacity_factory = 0.15
+				communism_drift = 0.04
+				drift_defence_factor = 0.25
+				no_supply_grace = 72
+				send_volunteer_factor = 0.50
+				opinion_gain_monthly_same_ideology_factor = 0.50
+				political_power_factor = 0.05
+				political_advisor_cost_factor = -0.10
+				war_support_factor = 0.05
+				production_speed_buildings_factor = 0.15
+				consumer_goods_factor = -0.05
+				line_change_production_efficiency_factor = -0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				opinion_gain_monthly_factor = 0.75
+				boost_ideology_mission_factor = 0.15
+				subversive_activites_upkeep = -0.10
+			}
+		}
+		hof_ic_role_lev_trotsky_8007 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.15
+				command_power_gain_mult = 0.10
+				justify_war_goal_time = -0.25
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.10
+				supply_consumption_factor = -0.05
+				attrition = -0.05
+				communism_drift = 0.05
+				send_volunteer_factor = 0.50
+				operative_slot = 1
+				boost_ideology_mission_factor = 0.25
+				breakthrough_factor = 0.05
+				combat_width_factor = -0.25
+				army_armor_attack_factor = 0.10
+			}
+		}
+		hof_ic_role_lev_trotsky_800f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.15
+				command_power_gain_mult = 0.10
+				justify_war_goal_time = -0.25
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.10
+				supply_consumption_factor = -0.05
+				attrition = -0.05
+				production_speed_industrial_complex_factor = 0.05
+				industrial_capacity_factory = 0.05
+				communism_drift = 0.05
+				send_volunteer_factor = 0.50
+				operative_slot = 1
+				boost_ideology_mission_factor = 0.25
+				breakthrough_factor = 0.05
+				combat_width_factor = -0.25
+				army_armor_attack_factor = 0.10
+			}
+		}
+		hof_ic_role_lev_trotsky_801f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.15
+				command_power_gain_mult = 0.10
+				justify_war_goal_time = -0.25
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.10
+				supply_consumption_factor = -0.05
+				attrition = -0.05
+				production_speed_industrial_complex_factor = 0.05
+				industrial_capacity_factory = 0.05
+				communism_drift = 0.07
+				drift_defence_factor = 0.10
+				no_supply_grace = 72
+				send_volunteer_factor = 0.50
+				operative_slot = 1
+				boost_ideology_mission_factor = 0.25
+				breakthrough_factor = 0.05
+				combat_width_factor = -0.25
+				army_armor_attack_factor = 0.10
+			}
+		}
+		hof_ic_role_lev_trotsky_803f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.15
+				command_power_gain_mult = 0.10
+				justify_war_goal_time = -0.25
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.10
+				supply_consumption_factor = -0.05
+				attrition = -0.05
+				production_speed_industrial_complex_factor = 0.05
+				industrial_capacity_factory = 0.05
+				communism_drift = 0.07
+				drift_defence_factor = 0.10
+				no_supply_grace = 72
+				send_volunteer_factor = 0.75
+				opinion_gain_monthly_same_ideology_factor = 0.25
+				operative_slot = 1
+				boost_ideology_mission_factor = 0.25
+				breakthrough_factor = 0.05
+				combat_width_factor = -0.25
+				army_armor_attack_factor = 0.10
+			}
+		}
+		hof_ic_role_lev_trotsky_807f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.15
+				command_power_gain_mult = 0.10
+				justify_war_goal_time = -0.25
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.10
+				supply_consumption_factor = -0.05
+				attrition = -0.05
+				production_speed_industrial_complex_factor = 0.05
+				industrial_capacity_factory = 0.05
+				communism_drift = 0.07
+				drift_defence_factor = 0.10
+				no_supply_grace = 72
+				send_volunteer_factor = 0.75
+				opinion_gain_monthly_same_ideology_factor = 0.25
+				political_power_factor = 0.05
+				operative_slot = 1
+				boost_ideology_mission_factor = 0.25
+				breakthrough_factor = 0.05
+				combat_width_factor = -0.25
+				army_armor_attack_factor = 0.10
+			}
+		}
+		hof_ic_role_lev_trotsky_80ff = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.15
+				command_power_gain_mult = 0.10
+				justify_war_goal_time = -0.25
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.10
+				supply_consumption_factor = -0.05
+				attrition = -0.05
+				production_speed_industrial_complex_factor = 0.05
+				industrial_capacity_factory = 0.05
+				communism_drift = 0.07
+				drift_defence_factor = 0.10
+				no_supply_grace = 72
+				send_volunteer_factor = 0.75
+				opinion_gain_monthly_same_ideology_factor = 0.25
+				political_power_factor = 0.05
+				stability_factor = 0.05
+				political_advisor_cost_factor = -0.10
+				operative_slot = 1
+				boost_ideology_mission_factor = 0.25
+				breakthrough_factor = 0.05
+				combat_width_factor = -0.25
+				army_armor_attack_factor = 0.10
+			}
+		}
+		hof_ic_role_lev_trotsky_8107 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.15
+				command_power_gain_mult = 0.10
+				justify_war_goal_time = -0.25
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.10
+				supply_consumption_factor = -0.05
+				attrition = -0.05
+				consumer_goods_factor = -0.05
+				stability_factor = 0.05
+				production_speed_industrial_complex_factor = 0.10
+				industrial_capacity_factory = 0.05
+				communism_drift = 0.05
+				send_volunteer_factor = 0.50
+				operative_slot = 1
+				boost_ideology_mission_factor = 0.25
+				breakthrough_factor = 0.05
+				combat_width_factor = -0.25
+				army_armor_attack_factor = 0.10
+			}
+		}
+		hof_ic_role_lev_trotsky_810f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.15
+				command_power_gain_mult = 0.10
+				justify_war_goal_time = -0.25
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.10
+				supply_consumption_factor = -0.05
+				attrition = -0.05
+				production_speed_industrial_complex_factor = 0.15
+				industrial_capacity_factory = 0.10
+				consumer_goods_factor = -0.05
+				stability_factor = 0.05
+				communism_drift = 0.05
+				send_volunteer_factor = 0.50
+				operative_slot = 1
+				boost_ideology_mission_factor = 0.25
+				breakthrough_factor = 0.05
+				combat_width_factor = -0.25
+				army_armor_attack_factor = 0.10
+			}
+		}
+		hof_ic_role_lev_trotsky_811f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.15
+				command_power_gain_mult = 0.10
+				justify_war_goal_time = -0.25
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.10
+				supply_consumption_factor = -0.05
+				attrition = -0.05
+				production_speed_industrial_complex_factor = 0.15
+				industrial_capacity_factory = 0.10
+				communism_drift = 0.07
+				drift_defence_factor = 0.10
+				no_supply_grace = 72
+				consumer_goods_factor = -0.05
+				stability_factor = 0.05
+				send_volunteer_factor = 0.50
+				operative_slot = 1
+				boost_ideology_mission_factor = 0.25
+				breakthrough_factor = 0.05
+				combat_width_factor = -0.25
+				army_armor_attack_factor = 0.10
+			}
+		}
+		hof_ic_role_lev_trotsky_813f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.15
+				command_power_gain_mult = 0.10
+				justify_war_goal_time = -0.25
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.10
+				supply_consumption_factor = -0.05
+				attrition = -0.05
+				production_speed_industrial_complex_factor = 0.15
+				industrial_capacity_factory = 0.10
+				communism_drift = 0.07
+				drift_defence_factor = 0.10
+				no_supply_grace = 72
+				send_volunteer_factor = 0.75
+				opinion_gain_monthly_same_ideology_factor = 0.25
+				consumer_goods_factor = -0.05
+				stability_factor = 0.05
+				operative_slot = 1
+				boost_ideology_mission_factor = 0.25
+				breakthrough_factor = 0.05
+				combat_width_factor = -0.25
+				army_armor_attack_factor = 0.10
+			}
+		}
+		hof_ic_role_lev_trotsky_817f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.15
+				command_power_gain_mult = 0.10
+				justify_war_goal_time = -0.25
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.10
+				supply_consumption_factor = -0.05
+				attrition = -0.05
+				production_speed_industrial_complex_factor = 0.15
+				industrial_capacity_factory = 0.10
+				communism_drift = 0.07
+				drift_defence_factor = 0.10
+				no_supply_grace = 72
+				send_volunteer_factor = 0.75
+				opinion_gain_monthly_same_ideology_factor = 0.25
+				political_power_factor = 0.05
+				consumer_goods_factor = -0.05
+				stability_factor = 0.05
+				operative_slot = 1
+				boost_ideology_mission_factor = 0.25
+				breakthrough_factor = 0.05
+				combat_width_factor = -0.25
+				army_armor_attack_factor = 0.10
+			}
+		}
+		hof_ic_role_lev_trotsky_81ff = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.15
+				command_power_gain_mult = 0.10
+				justify_war_goal_time = -0.25
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.10
+				supply_consumption_factor = -0.05
+				attrition = -0.05
+				production_speed_industrial_complex_factor = 0.15
+				industrial_capacity_factory = 0.10
+				communism_drift = 0.07
+				drift_defence_factor = 0.10
+				no_supply_grace = 72
+				send_volunteer_factor = 0.75
+				opinion_gain_monthly_same_ideology_factor = 0.25
+				political_power_factor = 0.05
+				stability_factor = 0.10
+				political_advisor_cost_factor = -0.10
+				consumer_goods_factor = -0.05
+				operative_slot = 1
+				boost_ideology_mission_factor = 0.25
+				breakthrough_factor = 0.05
+				combat_width_factor = -0.25
+				army_armor_attack_factor = 0.10
+			}
+		}
+		hof_ic_role_lev_trotsky_8207 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.15
+				command_power_gain_mult = 0.10
+				justify_war_goal_time = -0.25
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.10
+				supply_consumption_factor = -0.05
+				attrition = -0.05
+				industrial_capacity_factory = 0.05
+				war_support_factor = 0.05
+				stability_factor = -0.05
+				communism_drift = 0.05
+				send_volunteer_factor = 0.50
+				operative_slot = 1
+				boost_ideology_mission_factor = 0.25
+				breakthrough_factor = 0.05
+				combat_width_factor = -0.25
+				army_armor_attack_factor = 0.10
+			}
+		}
+		hof_ic_role_lev_trotsky_820f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.15
+				command_power_gain_mult = 0.10
+				justify_war_goal_time = -0.25
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.10
+				supply_consumption_factor = -0.05
+				attrition = -0.05
+				production_speed_industrial_complex_factor = 0.05
+				industrial_capacity_factory = 0.10
+				war_support_factor = 0.05
+				stability_factor = -0.05
+				communism_drift = 0.05
+				send_volunteer_factor = 0.50
+				operative_slot = 1
+				boost_ideology_mission_factor = 0.25
+				breakthrough_factor = 0.05
+				combat_width_factor = -0.25
+				army_armor_attack_factor = 0.10
+			}
+		}
+		hof_ic_role_lev_trotsky_821f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.15
+				command_power_gain_mult = 0.10
+				justify_war_goal_time = -0.25
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.10
+				supply_consumption_factor = -0.05
+				attrition = -0.05
+				production_speed_industrial_complex_factor = 0.05
+				industrial_capacity_factory = 0.10
+				communism_drift = 0.07
+				drift_defence_factor = 0.10
+				no_supply_grace = 72
+				war_support_factor = 0.05
+				stability_factor = -0.05
+				send_volunteer_factor = 0.50
+				operative_slot = 1
+				boost_ideology_mission_factor = 0.25
+				breakthrough_factor = 0.05
+				combat_width_factor = -0.25
+				army_armor_attack_factor = 0.10
+			}
+		}
+		hof_ic_role_lev_trotsky_823f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.15
+				command_power_gain_mult = 0.10
+				justify_war_goal_time = -0.25
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.10
+				supply_consumption_factor = -0.05
+				attrition = -0.05
+				production_speed_industrial_complex_factor = 0.05
+				industrial_capacity_factory = 0.10
+				communism_drift = 0.07
+				drift_defence_factor = 0.10
+				no_supply_grace = 72
+				send_volunteer_factor = 0.75
+				opinion_gain_monthly_same_ideology_factor = 0.25
+				war_support_factor = 0.05
+				stability_factor = -0.05
+				operative_slot = 1
+				boost_ideology_mission_factor = 0.25
+				breakthrough_factor = 0.05
+				combat_width_factor = -0.25
+				army_armor_attack_factor = 0.10
+			}
+		}
+		hof_ic_role_lev_trotsky_827f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.15
+				command_power_gain_mult = 0.10
+				justify_war_goal_time = -0.25
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.10
+				supply_consumption_factor = -0.05
+				attrition = -0.05
+				production_speed_industrial_complex_factor = 0.05
+				industrial_capacity_factory = 0.10
+				communism_drift = 0.07
+				drift_defence_factor = 0.10
+				no_supply_grace = 72
+				send_volunteer_factor = 0.75
+				opinion_gain_monthly_same_ideology_factor = 0.25
+				political_power_factor = 0.05
+				war_support_factor = 0.05
+				stability_factor = -0.05
+				operative_slot = 1
+				boost_ideology_mission_factor = 0.25
+				breakthrough_factor = 0.05
+				combat_width_factor = -0.25
+				army_armor_attack_factor = 0.10
+			}
+		}
+		hof_ic_role_lev_trotsky_82ff = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.15
+				command_power_gain_mult = 0.10
+				justify_war_goal_time = -0.25
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.10
+				supply_consumption_factor = -0.05
+				attrition = -0.05
+				production_speed_industrial_complex_factor = 0.05
+				industrial_capacity_factory = 0.10
+				communism_drift = 0.07
+				drift_defence_factor = 0.10
+				no_supply_grace = 72
+				send_volunteer_factor = 0.75
+				opinion_gain_monthly_same_ideology_factor = 0.25
+				political_power_factor = 0.05
+				political_advisor_cost_factor = -0.10
+				war_support_factor = 0.05
+				operative_slot = 1
+				boost_ideology_mission_factor = 0.25
+				breakthrough_factor = 0.05
+				combat_width_factor = -0.25
+				army_armor_attack_factor = 0.10
+			}
+		}
+		hof_ic_role_lev_trotsky_85ff = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.15
+				command_power_gain_mult = 0.10
+				justify_war_goal_time = -0.25
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.10
+				supply_consumption_factor = -0.05
+				attrition = -0.05
+				production_speed_industrial_complex_factor = 0.15
+				industrial_capacity_factory = 0.15
+				communism_drift = 0.07
+				drift_defence_factor = 0.10
+				no_supply_grace = 72
+				send_volunteer_factor = 0.75
+				opinion_gain_monthly_same_ideology_factor = 0.25
+				political_power_factor = 0.05
+				stability_factor = 0.10
+				political_advisor_cost_factor = -0.10
+				consumer_goods_factor = -0.10
+				production_speed_buildings_factor = 0.05
+				line_change_production_efficiency_factor = -0.05
+				operative_slot = 1
+				boost_ideology_mission_factor = 0.25
+				breakthrough_factor = 0.05
+				combat_width_factor = -0.25
+				army_armor_attack_factor = 0.10
+			}
+		}
+		hof_ic_role_lev_trotsky_86ff = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.15
+				command_power_gain_mult = 0.10
+				justify_war_goal_time = -0.25
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.10
+				supply_consumption_factor = -0.05
+				attrition = -0.05
+				production_speed_industrial_complex_factor = 0.05
+				industrial_capacity_factory = 0.15
+				communism_drift = 0.07
+				drift_defence_factor = 0.10
+				no_supply_grace = 72
+				send_volunteer_factor = 0.75
+				opinion_gain_monthly_same_ideology_factor = 0.25
+				political_power_factor = 0.05
+				political_advisor_cost_factor = -0.10
+				war_support_factor = 0.05
+				production_speed_buildings_factor = 0.05
+				consumer_goods_factor = -0.05
+				line_change_production_efficiency_factor = -0.05
+				operative_slot = 1
+				boost_ideology_mission_factor = 0.25
+				breakthrough_factor = 0.05
+				combat_width_factor = -0.25
+				army_armor_attack_factor = 0.10
+			}
+		}
+		hof_ic_role_lev_trotsky_8dff = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.15
+				command_power_gain_mult = 0.10
+				justify_war_goal_time = -0.25
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.10
+				supply_consumption_factor = -0.05
+				attrition = -0.05
+				production_speed_industrial_complex_factor = 0.15
+				industrial_capacity_factory = 0.15
+				communism_drift = 0.07
+				drift_defence_factor = 0.10
+				no_supply_grace = 72
+				send_volunteer_factor = 0.75
+				opinion_gain_monthly_same_ideology_factor = 0.25
+				political_power_factor = 0.05
+				stability_factor = 0.10
+				political_advisor_cost_factor = -0.10
+				consumer_goods_factor = -0.10
+				production_speed_buildings_factor = 0.15
+				line_change_production_efficiency_factor = -0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				operative_slot = 1
+				boost_ideology_mission_factor = 0.25
+				breakthrough_factor = 0.05
+				combat_width_factor = -0.25
+				army_armor_attack_factor = 0.10
+			}
+		}
+		hof_ic_role_lev_trotsky_8eff = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.15
+				command_power_gain_mult = 0.10
+				justify_war_goal_time = -0.25
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.10
+				supply_consumption_factor = -0.05
+				attrition = -0.05
+				production_speed_industrial_complex_factor = 0.05
+				industrial_capacity_factory = 0.15
+				communism_drift = 0.07
+				drift_defence_factor = 0.10
+				no_supply_grace = 72
+				send_volunteer_factor = 0.75
+				opinion_gain_monthly_same_ideology_factor = 0.25
+				political_power_factor = 0.05
+				political_advisor_cost_factor = -0.10
+				war_support_factor = 0.05
+				production_speed_buildings_factor = 0.15
+				consumer_goods_factor = -0.05
+				line_change_production_efficiency_factor = -0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				operative_slot = 1
+				boost_ideology_mission_factor = 0.25
+				breakthrough_factor = 0.05
+				combat_width_factor = -0.25
+				army_armor_attack_factor = 0.10
+			}
+		}
+		hof_ic_role_lev_trotsky_9dff = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.15
+				command_power_gain_mult = 0.10
+				justify_war_goal_time = -0.25
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.10
+				supply_consumption_factor = -0.05
+				attrition = -0.05
+				production_speed_industrial_complex_factor = 0.15
+				industrial_capacity_factory = 0.15
+				communism_drift = 0.09
+				drift_defence_factor = 0.10
+				no_supply_grace = 72
+				send_volunteer_factor = 0.75
+				opinion_gain_monthly_same_ideology_factor = 0.50
+				political_power_factor = 0.05
+				stability_factor = 0.10
+				political_advisor_cost_factor = -0.10
+				consumer_goods_factor = -0.10
+				production_speed_buildings_factor = 0.15
+				line_change_production_efficiency_factor = -0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				opinion_gain_monthly_factor = 0.25
+				boost_ideology_mission_factor = 0.40
+				operative_slot = 1
+				breakthrough_factor = 0.05
+				combat_width_factor = -0.25
+				army_armor_attack_factor = 0.10
+			}
+		}
+		hof_ic_role_lev_trotsky_9eff = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.15
+				command_power_gain_mult = 0.10
+				justify_war_goal_time = -0.25
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.10
+				supply_consumption_factor = -0.05
+				attrition = -0.05
+				production_speed_industrial_complex_factor = 0.05
+				industrial_capacity_factory = 0.15
+				communism_drift = 0.09
+				drift_defence_factor = 0.10
+				no_supply_grace = 72
+				send_volunteer_factor = 0.75
+				opinion_gain_monthly_same_ideology_factor = 0.50
+				political_power_factor = 0.05
+				political_advisor_cost_factor = -0.10
+				war_support_factor = 0.05
+				production_speed_buildings_factor = 0.15
+				consumer_goods_factor = -0.05
+				line_change_production_efficiency_factor = -0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				opinion_gain_monthly_factor = 0.25
+				boost_ideology_mission_factor = 0.40
+				operative_slot = 1
+				breakthrough_factor = 0.05
+				combat_width_factor = -0.25
+				army_armor_attack_factor = 0.10
+			}
+		}
+		hof_ic_role_lev_trotsky_bdff = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.15
+				command_power_gain_mult = 0.10
+				justify_war_goal_time = -0.25
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.10
+				supply_consumption_factor = -0.10
+				attrition = -0.05
+				production_speed_industrial_complex_factor = 0.15
+				industrial_capacity_factory = 0.15
+				communism_drift = 0.09
+				drift_defence_factor = 0.10
+				no_supply_grace = 72
+				send_volunteer_factor = 1.00
+				opinion_gain_monthly_same_ideology_factor = 0.50
+				political_power_factor = 0.05
+				stability_factor = 0.10
+				political_advisor_cost_factor = -0.10
+				consumer_goods_factor = -0.10
+				production_speed_buildings_factor = 0.15
+				line_change_production_efficiency_factor = -0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				opinion_gain_monthly_factor = 0.50
+				boost_ideology_mission_factor = 0.40
+				operative_slot = 1
+				breakthrough_factor = 0.05
+				combat_width_factor = -0.25
+				army_armor_attack_factor = 0.10
+			}
+		}
+		hof_ic_role_lev_trotsky_beff = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.15
+				command_power_gain_mult = 0.10
+				justify_war_goal_time = -0.25
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.10
+				supply_consumption_factor = -0.10
+				attrition = -0.05
+				production_speed_industrial_complex_factor = 0.05
+				industrial_capacity_factory = 0.15
+				communism_drift = 0.09
+				drift_defence_factor = 0.10
+				no_supply_grace = 72
+				send_volunteer_factor = 1.00
+				opinion_gain_monthly_same_ideology_factor = 0.50
+				political_power_factor = 0.05
+				political_advisor_cost_factor = -0.10
+				war_support_factor = 0.05
+				production_speed_buildings_factor = 0.15
+				consumer_goods_factor = -0.05
+				line_change_production_efficiency_factor = -0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				opinion_gain_monthly_factor = 0.50
+				boost_ideology_mission_factor = 0.40
+				operative_slot = 1
+				breakthrough_factor = 0.05
+				combat_width_factor = -0.25
+				army_armor_attack_factor = 0.10
+			}
+		}
+		hof_ic_role_lev_trotsky_fdff = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.15
+				command_power_gain_mult = 0.10
+				justify_war_goal_time = -0.25
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.10
+				supply_consumption_factor = -0.10
+				attrition = -0.05
+				production_speed_industrial_complex_factor = 0.15
+				industrial_capacity_factory = 0.15
+				communism_drift = 0.09
+				drift_defence_factor = 0.25
+				no_supply_grace = 72
+				send_volunteer_factor = 1.00
+				opinion_gain_monthly_same_ideology_factor = 0.50
+				political_power_factor = 0.05
+				stability_factor = 0.10
+				political_advisor_cost_factor = -0.10
+				consumer_goods_factor = -0.10
+				production_speed_buildings_factor = 0.15
+				line_change_production_efficiency_factor = -0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				opinion_gain_monthly_factor = 0.75
+				boost_ideology_mission_factor = 0.40
+				subversive_activites_upkeep = -0.10
+				operative_slot = 1
+				breakthrough_factor = 0.05
+				combat_width_factor = -0.25
+				army_armor_attack_factor = 0.10
+			}
+		}
+		hof_ic_role_lev_trotsky_feff = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.15
+				command_power_gain_mult = 0.10
+				justify_war_goal_time = -0.25
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.10
+				supply_consumption_factor = -0.10
+				attrition = -0.05
+				production_speed_industrial_complex_factor = 0.05
+				industrial_capacity_factory = 0.15
+				communism_drift = 0.09
+				drift_defence_factor = 0.25
+				no_supply_grace = 72
+				send_volunteer_factor = 1.00
+				opinion_gain_monthly_same_ideology_factor = 0.50
+				political_power_factor = 0.05
+				political_advisor_cost_factor = -0.10
+				war_support_factor = 0.05
+				production_speed_buildings_factor = 0.15
+				consumer_goods_factor = -0.05
+				line_change_production_efficiency_factor = -0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				opinion_gain_monthly_factor = 0.75
+				boost_ideology_mission_factor = 0.40
+				subversive_activites_upkeep = -0.10
+				operative_slot = 1
+				breakthrough_factor = 0.05
+				combat_width_factor = -0.25
+				army_armor_attack_factor = 0.10
+			}
+		}
+		hof_ic_role_lev_trotsky_10007 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.10
+				command_power_gain_mult = 0.10
+				improve_relations_maintain_cost_factor = -0.25
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.05
+				supply_consumption_factor = -0.05
+				attrition = -0.05
+				industrial_capacity_factory = 0.10
+				production_speed_buildings_factor = 0.10
+				production_factory_max_efficiency_factor = 0.10
+				production_factory_efficiency_gain_factor = 0.05
+				army_defence_factor = 0.10
+				army_core_defence_factor = 0.05
+				max_dig_in_factor = 0.10
+				local_resources_factor = 0.10
+				global_building_slots_factor = 0.10
+			}
+		}
+		hof_ic_role_lev_trotsky_1000f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.10
+				command_power_gain_mult = 0.10
+				improve_relations_maintain_cost_factor = -0.25
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.05
+				supply_consumption_factor = -0.05
+				attrition = -0.05
+				production_speed_industrial_complex_factor = 0.05
+				industrial_capacity_factory = 0.15
+				production_speed_buildings_factor = 0.10
+				production_factory_max_efficiency_factor = 0.10
+				production_factory_efficiency_gain_factor = 0.05
+				army_defence_factor = 0.10
+				army_core_defence_factor = 0.05
+				max_dig_in_factor = 0.10
+				local_resources_factor = 0.10
+				global_building_slots_factor = 0.10
+			}
+		}
+		hof_ic_role_lev_trotsky_1001f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.10
+				command_power_gain_mult = 0.10
+				improve_relations_maintain_cost_factor = -0.25
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.05
+				supply_consumption_factor = -0.05
+				attrition = -0.05
+				production_speed_industrial_complex_factor = 0.05
+				industrial_capacity_factory = 0.15
+				communism_drift = 0.02
+				drift_defence_factor = 0.10
+				no_supply_grace = 72
+				production_speed_buildings_factor = 0.10
+				production_factory_max_efficiency_factor = 0.10
+				production_factory_efficiency_gain_factor = 0.05
+				army_defence_factor = 0.10
+				army_core_defence_factor = 0.05
+				max_dig_in_factor = 0.10
+				local_resources_factor = 0.10
+				global_building_slots_factor = 0.10
+			}
+		}
+		hof_ic_role_lev_trotsky_1003f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.10
+				command_power_gain_mult = 0.10
+				improve_relations_maintain_cost_factor = -0.25
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.05
+				supply_consumption_factor = -0.05
+				attrition = -0.05
+				production_speed_industrial_complex_factor = 0.05
+				industrial_capacity_factory = 0.15
+				communism_drift = 0.02
+				drift_defence_factor = 0.10
+				no_supply_grace = 72
+				send_volunteer_factor = 0.25
+				opinion_gain_monthly_same_ideology_factor = 0.25
+				production_speed_buildings_factor = 0.10
+				production_factory_max_efficiency_factor = 0.10
+				production_factory_efficiency_gain_factor = 0.05
+				army_defence_factor = 0.10
+				army_core_defence_factor = 0.05
+				max_dig_in_factor = 0.10
+				local_resources_factor = 0.10
+				global_building_slots_factor = 0.10
+			}
+		}
+		hof_ic_role_lev_trotsky_1007f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.10
+				command_power_gain_mult = 0.10
+				improve_relations_maintain_cost_factor = -0.25
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.05
+				supply_consumption_factor = -0.05
+				attrition = -0.05
+				production_speed_industrial_complex_factor = 0.05
+				industrial_capacity_factory = 0.15
+				communism_drift = 0.02
+				drift_defence_factor = 0.10
+				no_supply_grace = 72
+				send_volunteer_factor = 0.25
+				opinion_gain_monthly_same_ideology_factor = 0.25
+				political_power_factor = 0.05
+				production_speed_buildings_factor = 0.10
+				production_factory_max_efficiency_factor = 0.10
+				production_factory_efficiency_gain_factor = 0.05
+				army_defence_factor = 0.10
+				army_core_defence_factor = 0.05
+				max_dig_in_factor = 0.10
+				local_resources_factor = 0.10
+				global_building_slots_factor = 0.10
+			}
+		}
+		hof_ic_role_lev_trotsky_100ff = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.10
+				command_power_gain_mult = 0.10
+				improve_relations_maintain_cost_factor = -0.25
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.05
+				supply_consumption_factor = -0.05
+				attrition = -0.05
+				production_speed_industrial_complex_factor = 0.05
+				industrial_capacity_factory = 0.15
+				communism_drift = 0.02
+				drift_defence_factor = 0.10
+				no_supply_grace = 72
+				send_volunteer_factor = 0.25
+				opinion_gain_monthly_same_ideology_factor = 0.25
+				political_power_factor = 0.05
+				stability_factor = 0.05
+				political_advisor_cost_factor = -0.10
+				production_speed_buildings_factor = 0.10
+				production_factory_max_efficiency_factor = 0.10
+				production_factory_efficiency_gain_factor = 0.05
+				army_defence_factor = 0.10
+				army_core_defence_factor = 0.05
+				max_dig_in_factor = 0.10
+				local_resources_factor = 0.10
+				global_building_slots_factor = 0.10
+			}
+		}
+		hof_ic_role_lev_trotsky_10107 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.10
+				command_power_gain_mult = 0.10
+				improve_relations_maintain_cost_factor = -0.25
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.05
+				supply_consumption_factor = -0.05
+				attrition = -0.05
+				consumer_goods_factor = -0.05
+				stability_factor = 0.05
+				production_speed_industrial_complex_factor = 0.10
+				industrial_capacity_factory = 0.15
+				production_speed_buildings_factor = 0.10
+				production_factory_max_efficiency_factor = 0.10
+				production_factory_efficiency_gain_factor = 0.05
+				army_defence_factor = 0.10
+				army_core_defence_factor = 0.05
+				max_dig_in_factor = 0.10
+				local_resources_factor = 0.10
+				global_building_slots_factor = 0.10
+			}
+		}
+		hof_ic_role_lev_trotsky_1010f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.10
+				command_power_gain_mult = 0.10
+				improve_relations_maintain_cost_factor = -0.25
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.05
+				supply_consumption_factor = -0.05
+				attrition = -0.05
+				production_speed_industrial_complex_factor = 0.15
+				industrial_capacity_factory = 0.20
+				consumer_goods_factor = -0.05
+				stability_factor = 0.05
+				production_speed_buildings_factor = 0.10
+				production_factory_max_efficiency_factor = 0.10
+				production_factory_efficiency_gain_factor = 0.05
+				army_defence_factor = 0.10
+				army_core_defence_factor = 0.05
+				max_dig_in_factor = 0.10
+				local_resources_factor = 0.10
+				global_building_slots_factor = 0.10
+			}
+		}
+		hof_ic_role_lev_trotsky_1011f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.10
+				command_power_gain_mult = 0.10
+				improve_relations_maintain_cost_factor = -0.25
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.05
+				supply_consumption_factor = -0.05
+				attrition = -0.05
+				production_speed_industrial_complex_factor = 0.15
+				industrial_capacity_factory = 0.20
+				communism_drift = 0.02
+				drift_defence_factor = 0.10
+				no_supply_grace = 72
+				consumer_goods_factor = -0.05
+				stability_factor = 0.05
+				production_speed_buildings_factor = 0.10
+				production_factory_max_efficiency_factor = 0.10
+				production_factory_efficiency_gain_factor = 0.05
+				army_defence_factor = 0.10
+				army_core_defence_factor = 0.05
+				max_dig_in_factor = 0.10
+				local_resources_factor = 0.10
+				global_building_slots_factor = 0.10
+			}
+		}
+		hof_ic_role_lev_trotsky_1013f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.10
+				command_power_gain_mult = 0.10
+				improve_relations_maintain_cost_factor = -0.25
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.05
+				supply_consumption_factor = -0.05
+				attrition = -0.05
+				production_speed_industrial_complex_factor = 0.15
+				industrial_capacity_factory = 0.20
+				communism_drift = 0.02
+				drift_defence_factor = 0.10
+				no_supply_grace = 72
+				send_volunteer_factor = 0.25
+				opinion_gain_monthly_same_ideology_factor = 0.25
+				consumer_goods_factor = -0.05
+				stability_factor = 0.05
+				production_speed_buildings_factor = 0.10
+				production_factory_max_efficiency_factor = 0.10
+				production_factory_efficiency_gain_factor = 0.05
+				army_defence_factor = 0.10
+				army_core_defence_factor = 0.05
+				max_dig_in_factor = 0.10
+				local_resources_factor = 0.10
+				global_building_slots_factor = 0.10
+			}
+		}
+		hof_ic_role_lev_trotsky_1017f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.10
+				command_power_gain_mult = 0.10
+				improve_relations_maintain_cost_factor = -0.25
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.05
+				supply_consumption_factor = -0.05
+				attrition = -0.05
+				production_speed_industrial_complex_factor = 0.15
+				industrial_capacity_factory = 0.20
+				communism_drift = 0.02
+				drift_defence_factor = 0.10
+				no_supply_grace = 72
+				send_volunteer_factor = 0.25
+				opinion_gain_monthly_same_ideology_factor = 0.25
+				political_power_factor = 0.05
+				consumer_goods_factor = -0.05
+				stability_factor = 0.05
+				production_speed_buildings_factor = 0.10
+				production_factory_max_efficiency_factor = 0.10
+				production_factory_efficiency_gain_factor = 0.05
+				army_defence_factor = 0.10
+				army_core_defence_factor = 0.05
+				max_dig_in_factor = 0.10
+				local_resources_factor = 0.10
+				global_building_slots_factor = 0.10
+			}
+		}
+		hof_ic_role_lev_trotsky_101ff = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.10
+				command_power_gain_mult = 0.10
+				improve_relations_maintain_cost_factor = -0.25
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.05
+				supply_consumption_factor = -0.05
+				attrition = -0.05
+				production_speed_industrial_complex_factor = 0.15
+				industrial_capacity_factory = 0.20
+				communism_drift = 0.02
+				drift_defence_factor = 0.10
+				no_supply_grace = 72
+				send_volunteer_factor = 0.25
+				opinion_gain_monthly_same_ideology_factor = 0.25
+				political_power_factor = 0.05
+				stability_factor = 0.10
+				political_advisor_cost_factor = -0.10
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.10
+				production_factory_max_efficiency_factor = 0.10
+				production_factory_efficiency_gain_factor = 0.05
+				army_defence_factor = 0.10
+				army_core_defence_factor = 0.05
+				max_dig_in_factor = 0.10
+				local_resources_factor = 0.10
+				global_building_slots_factor = 0.10
+			}
+		}
+		hof_ic_role_lev_trotsky_10207 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.10
+				command_power_gain_mult = 0.10
+				improve_relations_maintain_cost_factor = -0.25
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.05
+				supply_consumption_factor = -0.05
+				attrition = -0.05
+				industrial_capacity_factory = 0.15
+				war_support_factor = 0.05
+				stability_factor = -0.05
+				production_speed_buildings_factor = 0.10
+				production_factory_max_efficiency_factor = 0.10
+				production_factory_efficiency_gain_factor = 0.05
+				army_defence_factor = 0.10
+				army_core_defence_factor = 0.05
+				max_dig_in_factor = 0.10
+				local_resources_factor = 0.10
+				global_building_slots_factor = 0.10
+			}
+		}
+		hof_ic_role_lev_trotsky_1020f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.10
+				command_power_gain_mult = 0.10
+				improve_relations_maintain_cost_factor = -0.25
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.05
+				supply_consumption_factor = -0.05
+				attrition = -0.05
+				production_speed_industrial_complex_factor = 0.05
+				industrial_capacity_factory = 0.20
+				war_support_factor = 0.05
+				stability_factor = -0.05
+				production_speed_buildings_factor = 0.10
+				production_factory_max_efficiency_factor = 0.10
+				production_factory_efficiency_gain_factor = 0.05
+				army_defence_factor = 0.10
+				army_core_defence_factor = 0.05
+				max_dig_in_factor = 0.10
+				local_resources_factor = 0.10
+				global_building_slots_factor = 0.10
+			}
+		}
+		hof_ic_role_lev_trotsky_1021f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.10
+				command_power_gain_mult = 0.10
+				improve_relations_maintain_cost_factor = -0.25
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.05
+				supply_consumption_factor = -0.05
+				attrition = -0.05
+				production_speed_industrial_complex_factor = 0.05
+				industrial_capacity_factory = 0.20
+				communism_drift = 0.02
+				drift_defence_factor = 0.10
+				no_supply_grace = 72
+				war_support_factor = 0.05
+				stability_factor = -0.05
+				production_speed_buildings_factor = 0.10
+				production_factory_max_efficiency_factor = 0.10
+				production_factory_efficiency_gain_factor = 0.05
+				army_defence_factor = 0.10
+				army_core_defence_factor = 0.05
+				max_dig_in_factor = 0.10
+				local_resources_factor = 0.10
+				global_building_slots_factor = 0.10
+			}
+		}
+		hof_ic_role_lev_trotsky_1023f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.10
+				command_power_gain_mult = 0.10
+				improve_relations_maintain_cost_factor = -0.25
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.05
+				supply_consumption_factor = -0.05
+				attrition = -0.05
+				production_speed_industrial_complex_factor = 0.05
+				industrial_capacity_factory = 0.20
+				communism_drift = 0.02
+				drift_defence_factor = 0.10
+				no_supply_grace = 72
+				send_volunteer_factor = 0.25
+				opinion_gain_monthly_same_ideology_factor = 0.25
+				war_support_factor = 0.05
+				stability_factor = -0.05
+				production_speed_buildings_factor = 0.10
+				production_factory_max_efficiency_factor = 0.10
+				production_factory_efficiency_gain_factor = 0.05
+				army_defence_factor = 0.10
+				army_core_defence_factor = 0.05
+				max_dig_in_factor = 0.10
+				local_resources_factor = 0.10
+				global_building_slots_factor = 0.10
+			}
+		}
+		hof_ic_role_lev_trotsky_1027f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.10
+				command_power_gain_mult = 0.10
+				improve_relations_maintain_cost_factor = -0.25
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.05
+				supply_consumption_factor = -0.05
+				attrition = -0.05
+				production_speed_industrial_complex_factor = 0.05
+				industrial_capacity_factory = 0.20
+				communism_drift = 0.02
+				drift_defence_factor = 0.10
+				no_supply_grace = 72
+				send_volunteer_factor = 0.25
+				opinion_gain_monthly_same_ideology_factor = 0.25
+				political_power_factor = 0.05
+				war_support_factor = 0.05
+				stability_factor = -0.05
+				production_speed_buildings_factor = 0.10
+				production_factory_max_efficiency_factor = 0.10
+				production_factory_efficiency_gain_factor = 0.05
+				army_defence_factor = 0.10
+				army_core_defence_factor = 0.05
+				max_dig_in_factor = 0.10
+				local_resources_factor = 0.10
+				global_building_slots_factor = 0.10
+			}
+		}
+		hof_ic_role_lev_trotsky_102ff = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.10
+				command_power_gain_mult = 0.10
+				improve_relations_maintain_cost_factor = -0.25
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.05
+				supply_consumption_factor = -0.05
+				attrition = -0.05
+				production_speed_industrial_complex_factor = 0.05
+				industrial_capacity_factory = 0.20
+				communism_drift = 0.02
+				drift_defence_factor = 0.10
+				no_supply_grace = 72
+				send_volunteer_factor = 0.25
+				opinion_gain_monthly_same_ideology_factor = 0.25
+				political_power_factor = 0.05
+				political_advisor_cost_factor = -0.10
+				war_support_factor = 0.05
+				production_speed_buildings_factor = 0.10
+				production_factory_max_efficiency_factor = 0.10
+				production_factory_efficiency_gain_factor = 0.05
+				army_defence_factor = 0.10
+				army_core_defence_factor = 0.05
+				max_dig_in_factor = 0.10
+				local_resources_factor = 0.10
+				global_building_slots_factor = 0.10
+			}
+		}
+		hof_ic_role_lev_trotsky_105ff = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.10
+				command_power_gain_mult = 0.10
+				improve_relations_maintain_cost_factor = -0.25
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.05
+				supply_consumption_factor = -0.05
+				attrition = -0.05
+				production_speed_industrial_complex_factor = 0.15
+				industrial_capacity_factory = 0.25
+				communism_drift = 0.02
+				drift_defence_factor = 0.10
+				no_supply_grace = 72
+				send_volunteer_factor = 0.25
+				opinion_gain_monthly_same_ideology_factor = 0.25
+				political_power_factor = 0.05
+				stability_factor = 0.10
+				political_advisor_cost_factor = -0.10
+				consumer_goods_factor = -0.10
+				production_speed_buildings_factor = 0.15
+				line_change_production_efficiency_factor = -0.05
+				production_factory_max_efficiency_factor = 0.10
+				production_factory_efficiency_gain_factor = 0.05
+				army_defence_factor = 0.10
+				army_core_defence_factor = 0.05
+				max_dig_in_factor = 0.10
+				local_resources_factor = 0.10
+				global_building_slots_factor = 0.10
+			}
+		}
+		hof_ic_role_lev_trotsky_106ff = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.10
+				command_power_gain_mult = 0.10
+				improve_relations_maintain_cost_factor = -0.25
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.05
+				supply_consumption_factor = -0.05
+				attrition = -0.05
+				production_speed_industrial_complex_factor = 0.05
+				industrial_capacity_factory = 0.25
+				communism_drift = 0.02
+				drift_defence_factor = 0.10
+				no_supply_grace = 72
+				send_volunteer_factor = 0.25
+				opinion_gain_monthly_same_ideology_factor = 0.25
+				political_power_factor = 0.05
+				political_advisor_cost_factor = -0.10
+				war_support_factor = 0.05
+				production_speed_buildings_factor = 0.15
+				consumer_goods_factor = -0.05
+				line_change_production_efficiency_factor = -0.05
+				production_factory_max_efficiency_factor = 0.10
+				production_factory_efficiency_gain_factor = 0.05
+				army_defence_factor = 0.10
+				army_core_defence_factor = 0.05
+				max_dig_in_factor = 0.10
+				local_resources_factor = 0.10
+				global_building_slots_factor = 0.10
+			}
+		}
+		hof_ic_role_lev_trotsky_10dff = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.10
+				command_power_gain_mult = 0.10
+				improve_relations_maintain_cost_factor = -0.25
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.05
+				supply_consumption_factor = -0.05
+				attrition = -0.05
+				production_speed_industrial_complex_factor = 0.15
+				industrial_capacity_factory = 0.25
+				communism_drift = 0.02
+				drift_defence_factor = 0.10
+				no_supply_grace = 72
+				send_volunteer_factor = 0.25
+				opinion_gain_monthly_same_ideology_factor = 0.25
+				political_power_factor = 0.05
+				stability_factor = 0.10
+				political_advisor_cost_factor = -0.10
+				consumer_goods_factor = -0.10
+				production_speed_buildings_factor = 0.25
+				line_change_production_efficiency_factor = -0.05
+				production_factory_max_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.10
+				army_defence_factor = 0.10
+				army_core_defence_factor = 0.05
+				max_dig_in_factor = 0.10
+				local_resources_factor = 0.10
+				global_building_slots_factor = 0.10
+			}
+		}
+		hof_ic_role_lev_trotsky_10eff = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.10
+				command_power_gain_mult = 0.10
+				improve_relations_maintain_cost_factor = -0.25
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.05
+				supply_consumption_factor = -0.05
+				attrition = -0.05
+				production_speed_industrial_complex_factor = 0.05
+				industrial_capacity_factory = 0.25
+				communism_drift = 0.02
+				drift_defence_factor = 0.10
+				no_supply_grace = 72
+				send_volunteer_factor = 0.25
+				opinion_gain_monthly_same_ideology_factor = 0.25
+				political_power_factor = 0.05
+				political_advisor_cost_factor = -0.10
+				war_support_factor = 0.05
+				production_speed_buildings_factor = 0.25
+				consumer_goods_factor = -0.05
+				line_change_production_efficiency_factor = -0.05
+				production_factory_max_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.10
+				army_defence_factor = 0.10
+				army_core_defence_factor = 0.05
+				max_dig_in_factor = 0.10
+				local_resources_factor = 0.10
+				global_building_slots_factor = 0.10
+			}
+		}
+		hof_ic_role_lev_trotsky_11dff = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.10
+				command_power_gain_mult = 0.10
+				improve_relations_maintain_cost_factor = -0.25
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.05
+				supply_consumption_factor = -0.05
+				attrition = -0.05
+				production_speed_industrial_complex_factor = 0.15
+				industrial_capacity_factory = 0.25
+				communism_drift = 0.04
+				drift_defence_factor = 0.10
+				no_supply_grace = 72
+				send_volunteer_factor = 0.25
+				opinion_gain_monthly_same_ideology_factor = 0.50
+				political_power_factor = 0.05
+				stability_factor = 0.10
+				political_advisor_cost_factor = -0.10
+				consumer_goods_factor = -0.10
+				production_speed_buildings_factor = 0.25
+				line_change_production_efficiency_factor = -0.05
+				production_factory_max_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.10
+				opinion_gain_monthly_factor = 0.25
+				boost_ideology_mission_factor = 0.15
+				army_defence_factor = 0.10
+				army_core_defence_factor = 0.05
+				max_dig_in_factor = 0.10
+				local_resources_factor = 0.10
+				global_building_slots_factor = 0.10
+			}
+		}
+		hof_ic_role_lev_trotsky_11eff = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.10
+				command_power_gain_mult = 0.10
+				improve_relations_maintain_cost_factor = -0.25
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.05
+				supply_consumption_factor = -0.05
+				attrition = -0.05
+				production_speed_industrial_complex_factor = 0.05
+				industrial_capacity_factory = 0.25
+				communism_drift = 0.04
+				drift_defence_factor = 0.10
+				no_supply_grace = 72
+				send_volunteer_factor = 0.25
+				opinion_gain_monthly_same_ideology_factor = 0.50
+				political_power_factor = 0.05
+				political_advisor_cost_factor = -0.10
+				war_support_factor = 0.05
+				production_speed_buildings_factor = 0.25
+				consumer_goods_factor = -0.05
+				line_change_production_efficiency_factor = -0.05
+				production_factory_max_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.10
+				opinion_gain_monthly_factor = 0.25
+				boost_ideology_mission_factor = 0.15
+				army_defence_factor = 0.10
+				army_core_defence_factor = 0.05
+				max_dig_in_factor = 0.10
+				local_resources_factor = 0.10
+				global_building_slots_factor = 0.10
+			}
+		}
+		hof_ic_role_lev_trotsky_13dff = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.10
+				command_power_gain_mult = 0.10
+				improve_relations_maintain_cost_factor = -0.25
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.05
+				supply_consumption_factor = -0.10
+				attrition = -0.05
+				production_speed_industrial_complex_factor = 0.15
+				industrial_capacity_factory = 0.25
+				communism_drift = 0.04
+				drift_defence_factor = 0.10
+				no_supply_grace = 72
+				send_volunteer_factor = 0.50
+				opinion_gain_monthly_same_ideology_factor = 0.50
+				political_power_factor = 0.05
+				stability_factor = 0.10
+				political_advisor_cost_factor = -0.10
+				consumer_goods_factor = -0.10
+				production_speed_buildings_factor = 0.25
+				line_change_production_efficiency_factor = -0.05
+				production_factory_max_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.10
+				opinion_gain_monthly_factor = 0.50
+				boost_ideology_mission_factor = 0.15
+				army_defence_factor = 0.10
+				army_core_defence_factor = 0.05
+				max_dig_in_factor = 0.10
+				local_resources_factor = 0.10
+				global_building_slots_factor = 0.10
+			}
+		}
+		hof_ic_role_lev_trotsky_13eff = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.10
+				command_power_gain_mult = 0.10
+				improve_relations_maintain_cost_factor = -0.25
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.05
+				supply_consumption_factor = -0.10
+				attrition = -0.05
+				production_speed_industrial_complex_factor = 0.05
+				industrial_capacity_factory = 0.25
+				communism_drift = 0.04
+				drift_defence_factor = 0.10
+				no_supply_grace = 72
+				send_volunteer_factor = 0.50
+				opinion_gain_monthly_same_ideology_factor = 0.50
+				political_power_factor = 0.05
+				political_advisor_cost_factor = -0.10
+				war_support_factor = 0.05
+				production_speed_buildings_factor = 0.25
+				consumer_goods_factor = -0.05
+				line_change_production_efficiency_factor = -0.05
+				production_factory_max_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.10
+				opinion_gain_monthly_factor = 0.50
+				boost_ideology_mission_factor = 0.15
+				army_defence_factor = 0.10
+				army_core_defence_factor = 0.05
+				max_dig_in_factor = 0.10
+				local_resources_factor = 0.10
+				global_building_slots_factor = 0.10
+			}
+		}
+		hof_ic_role_lev_trotsky_17dff = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.10
+				command_power_gain_mult = 0.10
+				improve_relations_maintain_cost_factor = -0.25
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.05
+				supply_consumption_factor = -0.10
+				attrition = -0.05
+				production_speed_industrial_complex_factor = 0.15
+				industrial_capacity_factory = 0.25
+				communism_drift = 0.04
+				drift_defence_factor = 0.25
+				no_supply_grace = 72
+				send_volunteer_factor = 0.50
+				opinion_gain_monthly_same_ideology_factor = 0.50
+				political_power_factor = 0.05
+				stability_factor = 0.10
+				political_advisor_cost_factor = -0.10
+				consumer_goods_factor = -0.10
+				production_speed_buildings_factor = 0.25
+				line_change_production_efficiency_factor = -0.05
+				production_factory_max_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.10
+				opinion_gain_monthly_factor = 0.75
+				boost_ideology_mission_factor = 0.15
+				subversive_activites_upkeep = -0.10
+				army_defence_factor = 0.10
+				army_core_defence_factor = 0.05
+				max_dig_in_factor = 0.10
+				local_resources_factor = 0.10
+				global_building_slots_factor = 0.10
+			}
+		}
+		hof_ic_role_lev_trotsky_17eff = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.10
+				command_power_gain_mult = 0.10
+				improve_relations_maintain_cost_factor = -0.25
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_cavalry_attack_factor = 0.05
+				army_attack_factor = 0.05
+				supply_consumption_factor = -0.10
+				attrition = -0.05
+				production_speed_industrial_complex_factor = 0.05
+				industrial_capacity_factory = 0.25
+				communism_drift = 0.04
+				drift_defence_factor = 0.25
+				no_supply_grace = 72
+				send_volunteer_factor = 0.50
+				opinion_gain_monthly_same_ideology_factor = 0.50
+				political_power_factor = 0.05
+				political_advisor_cost_factor = -0.10
+				war_support_factor = 0.05
+				production_speed_buildings_factor = 0.25
+				consumer_goods_factor = -0.05
+				line_change_production_efficiency_factor = -0.05
+				production_factory_max_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.10
+				opinion_gain_monthly_factor = 0.75
+				boost_ideology_mission_factor = 0.15
+				subversive_activites_upkeep = -0.10
+				army_defence_factor = 0.10
+				army_core_defence_factor = 0.05
+				max_dig_in_factor = 0.10
+				local_resources_factor = 0.10
+				global_building_slots_factor = 0.10
+			}
+		}
+		hof_ic_role_nikolay_bukharin_0 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.1
+				communism_drift = 0.03
+			}
+		}
+		hof_ic_role_nikolay_bukharin_1 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.1
+				communism_drift = 0.03
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		hof_ic_role_nikolay_bukharin_3 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.1
+				communism_drift = 0.03
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				consumer_goods_factor = -0.05
+				political_power_factor = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		hof_ic_role_nikolay_bukharin_7 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				communism_drift = 0.05
+				political_power_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.05
+				stability_factor = 0.10
+			}
+		}
+		hof_ic_role_nikolay_bukharin_f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				communism_drift = 0.07
+				political_power_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.05
+				stability_factor = 0.15
+			}
+		}
+		hof_ic_role_nikolay_bukharin_1f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				communism_drift = 0.07
+				political_power_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				consumer_goods_factor = -0.10
+				production_speed_buildings_factor = 0.05
+				stability_factor = 0.20
+			}
+		}
+		hof_ic_role_nikolay_bukharin_3f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				communism_drift = 0.07
+				political_power_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.10
+				consumer_goods_factor = -0.10
+				production_speed_buildings_factor = 0.05
+				stability_factor = 0.20
+				industrial_capacity_factory = 0.05
+			}
+		}
+		hof_ic_role_nikolay_bukharin_7f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				communism_drift = 0.07
+				political_power_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.10
+				consumer_goods_factor = -0.15
+				production_speed_buildings_factor = 0.10
+				stability_factor = 0.25
+				industrial_capacity_factory = 0.05
+			}
+		}
+		hof_ic_role_nikolay_bukharin_80 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.1
+				communism_drift = 0.03
+				war_support_factor = 0.10
+				army_attack_factor = 0.05
+				political_power_factor = -0.15
+				stability_factor = -0.10
+			}
+		}
+		hof_ic_role_nikolay_bukharin_17f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				communism_drift = 0.07
+				political_power_factor = 0.15
+				opinion_gain_monthly_factor = 0.10
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.10
+				consumer_goods_factor = -0.20
+				production_speed_buildings_factor = 0.10
+				stability_factor = 0.35
+				industrial_capacity_factory = 0.10
+				production_speed_industrial_complex_factor = 0.10
+			}
+		}
+		hof_ic_role_aleksey_rykov_0 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.1
+				industrial_capacity_factory = 0.03
+			}
+		}
+		hof_ic_role_aleksey_rykov_1 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				industrial_capacity_factory = 0.10
+				production_speed_industrial_complex_factor = 0.10
+			}
+		}
+		hof_ic_role_aleksey_rykov_3 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				industrial_capacity_factory = 0.10
+				production_speed_industrial_complex_factor = 0.10
+				army_org_factor = 0.05
+				war_support_factor = 0.05
+				no_supply_grace = 48
+			}
+		}
+		hof_ic_role_aleksey_rykov_7 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				industrial_capacity_factory = 0.15
+				political_power_factor = 0.05
+				production_speed_industrial_complex_factor = 0.10
+				army_org_factor = 0.05
+				war_support_factor = 0.05
+				no_supply_grace = 48
+				consumer_goods_factor = -0.05
+			}
+		}
+		hof_ic_role_aleksey_rykov_f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				industrial_capacity_factory = 0.15
+				political_power_factor = 0.05
+				production_speed_industrial_complex_factor = 0.10
+				army_org_factor = 0.05
+				war_support_factor = 0.05
+				no_supply_grace = 48
+				consumer_goods_factor = -0.05
+				experience_gain_air_factor = 0.05
+			}
+		}
+		hof_ic_role_aleksey_rykov_1f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				industrial_capacity_factory = 0.20
+				political_power_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				production_speed_industrial_complex_factor = 0.20
+				army_org_factor = 0.05
+				war_support_factor = 0.05
+				no_supply_grace = 48
+				consumer_goods_factor = -0.05
+				experience_gain_air_factor = 0.05
+				production_factory_max_efficiency_factor = 0.10
+				stability_factor = 0.05
+			}
+		}
+		hof_ic_role_grigory_zinovyev_0 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.1
+				communism_drift = 0.02
+			}
+		}
+		hof_ic_role_grigory_zinovyev_1 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				communism_drift = 0.04
+				opinion_gain_monthly_factor = 0.30
+			}
+		}
+		hof_ic_role_grigory_zinovyev_3 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				communism_drift = 0.04
+				opinion_gain_monthly_factor = 0.30
+				political_power_factor = 0.05
+				drift_defence_factor = 0.05
+			}
+		}
+		hof_ic_role_grigory_zinovyev_7 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				communism_drift = 0.06
+				opinion_gain_monthly_factor = 0.30
+				political_power_factor = 0.05
+				drift_defence_factor = 0.05
+				war_support_factor = 0.05
+			}
+		}
+		hof_ic_role_grigory_zinovyev_f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				communism_drift = 0.06
+				opinion_gain_monthly_factor = 0.30
+				political_power_factor = 0.10
+				drift_defence_factor = 0.15
+				war_support_factor = 0.05
+			}
+		}
+		hof_ic_role_grigory_zinovyev_1f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				communism_drift = 0.06
+				opinion_gain_monthly_factor = 0.55
+				political_power_factor = 0.10
+				drift_defence_factor = 0.15
+				war_support_factor = 0.05
+				send_volunteer_factor = 0.25
+			}
+		}
+		hof_ic_role_grigory_zinovyev_3f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				communism_drift = 0.08
+				opinion_gain_monthly_factor = 0.55
+				political_power_factor = 0.10
+				drift_defence_factor = 0.15
+				war_support_factor = 0.05
+				send_volunteer_factor = 0.25
+				stability_factor = 0.05
+			}
+		}
+		hof_ic_role_grigory_zinovyev_7f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				communism_drift = 0.13
+				opinion_gain_monthly_factor = 0.55
+				political_power_factor = 0.15
+				drift_defence_factor = 0.15
+				war_support_factor = 0.05
+				send_volunteer_factor = 0.25
+				stability_factor = 0.05
+			}
+		}
+		hof_ic_role_grigory_zinovyev_ff = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				communism_drift = 0.13
+				opinion_gain_monthly_factor = 0.55
+				political_power_factor = 0.20
+				drift_defence_factor = 0.15
+				war_support_factor = 0.05
+				send_volunteer_factor = 0.25
+				stability_factor = 0.10
+			}
+		}
+		hof_ic_role_grigory_zinovyev_1ff = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				communism_drift = 0.13
+				opinion_gain_monthly_factor = 0.55
+				political_power_factor = 0.25
+				drift_defence_factor = 0.15
+				war_support_factor = 0.05
+				send_volunteer_factor = 0.25
+				stability_factor = 0.10
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		hof_ic_role_grigory_zinovyev_20f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				communism_drift = 0.08
+				opinion_gain_monthly_factor = 0.30
+				political_power_factor = 0.20
+				drift_defence_factor = 0.30
+				war_support_factor = 0.05
+				stability_factor = 0.05
+			}
+		}
+		hof_ic_role_grigory_zinovyev_21f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				communism_drift = 0.08
+				opinion_gain_monthly_factor = 0.55
+				political_power_factor = 0.20
+				drift_defence_factor = 0.30
+				war_support_factor = 0.05
+				send_volunteer_factor = 0.25
+				stability_factor = 0.05
+			}
+		}
+		hof_ic_role_grigory_zinovyev_23f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				communism_drift = 0.10
+				opinion_gain_monthly_factor = 0.55
+				political_power_factor = 0.20
+				drift_defence_factor = 0.30
+				war_support_factor = 0.05
+				send_volunteer_factor = 0.25
+				stability_factor = 0.10
+			}
+		}
+		hof_ic_role_grigory_zinovyev_27f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				communism_drift = 0.15
+				opinion_gain_monthly_factor = 0.55
+				political_power_factor = 0.25
+				drift_defence_factor = 0.30
+				war_support_factor = 0.05
+				send_volunteer_factor = 0.25
+				stability_factor = 0.10
+			}
+		}
+		hof_ic_role_grigory_zinovyev_2ff = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				communism_drift = 0.15
+				opinion_gain_monthly_factor = 0.55
+				political_power_factor = 0.30
+				drift_defence_factor = 0.30
+				war_support_factor = 0.05
+				send_volunteer_factor = 0.25
+				stability_factor = 0.15
+			}
+		}
+		hof_ic_role_grigory_zinovyev_3ff = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				communism_drift = 0.15
+				opinion_gain_monthly_factor = 0.55
+				political_power_factor = 0.35
+				drift_defence_factor = 0.30
+				war_support_factor = 0.05
+				send_volunteer_factor = 0.25
+				stability_factor = 0.15
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		hof_ic_role_grigory_zinovyev_40f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				communism_drift = 0.11
+				opinion_gain_monthly_factor = 0.30
+				political_power_factor = 0.10
+				drift_defence_factor = 0.15
+				war_support_factor = 0.05
+				stability_factor = 0.10
+				consumer_goods_factor = -0.05
+				send_volunteer_factor = 0.25
+			}
+		}
+		hof_ic_role_grigory_zinovyev_41f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				communism_drift = 0.11
+				opinion_gain_monthly_factor = 0.55
+				political_power_factor = 0.10
+				drift_defence_factor = 0.15
+				war_support_factor = 0.05
+				send_volunteer_factor = 0.50
+				stability_factor = 0.10
+				consumer_goods_factor = -0.05
+			}
+		}
+		hof_ic_role_grigory_zinovyev_43f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				communism_drift = 0.13
+				opinion_gain_monthly_factor = 0.55
+				political_power_factor = 0.10
+				drift_defence_factor = 0.15
+				war_support_factor = 0.05
+				send_volunteer_factor = 0.50
+				stability_factor = 0.15
+				consumer_goods_factor = -0.05
+			}
+		}
+		hof_ic_role_grigory_zinovyev_47f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				communism_drift = 0.18
+				opinion_gain_monthly_factor = 0.55
+				political_power_factor = 0.15
+				drift_defence_factor = 0.15
+				war_support_factor = 0.05
+				send_volunteer_factor = 0.50
+				stability_factor = 0.15
+				consumer_goods_factor = -0.05
+			}
+		}
+		hof_ic_role_grigory_zinovyev_4ff = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				communism_drift = 0.18
+				opinion_gain_monthly_factor = 0.55
+				political_power_factor = 0.20
+				drift_defence_factor = 0.15
+				war_support_factor = 0.05
+				send_volunteer_factor = 0.50
+				stability_factor = 0.20
+				consumer_goods_factor = -0.05
+			}
+		}
+		hof_ic_role_grigory_zinovyev_5ff = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				communism_drift = 0.18
+				opinion_gain_monthly_factor = 0.55
+				political_power_factor = 0.25
+				drift_defence_factor = 0.15
+				war_support_factor = 0.05
+				send_volunteer_factor = 0.50
+				stability_factor = 0.20
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = 0.05
+				consumer_goods_factor = -0.05
+			}
+		}
+		hof_ic_role_lev_kamenev_0 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.1
+				stability_factor = 0.03
+			}
+		}
+		hof_ic_role_lev_kamenev_1 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.1
+				stability_factor = 0.03
+				political_power_factor = 0.05
+				drift_defence_factor = 0.05
+			}
+		}
+		hof_ic_role_lev_kamenev_3 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				stability_factor = 0.03
+				communism_drift = 0.10
+				political_power_factor = 0.05
+				drift_defence_factor = 0.05
+				boost_ideology_mission_factor = 0.05
+			}
+		}
+		hof_ic_role_lev_kamenev_7 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				stability_factor = 0.03
+				communism_drift = 0.10
+				political_power_factor = 0.10
+				drift_defence_factor = 0.10
+				boost_ideology_mission_factor = 0.05
+			}
+		}
+		hof_ic_role_lev_kamenev_f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				stability_factor = 0.03
+				communism_drift = 0.10
+				political_power_factor = 0.20
+				drift_defence_factor = 0.20
+				boost_ideology_mission_factor = 0.15
+			}
+		}
+		hof_ic_role_lev_kamenev_1f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				stability_factor = 0.08
+				communism_drift = 0.20
+				political_power_factor = 0.20
+				drift_defence_factor = 0.35
+				boost_ideology_mission_factor = 0.25
+			}
+		}
+		hof_ic_role_ivan_smirnov_0 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.1
+				production_speed_buildings_factor = 0.03
+			}
+		}
+		hof_ic_role_ivan_smirnov_1 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.1
+				production_speed_buildings_factor = 0.03
+				army_core_defence_factor = 0.05
+				max_dig_in_factor = 0.10
+			}
+		}
+		hof_ic_role_ivan_smirnov_3 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.1
+				production_speed_buildings_factor = 0.03
+				army_core_defence_factor = 0.05
+				max_dig_in_factor = 0.10
+				army_org_factor = 0.05
+				army_morale_factor = 0.05
+			}
+		}
+		hof_ic_role_ivan_smirnov_7 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				production_speed_buildings_factor = 0.03
+				stability_factor = 0.10
+				army_core_defence_factor = 0.05
+				max_dig_in_factor = 0.10
+				army_org_factor = 0.05
+				army_morale_factor = 0.05
+				political_power_factor = 0.05
+			}
+		}
+		hof_ic_role_ivan_smirnov_f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				production_speed_buildings_factor = 0.03
+				stability_factor = 0.15
+				army_core_defence_factor = 0.05
+				max_dig_in_factor = 0.10
+				army_org_factor = 0.05
+				army_morale_factor = 0.05
+				political_power_factor = 0.05
+				drift_defence_factor = 0.05
+			}
+		}
+		hof_ic_role_ivan_smirnov_1f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				production_speed_buildings_factor = 0.03
+				stability_factor = 0.15
+				production_speed_infrastructure_factor = 0.10
+				army_core_defence_factor = 0.05
+				max_dig_in_factor = 0.10
+				army_org_factor = 0.05
+				army_morale_factor = 0.05
+				political_power_factor = 0.05
+				drift_defence_factor = 0.05
+				mobilization_speed = 0.05
+			}
+		}
+		hof_ic_role_ivan_smirnov_3f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				production_speed_buildings_factor = 0.08
+				stability_factor = 0.25
+				production_speed_infrastructure_factor = 0.20
+				army_core_defence_factor = 0.05
+				max_dig_in_factor = 0.10
+				army_org_factor = 0.05
+				army_morale_factor = 0.05
+				political_power_factor = 0.05
+				drift_defence_factor = 0.05
+				mobilization_speed = 0.05
+				compliance_growth = 0.05
+			}
+		}
+		hof_ic_role_leonid_serebryakov_0 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.1
+				industrial_capacity_factory = 0.03
+			}
+		}
+		hof_ic_role_leonid_serebryakov_1 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.1
+				industrial_capacity_factory = 0.03
+				army_morale_factor = 0.05
+				communism_drift = 0.05
+			}
+		}
+		hof_ic_role_leonid_serebryakov_3 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				industrial_capacity_factory = 0.03
+				political_power_factor = 0.10
+				army_morale_factor = 0.05
+				communism_drift = 0.05
+				stability_factor = 0.05
+			}
+		}
+		hof_ic_role_leonid_serebryakov_7 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				industrial_capacity_factory = 0.03
+				political_power_factor = 0.10
+				army_morale_factor = 0.05
+				communism_drift = 0.05
+				stability_factor = 0.05
+				production_speed_rail_way_factor = 0.05
+				production_speed_supply_node_factor = 0.05
+				production_speed_infrastructure_factor = 0.05
+			}
+		}
+		hof_ic_role_leonid_serebryakov_f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				industrial_capacity_factory = 0.03
+				political_power_factor = 0.10
+				production_speed_rail_way_factor = 0.10
+				army_morale_factor = 0.05
+				communism_drift = 0.05
+				stability_factor = 0.05
+				production_speed_supply_node_factor = 0.05
+				production_speed_infrastructure_factor = 0.10
+				supply_consumption_factor = -0.05
+				no_supply_grace = 48
+			}
+		}
+		hof_ic_role_leonid_serebryakov_1f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				industrial_capacity_factory = 0.03
+				political_power_factor = 0.10
+				production_speed_rail_way_factor = 0.15
+				army_morale_factor = 0.05
+				communism_drift = 0.05
+				stability_factor = 0.05
+				production_speed_supply_node_factor = 0.15
+				production_speed_infrastructure_factor = 0.15
+				supply_consumption_factor = -0.10
+				no_supply_grace = 48
+				production_speed_buildings_factor = 0.10
+			}
+		}
+		hof_ic_role_yevgeny_preobrazhensky_0 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.1
+				communism_drift = 0.03
+			}
+		}
+		hof_ic_role_yevgeny_preobrazhensky_1 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.1
+				communism_drift = 0.03
+				political_power_factor = 0.05
+				stability_factor = 0.05
+			}
+		}
+		hof_ic_role_yevgeny_preobrazhensky_3 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				communism_drift = 0.03
+				production_factory_max_efficiency_factor = 0.10
+				political_power_factor = 0.05
+				stability_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		hof_ic_role_yevgeny_preobrazhensky_7 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				communism_drift = 0.08
+				production_factory_max_efficiency_factor = 0.10
+				political_power_factor = 0.05
+				stability_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				drift_defence_factor = 0.05
+			}
+		}
+		hof_ic_role_yevgeny_preobrazhensky_f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				communism_drift = 0.08
+				production_factory_max_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.10
+				political_power_factor = 0.05
+				stability_factor = 0.05
+				drift_defence_factor = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		hof_ic_role_yevgeny_preobrazhensky_1f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				communism_drift = 0.08
+				production_factory_max_efficiency_factor = 0.25
+				production_factory_efficiency_gain_factor = 0.15
+				political_power_factor = 0.05
+				stability_factor = 0.05
+				drift_defence_factor = 0.05
+				production_speed_buildings_factor = 0.15
+				industrial_capacity_factory = 0.05
+			}
+		}
+		hof_ic_role_karl_radek_0 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.1
+				opinion_gain_monthly_factor = 0.03
+			}
+		}
+		hof_ic_role_karl_radek_1 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.1
+				opinion_gain_monthly_factor = 0.08
+				improve_relations_maintain_cost_factor = -0.05
+			}
+		}
+		hof_ic_role_karl_radek_3 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.1
+				opinion_gain_monthly_factor = 0.08
+				improve_relations_maintain_cost_factor = -0.05
+				communism_drift = 0.05
+				boost_ideology_mission_factor = 0.05
+			}
+		}
+		hof_ic_role_karl_radek_7 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.1
+				opinion_gain_monthly_factor = 0.08
+				improve_relations_maintain_cost_factor = -0.05
+				communism_drift = 0.10
+				boost_ideology_mission_factor = 0.05
+				drift_defence_factor = 0.05
+			}
+		}
+		hof_ic_role_karl_radek_f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				opinion_gain_monthly_factor = 0.08
+				boost_ideology_mission_factor = 0.10
+				improve_relations_maintain_cost_factor = -0.05
+				communism_drift = 0.15
+				drift_defence_factor = 0.05
+				political_power_factor = 0.02
+			}
+		}
+		hof_ic_role_karl_radek_1f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				opinion_gain_monthly_factor = 0.08
+				boost_ideology_mission_factor = 0.15
+				communism_drift = 0.25
+				improve_relations_maintain_cost_factor = -0.05
+				drift_defence_factor = 0.05
+				political_power_factor = 0.02
+			}
+		}
+		hof_ic_role_karl_radek_3f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				opinion_gain_monthly_factor = 0.13
+				boost_ideology_mission_factor = 0.15
+				communism_drift = 0.25
+				improve_relations_maintain_cost_factor = -0.05
+				drift_defence_factor = 0.05
+				political_power_factor = 0.07
+			}
+		}
+		hof_ic_role_karl_radek_7f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				opinion_gain_monthly_factor = 0.13
+				boost_ideology_mission_factor = 0.20
+				communism_drift = 0.30
+				improve_relations_maintain_cost_factor = -0.05
+				drift_defence_factor = 0.05
+				political_power_factor = 0.07
+			}
+		}
+		hof_ic_role_karl_radek_ff = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				opinion_gain_monthly_factor = 0.13
+				boost_ideology_mission_factor = 0.25
+				communism_drift = 0.30
+				improve_relations_maintain_cost_factor = -0.05
+				drift_defence_factor = 0.05
+				political_power_factor = 0.12
+			}
+		}
+		hof_ic_role_karl_radek_1ff = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				opinion_gain_monthly_factor = 0.18
+				boost_ideology_mission_factor = 0.35
+				communism_drift = 0.35
+				improve_relations_maintain_cost_factor = -0.05
+				drift_defence_factor = 0.05
+				political_power_factor = 0.22
+			}
+		}
+		hof_ic_role_ivar_smilga_0 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.1
+				industrial_capacity_factory = 0.03
+			}
+		}
+		hof_ic_role_ivar_smilga_1 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.1
+				industrial_capacity_factory = 0.03
+				army_org_factor = 0.05
+				mobilization_speed = 0.05
+			}
+		}
+		hof_ic_role_ivar_smilga_3 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				industrial_capacity_factory = 0.03
+				fuel_gain_factor = 0.10
+				army_org_factor = 0.05
+				mobilization_speed = 0.05
+				max_fuel_factor = 0.05
+			}
+		}
+		hof_ic_role_ivar_smilga_7 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				industrial_capacity_factory = 0.03
+				fuel_gain_factor = 0.10
+				army_org_factor = 0.05
+				mobilization_speed = 0.05
+				max_fuel_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+		hof_ic_role_ivar_smilga_f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				industrial_capacity_factory = 0.03
+				fuel_gain_factor = 0.10
+				army_org_factor = 0.05
+				mobilization_speed = 0.05
+				max_fuel_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.10
+				production_factory_max_efficiency_factor = 0.10
+			}
+		}
+		hof_ic_role_ivar_smilga_1f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				industrial_capacity_factory = 0.10
+				fuel_gain_factor = 0.10
+				army_org_factor = 0.05
+				mobilization_speed = 0.05
+				max_fuel_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.10
+				production_factory_max_efficiency_factor = 0.10
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		hof_ic_role_ivar_smilga_3f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				industrial_capacity_factory = 0.20
+				fuel_gain_factor = 0.10
+				army_org_factor = 0.05
+				mobilization_speed = 0.05
+				max_fuel_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.15
+				production_factory_max_efficiency_factor = 0.20
+				production_speed_buildings_factor = 0.10
+			}
+		}
+		hof_ic_role_mikhail_tomsky_0 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.1
+				industrial_capacity_factory = 0.03
+			}
+		}
+		hof_ic_role_mikhail_tomsky_1 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.1
+				industrial_capacity_factory = 0.03
+				production_factory_max_efficiency_factor = 0.05
+				stability_factor = 0.05
+			}
+		}
+		hof_ic_role_mikhail_tomsky_3 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.1
+				industrial_capacity_factory = 0.03
+				production_factory_max_efficiency_factor = 0.05
+				stability_factor = 0.05
+				political_power_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		hof_ic_role_mikhail_tomsky_7 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				industrial_capacity_factory = 0.08
+				production_factory_efficiency_gain_factor = 0.15
+				production_factory_max_efficiency_factor = 0.05
+				stability_factor = 0.05
+				political_power_factor = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		hof_ic_role_mikhail_tomsky_f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				industrial_capacity_factory = 0.08
+				production_factory_efficiency_gain_factor = 0.20
+				production_factory_max_efficiency_factor = 0.05
+				stability_factor = 0.10
+				political_power_factor = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		hof_ic_role_mikhail_tomsky_1f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				industrial_capacity_factory = 0.08
+				production_factory_efficiency_gain_factor = 0.20
+				political_power_factor = 0.15
+				production_factory_max_efficiency_factor = 0.05
+				stability_factor = 0.10
+				production_speed_buildings_factor = 0.05
+				drift_defence_factor = 0.05
+			}
+		}
+		hof_ic_role_mikhail_tomsky_3f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				industrial_capacity_factory = 0.13
+				production_factory_efficiency_gain_factor = 0.30
+				political_power_factor = 0.15
+				production_factory_max_efficiency_factor = 0.10
+				stability_factor = 0.20
+				production_speed_buildings_factor = 0.05
+				drift_defence_factor = 0.05
+			}
+		}
+		hof_ic_role_martemyan_ryutin_0 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.1
+				war_support_factor = 0.03
+			}
+		}
+		hof_ic_role_martemyan_ryutin_1 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.1
+				war_support_factor = 0.03
+				political_power_factor = 0.05
+				communism_drift = 0.05
+			}
+		}
+		hof_ic_role_martemyan_ryutin_3 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				war_support_factor = 0.05
+				political_power_factor = 0.05
+				communism_drift = 0.05
+				army_org_factor = 0.05
+				army_morale_factor = 0.05
+			}
+		}
+		hof_ic_role_martemyan_ryutin_7 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				war_support_factor = 0.05
+				drift_defence_factor = 0.05
+				political_power_factor = 0.05
+				communism_drift = 0.10
+				army_org_factor = 0.05
+				army_morale_factor = 0.05
+				boost_ideology_mission_factor = 0.05
+			}
+		}
+		hof_ic_role_martemyan_ryutin_f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				war_support_factor = 0.05
+				drift_defence_factor = 0.10
+				political_power_factor = 0.10
+				communism_drift = 0.10
+				army_org_factor = 0.05
+				army_morale_factor = 0.05
+				boost_ideology_mission_factor = 0.05
+			}
+		}
+		hof_ic_role_martemyan_ryutin_1f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				war_support_factor = 0.05
+				drift_defence_factor = 0.15
+				political_power_factor = 0.20
+				communism_drift = 0.20
+				army_org_factor = 0.05
+				army_morale_factor = 0.05
+				boost_ideology_mission_factor = 0.10
+			}
+		}
+		hof_ic_role_aleksandr_shlyapnikov_0 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.1
+				production_speed_buildings_factor = 0.03
+			}
+		}
+		hof_ic_role_aleksandr_shlyapnikov_1 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				production_speed_buildings_factor = 0.03
+				production_factory_efficiency_gain_factor = 0.10
+				political_power_factor = 0.05
+			}
+		}
+		hof_ic_role_aleksandr_shlyapnikov_3 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				production_speed_buildings_factor = 0.03
+				production_factory_efficiency_gain_factor = 0.10
+				political_power_factor = 0.10
+				drift_defence_factor = 0.05
+			}
+		}
+		hof_ic_role_aleksandr_shlyapnikov_7 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				production_speed_buildings_factor = 0.03
+				production_factory_efficiency_gain_factor = 0.15
+				political_power_factor = 0.10
+				drift_defence_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+		hof_ic_role_aleksandr_shlyapnikov_f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				production_speed_buildings_factor = 0.03
+				production_factory_efficiency_gain_factor = 0.15
+				political_power_factor = 0.15
+				drift_defence_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.05
+				stability_factor = 0.05
+			}
+		}
+		hof_ic_role_aleksandr_shlyapnikov_1f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				production_speed_buildings_factor = 0.03
+				production_factory_efficiency_gain_factor = 0.20
+				political_power_factor = 0.20
+				drift_defence_factor = 0.05
+				production_factory_max_efficiency_factor = 0.10
+				industrial_capacity_factory = 0.05
+				stability_factor = 0.05
+			}
+		}
+		hof_ic_role_aleksandr_shlyapnikov_3f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				production_speed_buildings_factor = 0.08
+				production_factory_efficiency_gain_factor = 0.25
+				political_power_factor = 0.30
+				drift_defence_factor = 0.05
+				production_factory_max_efficiency_factor = 0.20
+				industrial_capacity_factory = 0.05
+				stability_factor = 0.05
+			}
+		}
+		hof_ic_role_mikhail_kalinin_0 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.1
+				political_power_factor = 0.03
+			}
+		}
+		hof_ic_role_mikhail_kalinin_1 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				political_power_factor = 0.08
+				stability_factor = 0.10
+			}
+		}
+		hof_ic_role_mikhail_kalinin_3 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				political_power_factor = 0.13
+				stability_factor = 0.10
+				research_speed_factor = 0.05
+				training_time_factor = -0.05
+			}
+		}
+		hof_ic_role_mikhail_kalinin_7 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				political_power_factor = 0.13
+				stability_factor = 0.10
+				drift_defence_factor = 0.10
+				research_speed_factor = 0.05
+				training_time_factor = -0.05
+				communism_drift = 0.05
+			}
+		}
+		hof_ic_role_mikhail_kalinin_f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				political_power_factor = 0.18
+				stability_factor = 0.15
+				drift_defence_factor = 0.10
+				research_speed_factor = 0.05
+				training_time_factor = -0.05
+				communism_drift = 0.05
+			}
+		}
+		hof_ic_role_mikhail_kalinin_1f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				political_power_factor = 0.25
+				stability_factor = 0.20
+				drift_defence_factor = 0.10
+				research_speed_factor = 0.05
+				training_time_factor = -0.05
+				communism_drift = 0.05
+			}
+		}
+		hof_ic_role_mikhail_kalinin_3f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.25
+				political_power_factor = 0.25
+				stability_factor = 0.30
+				drift_defence_factor = 0.15
+				research_speed_factor = 0.05
+				training_time_factor = -0.05
+				communism_drift = 0.15
+			}
+		}
+		hof_ic_role_maksim_litvinov_0 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.1
+				improve_relations_maintain_cost_factor = -0.03
+			}
+		}
+		hof_ic_role_maksim_litvinov_1 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.1
+				improve_relations_maintain_cost_factor = -0.03
+				political_power_factor = 0.05
+				communism_drift = 0.05
+			}
+		}
+		hof_ic_role_maksim_litvinov_3 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				improve_relations_maintain_cost_factor = -0.10
+				political_power_factor = 0.05
+				communism_drift = 0.05
+				opinion_gain_monthly_factor = 0.05
+			}
+		}
+		hof_ic_role_maksim_litvinov_7 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				improve_relations_maintain_cost_factor = -0.10
+				opinion_gain_monthly_factor = 0.15
+				political_power_factor = 0.10
+				communism_drift = 0.05
+			}
+		}
+		hof_ic_role_maksim_litvinov_f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				improve_relations_maintain_cost_factor = -0.10
+				opinion_gain_monthly_factor = 0.20
+				trade_opinion_factor = 0.05
+				political_power_factor = 0.10
+				communism_drift = 0.05
+				drift_defence_factor = 0.05
+			}
+		}
+		hof_ic_role_maksim_litvinov_1f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				improve_relations_maintain_cost_factor = -0.15
+				opinion_gain_monthly_factor = 0.25
+				trade_opinion_factor = 0.05
+				political_power_factor = 0.10
+				communism_drift = 0.05
+				drift_defence_factor = 0.05
+			}
+		}
+		hof_ic_role_maksim_litvinov_3f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				improve_relations_maintain_cost_factor = -0.20
+				opinion_gain_monthly_factor = 0.30
+				trade_opinion_factor = 0.15
+				political_power_factor = 0.10
+				communism_drift = 0.05
+				drift_defence_factor = 0.05
+				opinion_gain_monthly_same_ideology_factor = 0.10
+			}
+		}
+		hof_ic_role_grigory_sokolnikov_0 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.1
+				consumer_goods_factor = -0.03
+			}
+		}
+		hof_ic_role_grigory_sokolnikov_1 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.1
+				consumer_goods_factor = -0.03
+				political_power_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		hof_ic_role_grigory_sokolnikov_3 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.1
+				consumer_goods_factor = -0.03
+				political_power_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.10
+				stability_factor = 0.05
+			}
+		}
+		hof_ic_role_grigory_sokolnikov_7 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				consumer_goods_factor = -0.10
+				political_power_factor = 0.10
+				production_factory_efficiency_gain_factor = 0.10
+				stability_factor = 0.05
+			}
+		}
+		hof_ic_role_grigory_sokolnikov_f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				consumer_goods_factor = -0.10
+				political_power_factor = 0.10
+				production_factory_efficiency_gain_factor = 0.10
+				stability_factor = 0.05
+				resource_trade_cost_bonus_per_factory = 1
+				trade_opinion_factor = 0.05
+			}
+		}
+		hof_ic_role_grigory_sokolnikov_1f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				consumer_goods_factor = -0.10
+				trade_opinion_factor = 0.10
+				political_power_factor = 0.10
+				production_factory_efficiency_gain_factor = 0.10
+				stability_factor = 0.05
+				resource_trade_cost_bonus_per_factory = 1
+				production_factory_max_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.05
+				production_speed_industrial_complex_factor = 0.05
+			}
+		}
+		hof_ic_role_grigory_sokolnikov_3f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				consumer_goods_factor = -0.15
+				trade_opinion_factor = 0.15
+				political_power_factor = 0.10
+				production_factory_efficiency_gain_factor = 0.10
+				stability_factor = 0.15
+				resource_trade_cost_bonus_per_factory = 2
+				production_factory_max_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.05
+				production_speed_industrial_complex_factor = 0.05
+			}
+		}
+		hof_ic_role_mikhail_tukhachevsky_0 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.1
+				army_org_factor = 0.03
+			}
+		}
+		hof_ic_role_mikhail_tukhachevsky_1 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.03
+				land_doctrine_cost_factor = -0.15
+				experience_gain_army_factor = 0.10
+				military_leader_cost_factor = -0.10
+				training_time_factor = -0.05
+			}
+		}
+		hof_ic_role_mikhail_tukhachevsky_3 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.03
+				land_doctrine_cost_factor = -0.15
+				experience_gain_army_factor = 0.10
+				military_leader_cost_factor = -0.10
+				training_time_factor = -0.05
+				conscription = 0.02
+				army_morale_factor = 0.10
+				army_defence_factor = 0.05
+			}
+		}
+		hof_ic_role_mikhail_tukhachevsky_7 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.03
+				land_doctrine_cost_factor = -0.15
+				experience_gain_army_factor = 0.10
+				army_armor_attack_factor = 0.05
+				special_forces_attack_factor = 0.05
+				military_leader_cost_factor = -0.10
+				training_time_factor = -0.05
+				conscription = 0.02
+				army_morale_factor = 0.10
+				army_defence_factor = 0.05
+				paradrop_organization_factor = 1.0
+				no_supply_grace = 48
+			}
+		}
+		hof_ic_role_mikhail_tukhachevsky_f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.03
+				land_doctrine_cost_factor = -0.15
+				experience_gain_army_factor = 0.10
+				army_armor_attack_factor = 0.05
+				special_forces_attack_factor = 0.05
+				military_leader_cost_factor = -0.10
+				training_time_factor = -0.05
+				conscription = 0.02
+				army_morale_factor = 0.10
+				army_defence_factor = 0.05
+				paradrop_organization_factor = 1.0
+				no_supply_grace = 96
+				army_attack_factor = 0.05
+				breakthrough_factor = 0.05
+				supply_consumption_factor = -0.05
+			}
+		}
+		hof_ic_role_mikhail_tukhachevsky_1f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.03
+				land_doctrine_cost_factor = -0.15
+				experience_gain_army_factor = 0.10
+				army_armor_attack_factor = 0.05
+				special_forces_attack_factor = 0.05
+				army_attack_factor = 0.15
+				breakthrough_factor = 0.10
+				military_leader_cost_factor = -0.10
+				training_time_factor = -0.05
+				conscription = 0.02
+				army_morale_factor = 0.10
+				army_defence_factor = 0.10
+				paradrop_organization_factor = 1.0
+				no_supply_grace = 144
+				supply_consumption_factor = -0.10
+				attrition = -0.05
+			}
+		}
+		hof_ic_role_mikhail_tukhachevsky_3f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.03
+				land_doctrine_cost_factor = -0.15
+				experience_gain_army_factor = 0.10
+				army_armor_attack_factor = 0.05
+				special_forces_attack_factor = 0.05
+				army_attack_factor = 0.15
+				breakthrough_factor = 0.10
+				military_leader_cost_factor = -0.10
+				training_time_factor = -0.05
+				conscription = 0.02
+				army_morale_factor = 0.10
+				army_defence_factor = 0.10
+				paradrop_organization_factor = 1.0
+				no_supply_grace = 144
+				supply_consumption_factor = -0.10
+				attrition = -0.05
+				industrial_capacity_factory = 0.05
+				war_support_factor = 0.05
+			}
+		}
+		hof_ic_role_mikhail_tukhachevsky_7f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.03
+				land_doctrine_cost_factor = -0.15
+				experience_gain_army_factor = 0.10
+				army_armor_attack_factor = 0.05
+				special_forces_attack_factor = 0.05
+				army_attack_factor = 0.15
+				breakthrough_factor = 0.10
+				military_leader_cost_factor = -0.10
+				training_time_factor = -0.05
+				conscription = 0.02
+				army_morale_factor = 0.10
+				army_defence_factor = 0.10
+				paradrop_organization_factor = 1.0
+				no_supply_grace = 144
+				supply_consumption_factor = -0.10
+				attrition = -0.05
+				industrial_capacity_factory = 0.10
+				war_support_factor = 0.05
+				production_speed_industrial_complex_factor = 0.05
+			}
+		}
+		hof_ic_role_mikhail_tukhachevsky_ff = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.03
+				land_doctrine_cost_factor = -0.15
+				experience_gain_army_factor = 0.10
+				army_armor_attack_factor = 0.05
+				special_forces_attack_factor = 0.05
+				army_attack_factor = 0.15
+				breakthrough_factor = 0.15
+				military_leader_cost_factor = -0.10
+				training_time_factor = -0.05
+				conscription = 0.02
+				army_morale_factor = 0.10
+				army_defence_factor = 0.10
+				paradrop_organization_factor = 1.0
+				no_supply_grace = 144
+				supply_consumption_factor = -0.10
+				attrition = -0.05
+				industrial_capacity_factory = 0.10
+				war_support_factor = 0.05
+				production_speed_industrial_complex_factor = 0.05
+				initiative_factor = 0.05
+			}
+		}
+		hof_ic_role_mikhail_tukhachevsky_1ff = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.03
+				land_doctrine_cost_factor = -0.15
+				experience_gain_army_factor = 0.10
+				army_armor_attack_factor = 0.05
+				special_forces_attack_factor = 0.05
+				army_attack_factor = 0.25
+				breakthrough_factor = 0.25
+				military_leader_cost_factor = -0.10
+				training_time_factor = -0.05
+				conscription = 0.02
+				army_morale_factor = 0.15
+				army_defence_factor = 0.15
+				paradrop_organization_factor = 1.0
+				no_supply_grace = 192
+				supply_consumption_factor = -0.10
+				attrition = -0.05
+				industrial_capacity_factory = 0.10
+				war_support_factor = 0.05
+				production_speed_industrial_complex_factor = 0.05
+				initiative_factor = 0.05
+			}
+		}
+		hof_ic_role_nikolay_voznesensky_0 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.1
+				production_speed_buildings_factor = 0.03
+			}
+		}
+		hof_ic_role_nikolay_voznesensky_1 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.1
+				production_speed_buildings_factor = 0.03
+				production_factory_max_efficiency_factor = 0.05
+				political_power_factor = 0.05
+				stability_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+		hof_ic_role_nikolay_voznesensky_3 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				production_speed_buildings_factor = 0.03
+				industrial_capacity_factory = 0.15
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.10
+				political_power_factor = 0.05
+				stability_factor = 0.05
+				production_speed_industrial_complex_factor = 0.10
+			}
+		}
+		hof_ic_role_nikolay_voznesensky_7 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				production_speed_buildings_factor = 0.10
+				industrial_capacity_factory = 0.20
+				production_factory_efficiency_gain_factor = 0.05
+				stability_factor = 0.10
+				production_factory_max_efficiency_factor = 0.15
+				political_power_factor = 0.05
+				production_speed_industrial_complex_factor = 0.10
+			}
+		}
+		hof_ic_role_nikolay_voznesensky_f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				production_speed_buildings_factor = 0.15
+				industrial_capacity_factory = 0.25
+				production_factory_efficiency_gain_factor = 0.05
+				stability_factor = 0.10
+				production_factory_max_efficiency_factor = 0.20
+				political_power_factor = 0.05
+				production_speed_industrial_complex_factor = 0.20
+			}
+		}
+		hof_ic_role_nikolay_voznesensky_1f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				production_speed_buildings_factor = 0.15
+				industrial_capacity_factory = 0.30
+				production_factory_efficiency_gain_factor = 0.05
+				stability_factor = 0.10
+				production_factory_max_efficiency_factor = 0.25
+				political_power_factor = 0.05
+				production_speed_industrial_complex_factor = 0.20
+				consumer_goods_factor = -0.05
+			}
+		}
+		hof_ic_role_nikolay_voznesensky_3f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				production_speed_buildings_factor = 0.15
+				industrial_capacity_factory = 0.35
+				production_factory_efficiency_gain_factor = 0.10
+				stability_factor = 0.10
+				production_factory_max_efficiency_factor = 0.30
+				political_power_factor = 0.05
+				production_speed_industrial_complex_factor = 0.20
+				consumer_goods_factor = -0.10
+			}
+		}
+		hof_ic_role_pyotr_smirnov_0 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.1
+				war_support_factor = 0.03
+			}
+		}
+		hof_ic_role_pyotr_smirnov_1 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.1
+				war_support_factor = 0.03
+				navy_leader_cost_factor = -0.10
+				naval_coordination = 0.05
+				navy_org_factor = 0.05
+			}
+		}
+		hof_ic_role_pyotr_smirnov_3 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				war_support_factor = 0.03
+				political_power_factor = 0.05
+				naval_damage_factor = 0.05
+				navy_leader_cost_factor = -0.10
+				naval_coordination = 0.10
+				navy_org_factor = 0.10
+				navy_max_range_factor = 0.10
+			}
+		}
+		hof_ic_role_pyotr_smirnov_7 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				war_support_factor = 0.03
+				political_power_factor = 0.05
+				naval_damage_factor = 0.05
+				navy_org_factor = 0.20
+				stability_factor = 0.05
+				navy_leader_cost_factor = -0.10
+				naval_coordination = 0.15
+				navy_max_range_factor = 0.10
+				naval_strike_attack_factor = 0.05
+			}
+		}
+		hof_ic_role_pyotr_smirnov_f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				war_support_factor = 0.03
+				political_power_factor = 0.05
+				naval_damage_factor = 0.05
+				navy_org_factor = 0.20
+				stability_factor = 0.05
+				navy_leader_cost_factor = -0.15
+				naval_coordination = 0.15
+				navy_max_range_factor = 0.15
+				naval_strike_attack_factor = 0.05
+				industrial_capacity_dockyard = 0.05
+			}
+		}
+		hof_ic_role_pyotr_smirnov_1f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				war_support_factor = 0.03
+				political_power_factor = 0.05
+				naval_damage_factor = 0.05
+				navy_org_factor = 0.25
+				stability_factor = 0.05
+				navy_leader_cost_factor = -0.20
+				naval_coordination = 0.25
+				navy_max_range_factor = 0.15
+				naval_strike_attack_factor = 0.05
+				industrial_capacity_dockyard = 0.05
+			}
+		}
+		hof_ic_role_pyotr_smirnov_3f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				war_support_factor = 0.03
+				political_power_factor = 0.05
+				naval_damage_factor = 0.10
+				navy_org_factor = 0.30
+				stability_factor = 0.05
+				naval_coordination = 0.35
+				navy_leader_cost_factor = -0.20
+				navy_max_range_factor = 0.15
+				naval_strike_attack_factor = 0.05
+				industrial_capacity_dockyard = 0.10
+			}
+		}
+		hof_ic_role_georgy_malenkow_0 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.1
+				political_power_factor = 0.03
+			}
+		}
+		hof_ic_role_georgy_malenkow_1 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				political_power_factor = 0.08
+				political_advisor_cost_factor = -0.10
+				experience_gain_army_factor = 0.05
+				stability_factor = 0.05
+			}
+		}
+		hof_ic_role_georgy_malenkow_3 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				political_power_factor = 0.13
+				political_advisor_cost_factor = -0.15
+				experience_gain_army_factor = 0.05
+				industrial_capacity_factory = 0.05
+				stability_factor = 0.10
+				mobilization_speed = 0.05
+			}
+		}
+		hof_ic_role_georgy_malenkow_7 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				political_power_factor = 0.13
+				political_advisor_cost_factor = -0.15
+				experience_gain_army_factor = 0.05
+				industrial_capacity_factory = 0.10
+				stability_factor = 0.10
+				mobilization_speed = 0.15
+				conscription = 0.02
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		hof_ic_role_georgy_malenkow_f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				political_power_factor = 0.13
+				political_advisor_cost_factor = -0.15
+				experience_gain_army_factor = 0.05
+				industrial_capacity_factory = 0.10
+				stability_factor = 0.10
+				mobilization_speed = 0.15
+				conscription = 0.02
+				production_factory_efficiency_gain_factor = 0.10
+				air_accidents_factor = -0.05
+				experience_gain_air_factor = 0.05
+			}
+		}
+		hof_ic_role_georgy_malenkow_1f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				political_power_factor = 0.23
+				political_advisor_cost_factor = -0.20
+				experience_gain_army_factor = 0.05
+				industrial_capacity_factory = 0.10
+				stability_factor = 0.10
+				mobilization_speed = 0.15
+				conscription = 0.02
+				production_factory_efficiency_gain_factor = 0.10
+				air_accidents_factor = -0.05
+				experience_gain_air_factor = 0.05
+				training_time_factor = -0.05
+			}
+		}
+		hof_ic_role_georgy_malenkow_3f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				political_power_factor = 0.23
+				political_advisor_cost_factor = -0.20
+				experience_gain_army_factor = 0.05
+				industrial_capacity_factory = 0.20
+				stability_factor = 0.15
+				war_support_factor = 0.05
+				mobilization_speed = 0.15
+				conscription = 0.02
+				production_factory_efficiency_gain_factor = 0.10
+				air_accidents_factor = -0.05
+				experience_gain_air_factor = 0.05
+				training_time_factor = -0.05
+				production_speed_buildings_factor = 0.05
+				consumer_goods_factor = -0.05
+			}
+		}
+		hof_ic_role_nikita_khrushchyov_0 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.1
+				production_speed_infrastructure_factor = 0.03
+			}
+		}
+		hof_ic_role_nikita_khrushchyov_1 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				production_speed_infrastructure_factor = 0.05
+				political_power_factor = 0.10
+				research_speed_factor = 0.05
+				training_time_factor = -0.05
+			}
+		}
+		hof_ic_role_nikita_khrushchyov_3 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				production_speed_infrastructure_factor = 0.05
+				political_power_factor = 0.15
+				war_support_factor = 0.05
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = 0.05
+				training_time_factor = -0.05
+				stability_factor = 0.05
+				consumer_goods_factor = -0.05
+			}
+		}
+		hof_ic_role_nikita_khrushchyov_7 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				production_speed_infrastructure_factor = 0.10
+				political_power_factor = 0.15
+				war_support_factor = 0.05
+				production_speed_buildings_factor = 0.10
+				research_speed_factor = 0.05
+				training_time_factor = -0.05
+				stability_factor = 0.05
+				consumer_goods_factor = -0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+		hof_ic_role_nikita_khrushchyov_f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				production_speed_infrastructure_factor = 0.10
+				political_power_factor = 0.15
+				war_support_factor = 0.05
+				production_speed_buildings_factor = 0.15
+				industrial_capacity_factory = 0.10
+				research_speed_factor = 0.05
+				training_time_factor = -0.05
+				stability_factor = 0.10
+				consumer_goods_factor = -0.10
+			}
+		}
+		hof_ic_role_nikita_khrushchyov_1f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				production_speed_infrastructure_factor = 0.10
+				political_power_factor = 0.15
+				war_support_factor = 0.05
+				production_speed_buildings_factor = 0.20
+				industrial_capacity_factory = 0.10
+				research_speed_factor = 0.05
+				training_time_factor = -0.05
+				stability_factor = 0.10
+				consumer_goods_factor = -0.10
+				local_resources_factor = 0.10
+				production_speed_rail_way_factor = 0.05
+			}
+		}
+		hof_ic_role_nikita_khrushchyov_3f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				production_speed_infrastructure_factor = 0.10
+				political_power_factor = 0.15
+				war_support_factor = 0.05
+				production_speed_buildings_factor = 0.20
+				industrial_capacity_factory = 0.20
+				research_speed_factor = 0.05
+				training_time_factor = -0.05
+				stability_factor = 0.10
+				consumer_goods_factor = -0.10
+				local_resources_factor = 0.10
+				production_speed_rail_way_factor = 0.05
+				production_speed_industrial_complex_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+		hof_ic_role_kliment_voroshilov_0 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.1
+				army_org_factor = 0.03
+			}
+		}
+		hof_ic_role_kliment_voroshilov_1 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.03
+				army_morale_factor = 0.05
+				political_power_factor = 0.05
+				training_time_factor = -0.10
+				army_leader_cost_factor = -0.10
+				experience_gain_army_factor = 0.05
+			}
+		}
+		hof_ic_role_kliment_voroshilov_3 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.03
+				army_morale_factor = 0.05
+				political_power_factor = 0.05
+				army_attack_factor = 0.10
+				production_speed_buildings_factor = 0.05
+				training_time_factor = -0.10
+				army_leader_cost_factor = -0.10
+				experience_gain_army_factor = 0.15
+				army_defence_factor = 0.05
+			}
+		}
+		hof_ic_role_kliment_voroshilov_7 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.03
+				army_morale_factor = 0.10
+				political_power_factor = 0.05
+				army_attack_factor = 0.10
+				production_speed_buildings_factor = 0.05
+				training_time_factor = -0.10
+				army_leader_cost_factor = -0.10
+				experience_gain_army_factor = 0.15
+				army_defence_factor = 0.05
+				military_leader_cost_factor = -0.10
+				planning_speed = 0.10
+			}
+		}
+		hof_ic_role_kliment_voroshilov_f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.03
+				army_morale_factor = 0.10
+				political_power_factor = 0.05
+				army_attack_factor = 0.10
+				production_speed_buildings_factor = 0.05
+				training_time_factor = -0.10
+				army_leader_cost_factor = -0.10
+				experience_gain_army_factor = 0.15
+				army_defence_factor = 0.05
+				military_leader_cost_factor = -0.10
+				planning_speed = 0.10
+				army_core_defence_factor = 0.10
+				special_forces_cap = 0.10
+				land_reinforce_rate = 0.05
+				no_supply_grace = 48
+			}
+		}
+		hof_ic_role_kliment_voroshilov_1f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.03
+				army_morale_factor = 0.10
+				political_power_factor = 0.05
+				army_attack_factor = 0.10
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.10
+				training_time_factor = -0.10
+				army_leader_cost_factor = -0.10
+				experience_gain_army_factor = 0.15
+				army_defence_factor = 0.05
+				military_leader_cost_factor = -0.10
+				planning_speed = 0.10
+				army_core_defence_factor = 0.10
+				special_forces_cap = 0.10
+				land_reinforce_rate = 0.05
+				no_supply_grace = 48
+				equipment_capture_factor = 0.10
+				equipment_conversion_speed = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		hof_ic_role_kliment_voroshilov_3f = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				army_org_factor = 0.03
+				army_morale_factor = 0.10
+				political_power_factor = 0.05
+				army_attack_factor = 0.10
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.10
+				training_time_factor = -0.10
+				army_leader_cost_factor = -0.10
+				experience_gain_army_factor = 0.15
+				army_defence_factor = 0.05
+				military_leader_cost_factor = -0.10
+				planning_speed = 0.10
+				army_core_defence_factor = 0.10
+				special_forces_cap = 0.10
+				land_reinforce_rate = 0.05
+				no_supply_grace = 48
+				equipment_capture_factor = 0.10
+				equipment_conversion_speed = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				resistance_target = -0.05
+				compliance_growth = 0.10
+				opinion_gain_monthly_factor = 0.05
+				resistance_decay = 0.05
+			}
+		}
+	}
+}

@@ -1,0 +1,12 @@
+{
+  "name": "hof_portrait_SOV_ivar_smilga",
+  "label": "Ivar Smilga / 伊瓦尔·斯米尔加",
+  "prompt": "Use case: identity-preserve. Create ONE finished HOI4 Soviet leader portrait, painted reconstruction/upscale from the supplied tiny game icon. Image 1 is the authoritative IDENTITY reference: preserve this specific face, apparent age, facial proportions, hairline, hair/facial hair and expression. Images 2 and 3 are STYLE and COMPOSITION references only (Kamenev and Trotsky); do not copy their faces. Remove all icon framing, document/paper overlays, bars and UI embellishments. Extend naturally into a head-and-shoulders portrait ending at upper chest, face prominent and fully visible, centered or slightly left, facing the same direction as the small reference. Match the large samples: restrained realistic hand-painted oil/colorized photograph, muted brown grey / cool slate palette, soft upper-left key light, fine subdued brush texture, believable skin, dignified unexaggerated features. Plain warm grey-beige background matching the reference portraits, faint subtle tonal variation only; no scenery, vignette frame, symbols, writing, borders or watermark. Portrait canvas ratio exactly 156:210, e.g. 936x1260, whole crown and shoulders inside. Final use is 156x210 px so clear recognizable facial landmarks matter more than tiny detail. PNG output; uniform background may be opaque as in samples.\nSubject: Ivar Smilga / 伊瓦尔·斯米尔加. The small reference is an imprisoned variant, partly obscured by bars. Restore a healthy normal civilian appearance, clean neat dark period suit, off-white shirt and understated tie. Keep the reference's high receding hairline, short brown hair at sides, long oval face, prominent ears and nose, clean-shaven jaw, serious expression. No prison bars, prisoner uniform, document, bruising or emaciation. Do not add glasses, beard, moustache or cap.",
+  "source": "C:\\Users\\xuwei\\.codex\\generated_images\\01a09af5-fd43-79a0-a3cc-72284cd67cbc\\exec-abc10563-3492-4173-b93e-7f7d10ed4f07.png",
+  "reference": "references/hof_portrait_SOV_ivar_smilga.png",
+  "size": [
+    156,
+    210
+  ],
+  "mode": "built-in image_gen"
+}

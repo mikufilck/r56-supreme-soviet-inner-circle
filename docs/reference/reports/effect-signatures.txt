@@ -1,0 +1,141 @@
+﻿======== complete_national_focus   (L2870) ========
+## complete_national_focus
+
+* Supported Scopes: COUNTRY
+* Supported Targets: none
+
+```
+completes a focus for a country
+```
+
+
+======== activate_shine_on_focus   (L681) ========
+## activate_shine_on_focus
+
+* Supported Scopes: COUNTRY
+* Supported Targets: any
+
+Activates the shine effect on the focus with the given id. Focuses that are completed cannot have an activated shine effect.
+
+Note that tooltips are only shown in debug mode.
+
+### Example:
+```
+activate_shine_on_focus = GER_prioritize_economic_growth
+```
+
+
+
+======== add_dynamic_modifier   (L1153) ========
+## add_dynamic_modifier
+
+* Supported Scopes: STATE, COUNTRY, CHARACTER, SPECIAL_PROJECT
+* Supported Targets: THIS, ROOT, PREV, FROM, OWNER, CONTROLLER, OCCUPIED, CAPITAL
+
+```
+adds a dynamic modifier to the containing scope (country / state / unit-leader / special-project).
+Updates the cooldown if exists.
+Optionaly you can give a scope that will restrict the dynamic modifier to it.
+example :
+12 = {
+  add_dynamic_modifier = {
+    modifier = dynamic_modifier_name
+    days = 42 # will be temporary if specified, can be variable
+    scope = GER # optional, state/countrytag or a variable containing that. 
+				# if specified the dynamic variable will target that scope
+				# in this example : adds the modifier to state 12 but only applies for country GER
+  }
+}
+```
+
+
+======== remove_dynamic_modifier   (L5978) ========
+## remove_dynamic_modifier
+
+* Supported Scopes: STATE, COUNTRY, CHARACTER, SPECIAL_PROJECT
+* Supported Targets: THIS, ROOT, PREV, FROM, OWNER, CONTROLLER, OCCUPIED, CAPITAL
+
+```
+removes a dynamic modifier from the containing scope (country / state / unit-leader / special-project).
+example :
+remove_dynamic_modifier = {
+  modifier = dynamic_modifier_name
+  scope = GER # optional, must match the scope input used in add_dynamic_modifier (if any)
+}
+```
+
+
+======== set_country_flag   (L6730) ========
+## set_country_flag
+
+* Supported Scopes: COUNTRY
+* Supported Targets: none
+
+```
+set country flag
+```
+
+
+======== add_country_leader_trait   (L1008) ========
+## add_country_leader_trait
+
+* Supported Scopes: COUNTRY, CHARACTER
+* Supported Targets: none
+
+```
+Add country leader trait to the scoped character or scoped country's leader.
+In scoped character, will need to give the ideology if the character has several country leader roles.
+Example 1: SOV_joseph_stalin = { add_country_leader_trait = underage_monarch }
+Example 2: HUN_miklos_horthy = { add_country_leader_trait = { ideology = oligarchism trait = anti_communist } }
+Example 3: SOV = { add_country_leader_trait = underage_monarch }
+```
+
+
+======== activate_shine_on_focus   (L681) ========
+## activate_shine_on_focus
+
+* Supported Scopes: COUNTRY
+* Supported Targets: any
+
+Activates the shine effect on the focus with the given id. Focuses that are completed cannot have an activated shine effect.
+
+Note that tooltips are only shown in debug mode.
+
+### Example:
+```
+activate_shine_on_focus = GER_prioritize_economic_growth
+```
+
+
+
+======== force_update_dynamic_modifier   (L4372) ========
+## force_update_dynamic_modifier
+
+* Supported Scopes: STATE, COUNTRY, CHARACTER, SPECIAL_PROJECT
+* Supported Targets: THIS, ROOT, PREV, FROM, OWNER, CONTROLLER, OCCUPIED, CAPITAL
+
+```
+updates the modifiers in current scope (use if you don't want to wait for daily update to update them):
+force_update_dynamic_modifier = yes
+
+```
+
+
+
+################ 触发器：has_shine_effect_on_focus
+======== L4785 ========
+## has_shine_effect_on_focus
+
+* Supported Scopes: COUNTRY
+* Supported Targets: none
+
+Check if country has shine effect on focus (either manually achieved or by being worked on).
+
+Note that tooltips are only shown in debug mode.
+
+### Example
+```
+has_shine_effect_on_focus = GER_prioritize_economic_growth
+```
+
+

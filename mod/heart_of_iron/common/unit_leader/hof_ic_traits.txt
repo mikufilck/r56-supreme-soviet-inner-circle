@@ -1,0 +1,49 @@
+# =============================================================================
+# 核心圈 · 将领特质（手写文件，UTF-8 不带 BOM）
+# -----------------------------------------------------------------------------
+# 用途：I2「返聘沙俄军官」给点名的沙俄旧军官授予一个身份特质。
+#
+# 蓝本（两处都是原文核对过的）：
+#   原版 common/unit_leader/00_traits.txt 的 old_guard
+#     —— 证明 trait 里可以带 modifier = { } 与 non_shared_modifier = { }
+#   原版 common/unit_leader/NSB_traits.txt 的 BALTIC_ex_russian
+#     —— 证明 gain_xp = { always = no } 可以做成"不可自然获得"
+#
+# ⚠️ 外层 leader_traits = { } 不能漏。
+# ⚠️ 图标按约定取自 GFX_trait_<特质名>，本文件不注册；缺图只会显示空白，不影响生效。
+# ⚠️ 名称与说明的本地化键是 <特质名> 与 <特质名>_desc，
+#    写在 localisation/simp_chinese/hof_ic_l_simp_chinese.yml（带 BOM 的那个手写文件）。
+# =============================================================================
+
+leader_traits = {
+
+	# -------------------------------------------------------------------------
+	# 沙俄军事专家（военспец）—— 旧军官被返聘后获得的身份
+	# -------------------------------------------------------------------------
+	trait_hof_ic_tsarist_officer = {
+		type = land
+		trait_type = personality_trait
+
+		allowed = {
+			always = yes
+		}
+
+		# 只能由国策授予，不会靠打仗自己长出来
+		gain_xp = {
+			always = no
+		}
+
+		modifier = {
+			army_org_factor = 0.05
+			army_infantry_attack_factor = 0.05
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+}

@@ -1,0 +1,48 @@
+﻿==== GFX_focus_GER_ascension_of_todt ====
+  [原版                      ] F:\Hearts of Iron IV\gfx\interface\goals\focus_GER_ascension_of_todt.dds   <- interface\goals.gfx
+      102 x 90
+  [原版                      ] F:\Hearts of Iron IV\gfx\interface\goals\focus_GER_ascension_of_todt.dds   <- interface\goals_shine.gfx
+      102 x 90
+
+==== GFX_focus_GER_ascension_of_speer ====
+  [原版                      ] F:\Hearts of Iron IV\gfx\interface\goals\focus_GER_ascension_of_speer.dds   <- interface\goals.gfx
+      82 x 76
+  [原版                      ] F:\Hearts of Iron IV\gfx\interface\goals\focus_GER_ascension_of_speer.dds   <- interface\goals_shine.gfx
+      82 x 76
+
+==== GFX_focus_GER_ascension_of_goring ====
+  [原版                      ] F:\Hearts of Iron IV\gfx\interface\goals\focus_GER_ascension_of_goring.dds   <- interface\goals.gfx
+      87 x 84
+  [原版                      ] F:\Hearts of Iron IV\gfx\interface\goals\focus_GER_ascension_of_goring.dds   <- interface\goals_shine.gfx
+      87 x 84
+
+==== GFX_focus_GER_ascension_of_himmler ====
+  [原版                      ] F:\Hearts of Iron IV\gfx\interface\goals\focus_GER_ascension_of_himmler.dds   <- interface\goals.gfx
+      100 x 88
+  [原版                      ] F:\Hearts of Iron IV\gfx\interface\goals\focus_GER_ascension_of_himmler.dds   <- interface\goals_shine.gfx
+      100 x 88
+
+==== GFX_focus_GER_ascension_of_goebbels ====
+  [原版                      ] F:\Hearts of Iron IV\gfx\interface\goals\focus_GER_ascension_of_goebbels.dds   <- interface\goals.gfx
+      94 x 81
+  [原版                      ] F:\Hearts of Iron IV\gfx\interface\goals\focus_GER_ascension_of_goebbels.dds   <- interface\goals_shine.gfx
+      94 x 81
+
+==== GFX_focus_GER_party_chancellor_hess ====
+  [原版                      ] F:\Hearts of Iron IV\gfx\interface\goals\focus_GER_party_chancellor_hess.dds   <- interface\goals.gfx
+      82 x 83
+  [原版                      ] F:\Hearts of Iron IV\gfx\interface\goals\focus_GER_party_chancellor_hess.dds   <- interface\goals_shine.gfx
+      82 x 83
+
+==== GFX_focus_GER_party_chancellor_bormann ====
+  [原版                      ] F:\Hearts of Iron IV\gfx\interface\goals\focus_GER_party_chancellor_bormann.dds   <- interface\goals.gfx
+      100 x 88
+  [原版                      ] F:\Hearts of Iron IV\gfx\interface\goals\focus_GER_party_chancellor_bormann.dds   <- interface\goals_shine.gfx
+      100 x 88
+
+==== GFX_focus_GER_fuhrerprinzip ====
+  [原版                      ] F:\Hearts of Iron IV\gfx\interface\goals\focus_GER_fuhrerprinzip_hess.dds   <- interface\goals.gfx
+      87 x 70
+  [原版                      ] F:\Hearts of Iron IV\gfx\interface\goals\focus_GER_fuhrerprinzip_hess.dds   <- interface\goals_shine.gfx
+      87 x 70
+

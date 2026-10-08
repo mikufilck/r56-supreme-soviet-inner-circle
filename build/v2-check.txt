@@ -1,0 +1,376 @@
+﻿=== 1. 括号配平 ===
+  ? gui(.gui)  左 146 / 右 146
+  ? inlay window(.txt)  左 340 / 右 340
+
+=== 2. window_name 与 .gui 窗口名一致 ===
+  ? window_name = hof_ic_ui_window  在 .gui 中找到
+
+=== 3. scripted_images 键 -> .gui 组件名 ===
+  ? scripted_images 键 hof_ic_leader_portrait -> .gui 有同名组件
+  ? scripted_images 键 hof_ic_seat_1_frame -> .gui 有同名组件
+  ? scripted_images 键 hof_ic_seat_1_portrait -> .gui 有同名组件
+  ? scripted_images 键 hof_ic_seat_2_frame -> .gui 有同名组件
+  ? scripted_images 键 hof_ic_seat_2_portrait -> .gui 有同名组件
+  ? scripted_images 键 hof_ic_seat_3_frame -> .gui 有同名组件
+  ? scripted_images 键 hof_ic_seat_3_portrait -> .gui 有同名组件
+  ? scripted_images 键 hof_ic_seat_4_frame -> .gui 有同名组件
+  ? scripted_images 键 hof_ic_seat_4_portrait -> .gui 有同名组件
+  ? scripted_images 键 hof_ic_seat_5_frame -> .gui 有同名组件
+  ? scripted_images 键 hof_ic_seat_5_portrait -> .gui 有同名组件
+  ? scripted_images 键 hof_ic_seat_6_frame -> .gui 有同名组件
+  ? scripted_images 键 hof_ic_seat_6_portrait -> .gui 有同名组件
+  ? scripted_images 键 hof_ic_seat_7_frame -> .gui 有同名组件
+  ? scripted_images 键 hof_ic_seat_7_portrait -> .gui 有同名组件
+
+=== 4. .gui 中 spriteType=\
+\ 的组件 -> 是否有 scripted_images 供给 ===
+  ? hof_ic_leader_portrait  有 scripted_images 供给
+  ? hof_ic_seat_1_frame  有 scripted_images 供给
+  ? hof_ic_seat_1_portrait  有 scripted_images 供给
+  ? hof_ic_seat_2_frame  有 scripted_images 供给
+  ? hof_ic_seat_2_portrait  有 scripted_images 供给
+  ? hof_ic_seat_3_frame  有 scripted_images 供给
+  ? hof_ic_seat_3_portrait  有 scripted_images 供给
+  ? hof_ic_seat_4_frame  有 scripted_images 供给
+  ? hof_ic_seat_4_portrait  有 scripted_images 供给
+  ? hof_ic_seat_5_frame  有 scripted_images 供给
+  ? hof_ic_seat_5_portrait  有 scripted_images 供给
+  ? hof_ic_seat_6_frame  有 scripted_images 供给
+  ? hof_ic_seat_6_portrait  有 scripted_images 供给
+  ? hof_ic_seat_7_frame  有 scripted_images 供给
+  ? hof_ic_seat_7_portrait  有 scripted_images 供给
+
+=== 5. .gui 引用的本地化键 ===
+  ? hof_ic_leader_name_text  在 .yml 中已定义
+  ? hof_ic_leader_title_text  在 .yml 中已定义
+  ? hof_ic_title_text  在 .yml 中已定义
+
+=== 6. .gui 引用的 sprite 是否存在 ===
+  ? GFX_hof_ic_candidate_slot  已定义
+  ? GFX_hof_ic_leader_frame  已定义
+  ? GFX_hof_ic_leader_ribbon  已定义
+  ? GFX_hof_ic_leader_title_box  已定义
+  ? GFX_hof_ic_seat_name_box  已定义
+  ? GFX_hof_ic_seat_trait_box  已定义
+  ? GFX_hof_ic_spotlight  已定义
+  ? GFX_hof_ic_window_bg  已定义
+
+=== 6b. mod 自身 .gfx 的 texturefile 是否存在 ===
+  ? GFX_hof_ic_window_bg -> gfx\interface\hof_ic\hof_ic_window_bg.dds
+  ? GFX_hof_ic_spotlight -> gfx\interface\hof_ic\hof_ic_spotlight.dds
+  ? GFX_hof_ic_leader_frame -> gfx\interface\hof_ic\hof_ic_leader_frame.dds
+  ? GFX_hof_ic_leader_ribbon -> gfx\interface\hof_ic\hof_ic_leader_ribbon.dds
+  ? GFX_hof_ic_leader_title_box -> gfx\interface\hof_ic\hof_ic_leader_title_box.dds
+  ? GFX_hof_ic_seat_frame_empty -> gfx\interface\hof_ic\hof_ic_seat_frame_empty.dds
+  ? GFX_hof_ic_seat_frame_filled -> gfx\interface\hof_ic\hof_ic_seat_frame_filled.dds
+  ? GFX_hof_ic_seat_name_box -> gfx\interface\hof_ic\hof_ic_seat_name_box.dds
+  ? GFX_hof_ic_seat_trait_box -> gfx\interface\hof_ic\hof_ic_seat_trait_box.dds
+  ? GFX_hof_ic_blank_portrait -> gfx\interface\hof_ic\hof_ic_blank_portrait.dds
+  ? GFX_hof_ic_candidate_slot -> gfx\interface\hof_ic\hof_ic_candidate_slot.dds
+  ? GFX_hof_ic_bukharin_abolish_the_tribute -> gfx\interface\hof_ic\focus\GFX_hof_ic_bukharin_abolish_the_tribute.dds
+  ? GFX_hof_ic_bukharin_abolish_the_tribute_shine -> gfx\interface\hof_ic\focus\GFX_hof_ic_bukharin_abolish_the_tribute.dds
+  ? GFX_hof_ic_bukharin_abolish_the_tribute_shine -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? ? -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? GFX_hof_ic_bukharin_alliance_is_the_axis -> gfx\interface\hof_ic\focus\GFX_hof_ic_bukharin_alliance_is_the_axis.dds
+  ? GFX_hof_ic_bukharin_alliance_is_the_axis_shine -> gfx\interface\hof_ic\focus\GFX_hof_ic_bukharin_alliance_is_the_axis.dds
+  ? GFX_hof_ic_bukharin_alliance_is_the_axis_shine -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? ? -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? GFX_hof_ic_bukharin_cooperatives_into_the_system -> gfx\interface\hof_ic\focus\GFX_hof_ic_bukharin_cooperatives_into_the_system.dds
+  ? GFX_hof_ic_bukharin_cooperatives_into_the_system_shine -> gfx\interface\hof_ic\focus\GFX_hof_ic_bukharin_cooperatives_into_the_system.dds
+  ? GFX_hof_ic_bukharin_cooperatives_into_the_system_shine -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? ? -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? GFX_hof_ic_bukharin_economics_of_transition -> gfx\interface\hof_ic\focus\GFX_hof_ic_bukharin_economics_of_transition.dds
+  ? GFX_hof_ic_bukharin_economics_of_transition_shine -> gfx\interface\hof_ic\focus\GFX_hof_ic_bukharin_economics_of_transition.dds
+  ? GFX_hof_ic_bukharin_economics_of_transition_shine -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? ? -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? GFX_hof_ic_bukharin_enrich_yourselves -> gfx\interface\hof_ic\focus\GFX_hof_ic_bukharin_enrich_yourselves.dds
+  ? GFX_hof_ic_bukharin_enrich_yourselves_shine -> gfx\interface\hof_ic\focus\GFX_hof_ic_bukharin_enrich_yourselves.dds
+  ? GFX_hof_ic_bukharin_enrich_yourselves_shine -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? ? -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? GFX_hof_ic_bukharin_left_communism -> gfx\interface\hof_ic\focus\GFX_hof_ic_bukharin_left_communism.dds
+  ? GFX_hof_ic_bukharin_left_communism_shine -> gfx\interface\hof_ic\focus\GFX_hof_ic_bukharin_left_communism.dds
+  ? GFX_hof_ic_bukharin_left_communism_shine -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? ? -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? GFX_hof_ic_bukharin_nep_is_not_a_retreat -> gfx\interface\hof_ic\focus\GFX_hof_ic_bukharin_nep_is_not_a_retreat.dds
+  ? GFX_hof_ic_bukharin_nep_is_not_a_retreat_shine -> gfx\interface\hof_ic\focus\GFX_hof_ic_bukharin_nep_is_not_a_retreat.dds
+  ? GFX_hof_ic_bukharin_nep_is_not_a_retreat_shine -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? ? -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? GFX_hof_ic_bukharin_proportional_development -> gfx\interface\hof_ic\focus\GFX_hof_ic_bukharin_proportional_development.dds
+  ? GFX_hof_ic_bukharin_proportional_development_shine -> gfx\interface\hof_ic\focus\GFX_hof_ic_bukharin_proportional_development.dds
+  ? GFX_hof_ic_bukharin_proportional_development_shine -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? ? -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? GFX_hof_ic_bukharin_socialism_in_one_country -> gfx\interface\hof_ic\focus\GFX_hof_ic_bukharin_socialism_in_one_country.dds
+  ? GFX_hof_ic_bukharin_socialism_in_one_country_shine -> gfx\interface\hof_ic\focus\GFX_hof_ic_bukharin_socialism_in_one_country.dds
+  ? GFX_hof_ic_bukharin_socialism_in_one_country_shine -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? ? -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? GFX_hof_ic_seat_aleksandr_shlyapnikov -> gfx\interface\hof_ic\focus\GFX_hof_ic_seat_aleksandr_shlyapnikov.dds
+  ? GFX_hof_ic_seat_aleksandr_shlyapnikov_shine -> gfx\interface\hof_ic\focus\GFX_hof_ic_seat_aleksandr_shlyapnikov.dds
+  ? GFX_hof_ic_seat_aleksandr_shlyapnikov_shine -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? ? -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? GFX_hof_ic_seat_aleksey_rykov -> gfx\interface\hof_ic\focus\GFX_hof_ic_seat_aleksey_rykov.dds
+  ? GFX_hof_ic_seat_aleksey_rykov_shine -> gfx\interface\hof_ic\focus\GFX_hof_ic_seat_aleksey_rykov.dds
+  ? GFX_hof_ic_seat_aleksey_rykov_shine -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? ? -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? GFX_hof_ic_seat_georgy_malenkow -> gfx\interface\hof_ic\focus\GFX_hof_ic_seat_georgy_malenkow.dds
+  ? GFX_hof_ic_seat_georgy_malenkow_shine -> gfx\interface\hof_ic\focus\GFX_hof_ic_seat_georgy_malenkow.dds
+  ? GFX_hof_ic_seat_georgy_malenkow_shine -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? ? -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? GFX_hof_ic_seat_grigory_sokolnikov -> gfx\interface\hof_ic\focus\GFX_hof_ic_seat_grigory_sokolnikov.dds
+  ? GFX_hof_ic_seat_grigory_sokolnikov_shine -> gfx\interface\hof_ic\focus\GFX_hof_ic_seat_grigory_sokolnikov.dds
+  ? GFX_hof_ic_seat_grigory_sokolnikov_shine -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? ? -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? GFX_hof_ic_seat_grigory_zinovyev -> gfx\interface\hof_ic\focus\GFX_hof_ic_seat_grigory_zinovyev.dds
+  ? GFX_hof_ic_seat_grigory_zinovyev_shine -> gfx\interface\hof_ic\focus\GFX_hof_ic_seat_grigory_zinovyev.dds
+  ? GFX_hof_ic_seat_grigory_zinovyev_shine -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? ? -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? GFX_hof_ic_seat_ivan_smirnov -> gfx\interface\hof_ic\focus\GFX_hof_ic_seat_ivan_smirnov.dds
+  ? GFX_hof_ic_seat_ivan_smirnov_shine -> gfx\interface\hof_ic\focus\GFX_hof_ic_seat_ivan_smirnov.dds
+  ? GFX_hof_ic_seat_ivan_smirnov_shine -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? ? -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? GFX_hof_ic_seat_ivar_smilga -> gfx\interface\hof_ic\focus\GFX_hof_ic_seat_ivar_smilga.dds
+  ? GFX_hof_ic_seat_ivar_smilga_shine -> gfx\interface\hof_ic\focus\GFX_hof_ic_seat_ivar_smilga.dds
+  ? GFX_hof_ic_seat_ivar_smilga_shine -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? ? -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? GFX_hof_ic_seat_karl_radek -> gfx\interface\hof_ic\focus\GFX_hof_ic_seat_karl_radek.dds
+  ? GFX_hof_ic_seat_karl_radek_shine -> gfx\interface\hof_ic\focus\GFX_hof_ic_seat_karl_radek.dds
+  ? GFX_hof_ic_seat_karl_radek_shine -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? ? -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? GFX_hof_ic_seat_kliment_voroshilov -> gfx\interface\hof_ic\focus\GFX_hof_ic_seat_kliment_voroshilov.dds
+  ? GFX_hof_ic_seat_kliment_voroshilov_shine -> gfx\interface\hof_ic\focus\GFX_hof_ic_seat_kliment_voroshilov.dds
+  ? GFX_hof_ic_seat_kliment_voroshilov_shine -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? ? -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? GFX_hof_ic_seat_leonid_serebryakov -> gfx\interface\hof_ic\focus\GFX_hof_ic_seat_leonid_serebryakov.dds
+  ? GFX_hof_ic_seat_leonid_serebryakov_shine -> gfx\interface\hof_ic\focus\GFX_hof_ic_seat_leonid_serebryakov.dds
+  ? GFX_hof_ic_seat_leonid_serebryakov_shine -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? ? -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? GFX_hof_ic_seat_lev_kamenev -> gfx\interface\hof_ic\focus\GFX_hof_ic_seat_lev_kamenev.dds
+  ? GFX_hof_ic_seat_lev_kamenev_shine -> gfx\interface\hof_ic\focus\GFX_hof_ic_seat_lev_kamenev.dds
+  ? GFX_hof_ic_seat_lev_kamenev_shine -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? ? -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? GFX_hof_ic_seat_lev_trotsky -> gfx\interface\hof_ic\focus\GFX_hof_ic_seat_lev_trotsky.dds
+  ? GFX_hof_ic_seat_lev_trotsky_shine -> gfx\interface\hof_ic\focus\GFX_hof_ic_seat_lev_trotsky.dds
+  ? GFX_hof_ic_seat_lev_trotsky_shine -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? ? -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? GFX_hof_ic_seat_maksim_litvinov -> gfx\interface\hof_ic\focus\GFX_hof_ic_seat_maksim_litvinov.dds
+  ? GFX_hof_ic_seat_maksim_litvinov_shine -> gfx\interface\hof_ic\focus\GFX_hof_ic_seat_maksim_litvinov.dds
+  ? GFX_hof_ic_seat_maksim_litvinov_shine -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? ? -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? GFX_hof_ic_seat_martemyan_ryutin -> gfx\interface\hof_ic\focus\GFX_hof_ic_seat_martemyan_ryutin.dds
+  ? GFX_hof_ic_seat_martemyan_ryutin_shine -> gfx\interface\hof_ic\focus\GFX_hof_ic_seat_martemyan_ryutin.dds
+  ? GFX_hof_ic_seat_martemyan_ryutin_shine -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? ? -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? GFX_hof_ic_seat_mikhail_kalinin -> gfx\interface\hof_ic\focus\GFX_hof_ic_seat_mikhail_kalinin.dds
+  ? GFX_hof_ic_seat_mikhail_kalinin_shine -> gfx\interface\hof_ic\focus\GFX_hof_ic_seat_mikhail_kalinin.dds
+  ? GFX_hof_ic_seat_mikhail_kalinin_shine -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? ? -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? GFX_hof_ic_seat_mikhail_tomsky -> gfx\interface\hof_ic\focus\GFX_hof_ic_seat_mikhail_tomsky.dds
+  ? GFX_hof_ic_seat_mikhail_tomsky_shine -> gfx\interface\hof_ic\focus\GFX_hof_ic_seat_mikhail_tomsky.dds
+  ? GFX_hof_ic_seat_mikhail_tomsky_shine -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? ? -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? GFX_hof_ic_seat_mikhail_tukhachevsky -> gfx\interface\hof_ic\focus\GFX_hof_ic_seat_mikhail_tukhachevsky.dds
+  ? GFX_hof_ic_seat_mikhail_tukhachevsky_shine -> gfx\interface\hof_ic\focus\GFX_hof_ic_seat_mikhail_tukhachevsky.dds
+  ? GFX_hof_ic_seat_mikhail_tukhachevsky_shine -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? ? -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? GFX_hof_ic_seat_nikita_khrushchyov -> gfx\interface\hof_ic\focus\GFX_hof_ic_seat_nikita_khrushchyov.dds
+  ? GFX_hof_ic_seat_nikita_khrushchyov_shine -> gfx\interface\hof_ic\focus\GFX_hof_ic_seat_nikita_khrushchyov.dds
+  ? GFX_hof_ic_seat_nikita_khrushchyov_shine -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? ? -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? GFX_hof_ic_seat_nikolay_bukharin -> gfx\interface\hof_ic\focus\GFX_hof_ic_seat_nikolay_bukharin.dds
+  ? GFX_hof_ic_seat_nikolay_bukharin_shine -> gfx\interface\hof_ic\focus\GFX_hof_ic_seat_nikolay_bukharin.dds
+  ? GFX_hof_ic_seat_nikolay_bukharin_shine -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? ? -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? GFX_hof_ic_seat_nikolay_voznesensky -> gfx\interface\hof_ic\focus\GFX_hof_ic_seat_nikolay_voznesensky.dds
+  ? GFX_hof_ic_seat_nikolay_voznesensky_shine -> gfx\interface\hof_ic\focus\GFX_hof_ic_seat_nikolay_voznesensky.dds
+  ? GFX_hof_ic_seat_nikolay_voznesensky_shine -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? ? -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? GFX_hof_ic_seat_pyotr_smirnov -> gfx\interface\hof_ic\focus\GFX_hof_ic_seat_pyotr_smirnov.dds
+  ? GFX_hof_ic_seat_pyotr_smirnov_shine -> gfx\interface\hof_ic\focus\GFX_hof_ic_seat_pyotr_smirnov.dds
+  ? GFX_hof_ic_seat_pyotr_smirnov_shine -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? ? -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? GFX_hof_ic_seat_yevgeny_preobrazhensky -> gfx\interface\hof_ic\focus\GFX_hof_ic_seat_yevgeny_preobrazhensky.dds
+  ? GFX_hof_ic_seat_yevgeny_preobrazhensky_shine -> gfx\interface\hof_ic\focus\GFX_hof_ic_seat_yevgeny_preobrazhensky.dds
+  ? GFX_hof_ic_seat_yevgeny_preobrazhensky_shine -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? ? -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? GFX_hof_ic_trotsky_accelerated_industrialization -> gfx\interface\hof_ic\focus\GFX_hof_ic_trotsky_accelerated_industrialization.dds
+  ? GFX_hof_ic_trotsky_accelerated_industrialization_shine -> gfx\interface\hof_ic\focus\GFX_hof_ic_trotsky_accelerated_industrialization.dds
+  ? GFX_hof_ic_trotsky_accelerated_industrialization_shine -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? ? -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? GFX_hof_ic_trotsky_against_partisan_warfare -> gfx\interface\hof_ic\focus\GFX_hof_ic_trotsky_against_partisan_warfare.dds
+  ? GFX_hof_ic_trotsky_against_partisan_warfare_shine -> gfx\interface\hof_ic\focus\GFX_hof_ic_trotsky_against_partisan_warfare.dds
+  ? GFX_hof_ic_trotsky_against_partisan_warfare_shine -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? ? -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? GFX_hof_ic_trotsky_against_the_bureaucracy -> gfx\interface\hof_ic\focus\GFX_hof_ic_trotsky_against_the_bureaucracy.dds
+  ? GFX_hof_ic_trotsky_against_the_bureaucracy_shine -> gfx\interface\hof_ic\focus\GFX_hof_ic_trotsky_against_the_bureaucracy.dds
+  ? GFX_hof_ic_trotsky_against_the_bureaucracy_shine -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? ? -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? GFX_hof_ic_trotsky_build_the_red_army -> gfx\interface\hof_ic\focus\GFX_hof_ic_trotsky_build_the_red_army.dds
+  ? GFX_hof_ic_trotsky_build_the_red_army_shine -> gfx\interface\hof_ic\focus\GFX_hof_ic_trotsky_build_the_red_army.dds
+  ? GFX_hof_ic_trotsky_build_the_red_army_shine -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? ? -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? GFX_hof_ic_trotsky_labour_armies -> gfx\interface\hof_ic\focus\GFX_hof_ic_trotsky_labour_armies.dds
+  ? GFX_hof_ic_trotsky_labour_armies_shine -> gfx\interface\hof_ic\focus\GFX_hof_ic_trotsky_labour_armies.dds
+  ? GFX_hof_ic_trotsky_labour_armies_shine -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? ? -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? GFX_hof_ic_trotsky_limited_market_reforms -> gfx\interface\hof_ic\focus\GFX_hof_ic_trotsky_limited_market_reforms.dds
+  ? GFX_hof_ic_trotsky_limited_market_reforms_shine -> gfx\interface\hof_ic\focus\GFX_hof_ic_trotsky_limited_market_reforms.dds
+  ? GFX_hof_ic_trotsky_limited_market_reforms_shine -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? ? -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? GFX_hof_ic_trotsky_military_specialists -> gfx\interface\hof_ic\focus\GFX_hof_ic_trotsky_military_specialists.dds
+  ? GFX_hof_ic_trotsky_military_specialists_shine -> gfx\interface\hof_ic\focus\GFX_hof_ic_trotsky_military_specialists.dds
+  ? GFX_hof_ic_trotsky_military_specialists_shine -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? ? -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? GFX_hof_ic_trotsky_permanent_revolution -> gfx\interface\hof_ic\focus\GFX_hof_ic_trotsky_permanent_revolution.dds
+  ? GFX_hof_ic_trotsky_permanent_revolution_shine -> gfx\interface\hof_ic\focus\GFX_hof_ic_trotsky_permanent_revolution.dds
+  ? GFX_hof_ic_trotsky_permanent_revolution_shine -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? ? -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? GFX_hof_ic_trotsky_socialism_in_one_country -> gfx\interface\hof_ic\focus\GFX_hof_ic_trotsky_socialism_in_one_country.dds
+  ? GFX_hof_ic_trotsky_socialism_in_one_country_shine -> gfx\interface\hof_ic\focus\GFX_hof_ic_trotsky_socialism_in_one_country.dds
+  ? GFX_hof_ic_trotsky_socialism_in_one_country_shine -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? ? -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? GFX_hof_ic_trotsky_state_planning -> gfx\interface\hof_ic\focus\GFX_hof_ic_trotsky_state_planning.dds
+  ? GFX_hof_ic_trotsky_state_planning_shine -> gfx\interface\hof_ic\focus\GFX_hof_ic_trotsky_state_planning.dds
+  ? GFX_hof_ic_trotsky_state_planning_shine -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? ? -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? GFX_hof_ic_trotsky_the_builder_of_the_state -> gfx\interface\hof_ic\focus\GFX_hof_ic_trotsky_the_builder_of_the_state.dds
+  ? GFX_hof_ic_trotsky_the_builder_of_the_state_shine -> gfx\interface\hof_ic\focus\GFX_hof_ic_trotsky_the_builder_of_the_state.dds
+  ? GFX_hof_ic_trotsky_the_builder_of_the_state_shine -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? ? -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? GFX_hof_ic_trotsky_the_chinese_question -> gfx\interface\hof_ic\focus\GFX_hof_ic_trotsky_the_chinese_question.dds
+  ? GFX_hof_ic_trotsky_the_chinese_question_shine -> gfx\interface\hof_ic\focus\GFX_hof_ic_trotsky_the_chinese_question.dds
+  ? GFX_hof_ic_trotsky_the_chinese_question_shine -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? ? -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? GFX_hof_ic_trotsky_the_comintern_manifesto -> gfx\interface\hof_ic\focus\GFX_hof_ic_trotsky_the_comintern_manifesto.dds
+  ? GFX_hof_ic_trotsky_the_comintern_manifesto_shine -> gfx\interface\hof_ic\focus\GFX_hof_ic_trotsky_the_comintern_manifesto.dds
+  ? GFX_hof_ic_trotsky_the_comintern_manifesto_shine -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? ? -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? GFX_hof_ic_trotsky_the_new_course -> gfx\interface\hof_ic\focus\GFX_hof_ic_trotsky_the_new_course.dds
+  ? GFX_hof_ic_trotsky_the_new_course_shine -> gfx\interface\hof_ic\focus\GFX_hof_ic_trotsky_the_new_course.dds
+  ? GFX_hof_ic_trotsky_the_new_course_shine -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? ? -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? GFX_hof_ic_trotsky_the_permanent_revolutionary -> gfx\interface\hof_ic\focus\GFX_hof_ic_trotsky_the_permanent_revolutionary.dds
+  ? GFX_hof_ic_trotsky_the_permanent_revolutionary_shine -> gfx\interface\hof_ic\focus\GFX_hof_ic_trotsky_the_permanent_revolutionary.dds
+  ? GFX_hof_ic_trotsky_the_permanent_revolutionary_shine -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? ? -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? GFX_hof_ic_trotsky_uneven_and_combined_development -> gfx\interface\hof_ic\focus\GFX_hof_ic_trotsky_uneven_and_combined_development.dds
+  ? GFX_hof_ic_trotsky_uneven_and_combined_development_shine -> gfx\interface\hof_ic\focus\GFX_hof_ic_trotsky_uneven_and_combined_development.dds
+  ? GFX_hof_ic_trotsky_uneven_and_combined_development_shine -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? ? -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? GFX_hof_ic_trotsky_united_front -> gfx\interface\hof_ic\focus\GFX_hof_ic_trotsky_united_front.dds
+  ? GFX_hof_ic_trotsky_united_front_shine -> gfx\interface\hof_ic\focus\GFX_hof_ic_trotsky_united_front.dds
+  ? GFX_hof_ic_trotsky_united_front_shine -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? ? -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? GFX_hof_ic_rykov_food_supply_commissar -> gfx\interface\hof_ic\focus\GFX_hof_ic_seat_aleksey_rykov.dds
+  ? GFX_hof_ic_rykov_food_supply_commissar_shine -> gfx\interface\hof_ic\focus\GFX_hof_ic_seat_aleksey_rykov.dds
+  ? GFX_hof_ic_rykov_food_supply_commissar_shine -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? ? -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? GFX_hof_ic_rykov_labour_defence_chair -> gfx\interface\hof_ic\focus\GFX_hof_ic_seat_aleksey_rykov.dds
+  ? GFX_hof_ic_rykov_labour_defence_chair_shine -> gfx\interface\hof_ic\focus\GFX_hof_ic_seat_aleksey_rykov.dds
+  ? GFX_hof_ic_rykov_labour_defence_chair_shine -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? ? -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? GFX_hof_ic_rykov_labour_defence_council -> gfx\interface\hof_ic\focus\GFX_hof_ic_seat_aleksey_rykov.dds
+  ? GFX_hof_ic_rykov_labour_defence_council_shine -> gfx\interface\hof_ic\focus\GFX_hof_ic_seat_aleksey_rykov.dds
+  ? GFX_hof_ic_rykov_labour_defence_council_shine -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? ? -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? GFX_hof_ic_rykov_sponsor_aviation -> gfx\interface\hof_ic\focus\GFX_hof_ic_seat_aleksey_rykov.dds
+  ? GFX_hof_ic_rykov_sponsor_aviation_shine -> gfx\interface\hof_ic\focus\GFX_hof_ic_seat_aleksey_rykov.dds
+  ? GFX_hof_ic_rykov_sponsor_aviation_shine -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? ? -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? GFX_hof_ic_rykov_supreme_economic_council -> gfx\interface\hof_ic\focus\GFX_hof_ic_seat_aleksey_rykov.dds
+  ? GFX_hof_ic_rykov_supreme_economic_council_shine -> gfx\interface\hof_ic\focus\GFX_hof_ic_seat_aleksey_rykov.dds
+  ? GFX_hof_ic_rykov_supreme_economic_council_shine -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? ? -> gfx\interface\goals\shine_overlay.dds  【引用原版素材】
+  ? GFX_hof_ic_portrait_lev_trotsky -> gfx\leaders\SOV\r56_portrait_SOV_Leon_Trotsky.dds  【引用R56素材】
+  ? GFX_hof_ic_portrait_nikolay_bukharin -> gfx\leaders\SOV\portrait_SOV_nikolay_bukharin.dds  【引用DLC:dlc034_no_step_back素材】
+  ? GFX_hof_ic_portrait_aleksey_rykov -> gfx\leaders\SOV\portrait_SOV_aleksey_rykov.dds  【引用DLC:dlc034_no_step_back素材】
+  ? GFX_hof_ic_portrait_grigory_zinovyev -> gfx\leaders\SOV\portrait_SOV_grigory_zinovyev.dds  【引用原版素材】
+  ? GFX_hof_ic_portrait_lev_kamenev -> gfx\leaders\SOV\portrait_SOV_lev_kamenev.dds  【引用原版素材】
+  ? GFX_hof_ic_portrait_ivan_smirnov -> gfx\leaders\SOV\portrait_SOV_ivan_smirnov.dds  【引用原版素材】
+  ? GFX_hof_ic_portrait_leonid_serebryakov -> gfx\leaders\SOV\r56_portrait_SOV_Leonid_Serebryakov.dds  【引用R56素材】
+  ? GFX_hof_ic_portrait_yevgeny_preobrazhensky -> gfx\interface\hof_ic\portraits\hof_portrait_SOV_yevgeny_preobrazhensky.dds
+  ? GFX_hof_ic_portrait_karl_radek -> gfx\interface\hof_ic\portraits\hof_portrait_SOV_karl_radek.dds
+  ? GFX_hof_ic_portrait_ivar_smilga -> gfx\interface\hof_ic\portraits\hof_portrait_SOV_ivar_smilga.dds
+  ? GFX_hof_ic_portrait_mikhail_tomsky -> gfx\interface\hof_ic\portraits\hof_portrait_SOV_mikhail_tomsky.dds
+  ? GFX_hof_ic_portrait_martemyan_ryutin -> gfx\interface\hof_ic\portraits\hof_portrait_SOV_martemyan_ryutin.dds
+  ? GFX_hof_ic_portrait_aleksandr_shlyapnikov -> gfx\interface\hof_ic\portraits\hof_portrait_SOV_aleksandr_shlyapnikov.dds
+  ? GFX_hof_ic_portrait_mikhail_kalinin -> gfx\interface\hof_ic\portraits\hof_portrait_SOV_mikhail_kalinin.dds
+  ? GFX_hof_ic_portrait_maksim_litvinov -> gfx\interface\hof_ic\portraits\hof_portrait_SOV_maksim_litvinov.dds
+  ? GFX_hof_ic_portrait_grigory_sokolnikov -> gfx\interface\hof_ic\portraits\hof_portrait_SOV_grigory_sokolnikov.dds
+  ? GFX_hof_ic_portrait_mikhail_tukhachevsky -> gfx\leaders\SOV\Portrait_Soviet_Mikhail_Tukhachevsky.dds  【引用原版素材】
+  ? GFX_hof_ic_portrait_nikolay_voznesensky -> gfx\interface\hof_ic\portraits\hof_portrait_SOV_nikolay_voznesensky.dds
+  ? GFX_hof_ic_portrait_pyotr_smirnov -> gfx\interface\hof_ic\portraits\hof_portrait_SOV_pyotr_smirnov.dds
+  ? GFX_hof_ic_portrait_georgy_malenkow -> gfx\leaders\SOV\r56_portrait_SOV_Georgy_Malenkov.dds  【引用R56素材】
+  ? GFX_hof_ic_portrait_nikita_khrushchyov -> gfx\leaders\SOV\r56_portrait_SOV_Nikita_Khrushchev.dds  【引用R56素材】
+  ? GFX_hof_ic_portrait_kliment_voroshilov -> gfx\leaders\SOV\Portrait_Soviet_Kliment_Voroshilov.dds  【引用原版素材】
+  ? GFX_hof_ic_cand_lev_trotsky -> gfx\leaders\SOV\r56_portrait_SOV_Leon_Trotsky.dds  【引用R56素材】
+  ? GFX_hof_ic_cand_nikolay_bukharin -> gfx\leaders\SOV\portrait_SOV_nikolay_bukharin.dds  【引用DLC:dlc034_no_step_back素材】
+  ? GFX_hof_ic_cand_aleksey_rykov -> gfx\leaders\SOV\portrait_SOV_aleksey_rykov.dds  【引用DLC:dlc034_no_step_back素材】
+  ? GFX_hof_ic_cand_grigory_zinovyev -> gfx\leaders\SOV\portrait_SOV_grigory_zinovyev.dds  【引用原版素材】
+  ? GFX_hof_ic_cand_lev_kamenev -> gfx\leaders\SOV\portrait_SOV_lev_kamenev.dds  【引用原版素材】
+  ? GFX_hof_ic_cand_ivan_smirnov -> gfx\leaders\SOV\portrait_SOV_ivan_smirnov.dds  【引用原版素材】
+  ? GFX_hof_ic_cand_leonid_serebryakov -> gfx\leaders\SOV\r56_portrait_SOV_Leonid_Serebryakov.dds  【引用R56素材】
+  ? GFX_hof_ic_cand_yevgeny_preobrazhensky -> gfx\interface\hof_ic\portraits\hof_portrait_SOV_yevgeny_preobrazhensky.dds
+  ? GFX_hof_ic_cand_karl_radek -> gfx\interface\hof_ic\portraits\hof_portrait_SOV_karl_radek.dds
+  ? GFX_hof_ic_cand_ivar_smilga -> gfx\interface\hof_ic\portraits\hof_portrait_SOV_ivar_smilga.dds
+  ? GFX_hof_ic_cand_mikhail_tomsky -> gfx\interface\hof_ic\portraits\hof_portrait_SOV_mikhail_tomsky.dds
+  ? GFX_hof_ic_cand_martemyan_ryutin -> gfx\interface\hof_ic\portraits\hof_portrait_SOV_martemyan_ryutin.dds
+  ? GFX_hof_ic_cand_aleksandr_shlyapnikov -> gfx\interface\hof_ic\portraits\hof_portrait_SOV_aleksandr_shlyapnikov.dds
+  ? GFX_hof_ic_cand_mikhail_kalinin -> gfx\interface\hof_ic\portraits\hof_portrait_SOV_mikhail_kalinin.dds
+  ? GFX_hof_ic_cand_maksim_litvinov -> gfx\interface\hof_ic\portraits\hof_portrait_SOV_maksim_litvinov.dds
+  ? GFX_hof_ic_cand_grigory_sokolnikov -> gfx\interface\hof_ic\portraits\hof_portrait_SOV_grigory_sokolnikov.dds
+  ? GFX_hof_ic_cand_mikhail_tukhachevsky -> gfx\leaders\SOV\Portrait_Soviet_Mikhail_Tukhachevsky.dds  【引用原版素材】
+  ? GFX_hof_ic_cand_nikolay_voznesensky -> gfx\interface\hof_ic\portraits\hof_portrait_SOV_nikolay_voznesensky.dds
+  ? GFX_hof_ic_cand_pyotr_smirnov -> gfx\interface\hof_ic\portraits\hof_portrait_SOV_pyotr_smirnov.dds
+  ? GFX_hof_ic_cand_georgy_malenkow -> gfx\leaders\SOV\r56_portrait_SOV_Georgy_Malenkov.dds  【引用R56素材】
+  ? GFX_hof_ic_cand_nikita_khrushchyov -> gfx\leaders\SOV\r56_portrait_SOV_Nikita_Khrushchev.dds  【引用R56素材】
+  ? GFX_hof_ic_cand_kliment_voroshilov -> gfx\leaders\SOV\Portrait_Soviet_Kliment_Voroshilov.dds  【引用原版素材】
+
+=== 7. 苏联树内的挂载点与可见条件 ===
+  ? soviet.txt 内已声明 inlay_window -> hof_ic_inlay_window
+  ? 可见条件所依赖的国策 hof_ic_commissar 存在于 soviet.txt
+  ? 注入块无字面量转义序列
+
+=== 8. 本地化文件编码 ===
+  ? hof_ic_l_simp_chinese.yml  BOM / 文件名后缀 / 首行 均正确
+  ? hof_ic_roster_l_simp_chinese.yml  BOM / 文件名后缀 / 首行 均正确
+  ? hof_sino_l_simp_chinese.yml  BOM / 文件名后缀 / 首行 均正确
+
+=== 9. S3 交叉引用 ===
+  ? SOV 树里 49 个 hof_ic_* 调用全部有定义
+  ? .gui 里 14 个 context_aware_text 键全部有定义
+  ? 所有 context_aware_text 都带了方括号或引号
+  ? inlay window 里 25 个 sprite 已全部注册
+  ? 动态文本里 46 个本地化键全部有定义
+  ? 22 个入口国策的名称与说明本地化键齐全
+  ? 注入内容与 inject-sov-seats.txt 逐行一致（核对 3034 行）
+
+=== 10. 中苏联合国策（joint_focus）===
+  ? hof_sino_joint.txt 是根级定义（无 focus_tree 包裹）
+  ? 解析到 3 个 joint_focus：hof_sino_treaty_of_alliance, hof_sino_joint_industry, hof_sino_joint_defense
+  ? hof_sino_treaty_of_alliance 已被 SOV 与 PRC 两棵树共同引用
+  ? hof_sino_joint_industry 已被 SOV 与 PRC 两棵树共同引用
+  ? hof_sino_joint_defense 已被 SOV 与 PRC 两棵树共同引用
+  ? 3 个联合国策的名称与说明本地化键齐全
+  ? joint_trigger 引用的 1 个触发器均有定义
+  ? 触发器提示文案键 1 个均有定义
+
+=== 11. S3 德式核心圈机制 ===
+  ? 德式机制三个文件齐全（dynamic_modifiers / ideas / events）
+  ? 角色 idea 外层结构正确（ideas = { hidden_ideas = { } }，职务不占精神格）
+  ? 动态民族精神容器 hof_ic_supreme_soviet_dm 已定义
+  ? soviet.txt 挂载的 4 个动态修正全部有定义
+  ? 原版 SOV_the_supreme_soviet 已无 hub 补丁标记（0/0）；DM 转由自建 hof_ic_commissar 挂载
+  ? 引用的 30 个角色 idea 全部有定义
+  ? 席位首级 idea 共 22 个（与花名册 22 人一一对应）；含职务分级共 30 个
+  ? 职务分级 8 个全部被 sync_rank 引用
+  ? 满席替换事件有 7 个选项，覆盖槽位 1..7
+  ? 事件命名空间 = heartofiron
+  ? 引用的 1 个事件全部有定义
+  ? 动态修正工具条键 1 个均有定义
+  ? 槽位替换 / 移除效果各 7 条
+
+
+=== 12. 国策图标 sprite 注册 ===
+  ? 图标 .gfx 引用的自家贴图全部存在
+  ? 国策引用的 53 个专属图标全部已注册，且都带 _shine
+  ? 图标张数不匹配：贴图 48 张 / 注册 53 个
+==================== 失败项: 1 ====================

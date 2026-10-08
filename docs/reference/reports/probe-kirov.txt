@@ -1,0 +1,212 @@
+﻿=== 1. 哪个 sprite 用了 idea_SOV_kirov.dds ===
+  F:\Hearts of Iron IV  ->  sprite = GFX_idea_SOV_kirov   [ideas.gfx]
+
+=== 2. 谁引用了 kirov 相关的 idea / 角色 ===
+  [Hearts of Iron IV] australia.txt:2515  AST_kirov = {
+  [Hearts of Iron IV] australia.txt:2516  name = kirov
+  [Hearts of Iron IV] australia.txt:2517  picture = SOV_kirov
+  [Hearts of Iron IV] belgium.txt:937  BEL_kirov = {
+  [Hearts of Iron IV] belgium.txt:938  name = kirov
+  [Hearts of Iron IV] belgium.txt:940  picture = SOV_kirov
+  [Hearts of Iron IV] SOV.txt:5552  SOV_kirov = {
+  [Hearts of Iron IV] SOV.txt:5554  picture = SOV_kirov
+  [Hearts of Iron IV] SOV.txt:5562  NOT = { has_country_flag = SOV_merge_tank_kirov_1_flag }
+  [Hearts of Iron IV] SOV.txt:5563  NOT = { has_country_flag = SOV_merge_tank_kirov_2_flag }
+  [Hearts of Iron IV] SOV.txt:5564  NOT = { has_country_flag = SOV_merge_tank_kirov_3_flag }
+  [Hearts of Iron IV] SOV.txt:5578  SOV_kirov_1 = {
+  [Hearts of Iron IV] SOV.txt:5579  name = SOV_kirov
+  [Hearts of Iron IV] SOV.txt:5581  picture = SOV_kirov
+  [Hearts of Iron IV] SOV.txt:5589  has_country_flag = SOV_merge_tank_kirov_1_flag
+  [Hearts of Iron IV] SOV.txt:5590  NOT = { has_country_flag = SOV_merge_tank_kirov_2_flag }
+  [Hearts of Iron IV] SOV.txt:5591  NOT = { has_country_flag = SOV_merge_tank_kirov_3_flag }
+  [Hearts of Iron IV] SOV.txt:5608  SOV_kirov_2 = {
+  [Hearts of Iron IV] SOV.txt:5609  name = SOV_kirov
+  [Hearts of Iron IV] SOV.txt:5611  picture = SOV_kirov
+  [Hearts of Iron IV] SOV.txt:5619  has_country_flag = SOV_merge_tank_kirov_2_flag
+  [Hearts of Iron IV] SOV.txt:5620  NOT = { has_country_flag = SOV_merge_tank_kirov_1_flag }
+  [Hearts of Iron IV] SOV.txt:5621  NOT = { has_country_flag = SOV_merge_tank_kirov_3_flag }
+  [Hearts of Iron IV] SOV.txt:5641  SOV_kirov_3 = {
+  [Hearts of Iron IV] SOV.txt:5642  name = SOV_kirov
+  [Hearts of Iron IV] SOV.txt:5644  picture = SOV_kirov
+  [Hearts of Iron IV] SOV.txt:5652  has_country_flag = SOV_merge_tank_kirov_3_flag
+  [Hearts of Iron IV] SOV.txt:5653  NOT = { has_country_flag = SOV_merge_tank_kirov_1_flag }
+  [Hearts of Iron IV] SOV.txt:5654  NOT = { has_country_flag = SOV_merge_tank_kirov_2_flag }
+  [Hearts of Iron IV] SOV.txt:5671  SOV_kirov_1_2 = {
+  [Hearts of Iron IV] SOV.txt:5672  name = SOV_kirov
+  [Hearts of Iron IV] SOV.txt:5674  picture = SOV_kirov
+  [Hearts of Iron IV] SOV.txt:5682  has_country_flag = SOV_merge_tank_kirov_1_flag
+  [Hearts of Iron IV] SOV.txt:5683  has_country_flag = SOV_merge_tank_kirov_2_flag
+  [Hearts of Iron IV] SOV.txt:5684  NOT = { has_country_flag = SOV_merge_tank_kirov_3_flag }
+  [Hearts of Iron IV] SOV.txt:5702  SOV_kirov_1_3 = {
+  [Hearts of Iron IV] SOV.txt:5703  name = SOV_kirov
+  [Hearts of Iron IV] SOV.txt:5705  picture = SOV_kirov
+  [Hearts of Iron IV] SOV.txt:5713  has_country_flag = SOV_merge_tank_kirov_1_flag
+  [Hearts of Iron IV] SOV.txt:5714  has_country_flag = SOV_merge_tank_kirov_3_flag
+  [Hearts of Iron IV] SOV.txt:5715  NOT = { has_country_flag = SOV_merge_tank_kirov_2_flag }
+  [Hearts of Iron IV] SOV.txt:5733  SOV_kirov_2_3 = {
+  [Hearts of Iron IV] SOV.txt:5734  name = SOV_kirov
+  [Hearts of Iron IV] SOV.txt:5736  picture = SOV_kirov
+  [Hearts of Iron IV] SOV.txt:5744  has_country_flag = SOV_merge_tank_kirov_2_flag
+  [Hearts of Iron IV] SOV.txt:5745  has_country_flag = SOV_merge_tank_kirov_3_flag
+  [Hearts of Iron IV] SOV.txt:5746  NOT = { has_country_flag = SOV_merge_tank_kirov_1_flag }
+  [Hearts of Iron IV] SOV.txt:5764  SOV_kirov_final = {
+  [Hearts of Iron IV] SOV.txt:5765  name = SOV_kirov
+  [Hearts of Iron IV] SOV.txt:5767  picture = SOV_kirov
+  [Hearts of Iron IV] SOV.txt:5775  has_country_flag = SOV_merge_tank_kirov_1_flag
+  [Hearts of Iron IV] SOV.txt:5776  has_country_flag = SOV_merge_tank_kirov_2_flag
+  [Hearts of Iron IV] SOV.txt:5777  has_country_flag = SOV_merge_tank_kirov_3_flag
+  [Hearts of Iron IV] SOV_scripted_effects.txt:4448  #KIROV
+  [Hearts of Iron IV] SOV_scripted_effects.txt:4451  has_idea = SOV_kirov
+  [Hearts of Iron IV] SOV_scripted_effects.txt:4453  set_country_flag = SOV_merge_tank_kirov_1_flag
+  [Hearts of Iron IV] SOV_scripted_effects.txt:4455  remove_idea = SOV_kirov
+  [Hearts of Iron IV] SOV_scripted_effects.txt:4456  add_idea = SOV_kirov_1
+  [Hearts of Iron IV] SOV_scripted_effects.txt:4461  has_idea = SOV_kirov_2
+  [Hearts of Iron IV] SOV_scripted_effects.txt:4463  set_country_flag = SOV_merge_tank_kirov_1_flag
+  [Hearts of Iron IV] SOV_scripted_effects.txt:4465  remove_idea = SOV_kirov_2
+  [Hearts of Iron IV] SOV_scripted_effects.txt:4466  add_idea = SOV_kirov_1_2
+  [Hearts of Iron IV] SOV_scripted_effects.txt:4471  has_idea = SOV_kirov_3
+  [Hearts of Iron IV] SOV_scripted_effects.txt:4473  set_country_flag = SOV_merge_tank_kirov_1_flag
+  [Hearts of Iron IV] SOV_scripted_effects.txt:4475  remove_idea = SOV_kirov_3
+  [Hearts of Iron IV] SOV_scripted_effects.txt:4476  add_idea = SOV_kirov_1_3
+  [Hearts of Iron IV] SOV_scripted_effects.txt:4481  has_idea = SOV_kirov_2_3
+  [Hearts of Iron IV] SOV_scripted_effects.txt:4483  set_country_flag = SOV_merge_tank_kirov_1_flag
+  [Hearts of Iron IV] SOV_scripted_effects.txt:4485  remove_idea = SOV_kirov_2_3
+  [Hearts of Iron IV] SOV_scripted_effects.txt:4486  add_idea = SOV_kirov_final
+  [Hearts of Iron IV] SOV_scripted_effects.txt:4669  #KIROV
+  [Hearts of Iron IV] SOV_scripted_effects.txt:4672  has_idea = SOV_kirov
+  [Hearts of Iron IV] SOV_scripted_effects.txt:4674  set_country_flag = SOV_merge_tank_kirov_2_flag
+  [Hearts of Iron IV] SOV_scripted_effects.txt:4676  remove_idea = SOV_kirov
+  [Hearts of Iron IV] SOV_scripted_effects.txt:4677  add_idea = SOV_kirov_2
+  [Hearts of Iron IV] SOV_scripted_effects.txt:4682  has_idea = SOV_kirov_1
+  [Hearts of Iron IV] SOV_scripted_effects.txt:4684  set_country_flag = SOV_merge_tank_kirov_2_flag
+  [Hearts of Iron IV] SOV_scripted_effects.txt:4686  remove_idea = SOV_kirov_1
+  [Hearts of Iron IV] SOV_scripted_effects.txt:4687  add_idea = SOV_kirov_1_2
+  [Hearts of Iron IV] SOV_scripted_effects.txt:4692  has_idea = SOV_kirov_3
+  [Hearts of Iron IV] SOV_scripted_effects.txt:4694  set_country_flag = SOV_merge_tank_kirov_2_flag
+  [Hearts of Iron IV] SOV_scripted_effects.txt:4696  remove_idea = SOV_kirov_3
+  [Hearts of Iron IV] SOV_scripted_effects.txt:4697  add_idea = SOV_kirov_2_3
+  [Hearts of Iron IV] SOV_scripted_effects.txt:4702  has_idea = SOV_kirov_1_3
+  [Hearts of Iron IV] SOV_scripted_effects.txt:4704  set_country_flag = SOV_merge_tank_kirov_2_flag
+  [Hearts of Iron IV] SOV_scripted_effects.txt:4706  remove_idea = SOV_kirov_1_3
+  [Hearts of Iron IV] SOV_scripted_effects.txt:4707  add_idea = SOV_kirov_final
+  [Hearts of Iron IV] SOV_scripted_effects.txt:4890  #KIROV
+  [Hearts of Iron IV] SOV_scripted_effects.txt:4893  has_idea = SOV_kirov
+  [Hearts of Iron IV] SOV_scripted_effects.txt:4895  set_country_flag = SOV_merge_tank_kirov_3_flag
+  [Hearts of Iron IV] SOV_scripted_effects.txt:4897  remove_idea = SOV_kirov
+  [Hearts of Iron IV] SOV_scripted_effects.txt:4898  add_idea = SOV_kirov_3
+  [Hearts of Iron IV] SOV_scripted_effects.txt:4903  has_idea = SOV_kirov_1
+  [Hearts of Iron IV] SOV_scripted_effects.txt:4905  set_country_flag = SOV_merge_tank_kirov_3_flag
+  [Hearts of Iron IV] SOV_scripted_effects.txt:4907  remove_idea = SOV_kirov_1
+  [Hearts of Iron IV] SOV_scripted_effects.txt:4908  add_idea = SOV_kirov_1_3
+  [Hearts of Iron IV] SOV_scripted_effects.txt:4913  has_idea = SOV_kirov_2
+  [Hearts of Iron IV] SOV_scripted_effects.txt:4915  set_country_flag = SOV_merge_tank_kirov_3_flag
+  [Hearts of Iron IV] SOV_scripted_effects.txt:4917  remove_idea = SOV_kirov_2
+  [Hearts of Iron IV] SOV_scripted_effects.txt:4918  add_idea = SOV_kirov_2_3
+  [Hearts of Iron IV] SOV_scripted_effects.txt:4923  has_idea = SOV_kirov_1_2
+  [Hearts of Iron IV] SOV_scripted_effects.txt:4925  set_country_flag = SOV_merge_tank_kirov_3_flag
+  [Hearts of Iron IV] SOV_scripted_effects.txt:4927  remove_idea = SOV_kirov_1_2
+  [Hearts of Iron IV] SOV_scripted_effects.txt:4928  add_idea = SOV_kirov_final
+  [2129897125] australia.txt:2515  AST_kirov = {
+  [2129897125] australia.txt:2516  name = kirov
+  [2129897125] australia.txt:2517  picture = SOV_kirov
+  [2129897125] belgium.txt:875  BEL_kirov = {
+  [2129897125] belgium.txt:876  name = kirov
+  [2129897125] belgium.txt:878  picture = SOV_kirov
+  [2129897125] SOV.txt:5197  SOV_kirov = {
+  [2129897125] SOV.txt:5199  picture = SOV_kirov
+  [2129897125] SOV.txt:5207  NOT = { has_country_flag = SOV_merge_tank_kirov_1_flag }
+  [2129897125] SOV.txt:5208  NOT = { has_country_flag = SOV_merge_tank_kirov_2_flag }
+  [2129897125] SOV.txt:5209  NOT = { has_country_flag = SOV_merge_tank_kirov_3_flag }
+  [2129897125] SOV.txt:5223  SOV_kirov_1 = {
+  [2129897125] SOV.txt:5224  name = SOV_kirov
+  [2129897125] SOV.txt:5226  picture = SOV_kirov
+  [2129897125] SOV.txt:5234  has_country_flag = SOV_merge_tank_kirov_1_flag
+  [2129897125] SOV.txt:5235  NOT = { has_country_flag = SOV_merge_tank_kirov_2_flag }
+  [2129897125] SOV.txt:5236  NOT = { has_country_flag = SOV_merge_tank_kirov_3_flag }
+  [2129897125] SOV.txt:5253  SOV_kirov_2 = {
+  [2129897125] SOV.txt:5254  name = SOV_kirov
+  [2129897125] SOV.txt:5256  picture = SOV_kirov
+  [2129897125] SOV.txt:5264  has_country_flag = SOV_merge_tank_kirov_2_flag
+  [2129897125] SOV.txt:5265  NOT = { has_country_flag = SOV_merge_tank_kirov_1_flag }
+  [2129897125] SOV.txt:5266  NOT = { has_country_flag = SOV_merge_tank_kirov_3_flag }
+  [2129897125] SOV.txt:5286  SOV_kirov_3 = {
+  [2129897125] SOV.txt:5287  name = SOV_kirov
+  [2129897125] SOV.txt:5289  picture = SOV_kirov
+  [2129897125] SOV.txt:5297  has_country_flag = SOV_merge_tank_kirov_3_flag
+  [2129897125] SOV.txt:5298  NOT = { has_country_flag = SOV_merge_tank_kirov_1_flag }
+  [2129897125] SOV.txt:5299  NOT = { has_country_flag = SOV_merge_tank_kirov_2_flag }
+  [2129897125] SOV.txt:5316  SOV_kirov_1_2 = {
+  [2129897125] SOV.txt:5317  name = SOV_kirov
+  [2129897125] SOV.txt:5319  picture = SOV_kirov
+  [2129897125] SOV.txt:5327  has_country_flag = SOV_merge_tank_kirov_1_flag
+  [2129897125] SOV.txt:5328  has_country_flag = SOV_merge_tank_kirov_2_flag
+  [2129897125] SOV.txt:5329  NOT = { has_country_flag = SOV_merge_tank_kirov_3_flag }
+  [2129897125] SOV.txt:5347  SOV_kirov_1_3 = {
+  [2129897125] SOV.txt:5348  name = SOV_kirov
+  [2129897125] SOV.txt:5350  picture = SOV_kirov
+  [2129897125] SOV.txt:5358  has_country_flag = SOV_merge_tank_kirov_1_flag
+  [2129897125] SOV.txt:5359  has_country_flag = SOV_merge_tank_kirov_3_flag
+  [2129897125] SOV.txt:5360  NOT = { has_country_flag = SOV_merge_tank_kirov_2_flag }
+  [2129897125] SOV.txt:5378  SOV_kirov_2_3 = {
+  [2129897125] SOV.txt:5379  name = SOV_kirov
+  [2129897125] SOV.txt:5381  picture = SOV_kirov
+  [2129897125] SOV.txt:5389  has_country_flag = SOV_merge_tank_kirov_2_flag
+  [2129897125] SOV.txt:5390  has_country_flag = SOV_merge_tank_kirov_3_flag
+  [2129897125] SOV.txt:5391  NOT = { has_country_flag = SOV_merge_tank_kirov_1_flag }
+  [2129897125] SOV.txt:5409  SOV_kirov_final = {
+  [2129897125] SOV.txt:5410  name = SOV_kirov
+  [2129897125] SOV.txt:5412  picture = SOV_kirov
+  [2129897125] SOV.txt:5420  has_country_flag = SOV_merge_tank_kirov_1_flag
+  [2129897125] SOV.txt:5421  has_country_flag = SOV_merge_tank_kirov_2_flag
+  [2129897125] SOV.txt:5422  has_country_flag = SOV_merge_tank_kirov_3_flag
+  [2129897125] SOV_scripted_effects.txt:4451  #KIROV
+  [2129897125] SOV_scripted_effects.txt:4454  has_idea = SOV_kirov
+  [2129897125] SOV_scripted_effects.txt:4456  set_country_flag = SOV_merge_tank_kirov_1_flag
+  [2129897125] SOV_scripted_effects.txt:4458  remove_idea = SOV_kirov
+  [2129897125] SOV_scripted_effects.txt:4459  add_idea = SOV_kirov_1
+  [2129897125] SOV_scripted_effects.txt:4464  has_idea = SOV_kirov_2
+  [2129897125] SOV_scripted_effects.txt:4466  set_country_flag = SOV_merge_tank_kirov_1_flag
+  [2129897125] SOV_scripted_effects.txt:4468  remove_idea = SOV_kirov_2
+  [2129897125] SOV_scripted_effects.txt:4469  add_idea = SOV_kirov_1_2
+  [2129897125] SOV_scripted_effects.txt:4474  has_idea = SOV_kirov_3
+  [2129897125] SOV_scripted_effects.txt:4476  set_country_flag = SOV_merge_tank_kirov_1_flag
+  [2129897125] SOV_scripted_effects.txt:4478  remove_idea = SOV_kirov_3
+  [2129897125] SOV_scripted_effects.txt:4479  add_idea = SOV_kirov_1_3
+  [2129897125] SOV_scripted_effects.txt:4484  has_idea = SOV_kirov_2_3
+  [2129897125] SOV_scripted_effects.txt:4486  set_country_flag = SOV_merge_tank_kirov_1_flag
+  [2129897125] SOV_scripted_effects.txt:4488  remove_idea = SOV_kirov_2_3
+  [2129897125] SOV_scripted_effects.txt:4489  add_idea = SOV_kirov_final
+  [2129897125] SOV_scripted_effects.txt:4672  #KIROV
+  [2129897125] SOV_scripted_effects.txt:4675  has_idea = SOV_kirov
+  [2129897125] SOV_scripted_effects.txt:4677  set_country_flag = SOV_merge_tank_kirov_2_flag
+  [2129897125] SOV_scripted_effects.txt:4679  remove_idea = SOV_kirov
+  [2129897125] SOV_scripted_effects.txt:4680  add_idea = SOV_kirov_2
+  [2129897125] SOV_scripted_effects.txt:4685  has_idea = SOV_kirov_1
+  [2129897125] SOV_scripted_effects.txt:4687  set_country_flag = SOV_merge_tank_kirov_2_flag
+  [2129897125] SOV_scripted_effects.txt:4689  remove_idea = SOV_kirov_1
+  [2129897125] SOV_scripted_effects.txt:4690  add_idea = SOV_kirov_1_2
+  [2129897125] SOV_scripted_effects.txt:4695  has_idea = SOV_kirov_3
+  [2129897125] SOV_scripted_effects.txt:4697  set_country_flag = SOV_merge_tank_kirov_2_flag
+  [2129897125] SOV_scripted_effects.txt:4699  remove_idea = SOV_kirov_3
+  [2129897125] SOV_scripted_effects.txt:4700  add_idea = SOV_kirov_2_3
+  [2129897125] SOV_scripted_effects.txt:4705  has_idea = SOV_kirov_1_3
+  [2129897125] SOV_scripted_effects.txt:4707  set_country_flag = SOV_merge_tank_kirov_2_flag
+  [2129897125] SOV_scripted_effects.txt:4709  remove_idea = SOV_kirov_1_3
+  [2129897125] SOV_scripted_effects.txt:4710  add_idea = SOV_kirov_final
+  [2129897125] SOV_scripted_effects.txt:4893  #KIROV
+  [2129897125] SOV_scripted_effects.txt:4896  has_idea = SOV_kirov
+  [2129897125] SOV_scripted_effects.txt:4898  set_country_flag = SOV_merge_tank_kirov_3_flag
+  [2129897125] SOV_scripted_effects.txt:4900  remove_idea = SOV_kirov
+  [2129897125] SOV_scripted_effects.txt:4901  add_idea = SOV_kirov_3
+  [2129897125] SOV_scripted_effects.txt:4906  has_idea = SOV_kirov_1
+  [2129897125] SOV_scripted_effects.txt:4908  set_country_flag = SOV_merge_tank_kirov_3_flag
+  [2129897125] SOV_scripted_effects.txt:4910  remove_idea = SOV_kirov_1
+  [2129897125] SOV_scripted_effects.txt:4911  add_idea = SOV_kirov_1_3
+  [2129897125] SOV_scripted_effects.txt:4916  has_idea = SOV_kirov_2
+  [2129897125] SOV_scripted_effects.txt:4918  set_country_flag = SOV_merge_tank_kirov_3_flag
+  [2129897125] SOV_scripted_effects.txt:4920  remove_idea = SOV_kirov_2
+  [2129897125] SOV_scripted_effects.txt:4921  add_idea = SOV_kirov_2_3
+  [2129897125] SOV_scripted_effects.txt:4926  has_idea = SOV_kirov_1_2
+  [2129897125] SOV_scripted_effects.txt:4928  set_country_flag = SOV_merge_tank_kirov_3_flag
+  [2129897125] SOV_scripted_effects.txt:4930  remove_idea = SOV_kirov_1_2
+  [2129897125] SOV_scripted_effects.txt:4931  add_idea = SOV_kirov_final

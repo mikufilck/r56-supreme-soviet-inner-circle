@@ -1,0 +1,22 @@
+﻿  [FAIL] ii1_preface_ru_1930book03          HTTP=404
+  [FAIL] ii1_preface_1930book04             HTTP=404
+  [FAIL] ii1_ch1_1930book05                 HTTP=404
+  [FAIL] ii3_bureaucratic_legend_1930book58 HTTP=404
+  [FAIL] ii3_socialism_one_country_1930book59 HTTP=404
+  [FAIL] ii2_permrev_review_1930book60      HTTP=404
+  [FAIL] ii1_ch1_appendix_1930book28        HTTP=404
+  [FAIL] i1_train_1929book36                HTTP=404
+  [FAIL] i1_marxism_opposition_1929book38   HTTP=404
+  [FAIL] i3_military_strategy_1929book39    HTTP=404
+  [FAIL] iv1_nep_phase_1929book40           HTTP=404
+  [FAIL] iii1_last_stage_1929book44         HTTP=404
+  [FAIL] iii1_brest_1929book33              HTTP=404
+  [OK  ] v3_what_is_fascism_02              ->    33609 字符
+  [FAIL] v3_workers_arms_10                 HTTP=404
+  [FAIL] v3_build_party_12                  HTTP=404
+  [OK  ] v3_mussolini_03                    ->      902 字符
+  [FAIL] v2_class_relations_01b             HTTP=404
+  [FAIL] v2_against_stalin_theses_01c       HTTP=404
+  [FAIL] v2_china_theses_03a                HTTP=404
+  [FAIL] v2_summary_prospect_05             HTTP=404
+  [OK  ] v1_comintern_2nd_1926a             ->    12227 字符

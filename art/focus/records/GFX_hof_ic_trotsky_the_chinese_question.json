@@ -1,0 +1,11 @@
+{
+  "name": "GFX_hof_ic_trotsky_the_chinese_question",
+  "id": "hof_ic_trotsky_the_chinese_question",
+  "title": "中国革命问题",
+  "prompt": "Use case: stylized-concept. Produce ONE production Hearts of Iron IV national focus icon, final canvas 100x88 pixels (width:height 25:22); generate high-resolution at same ratio for mechanical downsampling. Full emblem centered, bold primary silhouette fills 92 percent of canvas with all ornaments intact, no clipping. Strictly NO text, letters, numerals, pseudo-writing, watermarks or rectangular canvas border. The icon's own laurel/medallion ornament is allowed. Uniform solid very dark charcoal (#181b1e) background outside emblem, no transparency grid, no checkerboard, no backdrop texture outside emblem. Painted game UI relief, high contrast at tiny size, upper-left directional light, dark edge shadows, restrained material highlights; NOT a scene, not a poster, not a flat vector logo, no photoreal background. Match the supplied SOVIET focus reference sheet: dark blood-crimson circular medallion, two antique-gold laurel branches forming an open-topped wreath, small red star at top and short blank gold ribbon at bottom. Central subject in ivory-white / plaster-grey carved monochrome sculptural relief, clear chiseled shading, NOT naturally colored objects. Every icon should have the same rim weight, red tone, gold patina and light direction. Prioritize 1-3 large readable forms over micro-detail. No characters or portraits unless requested.\nSubject design: A recognizable traditional Chinese gate with a double-eaved roof and stone arch passage, a small ivory rail segment leading through it and red banner behind. Monumental ivory-grey relief on crimson medallion, no writing, no flags with stars that imply later PRC flag.\nFocus meaning (reference only; never render as text): 中国革命问题 — 1927 年春天，党内斗争的火焰又一次燃烧起来。这次斗争是同到那时之前从未提出过的一个问题相联系的，但从此以后这个问题却自始至终都是斗争的中心，直到联合反对派最终被开除出党并解体为止。",
+  "references": [
+    "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\docs\\reference\\icon-refs-png\\sheet_sov_style.png"
+  ],
+  "source": "C:\\Users\\xuwei\\.codex\\generated_images\\01a09af5-fd43-79a0-a3cc-72284cd67cbc\\exec-ef27c4cc-62a4-4dea-bb15-6dc18720946b.png",
+  "mode": "built-in image_gen"
+}

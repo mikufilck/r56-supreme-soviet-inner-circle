@@ -1,0 +1,11 @@
+{
+  "name": "GFX_hof_ic_trotsky_labour_armies",
+  "id": "hof_ic_trotsky_labour_armies",
+  "title": "劳动军",
+  "prompt": "Use case: stylized-concept. Produce ONE production Hearts of Iron IV national focus icon, final canvas 100x88 pixels (width:height 25:22); generate high-resolution at same ratio for mechanical downsampling. Full emblem centered, bold primary silhouette fills 92 percent of canvas with all ornaments intact, no clipping. Strictly NO text, letters, numerals, pseudo-writing, watermarks or rectangular canvas border. The icon's own laurel/medallion ornament is allowed. Uniform solid very dark charcoal (#181b1e) background outside emblem, no transparency grid, no checkerboard, no backdrop texture outside emblem. Painted game UI relief, high contrast at tiny size, upper-left directional light, dark edge shadows, restrained material highlights; NOT a scene, not a poster, not a flat vector logo, no photoreal background. Match the supplied SOVIET focus reference sheet: dark blood-crimson circular medallion, two antique-gold laurel branches forming an open-topped wreath, small red star at top and short blank gold ribbon at bottom. Central subject in ivory-white / plaster-grey carved monochrome sculptural relief, clear chiseled shading, NOT naturally colored objects. Every icon should have the same rim weight, red tone, gold patina and light direction. Prioritize 1-3 large readable forms over micro-detail. No characters or portraits unless requested.\nSubject design: Crossed pickaxe and shovel above a short railroad sleeper segment, a simple military cap below their crossing. Ivory-grey tools and cap, one deep-red flag fold behind; labor mobilization, compact symmetrical composition.\nFocus meaning (reference only; never render as text): 劳动军 — 他转而尝试把军事纪律应用于经济：把士兵用作劳动军，并试图把交通运输系统的管理军事化。这个方向同样被党的十大否决，此后连他自己也不再主张它。",
+  "references": [
+    "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\docs\\reference\\icon-refs-png\\sheet_sov_style.png"
+  ],
+  "source": "C:\\Users\\xuwei\\.codex\\generated_images\\01a09af5-fd43-79a0-a3cc-72284cd67cbc\\exec-918db48f-d46e-4510-a84d-4df0f2595bcf.png",
+  "mode": "built-in image_gen"
+}

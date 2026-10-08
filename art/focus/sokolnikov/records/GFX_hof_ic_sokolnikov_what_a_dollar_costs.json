@@ -1,0 +1,17 @@
+{
+  "id": "hof_ic_sokolnikov_what_a_dollar_costs",
+  "name": "GFX_hof_ic_sokolnikov_what_a_dollar_costs",
+  "title": "一美元值多少",
+  "concept": "Two distinct silver-gray coins standing on their edges side by side on a simple dark tabletop, one with old Russian-style abstract edge ornament, other with different foreign-style edge ornament but NO flag or lettering. In front of them a narrow aged-white paper strip bears EXACTLY two rows of evenly spaced abstract short dashes and nothing else. No scales, rulers or people.",
+  "group": "sokolnikov",
+  "size": [
+    100,
+    88
+  ],
+  "prompt": "Create ONE finished Hearts of Iron IV Soviet national focus icon. Use the attached image only as a stylistic reference for the outer engraved gold laurel wreath, small red star and blank gold ribbon; create an entirely new central scene. Two distinct silver-gray coins standing on their edges side by side on a simple dark tabletop, one with old Russian-style abstract edge ornament, other with different foreign-style edge ornament but NO flag or lettering. In front of them a narrow aged-white paper strip bears EXACTLY two rows of evenly spaced abstract short dashes and nothing else. No scales, rulers or people. Central-image style: low-saturation ivory-and-plaster-gray sculptural relief, restrained 1930s Soviet historical icon, tactile surfaces and clean silhouette readable at 100×88. Saturated red/gold belongs only to the common ornamental frame unless it is inherently the color of a specified central object. Keep central objects inside laurels. Exactly one centered emblem in square canvas. TRUE RGBA transparent background outside wreath and ribbon, alpha 0 all four corners, broad transparent exterior (20–50 percent total pixels). No typography, readable letters or numbers, watermark, faces, people, guns, prison, trials, flags, maps, ledgers, lists, grid charts, drawer, opened book, letters, classroom, rulers, scales, scissors, gears, trains, drawing pen, or military emblems. Render one final production asset, not a mockup or sheet.",
+  "references": [
+    "D:/Users/xuwei/PycharmProjects/heart_of_Iron/art/focus/bukharin/source/GFX_hof_ic_bukharin_proportional_development.png"
+  ],
+  "generated_path": "C:\\Users\\xuwei\\.codex\\generated_images\\01a09af5-fd43-79a0-a3cc-72284cd67cbc\\exec-051f7f43-5d4d-4dfa-b7b5-f3a1aef6e32e.png",
+  "mode": "built-in image_gen"
+}

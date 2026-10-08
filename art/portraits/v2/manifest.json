@@ -1,0 +1,86 @@
+{
+  "mode": "built-in image_gen",
+  "date": "2026-09-15",
+  "assets": [
+    {
+      "name": "hof_portrait_SOV_mikhail_kalinin",
+      "title": "米哈伊尔·加里宁",
+      "size": [
+        156,
+        210
+      ],
+      "source_size": [
+        1081,
+        1455
+      ],
+      "source": "source/hof_portrait_SOV_mikhail_kalinin.png",
+      "png": "png/hof_portrait_SOV_mikhail_kalinin.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/portraits/hof_portrait_SOV_mikhail_kalinin.dds",
+      "reference": "references/mikhail_kalinin.png",
+      "generation_record": "records/hof_portrait_SOV_mikhail_kalinin.json",
+      "status": "complete",
+      "sha256": "1052639b86e1f3d849bc8799dfa1797a5d66cf46a6d76163b9aaf94355a6a98f",
+      "validation": "PASS: ARGB8, no mipmap, exact RGBA roundtrip"
+    },
+    {
+      "name": "hof_portrait_SOV_maksim_litvinov",
+      "title": "马克西姆·李维诺夫",
+      "size": [
+        156,
+        210
+      ],
+      "source_size": [
+        1080,
+        1456
+      ],
+      "source": "source/hof_portrait_SOV_maksim_litvinov.png",
+      "png": "png/hof_portrait_SOV_maksim_litvinov.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/portraits/hof_portrait_SOV_maksim_litvinov.dds",
+      "reference": "references/SOV_maksim_litvinov.png",
+      "generation_record": "records/hof_portrait_SOV_maksim_litvinov.json",
+      "status": "complete",
+      "sha256": "ba914587d82b8d5c5c6bdbc66d801711e4104a9f9b03525d2ce3e2f23c495f00",
+      "validation": "PASS: ARGB8, no mipmap, exact RGBA roundtrip"
+    },
+    {
+      "name": "hof_portrait_SOV_nikolay_voznesensky",
+      "title": "尼古拉·沃兹涅先斯基",
+      "size": [
+        156,
+        210
+      ],
+      "source_size": [
+        1080,
+        1456
+      ],
+      "source": "source/hof_portrait_SOV_nikolay_voznesensky.png",
+      "png": "png/hof_portrait_SOV_nikolay_voznesensky.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/portraits/hof_portrait_SOV_nikolay_voznesensky.dds",
+      "reference": "references/SOV_nikolay_voznesensky.png",
+      "generation_record": "records/hof_portrait_SOV_nikolay_voznesensky.json",
+      "status": "complete",
+      "sha256": "362410760240fcccad394aa8bfc110ee58af638106c339b504c8590e50164080",
+      "validation": "PASS: ARGB8, no mipmap, exact RGBA roundtrip"
+    },
+    {
+      "name": "hof_portrait_SOV_pyotr_smirnov",
+      "title": "彼得·斯米尔诺夫",
+      "size": [
+        156,
+        210
+      ],
+      "source_size": [
+        1080,
+        1456
+      ],
+      "source": "source/hof_portrait_SOV_pyotr_smirnov.png",
+      "png": "png/hof_portrait_SOV_pyotr_smirnov.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/portraits/hof_portrait_SOV_pyotr_smirnov.dds",
+      "reference": "references/pyotr_smirnov.png",
+      "generation_record": "records/hof_portrait_SOV_pyotr_smirnov.json",
+      "status": "complete",
+      "sha256": "c965840639138b2bf55627b98fe2482ad4cf973a8bc25da1f47e1c6b71c41201",
+      "validation": "PASS: ARGB8, no mipmap, exact RGBA roundtrip"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+# R56 Supreme Soviet Inner Circle — public repository
+# Keep source code, documentation, playable mod files and art sources.
+
+# Historical project excluded from publication at the owner's request.
+old/
+
+# ---------- 本机产物 / 可重建 ----------
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+tmp/
+
+# ---------- 快照（由 build/snapshot.ps1 生成，它们本身就是「备份」，不进仓）----------
+snapshots/
+
+# ---------- 编辑器 / 系统 ----------
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*~
+
+# ---------- 游戏日志（若以后挪进工作区）----------
+logs/
+日志/
+*.log
+*.hoi4
+save games/
+
+# Credentials and machine-specific settings.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Disposable build reports; keep build/inject-*.txt and research inputs.
+/build/*-report.txt
+/build/*-run.txt
+/build/*-log.txt
+/build/verify-s2-failures.txt
+/build/sync-result.txt
+/build/sync-smoketest.txt
+/build/sync-verify.txt

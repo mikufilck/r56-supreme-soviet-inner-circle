@@ -1,0 +1,68 @@
+[
+  {
+    "id": "hof_ic_radek_central_europe_department",
+    "name": "GFX_hof_ic_radek_central_europe_department",
+    "title": "外交人民委员部中欧司",
+    "concept": "An unfolded central-European map on a desk, abstract coast contours and unlabeled route lines radiate outward from a central point. A small plain diplomatic seal and dip pen at one corner. Window behind shows residual March snow. Orderly official atmosphere, cool grey-blue and aged ivory paper. No readable map labels.",
+    "group": "radek",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_radek_founding_of_the_kpd",
+    "name": "GFX_hof_ic_radek_founding_of_the_kpd",
+    "title": "德国共产党的第一次代表大会",
+    "concept": "A small secret basement meeting room: joined wooden tables, a low-shaded kerosene lamp illuminating freshly printed loose leaflets with only abstract column marks. Windows tightly covered with opaque paper. A few empty chairs, intimate clandestine space mostly in dark brown shadow with one amber lamp. No stage, banners, flags or crowds. No printing machine.",
+    "group": "radek",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_radek_seven_pamphlets",
+    "name": "GFX_hof_ic_radek_seven_pamphlets",
+    "title": "狱中的七本小册子",
+    "concept": "A narrow barred window casts one diagonal pale light beam and barred shadows onto a narrow tabletop. EXACTLY SEVEN separate thin closed pamphlets laid side by side in a clear evenly spaced fan, all seven covers fully visible and countable. No extra paper or books. Covers plain ivory with subtle horizontal rules, no lettering or numerals. The seven pamphlets dominate lower two thirds of scene. Cold grey iron and stone, faint warm light on paper. No chains, shackles or people.",
+    "group": "radek",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_radek_german_october",
+    "name": "GFX_hof_ic_radek_german_october",
+    "title": "德国十月",
+    "concept": "An EMPTY German cobblestone street at night, incomplete low barricade of a few wooden crates, overturned handcart and scattered stones on LEFT foreground. Large open passage leads out to RIGHT. All street lamps visibly unlit; just two tiny distant amber house windows. No people, weapons, flags, fire or combat. Restrained abandoned unfinished mood, cold midnight blue, engraved silver edge highlights keep shapes legible.",
+    "group": "radek",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_radek_sunyatsen_university",
+    "name": "GFX_hof_ic_radek_sunyatsen_university",
+    "title": "中山大学",
+    "concept": "A bright intimate 1920s tiered classroom viewed from back: rows of wooden long desks and mostly empty chairs toward a chalkboard with only abstract chalk lines and rectangles. One lecturer seen strictly from back at front, a few Chinese students also seen strictly from behind at desks, no facial features. Warm wood and chalk-white daylight. Clearly a SCHOOL classroom, no flags, banners, congress stage or crowds.",
+    "group": "radek",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_radek_red_publicist",
+    "name": "GFX_hof_ic_radek_red_publicist",
+    "title": "红色笔杆子",
+    "concept": "Rich close-up of a writing desk, a LARGE prominent steel dip-pen nib diagonally descending to one SMALL SATURATED RED INK BLOT on pale paper, the sole red accent in the ENTIRE image. Around it layered newspapers with abstract column rules, blank headline bars and grey photo blocks, clipped masthead shapes and one opened envelope. No actual writing. Nib dominant and instantly readable, fullest composition, warm brown desktop and grey-white paper. No map or other red object, no hands needed.",
+    "group": "radek",
+    "size": [
+      100,
+      88
+    ]
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "name": "GFX_hof_ic_trotsky_the_builder_of_the_state",
+  "id": "hof_ic_trotsky_the_builder_of_the_state",
+  "title": "国家建设者",
+  "prompt": "Use case: stylized-concept. Produce ONE production Hearts of Iron IV national focus icon, final canvas 100x88 pixels (width:height 25:22); generate high-resolution at same ratio for mechanical downsampling. Full emblem centered, bold primary silhouette fills 92 percent of canvas with all ornaments intact, no clipping. Strictly NO text, letters, numerals, pseudo-writing, watermarks or rectangular canvas border. The icon's own laurel/medallion ornament is allowed. Uniform solid very dark charcoal (#181b1e) background outside emblem, no transparency grid, no checkerboard, no backdrop texture outside emblem. Painted game UI relief, high contrast at tiny size, upper-left directional light, dark edge shadows, restrained material highlights; NOT a scene, not a poster, not a flat vector logo, no photoreal background. Match the supplied SOVIET focus reference sheet: dark blood-crimson circular medallion, two antique-gold laurel branches forming an open-topped wreath, small red star at top and short blank gold ribbon at bottom. Central subject in ivory-white / plaster-grey carved monochrome sculptural relief, clear chiseled shading, NOT naturally colored objects. Every icon should have the same rim weight, red tone, gold patina and light direction. Prioritize 1-3 large readable forms over micro-detail. No characters or portraits unless requested.\nSubject design: A builder's strong hand gripping a drafting square over a compact rising steel girder structure, single construction crane hook at top, a small red star crown. Ivory-grey sculpted industrial forms, ceremonial gold laurel capstone; no schematic text or numbers.\nFocus meaning (reference only; never render as text): 国家建设者 — 请告诉我还有哪个人能在一年之内建立起一支堪称模范的军队而且赢得军事专家的尊重；我们有这样的人，就有了一切，我们将创造出奇迹。",
+  "references": [
+    "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\docs\\reference\\icon-refs-png\\sheet_sov_style.png"
+  ],
+  "source": "C:\\Users\\xuwei\\.codex\\generated_images\\01a09af5-fd43-79a0-a3cc-72284cd67cbc\\exec-758bb472-5b24-4d49-b75a-9f94ec76bc8c.png",
+  "mode": "built-in image_gen"
+}

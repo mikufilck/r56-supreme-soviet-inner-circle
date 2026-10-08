@@ -1,0 +1,68 @@
+[
+  {
+    "id": "hof_ic_tukhachevsky_the_military_academy",
+    "name": "GFX_hof_ic_tukhachevsky_the_military_academy",
+    "title": "军事学院",
+    "concept": "A neatly ordered row of several newly made military officer SHOULDER BOARDS resting on an OPEN BOUND ACADEMY HANDOUT. Shoulder-board marks are abstract simple geometry, no stars or letters. Handout has tidy edges and plainly visible thread binding down its LEFT edge, only unreadable abstract marks. No person, classroom, blackboard or school building. Central colors old-paper yellow and dark brass insignia.",
+    "group": "tukhachevsky",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_tukhachevsky_the_regular_army",
+    "name": "GFX_hof_ic_tukhachevsky_the_regular_army",
+    "title": "正规军",
+    "concept": "Two piles of EQUIPMENT side by side on a plain dark surface: LEFT is a precisely spaced, repeated set of regulation steel helmets, rifles, paired leather boots and canteens arranged in equal units; RIGHT is a small untidy pile of obsolete worn items, one old brown coat, an antique cavalry saber and one broken boot. The strong contrast is standardized army versus improvised gear. No people, horses or flags. Steel gray and muted military green on left, dusty brown on right.",
+    "group": "tukhachevsky",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_tukhachevsky_airborne_and_tanks",
+    "name": "GFX_hof_ic_tukhachevsky_airborne_and_tanks",
+    "title": "空降兵与战车",
+    "concept": "A fully spread cream-white parachute canopy draped over a heavy horizontal tank TRACK occupying the lower half of the icon. Taut parachute suspension cords stretch toward four corners; the steel tank-track links are individually clear and countable. Soft cotton folds contrast with hard black iron tread. NO whole tank, plane, jumping human or battlefield.",
+    "group": "tukhachevsky",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_tukhachevsky_the_deep_battle_instructions",
+    "name": "GFX_hof_ic_tukhachevsky_the_deep_battle_instructions",
+    "title": "纵深战斗指示",
+    "concept": "One single UNFOLDED official instruction sheet made of thick white paper, seen very close with EXACTLY THREE strong parallel crease lines, tangible fold ridges and shadows across the sheet. At the uppermost crease, a slightly deeper patch of old gray ink suggesting repeated consultation; otherwise abstract unreadable tiny strokes only. Focus is physical three-fold history of one document. No table, typewriter, person, office, grid or map.",
+    "group": "tukhachevsky",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_tukhachevsky_the_four_echelons",
+    "name": "GFX_hof_ic_tukhachevsky_the_four_echelons",
+    "title": "四个梯次",
+    "concept": "FOUR clearly separated horizontal bands stacked from top to bottom, each in a different neutral gray value (upper warm gray, lower cool gray). Within bands abstract silhouettes: FIRST small triangular aircraft forms with fine descending lines; SECOND frontal tank plus gun barrel and short infantry bars; THIRD side-view trucks and armored carriers, with one clear arrow pointing RIGHT; FOURTH a tidy row of short vertical bars representing reserve units. Structured layered tactical relief, not a map. No words, flags, stars, contour lines or human faces.",
+    "group": "tukhachevsky",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_tukhachevsky_the_field_regulations",
+    "name": "GFX_hof_ic_tukhachevsky_the_field_regulations",
+    "title": "工农红军野战条令",
+    "concept": "One NEW thick CLOSED hardbound military field-regulations volume pressing down on one OLD worn steel helmet. Book has deep brown leather cover and abstract dark-gold geometric embossing on the spine, no title or readable symbols. Helmet is scratched iron gray. Beneath helmet only a tiny corner of blank folded field paper protrudes, no map markings. No people, parade, flags or five-point symbols in the CENTRAL illustration.",
+    "group": "tukhachevsky",
+    "size": [
+      100,
+      88
+    ]
+  }
+]

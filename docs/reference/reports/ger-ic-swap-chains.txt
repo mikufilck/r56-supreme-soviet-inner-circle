@@ -1,0 +1,141 @@
+# German Inner Circle personal lines - idea UPGRADE CHAINS
+# swap_ideas pairs = the office trait being upgraded tier by tier
+
+=====================================================================
+GER_form_organization_todt   cost=@inner_circle_time_tier_1
+  <- GER_ascension_of_todt
+  SWAP  GER_philipp_holzmann  ->  GER_organization_todt
+  slots: 1
+  bld: arms_factory x1
+  tt: available_designer, generic_skip_one_line_tt
+
+=====================================================================
+GER_autonomous_organization_todt   cost=@inner_circle_time_tier_2
+  <- GER_form_organization_todt
+  SWAP  GER_todt_reich_engineer  ->  GER_todt_reich_minister_of_armaments
+  SWAP  GER_organization_todt  ->  GER_organization_todt_improved
+  tt: generic_skip_one_line_tt
+
+=====================================================================
+GER_employ_philipp_holzmann   cost=@inner_circle_time_tier_1
+  <- GER_ascension_of_speer
+  SWAP  GER_philipp_holzmann  ->  GER_philipp_holzmann_improved
+  slots: 1
+  bld: industrial_complex x1
+  tt: generic_skip_one_line_tt
+
+=====================================================================
+GER_plenipotentiary_of_armaments   cost=@inner_circle_time_tier_2
+  <- GER_form_organization_todt | GER_employ_philipp_holzmann
+  SWAP  GER_speer_reich_architect  ->  GER_speer_reich_minister_of_armaments
+  SWAP  GER_philipp_holzmann_improved  ->  GER_philipp_holzmann_improved_2
+  SWAP  GER_philipp_holzmann_improved  ->  GER_philipp_holzmann_improved_2_no_aat
+  tt: generic_skip_one_line_tt
+
+=====================================================================
+GER_wunderwaffe   cost=@inner_circle_time_tier_3
+  <- GER_autonomous_organization_todt
+  SWAP  (none)
+  var: GER_wunderwaffen_production_speed_facility_factor=0.1, GER_wunderwaffen_special_project_speed_factor=0.05
+  tt: available_military_high_command, generic_skip_one_line_tt, GER_wunderwaffe_dornberger_trait_tt
+
+=====================================================================
+GER_prioritize_the_four_year_plan   cost=@inner_circle_time_tier_1
+  <- GER_ascension_of_goring
+  SWAP  GER_reichswerke  ->  GER_reichswerke_improved
+  dyn_mod:   GER_four_year_plan_initiative_modifier
+  tt: generic_skip_one_line_tt
+
+=====================================================================
+GER_plenipotentiary_of_the_four_year_plan   cost=@inner_circle_time_tier_2
+  <- GER_prioritize_the_four_year_plan
+  SWAP  GER_goring_overseer_four_year_plan  ->  GER_goring_four_year_plan_plenipotentiary
+  SWAP  GER_reichswerke_improved  ->  GER_reichswerke_improved_2
+  SWAP  r56_GER_four_year_plan  ->  r56_GER_four_year_plan_upgrade
+  add_ideas: r56_GER_four_year_plan_upgrade
+  tech: GER_plenipotentiary_of_the_four_year_plan
+  tt: generic_skip_one_line_tt, r56_GER_four_year_plan_upgrade_tt
+
+=====================================================================
+GER_integration_of_puppet_economies   cost=@inner_circle_time_tier_3
+  <- GER_plenipotentiary_of_the_four_year_plan
+  SWAP  (none)
+
+=====================================================================
+GER_expand_gestapo   cost=@inner_circle_time_tier_1
+  <- GER_ascension_of_himmler
+  SWAP  (none)
+  var: GER_military_intelligence_root_out_resistance_effectiveness_factor=0.2, GER_military_intelligence_service_agency_upgrade_time=-0.2, GER_military_intelligence_service_encryption_factor=0.1, GER_military_intelligence_service_intelligence_agency_defense=0.15
+
+=====================================================================
+GER_absorb_the_abwehr   cost=@inner_circle_time_tier_2
+  <- GER_expand_gestapo
+  SWAP  GER_himmler_chief_of_german_police  ->  GER_himmler_director_reich_security
+
+=====================================================================
+GER_expand_ss_security_duties   cost=@inner_circle_time_tier_1
+  <- GER_ascension_of_himmler
+  SWAP  GER_himmler_chief_of_german_police  ->  GER_himmler_director_reich_security
+  tech: GER_expand_ss_security_duties
+  tt: generic_skip_one_line_tt
+
+=====================================================================
+GER_strengthen_the_waffen_ss   cost=@inner_circle_time_tier_2
+  <- GER_expand_ss_security_duties
+  SWAP  GER_himmler_director_reich_security  ->  GER_himmler_reichsfuhrer_ss
+  tt: generic_skip_one_line_tt, GER_create_one_motorized_units_tt, GER_create_two_light_panzer_units_tt, GER_create_two_medium_panzer_units_tt, GER_create_two_militia_units_tt
+
+=====================================================================
+GER_hegemony_of_the_ss   cost=@inner_circle_time_tier_3
+  <- GER_absorb_the_abwehr
+  SWAP  (none)
+  var: GER_military_modifier_army_sub_unit_militia_attack_factor=0.05, GER_military_modifier_army_sub_unit_militia_defence_factor=0.05, GER_military_modifier_army_sub_unit_militia_max_org_factor=0.1
+  tt: generic_skip_one_line_tt
+
+=====================================================================
+GER_ministry_of_public_enlightenment   cost=@inner_circle_time_tier_1
+  <- GER_ascension_of_goebbels
+  SWAP  GER_goebbels_reich_minister_of_propaganda  ->  GER_goebbels_reich_minister_of_propaganda_ministry
+  tt: generic_skip_one_line_tt
+
+=====================================================================
+GER_fund_the_film_department   cost=@inner_circle_time_tier_2
+  <- GER_ministry_of_public_enlightenment
+  SWAP  GER_goebbels_reich_minister_of_propaganda_ministry  ->  GER_goebbels_reich_minister_of_propaganda_film
+  tt: available_political_advisor, generic_skip_one_line_tt
+
+=====================================================================
+GER_propaganda_master   cost=@inner_circle_time_tier_3
+  <- GER_fund_the_film_department
+  SWAP  GER_goebbels_reich_minister_of_propaganda_film  ->  GER_goebbels_reich_minister_of_propaganda_master
+  SWAP  GER_goebbels_reich_minister_of_propaganda_film  ->  GER_goebbels_reich_minister_of_propaganda_master_no_lar
+
+=====================================================================
+GER_optimize_reich_labour_service   cost=@inner_circle_time_tier_1
+  <- GER_party_chancellor_hess
+  SWAP  (none)
+
+=====================================================================
+GER_rally_the_industrialists   cost=@inner_circle_time_tier_2
+  <- GER_optimize_reich_labour_service | GER_party_chancellor_hess
+  SWAP  GER_hess_party_chancellor  ->  GER_hess_party_chancellor_improved
+  SWAP  GER_hess_party_chancellor  ->  GER_hess_party_chancellor_improved_no_aat
+  PP: 50
+  tt: generic_skip_one_line_tt, GER_rally_the_industrialists_hess_stays_tt
+
+=====================================================================
+GER_glorify_party_rallies   cost=@inner_circle_time_tier_2
+  <- GER_optimize_reich_labour_service | GER_party_chancellor_bormann
+  SWAP  GER_bormann_secretary_to_the_fuhrer  ->  GER_bormann_secretary_to_the_fuhrer_improved
+  PP: 50
+  tt: generic_skip_one_line_tt
+
+=====================================================================
+GER_total_control_over_domestic_affairs   cost=@inner_circle_time_tier_3
+  <- GER_glorify_party_rallies
+  SWAP  GER_hess_party_chancellor_improved  ->  GER_hess_first_among_equals
+  SWAP  GER_hess_party_chancellor_improved_no_aat  ->  GER_hess_first_among_equals_no_aat
+  SWAP  GER_bormann_secretary_to_the_fuhrer_improved  ->  GER_bormann_brown_eminence
+  PP: 100
+  tt: generic_skip_one_line_tt, GER_total_control_over_domestic_affairs_chancellors_tt
+

@@ -1,0 +1,4 @@
+# ---- 需求 C：经互会通用线（定义见 common/national_focus/hof_ma_joint.txt）----
+# 只列【头】。官方 wiki：shared_focus = <头 id> 会把它【以及所有通过 prerequisite
+# 连到它的 shared focus】一起加进树里 —— 原版 nordic_shared.txt 就是这么做的。
+shared_focus = hof_ma_founding

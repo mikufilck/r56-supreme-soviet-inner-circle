@@ -1,0 +1,823 @@
+# German Inner Circle office ideas - ALL TIERS, with modifiers
+# used to measure the per-swap INCREMENT of a personal line
+
+======== [R56] GER_philipp_holzmann   (GER.txt L11041) ========
+  [meta] picture = GER_philipp_holzmann
+  [meta] allowed = {
+  [meta] visible = {
+  [meta] cost = 150
+  modifier = {
+  					factor = 5
+  					is_historical_focus_on = yes
+  }
+  [meta] traits = { construction_company }
+
+======== [R56] GER_philipp_holzmann_improved   (GER.txt L11069) ========
+  [meta] name = GER_philipp_holzmann
+  [meta] picture = GER_philipp_holzmann
+  [meta] allowed = {
+  [meta] visible = {
+  [meta] cost = 150
+  [meta] research_bonus = {
+  [meta] traits = { GER_philipp_holzmann_trait }
+
+======== [R56] GER_philipp_holzmann_improved_2   (GER.txt L11097) ========
+  [meta] name = GER_philipp_holzmann
+  [meta] picture = GER_philipp_holzmann
+  [meta] allowed = {
+  [meta] visible = {
+  [meta] cost = 150
+  [meta] research_bonus = {
+  [meta] traits = { GER_philipp_holzmann_trait_improved }
+
+======== [R56] GER_philipp_holzmann_improved_2_no_aat   (GER.txt L11120) ========
+  [meta] name = GER_philipp_holzmann
+  [meta] picture = GER_philipp_holzmann
+  [meta] allowed = {
+  [meta] visible = {
+  [meta] cost = 150
+  [meta] research_bonus = {
+  [meta] traits = { GER_philipp_holzmann_trait_improved_no_aat }
+
+======== [R56] GER_organization_todt   (GER.txt L11143) ========
+  [meta] picture = GER_organization_todt
+  [meta] allowed = {
+  [meta] visible = {
+  [meta] cost = 75
+  [meta] research_bonus = {
+  [meta] traits = { GER_organization_todt_trait }
+
+======== [R56] GER_organization_todt_improved   (GER.txt L11169) ========
+  [meta] name = GER_organization_todt
+  [meta] picture = GER_organization_todt
+  [meta] allowed = {
+  [meta] visible = {
+  [meta] cost = 75
+  [meta] research_bonus = {
+  [meta] traits = { GER_organization_todt_improved_trait }
+
+======== [R56] GER_reichswerke   (GER.txt L11212) ========
+  [meta] picture = GER_reichswerke
+  [meta] allowed = {
+  [meta] visible = {
+  [meta] cost = 150
+  [meta] research_bonus = {
+  [meta] traits = { conglomerate }
+
+======== [R56] GER_reichswerke_improved   (GER.txt L11247) ========
+  [meta] name = GER_reichswerke
+  [meta] picture = GER_reichswerke
+  [meta] allowed = {
+  [meta] visible = {
+  [meta] cost = 100
+  [meta] research_bonus = {
+  [meta] traits = { GER_reichswerke_conglomerate }
+
+======== [R56] GER_reichswerke_improved_2   (GER.txt L11281) ========
+  [meta] name = GER_reichswerke
+  [meta] picture = GER_reichswerke
+  [meta] allowed = {
+  [meta] visible = {
+  [meta] cost = 100
+  [meta] research_bonus = {
+  [meta] traits = { GER_reichswerke_conglomerate }
+
+======== [R56] GER_todt_reich_engineer   (GER.txt L11350) ========
+  [meta] allowed = {
+  [meta] removal_cost = -1
+  modifier = {
+  				# PP Cost
+  				political_power_gain = -0.1
+  
+  				production_speed_industrial_complex_factor = 0.1
+  				production_speed_infrastructure_factor = 0.1
+  				production_speed_rail_way_factor = 0.1
+  }
+
+======== [R56] GER_todt_reich_minister_of_armaments   (GER.txt L11370) ========
+  [meta] allowed = {
+  [meta] removal_cost = -1
+  modifier = {
+  				# PP Cost
+  				political_power_gain = -0.3
+  
+  				production_speed_industrial_complex_factor = 0.1
+  				production_speed_infrastructure_factor = 0.1
+  				production_speed_rail_way_factor = 0.1
+  				production_speed_arms_factory_factor = 0.1
+  				production_speed_dockyard_factor = 0.1
+  }
+
+======== [R56] GER_speer_reich_architect   (GER.txt L11392) ========
+  [meta] allowed = {
+  [meta] removal_cost = -1
+  modifier = {
+  				# PP Cost
+  				political_power_gain = -0.1
+  
+  				production_speed_buildings_factor = 0.05
+  				fascism_drift = 0.01
+  }
+
+======== [R56] GER_speer_reich_minister_of_armaments   (GER.txt L11411) ========
+  [meta] allowed = {
+  [meta] removal_cost = -1
+  modifier = {
+  				# PP Cost
+  				political_power_gain = -0.3
+  
+  				production_speed_buildings_factor = 0.05
+  				fascism_drift = 0.01
+  				industrial_capacity_factory = 0.1
+  				industrial_capacity_dockyard = 0.1
+  }
+
+======== [R56] GER_goring_overseer_four_year_plan   (GER.txt L11432) ========
+  [meta] allowed = {
+  [meta] removal_cost = -1
+  modifier = {
+  				# PP Cost
+  				political_power_gain = -0.1
+  
+  				local_resources_factor = 0.05
+  				#production_lack_of_resource_penalty_factor = -0.05?
+  				#industry_free_repair_factor = 0.15?
+  }
+
+======== [R56] GER_goring_four_year_plan_plenipotentiary   (GER.txt L11452) ========
+  [meta] allowed = {
+  [meta] removal_cost = -1
+  modifier = {
+  				# PP Cost
+  				political_power_gain = -0.3
+  
+  				local_resources_factor = 0.05
+  				#production_lack_of_resource_penalty_factor = -0.05?
+  				#industry_free_repair_factor = 0.15?
+  				production_factory_max_efficiency_factor = 0.05
+  				production_factory_efficiency_gain_factor = 0.05
+  				production_factory_start_efficiency_factor = 0.05
+  				line_change_production_efficiency_factor = 0.05
+  }
+
+======== [R56] GER_himmler_chief_of_german_police   (GER.txt L11476) ========
+  [meta] allowed = {
+  [meta] removal_cost = -1
+  modifier = {
+  				# PP Cost
+  				political_power_gain = -0.1
+  
+  				resistance_damage_to_garrison = -0.25
+  				foreign_subversive_activites = -0.3
+  				non_core_manpower = 0.02
+  }
+
+======== [R56] GER_himmler_director_reich_security   (GER.txt L11496) ========
+  [meta] allowed = {
+  [meta] removal_cost = -1
+  modifier = {
+  				# PP Cost
+  				political_power_gain = -0.3
+  
+  				resistance_damage_to_garrison = -0.25
+  				foreign_subversive_activites = -0.3
+  				non_core_manpower = 0.02
+  
+  				subversive_activites_upkeep = -0.25
+  				operative_slot = 1
+  				intelligence_agency_defense = 0.2
+  				intel_from_combat_factor = 0.25
+  }
+
+======== [R56] GER_himmler_reichsfuhrer_ss   (GER.txt L11521) ========
+  [meta] allowed = {
+  [meta] removal_cost = -1
+  modifier = {
+  				# PP Cost
+  				political_power_gain = -0.3
+  
+  				resistance_damage_to_garrison = -0.25
+  				foreign_subversive_activites = -0.3
+  				non_core_manpower = 0.04
+  
+  				subversive_activites_upkeep = -0.25
+  				operative_slot = 1
+  				intelligence_agency_defense = 0.2
+  				intel_from_combat_factor = 0.25
+  
+  				resistance_growth = -0.15
+  				compliance_growth = -0.1
+  				special_forces_cap = 0.05
+  }
+
+======== [R56] GER_goebbels_reich_minister_of_propaganda   (GER.txt L11550) ========
+  [meta] allowed = {
+  [meta] removal_cost = -1
+  modifier = {
+  				# PP Cost
+  				political_power_gain = -0.1
+  
+  				war_support_factor = 0.05
+  				fascism_drift = 0.1
+  }
+
+======== [R56] GER_goebbels_reich_minister_of_propaganda_ministry   (GER.txt L11569) ========
+  [meta] allowed = {
+  [meta] removal_cost = -1
+  modifier = {
+  				# PP Cost
+  				political_power_gain = -0.1
+  
+  				war_support_factor = 0.05
+  				fascism_drift = 0.2
+  
+  				party_popularity_stability_factor= 0.1
+  }
+
+======== [R56] GER_goebbels_reich_minister_of_propaganda_film   (GER.txt L11592) ========
+  [meta] allowed = {
+  [meta] removal_cost = -1
+  modifier = {
+  				# PP Cost
+  				political_power_gain = -0.3
+  
+  				war_support_factor = 0.05
+  				fascism_drift = 0.2
+  				party_popularity_stability_factor= 0.1
+  
+  				offensive_war_stability_factor = 0.1
+  				defensive_war_stability_factor = 0.1
+  }
+
+======== [R56] GER_goebbels_reich_minister_of_propaganda_master   (GER.txt L11617) ========
+  [meta] allowed = {
+  [meta] removal_cost = -1
+  modifier = {
+  				# PP Cost
+  				political_power_gain = -0.3
+  
+  				war_support_factor = 0.1
+  				fascism_drift = 0.2
+  				party_popularity_stability_factor= 0.1
+  				surrender_limit = 0.1
+  				offensive_war_stability_factor = 0.1
+  				defensive_war_stability_factor = 0.1
+  				operative_slot = 1
+  				boost_ideology_mission_factor = 0.15
+  				boost_resistance_factor = 0.15
+  }
+
+======== [R56] GER_goebbels_reich_minister_of_propaganda_master_no_lar   (GER.txt L11645) ========
+  [meta] allowed = {
+  [meta] removal_cost = -1
+  modifier = {
+  				# PP Cost
+  				political_power_gain = -0.3
+  
+  				war_support_factor = 0.1
+  				fascism_drift = 0.2
+  				party_popularity_stability_factor= 0.1
+  				surrender_limit = 0.1
+  				offensive_war_stability_factor = 0.1
+  				defensive_war_stability_factor = 0.1
+  				subversive_activites_upkeep = -0.5
+  }
+
+======== [R56] GER_hess_party_chancellor   (GER.txt L11671) ========
+  [meta] allowed = {
+  [meta] removal_cost = -1
+  modifier = {
+  				# PP Gain
+  				political_power_gain = 0.15
+  
+  				opinion_gain_monthly_same_ideology_factor = 1
+  }
+
+======== [R56] GER_hess_party_chancellor_improved   (GER.txt L11689) ========
+  [meta] allowed = {
+  [meta] removal_cost = -1
+  modifier = {
+  				# PP Gain
+  				political_power_gain = 0.4
+  
+  				opinion_gain_monthly_same_ideology_factor = 1
+  
+  				military_industrial_organization_funds_gain = 0.15
+  				military_industrial_organization_research_bonus = 0.15
+  }
+
+======== [R56] GER_hess_party_chancellor_improved_no_aat   (GER.txt L11711) ========
+  [meta] allowed = {
+  [meta] removal_cost = -1
+  modifier = {
+  				# PP Gain
+  				political_power_gain = 0.4
+  
+  				opinion_gain_monthly_same_ideology_factor = 1
+  
+  				tank_manufacturer_cost_factor = -0.35
+  				materiel_manufacturer_cost_factor = -0.35
+  				aircraft_manufacturer_cost_factor = -0.35
+  				naval_manufacturer_cost_factor = -0.35
+  }
+
+======== [R56] GER_hess_first_among_equals   (GER.txt L11735) ========
+  [meta] allowed = {
+  [meta] removal_cost = -1
+  modifier = {
+  				# PP Gain
+  				political_power_gain = 0.2
+  
+  				opinion_gain_monthly_same_ideology_factor = 1
+  				military_industrial_organization_funds_gain = 0.15
+  				military_industrial_organization_research_bonus = 0.15
+  
+  				#New from Total Control
+  				conscription_factor = 0.05
+  				political_power_factor = 0.15
+  				mobilization_laws_cost_factor = -0.25
+  				trade_laws_cost_factor = -0.25
+  				economy_cost_factor = -0.25
+  				research_speed_factor = 0.05
+  }
+
+======== [R56] GER_hess_first_among_equals_no_aat   (GER.txt L11763) ========
+  [meta] allowed = {
+  [meta] removal_cost = -1
+  modifier = {
+  				# PP Gain
+  				political_power_gain = 0.2
+  
+  				opinion_gain_monthly_same_ideology_factor = 1
+  				tank_manufacturer_cost_factor = -0.35
+  				materiel_manufacturer_cost_factor = -0.35
+  				aircraft_manufacturer_cost_factor = -0.35
+  				naval_manufacturer_cost_factor = -0.35
+  
+  				#New from Total Control
+  				conscription_factor = 0.1
+  				political_power_factor = 0.15
+  				mobilization_laws_cost_factor = -0.25
+  				trade_laws_cost_factor = -0.25
+  				economy_cost_factor = -0.25
+  				research_speed_factor = 0.05
+  }
+
+======== [R56] GER_bormann_secretary_to_the_fuhrer   (GER.txt L11793) ========
+  [meta] allowed = {
+  [meta] removal_cost = -1
+  modifier = {
+  				# PP Gain
+  				political_power_gain = 0.15
+  
+  				political_advisor_cost_factor = -0.15
+  }
+
+======== [R56] GER_bormann_secretary_to_the_fuhrer_improved   (GER.txt L11811) ========
+  [meta] allowed = {
+  [meta] removal_cost = -1
+  modifier = {
+  				# PP Gain
+  				political_power_gain = 0.2
+  
+  				political_advisor_cost_factor = -0.5
+  				theorist_cost_factor = -0.25
+  				army_chief_cost_factor = -0.25
+  				navy_chief_cost_factor = -0.25
+  				air_chief_cost_factor = -0.25
+  				high_command_cost_factor = -0.25
+  }
+
+======== [R56] GER_bormann_brown_eminence   (GER.txt L11835) ========
+  [meta] allowed = {
+  [meta] removal_cost = -1
+  modifier = {
+  				# PP Gain
+  				political_power_gain = 0.2
+  
+  				political_advisor_cost_factor = -0.5
+  				theorist_cost_factor = -0.25
+  				army_chief_cost_factor = -0.25
+  				navy_chief_cost_factor = -0.25
+  				air_chief_cost_factor = -0.25
+  				high_command_cost_factor = -0.25
+  
+  				#New from Total Control
+  				conscription_factor = 0.05
+  				political_power_factor = 0.15
+  				mobilization_laws_cost_factor = -0.25
+  				trade_laws_cost_factor = -0.25
+  				economy_cost_factor = -0.25
+  				research_speed_factor = 0.05
+  }
+
+======== [VANILLA] GER_philipp_holzmann   (GER.txt L5744) ========
+  [meta] picture = GER_philipp_holzmann
+  [meta] allowed = {
+  [meta] visible = {
+  [meta] cost = 150
+  modifier = {
+  					factor = 5
+  					is_historical_focus_on = yes
+  }
+  [meta] traits = { construction_company }
+
+======== [VANILLA] GER_philipp_holzmann_improved   (GER.txt L5772) ========
+  [meta] name = GER_philipp_holzmann
+  [meta] picture = GER_philipp_holzmann
+  [meta] allowed = {
+  [meta] visible = {
+  [meta] cost = 150
+  [meta] research_bonus = {
+  [meta] traits = { GER_philipp_holzmann_trait }
+
+======== [VANILLA] GER_philipp_holzmann_improved_2   (GER.txt L5800) ========
+  [meta] name = GER_philipp_holzmann
+  [meta] picture = GER_philipp_holzmann
+  [meta] allowed = {
+  [meta] visible = {
+  [meta] cost = 150
+  [meta] research_bonus = {
+  [meta] traits = { GER_philipp_holzmann_trait_improved }
+
+======== [VANILLA] GER_philipp_holzmann_improved_2_no_aat   (GER.txt L5823) ========
+  [meta] name = GER_philipp_holzmann
+  [meta] picture = GER_philipp_holzmann
+  [meta] allowed = {
+  [meta] visible = {
+  [meta] cost = 150
+  [meta] research_bonus = {
+  [meta] traits = { GER_philipp_holzmann_trait_improved_no_aat }
+
+======== [VANILLA] GER_organization_todt   (GER.txt L5846) ========
+  [meta] picture = GER_organization_todt
+  [meta] allowed = {
+  [meta] visible = {
+  [meta] cost = 75
+  [meta] research_bonus = {
+  [meta] traits = { GER_organization_todt_trait }
+
+======== [VANILLA] GER_organization_todt_improved   (GER.txt L5872) ========
+  [meta] name = GER_organization_todt
+  [meta] picture = GER_organization_todt
+  [meta] allowed = {
+  [meta] visible = {
+  [meta] cost = 75
+  [meta] research_bonus = {
+  [meta] traits = { GER_organization_todt_improved_trait }
+
+======== [VANILLA] GER_reichswerke   (GER.txt L5915) ========
+  [meta] picture = GER_reichswerke
+  [meta] allowed = {
+  [meta] visible = {
+  [meta] cost = 150
+  [meta] research_bonus = {
+  [meta] traits = { conglomerate }
+
+======== [VANILLA] GER_reichswerke_improved   (GER.txt L5950) ========
+  [meta] name = GER_reichswerke
+  [meta] picture = GER_reichswerke
+  [meta] allowed = {
+  [meta] visible = {
+  [meta] cost = 100
+  [meta] research_bonus = {
+  [meta] traits = { GER_reichswerke_conglomerate }
+
+======== [VANILLA] GER_reichswerke_improved_2   (GER.txt L5984) ========
+  [meta] name = GER_reichswerke
+  [meta] picture = GER_reichswerke
+  [meta] allowed = {
+  [meta] visible = {
+  [meta] cost = 100
+  [meta] research_bonus = {
+  [meta] traits = { GER_reichswerke_conglomerate }
+
+======== [VANILLA] GER_todt_reich_engineer   (GER.txt L6045) ========
+  [meta] allowed = {
+  [meta] removal_cost = -1
+  modifier = {
+  				# PP Cost
+  				political_power_gain = -0.1
+  
+  				production_speed_industrial_complex_factor = 0.1
+  				production_speed_infrastructure_factor = 0.1
+  				production_speed_rail_way_factor = 0.1
+  }
+
+======== [VANILLA] GER_todt_reich_minister_of_armaments   (GER.txt L6065) ========
+  [meta] allowed = {
+  [meta] removal_cost = -1
+  modifier = {
+  				# PP Cost
+  				political_power_gain = -0.3
+  
+  				production_speed_industrial_complex_factor = 0.1
+  				production_speed_infrastructure_factor = 0.1
+  				production_speed_rail_way_factor = 0.1
+  				production_speed_arms_factory_factor = 0.1
+  				production_speed_dockyard_factor = 0.1
+  }
+
+======== [VANILLA] GER_speer_reich_architect   (GER.txt L6087) ========
+  [meta] allowed = {
+  [meta] removal_cost = -1
+  modifier = {
+  				# PP Cost
+  				political_power_gain = -0.1
+  
+  				production_speed_buildings_factor = 0.05
+  				fascism_drift = 0.01
+  }
+
+======== [VANILLA] GER_speer_reich_minister_of_armaments   (GER.txt L6106) ========
+  [meta] allowed = {
+  [meta] removal_cost = -1
+  modifier = {
+  				# PP Cost
+  				political_power_gain = -0.3
+  
+  				production_speed_buildings_factor = 0.05
+  				fascism_drift = 0.01
+  				industrial_capacity_factory = 0.1
+  				industrial_capacity_dockyard = 0.1
+  }
+
+======== [VANILLA] GER_goring_overseer_four_year_plan   (GER.txt L6127) ========
+  [meta] allowed = {
+  [meta] removal_cost = -1
+  modifier = {
+  				# PP Cost
+  				political_power_gain = -0.1
+  
+  				local_resources_factor = 0.05
+  				#production_lack_of_resource_penalty_factor = -0.05?
+  				#industry_free_repair_factor = 0.15?
+  }
+
+======== [VANILLA] GER_goring_four_year_plan_plenipotentiary   (GER.txt L6147) ========
+  [meta] allowed = {
+  [meta] removal_cost = -1
+  modifier = {
+  				# PP Cost
+  				political_power_gain = -0.3
+  
+  				local_resources_factor = 0.05
+  				#production_lack_of_resource_penalty_factor = -0.05?
+  				#industry_free_repair_factor = 0.15?
+  				production_factory_max_efficiency_factor = 0.05
+  				production_factory_efficiency_gain_factor = 0.05
+  				production_factory_start_efficiency_factor = 0.05
+  				line_change_production_efficiency_factor = 0.05
+  }
+
+======== [VANILLA] GER_himmler_chief_of_german_police   (GER.txt L6171) ========
+  [meta] allowed = {
+  [meta] removal_cost = -1
+  modifier = {
+  				# PP Cost
+  				political_power_gain = -0.1
+  
+  				resistance_damage_to_garrison = -0.25
+  				foreign_subversive_activites = -0.3
+  				non_core_manpower = 0.02
+  }
+
+======== [VANILLA] GER_himmler_director_reich_security   (GER.txt L6191) ========
+  [meta] allowed = {
+  [meta] removal_cost = -1
+  modifier = {
+  				# PP Cost
+  				political_power_gain = -0.3
+  
+  				resistance_damage_to_garrison = -0.25
+  				foreign_subversive_activites = -0.3
+  				non_core_manpower = 0.02
+  
+  				subversive_activites_upkeep = -0.25
+  				operative_slot = 1
+  				intelligence_agency_defense = 0.2
+  				intel_from_combat_factor = 0.25
+  }
+
+======== [VANILLA] GER_himmler_reichsfuhrer_ss   (GER.txt L6216) ========
+  [meta] allowed = {
+  [meta] removal_cost = -1
+  modifier = {
+  				# PP Cost
+  				political_power_gain = -0.3
+  
+  				resistance_damage_to_garrison = -0.25
+  				foreign_subversive_activites = -0.3
+  				non_core_manpower = 0.04
+  
+  				subversive_activites_upkeep = -0.25
+  				operative_slot = 1
+  				intelligence_agency_defense = 0.2
+  				intel_from_combat_factor = 0.25
+  
+  				resistance_growth = -0.15
+  				compliance_growth = -0.1
+  				special_forces_cap = 0.05
+  }
+
+======== [VANILLA] GER_goebbels_reich_minister_of_propaganda   (GER.txt L6245) ========
+  [meta] allowed = {
+  [meta] removal_cost = -1
+  modifier = {
+  				# PP Cost
+  				political_power_gain = -0.1
+  
+  				war_support_factor = 0.05
+  				fascism_drift = 0.1
+  }
+
+======== [VANILLA] GER_goebbels_reich_minister_of_propaganda_ministry   (GER.txt L6264) ========
+  [meta] allowed = {
+  [meta] removal_cost = -1
+  modifier = {
+  				# PP Cost
+  				political_power_gain = -0.1
+  
+  				war_support_factor = 0.05
+  				fascism_drift = 0.2
+  
+  				party_popularity_stability_factor= 0.1
+  }
+
+======== [VANILLA] GER_goebbels_reich_minister_of_propaganda_film   (GER.txt L6287) ========
+  [meta] allowed = {
+  [meta] removal_cost = -1
+  modifier = {
+  				# PP Cost
+  				political_power_gain = -0.3
+  
+  				war_support_factor = 0.05
+  				fascism_drift = 0.2
+  				party_popularity_stability_factor= 0.1
+  
+  				offensive_war_stability_factor = 0.1
+  				defensive_war_stability_factor = 0.1
+  }
+
+======== [VANILLA] GER_goebbels_reich_minister_of_propaganda_master   (GER.txt L6312) ========
+  [meta] allowed = {
+  [meta] removal_cost = -1
+  modifier = {
+  				# PP Cost
+  				political_power_gain = -0.3
+  
+  				war_support_factor = 0.1
+  				fascism_drift = 0.2
+  				party_popularity_stability_factor= 0.1
+  				surrender_limit = 0.1
+  				offensive_war_stability_factor = 0.1
+  				defensive_war_stability_factor = 0.1
+  				operative_slot = 1
+  				boost_ideology_mission_factor = 0.15
+  				boost_resistance_factor = 0.15
+  }
+
+======== [VANILLA] GER_goebbels_reich_minister_of_propaganda_master_no_lar   (GER.txt L6340) ========
+  [meta] allowed = {
+  [meta] removal_cost = -1
+  modifier = {
+  				# PP Cost
+  				political_power_gain = -0.3
+  
+  				war_support_factor = 0.1
+  				fascism_drift = 0.2
+  				party_popularity_stability_factor= 0.1
+  				surrender_limit = 0.1
+  				offensive_war_stability_factor = 0.1
+  				defensive_war_stability_factor = 0.1
+  				subversive_activites_upkeep = -0.5
+  }
+
+======== [VANILLA] GER_hess_party_chancellor   (GER.txt L6366) ========
+  [meta] allowed = {
+  [meta] removal_cost = -1
+  modifier = {
+  				# PP Gain
+  				political_power_gain = 0.15
+  
+  				opinion_gain_monthly_same_ideology_factor = 1
+  }
+
+======== [VANILLA] GER_hess_party_chancellor_improved   (GER.txt L6384) ========
+  [meta] allowed = {
+  [meta] removal_cost = -1
+  modifier = {
+  				# PP Gain
+  				political_power_gain = 0.4
+  
+  				opinion_gain_monthly_same_ideology_factor = 1
+  
+  				military_industrial_organization_funds_gain = 0.15
+  				military_industrial_organization_research_bonus = 0.15
+  }
+
+======== [VANILLA] GER_hess_party_chancellor_improved_no_aat   (GER.txt L6406) ========
+  [meta] allowed = {
+  [meta] removal_cost = -1
+  modifier = {
+  				# PP Gain
+  				political_power_gain = 0.4
+  
+  				opinion_gain_monthly_same_ideology_factor = 1
+  
+  				tank_manufacturer_cost_factor = -0.35
+  				materiel_manufacturer_cost_factor = -0.35
+  				aircraft_manufacturer_cost_factor = -0.35
+  				naval_manufacturer_cost_factor = -0.35
+  }
+
+======== [VANILLA] GER_hess_first_among_equals   (GER.txt L6430) ========
+  [meta] allowed = {
+  [meta] removal_cost = -1
+  modifier = {
+  				# PP Gain
+  				political_power_gain = 0.2
+  
+  				opinion_gain_monthly_same_ideology_factor = 1
+  				military_industrial_organization_funds_gain = 0.15
+  				military_industrial_organization_research_bonus = 0.15
+  
+  				#New from Total Control
+  				conscription_factor = 0.05
+  				political_power_factor = 0.15
+  				mobilization_laws_cost_factor = -0.25
+  				trade_laws_cost_factor = -0.25
+  				economy_cost_factor = -0.25
+  				research_speed_factor = 0.05
+  }
+
+======== [VANILLA] GER_hess_first_among_equals_no_aat   (GER.txt L6458) ========
+  [meta] allowed = {
+  [meta] removal_cost = -1
+  modifier = {
+  				# PP Gain
+  				political_power_gain = 0.2
+  
+  				opinion_gain_monthly_same_ideology_factor = 1
+  				tank_manufacturer_cost_factor = -0.35
+  				materiel_manufacturer_cost_factor = -0.35
+  				aircraft_manufacturer_cost_factor = -0.35
+  				naval_manufacturer_cost_factor = -0.35
+  
+  				#New from Total Control
+  				conscription_factor = 0.1
+  				political_power_factor = 0.15
+  				mobilization_laws_cost_factor = -0.25
+  				trade_laws_cost_factor = -0.25
+  				economy_cost_factor = -0.25
+  				research_speed_factor = 0.05
+  }
+
+======== [VANILLA] GER_bormann_secretary_to_the_fuhrer   (GER.txt L6488) ========
+  [meta] allowed = {
+  [meta] removal_cost = -1
+  modifier = {
+  				# PP Gain
+  				political_power_gain = 0.15
+  
+  				political_advisor_cost_factor = -0.15
+  }
+
+======== [VANILLA] GER_bormann_secretary_to_the_fuhrer_improved   (GER.txt L6506) ========
+  [meta] allowed = {
+  [meta] removal_cost = -1
+  modifier = {
+  				# PP Gain
+  				political_power_gain = 0.2
+  
+  				political_advisor_cost_factor = -0.5
+  				theorist_cost_factor = -0.25
+  				army_chief_cost_factor = -0.25
+  				navy_chief_cost_factor = -0.25
+  				air_chief_cost_factor = -0.25
+  				high_command_cost_factor = -0.25
+  }
+
+======== [VANILLA] GER_bormann_brown_eminence   (GER.txt L6530) ========
+  [meta] allowed = {
+  [meta] removal_cost = -1
+  modifier = {
+  				# PP Gain
+  				political_power_gain = 0.2
+  
+  				political_advisor_cost_factor = -0.5
+  				theorist_cost_factor = -0.25
+  				army_chief_cost_factor = -0.25
+  				navy_chief_cost_factor = -0.25
+  				air_chief_cost_factor = -0.25
+  				high_command_cost_factor = -0.25
+  
+  				#New from Total Control
+  				conscription_factor = 0.05
+  				political_power_factor = 0.15
+  				mobilization_laws_cost_factor = -0.25
+  				trade_laws_cost_factor = -0.25
+  				economy_cost_factor = -0.25
+  				research_speed_factor = 0.05
+  }
+

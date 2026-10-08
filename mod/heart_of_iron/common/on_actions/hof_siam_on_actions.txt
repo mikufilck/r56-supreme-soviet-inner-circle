@@ -1,0 +1,15 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_country = {
+				limit = { original_tag = SIA }
+				hof_SIA_repair_greater_thai_empire_cores = yes
+			}
+		}
+	}
+	on_weekly = {
+		effect = {
+			hof_SIA_repair_greater_thai_empire_cores = yes
+		}
+	}
+}

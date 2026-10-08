@@ -1,0 +1,27 @@
+# HOI4 脚本与本地化：强制 LF/CRLF 与编码约定，避免协作者产生巨大 diff
+* text=auto eol=crlf
+
+# 脚本：CRLF
+*.txt text eol=crlf
+*.mod text eol=crlf
+*.gfx text eol=crlf
+*.asset text eol=crlf
+*.csv text eol=crlf
+
+# 本地化：原始字节保留 UTF-8 BOM，避免普通 ZIP 下载丢失 BOM。
+# GitHub 源码 ZIP 直接用于游戏，不能依赖 checkout 时才补回的编码转换。
+/mod/heart_of_iron/localisation/**/*.yml -text
+
+# PowerShell 5.1 必须保留 UTF-8 BOM；二进制存储保护既有字节。
+*.ps1 -text
+
+# 二进制资源
+*.dds binary
+*.tga binary
+*.png binary
+*.jpg binary
+*.bmp binary
+*.mesh binary
+*.anim binary
+*.ttf binary
+*.otf binary

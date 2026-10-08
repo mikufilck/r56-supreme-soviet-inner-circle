@@ -1,0 +1,272 @@
+# =============================================================================
+# 核心圈 · 席位立绘 sprite（由 build/gen-hof-ic-s3.ps1 生成，勿手改）
+# 单独成文件，是为了让手写的 interface/hof_ic.gfx 保持不动。
+# =============================================================================
+
+spriteTypes = {
+
+	# 列夫·托洛茨基  [R56 大幅立绘 156x210]
+	spriteType = {
+		name = "GFX_hof_ic_portrait_lev_trotsky"
+		texturefile = "gfx/leaders/SOV/r56_portrait_SOV_Leon_Trotsky.dds"
+	}
+
+	# 尼古拉·布哈林  [DLC034 大幅立绘 156x210]
+	spriteType = {
+		name = "GFX_hof_ic_portrait_nikolay_bukharin"
+		texturefile = "gfx/leaders/SOV/portrait_SOV_nikolay_bukharin.dds"
+	}
+
+	# 阿列克谢·李可夫  [DLC034 大幅立绘 156x210]
+	spriteType = {
+		name = "GFX_hof_ic_portrait_aleksey_rykov"
+		texturefile = "gfx/leaders/SOV/portrait_SOV_aleksey_rykov.dds"
+	}
+
+	# 格里戈里·季诺维也夫  [原版大幅立绘 156x210]
+	spriteType = {
+		name = "GFX_hof_ic_portrait_grigory_zinovyev"
+		texturefile = "gfx/leaders/SOV/portrait_SOV_grigory_zinovyev.dds"
+	}
+
+	# 列夫·加米涅夫  [原版大幅立绘 156x210]
+	spriteType = {
+		name = "GFX_hof_ic_portrait_lev_kamenev"
+		texturefile = "gfx/leaders/SOV/portrait_SOV_lev_kamenev.dds"
+	}
+
+	# 伊万·斯米尔诺夫  [原版大幅立绘 156x210]
+	spriteType = {
+		name = "GFX_hof_ic_portrait_ivan_smirnov"
+		texturefile = "gfx/leaders/SOV/portrait_SOV_ivan_smirnov.dds"
+	}
+
+	# 列昂尼德·谢列布里亚科夫  [R56 大幅立绘 156x210]
+	spriteType = {
+		name = "GFX_hof_ic_portrait_leonid_serebryakov"
+		texturefile = "gfx/leaders/SOV/r56_portrait_SOV_Leonid_Serebryakov.dds"
+	}
+
+	# 叶夫根尼·普列奥布拉任斯基  [新美术]
+	spriteType = {
+		name = "GFX_hof_ic_portrait_yevgeny_preobrazhensky"
+		texturefile = "gfx/interface/hof_ic/portraits/hof_portrait_SOV_yevgeny_preobrazhensky.dds"
+	}
+
+	# 卡尔·拉狄克  [新美术]
+	spriteType = {
+		name = "GFX_hof_ic_portrait_karl_radek"
+		texturefile = "gfx/interface/hof_ic/portraits/hof_portrait_SOV_karl_radek.dds"
+	}
+
+	# 伊瓦尔·斯米尔加  [新美术]
+	spriteType = {
+		name = "GFX_hof_ic_portrait_ivar_smilga"
+		texturefile = "gfx/interface/hof_ic/portraits/hof_portrait_SOV_ivar_smilga.dds"
+	}
+
+	# 米哈伊尔·托姆斯基  [新美术]
+	spriteType = {
+		name = "GFX_hof_ic_portrait_mikhail_tomsky"
+		texturefile = "gfx/interface/hof_ic/portraits/hof_portrait_SOV_mikhail_tomsky.dds"
+	}
+
+	# 马尔特米扬·里亚京  [新美术]
+	spriteType = {
+		name = "GFX_hof_ic_portrait_martemyan_ryutin"
+		texturefile = "gfx/interface/hof_ic/portraits/hof_portrait_SOV_martemyan_ryutin.dds"
+	}
+
+	# 亚历山大·施利亚普尼科夫  [新美术]
+	spriteType = {
+		name = "GFX_hof_ic_portrait_aleksandr_shlyapnikov"
+		texturefile = "gfx/interface/hof_ic/portraits/hof_portrait_SOV_aleksandr_shlyapnikov.dds"
+	}
+
+	# 米哈伊尔·加里宁  [新美术]
+	spriteType = {
+		name = "GFX_hof_ic_portrait_mikhail_kalinin"
+		texturefile = "gfx/interface/hof_ic/portraits/hof_portrait_SOV_mikhail_kalinin.dds"
+	}
+
+	# 马克西姆·李维诺夫  [新美术]
+	spriteType = {
+		name = "GFX_hof_ic_portrait_maksim_litvinov"
+		texturefile = "gfx/interface/hof_ic/portraits/hof_portrait_SOV_maksim_litvinov.dds"
+	}
+
+	# 格里戈里·索柯里尼柯夫  [新美术]
+	spriteType = {
+		name = "GFX_hof_ic_portrait_grigory_sokolnikov"
+		texturefile = "gfx/interface/hof_ic/portraits/hof_portrait_SOV_grigory_sokolnikov.dds"
+	}
+
+	# 米哈伊尔·图哈切夫斯基  [原版大幅立绘 156x210]
+	spriteType = {
+		name = "GFX_hof_ic_portrait_mikhail_tukhachevsky"
+		texturefile = "gfx/leaders/SOV/Portrait_Soviet_Mikhail_Tukhachevsky.dds"
+	}
+
+	# 尼古拉·沃兹涅先斯基  [新美术]
+	spriteType = {
+		name = "GFX_hof_ic_portrait_nikolay_voznesensky"
+		texturefile = "gfx/interface/hof_ic/portraits/hof_portrait_SOV_nikolay_voznesensky.dds"
+	}
+
+	# 彼得·斯米尔诺夫  [新美术]
+	spriteType = {
+		name = "GFX_hof_ic_portrait_pyotr_smirnov"
+		texturefile = "gfx/interface/hof_ic/portraits/hof_portrait_SOV_pyotr_smirnov.dds"
+	}
+
+	# 格奥尔基·马林科夫  [R56 大幅立绘 156x210]
+	spriteType = {
+		name = "GFX_hof_ic_portrait_georgy_malenkow"
+		texturefile = "gfx/leaders/SOV/r56_portrait_SOV_Georgy_Malenkov.dds"
+	}
+
+	# 尼基塔·赫鲁晓夫  [R56 大幅立绘 156x210]
+	spriteType = {
+		name = "GFX_hof_ic_portrait_nikita_khrushchyov"
+		texturefile = "gfx/leaders/SOV/r56_portrait_SOV_Nikita_Khrushchev.dds"
+	}
+
+	# 克利门特·伏罗希洛夫  [原版大幅立绘 156x210]
+	spriteType = {
+		name = "GFX_hof_ic_portrait_kliment_voroshilov"
+		texturefile = "gfx/leaders/SOV/Portrait_Soviet_Kliment_Voroshilov.dds"
+	}
+
+	# 列夫·托洛茨基 —— 底部候选栏小头像
+	spriteType = {
+		name = "GFX_hof_ic_cand_lev_trotsky"
+		texturefile = "gfx/leaders/SOV/r56_portrait_SOV_Leon_Trotsky.dds"
+	}
+
+	# 尼古拉·布哈林 —— 底部候选栏小头像
+	spriteType = {
+		name = "GFX_hof_ic_cand_nikolay_bukharin"
+		texturefile = "gfx/leaders/SOV/portrait_SOV_nikolay_bukharin.dds"
+	}
+
+	# 阿列克谢·李可夫 —— 底部候选栏小头像
+	spriteType = {
+		name = "GFX_hof_ic_cand_aleksey_rykov"
+		texturefile = "gfx/leaders/SOV/portrait_SOV_aleksey_rykov.dds"
+	}
+
+	# 格里戈里·季诺维也夫 —— 底部候选栏小头像
+	spriteType = {
+		name = "GFX_hof_ic_cand_grigory_zinovyev"
+		texturefile = "gfx/leaders/SOV/portrait_SOV_grigory_zinovyev.dds"
+	}
+
+	# 列夫·加米涅夫 —— 底部候选栏小头像
+	spriteType = {
+		name = "GFX_hof_ic_cand_lev_kamenev"
+		texturefile = "gfx/leaders/SOV/portrait_SOV_lev_kamenev.dds"
+	}
+
+	# 伊万·斯米尔诺夫 —— 底部候选栏小头像
+	spriteType = {
+		name = "GFX_hof_ic_cand_ivan_smirnov"
+		texturefile = "gfx/leaders/SOV/portrait_SOV_ivan_smirnov.dds"
+	}
+
+	# 列昂尼德·谢列布里亚科夫 —— 底部候选栏小头像
+	spriteType = {
+		name = "GFX_hof_ic_cand_leonid_serebryakov"
+		texturefile = "gfx/leaders/SOV/r56_portrait_SOV_Leonid_Serebryakov.dds"
+	}
+
+	# 叶夫根尼·普列奥布拉任斯基 —— 底部候选栏小头像
+	spriteType = {
+		name = "GFX_hof_ic_cand_yevgeny_preobrazhensky"
+		texturefile = "gfx/interface/hof_ic/portraits/hof_portrait_SOV_yevgeny_preobrazhensky.dds"
+	}
+
+	# 卡尔·拉狄克 —— 底部候选栏小头像
+	spriteType = {
+		name = "GFX_hof_ic_cand_karl_radek"
+		texturefile = "gfx/interface/hof_ic/portraits/hof_portrait_SOV_karl_radek.dds"
+	}
+
+	# 伊瓦尔·斯米尔加 —— 底部候选栏小头像
+	spriteType = {
+		name = "GFX_hof_ic_cand_ivar_smilga"
+		texturefile = "gfx/interface/hof_ic/portraits/hof_portrait_SOV_ivar_smilga.dds"
+	}
+
+	# 米哈伊尔·托姆斯基 —— 底部候选栏小头像
+	spriteType = {
+		name = "GFX_hof_ic_cand_mikhail_tomsky"
+		texturefile = "gfx/interface/hof_ic/portraits/hof_portrait_SOV_mikhail_tomsky.dds"
+	}
+
+	# 马尔特米扬·里亚京 —— 底部候选栏小头像
+	spriteType = {
+		name = "GFX_hof_ic_cand_martemyan_ryutin"
+		texturefile = "gfx/interface/hof_ic/portraits/hof_portrait_SOV_martemyan_ryutin.dds"
+	}
+
+	# 亚历山大·施利亚普尼科夫 —— 底部候选栏小头像
+	spriteType = {
+		name = "GFX_hof_ic_cand_aleksandr_shlyapnikov"
+		texturefile = "gfx/interface/hof_ic/portraits/hof_portrait_SOV_aleksandr_shlyapnikov.dds"
+	}
+
+	# 米哈伊尔·加里宁 —— 底部候选栏小头像
+	spriteType = {
+		name = "GFX_hof_ic_cand_mikhail_kalinin"
+		texturefile = "gfx/interface/hof_ic/portraits/hof_portrait_SOV_mikhail_kalinin.dds"
+	}
+
+	# 马克西姆·李维诺夫 —— 底部候选栏小头像
+	spriteType = {
+		name = "GFX_hof_ic_cand_maksim_litvinov"
+		texturefile = "gfx/interface/hof_ic/portraits/hof_portrait_SOV_maksim_litvinov.dds"
+	}
+
+	# 格里戈里·索柯里尼柯夫 —— 底部候选栏小头像
+	spriteType = {
+		name = "GFX_hof_ic_cand_grigory_sokolnikov"
+		texturefile = "gfx/interface/hof_ic/portraits/hof_portrait_SOV_grigory_sokolnikov.dds"
+	}
+
+	# 米哈伊尔·图哈切夫斯基 —— 底部候选栏小头像
+	spriteType = {
+		name = "GFX_hof_ic_cand_mikhail_tukhachevsky"
+		texturefile = "gfx/leaders/SOV/Portrait_Soviet_Mikhail_Tukhachevsky.dds"
+	}
+
+	# 尼古拉·沃兹涅先斯基 —— 底部候选栏小头像
+	spriteType = {
+		name = "GFX_hof_ic_cand_nikolay_voznesensky"
+		texturefile = "gfx/interface/hof_ic/portraits/hof_portrait_SOV_nikolay_voznesensky.dds"
+	}
+
+	# 彼得·斯米尔诺夫 —— 底部候选栏小头像
+	spriteType = {
+		name = "GFX_hof_ic_cand_pyotr_smirnov"
+		texturefile = "gfx/interface/hof_ic/portraits/hof_portrait_SOV_pyotr_smirnov.dds"
+	}
+
+	# 格奥尔基·马林科夫 —— 底部候选栏小头像
+	spriteType = {
+		name = "GFX_hof_ic_cand_georgy_malenkow"
+		texturefile = "gfx/leaders/SOV/r56_portrait_SOV_Georgy_Malenkov.dds"
+	}
+
+	# 尼基塔·赫鲁晓夫 —— 底部候选栏小头像
+	spriteType = {
+		name = "GFX_hof_ic_cand_nikita_khrushchyov"
+		texturefile = "gfx/leaders/SOV/r56_portrait_SOV_Nikita_Khrushchev.dds"
+	}
+
+	# 克利门特·伏罗希洛夫 —— 底部候选栏小头像
+	spriteType = {
+		name = "GFX_hof_ic_cand_kliment_voroshilov"
+		texturefile = "gfx/leaders/SOV/Portrait_Soviet_Kliment_Voroshilov.dds"
+	}
+
+}

@@ -1,0 +1,949 @@
+﻿Ideology - Hearts of Iron 4 Wiki
+10 captures
+04 Jun 2018 - 18 Nov 2025
+Jun
+JUL
+Aug
+09
+2021
+2022
+2023
+success
+fail
+About this capture
+COLLECTED BY
+Collection:
+Save Page Now Outlinks
+TIMESTAMPS
+The Wayback Machine - https://web.archive.org/web/20220709004601/https://hoi4.paradoxwikis.com/Ideologies
+Forum list
+Trending
+Latest
+New posts
+Paradox
+Store
+Mods
+Forum
+Launcher
+PDXCON 2019
+Paradox Wikis
+Hearts of Iron 4 Wiki
+Active Wikis
+Empire of Sin
+AoW: Planetfall
+Cities: Skylines
+Crusader Kings 3
+Europa Universalis 4
+Hearts of Iron 4
+Imperator: Rome
+Prison Architect
+Stellaris
+Surviving Mars
+Surviving the Aftermath
+Legacy Wikis
+Crusader Kings 2
+Arsenal of Democracy
+Europa Universalis 2
+Europa Universalis 3
+Europa Universalis: Rome
+Hearts of Iron 2
+Hearts of Iron 3
+Steel Division
+Tyranny
+Victoria 1
+Victoria 2
+Search
+Open main menu
+Home
+Random
+Log in
+Settings
+About Hearts of Iron 4 Wiki
+Hearts of Iron 4 Wiki
+Search
+Hearts of Iron 4 Wiki
+Language
+Watch
+Edit
+(Redirected from
+Ideologies
+)
+This is a community maintained wiki. If you spot a mistake then you are welcome to fix it.
+Each country has one of the four
+ideologies
+. These are difficult to change and affect under what circumstances a country can perform certain actions, and what happens to occupied territory.
+Contents
+1
+Democracy
+1.1
+Types of Democracy
+1.2
+Traits
+1.3
+Tension limits
+1.4
+Unique occupation law
+1.5
+Countries that start out as a democracy
+2
+Communism
+2.1
+Types of Communism
+2.2
+Traits
+2.3
+Tension limits
+2.4
+Unique occupation law
+2.5
+Countries that start out as communist
+3
+Fascism
+3.1
+Types of Fascism
+3.2
+Traits
+3.3
+Tension limits
+3.4
+Unique occupation law
+3.5
+Countries that start out as fascist
+4
+Non-Aligned
+4.1
+Types of Non-Aligned
+4.2
+Traits
+4.3
+Tension limits
+4.4
+Countries that start out non-aligned
+5
+Changing ideology
+Democracy
+Edit
+聽
+This is a community maintained wiki. If you spot a mistake then you are welcome to fix it.
+聽
+Democracy is a form of government in which the popular vote governs, directly or indirectly. It is characterized by a commitment to civil liberties.
+Types of Democracy
+Edit
+Conservatism
+: Considering rapid changes to society to be potentially harmful, conservatism espouses tradition and moderate reforms, sometimes advocating a return to old moral values.
+Liberalism
+: With a long philosophical tradition of valuing personal liberty, liberalism views safeguarding these rights as the primary function of the state.
+Socialism
+: Striving for equality and a socialist state by reformist means, democratic socialism aims to abolish or mitigate the effects of capitalism with public mandate.
+Traits
+Edit
+聽
+Cannot declare war on democratic countries without a
+wargoal
+聽
+Can impose its ideology on other countries
+聽
+Cannot
+puppet
+a country in a peace conference
+聽
+Cannot occupy territory owned by neutral countries (it is given to the owner instead)
+聽
+Cannot justify war goals against countries that have not generated
+聽
+鈥?a href="/web/20220709004601/https://hoi4.paradoxwikis.com/World_Tension" class="mw-redirect" title="World Tension">World Tension
+聽
+Cannot send
+volunteers
+(Unless changed by a focus/event/decision)
+聽
+Can
+guarantee
+countries with other ideologies
+聽
+Lowers World Tension with guarantees
+聽
+Can host governments in exile
+聽
+Can prepare collaboration goverments
+Annex cost:
++50%
+Faction trade opinion modifier:
++50%
+Civilian intelligence to others:
++20%
+Army intelligence to others:
++5%
+Navy intelligence to others:
++20%
+Airforce intelligence to others:
++5%
+Tension limits
+Edit
+Guarantee independence: 25%
+Send volunteers: 50%
+Join faction: 80%, capped at 50% during a defensive war.
+Declare war: 100%
+Send
+Lend-Lease
+: 50%
+Unique occupation law
+Edit
+Democratic nations can employ
+Local Autonomy
+occupation law
+.
+Countries that start out as a democracy
+Edit
+Majors:
+Liberal:
+聽
+聽
+France
+聽
+聽
+United Kingdom
+聽
+聽
+United States
+Socialist:
+聽
+聽
+France
+(1939)
+Minors:
+Conservative:
+聽
+聽
+Belgium
+聽
+聽
+British Malaya
+聽
+聽
+Czechoslovakia
+聽
+聽
+Haiti
+聽
+聽
+Honduras
+聽
+聽
+Ireland
+聽
+聽
+Liberia
+聽
+聽
+Luxembourg
+聽
+聽
+Netherlands
+聽
+聽
+Philippines
+聽
+聽
+Romania
+聽
+聽
+South Africa
+聽
+聽
+Spain
+聽
+聽
+Switzerland
+Liberal:
+聽
+聽
+Chile
+聽
+聽
+Colombia
+聽
+聽
+Costa Rica
+聽
+聽
+Cuba
+聽
+聽
+Dominion of Canada
+聽
+聽
+Panama
+聽
+聽
+Uruguay
+Socialist:
+聽
+聽
+Australia
+聽
+聽
+Denmark
+聽
+聽
+Dutch East Indies
+聽
+聽
+Ecuador
+聽
+聽
+New Zealand
+聽
+聽
+Norway
+聽
+聽
+Sweden
+Communism
+Edit
+聽
+This is a community maintained wiki. If you spot a mistake then you are welcome to fix it.
+聽
+Communism is a form of government based on social equality and collective ownership of the means of production.
+Types of Communism
+Edit
+Marxism
+: Encompassing a broad spectrum of economic and historical views, Marxist politics seek to apply the theories of Karl Marx to political practice. Class struggle and the need for transition to a society based on common ownership of the means of production characterize these ideologies.
+Leninism
+: A political ideology based in Marxist thought, Leninism seeks to establish a socialist state by a vanguard party leading a revolution overthrowing capitalist society. Once in power, the party rules through a system whereby policies are open for internal debate until a decision has been made.
+Stalinism
+: Identifying as a form of government applying and developing Marxist-Leninist policies emphasizes rapid industrialization and collectivization as well as the need for a strong authoritative socialist state to purge any counter-revolutionary elements.
+Anti-Revisionism
+: A reaction to the many ideologies claiming to be successors to Marxism, Anti-Revisionism advocates retaining key elements of original revolutionary theory. Mainly opposing incorporation of capitalist economic elements into socialist states, the ideology is defined as much by what it isn't as what it is.
+Anarchist Communism
+: An ideology embracing the idea of communism as a stateless society, Anarchist Communism eschews the idea of a transitionary socialist state and favors a society based on voluntary associations and mutual aid.
+Traits
+Edit
+Impact of war declaration on World Tension:
+鈥?5%
+Impact of joining faction on World Tension:
+鈥?0%
+聽
+Can impose its ideology on other countries
+聽
+Can send volunteers
+聽
+Can puppet countries in a peace conference
+聽
+Can occupy territory owned by neutral countries
+聽
+Can host governments in exile
+聽
+Can prepare collaboration goverments
+Puppet cost:
+鈥?0%
+Civilian intelligence to others:
++10%
+Army intelligence to others:
++7.5%
+Navy intelligence to others:
++12.5%
+Airforce intelligence to others:
++7.5%
+World Tension required to join faction:
+-10%
+Tension limits
+Edit
+Communist countries are not limited by World Tension.
+Unique occupation law
+Edit
+Communist nations can employ
+Liberated Workers
+occupation law
+.
+Countries that start out as communist
+Edit
+Majors:
+Stalinist:
+聽
+聽
+Soviet Union
+Minors:
+Marxist:
+聽
+聽
+Communist China
+聽
+聽
+Mongolia
+聽
+聽
+Paraguay
+Stalinist:
+聽
+聽
+Sinkiang
+聽
+聽
+Tannu Tuva
+Fascism
+Edit
+聽
+This is a community maintained wiki. If you spot a mistake then you are welcome to fix it.
+聽
+Fascism is a form of government characterized by authoritarian nationalism.
+Types of Fascism
+Edit
+Nazism
+: Rooted in extreme nationalism, National Socialism is driven by ideas of Germanic supremacy. It promotes aggressive expansionism and a totalitarian state where the people are united under a leader with absolute power, the F眉hrer.
+Generic Nazism
+: Rooted in extreme nationalism, National Socialism is driven by ideas of racial supremacy. It promotes aggressive expansionism and a totalitarian state where the people are united under a leader with absolute power.
+Fascism
+: Encompassing a variety of ultra-nationalist movements, fascism typically venerates devotion to the state and uniting the people under a strong leader.
+Falangism
+: An authoritarian ideology with traits of fascism and conservatism, Falangism values national and Catholic identity.
+Rexism
+: Strongly opposed to both liberal and communist ideals, Rexism is a staunchly conservative nationalist movement who advocate a corporatist economic policy. Employing increasingly populist and authoritarian rhetoric, their ideals are shifting closer to other fascist movements.
+Traits
+Edit
+Time to justify war when at war with major power:
+鈥?0%
+聽
+Can force government of another country to adopt the same ideology
+聽
+Can send volunteer forces
+聽
+Can puppet countries in a peace conference
+聽
+Can occupy territory owned by neutral countries
+聽
+Can host governments in exile
+聽
+Can prepare collaboration goverments
+Civilian intelligence to others:
++15%
+Army intelligence to others:
++10%
+Navy intelligence to others:
++10%
+Airforce intelligence to others:
++10%
+World Tension requirement to join faction:
+-10%
+Tension limits
+Edit
+Fascist countries are not limited by World Tension.
+Unique occupation law
+Edit
+Fascist nations can employ
+Brutal Oppression
+occupation law
+.
+Countries that start out as fascist
+Edit
+Majors
+:
+Nazist:
+聽
+聽
+German Reich
+Fascist:
+聽
+聽
+Italy
+聽
+聽
+Japan
+Minors
+:
+Fascist:
+聽
+聽
+Dominican Republic
+聽
+聽
+El Salvador
+聽
+聽
+Hungary
+(1939)
+聽
+聽
+Peru
+聽
+聽
+Siamese Empire
+(1939)
+聽
+聽
+Slovakia
+(1939)
+聽
+聽
+Venezuela
+Rexist:
+聽
+聽
+Manchukuo
+聽
+聽
+Mengkukuo
+Non-Aligned
+Edit
+聽
+This is a community maintained wiki. If you spot a mistake then you are welcome to fix it.
+聽
+Non-Aligned is a catch-all for any remaining ideology that doesn't belong in the other three.
+Types of Non-Aligned
+Edit
+Despotic
+: Despotism is a form of government in which a single person rules with absolute power.
+Oligarchic
+: Oligarchy is a form of government in which a group of people rule with absolute power.
+Moderatism
+: Moderatism is a form of government which avoids the extremes of left and right by taking a moderate position or course of action.
+Centrism
+: Centrism is a form of government which wants to achieve common sense solutions that appropriately address current and future needs, that support the public trust and serve the common good with consideration of risk and capacity in context of these needs.
+Anarchism
+: Anarchism is the rejection of authority itself, promoting the division of society into self-managing and self-governing collectives instead of a singular, centralized state.
+Traits
+Edit
+Impact of declaring war on World Tension:
+鈥?5%
+Impact of joining factions on World Tension:
+鈥?0%
+聽
+Cannot impose its ideology on other countries
+聽
+Cannot send volunteers
+聽
+Can puppet countries in a peace conference
+聽
+Cannot boost support of this ideology
+聽
+Can prepare collaboration goverments
+Ideology drift defence:
+鈥?0%
+Civilian intelligence to others:
++20%
+Army intelligence to others:
++10%
+Navy intelligence to others:
++20%
+Airforce intelligence to others:
++10%
+Tension limits
+Edit
+Guarantee independence: 40%
+Send volunteers: 40%
+Join faction: 40%
+Justify war goal: 50%
+Declare war: 25%
+Send
+Lend-Lease
+: 40%
+Countries that start out non-aligned
+Edit
+Despotic:
+聽
+聽
+Afghanistan
+聽
+聽
+Albania
+聽
+聽
+Argentina
+聽
+聽
+Bhutan
+聽
+聽
+Bolivia
+聽
+聽
+Brazil
+聽
+聽
+British Raj
+聽
+聽
+Bulgaria
+聽
+聽
+China
+聽
+聽
+Ethiopia
+聽
+聽
+Guangxi Clique
+聽
+聽
+Guatemala
+聽
+聽
+Iran
+聽
+聽
+Iraq
+聽
+聽
+Kingdom of Greece
+(1939)
+聽
+聽
+Kingdom of Romania
+(1939)
+聽
+聽
+Nationalist Spain
+(1939)
+聽
+聽
+Nepal
+聽
+聽
+Nicaragua
+聽
+聽
+Oman
+聽
+聽
+Paraguay
+(1939)
+聽
+聽
+Portugal
+聽
+聽
+Saudi Arabia
+聽
+聽
+Shanxi
+聽
+聽
+Siam
+聽
+聽
+Tibet
+聽
+聽
+Turkey
+聽
+聽
+Xibei San Ma
+聽
+聽
+Yemen
+聽
+聽
+Yugoslavia
+聽
+聽
+Yunnan
+Oligarchic:
+聽
+聽
+Estonia
+聽
+聽
+Kingdom of Hungary
+聽
+聽
+Latvia
+聽
+聽
+Lithuania
+聽
+聽
+Poland
+Moderate:
+聽
+聽
+Mexico
+Centrist:
+聽
+聽
+Austria
+聽
+聽
+Finland
+聽
+聽
+Kingdom of Greece
+Changing ideology
+Edit
+聽
+This is a community maintained wiki. If you spot a mistake then you are welcome to fix it.
+A country can change its ideology in four ways:
+Having an election while another ideology has more than 50% support. This creates an event that enables a peaceful change of power without a civil war.
+Main article:
+Election events
+Executing a coup (see below)
+Fighting and winning a civil war. The support of the conflicting ideology decides how much troops and states they get at the beginning.
+Main article:
+Civil War
+Using the command set_ruling_party (ideology)
+Below is a list of events that might appear if a corresponding minister is appointed or another ideology enjoys widespread support.
+Event
+Requirements
+Mean time to happen
+Effects
+[Ideology] on the Rise
+Fires on appointing an ideology-changing minister
+Immediate
+Option 1: Internal support
+Increases chances of a coup
+Option 2: Popular support
+Increases chances of support-increasing events
+[Ideological] Sympathies in government/military
+Minister for [Ideology]
+500 days (250 days if internal support was chosen)
+Makes a future coup possible.
+聽
+Class Conflicts Divide
+At least 20% popularity
+365 days (~182 if popular support was chosen)
++5%
+popularity
+鈥?%
+Stability
+聽
+Soldiers Desert to Communist Partisans
+At least 30% popularity
+Can only be active once
+365 days (~182 if popular support was chosen)
++5%
+popularity
+Until government change:
++0.05%
+popularity per day,
+-0,20%
+recruitable population
+聽
+聽
+Coup
+Minister
+Sympathies in government/military event happened
+Not major or puppet
+聽
+:
+At least 40% popularity
+Cannot create a second People's Republic of China
+聽
+: At least 30% popularity
+100 days (half if at least 50% popularity)
+Immediately changes the country's ideology
+Reign of Terror for two years (
++10%
+political power)
+聽
+The [Month] Revolution
+Minister
+At least 40% popularity
+Cannot create a second People's Republic of China
+365 days (x0.75 if popular support was chosen)
+Option 1: Civil war
+Starts a civil war with 60% of the country being opposed
+Reign of Terror for two years (
++10%
+political power)
+Option 2: Do nothing
+聽
+Civil War for Fascism
+At least 25% popularity
+365 days (x0.75 if popular support was chosen)
+Option 1: Civil war
+Starts a civil war with 70% of the country being opposed (60% if at least 40% popularity)
+Reign of Terror for two years (
++10%
+political power)
+Option 2: Do nothing
+聽
+Fascist Assault Divisions Form
+At least 30% popularity
+Can only be active once
+365 days (half if popular support was chosen)
++5%
+popularity
+Until government change:
++0.05%
+popularity per day
++0.2%
+recruitable population
+鈥?%
+Stability
+聽
+The Threat of Communism
+At least 25% popularity
+At least one neighboring country is communist
+365 days (half if popular support was chosen)
++10%
+popularity
+[Ideological] Demonstrations
+Not puppet
+At least 50% popularity
+30 days
+Option 1: Suppress
+鈥?0%
+popularity
+鈥?%
+[ideology.ADJ] revolutionaries
+Option 2: Ignore
+鈥?%
+[ideology.ADJ] revolutionaries
+Option 3: Allow
+Government changes
+鈥?%
+Stability
+Mechanics
+Politics
+Ideology
+鈥?
+Faction
+鈥?
+National focus
+鈥?
+Ideas
+鈥?
+Government
+鈥?
+Puppet
+鈥?
+Diplomacy
+鈥?
+World tension
+鈥?
+Civil war
+鈥?
+Occupation
+鈥?
+Intelligence agency
+Production
+Trade
+鈥?
+Production
+鈥?
+Construction
+鈥?
+Equipment
+鈥?
+Fuel
+Research and technology
+Research
+鈥?
+Infantry technology
+鈥?
+Support Companies technology
+鈥?
+Armor technology
+鈥?
+Artillery technology
+鈥?
+Land doctrine
+鈥?
+Naval technology
+鈥?
+Naval doctrine
+鈥?
+Air technology
+鈥?
+Air doctrine
+鈥?
+Engineering technology
+鈥?
+Industry technology
+Military and warfare
+Warfare
+鈥?
+Land units
+鈥?
+Land warfare
+鈥?
+Division designer
+鈥?
+Tank design
+鈥?
+Army planner
+鈥?
+Command group
+鈥?
+Commander
+鈥?
+Battle plan
+鈥?
+Combat tactics
+鈥?
+Ship
+鈥?
+Naval warfare
+鈥?
+Aircraft
+鈥?
+Air warfare
+鈥?
+Experience
+鈥?
+Officer corps
+鈥?
+Attrition and accidents
+鈥?
+Logistics
+鈥?
+Manpower
+鈥?
+Nuclear bomb
+Map
+Map
+鈥?
+Province
+鈥?
+Terrain
+鈥?
+Weather
+鈥?
+State
+Events and Decisions
+Events
+鈥?
+Decisions
+Retrieved from "
+"
+Last edited on 24 November 2021, at 15:24
+Hearts of Iron 4 Wiki
+Content is available under
+Attribution-ShareAlike 3.0
+unless otherwise noted.
+This page was last edited on 24 November 2021, at 15:24.
+Content is available under
+Attribution-ShareAlike 3.0
+unless otherwise noted.
+About Hearts of Iron 4 Wiki
+Desktop
+Hearts of Iron 4 Wiki
+Paradox Wikis
+Privacy Policy
+Games
+Discover
+Our Brands
+Browse
+Play
+on Paradox technology
+Community
+Paradox Forums
+Paradox
+Wikis
+Support
+About
+News
+About us
+Careers
+Join our playtests
+Media contact
+Social Media
+Legal
+Information
+EU Online Dispute Resolution
+Terms & Policies
+Legal Information
+EU Online Dispute Resolution
+Frequently Asked
+Questions
+Paradox
+Interactive corporate website

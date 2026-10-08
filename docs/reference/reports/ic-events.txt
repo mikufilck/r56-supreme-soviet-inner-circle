@@ -1,0 +1,43 @@
+﻿################ A) 含 GER_inner_circle 的事件文件
+  [R56] events\WUW_Germany.txt   （174 处）
+  [原版] events\WUW_Germany.txt   （174 处）
+
+################ B) 冷却相关脚本效果/触发器
+  --- [R56] common\scripted_effects\GER_scripted_effects.txt  L3591..L3597
+      GER_inner_circle_set_ascension_cd = {
+      	set_country_flag = {
+      		flag = GER_inner_circle_cd_flag
+      		days = 175
+      		value = 1
+      	}
+      }
+
+  --- [R56] common\scripted_triggers\GER_scripted_triggers.txt  L1544..L1551
+      GER_inner_circle_is_ascension_cd_over = {
+      	NOT = {
+      		has_country_flag = {
+      			flag = GER_inner_circle_cd_flag
+      			days < 175
+      		}
+      	}
+      }
+
+  --- [原版] common\scripted_effects\GER_scripted_effects.txt  L3054..L3060
+      GER_inner_circle_set_ascension_cd = {
+      	set_country_flag = {
+      		flag = GER_inner_circle_cd_flag
+      		days = 175
+      		value = 1
+      	}
+      }
+
+  --- [原版] common\scripted_triggers\GER_scripted_triggers.txt  L1470..L1477
+      GER_inner_circle_is_ascension_cd_over = {
+      	NOT = {
+      		has_country_flag = {
+      			flag = GER_inner_circle_cd_flag
+      			days < 175
+      		}
+      	}
+      }
+

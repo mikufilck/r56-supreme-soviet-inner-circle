@@ -1,0 +1,172 @@
+﻿==================== GER_autonomous_organization_todt  L18509 ====================
+    18507  
+    18508  	focus = {
+    18509  		id = GER_autonomous_organization_todt
+    18510  		icon = GFX_focus_GER_autonomous_organization_todt
+    18511  		mutually_exclusive = { focus = GER_plenipotentiary_of_armaments focus = GER_plenipotentiary_of_the_four_year_plan }
+    18512  		prerequisite = { focus = GER_form_organization_todt }
+    18513  
+    18514  		text_icon = GER_inner_circle_focus_style
+    18515  
+    18516  		x = 0
+    18517  		y = 1
+    18518  		relative_position_id = GER_form_organization_todt
+    18519  		cost = @inner_circle_time_tier_2
+    18520  		
+    18521  		available = {
+    18522  			if = { #ADVISOR WORKING ON THE FOCUS (Show progress)
+    18523  				limit = {
+    18524  					has_country_flag = GER_autonomous_organization_todt_in_progress_flag
+    18525  				}
+    18526  				set_temp_variable = { temp_focus_days = @inner_circle_time_tier_2 } #For tooltip purposes
+    18527  				multiply_temp_variable = { temp_focus_days = 7 } #The constant uses focus cost which is in weeks, so convert to days
+    18528  				custom_override_tooltip = {
+    18529  					tooltip = {
+    18530  						localization_key = GER_inner_circle_focus_in_progress_tt
+    18531  						CHARACTER = GER_fritz_todt
+    18532  						FLAG_DAYS = [?GER_autonomous_organization_todt_in_progress_flag:days]
+    18533  					}
+    18534  					always = no 
+    18535  				}
+    18536  			}
+    18537  			else = { #NOT BEEN WORKED ON (Just Explain)
+    18538  				custom_override_tooltip = {
+    18539  					tooltip = {
+    18540  						localization_key = GER_focus_can_only_be_completed_by_advisor_tt
+    18541  						CHARACTER = GER_fritz_todt
+    18542  						FOCUS = GER_ascension_of_todt
+    18543  					}
+    18544  					always = no
+    18545  				}
+    18546  			}
+    18547  
+    18548  			if = {
+    18549  				limit = {
+    18550  					check_variable = { GER_industrialist_prevailed = 0 compare = not_equals }
+    18551  				}
+    18552  				if = {
+    18553  					limit = {
+    18554  						check_variable = { GER_industrialist_prevailed = 1 }
+    18555  					}
+    18556  					custom_override_tooltip = {
+    18557  						tooltip = {
+    18558  							localization_key = GER_industrialists_intrigue_prevailed_tt
+    18559  							PREVAILED_CHARACTER = GER_fritz_todt
+    18560  						}
+    18561  						always = yes
+    18562  					}
+    18563  				}
+    18564  				else_if = {
+    18565  					limit = {
+
+==================== GER_autonomous_organization_todt  L19003 ====================
+    19001  		x = 1
+    19002  		y = 1
+    19003  		relative_position_id = GER_autonomous_organization_todt
+    19004  		cost = @inner_circle_time_tier_3
+    19005  		
+    19006  		available = {
+    19007  			if = { #ADVISOR WORKING ON THE FOCUS (Show progress)
+    19008  				limit = {
+    19009  					has_country_flag = GER_wunderwaffe_in_progress_flag
+    19010  				}
+    19011  				set_temp_variable = { temp_focus_days = @inner_circle_time_tier_3 } #For tooltip purposes
+    19012  				multiply_temp_variable = { temp_focus_days = 7 } #The constant uses focus cost which is in weeks, so convert to days
+    19013  				if = { #TODT working on it
+    19014  					limit = {
+    19015  						check_variable = { GER_wonder_weapons_focus_advisor = 1 }
+    19016  					}
+    19017  					custom_override_tooltip = {
+    19018  						tooltip = {
+    19019  							localization_key = GER_inner_circle_focus_in_progress_tt
+    19020  							CHARACTER = GER_fritz_todt
+    19021  							FLAG_DAYS = [?GER_wunderwaffe_in_progress_flag:days]
+    19022  						}
+    19023  						always = no 
+    19024  					}
+    19025  				}
+    19026  				else = { #SPEER working on it
+    19027  					custom_override_tooltip = {
+    19028  						tooltip = {
+    19029  							localization_key = GER_inner_circle_focus_in_progress_tt
+    19030  							CHARACTER = GER_albert_speer
+    19031  							FLAG_DAYS = [?GER_wunderwaffe_in_progress_flag:days]
+    19032  						}
+    19033  						always = no 
+    19034  					}
+    19035  				}
+    19036  			}
+    19037  			else = { #NOT BEEN WORKED ON (Just Explain)
+    19038  				custom_override_tooltip = {
+    19039  					tooltip = {
+    19040  						localization_key = GER_focus_can_only_be_completed_by_advisor_multiple_tt
+    19041  						CHARACTER = GER_fritz_todt
+    19042  						FOCUS = GER_ascension_of_todt
+    19043  						CHARACTER_2 = GER_albert_speer
+    19044  						FOCUS_2 = GER_ascension_of_speer
+    19045  					}
+    19046  					always = no
+    19047  				}
+    19048  			}
+    19049  		}
+    19050  
+    19051  		search_filters = { FOCUS_FILTER_INNER_CIRCLE FOCUS_FILTER_MILITARY_CHARACTER FOCUS_FILTER_RESEARCH }
+    19052  
+    19053  		completion_reward = {
+    19054  			random_scientist = {
+    19055  				limit = {
+    19056  					has_scientist_level = {
+    19057  						specialization = specialization_air
+    19058  						level > 0
+    19059  					}
+
+==================== SOV_yakovlev_design_bureau_organization  L2098 ====================
+     2097  
+     2098  SOV_yakovlev_design_bureau_organization = {
+     2099  	include = generic_naval_aircraft_organization
+     2100  	icon = GFX_idea_yakovlev_design_bureau
+     2101  	
+     2102  	allowed = {	
+     2103  		OR = {
+     2104  			original_tag = SOV
+     2105  			AND = {
+     2106  			    tag = AST
+     2107  			    has_dlc = "Thunder at Our Gates"
+     2108  			}
+     2109  		}
+     2110  	}
+     2111  
+     2112  	available = {
+     2113  		IF = { #Dissolve Bureau Purge
+     2114  			limit = {
+     2115  				FROM = { original_tag = SOV }
+     2116  			}
+     2117  			FROM = { NOT = { has_country_flag = SOV_yakovlev_design_bureau_dissolved_flag } }
+     2118  		}
+     2119  		if = {
+     2120  		    limit = { FROM = { original_tag = AST } }
+     2121  		    FROM = { has_completed_focus = AST_westward_battles }
+     2122  		}
+     2123  	}
+     2124  
+     2125  	add_trait = { 
+     2126  		token = SOV_mio_trait_merge_plant_no_28
+     2127  		name = SOV_merge_aircraft_plant_1
+     2128  		#icon = GFX_generic_mio_department_icon_facilities
+     2129  		icon = GFX_generic_mio_trait_icon_build_cost_ic
+     2130  		special_trait_background = yes
+     2131  
+     2132  		position = { x=@aircraft_1_X y=@aircraft_1_Y }
+     2133  		
+     2134  		visible = {
+     2135  			FROM = { original_tag = SOV }
+     2136  		}
+     2137  		
+     2138  		available = {
+     2139  			FROM = {
+     2140  				has_full_control_of_state = 251 #KUYBYSHEV
+     2141  			}
+     2142  			FROM = {
+     2143  				has_completed_focus = SOV_merge_aircraft_plants
+     2144  			}
+

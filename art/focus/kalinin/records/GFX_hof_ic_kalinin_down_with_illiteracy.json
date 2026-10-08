@@ -1,0 +1,17 @@
+{
+  "id": "hof_ic_kalinin_down_with_illiteracy",
+  "name": "GFX_hof_ic_kalinin_down_with_illiteracy",
+  "title": "扫除文盲",
+  "concept": "Night literacy-classroom tabletop: open worn primer filled only with nonlinguistic abstract marks, a short used pencil, and a warm glowing kerosene lamp. In the deep soft-focus background, a small row of adult figures seen strictly from behind, simple worker caps and headscarves; no faces.",
+  "group": "kalinin",
+  "size": [
+    100,
+    88
+  ],
+  "prompt": "Create ONE finished Hearts of Iron IV Soviet national focus icon. Use the attached image only as a stylistic reference for the outer engraved gold laurel wreath, small red star and blank gold ribbon; create an entirely new central scene. Night literacy-classroom tabletop: open worn primer filled only with nonlinguistic abstract marks, a short used pencil, and a warm glowing kerosene lamp. In the deep soft-focus background, a small row of adult figures seen strictly from behind, simple worker caps and headscarves; no faces. Art direction: richly painted, restrained 1930s Soviet historical relief illustration, deep red and weathered gold, tactile ivory paper and brass details, clear silhouette readable at 100×88 pixels. Keep all important scene objects inside the laurel wreath. Exactly one emblem centered in a square canvas. TRUE RGBA transparent background outside the wreath and ribbon, alpha 0 at all four corners, with broad visible transparent exterior area (20–50 percent of total pixels). No typography, no readable letters or numbers, no watermark. No wife, prison bars, gun, execution, train deportation, signed coercive decree, office interior, lathe, union flags, podium, newspaper layout, printing press, film studio, medals, orders, military star or ribbon insignia. Render one final production asset, not a mockup or sheet.",
+  "references": [
+    "D:/Users/xuwei/PycharmProjects/heart_of_Iron/art/focus/bukharin/source/GFX_hof_ic_bukharin_proportional_development.png"
+  ],
+  "generated_path": "C:\\Users\\xuwei\\.codex\\generated_images\\01a09af5-fd43-79a0-a3cc-72284cd67cbc\\exec-abe4603c-7a21-4aff-b2f5-5472430d82db.png",
+  "mode": "built-in image_gen"
+}

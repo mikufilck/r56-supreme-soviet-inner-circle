@@ -1,0 +1,120 @@
+# Four-country mobile army transition. Additive to vanilla/R56 strategies.
+# Phase values are role_ratio adjustments, not final division percentages.
+
+hof_mobile_core_1938 = {
+	allowed = { OR = { original_tag = GER original_tag = USA original_tag = ENG original_tag = ITA } }
+	enable = { date > 1937.12.31 date < 1940.1.1 }
+	abort_when_not_enabled = yes
+	ai_strategy = { type = role_ratio id = infantry value = -35 }
+	ai_strategy = { type = role_ratio id = armor value = 12 }
+	ai_strategy = { type = equipment_production_factor id = motorized value = 40 }
+	ai_strategy = { type = equipment_production_factor id = armor value = 20 }
+	ai_strategy = { type = research_weight_factor id = basic_heavy_tank value = 100 }
+	ai_strategy = { type = research_weight_factor id = basic_heavy_tank_chassis value = 100 }
+}
+
+hof_mobile_continental_1938 = {
+	allowed = { OR = { original_tag = GER original_tag = ENG original_tag = ITA } }
+	enable = { date > 1937.12.31 date < 1940.1.1 }
+	abort_when_not_enabled = yes
+	ai_strategy = { type = role_ratio id = motorized value = 55 }
+}
+
+hof_mobile_usa_1938 = {
+	allowed = { original_tag = USA }
+	enable = { date > 1937.12.31 date < 1940.1.1 }
+	abort_when_not_enabled = yes
+	ai_strategy = { type = role_ratio id = mobile value = 55 }
+}
+
+hof_mobile_core_1940 = {
+	allowed = { OR = { original_tag = GER original_tag = USA original_tag = ENG original_tag = ITA } }
+	enable = { date > 1939.12.31
+		OR = { date < 1941.1.1 NOT = { has_tech = mechanised_infantry } } }
+	abort_when_not_enabled = yes
+	ai_strategy = { type = role_ratio id = infantry value = -55 }
+	ai_strategy = { type = role_ratio id = armor value = 22 }
+	ai_strategy = { type = equipment_production_factor id = motorized value = 65 }
+	ai_strategy = { type = equipment_production_factor id = armor value = 35 }
+	ai_strategy = { type = research_weight_factor id = mechanised_infantry value = 100 }
+	ai_strategy = { type = research_weight_factor id = basic_heavy_tank value = 150 }
+	ai_strategy = { type = research_weight_factor id = basic_heavy_tank_chassis value = 150 }
+}
+
+hof_mobile_continental_1940 = {
+	allowed = { OR = { original_tag = GER original_tag = ENG original_tag = ITA } }
+	enable = { date > 1939.12.31
+		OR = { date < 1941.1.1 NOT = { has_tech = mechanised_infantry } } }
+	abort_when_not_enabled = yes
+	ai_strategy = { type = role_ratio id = motorized value = 75 }
+}
+
+hof_mobile_usa_1940 = {
+	allowed = { original_tag = USA }
+	enable = { date > 1939.12.31
+		OR = { date < 1941.1.1 NOT = { has_tech = mechanised_infantry } } }
+	abort_when_not_enabled = yes
+	ai_strategy = { type = role_ratio id = mobile value = 75 }
+}
+
+hof_mobile_core_1941 = {
+	allowed = { OR = { original_tag = GER original_tag = USA original_tag = ENG original_tag = ITA } }
+	enable = { date > 1940.12.31
+		date < 1943.1.1
+		has_tech = mechanised_infantry }
+	abort_when_not_enabled = yes
+	ai_strategy = { type = role_ratio id = infantry value = -70 }
+	ai_strategy = { type = role_ratio id = armor value = 40 }
+	ai_strategy = { type = role_ratio id = mechanized_assault value = 85 }
+	ai_strategy = { type = equipment_production_factor id = motorized value = 25 }
+	ai_strategy = { type = equipment_production_factor id = mechanized value = 80 }
+	ai_strategy = { type = equipment_production_factor id = armor value = 50 }
+	ai_strategy = { type = research_weight_factor id = mechanised_infantry2 value = 100 }
+}
+
+hof_mobile_continental_1941 = {
+	allowed = { OR = { original_tag = GER original_tag = ENG original_tag = ITA } }
+	enable = { date > 1940.12.31
+		date < 1943.1.1
+		has_tech = mechanised_infantry }
+	abort_when_not_enabled = yes
+	ai_strategy = { type = role_ratio id = motorized value = 15 }
+}
+
+hof_mobile_usa_1941 = {
+	allowed = { original_tag = USA }
+	enable = { date > 1940.12.31
+		date < 1943.1.1
+		has_tech = mechanised_infantry }
+	abort_when_not_enabled = yes
+	ai_strategy = { type = role_ratio id = mobile value = 15 }
+}
+
+hof_mobile_core_1943 = {
+	allowed = { OR = { original_tag = GER original_tag = USA original_tag = ENG original_tag = ITA } }
+	enable = { date > 1942.12.31
+		has_tech = mechanised_infantry }
+	abort_when_not_enabled = yes
+	ai_strategy = { type = role_ratio id = infantry value = -75 }
+	ai_strategy = { type = role_ratio id = armor value = 50 }
+	ai_strategy = { type = role_ratio id = mechanized_assault value = 100 }
+	ai_strategy = { type = equipment_production_factor id = motorized value = 10 }
+	ai_strategy = { type = equipment_production_factor id = mechanized value = 100 }
+	ai_strategy = { type = equipment_production_factor id = armor value = 65 }
+}
+
+hof_mobile_continental_1943 = {
+	allowed = { OR = { original_tag = GER original_tag = ENG original_tag = ITA } }
+	enable = { date > 1942.12.31
+		has_tech = mechanised_infantry }
+	abort_when_not_enabled = yes
+	ai_strategy = { type = role_ratio id = motorized value = 5 }
+}
+
+hof_mobile_usa_1943 = {
+	allowed = { original_tag = USA }
+	enable = { date > 1942.12.31
+		has_tech = mechanised_infantry }
+	abort_when_not_enabled = yes
+	ai_strategy = { type = role_ratio id = mobile value = 5 }
+}

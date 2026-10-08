@@ -1,0 +1,8 @@
+{
+  "name": "hof_portrait_SOV_ivar_smilga",
+  "prompt": "Use case: identity-preserve / precise-object-edit. Image 1 is the edit target, our completed painted portrait of Ivar Smilga. Image 2 is the original tiny authoritative identity reference; image 3 is a nearest-neighbor magnification of exactly image 2. Correct missing eyewear: add small subtle thin round wire-rim spectacles consistent with the original icon, delicate dark-metal rims and clear glass, natural bridge and temples. Preserve the generated portrait's exact face, age, receding hairline, pose, normal civilian suit, warm-grey background, canvas, lighting and painted style. Change ONLY eyewear; do not reintroduce prison bars or document paper. Keep lens glare minimal and eyes readable at 156x210. Do not copy the prison grid as glasses. Output a single full portrait PNG in the same aspect ratio.",
+  "source": "C:\\Users\\xuwei\\.codex\\generated_images\\01a09af5-fd43-79a0-a3cc-72284cd67cbc\\exec-dc0727db-b718-42d4-8286-8dd32ea009c6.png",
+  "mode": "built-in image_gen",
+  "date": "2026-09-14",
+  "review_status": "delivered: eyewear restored"
+}

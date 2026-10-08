@@ -1,0 +1,32 @@
+﻿################ A) 哪些文件提到 GER_the_inner_circle_dm_tt
+  [R56] common\dynamic_modifiers\wuw_dynamic_modifiers.txt  L1015
+        custom_modifier_tooltip = GER_the_inner_circle_dm_tt
+  [原版] common\dynamic_modifiers\wuw_dynamic_modifiers.txt  L948
+        custom_modifier_tooltip = GER_the_inner_circle_dm_tt
+  [原版] localisation\braz_por\WUW_ideas_l_braz_por.yml  L354
+        GER_the_inner_circle_dm_tt: "Conselheiros do §Ycírculo interno§! ativos: \n[GetAscendedAdvisor1][GetAscendedAdvisor2][GetAscendedAdvisor3]"
+  [原版] localisation\english\wuw_ideas_l_english.yml  L392
+        GER_the_inner_circle_dm_tt: "Active §YInner Circle§! Advisors: \n[GetAscendedAdvisor1][GetAscendedAdvisor2][GetAscendedAdvisor3]"
+  [原版] localisation\french\WUW_ideas_l_french.yml  L354
+        GER_the_inner_circle_dm_tt: "Conseillers actifs du §YCercle Intime§!?: \n[GetAscendedAdvisor1][GetAscendedAdvisor2][GetAscendedAdvisor3]"
+  [原版] localisation\german\WUW_ideas_l_german.yml  L354
+        GER_the_inner_circle_dm_tt: "Aktiviert die Berater des §YInneren Kreises§!:\n[GetAscendedAdvisor1][GetAscendedAdvisor2][GetAscendedAdvisor3]"
+  [原版] localisation\japanese\WUW_ideas_l_japanese.yml  L354
+        GER_the_inner_circle_dm_tt: "活動中の相談役§Y側近§!: \n[GetAscendedAdvisor1][GetAscendedAdvisor2][GetAscendedAdvisor3]"
+  [原版] localisation\korean\wuw_ideas_l_korean.yml  L354
+        GER_the_inner_circle_dm_tt: "???? §Y??? ??§! ???:\n[GetAscendedAdvisor1] [GetAscendedAdvisor2] [GetAscendedAdvisor3]"
+  [原版] localisation\polish\WUW_ideas_l_polish.yml  L354
+        GER_the_inner_circle_dm_tt: "Aktywni doradcy w §Ywewn?trznym kr?gu§!: \n[GetAscendedAdvisor1][GetAscendedAdvisor2][GetAscendedAdvisor3]"
+  [原版] localisation\russian\WUW_ideas_l_russian.yml  L354
+        GER_the_inner_circle_dm_tt: "Действующие советники §Yвнутреннего круга§!: \n[GetAscendedAdvisor1][GetAscendedAdvisor2][GetAscendedAdvisor3]"
+  [原版] localisation\simp_chinese\WUW_ideas_l_simp_chinese.yml  L354
+        GER_the_inner_circle_dm_tt: "现任§Y核心集团§!顾问：\n[GetAscendedAdvisor1][GetAscendedAdvisor2][GetAscendedAdvisor3]"
+  [原版] localisation\spanish\WUW_ideas_l_spanish.yml  L354
+        GER_the_inner_circle_dm_tt: "Consejeros del §Ycírculo De Confianza§! activos: \n[GetAscendedAdvisor1], [GetAscendedAdvisor2], [GetAscendedAdvisor3]"
+
+################ B) 核心圈窗口定义文件
+  [R56] D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125\common\focus_inlay_windows\ger_inner_circle_inlay_window.txt
+  [原版] F:\Hearts of Iron IV\common\focus_inlay_windows\ger_inner_circle_inlay_window.txt
+
+################ C) scripted_localisation 里提到 inner_circle 的
+  [原版] common\scripted_localisation\WUW_GER_scripted_loc.txt

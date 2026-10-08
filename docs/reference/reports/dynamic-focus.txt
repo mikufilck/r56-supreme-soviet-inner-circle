@@ -1,0 +1,48 @@
+﻿################ A) 各 root 里 focus 块内出现 dynamic = yes 的次数
+  [F:\Hearts of Iron IV]  253 处
+      common\national_focus\congo_shared.txt  (72 处)  L48
+      common\national_focus\habsburg_joint.txt  (35 处)  L13
+      common\national_focus\germany.txt  (29 处)  L18153
+      common\national_focus\ethiopia.txt  (21 处)  L49
+      common\national_focus\australia_taog.txt  (13 处)  L521
+      common\national_focus\nordic_shared.txt  (10 处)  L52
+      common\national_focus\czechoslovakia_mu.txt  (7 处)  L7751
+      common\national_focus\baltic_shared.txt  (7 处)  L99
+      common\national_focus\china_warlord_sea.txt  (5 处)  L1942
+      common\national_focus\congo.txt  (5 处)  L5396
+      common\national_focus\japan.txt  (4 处)  L2026
+      common\national_focus\toa_shared_military_branch.txt  (3 处)  L6
+  [D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125]  273 处
+      common\national_focus\congo_shared.txt  (72 处)  L48
+      common\national_focus\germany.txt  (36 处)  L21206
+      common\national_focus\habsburg_joint.txt  (35 处)  L13
+      common\national_focus\ethiopia.txt  (21 处)  L50
+      common\national_focus\australia_taog.txt  (13 处)  L522
+      common\national_focus\canada.txt  (12 处)  L962
+      common\national_focus\nordic_shared.txt  (10 处)  L52
+      common\national_focus\czechoslovakia_mu.txt  (8 处)  L7650
+      common\national_focus\baltic_shared.txt  (6 处)  L97
+      common\national_focus\congo.txt  (5 处)  L5399
+      common\national_focus\japan.txt  (3 处)  L10327
+      common\national_focus\iraq.txt  (3 处)  L619
+
+################ B) 含 'dynamic' 的文档/说明文件
+  F:\Hearts of Iron IV\common\ai_equipment\_documentation.md  (1 处)
+  F:\Hearts of Iron IV\common\ai_strategy\_documentation.md  (2 处)
+  F:\Hearts of Iron IV\common\factions\_documentation.md  (1 处)
+  F:\Hearts of Iron IV\common\focus_inlay_windows\documentation.md  (1 处)
+  F:\Hearts of Iron IV\common\raids\_documentation.md  (8 处)
+  F:\Hearts of Iron IV\common\scripted_guis\_documentation.md  (2 处)
+  F:\Hearts of Iron IV\common\special_projects\projects\documentation.md  (2 处)
+  F:\Hearts of Iron IV\common\special_projects\prototype_rewards\documentation.md  (1 处)
+  F:\Hearts of Iron IV\documentation\console_commands_documentation.html  (1 处)
+  F:\Hearts of Iron IV\documentation\console_commands_documentation.md  (1 处)
+  F:\Hearts of Iron IV\documentation\dynamic_variables_documentation.html  (16 处)
+  F:\Hearts of Iron IV\documentation\dynamic_variables_documentation.md  (15 处)
+  F:\Hearts of Iron IV\documentation\effects_documentation.html  (39 处)
+  F:\Hearts of Iron IV\documentation\effects_documentation.md  (39 处)
+  F:\Hearts of Iron IV\documentation\triggers_documentation.html  (11 处)
+  F:\Hearts of Iron IV\documentation\triggers_documentation.md  (11 处)
+  F:\Hearts of Iron IV\wiki\Category%3ATemplate_documentation.html  (2 处)
+  F:\Hearts of Iron IV\wiki\Special%3AWhatLinksHere\Category%3ATemplate_documentation.html  (1 处)
+  D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125\common\ai_equipment\_documentation.info  (1 处)

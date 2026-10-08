@@ -1,0 +1,45 @@
+﻿=== 1. 苏联国策树坐标范围（含负值）===
+  x: 最小 -54 / 最大 61 / 中位 0   (样本 462)
+  y: 最小 -1 / 最大 6 / 中位 1   (样本 463)
+
+=== 2. R56 自身所有 inlay_window 声明（含 position）===
+  --- australia_taog.txt L42 ---
+      inlay_window = { #Empty version to show before ast_right_vs_left_campaign_inlay_window is unlocked
+      id = ast_right_vs_left_campaign_empty_inlay_window
+      position = { x = 4705 y = 510 } #Edit for ast_right_vs_left_campaign_inlay_window if changed
+      }
+  --- australia_taog.txt L47 ---
+      inlay_window = {
+      id = ast_right_vs_left_campaign_inlay_window
+      position = { x = 4705 y = 510 } #Edit for ast_right_vs_left_campaign_empty_inlay_window if changed
+      }
+  --- czechoslovakia_mu.txt L133 ---
+      inlay_window = {
+      id = cze_industry_focus_inlay_window
+      position = { x = 9990 y = 350 } #y = ~2.5
+      override_position = {
+      x = 8842
+  --- germany.txt L112 ---
+      inlay_window = {
+      id = ger_inner_circle_inlay_window
+      position = { x = 4500 y = 1150 }
+      }
+  --- japan.txt L104 ---
+      inlay_window = {
+      id = jap_imperial_influence_inlay_window
+      
+      position = { X = 10000 y = 700 }
+      
+  --- siam.txt L19 ---
+      inlay_window = {
+      id = sia_khana_ratsadon_inlay_window
+      position = { x = 2200 y = 300 }
+      }
+
+=== 3. 原版 inlay_window 声明（对照 R56 是否改过位置）===
+  australia_taog.txt                 inlay_window = { #Empty version to show before ast_right_vs_left_campaign_inlay_window is unlocked id = ast_right_vs_left_campaign_empty_inlay_window position = { x = 4705 y = 510 } #Edit for ast_right_vs_left_campaign_inlay_window if changed }
+  australia_taog.txt                 inlay_window = { id = ast_right_vs_left_campaign_inlay_window position = { x = 4705 y = 510 } #Edit for ast_right_vs_left_campaign_empty_inlay_window if changed }
+  czechoslovakia_mu.txt              inlay_window = { id = cze_industry_focus_inlay_window position = { x = 9990 y = 350 } #y = ~2.5 override_position = { x = 8842
+  germany.txt                        inlay_window = { id = ger_inner_circle_inlay_window position = { x = 4500 y = 1150 } }
+  japan.txt                          inlay_window = { id = jap_imperial_influence_inlay_window  position = { X = 10000 y = 700 } 
+  siam.txt                           inlay_window = { id = sia_khana_ratsadon_inlay_window position = { x = 2200 y = 300 } }

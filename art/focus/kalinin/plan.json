@@ -1,0 +1,68 @@
+[
+  {
+    "id": "hof_ic_kalinin_a_peasant_head_of_state",
+    "name": "GFX_hof_ic_kalinin_a_peasant_head_of_state",
+    "title": "农民出身的元首",
+    "concept": "A single rough wheat stalk lying diagonally on a red cloth-covered presidium table, gently pinning several unmarked ivory documents. Far background only an out-of-focus row of empty presidium chairs. Intimate humble symbol of farmer origin at a ceremonial state seat; no person.",
+    "group": "kalinin",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_kalinin_down_with_illiteracy",
+    "name": "GFX_hof_ic_kalinin_down_with_illiteracy",
+    "title": "扫除文盲",
+    "concept": "Night literacy-classroom tabletop: open worn primer filled only with nonlinguistic abstract marks, a short used pencil, and a warm glowing kerosene lamp. In the deep soft-focus background, a small row of adult figures seen strictly from behind, simple worker caps and headscarves; no faces.",
+    "group": "kalinin",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_kalinin_the_state_of_the_whole_people",
+    "name": "GFX_hof_ic_kalinin_the_state_of_the_whole_people",
+    "title": "全民国家",
+    "concept": "Top-down view into a circular assembly room: concentric rings of empty seats encircle a completely empty circular center, warm luminous light radiating from that central void. Architectural scene, inclusive and democratic, no figures, podium, flags or emblems in central image.",
+    "group": "kalinin",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_kalinin_the_reception_room",
+    "name": "GFX_hof_ic_kalinin_the_reception_room",
+    "title": "接待室",
+    "concept": "Close still-life of a large bundle of individual citizen letters tied with coarse twine on a worn wooden table, curled paper edges and no readable writing. Beside it, a door opened just one narrow crack, a sliver of inviting hallway light shining through. Focus on the letters and crack of light, not an office room.",
+    "group": "kalinin",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_kalinin_an_unfounded_operation",
+    "name": "GFX_hof_ic_kalinin_an_unfounded_operation",
+    "title": "没有根据的行动",
+    "concept": "Close still-life of one paper voting sheet on a plain dark surface: a few rows of short abstract dashes where names would be, and under those one single handwritten-looking line of short unreadable strokes. A fountain pen laid horizontally across the sheet. No readable writing, signatures, square-grid chart, official decree or interior.",
+    "group": "kalinin",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_kalinin_the_all_union_elder",
+    "name": "GFX_hof_ic_kalinin_the_all_union_elder",
+    "title": "全联盟的老家长",
+    "concept": "A worn old doorway threshold polished bright by many footsteps, viewed close from inside looking outward. Outside the open doorway, a modest queue of ordinary citizens seen only from behind in work caps and headscarves, warmly lit interior light spilling across the threshold. The open accessible entrance is the hero, no portrait.",
+    "group": "kalinin",
+    "size": [
+      100,
+      88
+    ]
+  }
+]

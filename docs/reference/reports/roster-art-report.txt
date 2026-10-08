@@ -1,0 +1,23 @@
+﻿gfx/leaders 下立绘文件: 3552 个不同 basename
+
+=== 候选角色立绘可用性 ===
+角色                       状态       texturefile（可直接写进我们的 .gfx）                     同名 sprite 已注册?
+------------------------------------------------------------------------------------------------------------------------------------
+lev_trotsky              有立绘      gfx/leaders/SOV/Portrait_Leon_Trotsky.dds      否 → 需我们注册
+grigory_zinovyev         无立绘      -                                              -
+lev_kamenev              无立绘      -                                              -
+nikolay_bukharin         无立绘      -                                              -
+aleksey_rykov            无立绘      -                                              -
+ivan_smirnov             无立绘      -                                              -
+leonid_serebryakov       无立绘      -                                              -
+karl_radek               无立绘      -                                              -
+yevgeny_preobrazhensky   无立绘      -                                              -
+ivar_smilga              无立绘      -                                              -
+mikhail_tomsky           无立绘      -                                              -
+martemyan_ryutin         无立绘      -                                              -
+grigory_sokolnikov       无立绘      -                                              -
+aleksandr_shlyapnikov    无立绘      -                                              -
+lavrenty_beriya          无立绘      -                                              -
+mikhail_tukhachevsky     无立绘      -                                              -
+nikolay_yezhov           无立绘      -                                              -
+maksim_litvinov          无立绘      -                                              -

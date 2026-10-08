@@ -1,0 +1,621 @@
+# =============================================================================
+# 核心圈窗口本体
+# -----------------------------------------------------------------------------
+# 由 build/gen-hof-ic-gui.ps1 生成 —— 勿手改，改布局请改那个脚本里的常量表。
+#
+# 画布 760 x 740；席位头像按 0.60、领袖头像按 0.53 缩放。
+#
+# ⚠️ 三条硬规矩（都是踩坑后加的，别改）：
+#   1. 所有元素的 orientation 一律 upper_left，y 从容器顶部算；
+#      水平居中由 (容器宽 - 素材宽)/2 显式算出。混用 center / center_up
+#      会让 y 变成"从容器中心算"，表现是底板与文字错位。
+#   2. 内容必须落在画布之内（生成器会断言）。
+#   3. 底板美术铺满画布，四周无透明边；矩形肖像必须缩入框内。
+#
+# sprite 走 GFX_hof_ic_* 间接层（见 interface/hof_ic.gfx）。
+# =============================================================================
+
+guiTypes = {
+
+	containerWindowType = {
+		name = "hof_ic_ui_window"
+		orientation = lower_left
+		position = { x = 0 y = 0 }
+		size = { width = 760 height = 740 }
+		clipping = no
+
+		# ---------------- 窗口底板 ----------------
+		background = {
+			name = "background"
+			quadTextureSprite = "GFX_hof_ic_window_bg"
+			alwaystransparent = yes
+		}
+
+		# ---------------- 标题 ----------------
+		instantTextBoxType = {
+			name = "hof_ic_title"
+			orientation = upper_left
+			position = { x = 80 y = 22 }
+			font = "hoi_36header"
+			text = "hof_ic_title_text"
+			format = center
+			maxWidth = 600
+			maxHeight = 34
+		}
+
+		# =========================================================================
+		# 领袖位（1:1）
+		# =========================================================================
+		containerWindowType = {
+			name = "hof_ic_leader_container"
+			orientation = upper_left
+			position = { x = 298 y = 70 }
+			size = { width = 165 height = 165 }
+			clipping = no
+
+			# 立绘：spriteType 留空，由 inlay window 的 scripted_images 供给
+			iconType = {
+				name = "hof_ic_leader_portrait"
+				spriteType = ""
+				orientation = upper_left
+				position = { x = 41 y = 35 }
+				scale = 0.53
+				alwaystransparent = yes
+			}
+
+			# 圆框后画，盖住议场肖像的矩形边缘
+			iconType = {
+				name = "hof_ic_leader_frame"
+				spriteType = "GFX_hof_ic_leader_frame"
+				orientation = upper_left
+				position = { x = 0 y = 0 }
+				alwaystransparent = yes
+			}
+
+			# 名牌缎带（160 x 36）——贴在圆框下缘
+			iconType = {
+				name = "hof_ic_leader_ribbon"
+				spriteType = "GFX_hof_ic_leader_ribbon"
+				orientation = upper_left
+				position = { x = 2 y = 120 }
+				alwaystransparent = yes
+			}
+
+			# 领袖名字（贴在缎带上）
+			instantTextBoxType = {
+				name = "hof_ic_leader_name"
+				orientation = upper_left
+				position = { x = 2 y = 127 }
+				font = "hoi_18mbs"
+				text = "hof_ic_leader_name_text"
+				format = center
+				maxWidth = 160
+				maxHeight = 22
+				alwaystransparent = yes
+			}
+
+			# 头衔框（115 x 22）
+			iconType = {
+				name = "hof_ic_leader_title_box"
+				spriteType = "GFX_hof_ic_leader_title_box"
+				orientation = upper_left
+				position = { x = 25 y = 150 }
+				alwaystransparent = yes
+			}
+
+			# 头衔文字
+			instantTextBoxType = {
+				name = "hof_ic_leader_title"
+				orientation = upper_left
+				position = { x = 25 y = 153 }
+				font = "hoi_18mbs"
+				text = "hof_ic_leader_title_text"
+				format = center
+				maxWidth = 115
+				maxHeight = 20
+				alwaystransparent = yes
+			}
+		}
+
+		# =========================================================================
+		# 席位 1-7（第一排 4 个、第二排 3 个，1:1）
+		# =========================================================================
+
+		# ---- 席位 1（第一排）----
+		containerWindowType = {
+			name = "hof_ic_seat_1_container"
+			orientation = upper_left
+			position = { x = 35 y = 255 }
+			size = { width = 150 height = 215 }
+			clipping = no
+
+			# 立绘：156x210 按 0.60 缩放，四边缩入金属框的内缘
+			iconType = {
+				name = "hof_ic_seat_1_portrait"
+				spriteType = ""
+				orientation = upper_left
+				position = { x = 28 y = 12 }
+				scale = 0.60
+				alwaystransparent = yes
+			}
+
+			# 席位框盖在立绘外缘；spriteType 由 scripted_images 按空/满切换
+			iconType = {
+				name = "hof_ic_seat_1_frame"
+				spriteType = ""
+				orientation = upper_left
+				position = { x = 10 y = 0 }
+			}
+
+			# 名牌底衬（画在立绘之上）
+			iconType = {
+				name = "hof_ic_seat_1_name_box"
+				spriteType = "GFX_hof_ic_seat_name_box"
+				orientation = upper_left
+				position = { x = 2 y = 145 }
+				alwaystransparent = yes
+			}
+
+			# 席位名（脚本本地化，方括号是必须的）
+			instantTextBoxType = {
+				name = "hof_ic_seat_1_name"
+				orientation = upper_left
+				position = { x = 5 y = 150 }
+				font = "hoi_18mbs"
+				context_aware_text = [hof_ic_slot_1_name]
+				format = center
+				maxWidth = 140
+				maxHeight = 18
+				alwaystransparent = yes
+			}
+
+			# 特质框
+			iconType = {
+				name = "hof_ic_seat_1_trait_box"
+				spriteType = "GFX_hof_ic_seat_trait_box"
+				orientation = upper_left
+				position = { x = 3 y = 172 }
+				alwaystransparent = yes
+			}
+
+			# 特质名
+			instantTextBoxType = {
+				name = "hof_ic_seat_1_trait"
+				orientation = upper_left
+				position = { x = 5 y = 179 }
+				font = "hoi_18mbs"
+				context_aware_text = [hof_ic_slot_1_trait]
+				format = center
+				maxWidth = 140
+				maxHeight = 18
+				alwaystransparent = yes
+			}
+		}
+
+		# ---- 席位 2（第一排）----
+		containerWindowType = {
+			name = "hof_ic_seat_2_container"
+			orientation = upper_left
+			position = { x = 215 y = 255 }
+			size = { width = 150 height = 215 }
+			clipping = no
+
+			# 立绘：156x210 按 0.60 缩放，四边缩入金属框的内缘
+			iconType = {
+				name = "hof_ic_seat_2_portrait"
+				spriteType = ""
+				orientation = upper_left
+				position = { x = 28 y = 12 }
+				scale = 0.60
+				alwaystransparent = yes
+			}
+
+			# 席位框盖在立绘外缘；spriteType 由 scripted_images 按空/满切换
+			iconType = {
+				name = "hof_ic_seat_2_frame"
+				spriteType = ""
+				orientation = upper_left
+				position = { x = 10 y = 0 }
+			}
+
+			# 名牌底衬（画在立绘之上）
+			iconType = {
+				name = "hof_ic_seat_2_name_box"
+				spriteType = "GFX_hof_ic_seat_name_box"
+				orientation = upper_left
+				position = { x = 2 y = 145 }
+				alwaystransparent = yes
+			}
+
+			# 席位名（脚本本地化，方括号是必须的）
+			instantTextBoxType = {
+				name = "hof_ic_seat_2_name"
+				orientation = upper_left
+				position = { x = 5 y = 150 }
+				font = "hoi_18mbs"
+				context_aware_text = [hof_ic_slot_2_name]
+				format = center
+				maxWidth = 140
+				maxHeight = 18
+				alwaystransparent = yes
+			}
+
+			# 特质框
+			iconType = {
+				name = "hof_ic_seat_2_trait_box"
+				spriteType = "GFX_hof_ic_seat_trait_box"
+				orientation = upper_left
+				position = { x = 3 y = 172 }
+				alwaystransparent = yes
+			}
+
+			# 特质名
+			instantTextBoxType = {
+				name = "hof_ic_seat_2_trait"
+				orientation = upper_left
+				position = { x = 5 y = 179 }
+				font = "hoi_18mbs"
+				context_aware_text = [hof_ic_slot_2_trait]
+				format = center
+				maxWidth = 140
+				maxHeight = 18
+				alwaystransparent = yes
+			}
+		}
+
+		# ---- 席位 3（第一排）----
+		containerWindowType = {
+			name = "hof_ic_seat_3_container"
+			orientation = upper_left
+			position = { x = 395 y = 255 }
+			size = { width = 150 height = 215 }
+			clipping = no
+
+			# 立绘：156x210 按 0.60 缩放，四边缩入金属框的内缘
+			iconType = {
+				name = "hof_ic_seat_3_portrait"
+				spriteType = ""
+				orientation = upper_left
+				position = { x = 28 y = 12 }
+				scale = 0.60
+				alwaystransparent = yes
+			}
+
+			# 席位框盖在立绘外缘；spriteType 由 scripted_images 按空/满切换
+			iconType = {
+				name = "hof_ic_seat_3_frame"
+				spriteType = ""
+				orientation = upper_left
+				position = { x = 10 y = 0 }
+			}
+
+			# 名牌底衬（画在立绘之上）
+			iconType = {
+				name = "hof_ic_seat_3_name_box"
+				spriteType = "GFX_hof_ic_seat_name_box"
+				orientation = upper_left
+				position = { x = 2 y = 145 }
+				alwaystransparent = yes
+			}
+
+			# 席位名（脚本本地化，方括号是必须的）
+			instantTextBoxType = {
+				name = "hof_ic_seat_3_name"
+				orientation = upper_left
+				position = { x = 5 y = 150 }
+				font = "hoi_18mbs"
+				context_aware_text = [hof_ic_slot_3_name]
+				format = center
+				maxWidth = 140
+				maxHeight = 18
+				alwaystransparent = yes
+			}
+
+			# 特质框
+			iconType = {
+				name = "hof_ic_seat_3_trait_box"
+				spriteType = "GFX_hof_ic_seat_trait_box"
+				orientation = upper_left
+				position = { x = 3 y = 172 }
+				alwaystransparent = yes
+			}
+
+			# 特质名
+			instantTextBoxType = {
+				name = "hof_ic_seat_3_trait"
+				orientation = upper_left
+				position = { x = 5 y = 179 }
+				font = "hoi_18mbs"
+				context_aware_text = [hof_ic_slot_3_trait]
+				format = center
+				maxWidth = 140
+				maxHeight = 18
+				alwaystransparent = yes
+			}
+		}
+
+		# ---- 席位 4（第一排）----
+		containerWindowType = {
+			name = "hof_ic_seat_4_container"
+			orientation = upper_left
+			position = { x = 575 y = 255 }
+			size = { width = 150 height = 215 }
+			clipping = no
+
+			# 立绘：156x210 按 0.60 缩放，四边缩入金属框的内缘
+			iconType = {
+				name = "hof_ic_seat_4_portrait"
+				spriteType = ""
+				orientation = upper_left
+				position = { x = 28 y = 12 }
+				scale = 0.60
+				alwaystransparent = yes
+			}
+
+			# 席位框盖在立绘外缘；spriteType 由 scripted_images 按空/满切换
+			iconType = {
+				name = "hof_ic_seat_4_frame"
+				spriteType = ""
+				orientation = upper_left
+				position = { x = 10 y = 0 }
+			}
+
+			# 名牌底衬（画在立绘之上）
+			iconType = {
+				name = "hof_ic_seat_4_name_box"
+				spriteType = "GFX_hof_ic_seat_name_box"
+				orientation = upper_left
+				position = { x = 2 y = 145 }
+				alwaystransparent = yes
+			}
+
+			# 席位名（脚本本地化，方括号是必须的）
+			instantTextBoxType = {
+				name = "hof_ic_seat_4_name"
+				orientation = upper_left
+				position = { x = 5 y = 150 }
+				font = "hoi_18mbs"
+				context_aware_text = [hof_ic_slot_4_name]
+				format = center
+				maxWidth = 140
+				maxHeight = 18
+				alwaystransparent = yes
+			}
+
+			# 特质框
+			iconType = {
+				name = "hof_ic_seat_4_trait_box"
+				spriteType = "GFX_hof_ic_seat_trait_box"
+				orientation = upper_left
+				position = { x = 3 y = 172 }
+				alwaystransparent = yes
+			}
+
+			# 特质名
+			instantTextBoxType = {
+				name = "hof_ic_seat_4_trait"
+				orientation = upper_left
+				position = { x = 5 y = 179 }
+				font = "hoi_18mbs"
+				context_aware_text = [hof_ic_slot_4_trait]
+				format = center
+				maxWidth = 140
+				maxHeight = 18
+				alwaystransparent = yes
+			}
+		}
+
+		# ---- 席位 5（第二排）----
+		containerWindowType = {
+			name = "hof_ic_seat_5_container"
+			orientation = upper_left
+			position = { x = 125 y = 490 }
+			size = { width = 150 height = 215 }
+			clipping = no
+
+			# 立绘：156x210 按 0.60 缩放，四边缩入金属框的内缘
+			iconType = {
+				name = "hof_ic_seat_5_portrait"
+				spriteType = ""
+				orientation = upper_left
+				position = { x = 28 y = 12 }
+				scale = 0.60
+				alwaystransparent = yes
+			}
+
+			# 席位框盖在立绘外缘；spriteType 由 scripted_images 按空/满切换
+			iconType = {
+				name = "hof_ic_seat_5_frame"
+				spriteType = ""
+				orientation = upper_left
+				position = { x = 10 y = 0 }
+			}
+
+			# 名牌底衬（画在立绘之上）
+			iconType = {
+				name = "hof_ic_seat_5_name_box"
+				spriteType = "GFX_hof_ic_seat_name_box"
+				orientation = upper_left
+				position = { x = 2 y = 145 }
+				alwaystransparent = yes
+			}
+
+			# 席位名（脚本本地化，方括号是必须的）
+			instantTextBoxType = {
+				name = "hof_ic_seat_5_name"
+				orientation = upper_left
+				position = { x = 5 y = 150 }
+				font = "hoi_18mbs"
+				context_aware_text = [hof_ic_slot_5_name]
+				format = center
+				maxWidth = 140
+				maxHeight = 18
+				alwaystransparent = yes
+			}
+
+			# 特质框
+			iconType = {
+				name = "hof_ic_seat_5_trait_box"
+				spriteType = "GFX_hof_ic_seat_trait_box"
+				orientation = upper_left
+				position = { x = 3 y = 172 }
+				alwaystransparent = yes
+			}
+
+			# 特质名
+			instantTextBoxType = {
+				name = "hof_ic_seat_5_trait"
+				orientation = upper_left
+				position = { x = 5 y = 179 }
+				font = "hoi_18mbs"
+				context_aware_text = [hof_ic_slot_5_trait]
+				format = center
+				maxWidth = 140
+				maxHeight = 18
+				alwaystransparent = yes
+			}
+		}
+
+		# ---- 席位 6（第二排）----
+		containerWindowType = {
+			name = "hof_ic_seat_6_container"
+			orientation = upper_left
+			position = { x = 305 y = 490 }
+			size = { width = 150 height = 215 }
+			clipping = no
+
+			# 立绘：156x210 按 0.60 缩放，四边缩入金属框的内缘
+			iconType = {
+				name = "hof_ic_seat_6_portrait"
+				spriteType = ""
+				orientation = upper_left
+				position = { x = 28 y = 12 }
+				scale = 0.60
+				alwaystransparent = yes
+			}
+
+			# 席位框盖在立绘外缘；spriteType 由 scripted_images 按空/满切换
+			iconType = {
+				name = "hof_ic_seat_6_frame"
+				spriteType = ""
+				orientation = upper_left
+				position = { x = 10 y = 0 }
+			}
+
+			# 名牌底衬（画在立绘之上）
+			iconType = {
+				name = "hof_ic_seat_6_name_box"
+				spriteType = "GFX_hof_ic_seat_name_box"
+				orientation = upper_left
+				position = { x = 2 y = 145 }
+				alwaystransparent = yes
+			}
+
+			# 席位名（脚本本地化，方括号是必须的）
+			instantTextBoxType = {
+				name = "hof_ic_seat_6_name"
+				orientation = upper_left
+				position = { x = 5 y = 150 }
+				font = "hoi_18mbs"
+				context_aware_text = [hof_ic_slot_6_name]
+				format = center
+				maxWidth = 140
+				maxHeight = 18
+				alwaystransparent = yes
+			}
+
+			# 特质框
+			iconType = {
+				name = "hof_ic_seat_6_trait_box"
+				spriteType = "GFX_hof_ic_seat_trait_box"
+				orientation = upper_left
+				position = { x = 3 y = 172 }
+				alwaystransparent = yes
+			}
+
+			# 特质名
+			instantTextBoxType = {
+				name = "hof_ic_seat_6_trait"
+				orientation = upper_left
+				position = { x = 5 y = 179 }
+				font = "hoi_18mbs"
+				context_aware_text = [hof_ic_slot_6_trait]
+				format = center
+				maxWidth = 140
+				maxHeight = 18
+				alwaystransparent = yes
+			}
+		}
+
+		# ---- 席位 7（第二排）----
+		containerWindowType = {
+			name = "hof_ic_seat_7_container"
+			orientation = upper_left
+			position = { x = 485 y = 490 }
+			size = { width = 150 height = 215 }
+			clipping = no
+
+			# 立绘：156x210 按 0.60 缩放，四边缩入金属框的内缘
+			iconType = {
+				name = "hof_ic_seat_7_portrait"
+				spriteType = ""
+				orientation = upper_left
+				position = { x = 28 y = 12 }
+				scale = 0.60
+				alwaystransparent = yes
+			}
+
+			# 席位框盖在立绘外缘；spriteType 由 scripted_images 按空/满切换
+			iconType = {
+				name = "hof_ic_seat_7_frame"
+				spriteType = ""
+				orientation = upper_left
+				position = { x = 10 y = 0 }
+			}
+
+			# 名牌底衬（画在立绘之上）
+			iconType = {
+				name = "hof_ic_seat_7_name_box"
+				spriteType = "GFX_hof_ic_seat_name_box"
+				orientation = upper_left
+				position = { x = 2 y = 145 }
+				alwaystransparent = yes
+			}
+
+			# 席位名（脚本本地化，方括号是必须的）
+			instantTextBoxType = {
+				name = "hof_ic_seat_7_name"
+				orientation = upper_left
+				position = { x = 5 y = 150 }
+				font = "hoi_18mbs"
+				context_aware_text = [hof_ic_slot_7_name]
+				format = center
+				maxWidth = 140
+				maxHeight = 18
+				alwaystransparent = yes
+			}
+
+			# 特质框
+			iconType = {
+				name = "hof_ic_seat_7_trait_box"
+				spriteType = "GFX_hof_ic_seat_trait_box"
+				orientation = upper_left
+				position = { x = 3 y = 172 }
+				alwaystransparent = yes
+			}
+
+			# 特质名
+			instantTextBoxType = {
+				name = "hof_ic_seat_7_trait"
+				orientation = upper_left
+				position = { x = 5 y = 179 }
+				font = "hoi_18mbs"
+				context_aware_text = [hof_ic_slot_7_trait]
+				format = center
+				maxWidth = 140
+				maxHeight = 18
+				alwaystransparent = yes
+			}
+		}
+	}
+}

@@ -1,0 +1,282 @@
+﻿=== A. 磁盘上存在的 SOV 立绘 DDS 文件 ===
+  合计 162 个
+   [vanilla] gfx/leaders/KAZ/portrait_kaz_nikolay_skvortsov.dds
+   [vanilla] gfx/leaders/scientists/portrait_SOV_abram_ioffe.dds
+   [vanilla] gfx/leaders/SOV/portrait_SOV_aleksandr_vasilevsky.dds
+   [vanilla] gfx/leaders/SOV/portrait_SOV_aleksandr_yegorov.dds
+   [vanilla] gfx/leaders/SOV/portrait_SOV_andrey_grechko.dds
+   [vanilla] gfx/leaders/SOV/portrait_SOV_andrey_shkuro.dds
+   [vanilla] gfx/leaders/SOV/portrait_SOV_andrey_yeryomenko.dds
+   [vanilla] gfx/leaders/scientists/portrait_SOV_arkady_nazarov.dds
+   [vanilla] gfx/leaders/SOV/portrait_SOV_blyukher.dds
+   [vanilla] gfx/leaders/SOV/portrait_SOV_boris_shteifon.dds
+   [vanilla] gfx/interface/ideas/portrait_SOV_boris_shteifon_small.dds
+   [vanilla] gfx/leaders/scientists/portrait_SOV_boris_stechkin.dds
+   [vanilla] gfx/leaders/SOV/portrait_SOV_bronislav_kaminski.dds
+   [vanilla] gfx/interface/ideas/portrait_SOV_bronislav_kaminski_small.dds
+   [vanilla] gfx/leaders/SOV/portrait_SOV_filipp_golikov.dds
+   [vanilla] gfx/leaders/SOV/portrait_SOV_generic_marine_infantry.dds
+   [vanilla] gfx/interface/ideas/portrait_SOV_generic_marine_infantry.dds
+   [vanilla] gfx/leaders/SOV/portrait_SOV_grigory_zinovyev.dds
+   [vanilla] gfx/leaders/scientists/portrait_SOV_igor_kurchatov.dds
+   [vanilla] gfx/leaders/SOV/portrait_SOV_issa_pliyev.dds
+   [vanilla] gfx/leaders/SOV/portrait_SOV_ivan_chernyakhovsky.dds
+   [vanilla] gfx/leaders/SOV/portrait_SOV_ivan_konev.dds
+   [vanilla] gfx/leaders/SOV/portrait_SOV_ivan_smirnov.dds
+   [vanilla] gfx/leaders/SOV/portrait_SOV_konstantin_voskoboinik.dds
+   [vanilla] gfx/interface/ideas/portrait_SOV_konstantin_voskoboinik_small.dds
+   [vanilla] gfx/leaders/SOV/portrait_SOV_lavrenty_beriya.dds
+   [vanilla] gfx/leaders/SOV/portrait_SOV_leonid_govorov.dds
+   [vanilla] gfx/leaders/SOV/portrait_SOV_lev_dovator.dds
+   [vanilla] gfx/leaders/SOV/portrait_SOV_lev_kamenev.dds
+   [vanilla] gfx/leaders/SOV/portrait_SOV_maks_reyter.dds
+   [vanilla] gfx/leaders/SOV/portrait_SOV_pavel_rybalko.dds
+   [vanilla] gfx/leaders/SOV/portrait_SOV_pyotr_krasnov.dds
+   [r56    ] gfx/leaders/SOV/portrait_SOV_ramon_mercader.dds
+   [vanilla] gfx/leaders/SOV/portrait_SOV_semyon_budyonny.dds
+   [vanilla] gfx/leaders/SOV/portrait_SOV_semyon_timoshenko.dds
+   [vanilla] gfx/leaders/scientists/portrait_SOV_sergei_korolev.dds
+   [vanilla] gfx/leaders/SOV/portrait_SOV_sidor_kovpak.dds
+   [vanilla] gfx/leaders/SOV/portrait_SOV_supreme_soviet.dds
+   [vanilla] gfx/leaders/SOV/portrait_SOV_vasily_flug.dds
+   [vanilla] gfx/interface/ideas/portrait_SOV_vasily_flug_small.dds
+   [vanilla] gfx/leaders/SOV/portrait_SOV_vasily_korzh.dds
+   [vanilla] gfx/leaders/SOV/portrait_SOV_vasily_kuznetsov.dds
+   [vanilla] gfx/leaders/SOV/portrait_SOV_vasily_primakov.dds
+   [vanilla] gfx/leaders/scientists/portrait_SOV_vladimir_kotelnikov.dds
+   [vanilla] gfx/leaders/SOV/portrait_SOV_yakov_cherevichenko.dds
+   [vanilla] gfx/leaders/SOV/Portrait_Soviet_Aleksandr_Gorbatov.dds
+   [vanilla] gfx/leaders/SOV/Portrait_Soviet_Aleksandr_Vasilevsky.dds
+   [vanilla] gfx/leaders/SOV/Portrait_Soviet_Andrei_Antonovich_Grechko.dds
+   [vanilla] gfx/leaders/SOV/Portrait_Soviet_Andrey_Vlasov.dds
+   [vanilla] gfx/leaders/SOV/Portrait_Soviet_Andrey_Yeryomenko.dds
+   [vanilla] gfx/leaders/SOV/Portrait_Soviet_Arseniy_Golovko.dds
+   [vanilla] gfx/leaders/SOV/Portrait_Soviet_Boris_Shaposhnikov.dds
+   [vanilla] gfx/leaders/SOV/Portrait_Soviet_Dmitri_Danilovich_Lelyushenko.dds
+   [vanilla] gfx/leaders/SOV/Portrait_Soviet_Filipp_Golikov.dds
+   [vanilla] gfx/leaders/SOV/Portrait_Soviet_Filipp_Oktyabrsky.dds
+   [vanilla] gfx/leaders/SOV/Portrait_Soviet_Generic_1.dds
+   [vanilla] gfx/leaders/SOV/Portrait_Soviet_Generic_2.dds
+   [vanilla] gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds
+   [vanilla] gfx/leaders/SOV/Portrait_Soviet_Generic_land_1.dds
+   [vanilla] gfx/leaders/SOV/Portrait_Soviet_Generic_land_2.dds
+   [vanilla] gfx/leaders/SOV/Portrait_Soviet_Generic_land_3.dds
+   [vanilla] gfx/leaders/SOV/Portrait_Soviet_Generic_land_4.dds
+   [vanilla] gfx/leaders/SOV/Portrait_Soviet_Generic_land_5.dds
+   [vanilla] gfx/leaders/SOV/Portrait_Soviet_Generic_land_6.dds
+   [vanilla] gfx/leaders/SOV/Portrait_Soviet_Generic_land_7.dds
+   [vanilla] gfx/leaders/SOV/Portrait_Soviet_Generic_land_8.dds
+   [vanilla] gfx/leaders/SOV/Portrait_Soviet_Generic_land_9.dds
+   [vanilla] gfx/leaders/SOV/Portrait_Soviet_Generic_navy_1.dds
+   [vanilla] gfx/leaders/SOV/Portrait_Soviet_Generic_navy_2.dds
+   [vanilla] gfx/leaders/SOV/Portrait_Soviet_Generic_navy_3.dds
+   [vanilla] gfx/leaders/SOV/Portrait_Soviet_Georgiy_Zakharov.dds
+   [vanilla] gfx/leaders/SOV/Portrait_Soviet_Gordey_Levchenko.dds
+   [vanilla] gfx/leaders/SOV/Portrait_Soviet_Gregory_Zhukov.dds
+   [vanilla] gfx/leaders/SOV/Portrait_Soviet_Grigory_Kulik.dds
+   [r56    ] gfx/leaders/SOV/Portrait_Soviet_Grigory_Kulik.dds
+   [vanilla] gfx/leaders/SOV/Portrait_Soviet_Issa_Pliyev.dds
+   [vanilla] gfx/leaders/SOV/Portrait_Soviet_Ivan_Chernyakhovsky.dds
+   [vanilla] gfx/leaders/SOV/Portrait_Soviet_Ivan_Fedyuninsky.dds
+   [vanilla] gfx/leaders/SOV/Portrait_Soviet_Ivan_Konev.dds
+   [vanilla] gfx/leaders/SOV/Portrait_Soviet_Joseph_Stalin.dds
+   [vanilla] gfx/leaders/SOV/Portrait_Soviet_Kirill_Meretskov.dds
+   [r56    ] gfx/leaders/SOV/Portrait_Soviet_Kirill_Moskalenko.dds
+   [vanilla] gfx/leaders/SOV/Portrait_Soviet_Kirill_Moskalenko.dds
+   [vanilla] gfx/leaders/SOV/Portrait_Soviet_Kliment_Voroshilov.dds
+   [vanilla] gfx/leaders/SOV/Portrait_Soviet_Konstantin_Rodzaevsky.dds
+   [vanilla] gfx/leaders/SOV/Portrait_Soviet_Konstantin_Rokossovsky.dds
+   [vanilla] gfx/leaders/SOV/Portrait_Soviet_Kuzma_Galitsky.dds
+   [vanilla] gfx/leaders/SOV/Portrait_Soviet_Leonid_Govorov.dds
+   [vanilla] gfx/leaders/SOV/Portrait_Soviet_Maksim_Purkayev.dds
+   [vanilla] gfx/leaders/SOV/Portrait_Soviet_Matkian_Popov.dds
+   [vanilla] gfx/leaders/SOV/Portrait_Soviet_Max_Andreyevich.dds
+   [vanilla] gfx/leaders/SOV/Portrait_Soviet_Mikhail_Tukhachevsky.dds
+   [vanilla] gfx/leaders/SOV/Portrait_Soviet_Nikandr_Yevlampyevich_Chibisov.dds
+   [vanilla] gfx/leaders/SOV/Portrait_Soviet_Nikolai_Fyodorovich_Vatutin.dds
+   [vanilla] gfx/leaders/SOV/Portrait_Soviet_Nikolay_Berzarin.dds
+   [vanilla] gfx/leaders/SOV/portrait_soviet_pdxcon_magic_winner.dds
+   [vanilla] gfx/leaders/SOV/Portrait_Soviet_Rodion_Malinovsky.dds
+   [vanilla] gfx/leaders/SOV/Portrait_Soviet_Semyon_Budyonny.dds
+   [vanilla] gfx/leaders/SOV/Portrait_Soviet_Semyon_Timoshenko.dds
+   [vanilla] gfx/leaders/SOV/Portrait_Soviet_Sergey_Gorshkov.dds
+   [vanilla] gfx/leaders/SOV/Portrait_Soviet_Vasily_Chuykov.dds
+   [vanilla] gfx/leaders/SOV/Portrait_Soviet_Vasily_Kuznetsov.dds
+   [vanilla] gfx/leaders/SOV/Portrait_Soviet_Victor_Baydalakov.dds
+   [vanilla] gfx/leaders/SOV/Portrait_Soviet_Vladimir_Kasatonov.dds
+   [vanilla] gfx/leaders/SOV/Portrait_Soviet_Yakov_Cherevichenko.dds
+   [r56    ] gfx/leaders/SOV/r56_portrait_SOV_Aleksandr_Morozov.dds
+   [r56    ] gfx/leaders/SOV/r56_portrait_SOV_Alexander_Kerensky.dds
+   [r56    ] gfx/leaders/SOV/r56_portrait_SOV_Anatoly_Gurevitch.dds
+   [r56    ] gfx/leaders/SOV/r56_portrait_SOV_Anatoly_Pepelyaev.dds
+   [r56    ] gfx/leaders/SOV/r56_portrait_SOV_Andrey_Shkuro.dds
+   [r56    ] gfx/leaders/SOV/r56_portrait_SOV_Anton_Denikin.dds
+   [r56    ] gfx/leaders/SOV/r56_portrait_SOV_Anton_Turkul.dds
+   [r56    ] gfx/leaders/SOV/r56_portrait_SOV_Boris_A._Shteifon.dds
+   [r56    ] gfx/leaders/SOV/r56_portrait_SOV_Boris_Shaposhnikov.dds
+   [r56    ] gfx/leaders/SOV/r56_portrait_SOV_Boris_Smyslovsky.dds
+   [r56    ] gfx/leaders/SOV/r56_portrait_SOV_Bronislav_Kaminsky.dds
+   [r56    ] gfx/leaders/SOV/r56_portrait_SOV_Eugene_Miller.dds
+   [r56    ] gfx/leaders/SOV/r56_portrait_SOV_Fedor_Abramov.dds
+   [r56    ] gfx/leaders/SOV/r56_portrait_SOV_Fyodor_Tolbukhin.dds
+   [r56    ] gfx/leaders/SOV/r56_portrait_SOV_Fyodor_Zozulya.dds
+   [r56    ] gfx/leaders/SOV/r56_portrait_SOV_generic_scientists_1.dds
+   [r56    ] gfx/leaders/SOV/r56_portrait_SOV_generic_scientists_2.dds
+   [r56    ] gfx/leaders/SOV/r56_portrait_SOV_generic_scientists_3.dds
+   [r56    ] gfx/leaders/SOV/r56_portrait_SOV_Genrikh_Pelhau.dds
+   [r56    ] gfx/leaders/SOV/r56_portrait_SOV_Georgy_Malenkov.dds
+   [r56    ] gfx/leaders/SOV/r56_portrait_SOV_Georgy_Zhukov.dds
+   [r56    ] gfx/leaders/SOV/r56_portrait_SOV_Grigory_semenov.dds
+   [r56    ] gfx/leaders/SOV/r56_portrait_SOV_Isaac_Bykadorov.dds
+   [r56    ] gfx/leaders/SOV/r56_portrait_SOV_Ivan_Barbovich.dds
+   [r56    ] gfx/leaders/SOV/r56_portrait_SOV_Ivan_Kononov.dds
+   [r56    ] gfx/leaders/SOV/r56_portrait_SOV_Joseph_Stalin.dds
+   [r56    ] gfx/leaders/SOV/r56_portrait_SOV_Kirill_Vladimirovich_Romanov.dds
+   [r56    ] gfx/leaders/SOV/r56_portrait_SOV_Konstantin_Jeffremov.dds
+   [r56    ] gfx/leaders/SOV/r56_portrait_SOV_Konstantin_Rodzaevsky.dds
+   [r56    ] gfx/leaders/SOV/r56_portrait_SOV_Lavrenti_Beria.dds
+   [r56    ] gfx/leaders/SOV/r56_portrait_SOV_Lazar_Israelievsky.dds
+   [r56    ] gfx/leaders/SOV/r56_portrait_SOV_Leon_Trotsky.dds
+   [r56    ] gfx/leaders/SOV/r56_portrait_SOV_Leonid_Serebryakov.dds
+   [r56    ] gfx/leaders/SOV/r56_portrait_SOV_Leopold_Trepper.dds
+   [r56    ] gfx/leaders/SOV/r56_portrait_SOV_Mikhail_Rudnitsky.dds
+   [r56    ] gfx/leaders/SOV/r56_portrait_SOV_Nahum_Eitingon.dds
+   [r56    ] gfx/leaders/SOV/r56_portrait_SOV_Nikita_Khrushchev.dds
+   [r56    ] gfx/leaders/SOV/r56_portrait_SOV_Nikolai_Dukhov.dds
+   [r56    ] gfx/leaders/SOV/r56_Portrait_SOV_Nikolai_Fyodorovich_Vatutin.dds
+   [r56    ] gfx/leaders/SOV/r56_portrait_SOV_Nikolai_Yezhov.dds
+   [r56    ] gfx/leaders/SOV/r56_portrait_SOV_Nikolay_Krylov.dds
+   [r56    ] gfx/leaders/SOV/r56_portrait_SOV_Pavel_Batov.dds
+   [r56    ] gfx/leaders/SOV/r56_portrait_SOV_Pavel_Bermondt-Avalov.dds
+   [r56    ] gfx/leaders/SOV/r56_portrait_SOV_Pavel_Shatilov.dds
+   [r56    ] gfx/leaders/SOV/r56_portrait_SOV_Peter_Pisarev.dds
+   [r56    ] gfx/leaders/SOV/r56_portrait_SOV_Peter_Popov.dds
+   [r56    ] gfx/leaders/SOV/r56_portrait_SOV_Piotr_Krasnow.dds
+   [r56    ] gfx/leaders/SOV/r56_portrait_SOV_Pyotr_Mashin.dds
+   [r56    ] gfx/leaders/SOV/r56_portrait_SOV_Vasily_Blyukher.dds
+   [r56    ] gfx/leaders/SOV/r56_portrait_SOV_Vasily_Chuikov.dds
+   [r56    ] gfx/leaders/SOV/r56_portrait_SOV_Vasily_Danilovich_Sokolovsky.dds
+   [r56    ] gfx/leaders/SOV/r56_portrait_SOV_Vladimir_Kirillovich.dds
+   [r56    ] gfx/leaders/SOV/r56_portrait_SOV_Vladimir_Marushevsky.dds
+   [r56    ] gfx/leaders/SOV/r56_portrait_SOV_Vladimir_Vitkovsky.dds
+   [r56    ] gfx/leaders/SOV/r56_portrait_SOV_Vyacheslav_Grigoryevich_Naumenko.dds
+   [r56    ] gfx/leaders/SOV/r56_portrait_SOV_Yan_Chernyak.dds
+   [r56    ] gfx/leaders/UKR/r56_portrait_UKR_Konstantin_Prisovsky.dds
+
+=== B. 已注册的立绘 sprite 与文件的差集（= 没被注册的素材）===
+   未注册: gfx/leaders/KAZ/portrait_kaz_nikolay_skvortsov.dds
+   未注册: gfx/leaders/SOV/Portrait_Soviet_Aleksandr_Gorbatov.dds
+   未注册: gfx/leaders/SOV/Portrait_Soviet_Aleksandr_Vasilevsky.dds
+   未注册: gfx/leaders/SOV/Portrait_Soviet_Andrei_Antonovich_Grechko.dds
+   未注册: gfx/leaders/SOV/Portrait_Soviet_Andrey_Vlasov.dds
+   未注册: gfx/leaders/SOV/Portrait_Soviet_Andrey_Yeryomenko.dds
+   未注册: gfx/leaders/SOV/Portrait_Soviet_Arseniy_Golovko.dds
+   未注册: gfx/leaders/SOV/Portrait_Soviet_Boris_Shaposhnikov.dds
+   未注册: gfx/leaders/SOV/Portrait_Soviet_Dmitri_Danilovich_Lelyushenko.dds
+   未注册: gfx/leaders/SOV/Portrait_Soviet_Filipp_Golikov.dds
+   未注册: gfx/leaders/SOV/Portrait_Soviet_Filipp_Oktyabrsky.dds
+   未注册: gfx/leaders/SOV/Portrait_Soviet_Generic_1.dds
+   未注册: gfx/leaders/SOV/Portrait_Soviet_Generic_2.dds
+   未注册: gfx/leaders/SOV/Portrait_Soviet_Georgiy_Zakharov.dds
+   未注册: gfx/leaders/SOV/Portrait_Soviet_Gordey_Levchenko.dds
+   未注册: gfx/leaders/SOV/Portrait_Soviet_Gregory_Zhukov.dds
+   未注册: gfx/leaders/SOV/Portrait_Soviet_Grigory_Kulik.dds
+   未注册: gfx/leaders/SOV/Portrait_Soviet_Issa_Pliyev.dds
+   未注册: gfx/leaders/SOV/Portrait_Soviet_Ivan_Chernyakhovsky.dds
+   未注册: gfx/leaders/SOV/Portrait_Soviet_Ivan_Fedyuninsky.dds
+   未注册: gfx/leaders/SOV/Portrait_Soviet_Ivan_Konev.dds
+   未注册: gfx/leaders/SOV/Portrait_Soviet_Joseph_Stalin.dds
+   未注册: gfx/leaders/SOV/Portrait_Soviet_Kirill_Meretskov.dds
+   未注册: gfx/leaders/SOV/Portrait_Soviet_Kirill_Moskalenko.dds
+   未注册: gfx/leaders/SOV/Portrait_Soviet_Kliment_Voroshilov.dds
+   未注册: gfx/leaders/SOV/Portrait_Soviet_Konstantin_Rodzaevsky.dds
+   未注册: gfx/leaders/SOV/Portrait_Soviet_Konstantin_Rokossovsky.dds
+   未注册: gfx/leaders/SOV/Portrait_Soviet_Kuzma_Galitsky.dds
+   未注册: gfx/leaders/SOV/Portrait_Soviet_Leonid_Govorov.dds
+   未注册: gfx/leaders/SOV/Portrait_Soviet_Maksim_Purkayev.dds
+   未注册: gfx/leaders/SOV/Portrait_Soviet_Matkian_Popov.dds
+   未注册: gfx/leaders/SOV/Portrait_Soviet_Max_Andreyevich.dds
+   未注册: gfx/leaders/SOV/Portrait_Soviet_Mikhail_Tukhachevsky.dds
+   未注册: gfx/leaders/SOV/Portrait_Soviet_Nikandr_Yevlampyevich_Chibisov.dds
+   未注册: gfx/leaders/SOV/Portrait_Soviet_Nikolai_Fyodorovich_Vatutin.dds
+   未注册: gfx/leaders/SOV/Portrait_Soviet_Nikolay_Berzarin.dds
+   未注册: gfx/leaders/SOV/portrait_soviet_pdxcon_magic_winner.dds
+   未注册: gfx/leaders/SOV/Portrait_Soviet_Rodion_Malinovsky.dds
+   未注册: gfx/leaders/SOV/Portrait_Soviet_Semyon_Budyonny.dds
+   未注册: gfx/leaders/SOV/Portrait_Soviet_Semyon_Timoshenko.dds
+   未注册: gfx/leaders/SOV/Portrait_Soviet_Sergey_Gorshkov.dds
+   未注册: gfx/leaders/SOV/Portrait_Soviet_Vasily_Chuykov.dds
+   未注册: gfx/leaders/SOV/Portrait_Soviet_Vasily_Kuznetsov.dds
+   未注册: gfx/leaders/SOV/Portrait_Soviet_Victor_Baydalakov.dds
+   未注册: gfx/leaders/SOV/Portrait_Soviet_Vladimir_Kasatonov.dds
+   未注册: gfx/leaders/SOV/Portrait_Soviet_Yakov_Cherevichenko.dds
+   未注册: gfx/leaders/SOV/Portrait_Soviet_Grigory_Kulik.dds
+   未注册: gfx/leaders/SOV/Portrait_Soviet_Kirill_Moskalenko.dds
+   未注册: gfx/leaders/SOV/portrait_SOV_ramon_mercader.dds
+   未注册: gfx/leaders/SOV/r56_portrait_SOV_Aleksandr_Morozov.dds
+   未注册: gfx/leaders/SOV/r56_portrait_SOV_Alexander_Kerensky.dds
+   未注册: gfx/leaders/SOV/r56_portrait_SOV_Anatoly_Gurevitch.dds
+   未注册: gfx/leaders/SOV/r56_portrait_SOV_Anatoly_Pepelyaev.dds
+   未注册: gfx/leaders/SOV/r56_portrait_SOV_Anton_Denikin.dds
+   未注册: gfx/leaders/SOV/r56_portrait_SOV_Anton_Turkul.dds
+   未注册: gfx/leaders/SOV/r56_portrait_SOV_Boris_A._Shteifon.dds
+   未注册: gfx/leaders/SOV/r56_portrait_SOV_Boris_Shaposhnikov.dds
+   未注册: gfx/leaders/SOV/r56_portrait_SOV_Boris_Smyslovsky.dds
+   未注册: gfx/leaders/SOV/r56_portrait_SOV_Bronislav_Kaminsky.dds
+   未注册: gfx/leaders/SOV/r56_portrait_SOV_Eugene_Miller.dds
+   未注册: gfx/leaders/SOV/r56_portrait_SOV_Fedor_Abramov.dds
+   未注册: gfx/leaders/SOV/r56_portrait_SOV_Fyodor_Tolbukhin.dds
+   未注册: gfx/leaders/SOV/r56_portrait_SOV_Fyodor_Zozulya.dds
+   未注册: gfx/leaders/SOV/r56_portrait_SOV_generic_scientists_1.dds
+   未注册: gfx/leaders/SOV/r56_portrait_SOV_generic_scientists_2.dds
+   未注册: gfx/leaders/SOV/r56_portrait_SOV_generic_scientists_3.dds
+   未注册: gfx/leaders/SOV/r56_portrait_SOV_Genrikh_Pelhau.dds
+   未注册: gfx/leaders/SOV/r56_portrait_SOV_Georgy_Malenkov.dds
+   未注册: gfx/leaders/SOV/r56_portrait_SOV_Georgy_Zhukov.dds
+   未注册: gfx/leaders/SOV/r56_portrait_SOV_Grigory_semenov.dds
+   未注册: gfx/leaders/SOV/r56_portrait_SOV_Isaac_Bykadorov.dds
+   未注册: gfx/leaders/SOV/r56_portrait_SOV_Ivan_Barbovich.dds
+   未注册: gfx/leaders/SOV/r56_portrait_SOV_Ivan_Kononov.dds
+   未注册: gfx/leaders/SOV/r56_portrait_SOV_Joseph_Stalin.dds
+   未注册: gfx/leaders/SOV/r56_portrait_SOV_Kirill_Vladimirovich_Romanov.dds
+   未注册: gfx/leaders/SOV/r56_portrait_SOV_Konstantin_Jeffremov.dds
+   未注册: gfx/leaders/SOV/r56_portrait_SOV_Konstantin_Rodzaevsky.dds
+   未注册: gfx/leaders/SOV/r56_portrait_SOV_Lavrenti_Beria.dds
+   未注册: gfx/leaders/SOV/r56_portrait_SOV_Lazar_Israelievsky.dds
+   未注册: gfx/leaders/SOV/r56_portrait_SOV_Leonid_Serebryakov.dds
+   未注册: gfx/leaders/SOV/r56_portrait_SOV_Leon_Trotsky.dds
+   未注册: gfx/leaders/SOV/r56_portrait_SOV_Leopold_Trepper.dds
+   未注册: gfx/leaders/SOV/r56_portrait_SOV_Mikhail_Rudnitsky.dds
+   未注册: gfx/leaders/SOV/r56_portrait_SOV_Nahum_Eitingon.dds
+   未注册: gfx/leaders/SOV/r56_portrait_SOV_Nikita_Khrushchev.dds
+   未注册: gfx/leaders/SOV/r56_portrait_SOV_Nikolai_Dukhov.dds
+   未注册: gfx/leaders/SOV/r56_Portrait_SOV_Nikolai_Fyodorovich_Vatutin.dds
+   未注册: gfx/leaders/SOV/r56_portrait_SOV_Nikolai_Yezhov.dds
+   未注册: gfx/leaders/SOV/r56_portrait_SOV_Nikolay_Krylov.dds
+   未注册: gfx/leaders/SOV/r56_portrait_SOV_Pavel_Batov.dds
+   未注册: gfx/leaders/SOV/r56_portrait_SOV_Pavel_Bermondt-Avalov.dds
+   未注册: gfx/leaders/SOV/r56_portrait_SOV_Pavel_Shatilov.dds
+   未注册: gfx/leaders/SOV/r56_portrait_SOV_Peter_Pisarev.dds
+   未注册: gfx/leaders/SOV/r56_portrait_SOV_Peter_Popov.dds
+   未注册: gfx/leaders/SOV/r56_portrait_SOV_Piotr_Krasnow.dds
+   未注册: gfx/leaders/SOV/r56_portrait_SOV_Pyotr_Mashin.dds
+   未注册: gfx/leaders/SOV/r56_portrait_SOV_Vasily_Blyukher.dds
+   未注册: gfx/leaders/SOV/r56_portrait_SOV_Vasily_Chuikov.dds
+   未注册: gfx/leaders/SOV/r56_portrait_SOV_Vasily_Danilovich_Sokolovsky.dds
+   未注册: gfx/leaders/SOV/r56_portrait_SOV_Vladimir_Marushevsky.dds
+   未注册: gfx/leaders/SOV/r56_portrait_SOV_Vladimir_Vitkovsky.dds
+   未注册: gfx/leaders/SOV/r56_portrait_SOV_Vyacheslav_Grigoryevich_Naumenko.dds
+   未注册: gfx/leaders/SOV/r56_portrait_SOV_Yan_Chernyak.dds
+   未注册: gfx/leaders/UKR/r56_portrait_UKR_Konstantin_Prisovsky.dds
+  未注册素材共 104 个
+
+=== C. 其中与反对派相关的（含下列姓氏之一的）===
+   gfx/leaders/SOV/Portrait_Soviet_Andrei_Antonovich_Grechko.dds [antonov]
+   gfx/leaders/SOV/r56_portrait_SOV_Leon_Trotsky.dds          [trotsky]
+   gfx/leaders/SOV/r56_portrait_SOV_Leonid_Serebryakov.dds    [serebryakov]
+
+=== D. GFX_portrait_SOV_supreme_soviet 的定义位置 ===
+   [F:\Hearts of Iron IV] _leader_portraits.gfx
+      name = "GFX_portrait_SOV_supreme_soviet" texturefile = "gfx/leaders/SOV/portrait_SOV_supreme_soviet.dds" } spriteType = { name = "GFX_portrait_SOV_vasily_korzh" texturefile = "gfx/leaders/SOV/portrait_SOV_vasily_korzh.dds" } spr
+   [D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125] _leader_portraits.gfx
+      name = "GFX_portrait_SOV_supreme_soviet" texturefile = "gfx/leaders/SOV/portrait_SOV_supreme_soviet.dds" } spriteType = { name = "GFX_portrait_SOV_vasily_korzh" texturefile = "gfx/leaders/SOV/portrait_SOV_vasily_korzh.dds" 

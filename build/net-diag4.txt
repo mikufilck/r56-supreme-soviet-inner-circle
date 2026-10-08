@@ -1,0 +1,15 @@
+﻿=== 走代理 http://127.0.0.1:7993 ===
+  http://www.baidu.com                                       : 502
+  https://www.baidu.com                                      : 200
+  https://www.marxists.org/chinese/trotsky/index.htm         : curl: (35) schannel: failed to receive handshake, SSL/TLS connection failed | 000
+  http://www.marxists.org/chinese/trotsky/index.htm          : 502
+
+=== 直连（不走代理）===
+  http://www.baidu.com                                       : 200
+  https://www.baidu.com                                      : 200
+  https://www.marxists.org/chinese/trotsky/index.htm         : curl: (35) schannel: failed to receive handshake, SSL/TLS connection failed | 000
+  http://www.marxists.org/chinese/trotsky/index.htm          : curl: (28) Operation timed out after 30009 milliseconds with 0 bytes received | 000
+
+=== 代理的 CONNECT 实际连通性（手工，不跑 TLS）===
+  www.marxists.org:443     -> HTTP/1.1 200 Connection established
+  www.baidu.com:443        -> HTTP/1.1 200 Connection established

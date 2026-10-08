@@ -1,0 +1,106 @@
+﻿################ F:\Hearts of Iron IV
+  找到 scripted_localisation 目录 1 个
+  [GetAscendedAdvisor1] common\scripted_localisation\WUW_GER_scripted_loc.txt  L2813
+      defined_text = {
+      	name = GetAscendedAdvisor1
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 0 }
+      		}
+      		localization_key = empty_key
+      	}
+      	text = {
+      		localization_key = GER_the_inner_circle_tt_ascended_advisor_1
+      	}
+      }
+
+  [GetAscendedAdvisorDesc1] common\scripted_localisation\WUW_GER_scripted_loc.txt  L2279
+      defined_text = {
+      	name = GetAscendedAdvisorDesc1
+      	text = { #NO ONE
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 0 }	
+      		}
+      		localization_key = empty_key
+      	}
+      
+      	# TODT
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 1 }
+      			has_idea = GER_todt_reich_minister_of_armaments
+      		}
+      		localization_key = idea_desc|GER_todt_reich_minister_of_armaments
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 1 }
+      			has_idea = GER_todt_reich_engineer
+      		}
+      		localization_key = idea_desc|GER_todt_reich_engineer
+      	}
+      
+      	# SPEER
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 2 }
+      			has_idea = GER_speer_reich_minister_of_armaments
+      		}
+      		localization_key = idea_desc|GER_speer_reich_minister_of_armaments
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 2 }
+      			has_idea = GER_speer_reich_architect
+      		}
+      		localization_key = idea_desc|GER_speer_reich_architect
+      	}
+      
+      ... (块更长，共 177 行)
+
+  [GetAscendedAdvisorTrait1] common\scripted_localisation\WUW_GER_scripted_loc.txt  L1119
+      defined_text = {
+      	name = GetAscendedAdvisorTrait1
+      	text = { #NO ONE
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 0 }	
+      		}
+      		localization_key = empty_key
+      	}
+      
+      	# TODT
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 1 }
+      			has_idea = GER_todt_reich_minister_of_armaments
+      		}
+      		localization_key = idea_desc|GER_todt_reich_minister_of_armaments
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 1 }
+      			has_idea = GER_todt_reich_engineer
+      		}
+      		localization_key = idea_desc|GER_todt_reich_engineer
+      	}
+      
+      	# SPEER
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 2 }
+      			has_idea = GER_speer_reich_minister_of_armaments
+      		}
+      		localization_key = idea_desc|GER_speer_reich_minister_of_armaments
+      	}
+      	text = {
+      		trigger = {
+      			check_variable = { GER_ascended_advisor_1 = 2 }
+      			has_idea = GER_speer_reich_architect
+      		}
+      		localization_key = idea_desc|GER_speer_reich_architect
+      	}
+      
+      ... (块更长，共 177 行)
+
+################ D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125
+  找到 scripted_localisation 目录 1 个

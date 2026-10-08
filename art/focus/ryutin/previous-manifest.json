@@ -1,0 +1,2231 @@
+{
+  "mode": "built-in image_gen",
+  "assets": [
+    {
+      "id": "hof_ic_seat_lev_trotsky",
+      "name": "GFX_hof_ic_seat_lev_trotsky",
+      "title": "列夫·托洛茨基",
+      "group": "entry",
+      "description": "陆海军人民委员 / 革命军事委员会主席 / 最高国民经济委员会主席",
+      "portrait_source": "D:\\Program Files (x86)\\Steam\\steamapps\\workshop\\content\\394360\\2129897125\\gfx\\leaders\\SOV\\r56_portrait_SOV_Leon_Trotsky.dds",
+      "reference": "references/lev_trotsky.png",
+      "size": [
+        100,
+        88
+      ],
+      "status": "complete",
+      "source": "transparent-v2/source/GFX_hof_ic_seat_lev_trotsky.png",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_seat_lev_trotsky.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_seat_lev_trotsky.dds",
+      "generation_record": "transparent-v2/records/GFX_hof_ic_seat_lev_trotsky.json",
+      "sha256": "0b628048e1cfad5da0776f428ef13fc589f5ff6b5424d0c647fd1067d460e556"
+    },
+    {
+      "id": "hof_ic_seat_nikolay_bukharin",
+      "name": "GFX_hof_ic_seat_nikolay_bukharin",
+      "title": "尼古拉·布哈林",
+      "group": "entry",
+      "description": "《真理报》《消息报》主编 / 共产国际执委会主席 / 1936 年宪法起草人",
+      "portrait_source": "F:\\Hearts of Iron IV\\dlc\\dlc034_no_step_back\\gfx\\leaders\\SOV\\portrait_SOV_nikolay_bukharin.dds",
+      "reference": "references/nikolay_bukharin.png",
+      "size": [
+        100,
+        88
+      ],
+      "status": "complete",
+      "source": "transparent-v2/source/GFX_hof_ic_seat_nikolay_bukharin.png",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_seat_nikolay_bukharin.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_seat_nikolay_bukharin.dds",
+      "generation_record": "transparent-v2/records/GFX_hof_ic_seat_nikolay_bukharin.json",
+      "sha256": "956a7fa7aaf7351d21759e9779dc0b871eaefd08288841f13412bef04e08949b"
+    },
+    {
+      "id": "hof_ic_seat_aleksey_rykov",
+      "name": "GFX_hof_ic_seat_aleksey_rykov",
+      "title": "阿列克谢·李可夫",
+      "group": "entry",
+      "description": "苏联人民委员会主席（1924–30）/ 最高国民经济委员会主席",
+      "portrait_source": "F:\\Hearts of Iron IV\\dlc\\dlc034_no_step_back\\gfx\\leaders\\SOV\\portrait_SOV_aleksey_rykov.dds",
+      "reference": "references/aleksey_rykov.png",
+      "size": [
+        100,
+        88
+      ],
+      "status": "complete",
+      "source": "transparent-v2/source/GFX_hof_ic_seat_aleksey_rykov.png",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_seat_aleksey_rykov.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_seat_aleksey_rykov.dds",
+      "generation_record": "transparent-v2/records/GFX_hof_ic_seat_aleksey_rykov.json",
+      "sha256": "d0472343f4dd99db2f9cd4de22559a691dafda513220edaea17760c5135a00b1"
+    },
+    {
+      "id": "hof_ic_seat_grigory_zinovyev",
+      "name": "GFX_hof_ic_seat_grigory_zinovyev",
+      "title": "格里戈里·季诺维也夫",
+      "group": "entry",
+      "description": "共产国际**首任**执委会主席 / 列宁格勒苏维埃主席",
+      "portrait_source": "F:\\Hearts of Iron IV\\gfx\\leaders\\SOV\\portrait_SOV_grigory_zinovyev.dds",
+      "reference": "references/grigory_zinovyev.png",
+      "size": [
+        100,
+        88
+      ],
+      "status": "complete",
+      "source": "transparent-v2/source/GFX_hof_ic_seat_grigory_zinovyev.png",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_seat_grigory_zinovyev.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_seat_grigory_zinovyev.dds",
+      "generation_record": "transparent-v2/records/GFX_hof_ic_seat_grigory_zinovyev.json",
+      "sha256": "c7b2b2bd77a7b47a273389c58140a9043aa9c23bfb8f8fec16c6d4facd4674cb"
+    },
+    {
+      "id": "hof_ic_seat_lev_kamenev",
+      "name": "GFX_hof_ic_seat_lev_kamenev",
+      "title": "列夫·加米涅夫",
+      "group": "entry",
+      "description": "全俄中央执行委员会**首任**主席 / 人民委员会副主席 / 莫斯科苏维埃主席",
+      "portrait_source": "F:\\Hearts of Iron IV\\gfx\\leaders\\SOV\\portrait_SOV_lev_kamenev.dds",
+      "reference": "references/lev_kamenev.png",
+      "size": [
+        100,
+        88
+      ],
+      "status": "complete",
+      "source": "transparent-v2/source/GFX_hof_ic_seat_lev_kamenev.png",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_seat_lev_kamenev.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_seat_lev_kamenev.dds",
+      "generation_record": "transparent-v2/records/GFX_hof_ic_seat_lev_kamenev.json",
+      "sha256": "d6baae8e05066e3e2494247d926ad5cdf57eb8e05b0176b801b7a05c9b1e5473"
+    },
+    {
+      "id": "hof_ic_seat_ivan_smirnov",
+      "name": "GFX_hof_ic_seat_ivan_smirnov",
+      "title": "伊万·斯米尔诺夫",
+      "group": "entry",
+      "description": "**首任**邮电人民委员 / 西伯利亚革命委员会主席",
+      "portrait_source": "F:\\Hearts of Iron IV\\gfx\\leaders\\SOV\\portrait_SOV_ivan_smirnov.dds",
+      "reference": "references/ivan_smirnov.png",
+      "size": [
+        100,
+        88
+      ],
+      "status": "complete",
+      "source": "transparent-v2/source/GFX_hof_ic_seat_ivan_smirnov.png",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_seat_ivan_smirnov.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_seat_ivan_smirnov.dds",
+      "generation_record": "transparent-v2/records/GFX_hof_ic_seat_ivan_smirnov.json",
+      "sha256": "7942b66d1e16a7957cf3c92da8e96cc8ded52d6f614863a164dbe284f9a65b26"
+    },
+    {
+      "id": "hof_ic_seat_leonid_serebryakov",
+      "name": "GFX_hof_ic_seat_leonid_serebryakov",
+      "title": "列昂尼德·谢列布里亚科夫",
+      "group": "entry",
+      "description": "中央书记处书记 / 公路与汽车运输总局局长 / **车工出身**",
+      "portrait_source": "D:\\Program Files (x86)\\Steam\\steamapps\\workshop\\content\\394360\\2129897125\\gfx\\leaders\\SOV\\r56_portrait_SOV_Leonid_Serebryakov.dds",
+      "reference": "references/leonid_serebryakov.png",
+      "size": [
+        100,
+        88
+      ],
+      "status": "complete",
+      "source": "transparent-v2/source/GFX_hof_ic_seat_leonid_serebryakov.png",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_seat_leonid_serebryakov.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_seat_leonid_serebryakov.dds",
+      "generation_record": "transparent-v2/records/GFX_hof_ic_seat_leonid_serebryakov.json",
+      "sha256": "946a5fbbec659de6b52d310e7baec8fcdc35c161fc9698e9b1b48b69c052cfca"
+    },
+    {
+      "id": "hof_ic_trotsky_build_the_red_army",
+      "name": "GFX_hof_ic_trotsky_build_the_red_army",
+      "title": "缔造红军",
+      "group": "trotsky",
+      "description": "这辆军用专列曾经是他的战地指挥部。在那决定命运的 3 年里，他乘坐这辆专列沿着 8000 公里的前线行进，哪里危险就冲向哪里，只有短暂的磋商或者出席莫斯科的公众集会才暂时打断他的行程。",
+      "size": [
+        100,
+        88
+      ],
+      "status": "complete",
+      "source": "transparent-v2/source/GFX_hof_ic_trotsky_build_the_red_army.png",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_trotsky_build_the_red_army.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_trotsky_build_the_red_army.dds",
+      "generation_record": "transparent-v2/records/GFX_hof_ic_trotsky_build_the_red_army.json",
+      "sha256": "0d87d89933991ca134a56016615157e5f96746d98b8151f2008da3524680b2fd"
+    },
+    {
+      "id": "hof_ic_trotsky_military_specialists",
+      "name": "GFX_hof_ic_trotsky_military_specialists",
+      "title": "返聘沙俄军官",
+      "group": "trotsky",
+      "description": "1919 年初，他断然反对逮捕查京将军。他写道，查京帮助苏维埃所做的工作比那些关押他的人还多，蛮横地对待这样的人则会对军官的士气具有灾难性的影响。他要求释放将军，并愿在法庭给他定罪前亲自为他作保。",
+      "size": [
+        100,
+        88
+      ],
+      "status": "complete",
+      "source": "transparent-v2/source/GFX_hof_ic_trotsky_military_specialists.png",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_trotsky_military_specialists.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_trotsky_military_specialists.dds",
+      "generation_record": "transparent-v2/records/GFX_hof_ic_trotsky_military_specialists.json",
+      "sha256": "dde2044e04bf83f1970bb549c51cd033418371df7a592cbbe484954a6e0f06fc"
+    },
+    {
+      "id": "hof_ic_trotsky_against_partisan_warfare",
+      "name": "GFX_hof_ic_trotsky_against_partisan_warfare",
+      "title": "反对游击主义",
+      "group": "trotsky",
+      "description": "正如托洛茨基所指出的，游击战的混乱反映了革命下面的农民因素，而反对它的斗争同样是为了支持无产阶级国家组织，以抵制正在瓦解它的元素化的小资产阶级无政府状态。绝大部分的军队新兵都是农民，整个国家是一片起义的农民海洋，对于这种战争方式，他们不仅有着传统，而且本能地适应。",
+      "size": [
+        100,
+        88
+      ],
+      "status": "complete",
+      "source": "transparent-v2/source/GFX_hof_ic_trotsky_against_partisan_warfare.png",
+      "source_size": [
+        1337,
+        1177
+      ],
+      "png": "GFX_hof_ic_trotsky_against_partisan_warfare.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_trotsky_against_partisan_warfare.dds",
+      "generation_record": "transparent-v2/records/GFX_hof_ic_trotsky_against_partisan_warfare.json",
+      "sha256": "7245257e749382b3533f0dbd501912d60b9b62cb062e7754292fba2587aeba9e"
+    },
+    {
+      "id": "hof_ic_trotsky_uneven_and_combined_development",
+      "name": "GFX_hof_ic_trotsky_uneven_and_combined_development",
+      "title": "不平衡与综合发展律",
+      "group": "trotsky",
+      "description": "在一些情况下，从一开始就领先者可以加强其领先地位，而在另一些情况下，同样地由于发展的步调不同，一些落后者可以赶上甚至超过那些先前享有优势者。",
+      "size": [
+        100,
+        88
+      ],
+      "status": "complete",
+      "source": "transparent-v2/source/GFX_hof_ic_trotsky_uneven_and_combined_development.png",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_trotsky_uneven_and_combined_development.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_trotsky_uneven_and_combined_development.dds",
+      "generation_record": "transparent-v2/records/GFX_hof_ic_trotsky_uneven_and_combined_development.json",
+      "sha256": "d2c66da3a72b40a400aefcb22bf0ede5576684b0f4faf330ffd40e3786477666"
+    },
+    {
+      "id": "hof_ic_trotsky_permanent_revolution",
+      "name": "GFX_hof_ic_trotsky_permanent_revolution",
+      "title": "不断革命论",
+      "group": "trotsky",
+      "description": "在狱中，他完成了对俄国革命的见解——不断革命论。认为俄国的民主革命必然要由工人阶级来领导，以无产阶级专政来完成，并由此发展成社会主义革命。其奠基性的表述最初出自马克思，1906 年由托洛茨基针对俄国的情况重新加以表述，随后又在 1928 年进一步阐发。",
+      "size": [
+        100,
+        88
+      ],
+      "status": "complete",
+      "source": "transparent-v2/source/GFX_hof_ic_trotsky_permanent_revolution.png",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_trotsky_permanent_revolution.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_trotsky_permanent_revolution.dds",
+      "generation_record": "transparent-v2/records/GFX_hof_ic_trotsky_permanent_revolution.json",
+      "sha256": "5307fafd3a944b133c3ca0479046cb771c0c0fbe1f4f2938a90b144a91c346a9"
+    },
+    {
+      "id": "hof_ic_trotsky_socialism_in_one_country",
+      "name": "GFX_hof_ic_trotsky_socialism_in_one_country",
+      "title": "驳「一国社会主义」",
+      "group": "trotsky",
+      "description": "斯大林的一国社会主义论，被他斥为放弃世界革命的借口。1926 年，他与昔日的对手季诺维也夫、加米涅夫联手组成联合反对派，主张党内民主与经济计划化，谴责领导层对资产阶级分子的让步。这场争论持续了约 18 个月。",
+      "size": [
+        100,
+        88
+      ],
+      "status": "complete",
+      "source": "transparent-v2/source/GFX_hof_ic_trotsky_socialism_in_one_country.png",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_trotsky_socialism_in_one_country.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_trotsky_socialism_in_one_country.dds",
+      "generation_record": "transparent-v2/records/GFX_hof_ic_trotsky_socialism_in_one_country.json",
+      "sha256": "4945678191669c8071cc929479ae4e1086beff39069b57a1bcadc52b709b2022"
+    },
+    {
+      "id": "hof_ic_trotsky_the_new_course",
+      "name": "GFX_hof_ic_trotsky_the_new_course",
+      "title": "新方针",
+      "group": "trotsky",
+      "description": "1923 年 10 月，他致信中央委员会提出广泛批评，特别强调党内民主遭到破坏、经济计划化不足。改革被承诺了，他随即以一封公开信详细说明改革应取的方向。而此后党组织在压制它的主要批评者时，其猛烈和狂怒在党内反对派的漫长历史上是前所未有的。",
+      "size": [
+        100,
+        88
+      ],
+      "status": "complete",
+      "source": "transparent-v2/source/GFX_hof_ic_trotsky_the_new_course.png",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_trotsky_the_new_course.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_trotsky_the_new_course.dds",
+      "generation_record": "transparent-v2/records/GFX_hof_ic_trotsky_the_new_course.json",
+      "sha256": "73e825d7bbf2fc86510aff91d065ff1dd5959e16c0e30c05c305c86696485cb4"
+    },
+    {
+      "id": "hof_ic_trotsky_against_the_bureaucracy",
+      "name": "GFX_hof_ic_trotsky_against_the_bureaucracy",
+      "title": "反对官僚化",
+      "group": "trotsky",
+      "description": "无产阶级专政将通过政党夺取政权而建立，托洛茨基认为这个政党在革命中起领导作用。但是，他警告说，一旦它的任务完成，这样的党要提防用自身代替无产阶级或是支配无产阶级。",
+      "size": [
+        100,
+        88
+      ],
+      "status": "complete",
+      "source": "transparent-v2/source/GFX_hof_ic_trotsky_against_the_bureaucracy.png",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_trotsky_against_the_bureaucracy.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_trotsky_against_the_bureaucracy.dds",
+      "generation_record": "transparent-v2/records/GFX_hof_ic_trotsky_against_the_bureaucracy.json",
+      "sha256": "514458a0565e3740050f990aabcba30251d96d5fd5533d1d0c4d5b64d6f6a68d"
+    },
+    {
+      "id": "hof_ic_trotsky_limited_market_reforms",
+      "name": "GFX_hof_ic_trotsky_limited_market_reforms",
+      "title": "有限市场化",
+      "group": "trotsky",
+      "description": "内战结束后，他把注意力转向俄国的经济重建。他首先提议放松战时共产主义严苛的集中制，允许市场力量运作。这个提议被否决之后，他才转而尝试把军事纪律应用于经济。",
+      "size": [
+        100,
+        88
+      ],
+      "status": "complete",
+      "source": "transparent-v2/source/GFX_hof_ic_trotsky_limited_market_reforms.png",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_trotsky_limited_market_reforms.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_trotsky_limited_market_reforms.dds",
+      "generation_record": "transparent-v2/records/GFX_hof_ic_trotsky_limited_market_reforms.json",
+      "sha256": "f9f318d2f94c8dda8c5e1a7894019795e31f3832c1d926b88dd153aa08b8ad05"
+    },
+    {
+      "id": "hof_ic_trotsky_labour_armies",
+      "name": "GFX_hof_ic_trotsky_labour_armies",
+      "title": "劳动军",
+      "group": "trotsky",
+      "description": "他转而尝试把军事纪律应用于经济：把士兵用作劳动军，并试图把交通运输系统的管理军事化。这个方向同样被党的十大否决，此后连他自己也不再主张它。",
+      "size": [
+        100,
+        88
+      ],
+      "status": "complete",
+      "source": "transparent-v2/source/GFX_hof_ic_trotsky_labour_armies.png",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_trotsky_labour_armies.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_trotsky_labour_armies.dds",
+      "generation_record": "transparent-v2/records/GFX_hof_ic_trotsky_labour_armies.json",
+      "sha256": "c6cfccd1b23e130a354cf13de5b21c749301c99f3817c722931041bdf8ed1306"
+    },
+    {
+      "id": "hof_ic_trotsky_state_planning",
+      "name": "GFX_hof_ic_trotsky_state_planning",
+      "title": "经济计划化",
+      "group": "trotsky",
+      "description": "他要求扩大国家计划委员会的权力，而李可夫和索柯里尼柯夫则怀疑计划性，公开指责他之所以要求扩大国家计划委员会的权力只是因为他觊觎它的领导权。他所作的报告和所提交的『提纲』是苏联经济史上最关键的文件，他在其中描绘了今后几十年的苏联经济远景。",
+      "size": [
+        100,
+        88
+      ],
+      "status": "complete",
+      "source": "transparent-v2/source/GFX_hof_ic_trotsky_state_planning.png",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_trotsky_state_planning.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_trotsky_state_planning.dds",
+      "generation_record": "transparent-v2/records/GFX_hof_ic_trotsky_state_planning.json",
+      "sha256": "932cedd66a8d056c9ed25741fabeaa9616d10271f9ed009a8dd4f3440dea2d38"
+    },
+    {
+      "id": "hof_ic_trotsky_accelerated_industrialization",
+      "name": "GFX_hof_ic_trotsky_accelerated_industrialization",
+      "title": "加速工业化",
+      "group": "trotsky",
+      "description": "国家的大粮库有一半已见了底，城市居民面临着饥饿的威胁，连军队的给养都不充足，面包店外排着长队，面包价格不断上涨。正是在这样的处境下，联合反对派要求加快工业化、反对向富农让步。1928 年，斯大林开始了第一个五年计划。",
+      "size": [
+        100,
+        88
+      ],
+      "status": "complete",
+      "source": "transparent-v2/source/GFX_hof_ic_trotsky_accelerated_industrialization.png",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_trotsky_accelerated_industrialization.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_trotsky_accelerated_industrialization.dds",
+      "generation_record": "transparent-v2/records/GFX_hof_ic_trotsky_accelerated_industrialization.json",
+      "sha256": "615a8ebc87d0bcce1e241f4fb1ff0bf8b279e17fc050c6abf66d74c6e0d0cd04"
+    },
+    {
+      "id": "hof_ic_trotsky_the_comintern_manifesto",
+      "name": "GFX_hof_ic_trotsky_the_comintern_manifesto",
+      "title": "共产国际宣言",
+      "group": "trotsky",
+      "description": "1919 年 3 月，他与列宁共同创立第三国际，并撰写了它的首篇宣言。",
+      "size": [
+        100,
+        88
+      ],
+      "status": "complete",
+      "source": "transparent-v2/source/GFX_hof_ic_trotsky_the_comintern_manifesto.png",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_trotsky_the_comintern_manifesto.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_trotsky_the_comintern_manifesto.dds",
+      "generation_record": "transparent-v2/records/GFX_hof_ic_trotsky_the_comintern_manifesto.json",
+      "sha256": "c3167c5f5d54248ef07d160bc16688d367d89b0d95b48117a432e29ec82f803e"
+    },
+    {
+      "id": "hof_ic_trotsky_the_chinese_question",
+      "name": "GFX_hof_ic_trotsky_the_chinese_question",
+      "title": "中国革命问题",
+      "group": "trotsky",
+      "description": "1927 年春天，党内斗争的火焰又一次燃烧起来。这次斗争是同到那时之前从未提出过的一个问题相联系的，但从此以后这个问题却自始至终都是斗争的中心，直到联合反对派最终被开除出党并解体为止。",
+      "size": [
+        100,
+        88
+      ],
+      "status": "complete",
+      "source": "transparent-v2/source/GFX_hof_ic_trotsky_the_chinese_question.png",
+      "source_size": [
+        1338,
+        1176
+      ],
+      "png": "GFX_hof_ic_trotsky_the_chinese_question.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_trotsky_the_chinese_question.dds",
+      "generation_record": "transparent-v2/records/GFX_hof_ic_trotsky_the_chinese_question.json",
+      "sha256": "4fdb124a0e5cd2ba58d3f6a27a0e698bfbcd904e7ef29057b72d182cfa6f74d7"
+    },
+    {
+      "id": "hof_ic_trotsky_united_front",
+      "name": "GFX_hof_ic_trotsky_united_front",
+      "title": "反法西斯统一战线",
+      "group": "trotsky",
+      "description": "第三国际不顾托洛茨基自 1930 年以来不断的警告，大大低估了纳粹党的危险性，同时拒绝社会民主党建立统一战线对抗纳粹，结果使德国工人阶级的组织毫无抵抗地被粉碎，并使法西斯势力横行十余年。",
+      "size": [
+        100,
+        88
+      ],
+      "status": "complete",
+      "source": "transparent-v2/source/GFX_hof_ic_trotsky_united_front.png",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_trotsky_united_front.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_trotsky_united_front.dds",
+      "generation_record": "transparent-v2/records/GFX_hof_ic_trotsky_united_front.json",
+      "sha256": "c5f82f6c1c3a18d44c9a20e8de9f1aa92fde7e58174242b8a65afe4ae444adba"
+    },
+    {
+      "id": "hof_ic_trotsky_the_permanent_revolutionary",
+      "name": "GFX_hof_ic_trotsky_the_permanent_revolutionary",
+      "title": "永久的革命者",
+      "group": "trotsky",
+      "description": "要求我放弃政治活动，意味着要求我放弃为全世界工人阶级利益而进行的斗争，而这一斗争我已孜孜不倦地进行了 32 年之久，也就是我自觉生命的全部时间。只有腐朽透顶的官僚集团才会要求做出这种放弃，只有卑鄙的叛徒才能做出这种承诺。",
+      "size": [
+        100,
+        88
+      ],
+      "status": "complete",
+      "source": "transparent-v2/source/GFX_hof_ic_trotsky_the_permanent_revolutionary.png",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_trotsky_the_permanent_revolutionary.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_trotsky_the_permanent_revolutionary.dds",
+      "generation_record": "transparent-v2/records/GFX_hof_ic_trotsky_the_permanent_revolutionary.json",
+      "sha256": "daa43268d72a87fd5fdd74cdf748f60b421b354eb95d28d3811bdcca33fbbaa5"
+    },
+    {
+      "id": "hof_ic_trotsky_the_builder_of_the_state",
+      "name": "GFX_hof_ic_trotsky_the_builder_of_the_state",
+      "title": "国家建设者",
+      "group": "trotsky",
+      "description": "请告诉我还有哪个人能在一年之内建立起一支堪称模范的军队而且赢得军事专家的尊重；我们有这样的人，就有了一切，我们将创造出奇迹。",
+      "size": [
+        100,
+        88
+      ],
+      "status": "complete",
+      "source": "transparent-v2/source/GFX_hof_ic_trotsky_the_builder_of_the_state.png",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_trotsky_the_builder_of_the_state.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_trotsky_the_builder_of_the_state.dds",
+      "generation_record": "transparent-v2/records/GFX_hof_ic_trotsky_the_builder_of_the_state.json",
+      "sha256": "ea37d4d6fe614666b08f240366660edaf122dda78b984b7947c9e5d5bb1b30bc"
+    },
+    {
+      "id": "hof_ic_bukharin_economics_of_transition",
+      "name": "GFX_hof_ic_bukharin_economics_of_transition",
+      "title": "过渡时期的经济",
+      "group": "bukharin",
+      "concept": "An ivory sculpted bridge linking a wheat field on the left to a compact factory on the right, unfinished final bridge segment being fitted, strong simple silhouettes. Transition and connection between agriculture and industry.",
+      "size": [
+        100,
+        88
+      ],
+      "source": "bukharin/source/GFX_hof_ic_bukharin_economics_of_transition.png",
+      "generation_record": "bukharin/records/GFX_hof_ic_bukharin_economics_of_transition.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_bukharin_economics_of_transition.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_bukharin_economics_of_transition.dds",
+      "sha256": "f192c266a6867f847bb22b447b212d929a261865087214ee203a111bdc7481ed"
+    },
+    {
+      "id": "hof_ic_bukharin_nep_is_not_a_retreat",
+      "name": "GFX_hof_ic_bukharin_nep_is_not_a_retreat",
+      "title": "新经济政策不是退却",
+      "group": "bukharin",
+      "concept": "A bold ivory road arrow sweeping FORWARD and upward, flanked by a simple worker's hammer and a sheaf of wheat, unity moving forward, no soldiers or human figures.",
+      "size": [
+        100,
+        88
+      ],
+      "source": "bukharin/source/GFX_hof_ic_bukharin_nep_is_not_a_retreat.png",
+      "generation_record": "bukharin/records/GFX_hof_ic_bukharin_nep_is_not_a_retreat.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_bukharin_nep_is_not_a_retreat.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_bukharin_nep_is_not_a_retreat.dds",
+      "sha256": "4f1727418be5b0dea8a2e8110644c6cb0d997527eb5c4ff4848585b9f973f1ae"
+    },
+    {
+      "id": "hof_ic_bukharin_abolish_the_tribute",
+      "name": "GFX_hof_ic_bukharin_abolish_the_tribute",
+      "title": "取消「贡款」",
+      "group": "bukharin",
+      "concept": "A large broken tax-collection seal beside a completely BLANK folded requisition paper, a snapped rope around a wheat sheaf in foreground. Controlled confrontational symbolism, no readable marks on seal/paper, no money.",
+      "size": [
+        100,
+        88
+      ],
+      "source": "bukharin/source/GFX_hof_ic_bukharin_abolish_the_tribute.png",
+      "generation_record": "bukharin/records/GFX_hof_ic_bukharin_abolish_the_tribute.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_bukharin_abolish_the_tribute.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_bukharin_abolish_the_tribute.dds",
+      "sha256": "fbac6b975b811584005e7e6d584a601de026f653316031811373bb2d321586a9"
+    },
+    {
+      "id": "hof_ic_bukharin_alliance_is_the_axis",
+      "name": "GFX_hof_ic_bukharin_alliance_is_the_axis",
+      "title": "工农联盟是轴心",
+      "group": "bukharin",
+      "concept": "A central solid mechanical axle and wheel hub joining an ivory worker's hammer on left and a sheaf of wheat on right, radiating sturdy spokes. Clear axis/union imagery, no handshake.",
+      "size": [
+        100,
+        88
+      ],
+      "source": "bukharin/source/GFX_hof_ic_bukharin_alliance_is_the_axis.png",
+      "generation_record": "bukharin/records/GFX_hof_ic_bukharin_alliance_is_the_axis.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_bukharin_alliance_is_the_axis.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_bukharin_alliance_is_the_axis.dds",
+      "sha256": "88a1cbace1124a59eee228a89b7211a9d68aa82004b91ad0a3cd6bcde421c126"
+    },
+    {
+      "id": "hof_ic_bukharin_enrich_yourselves",
+      "name": "GFX_hof_ic_bukharin_enrich_yourselves",
+      "title": "发财吧",
+      "group": "bukharin",
+      "concept": "An abundant ivory grain barn with open doors full of harvested wheat sheaves, one simple hand plough in foreground. Productive rural prosperity. Absolutely NO coins, money, currency, numbers or lettering.",
+      "size": [
+        100,
+        88
+      ],
+      "source": "bukharin/source/GFX_hof_ic_bukharin_enrich_yourselves.png",
+      "generation_record": "bukharin/records/GFX_hof_ic_bukharin_enrich_yourselves.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_bukharin_enrich_yourselves.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_bukharin_enrich_yourselves.dds",
+      "sha256": "b7f9b0050d01d3438790feaedcef4425ad6d6f9e25ae7f92611ba1cdc332620b"
+    },
+    {
+      "id": "hof_ic_bukharin_proportional_development",
+      "name": "GFX_hof_ic_bukharin_proportional_development",
+      "title": "按比例发展",
+      "group": "bukharin",
+      "concept": "Two equal-sized ivory intermeshing industrial gears, one enclosing a small wheat relief and the other a factory relief, measured balanced growth, a drafting divider below them. Not a weighing scale.",
+      "size": [
+        100,
+        88
+      ],
+      "source": "bukharin/source/GFX_hof_ic_bukharin_proportional_development.png",
+      "generation_record": "bukharin/records/GFX_hof_ic_bukharin_proportional_development.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_bukharin_proportional_development.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_bukharin_proportional_development.dds",
+      "sha256": "16c7c87d02f33aa66a08e3c972160fd1525e2ddc91b1bbfa6520984751897076"
+    },
+    {
+      "id": "hof_ic_bukharin_cooperatives_into_the_system",
+      "name": "GFX_hof_ic_bukharin_cooperatives_into_the_system",
+      "title": "合作社长入",
+      "group": "bukharin",
+      "concept": "Three small ivory rural cooperative houses linked by broad converging channels to a larger three-column institutional bank building behind, integration into a shared system, readable bold architectural silhouettes. No currency or coins.",
+      "size": [
+        100,
+        88
+      ],
+      "source": "bukharin/source/GFX_hof_ic_bukharin_cooperatives_into_the_system.png",
+      "generation_record": "bukharin/records/GFX_hof_ic_bukharin_cooperatives_into_the_system.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_bukharin_cooperatives_into_the_system.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_bukharin_cooperatives_into_the_system.dds",
+      "sha256": "c52553938d6a142368bee9d60ee8693b71d535585f43cbfadd3972417401091f"
+    },
+    {
+      "id": "hof_ic_bukharin_left_communism",
+      "name": "GFX_hof_ic_bukharin_left_communism",
+      "title": "左翼共产主义",
+      "group": "bukharin",
+      "concept": "A DARKER gunmetal sword and agricultural plough facing in opposition across a sharp jagged divide; small single upward assault arrow behind. Ominous compressed shield-shaped deep burgundy backing, tarnished restrained bronze laurel, much darker than other icons, stern alternate path. No blood, people, text or real-world hate symbols.",
+      "size": [
+        100,
+        88
+      ],
+      "source": "bukharin/source/GFX_hof_ic_bukharin_left_communism.png",
+      "generation_record": "bukharin/records/GFX_hof_ic_bukharin_left_communism.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_bukharin_left_communism.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_bukharin_left_communism.dds",
+      "sha256": "82ebc4242d518a5fdb40e5b736504ff3f292cfd10a238b86604f0cd14b132dbf"
+    },
+    {
+      "id": "hof_ic_bukharin_socialism_in_one_country",
+      "name": "GFX_hof_ic_bukharin_socialism_in_one_country",
+      "title": "一国建成社会主义",
+      "group": "bukharin",
+      "concept": "A complete self-contained ivory sculpted industrial-agricultural state: broad factory and new buildings rising within a continuous enclosing boundary, wheat and compact turbine in foreground, cohesive completed construction. Most full and ceremonial composition in series, dense but legible, not a globe and not a turtle.",
+      "size": [
+        100,
+        88
+      ],
+      "source": "bukharin/source/GFX_hof_ic_bukharin_socialism_in_one_country.png",
+      "generation_record": "bukharin/records/GFX_hof_ic_bukharin_socialism_in_one_country.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1177
+      ],
+      "png": "GFX_hof_ic_bukharin_socialism_in_one_country.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_bukharin_socialism_in_one_country.dds",
+      "sha256": "31762caba89e566e932322a6c32c2b87d494207ea8623a7f37bf5faac2dcfc2a"
+    },
+    {
+      "name": "GFX_hof_ic_seat_yevgeny_preobrazhensky",
+      "id": "hof_ic_seat_yevgeny_preobrazhensky",
+      "key": "yevgeny_preobrazhensky",
+      "title": "叶夫根尼·普列奥布拉任斯基",
+      "group": "entry",
+      "portrait_source": "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\art\\portraits\\v1\\png\\hof_portrait_SOV_yevgeny_preobrazhensky.png",
+      "reference": "entries-v2/references/yevgeny_preobrazhensky.png",
+      "concept": "a ledger and wheat feeding a small factory",
+      "size": [
+        100,
+        88
+      ],
+      "source": "entries-v2/source/GFX_hof_ic_seat_yevgeny_preobrazhensky.png",
+      "generation_record": "entries-v2/records/GFX_hof_ic_seat_yevgeny_preobrazhensky.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_seat_yevgeny_preobrazhensky.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_seat_yevgeny_preobrazhensky.dds",
+      "sha256": "761a1e282938c9c2f955288ef0c6306c2877d3f6b8aabedfa3d5a4dd6f579cef"
+    },
+    {
+      "name": "GFX_hof_ic_seat_karl_radek",
+      "id": "hof_ic_seat_karl_radek",
+      "key": "karl_radek",
+      "title": "卡尔·拉狄克",
+      "group": "entry",
+      "portrait_source": "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\art\\portraits\\v1\\png\\hof_portrait_SOV_karl_radek.png",
+      "reference": "entries-v2/references/karl_radek.png",
+      "concept": "a golden speaking trumpet and folded blank newspaper",
+      "size": [
+        100,
+        88
+      ],
+      "source": "entries-v2/source/GFX_hof_ic_seat_karl_radek.png",
+      "generation_record": "entries-v2/records/GFX_hof_ic_seat_karl_radek.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_seat_karl_radek.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_seat_karl_radek.dds",
+      "sha256": "326024ee6104d851c47bd79abc4266ac06c3d9ead6ab903106d703130f333d41"
+    },
+    {
+      "name": "GFX_hof_ic_seat_ivar_smilga",
+      "id": "hof_ic_seat_ivar_smilga",
+      "key": "ivar_smilga",
+      "title": "伊瓦尔·斯米尔加",
+      "group": "entry",
+      "portrait_source": "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\art\\portraits\\v1\\png\\hof_portrait_SOV_ivar_smilga.png",
+      "reference": "entries-v2/references/ivar_smilga.png",
+      "concept": "a gear and rising economic bar chart",
+      "size": [
+        100,
+        88
+      ],
+      "source": "entries-v2/source/GFX_hof_ic_seat_ivar_smilga.png",
+      "generation_record": "entries-v2/records/GFX_hof_ic_seat_ivar_smilga.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_seat_ivar_smilga.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_seat_ivar_smilga.dds",
+      "sha256": "9541300f2984c0871715fdfd7bf4fc368d32a7716eb1bfa4a602ae697d4d4367"
+    },
+    {
+      "name": "GFX_hof_ic_seat_mikhail_tomsky",
+      "id": "hof_ic_seat_mikhail_tomsky",
+      "key": "mikhail_tomsky",
+      "title": "米哈伊尔·托姆斯基",
+      "group": "entry",
+      "portrait_source": "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\art\\portraits\\v1\\png\\hof_portrait_SOV_mikhail_tomsky.png",
+      "reference": "entries-v2/references/mikhail_tomsky.png",
+      "concept": "a red trade union banner on a gear",
+      "size": [
+        100,
+        88
+      ],
+      "source": "entries-v2/source/GFX_hof_ic_seat_mikhail_tomsky.png",
+      "generation_record": "entries-v2/records/GFX_hof_ic_seat_mikhail_tomsky.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_seat_mikhail_tomsky.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_seat_mikhail_tomsky.dds",
+      "sha256": "3043a9f780acc79375161081f468fc85ed494e2ebe4f31ff1a8e2793e633ec0c"
+    },
+    {
+      "name": "GFX_hof_ic_seat_martemyan_ryutin",
+      "id": "hof_ic_seat_martemyan_ryutin",
+      "key": "martemyan_ryutin",
+      "title": "马尔特米扬·里亚京",
+      "group": "entry",
+      "portrait_source": "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\art\\portraits\\v1\\png\\hof_portrait_SOV_martemyan_ryutin.png",
+      "reference": "entries-v2/references/martemyan_ryutin.png",
+      "concept": "a thick blank manuscript with wheat",
+      "size": [
+        100,
+        88
+      ],
+      "source": "entries-v2/source/GFX_hof_ic_seat_martemyan_ryutin.png",
+      "generation_record": "entries-v2/records/GFX_hof_ic_seat_martemyan_ryutin.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_seat_martemyan_ryutin.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_seat_martemyan_ryutin.dds",
+      "sha256": "932985924a86a90b87ecd1510ae2e699851733756ce8656373d042eed2db2bba"
+    },
+    {
+      "name": "GFX_hof_ic_seat_aleksandr_shlyapnikov",
+      "id": "hof_ic_seat_aleksandr_shlyapnikov",
+      "key": "aleksandr_shlyapnikov",
+      "title": "亚历山大·施利亚普尼科夫",
+      "group": "entry",
+      "portrait_source": "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\art\\portraits\\v1\\png\\hof_portrait_SOV_aleksandr_shlyapnikov.png",
+      "reference": "entries-v2/references/aleksandr_shlyapnikov.png",
+      "concept": "a large steel wrench across a metalworking gear",
+      "size": [
+        100,
+        88
+      ],
+      "source": "entries-v2/source/GFX_hof_ic_seat_aleksandr_shlyapnikov.png",
+      "generation_record": "entries-v2/records/GFX_hof_ic_seat_aleksandr_shlyapnikov.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_seat_aleksandr_shlyapnikov.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_seat_aleksandr_shlyapnikov.dds",
+      "sha256": "ba0fbed9a6e324a6185618ab488e7178db98a41dd6690d05c4192d6550356a13"
+    },
+    {
+      "name": "GFX_hof_ic_seat_mikhail_kalinin",
+      "id": "hof_ic_seat_mikhail_kalinin",
+      "key": "mikhail_kalinin",
+      "title": "米哈伊尔·加里宁",
+      "group": "entry",
+      "portrait_source": "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\art\\portraits\\v2\\png\\hof_portrait_SOV_mikhail_kalinin.png",
+      "reference": "entries-v2/references/mikhail_kalinin.png",
+      "concept": "a modest medal ribbon with wheat ears",
+      "size": [
+        100,
+        88
+      ],
+      "source": "entries-v2/source/GFX_hof_ic_seat_mikhail_kalinin.png",
+      "generation_record": "entries-v2/records/GFX_hof_ic_seat_mikhail_kalinin.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_seat_mikhail_kalinin.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_seat_mikhail_kalinin.dds",
+      "sha256": "dd04bb24e735d06f9f3a287ee57cd805f9d5c5d1b18981418dc06c4035620449"
+    },
+    {
+      "name": "GFX_hof_ic_seat_maksim_litvinov",
+      "id": "hof_ic_seat_maksim_litvinov",
+      "key": "maksim_litvinov",
+      "title": "马克西姆·李维诺夫",
+      "group": "entry",
+      "portrait_source": "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\art\\portraits\\v2\\png\\hof_portrait_SOV_maksim_litvinov.png",
+      "reference": "entries-v2/references/maksim_litvinov.png",
+      "concept": "a globe with a blank treaty scroll",
+      "size": [
+        100,
+        88
+      ],
+      "source": "entries-v2/source/GFX_hof_ic_seat_maksim_litvinov.png",
+      "generation_record": "entries-v2/records/GFX_hof_ic_seat_maksim_litvinov.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_seat_maksim_litvinov.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_seat_maksim_litvinov.dds",
+      "sha256": "bda0cec049a2cedf92439b68198ff1bda271770f93e21211a907a65024c088d4"
+    },
+    {
+      "name": "GFX_hof_ic_seat_grigory_sokolnikov",
+      "id": "hof_ic_seat_grigory_sokolnikov",
+      "key": "grigory_sokolnikov",
+      "title": "格里戈里·索柯里尼柯夫",
+      "group": "entry",
+      "portrait_source": "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\art\\portraits\\v1\\png\\hof_portrait_SOV_grigory_sokolnikov.png",
+      "reference": "entries-v2/references/grigory_sokolnikov.png",
+      "concept": "gold bullion and an open treasury ledger",
+      "size": [
+        100,
+        88
+      ],
+      "source": "entries-v2/source/GFX_hof_ic_seat_grigory_sokolnikov.png",
+      "generation_record": "entries-v2/records/GFX_hof_ic_seat_grigory_sokolnikov.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_seat_grigory_sokolnikov.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_seat_grigory_sokolnikov.dds",
+      "sha256": "128f68ed86c005fa777fdce9957c9e1eb16a77041f2ddccc7ff56864b747fab8"
+    },
+    {
+      "name": "GFX_hof_ic_seat_mikhail_tukhachevsky",
+      "id": "hof_ic_seat_mikhail_tukhachevsky",
+      "key": "mikhail_tukhachevsky",
+      "title": "米哈伊尔·图哈切夫斯基",
+      "group": "entry",
+      "portrait_source": "F:\\Hearts of Iron IV\\gfx\\leaders\\SOV\\Portrait_Soviet_Mikhail_Tukhachevsky.dds",
+      "reference": "entries-v2/references/mikhail_tukhachevsky.png",
+      "concept": "a marshal star above tank tracks, mechanized warfare",
+      "size": [
+        100,
+        88
+      ],
+      "source": "entries-v2/source/GFX_hof_ic_seat_mikhail_tukhachevsky.png",
+      "generation_record": "entries-v2/records/GFX_hof_ic_seat_mikhail_tukhachevsky.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_seat_mikhail_tukhachevsky.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_seat_mikhail_tukhachevsky.dds",
+      "sha256": "0eaddc9546e4dfe0694b9f7908600ac2a1d30ee5721a9d7d11224b0318d7eee2"
+    },
+    {
+      "name": "GFX_hof_ic_seat_nikolay_voznesensky",
+      "id": "hof_ic_seat_nikolay_voznesensky",
+      "key": "nikolay_voznesensky",
+      "title": "尼古拉·沃兹涅先斯基",
+      "group": "entry",
+      "portrait_source": "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\art\\portraits\\v2\\png\\hof_portrait_SOV_nikolay_voznesensky.png",
+      "reference": "entries-v2/references/nikolay_voznesensky.png",
+      "concept": "a planning chart with a factory silhouette",
+      "size": [
+        100,
+        88
+      ],
+      "source": "entries-v2/source/GFX_hof_ic_seat_nikolay_voznesensky.png",
+      "generation_record": "entries-v2/records/GFX_hof_ic_seat_nikolay_voznesensky.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_seat_nikolay_voznesensky.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_seat_nikolay_voznesensky.dds",
+      "sha256": "b3744170c1bf04ecc98bbb0936928bd710cd23b6fc200eeddcf2bc5a5db14d95"
+    },
+    {
+      "name": "GFX_hof_ic_seat_pyotr_smirnov",
+      "id": "hof_ic_seat_pyotr_smirnov",
+      "key": "pyotr_smirnov",
+      "title": "彼得·斯米尔诺夫",
+      "group": "entry",
+      "portrait_source": "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\art\\portraits\\v2\\png\\hof_portrait_SOV_pyotr_smirnov.png",
+      "reference": "entries-v2/references/pyotr_smirnov.png",
+      "concept": "a prominent naval anchor",
+      "size": [
+        100,
+        88
+      ],
+      "source": "entries-v2/source/GFX_hof_ic_seat_pyotr_smirnov.png",
+      "generation_record": "entries-v2/records/GFX_hof_ic_seat_pyotr_smirnov.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_seat_pyotr_smirnov.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_seat_pyotr_smirnov.dds",
+      "sha256": "40509da4be9fb4f9c952c7974a3f4b7841eae13dd6819e7266b31e27976949b4"
+    },
+    {
+      "name": "GFX_hof_ic_seat_georgy_malenkow",
+      "id": "hof_ic_seat_georgy_malenkow",
+      "key": "georgy_malenkow",
+      "title": "格奥尔基·马林科夫",
+      "group": "entry",
+      "portrait_source": "D:\\Program Files (x86)\\Steam\\steamapps\\workshop\\content\\394360\\2129897125\\gfx\\leaders\\SOV\\r56_portrait_SOV_Georgy_Malenkov.dds",
+      "reference": "entries-v2/references/georgy_malenkow.png",
+      "concept": "an archive card drawer and small aircraft silhouette",
+      "size": [
+        100,
+        88
+      ],
+      "source": "entries-v2/source/GFX_hof_ic_seat_georgy_malenkow.png",
+      "generation_record": "entries-v2/records/GFX_hof_ic_seat_georgy_malenkow.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_seat_georgy_malenkow.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_seat_georgy_malenkow.dds",
+      "sha256": "f97122ae5b7685f2e10ef3779504d6e712d12b552d91a2f85fa568cd88fe15c2"
+    },
+    {
+      "name": "GFX_hof_ic_seat_nikita_khrushchyov",
+      "id": "hof_ic_seat_nikita_khrushchyov",
+      "key": "nikita_khrushchyov",
+      "title": "尼基塔·赫鲁晓夫",
+      "group": "entry",
+      "portrait_source": "D:\\Program Files (x86)\\Steam\\steamapps\\workshop\\content\\394360\\2129897125\\gfx\\leaders\\SOV\\r56_portrait_SOV_Nikita_Khrushchev.dds",
+      "reference": "entries-v2/references/nikita_khrushchyov.png",
+      "concept": "wheat ears crossed with a metalworker wrench",
+      "size": [
+        100,
+        88
+      ],
+      "source": "entries-v2/source/GFX_hof_ic_seat_nikita_khrushchyov.png",
+      "generation_record": "entries-v2/records/GFX_hof_ic_seat_nikita_khrushchyov.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_seat_nikita_khrushchyov.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_seat_nikita_khrushchyov.dds",
+      "sha256": "438ecbc4d99e3788b7454d650404ad600de0892d4041417bc1d392e135320e2b"
+    },
+    {
+      "name": "GFX_hof_ic_seat_kliment_voroshilov",
+      "id": "hof_ic_seat_kliment_voroshilov",
+      "key": "kliment_voroshilov",
+      "title": "克利门特·伏罗希洛夫",
+      "group": "entry",
+      "portrait_source": "F:\\Hearts of Iron IV\\gfx\\leaders\\SOV\\Portrait_Soviet_Kliment_Voroshilov.dds",
+      "reference": "entries-v2/references/kliment_voroshilov.png",
+      "concept": "crossed cavalry sabres and a small horse head",
+      "size": [
+        100,
+        88
+      ],
+      "source": "entries-v2/source/GFX_hof_ic_seat_kliment_voroshilov.png",
+      "generation_record": "entries-v2/records/GFX_hof_ic_seat_kliment_voroshilov.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_seat_kliment_voroshilov.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_seat_kliment_voroshilov.dds",
+      "sha256": "94b3937f8fced901f719ac9af405e9dd8b9b2bb7aa0363070edaaddc953cefb9"
+    },
+    {
+      "id": "hof_ic_rykov_supreme_economic_council",
+      "name": "GFX_hof_ic_rykov_supreme_economic_council",
+      "title": "最高国民经济委员会主席",
+      "concept": "A monumental industrial council building facade integrated with a blast furnace and factory chimneys, resting on a large cogwheel. Clear solid architectural relief, the administrative organization of industry. No portrait.",
+      "group": "rykov",
+      "size": [
+        100,
+        88
+      ],
+      "source": "rykov/source/GFX_hof_ic_rykov_supreme_economic_council.png",
+      "generation_record": "rykov/records/GFX_hof_ic_rykov_supreme_economic_council.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_rykov_supreme_economic_council.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_rykov_supreme_economic_council.dds",
+      "sha256": "a9b79d6068c0127d78832aa9125405064d5371402a9adac56eb1d5d9443e0feb"
+    },
+    {
+      "id": "hof_ic_rykov_food_supply_commissar",
+      "name": "GFX_hof_ic_rykov_food_supply_commissar",
+      "title": "劳动国防委员会粮秣特派员",
+      "concept": "A steam freight locomotive on rails coming diagonally forward, beside two large grain sacks and one supply crate, continuous supply route from warehouse to front. Logistics not combat, no soldiers or weapons firing.",
+      "group": "rykov",
+      "size": [
+        100,
+        88
+      ],
+      "source": "rykov/source/GFX_hof_ic_rykov_food_supply_commissar.png",
+      "generation_record": "rykov/records/GFX_hof_ic_rykov_food_supply_commissar.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_rykov_food_supply_commissar.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_rykov_food_supply_commissar.dds",
+      "sha256": "d7a4cc92b8a5c4ec19391619aeb525b5c1fcadd08396769f52e5b96356dec4b5"
+    },
+    {
+      "id": "hof_ic_rykov_labour_defence_council",
+      "name": "GFX_hof_ic_rykov_labour_defence_council",
+      "title": "劳动与国防委员会副主席",
+      "concept": "Central distinctive emblem: a single ivory gear interlocked with a plain military shield. Below it a compact administrative desk bearing a blank folded planning map and two file folders. Tightly organized industrial and defence coordination, sober and practical.",
+      "group": "rykov",
+      "size": [
+        100,
+        88
+      ],
+      "source": "rykov/source/GFX_hof_ic_rykov_labour_defence_council.png",
+      "generation_record": "rykov/records/GFX_hof_ic_rykov_labour_defence_council.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_rykov_labour_defence_council.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_rykov_labour_defence_council.dds",
+      "sha256": "6eee95a49dae17ce895217b1a06399c5670497f6dd4ce170af4871c6eb85c780"
+    },
+    {
+      "id": "hof_ic_rykov_sponsor_aviation",
+      "name": "GFX_hof_ic_rykov_sponsor_aviation",
+      "title": "扶植航空",
+      "concept": "A large early 1920s single-engine biplane with two clearly separated wings, fixed landing gear and propeller, diagonally ascending above a drafting compass and small blank engineering blueprint. Ivory relief aircraft, optimistic brighter highlights, no letters or numbers on aircraft, no jets.",
+      "group": "rykov",
+      "size": [
+        100,
+        88
+      ],
+      "source": "rykov/source/GFX_hof_ic_rykov_sponsor_aviation.png",
+      "generation_record": "rykov/records/GFX_hof_ic_rykov_sponsor_aviation.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_rykov_sponsor_aviation.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_rykov_sponsor_aviation.dds",
+      "sha256": "34d888292f859715c3b0c768cfc42f215491704e7cf2c17f89ede3c4c7892d11"
+    },
+    {
+      "id": "hof_ic_rykov_labour_defence_chair",
+      "name": "GFX_hof_ic_rykov_labour_defence_chair",
+      "title": "劳动与国防委员会主席",
+      "concept": "The complete culmination of economic coordination. Reuse the SAME central ivory gear interlocked with plain military shield emblem from the vice-chair design. Enlarge and elevate it above a panoramic dispatch planning table. Surround its lower half with a unified compact chain of factory buildings on left, steam freight train below, early biplane on right, connected by a closed circular transport loop. Fullest composition in series yet readable at tiny size, a complete organized industrial transport defence system.",
+      "group": "rykov",
+      "size": [
+        100,
+        88
+      ],
+      "source": "rykov/source/GFX_hof_ic_rykov_labour_defence_chair.png",
+      "generation_record": "rykov/records/GFX_hof_ic_rykov_labour_defence_chair.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_rykov_labour_defence_chair.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_rykov_labour_defence_chair.dds",
+      "sha256": "0cdfbe9014c0ff7ca05d0de388d2f057e5a058d85b83eb8fd7562a7f1d379198"
+    },
+    {
+      "id": "hof_ic_zinovyev_found_the_comintern",
+      "name": "GFX_hof_ic_zinovyev_found_the_comintern",
+      "title": "缔造第三国际",
+      "concept": "A solemn symmetrical international congress: globe above a central lectern, a founding gavel prominently across its base, semicircle of delegate busts and several plain striped flags behind. Creation of a world organization, balanced ceremonial architecture.",
+      "group": "zinovyev",
+      "size": [
+        100,
+        88
+      ],
+      "png": "zinovyev/GFX_hof_ic_zinovyev_found_the_comintern.png",
+      "source": "zinovyev/source/GFX_hof_ic_zinovyev_found_the_comintern.png",
+      "generation_record": "zinovyev/records/GFX_hof_ic_zinovyev_found_the_comintern.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_zinovyev_found_the_comintern.dds",
+      "sha256": "1e5a757493f9926209d0125722d7175b9c710e4d071e4df9b5c86a902dfc62cf"
+    },
+    {
+      "id": "hof_ic_zinovyev_twenty_one_conditions",
+      "name": "GFX_hof_ic_zinovyev_twenty_one_conditions",
+      "title": "加入共产国际的条件",
+      "concept": "A large blank charter with geometric check marks but NO writing, a wax seal and stamp before a formal stone gateway; a small globe crowning the gateway establishes international membership conditions. Bold simple document and threshold silhouettes.",
+      "group": "zinovyev",
+      "size": [
+        100,
+        88
+      ],
+      "png": "zinovyev/GFX_hof_ic_zinovyev_twenty_one_conditions.png",
+      "source": "zinovyev/source/GFX_hof_ic_zinovyev_twenty_one_conditions.png",
+      "generation_record": "zinovyev/records/GFX_hof_ic_zinovyev_twenty_one_conditions.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_zinovyev_twenty_one_conditions.dds",
+      "sha256": "9d80e88c606b6d6ae9f1ae0b85dc860527a787224ebe207b5a51533c0cd2459d"
+    },
+    {
+      "id": "hof_ic_zinovyev_social_fascism",
+      "name": "GFX_hof_ic_zinovyev_social_fascism",
+      "title": "社会法西斯主义",
+      "concept": "Historical strategy-game illustration of political division, not endorsement: two parallel blank folded banners anchored to one cold iron pedestal, a deep diagonal fissure separates them from a smaller opposing red banner; subtle Europe map relief behind. Cold dark steel relief and muted bronze frame, crimson backing retained, hardest shadows in the series. No extremist insignia, no swastikas, no text.",
+      "group": "zinovyev",
+      "size": [
+        100,
+        88
+      ],
+      "png": "zinovyev/GFX_hof_ic_zinovyev_social_fascism.png",
+      "source": "zinovyev/source/GFX_hof_ic_zinovyev_social_fascism.png",
+      "generation_record": "zinovyev/records/GFX_hof_ic_zinovyev_social_fascism.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_zinovyev_social_fascism.dds",
+      "sha256": "543d6284ef6ef12078714719b6925360490ffde6e95ff5f372fe9ae2d1891c35"
+    },
+    {
+      "id": "hof_ic_zinovyev_bolshevization",
+      "name": "GFX_hof_ic_zinovyev_bolshevization",
+      "title": "布尔什维克化",
+      "concept": "An international organizational hierarchy: a large globe-backed central star seal linked by thick rigid branching lines to three matching smaller star medallions below, with a matching metal casting die at base. Uniform party organization across nations, orderly and disciplined, not an industrial factory scene.",
+      "group": "zinovyev",
+      "size": [
+        100,
+        88
+      ],
+      "png": "zinovyev/GFX_hof_ic_zinovyev_bolshevization.png",
+      "source": "zinovyev/source/GFX_hof_ic_zinovyev_bolshevization.png",
+      "generation_record": "zinovyev/records/GFX_hof_ic_zinovyev_bolshevization.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_zinovyev_bolshevization.dds",
+      "sha256": "e4bc8f963c46f842d8c9c5e4d7b511c15bf6a5d9be99516db77581508efe5f92"
+    },
+    {
+      "id": "hof_ic_zinovyev_congress_of_the_east",
+      "name": "GFX_hof_ic_zinovyev_congress_of_the_east",
+      "title": "东方各民族代表大会",
+      "concept": "Three dignified congress delegate busts in early twentieth-century clothing, including a Central Asian turban, Caucasian fur cap and plain worker cap, above a relief map of Eurasia and a large compass needle pointing east to the right. International congress in Baku, varied faces, no caricature. Warm ivory sculpted relief, geographic horizon.",
+      "group": "zinovyev",
+      "size": [
+        100,
+        88
+      ],
+      "png": "zinovyev/GFX_hof_ic_zinovyev_congress_of_the_east.png",
+      "source": "zinovyev/source/GFX_hof_ic_zinovyev_congress_of_the_east.png",
+      "generation_record": "zinovyev/records/GFX_hof_ic_zinovyev_congress_of_the_east.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_zinovyev_congress_of_the_east.dds",
+      "sha256": "3c70332aacf099ff621ee60ac062a898f5b7e4593c1f42e4a0ae92e5246f70c3"
+    },
+    {
+      "id": "hof_ic_zinovyev_workers_united_front",
+      "name": "GFX_hof_ic_zinovyev_workers_united_front",
+      "title": "工人统一战线",
+      "concept": "Three distinct streams of small worker silhouettes with differently patterned blank banners converge into one broad forward procession, with a large joined-hands relief at center and faint globe behind. Unity in practical action across national boundaries, flowing composition.",
+      "group": "zinovyev",
+      "size": [
+        100,
+        88
+      ],
+      "png": "zinovyev/GFX_hof_ic_zinovyev_workers_united_front.png",
+      "source": "zinovyev/source/GFX_hof_ic_zinovyev_workers_united_front.png",
+      "generation_record": "zinovyev/records/GFX_hof_ic_zinovyev_workers_united_front.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_zinovyev_workers_united_front.dds",
+      "sha256": "657f986cfd7c63680bdbd87cdfcc8a1b87afceab698237c9fc0d4cda7183541e"
+    },
+    {
+      "id": "hof_ic_zinovyev_speed_and_route",
+      "name": "GFX_hof_ic_zinovyev_speed_and_route",
+      "title": "革命的速度与路线",
+      "concept": "An unfolded relief map of Europe and Asia with two bold branching curved route arrows taking different paths, beneath a large navigational compass. One path bends away from central Europe toward the east, no labels. Geographic strategic reassessment, more complete layered composition.",
+      "group": "zinovyev",
+      "size": [
+        100,
+        88
+      ],
+      "png": "zinovyev/GFX_hof_ic_zinovyev_speed_and_route.png",
+      "source": "zinovyev/source/GFX_hof_ic_zinovyev_speed_and_route.png",
+      "generation_record": "zinovyev/records/GFX_hof_ic_zinovyev_speed_and_route.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_zinovyev_speed_and_route.dds",
+      "sha256": "6337a911ab9c42583799416747262dddf287196eaecdd9c8f4103606e8063b15"
+    },
+    {
+      "id": "hof_ic_zinovyev_party_in_revolution",
+      "name": "GFX_hof_ic_zinovyev_party_in_revolution",
+      "title": "党在无产阶级革命中的作用",
+      "concept": "Three prominent worker figures leading at the front, rows of smaller workers behind them, with one guiding star above and three small plain international banners. Organized vanguard and rank-and-file, no weapons, neutral ivory stone relief, large clear human silhouettes.",
+      "group": "zinovyev",
+      "size": [
+        100,
+        88
+      ],
+      "png": "zinovyev/GFX_hof_ic_zinovyev_party_in_revolution.png",
+      "source": "zinovyev/source/GFX_hof_ic_zinovyev_party_in_revolution.png",
+      "generation_record": "zinovyev/records/GFX_hof_ic_zinovyev_party_in_revolution.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_zinovyev_party_in_revolution.dds",
+      "sha256": "c8c4cd8907574ccb4d01696f607305cf177ad5f7c0728e373994ee56ca366449"
+    },
+    {
+      "id": "hof_ic_zinovyev_trade_unions",
+      "name": "GFX_hof_ic_zinovyev_trade_unions",
+      "title": "论工会的作用",
+      "concept": "A wide factory assembly gateway embraced by a large gear, five worker figures gathering through its open center beneath two plain union banners, small globe medallion overhead. Organized workers as a collective, emphasize people and assembly rather than chimneys.",
+      "group": "zinovyev",
+      "size": [
+        100,
+        88
+      ],
+      "png": "zinovyev/GFX_hof_ic_zinovyev_trade_unions.png",
+      "source": "zinovyev/source/GFX_hof_ic_zinovyev_trade_unions.png",
+      "generation_record": "zinovyev/records/GFX_hof_ic_zinovyev_trade_unions.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_zinovyev_trade_unions.dds",
+      "sha256": "97cd8a7799198474aa2f4223cc216ad766dda729ea47066b1521d49e58d02de0"
+    },
+    {
+      "id": "hof_ic_zinovyev_monolithic_international",
+      "name": "GFX_hof_ic_zinovyev_monolithic_international",
+      "title": "铁板一块的国际",
+      "concept": "ENDPOINT PAIR design skeleton: centered large globe at upper middle, six national blank flagpoles radiating behind globe, below globe a monumental two-pillar gateway, workers filling lower third, shared golden wreath red star and blank ribbon. COLD VERSION: blue-grey iron globe and gateway, tightly packed perfectly straight aligned worker ranks, stiff closely bundled flags, narrow closed-looking central passage, dense hard-edged unity, dark burgundy backing and muted antique gold. Full authoritative composition, no weapons.",
+      "group": "zinovyev",
+      "size": [
+        100,
+        88
+      ],
+      "png": "zinovyev/GFX_hof_ic_zinovyev_monolithic_international.png",
+      "source": "zinovyev/source/GFX_hof_ic_zinovyev_monolithic_international.png",
+      "generation_record": "zinovyev/records/GFX_hof_ic_zinovyev_monolithic_international.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_zinovyev_monolithic_international.dds",
+      "sha256": "2feac760ce62239afb3c769435a6224ba57ada70d6897e0450e755885006c112"
+    },
+    {
+      "id": "hof_ic_zinovyev_mass_international",
+      "name": "GFX_hof_ic_zinovyev_mass_international",
+      "title": "群众的国际",
+      "concept": "ENDPOINT PAIR: reproduce image 2 composition skeleton and positions: same central globe upper middle, six flagpoles fanned behind globe, same two-pillar gateway below globe, worker crowd lower third, identical wreath/star/ribbon outer frame. WARM OPEN VERSION: warm ivory and pale bronze rather than cold iron, gateway with broad open passage, spaced flowing streams of workers joining from left and right, unfurled gently waving flags. More breathing space and movement, crimson red backing. Equal monumental importance and quality, not weaker. No text or weapons.",
+      "group": "zinovyev",
+      "size": [
+        100,
+        88
+      ],
+      "png": "zinovyev/GFX_hof_ic_zinovyev_mass_international.png",
+      "source": "zinovyev/source/GFX_hof_ic_zinovyev_mass_international.png",
+      "generation_record": "zinovyev/records/GFX_hof_ic_zinovyev_mass_international.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_zinovyev_mass_international.dds",
+      "sha256": "c0b0eb96c7a3efb0a4a44d435510eac9d956c5c8c620acf906395a7fbf8d2e80"
+    },
+    {
+      "id": "hof_ic_kamenev_lenins_charge",
+      "name": "GFX_hof_ic_kamenev_lenins_charge",
+      "title": "列宁的托付",
+      "concept": "The beginning of a documentary legacy: a modest bundle of blank manuscript pages tied with thin cord being carefully handed from one hand at left into an open receiving hand below right. Only two anatomically correct hands, no faces. Warm brown-ivory paper relief, intimate simple composition with generous red interior breathing space. Manuscript is the dominant shape, no bookshelves yet.",
+      "group": "kamenev",
+      "size": [
+        100,
+        88
+      ],
+      "png": "kamenev/GFX_hof_ic_kamenev_lenins_charge.png",
+      "source": "kamenev/source/GFX_hof_ic_kamenev_lenins_charge.png",
+      "generation_record": "kamenev/records/GFX_hof_ic_kamenev_lenins_charge.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_kamenev_lenins_charge.dds",
+      "sha256": "904d1ed44d9fdafdd5c55986a04a989891c79d69b9371cc40fda1243d0737f42"
+    },
+    {
+      "id": "hof_ic_kamenev_leninism",
+      "name": "GFX_hof_ic_kamenev_leninism",
+      "title": "列宁主义",
+      "concept": "An open thick scholarly encyclopedia, with three indexed bound volumes standing behind it in a neat stepped arrangement. Page tabs and geometric inset panels suggest organized knowledge, never writing. Ivory paper and grey bindings, structured balanced composition more substantial than a single manuscript. Clear book silhouettes, no portrait, no globe.",
+      "group": "kamenev",
+      "size": [
+        100,
+        88
+      ],
+      "png": "kamenev/GFX_hof_ic_kamenev_leninism.png",
+      "source": "kamenev/source/GFX_hof_ic_kamenev_leninism.png",
+      "generation_record": "kamenev/records/GFX_hof_ic_kamenev_leninism.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_kamenev_leninism.dds",
+      "sha256": "6034c34bb99bf222212ebdf5b0e7b37539b393cd2d212024f22d0f72e3037cca"
+    },
+    {
+      "id": "hof_ic_kamenev_against_the_lessons",
+      "name": "GFX_hof_ic_kamenev_against_the_lessons",
+      "title": "驳《十月教训》",
+      "concept": "Two thick parallel stacks of documentary evidence opened side by side on a broad editorial desk, their top pages connected by simple comparison lines, a large magnifying glass crossing the gap and a restrained fountain pen lying below. Scholarly textual debate and comparison, neutral ivory stone paper relief. More layered and substantial than a single open encyclopedia, unmistakable magnifying glass, no text, no weapons.",
+      "group": "kamenev",
+      "size": [
+        100,
+        88
+      ],
+      "png": "kamenev/GFX_hof_ic_kamenev_against_the_lessons.png",
+      "source": "kamenev/source/GFX_hof_ic_kamenev_against_the_lessons.png",
+      "generation_record": "kamenev/records/GFX_hof_ic_kamenev_against_the_lessons.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_kamenev_against_the_lessons.dds",
+      "sha256": "928f6d855d1b3199aade542087469c4926b168220811e273749c11cfdd8245d5"
+    },
+    {
+      "id": "hof_ic_kamenev_lenin_institute",
+      "name": "GFX_hof_ic_kamenev_lenin_institute",
+      "title": "列宁研究院与全集",
+      "concept": "A complete archival institution: tall orderly wall of bound volumes and archive compartments arranged around a central shelving bay, with a compact early twentieth-century printing press in foreground feeding blank paper sheets onto an accumulating stack of books. Cool ivory and slate-grey sculpted relief, rectangular shelves and printing rollers legible, one diagonal beam of light within medallion. Dense complete composition, scholarly archives not factory chimneys.",
+      "group": "kamenev",
+      "size": [
+        100,
+        88
+      ],
+      "png": "kamenev/GFX_hof_ic_kamenev_lenin_institute.png",
+      "source": "kamenev/source/GFX_hof_ic_kamenev_lenin_institute.png",
+      "generation_record": "kamenev/records/GFX_hof_ic_kamenev_lenin_institute.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_kamenev_lenin_institute.dds",
+      "sha256": "e0e3b33db9c4a2f28ebbb512b2dc6ad170441f42dbdfee3659f5355f180dbf72"
+    },
+    {
+      "id": "hof_ic_kamenev_executor_of_the_will",
+      "name": "GFX_hof_ic_kamenev_executor_of_the_will",
+      "title": "列宁的遗嘱执行人",
+      "concept": "The culmination of a documentary legacy, grandest and fullest composition: a monumental very thick open collected-works volume on a formal reading pedestal, one anatomically correct hand resting firmly flat on its right page, with a precise symmetrical wall of indexed archive books behind. A classic shaded desk lamp above-left illuminates the open pages. Cool silver-grey ivory relief, crisp straight edges and highly ordered shelves, substantial book block and layered pages, calm institutional authority. No face, no readable writing or letters on pages or spines. More monumental and full than earlier icons, with dominant giant book.",
+      "group": "kamenev",
+      "size": [
+        100,
+        88
+      ],
+      "png": "kamenev/GFX_hof_ic_kamenev_executor_of_the_will.png",
+      "source": "kamenev/source/GFX_hof_ic_kamenev_executor_of_the_will.png",
+      "generation_record": "kamenev/records/GFX_hof_ic_kamenev_executor_of_the_will.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_kamenev_executor_of_the_will.dds",
+      "sha256": "6dad1537e60af83436f5b6bad3cca62b7ca0be1ef89bb115a0912394a769a2ad"
+    },
+    {
+      "id": "hof_ic_smirnov_the_volga_bridgehead",
+      "name": "GFX_hof_ic_smirnov_the_volga_bridgehead",
+      "title": "斯维亚日斯克桥头堡",
+      "concept": "Wide cold river crossed by a strong railway truss bridge, viewed diagonally toward right horizon, tiny station hut and clearly sculpted sandbag barricade at near bridgehead. Sparse defensible landscape, damp mist, cold grey-blue ivory relief. Bridge and water dominate horizontally. No people.",
+      "group": "smirnov",
+      "size": [
+        100,
+        88
+      ],
+      "png": "smirnov/GFX_hof_ic_smirnov_the_volga_bridgehead.png",
+      "source": "smirnov/source/GFX_hof_ic_smirnov_the_volga_bridgehead.png",
+      "generation_record": "smirnov/records/GFX_hof_ic_smirnov_the_volga_bridgehead.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_smirnov_the_volga_bridgehead.dds",
+      "sha256": "d000c7b17c74fc9da75ee750e146f0f7f9a671f89da7f3472a30c27872b7a560"
+    },
+    {
+      "id": "hof_ic_smirnov_the_fifth_army",
+      "name": "GFX_hof_ic_smirnov_the_fifth_army",
+      "title": "第五集团军与五军将士",
+      "concept": "A diagonal column of five early Russian civil-war soldiers marching away to the RIGHT into a first-snow plain, seen strictly from behind, backpacks and puttees, rifles slung on shoulders, no faces or facial features. Cohesive marching silhouettes, small distant village and smoke, cold brown-grey ivory relief. No combat, no wounded.",
+      "group": "smirnov",
+      "size": [
+        100,
+        88
+      ],
+      "png": "smirnov/GFX_hof_ic_smirnov_the_fifth_army.png",
+      "source": "smirnov/source/GFX_hof_ic_smirnov_the_fifth_army.png",
+      "generation_record": "smirnov/records/GFX_hof_ic_smirnov_the_fifth_army.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_smirnov_the_fifth_army.dds",
+      "sha256": "e7bbb7313cc4f299f18da886ee0dd82bcd7dbd6ec2aaa1392745751f871db84b"
+    },
+    {
+      "id": "hof_ic_smirnov_sibrevkom",
+      "name": "GFX_hof_ic_smirnov_sibrevkom",
+      "title": "西伯利亚革命委员会",
+      "concept": "Inside a rustic Siberian log cabin: substantial long committee table with a blank folded map and several blank document sheets, empty chairs, plain dark red flag on rear wall, large window showing snowy conifer forest. Governance taking root, intimate structured indoor scene, muted wood-brown and ivory sculpted relief. No people, no writing.",
+      "group": "smirnov",
+      "size": [
+        100,
+        88
+      ],
+      "png": "smirnov/GFX_hof_ic_smirnov_sibrevkom.png",
+      "source": "smirnov/source/GFX_hof_ic_smirnov_sibrevkom.png",
+      "generation_record": "smirnov/records/GFX_hof_ic_smirnov_sibrevkom.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_smirnov_sibrevkom.dds",
+      "sha256": "3c2e64145ca9489cee96d70fda7d5e22e68b61687f13821d835f32e71de48595"
+    },
+    {
+      "id": "hof_ic_smirnov_far_eastern_republic",
+      "name": "GFX_hof_ic_smirnov_far_eastern_republic",
+      "title": "远东共和国",
+      "concept": "One large striped wooden border post in foreground, a short wooden barrier and fence receding diagonally toward the RIGHT Pacific coastline, misty sea beyond. Tiny faceless sentry silhouette seen from behind at the boundary. Strong vertical border marker, boundary restraint rather than advance. Pale cyan-grey and ivory sculptural landscape, colder and later dusk.",
+      "group": "smirnov",
+      "size": [
+        100,
+        88
+      ],
+      "png": "smirnov/GFX_hof_ic_smirnov_far_eastern_republic.png",
+      "source": "smirnov/source/GFX_hof_ic_smirnov_far_eastern_republic.png",
+      "generation_record": "smirnov/records/GFX_hof_ic_smirnov_far_eastern_republic.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_smirnov_far_eastern_republic.dds",
+      "sha256": "667567c4973ac72a1805e170c6611621eb55c9deab6ca0a187d7994b52e155ff"
+    },
+    {
+      "id": "hof_ic_smirnov_posts_and_telegraphs",
+      "name": "GFX_hof_ic_smirnov_posts_and_telegraphs",
+      "title": "苏联邮电人民委员部",
+      "concept": "A bold row of ice-covered telegraph poles and connecting wires recedes alongside railway toward RIGHT horizon across snowy land, small brick post office and early 1920s postal truck at foreground, single warm amber window glow contrasting cold blue-grey night. Clear branching wire network and pole silhouettes dominate, connected territory, no text, no people.",
+      "group": "smirnov",
+      "size": [
+        100,
+        88
+      ],
+      "png": "smirnov/GFX_hof_ic_smirnov_posts_and_telegraphs.png",
+      "source": "smirnov/source/GFX_hof_ic_smirnov_posts_and_telegraphs.png",
+      "generation_record": "smirnov/records/GFX_hof_ic_smirnov_posts_and_telegraphs.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_smirnov_posts_and_telegraphs.dds",
+      "sha256": "a89f8c8f20ac1e94ee9fca5e2e787dfba00190f7a1f410c0ffe8b399fd9767b1"
+    },
+    {
+      "id": "hof_ic_smirnov_siberian_lenin",
+      "name": "GFX_hof_ic_smirnov_siberian_lenin",
+      "title": "西伯利亚的列宁",
+      "concept": "Final culmination: one solitary small full-body human BACK silhouette in long winter coat walking away toward RIGHT distant horizon along a broad snow road with deep twin wheel ruts and footprints. Vast cold-white snowy plain, distant forest and low rolling hills, very dark winter dusk sky with a thin restrained golden horizon light. Monumental layered landscape fills medallion, generous open snow negative space around tiny person. Journey continuing, quiet duty, no victory pose, no memorial, no face, no portrait. Richest complete landscape of series without clutter.",
+      "group": "smirnov",
+      "size": [
+        100,
+        88
+      ],
+      "png": "smirnov/GFX_hof_ic_smirnov_siberian_lenin.png",
+      "source": "smirnov/source/GFX_hof_ic_smirnov_siberian_lenin.png",
+      "generation_record": "smirnov/records/GFX_hof_ic_smirnov_siberian_lenin.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_smirnov_siberian_lenin.dds",
+      "sha256": "5929e593b78a01eb4401d32a69aa38640fa0859836d82ad3e9e7b18b795a3297"
+    },
+    {
+      "id": "hof_ic_serebryakov_kostroma",
+      "name": "GFX_hof_ic_serebryakov_kostroma",
+      "title": "科斯特罗马的驻军",
+      "concept": "Low ground-level view of many boots and lower legs of a tightly grouped 1917 Russian garrison walking OUT through an open snowy barracks gate. Only lower bodies, coat hems and slung rifle silhouettes, no torsos or faces. Strong foreground boots and tracks, snowy barracks behind, crowded outward movement, cold blue-grey ivory relief.",
+      "group": "serebryakov",
+      "size": [
+        100,
+        88
+      ],
+      "png": "serebryakov/GFX_hof_ic_serebryakov_kostroma.png",
+      "source": "serebryakov/source/GFX_hof_ic_serebryakov_kostroma.png",
+      "generation_record": "serebryakov/records/GFX_hof_ic_serebryakov_kostroma.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_serebryakov_kostroma.dds",
+      "sha256": "805cb14e9ef1a4ec3bef754c8c2c8b73265d2f6c3184db4a78f4037ca1d6d218"
+    },
+    {
+      "id": "hof_ic_serebryakov_central_committee",
+      "name": "GFX_hof_ic_serebryakov_central_committee",
+      "title": "党中央书记处",
+      "concept": "Pure abstract organizational network with no physical objects: many thin silver-grey embossed strands enter from all four sides, weave and intersect through small nodes, then converge onto ONE large crimson red circular central hub. Deep charcoal textured backing inside medallion. Structured yet interwoven connections, clear red hub dominating. No books, papers, stamps, buildings, maps or people.",
+      "group": "serebryakov",
+      "size": [
+        100,
+        88
+      ],
+      "png": "serebryakov/GFX_hof_ic_serebryakov_central_committee.png",
+      "source": "serebryakov/source/GFX_hof_ic_serebryakov_central_committee.png",
+      "generation_record": "serebryakov/records/GFX_hof_ic_serebryakov_central_committee.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_serebryakov_central_committee.dds",
+      "sha256": "02e215479e635126d313ff87c2c25c93709ea5d116b9aeffe9c47eb806cf61c9"
+    },
+    {
+      "id": "hof_ic_serebryakov_commissariat_of_transport",
+      "name": "GFX_hof_ic_serebryakov_commissariat_of_transport",
+      "title": "交通人民委员部",
+      "concept": "Railway junction seen from an elevated oblique angle: three clearly constructed railway tracks merge through working switch points into ONE line toward horizon, large switch lever in foreground, compact signal tower at side and tiny distant freight wagons. Main subject is merging rails and switch mechanism, not locomotive. Rust-brown and smoke-grey ivory relief. No water, no river, NO BRIDGE, no snow.",
+      "group": "serebryakov",
+      "size": [
+        100,
+        88
+      ],
+      "png": "serebryakov/GFX_hof_ic_serebryakov_commissariat_of_transport.png",
+      "source": "serebryakov/source/GFX_hof_ic_serebryakov_commissariat_of_transport.png",
+      "generation_record": "serebryakov/records/GFX_hof_ic_serebryakov_commissariat_of_transport.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_serebryakov_commissariat_of_transport.dds",
+      "sha256": "e03f755afbb0ccf8cfca85939b83f5cbbe7f9d8a99b820e6aa7d0b91209afdba"
+    },
+    {
+      "id": "hof_ic_serebryakov_highways_and_motor_transport",
+      "name": "GFX_hof_ic_serebryakov_highways_and_motor_transport",
+      "title": "公路与汽车运输总局",
+      "concept": "A straight early 1930s paved/gravel highway extends from broad lower edge to distant horizon through open dry grasslands. ONE vintage 1930s boxy truck viewed from behind, small plain blank milestone posts at roadsides. Broad continuous road surface clearly distinct from railway rails, warm ochre ground and pale blue far sky, engraved miniature relief. No railways or snow.",
+      "group": "serebryakov",
+      "size": [
+        100,
+        88
+      ],
+      "png": "serebryakov/GFX_hof_ic_serebryakov_highways_and_motor_transport.png",
+      "source": "serebryakov/source/GFX_hof_ic_serebryakov_highways_and_motor_transport.png",
+      "generation_record": "serebryakov/records/GFX_hof_ic_serebryakov_highways_and_motor_transport.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_serebryakov_highways_and_motor_transport.dds",
+      "sha256": "7125118e7b6d062385cd9eec16e9f6a1d8dbf375e288e116aaca61d3d878f6bf"
+    },
+    {
+      "id": "hof_ic_serebryakov_brilliant_worker",
+      "name": "GFX_hof_ic_serebryakov_brilliant_worker",
+      "title": "天才的工人",
+      "concept": "Closest and warmest culmination: a mechanically plausible old manual metal-turning LATHE close-up, prominent three-jaw chuck firmly holding a freshly turned stepped cylindrical steel workpiece, aligned tool post and cutting tool on carriage. A worker's ONE bare anatomically correct hand operates a handwheel safely away from rotating chuck. No head or face. Warm golden highlights on polished metal against cool workshop shadows, faint workshop window and city silhouettes behind. Lathe and finished part dominate, fullest intricate composition, clear machine geometry, no gears floating as symbols.",
+      "group": "serebryakov",
+      "size": [
+        100,
+        88
+      ],
+      "png": "serebryakov/GFX_hof_ic_serebryakov_brilliant_worker.png",
+      "source": "serebryakov/source/GFX_hof_ic_serebryakov_brilliant_worker.png",
+      "generation_record": "serebryakov/records/GFX_hof_ic_serebryakov_brilliant_worker.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_serebryakov_brilliant_worker.dds",
+      "sha256": "8f4f40238dc5df33d5ef164695ea1224c8e74eeb0ff5093ae2015c3f9f576fe9"
+    },
+    {
+      "id": "hof_ic_preobrazhensky_agrarian_theses",
+      "name": "GFX_hof_ic_preobrazhensky_agrarian_theses",
+      "title": "农村政策提纲",
+      "concept": "A heavy small stack of loose taxation slips bearing ONLY blank horizontal ruled rows, spread over a low heap of grain in the lower-left foreground. A single accounting pen beside the slips; no book or bound manuscript. Sparse dry grey-ochre rural horizon behind. Quiet weighty composition, ochre grain and dark grey, ivory embossed paper. The relationship of taxation extracting grain is the subject.",
+      "group": "preobrazhensky",
+      "size": [
+        100,
+        88
+      ],
+      "png": "preobrazhensky/GFX_hof_ic_preobrazhensky_agrarian_theses.png",
+      "source": "preobrazhensky/source/GFX_hof_ic_preobrazhensky_agrarian_theses.png",
+      "generation_record": "preobrazhensky/records/GFX_hof_ic_preobrazhensky_agrarian_theses.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_preobrazhensky_agrarian_theses.dds",
+      "sha256": "0b8d5d980dbe87a7c3e962792243b3155d504a18bbb5a1e0122fb4ff14ff1e13"
+    },
+    {
+      "id": "hof_ic_preobrazhensky_scissors",
+      "name": "GFX_hof_ic_preobrazhensky_scissors",
+      "title": "压缩剪刀差",
+      "concept": "ONE large open vintage steel pair of scissors in clear close-up, two blades poised to close, realistic single pivot and two finger loops. Between the open blades lie exactly two simple embossed price curves, one curving upward and one downward. Clean minimal anvil-grey backing, iron-grey metal and restrained rust-red curves. The scissors silhouette must read immediately. No numerals or labels.",
+      "group": "preobrazhensky",
+      "size": [
+        100,
+        88
+      ],
+      "png": "preobrazhensky/GFX_hof_ic_preobrazhensky_scissors.png",
+      "source": "preobrazhensky/source/GFX_hof_ic_preobrazhensky_scissors.png",
+      "generation_record": "preobrazhensky/records/GFX_hof_ic_preobrazhensky_scissors.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_preobrazhensky_scissors.dds",
+      "sha256": "61c63e11e68b6117866c4aa67823852d083ba5d53b782ad8d5f6660170d20bab"
+    },
+    {
+      "id": "hof_ic_preobrazhensky_against_nepmen",
+      "name": "GFX_hof_ic_preobrazhensky_against_nepmen",
+      "title": "反对耐普曼的积累",
+      "concept": "ONE antique balance scale with clearly tilted beam: left lowered pan holds a plain tied merchant moneybag and a compact iron weight, right raised pan holds an ivory industrial cog with small factory silhouette. ONE anatomically correct hand enters from upper left pressing down the moneybag pan, unmistakable downward pressure. No person or face. Dark brown metal and cool teal shadows. No currency symbols, no shop.",
+      "group": "preobrazhensky",
+      "size": [
+        100,
+        88
+      ],
+      "png": "preobrazhensky/GFX_hof_ic_preobrazhensky_against_nepmen.png",
+      "source": "preobrazhensky/source/GFX_hof_ic_preobrazhensky_against_nepmen.png",
+      "generation_record": "preobrazhensky/records/GFX_hof_ic_preobrazhensky_against_nepmen.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_preobrazhensky_against_nepmen.dds",
+      "sha256": "26357b891b8c64f65235e85a09f182ee0de25a2c9c3af27249d1bc44f0a171f4"
+    },
+    {
+      "id": "hof_ic_preobrazhensky_two_regulators",
+      "name": "GFX_hof_ic_preobrazhensky_two_regulators",
+      "title": "两种规律的斗争",
+      "concept": "An entirely abstract statistical relief: exactly TWO broad flowing curves, one bright golden-yellow and one deep blue with subtly lighter edging, repeatedly intertwine and cross in tension, neither dominates. They sweep diagonally upward over fine horizontal statistical graph rules. Readable overlapping curves, not DNA or ropes or physical objects. No axes labels or numbers, no books, scales, scissors, buildings, hands. Bright yellow and deep blue.",
+      "group": "preobrazhensky",
+      "size": [
+        100,
+        88
+      ],
+      "png": "preobrazhensky/GFX_hof_ic_preobrazhensky_two_regulators.png",
+      "source": "preobrazhensky/source/GFX_hof_ic_preobrazhensky_two_regulators.png",
+      "generation_record": "preobrazhensky/records/GFX_hof_ic_preobrazhensky_two_regulators.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_preobrazhensky_two_regulators.dds",
+      "sha256": "fb9f26beba778e1599c609f82169212d843c62dd548f792d701359a2f1eae7c0"
+    },
+    {
+      "id": "hof_ic_preobrazhensky_primitive_accumulation",
+      "name": "GFX_hof_ic_preobrazhensky_primitive_accumulation",
+      "title": "社会主义原始积累",
+      "concept": "Fullest concluding composition: a broad dark-gold stream of grain and material resources visibly pulled from low village huts, fields and grain heaps in LOWER LEFT, sweeping in one powerful diagonal curve across the horizon and condensing into newly forming iron-grey factories in UPPER RIGHT. Make direction from rural foreground to industrial background legible through flow and taper, not letters. Dawn-orange glow behind the factories. This is a symbolic resource flow, not a water river or railway. Rich miniature engraved relief, dark gold, iron grey, orange dawn; factories and countryside subordinate to the connecting resource stream.",
+      "group": "preobrazhensky",
+      "size": [
+        100,
+        88
+      ],
+      "png": "preobrazhensky/GFX_hof_ic_preobrazhensky_primitive_accumulation.png",
+      "source": "preobrazhensky/source/GFX_hof_ic_preobrazhensky_primitive_accumulation.png",
+      "generation_record": "preobrazhensky/records/GFX_hof_ic_preobrazhensky_primitive_accumulation.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_preobrazhensky_primitive_accumulation.dds",
+      "sha256": "591703dd571c0616a2ffc09554bc6259a0f16d7e1492c19aef22ea9b4b51be1d"
+    },
+    {
+      "id": "hof_ic_radek_central_europe_department",
+      "name": "GFX_hof_ic_radek_central_europe_department",
+      "title": "外交人民委员部中欧司",
+      "concept": "An unfolded central-European map on a desk, abstract coast contours and unlabeled route lines radiate outward from a central point. A small plain diplomatic seal and dip pen at one corner. Window behind shows residual March snow. Orderly official atmosphere, cool grey-blue and aged ivory paper. No readable map labels.",
+      "group": "radek",
+      "size": [
+        100,
+        88
+      ],
+      "png": "radek/GFX_hof_ic_radek_central_europe_department.png",
+      "source": "radek/source/GFX_hof_ic_radek_central_europe_department.png",
+      "generation_record": "radek/records/GFX_hof_ic_radek_central_europe_department.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_radek_central_europe_department.dds",
+      "sha256": "5e5f375d27a947d65a2a5c438f23b1f25b413f7ba8cb213d4809b38bd21c8ecc"
+    },
+    {
+      "id": "hof_ic_radek_founding_of_the_kpd",
+      "name": "GFX_hof_ic_radek_founding_of_the_kpd",
+      "title": "德国共产党的第一次代表大会",
+      "concept": "A small secret basement meeting room: joined wooden tables, a low-shaded kerosene lamp illuminating freshly printed loose leaflets with only abstract column marks. Windows tightly covered with opaque paper. A few empty chairs, intimate clandestine space mostly in dark brown shadow with one amber lamp. No stage, banners, flags or crowds. No printing machine.",
+      "group": "radek",
+      "size": [
+        100,
+        88
+      ],
+      "png": "radek/GFX_hof_ic_radek_founding_of_the_kpd.png",
+      "source": "radek/source/GFX_hof_ic_radek_founding_of_the_kpd.png",
+      "generation_record": "radek/records/GFX_hof_ic_radek_founding_of_the_kpd.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_radek_founding_of_the_kpd.dds",
+      "sha256": "c679c56f90b14060905e252d902fec3eddb70d21c5330ad51c864b615f9e9e45"
+    },
+    {
+      "id": "hof_ic_radek_seven_pamphlets",
+      "name": "GFX_hof_ic_radek_seven_pamphlets",
+      "title": "狱中的七本小册子",
+      "concept": "A narrow barred window casts one diagonal pale light beam and barred shadows onto a narrow tabletop. EXACTLY SEVEN separate thin closed pamphlets laid side by side in a clear evenly spaced fan, all seven covers fully visible and countable. No extra paper or books. Covers plain ivory with subtle horizontal rules, no lettering or numerals. The seven pamphlets dominate lower two thirds of scene. Cold grey iron and stone, faint warm light on paper. No chains, shackles or people.",
+      "group": "radek",
+      "size": [
+        100,
+        88
+      ],
+      "png": "radek/GFX_hof_ic_radek_seven_pamphlets.png",
+      "source": "radek/source/GFX_hof_ic_radek_seven_pamphlets.png",
+      "generation_record": "radek/records/GFX_hof_ic_radek_seven_pamphlets.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_radek_seven_pamphlets.dds",
+      "sha256": "7aa3559bd21560e5f2ef0b2ebad18372c03ba8b2a1e8f902e384fcca5e88621e"
+    },
+    {
+      "id": "hof_ic_radek_german_october",
+      "name": "GFX_hof_ic_radek_german_october",
+      "title": "德国十月",
+      "concept": "An EMPTY German cobblestone street at night, incomplete low barricade of a few wooden crates, overturned handcart and scattered stones on LEFT foreground. Large open passage leads out to RIGHT. All street lamps visibly unlit; just two tiny distant amber house windows. No people, weapons, flags, fire or combat. Restrained abandoned unfinished mood, cold midnight blue, engraved silver edge highlights keep shapes legible.",
+      "group": "radek",
+      "size": [
+        100,
+        88
+      ],
+      "png": "radek/GFX_hof_ic_radek_german_october.png",
+      "source": "radek/source/GFX_hof_ic_radek_german_october.png",
+      "generation_record": "radek/records/GFX_hof_ic_radek_german_october.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_radek_german_october.dds",
+      "sha256": "bf22a4c16ea3ee767609a29fd68eebe0fecdec868ace44a3da42f41f37482d75"
+    },
+    {
+      "id": "hof_ic_radek_sunyatsen_university",
+      "name": "GFX_hof_ic_radek_sunyatsen_university",
+      "title": "中山大学",
+      "concept": "A bright intimate 1920s tiered classroom viewed from back: rows of wooden long desks and mostly empty chairs toward a chalkboard with only abstract chalk lines and rectangles. One lecturer seen strictly from back at front, a few Chinese students also seen strictly from behind at desks, no facial features. Warm wood and chalk-white daylight. Clearly a SCHOOL classroom, no flags, banners, congress stage or crowds.",
+      "group": "radek",
+      "size": [
+        100,
+        88
+      ],
+      "png": "radek/GFX_hof_ic_radek_sunyatsen_university.png",
+      "source": "radek/source/GFX_hof_ic_radek_sunyatsen_university.png",
+      "generation_record": "radek/records/GFX_hof_ic_radek_sunyatsen_university.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_radek_sunyatsen_university.dds",
+      "sha256": "1d8f274207459e1c87294975f09839b15f3b5bec16793eed490c2ff6f9d206ef"
+    },
+    {
+      "id": "hof_ic_radek_red_publicist",
+      "name": "GFX_hof_ic_radek_red_publicist",
+      "title": "红色笔杆子",
+      "concept": "Rich close-up of a writing desk, a LARGE prominent steel dip-pen nib diagonally descending to one SMALL SATURATED RED INK BLOT on pale paper, the sole red accent in the ENTIRE image. Around it layered newspapers with abstract column rules, blank headline bars and grey photo blocks, clipped masthead shapes and one opened envelope. No actual writing. Nib dominant and instantly readable, fullest composition, warm brown desktop and grey-white paper. No map or other red object, no hands needed.",
+      "group": "radek",
+      "size": [
+        100,
+        88
+      ],
+      "png": "radek/GFX_hof_ic_radek_red_publicist.png",
+      "source": "radek/source/GFX_hof_ic_radek_red_publicist.png",
+      "generation_record": "radek/records/GFX_hof_ic_radek_red_publicist.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_radek_red_publicist.dds",
+      "sha256": "1c4e037fdea4076721a5868a15d3a1a56c2b84b05963ff1d0f9545f82a82923d"
+    },
+    {
+      "id": "hof_ic_smilga_finland",
+      "name": "GFX_hof_ic_smilga_finland",
+      "title": "芬兰的军队与舰队",
+      "concept": "Grey thin-ice Baltic sea beneath low heavy clouds. One navigable broken-ice channel sweeps from far LEFT edge toward near RIGHT harbor, with two low early-1900s naval ship silhouettes near its end and a small single-file column of sailors as dark faceless silhouettes on the near shore. Cold grey-blue and ice-white relief. No palace, combat, railway or river.",
+      "group": "smilga",
+      "size": [
+        100,
+        88
+      ],
+      "png": "smilga/GFX_hof_ic_smilga_finland.png",
+      "source": "smilga/source/GFX_hof_ic_smilga_finland.png",
+      "generation_record": "smilga/records/GFX_hof_ic_smilga_finland.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_smilga_finland.dds",
+      "sha256": "ef178a43146ae1e47d7367faf00aafbc5fe0f834f65d8d94df9bfc0dbca9fceb"
+    },
+    {
+      "id": "hof_ic_smilga_fuel_main_directorate",
+      "name": "GFX_hof_ic_smilga_fuel_main_directorate",
+      "title": "燃料总局",
+      "concept": "A heavy granular black coal heap under one warm glowing miners lamp, a short row of loaded small coal mine carts in foreground on plain ground, NO visible rails. To right a loose white zoning allocation sheet with blank rectangular cells and color blocks, ONE cuffed hand resting on sheet. Coal and lamp dominate, coal-black with warm amber and white paper. No furnace or molten metal.",
+      "group": "smilga",
+      "size": [
+        100,
+        88
+      ],
+      "png": "smilga/GFX_hof_ic_smilga_fuel_main_directorate.png",
+      "source": "smilga/source/GFX_hof_ic_smilga_fuel_main_directorate.png",
+      "generation_record": "smilga/records/GFX_hof_ic_smilga_fuel_main_directorate.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_smilga_fuel_main_directorate.dds",
+      "sha256": "4805546e93d1b8f0923992ad8ae94b2c38239c9615c21d3ff2a6714d7b63c3df"
+    },
+    {
+      "id": "hof_ic_smilga_gosplan",
+      "name": "GFX_hof_ic_smilga_gosplan",
+      "title": "国家计划委员会",
+      "concept": "An actual planning office wall almost entirely covered with a large square-grid chart, fine precise perpendicular grid lines and many scattered small square and round markers aligned to cells, a few markers linked with thin muted red straight segments. Lower edge only reveals desk corner and a prominent green-shaded bankers lamp casting fan-shaped light on chart. Dark grey-blue, pale grey grid, green glass shade. No curved graphs, no factory panorama, no books, no pen.",
+      "group": "smilga",
+      "size": [
+        100,
+        88
+      ],
+      "png": "smilga/GFX_hof_ic_smilga_gosplan.png",
+      "source": "smilga/source/GFX_hof_ic_smilga_gosplan.png",
+      "generation_record": "smilga/records/GFX_hof_ic_smilga_gosplan.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_smilga_gosplan.dds",
+      "sha256": "de6689e61eda47278769081799b9cbd2d272ce4a7b78d46b245d8f1bec5917b0"
+    },
+    {
+      "id": "hof_ic_smilga_economics_institute",
+      "name": "GFX_hof_ic_smilga_economics_institute",
+      "title": "莫斯科国民经济学院",
+      "concept": "Strict overhead close-up of ONE long wooden seminar worktable, large folded chart spread out with only square grid, colored rectangular cells and unlabeled legend boxes. A large recognizable vintage SLIDE RULE diagonally on chart corner, metallic slider and tiny unlabeled tick marks, no digits. Loose rough calculation sheets with abstract crossed-out lines and half a chalk stick. THREE distinct anatomically correct hands with different cuffs enter from table edges, no bodies. Warm wood and yellowed paper, cool metallic slide rule. No classroom rows, stage or blackboard.",
+      "group": "smilga",
+      "size": [
+        100,
+        88
+      ],
+      "png": "smilga/GFX_hof_ic_smilga_economics_institute.png",
+      "source": "smilga/source/GFX_hof_ic_smilga_economics_institute.png",
+      "generation_record": "smilga/records/GFX_hof_ic_smilga_economics_institute.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_smilga_economics_institute.dds",
+      "sha256": "37c9b81a919047a95b4e2e97636ff21cf3a6e73572e847559fd207d3febcf5cb"
+    },
+    {
+      "id": "hof_ic_smilga_productive_forces",
+      "name": "GFX_hof_ic_smilga_productive_forces",
+      "title": "生产力布局",
+      "concept": "Top-down close-up of a teal-grey square-grid planning map with sparse contour lines. Several small iron-grey FACTORY-SHAPED miniature tokens clustered center-left. ONE anatomically correct hand pinches a single factory-shaped token between thumb and index finger, moving it toward an empty grid cell at LOWER RIGHT edge, clear empty gap between central cluster and moved token. Focus on relocating ONE discrete point across grid, no vehicles, trains or real factory landscape. Restrained dark teal and grey.",
+      "group": "smilga",
+      "size": [
+        100,
+        88
+      ],
+      "png": "smilga/GFX_hof_ic_smilga_productive_forces.png",
+      "source": "smilga/source/GFX_hof_ic_smilga_productive_forces.png",
+      "generation_record": "smilga/records/GFX_hof_ic_smilga_productive_forces.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_smilga_productive_forces.dds",
+      "sha256": "8ec0a97ab19ad0ba69b91fcb2d9db0269fda31558ee329de7d7ebe397b374a43"
+    },
+    {
+      "id": "hof_ic_smilga_the_healer_of_the_gaps",
+      "name": "GFX_hof_ic_smilga_the_healer_of_the_gaps",
+      "title": "弥合裂缝的人",
+      "concept": "Symbolic fullest concluding close-up of an aged densely marked square-grid planning sheet. ONE long VERTICAL tear down CENTER: UPPER HALF visibly repaired by a closely spaced ladder of thin warm ivory stitches bridging both sides, LOWER HALF splits into a wide deep BLACK jagged gap with frayed paper edges and falling tiny paper fragments. Warm glow at repaired upper half, colder dark lower half. Paperweights and half-rolled chart corners hold the old sheet down. Weathered ochre paper, warm-white thread and deep-black rift. No people, hands, needles, blood or bodily imagery. The repaired upper seam and OPEN lower split are both unmistakable.",
+      "group": "smilga",
+      "size": [
+        100,
+        88
+      ],
+      "png": "smilga/GFX_hof_ic_smilga_the_healer_of_the_gaps.png",
+      "source": "smilga/source/GFX_hof_ic_smilga_the_healer_of_the_gaps.png",
+      "generation_record": "smilga/records/GFX_hof_ic_smilga_the_healer_of_the_gaps.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_smilga_the_healer_of_the_gaps.dds",
+      "sha256": "515e355febc31d5aabf17985678f1177b65ceb827aa2a8824a50242983bd986d"
+    },
+    {
+      "id": "hof_ic_tomsky_printers_union",
+      "name": "GFX_hof_ic_tomsky_printers_union",
+      "title": "印刷工人工会",
+      "concept": "Close-up tilted composing tray filled with rows of tiny lead type blocks, tops are abstract unreadable geometric relief marks, NO recognizable letters. ONE ink-stained hand arranging a block at tray edge. Behind are a lithographic roller and pale grey lithographic stone. Lower right one loose collective contract sheet with only ruled lines and two abstract dark signature blot shapes. Ink-black, lead-grey, paper-white. Work in progress, no bound books.",
+      "group": "tomsky",
+      "size": [
+        100,
+        88
+      ],
+      "png": "tomsky/GFX_hof_ic_tomsky_printers_union.png",
+      "source": "tomsky/source/GFX_hof_ic_tomsky_printers_union.png",
+      "generation_record": "tomsky/records/GFX_hof_ic_tomsky_printers_union.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_tomsky_printers_union.dds",
+      "sha256": "55cdeab1b2b6d58b9659cca4016a8b15b3a81691f3decc39626d743cd71e7373"
+    },
+    {
+      "id": "hof_ic_tomsky_moscow_trade_union_council",
+      "name": "GFX_hof_ic_tomsky_moscow_trade_union_council",
+      "title": "莫斯科工会理事会",
+      "concept": "Grey October city street with a compact procession of workers walking AWAY into distance, backs only, shoulder-to-shoulder in orderly files, carrying one tightly rolled dark-red cloth banner without text. Foreground ONE cuffed hand extends a small plain paper note toward procession. Low city buildings and heavy clouds, cold grey and dark brown, restrained dark-red cloth. No palace, battle, weapons or border map.",
+      "group": "tomsky",
+      "size": [
+        100,
+        88
+      ],
+      "png": "tomsky/GFX_hof_ic_tomsky_moscow_trade_union_council.png",
+      "source": "tomsky/source/GFX_hof_ic_tomsky_moscow_trade_union_council.png",
+      "generation_record": "tomsky/records/GFX_hof_ic_tomsky_moscow_trade_union_council.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_tomsky_moscow_trade_union_council.dds",
+      "sha256": "e2ee9953187767344521f082719ee4f0182ac1b28880e45dddacc9f92cf765ad"
+    },
+    {
+      "id": "hof_ic_tomsky_central_council_of_trade_unions",
+      "name": "GFX_hof_ic_tomsky_central_council_of_trade_unions",
+      "title": "全苏工会中央理事会",
+      "concept": "Symmetrical domestic workers union hall, converging rows of identical wooden chairs filled with dark worker BACK silhouettes in plain jackets. At bottom foreground edge a long wooden council table with plain documents and one cuffed hand resting upon them. At far wall one modest blank folded cloth banner, no text or symbols. High side windows cast warm white dusty beams. Wood-brown and charcoal, orderly national union assembly, no flags, globe, international spectacle or grand podium.",
+      "group": "tomsky",
+      "size": [
+        100,
+        88
+      ],
+      "png": "tomsky/GFX_hof_ic_tomsky_central_council_of_trade_unions.png",
+      "source": "tomsky/source/GFX_hof_ic_tomsky_central_council_of_trade_unions.png",
+      "generation_record": "tomsky/records/GFX_hof_ic_tomsky_central_council_of_trade_unions.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_tomsky_central_council_of_trade_unions.dds",
+      "sha256": "2105147fca3f9fd4283d4bf4c44ad8c14b65f15886aad1dc3f076bd0b07ba48b"
+    },
+    {
+      "id": "hof_ic_tomsky_platform_of_ten",
+      "name": "GFX_hof_ic_tomsky_platform_of_ten",
+      "title": "「十人纲领」",
+      "concept": "Powerful row of five dark worker backs and shoulders standing shoulder-to-shoulder immediately in front of a tall cold-grey IRON GATE, blocking it. Heads seen only from behind, no facial detail. Gate has a small blank metal plaque. Feet on compacted earth. One narrow warm vertical light beam leaks from gate gap at RIGHT, backlighting silhouettes. Static resolve, charcoal-black silhouettes and cool iron grey, no weapons, cavalry, struggle or violence.",
+      "group": "tomsky",
+      "size": [
+        100,
+        88
+      ],
+      "png": "tomsky/GFX_hof_ic_tomsky_platform_of_ten.png",
+      "source": "tomsky/source/GFX_hof_ic_tomsky_platform_of_ten.png",
+      "generation_record": "tomsky/records/GFX_hof_ic_tomsky_platform_of_ten.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_tomsky_platform_of_ten.dds",
+      "sha256": "1e81e5a69dfe56b63e8b5fa2347c6bd9706a7809135fcbd97067136030a34c5d"
+    },
+    {
+      "id": "hof_ic_tomsky_the_silence_of_1921",
+      "name": "GFX_hof_ic_tomsky_the_silence_of_1921",
+      "title": "1921 年 5 月的沉默",
+      "concept": "Quiet close-up of a vacant wooden lectern surface with ONE untouched neatly stacked set of pale speech manuscript sheets, only faint horizontal rules. At lower foreground a seated persons TWO anatomically correct hands folded together calmly in their lap, sleeves visible but no head or torso. CRUCIAL: a broad clearly visible empty dark gap separates withdrawn hands from the paper stack; hands do not touch or reach for paper. Background blurred empty hall chairs. Small vertical top-light isolates white paper, all surroundings cool dark grey with tiny faint warm highlights. No microphone, mouth, raised hand or gestures.",
+      "group": "tomsky",
+      "size": [
+        100,
+        88
+      ],
+      "png": "tomsky/GFX_hof_ic_tomsky_the_silence_of_1921.png",
+      "source": "tomsky/source/GFX_hof_ic_tomsky_the_silence_of_1921.png",
+      "generation_record": "tomsky/records/GFX_hof_ic_tomsky_the_silence_of_1921.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_tomsky_the_silence_of_1921.dds",
+      "sha256": "16d88ccef31cf80c6c7f74edfb1edf408a96eb93877b18a3242c27ba19948481"
+    },
+    {
+      "id": "hof_ic_tomsky_man_from_tomsk",
+      "name": "GFX_hof_ic_tomsky_man_from_tomsk",
+      "title": "来自托木斯克的人",
+      "concept": "Full concluding composition about choosing a new name on a journey in 1906: wooden table foreground holds one white sheet with a SINGLE short abstract black ink-stroke shape suggesting an unreadable signature, absolutely no actual letters. ONE cuffed hand holds a short plain wooden writing pencil just lifted away after writing, tip above paper. At left an old travel satchel and a pair of worn boots. Behind an OPEN DOOR reveals a white snowy path receding to distant trees, daylight enters from outdoors. Warm-brown wood, paper-white, ink-black and cold snow-white. Hopeful onward journey, no prison, death, weapons or self-harm imagery, no date or numerals.",
+      "group": "tomsky",
+      "size": [
+        100,
+        88
+      ],
+      "png": "tomsky/GFX_hof_ic_tomsky_man_from_tomsk.png",
+      "source": "tomsky/source/GFX_hof_ic_tomsky_man_from_tomsk.png",
+      "generation_record": "tomsky/records/GFX_hof_ic_tomsky_man_from_tomsk.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_tomsky_man_from_tomsk.dds",
+      "sha256": "7c67af17859db6160b32664177d2eaa3dfbdac0a3b36f0a5cb072d21e2f52daa"
+    }
+  ],
+  "completed": "2026-09-19",
+  "count": 103,
+  "integration": "art textures delivered; no script edits",
+  "background": "transparent"
+}

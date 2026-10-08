@@ -1,0 +1,48 @@
+=== afghanistan.txt L2770-2782（无 custom_effect_tooltip 的写法）===
+ 2770: 			}
+ 2771: 			IF = {
+ 2772: 				limit = {
+ 2773: 					has_dlc = "Arms Against Tyranny"
+ 2774: 				}	
+ 2775: 				custom_effect_tooltip = AFG_shipyards_tt_2
+ 2776: 				show_mio_tooltip = AFG_naval_organization
+ 2777: 				mio:AFG_naval_organization = {
+ 2778: 					add_mio_size = 1
+ 2779: 				}
+ 2780: 			}
+ 2781: 		}
+ 2782: 	}
+
+=== afghanistan.txt L908-920 ===
+  908: 		completion_reward = {
+  909: 			IF = {
+  910: 				limit = {
+  911: 					has_dlc = "Arms Against Tyranny"
+  912: 				}
+  913: 				custom_effect_tooltip = invites_mio_tt
+  914: 				show_mio_tooltip = SOV_gaz_organization
+  915: 				mio:SOV_gaz_organization = {
+  916: 					add_mio_size = 3
+  917: 				}
+  918: 				custom_effect_tooltip = generic_skip_one_line_tt
+  919: 			}
+  920: 
+
+=== australia_taog.txt L7055-7068（俄国 MIO）===
+ 7055: 
+ 7056: 		available_if_capitulated = no
+ 7057: 	
+ 7058: 		completion_reward = {
+ 7059: 			if = {
+ 7060: 			    limit = { has_dlc = "Arms Against Tyranny" }
+ 7061: 			    custom_effect_tooltip = generic_skip_one_line_tt
+ 7062: 			    custom_effect_tooltip = available_mio_tt
+ 7063: 			    show_mio_tooltip = SOV_kirov_organization
+ 7064: 			    show_mio_tooltip = SOV_yakovlev_design_bureau_organization
+ 7065: 			}
+ 7066: 			else = {
+ 7067: 			    custom_effect_tooltip = available_designer
+ 7068: 			    show_ideas_tooltip = AST_kirov
+
+=== invites_mio_tt 本地化 ===
+decisions_l_simp_chinese.yml:287  invites_mio_tt: "\n§Y邀请外国军工机构§!："

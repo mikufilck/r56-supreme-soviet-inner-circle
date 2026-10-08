@@ -1,0 +1,103 @@
+﻿################ 1. 立绘贴图路径解析 ################
+  GFX_portrait_SOV_lev_trotsky               => 未注册（需在 hof_ic.gfx 中用裸 .dds 路径自建 sprite）
+  GFX_portrait_SOV_nikolay_bukharin          => 未注册（需在 hof_ic.gfx 中用裸 .dds 路径自建 sprite）
+  GFX_portrait_SOV_aleksey_rykov             => 未注册（需在 hof_ic.gfx 中用裸 .dds 路径自建 sprite）
+  GFX_portrait_SOV_grigory_zinovyev          => gfx/leaders/SOV/portrait_SOV_grigory_zinovyev.dds
+                                                (来自 原版 : interface\_leader_portraits.gfx)
+  GFX_portrait_SOV_lev_kamenev               => gfx/leaders/SOV/portrait_SOV_lev_kamenev.dds
+                                                (来自 原版 : interface\_leader_portraits.gfx)
+  GFX_portrait_SOV_ivan_smirnov              => gfx/leaders/SOV/portrait_SOV_ivan_smirnov.dds
+                                                (来自 原版 : interface\_leader_portraits.gfx)
+  GFX_portrait_SOV_leonid_serebryakov        => 未注册（需在 hof_ic.gfx 中用裸 .dds 路径自建 sprite）
+
+################ 2. 裸 .dds 立绘文件是否存在 ################
+  [有] 托洛茨基           gfx/leaders/SOV/r56_portrait_SOV_Leon_Trotsky.dds  (65,648 字节)
+  [有] 谢列布里亚科夫        gfx/leaders/SOV/r56_portrait_SOV_Leonid_Serebryakov.dds  (65,648 字节)
+
+################ 3. 兜底 text（无 trigger）写法是否存在于官方文件 ################
+  [有] 找到 54 处样例，来自以下文件：
+        原版 / 00_scripted_localisation.txt
+        原版 / 00_scripted_localisation_DE_loc.txt
+        原版 / 00_war_propaganda_scripted_loc.txt
+        原版 / AAT_Denmark_scripted_loc.txt
+        原版 / AAT_finland_scripted_loc.txt
+        原版 / AAT_Iceland_scripted_loc.txt
+        原版 / AAT_Nordics_scripted_loc.txt
+        原版 / AAT_Norway_scripted_loc.txt
+        原版 / AAT_Sweden_scripted_loc.txt
+        原版 / BBA_ethiopia_scripted_loc.txt
+        原版 / BBA_italy_scripted_loc.txt
+        原版 / BBA_Switzerland_scripted_loc.txt
+        原版 / bftb_scripted_localisation.txt
+        原版 / DOD_yugo_infiltration_localisation.txt
+        原版 / FR_SCRIPTING_FULL_AUTOMATED.txt
+        原版 / GOE_RAJ_scripted_loc.txt
+        原版 / MUN_scripted_localisation.txt
+        原版 / NSB_baltic_scripted_loc.txt
+        原版 / NSB_poland_scripted_loc.txt
+        原版 / NSB_soviet_scripted_loc.txt
+        原版 / SEA_CHI_scripted_loc.txt
+        原版 / SEA_JAP_scripted_loc.txt
+        原版 / SEA_PHI_scripted_loc.txt
+        原版 / SEA_PRC_scripted_loc.txt
+        原版 / TAOG_AST_scripted_loc.txt
+        原版 / TAOG_INS_scripted_loc.txt
+        原版 / TAOG_SIA_scripted_loc.txt
+        原版 / TOA_Brazil_scripted_loc.txt
+        原版 / TOA_shared_military_branch_scripted_loc.txt
+        原版 / WTT_china_political_struggle_localisation.txt
+        原版 / WTT_infiltration_localisation.txt
+        原版 / WUW_GER_scripted_loc.txt
+        R56 / 00_scripted_localisation.txt
+        R56 / AUS_scripted_localisation.txt
+        R56 / BBA_ethiopia_scripted_loc.txt
+        R56 / BBA_italy_scripted_loc.txt
+        R56 / CEL_scripted_localisation.txt
+        R56 / Indochina_scripted_localisation.txt
+        R56 / PAL_scripted_localisation.txt
+        R56 / Parties_scripted_localisation.txt
+        R56 / r56_AFG_scripted_localisation.txt
+        R56 / r56_can_scripted_localisation.txt
+        R56 / r56_chinese_gui_scripted_localisation.txt
+        R56 / r56_danish_scripted_localisation.txt
+        R56 / r56_decision_category_wide_picture_definitions.txt
+        R56 / r56_INS_scripted_localisation.txt
+        R56 / r56_ISR_scripted_localisation.txt
+        R56 / r56_JOR_scripted_localisation.txt
+        R56 / r56_LUX_scripted_localisation.txt
+        R56 / r56_MPL_scripted_localisation.txt
+        R56 / r56_scripted_localisation.txt
+        R56 / r56_south_asia_religion_scripted_localisation.txt
+        R56 / r56_subideologies.txt
+        R56 / SIA_scripted_localisation_r56.txt
+  => 无 trigger 的兜底 text 是合法写法，我们的生成文件用法正确。
+
+################ 4. 美术是否已到位（gfx/interface/hof_ic/portraits/）################
+  [无] 目录尚不存在 —— 美术未交付，属预期（并行进行中）。
+
+################ 5. 现有 hof_ic 目录清单 ################
+  gfx\interface\hof_ic :
+        hof_ic_blank_portrait.dds                               131,168 字节
+        hof_ic_candidate_slot.dds                                13,584 字节
+        hof_ic_leader_frame.dds                                 109,028 字节
+        hof_ic_leader_ribbon.dds                                 23,168 字节
+        hof_ic_leader_title_box.dds                              10,248 字节
+        hof_ic_seat_frame_empty.dds                              72,964 字节
+        hof_ic_seat_frame_filled.dds                             72,964 字节
+        hof_ic_seat_name_box.dds                                 15,312 字节
+        hof_ic_seat_trait_box.dds                                24,896 字节
+        hof_ic_spotlight.dds                                  1,265,504 字节
+        hof_ic_window_bg.dds                                  1,471,620 字节
+  common\scripted_effects :
+        hof_ic_scripted_effects.txt                               8,600 字节
+  common\scripted_triggers :
+        hof_ic_scripted_triggers.txt                              4,342 字节
+  common\scripted_localisation :
+        hof_ic_scripted_loc.txt                                  14,347 字节
+  common\focus_inlay_windows :
+        hof_ic_inlay_window.txt                                   2,243 字节
+  interface :
+        hof_ic.gfx                                                2,955 字节
+        hof_ic_scripted_gui.gui                                  18,547 字节
+  localisation\simp_chinese :
+        hof_ic_l_simp_chinese.yml                                   231 字节

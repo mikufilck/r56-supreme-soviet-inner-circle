@@ -1,0 +1,110 @@
+﻿=== 应为【无 BOM】：脚本 .txt / .gui / .mod ===
+  已正确 23 个
+
+=== 应为【带 BOM】：本地化 .yml ===
+
+已修正 0 个文件，其余 25 个本已正确
+=== 1. 括号配平 ===
+  ? gui(.gui)  左 146 / 右 146
+  ? inlay window(.txt)  左 130 / 右 130
+
+=== 2. window_name 与 .gui 窗口名一致 ===
+  ? window_name = hof_ic_ui_window  在 .gui 中找到
+
+=== 3. scripted_images 键 -> .gui 组件名 ===
+  ? scripted_images 键 hof_ic_leader_portrait -> .gui 有同名组件
+  ? scripted_images 键 hof_ic_seat_1_frame -> .gui 有同名组件
+  ? scripted_images 键 hof_ic_seat_1_portrait -> .gui 有同名组件
+  ? scripted_images 键 hof_ic_seat_2_frame -> .gui 有同名组件
+  ? scripted_images 键 hof_ic_seat_2_portrait -> .gui 有同名组件
+  ? scripted_images 键 hof_ic_seat_3_frame -> .gui 有同名组件
+  ? scripted_images 键 hof_ic_seat_3_portrait -> .gui 有同名组件
+  ? scripted_images 键 hof_ic_seat_4_frame -> .gui 有同名组件
+  ? scripted_images 键 hof_ic_seat_4_portrait -> .gui 有同名组件
+  ? scripted_images 键 hof_ic_seat_5_frame -> .gui 有同名组件
+  ? scripted_images 键 hof_ic_seat_5_portrait -> .gui 有同名组件
+  ? scripted_images 键 hof_ic_seat_6_frame -> .gui 有同名组件
+  ? scripted_images 键 hof_ic_seat_6_portrait -> .gui 有同名组件
+  ? scripted_images 键 hof_ic_seat_7_frame -> .gui 有同名组件
+  ? scripted_images 键 hof_ic_seat_7_portrait -> .gui 有同名组件
+
+=== 4. .gui 中 spriteType=\
+\ 的组件 -> 是否有 scripted_images 供给 ===
+  ? hof_ic_leader_portrait  有 scripted_images 供给
+  ? hof_ic_seat_1_frame  有 scripted_images 供给
+  ? hof_ic_seat_1_portrait  有 scripted_images 供给
+  ? hof_ic_seat_2_frame  有 scripted_images 供给
+  ? hof_ic_seat_2_portrait  有 scripted_images 供给
+  ? hof_ic_seat_3_frame  有 scripted_images 供给
+  ? hof_ic_seat_3_portrait  有 scripted_images 供给
+  ? hof_ic_seat_4_frame  有 scripted_images 供给
+  ? hof_ic_seat_4_portrait  有 scripted_images 供给
+  ? hof_ic_seat_5_frame  有 scripted_images 供给
+  ? hof_ic_seat_5_portrait  有 scripted_images 供给
+  ? hof_ic_seat_6_frame  有 scripted_images 供给
+  ? hof_ic_seat_6_portrait  有 scripted_images 供给
+  ? hof_ic_seat_7_frame  有 scripted_images 供给
+  ? hof_ic_seat_7_portrait  有 scripted_images 供给
+
+=== 5. .gui 引用的本地化键 ===
+  ? hof_ic_leader_name_text  在 .yml 中已定义
+  ? hof_ic_leader_title_text  在 .yml 中已定义
+  ? hof_ic_title_text  在 .yml 中已定义
+
+=== 6. .gui 引用的 sprite 是否存在 ===
+  ? GFX_hof_ic_candidate_slot  已定义
+  ? GFX_hof_ic_leader_frame  已定义
+  ? GFX_hof_ic_leader_ribbon  已定义
+  ? GFX_hof_ic_leader_title_box  已定义
+  ? GFX_hof_ic_seat_name_box  已定义
+  ? GFX_hof_ic_seat_trait_box  已定义
+  ? GFX_hof_ic_spotlight  已定义
+  ? GFX_hof_ic_window_bg  已定义
+
+=== 6b. mod 自身 .gfx 的 texturefile 是否存在 ===
+  ? GFX_hof_ic_window_bg -> gfx\interface\hof_ic\hof_ic_window_bg.dds
+  ? GFX_hof_ic_spotlight -> gfx\interface\hof_ic\hof_ic_spotlight.dds
+  ? GFX_hof_ic_leader_frame -> gfx\interface\hof_ic\hof_ic_leader_frame.dds
+  ? GFX_hof_ic_leader_ribbon -> gfx\interface\hof_ic\hof_ic_leader_ribbon.dds
+  ? GFX_hof_ic_leader_title_box -> gfx\interface\hof_ic\hof_ic_leader_title_box.dds
+  ? GFX_hof_ic_seat_frame_empty -> gfx\interface\hof_ic\hof_ic_seat_frame_empty.dds
+  ? GFX_hof_ic_seat_frame_filled -> gfx\interface\hof_ic\hof_ic_seat_frame_filled.dds
+  ? GFX_hof_ic_seat_name_box -> gfx\interface\hof_ic\hof_ic_seat_name_box.dds
+  ? GFX_hof_ic_seat_trait_box -> gfx\interface\hof_ic\hof_ic_seat_trait_box.dds
+  ? GFX_hof_ic_blank_portrait -> gfx\interface\hof_ic\hof_ic_blank_portrait.dds
+  ? GFX_hof_ic_candidate_slot -> gfx\interface\hof_ic\hof_ic_candidate_slot.dds
+  ? GFX_hof_ic_portrait_lev_trotsky -> gfx\leaders\SOV\r56_portrait_SOV_Leon_Trotsky.dds  【引用R56素材】
+  ? GFX_hof_ic_portrait_nikolay_bukharin -> gfx\leaders\SOV\portrait_SOV_nikolay_bukharin.dds  【引用DLC:dlc034_no_step_back素材】
+  ? GFX_hof_ic_portrait_aleksey_rykov -> gfx\leaders\SOV\portrait_SOV_aleksey_rykov.dds  【引用DLC:dlc034_no_step_back素材】
+  ? GFX_hof_ic_portrait_grigory_zinovyev -> gfx\leaders\SOV\portrait_SOV_grigory_zinovyev.dds  【引用原版素材】
+  ? GFX_hof_ic_portrait_lev_kamenev -> gfx\leaders\SOV\portrait_SOV_lev_kamenev.dds  【引用原版素材】
+  ? GFX_hof_ic_portrait_ivan_smirnov -> gfx\leaders\SOV\portrait_SOV_ivan_smirnov.dds  【引用原版素材】
+  ? GFX_hof_ic_portrait_leonid_serebryakov -> gfx\leaders\SOV\r56_portrait_SOV_Leonid_Serebryakov.dds  【引用R56素材】
+  ? GFX_hof_ic_cand_lev_trotsky -> gfx\leaders\SOV\r56_portrait_SOV_Leon_Trotsky.dds  【引用R56素材】
+  ? GFX_hof_ic_cand_nikolay_bukharin -> gfx\leaders\SOV\portrait_SOV_nikolay_bukharin.dds  【引用DLC:dlc034_no_step_back素材】
+  ? GFX_hof_ic_cand_aleksey_rykov -> gfx\leaders\SOV\portrait_SOV_aleksey_rykov.dds  【引用DLC:dlc034_no_step_back素材】
+  ? GFX_hof_ic_cand_grigory_zinovyev -> gfx\leaders\SOV\portrait_SOV_grigory_zinovyev.dds  【引用原版素材】
+  ? GFX_hof_ic_cand_lev_kamenev -> gfx\leaders\SOV\portrait_SOV_lev_kamenev.dds  【引用原版素材】
+  ? GFX_hof_ic_cand_ivan_smirnov -> gfx\leaders\SOV\portrait_SOV_ivan_smirnov.dds  【引用原版素材】
+  ? GFX_hof_ic_cand_leonid_serebryakov -> gfx\leaders\SOV\r56_portrait_SOV_Leonid_Serebryakov.dds  【引用R56素材】
+
+=== 7. 苏联树内的挂载点与可见条件 ===
+  ? soviet.txt 内已声明 inlay_window -> hof_ic_inlay_window
+  ? 可见条件所依赖的国策 SOV_the_supreme_soviet 存在于 soviet.txt
+  ? 注入块无字面量转义序列
+
+=== 8. 本地化文件编码 ===
+  ? hof_ic_l_simp_chinese.yml  BOM / 文件名后缀 / 首行 均正确
+  ? hof_ic_roster_l_simp_chinese.yml  BOM / 文件名后缀 / 首行 均正确
+
+=== 9. S3 交叉引用 ===
+  ? SOV 树里 15 个 hof_ic_* 调用全部有定义
+  ? .gui 里 14 个 context_aware_text 键全部有定义
+  ? 所有 context_aware_text 都带了方括号或引号
+  ? inlay window 里 10 个 sprite 已全部注册
+  ? 动态文本里 16 个本地化键全部有定义
+  ? 7 个入口国策的名称与说明本地化键齐全
+  ? 注入内容与 inject-sov-seats.txt 逐行一致（核对 117 行）
+
+==================== 失败项: 0 ====================
+全部通过，可以启动游戏验证了。

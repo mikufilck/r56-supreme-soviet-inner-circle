@@ -1,0 +1,104 @@
+=== 原版 SOV_align_the_zinovyevites  L11334 ===
+ 11326: 			custom_effect_tooltip = SOV_cooperation_against_stalin_factionalism_tt 
+ 11327: 			add_to_variable = { SOV_factionalism_political_advisor_cost_factor = -0.15 }
+ 11328: 			add_to_variable = { SOV_factionalism_political_power_factor = -0.05 }
+ 11329: 			add_to_variable = { SOV_factionalism_popularity_stability_cost_factor = -0.1 }
+ 11330: 		}
+ 11331: 	}
+ 11332: 
+ 11333: 	focus = {
+ 11334: 		id = SOV_align_the_zinovyevites
+ 11335: 		icon = GFX_focus_SOV_zinovyevists
+ 11336: 		prerequisite = { focus = SOV_cooperation_against_stalin }
+ 11337: 		x = -1
+ 11338: 		y = 1
+ 11339: 		relative_position_id = SOV_cooperation_against_stalin
+ 11340: 		cost = 10
+ 11341: 		available = {
+ 11342: 			SOV_soviet_civil_war_not_started = yes 
+ 11343: 		}
+ 11344: 		                
+ 11345: 		search_filters = {FOCUS_FILTER_SOV_POLITICAL_PARANOIA}
+ 11346: 
+ 11347: 		completion_reward = {
+ 11348: 			SOV_paranoia_medium_increase_effect = yes 
+ 11349: 			custom_effect_tooltip = SOV_align_the_zinovyevites_tt
+ 11350: 			# Modify Factionalism - change tooltip if changing values!!!
+ 11351: 			custom_effect_tooltip = SOV_align_the_zinovyevites_factionalism_tt
+ 11352: 			add_to_variable = { SOV_factionalism_political_power_factor = -0.05 }
+ 11353: 
+ 11354: 			hidden_effect = {
+ 11355: 				if = {
+ 11356: 					limit = {
+ 11357: 						SOV_is_left_opposition = yes 
+ 11358: 					}
+ 11359: 					SOV_grigory_zinovyev = {
+ 11360: 						set_character_flag = SOV_aligned_left_opposition_flag
+ 11361: 						clr_character_flag = SOV_imprisoned_flag
+ 11362: 						set_character_flag = SOV_exiled_flag
+ 11363: 						set_portraits = {
+ 11364: 							army = {
+ 11365: 								small = "GFX_idea_SOV_grigory_zinovyev"
+ 11366: 							}
+ 11367: 						}
+ 11368: 					}
+ 11369: 					SOV_lev_kamenev = {
+ 11370: 						set_character_flag = SOV_aligned_left_opposition_flag
+ 11371: 						clr_character_flag = SOV_imprisoned_flag
+ 11372: 						set_character_flag = SOV_exiled_flag
+ 11373: 						set_portraits = {
+ 11374: 							army = {
+ 11375: 								small = "GFX_idea_SOV_lev_kamenev"
+ 11376: 							}
+ 11377: 						}
+ 11378: 					}
+ 11379: 				}
+ 11380: 				else_if = {
+ 11381: 					limit = {
+ 11382: 						SOV_is_right_opposition = yes 
+ 11383: 					}
+ 11384: 					SOV_grigory_zinovyev = {
+ 11385: 						set_character_flag = SOV_aligned_right_opposition_flag
+ 11386: 						clr_character_flag = SOV_imprisoned_flag
+ 11387: 						set_character_flag = SOV_exiled_flag
+ 11388: 						set_portraits = {
+ 11389: 							army = {
+ 11390: 								small = "GFX_idea_SOV_grigory_zinovyev"
+ 11391: 							}
+ 11392: 						}
+ 11393: 					}
+ 11394: 					SOV_lev_kamenev = {
+ 11395: 						set_character_flag = SOV_aligned_right_opposition_flag
+ 11396: 						clr_character_flag = SOV_imprisoned_flag
+ 11397: 						set_character_flag = SOV_exiled_flag
+ 11398: 						set_portraits = {
+ 11399: 							army = {
+ 11400: 								small = "GFX_idea_SOV_lev_kamenev"
+ 11401: 							}
+ 11402: 						}
+ 11403: 					}
+ 11404: 				}
+ 11405: 			}
+ 11406: 		}
+ 11407: 	}
+ 11408: 
+ 11409: 	focus = {
+ 11410: 		id = SOV_liberate_ryutin
+ 11411: 		icon = GFX_SOV_liberate_ryutin_ccp_2d_sov_compatibility
+ 11412: 		prerequisite = { focus = SOV_cooperation_against_stalin }
+ 11413: 		x = 1
+ 11414: 		y = 1
+ 11415: 		relative_position_id = SOV_cooperation_against_stalin
+ 11416: 		cost = 10
+ 11417: 		available = {
+ 11418: 			SOV_soviet_civil_war_not_started = yes 
+ 11419: 		}
+ 11420: 		                
+ 11421: 		search_filters = {FOCUS_FILTER_SOV_POLITICAL_PARANOIA}
+
+=== 这一段的上下文标题（往前找 focus/id）===
+ 11231: 		id = SOV_sway_the_railway_workers
+ 11253: 		id = SOV_infiltrate_the_nkvd
+ 11278: 		id = SOV_cooperation_against_stalin
+ 11325: 			# Modify Factionalism - change tooltip if changing values!!!
+ 11334: 		id = SOV_align_the_zinovyevites

@@ -1,0 +1,188 @@
+﻿======== 扫描 root（共 49 个，含 DLC）========
+  [MOD                               ] D:\Users\xuwei\PycharmProjects\heart_of_Iron\mod\heart_of_iron
+  [R56                               ] D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125
+  [VAN                               ] F:\Hearts of Iron IV
+  [DLC:dlc001_german_historical_portraits] F:\Hearts of Iron IV\dlc\dlc001_german_historical_portraits
+  [DLC:dlc002_polish_content_pack    ] F:\Hearts of Iron IV\dlc\dlc002_polish_content_pack
+  [DLC:dlc003_rocket_launcher_unit_pack] F:\Hearts of Iron IV\dlc\dlc003_rocket_launcher_unit_pack
+  [DLC:dlc005_heavy_cruisers_unit_pack] F:\Hearts of Iron IV\dlc\dlc005_heavy_cruisers_unit_pack
+  [DLC:dlc006_soviet_tanks_unit_pack ] F:\Hearts of Iron IV\dlc\dlc006_soviet_tanks_unit_pack
+  [DLC:dlc007_german_tanks_unit_pack ] F:\Hearts of Iron IV\dlc\dlc007_german_tanks_unit_pack
+  [DLC:dlc008_french_tanks_unit_pack ] F:\Hearts of Iron IV\dlc\dlc008_french_tanks_unit_pack
+  [DLC:dlc009_british_tanks_unit_pack] F:\Hearts of Iron IV\dlc\dlc009_british_tanks_unit_pack
+  [DLC:dlc010_us_tanks_unit_pack     ] F:\Hearts of Iron IV\dlc\dlc010_us_tanks_unit_pack
+  [DLC:dlc011_german_march_order_music_pack] F:\Hearts of Iron IV\dlc\dlc011_german_march_order_music_pack
+  [DLC:dlc012_allied_radio_music_pack] F:\Hearts of Iron IV\dlc\dlc012_allied_radio_music_pack
+  [DLC:dlc013_sabaton                ] F:\Hearts of Iron IV\dlc\dlc013_sabaton
+  [DLC:dlc014_wallpaper              ] F:\Hearts of Iron IV\dlc\dlc014_wallpaper
+  [DLC:dlc016_artbook                ] F:\Hearts of Iron IV\dlc\dlc016_artbook
+  [DLC:dlc017_original_soundtrack    ] F:\Hearts of Iron IV\dlc\dlc017_original_soundtrack
+  [DLC:dlc019_sabaton_vol2           ] F:\Hearts of Iron IV\dlc\dlc019_sabaton_vol2
+  [DLC:dlc021_anniversary_pack       ] F:\Hearts of Iron IV\dlc\dlc021_anniversary_pack
+  [DLC:dlc024_man_the_guns_wallpaper ] F:\Hearts of Iron IV\dlc\dlc024_man_the_guns_wallpaper
+  [DLC:dlc025_axis_armor_pack        ] F:\Hearts of Iron IV\dlc\dlc025_axis_armor_pack
+  [DLC:dlc026_radio_pack             ] F:\Hearts of Iron IV\dlc\dlc026_radio_pack
+  [DLC:dlc027_la_resistance_preorder_bonus] F:\Hearts of Iron IV\dlc\dlc027_la_resistance_preorder_bonus
+  [DLC:dlc028_la_resistance          ] F:\Hearts of Iron IV\dlc\dlc028_la_resistance
+  [DLC:dlc029_allied_armor_pack      ] F:\Hearts of Iron IV\dlc\dlc029_allied_armor_pack
+  [DLC:dlc030_allied_speeches_pack   ] F:\Hearts of Iron IV\dlc\dlc030_allied_speeches_pack
+  [DLC:dlc031_battle_for_the_bosporus] F:\Hearts of Iron IV\dlc\dlc031_battle_for_the_bosporus
+  [DLC:dlc032_eastern_front_planes_pack] F:\Hearts of Iron IV\dlc\dlc032_eastern_front_planes_pack
+  [DLC:dlc033_songs_of_the_eastern_front] F:\Hearts of Iron IV\dlc\dlc033_songs_of_the_eastern_front
+  [DLC:dlc034_no_step_back           ] F:\Hearts of Iron IV\dlc\dlc034_no_step_back
+  [DLC:dlc035_no_step_back_preorder_bonus] F:\Hearts of Iron IV\dlc\dlc035_no_step_back_preorder_bonus
+  [DLC:dlc036_by_blood_alone         ] F:\Hearts of Iron IV\dlc\dlc036_by_blood_alone
+  [DLC:dlc037_by_blood_alone_preorder_bonus] F:\Hearts of Iron IV\dlc\dlc037_by_blood_alone_preorder_bonus
+  [DLC:dlc038_arms_against_tyranny   ] F:\Hearts of Iron IV\dlc\dlc038_arms_against_tyranny
+  [DLC:dlc039_arms_against_tyranny_preorder_bonus] F:\Hearts of Iron IV\dlc\dlc039_arms_against_tyranny_preorder_bonus
+  [DLC:dlc040_trial_of_allegiance    ] F:\Hearts of Iron IV\dlc\dlc040_trial_of_allegiance
+  [DLC:dlc041_trial_of_allegiance_preorder_bonus] F:\Hearts of Iron IV\dlc\dlc041_trial_of_allegiance_preorder_bonus
+  [DLC:dlc042_content_creator_pack_soviet_union_2d_art] F:\Hearts of Iron IV\dlc\dlc042_content_creator_pack_soviet_union_2d_art
+  [DLC:dlc043_gotterdammerung        ] F:\Hearts of Iron IV\dlc\dlc043_gotterdammerung
+  [DLC:dlc044_expansion_pass_1_ride_of_the_valkyries] F:\Hearts of Iron IV\dlc\dlc044_expansion_pass_1_ride_of_the_valkyries
+  [DLC:dlc045_expansion_pass_1_supporter_pack] F:\Hearts of Iron IV\dlc\dlc045_expansion_pass_1_supporter_pack
+  [DLC:dlc046_graveyard_of_empires   ] F:\Hearts of Iron IV\dlc\dlc046_graveyard_of_empires
+  [DLC:dlc047_prototype_vehicles     ] F:\Hearts of Iron IV\dlc\dlc047_prototype_vehicles
+  [DLC:dlc048_expansion_pass_2_seaplane_tenders] F:\Hearts of Iron IV\dlc\dlc048_expansion_pass_2_seaplane_tenders
+  [DLC:dlc049_no_compromise_no_surrender] F:\Hearts of Iron IV\dlc\dlc049_no_compromise_no_surrender
+  [DLC:dlc050_warships_of_the_pacific] F:\Hearts of Iron IV\dlc\dlc050_warships_of_the_pacific
+  [DLC:dlc051_peace_for_our_time     ] F:\Hearts of Iron IV\dlc\dlc051_peace_for_our_time
+  [DLC:dlc052_thunder_at_our_gates   ] F:\Hearts of Iron IV\dlc\dlc052_thunder_at_our_gates
+
+索引磁盘文件……
+  大图 5063 个 / 小图 8657 个 / sprite 39288 条
+
+======== 逐个核对 ========
+
+角色 id                    中文名                      营        状态     大图     小图     角色块
+----------------------------------------------------------------------------------------------------------------------
+SOV_lev_trotsky          列夫·托洛茨基                  left     收      Y      Y      Y
+      大图[全名          ] D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125\gfx\leaders\SOV\r56_portrait_SOV_Leon_Trotsky.dds
+      小图[角色块         ] F:\Hearts of Iron IV\gfx\interface\ideas\idea_SOV_lev_trotsky.dds
+SOV_yevgeny_preobrazhensky 叶夫根尼·普列奥布拉任斯基            left     收      Y      Y      Y
+      大图[全名          ] D:\Users\xuwei\PycharmProjects\heart_of_Iron\mod\heart_of_iron\gfx\interface\hof_ic\portraits\hof_portrait_SOV_yevgeny_preobrazhensky.dds
+      小图[角色块         ] F:\Hearts of Iron IV\gfx\interface\ideas\idea_SOV_yevgeny_preobrazhensky.dds
+SOV_karl_radek           卡尔·拉狄克                   left     收      Y      Y      Y
+      大图[全名          ] D:\Users\xuwei\PycharmProjects\heart_of_Iron\mod\heart_of_iron\gfx\interface\hof_ic\portraits\hof_portrait_SOV_karl_radek.dds
+      小图[角色块         ] F:\Hearts of Iron IV\gfx\interface\ideas\idea_SOV_karl_radek.dds
+SOV_ivar_smilga          伊瓦尔·斯米尔加                 left     收      Y      Y      Y
+      大图[全名          ] D:\Users\xuwei\PycharmProjects\heart_of_Iron\mod\heart_of_iron\gfx\interface\hof_ic\portraits\hof_portrait_SOV_ivar_smilga.dds
+      小图[角色块         ] F:\Hearts of Iron IV\gfx\interface\ideas\idea_SOV_ivar_smilga_imprisoned.dds
+SOV_ivan_smirnov         伊万·斯米尔诺夫                 left     收      Y      Y      Y
+      大图[角色块         ] F:\Hearts of Iron IV\gfx\leaders\SOV\portrait_SOV_ivan_smirnov.dds
+      小图[角色块         ] F:\Hearts of Iron IV\gfx\interface\ideas\idea_SOV_ivan_smirnov_imprisoned.dds
+SOV_leonid_serebryakov   列昂尼德·谢列布里亚科夫             left     收      Y      -      -
+      大图[全名          ] D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125\gfx\leaders\SOV\r56_portrait_SOV_Leonid_Serebryakov.dds
+SOV_nikolay_bukharin     尼古拉·布哈林                  right    收      Y      Y      Y
+      大图[角色块         ] F:\Hearts of Iron IV\dlc\dlc034_no_step_back\gfx\leaders\SOV\portrait_SOV_nikolay_bukharin.dds
+      小图[角色块         ] F:\Hearts of Iron IV\gfx\interface\ideas\idea_SOV_nikolay_bukharin.dds
+SOV_aleksey_rykov        阿列克谢·李可夫                 right    收      Y      Y      Y
+      大图[角色块         ] F:\Hearts of Iron IV\dlc\dlc034_no_step_back\gfx\leaders\SOV\portrait_SOV_aleksey_rykov.dds
+      小图[角色块         ] F:\Hearts of Iron IV\gfx\interface\ideas\idea_SOV_aleksey_rykov.dds
+SOV_mikhail_tomsky       米哈伊尔·托姆斯基                right    收      Y      Y      Y
+      大图[全名          ] D:\Users\xuwei\PycharmProjects\heart_of_Iron\mod\heart_of_iron\gfx\interface\hof_ic\portraits\hof_portrait_SOV_mikhail_tomsky.dds
+      小图[角色块         ] F:\Hearts of Iron IV\gfx\interface\ideas\idea_SOV_mikhail_tomsky.dds
+SOV_martemyan_ryutin     马尔特米扬·里亚京                right    收      Y      Y      Y
+      大图[全名          ] D:\Users\xuwei\PycharmProjects\heart_of_Iron\mod\heart_of_iron\gfx\interface\hof_ic\portraits\hof_portrait_SOV_martemyan_ryutin.dds
+      小图[角色块         ] F:\Hearts of Iron IV\gfx\interface\ideas\idea_SOV_martemyan_ryutin_imprisoned.dds
+SOV_grigory_zinovyev     格里戈里·季诺维也夫               united   收      Y      Y      Y
+      大图[角色块         ] F:\Hearts of Iron IV\gfx\leaders\SOV\portrait_SOV_grigory_zinovyev.dds
+      小图[角色块         ] F:\Hearts of Iron IV\gfx\interface\ideas\idea_SOV_grigory_zinovyev_imprisoned.dds
+SOV_lev_kamenev          列夫·加米涅夫                  united   收      Y      Y      Y
+      大图[角色块         ] F:\Hearts of Iron IV\gfx\leaders\SOV\portrait_SOV_lev_kamenev.dds
+      小图[角色块         ] F:\Hearts of Iron IV\gfx\interface\ideas\idea_SOV_lev_kamenev_imprisoned.dds
+SOV_aleksandr_shlyapnikov 亚历山大·施利亚普尼科夫             workers  收      Y      Y      Y
+      大图[全名          ] D:\Users\xuwei\PycharmProjects\heart_of_Iron\mod\heart_of_iron\gfx\interface\hof_ic\portraits\hof_portrait_SOV_aleksandr_shlyapnikov.dds
+      小图[角色块         ] F:\Hearts of Iron IV\gfx\interface\ideas\idea_SOV_aleksandr_shlyapnikov_imprisoned.dds
+SOV_mikhail_kalinin      米哈伊尔·加里宁                 neutral  收      -      Y      Y
+      小图[角色块         ] F:\Hearts of Iron IV\gfx\interface\ideas\idea_mikhail_kalinin.dds
+SOV_maksim_litvinov      马克西姆·李维诺夫                neutral  收      -      Y      Y
+      小图[角色块         ] F:\Hearts of Iron IV\gfx\interface\ideas\idea_SOV_maksim_litvinov.dds
+SOV_grigory_sokolnikov   格里戈里·索柯里尼柯夫              neutral  收      Y      Y      Y
+      大图[全名          ] D:\Users\xuwei\PycharmProjects\heart_of_Iron\mod\heart_of_iron\gfx\interface\hof_ic\portraits\hof_portrait_SOV_grigory_sokolnikov.dds
+      小图[角色块         ] F:\Hearts of Iron IV\gfx\interface\ideas\idea_SOV_grigory_sokolnikov.dds
+SOV_mikhail_tukhachevsky 米哈伊尔·图哈切夫斯基              neutral  收      Y      Y      Y
+      大图[全名          ] F:\Hearts of Iron IV\gfx\leaders\SOV\Portrait_Soviet_Mikhail_Tukhachevsky.dds
+      小图[角色块         ] F:\Hearts of Iron IV\gfx\interface\ideas\idea_mikhail_tukhachevsky.dds
+SOV_nikolay_voznesensky  尼古拉·沃兹涅先斯基               neutral  收      -      Y      Y
+      小图[角色块         ] F:\Hearts of Iron IV\gfx\interface\ideas\idea_SOV_nikolay_voznesensky.dds
+SOV_pyotr_smirnov        彼得·斯米尔诺夫                 neutral  收      -      Y      Y
+      小图[角色块         ] F:\Hearts of Iron IV\gfx\interface\ideas\idea_pyotr_smirnov.dds
+SOV_grigory_ordzhonikidze 格里戈里·奥尔忠尼启则              neutral  删      -      -      -
+SOV_felix_dzerzhinsky    费利克斯·捷尔任斯基               neutral  删      -      -      -
+SOV_valerian_kuibyshev   瓦列里安·古比雪夫                neutral  删      -      -      -
+SOV_sergei_kirov         谢尔盖·基洛夫                  neutral  删      -      -      -
+SOV_anastas_mikoyan      阿纳斯塔斯·米高扬                neutral  删      -      -      -
+SOV_grigory_pyatakov     格里戈里·皮达可夫                neutral  删      -      -      -
+SOV_nikolai_muralov      尼古拉·穆拉洛夫                 neutral  删      -      -      -
+SOV_alexandra_kollontai  亚历山德拉·柯伦泰                neutral  删      -      -      -
+SOV_vyacheslav_molotov   维亚切斯拉夫·莫洛托夫              regime   移出     -      Y      Y
+      小图[角色块         ] F:\Hearts of Iron IV\gfx\interface\ideas\idea_SOV_vyacheslav_molotov.dds
+SOV_lazar_kaganovich     拉扎尔·卡加诺维奇                regime   移出     -      Y      Y
+      小图[角色块         ] F:\Hearts of Iron IV\gfx\interface\ideas\idea_SOV_lazar_kaganovich.dds
+SOV_kliment_voroshilov   克利缅特·伏罗希洛夫               regime   移出     Y      Y      Y
+      大图[全名          ] F:\Hearts of Iron IV\gfx\leaders\SOV\Portrait_Soviet_Kliment_Voroshilov.dds
+      小图[角色块         ] F:\Hearts of Iron IV\gfx\interface\ideas\idea_kliment_voroshilov.dds
+SOV_georgy_malenkow      格奥尔基·马林科夫                regime   移出     Y      -      Y
+      大图[全名          ] D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125\gfx\leaders\SOV\r56_portrait_SOV_Georgy_Malenkov.dds
+SOV_nikita_khrushchyov   尼基塔·赫鲁晓夫                 regime   移出     Y      Y      Y
+      大图[全名          ] D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125\gfx\leaders\SOV\r56_portrait_SOV_Nikita_Khrushchev.dds
+      小图[角色块         ] F:\Hearts of Iron IV\gfx\interface\ideas\idea_nikita_khrushchev.dds
+SOV_lavrenty_beriya      拉夫连季·贝利亚                 regime   移出     Y      Y      Y
+      大图[角色块         ] F:\Hearts of Iron IV\gfx\leaders\SOV\portrait_SOV_lavrenty_beriya.dds
+      小图[角色块         ] F:\Hearts of Iron IV\gfx\interface\ideas\idea_SOV_lavrenty_beriya.dds
+SOV_nikolay_yezhov       尼古拉·叶若夫                  regime   移出     Y      Y      Y
+      大图[姓氏          ] D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125\gfx\leaders\SOV\r56_portrait_SOV_Nikolai_Yezhov.dds
+      小图[角色块         ] F:\Hearts of Iron IV\gfx\interface\ideas\idea_SOV_nikolay_yezhov.dds
+SOV_genrikh_yagoda       亨里希·亚戈达                  regime   移出     -      Y      Y
+      小图[角色块         ] F:\Hearts of Iron IV\gfx\interface\ideas\idea_SOV_genrikh_yagoda.dds
+SOV_vsevolod_merkulov    弗谢沃洛德·梅尔库洛夫              regime   移出     -      Y      Y
+      小图[角色块         ] F:\Hearts of Iron IV\gfx\interface\ideas\idea_soviet_vsevolod_merkulov.dds
+
+======================================================================================================================
+### 汇总
+======================================================================================================================
+
+【19 人池】大图 15 / 只有小图 4 / 都没有 0
+
+--- ★ 仍缺大图（要交给出图方）---
+   SOV_maksim_litvinov        马克西姆·李维诺夫                neutral  有小图可作参照
+   SOV_mikhail_kalinin        米哈伊尔·加里宁                 neutral  有小图可作参照
+   SOV_nikolay_voznesensky    尼古拉·沃兹涅先斯基               neutral  有小图可作参照
+   SOV_pyotr_smirnov          彼得·斯米尔诺夫                 neutral  有小图可作参照
+
+--- 已有大图 ---
+   SOV_ivan_smirnov           伊万·斯米尔诺夫                 left     [角色块]
+   SOV_ivar_smilga            伊瓦尔·斯米尔加                 left     [全名]
+   SOV_karl_radek             卡尔·拉狄克                   left     [全名]
+   SOV_leonid_serebryakov     列昂尼德·谢列布里亚科夫             left     [全名]
+   SOV_lev_trotsky            列夫·托洛茨基                  left     [全名]
+   SOV_yevgeny_preobrazhensky 叶夫根尼·普列奥布拉任斯基            left     [全名]
+   SOV_grigory_sokolnikov     格里戈里·索柯里尼柯夫              neutral  [全名]
+   SOV_mikhail_tukhachevsky   米哈伊尔·图哈切夫斯基              neutral  [全名]
+   SOV_aleksey_rykov          阿列克谢·李可夫                 right    [角色块]
+   SOV_martemyan_ryutin       马尔特米扬·里亚京                right    [全名]
+   SOV_mikhail_tomsky         米哈伊尔·托姆斯基                right    [全名]
+   SOV_nikolay_bukharin       尼古拉·布哈林                  right    [角色块]
+   SOV_grigory_zinovyev       格里戈里·季诺维也夫               united   [角色块]
+   SOV_lev_kamenev            列夫·加米涅夫                  united   [角色块]
+   SOV_aleksandr_shlyapnikov  亚历山大·施利亚普尼科夫             workers  [全名]
+
+--- 已删 / 已移出（仅登记，供日后复查）---
+   [删   ] SOV_alexandra_kollontai    亚历山德拉·柯伦泰                大- 小- 块-
+   [删   ] SOV_anastas_mikoyan        阿纳斯塔斯·米高扬                大- 小- 块-
+   [删   ] SOV_felix_dzerzhinsky      费利克斯·捷尔任斯基               大- 小- 块-
+   [删   ] SOV_grigory_ordzhonikidze  格里戈里·奥尔忠尼启则              大- 小- 块-
+   [删   ] SOV_grigory_pyatakov       格里戈里·皮达可夫                大- 小- 块-
+   [删   ] SOV_nikolai_muralov        尼古拉·穆拉洛夫                 大- 小- 块-
+   [删   ] SOV_sergei_kirov           谢尔盖·基洛夫                  大- 小- 块-
+   [删   ] SOV_valerian_kuibyshev     瓦列里安·古比雪夫                大- 小- 块-
+   [移出  ] SOV_genrikh_yagoda         亨里希·亚戈达                  大- 小Y 块Y
+   [移出  ] SOV_georgy_malenkow        格奥尔基·马林科夫                大Y 小- 块Y
+   [移出  ] SOV_kliment_voroshilov     克利缅特·伏罗希洛夫               大Y 小Y 块Y
+   [移出  ] SOV_lavrenty_beriya        拉夫连季·贝利亚                 大Y 小Y 块Y
+   [移出  ] SOV_lazar_kaganovich       拉扎尔·卡加诺维奇                大- 小Y 块Y
+   [移出  ] SOV_nikita_khrushchyov     尼基塔·赫鲁晓夫                 大Y 小Y 块Y
+   [移出  ] SOV_nikolay_yezhov         尼古拉·叶若夫                  大Y 小Y 块Y
+   [移出  ] SOV_vsevolod_merkulov      弗谢沃洛德·梅尔库洛夫              大- 小Y 块Y
+   [移出  ] SOV_vyacheslav_molotov     维亚切斯拉夫·莫洛托夫              大- 小Y 块Y

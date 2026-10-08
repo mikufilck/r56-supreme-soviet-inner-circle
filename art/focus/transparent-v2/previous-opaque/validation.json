@@ -1,0 +1,270 @@
+{
+  "result": "PASS",
+  "count": 24,
+  "assets": [
+    {
+      "name": "GFX_hof_ic_seat_lev_trotsky",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS"
+    },
+    {
+      "name": "GFX_hof_ic_seat_nikolay_bukharin",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS"
+    },
+    {
+      "name": "GFX_hof_ic_seat_aleksey_rykov",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS"
+    },
+    {
+      "name": "GFX_hof_ic_seat_grigory_zinovyev",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS"
+    },
+    {
+      "name": "GFX_hof_ic_seat_lev_kamenev",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS"
+    },
+    {
+      "name": "GFX_hof_ic_seat_ivan_smirnov",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS"
+    },
+    {
+      "name": "GFX_hof_ic_seat_leonid_serebryakov",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS"
+    },
+    {
+      "name": "GFX_hof_ic_trotsky_build_the_red_army",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS"
+    },
+    {
+      "name": "GFX_hof_ic_trotsky_military_specialists",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS"
+    },
+    {
+      "name": "GFX_hof_ic_trotsky_against_partisan_warfare",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS"
+    },
+    {
+      "name": "GFX_hof_ic_trotsky_uneven_and_combined_development",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS"
+    },
+    {
+      "name": "GFX_hof_ic_trotsky_permanent_revolution",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS"
+    },
+    {
+      "name": "GFX_hof_ic_trotsky_socialism_in_one_country",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS"
+    },
+    {
+      "name": "GFX_hof_ic_trotsky_the_new_course",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS"
+    },
+    {
+      "name": "GFX_hof_ic_trotsky_against_the_bureaucracy",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS"
+    },
+    {
+      "name": "GFX_hof_ic_trotsky_limited_market_reforms",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS"
+    },
+    {
+      "name": "GFX_hof_ic_trotsky_labour_armies",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS"
+    },
+    {
+      "name": "GFX_hof_ic_trotsky_state_planning",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS"
+    },
+    {
+      "name": "GFX_hof_ic_trotsky_accelerated_industrialization",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS"
+    },
+    {
+      "name": "GFX_hof_ic_trotsky_the_comintern_manifesto",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS"
+    },
+    {
+      "name": "GFX_hof_ic_trotsky_the_chinese_question",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS"
+    },
+    {
+      "name": "GFX_hof_ic_trotsky_united_front",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS"
+    },
+    {
+      "name": "GFX_hof_ic_trotsky_the_permanent_revolutionary",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS"
+    },
+    {
+      "name": "GFX_hof_ic_trotsky_the_builder_of_the_state",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS"
+    }
+  ]
+}

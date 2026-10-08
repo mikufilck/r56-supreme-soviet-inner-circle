@@ -1,0 +1,38 @@
+﻿解析到角色块: 163 个
+
+角色                             有无立绘     立绘路径 / sprite                                              需要我们注册的 sprite 名
+----------------------------------------------------------------------------------------------------------------------------------
+SOV_lev_trotsky                有        g                                                          GFX_hof_ic_portrait_lev_trotsky
+      ?? 该 .dds 文件在两边都找不到
+SOV_karl_radek                 有        G                                                          （已是 sprite，直接用）
+SOV_yevgeny_preobrazhensky     有        G                                                          （已是 sprite，直接用）
+SOV_ivar_smilga                有        G                                                          （已是 sprite，直接用）
+SOV_ivan_smirnov               有        GFX_idea_SOV_ivan_smirnov_imprisoned                       （已是 sprite，直接用）
+SOV_grigory_zinovyev           有        GFX_idea_SOV_grigory_zinovyev_imprisoned                   （已是 sprite，直接用）
+SOV_lev_kamenev                有        GFX_idea_SOV_lev_kamenev_imprisoned                        （已是 sprite，直接用）
+SOV_nikolay_bukharin           有        GFX_idea_SOV_nikolay_bukharin                              （已是 sprite，直接用）
+SOV_aleksey_rykov              有        GFX_idea_SOV_aleksey_rykov                                 （已是 sprite，直接用）
+SOV_mikhail_tomsky             有        G                                                          （已是 sprite，直接用）
+SOV_martemyan_ryutin           有        G                                                          （已是 sprite，直接用）
+SOV_grigory_sokolnikov         有        G                                                          （已是 sprite，直接用）
+SOV_aleksandr_shlyapnikov      有        G                                                          （已是 sprite，直接用）
+SOV_leonid_serebryakov         -        【角色块不存在】                                                   -
+SOV_boris_shteifon             有        g                                                          GFX_hof_ic_portrait_boris_shteifon
+      ?? 该 .dds 文件在两边都找不到
+SOV_vyacheslav_molotov         有        G                                                          （已是 sprite，直接用）
+SOV_lazar_kaganovich           有        G                                                          （已是 sprite，直接用）
+SOV_mikhail_kalinin            有        G                                                          （已是 sprite，直接用）
+SOV_kliment_voroshilov         有        G                                                          （已是 sprite，直接用）
+SOV_mikhail_tukhachevsky       有        g                                                          GFX_hof_ic_portrait_mikhail_tukhachevsky
+      ?? 该 .dds 文件在两边都找不到
+SOV_maksim_litvinov            有        G                                                          （已是 sprite，直接用）
+SOV_supreme_soviet             无        （portraits 块为空）                                            -
+----------------------------------------------------------------------------------------------------------------------------------
+20 / 22 个角色有立绘
+
+=== 领袖位 SOV_supreme_soviet 的立绘 ===
+{
+			civilian = {
+				large = GFX_portrait_SOV_supreme_soviet
+			}
+		}

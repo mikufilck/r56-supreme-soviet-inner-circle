@@ -1,0 +1,31 @@
+﻿======== 德国核心圈升格国策图标（入口国策参考）========
+  [原版] GFX_focus_GER_ascension_of_todt
+          -> F:\Hearts of Iron IV\gfx\interface\goals\focus_GER_ascension_of_todt.dds   (存在)
+  [原版] GFX_focus_GER_ascension_of_speer
+          -> F:\Hearts of Iron IV\gfx\interface\goals\focus_GER_ascension_of_speer.dds   (存在)
+  [原版] GFX_focus_GER_ascension_of_goring
+          -> F:\Hearts of Iron IV\gfx\interface\goals\focus_GER_ascension_of_goring.dds   (存在)
+  [原版] GFX_focus_GER_ascension_of_himmler
+          -> F:\Hearts of Iron IV\gfx\interface\goals\focus_GER_ascension_of_himmler.dds   (存在)
+  [原版] GFX_focus_GER_ascension_of_goebbels
+          -> F:\Hearts of Iron IV\gfx\interface\goals\focus_GER_ascension_of_goebbels.dds   (存在)
+  [原版] GFX_focus_GER_party_chancellor_hess
+          -> F:\Hearts of Iron IV\gfx\interface\goals\focus_GER_party_chancellor_hess.dds   (存在)
+
+======== 苏联国策图标（其余国策的风格基准）========
+  [原版] GFX_focus_SOV_organize_wreckers
+          -> F:\Hearts of Iron IV\gfx\interface\goals\focus_SOV_organize_wreckers.dds   (存在)
+  [原版] GFX_focus_SOV_the_supreme_soviet
+          -> F:\Hearts of Iron IV\gfx\interface\goals\focus_SOV_the_supreme_soviet.dds   (存在)
+  [R56 ] GFX_goal_SOV_trotsky_victory
+          -> D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125\gfx\interface\goals\sov\r56_goal_SOV_trotsky_victory.dds   (存在)
+  [原版] GFX_focus_generic_soviet_politics
+          -> F:\Hearts of Iron IV\gfx\interface\goals\focus_generic_soviet_politics.dds   (存在)
+  [R56 ] GFX_goal_arrests
+          -> D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125\gfx\interface\goals\generic\r56_goal_generic_arrests.dds   (存在)
+  [R56 ] GFX_generic_goal_communist_reforms
+          -> D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125\gfx\interface\goals\generic\r56_goal_generic_communist_reforms.dds   (存在)
+  [原版] GFX_goal_support_fourth_int
+          -> F:\Hearts of Iron IV\gfx\interface\goals\goal_support_fourth_int.dds   (存在)
+  [未找到] GFX_focus_generic_soviet_army
+  [未找到] GFX_focus_SOV_the_peoples_revolution

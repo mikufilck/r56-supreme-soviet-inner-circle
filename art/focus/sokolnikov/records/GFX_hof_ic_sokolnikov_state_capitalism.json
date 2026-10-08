@@ -1,0 +1,17 @@
+{
+  "id": "hof_ic_sokolnikov_state_capitalism",
+  "name": "GFX_hof_ic_sokolnikov_state_capitalism",
+  "title": "国家资本主义",
+  "concept": "A single silver-gray metal coin STANDING upright in the exact center of a dark plane, casting a long shadow behind it that has the crisp recognizable silhouette of a factory complex: a low row of sheds and a few unlit smokestacks. The factory exists ONLY as the coin's dark shadow, no real buildings, no smoke or gears, no workers, no second coin or money pile. Limited metallic gray palette.",
+  "group": "sokolnikov",
+  "size": [
+    100,
+    88
+  ],
+  "prompt": "Create ONE finished Hearts of Iron IV Soviet national focus icon. Use the attached image only as a stylistic reference for the outer engraved gold laurel wreath, small red star and blank gold ribbon; create an entirely new central scene. A single silver-gray metal coin STANDING upright in the exact center of a dark plane, casting a long shadow behind it that has the crisp recognizable silhouette of a factory complex: a low row of sheds and a few unlit smokestacks. The factory exists ONLY as the coin's dark shadow, no real buildings, no smoke or gears, no workers, no second coin or money pile. Limited metallic gray palette. Central-image style: low-saturation ivory-and-plaster-gray sculptural relief, restrained 1930s Soviet historical icon, tactile surfaces and clean silhouette readable at 100×88. Saturated red/gold belongs only to the common ornamental frame unless it is inherently the color of a specified central object. Keep central objects inside laurels. Exactly one centered emblem in square canvas. TRUE RGBA transparent background outside wreath and ribbon, alpha 0 all four corners, broad transparent exterior (20–50 percent total pixels). No typography, readable letters or numbers, watermark, faces, people, guns, prison, trials, flags, maps, ledgers, lists, grid charts, drawer, opened book, letters, classroom, rulers, scales, scissors, gears, trains, drawing pen, or military emblems. Render one final production asset, not a mockup or sheet.",
+  "references": [
+    "D:/Users/xuwei/PycharmProjects/heart_of_Iron/art/focus/bukharin/source/GFX_hof_ic_bukharin_proportional_development.png"
+  ],
+  "generated_path": "C:\\Users\\xuwei\\.codex\\generated_images\\01a09af5-fd43-79a0-a3cc-72284cd67cbc\\exec-cef17736-0de1-4707-a461-030bf42b1d03.png",
+  "mode": "built-in image_gen"
+}

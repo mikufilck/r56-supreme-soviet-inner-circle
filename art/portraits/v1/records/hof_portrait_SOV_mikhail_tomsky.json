@@ -1,0 +1,12 @@
+{
+  "name": "hof_portrait_SOV_mikhail_tomsky",
+  "label": "Mikhail Tomsky / 米哈伊尔·托姆斯基",
+  "prompt": "Use case: identity-preserve. Create ONE finished HOI4 Soviet leader portrait, painted reconstruction/upscale from the supplied tiny game icon. Image 1 is the authoritative IDENTITY reference: preserve this specific face, apparent age, facial proportions, hairline, hair/facial hair and expression. Images 2 and 3 are STYLE and COMPOSITION references only (Kamenev and Trotsky); do not copy their faces. Remove all icon framing, document/paper overlays, bars and UI embellishments. Extend naturally into a head-and-shoulders portrait ending at upper chest, face prominent and fully visible, centered or slightly left, facing the same direction as the small reference. Match the large samples: restrained realistic hand-painted oil/colorized photograph, muted brown grey / cool slate palette, soft upper-left key light, fine subdued brush texture, believable skin, dignified unexaggerated features. Plain warm grey-beige background matching the reference portraits, faint subtle tonal variation only; no scenery, vignette frame, symbols, writing, borders or watermark. Portrait canvas ratio exactly 156:210, e.g. 936x1260, whole crown and shoulders inside. Final use is 156x210 px so clear recognizable facial landmarks matter more than tiny detail. PNG output; uniform background may be opaque as in samples.\nSubject: Mikhail Tomsky / 米哈伊尔·托姆斯基. Retain the small reference man's dark period flat cap, dark small moustache, broad nose and serious direct gaze, robust middle-aged face with clean-shaven chin. Complete a dark civilian jacket, white shirt and subdued tie. Preserve the distinct reference face; do not give him Radek's glasses, pointed beard or narrow face.",
+  "source": "C:\\Users\\xuwei\\.codex\\generated_images\\01a09af5-fd43-79a0-a3cc-72284cd67cbc\\exec-be2e1bba-78d0-47bf-9d8c-f7b0f7cd8a83.png",
+  "reference": "references/hof_portrait_SOV_mikhail_tomsky.png",
+  "size": [
+    156,
+    210
+  ],
+  "mode": "built-in image_gen"
+}

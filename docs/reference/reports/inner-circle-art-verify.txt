@@ -1,0 +1,33 @@
+﻿文件                                 实际尺寸         规格尺寸         位深 结果
+----------------------------------------------------------------------------------------
+hof_ic_window_bg              631 x 583      631x583       32 位 ?
+hof_ic_spotlight              588 x 538      588x538       32 位 ?
+hof_ic_leader_frame           165 x 165      165x165       32 位 ?
+hof_ic_leader_ribbon           160 x 36       160x36       32 位 ?
+hof_ic_leader_title_box        115 x 22       115x22       32 位 ?
+hof_ic_seat_frame_empty       131 x 139      131x139       32 位 ?
+hof_ic_seat_frame_filled      131 x 139      131x139       32 位 ?
+hof_ic_seat_name_box           146 x 26       146x26       32 位 ?
+hof_ic_seat_trait_box          144 x 43       144x43       32 位 ?
+hof_ic_blank_portrait         156 x 210      156x210       32 位 ?
+hof_ic_candidate_slot           58 x 58        58x58       32 位 ?
+----------------------------------------------------------------------------------------
+缺失 0 个 / 异常 0 个 / 共 11 项
+
+=== 目录实际内容 ===
+
+Name                          Length
+----                          ------
+hof_ic_blank_portrait.dds     131168
+hof_ic_candidate_slot.dds      13584
+hof_ic_leader_frame.dds       109028
+hof_ic_leader_ribbon.dds       23168
+hof_ic_leader_title_box.dds    10248
+hof_ic_seat_frame_empty.dds    72964
+hof_ic_seat_frame_filled.dds   72964
+hof_ic_seat_name_box.dds       15312
+hof_ic_seat_trait_box.dds      24896
+hof_ic_spotlight.dds         1265504
+hof_ic_window_bg.dds         1471620
+
+

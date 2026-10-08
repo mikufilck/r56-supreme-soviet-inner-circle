@@ -1,0 +1,615 @@
+# hof:dec-begin SOV_gosproyektstroy_bring_foreign_experts
+	SOV_gosproyektstroy_bring_foreign_experts = {
+		priority = 50
+
+		icon = hol_attract_foreign_investors
+
+		ai_will_do = {
+			base = 10
+		}
+
+		targets = { USA ENG GER JAP }
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		# hof 2026-09-25：原版是「4 选 1，选过就锁死」。现在改成【4 国任意顺序、都能做】：
+		#   · target_trigger 只筛未邀请国家，保留目标按钮；外交条件沿用原版 available。
+		#   · fire_only_once 由 yes 改 no（本卡要用 4 次，每国一次）。
+		#   · 进度 = 7 个布尔 flag（hof_gos_usa/eng/ger/jap + hof_gos_civ/mil/dock）。
+		target_trigger = {
+			OR = {
+				AND = { FROM = { tag = USA }  NOT = { has_country_flag = hof_gos_usa } }
+				AND = { FROM = { tag = ENG }  NOT = { has_country_flag = hof_gos_eng } }
+				AND = { FROM = { tag = GER }  NOT = { has_country_flag = hof_gos_ger } }
+				AND = { FROM = { tag = JAP }  NOT = { has_country_flag = hof_gos_jap } }
+			}
+		}
+
+		days_remove = SOV_gosproyektstroy_decision_time
+
+		fire_only_once = no
+
+		visible = {
+			NOT = { has_country_flag = hof_gos_country_phase_done }
+		}
+
+		available = {
+			NOT = { has_country_flag = hof_gos_country_phase_done }
+			NOT = { has_country_flag = SOV_gosproyektstroy_upgrade_in_progress_flag }
+			FROM = {
+				has_opinion = { target = ROOT value > 29 }
+				SOV_is_valid_subject = yes
+				NOT = { has_war_with = ROOT }
+			}
+		}
+
+		cost = SOV_gosproyektstroy_decision_cost
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		complete_effect = {
+			set_country_flag = SOV_gosproyektstroy_upgrade_in_progress_flag
+		}
+
+		remove_effect = {
+			# 安全网：还拿着基础 idea（说明玩家中途换成别的设计商又买回来了）⇒ 进度清零重来，避免卡死。
+			if = {
+				limit = { has_idea = SOV_gosproyektstroy_1 }
+				clr_country_flag = hof_gos_usa
+				clr_country_flag = hof_gos_eng
+				clr_country_flag = hof_gos_ger
+				clr_country_flag = hof_gos_jap
+				clr_country_flag = hof_gos_civ
+				clr_country_flag = hof_gos_mil
+				clr_country_flag = hof_gos_dock
+				clr_country_flag = hof_gos_started
+				clr_country_flag = hof_gos_country_phase_done
+			}
+
+			if = {
+				limit = {
+					FROM = { tag = USA }
+				}
+				set_country_flag = hof_gos_usa
+				# 原版 flag，只为决议分类（页签）的 visible —— 分类文件我们不覆盖。
+				set_country_flag = SOV_gosproyektstroy_level_2_flag
+				set_country_flag = hof_gos_started
+				if = {
+					limit = { has_idea = SOV_gosproyektstroy_1 }
+					swap_ideas = {
+						remove_idea = SOV_gosproyektstroy_1
+						add_idea = hof_gos_c1_usa
+					}
+				}
+				if = {
+					limit = { has_idea = hof_gos_c1_eng }
+					swap_ideas = {
+						remove_idea = hof_gos_c1_eng
+						add_idea = hof_gos_c2_usa_eng
+					}
+				}
+				if = {
+					limit = { has_idea = hof_gos_c1_ger }
+					swap_ideas = {
+						remove_idea = hof_gos_c1_ger
+						add_idea = hof_gos_c2_usa_ger
+					}
+				}
+				if = {
+					limit = { has_idea = hof_gos_c1_jap }
+					swap_ideas = {
+						remove_idea = hof_gos_c1_jap
+						add_idea = hof_gos_c2_usa_jap
+					}
+				}
+				if = {
+					limit = { has_idea = hof_gos_c2_eng_ger }
+					swap_ideas = {
+						remove_idea = hof_gos_c2_eng_ger
+						add_idea = hof_gos_c3_usa_eng_ger
+					}
+				}
+				if = {
+					limit = { has_idea = hof_gos_c2_eng_jap }
+					swap_ideas = {
+						remove_idea = hof_gos_c2_eng_jap
+						add_idea = hof_gos_c3_usa_eng_jap
+					}
+				}
+				if = {
+					limit = { has_idea = hof_gos_c2_ger_jap }
+					swap_ideas = {
+						remove_idea = hof_gos_c2_ger_jap
+						add_idea = hof_gos_c3_usa_ger_jap
+					}
+				}
+				if = {
+					limit = { has_idea = hof_gos_c3_eng_ger_jap }
+					swap_ideas = {
+						remove_idea = hof_gos_c3_eng_ger_jap
+						add_idea = hof_gos_c4_usa_eng_ger_jap
+					}
+					# 4 国到齐 ⇒ 解锁阶段 2（3 张专精卡）
+					set_country_flag = hof_gos_country_phase_done
+				}
+			}
+
+			else_if = {
+				limit = {
+					FROM = { tag = ENG }
+				}
+				set_country_flag = hof_gos_eng
+				# 原版 flag，只为决议分类（页签）的 visible —— 分类文件我们不覆盖。
+				set_country_flag = SOV_gosproyektstroy_level_2_flag
+				set_country_flag = hof_gos_started
+				if = {
+					limit = { has_idea = SOV_gosproyektstroy_1 }
+					swap_ideas = {
+						remove_idea = SOV_gosproyektstroy_1
+						add_idea = hof_gos_c1_eng
+					}
+				}
+				if = {
+					limit = { has_idea = hof_gos_c1_usa }
+					swap_ideas = {
+						remove_idea = hof_gos_c1_usa
+						add_idea = hof_gos_c2_usa_eng
+					}
+				}
+				if = {
+					limit = { has_idea = hof_gos_c1_ger }
+					swap_ideas = {
+						remove_idea = hof_gos_c1_ger
+						add_idea = hof_gos_c2_eng_ger
+					}
+				}
+				if = {
+					limit = { has_idea = hof_gos_c1_jap }
+					swap_ideas = {
+						remove_idea = hof_gos_c1_jap
+						add_idea = hof_gos_c2_eng_jap
+					}
+				}
+				if = {
+					limit = { has_idea = hof_gos_c2_usa_ger }
+					swap_ideas = {
+						remove_idea = hof_gos_c2_usa_ger
+						add_idea = hof_gos_c3_usa_eng_ger
+					}
+				}
+				if = {
+					limit = { has_idea = hof_gos_c2_usa_jap }
+					swap_ideas = {
+						remove_idea = hof_gos_c2_usa_jap
+						add_idea = hof_gos_c3_usa_eng_jap
+					}
+				}
+				if = {
+					limit = { has_idea = hof_gos_c2_ger_jap }
+					swap_ideas = {
+						remove_idea = hof_gos_c2_ger_jap
+						add_idea = hof_gos_c3_eng_ger_jap
+					}
+				}
+				if = {
+					limit = { has_idea = hof_gos_c3_usa_ger_jap }
+					swap_ideas = {
+						remove_idea = hof_gos_c3_usa_ger_jap
+						add_idea = hof_gos_c4_usa_eng_ger_jap
+					}
+					# 4 国到齐 ⇒ 解锁阶段 2（3 张专精卡）
+					set_country_flag = hof_gos_country_phase_done
+				}
+			}
+
+			else_if = {
+				limit = {
+					FROM = { tag = GER }
+				}
+				set_country_flag = hof_gos_ger
+				# 原版 flag，只为决议分类（页签）的 visible —— 分类文件我们不覆盖。
+				set_country_flag = SOV_gosproyektstroy_level_2_flag
+				set_country_flag = hof_gos_started
+				if = {
+					limit = { has_idea = SOV_gosproyektstroy_1 }
+					swap_ideas = {
+						remove_idea = SOV_gosproyektstroy_1
+						add_idea = hof_gos_c1_ger
+					}
+				}
+				if = {
+					limit = { has_idea = hof_gos_c1_usa }
+					swap_ideas = {
+						remove_idea = hof_gos_c1_usa
+						add_idea = hof_gos_c2_usa_ger
+					}
+				}
+				if = {
+					limit = { has_idea = hof_gos_c1_eng }
+					swap_ideas = {
+						remove_idea = hof_gos_c1_eng
+						add_idea = hof_gos_c2_eng_ger
+					}
+				}
+				if = {
+					limit = { has_idea = hof_gos_c1_jap }
+					swap_ideas = {
+						remove_idea = hof_gos_c1_jap
+						add_idea = hof_gos_c2_ger_jap
+					}
+				}
+				if = {
+					limit = { has_idea = hof_gos_c2_usa_eng }
+					swap_ideas = {
+						remove_idea = hof_gos_c2_usa_eng
+						add_idea = hof_gos_c3_usa_eng_ger
+					}
+				}
+				if = {
+					limit = { has_idea = hof_gos_c2_usa_jap }
+					swap_ideas = {
+						remove_idea = hof_gos_c2_usa_jap
+						add_idea = hof_gos_c3_usa_ger_jap
+					}
+				}
+				if = {
+					limit = { has_idea = hof_gos_c2_eng_jap }
+					swap_ideas = {
+						remove_idea = hof_gos_c2_eng_jap
+						add_idea = hof_gos_c3_eng_ger_jap
+					}
+				}
+				if = {
+					limit = { has_idea = hof_gos_c3_usa_eng_jap }
+					swap_ideas = {
+						remove_idea = hof_gos_c3_usa_eng_jap
+						add_idea = hof_gos_c4_usa_eng_ger_jap
+					}
+					# 4 国到齐 ⇒ 解锁阶段 2（3 张专精卡）
+					set_country_flag = hof_gos_country_phase_done
+				}
+			}
+
+			else_if = {
+				limit = {
+					FROM = { tag = JAP }
+				}
+				set_country_flag = hof_gos_jap
+				# 原版 flag，只为决议分类（页签）的 visible —— 分类文件我们不覆盖。
+				set_country_flag = SOV_gosproyektstroy_level_2_flag
+				set_country_flag = hof_gos_started
+				if = {
+					limit = { has_idea = SOV_gosproyektstroy_1 }
+					swap_ideas = {
+						remove_idea = SOV_gosproyektstroy_1
+						add_idea = hof_gos_c1_jap
+					}
+				}
+				if = {
+					limit = { has_idea = hof_gos_c1_usa }
+					swap_ideas = {
+						remove_idea = hof_gos_c1_usa
+						add_idea = hof_gos_c2_usa_jap
+					}
+				}
+				if = {
+					limit = { has_idea = hof_gos_c1_eng }
+					swap_ideas = {
+						remove_idea = hof_gos_c1_eng
+						add_idea = hof_gos_c2_eng_jap
+					}
+				}
+				if = {
+					limit = { has_idea = hof_gos_c1_ger }
+					swap_ideas = {
+						remove_idea = hof_gos_c1_ger
+						add_idea = hof_gos_c2_ger_jap
+					}
+				}
+				if = {
+					limit = { has_idea = hof_gos_c2_usa_eng }
+					swap_ideas = {
+						remove_idea = hof_gos_c2_usa_eng
+						add_idea = hof_gos_c3_usa_eng_jap
+					}
+				}
+				if = {
+					limit = { has_idea = hof_gos_c2_usa_ger }
+					swap_ideas = {
+						remove_idea = hof_gos_c2_usa_ger
+						add_idea = hof_gos_c3_usa_ger_jap
+					}
+				}
+				if = {
+					limit = { has_idea = hof_gos_c2_eng_ger }
+					swap_ideas = {
+						remove_idea = hof_gos_c2_eng_ger
+						add_idea = hof_gos_c3_eng_ger_jap
+					}
+				}
+				if = {
+					limit = { has_idea = hof_gos_c3_usa_eng_ger }
+					swap_ideas = {
+						remove_idea = hof_gos_c3_usa_eng_ger
+						add_idea = hof_gos_c4_usa_eng_ger_jap
+					}
+					# 4 国到齐 ⇒ 解锁阶段 2（3 张专精卡）
+					set_country_flag = hof_gos_country_phase_done
+				}
+			}
+
+			clr_country_flag = SOV_gosproyektstroy_upgrade_in_progress_flag
+		}
+	}
+# hof:dec-end SOV_gosproyektstroy_bring_foreign_experts
+
+# hof:dec-begin SOV_gosproyektstroy_focus_civ
+	SOV_gosproyektstroy_focus_civ = {
+		priority = 13
+
+		icon = generic_construction
+
+		ai_will_do = {
+			base = 0.75
+			modifier = {
+				factor = 0
+				OR = {
+					has_war = yes
+					any_other_country = {
+						OR ={
+							is_justifying_wargoal_against = ROOT
+							ROOT = { is_justifying_wargoal_against = PREV }
+						}
+					}
+				}
+			}
+		}
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		# hof 2026-09-25：方向阶段改为【3 个方向任意顺序、都能做】。
+		# 门槛 = hof_gos_country_phase_done（4 国全部邀请完毕）。
+		available = {
+			has_country_flag = hof_gos_country_phase_done
+			NOT = { has_country_flag = hof_gos_civ }
+			NOT = { has_country_flag = SOV_gosproyektstroy_upgrade_in_progress_flag }
+		}
+
+		days_remove = SOV_gosproyektstroy_decision_time
+
+		fire_only_once = yes
+
+		visible = {
+			has_country_flag = hof_gos_country_phase_done
+			NOT = { has_country_flag = hof_gos_civ }
+		}
+
+		cost = SOV_gosproyektstroy_decision_cost
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		complete_effect = {
+			set_country_flag = SOV_gosproyektstroy_upgrade_in_progress_flag
+		}
+
+		remove_effect = {
+			set_country_flag = hof_gos_civ
+			if = {
+				limit = { has_idea = hof_gos_c4_usa_eng_ger_jap }
+				swap_ideas = {
+					remove_idea = hof_gos_c4_usa_eng_ger_jap
+					add_idea = hof_gos_s1_civ
+				}
+			}
+			if = {
+				limit = { has_idea = hof_gos_s1_mil }
+				swap_ideas = {
+					remove_idea = hof_gos_s1_mil
+					add_idea = hof_gos_s2_civ_mil
+				}
+			}
+			if = {
+				limit = { has_idea = hof_gos_s1_dock }
+				swap_ideas = {
+					remove_idea = hof_gos_s1_dock
+					add_idea = hof_gos_s2_civ_dock
+				}
+			}
+			if = {
+				limit = { has_idea = hof_gos_s2_mil_dock }
+				swap_ideas = {
+					remove_idea = hof_gos_s2_mil_dock
+					add_idea = hof_gos_s3_all
+				}
+				# 3 个方向全做完
+				set_country_flag = hof_gos_all_done
+			}
+
+			clr_country_flag = SOV_gosproyektstroy_upgrade_in_progress_flag
+		}
+	}
+# hof:dec-end SOV_gosproyektstroy_focus_civ
+
+# hof:dec-begin SOV_gosproyektstroy_focus_mil
+	SOV_gosproyektstroy_focus_mil = {
+		priority = 12
+
+		icon = generic_industry
+
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 5
+				OR = {
+					has_war = yes
+					any_other_country = {
+						OR ={
+							is_justifying_wargoal_against = ROOT
+							ROOT = { is_justifying_wargoal_against = PREV }
+						}
+					}
+				}
+			}
+		}
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		# hof 2026-09-25：方向阶段改为【3 个方向任意顺序、都能做】。
+		# 门槛 = hof_gos_country_phase_done（4 国全部邀请完毕）。
+		available = {
+			has_country_flag = hof_gos_country_phase_done
+			NOT = { has_country_flag = hof_gos_mil }
+			NOT = { has_country_flag = SOV_gosproyektstroy_upgrade_in_progress_flag }
+		}
+
+		days_remove = SOV_gosproyektstroy_decision_time
+
+		fire_only_once = yes
+
+		visible = {
+			has_country_flag = hof_gos_country_phase_done
+			NOT = { has_country_flag = hof_gos_mil }
+		}
+
+		cost = SOV_gosproyektstroy_decision_cost
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		complete_effect = {
+			set_country_flag = SOV_gosproyektstroy_upgrade_in_progress_flag
+		}
+
+		remove_effect = {
+			set_country_flag = hof_gos_mil
+			if = {
+				limit = { has_idea = hof_gos_c4_usa_eng_ger_jap }
+				swap_ideas = {
+					remove_idea = hof_gos_c4_usa_eng_ger_jap
+					add_idea = hof_gos_s1_mil
+				}
+			}
+			if = {
+				limit = { has_idea = hof_gos_s1_civ }
+				swap_ideas = {
+					remove_idea = hof_gos_s1_civ
+					add_idea = hof_gos_s2_civ_mil
+				}
+			}
+			if = {
+				limit = { has_idea = hof_gos_s1_dock }
+				swap_ideas = {
+					remove_idea = hof_gos_s1_dock
+					add_idea = hof_gos_s2_mil_dock
+				}
+			}
+			if = {
+				limit = { has_idea = hof_gos_s2_civ_dock }
+				swap_ideas = {
+					remove_idea = hof_gos_s2_civ_dock
+					add_idea = hof_gos_s3_all
+				}
+				# 3 个方向全做完
+				set_country_flag = hof_gos_all_done
+			}
+
+			clr_country_flag = SOV_gosproyektstroy_upgrade_in_progress_flag
+		}
+	}
+# hof:dec-end SOV_gosproyektstroy_focus_mil
+
+# hof:dec-begin SOV_gosproyektstroy_focus_dock
+	SOV_gosproyektstroy_focus_dock = {
+		priority = 11
+
+		icon = GFX_decision_generic_naval
+
+		ai_will_do = {
+			base = 0.5
+			modifier = {
+				factor = 2
+				has_completed_focus = SOV_pc_of_the_ussr_navy
+				has_completed_focus = SOV_expand_shipbuilding_plants
+			}
+		}
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		# hof 2026-09-25：方向阶段改为【3 个方向任意顺序、都能做】。
+		# 门槛 = hof_gos_country_phase_done（4 国全部邀请完毕）。
+		available = {
+			has_country_flag = hof_gos_country_phase_done
+			NOT = { has_country_flag = hof_gos_dock }
+			NOT = { has_country_flag = SOV_gosproyektstroy_upgrade_in_progress_flag }
+		}
+
+		days_remove = SOV_gosproyektstroy_decision_time
+
+		fire_only_once = yes
+
+		visible = {
+			has_country_flag = hof_gos_country_phase_done
+			NOT = { has_country_flag = hof_gos_dock }
+		}
+
+		cost = SOV_gosproyektstroy_decision_cost
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		complete_effect = {
+			set_country_flag = SOV_gosproyektstroy_upgrade_in_progress_flag
+		}
+
+		remove_effect = {
+			set_country_flag = hof_gos_dock
+			if = {
+				limit = { has_idea = hof_gos_c4_usa_eng_ger_jap }
+				swap_ideas = {
+					remove_idea = hof_gos_c4_usa_eng_ger_jap
+					add_idea = hof_gos_s1_dock
+				}
+			}
+			if = {
+				limit = { has_idea = hof_gos_s1_civ }
+				swap_ideas = {
+					remove_idea = hof_gos_s1_civ
+					add_idea = hof_gos_s2_civ_dock
+				}
+			}
+			if = {
+				limit = { has_idea = hof_gos_s1_mil }
+				swap_ideas = {
+					remove_idea = hof_gos_s1_mil
+					add_idea = hof_gos_s2_mil_dock
+				}
+			}
+			if = {
+				limit = { has_idea = hof_gos_s2_civ_mil }
+				swap_ideas = {
+					remove_idea = hof_gos_s2_civ_mil
+					add_idea = hof_gos_s3_all
+				}
+				# 3 个方向全做完
+				set_country_flag = hof_gos_all_done
+			}
+
+			clr_country_flag = SOV_gosproyektstroy_upgrade_in_progress_flag
+		}
+	}
+# hof:dec-end SOV_gosproyektstroy_focus_dock
+

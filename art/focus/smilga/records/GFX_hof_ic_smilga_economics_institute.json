@@ -1,0 +1,17 @@
+{
+  "id": "hof_ic_smilga_economics_institute",
+  "name": "GFX_hof_ic_smilga_economics_institute",
+  "title": "莫斯科国民经济学院",
+  "concept": "Strict overhead close-up of ONE long wooden seminar worktable, large folded chart spread out with only square grid, colored rectangular cells and unlabeled legend boxes. A large recognizable vintage SLIDE RULE diagonally on chart corner, metallic slider and tiny unlabeled tick marks, no digits. Loose rough calculation sheets with abstract crossed-out lines and half a chalk stick. THREE distinct anatomically correct hands with different cuffs enter from table edges, no bodies. Warm wood and yellowed paper, cool metallic slide rule. No classroom rows, stage or blackboard.",
+  "group": "smilga",
+  "size": [
+    100,
+    88
+  ],
+  "prompt": "Create ONE finished Hearts of Iron IV Soviet national focus icon. Reference is ONLY outer gold laurel framing and sculptural engraving STYLE, replace all central imagery. Subject: Strict overhead close-up of ONE long wooden seminar worktable, large folded chart spread out with only square grid, colored rectangular cells and unlabeled legend boxes. A large recognizable vintage SLIDE RULE diagonally on chart corner, metallic slider and tiny unlabeled tick marks, no digits. Loose rough calculation sheets with abstract crossed-out lines and half a chalk stick. THREE distinct anatomically correct hands with different cuffs enter from table edges, no bodies. Warm wood and yellowed paper, cool metallic slide rule. No classroom rows, stage or blackboard. Shared gold laurel open at top, small red star above, blank golden ribbon below, thin bronze circular rim. Central imagery in the specified palette, ivory-grey embossed relief and strong clear silhouettes readable at100x88, upper-left light. No readable text, letters, numbers, watermarks, faces or portraits. No scissors, scales, ledgers, grain piles, rivers, pens, newspapers, leaflets, prison-bar shadows, rail tracks, railway switches, platforms, lathes. Landscape100:88. TRUE transparent RGBA background enabled, alpha0 outside emblem and all four corners,20-50%transparent area; emblem fills94%canvas. No fake checkerboard or solid rectangle or external shadow.",
+  "references": [
+    "D:/Users/xuwei/PycharmProjects/heart_of_Iron/art/focus/bukharin/source/GFX_hof_ic_bukharin_proportional_development.png"
+  ],
+  "generated_path": "C:\\Users\\xuwei\\.codex\\generated_images\\01a09af5-fd43-79a0-a3cc-72284cd67cbc\\exec-b363571e-25de-4b39-8f1c-2104bb2b2fca.png",
+  "mode": "built-in image_gen"
+}

@@ -1,0 +1,8 @@
+# Existing saves: grant the focus trait on the first weekly tick.
+on_actions = {
+	on_weekly = { effect = {
+		if = { limit = { tag = SOV has_completed_focus = hof_ic_tukhachevsky_air_mechanization }
+			hof_ic_tukh_mio_air_mechanization = yes
+		}
+	} }
+}

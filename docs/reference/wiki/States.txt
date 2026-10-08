@@ -1,0 +1,818 @@
+﻿State - Hearts of Iron 4 Wiki
+19 captures
+05 Jun 2018 - 28 Nov 2025
+Feb
+MAR
+Apr
+13
+2023
+2024
+2025
+success
+fail
+About this capture
+COLLECTED BY
+Collection:
+Save Page Now Outlinks
+TIMESTAMPS
+The Wayback Machine - https://web.archive.org/web/20240313213817/https://hoi4.paradoxwikis.com/States
+Forum list
+Trending
+Latest
+New posts
+Paradox
+Store
+Mods
+Forum
+Launcher
+PDXCON
+2019
+Paradox Wikis
+Hearts of Iron 4 Wiki
+Active Wikis
+Age of Wonders 4
+Empire of Sin
+Cities: Skylines 2
+Crusader Kings 3
+Europa Universalis 4
+Hearts of Iron 4
+Hunter: The Reckoning
+Imperator: Rome
+Prison Architect
+Stellaris
+Surviving Mars
+Surviving the Aftermath
+Vampire: The Masquerade
+Victoria 3
+Legacy Wikis
+AoW: Planetfall
+Cities: Skylines
+Crusader Kings 2
+Arsenal of Democracy
+Europa Universalis 2
+Europa Universalis 3
+Europa Universalis: Rome
+Hearts of Iron 2
+Hearts of Iron 3
+Tyranny
+Victoria 1
+Victoria 2
+Search
+Personal tools
+Log in
+Personal tools
+English
+Not logged in
+Talk
+Contributions
+Log in
+Navigation menu
+Namespaces
+Page
+Discussion
+English
+Views
+Read
+Edit
+Edit source
+View history
+More
+Navigation
+HoI4 Wiki Main Page
+Recent changes
+Random page
+Style guidelines
+Wiki support
+Paradox links
+- Wikis
+- Forums
+- Mods
+- Store
+- YouTube
+Tools
+What links here
+Related changes
+Special pages
+Printable version
+Permanent link
+Page information
+braze
+In other languages
+Deutsch
+Espa帽ol
+Fran莽ais
+Polski
+Portugu锚s
+袪褍褋褋泻懈泄
+State
+From Hearts of Iron 4 Wiki
+(Redirected from
+States
+)
+Jump to navigation
+Jump to search
+This is a community maintained wiki. If you spot a mistake, please help with fixing it.
+See also:
+List of states
+The state is the primary geographic unit of Hearts of Iron 4. A state consists of a set of
+provinces
+. In turn,
+strategic regions
+and the territory of
+countries
+consist of a set of states.
+Contents
+1
+Diplomacy
+2
+Cores
+3
+Construction
+3.1
+State buildings
+3.2
+Shared buildings
+3.3
+Province buildings
+4
+Resources
+5
+Population
+5.1
+Growth
+6
+Category
+7
+State Modifiers
+8
+Occupation
+9
+Notes and references
+A map of state ID numbers.
+Diplomacy
+[
+edit
+|
+edit source
+]
+This is a community maintained wiki. If you spot a mistake, please help with fixing it.
+Main article:
+Diplomacy
+Ownership over territory is determined at the state level. Control over both the resources and state-wide construction of a state is determined by the plurality controller of a state, meaning the country that controls the most victory points. Each province in a state is worth 0.1 victory points. Some provinces (usually cities) have additional victory points.
+These are all named and marked with small squares (1 to 15 VPs), circles (20 to 40 VPs), or stars (capitals with 3 to 50 VPs) on the map and their additional victory points are shown through the tooltip when hovering over them. Resistance is computed at the state level.
+Cores
+[
+edit
+|
+edit source
+]
+States can be either core states or colony states. Cores are considered an integral part of the country, and the inhabitants are fully available for military service. Nations get a
+-98%
+penalty to manpower in colony states, and have half as many building slots available as in a core state.
+Nations may justify war goals against foreign-owned core states in half the time and for half the political power as on other states. Only victory points in core states count when determining if a country will capitulate. When a nation controls a non-core state, that state will generate
+resistance
+.
+Unlike other Paradox games, there is normally no way for countries to gain cores. You can lose cores if you release/return territory of a country.
+Some country-specific events and national focuses, like the Anschluss event for
+Germany
+or decisions for
+Mexico
+for central America, will grant cores. As of the
+La Resistance
+expansion, there is an exception to this rule, with
+Anarchist Spain
+able to core any state with enough compliance with the Global Defense Council focus.
+Construction
+[
+edit
+|
+edit source
+]
+This is a community maintained wiki. If you spot a mistake, please help with fixing it.
+Main article:
+Construction
+Construction can be divided into three categories: state buildings, shared buildings and province buildings.
+State buildings
+[
+edit
+|
+edit source
+]
+State buildings are state-wide and every state may get the same maximum level of a certain building.
+Infrastructure, airbases, anti-air and radar stations belong to this category.
+Shared buildings
+[
+edit
+|
+edit source
+]
+Shared buildings are also state-wide, but the amount that can be built is limited to the number of free slots. Once all slots are occupied, no more shared buildings can be built.
+Factories, dockyards, synthetic refineries, fuel silos, rocket sites, and nuclear reactors belong to this category
+Province buildings
+[
+edit
+|
+edit source
+]
+Province buildings are built per-province, their maximum levels depend on the type of building.
+Naval bases, forts and Supply hubs belong to this category.
+Resources
+[
+edit
+|
+edit source
+]
+This is a community maintained wiki. If you spot a mistake, please help with fixing it.
+Main article:
+Production#Resources
+Resources for production are generated at the state level. The majority controller will have a certain amount of the resources of a state added to their resource pool depending on their occupation policy.
+Population
+[
+edit
+|
+edit source
+]
+This is a community maintained wiki. If you spot a mistake, please help with fixing it.
+A map of state populations.
+A state's total population is shown in its info panel. The tooltip contains its recruitable population and cap (first line), civilian population and cap (second line) and monthly growth numbers.
+The population in a state is tracked by five numbers.
+The
+total population
+is the population the state starts with; it is shown on the state's info panel. Monthly population growth is based on it and the total never declines. The game's duration usually spans less than a generation, so all inhabitants that could enter military service are already born at the start of the game.
+The
+recruitable population
+is available for the controlling country to use in military service. Recruitable population gets reduced as
+manpower
+is used in the military, not just after taking casualties.
+The
+recruitable population cap
+is a fraction of the total population that limits the recruitable population. For how the fraction is calculated, see
+recruitable population
+.
+The
+civilian population
+is the portion of the population that is not available for military service.
+The
+civilian population cap
+is a fraction of the total population that limits the civilian population. It is the total population minus the recruitable population cap.
+Changes in the effective recruitable population ratio can cause one of the two population counts to overflow. In this case population is transferred to the other population type. For example, if a country raises its recruitment law, the civilian population cap will go down over time (according to the mobilization speed), which causes some civilian population to be transferred to recruitable population. Conversely, if a state is captured by a country that does not have a core on it, the recruitable ratio will be massively reduced and might cause recruitable population to transfer back to civilian population.
+Growth
+[
+edit
+|
+edit source
+]
+The state's total population grows by
++0.125%
+at the start of every month. The increase in population is distributed between recruitable and the civilian population by the recruitable ratio. Both increases are always at least one person respectively.
+Category
+[
+edit
+|
+edit source
+]
+The state category usually decides on the amount of shared
+building slots
+available to use. The category for any state is decided at the game's start and it isn't generally possible to change, however certain countries have content allowing them to upgrade the state category of certain states.
+[a]
+The state categories also decide on the colour of the state in the "States"
+map mode
+. These state categories exist in the base game:
+Name
+Amount of slots
+Colour in the "States" map mode
+Wasteland
+0
+Enclave
+0
+Tiny Island
+0
+Pastoral Region
+1
+Small Island
+1
+Rural Region
+2
+Developed Rural Region
+4
+Sparse Urban Region
+5
+Urban Region
+6
+Dense Urban Region
+8
+Metropolis Region
+10
+Megalopolis Region
+12
+State Modifiers
+[
+edit
+|
+edit source
+]
+These are modifiers that states can have that can effect them in major ways. They are typically country specific.
+Modifier
+Effect
+Countries
+Krasnaya Gorka Battery (Soviet Union)
+Entrenchment speed:
++25.0%
+Division Defense:
++10.0%
+Max Entrenchment:
++10.0%
+Entrenchment penalty:
+-15.0%
+Damage Reduction Against CAS:
+-10.0%
+Soviet Union
+Seraya Loshad Battery (Soviet Union)
+Entrenchment speed:
++25.0%
+Division Defense:
++10.0%
+Max Entrenchment:
++10.0%
+Entrenchment penalty:
+-15.0%
+Damage Reduction Against CAS:
+-10.0%
+Soviet Union
+Armored Battery 35 (Soviet Union)
+Entrenchment speed:
++25.0%
+Division Defense:
++10.0%
+Max Entrenchment:
++10.0%
+Entrenchment penalty:
+-15.0%
+Damage Reduction Against CAS:
+-10.0%
+Soviet Union
+Capital of the Tsars
+Local Construction Speed:
++25%
+Soviet Union
+International City
+Local Factories:
+-100%
+Recruitable Population:
+-100.00%
+Local Available Resources:
+-100%
+Poland
+International City
+Local Factories:
+-75%
+Resistance Growth Speed:
++120%
+Recruitable Population:
+-75.00%
+Local Available Resources:
+-75%
+Poland
+International City
+Local Factories:
+-50%
+Resistance Growth Speed:
++60%
+Daily Compliance Gain:
++0.10%
+Recruitable Population:
+-50.00%
+Local Available Resources:
+-50%
+Poland
+International City
+Local Factories:
+-25%
+Resistance Growth Speed:
++20%
+Daily Compliance Gain:
++0.40%
+Recruitable Population:
+-25.00%
+Local Available Resources:
+-25%
+Poland
+Unity Propaganda
+Daily Compliance Gain:
++0.70%
+Poland
+Military Appeasement
+Resistance Growth Speed:
+-50%
+Poland
+Military Plans (Poland)
+Land Fort construction speed:
++30.00%
+Poland
+Anti-Russian Plans (Poland)
+Division Attack:
++10.0%
+Division Defense:
++20.0%
+Breakthrough:
++15.00%
+Poland
+Soviet Union
+Anti-German Plans (Poland)
+Division Attack:
++10.0%
+Division Defense:
++20.0%
+Breakthrough:
++15.00%
+Poland
+German Reich
+Autonomous State
+Max Factories in State:
+-25%
+Recruitable Population:
+-50.00%
+Local Available Resources:
+-25%
+Local Construction Speed:
+-25%
+Spain
+Unplanned Offensive
+Division Speed:
+-75.00%
+Organization Regain:
+-50.00%
+Ground Support:
+-75.00%
+Division Attack:
+-90.0%
+Ground Support Factor:
+-75.0
+Attrition from weather only applies if controller is at war
+Spain
+Widespread Bulgarian Sentiment
+Local Factories:
+-10%
+Resistance Target:
++10%
+Resistance Decay Speed:
+-10%
+Resistance Growth Speed:
++10%
+Compliance Growth Speed:
+-10%
+Local Available Resources:
+-10%
+Yugoslavia
+Kingdom of Greece
+Widespread Bulgarian Sentiment
+Local Factories:
++10%
+Resistance Target:
+-10%
+Resistance Decay Speed:
++10%
+Resistance Growth Speed:
+-10%
+Compliance Growth Speed:
++10%
+Local Available Resources:
++10%
+Bulgaria
+Skirmishes Against the IMRO
+Organization Regain:
+-75.00%
+Divisions Speed:
+-25.00%
+Strategic Redeployment Disabled:
+Yes
+Division Attrition:
++100.0%
+Local Available Resources:
+-75%
+Local Construction Speed:
+-75%
+Bulgaria
+Pre-Arranged Bulgarian Territorial Expansion
+States with Pre-Arranged Bulgarian Territorial Expansion Modifier will be transferred to Bulgaria once any faction ally controls the state and Bulgaria has joined the same faction as Germany
+Romania
+Yugoslavia
+Kingdom of Greece
+Kemalist Loyalties
+Recruitable Population:
++15.00%
+Local Construction Speed:
++10%
+Turkey
+Kemalist Schemers
+Division Speed:
+-50.00%
+Recruitable Population:
+-33.00%
+Local Construction Speed:
+-25%
+Turkey
+Devout Traditionalists
+Recruitable Population:
++15.00%
+Local Construction Speed:
++10%
+Turkey
+Traditionalists Placated
+Local Construction Speed:
++5%
+Turkey
+Traditionalist Opposition
+Max Factories in State:
+-10%
+Recruitable Population:
+-5.00%
+Local Available Resources:
+-10%
+Local Construction Speed:
+-15%
+Turkey
+Traditionalist Sedition
+Max Factories in State:
+-25%
+Division Speed:
+-15.00%
+Recruitable Population:
+-25.00%
+Local Available Resources:
+-25%
+Local Construction Speed:
+-25%
+Turkey
+Traditionalist Insurgency
+Max Factories in State:
+-33%
+Division Speed:
+-33.00%
+Recruitable Population:
+-50.00%
+Local Available Resources:
+-50%
+Local Construction Speed:
+-33%
+Turkey
+Separatist Fatigue
+Resistance Decay Speed:
++15%
+Compliance Growth Speed:
++5%
+Local Available Resources:
+-33%
+Turkey
+Kurdish Agitation
+Resistance Target:
++10%
+Resistance Decay Speed:
+-10%
+Resistance Growth Speed:
++3%
+Local Available Resources:
+-15%
+Turkey
+Kurdish Separatism
+Resistance Target:
++20%
+Resistance Decay Speed:
+-20%
+Resistance Growth Speed:
++5%
+Compliance Growth Speed:
+-5%
+Strategic Redeployment Disabled:
+Yes
+Local Available Resources:
+-33%
+Turkey
+Kurdish Rebellion
+Resistance Target:
++35%
+Resistance Decay Speed:
+-25%
+Resistance Growth Speed:
++7%
+Compliance Growth Speed:
+-10%
+Strategic Redeployment Disabled:
+Yes
+Local Available Resources:
+-33%
+Turkey
+Conscription Exemptions Granted
+Recruitable Population:
+-85.00%
+Turkey
+Turanist Assimilation
+Non-core Manpower
++25.00%
+Resistance Growth Speed
+-10%
+Compliance Growth Speed
++5%
+Turkey
+Turan
+Occupation
+[
+edit
+|
+edit source
+]
+This is a community maintained wiki. If you spot a mistake, please help with fixing it.
+Main article:
+Occupation
+The effects of occupation, including resistance, are computed at the state level.
+Notes and references
+[
+edit
+|
+edit source
+]
+^
+a:
+Some examples of this mechanic include:
+Develop [Root.Capital.GetName]
+for countries in the Horn of Africa.
+State Owned Industry
+for
+Ethiopia
+.
+The Holy Lands
+for
+Italy
+.
+J盲niskoski Power Plant
+for
+Finland
+.
+Swedish
+decision
+"Promote Urbanization"
+Mechanics
+Politics
+Ideology
+鈥?
+Faction
+鈥?
+National focus
+鈥?
+Ideas
+鈥?
+Government
+鈥?
+Puppet
+鈥?
+Diplomacy
+鈥?
+World tension
+鈥?
+Civil war
+鈥?
+Occupation
+鈥?
+Intelligence agency
+鈥?
+Balance of power
+Production
+Trade
+鈥?
+Production
+鈥?
+Construction
+鈥?
+Equipment
+鈥?
+Fuel
+鈥?
+Military industrial organization
+鈥?
+International market
+Research and technology
+Research
+鈥?
+Infantry technology
+鈥?
+Support Companies technology
+鈥?
+Armor technology
+鈥?
+Artillery technology
+鈥?
+Land doctrine
+鈥?
+Special forces doctrine
+鈥?
+Naval technology
+鈥?
+Naval doctrine
+鈥?
+Air technology
+鈥?
+Air doctrine
+鈥?
+Engineering technology
+鈥?
+Industry technology
+Military and warfare
+Warfare
+鈥?
+Peace conference
+鈥?
+Land units
+鈥?
+Land warfare
+鈥?
+Division designer
+鈥?
+Tank designer
+鈥?
+Army planner
+鈥?
+Command group
+鈥?
+Commander
+鈥?
+Battle plan
+鈥?
+Combat tactics
+鈥?
+Ship
+鈥?
+Ship designer
+鈥?
+Naval warfare
+鈥?
+Aircraft designer
+鈥?
+Air warfare
+鈥?
+Experience
+鈥?
+Officer corps
+鈥?
+Attrition and accidents
+鈥?
+Logistics
+鈥?
+Manpower
+鈥?
+Nuclear bomb
+Map
+Map
+鈥?
+Province
+鈥?
+Terrain
+鈥?
+Weather
+鈥?
+State
+Events and Decisions
+Events
+鈥?
+Decisions
+Retrieved from "
+"
+Categories
+:
+1.9
+Map
+Hidden category:
+Articles with potentially outdated sections
+This page was last edited on 11 March 2024, at 08:58.
+Content is available under
+Attribution-ShareAlike 3.0
+unless otherwise noted.
+About Hearts of Iron 4 Wiki
+Mobile view
+Games
+Discover
+Our Brands
+Browse
+Play
+on Paradox technology
+Community
+Paradox Forums
+Paradox
+Wikis
+Support
+About
+News
+About us
+Careers
+Join our playtests
+Media contact
+Social Media
+Legal
+Information
+EU Online Dispute Resolution
+Terms & Policies
+Legal Information
+EU Online Dispute Resolution
+Frequently Asked
+Questions
+Paradox
+Interactive corporate website

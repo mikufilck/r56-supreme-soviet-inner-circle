@@ -1,0 +1,583 @@
+﻿Construction - Hearts of Iron 4 Wiki
+8 captures
+02 Feb 2018 - 25 Aug 2025
+Nov
+DEC
+Jan
+25
+2017
+2018
+2019
+success
+fail
+About this capture
+COLLECTED BY
+Organization:
+Alexa Crawls
+Starting in 1996,
+Alexa Internet
+has been donating their crawl data to the Internet Archive.  Flowing in every day, these data are added to the
+Wayback Machine
+after an embargo period.
+Collection:
+Alexa Crawls
+Starting in 1996,
+Alexa Internet
+has been donating their crawl data to the Internet Archive.  Flowing in every day, these data are added to the
+Wayback Machine
+after an embargo period.
+TIMESTAMPS
+The Wayback Machine - https://web.archive.org/web/20181225075534/http://hoi4.paradoxwikis.com:80/Buildings
+Construction
+From Hearts of Iron 4 Wiki
+(Redirected from
+Buildings
+)
+Jump to:
+navigation
+,
+search
+This article may contain outdated information that is inaccurate for the current
+version
+of the game. It was last updated for
+1.2.
+Constructions
+are fixed assets that may be built in
+states
+or
+provinces
+that are constructed using civilian factories.
+Contents
+1
+State buildings
+2
+Shared buildings
+2.1
+Infrastructure effects
+2.2
+Deconstructing
+2.3
+Slot count
+3
+Province buildings
+4
+Civilian factories
+4.1
+Consumer goods
+4.2
+Output
+4.3
+Efficiency of additional Civilian Factories
+5
+Factory conversion
+6
+Repair
+State buildings
+[
+edit
+]
+This section may contain outdated information that is inaccurate for the current
+version
+of the game. The last version it was verified as up to date for was 1.4.
+These buildings are built on a state level. Control of state resources or buildings requires controlling provinces worth at least 50% of the VP of that state, even if that does not include the province where the building icon is located. Airbases will appear, but do not become usable, unless the player also controls the province containing the airbase.
+Name
+Cost
+Maximum level
+Effect
+Infrastructure
+3000
+10
+Determines supply throughput. Increases the speed and recovery rate of land units. Resources output is increased by
+10%
+per level. Increases construction speed of
+shared buildings
+.
+Air base
+1250
+10
+Bases and repairs
+air units
+. Each air base level can host 200 aircraft.
+Anti-air
+2500
+5
+Damages attacking
+air units
+and reduces damage from bombing. Note that the Anti-Air emplacement only attacks those aircraft attacking the state, not units within the state.  This means strategic, tactical, and naval bombers that attack buildings or ports will possibly take damage if there are Anti-Air emplacements, but enemy fighters flying air superiority missions in the state do not take damage.
+Radar station
+3375
+6 (depends on technology)
+Detects enemy forces, especially incoming aircraft.  Radars also help detect enemy ships at sea.
+Shared buildings
+[
+edit
+]
+This section may contain outdated information that is inaccurate for the current
+version
+of the game. The last version it was verified as up to date for was 1.4.
+Like state buildings, shared buildings are built on a state level; however, they share a limited number of slots. This is perhaps the most important category of constructions, since it contains the factories necessary for
+production
+.
+Name
+Base Cost
+Maximum level
+Effect
+Civilian factory
+10800
+20
+Produces consumer goods and constructions, or can be used for trade. Base output is 5 (per day).
+Military factory
+7200
+20
+Produces
+equipment
+. Base output is 5 (per day).
+Naval dockyard
+6400
+10
+Produces
+ships
+. Base output is 2.5 (per day).
+Synthetic refinery
+13000
+3
+Produces
+2-6 and
+2-6 (Depends on Technology).
+Rocket site
+6400
+2
+Launches
+rockets
+.
+Nuclear reactor
+30000
+1
+Produces nuclear bombs.
+Infrastructure effects
+[
+edit
+]
+Construction speed of shared buildings depends on the level of infrastructure in the state. Construction speed is multiplied by
+For example 脳1.5 at 5 infrastructure. This bonus is applied after bonuses from tech, advisors, and national spirits, making 1 level of infrastructure a more powerful bonus than e.g. a War Industrialist. This encourages players to concentrate industry in central, high-infrastructure areas, although this must be balanced against the increased vulnerability of having all of one's industry in one place.
+It is generally not economical to build more infrastructure solely for the purpose of increasing construction speed. Infrastructure is a relatively better deal in states with many empty slots; when planning to build civilian factories, refineries or reactors as they cost more; and at the start with countries with bad economy laws like the USA, as infrastructure construction isn't penalized like factory construction is.
+Infrastructure provides diminishing returns to build times. Changing a province's infrastructure from 0 to 1 would require 5 military factories or 3 civilian factories to break even, 1 to 2 is 6 military or 4 civilian, all the way up to 9 to 10 which requires 16 military or 11 civilian.
+Deconstructing
+[
+edit
+]
+It is possible to deconstruct shared buildings from the state tab by hovering over the building icon and pressing the
+X
+that appears in the lower right corner of the icon.
+Slot count
+[
+edit
+]
+This section may contain outdated information that is inaccurate for the current
+version
+of the game. The last version it was verified as up to date for was 1.3.
+Each state has a category, which then decides the base number of shared slots. Various
+technologies
+give percentage bonuses to how many slots a state can have. Various
+National Foci
+may give additional bonus slots. The total number of slots is capped at 25.
+Building slots.
+Category
+Default number of slots
+Name in source files
+Example State
+Megalopolis Region
+12
+megalopolis
+Greater London Area
+Metropolis Region
+10
+metropolis
+New England
+Dense Urban Region
+8
+large_city
+Southern Ontario
+Urban Region
+6
+city
+Svealand
+Sparse Urban Region
+5
+large_town
+Nebraska
+Developed Rural Region
+4
+town
+Sardinia
+Rural Region
+2
+rural
+Crete
+Pastoral Region
+1
+pastoral
+Hejaz
+Small Island
+1
+small_island
+Iwo Jima
+Enclave
+0
+enclave
+Gibraltar
+Tiny Island
+0
+tiny_island
+Midway Island
+Wasteland
+0
+wasteland
+Libyan Desert
+Province buildings
+[
+edit
+]
+This section may contain outdated information that is inaccurate for the current
+version
+of the game. The last version it was verified as up to date for was 1.3.
+These buildings are built on a province level.
+Name
+Cost
+Maximum level
+Effect
+Naval base
+3000
+10
+Bases and repairs
+ships
+, and can send and receive supplies and resources via convoys.
+Land fort
+500 + (500 * Existing Local Fort Level)
+10
+Reduces the attack and defense of land invaders by 15% per level.
+Coastal fort
+500 + (500 * Existing Local Coastal Fort Level)
+10
+Reduces the attack and defense of naval invaders by 15% per level.
+Civilian factories
+[
+edit
+]
+This section may contain outdated information that is inaccurate for the current
+version
+of the game. The last version it was verified as up to date for was 1.4.
+Civilian factories make all the improvements to a territory and are necessary to build any of the constructions listed under the 鈥淐onstructions鈥?tab. All nations start with a certain number of civilian factories and a percentage will be used for
+consumer goods
+, depending on the
+economy law
+and
+national spirits
+that are currently in place.
+Civilian factories that are not used to produce consumer goods can be used for
+trade
+or to complete or repair the construction queued in the 鈥淐onstructions鈥?tab. It's possible to increase the number of civilian factories by building more, but this is limited by the number of
+shared buildings
+slots available in each
+state
+.
+Consumer goods
+[
+edit
+]
+This section may contain outdated information that is inaccurate for the current
+version
+of the game. The last version it was verified as up to date for was 1.4.
+Depending on
+economic laws
+and national spirits, a number of civilian factories will be occupied by producing consumer goods and are unavailable for construction or trade. This number is computed as a percentage of the total number of factories, rounding upwards. Factories are counted even when they are damaged and can't produce anything.
+Universal
+Country Specific
+-10%
+Australian
+national spirit
+Invest in Victory
+(from focus Squash the Squander Bugs)
+-8%
+Canadian
+national spirit
+War Bonds
+(from focus If Day)
+South African
+national spirit
+Cheap Labor
+(from focus Outlaw Strikes)
+-5%
+Australian
+national spirit
+Invest in Victory
+(from focus Invest in Victory)
+British
+national spirit
+British Austerity
+Japanese
+national spirit
+Imperial Austerity
+New Zealand
+national spirit
+Wairarape Sheep Farms
+South Africa
+national spirit
+Gold Exports
+(from focus Expand the Rand Mines)
+United States
+national spirit
+War Bonds
+(from focus Issue War Bonds)
+-3%
+South African
+national spirit
+Cheap Labor
+(from focus Work for All Poor)
+-2%
+Indian
+national spirit
+Princely State Donations
+Canadian
+national spirit
+War Bonds
+(from focus War Bonds)
+New Zealand
+national spirit
+First Labor Government
++2%
+New Zealand
+national spirit
+Waitangi Tribunal
++5%
+Australian
+national spirit
+Great Depression
+(from focus Civil Construction Corps)
+Indian
+national spirit
+Famine
+(gained by event)
++15%
+Australian
+national spirit
+Great Depression
+(from focus National Security Act)
++10%
+Total Mobilization
+as
+economy law
+Canadian
+national spirit
+Great Depression
+(from focus Canada Wheat Board)
++15%
+War Economy
+as economy law
++20%
+Partial Mobilization
+as economy law
+Australian
+national spirit
+Great Depression
+(present at start)
++25%
+Early Mobilization
+as economy law
+Canadian
+national spirit
+Great Depression
+(present at start)
++30%
+Civilian Economy
+as economy law
+United States
+national spirit
+The Great Depression
+(present at start)
++35%
+Isolation
+as economy law (
+United States
+only, from focus Prepare Intervention)
++40%
+Undisturbed Isolation
+as economy law (
+United States
+only)
+South Africa
+can gain -3% consumer goods at
+Total Mobilization
+with its spirits, but will not gain additional factories by this.
+Example
+Suppose the
+civilian economy law
+is enabled (requiring 30% of military and civilian factories dedicated to consumer goods) and no other modifiers apply. A country has 50 military factories, 50 civilian ones and 20 Dockyards. It will then have30 (civilian) factories dedicated to consumer goods.
+Output
+[
+edit
+]
+This section may contain outdated information that is inaccurate for the current
+version
+of the game. The last version it was verified as up to date for was 1.3.
+The Factory Output of each civilian factory employed in construction is 5 per day. Construction Speed modifies the output for the building of all constructions.
+Universal
+Country Specific
++15%
+Free Trade
+as
+trade law
++10%
+Export Focus
+as trade law
+Construction I
+Construction II
+Construction III
+Construction IV
+Construction V
+New Zealand
+national spirit
+The Worker's Party
+New Zealand
+national spirit
+In the Darkness
+Soviet
+national spirit
+Worker's Culture
++5%
+Limited Exports
+as trade law
+鈭?0%
+Service by Requirement
+as
+conscription law
+鈭?0%
+All Adults Serve
+as conscription law
+鈭?0%
+Scraping the Barrel
+as conscription law
+There are also modifiers which only affect a single type of building. These are, primarily, the
+political advisors
+(Captain of Industry, Fortification Engineer, Quartermaster General and War Industrialist) but can also be one of many other
+national spirits
+activated by
+national focuses
+or
+events
+.
+Efficiency of additional Civilian Factories
+[
+edit
+]
+This section may contain outdated information that is inaccurate for the current
+version
+of the game. The last version it was verified as up to date for was 1.2.
+The return on investment of building an additional Civilian Factory will depend on the
+Construction Speed
+bonus as well the Economy Law currently in place, or expected in the future. The higher the Construction Speed bonus is, the more Output will be done by the newly built Civilian Factory and the faster it will accumulate an Output equal to its cost, 10800. This variable is the time, in days, required to recover the cost of building the factory, or payback time. The Economy Law will dictate what ratio of Civilian Factories are used for Consumer Goods and Output/Trade. The higher this ratio is, the longer the payback time of the newly built Civilian Factory will be. The payback time of a new Civilian Factory is given by the following formula:
+The construction speed modifiers range between -70% and +65% and except for the lowest two modifiers, they all have multiple combinations to be achieved. In fact, there are 320 possible combinations of variables affecting Civilian Factory construction speed outside of national spirits and unique laws.
+Minimum
+0%
+Maximum
+Undisturbed Isolation
+8000
+2400
+2087
+Isolation
+5539
+2216
+1773
+Civilian Economy
+4115
+2058
+1524
+Early Mobilization
+2743
+1920
+1239
+Partial Mobilization
+2250
+1800
+1091
+War Economy
+2218
+1695
+1027
+Total Mobilization
+2000
+1600
+970
+Minimal Construction Speed is -70% for Undisturbed Isolation and goes up to -20% with Partial Mobilization. Maximum Speed is 15% for Undisturbed Isolation and 65% with Partial Mobilization. All Values are rounded up to full days.
+Additionally, because it's possible to assign up to 15 Civilian Factories (when available) to the construction of a new Civilian Factory, the number of days it will take to build a new one is given by the following formula:
+Factory conversion
+[
+edit
+]
+This section may contain outdated information that is inaccurate for the current
+version
+of the game. The last version it was verified as up to date for was 1.2.
+Civilian Factories can be converted into Military Factories for 4000 and Military Factories can be converted into Civilian Factories for 9000. These base cost is modified by several national spirits and
+political advisors
+. To convert a factory simply click on the corresponding state, and hover over the factory that shall be converted. The game will ask for confirmation. After confirmation the conversion now appears in the construction tab, just like any other building project.
+Repair
+[
+edit
+]
+This section may contain outdated information that is inaccurate for the current
+version
+of the game. The last version it was verified as up to date for was 1.3.
+Constructions may get damaged by combat or strategic bombing. They repair themselves at a rate of 1% per day. Civilian production may also get allocated to repair constructions at the same base rate as new constructions. This can speed up for the factories by researching Construction I to V, which will boost up the factory repair speed by 10% for every tier.
+Retrieved from "
+"
+Categories
+:
+Potentially outdated
+1.2
+Game concepts
+Hidden category:
+Articles with potentially outdated sections
+Navigation menu
+Personal tools
+Not logged in
+Talk
+Contributions
+Log in
+Namespaces
+Page
+Discussion
+Variants
+Views
+Read
+Edit
+View history
+More
+Search
+Navigation
+HoI4 Wiki Main Page
+Paradox Wikis
+Paradox Forums
+Recent changes
+Random page
+Tools
+What links here
+Related changes
+Special pages
+Printable version
+Permanent link
+Page information
+In other languages
+Deutsch
+Espa帽ol
+Fran莽ais
+Polski
+Portugu锚s
+袪褍褋褋泻懈泄
+This page was last modified on 13 December 2018, at 06:11.
+Content is available under
+Attribution-ShareAlike 3.0
+unless otherwise noted.
+About Hearts of Iron 4 Wiki
+Hearts of Iron 4 Wiki
+Paradox Wikis
+Mobile view

@@ -1,0 +1,185 @@
+﻿==================== 全部含 todt 的本地化键（原版+R56）====================
+  --- 原版（19 行）---
+    todt: "弗里茨·托特"
+    todt_desc: "德国工程师弗里茨·托特是托特组织的创始人，他将提高民用工业的建造速度。"
+    GER_fritz_todt: "$todt$"
+    GER_organization_todt_trait: "$construction_company$"
+    GER_organization_todt_improved_trait: "$construction_company$"
+    GER_reich_minister_of_armaments_todt: "$GER_reich_minister_of_armaments_speer$"
+    GER_todt_fuhrer: "$GER_der_fuhrer$"
+    GER_inner_circle.03.b: "$GER_fritz_todt$具备处理这项事务的必要经验"
+    GER_inner_circle_industrial_reichsleiter_all: "$GER_fritz_todt$、$GER_albert_speer$和$GER_hermann_goring$"
+    GER_inner_circle_industrial_reichsleiter_no_goring: "$GER_fritz_todt$和$GER_albert_speer$"
+    GER_form_organization_todt: "成立托特组织"
+    GER_form_organization_todt_desc: "尽管元首希望看到几个大型建设项目完成，但大多数项目将不得不等待。最紧迫的是[ROOT.GetNameDef]急需更多的军事工业。在弗里茨·托德手中进行规划，我们相信结果会很不错。"
+    GER_autonomous_organization_todt: "托特组织自治"
+    GER_autonomous_organization_todt_desc: "弗里茨·托特的倡议——托特组织，已经证明非常有效。建设项目快速完成，甚至连元首本人也感到满意。托特组织作为德国军备和战争的帝国全权代表，将成为我国的真正资产。"
+    GER_ascension_of_todt: "$GER_inner_circle_member_title$托特"
+    GER_ascension_of_todt_desc: "作为一名拥有军事经验的优秀工程师，弗里茨·托德已经证明自己是元首的得力顾问。如果给予他相对的行动自由，我们相信他能对[ROOT.GetNameDef]发挥很大作用。"
+    GER_organization_todt: "托特组织"
+    GER_todt_reich_engineer: "国家工程师"
+    GER_todt_reich_minister_of_armaments: "国家军备部长"
+
+  --- R56（1 行）---
+    AFG_organisation_todt:0 "托特组织"
+
+==================== german.txt 里 id = GER_form_organization_todt 的块 ====================
+  --- 命中 L18429 ---
+    18424  			}
+    18425  		}
+    18426  	}
+    18427  
+    18428  	focus = {
+    18429  		id = GER_form_organization_todt
+    18430  		icon = GFX_focus_GER_form_organization_todt
+    18431  		prerequisite = { focus = GER_ascension_of_todt }
+    18432  
+    18433  		text_icon = GER_inner_circle_focus_style
+    18434  
+    18435  		x = 0
+    18436  		y = 1
+    18437  		relative_position_id = GER_ascension_of_todt
+    18438  		cost = @inner_circle_time_tier_1
+    18439  		
+    18440  		available = {
+    18441  			if = { #ADVISOR WORKING ON THE FOCUS (Show progress)
+    18442  				limit = {
+    18443  					has_country_flag = GER_form_organization_todt_in_progress_flag
+    18444  				}
+    18445  				set_temp_variable = { temp_focus_days = @inner_circle_time_tier_1 } #For tooltip purposes
+    18446  				multiply_temp_variable = { temp_focus_days = 7 } #The constant uses focus cost which is in weeks, so convert to days
+    18447  				custom_override_tooltip = {
+    18448  					tooltip = {
+    18449  						localization_key = GER_inner_circle_focus_in_progress_tt
+    18450  						CHARACTER = GER_fritz_todt
+    18451  						FLAG_DAYS = [?GER_form_organization_todt_in_progress_flag:days]
+    18452  					}
+    18453  					always = no 
+    18454  				}
+    18455  			}
+    18456  			else = { #NOT BEEN WORKED ON (Just Explain)
+    18457  				custom_override_tooltip = {
+    18458  					tooltip = {
+    18459  						localization_key = GER_focus_can_only_be_completed_by_advisor_tt
+    18460  						CHARACTER = GER_fritz_todt
+    18461  						FOCUS = GER_ascension_of_todt
+    18462  					}
+    18463  					always = no
+    18464  				}
+    18465  			}
+    18466  		}
+    18467  
+    18468  		search_filters = { FOCUS_FILTER_INNER_CIRCLE FOCUS_FILTER_INDUSTRY }
+    18469  
+    18470  		completion_reward = {
+    18471  			every_core_state = {
+    18472  				limit = {
+    18473  					is_fully_controlled_by = ROOT
+    18474  					free_building_slots = {
+    18475  						building = arms_factory
+    18476  						size > 0
+    18477  						include_locked = yes
+    18478  					}
+    18479  				}
+    18480  				random_select_amount = 3
+    18481  				add_extra_state_shared_building_slots = 1
+    18482  				add_building_construction = {
+    18483  					type = arms_factory
+    18484  					level = 1
+    18485  					instant_build = yes
+    18486  				}
+    18487  			}
+    18488  
+    18489  			custom_effect_tooltip = generic_skip_one_line_tt
+    18490  			if = {
+    18491  				limit = {
+    18492  					has_idea = GER_philipp_holzmann
+    18493  				}
+    18494  				swap_ideas = {
+    18495  					remove_idea = GER_philipp_holzmann
+    18496  					add_idea = GER_organization_todt
+    18497  				}
+    18498  			}
+    18499  			else = {
+    18500  				effect_tooltip = {
+
+  --- 命中 L18518 ---
+    18513  
+    18514  		text_icon = GER_inner_circle_focus_style
+    18515  
+    18516  		x = 0
+    18517  		y = 1
+    18518  		relative_position_id = GER_form_organization_todt
+    18519  		cost = @inner_circle_time_tier_2
+    18520  		
+    18521  		available = {
+    18522  			if = { #ADVISOR WORKING ON THE FOCUS (Show progress)
+    18523  				limit = {
+    18524  					has_country_flag = GER_autonomous_organization_todt_in_progress_flag
+    18525  				}
+    18526  				set_temp_variable = { temp_focus_days = @inner_circle_time_tier_2 } #For tooltip purposes
+    18527  				multiply_temp_variable = { temp_focus_days = 7 } #The constant uses focus cost which is in weeks, so convert to days
+    18528  				custom_override_tooltip = {
+    18529  					tooltip = {
+    18530  						localization_key = GER_inner_circle_focus_in_progress_tt
+    18531  						CHARACTER = GER_fritz_todt
+    18532  						FLAG_DAYS = [?GER_autonomous_organization_todt_in_progress_flag:days]
+    18533  					}
+    18534  					always = no 
+    18535  				}
+    18536  			}
+    18537  			else = { #NOT BEEN WORKED ON (Just Explain)
+    18538  				custom_override_tooltip = {
+    18539  					tooltip = {
+    18540  						localization_key = GER_focus_can_only_be_completed_by_advisor_tt
+    18541  						CHARACTER = GER_fritz_todt
+    18542  						FOCUS = GER_ascension_of_todt
+    18543  					}
+    18544  					always = no
+    18545  				}
+    18546  			}
+    18547  
+    18548  			if = {
+    18549  				limit = {
+    18550  					check_variable = { GER_industrialist_prevailed = 0 compare = not_equals }
+    18551  				}
+    18552  				if = {
+    18553  					limit = {
+    18554  						check_variable = { GER_industrialist_prevailed = 1 }
+    18555  					}
+    18556  					custom_override_tooltip = {
+    18557  						tooltip = {
+    18558  							localization_key = GER_industrialists_intrigue_prevailed_tt
+    18559  							PREVAILED_CHARACTER = GER_fritz_todt
+    18560  						}
+    18561  						always = yes
+    18562  					}
+    18563  				}
+    18564  				else_if = {
+    18565  					limit = {
+    18566  						check_variable = { GER_industrialist_prevailed = 2 }
+    18567  					}
+    18568  					custom_override_tooltip = {
+    18569  						tooltip = {
+    18570  							localization_key = GER_industrialists_intrigue_prevailed_tt
+    18571  							PREVAILED_CHARACTER = GER_albert_speer
+    18572  						}
+    18573  						always = no
+    18574  					}
+    18575  				}
+    18576  				else_if = {
+    18577  					limit = {
+    18578  						check_variable = { GER_industrialist_prevailed = 3 }
+    18579  					}
+    18580  					custom_override_tooltip = {
+    18581  						tooltip = {
+    18582  							localization_key = GER_industrialists_intrigue_prevailed_tt
+    18583  							PREVAILED_CHARACTER = GER_hermann_goring
+    18584  						}
+    18585  						always = no
+    18586  					}
+    18587  				}
+    18588  			}
+    18589  		}
+
+

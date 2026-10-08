@@ -1,0 +1,17 @@
+{
+  "id": "hof_ic_shlyapnikov_producers_congress",
+  "name": "GFX_hof_ic_shlyapnikov_producers_congress",
+  "title": "生产者代表大会",
+  "concept": "Interior of a FULL but intimate 1920s producers congress hall viewed from above rear: dozens of industrial workers in dark jackets and caps, seen only from behind or as faceless silhouette; they face inward toward one another as active representatives, not merely an audience watching a stage. In CENTER FRONT one modest wood TABLE with a conspicuous loose election roster sheet showing only short grey abstract dashes. Light falls from domed skylight above, warm golden dust beams, orderly seated rows but varied worker postures. No suits, ties, flags, rostrum, lectern, banners or visible words.",
+  "group": "shlyapnikov",
+  "size": [
+    100,
+    88
+  ],
+  "prompt": "Use case: stylized-concept. Create ONE finished Hearts of Iron IV Soviet national focus icon. Input reference is ONLY outer gold laurel and engraved sculptural relief STYLE; replace central imagery completely. Subject: Interior of a FULL but intimate 1920s producers congress hall viewed from above rear: dozens of industrial workers in dark jackets and caps, seen only from behind or as faceless silhouette; they face inward toward one another as active representatives, not merely an audience watching a stage. In CENTER FRONT one modest wood TABLE with a conspicuous loose election roster sheet showing only short grey abstract dashes. Light falls from domed skylight above, warm golden dust beams, orderly seated rows but varied worker postures. No suits, ties, flags, rostrum, lectern, banners or visible words. Gold laurel open at top, small red star above, blank gold ribbon below, thin bronze-red circular rim. Ivory-grey relief with restrained scene-specific colors, highly readable at final100x88, directional upper-left light. No readable letters, names, words, numbers, faces, portraits or watermark. Project-specific forbidden imagery: confiscation, sealing tape, guns, offices for calendar scene, bureaucratic papers there, businessmen in suits, workers loitering at factory/agency gate, lathe close-up, 1937, execution, barred prison windows, interrogation, union flags and lecterns. Landscape100:88, emblem fills94%canvas. TRUE transparent RGBA background enabled, alpha0 outside emblem and all four corners,20-50% transparent area. No fake checkerboard or rectangular backdrop or external shadow.",
+  "references": [
+    "D:/Users/xuwei/PycharmProjects/heart_of_Iron/art/focus/bukharin/source/GFX_hof_ic_bukharin_proportional_development.png"
+  ],
+  "generated_path": "C:\\Users\\xuwei\\.codex\\generated_images\\01a09af5-fd43-79a0-a3cc-72284cd67cbc\\exec-a1da1e8c-f910-4b16-9a5e-7cbdb3c0a6d6.png",
+  "mode": "built-in image_gen"
+}

@@ -1,0 +1,44 @@
+﻿=== 1. .mod 文件 BOM 检查 ===
+  D:\Users\xuwei\PycharmProjects\heart_of_Iron\mod\heart_of_iron\descriptor.mod
+    198 字节 | BOM=True | 行尾=CRLF
+    -> 已剥离 BOM（重写为 UTF-8 无 BOM）
+  C:\Users\xuwei\Documents\Paradox Interactive\Hearts of Iron IV\mod\The Heart of Iron.mod
+    269 字节 | BOM=True | 行尾=CRLF
+    -> 已剥离 BOM（重写为 UTF-8 无 BOM）
+
+=== 2. wiki 归档可搜性对照（已知触发器应有命中）===
+    has_war                  命中 19
+    has_start_date           命中 2
+    has_game_started         命中 0
+    has_completed_focus      命中 2
+    （wiki 文件大小 157902 字节）
+
+=== 3. error.log 新鲜度 ===
+    error.log  修改时间 = 2026/9/13 17:53:15  大小 = 383876 字节
+    今天 = 2026/9/13 19:55:49
+    --- 前 25 行 ---
+      [17:15:57][no_game_date][bitmapfont.cpp:561]: lineHeight (23) in 'gfx/fonts/Arial_20.fnt' does not match previous fontfiles in font 'loadscreen_tip'
+      [17:15:57][no_game_date][bitmapfont.cpp:576]: base (20) in 'gfx/fonts/Arial_20.fnt' does not match previous fontfiles in font 'loadscreen_tip'
+      [17:15:57][no_game_date][bitmapfont.cpp:561]: lineHeight (30) in 'gfx/fonts/Arial_26.fnt' does not match previous fontfiles in font 'loadscreen_header'
+      [17:15:57][no_game_date][bitmapfont.cpp:576]: base (26) in 'gfx/fonts/Arial_26.fnt' does not match previous fontfiles in font 'loadscreen_header'
+      [17:15:57][no_game_date][bitmapfont.cpp:561]: lineHeight (16) in 'gfx/fonts/Arial_14.fnt' does not match previous fontfiles in font 'standard_font'
+      [17:15:57][no_game_date][bitmapfont.cpp:576]: base (14) in 'gfx/fonts/Arial_14.fnt' does not match previous fontfiles in font 'standard_font'
+      [17:15:57][no_game_date][bitmapfont.cpp:561]: lineHeight (16) in 'gfx/fonts/Arial_14.fnt' does not match previous fontfiles in font 'chat_input_font'
+      [17:15:57][no_game_date][bitmapfont.cpp:576]: base (14) in 'gfx/fonts/Arial_14.fnt' does not match previous fontfiles in font 'chat_input_font'
+      [17:15:58][no_game_date][bitmapfont.cpp:561]: lineHeight (18) in 'gfx/fonts/Arial_16.fnt' does not match previous fontfiles in font 'hoi_20b'
+      [17:15:58][no_game_date][bitmapfont.cpp:576]: base (16) in 'gfx/fonts/Arial_16.fnt' does not match previous fontfiles in font 'hoi_18b'
+      [17:15:58][no_game_date][bitmapfont.cpp:561]: lineHeight (30) in 'gfx/fonts/Arial_26.fnt' does not match previous fontfiles in font 'vic_36'
+      [17:15:58][no_game_date][bitmapfont.cpp:561]: lineHeight (23) in 'gfx/fonts/Arial_20b.fnt' does not match previous fontfiles in font 'hoi4_typewriter22'
+      [17:15:58][no_game_date][bitmapfont.cpp:576]: base (20) in 'gfx/fonts/Arial_20b.fnt' does not match previous fontfiles in font 'hoi4_typewriter22'
+      [17:15:58][no_game_date][bitmapfont.cpp:561]: lineHeight (30) in 'gfx/fonts/Arial_26.fnt' does not match previous fontfiles in font 'hoi_arrow_font'
+      [17:15:58][no_game_date][bitmapfont.cpp:576]: base (26) in 'gfx/fonts/Arial_26.fnt' does not match previous fontfiles in font 'hoi_arrow_font'
+      [17:15:58][no_game_date][bitmapfont.cpp:576]: base (14) in 'gfx/fonts/Arial_14.fnt' does not match previous fontfiles in font 'Main_16'
+      [17:15:58][no_game_date][bitmapfont.cpp:561]: lineHeight (30) in 'gfx/fonts/Arial_26.fnt' does not match previous fontfiles in font 'vic_36_black'
+      [17:15:58][no_game_date][bitmapfont.cpp:561]: lineHeight (16) in 'gfx/fonts/Arial_14.fnt' does not match previous fontfiles in font 'garamond_14'
+      [17:15:58][no_game_date][bitmapfont.cpp:576]: base (14) in 'gfx/fonts/Arial_14.fnt' does not match previous fontfiles in font 'garamond_14'
+      [17:15:58][no_game_date][bitmapfont.cpp:576]: base (14) in 'gfx/fonts/Arial_14s.fnt' does not match previous fontfiles in font 'hoi_16mbs'
+      [17:15:58][no_game_date][bitmapfont.cpp:561]: lineHeight (93) in 'gfx/fonts/mapfont_chn_0.fnt' does not match previous fontfiles in font 'tahoma_60'
+      [17:15:58][no_game_date][bitmapfont.cpp:576]: base (80) in 'gfx/fonts/mapfont_chn_0.fnt' does not match previous fontfiles in font 'tahoma_60'
+      [17:15:58][no_game_date][bitmapfont.cpp:561]: lineHeight (93) in 'gfx/fonts/mapfont_chn_1.fnt' does not match previous fontfiles in font 'tahoma_60'
+      [17:15:58][no_game_date][bitmapfont.cpp:576]: base (80) in 'gfx/fonts/mapfont_chn_1.fnt' does not match previous fontfiles in font 'tahoma_60'
+      [17:15:58][no_game_date][bitmapfont.cpp:561]: lineHeight (93) in 'gfx/fonts/mapfont_chn_2.fnt' does not match previous fontfiles in font 'tahoma_60'

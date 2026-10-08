@@ -1,0 +1,19 @@
+﻿https://www.marxists.org/        200
+https://zh.wikipedia.org/        301
+https://en.wikipedia.org/        301
+
+tmp\rykov\right_opp_zh.txt                         1093
+tmp\rykov\rykov_en.txt                            14675
+tmp\rykov\rykov_zh.txt                             1363
+tmp\rykov\sovnarkom_zh.txt                         1904
+tmp\rykov\verify\en_prohibition.txt                6432
+tmp\rykov\verify\en_vodka.txt                     19705
+tmp\rykov\verify\ru_monopoly.txt                  12411
+tmp\rykov\verify\ru_rykov.txt                     33963
+
+大文件：
+v2_summary_prospect_05.txt                       112062
+v2_china_theses_03a.txt                          109543
+v2_against_stalin_theses_01c.txt                  97020
+ii3_one_country_59.txt                            96573
+v1_comintern_1921b.txt                            71757

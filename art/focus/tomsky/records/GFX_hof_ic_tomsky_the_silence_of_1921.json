@@ -1,0 +1,17 @@
+{
+  "id": "hof_ic_tomsky_the_silence_of_1921",
+  "name": "GFX_hof_ic_tomsky_the_silence_of_1921",
+  "title": "1921 年 5 月的沉默",
+  "concept": "Quiet close-up of a vacant wooden lectern surface with ONE untouched neatly stacked set of pale speech manuscript sheets, only faint horizontal rules. At lower foreground a seated persons TWO anatomically correct hands folded together calmly in their lap, sleeves visible but no head or torso. CRUCIAL: a broad clearly visible empty dark gap separates withdrawn hands from the paper stack; hands do not touch or reach for paper. Background blurred empty hall chairs. Small vertical top-light isolates white paper, all surroundings cool dark grey with tiny faint warm highlights. No microphone, mouth, raised hand or gestures.",
+  "group": "tomsky",
+  "size": [
+    100,
+    88
+  ],
+  "prompt": "Create ONE finished Hearts of Iron IV Soviet national focus icon. Input reference is ONLY gold laurel frame and engraved sculptural relief STYLE; replace all central imagery. Subject: Quiet close-up of a vacant wooden lectern surface with ONE untouched neatly stacked set of pale speech manuscript sheets, only faint horizontal rules. At lower foreground a seated persons TWO anatomically correct hands folded together calmly in their lap, sleeves visible but no head or torso. CRUCIAL: a broad clearly visible empty dark gap separates withdrawn hands from the paper stack; hands do not touch or reach for paper. Background blurred empty hall chairs. Small vertical top-light isolates white paper, all surroundings cool dark grey with tiny faint warm highlights. No microphone, mouth, raised hand or gestures. Gold laurel open at top, small red star above, blank golden ribbon below, thin bronze medallion rim. Ivory-grey engraved miniature relief with specified restrained colors, clear readable shapes at final100x88, upper-left light. No readable text, numerals, letters, faces, portraits or watermarks. No guns, death or self-harm imagery anywhere. No bound books, bookcases, archive cabinets, leather book covers, dip pens, prison-bar shadows, barricades, border maps, globes or foreign flags. Landscape100:88, emblem fills94%canvas. TRUE transparent RGBA background enabled: alpha0 outside emblem and all four corners,20-50%transparent area. No fake checkerboard or solid background rectangle or external shadow.",
+  "references": [
+    "D:/Users/xuwei/PycharmProjects/heart_of_Iron/art/focus/bukharin/source/GFX_hof_ic_bukharin_proportional_development.png"
+  ],
+  "generated_path": "C:\\Users\\xuwei\\.codex\\generated_images\\01a09af5-fd43-79a0-a3cc-72284cd67cbc\\exec-0d0dee09-25ee-4ec1-bb13-300cf6b3578a.png",
+  "mode": "built-in image_gen"
+}

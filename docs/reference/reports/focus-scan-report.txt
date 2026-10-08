@@ -1,0 +1,382 @@
+﻿=== 全局计数（D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125\common\national_focus）===
+focus_tree 定义:      167
+shared_focus 定义:    1191
+shared_focus 引用:    412
+joint_focus 定义:     275
+inlay_window 引用:    6
+
+=== 所有 focus_tree（文件 | 树 id | 面向 TAG）===
+generic.txt                                          | generic_focus                      | 
+manchukuo_TSR.txt                                    | manchukuo_focus_tsr                | 
+norway.txt                                           | norwegian_focus                    | 
+india.txt                                            | r56_india_generic                  | 
+andorra.txt                                          | andorra_focus                      | ADR
+andalusia.txt                                        | andalusia_focus                    | ADU
+horn_of_africa.txt                                   | horn_of_africa_tree                | AFA,ORO,QEM,TIG,BEG,HAR,SID,GBA
+afghanistan.txt                                      | afghanistan_tree                   | AFG
+r56_afghanistan.txt                                  | r56_afghanistan_focus              | AFG
+albania.txt                                          | albania_focus                      | ALB
+algeria.txt                                          | algeria_focus                      | ALG
+r56_italian_east_africa.txt                          | italian_east_africa                | AOI
+argentina.txt                                        | argentine_focus_tree               | ARG
+r56_argentina.txt                                    | argentinian_focus                  | ARG
+armenia.txt                                          | armenian_focus                     | ARM
+australia_taog.txt                                   | australia_taog_focus               | AST
+australia.txt                                        | r56_australian_focus               | AST
+austria.txt                                          | austria_focus_tree                 | AUS
+r56_austria.txt                                      | austrian_focus                     | AUS
+belgium.txt                                          | belgium_focus                      | BEL
+r56_belgium.txt                                      | belgium_focus_r56                  | BEL
+bhutan.txt                                           | bhutan_focus                       | BHU
+brazil.txt                                           | brazil_tree                        | BRA
+r56_brazil.txt                                       | brazilian_focus                    | BRA
+burma.txt                                            | burma_focus                        | BRM
+r56_bulgaria.txt                                     | bulgaria_focus_r56                 | BUL
+bulgaria.txt                                         | bulgarian_focus                    | BUL
+canada.txt                                           | r56_canadian_focus                 | CAN
+china_nationalist.txt                                | china_nationalist_focus            | CHI
+china_nationalist_sea.txt                            | china_nationalist_sea_focus        | CHI
+r56_chile.txt                                        | chile_focus                        | CHL
+chile.txt                                            | chilean_focus_tree                 | CHL
+congo.txt                                            | congo_focus                        | COG
+r56_congo.txt                                        | congo_focus_r56                    | COG
+colombia.txt                                         | colombian_focus                    | COL
+costa_rica.txt                                       | r56_costa_rica_focus               | COS
+croatia.txt                                          | croatia_focus                      | CRO
+csa.txt                                              | confederate_focus                  | CSA
+Cuba.txt                                             | cuban_focus                        | CUB
+r56_cyprus.txt                                       | cyprus_tree                        | CYP
+czechoslovakia.txt                                   | czech_focus                        | CZE
+r56_czechoslovakia.txt                               | czechoslovakian_focus_r56          | CZE
+czechoslovakia_mu.txt                                | mu_czech_focus                     | CZE
+r56_denmark.txt                                      | collab_denmark                     | DEN
+denmark.txt                                          | danish_focus                       | DEN
+r56_denmark.txt                                      | denmark_focus                      | DEN
+r56_denmark.txt                                      | free_denmark                       | DEN
+Danzig.txt                                           | danzig_focus                       | DNZ
+r56_ecuador.txt                                      | r56_ecuadorian_focus               | ECU
+egypt.txt                                            | egypt_focus                        | EGY
+uk.txt                                               | british_focus                      | ENG
+estonia.txt                                          | estonia_tree                       | EST
+r56_estonia.txt                                      | estonian_focus                     | EST
+r56_ethiopia.txt                                     | eth_focus                          | ETH
+ethiopia.txt                                         | ethiopia_tree                      | ETH
+finland.txt                                          | finnish_focus                      | FIN
+flanders.txt                                         | flanders_focus                     | FLA
+free_france.txt                                      | free_french_focus                  | FRA
+france.txt                                           | french_focus                       | FRA
+vichy_france.txt                                     | vichy_french_focus                 | FRA
+FrenchIndochina.txt                                  | FrenchIndochina                    | FRI
+germany.txt                                          | german_focus                       | GER
+greece.txt                                           | greek_focus                        | GRE
+r56_greece.txt                                       | r56_greek_focus                    | GRE
+greenland.txt                                        | greenland_focus                    | GRN
+guatemala.txt                                        | Guatemala_Focus                    | GUA
+netherlands.txt                                      | netherlands_focus                  | HOL
+honduras.txt                                         | hon_focus                          | HON
+hungary.txt                                          | hungarian_focus                    | HUN
+hungary_wuw.txt                                      | wuw_hungarian_focus                | HUN
+r56_iceland.txt                                      | Iceland_focus                      | ICE
+iceland.txt                                          | iceland_tree                       | ICE
+indonesia.txt                                        | indonesia_focus                    | INS
+r56_indonesia.txt                                    | indonesian_focus                   | INS
+ireland.txt                                          | ireland_focus                      | IRE
+iraq.txt                                             | iraq_focus                         | IRQ
+r56_iraq.txt                                         | R56_iraqi_focus                    | IRQ
+israel.txt                                           | israel_focus                       | ISR
+italy.txt                                            | italian_focus                      | ITA,RSI,RDS
+japan.txt                                            | japan_wtt_focus                    | JAP
+jordan.txt                                           | jordan_focus                       | JOR
+kalmykia.txt                                         | r56_kalmykia                       | KAL
+katanga.txt                                          | katanga_focus                      | KAT
+r56_turkestan_minor.txt                              | r56_turkestan_focus                | KAZ,KYR,UZB,TAJ,BUK,KHI,KKP,TMS
+china_warlord.txt                                    | new_warlord_focus                  | KHM,YUN,SIK,GXC,SHX,XSM,SIC,XIC,GDC,HBC,SND
+korea.txt                                            | korea_focus                        | KOR
+latvia.txt                                           | latvia_tree                        | LAT
+r56_latvia.txt                                       | latvian_focus                      | LAT
+liechtenstein.txt                                    | liechtenstein_focus                | LIE
+r56_lithuania.txt                                    | lithuania_focus                    | LIT
+lithuania.txt                                        | lithuania_tree                     | LIT
+r56_luxembourg.txt                                   | luxembourg_tree                    | LUX
+malaysia.txt                                         | malaysia_focus                     | MAL
+manchukuo.txt                                        | manchukuo_focus_r56                | MAN
+mengkukuo.txt                                        | mengkukuo_focus                    | MEN
+mexico.txt                                           | mexico_focus_tree                  | MEX
+r56_indian_ocean_shared.txt                          | r56_shared_indian_ocean_focus      | MLD,MAU,SEY,SRL
+r56_microstate.txt                                   | r56_microstate_focus               | MNC,SAN,AHV,FAR,MLT,JER,JAN
+mongolia.txt                                         | Mongolia_focus                     | MON
+mandate_of_palestine.txt                             | mandate_palestine_focus            | MPL
+r56_west_african_shared.txt                          | west_africa_focus                  | MRT,SEN,GAM,MLI,GNB,GNA,SIE,LIB,IVO,VOL,GHA,TOG,DAH,NGR,NGA,SOK,BIA
+Nicaragua.txt                                        | nicaraguan_focus                   | NIC
+r56_norway.txt                                       | r56_norwegian_focus                | NOR
+nauru.txt                                            | nauru_focus                        | NRU
+new_zealand.txt                                      | r56_new_zealander_focus            | NZL
+oman.txt                                             | oman_focus                         | OMA
+r56_arctic_minor.txt                                 | r56_arctic_focus                   | OVO,YAM,NEN,KOM,KAR,TAY,YAK,GRN,SMI,CKK,INU
+pakistan.txt                                         | pakistani_focus_tree               | PAK
+palestine.txt                                        | palestine_focus                    | PAL
+paraguay.txt                                         | paraguay_focus                     | PAR
+persia.txt                                           | persian_focus_tree                 | PER
+r56_persia.txt                                       | R56_persian_focus                  | PER
+philippines.txt                                      | philippines_focus                  | PHI
+r56_philippines.txt                                  | r56_philippines_focus              | PHI
+poland.txt                                           | polish_focus                       | POL
+portugal.txt                                         | portuguese_focus                   | POR
+r56_portugal.txt                                     | r56_portuguese_focus               | POR
+china_communist.txt                                  | china_communist_focus              | PRC
+china_communist_sea.txt                              | china_communist_focus_sea          | PRC
+r56_ger_shared.txt                                   | germany_shared_focus               | PRE,BAY,WUR,BAD,ALS,SAX,HES,HAN,MEK,SHL,RHI,THU,SAA,DNZ
+peru.txt                                             | r56_peru_focus                     | PRU
+r56_arab_minor.txt                                   | r56_arab_focus                     | QAT,BHR,UAE,YEM,TUN,LBA,MOR,JOR,KUW,WES,SYR,LEB,IMO
+quebec.txt                                           | quebec_focus                       | QUE
+india_goe.txt                                        | indian_focus_goe                   | RAJ
+india.txt                                            | r56_india                          | RAJ
+r56_india_revolt.txt                                 | r56_indian_revolt_focus            | RAJ
+china_nationalist_warlord_TSR.txt                    | china_nationalist_warlord_focus    | RNG
+romania.txt                                          | romanian_focus                     | ROM
+ruthenia.txt                                         | ruthenian_focus_tree               | RUT
+south_africa.txt                                     | r56_south_africa_focus             | SAF
+samoa.txt                                            | samoa_focus                        | SAM
+saudi_arabia.txt                                     | saudi_focus                        | SAU
+scotland.txt                                         | scotland_focus                     | SCO
+serbia.txt                                           | serbia_focus                       | SER
+siam.txt                                             | siam_focus                         | SIA
+siam_r56.txt                                         | siamese_focus_tree                 | SIA
+slovakia.txt                                         | SLO_generic_focus                  | SLO
+austro_hungarian_releasable_shared.txt               | austro_hungarian_releasable_focus  | SLO,TRA,CRO,LBV,SIL,MNT,BOS,SLV,HRZ,ALB
+r56_soviet_civil_war.txt                             | soviet_civil_war_focus             | SOV
+soviet.txt                                           | soviet_focus                       | SOV
+soviet_old.txt                                       | soviet_focus_old                   | SOV
+r56_nationalist_spain.txt                            | r56_nationalist_spain_focus        | SPR
+r56_spain.txt                                        | Spain_focus                        | SPR
+spain.txt                                            | spanish_focus                      | SPR
+sudan.txt                                            | sudan_focus                        | SUD
+r56_sweden.txt                                       | swe_focus                          | SWE
+sweden.txt                                           | sweden_focus                       | SWE
+switzerland.txt                                      | swiss_focus                        | SWI
+r56_switzerland.txt                                  | swiss_r56_focus                    | SWI
+tuva.txt                                             | tuva_focus                         | TAN
+tibet.txt                                            | tibet_focus                        | TIB
+r56_polynesia_shared.txt                             | r56_polynesia_focus                | TON,FIJ,NIU,RAP,TUV,KIR,SOL,VAN,FSM,MRS,PLU,GUM,CHT,HAW
+turkey.txt                                           | turkish_focus                      | TUR
+r56_turkey.txt                                       | turkish_focus_r56                  | TUR
+ukraine.txt                                          | ukraine_focus                      | UKR
+uruguay.txt                                          | r56_uruguay_focus                  | URG
+usa.txt                                              | usa_focus                          | USA
+venezuelan_national_government.txt                   | venezuela_focus_VCW                | VCW
+venezuela.txt                                        | venezuela_focus                    | VEN
+r56_vichy_france.txt                                 | vichy_france_focus                 | VIC
+Vietnam.txt                                          | Vietnam_focus                      | VIN
+venice.txt                                           | venice_focus                       | VNZ
+tender_loving_empire.txt                             | tender_loving_empire_focus         | WHY
+wallonia.txt                                         | wallonia_focus                     | WLL
+r56_celtic_minor.txt                                 | r56_celtic_focus                   | WLS,NIR,BRI
+yugoslavia.txt                                       | yugoslavian_focus                  | YUG
+china_warlord_sea.txt                                | china_warlord_sea_focus            | YUN,SIK,GXC,SHX,XSM,GDC,XIC,SND,KHM,NXM,GSM,SIC,KUM,HBC
+
+=== 同一 TAG 被多个 focus_tree 覆盖的情况 ===
+TAG DEN  <- 4 棵树
+      danish_focus                       denmark.txt
+      denmark_focus                      r56_denmark.txt
+      collab_denmark                     r56_denmark.txt
+      free_denmark                       r56_denmark.txt
+TAG FRA  <- 3 棵树
+      french_focus                       france.txt
+      free_french_focus                  free_france.txt
+      vichy_french_focus                 vichy_france.txt
+TAG SPR  <- 3 棵树
+      r56_nationalist_spain_focus        r56_nationalist_spain.txt
+      Spain_focus                        r56_spain.txt
+      spanish_focus                      spain.txt
+TAG RAJ  <- 3 棵树
+      r56_india                          india.txt
+      indian_focus_goe                   india_goe.txt
+      r56_indian_revolt_focus            r56_india_revolt.txt
+TAG SOV  <- 3 棵树
+      soviet_civil_war_focus             r56_soviet_civil_war.txt
+      soviet_focus                       soviet.txt
+      soviet_focus_old                   soviet_old.txt
+TAG CZE  <- 3 棵树
+      czech_focus                        czechoslovakia.txt
+      mu_czech_focus                     czechoslovakia_mu.txt
+      czechoslovakian_focus_r56          r56_czechoslovakia.txt
+TAG GRN  <- 2 棵树
+      greenland_focus                    greenland.txt
+      r56_arctic_focus                   r56_arctic_minor.txt
+TAG HUN  <- 2 棵树
+      hungarian_focus                    hungary.txt
+      wuw_hungarian_focus                hungary_wuw.txt
+TAG EST  <- 2 棵树
+      estonia_tree                       estonia.txt
+      estonian_focus                     r56_estonia.txt
+TAG ICE  <- 2 棵树
+      iceland_tree                       iceland.txt
+      Iceland_focus                      r56_iceland.txt
+TAG SIA  <- 2 棵树
+      siam_focus                         siam.txt
+      siamese_focus_tree                 siam_r56.txt
+TAG DNZ  <- 2 棵树
+      danzig_focus                       Danzig.txt
+      germany_shared_focus               r56_ger_shared.txt
+TAG GRE  <- 2 棵树
+      greek_focus                        greece.txt
+      r56_greek_focus                    r56_greece.txt
+TAG ETH  <- 2 棵树
+      ethiopia_tree                      ethiopia.txt
+      eth_focus                          r56_ethiopia.txt
+TAG POR  <- 2 棵树
+      portuguese_focus                   portugal.txt
+      r56_portuguese_focus               r56_portugal.txt
+TAG PHI  <- 2 棵树
+      philippines_focus                  philippines.txt
+      r56_philippines_focus              r56_philippines.txt
+TAG SWE  <- 2 棵树
+      swe_focus                          r56_sweden.txt
+      sweden_focus                       sweden.txt
+TAG TUR  <- 2 棵树
+      turkish_focus_r56                  r56_turkey.txt
+      turkish_focus                      turkey.txt
+TAG SWI  <- 2 棵树
+      swiss_r56_focus                    r56_switzerland.txt
+      swiss_focus                        switzerland.txt
+TAG PER  <- 2 棵树
+      persian_focus_tree                 persia.txt
+      R56_persian_focus                  r56_persia.txt
+TAG IRQ  <- 2 棵树
+      iraq_focus                         iraq.txt
+      R56_iraqi_focus                    r56_iraq.txt
+TAG INS  <- 2 棵树
+      indonesia_focus                    indonesia.txt
+      indonesian_focus                   r56_indonesia.txt
+TAG JOR  <- 2 棵树
+      jordan_focus                       jordan.txt
+      r56_arab_focus                     r56_arab_minor.txt
+TAG LIT  <- 2 棵树
+      lithuania_tree                     lithuania.txt
+      lithuania_focus                    r56_lithuania.txt
+TAG LAT  <- 2 棵树
+      latvia_tree                        latvia.txt
+      latvian_focus                      r56_latvia.txt
+TAG BRA  <- 2 棵树
+      brazil_tree                        brazil.txt
+      brazilian_focus                    r56_brazil.txt
+TAG BEL  <- 2 棵树
+      belgium_focus                      belgium.txt
+      belgium_focus_r56                  r56_belgium.txt
+TAG CRO  <- 2 棵树
+      austro_hungarian_releasable_focus  austro_hungarian_releasable_shared.txt
+      croatia_focus                      croatia.txt
+TAG PRC  <- 2 棵树
+      china_communist_focus              china_communist.txt
+      china_communist_focus_sea          china_communist_sea.txt
+TAG CHL  <- 2 棵树
+      chilean_focus_tree                 chile.txt
+      chile_focus                        r56_chile.txt
+TAG BUL  <- 2 棵树
+      bulgarian_focus                    bulgaria.txt
+      bulgaria_focus_r56                 r56_bulgaria.txt
+TAG ARG  <- 2 棵树
+      argentine_focus_tree               argentina.txt
+      argentinian_focus                  r56_argentina.txt
+TAG ALB  <- 2 棵树
+      albania_focus                      albania.txt
+      austro_hungarian_releasable_focus  austro_hungarian_releasable_shared.txt
+TAG AFG  <- 2 棵树
+      afghanistan_tree                   afghanistan.txt
+      r56_afghanistan_focus              r56_afghanistan.txt
+TAG SLO  <- 2 棵树
+      austro_hungarian_releasable_focus  austro_hungarian_releasable_shared.txt
+      SLO_generic_focus                  slovakia.txt
+TAG AUS  <- 2 棵树
+      austria_focus_tree                 austria.txt
+      austrian_focus                     r56_austria.txt
+TAG AST  <- 2 棵树
+      r56_australian_focus               australia.txt
+      australia_taog_focus               australia_taog.txt
+TAG CHI  <- 2 棵树
+      china_nationalist_focus            china_nationalist.txt
+      china_nationalist_sea_focus        china_nationalist_sea.txt
+TAG GDC  <- 2 棵树
+      new_warlord_focus                  china_warlord.txt
+      china_warlord_sea_focus            china_warlord_sea.txt
+TAG XIC  <- 2 棵树
+      new_warlord_focus                  china_warlord.txt
+      china_warlord_sea_focus            china_warlord_sea.txt
+TAG SIC  <- 2 棵树
+      new_warlord_focus                  china_warlord.txt
+      china_warlord_sea_focus            china_warlord_sea.txt
+TAG COG  <- 2 棵树
+      congo_focus                        congo.txt
+      congo_focus_r56                    r56_congo.txt
+TAG SND  <- 2 棵树
+      new_warlord_focus                  china_warlord.txt
+      china_warlord_sea_focus            china_warlord_sea.txt
+TAG HBC  <- 2 棵树
+      new_warlord_focus                  china_warlord.txt
+      china_warlord_sea_focus            china_warlord_sea.txt
+TAG SIK  <- 2 棵树
+      new_warlord_focus                  china_warlord.txt
+      china_warlord_sea_focus            china_warlord_sea.txt
+TAG YUN  <- 2 棵树
+      new_warlord_focus                  china_warlord.txt
+      china_warlord_sea_focus            china_warlord_sea.txt
+TAG KHM  <- 2 棵树
+      new_warlord_focus                  china_warlord.txt
+      china_warlord_sea_focus            china_warlord_sea.txt
+TAG XSM  <- 2 棵树
+      new_warlord_focus                  china_warlord.txt
+      china_warlord_sea_focus            china_warlord_sea.txt
+TAG SHX  <- 2 棵树
+      new_warlord_focus                  china_warlord.txt
+      china_warlord_sea_focus            china_warlord_sea.txt
+TAG GXC  <- 2 棵树
+      new_warlord_focus                  china_warlord.txt
+      china_warlord_sea_focus            china_warlord_sea.txt
+
+=== 定义 shared_focus / joint_focus 的文件 ===
+r56_india_shared.txt                                 115 个定义
+indonesia_joint.txt                                  96 个定义
+r56_gen_shared.txt                                   82 个定义
+toa_shared_military_branch.txt                       76 个定义
+r56_celtic_shared.txt                                72 个定义
+congo_shared.txt                                     72 个定义
+r56_turkestan_shared.txt                             70 个定义
+china_shared_TSR.txt                                 69 个定义
+china_shared.txt                                     65 个定义
+r56_polynesian.txt                                   62 个定义
+baltic_shared.txt                                    60 个定义
+nordic_shared.txt                                    52 个定义
+paraguay_uruguay_shared_branch.txt                   49 个定义
+r56_latvia_shared.txt                                48 个定义
+r56_denmark.txt                                      45 个定义
+the_national_catastrophe_shared.txt                  44 个定义
+r56_estonia_shared.txt                               41 个定义
+r56_political_spain_nationalist_shared.txt           38 个定义
+habsburg_joint.txt                                   35 个定义
+r56_arab_minor_military_shared.txt                   28 个定义
+r56_arctic_minor_military_shared.txt                 25 个定义
+r56_microstate_shared.txt                            21 个定义
+r56_political_spain_republican_shared.txt            20 个定义
+goe_shared_saadabad_branch.txt                       18 个定义
+ABC_shared.txt                                       17 个定义
+abdacom_shared_branch.txt                            11 个定义
+r56_african_union_shared.txt                         10 个定义
+r56_guyana_shared.txt                                10 个定义
+r56_caribbean_shared.txt                             9 个定义
+r56_majapahit_shared.txt                             8 个定义
+r56_austria_hungary_shared.txt                       8 个定义
+r56_gran_colombia_shared.txt                         8 个定义
+r56_platine_shared.txt                               8 个定义
+r56_siberian_union_shared.txt                        7 个定义
+r56_baltic_shared.txt                                7 个定义
+r56_persian_empire_shared.txt                        7 个定义
+r56_levant_shared.txt                                7 个定义
+r56_central_america_shared.txt                       7 个定义
+TSR_lingguang_incident_joint_branch.txt              7 个定义
+r56_caucasus_union_shared.txt                        6 个定义
+r56_scandinavia_shared.txt                           6 个定义
+r56_mari_el_union_shared.txt                         6 个定义
+r56_macedonian_empire_shared.txt                     6 个定义
+r56_british_monarchy_in_exile.txt                    5 个定义
+r56_mongol_shared.txt                                2 个定义
+norwegian_subjects_shared.txt                        1 个定义

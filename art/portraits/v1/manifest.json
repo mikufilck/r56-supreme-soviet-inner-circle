@@ -1,0 +1,241 @@
+{
+  "mode": "built-in image_gen",
+  "assets": [
+    {
+      "name": "hof_portrait_SOV_karl_radek",
+      "english": "Karl Radek",
+      "chinese": "卡尔·拉狄克",
+      "reference": "F:\\Hearts of Iron IV\\gfx\\interface\\ideas\\idea_SOV_karl_radek.dds",
+      "size": [
+        156,
+        210
+      ],
+      "generation": {
+        "name": "hof_portrait_SOV_karl_radek",
+        "label": "Karl Radek / 卡尔·拉狄克",
+        "prompt": "Use case: identity-preserve. Create ONE finished HOI4 Soviet leader portrait, painted reconstruction/upscale from the supplied tiny game icon. Image 1 is the authoritative IDENTITY reference: preserve this specific face, apparent age, facial proportions, hairline, hair/facial hair and expression. Images 2 and 3 are STYLE and COMPOSITION references only (Kamenev and Trotsky); do not copy their faces. Remove all icon framing, document/paper overlays, bars and UI embellishments. Extend naturally into a head-and-shoulders portrait ending at upper chest, face prominent and fully visible, centered or slightly left, facing the same direction as the small reference. Match the large samples: restrained realistic hand-painted oil/colorized photograph, muted brown grey / cool slate palette, soft upper-left key light, fine subdued brush texture, believable skin, dignified unexaggerated features. Plain warm grey-beige background matching the reference portraits, faint subtle tonal variation only; no scenery, vignette frame, symbols, writing, borders or watermark. Portrait canvas ratio exactly 156:210, e.g. 936x1260, whole crown and shoulders inside. Final use is 156x210 px so clear recognizable facial landmarks matter more than tiny detail. PNG output; uniform background may be opaque as in samples.\nSubject: Karl Radek / 卡尔·拉狄克. Keep Radek's distinctive small round spectacles, narrow angular face, prominent nose, dark moustache and pointed chin beard, and the period flat cap visible in the reference. Complete a normal dark civilian jacket and shirt below the obscured icon. No paperwork.",
+        "source": "C:\\Users\\xuwei\\.codex\\generated_images\\01a09af5-fd43-79a0-a3cc-72284cd67cbc\\exec-68558f26-aeac-461c-8971-afdb024edd70.png",
+        "reference": "references/hof_portrait_SOV_karl_radek.png",
+        "size": [
+          156,
+          210
+        ],
+        "mode": "built-in image_gen"
+      },
+      "source_size": [
+        1080,
+        1456
+      ],
+      "delivery": "mod/heart_of_iron/gfx/interface/hof_ic/portraits/hof_portrait_SOV_karl_radek.dds",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "review_status": "delivered: visual review passed"
+    },
+    {
+      "name": "hof_portrait_SOV_yevgeny_preobrazhensky",
+      "english": "Yevgeny Preobrazhensky",
+      "chinese": "叶夫根尼·普列奥布拉任斯基",
+      "reference": "F:\\Hearts of Iron IV\\gfx\\interface\\ideas\\idea_SOV_yevgeny_preobrazhensky.dds",
+      "size": [
+        156,
+        210
+      ],
+      "generation": {
+        "name": "hof_portrait_SOV_yevgeny_preobrazhensky",
+        "label": "Yevgeny Preobrazhensky / 叶夫根尼·普列奥布拉任斯基",
+        "prompt": "Use case: identity-preserve. Create ONE finished HOI4 Soviet leader portrait, painted reconstruction/upscale from the supplied tiny game icon. Image 1 is the authoritative IDENTITY reference: preserve this specific face, apparent age, facial proportions, hairline, hair/facial hair and expression. Images 2 and 3 are STYLE and COMPOSITION references only (Kamenev and Trotsky); do not copy their faces. Remove all icon framing, document/paper overlays, bars and UI embellishments. Extend naturally into a head-and-shoulders portrait ending at upper chest, face prominent and fully visible, centered or slightly left, facing the same direction as the small reference. Match the large samples: restrained realistic hand-painted oil/colorized photograph, muted brown grey / cool slate palette, soft upper-left key light, fine subdued brush texture, believable skin, dignified unexaggerated features. Plain warm grey-beige background matching the reference portraits, faint subtle tonal variation only; no scenery, vignette frame, symbols, writing, borders or watermark. Portrait canvas ratio exactly 156:210, e.g. 936x1260, whole crown and shoulders inside. Final use is 156x210 px so clear recognizable facial landmarks matter more than tiny detail. PNG output; uniform background may be opaque as in samples.\nSubject: Yevgeny Preobrazhensky / 叶夫根尼·普列奥布拉任斯基. Keep the reference man's swept dark hair, elongated lean face, distinctive eyes, narrow moustache and short salt-and-pepper beard. Normal dark civilian suit, pale shirt, muted tie, guided by the tiny image. Do not borrow Kamenev's spectacles or wide moustache.",
+        "source": "C:\\Users\\xuwei\\.codex\\generated_images\\01a09af5-fd43-79a0-a3cc-72284cd67cbc\\exec-6a87e82d-0196-4b8d-a7c8-49b35d694c95.png",
+        "reference": "references/hof_portrait_SOV_yevgeny_preobrazhensky.png",
+        "size": [
+          156,
+          210
+        ],
+        "mode": "built-in image_gen"
+      },
+      "source_size": [
+        1080,
+        1456
+      ],
+      "delivery": "mod/heart_of_iron/gfx/interface/hof_ic/portraits/hof_portrait_SOV_yevgeny_preobrazhensky.dds",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "review_status": "delivered: visual review passed"
+    },
+    {
+      "name": "hof_portrait_SOV_ivar_smilga",
+      "english": "Ivar Smilga",
+      "chinese": "伊瓦尔·斯米尔加",
+      "reference": "F:\\Hearts of Iron IV\\gfx\\interface\\ideas\\idea_SOV_ivar_smilga_imprisoned.dds",
+      "size": [
+        156,
+        210
+      ],
+      "generation": {
+        "name": "hof_portrait_SOV_ivar_smilga",
+        "label": "Ivar Smilga / 伊瓦尔·斯米尔加",
+        "prompt": "Use case: identity-preserve. Create ONE finished HOI4 Soviet leader portrait, painted reconstruction/upscale from the supplied tiny game icon. Image 1 is the authoritative IDENTITY reference: preserve this specific face, apparent age, facial proportions, hairline, hair/facial hair and expression. Images 2 and 3 are STYLE and COMPOSITION references only (Kamenev and Trotsky); do not copy their faces. Remove all icon framing, document/paper overlays, bars and UI embellishments. Extend naturally into a head-and-shoulders portrait ending at upper chest, face prominent and fully visible, centered or slightly left, facing the same direction as the small reference. Match the large samples: restrained realistic hand-painted oil/colorized photograph, muted brown grey / cool slate palette, soft upper-left key light, fine subdued brush texture, believable skin, dignified unexaggerated features. Plain warm grey-beige background matching the reference portraits, faint subtle tonal variation only; no scenery, vignette frame, symbols, writing, borders or watermark. Portrait canvas ratio exactly 156:210, e.g. 936x1260, whole crown and shoulders inside. Final use is 156x210 px so clear recognizable facial landmarks matter more than tiny detail. PNG output; uniform background may be opaque as in samples.\nSubject: Ivar Smilga / 伊瓦尔·斯米尔加. The small reference is an imprisoned variant, partly obscured by bars. Restore a healthy normal civilian appearance, clean neat dark period suit, off-white shirt and understated tie. Keep the reference's high receding hairline, short brown hair at sides, long oval face, prominent ears and nose, clean-shaven jaw, serious expression. No prison bars, prisoner uniform, document, bruising or emaciation. Do not add glasses, beard, moustache or cap.",
+        "source": "C:\\Users\\xuwei\\.codex\\generated_images\\01a09af5-fd43-79a0-a3cc-72284cd67cbc\\exec-abc10563-3492-4173-b93e-7f7d10ed4f07.png",
+        "reference": "references/hof_portrait_SOV_ivar_smilga.png",
+        "size": [
+          156,
+          210
+        ],
+        "mode": "built-in image_gen"
+      },
+      "source_size": [
+        1081,
+        1455
+      ],
+      "delivery": "mod/heart_of_iron/gfx/interface/hof_ic/portraits/hof_portrait_SOV_ivar_smilga.dds",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "review_status": "delivered: visual review passed",
+      "revision": {
+        "name": "hof_portrait_SOV_ivar_smilga",
+        "prompt": "Use case: identity-preserve / precise-object-edit. Image 1 is the edit target, our completed painted portrait of Ivar Smilga. Image 2 is the original tiny authoritative identity reference; image 3 is a nearest-neighbor magnification of exactly image 2. Correct missing eyewear: add small subtle thin round wire-rim spectacles consistent with the original icon, delicate dark-metal rims and clear glass, natural bridge and temples. Preserve the generated portrait's exact face, age, receding hairline, pose, normal civilian suit, warm-grey background, canvas, lighting and painted style. Change ONLY eyewear; do not reintroduce prison bars or document paper. Keep lens glare minimal and eyes readable at 156x210. Do not copy the prison grid as glasses. Output a single full portrait PNG in the same aspect ratio.",
+        "source": "C:\\Users\\xuwei\\.codex\\generated_images\\01a09af5-fd43-79a0-a3cc-72284cd67cbc\\exec-dc0727db-b718-42d4-8286-8dd32ea009c6.png",
+        "mode": "built-in image_gen",
+        "date": "2026-09-14",
+        "review_status": "delivered: eyewear restored"
+      }
+    },
+    {
+      "name": "hof_portrait_SOV_mikhail_tomsky",
+      "english": "Mikhail Tomsky",
+      "chinese": "米哈伊尔·托姆斯基",
+      "reference": "F:\\Hearts of Iron IV\\gfx\\interface\\ideas\\idea_SOV_mikhail_tomsky.dds",
+      "size": [
+        156,
+        210
+      ],
+      "generation": {
+        "name": "hof_portrait_SOV_mikhail_tomsky",
+        "label": "Mikhail Tomsky / 米哈伊尔·托姆斯基",
+        "prompt": "Use case: identity-preserve. Create ONE finished HOI4 Soviet leader portrait, painted reconstruction/upscale from the supplied tiny game icon. Image 1 is the authoritative IDENTITY reference: preserve this specific face, apparent age, facial proportions, hairline, hair/facial hair and expression. Images 2 and 3 are STYLE and COMPOSITION references only (Kamenev and Trotsky); do not copy their faces. Remove all icon framing, document/paper overlays, bars and UI embellishments. Extend naturally into a head-and-shoulders portrait ending at upper chest, face prominent and fully visible, centered or slightly left, facing the same direction as the small reference. Match the large samples: restrained realistic hand-painted oil/colorized photograph, muted brown grey / cool slate palette, soft upper-left key light, fine subdued brush texture, believable skin, dignified unexaggerated features. Plain warm grey-beige background matching the reference portraits, faint subtle tonal variation only; no scenery, vignette frame, symbols, writing, borders or watermark. Portrait canvas ratio exactly 156:210, e.g. 936x1260, whole crown and shoulders inside. Final use is 156x210 px so clear recognizable facial landmarks matter more than tiny detail. PNG output; uniform background may be opaque as in samples.\nSubject: Mikhail Tomsky / 米哈伊尔·托姆斯基. Retain the small reference man's dark period flat cap, dark small moustache, broad nose and serious direct gaze, robust middle-aged face with clean-shaven chin. Complete a dark civilian jacket, white shirt and subdued tie. Preserve the distinct reference face; do not give him Radek's glasses, pointed beard or narrow face.",
+        "source": "C:\\Users\\xuwei\\.codex\\generated_images\\01a09af5-fd43-79a0-a3cc-72284cd67cbc\\exec-be2e1bba-78d0-47bf-9d8c-f7b0f7cd8a83.png",
+        "reference": "references/hof_portrait_SOV_mikhail_tomsky.png",
+        "size": [
+          156,
+          210
+        ],
+        "mode": "built-in image_gen"
+      },
+      "source_size": [
+        1080,
+        1456
+      ],
+      "delivery": "mod/heart_of_iron/gfx/interface/hof_ic/portraits/hof_portrait_SOV_mikhail_tomsky.dds",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "review_status": "delivered: visual review passed"
+    },
+    {
+      "name": "hof_portrait_SOV_martemyan_ryutin",
+      "english": "Martemyan Ryutin",
+      "chinese": "马尔特米扬·里亚京",
+      "reference": "F:\\Hearts of Iron IV\\gfx\\interface\\ideas\\idea_SOV_martemyan_ryutin_imprisoned.dds",
+      "size": [
+        156,
+        210
+      ],
+      "generation": {
+        "name": "hof_portrait_SOV_martemyan_ryutin",
+        "label": "Martemyan Ryutin / 马尔特米扬·里亚京",
+        "prompt": "Use case: identity-preserve. Create ONE finished HOI4 Soviet leader portrait, painted reconstruction/upscale from the supplied tiny game icon. Image 1 is the authoritative IDENTITY reference: preserve this specific face, apparent age, facial proportions, hairline, hair/facial hair and expression. Images 2 and 3 are STYLE and COMPOSITION references only (Kamenev and Trotsky); do not copy their faces. Remove all icon framing, document/paper overlays, bars and UI embellishments. Extend naturally into a head-and-shoulders portrait ending at upper chest, face prominent and fully visible, centered or slightly left, facing the same direction as the small reference. Match the large samples: restrained realistic hand-painted oil/colorized photograph, muted brown grey / cool slate palette, soft upper-left key light, fine subdued brush texture, believable skin, dignified unexaggerated features. Plain warm grey-beige background matching the reference portraits, faint subtle tonal variation only; no scenery, vignette frame, symbols, writing, borders or watermark. Portrait canvas ratio exactly 156:210, e.g. 936x1260, whole crown and shoulders inside. Final use is 156x210 px so clear recognizable facial landmarks matter more than tiny detail. PNG output; uniform background may be opaque as in samples.\nSubject: Martemyan Ryutin / 马尔特米扬·里亚京. Imprisoned small reference: REMOVE bars, papers and prison garb. Recover the SAME man's normal, healthy middle-aged appearance. Preserve his slim angular face, high forehead/receding dark hairline, strong nose and serious reserved expression from image 1. Clean dark civilian suit with off-white shirt and subdued tie. Do not invent glasses, a cap or a full beard. No emaciation, injury or prison atmosphere.",
+        "source": "C:\\Users\\xuwei\\.codex\\generated_images\\01a09af5-fd43-79a0-a3cc-72284cd67cbc\\exec-14b0a74e-c2ac-4fb2-845a-7e177bfa63ac.png",
+        "reference": "references/hof_portrait_SOV_martemyan_ryutin.png",
+        "size": [
+          156,
+          210
+        ],
+        "mode": "built-in image_gen"
+      },
+      "source_size": [
+        1081,
+        1455
+      ],
+      "delivery": "mod/heart_of_iron/gfx/interface/hof_ic/portraits/hof_portrait_SOV_martemyan_ryutin.dds",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "review_status": "delivered: visual review passed"
+    },
+    {
+      "name": "hof_portrait_SOV_grigory_sokolnikov",
+      "english": "Grigory Sokolnikov",
+      "chinese": "格里戈里·索柯里尼柯夫",
+      "reference": "F:\\Hearts of Iron IV\\gfx\\interface\\ideas\\idea_SOV_grigory_sokolnikov.dds",
+      "size": [
+        156,
+        210
+      ],
+      "generation": {
+        "name": "hof_portrait_SOV_grigory_sokolnikov",
+        "label": "Grigory Sokolnikov / 格里戈里·索柯里尼柯夫",
+        "prompt": "Use case: identity-preserve. Create ONE finished HOI4 Soviet leader portrait, painted reconstruction/upscale from the supplied tiny game icon. Image 1 is the authoritative IDENTITY reference: preserve this specific face, apparent age, facial proportions, hairline, hair/facial hair and expression. Images 2 and 3 are STYLE and COMPOSITION references only (Kamenev and Trotsky); do not copy their faces. Remove all icon framing, document/paper overlays, bars and UI embellishments. Extend naturally into a head-and-shoulders portrait ending at upper chest, face prominent and fully visible, centered or slightly left, facing the same direction as the small reference. Match the large samples: restrained realistic hand-painted oil/colorized photograph, muted brown grey / cool slate palette, soft upper-left key light, fine subdued brush texture, believable skin, dignified unexaggerated features. Plain warm grey-beige background matching the reference portraits, faint subtle tonal variation only; no scenery, vignette frame, symbols, writing, borders or watermark. Portrait canvas ratio exactly 156:210, e.g. 936x1260, whole crown and shoulders inside. Final use is 156x210 px so clear recognizable facial landmarks matter more than tiny detail. PNG output; uniform background may be opaque as in samples.\nSubject: Grigory Sokolnikov / 格里戈里·索柯里尼柯夫. Preserve image 1's distinctive tall forehead, receding swept-back dark hair, lean tapered face, narrow moustache and small pointed chin beard. Follow image 1 exactly for facial accessories, not the style samples. Normal dark civilian suit, white shirt and discreet tie, reserved intelligent expression. No cap, no documents.",
+        "source": "C:\\Users\\xuwei\\.codex\\generated_images\\01a09af5-fd43-79a0-a3cc-72284cd67cbc\\exec-c67ede4a-59f5-4956-9b5f-5082898dbe26.png",
+        "reference": "references/hof_portrait_SOV_grigory_sokolnikov.png",
+        "size": [
+          156,
+          210
+        ],
+        "mode": "built-in image_gen"
+      },
+      "source_size": [
+        1080,
+        1456
+      ],
+      "delivery": "mod/heart_of_iron/gfx/interface/hof_ic/portraits/hof_portrait_SOV_grigory_sokolnikov.dds",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "review_status": "delivered: visual review passed"
+    },
+    {
+      "name": "hof_portrait_SOV_aleksandr_shlyapnikov",
+      "english": "Aleksandr Shlyapnikov",
+      "chinese": "亚历山大·施利亚普尼科夫",
+      "reference": "F:\\Hearts of Iron IV\\gfx\\interface\\ideas\\idea_SOV_aleksandr_shlyapnikov_imprisoned.dds",
+      "size": [
+        156,
+        210
+      ],
+      "generation": {
+        "name": "hof_portrait_SOV_aleksandr_shlyapnikov",
+        "label": "Aleksandr Shlyapnikov / 亚历山大·施利亚普尼科夫",
+        "prompt": "Use case: identity-preserve. Create ONE finished HOI4 Soviet leader portrait, painted reconstruction/upscale from the supplied tiny game icon. Image 1 is the authoritative IDENTITY reference: preserve this specific face, apparent age, facial proportions, hairline, hair/facial hair and expression. Images 2 and 3 are STYLE and COMPOSITION references only (Kamenev and Trotsky); do not copy their faces. Remove all icon framing, document/paper overlays, bars and UI embellishments. Extend naturally into a head-and-shoulders portrait ending at upper chest, face prominent and fully visible, centered or slightly left, facing the same direction as the small reference. Match the large samples: restrained realistic hand-painted oil/colorized photograph, muted brown grey / cool slate palette, soft upper-left key light, fine subdued brush texture, believable skin, dignified unexaggerated features. Plain warm grey-beige background matching the reference portraits, faint subtle tonal variation only; no scenery, vignette frame, symbols, writing, borders or watermark. Portrait canvas ratio exactly 156:210, e.g. 936x1260, whole crown and shoulders inside. Final use is 156x210 px so clear recognizable facial landmarks matter more than tiny detail. PNG output; uniform background may be opaque as in samples.\nSubject: Aleksandr Shlyapnikov / 亚历山大·施利亚普尼科夫. Imprisoned small reference: REMOVE iron bars and documents. Restore the SAME man's normal healthy appearance and civilian attire, dark period jacket, off-white shirt and subdued tie. Preserve his broad high forehead with receding dark hair, prominent ears, long nose, narrow moustache and pointed short dark chin beard as seen in image 1. Keep face recognizable beneath the former bars; no emaciation, injuries, prisoner uniform, spectacles or cap.",
+        "source": "C:\\Users\\xuwei\\.codex\\generated_images\\01a09af5-fd43-79a0-a3cc-72284cd67cbc\\exec-af6ccf9e-9589-49e9-ae48-db385d837ef7.png",
+        "reference": "references/hof_portrait_SOV_aleksandr_shlyapnikov.png",
+        "size": [
+          156,
+          210
+        ],
+        "mode": "built-in image_gen"
+      },
+      "source_size": [
+        1080,
+        1456
+      ],
+      "delivery": "mod/heart_of_iron/gfx/interface/hof_ic/portraits/hof_portrait_SOV_aleksandr_shlyapnikov.dds",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "review_status": "delivered: visual review passed"
+    }
+  ],
+  "style_references": [
+    "F:/Hearts of Iron IV/gfx/leaders/SOV/portrait_SOV_lev_kamenev.dds",
+    "D:/Program Files (x86)/Steam/steamapps/workshop/content/394360/2129897125/gfx/leaders/SOV/r56_portrait_SOV_Leon_Trotsky.dds"
+  ]
+}

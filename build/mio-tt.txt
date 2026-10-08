@@ -1,0 +1,13 @@
+--- available_mio_tt ---
+  decisions_l_simp_chinese.yml:255  available_mio_tt: "§Y军工机构§!§G可用§!："
+--- generic_skip_one_line_tt ---
+  WUW_focus_l_simp_chinese.yml:78  generic_skip_one_line_tt: " \n"
+--- unlock_mio_tt ---
+  decisions_l_simp_chinese.yml:288  unlock_mio_tt: "\n§Y建立军工机构§!"
+--- invites_mio_tt ---
+  decisions_l_simp_chinese.yml:287  invites_mio_tt: "\n§Y邀请外国军工机构§!："
+
+=== SOV_yakovlev MIO 定义（确认 trait / 名字键）===
+  L2098: SOV_yakovlev_design_bureau_organization = {
+  L2100: icon = GFX_idea_yakovlev_design_bureau
+  L2117: FROM = { NOT = { has_country_flag = SOV_yakovlev_design_bureau_dissolved_flag } }

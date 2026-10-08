@@ -1,0 +1,336 @@
+﻿
+======== [原版] GER.txt  GER_organization_todt L5846 ========
+		GER_organization_todt = {
+
+			picture = GER_organization_todt
+			
+			allowed = {
+				original_tag = GER
+			}
+
+			visible = {
+				has_completed_focus = GER_form_organization_todt
+				NOT = { has_completed_focus = GER_autonomous_organization_todt }
+			}
+			
+			cost = 75
+
+			ai_will_do = {
+				base = 10
+			}
+			
+			research_bonus = {
+				construction_tech = 0.15
+			}
+
+			traits = { GER_organization_todt_trait }
+		}
+
+======== [原版] GER.txt  GER_todt_reich_engineer L6045 ========
+		GER_todt_reich_engineer = {
+			#picture = todt
+		
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+
+			modifier = {
+				# PP Cost
+				political_power_gain = -0.1
+
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_infrastructure_factor = 0.1
+				production_speed_rail_way_factor = 0.1
+			}
+		}
+
+======== [原版] GER.txt  GER_speer_reich_architect L6087 ========
+		GER_speer_reich_architect = {
+			#picture = speer
+		
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+
+			modifier = {
+				# PP Cost
+				political_power_gain = -0.1
+
+				production_speed_buildings_factor = 0.05
+				fascism_drift = 0.01
+			}
+		}
+
+======== [原版] GER.txt  GER_goring_overseer_four_year_plan L6127 ========
+		GER_goring_overseer_four_year_plan = {
+			#picture = goring
+		
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+
+			modifier = {
+				# PP Cost
+				political_power_gain = -0.1
+
+				local_resources_factor = 0.05
+				#production_lack_of_resource_penalty_factor = -0.05?
+				#industry_free_repair_factor = 0.15?
+			}
+		}
+
+======== [原版] GER.txt  GER_himmler_chief_of_german_police L6171 ========
+		GER_himmler_chief_of_german_police = {
+			#picture = heinrich_himmler
+		
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+
+			modifier = {
+				# PP Cost
+				political_power_gain = -0.1
+
+				resistance_damage_to_garrison = -0.25
+				foreign_subversive_activites = -0.3
+				non_core_manpower = 0.02
+			}
+		}
+
+======== [原版] GER.txt  GER_goebbels_reich_minister_of_propaganda L6245 ========
+		GER_goebbels_reich_minister_of_propaganda = {
+			#picture = joseph_goebbels
+		
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+
+			modifier = {
+				# PP Cost
+				political_power_gain = -0.1
+
+				war_support_factor = 0.05
+				fascism_drift = 0.1
+			}
+		}
+
+======== [原版] GER.txt  GER_hess_party_chancellor L6366 ========
+		GER_hess_party_chancellor = {
+			#picture = rudolf_hess
+		
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+
+			modifier = {
+				# PP Gain
+				political_power_gain = 0.15
+
+				opinion_gain_monthly_same_ideology_factor = 1
+			}
+		}
+
+======== [原版] GER.txt  GER_bormann_secretary_to_the_fuhrer L6488 ========
+		GER_bormann_secretary_to_the_fuhrer = {
+			#picture = martin_bormann
+		
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+
+			modifier = {
+				# PP Gain
+				political_power_gain = 0.15
+
+				political_advisor_cost_factor = -0.15
+			}
+		}
+
+======== [R56 ] GER.txt  GER_organization_todt L11143 ========
+		GER_organization_todt = {
+
+			picture = GER_organization_todt
+			
+			allowed = {
+				original_tag = GER
+			}
+
+			visible = {
+				has_completed_focus = GER_form_organization_todt
+				NOT = { has_completed_focus = GER_autonomous_organization_todt }
+			}
+			
+			cost = 75
+
+			ai_will_do = {
+				base = 10
+			}
+			
+			research_bonus = {
+				construction_tech = 0.15
+			}
+
+			traits = { GER_organization_todt_trait }
+		}
+
+======== [R56 ] GER.txt  GER_todt_reich_engineer L11350 ========
+		GER_todt_reich_engineer = {
+			#picture = todt
+		
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+
+			modifier = {
+				# PP Cost
+				political_power_gain = -0.1
+
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_infrastructure_factor = 0.1
+				production_speed_rail_way_factor = 0.1
+			}
+		}
+
+======== [R56 ] GER.txt  GER_speer_reich_architect L11392 ========
+		GER_speer_reich_architect = {
+			#picture = speer
+		
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+
+			modifier = {
+				# PP Cost
+				political_power_gain = -0.1
+
+				production_speed_buildings_factor = 0.05
+				fascism_drift = 0.01
+			}
+		}
+
+======== [R56 ] GER.txt  GER_goring_overseer_four_year_plan L11432 ========
+		GER_goring_overseer_four_year_plan = {
+			#picture = goring
+		
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+
+			modifier = {
+				# PP Cost
+				political_power_gain = -0.1
+
+				local_resources_factor = 0.05
+				#production_lack_of_resource_penalty_factor = -0.05?
+				#industry_free_repair_factor = 0.15?
+			}
+		}
+
+======== [R56 ] GER.txt  GER_himmler_chief_of_german_police L11476 ========
+		GER_himmler_chief_of_german_police = {
+			#picture = heinrich_himmler
+		
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+
+			modifier = {
+				# PP Cost
+				political_power_gain = -0.1
+
+				resistance_damage_to_garrison = -0.25
+				foreign_subversive_activites = -0.3
+				non_core_manpower = 0.02
+			}
+		}
+
+======== [R56 ] GER.txt  GER_goebbels_reich_minister_of_propaganda L11550 ========
+		GER_goebbels_reich_minister_of_propaganda = {
+			#picture = joseph_goebbels
+		
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+
+			modifier = {
+				# PP Cost
+				political_power_gain = -0.1
+
+				war_support_factor = 0.05
+				fascism_drift = 0.1
+			}
+		}
+
+======== [R56 ] GER.txt  GER_hess_party_chancellor L11671 ========
+		GER_hess_party_chancellor = {
+			#picture = rudolf_hess
+		
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+
+			modifier = {
+				# PP Gain
+				political_power_gain = 0.15
+
+				opinion_gain_monthly_same_ideology_factor = 1
+			}
+		}
+
+======== [R56 ] GER.txt  GER_bormann_secretary_to_the_fuhrer L11793 ========
+		GER_bormann_secretary_to_the_fuhrer = {
+			#picture = martin_bormann
+		
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+
+			modifier = {
+				# PP Gain
+				political_power_gain = 0.15
+
+				political_advisor_cost_factor = -0.15
+			}
+		}

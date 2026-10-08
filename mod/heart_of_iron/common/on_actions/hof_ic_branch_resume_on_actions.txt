@@ -1,0 +1,62 @@
+# Resume unfinished inner-circle branches after an early ending in existing saves.
+on_actions = {
+	on_weekly = {
+		effect = {
+			if = {
+				limit = { tag = SOV }
+				if = {
+					limit = {
+						hof_ic_seated_lev_trotsky = yes
+						NOT = { has_country_flag = hof_ic_lev_trotsky_post_ending_resume_v1 }
+						NOT = { has_country_flag = hof_ic_lev_trotsky_progress }
+						OR = {
+							has_completed_focus = hof_ic_trotsky_the_permanent_revolutionary
+							has_completed_focus = hof_ic_trotsky_the_builder_of_the_state
+						}
+						NOT = { AND = {
+							has_completed_focus = hof_ic_trotsky_build_the_red_army
+							has_completed_focus = hof_ic_trotsky_military_specialists
+							has_completed_focus = hof_ic_trotsky_against_partisan_warfare
+							has_completed_focus = hof_ic_trotsky_uneven_and_combined_development
+							has_completed_focus = hof_ic_trotsky_permanent_revolution
+							has_completed_focus = hof_ic_trotsky_socialism_in_one_country
+							has_completed_focus = hof_ic_trotsky_the_new_course
+							has_completed_focus = hof_ic_trotsky_against_the_bureaucracy
+							has_completed_focus = hof_ic_trotsky_state_planning
+							has_completed_focus = hof_ic_trotsky_accelerated_industrialization
+							has_completed_focus = hof_ic_trotsky_the_comintern_manifesto
+							has_completed_focus = hof_ic_trotsky_the_chinese_question
+							has_completed_focus = hof_ic_trotsky_united_front
+						} }
+					}
+					set_country_flag = hof_ic_lev_trotsky_post_ending_resume_v1
+					country_event = { id = heartofiron.1110 days = 1 }
+				}
+				if = {
+					limit = {
+						hof_ic_seated_grigory_zinovyev = yes
+						NOT = { has_country_flag = hof_ic_grigory_zinovyev_post_ending_resume_v1 }
+						NOT = { has_country_flag = hof_ic_grigory_zinovyev_progress }
+						OR = {
+							has_completed_focus = hof_ic_zinovyev_monolithic_international
+							has_completed_focus = hof_ic_zinovyev_mass_international
+						}
+						NOT = { AND = {
+							has_completed_focus = hof_ic_zinovyev_found_the_comintern
+							has_completed_focus = hof_ic_zinovyev_twenty_one_conditions
+							has_completed_focus = hof_ic_zinovyev_social_fascism
+							has_completed_focus = hof_ic_zinovyev_bolshevization
+							has_completed_focus = hof_ic_zinovyev_congress_of_the_east
+							has_completed_focus = hof_ic_zinovyev_workers_united_front
+							has_completed_focus = hof_ic_zinovyev_speed_and_route
+							has_completed_focus = hof_ic_zinovyev_party_in_revolution
+							has_completed_focus = hof_ic_zinovyev_trade_unions
+						} }
+					}
+					set_country_flag = hof_ic_grigory_zinovyev_post_ending_resume_v1
+					country_event = { id = heartofiron.1140 days = 1 }
+				}
+			}
+		}
+	}
+}

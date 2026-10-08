@@ -1,0 +1,23 @@
+# Restore static job ideas in existing saves on startup or the first weekly tick.
+on_actions = {
+	on_startup = {
+		effect = {
+			SOV = {
+				if = {
+					limit = { has_completed_focus = hof_ic_commissar NOT = { has_country_flag = hof_ic_role_ideas_migrated_v2 } }
+					hof_ic_role_migrate_all = yes
+					set_country_flag = hof_ic_role_ideas_migrated_v2
+				}
+			}
+		}
+	}
+	on_weekly = {
+		effect = {
+			if = {
+				limit = { tag = SOV has_completed_focus = hof_ic_commissar NOT = { has_country_flag = hof_ic_role_ideas_migrated_v2 } }
+				hof_ic_role_migrate_all = yes
+				set_country_flag = hof_ic_role_ideas_migrated_v2
+			}
+		}
+	}
+}

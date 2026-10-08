@@ -1,0 +1,148 @@
+==== SOP 第 0 步 · 托姆斯基（Idx 11）====
+
+==================== 原版 ====================
+  --- common （19 行命中 / 4 个文件）---
+    common\characters\SOV.txt:3145
+        SOV_mikhail_tomsky = {
+    common\characters\SOV.txt:3146
+        name = SOV_mikhail_tomsky
+    common\characters\SOV.txt:3149
+        small = "GFX_idea_SOV_mikhail_tomsky"
+    common\characters\SOV.txt:3167
+        idea_token = SOV_mikhail_tomsky
+    common\country_leader\00_traits.txt:8037
+        #Tomsky Default
+    common\country_leader\00_traits.txt:8047
+        #Tomsky Improved
+    common\decisions\SOV.txt:17203
+        #Tomsky
+    common\decisions\SOV.txt:17206
+        has_character = SOV_mikhail_tomsky
+    common\decisions\SOV.txt:17207
+        SOV_mikhail_tomsky = {
+    common\decisions\SOV.txt:17211
+        SOV_mikhail_tomsky = {
+    common\national_focus\soviet.txt:7918
+        #Tomsky
+    common\national_focus\soviet.txt:7921
+        has_character = SOV_mikhail_tomsky
+    common\national_focus\soviet.txt:7923
+        SOV_mikhail_tomsky = {
+    common\national_focus\soviet.txt:8834
+        SOV_mikhail_tomsky = { set_character_flag = SOV_potential_target_flag }
+    common\national_focus\soviet.txt:9234
+        IF = { limit = { has_character = SOV_mikhail_tomsky } retire_character = SOV_mikhail_tomsky }
+    common\national_focus\soviet.txt:9882
+        show_ideas_tooltip = SOV_mikhail_tomsky
+    common\national_focus\soviet.txt:10650
+        has_idea = SOV_mikhail_tomsky
+    common\national_focus\soviet.txt:10657
+        character = SOV_mikhail_tomsky
+    common\national_focus\soviet.txt:10662
+        character = SOV_mikhail_tomsky
+  --- history （3 行命中 / 1 个文件）---
+    history\countries\SOV - Soviet union.txt:50
+        recruit_character = SOV_mikhail_tomsky
+    history\countries\SOV - Soviet union.txt:293
+        SOV_mikhail_tomsky = {
+    history\countries\SOV - Soviet union.txt:986
+        SOV_mikhail_tomsky = { SOV_purge_character_effect = yes }
+  --- localisation （20 行命中 / 20 个文件）---
+    localisation\braz_por\nsb_characters_l_braz_por.yml:88
+        SOV_mikhail_tomsky: "Mikhail Tomsky"
+    localisation\braz_por\nsb_focus_l_braz_por.yml:1602
+        SOV_left_eliminate_right_tt: "§Y$SOV_nikolay_bukharin$§!, §Y$SOV_aleksey_rykov$§! e §Y$SOV_mikhail_tomsky$§! se tornarão alvos em potencial de um expurgo de Stalin."
+    localisation\english\nsb_characters_l_english.yml:90
+        SOV_mikhail_tomsky: "Mikhail Tomsky"
+    localisation\english\nsb_focus_l_english.yml:1623
+        SOV_left_eliminate_right_tt: "§Y$SOV_nikolay_bukharin$§!, §Y$SOV_aleksey_rykov$§!, and §Y$SOV_mikhail_tomsky$§! become potential targets for a purge by Stalin."
+    localisation\french\nsb_characters_l_french.yml:88
+        SOV_mikhail_tomsky: "Mikhaïl Tomski"
+    localisation\french\nsb_focus_l_french.yml:1602
+        SOV_left_eliminate_right_tt: "§Y$SOV_nikolay_bukharin$§!, §Y$SOV_aleksey_rykov$§! et §Y$SOV_mikhail_tomsky$§! vont avoir de grandes chances de devenir des cibles des purges staliniennes."
+    localisation\german\nsb_characters_l_german.yml:88
+        SOV_mikhail_tomsky: "Mikhail Tomsky"
+    localisation\german\nsb_focus_l_german.yml:1602
+        SOV_left_eliminate_right_tt: "§Y$SOV_nikolay_bukharin$§!, §Y$SOV_aleksey_rykov$§! und §Y$SOV_mikhail_tomsky$§! werden zu potenziellen Zielen für eine Säuberung durch Stalin."
+    localisation\japanese\nsb_characters_l_japanese.yml:88
+        SOV_mikhail_tomsky: "ミハイル・トムスキー"
+    localisation\japanese\nsb_focus_l_japanese.yml:1602
+        SOV_left_eliminate_right_tt: "§Y$SOV_nikolay_bukharin$§!、§Y$SOV_aleksey_rykov$§!、§Y$SOV_mikhail_tomsky$§!がスターリンの粛清対象となる可能性がある。"
+    localisation\korean\nsb_characters_l_korean.yml:88
+        SOV_mikhail_tomsky: "미하일 톰스키"
+    localisation\korean\nsb_focus_l_korean.yml:1602
+        SOV_left_eliminate_right_tt: "§Y$SOV_nikolay_bukharin$§!, §Y$SOV_aleksey_rykov$§!, 그리고 §Y$SOV_mikhail_tomsky$§!가 스탈린의 잠재적 숙청 대상이 됩니다."
+    localisation\polish\nsb_characters_l_polish.yml:88
+        SOV_mikhail_tomsky: "Michaił Tomski"
+    localisation\polish\nsb_focus_l_polish.yml:1602
+        SOV_left_eliminate_right_tt: "§Y$SOV_nikolay_bukharin$§!, §Y$SOV_aleksey_rykov$§! i §Y$SOV_mikhail_tomsky$§! staną się potencjalnymi celami czystek Stalina."
+    localisation\russian\nsb_characters_l_russian.yml:88
+        SOV_mikhail_tomsky: "Михаил Томский"
+    localisation\russian\nsb_focus_l_russian.yml:1602
+        SOV_left_eliminate_right_tt: "§Y$SOV_nikolay_bukharin$§!, §Y$SOV_aleksey_rykov$§! и §Y$SOV_mikhail_tomsky$§! станут потенциальными целями сталинских чисток."
+    localisation\simp_chinese\nsb_characters_l_simp_chinese.yml:88
+        SOV_mikhail_tomsky: "米哈伊尔·托姆斯基"
+    localisation\simp_chinese\nsb_focus_l_simp_chinese.yml:1602
+        SOV_left_eliminate_right_tt: "§Y$SOV_nikolay_bukharin$§!、§Y$SOV_aleksey_rykov$§!和§Y$SOV_mikhail_tomsky$§!成为斯大林大清洗的潜在目标。"
+    localisation\spanish\nsb_characters_l_spanish.yml:88
+        SOV_mikhail_tomsky: "Mijaíl Tomski"
+    localisation\spanish\nsb_focus_l_spanish.yml:1602
+        SOV_left_eliminate_right_tt: "§Y$SOV_nikolay_bukharin$§!, §Y$SOV_aleksey_rykov$§! y §Y$SOV_mikhail_tomsky$§! son objetivos potenciales de una purga de Stalin."
+  --- interface （2 行命中 / 1 个文件）---
+    interface\ideas.gfx:6147
+        name = "GFX_idea_SOV_mikhail_tomsky"
+    interface\ideas.gfx:6148
+        texturefile = "gfx/interface/ideas/idea_SOV_mikhail_tomsky.dds"
+  --- gfx 下文件名命中（1 个）---
+    gfx\interface\ideas\idea_SOV_mikhail_tomsky.dds
+
+==================== 原版-dlc ====================
+  --- gfx 下文件名命中（0 个）---
+
+==================== R56 ====================
+  --- common （19 行命中 / 4 个文件）---
+    common\characters\SOV.txt:5022
+        SOV_mikhail_tomsky = {
+    common\characters\SOV.txt:5023
+        name = SOV_mikhail_tomsky
+    common\characters\SOV.txt:5026
+        small = "GFX_idea_SOV_mikhail_tomsky"
+    common\characters\SOV.txt:5044
+        idea_token = SOV_mikhail_tomsky
+    common\country_leader\00_traits.txt:8042
+        #Tomsky Default
+    common\country_leader\00_traits.txt:8052
+        #Tomsky Improved
+    common\decisions\SOV.txt:17925
+        #Tomsky
+    common\decisions\SOV.txt:17928
+        has_character = SOV_mikhail_tomsky
+    common\decisions\SOV.txt:17929
+        SOV_mikhail_tomsky = {
+    common\decisions\SOV.txt:17933
+        SOV_mikhail_tomsky = {
+    common\national_focus\soviet.txt:9380
+        #Tomsky
+    common\national_focus\soviet.txt:9383
+        has_character = SOV_mikhail_tomsky
+    common\national_focus\soviet.txt:9385
+        SOV_mikhail_tomsky = {
+    common\national_focus\soviet.txt:10723
+        SOV_mikhail_tomsky = { set_character_flag = SOV_potential_target_flag }
+    common\national_focus\soviet.txt:11143
+        IF = { limit = { has_character = SOV_mikhail_tomsky } retire_character = SOV_mikhail_tomsky }
+    common\national_focus\soviet.txt:12064
+        show_ideas_tooltip = SOV_mikhail_tomsky
+    common\national_focus\soviet.txt:12825
+        has_idea = SOV_mikhail_tomsky
+    common\national_focus\soviet.txt:12832
+        character = SOV_mikhail_tomsky
+    common\national_focus\soviet.txt:12837
+        character = SOV_mikhail_tomsky
+  --- history （2 行命中 / 1 个文件）---
+    history\countries\SOV - Soviet union.txt:112
+        recruit_character = SOV_mikhail_tomsky
+    history\countries\SOV - Soviet union.txt:506
+        SOV_mikhail_tomsky = {
+  --- gfx 下文件名命中（0 个）---
+

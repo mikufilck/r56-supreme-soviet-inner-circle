@@ -1,0 +1,27 @@
+add_namespace = hof_sov_mob
+
+# 每轮倒计时结束 1 日后，只有该国仍是有效敌人才重启它自己的任务。
+country_event = {
+	id = hof_sov_mob.1
+	hidden = yes
+	is_triggered_only = yes
+
+	immediate = {
+		clr_country_flag = hof_sov_mob_waiting
+		if = {
+			limit = {
+				exists = yes
+				has_war_with = SOV
+				any_owned_state = { always = yes }
+				num_of_controlled_states > 0
+				SOV = { is_ai = no }
+			}
+			SOV = {
+				activate_targeted_decision = {
+					target = PREV
+					decision = hof_sov_mob_war_countdown
+				}
+			}
+		}
+	}
+}

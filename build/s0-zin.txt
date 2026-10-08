@@ -1,0 +1,99 @@
+﻿==================== 原版 ====================
+  --- common\characters （2 个文件命中）---
+    common\characters\MEL.txt
+        MEL_zinovy_zhadinov = {
+    common\characters\SOV.txt
+        SOV_grigory_zinovyev = {
+  --- common\national_focus （1 个文件命中）---
+    common\national_focus\soviet.txt
+        id = SOV_the_zinovyevite_terrorist_center
+  --- common\scripted_effects （1 个文件命中）---
+    common\scripted_effects\SOV_scripted_effects.txt
+        NOT = { has_character = SOV_grigory_zinovyev }
+  --- common\scripted_triggers （1 个文件命中）---
+    common\scripted_triggers\SOV_scripted_triggers.txt
+        NOT = { has_completed_focus = SOV_the_zinovyevite_terrorist_center }
+  --- common\country_leader （1 个文件命中）---
+    common\country_leader\00_traits.txt
+        #ZINOVYEV
+  --- common\decisions （1 个文件命中）---
+    common\decisions\SOV.txt
+        set_variable = { SOV.SOV_paranoia_photo_zinovyev = 8 }
+  --- events （1 个文件命中）---
+    events\NSB_Soviet.txt
+        NOT = { has_character = SOV_grigory_zinovyev }
+  --- localisation\simp_chinese （5 个文件命中）---
+    localisation\simp_chinese\events_l_simp_chinese.yml
+        soviet.24.a: "季诺维也夫和他的党羽还在联系托洛茨基吗？"
+    localisation\simp_chinese\nsb_characters_l_simp_chinese.yml
+        SOV_grigory_zinovyev: "格里戈里·季诺维也夫"
+    localisation\simp_chinese\nsb_decisions_l_simp_chinese.yml
+        SOV_the_zinovyevite_terrorist_center_mission: "$SOV_the_zinovyevite_terrorist_center$"
+    localisation\simp_chinese\nsb_events_l_simp_chinese.yml
+        NSB_soviet_paranoia_system_events.19.desc_1: "对1934年基洛夫同志遇刺案的调查显示，不少线索都指向了季诺维也夫和托洛茨基两人。随着后续抓捕与审问的进行，这些证据显得愈加确凿。\n\n在与[Root.GetLeader]会面后，季诺维也夫与加米涅夫终于承认自己曾与托洛茨基合作，意图颠覆政权、暗杀苏维埃领导人，其最终目的是在苏联复辟资本主义。现在，此二人已与其十四名同谋一同受审。对该团伙的犯行将从重定罪——只能处以死刑。"
+    localisation\simp_chinese\nsb_focus_l_simp_chinese.yml
+        SOV_the_zinovyevite_terrorist_center: "季诺维也夫恐怖中心"
+  --- interface （6 个文件命中）---
+    interface\decisions.gfx
+        name = "GFX_decision_SOV_the_zinovyevite_terrorist_center"
+    interface\goals.gfx
+        name = "GFX_focus_SOV_ally_zinovyevists"
+    interface\goals_shine.gfx
+        name = "GFX_focus_SOV_ally_zinovyevists_shine"
+    interface\ideas.gfx
+        name = "GFX_idea_SOV_grigory_zinovyev"
+    interface\sov_paranoia_system_scripted_gui.gui
+        #ZINOVYEV
+    interface\_leader_portraits.gfx
+        name = "GFX_portrait_SOV_grigory_zinovyev"
+
+==================== 原版-dlc ====================
+
+==================== R56 ====================
+  --- common\characters （3 个文件命中）---
+    common\characters\KAZ.txt
+        else = { has_completed_focus = SOV_the_zinovyevite_terrorist_center }
+    common\characters\MOL.txt
+        MOL_zinovie_serdiuk={
+    common\characters\SOV.txt
+        has_completed_focus = SOV_the_zinovyevite_terrorist_center
+  --- common\national_focus （1 个文件命中）---
+    common\national_focus\soviet.txt
+        id = SOV_the_zinovyevite_terrorist_center
+  --- common\scripted_effects （1 个文件命中）---
+    common\scripted_effects\SOV_scripted_effects.txt
+        NOT = { has_character = SOV_grigory_zinovyev }
+  --- common\scripted_triggers （1 个文件命中）---
+    common\scripted_triggers\SOV_scripted_triggers.txt
+        NOT = { has_completed_focus = SOV_the_zinovyevite_terrorist_center }
+  --- common\country_leader （1 个文件命中）---
+    common\country_leader\00_traits.txt
+        #ZINOVYEV
+  --- common\decisions （2 个文件命中）---
+    common\decisions\r56_SOV_decisions.txt
+        has_completed_focus = SOV_the_zinovyevite_terrorist_center
+    common\decisions\SOV.txt
+        set_variable = { SOV.SOV_paranoia_photo_zinovyev = 8 }
+  --- events （1 个文件命中）---
+    events\NSB_Soviet.txt
+        NOT = { has_character = SOV_grigory_zinovyev }
+  --- localisation\simp_chinese （3 个文件命中）---
+    localisation\simp_chinese\MOL_l_simp_chinese.yml
+        MOL_zinovie_serdiuk:0 "济诺维·谢尔久克"
+    localisation\simp_chinese\nsb_events_l_simp_chinese.yml
+        NSB_soviet_paranoia_system_events.19.desc_1:0 "对1934年基洛夫同志遇刺案的调查显示，不少线索都指向了季诺维也夫和托洛茨基两人。随着后续抓捕与审问的进行，这些证据显得愈加确凿。\n\n在与[Root.GetLeader]会面后，季诺维也夫与加米涅夫终于承认自己曾与托洛茨基合作，意图颠覆政权、暗杀苏维埃领导人，其最终目的是在苏联复辟资本主义。现在，此二人已与其十四名同谋一同受审。对该团伙的犯行将从重定罪——只能处以死刑。"
+    localisation\simp_chinese\r56_SOV_l_simp_chinese.yml
+        r56.soviet.18.d:0 "自1924年上台以来，[ROOT.GetLeader]一直致力于不断清除任何反对其对[SOV.GetNameDef]统治的政治力量。季诺维也夫、布哈林、托洛茨基已经成为政治权力斗争的受害者，或是被迫流亡以躲避内务部特工。大清洗可能会落在任何在党内过于强烈地坚持自己观点的人或过于软弱的人身上。\n\n尼古拉·叶若夫已经开始担心他在内务部的地位在受到威胁，[ROOT.GetLeader]可能会把他从目前的职位上撤下来，或者更糟。叶若夫现在正在利用目前旨在寻找国家敌人的活动，将其作为他目前招募军官和官员推翻斯大林权力计划的掩护。"
+  --- interface （1 个文件命中）---
+    interface\_leader_portraits.gfx
+        name = "GFX_portrait_SOV_grigory_zinovyev"
+
+==================== 立绘文件名命中 ====================
+  [原版] gfx\interface\decisions\decision_SOV_the_zinovyevite_terrorist_center.dds   4,352 字节
+  [原版] gfx\interface\goals\focus_SOV_ally_zinovyevists.dds   35,328 字节
+  [原版] gfx\interface\goals\focus_SOV_purge_zinovyevists.dds   35,328 字节
+  [原版] gfx\interface\goals\focus_SOV_zinovyevists.dds   35,328 字节
+  [原版] gfx\interface\ideas\idea_SOV_grigory_zinovyev.dds   17,548 字节
+  [原版] gfx\interface\ideas\idea_SOV_grigory_zinovyev_imprisoned.dds   18,620 字节
+  [原版] gfx\leaders\SOV\portrait_SOV_grigory_zinovyev.dds   131,168 字节
+

@@ -1,0 +1,68 @@
+[
+  {
+    "id": "hof_ic_smilga_finland",
+    "name": "GFX_hof_ic_smilga_finland",
+    "title": "芬兰的军队与舰队",
+    "concept": "Grey thin-ice Baltic sea beneath low heavy clouds. One navigable broken-ice channel sweeps from far LEFT edge toward near RIGHT harbor, with two low early-1900s naval ship silhouettes near its end and a small single-file column of sailors as dark faceless silhouettes on the near shore. Cold grey-blue and ice-white relief. No palace, combat, railway or river.",
+    "group": "smilga",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_smilga_fuel_main_directorate",
+    "name": "GFX_hof_ic_smilga_fuel_main_directorate",
+    "title": "燃料总局",
+    "concept": "A heavy granular black coal heap under one warm glowing miners lamp, a short row of loaded small coal mine carts in foreground on plain ground, NO visible rails. To right a loose white zoning allocation sheet with blank rectangular cells and color blocks, ONE cuffed hand resting on sheet. Coal and lamp dominate, coal-black with warm amber and white paper. No furnace or molten metal.",
+    "group": "smilga",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_smilga_gosplan",
+    "name": "GFX_hof_ic_smilga_gosplan",
+    "title": "国家计划委员会",
+    "concept": "An actual planning office wall almost entirely covered with a large square-grid chart, fine precise perpendicular grid lines and many scattered small square and round markers aligned to cells, a few markers linked with thin muted red straight segments. Lower edge only reveals desk corner and a prominent green-shaded bankers lamp casting fan-shaped light on chart. Dark grey-blue, pale grey grid, green glass shade. No curved graphs, no factory panorama, no books, no pen.",
+    "group": "smilga",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_smilga_economics_institute",
+    "name": "GFX_hof_ic_smilga_economics_institute",
+    "title": "莫斯科国民经济学院",
+    "concept": "Strict overhead close-up of ONE long wooden seminar worktable, large folded chart spread out with only square grid, colored rectangular cells and unlabeled legend boxes. A large recognizable vintage SLIDE RULE diagonally on chart corner, metallic slider and tiny unlabeled tick marks, no digits. Loose rough calculation sheets with abstract crossed-out lines and half a chalk stick. THREE distinct anatomically correct hands with different cuffs enter from table edges, no bodies. Warm wood and yellowed paper, cool metallic slide rule. No classroom rows, stage or blackboard.",
+    "group": "smilga",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_smilga_productive_forces",
+    "name": "GFX_hof_ic_smilga_productive_forces",
+    "title": "生产力布局",
+    "concept": "Top-down close-up of a teal-grey square-grid planning map with sparse contour lines. Several small iron-grey FACTORY-SHAPED miniature tokens clustered center-left. ONE anatomically correct hand pinches a single factory-shaped token between thumb and index finger, moving it toward an empty grid cell at LOWER RIGHT edge, clear empty gap between central cluster and moved token. Focus on relocating ONE discrete point across grid, no vehicles, trains or real factory landscape. Restrained dark teal and grey.",
+    "group": "smilga",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_smilga_the_healer_of_the_gaps",
+    "name": "GFX_hof_ic_smilga_the_healer_of_the_gaps",
+    "title": "弥合裂缝的人",
+    "concept": "Symbolic fullest concluding close-up of an aged densely marked square-grid planning sheet. ONE long VERTICAL tear down CENTER: UPPER HALF visibly repaired by a closely spaced ladder of thin warm ivory stitches bridging both sides, LOWER HALF splits into a wide deep BLACK jagged gap with frayed paper edges and falling tiny paper fragments. Warm glow at repaired upper half, colder dark lower half. Paperweights and half-rolled chart corners hold the old sheet down. Weathered ochre paper, warm-white thread and deep-black rift. No people, hands, needles, blood or bodily imagery. The repaired upper seam and OPEN lower split are both unmistakable.",
+    "group": "smilga",
+    "size": [
+      100,
+      88
+    ]
+  }
+]

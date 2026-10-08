@@ -1,0 +1,6 @@
+{
+  "prompt": "Remove background from this emblem. Return a transparent-background PNG with actual alpha transparency. Keep original emblem identical, all colors, portrait identity, and geometry unchanged. Keep the red medallion field inside the emblem. Outside the emblem is empty transparent space. Do not visualize transparency using a checker pattern. Transparent background enabled. Isolated cutout asset. No text. Preserve complete silhouette.",
+  "source": "C:\\Users\\xuwei\\.codex\\generated_images\\01a09af5-fd43-79a0-a3cc-72284cd67cbc\\exec-d585ce22-95ec-4bbd-8882-0acd5bebf544.png",
+  "reference": "D:/Users/xuwei/PycharmProjects/heart_of_Iron/art/focus/source/GFX_hof_ic_seat_grigory_zinovyev.png",
+  "mode": "built-in image_gen"
+}

@@ -1,0 +1,113 @@
+# ============================================================================
+#  hof_sov_mob_effects.txt —— 苏联「开战倒计时」决议用到的**脚本化效果**
+#
+#  语法出处：原版 `common/scripted_effects/00_scripted_effects.txt` 头部注释的示例
+#            （文件**不需要**任何外壳，顶层直接写 `名字 = { … }`）
+#  脚本编码：UTF-8 无 BOM + CRLF（AGENTS.md 硬性规则 3）
+#
+#  ⭐⭐ 为什么要有这个文件（2026-09-25 v8）：
+#    「目标一旦不算数就当场撤卡」这件事，我们自己的清扫要挂在**多个** on_action 钩子上
+#    （和平 / 吞并 / 内战结束 / 每周兜底）⇒ 与其把同一段代码抄四遍，不如写成一个 scripted effect。
+#
+#  🚩🚩 血泪教训（第七轮）：**`on_daily` 在本版本（1.19.2）【不存在】**
+#    —— 当时把它写在 on_action 里 ⇒ 那台「每日清扫」**根本没跑**（白和之后卡不撤的真因）。
+#    本版本**实际存在**的周期/事件钩子（扫原版 + R56 的 `common/on_actions/*.txt` 顶层键实测）：
+#      `on_weekly` · `on_monthly` · `on_peace` · `on_capitulation` · `on_uncapitulation` ·
+#      `on_annex` · `on_civil_war_end` · `on_state_control_changed` · `on_startup`
+#    ⛔ **不存在的**：`on_daily` · `on_yearly` · `on_war_relation_removed`
+#
+#  ⭐⭐ v9（2026-09-25 第八轮 · 用户口径「**开战期间每个月都给敌方发**」）：
+#    清扫变成【双向】，因为 `hof_sov_mob_mustered` 的语义改了：
+#      · 旧（v5）：「已经发过一次」⇒ 发过就永久盖章 ⇒ 变成一次性
+#      · 新（v9）：「**已被清扫**（已不算数）」⇒ 只在目标不算数时盖；它重新变回有效就**清掉**
+#    ⇒ 周期（每 30 天一轮）与防幽灵同时成立：到点不再盖章，盖/清全部由本效果负责。
+# ============================================================================
+
+# ────────────────────────────────────────────────────────────────────────────
+#  hof_sov_mob_janitor —— 清扫：把「已经不算数的敌人」身上的倒计时卡收掉
+# ────────────────────────────────────────────────────────────────────────────
+#  ⭐ 判定「已经不算数」= 不满足「还与苏联交战 · 还有州 · 还有立足之地」中的任何一条。
+#  ⭐ 动作 = ① 给它盖 `hof_sov_mob_mustered` 章（判据里有 `NOT = { has_country_flag = … }`
+#              ⇒ **不会再给它挂新卡**）
+#            ② 让苏联把**正在跑的那张卡**撤掉（`remove_targeted_decision`，原版 `JAP.txt` 同形：
+#               `remove_targeted_decision = { target = SOV  decision = … }`）
+#  ⭐⭐ 作用域要点：整段**不依赖任何 `FROM` 绑定** ——
+#     · `every_country` 的当前作用域 = 那个国家自己（所有条件都在它身上判）
+#     · 撤卡是【拥有者的效果】⇒ 先切到 `SOV = { … }`，再用 `PREV` 指回刚才那个国家
+#     ⇒ 所以这个 effect **可以安全地挂在任何 on_action 上**（不管那个钩子的 ROOT/FROM 是什么）。
+hof_sov_mob_janitor = {
+
+	SOV = {
+
+		# 遍历所有国家（当前作用域 = 那个国家【自己】）
+		# ⭐⭐ 判据全在它身上判 ⇒ **不依赖任何 FROM 绑定** ⇒ 可安全地挂在任何钩子上。
+		every_country = {
+			# 苏联是决议拥有者，不能作为敌方目标参与清扫。
+			limit = { NOT = { tag = SOV } }
+
+			# ── 分支 ①：这个国家【已经不算数了】⇒ 盖章（不再挂）+ 撤掉正在跑的那张卡 ──
+			#    ⭐ v9：`hof_sov_mob_mustered` 的语义 = **「已被清扫」**（不是「已经发过一次」），
+			#      所以它只在【标为已清扫】时出现 —— 到点（`timeout_effect`）**不再盖章**
+			#      ⇒ 周期（每 30 天一轮）与防幽灵同时成立。
+			if = {
+				limit = {
+					OR = {
+						NOT = { has_war_with = SOV }
+						NOT = {
+							any_owned_state = {
+								always = yes
+							}
+						}
+						NOT = { num_of_controlled_states > 0 }
+					}
+				}
+
+				# ① 盖章：判据里的 `NOT = { has_country_flag = hof_sov_mob_mustered }` 从此为假 ⇒ 不会再挂新卡
+				set_country_flag = hof_sov_mob_mustered
+				clr_country_flag = hof_sov_mob_waiting
+
+				# ② 撤掉正在跑的那张卡（拥有者 = SOV，目标 = PREV = 刚才那个国家）
+				SOV = {
+					remove_targeted_decision = {
+						target = PREV
+						decision = hof_sov_mob_war_countdown
+					}
+				}
+			}
+
+			# ── 分支 ②：这个国家【仍是有效敌人】⇒ **清掉清扫章**（自愈）──
+			#    用途：它当初被判「不算数」而盖了章，后来又变回有效（重新有州 / 打回来了），
+			#       或它的章是旧的 ⇒ 清掉之后「每 30 天一轮」自动恢复（无需它再宣一次战）。
+			#    ⚠️ 对从未盖过章的国家而言，`clr_country_flag` 是**空操作**。
+			else = {
+				clr_country_flag = hof_sov_mob_mustered
+			}
+		}
+	}
+}
+
+# 周兜底：给旧存档中尚未启动的有效敌国开卡，也处理战中失地后恢复的目标。
+# 已在运行的任务由 activate_targeted_decision 自行拒绝；waiting 防止缩短轮间 1 日。
+hof_sov_mob_rearm = {
+	SOV = {
+		if = {
+			limit = { is_ai = no }
+			every_country = {
+				limit = {
+					NOT = { tag = SOV }
+					exists = yes
+					has_war_with = SOV
+					any_owned_state = { always = yes }
+					num_of_controlled_states > 0
+					NOT = { has_country_flag = hof_sov_mob_waiting }
+				}
+				SOV = {
+					activate_targeted_decision = {
+						target = PREV
+						decision = hof_sov_mob_war_countdown
+					}
+				}
+			}
+		}
+	}
+}

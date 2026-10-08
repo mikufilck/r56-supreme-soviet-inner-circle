@@ -1,0 +1,19 @@
+{
+  "id": "hof_ic_khrushchev_the_economic_councils",
+  "name": "GFX_hof_ic_khrushchev_the_economic_councils",
+  "title": "国民经济委员会",
+  "concept": "In a bare gray interior wall corner stand several REMOVED GOVERNMENT OFFICE DOOR PLAQUES leaning against the plaster. The plaques are physical metal/enamel rectangles with worn screws and ONLY faint indistinct brush marks, absolutely no readable letters. ONE plaque has been flipped FACE DOWN on the floor, showing its plain gray reverse and fixings. Nearby just a FEW tiny chips of old dark RED PAINT shed from the plaques; these are the only red accents within the central scene. No doorway crowd, person, long table, meeting room, portraits, flags or other bright color.",
+  "group": "khrushchev",
+  "size": [
+    100,
+    88
+  ],
+  "prompt": "Create ONE finished Hearts of Iron IV Soviet national focus icon. Use attached image ONLY as stylistic reference for the shared outer engraved GOLD laurel wreath, small RED star and blank gold ribbon; create a NEW central scene. In a bare gray interior wall corner stand several REMOVED GOVERNMENT OFFICE DOOR PLAQUES leaning against the plaster. The plaques are physical metal/enamel rectangles with worn screws and ONLY faint indistinct brush marks, absolutely no readable letters. ONE plaque has been flipped FACE DOWN on the floor, showing its plain gray reverse and fixings. Nearby just a FEW tiny chips of old dark RED PAINT shed from the plaques; these are the only red accents within the central scene. No doorway crowd, person, long table, meeting room, portraits, flags or other bright color. Central art style: restrained tactile 1930s-1950s Soviet sculptural relief. Color only from central objects themselves, never an overall wash, gradient or glow. The frame star remains red as in the attached reference, but follow the concept's strict central palette. Exactly one centered emblem in square canvas; composition must remain readable at 100x88. TRUE RGBA transparent outside wreath and ribbon, alpha 0 at all four corners, 20-50 percent broad transparent exterior. No legible typography, numerals, watermark, faces, people, uniforms, weapons, executions, prison bars, purge lists, signature, Lenin or Stalin portrait, secret-report podium, microphone, political congress insignia, corn, tractors, plows, rockets, satellites, warships, naval charts, card-index drawers, filing cabinets, abacus, factory floor, black-and-white split design, Ukraine flag or costume. Avoid any recognizable printed text on the image. Output one final production icon, not mockup or sheet.",
+  "references": [
+    "D:/Users/xuwei/PycharmProjects/heart_of_Iron/art/focus/bukharin/source/GFX_hof_ic_bukharin_proportional_development.png"
+  ],
+  "initial_generated_path": "C:\\Users\\xuwei\\.codex\\generated_images\\01a09af5-fd43-79a0-a3cc-72284cd67cbc\\exec-ef8fc60b-a2c8-420c-9c02-fd6f97da676b.png",
+  "generated_path": "C:\\Users\\xuwei\\.codex\\generated_images\\01a09af5-fd43-79a0-a3cc-72284cd67cbc\\exec-2e49409d-a89f-44f4-aa5a-c4372869e989.png",
+  "revision": "ImageGen edit: changed plaques to gray enamel; retained only tiny dark red paint chips.",
+  "mode": "built-in image_gen"
+}

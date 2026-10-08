@@ -1,0 +1,86 @@
+# Additional role-level targets for the four-country mobile transition.
+# GER keeps its vanilla motorized and mechanized_assault role entries.
+# USA keeps its vanilla mobile role entry.
+
+hof_motorized_ENG_ITA = {
+	available_for = { ENG ITA }
+	role = motorized
+	upgrade_prio = {
+		base = 3
+		modifier = { factor = 0 NOT = { has_tech = motorised_infantry } }
+	}
+	hof_motorized_early = {
+		upgrade_prio = { base = 2 }
+		target_template = {
+			support = { engineer = 1 artillery = 1 }
+			regiments = { motorized = 9 }
+		}
+	}
+	hof_motorized_late = {
+		upgrade_prio = {
+			base = 1
+			modifier = { factor = 4 date > 1939.12.31 }
+		}
+		target_template = {
+			support = { engineer = 1 artillery = 1 logistics_company = 1 }
+			regiments = { motorized = 9 mot_artillery_brigade = 1 }
+		}
+	}
+}
+
+hof_mechanized_assault_USA_ENG_ITA = {
+	available_for = { USA ENG ITA }
+	role = mechanized_assault
+	front_role_override = offence
+	upgrade_prio = {
+		base = 4
+		modifier = {
+			factor = 0
+			OR = {
+				date < 1941.1.1
+				NOT = { has_tech = mechanised_infantry }
+			}
+		}
+	}
+	hof_mechanized_assault_early = {
+		enable = { date > 1940.12.31 has_tech = mechanised_infantry }
+		upgrade_prio = { base = 2 }
+		target_template = {
+			support = {
+				mot_recon = 1
+				logistics_company = 1
+				signal_company = 1
+				engineer = 1
+				field_hospital = 1
+			}
+			regiments = {
+				mechanized = 9
+				medium_armor = 2
+			}
+		}
+	}
+	hof_mechanized_assault_late = {
+		enable = { date > 1942.12.31 has_tech = mechanised_infantry2 }
+		upgrade_prio = {
+			base = 1
+			modifier = {
+				factor = 5
+				date > 1942.12.31
+				has_tech = mechanised_infantry2
+			}
+		}
+		target_template = {
+			support = {
+				mot_recon = 1
+				logistics_company = 1
+				signal_company = 1
+				engineer = 1
+				field_hospital = 1
+			}
+			regiments = {
+				mechanized = 9
+				medium_armor = 4
+			}
+		}
+	}
+}

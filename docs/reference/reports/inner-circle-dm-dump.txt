@@ -1,0 +1,24 @@
+﻿################ [R56] D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125\common\dynamic_modifiers\wuw_dynamic_modifiers.txt  (L1008..L1017)
+GER_the_inner_circle_dm = {
+	icon = GFX_idea_generic_fascism_drift_2
+	enable = { always = yes }
+	remove_trigger = {
+		NOT = { has_government = fascism }
+	}
+
+	custom_modifier_tooltip = GER_the_inner_circle_dm_tt
+	#custom_modifier_tooltip = idea_desc|GER_todt_reich_engineer
+}
+
+################ [原版] F:\Hearts of Iron IV\common\dynamic_modifiers\wuw_dynamic_modifiers.txt  (L941..L950)
+GER_the_inner_circle_dm = {
+	icon = GFX_idea_generic_fascism_drift_2
+	enable = { always = yes }
+	remove_trigger = {
+		NOT = { has_government = fascism }
+	}
+
+	custom_modifier_tooltip = GER_the_inner_circle_dm_tt
+	#custom_modifier_tooltip = idea_desc|GER_todt_reich_engineer
+}
+

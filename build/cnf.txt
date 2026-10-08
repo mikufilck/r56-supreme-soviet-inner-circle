@@ -1,0 +1,28 @@
+﻿命中行号 = 2870
+## complete_national_focus
+
+* Supported Scopes: COUNTRY
+* Supported Targets: none
+
+```
+completes a focus for a country
+```
+
+## complete_prototype_reward_option
+
+* Supported Scopes: SPECIAL_PROJECT
+* Supported Targets: none
+
+```
+Complete a prototype reward option for the project in scope 
+The effect will respect the fire only once and allowed property of prototype rewards.
+ex:
+complete_prototype_reward_option = 
+{
+	prototype_reward = my_reward
+	prototyp_reward_option = my_option # Optional, if multiple choice use default one if not set
+	show_modifiers = yes # Yes if the effects of the prototype reward should be shown (default no)
+}
+```
+
+## complete_special_project

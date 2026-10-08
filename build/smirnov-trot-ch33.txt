@@ -1,0 +1,83 @@
+=== tmp/trotsky/txt 文件清单 ===
+  e_life_1929book.txt                                1,957
+  e_october_lessons_1929book30.txt                  10,645
+  e_stop_politics_19281216.txt                       9,426
+  i1_holy_task_19200310.txt                          5,353
+  i1_marxism_opposition_38.txt                      32,286
+  i1_order_19190309.txt                              3,432
+  i1_order_19190604.txt                              3,897
+  i1_orders_191808.txt                               9,147
+  i1_red_army_oath_19180422.txt                      2,245
+  i1_train_1929book36.txt                           23,572
+  i3_military_strategy_39.txt                       20,545
+  ii1_ch1_1930book05.txt                            27,660
+  ii1_ch1_appendix_1930book28.txt                   17,963
+  ii1_history_preface_1930.txt                       2,398
+  ii1_preface_1930book04.txt                        12,547
+  ii1_preface_ru_1930book03.txt                      6,359
+  ii2_permanent_rev_1928.txt                           993
+  ii2_permanent_rev_alt.txt                          1,144
+  ii2_permrev_index.txt                              1,144
+  ii2_permrev_review_60.txt                         19,932
+  ii3_bureaucratic_legend_58.txt                    62,572
+  ii3_one_country_59.txt                            96,573
+  iii1_brest_1929book33.txt                         34,005
+  iii1_last_stage_1929book44.txt                    42,320
+  iii1_lessons_of_october_1924.txt                     637
+  iii2_betrayed_rev_1936.txt                         2,478
+  iii2_bureaucracy_19350130.txt                     20,196
+  iii2_bureaucratic_terror_19351102.txt             18,859
+  iv1_econ_theses_192512.txt                         6,458
+  iv1_nep_gosplan_19210807.txt                       4,172
+  iv1_nep_phase_1929book40.txt                      17,149
+  iv3_gosplan_19230115.txt                           7,548
+  iv4_accumulation_19260502.txt                      5,238
+  iv4_industry_19260907.txt                          9,801
+  iv4_note_19260115.txt                              4,570
+  v1_comintern_1921b.txt                            71,757
+  v1_comintern_2nd_1926a.txt                        35,973
+  v2_against_stalin_theses_01c.txt                  97,020
+  v2_china_19270507.txt                             58,777
+  v2_china_book_index.txt                            2,834
+  v2_china_theses_03a.txt                          109,543
+  v2_class_relations_01b.txt                        29,943
+  v2_summary_prospect_05.txt                       112,062
+  v3_build_party_12.txt                              4,159
+  v3_fascism_index.txt                               1,031
+  v3_german_fascism_index.txt                        1,066
+  v3_mussolini_03.txt                                8,917
+  v3_what_is_fascism_02.txt                          2,578
+  v3_workers_arms_10.txt                            20,349
+  x_econ_independence_19270319.txt                  26,683
+  x_uneven_dev_19150703.txt                          4,880
+
+=== e_life_1929book.txt  L60–L110 ===
+    60 ·第二十二章 在纽约
+    62 ·第二十三章 集中营
+    63 第二部：
+    65 ·第二十四章 在彼得格勒
+    67 ·第二十五章 谈造谣中伤者
+    69 ·第二十六章 从7月到10月
+    71 ·第二十七章 决战之夜
+    73 ·第二十八章 1917年的托洛茨基主义
+    75 ·第二十九章 执政
+    77 ·第三十章 在莫斯科
+    79 ·第三十一章 布列斯特和约
+    81 ·第三十二章 和平
+    83 ·第三十三章 斯维亚日斯克一月
+    85 ·第三十四章 专列
+    87 ·第三十五章 保卫彼得格勒
+    89 ·第三十六章 军事反对派
+    91 ·第三十七章 军事战略问题上的分歧
+    93 ·第三十八章 转入新经济政策阶段及我与列宁的关系
+    95 ·第三十九章 列宁在病中
+    97 ·第四十章 追随者的阴谋
+    99 ·第四十一章 列宁逝世与权力转移
+   101 ·第四十二章 党内斗争的最后阶段
+   103 ·第四十三章 流放
+   105 ·第四十四章 驱逐出国
+   107 ·第四十五章 没有签证的星球
+   109 ·大事年表
+
+=== 全 tmp/ 里含「第三十三章」或「斯维亚日斯克一月」的文件 ===
+  tmp\trotsky\txt\e_life_1929book.txt

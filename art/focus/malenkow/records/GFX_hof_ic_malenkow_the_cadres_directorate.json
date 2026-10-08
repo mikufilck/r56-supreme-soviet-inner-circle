@@ -1,0 +1,17 @@
+{
+  "id": "hof_ic_malenkow_the_cadres_directorate",
+  "name": "GFX_hof_ic_malenkow_the_cadres_directorate",
+  "title": "中央干部管理局",
+  "concept": "A tabletop still-life: ONE open thick registry ledger with abstract illegible rows, next to ONE compact desk stamp. A row of wooden card-index cabinets recedes softly behind. Only a small RED ink pad trace on the stamp base provides the central scene's sole red accent; no other central red. Strong legibility at tiny size: ledger and stamp should dominate, cabinets subordinate. No writing readable, no hands or people.",
+  "group": "malenkow",
+  "size": [
+    100,
+    88
+  ],
+  "prompt": "Create ONE finished Hearts of Iron IV Soviet national focus icon. Use attached image ONLY as stylistic reference for the shared outer engraved gold laurel wreath, small red star and blank gold ribbon; create a NEW central scene. A tabletop still-life: ONE open thick registry ledger with abstract illegible rows, next to ONE compact desk stamp. A row of wooden card-index cabinets recedes softly behind. Only a small RED ink pad trace on the stamp base provides the central scene's sole red accent; no other central red. Strong legibility at tiny size: ledger and stamp should dominate, cabinets subordinate. No writing readable, no hands or people. Central art style: restrained, realistic 1930s-1950s Soviet sculptural relief, tactile wood, aged paper and objects. Color ONLY from depicted objects, never an overall color wash. The outer ornamental star may remain red on all six; within the central scene red is permitted ONLY on the desk stamp for the cadres directorate image and forbidden on all other images. Exactly one centered emblem in square canvas; composition must read clearly at 100x88. TRUE RGBA transparent outside wreath and ribbon, alpha 0 at all four corners, 20-50 percent broad transparent exterior. No legible typography, numerals, watermark, faces, people, uniforms, weapons, executions, prison bars, concentration camp, blacklisted or torn names, Leningrad buildings, German symbols, rockets, mushroom cloud, factory floor, warships, naval chart, hammer-and-sickle portrait, neon or glow. Output one final production icon, not mockup or sheet.",
+  "references": [
+    "D:/Users/xuwei/PycharmProjects/heart_of_Iron/art/focus/bukharin/source/GFX_hof_ic_bukharin_proportional_development.png"
+  ],
+  "generated_path": "C:\\Users\\xuwei\\.codex\\generated_images\\01a09af5-fd43-79a0-a3cc-72284cd67cbc\\exec-8ae3b92a-4e20-4f07-bed8-bbba1f64a221.png",
+  "mode": "built-in image_gen"
+}

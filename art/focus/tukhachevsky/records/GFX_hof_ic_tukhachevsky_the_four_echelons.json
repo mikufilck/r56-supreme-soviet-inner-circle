@@ -1,0 +1,17 @@
+{
+  "id": "hof_ic_tukhachevsky_the_four_echelons",
+  "name": "GFX_hof_ic_tukhachevsky_the_four_echelons",
+  "title": "四个梯次",
+  "concept": "FOUR clearly separated horizontal bands stacked from top to bottom, each in a different neutral gray value (upper warm gray, lower cool gray). Within bands abstract silhouettes: FIRST small triangular aircraft forms with fine descending lines; SECOND frontal tank plus gun barrel and short infantry bars; THIRD side-view trucks and armored carriers, with one clear arrow pointing RIGHT; FOURTH a tidy row of short vertical bars representing reserve units. Structured layered tactical relief, not a map. No words, flags, stars, contour lines or human faces.",
+  "group": "tukhachevsky",
+  "size": [
+    100,
+    88
+  ],
+  "prompt": "Create ONE finished Hearts of Iron IV Soviet national focus icon. Use the attached image ONLY as stylistic reference for the common outer engraved gold laurel wreath, small red star and blank gold ribbon; create an entirely NEW central scene. FOUR clearly separated horizontal bands stacked from top to bottom, each in a different neutral gray value (upper warm gray, lower cool gray). Within bands abstract silhouettes: FIRST small triangular aircraft forms with fine descending lines; SECOND frontal tank plus gun barrel and short infantry bars; THIRD side-view trucks and armored carriers, with one clear arrow pointing RIGHT; FOURTH a tidy row of short vertical bars representing reserve units. Structured layered tactical relief, not a map. No words, flags, stars, contour lines or human faces. Central art style: restrained 1930s Soviet sculptural relief, muted object-derived colors, ivory paper, worn steel and old leather, clean shapes readable at 100×88. Saturated red/gold belong only to common ornamental frame unless specified object itself bears gold. One centered emblem in a square canvas. TRUE RGBA transparent outside wreath/ribbon, alpha 0 at all four corners, 20–50 percent fully transparent exterior. No typography, readable text or numbers, watermark, face, portrait, battle action, trial, execution, flags, political insignia, emblems, maps, terrain contours, ledger, file drawer, coins, ruler, classroom, podium, parade, marching formation or broad overall color grading. Render one final production icon, not a mockup or sheet.",
+  "references": [
+    "D:/Users/xuwei/PycharmProjects/heart_of_Iron/art/focus/bukharin/source/GFX_hof_ic_bukharin_proportional_development.png"
+  ],
+  "generated_path": "C:\\Users\\xuwei\\.codex\\generated_images\\01a09af5-fd43-79a0-a3cc-72284cd67cbc\\exec-785fefc0-bbe1-4453-8c2d-60fa42ffbe50.png",
+  "mode": "built-in image_gen"
+}

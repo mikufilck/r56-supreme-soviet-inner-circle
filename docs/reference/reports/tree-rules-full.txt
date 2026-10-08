@@ -1,0 +1,190 @@
+﻿############ A. 游戏规则：完整块（含全部选项与 default）############
+
+--- SOV_focus_tree_selection  (L345) ---
+    SOV_focus_tree_selection = {
+    name = "SOV_FOCUS_TREE_SELECTION"
+    group = "RULE_GROUP_CHOOSE_FOCUS_TREE"
+    default = {
+    name = STANDARD_TREE
+    text = "RULE_OPTION_STANDARD_TREE"
+    desc = "RULE_OPTION_STANDARD_TREE_DESC"
+    }
+    option = {
+    name = OLD_TREE
+    text = "RULE_OPTION_OLD_TREE"
+    desc = "RULE_OPTION_OLD_TREE_DESC"
+    allow_achievements = yes
+    }
+    }
+
+--- PRC: 无规则（纯 MTTH 决定）---
+
+--- MON: 无规则（纯 MTTH 决定）---
+
+--- FIN: 无规则（纯 MTTH 决定）---
+
+--- SWE_focus_tree_selection  (L380) ---
+    SWE_focus_tree_selection = {
+    name = "SWE_FOCUS_TREE_SELECTION"
+    required_dlc = "Arms Against Tyranny"
+    group = "RULE_GROUP_CHOOSE_FOCUS_TREE"
+    default = {
+    name = R56_TREE
+    text = "RULE_OPTION_R56_TREE"
+    desc = "RULE_OPTION_R56_TREE_DESC"
+    }
+    option = {
+    name = STANDARD_TREE
+    text = "RULE_OPTION_STANDARD_TREE"
+    desc = "RULE_OPTION_STANDARD_TREE_DESC"
+    allow_achievements = yes
+    }
+    }
+
+--- NOR_focus_tree_selection  (L309) ---
+    NOR_focus_tree_selection = {
+    name = "NOR_FOCUS_TREE_SELECTION"
+    required_dlc = "Arms Against Tyranny"
+    group = "RULE_GROUP_CHOOSE_FOCUS_TREE"
+    default = {
+    name = R56_TREE
+    text = "RULE_OPTION_R56_TREE"
+    desc = "RULE_OPTION_R56_TREE_DESC"
+    }
+    option = {
+    name = STANDARD_TREE
+    text = "RULE_OPTION_STANDARD_TREE"
+    desc = "RULE_OPTION_STANDARD_TREE_DESC"
+    allow_achievements = yes
+    }
+    }
+
+--- DEN_focus_tree_selection  (L103) ---
+    DEN_focus_tree_selection = {
+    name = "DEN_FOCUS_TREE_SELECTION"
+    required_dlc = "Arms Against Tyranny"
+    group = "RULE_GROUP_CHOOSE_FOCUS_TREE"
+    default = {
+    name = STANDARD_TREE
+    text = "RULE_OPTION_STANDARD_TREE"
+    desc = "RULE_OPTION_STANDARD_TREE_DESC"
+    allow_achievements = yes
+    }
+    option = {
+    name = R56_TREE
+    text = "RULE_OPTION_R56_TREE"
+    desc = "RULE_OPTION_R56_TREE_DESC"
+    allow_achievements = yes
+    }
+    }
+
+--- ICE_focus_tree_selection  (L158) ---
+    ICE_focus_tree_selection = {
+    name = "ICE_FOCUS_TREE_SELECTION"
+    required_dlc = "Arms Against Tyranny"
+    group = "RULE_GROUP_CHOOSE_FOCUS_TREE"
+    default = {
+    name = STANDARD_TREE
+    text = "RULE_OPTION_STANDARD_TREE"
+    desc = "RULE_OPTION_STANDARD_TREE_DESC"
+    }
+    option = {
+    name = R56_TREE
+    text = "RULE_OPTION_R56_TREE"
+    desc = "RULE_OPTION_R56_TREE_DESC"
+    allow_achievements = yes
+    }
+    }
+
+--- AFG_focus_tree_selection  (L9) ---
+    AFG_focus_tree_selection = {
+    name = "AFG_FOCUS_TREE_SELECTION"
+    required_dlc = "Graveyard of Empires"
+    group = "RULE_GROUP_CHOOSE_FOCUS_TREE"
+    default = {
+    name = R56_TREE
+    text = "RULE_OPTION_R56_TREE"
+    desc = "RULE_OPTION_R56_TREE_DESC"
+    }
+    option = {
+    name = STANDARD_TREE
+    text = "RULE_OPTION_STANDARD_TREE"
+    desc = "RULE_OPTION_STANDARD_TREE_DESC"
+    allow_achievements = yes
+    }
+    }
+
+--- SAU: 无规则（纯 MTTH 决定）---
+
+--- PHI: 无规则（纯 MTTH 决定）---
+
+--- CUB: 无规则（纯 MTTH 决定）---
+
+--- ARG: 无规则（纯 MTTH 决定）---
+
+--- ETH: 无规则（纯 MTTH 决定）---
+
+--- FRA: 无规则（纯 MTTH 决定）---
+
+--- POL: 无规则（纯 MTTH 决定）---
+
+--- HUN: 无规则（纯 MTTH 决定）---
+
+############ B. on_action：规则选项 -> 实际加载的树 ############
+（找 <TAG>_focus_tree_selection 的每个引用，向后取 16 行以捕获 load_focus_tree）
+
+--- SOV: 0 处引用 ---
+    （R56 未接管，走 MTTH）
+
+--- PRC: 0 处引用 ---
+    （R56 未接管，走 MTTH）
+
+--- MON: 0 处引用 ---
+    （R56 未接管，走 MTTH）
+
+--- FIN: 0 处引用 ---
+    （R56 未接管，走 MTTH）
+
+--- SWE: 1 处引用 ---
+    >> 引用处 L1689
+       option = STANDARD_TREE   ->   load_focus_tree = sweden_focus
+
+--- NOR: 1 处引用 ---
+    >> 引用处 L1422
+       option = STANDARD_TREE   ->   load_focus_tree = norwegian_focus
+
+--- DEN: 1 处引用 ---
+    >> 引用处 L1221
+       option = STANDARD_TREE   ->   load_focus_tree = danish_focus
+
+--- ICE: 1 处引用 ---
+    >> 引用处 L1567
+       option = STANDARD_TREE   ->   load_focus_tree = iceland_tree
+
+--- AFG: 1 处引用 ---
+    >> 引用处 L14
+       option = STANDARD_TREE   ->   load_focus_tree = afghanistan_tree
+
+--- SAU: 0 处引用 ---
+    （R56 未接管，走 MTTH）
+
+--- PHI: 0 处引用 ---
+    （R56 未接管，走 MTTH）
+
+--- CUB: 0 处引用 ---
+    （R56 未接管，走 MTTH）
+
+--- ARG: 0 处引用 ---
+    （R56 未接管，走 MTTH）
+
+--- ETH: 0 处引用 ---
+    （R56 未接管，走 MTTH）
+
+--- FRA: 0 处引用 ---
+    （R56 未接管，走 MTTH）
+
+--- POL: 0 处引用 ---
+    （R56 未接管，走 MTTH）
+
+--- HUN: 0 处引用 ---
+    （R56 未接管，走 MTTH）

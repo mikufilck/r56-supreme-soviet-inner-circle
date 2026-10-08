@@ -1,0 +1,71 @@
+﻿################################################################################
+# 1. 职务 idea 的祖先链（看它属于哪个 category）
+################################################################################
+
+### GER_todt_reich_engineer   L11350   （自身缩进 = 2 个 Tab）
+     ↑ 祖先（缩进 1）：L11339  hidden_ideas = {
+     ↑ 祖先（缩进 0）：L1  ideas = {
+
+### GER_himmler_chief_of_german_police   L11476   （自身缩进 = 2 个 Tab）
+     ↑ 祖先（缩进 1）：L11339  hidden_ideas = {
+     ↑ 祖先（缩进 0）：L1  ideas = {
+
+### GER_hess_party_chancellor   L11671   （自身缩进 = 2 个 Tab）
+     ↑ 祖先（缩进 1）：L11339  hidden_ideas = {
+     ↑ 祖先（缩进 0）：L1  ideas = {
+
+### 该文件里所有「缩进 0 或 1 个 Tab」的块头（即 category 与顶层块）
+  L1: ideas = {
+  L2: economy = {
+  L82: country = {
+  L10027: tank_manufacturer = {
+  L10263: naval_manufacturer = {
+  L10502: aircraft_manufacturer = {
+  L10778: materiel_manufacturer = {
+  L10876: industrial_concern = {
+  L11310: hidden_ideas = {
+  L11339: hidden_ideas = {
+
+################################################################################
+# 2. 容器精神 GER_the_inner_circle_dm：有没有数值？在哪里被 add？
+################################################################################
+[原版] common\dynamic_modifiers\wuw_dynamic_modifiers.txt L941: GER_the_inner_circle_dm = {
+[原版] common\dynamic_modifiers\wuw_dynamic_modifiers.txt L948: custom_modifier_tooltip = GER_the_inner_circle_dm_tt
+[原版] common\national_focus\germany.txt L18276: modifier = GER_the_inner_circle_dm
+[R56] common\dynamic_modifiers\wuw_dynamic_modifiers.txt L1008: GER_the_inner_circle_dm = {
+[R56] common\dynamic_modifiers\wuw_dynamic_modifiers.txt L1015: custom_modifier_tooltip = GER_the_inner_circle_dm_tt
+[R56] common\national_focus\germany.txt L21323: modifier = GER_the_inner_circle_dm
+
+################################################################################
+# 3. GER_the_inner_circle_dm_tt 本地化原文（看这个名字是怎么来的）
+################################################################################
+[原版] WUW_ideas_l_braz_por.yml L352: GER_the_inner_circle_dm: "O círculo interno"
+[原版] WUW_ideas_l_braz_por.yml L353: GER_the_inner_circle_dm_desc: "O círculo interno do Führer é formado pela elite política d[GER.GetNameDef], lealistas fervorosos dispostos a promover a vis?o de [GER.GetLeader]. Cheios de ambi??o, todos se esfor?am para ascender no círculo interno e se tornar Reichsleiter, líder do Reich. Sua influência molda decis?es militares, industriais e políticas, orientando a dire??o do governo alem?o. No entanto, essa ambi??o também é uma fonte de tens?o, pois leva a intrigas e trai??es."
+[原版] WUW_ideas_l_braz_por.yml L354: GER_the_inner_circle_dm_tt: "Conselheiros do §Ycírculo interno§! ativos: \n[GetAscendedAdvisor1][GetAscendedAdvisor2][GetAscendedAdvisor3]"
+[原版] wuw_ideas_l_english.yml L390: GER_the_inner_circle_dm: "The Inner Circle"
+[原版] wuw_ideas_l_english.yml L391: GER_the_inner_circle_dm_desc: "The Führer’s Inner Circle contains the political elite of [GER.GetNameDef], fervent loyalists ready to advance [GER.GetLeader]’s vision. Rife with ambition, they all strive to Ascend within the Inner Circle to become Reichsleiter, Reich Leader. Their influence shapes military, industrial, and political decisions alike and drives German policymaking. Their drive is also a source of tension, as ambition leads to intrigue and betrayal."
+[原版] wuw_ideas_l_english.yml L392: GER_the_inner_circle_dm_tt: "Active §YInner Circle§! Advisors: \n[GetAscendedAdvisor1][GetAscendedAdvisor2][GetAscendedAdvisor3]"
+[原版] WUW_ideas_l_french.yml L352: GER_the_inner_circle_dm: "Le Cercle intime"
+[原版] WUW_ideas_l_french.yml L353: GER_the_inner_circle_dm_desc: "Le Cercle intime du Führer rassemble l'élite politique [GER.GetDuDelaDelNP] [GER.GetName], des loyalistes implacables prêts à tout pour concrétiser la vision de [GER.GetLeader]. L'ambition est ma?tre ici, et tous cherchent à s'élever au sein de ce cercle jusqu'à atteindre le poste de Reichsleiter, le dirigeant ultime. Leur influence s'étend jusqu'à l'armée, l'industrie et la politique. Leur motivation sans fin peut provoquer des tensions, car on sait que de l'ambition na?t la trahison."
+[原版] WUW_ideas_l_french.yml L354: GER_the_inner_circle_dm_tt: "Conseillers actifs du §YCercle Intime§!?: \n[GetAscendedAdvisor1][GetAscendedAdvisor2][GetAscendedAdvisor3]"
+[原版] WUW_ideas_l_german.yml L352: GER_the_inner_circle_dm: "Innerer Kreis"
+[原版] WUW_ideas_l_german.yml L353: GER_the_inner_circle_dm_desc: "Der Innere Kreis des Führers setzt sich aus der politischen Elite von [GER.GetName] zusammen, getreuen Loyalisten, die bereit sind, die Vision von [GER.GetLeader] voranzutreiben. Jedes Mitglied des Inneren Kreises strebt danach, in ihm aufzusteigen und Reichsleiter zu werden. Der Einfluss der Mitglieder pr?gt gleicherma?en milit?rische, industrielle und politische Entscheidungen und bestimmt ma?geblich über die deutsche Politik. Ihre Ambitionen führen gelegentlich jedoch auch zu Spannungen, geschürt durch Intrigen und Verrat."
+[原版] WUW_ideas_l_german.yml L354: GER_the_inner_circle_dm_tt: "Aktiviert die Berater des §YInneren Kreises§!:\n[GetAscendedAdvisor1][GetAscendedAdvisor2][GetAscendedAdvisor3]"
+[原版] WUW_ideas_l_japanese.yml L352: GER_the_inner_circle_dm: "側近"
+[原版] WUW_ideas_l_japanese.yml L353: GER_the_inner_circle_dm_desc: "総統の側近には[GER.GetNameDef]の政治エリートや、[GER.GetLeader]の描く未来を推進する熱心な支持者たちが含まれている。野心に満ちた彼らは、側近内で昇格し、帝国の全国指導者になるために努力している。その影響力は軍事、産業、政治の意思決定に等しく影響を与え、ドイツの政策立案を推進している。野心は陰謀や裏切りにつながることも多く、彼らの意欲は緊張も生み出している。"
+[原版] WUW_ideas_l_japanese.yml L354: GER_the_inner_circle_dm_tt: "活動中の相談役§Y側近§!: \n[GetAscendedAdvisor1][GetAscendedAdvisor2][GetAscendedAdvisor3]"
+[原版] wuw_ideas_l_korean.yml L352: GER_the_inner_circle_dm: "??? ??"
+[原版] wuw_ideas_l_korean.yml L353: GER_the_inner_circle_dm_desc: "?? ??? ??? ??? [GER.GetLeader]? ??? ?? ??? ???? [GER.GetNameDef]? ???? ???? ??? ????? ???? ????. ???? ??? ??? ???? ???? ?? ???, ??? ???? ??? ??? ????. ??? ???? ??, ??, ??? ??? ?? ??? ??????. ??? ??? ??? ??? ??? ???? ??? ???? ????."
+[原版] wuw_ideas_l_korean.yml L354: GER_the_inner_circle_dm_tt: "???? §Y??? ??§! ???:\n[GetAscendedAdvisor1] [GetAscendedAdvisor2] [GetAscendedAdvisor3]"
+[原版] WUW_ideas_l_polish.yml L352: GER_the_inner_circle_dm: "Wewn?trzny kr?g"
+[原版] WUW_ideas_l_polish.yml L353: GER_the_inner_circle_dm_desc: "Wewn?trzny kr?g Führera sk?ada si? z przedstawicieli [GER.GetAdjective] elity politycznej, zagorza?ych lojalistów, dla których [GER.GetLeader] i jego wizja to przysz?o??. To ludzie bardzo ambitni, pragn? awansowa? w wewn?trznym kr?gu, by obj?? stanowisko Reichsleitera, czyli przywódcy rzeszy. To oni wp?ywaj? na decyzje wojskowe, przemys?owe i polityczne, a tak?e nadaj? kierunki niemieckiemu ustawodawstwu. Ambicje tych ludzi s? te? ?ród?em napi??, poniewa? prowadz? do zdrad i intryg."
+[原版] WUW_ideas_l_polish.yml L354: GER_the_inner_circle_dm_tt: "Aktywni doradcy w §Ywewn?trznym kr?gu§!: \n[GetAscendedAdvisor1][GetAscendedAdvisor2][GetAscendedAdvisor3]"
+[原版] WUW_ideas_l_russian.yml L352: GER_the_inner_circle_dm: "Внутренний круг"
+[原版] WUW_ideas_l_russian.yml L353: GER_the_inner_circle_dm_desc: "Во внутреннем круге фюрера находится политическая элита [GER.GetNameRuGen], пылкие лоялисты, готовые продвигать идеи, которые проповедует [GER.GetLeader]. Они полны амбиций, и каждый из них желает возвыситься во внутреннем круге и стать рейхсляйтером, лидером Рейха. Они влияют на военные, промышленные и политические решения, на политику Германии в целом. Их целеустремленность?— еще и источник напряженности, ведь амбиции?— путь к интригам и предательству."
+[原版] WUW_ideas_l_russian.yml L354: GER_the_inner_circle_dm_tt: "Действующие советники §Yвнутреннего круга§!: \n[GetAscendedAdvisor1][GetAscendedAdvisor2][GetAscendedAdvisor3]"
+[原版] WUW_ideas_l_simp_chinese.yml L352: GER_the_inner_circle_dm: "核心集团"
+[原版] WUW_ideas_l_simp_chinese.yml L353: GER_the_inner_circle_dm_desc: "元首的核心集团囊括了[GER.GetNameDef]的政治精英，都是狂热的忠诚分子，致力于推进[GER.GetLeader]的愿景。尽管他们充满野心，努力在核心集团内晋升为“帝国领袖”，他们的影响力塑造了军事、工业和政治决策，并推动德国的政策制定。然而，他们的野心也是紧张的根源，导致了阴谋和背叛。"
+[原版] WUW_ideas_l_simp_chinese.yml L354: GER_the_inner_circle_dm_tt: "现任§Y核心集团§!顾问：\n[GetAscendedAdvisor1][GetAscendedAdvisor2][GetAscendedAdvisor3]"
+[原版] WUW_ideas_l_spanish.yml L352: GER_the_inner_circle_dm: "El círculo de confianza"
+[原版] WUW_ideas_l_spanish.yml L353: GER_the_inner_circle_dm_desc: "En el círculo de confianza del Führer se encuentra la élite política de [GER.GetNameDef]: personas fervientes y leales dispuestas a hacer realidad la visión de [GER.GetLeader]. Su ambición los lleva a todos ellos a luchar por convertirse en Reichsleiter y liderar el Reich. Su influencia condiciona tanto las decisiones militares como las industriales y políticas, e impulsa la formulación de políticas de Alemania. Esta ambición es también una fuente de tensiones, ya que provoca conspiraciones y traiciones."
+[原版] WUW_ideas_l_spanish.yml L354: GER_the_inner_circle_dm_tt: "Consejeros del §Ycírculo De Confianza§! activos: \n[GetAscendedAdvisor1], [GetAscendedAdvisor2], [GetAscendedAdvisor3]"

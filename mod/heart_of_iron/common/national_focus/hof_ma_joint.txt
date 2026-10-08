@@ -1,0 +1,2422 @@
+# =============================================================================
+# 需求 C：经互会通用线（S5）
+# -----------------------------------------------------------------------------
+# 由 build/gen-hof-ma-common-lines.ps1 生成，勿手改。
+# 设计见 docs/un-focus/01-s5-mutual-aid-common-lines.md；数值见 docs/un-focus/02-s5-values.md。
+#
+# 结构：1 个 shared_focus（头）+ 58 个 joint_focus（3 条线：经济 23 / 政治 18 / 军事 17）
+#   · 头 = 莫洛托夫计划 · 三条线互不串线（真实历史里三个机构本来就是并列搭起来的）
+#   · 摆位：不使用 relative_position_id；图瓦专用 y+60 offset，其余国家保持绝对格位。
+#     ① 每个节点写【绝对格位】：头 (0, 24)，子节点 (col, 24 + row)
+#     ② 图瓦本国树深至 y=80，故 59 个节点均对 TAN 单独下移 60 行
+#     ⇒ 带子占 x ∈ [-21, +21]、y ∈ [24, 30]，【对 22 棵树全都是空区】：
+#        ⭐ 实测（逐格解析 mod/heart_of_iron/common/national_focus/*.txt）：
+#          21 棵树真实 Y 最大 = **11**（philippines_focus）⇒ y 从 24 起 = 至少空出 13 行
+#     （2026-09-20 用户口径「会不会是国策窗口宽度不够……那就把这个国策丢到下面去」）
+#       后台实测：不是宽度问题，是【旧的 MaxX 表测错了】——
+#       french_focus 表里 20 / 实测 67、saudi_focus 6/11、polish_focus 46/54
+#       ⇒ 这三棵树的带子被 offset 送进了树身里。阿富汗实测 87 = 表里 87，所以它正常。
+#       既然测量不可靠，就【彻底不用测量】—— 见 docs/99 §47.14
+#
+# 图标：四个 sprite 全部是【原版已有的】（interface/goals.gfx），零缺图风险。
+#   头 = 马克思-列宁主义道路 · 经济 = 经互会 · 政治 = 共产国际 · 军事 = 华沙条约组织
+#   （用户 2026-09-20 口径：按【国策中文显示名】反查原版国策，再读它的 icon）
+# =============================================================================
+
+# ---- 头：莫洛托夫计划（唯一的 shared_focus）----
+shared_focus = {
+	id = hof_ma_founding
+	icon = GFX_focus_SOV_the_path_of_marxism_leninism
+	x = 0
+	y = 27
+	offset = { x = 0 y = 60 trigger = { tag = TAN } }
+	cost = 10
+
+	# 普通树 y=27..33；图瓦单独 y=87..93
+
+	# 准入（用户口径：共产主义政体 且 与苏联同一阵营或为其附庸 —— 与北欧一样「符合条件大家都能点」）
+	# ⚠️ 用 available 而不是 allow_branch：allow_branch 只在国策树加载时判定，
+	#    一个国家【中途】转成共产主义时不一定刷新得到；available 是持续判定的，
+	#    而且正好给出用户要的「看得见、点不了」。
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = hof_ma_available_government_tt
+			has_government = communism
+		}
+		custom_trigger_tooltip = {
+			tooltip = hof_ma_available_tt
+			OR = {
+				tag = SOV
+				is_in_faction_with = SOV
+				is_subject_of = SOV
+			}
+		}
+	}
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+
+	completion_reward = {
+		hidden_effect = { SOV = { set_country_flag = hof_ma_done_hof_ma_founding } }
+		if = {
+			limit = { hof_ma_eligible = yes }
+		custom_effect_tooltip = hof_ma_head_dm_tt
+		# 累积数值：三个容器一起喂
+		add_to_variable = {
+			hof_ma_eco_trade = 0.05
+			tooltip = hof_ma_tt_faction_trade_opinion_factor
+		}
+		add_to_variable = {
+			hof_ma_pol_opinion = 0.05
+			tooltip = hof_ic_tt_opinion_gain_monthly_factor
+		}
+		add_to_variable = {
+			hof_ma_mil_command_max = 25
+			tooltip = max_command_power_tt
+		}
+		# 三个动态民族精神一起挂上 —— 头节点是唯一的入口
+		add_dynamic_modifier = { modifier = hof_ma_dm_eco }
+		add_dynamic_modifier = { modifier = hof_ma_dm_pol }
+		add_dynamic_modifier = { modifier = hof_ma_dm_mil }
+		set_country_flag = hof_ma_joined
+		add_political_power = 50
+		}
+		hidden_effect = { SOV = { hof_ma_reconcile_all = yes } }
+	}
+}
+
+# =============================================================================
+# 经济互助委员会：23 条 = 6 条支线（照原版 nordic_shared 的放射写法）
+#   大门 = hof_ma_eco_founding（prerequisite 挂头节点）；其余支线 prerequisite 挂【大门】；摆位一律绝对坐标 + 自带 offset
+# =============================================================================
+
+# ---- 支线 1：缔造与章程（5 条 · 第 -21 列）----
+joint_focus = {
+	id = hof_ma_eco_founding
+	icon = GFX_focus_SOV_the_comecon
+
+	prerequisite = { focus = hof_ma_founding }
+
+	# (x, y) = 【绝对格位】（带子固定在树下方：列 -21、行 28）
+	# 不写 relative_position_id；图瓦节点单独下移
+	x = -21
+	y = 28
+	offset = { x = 0 y = 60 trigger = { tag = TAN } }
+	cost = 10
+
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+
+	# 谁是 joint：由触发器定义（见 common/scripted_triggers/hof_ma_scripted_triggers.txt）
+	joint_trigger = { hof_ma_joint_trigger = yes }
+
+	completion_reward = {
+		hidden_effect = { SOV = { set_country_flag = hof_ma_done_hof_ma_eco_founding } }
+		if = {
+			limit = { hof_ma_eligible = yes }
+		custom_effect_tooltip = hof_ma_line_dm_tt
+		add_to_variable = {
+			hof_ma_eco_goods = -0.05
+			tooltip = consumer_goods_factor_tt
+		}
+		add_to_variable = {
+			hof_ma_eco_industry = 0.05
+			tooltip = industrial_capacity_factory_tt
+		}
+			add_ideas = hof_ma_idea_comecon
+		}
+		hidden_effect = { SOV = { hof_ma_reconcile_all = yes } }
+	}
+}
+
+joint_focus = {
+	id = hof_ma_eco_common_planning_organ
+	icon = GFX_focus_SOV_the_comecon
+
+	prerequisite = { focus = hof_ma_eco_founding }
+
+	# (x, y) = 【绝对格位】（带子固定在树下方：列 -21、行 29）
+	# 不写 relative_position_id；图瓦节点单独下移
+	x = -21
+	y = 29
+	offset = { x = 0 y = 60 trigger = { tag = TAN } }
+	cost = 5
+
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+
+	# 谁是 joint：由触发器定义（见 common/scripted_triggers/hof_ma_scripted_triggers.txt）
+	joint_trigger = { hof_ma_joint_trigger = yes }
+
+	completion_reward = {
+		hidden_effect = { SOV = { set_country_flag = hof_ma_done_hof_ma_eco_common_planning_organ } }
+		if = {
+			limit = { hof_ma_eligible = yes }
+		custom_effect_tooltip = hof_ma_line_dm_tt
+		add_to_variable = {
+			hof_ma_eco_build_boost = 0.05
+			tooltip = cic_construction_boost_factor_tt
+		}
+		add_to_variable = {
+			hof_ma_eco_infra_resource = 0.10
+			tooltip = local_resource_gain_efficiency_per_infrastructure_tt
+		}
+			set_country_flag = hof_ma_plan_coordination
+		}
+		hidden_effect = { SOV = { hof_ma_reconcile_all = yes } }
+	}
+}
+
+joint_focus = {
+	id = hof_ma_eco_standing_commissions
+	icon = GFX_focus_SOV_the_comecon
+
+	prerequisite = { focus = hof_ma_eco_common_planning_organ }
+
+	# (x, y) = 【绝对格位】（带子固定在树下方：列 -21、行 30）
+	# 不写 relative_position_id；图瓦节点单独下移
+	x = -21
+	y = 30
+	offset = { x = 0 y = 60 trigger = { tag = TAN } }
+	cost = 5
+
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+
+	# 谁是 joint：由触发器定义（见 common/scripted_triggers/hof_ma_scripted_triggers.txt）
+	joint_trigger = { hof_ma_joint_trigger = yes }
+
+	completion_reward = {
+		hidden_effect = { SOV = { set_country_flag = hof_ma_done_hof_ma_eco_standing_commissions } }
+		if = {
+			limit = { hof_ma_eligible = yes }
+		custom_effect_tooltip = hof_ma_line_dm_tt
+		add_to_variable = {
+			hof_ma_eco_efficiency = 0.05
+			tooltip = production_factory_max_efficiency_factor_tt
+		}
+		add_to_variable = {
+			hof_ma_eco_industry = 0.05
+			tooltip = industrial_capacity_factory_tt
+		}
+		}
+		hidden_effect = { SOV = { hof_ma_reconcile_all = yes } }
+	}
+}
+
+joint_focus = {
+	id = hof_ma_eco_charter
+	icon = GFX_focus_SOV_the_comecon
+
+	prerequisite = { focus = hof_ma_eco_standing_commissions }
+
+	# (x, y) = 【绝对格位】（带子固定在树下方：列 -21、行 31）
+	# 不写 relative_position_id；图瓦节点单独下移
+	x = -21
+	y = 31
+	offset = { x = 0 y = 60 trigger = { tag = TAN } }
+	cost = 10
+
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+
+	# 谁是 joint：由触发器定义（见 common/scripted_triggers/hof_ma_scripted_triggers.txt）
+	joint_trigger = { hof_ma_joint_trigger = yes }
+
+	completion_reward = {
+		hidden_effect = { SOV = { set_country_flag = hof_ma_done_hof_ma_eco_charter } }
+		if = {
+			limit = { hof_ma_eligible = yes }
+		custom_effect_tooltip = hof_ma_line_dm_tt
+		add_to_variable = {
+			hof_ma_eco_build = 0.05
+			tooltip = production_speed_buildings_factor_tt
+		}
+		add_to_variable = {
+			hof_ma_eco_slots = 0.05
+			tooltip = global_building_slots_factor_tt
+		}
+		}
+		hidden_effect = { SOV = { hof_ma_reconcile_all = yes } }
+	}
+
+	completion_reward_joint_originator = {
+		if = {
+			limit = { hof_ma_eligible = yes }
+			add_political_power = 50
+		}
+	}
+}
+
+joint_focus = {
+	id = hof_ma_eco_executive_committee
+	icon = GFX_focus_SOV_the_comecon
+
+	prerequisite = { focus = hof_ma_eco_charter }
+
+	# (x, y) = 【绝对格位】（带子固定在树下方：列 -21、行 32）
+	# 不写 relative_position_id；图瓦节点单独下移
+	x = -21
+	y = 32
+	offset = { x = 0 y = 60 trigger = { tag = TAN } }
+	cost = 5
+
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+
+	# 谁是 joint：由触发器定义（见 common/scripted_triggers/hof_ma_scripted_triggers.txt）
+	joint_trigger = { hof_ma_joint_trigger = yes }
+
+	completion_reward = {
+		hidden_effect = { SOV = { set_country_flag = hof_ma_done_hof_ma_eco_executive_committee } }
+		if = {
+			limit = { hof_ma_eligible = yes }
+		custom_effect_tooltip = hof_ma_line_dm_tt
+		add_to_variable = {
+			hof_ma_eco_build = 0.05
+			tooltip = production_speed_buildings_factor_tt
+		}
+		}
+		hidden_effect = { SOV = { hof_ma_reconcile_all = yes } }
+	}
+}
+
+
+# ---- 支线 2：计划与分工（5 条 · 第 -18 列）----
+joint_focus = {
+	id = hof_ma_eco_division_of_labour
+	icon = GFX_focus_SOV_the_comecon
+
+	prerequisite = { focus = hof_ma_eco_founding }
+
+	# (x, y) = 【绝对格位】（带子固定在树下方：列 -18、行 29）
+	# 不写 relative_position_id；图瓦节点单独下移
+	x = -18
+	y = 29
+	offset = { x = 0 y = 60 trigger = { tag = TAN } }
+	cost = 10
+
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+
+	# 谁是 joint：由触发器定义（见 common/scripted_triggers/hof_ma_scripted_triggers.txt）
+	joint_trigger = { hof_ma_joint_trigger = yes }
+
+	completion_reward = {
+		hidden_effect = { SOV = { set_country_flag = hof_ma_done_hof_ma_eco_division_of_labour } }
+		if = {
+			limit = { hof_ma_eligible = yes }
+		custom_effect_tooltip = hof_ma_line_dm_tt
+		add_to_variable = {
+			hof_ma_eco_industry = 0.10
+			tooltip = industrial_capacity_factory_tt
+		}
+		add_to_variable = {
+			hof_ma_eco_trade = 0.10
+			tooltip = hof_ma_tt_faction_trade_opinion_factor
+		}
+			add_ideas = hof_ma_idea_division_of_labour
+		}
+		hidden_effect = { SOV = { hof_ma_reconcile_all = yes } }
+	}
+}
+
+joint_focus = {
+	id = hof_ma_eco_single_planning_organ
+	icon = GFX_focus_SOV_the_comecon
+
+	prerequisite = { focus = hof_ma_eco_division_of_labour }
+
+	# (x, y) = 【绝对格位】（带子固定在树下方：列 -18、行 30）
+	# 不写 relative_position_id；图瓦节点单独下移
+	x = -18
+	y = 30
+	offset = { x = 0 y = 60 trigger = { tag = TAN } }
+	cost = 10
+
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+
+	# 谁是 joint：由触发器定义（见 common/scripted_triggers/hof_ma_scripted_triggers.txt）
+	joint_trigger = { hof_ma_joint_trigger = yes }
+
+	completion_reward = {
+		hidden_effect = { SOV = { set_country_flag = hof_ma_done_hof_ma_eco_single_planning_organ } }
+		if = {
+			limit = { hof_ma_eligible = yes }
+		custom_effect_tooltip = hof_ma_line_dm_tt
+		add_to_variable = {
+			hof_ma_eco_build_boost = 0.10
+			tooltip = cic_construction_boost_factor_tt
+		}
+		add_to_variable = {
+			hof_ma_eco_slots = 0.05
+			tooltip = global_building_slots_factor_tt
+		}
+			set_country_flag = hof_ma_supranational
+		}
+		hidden_effect = { SOV = { hof_ma_reconcile_all = yes } }
+	}
+}
+
+joint_focus = {
+	id = hof_ma_eco_planning_committee
+	icon = GFX_focus_SOV_the_comecon
+
+	prerequisite = { focus = hof_ma_eco_single_planning_organ }
+
+	# (x, y) = 【绝对格位】（带子固定在树下方：列 -18、行 31）
+	# 不写 relative_position_id；图瓦节点单独下移
+	x = -18
+	y = 31
+	offset = { x = 0 y = 60 trigger = { tag = TAN } }
+	cost = 5
+
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+
+	# 谁是 joint：由触发器定义（见 common/scripted_triggers/hof_ma_scripted_triggers.txt）
+	joint_trigger = { hof_ma_joint_trigger = yes }
+
+	completion_reward = {
+		hidden_effect = { SOV = { set_country_flag = hof_ma_done_hof_ma_eco_planning_committee } }
+		if = {
+			limit = { hof_ma_eligible = yes }
+		custom_effect_tooltip = hof_ma_line_dm_tt
+		add_to_variable = {
+			hof_ma_eco_industry = 0.05
+			tooltip = industrial_capacity_factory_tt
+		}
+		add_to_variable = {
+			hof_ma_eco_build_boost = 0.10
+			tooltip = cic_construction_boost_factor_tt
+		}
+		add_to_variable = {
+			hof_ma_eco_infra_resource = 0.10
+			tooltip = local_resource_gain_efficiency_per_infrastructure_tt
+		}
+		}
+		hidden_effect = { SOV = { hof_ma_reconcile_all = yes } }
+	}
+}
+
+joint_focus = {
+	id = hof_ma_eco_comprehensive_programme
+	icon = GFX_focus_SOV_the_comecon
+
+	prerequisite = { focus = hof_ma_eco_planning_committee }
+
+	# (x, y) = 【绝对格位】（带子固定在树下方：列 -18、行 32）
+	# 不写 relative_position_id；图瓦节点单独下移
+	x = -18
+	y = 32
+	offset = { x = 0 y = 60 trigger = { tag = TAN } }
+	cost = 10
+
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+
+	# 谁是 joint：由触发器定义（见 common/scripted_triggers/hof_ma_scripted_triggers.txt）
+	joint_trigger = { hof_ma_joint_trigger = yes }
+
+	completion_reward = {
+		hidden_effect = { SOV = { set_country_flag = hof_ma_done_hof_ma_eco_comprehensive_programme } }
+		if = {
+			limit = { hof_ma_eligible = yes }
+		custom_effect_tooltip = hof_ma_line_dm_tt
+		add_to_variable = {
+			hof_ma_eco_industry = 0.15
+			tooltip = industrial_capacity_factory_tt
+		}
+		add_to_variable = {
+			hof_ma_eco_trade = 0.05
+			tooltip = hof_ma_tt_faction_trade_opinion_factor
+		}
+		add_to_variable = {
+			hof_ma_eco_trade_cost = 0.25
+			tooltip = resource_trade_cost_bonus_per_factory_tt
+		}
+			add_ideas = hof_ma_idea_integration_programme
+		}
+		hidden_effect = { SOV = { hof_ma_reconcile_all = yes } }
+	}
+
+	completion_reward_joint_originator = {
+		if = {
+			limit = { hof_ma_eligible = yes }
+			add_political_power = 75
+		}
+	}
+}
+
+joint_focus = {
+	id = hof_ma_eco_long_term_programmes
+	icon = GFX_focus_SOV_the_comecon
+
+	prerequisite = { focus = hof_ma_eco_comprehensive_programme }
+
+	# (x, y) = 【绝对格位】（带子固定在树下方：列 -18、行 33）
+	# 不写 relative_position_id；图瓦节点单独下移
+	x = -18
+	y = 33
+	offset = { x = 0 y = 60 trigger = { tag = TAN } }
+	cost = 10
+
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+
+	# 谁是 joint：由触发器定义（见 common/scripted_triggers/hof_ma_scripted_triggers.txt）
+	joint_trigger = { hof_ma_joint_trigger = yes }
+
+	completion_reward = {
+		hidden_effect = { SOV = { set_country_flag = hof_ma_done_hof_ma_eco_long_term_programmes } }
+		if = {
+			limit = { hof_ma_eligible = yes }
+		custom_effect_tooltip = hof_ma_line_dm_tt
+		add_to_variable = {
+			hof_ma_eco_resources = 0.10
+			tooltip = local_resources_factor_tt
+		}
+		add_to_variable = {
+			hof_ma_eco_efficiency = 0.10
+			tooltip = production_factory_max_efficiency_factor_tt
+		}
+		add_to_variable = {
+			hof_ma_eco_fuel = 0.10
+			tooltip = max_fuel_factor_tt
+		}
+			capital_scope = { add_building_construction = { type = rail_way level = 1 instant_build = yes } }
+		}
+		hidden_effect = { SOV = { hof_ma_reconcile_all = yes } }
+	}
+}
+
+
+# ---- 支线 3：货币与结算（3 条 · 第 -15 列）----
+joint_focus = {
+	id = hof_ma_eco_transferable_rouble
+	icon = GFX_focus_SOV_the_comecon
+
+	prerequisite = { focus = hof_ma_eco_founding }
+
+	# (x, y) = 【绝对格位】（带子固定在树下方：列 -15、行 29）
+	# 不写 relative_position_id；图瓦节点单独下移
+	x = -15
+	y = 29
+	offset = { x = 0 y = 60 trigger = { tag = TAN } }
+	cost = 5
+
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+
+	# 谁是 joint：由触发器定义（见 common/scripted_triggers/hof_ma_scripted_triggers.txt）
+	joint_trigger = { hof_ma_joint_trigger = yes }
+
+	completion_reward = {
+		hidden_effect = { SOV = { set_country_flag = hof_ma_done_hof_ma_eco_transferable_rouble } }
+		if = {
+			limit = { hof_ma_eligible = yes }
+		custom_effect_tooltip = hof_ma_line_dm_tt
+		add_to_variable = {
+			hof_ma_eco_trade = 0.05
+			tooltip = hof_ma_tt_faction_trade_opinion_factor
+		}
+		add_to_variable = {
+			hof_ma_eco_trade_cost = 0.25
+			tooltip = resource_trade_cost_bonus_per_factory_tt
+		}
+		}
+		hidden_effect = { SOV = { hof_ma_reconcile_all = yes } }
+	}
+}
+
+joint_focus = {
+	id = hof_ma_eco_ibec
+	icon = GFX_hof_ma_ibec
+
+	prerequisite = { focus = hof_ma_eco_transferable_rouble }
+
+	# (x, y) = 【绝对格位】（带子固定在树下方：列 -15、行 30）
+	# 不写 relative_position_id；图瓦节点单独下移
+	x = -15
+	y = 30
+	offset = { x = 0 y = 60 trigger = { tag = TAN } }
+	cost = 5
+
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+
+	# 谁是 joint：由触发器定义（见 common/scripted_triggers/hof_ma_scripted_triggers.txt）
+	joint_trigger = { hof_ma_joint_trigger = yes }
+
+	completion_reward = {
+		hidden_effect = { SOV = { set_country_flag = hof_ma_done_hof_ma_eco_ibec } }
+		if = {
+			limit = { hof_ma_eligible = yes }
+		custom_effect_tooltip = hof_ma_line_dm_tt
+		add_to_variable = {
+			hof_ma_eco_trade_cost = 0.25
+			tooltip = resource_trade_cost_bonus_per_factory_tt
+		}
+		add_to_variable = {
+			hof_ma_eco_steel = 8
+			tooltip = country_resource_steel_tt
+		}
+		}
+		if = {
+			limit = { NOT = { has_country_flag = hof_ma_resource_done_hof_ma_eco_ibec } }
+			capital_scope = { add_resource = { type = oil amount = 20 } add_resource = { type = aluminium amount = 20 } add_resource = { type = rubber amount = 20 } add_resource = { type = tungsten amount = 20 } add_resource = { type = steel amount = 20 } add_resource = { type = chromium amount = 20 } add_resource = { type = coal amount = 20 } }
+			hidden_effect = { set_country_flag = hof_ma_resource_done_hof_ma_eco_ibec }
+		}
+		hidden_effect = { hof_ma_distribute_resource_hof_ma_eco_ibec = yes }
+		hidden_effect = { SOV = { hof_ma_reconcile_all = yes } }
+	}
+}
+
+joint_focus = {
+	id = hof_ma_eco_iib
+	icon = GFX_hof_ma_iib
+
+	prerequisite = { focus = hof_ma_eco_ibec }
+
+	# (x, y) = 【绝对格位】（带子固定在树下方：列 -15、行 31）
+	# 不写 relative_position_id；图瓦节点单独下移
+	x = -15
+	y = 31
+	offset = { x = 0 y = 60 trigger = { tag = TAN } }
+	cost = 10
+
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+
+	# 谁是 joint：由触发器定义（见 common/scripted_triggers/hof_ma_scripted_triggers.txt）
+	joint_trigger = { hof_ma_joint_trigger = yes }
+
+	completion_reward = {
+		hidden_effect = { SOV = { set_country_flag = hof_ma_done_hof_ma_eco_iib } }
+		if = {
+			limit = { hof_ma_eligible = yes }
+		custom_effect_tooltip = hof_ma_line_dm_tt
+		add_to_variable = {
+			hof_ma_eco_build = 0.10
+			tooltip = production_speed_buildings_factor_tt
+		}
+		add_to_variable = {
+			hof_ma_eco_resources = 0.05
+			tooltip = local_resources_factor_tt
+		}
+		add_to_variable = {
+			hof_ma_eco_slots = 0.10
+			tooltip = global_building_slots_factor_tt
+		}
+			capital_scope = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+		}
+		hidden_effect = { SOV = { hof_ma_reconcile_all = yes } }
+	}
+}
+
+
+# ---- 支线 4：原料与能源（3 条 · 第 -12 列）----
+joint_focus = {
+	id = hof_ma_eco_druzhba
+	icon = GFX_hof_ma_druzhba
+
+	prerequisite = { focus = hof_ma_eco_founding }
+
+	# (x, y) = 【绝对格位】（带子固定在树下方：列 -12、行 29）
+	# 不写 relative_position_id；图瓦节点单独下移
+	x = -12
+	y = 29
+	offset = { x = 0 y = 60 trigger = { tag = TAN } }
+	cost = 5
+
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+
+	# 谁是 joint：由触发器定义（见 common/scripted_triggers/hof_ma_scripted_triggers.txt）
+	joint_trigger = { hof_ma_joint_trigger = yes }
+
+	completion_reward = {
+		hidden_effect = { SOV = { set_country_flag = hof_ma_done_hof_ma_eco_druzhba } }
+		if = {
+			limit = { hof_ma_eligible = yes }
+		custom_effect_tooltip = hof_ma_line_dm_tt
+		add_to_variable = {
+			hof_ma_eco_oil = 12
+			tooltip = country_resource_oil_tt
+		}
+		add_to_variable = {
+			hof_ma_eco_fuel = 0.15
+			tooltip = max_fuel_factor_tt
+		}
+		}
+		if = {
+			limit = { NOT = { has_country_flag = hof_ma_resource_done_hof_ma_eco_druzhba } }
+			capital_scope = { add_resource = { type = oil amount = 40 } }
+			hidden_effect = { set_country_flag = hof_ma_resource_done_hof_ma_eco_druzhba }
+		}
+		hidden_effect = { hof_ma_distribute_resource_hof_ma_eco_druzhba = yes }
+		hidden_effect = { SOV = { hof_ma_reconcile_all = yes } }
+	}
+}
+
+joint_focus = {
+	id = hof_ma_eco_power_grid
+	icon = GFX_focus_SOV_the_comecon
+
+	prerequisite = { focus = hof_ma_eco_druzhba }
+
+	# (x, y) = 【绝对格位】（带子固定在树下方：列 -12、行 30）
+	# 不写 relative_position_id；图瓦节点单独下移
+	x = -12
+	y = 30
+	offset = { x = 0 y = 60 trigger = { tag = TAN } }
+	cost = 10
+
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+
+	# 谁是 joint：由触发器定义（见 common/scripted_triggers/hof_ma_scripted_triggers.txt）
+	joint_trigger = { hof_ma_joint_trigger = yes }
+
+	completion_reward = {
+		hidden_effect = { SOV = { set_country_flag = hof_ma_done_hof_ma_eco_power_grid } }
+		if = {
+			limit = { hof_ma_eligible = yes }
+		custom_effect_tooltip = hof_ma_line_dm_tt
+		add_to_variable = {
+			hof_ma_eco_coal = 16
+			tooltip = country_resource_coal_tt
+		}
+		add_to_variable = {
+			hof_ma_eco_repair = 0.15
+			tooltip = industry_repair_factor_tt
+		}
+		}
+		if = {
+			limit = { NOT = { has_country_flag = hof_ma_resource_done_hof_ma_eco_power_grid } }
+			capital_scope = { add_resource = { type = coal amount = 40 } }
+			hidden_effect = { set_country_flag = hof_ma_resource_done_hof_ma_eco_power_grid }
+		}
+		hidden_effect = { hof_ma_distribute_resource_hof_ma_eco_power_grid = yes }
+		hidden_effect = { SOV = { hof_ma_reconcile_all = yes } }
+	}
+}
+
+joint_focus = {
+	id = hof_ma_eco_intermetall
+	icon = GFX_hof_ma_intermetall
+
+	prerequisite = { focus = hof_ma_eco_power_grid }
+
+	# (x, y) = 【绝对格位】（带子固定在树下方：列 -12、行 31）
+	# 不写 relative_position_id；图瓦节点单独下移
+	x = -12
+	y = 31
+	offset = { x = 0 y = 60 trigger = { tag = TAN } }
+	cost = 5
+
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+
+	# 谁是 joint：由触发器定义（见 common/scripted_triggers/hof_ma_scripted_triggers.txt）
+	joint_trigger = { hof_ma_joint_trigger = yes }
+
+	completion_reward = {
+		hidden_effect = { SOV = { set_country_flag = hof_ma_done_hof_ma_eco_intermetall } }
+		if = {
+			limit = { hof_ma_eligible = yes }
+		custom_effect_tooltip = hof_ma_line_dm_tt
+		add_to_variable = {
+			hof_ma_eco_resources = 0.10
+			tooltip = local_resources_factor_tt
+		}
+		add_to_variable = {
+			hof_ma_eco_steel = 8
+			tooltip = country_resource_steel_tt
+		}
+		}
+		if = {
+			limit = { NOT = { has_country_flag = hof_ma_resource_done_hof_ma_eco_intermetall } }
+			capital_scope = { add_resource = { type = oil amount = 20 } add_resource = { type = aluminium amount = 20 } add_resource = { type = rubber amount = 20 } add_resource = { type = tungsten amount = 20 } add_resource = { type = steel amount = 20 } add_resource = { type = chromium amount = 20 } add_resource = { type = coal amount = 20 } }
+			hidden_effect = { set_country_flag = hof_ma_resource_done_hof_ma_eco_intermetall }
+		}
+		hidden_effect = { hof_ma_distribute_resource_hof_ma_eco_intermetall = yes }
+		hidden_effect = { SOV = { hof_ma_reconcile_all = yes } }
+	}
+}
+
+
+# ---- 支线 5：科技与标准（4 条 · 第 -9 列）----
+joint_focus = {
+	id = hof_ma_eco_sofia_principle
+	icon = GFX_focus_SOV_the_comecon
+
+	prerequisite = { focus = hof_ma_eco_founding }
+
+	# (x, y) = 【绝对格位】（带子固定在树下方：列 -9、行 29）
+	# 不写 relative_position_id；图瓦节点单独下移
+	x = -9
+	y = 29
+	offset = { x = 0 y = 60 trigger = { tag = TAN } }
+	cost = 5
+
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+
+	# 谁是 joint：由触发器定义（见 common/scripted_triggers/hof_ma_scripted_triggers.txt）
+	joint_trigger = { hof_ma_joint_trigger = yes }
+
+	completion_reward = {
+		hidden_effect = { SOV = { set_country_flag = hof_ma_done_hof_ma_eco_sofia_principle } }
+		if = {
+			limit = { hof_ma_eligible = yes }
+		custom_effect_tooltip = hof_ma_line_dm_tt
+		add_to_variable = {
+			hof_ma_eco_sharing = 0.15
+			tooltip = research_sharing_per_country_bonus_factor_tt
+		}
+		add_to_variable = {
+			hof_ma_eco_repair = 0.05
+			tooltip = industry_repair_factor_tt
+		}
+		add_to_variable = {
+			hof_ma_eco_research = 0.05
+			tooltip = research_speed_factor_tt
+		}
+		}
+		hidden_effect = { SOV = { hof_ma_reconcile_all = yes } }
+	}
+}
+
+joint_focus = {
+	id = hof_ma_eco_standardisation
+	icon = GFX_focus_SOV_the_comecon
+
+	prerequisite = { focus = hof_ma_eco_sofia_principle }
+
+	# (x, y) = 【绝对格位】（带子固定在树下方：列 -9、行 30）
+	# 不写 relative_position_id；图瓦节点单独下移
+	x = -9
+	y = 30
+	offset = { x = 0 y = 60 trigger = { tag = TAN } }
+	cost = 10
+
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+
+	# 谁是 joint：由触发器定义（见 common/scripted_triggers/hof_ma_scripted_triggers.txt）
+	joint_trigger = { hof_ma_joint_trigger = yes }
+
+	completion_reward = {
+		hidden_effect = { SOV = { set_country_flag = hof_ma_done_hof_ma_eco_standardisation } }
+		if = {
+			limit = { hof_ma_eligible = yes }
+		custom_effect_tooltip = hof_ma_line_dm_tt
+		add_to_variable = {
+			hof_ma_eco_sharing = 0.10
+			tooltip = research_sharing_per_country_bonus_factor_tt
+		}
+		add_to_variable = {
+			hof_ma_eco_research = 0.05
+			tooltip = research_speed_factor_tt
+		}
+			add_ideas = hof_ma_idea_joint_research_org
+		}
+		hidden_effect = { SOV = { hof_ma_reconcile_all = yes } }
+	}
+}
+
+joint_focus = {
+	id = hof_ma_eco_icsti
+	icon = GFX_focus_SOV_the_comecon
+
+	prerequisite = { focus = hof_ma_eco_standardisation }
+
+	# (x, y) = 【绝对格位】（带子固定在树下方：列 -9、行 31）
+	# 不写 relative_position_id；图瓦节点单独下移
+	x = -9
+	y = 31
+	offset = { x = 0 y = 60 trigger = { tag = TAN } }
+	cost = 5
+
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+
+	# 谁是 joint：由触发器定义（见 common/scripted_triggers/hof_ma_scripted_triggers.txt）
+	joint_trigger = { hof_ma_joint_trigger = yes }
+
+	completion_reward = {
+		hidden_effect = { SOV = { set_country_flag = hof_ma_done_hof_ma_eco_icsti } }
+		if = {
+			limit = { hof_ma_eligible = yes }
+		custom_effect_tooltip = hof_ma_line_dm_tt
+		add_to_variable = {
+			hof_ma_eco_research = 0.10
+			tooltip = research_speed_factor_tt
+		}
+		add_to_variable = {
+			hof_ma_eco_sharing = 0.05
+			tooltip = research_sharing_per_country_bonus_factor_tt
+		}
+			set_country_flag = hof_ma_icsti
+		}
+		hidden_effect = { SOV = { hof_ma_reconcile_all = yes } }
+	}
+}
+
+joint_focus = {
+	id = hof_ma_eco_scientific_progress
+	icon = GFX_focus_SOV_the_comecon
+
+	prerequisite = { focus = hof_ma_eco_icsti }
+
+	# (x, y) = 【绝对格位】（带子固定在树下方：列 -9、行 32）
+	# 不写 relative_position_id；图瓦节点单独下移
+	x = -9
+	y = 32
+	offset = { x = 0 y = 60 trigger = { tag = TAN } }
+	cost = 10
+
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+
+	# 谁是 joint：由触发器定义（见 common/scripted_triggers/hof_ma_scripted_triggers.txt）
+	joint_trigger = { hof_ma_joint_trigger = yes }
+
+	completion_reward = {
+		hidden_effect = { SOV = { set_country_flag = hof_ma_done_hof_ma_eco_scientific_progress } }
+		if = {
+			limit = { hof_ma_eligible = yes }
+		custom_effect_tooltip = hof_ma_line_dm_tt
+		add_to_variable = {
+			hof_ma_eco_research = 0.20
+			tooltip = research_speed_factor_tt
+		}
+		add_to_variable = {
+			hof_ma_eco_efficiency = 0.05
+			tooltip = production_factory_max_efficiency_factor_tt
+		}
+		}
+		hidden_effect = { SOV = { hof_ma_reconcile_all = yes } }
+	}
+}
+
+
+# ---- 支线 6：阵营贸易秩序（3 条 · 第 -6 列）----
+joint_focus = {
+	id = hof_ma_eco_trade_only
+	icon = GFX_focus_SOV_the_comecon
+
+	prerequisite = { focus = hof_ma_eco_founding }
+
+	# (x, y) = 【绝对格位】（带子固定在树下方：列 -6、行 29）
+	# 不写 relative_position_id；图瓦节点单独下移
+	x = -6
+	y = 29
+	offset = { x = 0 y = 60 trigger = { tag = TAN } }
+	cost = 5
+
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+
+	# 谁是 joint：由触发器定义（见 common/scripted_triggers/hof_ma_scripted_triggers.txt）
+	joint_trigger = { hof_ma_joint_trigger = yes }
+
+	completion_reward = {
+		hidden_effect = { SOV = { set_country_flag = hof_ma_done_hof_ma_eco_trade_only } }
+		if = {
+			limit = { hof_ma_eligible = yes }
+		custom_effect_tooltip = hof_ma_line_dm_tt
+		add_to_variable = {
+			hof_ma_eco_trade = 0.05
+			tooltip = hof_ma_tt_faction_trade_opinion_factor
+		}
+		add_to_variable = {
+			hof_ma_eco_trade_cost = 0.25
+			tooltip = resource_trade_cost_bonus_per_factory_tt
+		}
+		add_to_variable = {
+			hof_ma_eco_goods = -0.05
+			tooltip = consumer_goods_factor_tt
+		}
+		}
+		hidden_effect = { SOV = { hof_ma_reconcile_all = yes } }
+	}
+}
+
+joint_focus = {
+	id = hof_ma_eco_interested_party
+	icon = GFX_focus_SOV_the_comecon
+
+	prerequisite = { focus = hof_ma_eco_trade_only }
+
+	# (x, y) = 【绝对格位】（带子固定在树下方：列 -6、行 30）
+	# 不写 relative_position_id；图瓦节点单独下移
+	x = -6
+	y = 30
+	offset = { x = 0 y = 60 trigger = { tag = TAN } }
+	cost = 5
+
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+
+	# 谁是 joint：由触发器定义（见 common/scripted_triggers/hof_ma_scripted_triggers.txt）
+	joint_trigger = { hof_ma_joint_trigger = yes }
+
+	completion_reward = {
+		hidden_effect = { SOV = { set_country_flag = hof_ma_done_hof_ma_eco_interested_party } }
+		if = {
+			limit = { hof_ma_eligible = yes }
+		custom_effect_tooltip = hof_ma_line_dm_tt
+		add_to_variable = {
+			hof_ma_eco_goods = -0.05
+			tooltip = consumer_goods_factor_tt
+		}
+		add_to_variable = {
+			hof_ma_eco_trade = 0.05
+			tooltip = hof_ma_tt_faction_trade_opinion_factor
+		}
+		}
+		hidden_effect = { SOV = { hof_ma_reconcile_all = yes } }
+	}
+}
+
+joint_focus = {
+	id = hof_ma_eco_eec_talks
+	icon = GFX_focus_SOV_the_comecon
+
+	prerequisite = { focus = hof_ma_eco_interested_party }
+
+	# (x, y) = 【绝对格位】（带子固定在树下方：列 -6、行 31）
+	# 不写 relative_position_id；图瓦节点单独下移
+	x = -6
+	y = 31
+	offset = { x = 0 y = 60 trigger = { tag = TAN } }
+	cost = 10
+
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+
+	# 谁是 joint：由触发器定义（见 common/scripted_triggers/hof_ma_scripted_triggers.txt）
+	joint_trigger = { hof_ma_joint_trigger = yes }
+
+	completion_reward = {
+		hidden_effect = { SOV = { set_country_flag = hof_ma_done_hof_ma_eco_eec_talks } }
+		if = {
+			limit = { hof_ma_eligible = yes }
+		custom_effect_tooltip = hof_ma_line_dm_tt
+		add_to_variable = {
+			hof_ma_eco_trade = 0.15
+			tooltip = hof_ma_tt_faction_trade_opinion_factor
+		}
+			every_country = {
+				limit = {
+					OR = { original_tag = FRA original_tag = GER original_tag = ITA original_tag = ENG }
+				}
+				add_opinion_modifier = { target = ROOT modifier = hof_ma_eec_trade_agreement }
+			}
+		}
+		hidden_effect = { SOV = { hof_ma_reconcile_all = yes } }
+	}
+}
+
+# =============================================================================
+# 共产党和工人党情报局：18 条 = 5 条支线（照原版 nordic_shared 的放射写法）
+#   大门 = hof_ma_pol_cominform（prerequisite 挂头节点）；其余支线 prerequisite 挂【大门】；摆位一律绝对坐标 + 自带 offset
+# =============================================================================
+
+# ---- 支线 1：情报局本体（4 条 · 第 -3 列）----
+joint_focus = {
+	id = hof_ma_pol_cominform
+	icon = GFX_hof_ma_cominform
+
+	prerequisite = { focus = hof_ma_founding }
+
+	# (x, y) = 【绝对格位】（带子固定在树下方：列 -3、行 28）
+	# 不写 relative_position_id；图瓦节点单独下移
+	x = -3
+	y = 28
+	offset = { x = 0 y = 60 trigger = { tag = TAN } }
+	cost = 10
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+
+	# 谁是 joint：由触发器定义（见 common/scripted_triggers/hof_ma_scripted_triggers.txt）
+	joint_trigger = { hof_ma_joint_trigger = yes }
+
+	completion_reward = {
+		hidden_effect = { SOV = { set_country_flag = hof_ma_done_hof_ma_pol_cominform } }
+		if = {
+			limit = { hof_ma_eligible = yes }
+		custom_effect_tooltip = hof_ma_line_dm_tt
+		add_to_variable = {
+			hof_ma_pol_pp = 0.05
+			tooltip = political_power_factor_tt
+		}
+		add_to_variable = {
+			hof_ma_pol_opinion_ideo = 0.05
+			tooltip = opinion_gain_monthly_same_ideology_factor_tt
+		}
+			add_ideas = hof_ma_idea_cominform
+		}
+		hidden_effect = { SOV = { hof_ma_reconcile_all = yes } }
+	}
+
+	completion_reward_joint_originator = {
+		if = {
+			limit = { hof_ma_eligible = yes }
+			add_political_power = 50
+		}
+	}
+}
+
+joint_focus = {
+	id = hof_ma_pol_cominform_organ
+	icon = GFX_hof_ma_cominform
+
+	prerequisite = { focus = hof_ma_pol_cominform }
+
+	# (x, y) = 【绝对格位】（带子固定在树下方：列 -3、行 29）
+	# 不写 relative_position_id；图瓦节点单独下移
+	x = -3
+	y = 29
+	offset = { x = 0 y = 60 trigger = { tag = TAN } }
+	cost = 5
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+
+	# 谁是 joint：由触发器定义（见 common/scripted_triggers/hof_ma_scripted_triggers.txt）
+	joint_trigger = { hof_ma_joint_trigger = yes }
+
+	completion_reward = {
+		hidden_effect = { SOV = { set_country_flag = hof_ma_done_hof_ma_pol_cominform_organ } }
+		if = {
+			limit = { hof_ma_eligible = yes }
+		custom_effect_tooltip = hof_ma_line_dm_tt
+		add_to_variable = {
+			hof_ma_pol_opinion = 0.10
+			tooltip = hof_ic_tt_opinion_gain_monthly_factor
+		}
+		add_to_variable = {
+			hof_ma_pol_drift = 0.05
+			tooltip = drift_defence_factor_tt
+		}
+			add_ideas = hof_ma_idea_cominform_press
+		}
+		hidden_effect = { SOV = { hof_ma_reconcile_all = yes } }
+	}
+}
+
+joint_focus = {
+	id = hof_ma_pol_peace_and_war
+	icon = GFX_hof_ma_cominform
+
+	prerequisite = { focus = hof_ma_pol_cominform_organ }
+
+	# (x, y) = 【绝对格位】（带子固定在树下方：列 -3、行 30）
+	# 不写 relative_position_id；图瓦节点单独下移
+	x = -3
+	y = 30
+	offset = { x = 0 y = 60 trigger = { tag = TAN } }
+	cost = 5
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+
+	# 谁是 joint：由触发器定义（见 common/scripted_triggers/hof_ma_scripted_triggers.txt）
+	joint_trigger = { hof_ma_joint_trigger = yes }
+
+	completion_reward = {
+		hidden_effect = { SOV = { set_country_flag = hof_ma_done_hof_ma_pol_peace_and_war } }
+		if = {
+			limit = { hof_ma_eligible = yes }
+		custom_effect_tooltip = hof_ma_line_dm_tt
+		add_to_variable = {
+			hof_ma_pol_war_support = 0.10
+			tooltip = war_support_factor_tt
+		}
+		add_to_variable = {
+			hof_ma_pol_stability_week = 0.05
+			tooltip = hof_ma_tt_stability_weekly_factor
+		}
+		}
+		hidden_effect = { SOV = { hof_ma_reconcile_all = yes } }
+	}
+}
+
+joint_focus = {
+	id = hof_ma_pol_working_class_unity
+	icon = GFX_hof_ma_cominform
+
+	prerequisite = { focus = hof_ma_pol_peace_and_war }
+
+	# (x, y) = 【绝对格位】（带子固定在树下方：列 -3、行 31）
+	# 不写 relative_position_id；图瓦节点单独下移
+	x = -3
+	y = 31
+	offset = { x = 0 y = 60 trigger = { tag = TAN } }
+	cost = 5
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+
+	# 谁是 joint：由触发器定义（见 common/scripted_triggers/hof_ma_scripted_triggers.txt）
+	joint_trigger = { hof_ma_joint_trigger = yes }
+
+	completion_reward = {
+		hidden_effect = { SOV = { set_country_flag = hof_ma_done_hof_ma_pol_working_class_unity } }
+		if = {
+			limit = { hof_ma_eligible = yes }
+		custom_effect_tooltip = hof_ma_line_dm_tt
+		add_to_variable = {
+			hof_ma_pol_stability = 0.05
+			tooltip = stability_factor_tt
+		}
+		add_to_variable = {
+			hof_ma_pol_conscription = 0.05
+			tooltip = conscription_factor_tt
+		}
+		}
+		hidden_effect = { SOV = { hof_ma_reconcile_all = yes } }
+	}
+}
+
+
+# ---- 支线 2：工会与青年（4 条 · 第 0 列）----
+joint_focus = {
+	id = hof_ma_pol_wftu
+	icon = GFX_hof_ma_wftu
+
+	prerequisite = { focus = hof_ma_pol_cominform }
+
+	# (x, y) = 【绝对格位】（带子固定在树下方：列 0、行 29）
+	# 不写 relative_position_id；图瓦节点单独下移
+	x = 0
+	y = 29
+	offset = { x = 0 y = 60 trigger = { tag = TAN } }
+	cost = 5
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+
+	# 谁是 joint：由触发器定义（见 common/scripted_triggers/hof_ma_scripted_triggers.txt）
+	joint_trigger = { hof_ma_joint_trigger = yes }
+
+	completion_reward = {
+		hidden_effect = { SOV = { set_country_flag = hof_ma_done_hof_ma_pol_wftu } }
+		if = {
+			limit = { hof_ma_eligible = yes }
+		custom_effect_tooltip = hof_ma_line_dm_tt
+		add_to_variable = {
+			hof_ma_pol_manpower = 250
+			tooltip = weekly_manpower_tt
+		}
+		add_to_variable = {
+			hof_ma_pol_conscription = 0.05
+			tooltip = conscription_factor_tt
+		}
+		add_to_variable = {
+			hof_ma_pol_join = -0.25
+			tooltip = join_faction_tension_tt
+		}
+			add_manpower = 5000
+		}
+		hidden_effect = { SOV = { hof_ma_reconcile_all = yes } }
+	}
+}
+
+joint_focus = {
+	id = hof_ma_pol_wfdy
+	icon = GFX_hof_ma_wfdy
+
+	prerequisite = { focus = hof_ma_pol_wftu }
+
+	# (x, y) = 【绝对格位】（带子固定在树下方：列 0、行 30）
+	# 不写 relative_position_id；图瓦节点单独下移
+	x = 0
+	y = 30
+	offset = { x = 0 y = 60 trigger = { tag = TAN } }
+	cost = 5
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+
+	# 谁是 joint：由触发器定义（见 common/scripted_triggers/hof_ma_scripted_triggers.txt）
+	joint_trigger = { hof_ma_joint_trigger = yes }
+
+	completion_reward = {
+		hidden_effect = { SOV = { set_country_flag = hof_ma_done_hof_ma_pol_wfdy } }
+		if = {
+			limit = { hof_ma_eligible = yes }
+		custom_effect_tooltip = hof_ma_line_dm_tt
+		add_to_variable = {
+			hof_ma_pol_manpower = 250
+			tooltip = weekly_manpower_tt
+		}
+		add_to_variable = {
+			hof_ma_pol_conscription = 0.05
+			tooltip = conscription_factor_tt
+		}
+		}
+		hidden_effect = { SOV = { hof_ma_reconcile_all = yes } }
+	}
+}
+
+joint_focus = {
+	id = hof_ma_pol_ius
+	icon = GFX_hof_ma_ius
+
+	prerequisite = { focus = hof_ma_pol_wfdy }
+
+	# (x, y) = 【绝对格位】（带子固定在树下方：列 0、行 31）
+	# 不写 relative_position_id；图瓦节点单独下移
+	x = 0
+	y = 31
+	offset = { x = 0 y = 60 trigger = { tag = TAN } }
+	cost = 5
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+
+	# 谁是 joint：由触发器定义（见 common/scripted_triggers/hof_ma_scripted_triggers.txt）
+	joint_trigger = { hof_ma_joint_trigger = yes }
+
+	completion_reward = {
+		hidden_effect = { SOV = { set_country_flag = hof_ma_done_hof_ma_pol_ius } }
+		if = {
+			limit = { hof_ma_eligible = yes }
+		custom_effect_tooltip = hof_ma_line_dm_tt
+		add_to_variable = {
+			hof_ma_pol_research = 0.05
+			tooltip = research_speed_factor_tt
+		}
+		add_to_variable = {
+			hof_ma_pol_opinion_ideo = 0.05
+			tooltip = opinion_gain_monthly_same_ideology_factor_tt
+		}
+		}
+		hidden_effect = { SOV = { hof_ma_reconcile_all = yes } }
+	}
+}
+
+joint_focus = {
+	id = hof_ma_pol_widf
+	icon = GFX_hof_ma_widf
+
+	prerequisite = { focus = hof_ma_pol_ius }
+
+	# (x, y) = 【绝对格位】（带子固定在树下方：列 0、行 32）
+	# 不写 relative_position_id；图瓦节点单独下移
+	x = 0
+	y = 32
+	offset = { x = 0 y = 60 trigger = { tag = TAN } }
+	cost = 5
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+
+	# 谁是 joint：由触发器定义（见 common/scripted_triggers/hof_ma_scripted_triggers.txt）
+	joint_trigger = { hof_ma_joint_trigger = yes }
+
+	completion_reward = {
+		hidden_effect = { SOV = { set_country_flag = hof_ma_done_hof_ma_pol_widf } }
+		if = {
+			limit = { hof_ma_eligible = yes }
+		custom_effect_tooltip = hof_ma_line_dm_tt
+		add_to_variable = {
+			hof_ma_pol_stability = 0.05
+			tooltip = stability_factor_tt
+		}
+		add_to_variable = {
+			hof_ma_pol_stability_week = 0.05
+			tooltip = hof_ma_tt_stability_weekly_factor
+		}
+		add_to_variable = {
+			hof_ma_pol_conscription = 0.05
+			tooltip = conscription_factor_tt
+		}
+		}
+		hidden_effect = { SOV = { hof_ma_reconcile_all = yes } }
+	}
+}
+
+
+# ---- 支线 3：和平与宣传战线（4 条 · 第 3 列）----
+joint_focus = {
+	id = hof_ma_pol_ioj
+	icon = GFX_hof_ma_ioj
+
+	prerequisite = { focus = hof_ma_pol_cominform }
+
+	# (x, y) = 【绝对格位】（带子固定在树下方：列 3、行 29）
+	# 不写 relative_position_id；图瓦节点单独下移
+	x = 3
+	y = 29
+	offset = { x = 0 y = 60 trigger = { tag = TAN } }
+	cost = 5
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+
+	# 谁是 joint：由触发器定义（见 common/scripted_triggers/hof_ma_scripted_triggers.txt）
+	joint_trigger = { hof_ma_joint_trigger = yes }
+
+	completion_reward = {
+		hidden_effect = { SOV = { set_country_flag = hof_ma_done_hof_ma_pol_ioj } }
+		if = {
+			limit = { hof_ma_eligible = yes }
+		custom_effect_tooltip = hof_ma_line_dm_tt
+		add_to_variable = {
+			hof_ma_pol_intel = 0.10
+			tooltip = intel_network_gain_factor_tt
+		}
+		add_to_variable = {
+			hof_ma_pol_drift = 0.10
+			tooltip = drift_defence_factor_tt
+		}
+		}
+		hidden_effect = { SOV = { hof_ma_reconcile_all = yes } }
+	}
+}
+
+joint_focus = {
+	id = hof_ma_pol_oir
+	icon = GFX_hof_ma_oirt
+
+	prerequisite = { focus = hof_ma_pol_ioj }
+
+	# (x, y) = 【绝对格位】（带子固定在树下方：列 3、行 30）
+	# 不写 relative_position_id；图瓦节点单独下移
+	x = 3
+	y = 30
+	offset = { x = 0 y = 60 trigger = { tag = TAN } }
+	cost = 10
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+
+	# 谁是 joint：由触发器定义（见 common/scripted_triggers/hof_ma_scripted_triggers.txt）
+	joint_trigger = { hof_ma_joint_trigger = yes }
+
+	completion_reward = {
+		hidden_effect = { SOV = { set_country_flag = hof_ma_done_hof_ma_pol_oir } }
+		if = {
+			limit = { hof_ma_eligible = yes }
+		custom_effect_tooltip = hof_ma_line_dm_tt
+		add_to_variable = {
+			hof_ma_pol_drift = 0.10
+			tooltip = drift_defence_factor_tt
+		}
+		add_to_variable = {
+			hof_ma_pol_compliance = 0.10
+			tooltip = compliance_growth_on_our_occupied_states_tt
+		}
+		add_to_variable = {
+			hof_ma_pol_resistance = -0.10
+			tooltip = resistance_target_tt
+		}
+			add_ideas = hof_ma_idea_oir
+		}
+		hidden_effect = { SOV = { hof_ma_reconcile_all = yes } }
+	}
+}
+
+joint_focus = {
+	id = hof_ma_pol_wfsw
+	icon = GFX_hof_ma_cominform
+
+	prerequisite = { focus = hof_ma_pol_oir }
+
+	# (x, y) = 【绝对格位】（带子固定在树下方：列 3、行 31）
+	# 不写 relative_position_id；图瓦节点单独下移
+	x = 3
+	y = 31
+	offset = { x = 0 y = 60 trigger = { tag = TAN } }
+	cost = 5
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+
+	# 谁是 joint：由触发器定义（见 common/scripted_triggers/hof_ma_scripted_triggers.txt）
+	joint_trigger = { hof_ma_joint_trigger = yes }
+
+	completion_reward = {
+		hidden_effect = { SOV = { set_country_flag = hof_ma_done_hof_ma_pol_wfsw } }
+		if = {
+			limit = { hof_ma_eligible = yes }
+		custom_effect_tooltip = hof_ma_line_dm_tt
+		add_to_variable = {
+			hof_ma_pol_research = 0.10
+			tooltip = research_speed_factor_tt
+		}
+		add_to_variable = {
+			hof_ma_pol_opinion_ideo = 0.05
+			tooltip = opinion_gain_monthly_same_ideology_factor_tt
+		}
+		}
+		hidden_effect = { SOV = { hof_ma_reconcile_all = yes } }
+	}
+}
+
+joint_focus = {
+	id = hof_ma_pol_wpc
+	icon = GFX_hof_ma_wpc
+
+	prerequisite = { focus = hof_ma_pol_wfsw }
+
+	# (x, y) = 【绝对格位】（带子固定在树下方：列 3、行 32）
+	# 不写 relative_position_id；图瓦节点单独下移
+	x = 3
+	y = 32
+	offset = { x = 0 y = 60 trigger = { tag = TAN } }
+	cost = 10
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+
+	# 谁是 joint：由触发器定义（见 common/scripted_triggers/hof_ma_scripted_triggers.txt）
+	joint_trigger = { hof_ma_joint_trigger = yes }
+
+	completion_reward = {
+		hidden_effect = { SOV = { set_country_flag = hof_ma_done_hof_ma_pol_wpc } }
+		if = {
+			limit = { hof_ma_eligible = yes }
+		custom_effect_tooltip = hof_ma_line_dm_tt
+		add_to_variable = {
+			hof_ma_pol_opinion = 0.10
+			tooltip = hof_ic_tt_opinion_gain_monthly_factor
+		}
+		add_to_variable = {
+			hof_ma_pol_join = -0.25
+			tooltip = join_faction_tension_tt
+		}
+			add_ideas = hof_ma_idea_wpc
+		}
+		hidden_effect = { SOV = { hof_ma_reconcile_all = yes } }
+	}
+}
+
+
+# ---- 支线 4：党际渠道（2 条 · 第 6 列）----
+joint_focus = {
+	id = hof_ma_pol_friendship_societies
+	icon = GFX_hof_ma_cominform
+
+	prerequisite = { focus = hof_ma_pol_cominform }
+
+	# (x, y) = 【绝对格位】（带子固定在树下方：列 6、行 29）
+	# 不写 relative_position_id；图瓦节点单独下移
+	x = 6
+	y = 29
+	offset = { x = 0 y = 60 trigger = { tag = TAN } }
+	cost = 10
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+
+	# 谁是 joint：由触发器定义（见 common/scripted_triggers/hof_ma_scripted_triggers.txt）
+	joint_trigger = { hof_ma_joint_trigger = yes }
+
+	completion_reward = {
+		hidden_effect = { SOV = { set_country_flag = hof_ma_done_hof_ma_pol_friendship_societies } }
+		if = {
+			limit = { hof_ma_eligible = yes }
+		custom_effect_tooltip = hof_ma_line_dm_tt
+		add_to_variable = {
+			hof_ma_pol_opinion = 0.10
+			tooltip = hof_ic_tt_opinion_gain_monthly_factor
+		}
+		add_to_variable = {
+			hof_ma_pol_compliance = 0.10
+			tooltip = compliance_growth_on_our_occupied_states_tt
+		}
+		add_to_variable = {
+			hof_ma_pol_improve = -0.25
+			tooltip = hof_ma_tt_improve_relations_maintain_cost_factor
+		}
+			add_ideas = hof_ma_idea_friendship_societies
+		}
+		hidden_effect = { SOV = { hof_ma_reconcile_all = yes } }
+	}
+}
+
+joint_focus = {
+	id = hof_ma_pol_international_department
+	icon = GFX_hof_ma_cominform
+
+	prerequisite = { focus = hof_ma_pol_friendship_societies }
+
+	# (x, y) = 【绝对格位】（带子固定在树下方：列 6、行 30）
+	# 不写 relative_position_id；图瓦节点单独下移
+	x = 6
+	y = 30
+	offset = { x = 0 y = 60 trigger = { tag = TAN } }
+	cost = 5
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+
+	# 谁是 joint：由触发器定义（见 common/scripted_triggers/hof_ma_scripted_triggers.txt）
+	joint_trigger = { hof_ma_joint_trigger = yes }
+
+	completion_reward = {
+		hidden_effect = { SOV = { set_country_flag = hof_ma_done_hof_ma_pol_international_department } }
+		if = {
+			limit = { hof_ma_eligible = yes }
+		custom_effect_tooltip = hof_ma_line_dm_tt
+		add_to_variable = {
+			hof_ma_pol_improve = -0.25
+			tooltip = hof_ma_tt_improve_relations_maintain_cost_factor
+		}
+		add_to_variable = {
+			hof_ma_pol_intel = 0.05
+			tooltip = intel_network_gain_factor_tt
+		}
+		add_to_variable = {
+			hof_ma_pol_drift = 0.05
+			tooltip = drift_defence_factor_tt
+		}
+		}
+		hidden_effect = { SOV = { hof_ma_reconcile_all = yes } }
+	}
+}
+
+
+# ---- 支线 5：党际会议（4 条 · 第 9 列）----
+joint_focus = {
+	id = hof_ma_pol_moscow_1957
+	icon = GFX_hof_ma_cominform
+
+	prerequisite = { focus = hof_ma_pol_cominform }
+
+	# (x, y) = 【绝对格位】（带子固定在树下方：列 9、行 29）
+	# 不写 relative_position_id；图瓦节点单独下移
+	x = 9
+	y = 29
+	offset = { x = 0 y = 60 trigger = { tag = TAN } }
+	cost = 10
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+
+	# 谁是 joint：由触发器定义（见 common/scripted_triggers/hof_ma_scripted_triggers.txt）
+	joint_trigger = { hof_ma_joint_trigger = yes }
+
+	completion_reward = {
+		hidden_effect = { SOV = { set_country_flag = hof_ma_done_hof_ma_pol_moscow_1957 } }
+		if = {
+			limit = { hof_ma_eligible = yes }
+		custom_effect_tooltip = hof_ma_line_dm_tt
+		add_to_variable = {
+			hof_ma_pol_pp = 0.05
+			tooltip = political_power_factor_tt
+		}
+		add_to_variable = {
+			hof_ma_pol_party = 0.05
+			tooltip = party_popularity_stability_factor_tt
+		}
+		add_to_variable = {
+			hof_ma_pol_enemy_justify = 0.25
+			tooltip = enemy_justify_war_goal_time_tt
+		}
+			add_political_power = 50
+		}
+		hidden_effect = { SOV = { hof_ma_reconcile_all = yes } }
+	}
+}
+
+joint_focus = {
+	id = hof_ma_pol_moscow_1960
+	icon = GFX_hof_ma_cominform
+
+	prerequisite = { focus = hof_ma_pol_moscow_1957 }
+
+	# (x, y) = 【绝对格位】（带子固定在树下方：列 9、行 30）
+	# 不写 relative_position_id；图瓦节点单独下移
+	x = 9
+	y = 30
+	offset = { x = 0 y = 60 trigger = { tag = TAN } }
+	cost = 10
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+
+	# 谁是 joint：由触发器定义（见 common/scripted_triggers/hof_ma_scripted_triggers.txt）
+	joint_trigger = { hof_ma_joint_trigger = yes }
+
+	completion_reward = {
+		hidden_effect = { SOV = { set_country_flag = hof_ma_done_hof_ma_pol_moscow_1960 } }
+		if = {
+			limit = { hof_ma_eligible = yes }
+		custom_effect_tooltip = hof_ma_line_dm_tt
+		add_to_variable = {
+			hof_ma_pol_war_support = 0.10
+			tooltip = war_support_factor_tt
+		}
+		add_to_variable = {
+			hof_ma_pol_drift = 0.05
+			tooltip = drift_defence_factor_tt
+		}
+		}
+		hidden_effect = { SOV = { hof_ma_reconcile_all = yes } }
+	}
+}
+
+joint_focus = {
+	id = hof_ma_pol_moscow_1969
+	icon = GFX_hof_ma_cominform
+
+	prerequisite = { focus = hof_ma_pol_moscow_1960 }
+
+	# (x, y) = 【绝对格位】（带子固定在树下方：列 9、行 31）
+	# 不写 relative_position_id；图瓦节点单独下移
+	x = 9
+	y = 31
+	offset = { x = 0 y = 60 trigger = { tag = TAN } }
+	cost = 5
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+
+	# 谁是 joint：由触发器定义（见 common/scripted_triggers/hof_ma_scripted_triggers.txt）
+	joint_trigger = { hof_ma_joint_trigger = yes }
+
+	completion_reward = {
+		hidden_effect = { SOV = { set_country_flag = hof_ma_done_hof_ma_pol_moscow_1969 } }
+		if = {
+			limit = { hof_ma_eligible = yes }
+		custom_effect_tooltip = hof_ma_line_dm_tt
+		add_to_variable = {
+			hof_ma_pol_stability = 0.05
+			tooltip = stability_factor_tt
+		}
+		add_to_variable = {
+			hof_ma_pol_opinion = 0.05
+			tooltip = hof_ic_tt_opinion_gain_monthly_factor
+		}
+		}
+		hidden_effect = { SOV = { hof_ma_reconcile_all = yes } }
+	}
+}
+
+joint_focus = {
+	id = hof_ma_pol_first_secretaries
+	icon = GFX_hof_ma_cominform
+
+	prerequisite = { focus = hof_ma_pol_moscow_1969 }
+
+	# (x, y) = 【绝对格位】（带子固定在树下方：列 9、行 32）
+	# 不写 relative_position_id；图瓦节点单独下移
+	x = 9
+	y = 32
+	offset = { x = 0 y = 60 trigger = { tag = TAN } }
+	cost = 10
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+
+	# 谁是 joint：由触发器定义（见 common/scripted_triggers/hof_ma_scripted_triggers.txt）
+	joint_trigger = { hof_ma_joint_trigger = yes }
+
+	completion_reward = {
+		hidden_effect = { SOV = { set_country_flag = hof_ma_done_hof_ma_pol_first_secretaries } }
+		if = {
+			limit = { hof_ma_eligible = yes }
+		custom_effect_tooltip = hof_ma_line_dm_tt
+		add_to_variable = {
+			hof_ma_pol_pp = 0.10
+			tooltip = political_power_factor_tt
+		}
+		add_to_variable = {
+			hof_ma_pol_stability = 0.05
+			tooltip = stability_factor_tt
+		}
+		add_to_variable = {
+			hof_ma_pol_opinion = 0.05
+			tooltip = hof_ic_tt_opinion_gain_monthly_factor
+		}
+			add_ideas = hof_ma_idea_first_secretaries
+		}
+		hidden_effect = { SOV = { hof_ma_reconcile_all = yes } }
+	}
+
+	completion_reward_joint_originator = {
+		if = {
+			limit = { hof_ma_eligible = yes }
+			add_political_power = 75
+		}
+	}
+}
+
+# =============================================================================
+# 华沙条约组织：17 条 = 4 条支线（照原版 nordic_shared 的放射写法）
+#   大门 = hof_ma_mil_warsaw_treaty（prerequisite 挂头节点）；其余支线 prerequisite 挂【大门】；摆位一律绝对坐标 + 自带 offset
+# =============================================================================
+
+# ---- 支线 1：条约与决策（4 条 · 第 12 列）----
+joint_focus = {
+	id = hof_ma_mil_warsaw_treaty
+	icon = GFX_focus_SOV_found_the_warsaw_pact
+
+	prerequisite = { focus = hof_ma_founding }
+
+	# (x, y) = 【绝对格位】（带子固定在树下方：列 12、行 28）
+	# 不写 relative_position_id；图瓦节点单独下移
+	x = 12
+	y = 28
+	offset = { x = 0 y = 60 trigger = { tag = TAN } }
+	cost = 10
+
+	search_filters = { FOCUS_FILTER_ARMY_XP }
+
+	# 军事线大门：用户口径「门槛做看得见点不了的」—— 额外一道 available
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = hof_ma_mil_gate_tt
+			has_army_size = { size > 15 }
+			has_war_support > 0.30
+		}
+	}
+
+	# 谁是 joint：由触发器定义（见 common/scripted_triggers/hof_ma_scripted_triggers.txt）
+	joint_trigger = { hof_ma_joint_trigger = yes }
+
+	completion_reward = {
+		hidden_effect = { SOV = { set_country_flag = hof_ma_done_hof_ma_mil_warsaw_treaty } }
+		if = {
+			limit = { hof_ma_eligible = yes }
+		custom_effect_tooltip = hof_ma_line_dm_tt
+		add_to_variable = {
+			hof_ma_mil_defence = 0.10
+			tooltip = army_defence_factor_tt
+		}
+		add_to_variable = {
+			hof_ma_mil_war_support = 0.05
+			tooltip = war_support_factor_tt
+		}
+		add_to_variable = {
+			hof_ma_mil_conscription = 0.05
+			tooltip = conscription_factor_tt
+		}
+			add_ideas = hof_ma_idea_warsaw_treaty
+		}
+		hidden_effect = { SOV = { hof_ma_reconcile_all = yes } }
+	}
+
+	completion_reward_joint_originator = {
+		if = {
+			limit = { hof_ma_eligible = yes }
+			add_political_power = 50
+		}
+	}
+}
+
+joint_focus = {
+	id = hof_ma_mil_political_consultative
+	icon = GFX_focus_SOV_found_the_warsaw_pact
+
+	prerequisite = { focus = hof_ma_mil_warsaw_treaty }
+
+	# (x, y) = 【绝对格位】（带子固定在树下方：列 12、行 29）
+	# 不写 relative_position_id；图瓦节点单独下移
+	x = 12
+	y = 29
+	offset = { x = 0 y = 60 trigger = { tag = TAN } }
+	cost = 10
+
+	search_filters = { FOCUS_FILTER_ARMY_XP }
+
+	# 谁是 joint：由触发器定义（见 common/scripted_triggers/hof_ma_scripted_triggers.txt）
+	joint_trigger = { hof_ma_joint_trigger = yes }
+
+	completion_reward = {
+		hidden_effect = { SOV = { set_country_flag = hof_ma_done_hof_ma_mil_political_consultative } }
+		if = {
+			limit = { hof_ma_eligible = yes }
+		custom_effect_tooltip = hof_ma_line_dm_tt
+		add_to_variable = {
+			hof_ma_mil_war_support = 0.10
+			tooltip = war_support_factor_tt
+		}
+			set_country_flag = hof_ma_pcc
+		}
+		hidden_effect = { SOV = { hof_ma_reconcile_all = yes } }
+	}
+}
+
+joint_focus = {
+	id = hof_ma_mil_standing_bodies
+	icon = GFX_focus_SOV_found_the_warsaw_pact
+
+	prerequisite = { focus = hof_ma_mil_political_consultative }
+
+	# (x, y) = 【绝对格位】（带子固定在树下方：列 12、行 30）
+	# 不写 relative_position_id；图瓦节点单独下移
+	x = 12
+	y = 30
+	offset = { x = 0 y = 60 trigger = { tag = TAN } }
+	cost = 5
+
+	search_filters = { FOCUS_FILTER_ARMY_XP }
+
+	# 谁是 joint：由触发器定义（见 common/scripted_triggers/hof_ma_scripted_triggers.txt）
+	joint_trigger = { hof_ma_joint_trigger = yes }
+
+	completion_reward = {
+		hidden_effect = { SOV = { set_country_flag = hof_ma_done_hof_ma_mil_standing_bodies } }
+		if = {
+			limit = { hof_ma_eligible = yes }
+		custom_effect_tooltip = hof_ma_line_dm_tt
+		add_to_variable = {
+			hof_ma_mil_command = 0.05
+			tooltip = command_power_gain_tt
+		}
+		add_to_variable = {
+			hof_ma_mil_org = 0.05
+			tooltip = army_org_factor_tt
+		}
+		}
+		hidden_effect = { SOV = { hof_ma_reconcile_all = yes } }
+	}
+}
+
+joint_focus = {
+	id = hof_ma_mil_defence_ministers
+	icon = GFX_focus_SOV_found_the_warsaw_pact
+
+	prerequisite = { focus = hof_ma_mil_standing_bodies }
+
+	# (x, y) = 【绝对格位】（带子固定在树下方：列 12、行 31）
+	# 不写 relative_position_id；图瓦节点单独下移
+	x = 12
+	y = 31
+	offset = { x = 0 y = 60 trigger = { tag = TAN } }
+	cost = 10
+
+	search_filters = { FOCUS_FILTER_ARMY_XP }
+
+	# 谁是 joint：由触发器定义（见 common/scripted_triggers/hof_ma_scripted_triggers.txt）
+	joint_trigger = { hof_ma_joint_trigger = yes }
+
+	completion_reward = {
+		hidden_effect = { SOV = { set_country_flag = hof_ma_done_hof_ma_mil_defence_ministers } }
+		if = {
+			limit = { hof_ma_eligible = yes }
+		custom_effect_tooltip = hof_ma_line_dm_tt
+		add_to_variable = {
+			hof_ma_mil_command = 0.05
+			tooltip = command_power_gain_tt
+		}
+		add_to_variable = {
+			hof_ma_mil_command_max = 25
+			tooltip = max_command_power_tt
+		}
+		add_to_variable = {
+			hof_ma_mil_planning = 0.05
+			tooltip = max_planning_factor_tt
+		}
+		}
+		hidden_effect = { SOV = { hof_ma_reconcile_all = yes } }
+	}
+}
+
+
+# ---- 支线 2：指挥机关（3 条 · 第 15 列）----
+joint_focus = {
+	id = hof_ma_mil_joint_command
+	icon = GFX_focus_SOV_found_the_warsaw_pact
+
+	prerequisite = { focus = hof_ma_mil_warsaw_treaty }
+
+	# (x, y) = 【绝对格位】（带子固定在树下方：列 15、行 29）
+	# 不写 relative_position_id；图瓦节点单独下移
+	x = 15
+	y = 29
+	offset = { x = 0 y = 60 trigger = { tag = TAN } }
+	cost = 10
+
+	search_filters = { FOCUS_FILTER_ARMY_XP }
+
+	# 谁是 joint：由触发器定义（见 common/scripted_triggers/hof_ma_scripted_triggers.txt）
+	joint_trigger = { hof_ma_joint_trigger = yes }
+
+	completion_reward = {
+		hidden_effect = { SOV = { set_country_flag = hof_ma_done_hof_ma_mil_joint_command } }
+		if = {
+			limit = { hof_ma_eligible = yes }
+		custom_effect_tooltip = hof_ma_line_dm_tt
+		add_to_variable = {
+			hof_ma_mil_command = 0.10
+			tooltip = command_power_gain_tt
+		}
+		add_to_variable = {
+			hof_ma_mil_command_max = 25
+			tooltip = max_command_power_tt
+		}
+		add_to_variable = {
+			hof_ma_mil_org = 0.05
+			tooltip = army_org_factor_tt
+		}
+			add_ideas = hof_ma_idea_joint_command
+		}
+		hidden_effect = { SOV = { hof_ma_reconcile_all = yes } }
+	}
+
+	completion_reward_joint_originator = {
+		if = {
+			limit = { hof_ma_eligible = yes }
+			add_command_power = 25
+		}
+	}
+}
+
+joint_focus = {
+	id = hof_ma_mil_joint_staff
+	icon = GFX_focus_SOV_found_the_warsaw_pact
+
+	prerequisite = { focus = hof_ma_mil_joint_command }
+
+	# (x, y) = 【绝对格位】（带子固定在树下方：列 15、行 30）
+	# 不写 relative_position_id；图瓦节点单独下移
+	x = 15
+	y = 30
+	offset = { x = 0 y = 60 trigger = { tag = TAN } }
+	cost = 5
+
+	search_filters = { FOCUS_FILTER_ARMY_XP }
+
+	# 谁是 joint：由触发器定义（见 common/scripted_triggers/hof_ma_scripted_triggers.txt）
+	joint_trigger = { hof_ma_joint_trigger = yes }
+
+	completion_reward = {
+		hidden_effect = { SOV = { set_country_flag = hof_ma_done_hof_ma_mil_joint_staff } }
+		if = {
+			limit = { hof_ma_eligible = yes }
+		custom_effect_tooltip = hof_ma_line_dm_tt
+		add_to_variable = {
+			hof_ma_mil_org = 0.10
+			tooltip = army_org_factor_tt
+		}
+		add_to_variable = {
+			hof_ma_mil_planning = 0.10
+			tooltip = max_planning_factor_tt
+		}
+		}
+		hidden_effect = { SOV = { hof_ma_reconcile_all = yes } }
+	}
+}
+
+joint_focus = {
+	id = hof_ma_mil_committees
+	icon = GFX_focus_SOV_found_the_warsaw_pact
+
+	prerequisite = { focus = hof_ma_mil_joint_staff }
+
+	# (x, y) = 【绝对格位】（带子固定在树下方：列 15、行 31）
+	# 不写 relative_position_id；图瓦节点单独下移
+	x = 15
+	y = 31
+	offset = { x = 0 y = 60 trigger = { tag = TAN } }
+	cost = 5
+
+	search_filters = { FOCUS_FILTER_ARMY_XP }
+
+	# 谁是 joint：由触发器定义（见 common/scripted_triggers/hof_ma_scripted_triggers.txt）
+	joint_trigger = { hof_ma_joint_trigger = yes }
+
+	completion_reward = {
+		hidden_effect = { SOV = { set_country_flag = hof_ma_done_hof_ma_mil_committees } }
+		if = {
+			limit = { hof_ma_eligible = yes }
+		custom_effect_tooltip = hof_ma_line_dm_tt
+		add_to_variable = {
+			hof_ma_mil_supply = -0.05
+			tooltip = supply_consumption_factor_tt
+		}
+		add_to_variable = {
+			hof_ma_mil_supply_cap = 0.10
+			tooltip = supply_factor_tt
+		}
+		}
+		hidden_effect = { SOV = { hof_ma_reconcile_all = yes } }
+	}
+}
+
+
+# ---- 支线 3：部队与装备（5 条 · 第 18 列）----
+joint_focus = {
+	id = hof_ma_mil_integrated_units
+	icon = GFX_focus_SOV_found_the_warsaw_pact
+
+	prerequisite = { focus = hof_ma_mil_warsaw_treaty }
+
+	# (x, y) = 【绝对格位】（带子固定在树下方：列 18、行 29）
+	# 不写 relative_position_id；图瓦节点单独下移
+	x = 18
+	y = 29
+	offset = { x = 0 y = 60 trigger = { tag = TAN } }
+	cost = 5
+
+	search_filters = { FOCUS_FILTER_ARMY_XP }
+
+	# 谁是 joint：由触发器定义（见 common/scripted_triggers/hof_ma_scripted_triggers.txt）
+	joint_trigger = { hof_ma_joint_trigger = yes }
+
+	completion_reward = {
+		hidden_effect = { SOV = { set_country_flag = hof_ma_done_hof_ma_mil_integrated_units } }
+		if = {
+			limit = { hof_ma_eligible = yes }
+		custom_effect_tooltip = hof_ma_line_dm_tt
+		add_to_variable = {
+			hof_ma_mil_attack = 0.05
+			tooltip = army_attack_factor_tt
+		}
+		add_to_variable = {
+			hof_ma_mil_conscription = 0.05
+			tooltip = conscription_factor_tt
+		}
+		add_to_variable = {
+			hof_ma_mil_manpower = 250
+			tooltip = weekly_manpower_tt
+		}
+		add_to_variable = {
+			hof_ma_mil_fuel = 0.10
+			tooltip = hof_ma_tt_army_fuel_capacity_factor
+		}
+		}
+		hidden_effect = { SOV = { hof_ma_reconcile_all = yes } }
+	}
+}
+
+joint_focus = {
+	id = hof_ma_mil_unified_equipment
+	icon = GFX_focus_SOV_found_the_warsaw_pact
+
+	prerequisite = { focus = hof_ma_mil_integrated_units }
+
+	# (x, y) = 【绝对格位】（带子固定在树下方：列 18、行 30）
+	# 不写 relative_position_id；图瓦节点单独下移
+	x = 18
+	y = 30
+	offset = { x = 0 y = 60 trigger = { tag = TAN } }
+	cost = 10
+
+	search_filters = { FOCUS_FILTER_ARMY_XP }
+
+	# 谁是 joint：由触发器定义（见 common/scripted_triggers/hof_ma_scripted_triggers.txt）
+	joint_trigger = { hof_ma_joint_trigger = yes }
+
+	completion_reward = {
+		hidden_effect = { SOV = { set_country_flag = hof_ma_done_hof_ma_mil_unified_equipment } }
+		if = {
+			limit = { hof_ma_eligible = yes }
+		custom_effect_tooltip = hof_ma_line_dm_tt
+		add_to_variable = {
+			hof_ma_mil_supply = -0.10
+			tooltip = supply_consumption_factor_tt
+		}
+		add_to_variable = {
+			hof_ma_mil_production = 0.10
+			tooltip = production_speed_arms_factory_factor_tt
+		}
+		add_to_variable = {
+			hof_ma_mil_equip_xp = -0.10
+			tooltip = hof_ma_tt_land_equipment_upgrade_xp_cost
+		}
+		add_to_variable = {
+			hof_ma_mil_fuel = 0.10
+			tooltip = hof_ma_tt_army_fuel_capacity_factor
+		}
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 2000 }
+		}
+		hidden_effect = { SOV = { hof_ma_reconcile_all = yes } }
+	}
+}
+
+joint_focus = {
+	id = hof_ma_mil_doctrine
+	icon = GFX_focus_SOV_found_the_warsaw_pact
+
+	prerequisite = { focus = hof_ma_mil_unified_equipment }
+
+	# (x, y) = 【绝对格位】（带子固定在树下方：列 18、行 31）
+	# 不写 relative_position_id；图瓦节点单独下移
+	x = 18
+	y = 31
+	offset = { x = 0 y = 60 trigger = { tag = TAN } }
+	cost = 10
+
+	search_filters = { FOCUS_FILTER_ARMY_XP }
+
+	# 谁是 joint：由触发器定义（见 common/scripted_triggers/hof_ma_scripted_triggers.txt）
+	joint_trigger = { hof_ma_joint_trigger = yes }
+
+	completion_reward = {
+		hidden_effect = { SOV = { set_country_flag = hof_ma_done_hof_ma_mil_doctrine } }
+		if = {
+			limit = { hof_ma_eligible = yes }
+		custom_effect_tooltip = hof_ma_line_dm_tt
+		add_to_variable = {
+			hof_ma_mil_attack = 0.10
+			tooltip = army_attack_factor_tt
+		}
+		add_to_variable = {
+			hof_ma_mil_breakthrough = 0.05
+			tooltip = breakthrough_factor_tt
+		}
+			army_experience = 25
+		}
+		hidden_effect = { SOV = { hof_ma_reconcile_all = yes } }
+	}
+}
+
+joint_focus = {
+	id = hof_ma_mil_officer_training
+	icon = GFX_focus_SOV_found_the_warsaw_pact
+
+	prerequisite = { focus = hof_ma_mil_doctrine }
+
+	# (x, y) = 【绝对格位】（带子固定在树下方：列 18、行 32）
+	# 不写 relative_position_id；图瓦节点单独下移
+	x = 18
+	y = 32
+	offset = { x = 0 y = 60 trigger = { tag = TAN } }
+	cost = 5
+
+	search_filters = { FOCUS_FILTER_ARMY_XP }
+
+	# 谁是 joint：由触发器定义（见 common/scripted_triggers/hof_ma_scripted_triggers.txt）
+	joint_trigger = { hof_ma_joint_trigger = yes }
+
+	completion_reward = {
+		hidden_effect = { SOV = { set_country_flag = hof_ma_done_hof_ma_mil_officer_training } }
+		if = {
+			limit = { hof_ma_eligible = yes }
+		custom_effect_tooltip = hof_ma_line_dm_tt
+		add_to_variable = {
+			hof_ma_mil_conscription = 0.05
+			tooltip = conscription_factor_tt
+		}
+		add_to_variable = {
+			hof_ma_mil_manpower = 250
+			tooltip = weekly_manpower_tt
+		}
+		add_to_variable = {
+			hof_ma_mil_training = -0.10
+			tooltip = training_time_factor_tt
+		}
+			army_experience = 25
+		}
+		hidden_effect = { SOV = { hof_ma_reconcile_all = yes } }
+	}
+}
+
+joint_focus = {
+	id = hof_ma_mil_licensed_production
+	icon = GFX_focus_SOV_found_the_warsaw_pact
+
+	prerequisite = { focus = hof_ma_mil_officer_training }
+
+	# (x, y) = 【绝对格位】（带子固定在树下方：列 18、行 33）
+	# 不写 relative_position_id；图瓦节点单独下移
+	x = 18
+	y = 33
+	offset = { x = 0 y = 60 trigger = { tag = TAN } }
+	cost = 5
+
+	search_filters = { FOCUS_FILTER_ARMY_XP }
+
+	# 谁是 joint：由触发器定义（见 common/scripted_triggers/hof_ma_scripted_triggers.txt）
+	joint_trigger = { hof_ma_joint_trigger = yes }
+
+	completion_reward = {
+		hidden_effect = { SOV = { set_country_flag = hof_ma_done_hof_ma_mil_licensed_production } }
+		if = {
+			limit = { hof_ma_eligible = yes }
+		custom_effect_tooltip = hof_ma_line_dm_tt
+		add_to_variable = {
+			hof_ma_mil_production = 0.15
+			tooltip = production_speed_arms_factory_factor_tt
+		}
+		add_to_variable = {
+			hof_ma_mil_equip_xp = -0.10
+			tooltip = hof_ma_tt_land_equipment_upgrade_xp_cost
+		}
+			add_equipment_to_stockpile = { type = small_plane_fighter_airframe amount = 120 }
+		}
+		hidden_effect = { SOV = { hof_ma_reconcile_all = yes } }
+	}
+}
+
+
+# ---- 支线 4：战备与对抗（5 条 · 第 21 列）----
+joint_focus = {
+	id = hof_ma_mil_air_defence
+	icon = GFX_focus_SOV_found_the_warsaw_pact
+
+	prerequisite = { focus = hof_ma_mil_warsaw_treaty }
+
+	# (x, y) = 【绝对格位】（带子固定在树下方：列 21、行 29）
+	# 不写 relative_position_id；图瓦节点单独下移
+	x = 21
+	y = 29
+	offset = { x = 0 y = 60 trigger = { tag = TAN } }
+	cost = 10
+
+	search_filters = { FOCUS_FILTER_ARMY_XP }
+
+	# 谁是 joint：由触发器定义（见 common/scripted_triggers/hof_ma_scripted_triggers.txt）
+	joint_trigger = { hof_ma_joint_trigger = yes }
+
+	completion_reward = {
+		hidden_effect = { SOV = { set_country_flag = hof_ma_done_hof_ma_mil_air_defence } }
+		if = {
+			limit = { hof_ma_eligible = yes }
+		custom_effect_tooltip = hof_ma_line_dm_tt
+		add_to_variable = {
+			hof_ma_mil_aa = 0.15
+			tooltip = hof_ma_tt_static_anti_air_damage_factor
+		}
+		add_to_variable = {
+			hof_ma_mil_air_dmg = -0.15
+			tooltip = industry_air_damage_factor_tt
+		}
+		add_to_variable = {
+			hof_ma_mil_defence = 0.05
+			tooltip = army_defence_factor_tt
+		}
+			capital_scope = { add_building_construction = { type = anti_air_building level = 2 instant_build = yes } }
+		}
+		hidden_effect = { SOV = { hof_ma_reconcile_all = yes } }
+	}
+}
+
+joint_focus = {
+	id = hof_ma_mil_joint_exercises
+	icon = GFX_focus_SOV_found_the_warsaw_pact
+
+	prerequisite = { focus = hof_ma_mil_air_defence }
+
+	# (x, y) = 【绝对格位】（带子固定在树下方：列 21、行 30）
+	# 不写 relative_position_id；图瓦节点单独下移
+	x = 21
+	y = 30
+	offset = { x = 0 y = 60 trigger = { tag = TAN } }
+	cost = 10
+
+	search_filters = { FOCUS_FILTER_ARMY_XP }
+
+	# 谁是 joint：由触发器定义（见 common/scripted_triggers/hof_ma_scripted_triggers.txt）
+	joint_trigger = { hof_ma_joint_trigger = yes }
+
+	completion_reward = {
+		hidden_effect = { SOV = { set_country_flag = hof_ma_done_hof_ma_mil_joint_exercises } }
+		if = {
+			limit = { hof_ma_eligible = yes }
+		custom_effect_tooltip = hof_ma_line_dm_tt
+		add_to_variable = {
+			hof_ma_mil_org = 0.10
+			tooltip = army_org_factor_tt
+		}
+		add_to_variable = {
+			hof_ma_mil_planning = 0.05
+			tooltip = max_planning_factor_tt
+		}
+		add_to_variable = {
+			hof_ma_mil_attrition = -0.10
+			tooltip = attrition_tt
+		}
+		add_to_variable = {
+			hof_ma_mil_training = -0.10
+			tooltip = training_time_factor_tt
+		}
+			army_experience = 25
+		}
+		hidden_effect = { SOV = { hof_ma_reconcile_all = yes } }
+	}
+}
+
+joint_focus = {
+	id = hof_ma_mil_mbfr
+	icon = GFX_focus_SOV_found_the_warsaw_pact
+
+	prerequisite = { focus = hof_ma_mil_joint_exercises }
+
+	# (x, y) = 【绝对格位】（带子固定在树下方：列 21、行 31）
+	# 不写 relative_position_id；图瓦节点单独下移
+	x = 21
+	y = 31
+	offset = { x = 0 y = 60 trigger = { tag = TAN } }
+	cost = 10
+
+	search_filters = { FOCUS_FILTER_ARMY_XP }
+
+	# 谁是 joint：由触发器定义（见 common/scripted_triggers/hof_ma_scripted_triggers.txt）
+	joint_trigger = { hof_ma_joint_trigger = yes }
+
+	completion_reward = {
+		hidden_effect = { SOV = { set_country_flag = hof_ma_done_hof_ma_mil_mbfr } }
+		if = {
+			limit = { hof_ma_eligible = yes }
+		custom_effect_tooltip = hof_ma_line_dm_tt
+		add_to_variable = {
+			hof_ma_mil_war_support = 0.05
+			tooltip = war_support_factor_tt
+		}
+			every_country = {
+				limit = {
+					OR = { original_tag = USA original_tag = ENG original_tag = FRA original_tag = GER }
+				}
+				add_opinion_modifier = { target = ROOT modifier = hof_ma_mbfr_detente }
+			}
+		}
+		hidden_effect = { SOV = { hof_ma_reconcile_all = yes } }
+	}
+}
+
+joint_focus = {
+	id = hof_ma_mil_csce
+	icon = GFX_hof_ma_osce
+
+	prerequisite = { focus = hof_ma_mil_mbfr }
+
+	# (x, y) = 【绝对格位】（带子固定在树下方：列 21、行 32）
+	# 不写 relative_position_id；图瓦节点单独下移
+	x = 21
+	y = 32
+	offset = { x = 0 y = 60 trigger = { tag = TAN } }
+	cost = 10
+
+	search_filters = { FOCUS_FILTER_ARMY_XP }
+
+	# 谁是 joint：由触发器定义（见 common/scripted_triggers/hof_ma_scripted_triggers.txt）
+	joint_trigger = { hof_ma_joint_trigger = yes }
+
+	completion_reward = {
+		hidden_effect = { SOV = { set_country_flag = hof_ma_done_hof_ma_mil_csce } }
+		if = {
+			limit = { hof_ma_eligible = yes }
+		custom_effect_tooltip = hof_ma_line_dm_tt
+		add_to_variable = {
+			hof_ma_mil_defence = 0.05
+			tooltip = army_defence_factor_tt
+		}
+		add_to_variable = {
+			hof_ma_mil_war_support = 0.05
+			tooltip = war_support_factor_tt
+		}
+			add_ideas = hof_ma_idea_csce
+		}
+		hidden_effect = { SOV = { hof_ma_reconcile_all = yes } }
+	}
+}
+
+joint_focus = {
+	id = hof_ma_mil_nuclear
+	icon = GFX_focus_SOV_found_the_warsaw_pact
+
+	prerequisite = { focus = hof_ma_mil_csce }
+
+	# (x, y) = 【绝对格位】（带子固定在树下方：列 21、行 33）
+	# 不写 relative_position_id；图瓦节点单独下移
+	x = 21
+	y = 33
+	offset = { x = 0 y = 60 trigger = { tag = TAN } }
+	cost = 10
+
+	search_filters = { FOCUS_FILTER_ARMY_XP }
+
+	# 谁是 joint：由触发器定义（见 common/scripted_triggers/hof_ma_scripted_triggers.txt）
+	joint_trigger = { hof_ma_joint_trigger = yes }
+
+	completion_reward = {
+		hidden_effect = { SOV = { set_country_flag = hof_ma_done_hof_ma_mil_nuclear } }
+		if = {
+			limit = { hof_ma_eligible = yes }
+		custom_effect_tooltip = hof_ma_line_dm_tt
+		add_to_variable = {
+			hof_ma_mil_attack = 0.15
+			tooltip = army_attack_factor_tt
+		}
+		add_to_variable = {
+			hof_ma_mil_defence = 0.10
+			tooltip = army_defence_factor_tt
+		}
+		add_to_variable = {
+			hof_ma_mil_breakthrough = 0.05
+			tooltip = breakthrough_factor_tt
+		}
+			add_ideas = hof_ma_idea_nuclear_umbrella
+		}
+		hidden_effect = { SOV = { hof_ma_reconcile_all = yes } }
+	}
+
+	completion_reward_joint_originator = {
+		if = {
+			limit = { hof_ma_eligible = yes }
+			add_command_power = 50
+		}
+	}
+}
+

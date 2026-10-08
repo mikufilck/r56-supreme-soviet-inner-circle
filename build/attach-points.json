@@ -1,0 +1,284 @@
+﻿{
+  "_comment": "挂载点清单 — sync-from-r56.ps1 要【整文件覆盖 + 打补丁】的国策树都写在这里。目前两类：① 需求 A/C 要注入共享国策的树；② 只为了改内容而覆盖的树（德国互斥补丁 —— 这类必须带 `s5: false`）。",
+  "_rules": [
+    "srcRelativePath 一律相对 R56 根目录解析：R56 自带的同名文件按整文件覆盖规则生效，原版那份不会加载。",
+    "treeId 必须与该文件内 focus_tree 的 id 完全一致，用于定位注入锚点。",
+    "phase=1 表示本轮实施；phase=2 表示后续补齐（同一国家的另一棵可选树）。",
+    "origin 仅作文档用途：vanilla-derived=内容源自原版DLC树；r56=R56 自制树。",
+    "⭐ 2026-09-25 新增 s5 字段：**只为了改内容而覆盖的树**写 `\"s5\": false`，同步脚本就【不】往它里面注 `shared_focus = hof_ma_founding`。默认（不写）= 照旧注入。只有单独写 `\"s5\": false` 才跳过 —— 靠黑名单不靠白名单，这样将来加点不会漏注。德国 ger_economy_mutex 带此字段；洪都拉斯仍注入经互会（见它的 notes）。"
+  ],
+  "points": [
+    {
+      "id": "sov_core",
+      "tag": "SOV",
+      "phase": 1,
+      "srcRelativePath": "common/national_focus/soviet.txt",
+      "treeId": "soviet_focus",
+      "origin": "r56",
+      "notes": "需求 A 核心圈（+ 需求 B 中苏联合已于 2026-09-24 取消）。旧树 soviet_old.txt 不再考虑（用户决定）。"
+    },
+    {
+      "id": "prc_sino",
+      "tag": "PRC",
+      "phase": 1,
+      "srcRelativePath": "common/national_focus/china_communist_sea.txt",
+      "treeId": "china_communist_focus_sea",
+      "origin": "vanilla-derived",
+      "notes": "⛔ 需求 B 已于 2026-09-24 取消，本挂载点不再有专属注入；保留它只因 S5 经互会通用线要靠它挂进 PRC 那棵树。⚠️ 不是 china_communist.txt —— NCNS 已装，sea 树 MTTH 1000 分胜出。这是实际生效那棵。"
+    },
+    {
+      "id": "mon_mutual",
+      "tag": "MON",
+      "phase": 1,
+      "srcRelativePath": "common/national_focus/mongolia.txt",
+      "treeId": "Mongolia_focus",
+      "origin": "r56",
+      "notes": "需求 C。单树，无歧义。"
+    },
+    {
+      "id": "fin_mutual",
+      "tag": "FIN",
+      "phase": 1,
+      "srcRelativePath": "common/national_focus/finland.txt",
+      "treeId": "finnish_focus",
+      "origin": "r56",
+      "notes": "需求 C。单树，无歧义。"
+    },
+    {
+      "id": "swe_std",
+      "tag": "SWE",
+      "phase": 1,
+      "srcRelativePath": "common/national_focus/sweden.txt",
+      "treeId": "sweden_focus",
+      "origin": "vanilla-derived",
+      "notes": "需求 C。规则默认 R56_TREE，但用户习惯玩原版树 → 本相位做原版那棵。"
+    },
+    {
+      "id": "nor_std",
+      "tag": "NOR",
+      "phase": 1,
+      "srcRelativePath": "common/national_focus/norway.txt",
+      "treeId": "norwegian_focus",
+      "origin": "vanilla-derived",
+      "notes": "需求 C。同上。注意该文件的 country 块不写 tag，靠 NOR_AAT 触发器。"
+    },
+    {
+      "id": "den_std",
+      "tag": "DEN",
+      "phase": 1,
+      "srcRelativePath": "common/national_focus/denmark.txt",
+      "treeId": "danish_focus",
+      "origin": "vanilla-derived",
+      "notes": "需求 C。规则默认就是 STANDARD_TREE，无需切换。"
+    },
+    {
+      "id": "ice_std",
+      "tag": "ICE",
+      "phase": 1,
+      "srcRelativePath": "common/national_focus/iceland.txt",
+      "treeId": "iceland_tree",
+      "origin": "vanilla-derived",
+      "notes": "需求 C。规则默认就是 STANDARD_TREE。"
+    },
+    {
+      "id": "afg_r56",
+      "tag": "AFG",
+      "phase": 1,
+      "srcRelativePath": "common/national_focus/r56_afghanistan.txt",
+      "treeId": "r56_afghanistan_focus",
+      "origin": "r56",
+      "notes": "需求 C。★用户唯一例外：阿富汗玩 R56 树。"
+    },
+    {
+      "id": "sau_mutual",
+      "tag": "SAU",
+      "phase": 1,
+      "srcRelativePath": "common/national_focus/saudi_arabia.txt",
+      "treeId": "saudi_focus",
+      "origin": "r56",
+      "notes": "需求 C。单树。"
+    },
+    {
+      "id": "phi_std",
+      "tag": "PHI",
+      "phase": 1,
+      "srcRelativePath": "common/national_focus/philippines.txt",
+      "treeId": "philippines_focus",
+      "origin": "vanilla-derived",
+      "notes": "需求 C。⚠️ MTTH 平局(10:10)，按用户偏好先做原版那棵；phase 2 需补 r56_philippines.txt。"
+    },
+    {
+      "id": "cub_mutual",
+      "tag": "CUB",
+      "phase": 1,
+      "srcRelativePath": "common/national_focus/Cuba.txt",
+      "treeId": "cuban_focus",
+      "origin": "r56",
+      "notes": "需求 C。单树。注意文件名首字母大写。"
+    },
+    {
+      "id": "arg_std",
+      "tag": "ARG",
+      "phase": 1,
+      "srcRelativePath": "common/national_focus/argentina.txt",
+      "treeId": "argentine_focus_tree",
+      "origin": "vanilla-derived",
+      "notes": "需求 C。⚠️ MTTH 平局(10:10)，同 PHI。phase 2 需补 r56_argentina.txt。"
+    },
+    {
+      "id": "eth_std",
+      "tag": "ETH",
+      "phase": 1,
+      "srcRelativePath": "common/national_focus/ethiopia.txt",
+      "treeId": "ethiopia_tree",
+      "origin": "vanilla-derived",
+      "notes": "需求 C。MTTH 30 分胜出，默认就是这棵。"
+    },
+    {
+      "id": "fra_std",
+      "tag": "FRA",
+      "phase": 1,
+      "srcRelativePath": "common/national_focus/france.txt",
+      "treeId": "french_focus",
+      "origin": "r56",
+      "notes": "需求 C。用户明确不支持自由法国/维希，故只此一份。"
+    },
+    {
+      "id": "pol_mutual",
+      "tag": "POL",
+      "phase": 1,
+      "srcRelativePath": "common/national_focus/poland.txt",
+      "treeId": "polish_focus",
+      "origin": "r56",
+      "notes": "需求 C。单树。19,892 行，第三大。"
+    },
+    {
+      "id": "hun_wuw",
+      "tag": "HUN",
+      "phase": 1,
+      "srcRelativePath": "common/national_focus/hungary_wuw.txt",
+      "treeId": "wuw_hungarian_focus",
+      "origin": "r56",
+      "notes": "需求 C。MTTH 50 分碾压 hungarian_focus 的 10 分，R56 树是唯一可达者（Q22 已定）。"
+    },
+    {
+      "id": "est_std",
+      "tag": "EST",
+      "phase": 1,
+      "srcRelativePath": "common/national_focus/estonia.txt",
+      "treeId": "estonia_tree",
+      "origin": "vanilla-derived",
+      "notes": "需求 C（2026-09-20 用户口径「国家还要再加，加波罗的海三国和澳大利亚」）。★ R56 规则 EST_focus_tree_selection 默认 STANDARD_TREE + 用户习惯玩原版树 ⇒ 取 estonia_tree。⚠️ 备选树 = r56_estonia.txt / estonian_focus（phase 2）。该文件本身就在用 shared_focus（EST_* / BALTIC_* 共 6 条）。"
+    },
+    {
+      "id": "lat_std",
+      "tag": "LAT",
+      "phase": 1,
+      "srcRelativePath": "common/national_focus/latvia.txt",
+      "treeId": "latvia_tree",
+      "origin": "vanilla-derived",
+      "notes": "需求 C。同 EST：LAT_focus_tree_selection 默认 STANDARD_TREE ⇒ 取 latvia_tree。⚠️ 备选树 = r56_latvia.txt / latvian_focus。该文件本身在用 shared_focus（LAT_* / BALTIC_* 共 5 条）。"
+    },
+    {
+      "id": "lit_std",
+      "tag": "LIT",
+      "phase": 1,
+      "srcRelativePath": "common/national_focus/lithuania.txt",
+      "treeId": "lithuania_tree",
+      "origin": "vanilla-derived",
+      "notes": "需求 C。⚠️ LIT_focus_tree_selection 默认是 R56_TREE（与 SWE / NOR 同型），按既有政策「先按用户习惯 = 原版树」仍取 lithuania_tree；备选树 = r56_lithuania.txt / lithuania_focus。该文件本身在用 shared_focus（BALTIC_* 共 2 条）。"
+    },
+    {
+      "id": "sia_std",
+      "tag": "SIA",
+      "phase": 1,
+      "srcRelativePath": "common/national_focus/siam.txt",
+      "treeId": "siam_focus",
+      "origin": "vanilla-derived",
+      "notes": "需求 C（2026-09-21 用户口径「通用线要加暹罗」）。规则 `SIA_focus_tree_selection`（required_dlc = Thunder at Our Gates）默认 R56_TREE，与 SWE/NOR/LIT 同型 ⇒ 按既有政策「先按用户习惯玩原版树」仍取原版那棵 siam_focus。⚠️ 逐格实测：siam_focus 真实 Y 最大 = 18 < 24（同一解析器把 philippines 读成 16，报告实测 11 ⇒ 偏大）⇒ S5 带子 y ∈ [24,30] 仍不压。"
+    },
+    {
+      "id": "ast_std",
+      "tag": "AST",
+      "phase": 1,
+      "srcRelativePath": "common/national_focus/australia_taog.txt",
+      "treeId": "australia_taog_focus",
+      "origin": "vanilla-derived",
+      "notes": "需求 C。★ 澳大利亚【没有】focus_tree_selection 规则（docs/14 §2 的 23 条里 AUS = 奥地利，不是澳大利亚）⇒ 由 MTTH 决定。本机已装 dlc052_thunder_at_our_gates ⇒ australia_taog.txt 的 add = 1000 胜出（australia.txt 的 r56_australian_focus 只有 add = 20）。⚠️ 若玩家未装该 DLC，实际加载的是 r56_australian_focus（phase 2 备选）。"
+    },
+    {
+      "id": "hon_std",
+      "tag": "HON",
+      "phase": 1,
+      "srcRelativePath": "common/national_focus/honduras.txt",
+      "treeId": "hon_focus",
+      "origin": "r56",
+      "notes": "⭐ 2026-09-25 新增。作用有两个：① 给 HON_liberate_mexico_again（「向北进攻」）加墨西哥全境核心（除尤卡坦 474 / 恰帕斯 475）；② ✅ **同一个用户口径又要求洪都拉斯挂经互会通用线**（「洪都拉斯需要挂载经互会，应该生效」）⇒ **不带 `s5: false`**，照常注入 `shared_focus = hof_ma_founding`。⚠️ 洪都拉斯没有 focus_tree_selection 规则 ⇒ R56 那棵 hon_focus 直接生效。⚠️ 它自带 R56 的 `shared_focus = USC_UNIFIED_central_american_unification`，与注入的 hof_ma_founding 共存。"
+    },
+    {
+      "id": "bra_std",
+      "tag": "BRA",
+      "phase": 1,
+      "srcRelativePath": "common/national_focus/brazil.txt",
+      "treeId": "brazil_tree",
+      "origin": "vanilla-derived",
+      "notes": "2026-09-30 用户要求巴西挂经互会通用线；本树在拥有 Trial of Allegiance 时与 R56 树同为 BRA 候选，故两棵都注入。"
+    },
+    {
+      "id": "bra_r56",
+      "tag": "BRA",
+      "phase": 1,
+      "srcRelativePath": "common/national_focus/r56_brazil.txt",
+      "treeId": "brazilian_focus",
+      "origin": "r56",
+      "notes": "2026-09-30 用户要求巴西挂经互会通用线；与 brazil.txt 同时覆盖，确保 BRA 载入任一树都可见。"
+    },
+    {
+      "id": "tan_std",
+      "tag": "TAN",
+      "phase": 1,
+      "srcRelativePath": "common/national_focus/tuva.txt",
+      "treeId": "tuva_focus",
+      "origin": "r56",
+      "notes": "2026-09-30 用户追加图瓦挂经互会通用线；蒙古已通过 mon_mutual 挂载。"
+    },
+    {
+      "id": "ger_economy_mutex",
+      "tag": "GER",
+      "phase": 1,
+      "srcRelativePath": "common/national_focus/germany.txt",
+      "treeId": "german_focus",
+      "origin": "r56",
+      "s5": false,
+      "notes": "2026-09-27 覆盖德国树以取消指定经济、陆军、空军国策互斥，并将德奥合并的前置改为改组国防军／听从冯·纽赖特任一完成；不注入经互会国策。"
+    }
+  ],
+
+  "_extraComment": "extraFiles = 【非国策树】的整文件覆盖清单。与 points 的区别：没有 treeId（不做锚点注入）、不参与经互会通用线（S5）。同步脚本对它们只做两件事：① 整文件覆盖；② 按 build/inject-dec-gos.txt 的 # hof:dec-begin/end 标记替换指定 decision 块。⚠️ verify-s2 §13 与 verify-sync.ps1 都只读 points ⇒ 加在这里不会影响它们。",
+  "extraFiles": [
+    {
+      "id": "dec_sia",
+      "tag": "SIA",
+      "phase": 1,
+      "srcRelativePath": "common/decisions/SIA.txt",
+      "origin": "r56",
+      "notes": "2026-10-02 订正新领土管理决议组中河内要塞及三角防御网络的无 DLC 堡垒落点，并把三角网络 DLC 分支错误的 1076 海峡群岛改为 1134 曼谷。同步脚本 dec_sia 值补丁负责重生成。"
+    },
+    {
+      "id": "dec_sov",
+      "tag": "SOV",
+      "phase": 1,
+      "srcRelativePath": "common/decisions/SOV.txt",
+      "origin": "r56",
+      "notes": "⭐ 2026-09-25 新增（用户口径「可以加进自动同步」）。作用：把「国家建筑设计局」升级链改成【4 国任意顺序 + 3 专精任意顺序、每项叠加】。原版那张卡是 4 选 1，靠 SOV_gosproyektstroy_level_2_flag / _level_3_flag 这两个【单值 flag】+ 每张卡的 visible 里的 NOT 判成互斥，且 remove_effect 用 if/else_if 只处理一个。本文件被替换的 4 个 decision 块 = SOV_gosproyektstroy_bring_foreign_experts / _focus_civ / _focus_mil / _focus_dock（⚠️ 分类块 SOV_gosproyektstroy_decision_category 保持原样，所以我们仍然要顺手设 level_2_flag —— 否则整个页签会消失）。⚠️ 该文件在 R56 里与原版逐字相同 ⇒ 原版更新也会动它，所以放进自动同步。"
+    },
+    {
+      "id": "event_sov_tuva",
+      "tag": "SOV",
+      "phase": 1,
+      "srcRelativePath": "events/SovietUnion.txt",
+      "origin": "r56",
+      "notes": "2026-09-30 用户要求 soviet.16 图瓦同意并入时先将图瓦全部陆海军将领及科学家转至苏联，再执行原有吞并；由同步脚本的 event_sov_tuva 值补丁处理。"
+    }
+  ]
+}

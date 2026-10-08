@@ -1,0 +1,8 @@
+ 404  https://www.marxists.org/history/ussr/events/1929/index.htm
+ 404  https://www.marxists.org/history/ussr/government/1929/index.htm
+ 404  https://www.marxists.org/history/ussr/right-opposition/index.htm
+ 404  https://www.marxists.org/archive/rykov/index.htm
+ 404  https://www.marxists.org/subject/ussr/index.htm
+ 200  https://www.marxists.org/chinese/lenin-cworks/53/index.htm
+ 200  https://www.marxists.org/chinese/lenin-cworks/54/index.htm
+ 200  https://www.marxists.org/chinese/lenin-cworks/52/index.htm

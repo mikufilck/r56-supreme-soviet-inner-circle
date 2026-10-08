@@ -1,0 +1,11 @@
+﻿文件: D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125\common\national_focus\china_communist_sea.txt
+行数: 14652
+文件里 focus = { 行数: 203
+解析出 focus 块: 203
+  ? 一致，解析可信
+绝对坐标解析成功: 203 / 203
+
+树绝对坐标范围: X -6..64   Y 0..21
+
+===== 锚点 PRC_strengthen_the_central_secretariat 的绝对坐标 =====
+  找不到锚点或解析不了它的坐标。

@@ -1,0 +1,26 @@
+# The date is checked when the targeted mission is displayed.
+defined_text = {
+	name = hof_sov_mob_stage_title
+	text = {
+		trigger = { date > 1943.12.31 }
+		localization_key = hof_sov_mob_title_1944
+	}
+	text = {
+		trigger = { date > 1940.12.31 }
+		localization_key = hof_sov_mob_title_1941
+	}
+	text = { localization_key = hof_sov_mob_title_early }
+}
+
+defined_text = {
+	name = hof_sov_mob_stage_desc
+	text = {
+		trigger = { date > 1943.12.31 }
+		localization_key = hof_sov_mob_desc_1944
+	}
+	text = {
+		trigger = { date > 1940.12.31 }
+		localization_key = hof_sov_mob_desc_1941
+	}
+	text = { localization_key = hof_sov_mob_desc_early }
+}

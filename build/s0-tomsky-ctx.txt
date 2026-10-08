@@ -1,0 +1,561 @@
+==== 托姆斯基（Idx 11）· 命中点上下文 ====
+
+==================== 原版 角色对象定义 ====================
+  F:\Hearts of Iron IV\common\characters\SOV.txt  (3138-3200)
+    3138: 			}
+    3139: 			ai_will_do = {
+    3140: 				base = 1
+    3141: 			}
+    3142: 		}
+    3143: 	}
+    3144: 
+    3145: 	SOV_mikhail_tomsky = {
+    3146: 		name = SOV_mikhail_tomsky
+    3147: 		portraits = {
+    3148: 			army = {
+    3149: 				small = "GFX_idea_SOV_mikhail_tomsky"
+    3150: 			}
+    3151: 		}
+    3152: 		allowed_civil_war = {
+    3153: 			OR = {
+    3154: 				AND = {
+    3155: 					tag = SOV
+    3156: 					has_government = communism
+    3157: 				}
+    3158: 				AND = {
+    3159: 					SOV_is_exiles = yes
+    3160: 					has_government = communism
+    3161: 				}
+    3162: 			}
+    3163: 		}
+    3164: 
+    3165: 		advisor = {
+    3166: 			slot = political_advisor
+    3167: 			idea_token = SOV_mikhail_tomsky
+    3168: 			allowed = {
+    3169: 				original_tag = SOV
+    3170: 			}
+    3171: 			visible = {
+    3172: 				NOT = {
+    3173: 					has_character_flag = SOV_character_purged_flag
+    3174: 				}
+    3175: 			}
+    3176: 			available = {
+    3177: 				OR = {
+    3178: 					SOV_is_right_opposition = yes
+    3179: 					has_completed_focus = SOV_return_democracy_to_the_party
+    3180: 				}
+    3181: 				if = {
+    3182: 					limit = {
+    3183: 						has_character_flag = SOV_exiled_flag
+    3184: 					}
+    3185: 					NOT = { has_character_flag = SOV_exiled_flag }
+    3186: 				}
+    3187: 			}
+    3188: 			traits = {
+    3189: 				right_trade_unionist
+    3190: 			}
+    3191: 			ai_will_do = {
+    3192: 				base = 2
+    3193: 			}
+    3194: 		}
+    3195: 	}
+    3196: 
+    3197: 	SOV_grigory_sokolnikov = {
+    3198: 		name = SOV_grigory_sokolnikov
+    3199: 		portraits = {
+    3200: 			army = {
+
+==================== 原版 recruit_character ====================
+  F:\Hearts of Iron IV\history\countries\SOV - Soviet union.txt  (46-54)
+      46: recruit_character = SOV_yevgeny_preobrazhensky
+      47: recruit_character = SOV_aleksandr_shlyapnikov
+      48: recruit_character = SOV_nikolay_bukharin
+      49: recruit_character = SOV_aleksey_rykov
+      50: recruit_character = SOV_mikhail_tomsky
+      51: recruit_character = SOV_grigory_sokolnikov
+      52: recruit_character = SOV_grigory_zinovyev
+      53: recruit_character = SOV_lev_kamenev
+      54: recruit_character = SOV_martemyan_ryutin
+
+==================== 原版 角色初始化（派系对齐） ====================
+  F:\Hearts of Iron IV\history\countries\SOV - Soviet union.txt  (284-302)
+     284: SOV_aleksandr_shlyapnikov = {
+     285: 	set_character_flag = SOV_aligned_left_opposition_flag
+     286: }
+     287: SOV_nikolay_bukharin = {
+     288: 	set_character_flag = SOV_aligned_right_opposition_flag
+     289: }
+     290: SOV_aleksey_rykov = {
+     291: 	set_character_flag = SOV_aligned_right_opposition_flag
+     292: }
+     293: SOV_mikhail_tomsky = {
+     294: 	set_character_flag = SOV_aligned_right_opposition_flag
+     295: }
+     296: SOV_grigory_sokolnikov = {
+     297: 	set_character_flag = SOV_aligned_right_opposition_flag
+     298: }
+     299: #SOV_grigory_zinovyev -> Will be aligned with either left or right opposition via focus
+     300: #SOV_lev_kamenev -> Will be aligned with either left or right opposition via focus
+     301: #SOV_martemyan_ryutin -> Will be aligned with either left or right opposition via focus
+     302: if = {
+
+==================== 原版 清洗 ====================
+  F:\Hearts of Iron IV\history\countries\SOV - Soviet union.txt  (978-994)
+     978: 		SOV_nikolay_ustryalov = { SOV_purge_character_effect = yes }
+     979: 	}
+     980: 	SOV_mikhail_tukhachevsky = { SOV_purge_character_effect = yes }
+     981: 	SOV_aleksandr_yegorov = { SOV_purge_character_effect = yes }
+     982: 	SOV_vasily_blyukher = { SOV_purge_character_effect = yes }
+     983: 	SOV_vitaly_primakov = { SOV_purge_character_effect = yes }
+     984: 	SOV_nikolay_bukharin = { SOV_purge_character_effect = yes }
+     985: 	SOV_aleksey_rykov = { SOV_purge_character_effect = yes }
+     986: 	SOV_mikhail_tomsky = { SOV_purge_character_effect = yes }
+     987: 	SOV_maksim_litvinov = { SOV_purge_character_effect = yes }
+     988: 	SOV_genrikh_yagoda = { SOV_purge_character_effect = yes }
+     989: 	SOV_nikolay_yezhov = { SOV_purge_character_effect = yes }
+     990: 	SOV_sergey_khudyakov = { SOV_purge_character_effect = yes }
+     991: 	SOV_yakov_smushkevich = { SOV_purge_character_effect = yes }
+     992: 	SOV_pavel_rychagov = { SOV_purge_character_effect = yes }
+     993: 
+     994: 	#COWED GENERALS
+
+==================== 原版 决议 ====================
+  F:\Hearts of Iron IV\common\decisions\SOV.txt  (17190-17225)
+   17190: 					has_character = SOV_aleksey_rykov
+   17191: 					SOV_aleksey_rykov = {
+   17192: 						SOV_character_can_be_purged = yes
+   17193: 					}
+   17194: 				}
+   17195: 				SOV_aleksey_rykov = {
+   17196: 					set_character_flag = SOV_targeted_for_purge_flag
+   17197: 				}
+   17198: 			}
+   17199: 			else = {
+   17200: 				SOV_add_random_character_to_purge_targets_effect = yes
+   17201: 			}
+   17202: 			#NOT-SO-HISTORICAL
+   17203: 			#Tomsky
+   17204: 			if = {
+   17205: 				limit = {
+   17206: 					has_character = SOV_mikhail_tomsky
+   17207: 					SOV_mikhail_tomsky = {
+   17208: 						SOV_character_can_be_purged = yes
+   17209: 					}
+   17210: 				}
+   17211: 				SOV_mikhail_tomsky = {
+   17212: 					set_character_flag = SOV_targeted_for_purge_flag
+   17213: 				}
+   17214: 			}
+   17215: 			else = {
+   17216: 				SOV_add_random_character_to_purge_targets_effect = yes
+   17217: 			}
+   17218: 			#Litvinov
+   17219: 			if = {
+   17220: 				limit = {
+   17221: 					has_character = SOV_maksim_litvinov
+   17222: 					SOV_maksim_litvinov = {
+   17223: 						SOV_character_can_be_purged = yes
+   17224: 					}
+   17225: 				}
+
+==================== 原版 国策 A（用他） ====================
+  F:\Hearts of Iron IV\common\national_focus\soviet.txt  (7905-7940)
+    7905: 			#Rykov
+    7906: 			if = {
+    7907: 				limit = {
+    7908: 					has_character = SOV_aleksey_rykov
+    7909: 				}
+    7910: 				SOV_aleksey_rykov = {
+    7911: 					set_character_flag = SOV_targeted_for_purge_flag
+    7912: 				}
+    7913: 			}
+    7914: 			else = {
+    7915: 				SOV_add_random_character_to_purge_targets_effect = yes
+    7916: 			}
+    7917: 			#NOT-SO-HISTORICAL
+    7918: 			#Tomsky
+    7919: 			if = {
+    7920: 				limit = {
+    7921: 					has_character = SOV_mikhail_tomsky
+    7922: 				}
+    7923: 				SOV_mikhail_tomsky = {
+    7924: 					set_character_flag = SOV_targeted_for_purge_flag
+    7925: 				}
+    7926: 			}
+    7927: 			else = {
+    7928: 				SOV_add_random_character_to_purge_targets_effect = yes
+    7929: 			}
+    7930: 			#Litvinov
+    7931: 			if = {
+    7932: 				limit = {
+    7933: 					has_character = SOV_maksim_litvinov
+    7934: 				}
+    7935: 				SOV_maksim_litvinov = {
+    7936: 					set_character_flag = SOV_targeted_for_purge_flag
+    7937: 				}
+    7938: 			}
+    7939: 			else = {
+    7940: 				SOV_add_random_character_to_purge_targets_effect = yes
+
+==================== 原版 潜在目标 ====================
+  F:\Hearts of Iron IV\common\national_focus\soviet.txt  (8820-8845)
+    8820: 
+    8821: 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_SOV_POLITICAL_PARANOIA}
+    8822: 
+    8823: 		completion_reward = {
+    8824: 			SOV_paranoia_high_increase_effect = yes
+    8825: 
+    8826: 			# Target Right Opposition politician
+    8827: 			custom_effect_tooltip = SOV_left_eliminate_right_tt
+    8828: 			# custom_effect_tooltip = SOV_divert_purge_attention_tt
+    8829: 			# Modify factionalism
+    8830: 			custom_effect_tooltip = SOV_eliminate_opposition_factionalism_tt
+    8831: 			add_to_variable = { SOV_factionalism_political_power_factor = 0.05 }
+    8832: 
+    8833: 			SOV_nikolay_bukharin = { set_character_flag = SOV_potential_target_flag }
+    8834: 			SOV_mikhail_tomsky = { set_character_flag = SOV_potential_target_flag }
+    8835: 			SOV_aleksey_rykov = { set_character_flag = SOV_potential_target_flag }
+    8836: 
+    8837: 		}
+    8838: 	}
+    8839: 
+    8840: 	focus = {
+    8841: 		id = SOV_committee_in_exile
+    8842: 		icon = GFX_SOV_committee_in_exile_ccp_2d_sov_compatibility
+    8843: 		prerequisite = { focus = SOV_the_fourth_international }
+    8844: 		prerequisite = { focus = SOV_bring_old_trotskyists_back }
+    8845: 		x = 1
+
+==================== 原版 retire ====================
+  F:\Hearts of Iron IV\common\national_focus\soviet.txt  (9215-9245)
+    9215: 		id = SOV_left_purges
+    9216: 		icon = GFX_focus_SOV_the_last_purge
+    9217: 		prerequisite = { focus = SOV_left_opposition_coup }
+    9218: 		mutually_exclusive = { focus = SOV_return_democracy_to_the_party }
+    9219: 		x = 3
+    9220: 		y = 1
+    9221: 		relative_position_id = SOV_left_opposition_coup
+    9222: 		cost = 10
+    9223: 
+    9224: 		available = {
+    9225: 			has_global_flag = SOV_soviet_civil_war_over
+    9226: 		}
+    9227: 
+    9228: 		search_filters = {FOCUS_FILTER_POLITICAL}
+    9229: 
+    9230: 		completion_reward = {
+    9231: 			custom_effect_tooltip = SOV_left_purges_tt
+    9232: 			IF = { limit = { has_character = SOV_nikolay_bukharin } retire_character = SOV_nikolay_bukharin }
+    9233: 			IF = { limit = { has_character = SOV_aleksey_rykov } retire_character = SOV_aleksey_rykov }
+    9234: 			IF = { limit = { has_character = SOV_mikhail_tomsky } retire_character = SOV_mikhail_tomsky }
+    9235: 			IF = { limit = { has_character = SOV_grigory_zinovyev } retire_character = SOV_grigory_zinovyev }
+    9236: 			IF = { limit = { has_character = SOV_martemyan_ryutin } retire_character = SOV_martemyan_ryutin }
+    9237: 			IF = { limit = { has_character = SOV_mikhail_kalinin } retire_character = SOV_mikhail_kalinin }
+    9238: 			IF = { limit = { has_character = SOV_nikita_khrushchyov } retire_character = SOV_nikita_khrushchyov }
+    9239: 			IF = { limit = { has_character = SOV_vsevolod_merkulov } retire_character = SOV_vsevolod_merkulov }
+    9240: 			set_variable = { SOV_factionalism_political_power_factor = 0 }
+    9241: 			custom_effect_tooltip = SOV_left_right_purges_factionalism_tt
+    9242: 
+    9243: 
+    9244: 		}
+    9245: 
+
+==================== 原版 show_ideas_tooltip ====================
+  F:\Hearts of Iron IV\common\national_focus\soviet.txt  (9865-9895)
+    9865: 						NOT = { state = 651 }
+    9866: 						NOT = { state = 137 }
+    9867: 						NOT = { state = 405 }
+    9868: 						NOT = { state = 571 }
+    9869: 					}
+    9870: 					set_state_flag = SOV_stalinist_state
+    9871: 				}
+    9872: 				# Launch the first Stalinist counter measures
+    9873: 				SOV_launch_stalinist_counter_measure = yes
+    9874: 				SOV_get_centre_military_support = yes
+    9875: 			}
+    9876: 
+    9877: 			custom_effect_tooltip = generic_skip_one_line_tt
+    9878: 
+    9879: 			custom_effect_tooltip = available_political_advisor
+    9880: 			show_ideas_tooltip = SOV_nikolay_bukharin
+    9881: 			show_ideas_tooltip = SOV_aleksey_rykov
+    9882: 			show_ideas_tooltip = SOV_mikhail_tomsky
+    9883: 		}
+    9884: 	}
+    9885: 
+    9886: 	focus = {
+    9887: 		id = SOV_the_need_for_policy_changes
+    9888: 		icon = GFX_focus_hol_abandon_the_gold_standard
+    9889: 		prerequisite = { focus = SOV_the_right_opposition }
+    9890: 		x = 0
+    9891: 		y = 1
+    9892: 		relative_position_id = SOV_the_right_opposition
+    9893: 		cost = 5
+    9894: 		available = {
+    9895: 			SOV_soviet_civil_war_not_started = yes
+
+==================== 原版 has_idea / 角色立绘切换 ====================
+  F:\Hearts of Iron IV\common\national_focus\soviet.txt  (10635-10680)
+   10635: 					instant_build = yes
+   10636: 				}
+   10637: 			}
+   10638: 		}
+   10639: 	}
+   10640: 
+   10641: 	focus = {
+   10642: 		id = SOV_the_trade_union_as_labor_organizer
+   10643: 		icon = GFX_SOV_the_trade_union_as_labor_organizer_ccp_2d_sov_compatibility
+   10644: 		prerequisite = { focus = SOV_back_to_the_nep }
+   10645: 		x = 2
+   10646: 		y = 1
+   10647: 		relative_position_id = SOV_back_to_the_nep
+   10648: 		cost = 10
+   10649: 		available = {
+   10650: 			has_idea = SOV_mikhail_tomsky
+   10651: 		}
+   10652: 
+   10653: 		search_filters = {FOCUS_FILTER_INDUSTRY}
+   10654: 
+   10655: 		completion_reward = {
+   10656: 			remove_trait = {
+   10657: 				character = SOV_mikhail_tomsky
+   10658: 				slot = political_advisor
+   10659: 				trait = right_trade_unionist
+   10660: 			}
+   10661: 			add_trait = {
+   10662: 				character = SOV_mikhail_tomsky
+   10663: 				slot = political_advisor
+   10664: 				trait = chair_of_the_unions
+   10665: 			}
+   10666: 		}
+   10667: 	}
+   10668: 
+   10669: 	focus = {
+   10670: 		id = SOV_incorporate_local_organizations
+   10671: 		icon = GFX_goal_generic_major_alliance
+   10672: 		prerequisite = { focus = SOV_administrative_reforms focus = SOV_a_new_theory_of_revolution }
+   10673: 		x = 0
+   10674: 		y = 2
+   10675: 		relative_position_id = SOV_administrative_reforms
+   10676: 		cost = 10
+   10677: 		available = {
+   10678: 
+   10679: 		}
+   10680: 
+
+==================== 原版 专属特质（Default / Improved） ====================
+  F:\Hearts of Iron IV\common\country_leader\00_traits.txt  (8025-8070)
+    8025: 		party_popularity_stability_factor = -0.1
+    8026: 	}
+    8027: 
+    8028: 	#Bukharin
+    8029: 	economy_reformer = {
+    8030: 		random = no
+    8031: 		sprite = 13
+    8032: 		research_speed_factor = 0.05
+    8033: 		stability_factor = 0.05
+    8034: 		political_power_factor = 0.05
+    8035: 	}
+    8036: 
+    8037: 	#Tomsky Default
+    8038: 	right_trade_unionist = {
+    8039: 		random = no
+    8040: 		sprite = 13
+    8041: 		industrial_capacity_factory = 0.1
+    8042: 		production_factory_max_efficiency_factor = 0.1
+    8043: 		line_change_production_efficiency_factor = 0.1
+    8044: 		production_factory_efficiency_gain_factor = -0.05
+    8045: 	}
+    8046: 
+    8047: 	#Tomsky Improved
+    8048: 	chair_of_the_unions = {
+    8049: 		random = no
+    8050: 		sprite = 13
+    8051: 		industrial_capacity_factory = 0.1
+    8052: 		production_factory_max_efficiency_factor = 0.15
+    8053: 		line_change_production_efficiency_factor = 0.1
+    8054: 	}
+    8055: 
+    8056: 	#Rykov
+    8057: 	peoples_commissar_for_posts_and_telegraphs = {
+    8058: 		random = no
+    8059: 		sprite = 13
+    8060: 		political_power_factor = 0.05
+    8061: 		land_reinforce_rate = 0.02
+    8062: 	}
+    8063: 
+    8064: 	#Zinovyev
+    8065: 	communist_theorist = {
+    8066: 		random = no
+    8067: 		sprite = 13
+    8068: 		drift_defence_factor = 0.1
+    8069: 		political_power_factor = 0.15
+    8070: 	}
+
+==================== R56 角色对象定义 ====================
+  D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125\common\characters\SOV.txt  (5015-5075)
+    5015: 
+    5016: 			traits = {
+    5017: 				peoples_commissar_for_posts_and_telegraphs
+    5018: 			}
+    5019: 		}
+    5020: 	}
+    5021: 
+    5022: 	SOV_mikhail_tomsky = {
+    5023: 		name = SOV_mikhail_tomsky
+    5024: 		portraits = {
+    5025: 			army = {
+    5026: 				small = "GFX_idea_SOV_mikhail_tomsky"
+    5027: 			}
+    5028: 		}
+    5029: 		allowed_civil_war = {
+    5030: 			OR = {
+    5031: 				AND = {
+    5032: 					tag = SOV
+    5033: 					has_government = communism
+    5034: 				}
+    5035: 				AND = {
+    5036: 					SOV_is_exiles = yes
+    5037: 					has_government = communism
+    5038: 				}
+    5039: 			}
+    5040: 		}
+    5041: 
+    5042: 		advisor = {
+    5043: 			slot = political_advisor
+    5044: 			idea_token = SOV_mikhail_tomsky
+    5045: 			allowed = {
+    5046: 				original_tag = SOV
+    5047: 			}
+    5048: 			visible = {
+    5049: 				NOT = {
+    5050: 					has_character_flag = SOV_character_purged_flag
+    5051: 					has_global_flag = sov_old_focus_tree	#idk about the trait, but hes right-wing, which this doesnt have a path for
+    5052: 				}
+    5053: 			}
+    5054: 			available = {
+    5055: 				OR = {
+    5056: 					SOV_is_right_opposition = yes
+    5057: 					has_completed_focus = SOV_return_democracy_to_the_party
+    5058: 				}
+    5059: 				if = {
+    5060: 					limit = {
+    5061: 						has_character_flag = SOV_exiled_flag
+    5062: 					}
+    5063: 					NOT = { has_character_flag = SOV_exiled_flag }
+    5064: 				}
+    5065: 				#used to showcase the player that those guys would die in case of a purge  - Fantom
+    5066: 				NOT = {
+    5067: 					has_completed_focus = SOV_the_bloc_of_rights_and_trotskyites
+    5068: 				}
+    5069: 			}
+    5070: 			traits = {
+    5071: 				right_trade_unionist
+    5072: 			}
+    5073: 		}
+    5074: 	}
+    5075: 
+
+==================== R56 专属特质 ====================
+  D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125\common\country_leader\00_traits.txt  (8035-8065)
+    8035: 		random = no
+    8036: 		sprite = 13
+    8037: 		research_speed_factor = 0.05
+    8038: 		stability_factor = 0.05
+    8039: 		political_power_factor = 0.05
+    8040: 	}
+    8041: 
+    8042: 	#Tomsky Default
+    8043: 	right_trade_unionist = {
+    8044: 		random = no
+    8045: 		sprite = 13
+    8046: 		industrial_capacity_factory = 0.1
+    8047: 		production_factory_max_efficiency_factor = 0.1
+    8048: 		line_change_production_efficiency_factor = 0.1
+    8049: 		production_factory_efficiency_gain_factor = -0.05
+    8050: 	}
+    8051: 
+    8052: 	#Tomsky Improved
+    8053: 	chair_of_the_unions = {
+    8054: 		random = no
+    8055: 		sprite = 13
+    8056: 		industrial_capacity_factory = 0.1
+    8057: 		production_factory_max_efficiency_factor = 0.15
+    8058: 		line_change_production_efficiency_factor = 0.1
+    8059: 	}
+    8060: 
+    8061: 	#Rykov
+    8062: 	peoples_commissar_for_posts_and_telegraphs = {
+    8063: 		random = no
+    8064: 		sprite = 13
+    8065: 		political_power_factor = 0.1 #r56 was 0.05, too weak for 150 pp cost
+
+==================== R56 国策 A ====================
+  D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125\common\national_focus\soviet.txt  (9370-9400)
+    9370: 					has_character = SOV_aleksey_rykov
+    9371: 				}
+    9372: 				SOV_aleksey_rykov = {
+    9373: 					set_character_flag = SOV_targeted_for_purge_flag
+    9374: 				}
+    9375: 			}
+    9376: 			else = {
+    9377: 				SOV_add_random_character_to_purge_targets_effect = yes
+    9378: 			}
+    9379: 			#NOT-SO-HISTORICAL
+    9380: 			#Tomsky
+    9381: 			if = {
+    9382: 				limit = {
+    9383: 					has_character = SOV_mikhail_tomsky
+    9384: 				}
+    9385: 				SOV_mikhail_tomsky = {
+    9386: 					set_character_flag = SOV_targeted_for_purge_flag
+    9387: 				}
+    9388: 			}
+    9389: 			else = {
+    9390: 				SOV_add_random_character_to_purge_targets_effect = yes
+    9391: 			}
+    9392: 			#Litvinov was not purged, so why put him there? Died 1951... - Fantom
+    9393: 
+    9394: 			custom_effect_tooltip = SOV_will_trigger_a_great_purge_tt
+    9395: 			hidden_effect = {
+    9396: 				set_country_flag = SOV_purge_event_unavoidable_flag #No way to avoid this purge. This people are about to be purged and there's nothing you can do for them.
+    9397: 				SOV_trigger_great_purge_moscow_trial_effect = yes #THIRD MOSCOW TRIAL -> Right Opposition
+    9398: 			}
+    9399: 			custom_effect_tooltip = SOV_trigger_third_moscow_trial_tt
+    9400: 
+
+==================== R56 角色立绘切换 ====================
+  D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125\common\national_focus\soviet.txt  (12815-12845)
+   12815: 
+   12816: 	focus = {
+   12817: 		id = SOV_the_trade_union_as_labor_organizer
+   12818: 		icon = GFX_goal_generic_consumer_goods
+   12819: 		prerequisite = { focus = SOV_back_to_the_nep }
+   12820: 		x = 2
+   12821: 		y = 1
+   12822: 		relative_position_id = SOV_back_to_the_nep
+   12823: 		cost = 10
+   12824: 		available = {
+   12825: 			has_idea = SOV_mikhail_tomsky
+   12826: 		}
+   12827: 
+   12828: 		search_filters = {FOCUS_FILTER_INDUSTRY}
+   12829: 
+   12830: 		completion_reward = {
+   12831: 			remove_trait = {
+   12832: 				character = SOV_mikhail_tomsky
+   12833: 				slot = political_advisor
+   12834: 				trait = right_trade_unionist
+   12835: 			}
+   12836: 			add_trait = {
+   12837: 				character = SOV_mikhail_tomsky
+   12838: 				slot = political_advisor
+   12839: 				trait = chair_of_the_unions
+   12840: 			}
+   12841: 		}
+   12842: 	}
+   12843: 
+   12844: 	focus = {
+   12845: 		id = SOV_incorporate_local_organizations
+

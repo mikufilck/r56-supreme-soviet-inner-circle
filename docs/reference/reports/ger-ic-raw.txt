@@ -1,0 +1,1173 @@
+﻿################################################################################
+# 第一部分：职务 idea 的两个等级（看数值怎么"照抄 + 追加"）
+################################################################################
+
+====================================================================================================
+### 托特 T1 GER_todt_reich_engineer / T2 GER_todt_reich_minister_of_armaments
+### 文件：D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125\common\ideas\GER.txt
+### 行：11350..11395
+====================================================================================================
+ 11350| 		GER_todt_reich_engineer = {
+ 11351| 			#picture = todt
+ 11352| 		
+ 11353| 			allowed = {
+ 11354| 				always = no
+ 11355| 			}
+ 11356| 
+ 11357| 			removal_cost = -1
+ 11358| 
+ 11359| 
+ 11360| 			modifier = {
+ 11361| 				# PP Cost
+ 11362| 				political_power_gain = -0.1
+ 11363| 
+ 11364| 				production_speed_industrial_complex_factor = 0.1
+ 11365| 				production_speed_infrastructure_factor = 0.1
+ 11366| 				production_speed_rail_way_factor = 0.1
+ 11367| 			}
+ 11368| 		}
+ 11369| 
+ 11370| 		GER_todt_reich_minister_of_armaments = { # Should match country leader trait GER_todt_fuhrer
+ 11371| 			#picture = todt
+ 11372| 		
+ 11373| 			allowed = {
+ 11374| 				always = no
+ 11375| 			}
+ 11376| 
+ 11377| 			removal_cost = -1
+ 11378| 
+ 11379| 
+ 11380| 			modifier = {
+ 11381| 				# PP Cost
+ 11382| 				political_power_gain = -0.3
+ 11383| 
+ 11384| 				production_speed_industrial_complex_factor = 0.1
+ 11385| 				production_speed_infrastructure_factor = 0.1
+ 11386| 				production_speed_rail_way_factor = 0.1
+ 11387| 				production_speed_arms_factory_factor = 0.1
+ 11388| 				production_speed_dockyard_factor = 0.1
+ 11389| 			}
+ 11390| 		}
+ 11391| 
+ 11392| 		GER_speer_reich_architect = {
+ 11393| 			#picture = speer
+ 11394| 		
+ 11395| 			allowed = {
+
+====================================================================================================
+### 希姆莱 T1/T2/T3 三级（看 3 -> 7 -> 10 条）
+### 文件：D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125\common\ideas\GER.txt
+### 行：11476..11548
+====================================================================================================
+ 11476| 		GER_himmler_chief_of_german_police = {
+ 11477| 			#picture = heinrich_himmler
+ 11478| 		
+ 11479| 			allowed = {
+ 11480| 				always = no
+ 11481| 			}
+ 11482| 
+ 11483| 			removal_cost = -1
+ 11484| 
+ 11485| 
+ 11486| 			modifier = {
+ 11487| 				# PP Cost
+ 11488| 				political_power_gain = -0.1
+ 11489| 
+ 11490| 				resistance_damage_to_garrison = -0.25
+ 11491| 				foreign_subversive_activites = -0.3
+ 11492| 				non_core_manpower = 0.02
+ 11493| 			}
+ 11494| 		}
+ 11495| 
+ 11496| 		GER_himmler_director_reich_security = { # Should match country leader trait GER_himmler_fuhrer_abwehr
+ 11497| 			#picture = heinrich_himmler
+ 11498| 		
+ 11499| 			allowed = {
+ 11500| 				always = no
+ 11501| 			}
+ 11502| 
+ 11503| 			removal_cost = -1
+ 11504| 
+ 11505| 
+ 11506| 			modifier = {
+ 11507| 				# PP Cost
+ 11508| 				political_power_gain = -0.3
+ 11509| 
+ 11510| 				resistance_damage_to_garrison = -0.25
+ 11511| 				foreign_subversive_activites = -0.3
+ 11512| 				non_core_manpower = 0.02
+ 11513| 
+ 11514| 				subversive_activites_upkeep = -0.25
+ 11515| 				operative_slot = 1
+ 11516| 				intelligence_agency_defense = 0.2
+ 11517| 				intel_from_combat_factor = 0.25
+ 11518| 			}
+ 11519| 		}
+ 11520| 
+ 11521| 		GER_himmler_reichsfuhrer_ss = { # Should match country leader trait GER_himmler_fuhrer_ss
+ 11522| 			#picture = heinrich_himmler
+ 11523| 		
+ 11524| 			allowed = {
+ 11525| 				always = no
+ 11526| 			}
+ 11527| 
+ 11528| 			removal_cost = -1
+ 11529| 
+ 11530| 
+ 11531| 			modifier = {
+ 11532| 				# PP Cost
+ 11533| 				political_power_gain = -0.3
+ 11534| 
+ 11535| 				resistance_damage_to_garrison = -0.25
+ 11536| 				foreign_subversive_activites = -0.3
+ 11537| 				non_core_manpower = 0.04
+ 11538| 
+ 11539| 				subversive_activites_upkeep = -0.25
+ 11540| 				operative_slot = 1
+ 11541| 				intelligence_agency_defense = 0.2
+ 11542| 				intel_from_combat_factor = 0.25
+ 11543| 
+ 11544| 				resistance_growth = -0.15
+ 11545| 				compliance_growth = -0.1
+ 11546| 				special_forces_cap = 0.05
+ 11547| 			}
+ 11548| 		}
+
+################################################################################
+# 第二部分：个人线国策的 completion_reward 原文（看 swap_ideas 怎么写）
+################################################################################
+
+====================================================================================================
+### GER_autonomous_organization_todt  （T1 -> T2 升官衔）
+### 文件：D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125\common\national_focus\germany.txt
+### 行：21532..21660
+====================================================================================================
+ 21532| 	focus = {
+ 21533| 		id = GER_autonomous_organization_todt
+ 21534| 		icon = GFX_focus_GER_autonomous_organization_todt
+ 21535| 		mutually_exclusive = { focus = GER_plenipotentiary_of_armaments focus = GER_plenipotentiary_of_the_four_year_plan }
+ 21536| 		prerequisite = { focus = GER_form_organization_todt }
+ 21537| 
+ 21538| 		text_icon = GER_inner_circle_focus_style
+ 21539| 
+ 21540| 		x = 0
+ 21541| 		y = 1
+ 21542| 		relative_position_id = GER_form_organization_todt
+ 21543| 		cost = @inner_circle_time_tier_2
+ 21544| 		
+ 21545| 		available = {
+ 21546| 			if = { #ADVISOR WORKING ON THE FOCUS (Show progress)
+ 21547| 				limit = {
+ 21548| 					has_country_flag = GER_autonomous_organization_todt_in_progress_flag
+ 21549| 				}
+ 21550| 				set_temp_variable = { temp_focus_days = @inner_circle_time_tier_2 } #For tooltip purposes
+ 21551| 				multiply_temp_variable = { temp_focus_days = 7 } #The constant uses focus cost which is in weeks, so convert to days
+ 21552| 				custom_override_tooltip = {
+ 21553| 					tooltip = {
+ 21554| 						localization_key = GER_inner_circle_focus_in_progress_tt
+ 21555| 						CHARACTER = GER_fritz_todt
+ 21556| 						FLAG_DAYS = [?GER_autonomous_organization_todt_in_progress_flag:days]
+ 21557| 					}
+ 21558| 					always = no 
+ 21559| 				}
+ 21560| 			}
+ 21561| 			else = { #NOT BEEN WORKED ON (Just Explain)
+ 21562| 				custom_override_tooltip = {
+ 21563| 					tooltip = {
+ 21564| 						localization_key = GER_focus_can_only_be_completed_by_advisor_tt
+ 21565| 						CHARACTER = GER_fritz_todt
+ 21566| 						FOCUS = GER_ascension_of_todt
+ 21567| 					}
+ 21568| 					always = no
+ 21569| 				}
+ 21570| 			}
+ 21571| 
+ 21572| 			if = {
+ 21573| 				limit = {
+ 21574| 					check_variable = { GER_industrialist_prevailed = 0 compare = not_equals }
+ 21575| 				}
+ 21576| 				if = {
+ 21577| 					limit = {
+ 21578| 						check_variable = { GER_industrialist_prevailed = 1 }
+ 21579| 					}
+ 21580| 					custom_override_tooltip = {
+ 21581| 						tooltip = {
+ 21582| 							localization_key = GER_industrialists_intrigue_prevailed_tt
+ 21583| 							PREVAILED_CHARACTER = GER_fritz_todt
+ 21584| 						}
+ 21585| 						always = yes
+ 21586| 					}
+ 21587| 				}
+ 21588| 				else_if = {
+ 21589| 					limit = {
+ 21590| 						check_variable = { GER_industrialist_prevailed = 2 }
+ 21591| 					}
+ 21592| 					custom_override_tooltip = {
+ 21593| 						tooltip = {
+ 21594| 							localization_key = GER_industrialists_intrigue_prevailed_tt
+ 21595| 							PREVAILED_CHARACTER = GER_albert_speer
+ 21596| 						}
+ 21597| 						always = no
+ 21598| 					}
+ 21599| 				}
+ 21600| 				else_if = {
+ 21601| 					limit = {
+ 21602| 						check_variable = { GER_industrialist_prevailed = 3 }
+ 21603| 					}
+ 21604| 					custom_override_tooltip = {
+ 21605| 						tooltip = {
+ 21606| 							localization_key = GER_industrialists_intrigue_prevailed_tt
+ 21607| 							PREVAILED_CHARACTER = GER_hermann_goring
+ 21608| 						}
+ 21609| 						always = no
+ 21610| 					}
+ 21611| 				}
+ 21612| 			}
+ 21613| 		}
+ 21614| 
+ 21615| 		search_filters = { FOCUS_FILTER_INNER_CIRCLE FOCUS_FILTER_POLITICAL_CHARACTER FOCUS_FILTER_INDUSTRY }
+ 21616| 
+ 21617| 		completion_reward = {
+ 21618| 			custom_effect_tooltip = {
+ 21619| 				localization_key = GER_ascended_character_trait_swap_tt
+ 21620| 				CHARACTER = GER_fritz_todt
+ 21621| 			}
+ 21622| 			swap_ideas = {
+ 21623| 				remove_idea = GER_todt_reich_engineer
+ 21624| 				add_idea = GER_todt_reich_minister_of_armaments
+ 21625| 			}
+ 21626| 
+ 21627| 			if = {
+ 21628| 				limit = {
+ 21629| 					has_idea = GER_organization_todt
+ 21630| 				}
+ 21631| 				swap_ideas = {
+ 21632| 					remove_idea = GER_organization_todt
+ 21633| 					add_idea = GER_organization_todt_improved
+ 21634| 				}
+ 21635| 			}
+ 21636| 			else = {
+ 21637| 				effect_tooltip = {
+ 21638| 					swap_ideas = {
+ 21639| 						remove_idea = GER_organization_todt
+ 21640| 						add_idea = GER_organization_todt_improved
+ 21641| 					}
+ 21642| 				}
+ 21643| 			}
+ 21644| 
+ 21645| 			custom_effect_tooltip = generic_skip_one_line_tt
+ 21646| 			custom_effect_tooltip = {
+ 21647| 				localization_key = GER_inner_circle_industrial_me_focuses_tt
+ 21648| 				FOCUS_1 = GER_plenipotentiary_of_armaments
+ 21649| 				FOCUS_2 = GER_plenipotentiary_of_the_four_year_plan
+ 21650| 			}
+ 21651| 		}
+ 21652| 	}
+ 21653| 
+ 21654| 	focus = {
+ 21655| 		id = GER_ascension_of_speer
+ 21656| 		icon = GFX_focus_GER_ascension_of_speer
+ 21657| 		prerequisite = { focus = GER_fuhrerprinzip }
+ 21658| 
+ 21659| 		x = 2
+ 21660| 		y = 0
+
+====================================================================================================
+### GER_expand_gestapo           （用 add_to_variable，看变量名）
+### 文件：D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125\common\national_focus\germany.txt
+### 行：22776..22850
+====================================================================================================
+ 22776| 	focus = {
+ 22777| 		id = GER_expand_gestapo
+ 22778| 		icon = GFX_focus_GER_expand_gestapo
+ 22779| 		prerequisite = { focus = GER_ascension_of_himmler }
+ 22780| 		mutually_exclusive = { focus = GER_expand_ss_security_duties }
+ 22781| 
+ 22782| 		text_icon = GER_inner_circle_focus_style
+ 22783| 
+ 22784| 		x = -1
+ 22785| 		y = 1
+ 22786| 		relative_position_id = GER_ascension_of_himmler
+ 22787| 		cost = @inner_circle_time_tier_1
+ 22788| 		
+ 22789| 		available = {
+ 22790| 			if = { #ADVISOR WORKING ON THE FOCUS (Show progress)
+ 22791| 				limit = {
+ 22792| 					has_country_flag = GER_expand_gestapo_in_progress_flag
+ 22793| 				}
+ 22794| 				set_temp_variable = { temp_focus_days = @inner_circle_time_tier_1 } #For tooltip purposes
+ 22795| 				multiply_temp_variable = { temp_focus_days = 7 } #The constant uses focus cost which is in weeks, so convert to days
+ 22796| 				custom_override_tooltip = {
+ 22797| 					tooltip = {
+ 22798| 						localization_key = GER_inner_circle_focus_in_progress_tt
+ 22799| 						CHARACTER = GER_heinrich_himmler
+ 22800| 						FLAG_DAYS = [?GER_expand_gestapo_in_progress_flag:days]
+ 22801| 					}
+ 22802| 					always = no 
+ 22803| 				}
+ 22804| 			}
+ 22805| 			else = { #NOT BEEN WORKED ON (Just Explain)
+ 22806| 				custom_override_tooltip = {
+ 22807| 					tooltip = {
+ 22808| 						localization_key = GER_focus_can_only_be_completed_by_advisor_tt
+ 22809| 						CHARACTER = GER_heinrich_himmler
+ 22810| 						FOCUS = GER_ascension_of_himmler
+ 22811| 					}
+ 22812| 					always = no
+ 22813| 				}
+ 22814| 			}
+ 22815| 		}
+ 22816| 
+ 22817| 		search_filters = { FOCUS_FILTER_INNER_CIRCLE FOCUS_FILTER_INDUSTRY }
+ 22818| 
+ 22819| 		completion_reward = {
+ 22820| 			GER_add_or_modify_military_intelligence_service = yes
+ 22821| 			if = {
+ 22822| 				limit = {
+ 22823| 					has_dlc = "La Resistance"
+ 22824| 				}
+ 22825| 				add_to_variable = { 
+ 22826| 					GER_military_intelligence_service_intelligence_agency_defense = 0.15
+ 22827| 					tooltip = intelligence_agency_defense_tt
+ 22828| 				}
+ 22829| 				add_to_variable = { 
+ 22830| 					GER_military_intelligence_service_agency_upgrade_time = -0.2
+ 22831| 					tooltip = agency_upgrade_time_tt
+ 22832| 				}
+ 22833| 				add_to_variable = { 
+ 22834| 					GER_military_intelligence_root_out_resistance_effectiveness_factor = 0.2
+ 22835| 					tooltip = root_out_resistance_effectiveness_factor_tt
+ 22836| 				}
+ 22837| 			}
+ 22838| 			else = {
+ 22839| 				add_to_variable = { 
+ 22840| 					GER_military_intelligence_service_encryption_factor = 0.1
+ 22841| 					tooltip = encryption_factor_tt
+ 22842| 				}
+ 22843| 			}
+ 22844| 		}
+ 22845| 	}
+ 22846| 
+ 22847| 	focus = {
+ 22848| 		id = GER_absorb_the_abwehr
+ 22849| 		icon = GFX_focus_GER_absorb_the_abwehr
+ 22850| 		prerequisite = { focus = GER_expand_gestapo }
+
+====================================================================================================
+### GER_wunderwaffe              （tier_3，看 add_to_variable）
+### 文件：D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125\common\national_focus\germany.txt
+### 行：22003..22140
+====================================================================================================
+ 22003| 	focus = {
+ 22004| 		id = GER_wunderwaffe
+ 22005| 		icon = GFX_focus_GER_wunderwaffe_inner_circle
+ 22006| 		prerequisite = { focus = GER_autonomous_organization_todt focus = GER_plenipotentiary_of_armaments}
+ 22007| 
+ 22008| 		text_icon = GER_inner_circle_focus_style
+ 22009| 
+ 22010| 		x = 1
+ 22011| 		y = 1
+ 22012| 		relative_position_id = GER_autonomous_organization_todt
+ 22013| 		cost = @inner_circle_time_tier_3
+ 22014| 		
+ 22015| 		available = {
+ 22016| 			if = { #ADVISOR WORKING ON THE FOCUS (Show progress)
+ 22017| 				limit = {
+ 22018| 					has_country_flag = GER_wunderwaffe_in_progress_flag
+ 22019| 				}
+ 22020| 				set_temp_variable = { temp_focus_days = @inner_circle_time_tier_3 } #For tooltip purposes
+ 22021| 				multiply_temp_variable = { temp_focus_days = 7 } #The constant uses focus cost which is in weeks, so convert to days
+ 22022| 				if = { #TODT working on it
+ 22023| 					limit = {
+ 22024| 						check_variable = { GER_wonder_weapons_focus_advisor = 1 }
+ 22025| 					}
+ 22026| 					custom_override_tooltip = {
+ 22027| 						tooltip = {
+ 22028| 							localization_key = GER_inner_circle_focus_in_progress_tt
+ 22029| 							CHARACTER = GER_fritz_todt
+ 22030| 							FLAG_DAYS = [?GER_wunderwaffe_in_progress_flag:days]
+ 22031| 						}
+ 22032| 						always = no 
+ 22033| 					}
+ 22034| 				}
+ 22035| 				else = { #SPEER working on it
+ 22036| 					custom_override_tooltip = {
+ 22037| 						tooltip = {
+ 22038| 							localization_key = GER_inner_circle_focus_in_progress_tt
+ 22039| 							CHARACTER = GER_albert_speer
+ 22040| 							FLAG_DAYS = [?GER_wunderwaffe_in_progress_flag:days]
+ 22041| 						}
+ 22042| 						always = no 
+ 22043| 					}
+ 22044| 				}
+ 22045| 			}
+ 22046| 			else = { #NOT BEEN WORKED ON (Just Explain)
+ 22047| 				custom_override_tooltip = {
+ 22048| 					tooltip = {
+ 22049| 						localization_key = GER_focus_can_only_be_completed_by_advisor_multiple_tt
+ 22050| 						CHARACTER = GER_fritz_todt
+ 22051| 						FOCUS = GER_ascension_of_todt
+ 22052| 						CHARACTER_2 = GER_albert_speer
+ 22053| 						FOCUS_2 = GER_ascension_of_speer
+ 22054| 					}
+ 22055| 					always = no
+ 22056| 				}
+ 22057| 			}
+ 22058| 		}
+ 22059| 
+ 22060| 		search_filters = { FOCUS_FILTER_INNER_CIRCLE FOCUS_FILTER_MILITARY_CHARACTER FOCUS_FILTER_RESEARCH }
+ 22061| 
+ 22062| 		completion_reward = {
+ 22063| 			random_scientist = {
+ 22064| 				limit = {
+ 22065| 					has_scientist_level = {
+ 22066| 						specialization = specialization_air
+ 22067| 						level > 0
+ 22068| 					}
+ 22069| 				}
+ 22070| 				add_scientist_level = {
+ 22071| 					specialization = specialization_air
+ 22072| 					level = 1
+ 22073| 				}
+ 22074| 			}
+ 22075| 
+ 22076| 			random_scientist = {
+ 22077| 				limit = {
+ 22078| 					has_scientist_level = {
+ 22079| 						specialization = specialization_nuclear
+ 22080| 						level > 0
+ 22081| 					}
+ 22082| 				}
+ 22083| 				add_scientist_level = {
+ 22084| 					specialization = specialization_nuclear
+ 22085| 					level = 1
+ 22086| 				}
+ 22087| 			}
+ 22088| 			
+ 22089| 			random_scientist = {
+ 22090| 				limit = {
+ 22091| 					has_scientist_level = {
+ 22092| 						specialization = specialization_land
+ 22093| 						level > 0
+ 22094| 					}
+ 22095| 				}
+ 22096| 				add_scientist_level = {
+ 22097| 					specialization = specialization_land
+ 22098| 					level = 1
+ 22099| 				}
+ 22100| 			}
+ 22101| 
+ 22102| 			custom_effect_tooltip = generic_skip_one_line_tt
+ 22103| 
+ 22104| 			custom_effect_tooltip = available_military_high_command
+ 22105| 			show_ideas_tooltip = GER_walter_dornberger
+ 22106| 			custom_effect_tooltip = generic_skip_one_line_tt
+ 22107| 			custom_effect_tooltip = GER_wunderwaffe_dornberger_trait_tt
+ 22108| 			hidden_effect = {
+ 22109| 				remove_trait = {
+ 22110| 					character = GER_walter_dornberger
+ 22111| 					slot = high_command
+ 22112| 					trait = GER_head_of_the_missile_department
+ 22113| 				}
+ 22114| 				add_trait = {
+ 22115| 					character = GER_walter_dornberger
+ 22116| 					slot = high_command
+ 22117| 					trait = GER_head_of_experimental_weapons
+ 22118| 				}
+ 22119| 			}
+ 22120| 
+ 22121| 			custom_effect_tooltip = generic_skip_one_line_tt
+ 22122| 
+ 22123| 			GER_add_or_modify_wunderwaffen = yes
+ 22124| 			add_to_variable = { 
+ 22125| 				GER_wunderwaffen_special_project_speed_factor = 0.05
+ 22126| 				tooltip = special_project_speed_factor_tt
+ 22127| 			}
+ 22128| 			add_to_variable = { 
+ 22129| 				GER_wunderwaffen_production_speed_facility_factor = 0.1
+ 22130| 				tooltip = production_speed_facility_factor_tt
+ 22131| 			}
+ 22132| 		}
+ 22133| 	}
+ 22134| 
+ 22135| 	focus = {
+ 22136| 		id = GER_ascension_of_goring
+ 22137| 		icon = GFX_focus_GER_ascension_of_goring
+ 22138| 		prerequisite = { focus = GER_fuhrerprinzip }
+ 22139| 
+ 22140| 		x = 2
+
+################################################################################
+# 第三部分：所有 GER_* 动态修正（原始块）——看哪些是容器、哪些吃变量
+################################################################################
+
+--- [原版] aat_dynamic_modifiers.txt  ::  GER_poor_iron_quality  L31
+    GER_poor_iron_quality = {
+    	enable = { always = yes }
+    	icon = GFX_modifiers_SOV_civilian_labor_in_defense
+    
+    	state_resource_steel = iron_ore_scale
+    }
+
+--- [原版] wuw_dynamic_modifiers.txt  ::  GER_communist_intel_modifier  L840
+    GER_communist_intel_modifier = {
+    	enable = { always = yes }
+    	icon = GFX_idea_generic_spy_intel
+    
+    	drift_defence_factor = GER_communist_intel_drift_defence_factor
+    	communism_drift = GER_communist_intel_communism_drift
+    	subversive_activites_upkeep = GER_communist_intel_subversive_activities_upkeep
+    	intel_network_gain_factor = GER_communist_intel_intel_network_gain
+    	decryption_factor = GER_communist_intel_decryption_factor
+    	encryption_factor = GER_communist_intel_encryption_factor
+    }
+
+--- [原版] wuw_dynamic_modifiers.txt  ::  GER_stasi_modifier  L852
+    GER_stasi_modifier = {
+    	enable = { always = yes }
+    	icon = GFX_idea_generic_spy_intel
+    
+    	remove_trigger = {
+    		NOT = { 
+    			has_government = communism
+    		}
+    	}
+    
+    	drift_defence_factor = GER_communist_intel_drift_defence_factor
+    	communism_drift = GER_communist_intel_communism_drift
+    	operative_slot = GER_communist_intel_operative_slot
+    	stability_factor = GER_communist_intel_stability_factor 
+    	operation_cost = GER_communist_intel_operation_cost
+    	subversive_activites_upkeep = GER_communist_intel_subversive_activities_upkeep
+    	intel_network_gain_factor = GER_communist_intel_intel_network_gain
+    	decryption_factor = GER_communist_intel_decryption_factor
+    	encryption_factor = GER_communist_intel_encryption_factor
+    }
+
+--- [原版] wuw_dynamic_modifiers.txt  ::  GER_politburo_modifier  L873
+    GER_politburo_modifier = {
+    	enable = { always = yes }
+    	icon = GFX_idea_trotskyite_plot_purged
+    
+    	remove_trigger = {
+    		NOT = { 
+    			has_government = communism
+    		}
+    	}
+    
+    	defensive_war_stability_factor = GER_politburo_defensive_war_stability_factor
+    	offensive_war_stability_factor = GER_politburo_offensive_war_stability_factor
+    	party_popularity_stability_factor = GER_politburo_party_popularity_stability_factor
+    	weekly_manpower = GER_politburo_weekly_manpower
+    	stability_factor = GER_politburo_stability_factor
+    	conscription = GER_politburo_conscription
+    	democratic_drift = GER_politburo_democratic_drift
+    	political_power_factor = GER_politburo_political_power_factor
+    	resistance_growth = GER_politburo_resistance_growth
+    	compliance_growth = GER_politburo_compliance_growth
+    	subjects_autonomy_gain = GER_politburo_subjects_autonomy_gain
+    	mobilization_laws_cost_factor = GER_politburo_mobilization_laws_cost_factor
+    	conscription_factor = GER_politburo_conscription_factor
+    }
+
+--- [原版] wuw_dynamic_modifiers.txt  ::  GER_industrial_relocation_resources  L898
+    GER_industrial_relocation_resources = {
+    	enable = { always = yes }
+    	icon = GFX_idea_ARG_economic_reactivation
+    
+    	remove_trigger = {
+    		OR = {
+    			has_war_with = SOV
+    			SOV = {
+    				OR = {
+    					exists = no
+    					is_subject = yes
+    				}
+    			}
+    		}
+    		
+    	}
+    
+    	country_resource_oil = GER_industrial_relocation_resources_country_resource_oil
+    	country_resource_tungsten = GER_industrial_relocation_resources_country_resource_tungsten
+    	country_resource_chromium = GER_industrial_relocation_resources_country_resource_chromium
+    }
+
+--- [原版] wuw_dynamic_modifiers.txt  ::  GER_the_inner_circle_dm  L941
+    GER_the_inner_circle_dm = {
+    	icon = GFX_idea_generic_fascism_drift_2
+    	enable = { always = yes }
+    	remove_trigger = {
+    		NOT = { has_government = fascism }
+    	}
+    
+    	custom_modifier_tooltip = GER_the_inner_circle_dm_tt
+    	#custom_modifier_tooltip = idea_desc|GER_todt_reich_engineer
+    }
+
+--- [原版] wuw_dynamic_modifiers.txt  ::  GER_overburdened_state_modifier  L1040
+    GER_overburdened_state_modifier = {
+    	enable = { always = yes }
+    	icon = GFX_modifiers_BRA_neglected_state
+    
+    	remove_trigger = {
+    		NOT = { controller = { original_tag = GER } }
+    	}
+    
+    	state_production_speed_buildings_factor = -0.25
+    	state_resources_factor = -0.25
+    	local_factories = -0.25
+    	compliance_growth = -0.1
+    	resistance_growth = 0.1
+    }
+
+--- [原版] wuw_dynamic_modifiers.txt  ::  GER_nationalized_industries_modifier  L1055
+    GER_nationalized_industries_modifier = { 
+    	enable = { always = yes } 
+    	icon = GFX_modifiers_SOV_civilian_labor_in_defense
+    
+    	remove_trigger = {
+    		NOT = { controller = { original_tag = GER } } 
+    	}
+    
+    	state_resources_factor = 0.1
+    	state_production_speed_buildings_factor = 0.1
+    }
+
+--- [原版] wuw_dynamic_modifiers.txt  ::  GER_reichs_labor_initiative_modifier  L1067
+    GER_reichs_labor_initiative_modifier = { 
+    	enable = { always = yes } 
+    	icon = GFX_modifiers_SOV_civilian_labor_in_defense
+    
+    	remove_trigger = {
+    		ROOT = { NOT = { is_core_of = ROOT.controller } } # ROOT refers to the state on which the modifier is added
+    	}
+    
+    	state_production_speed_buildings_factor = 0.1
+    }
+
+--- [原版] wuw_dynamic_modifiers.txt  ::  GER_public_works_modifier  L1078
+    GER_public_works_modifier = { 
+    	enable = { always = yes } 
+    	icon = GFX_modifiers_SOV_civilian_labor_in_defense
+    
+    	remove_trigger = {
+    		ROOT = { NOT = { is_core_of = ROOT.controller } } # ROOT refers to the state on which the modifier is added
+    	}
+    
+    	state_production_speed_buildings_factor = 0.1
+    }
+
+--- [原版] wuw_dynamic_modifiers.txt  ::  GER_four_year_plan_initiative_modifier  L1089
+    GER_four_year_plan_initiative_modifier = { 
+    	enable = { always = yes } 
+    	icon = GFX_modifiers_SOV_civilian_labor_in_defense
+    
+    	remove_trigger = {
+    		ROOT = { NOT = { is_core_of = ROOT.controller } } # ROOT refers to the state on which the modifier is added
+    	}
+    
+    	state_resources_factor = 0.1
+    }
+
+--- [原版] wuw_dynamic_modifiers.txt  ::  GER_south_east_asian_construction_modifier  L1100
+    GER_south_east_asian_construction_modifier = {
+    	enable = { always = yes}
+    	icon = GFX_modifiers_generic_construction
+    
+    	remove_trigger = {
+    		ROOT = { NOT = { controller = { original_tag = GER } } } 
+    	}
+    
+    	state_production_speed_infrastructure_factor = 0.1
+    	state_production_speed_bunker_factor = 0.1
+    	compliance_gain = -0.05
+    }
+
+--- [原版] wuw_dynamic_modifiers.txt  ::  GER_south_east_asian_resources_modifier  L1113
+    GER_south_east_asian_resources_modifier = {
+    	enable = { always = yes}
+    	icon = GFX_modifiers_SOV_civilian_labor_in_defense
+    
+    	remove_trigger = {
+    		ROOT = { NOT = { controller = { original_tag = GER } } } 
+    	}
+    
+    	local_building_slots_factor = -0.2
+    	state_resources_factor = 0.25
+    	compliance_gain = -0.05
+    }
+
+--- [原版] wuw_dynamic_modifiers.txt  ::  GER_sentinels_of_the_pacific_modifier  L1126
+    GER_sentinels_of_the_pacific_modifier = {
+    	enable = { always = yes }
+    	icon = GFX_modifiers_generic_construction
+    
+    	remove_trigger = {
+    		ROOT = { NOT = { controller = { original_tag = GER } } }
+    	}
+    
+    	state_production_speed_naval_base_factor = 0.1
+    	state_production_speed_coastal_bunker_factor = 0.1
+    }
+
+--- [原版] wuw_dynamic_modifiers.txt  ::  GER_qingdao_reintegrated_modifier  L1138
+    GER_qingdao_reintegrated_modifier = {
+    	enable = { always = yes }
+    	icon = GFX_modifiers_generic_construction
+    
+    	remove_trigger = {
+    		ROOT = { NOT = { controller = { original_tag = GER } } }
+    	}
+    
+    	state_production_speed_naval_base_factor = 0.25
+    	state_production_speed_coastal_bunker_factor = 0.25
+    	state_production_speed_infrastructure_factor = 0.25
+    	state_production_speed_air_base_factor = 0.25
+    	state_production_speed_bunker_factor = 0.25
+    
+    }
+
+--- [原版] wuw_dynamic_modifiers.txt  ::  GER_proletariat_uprising_modifier  L1154
+    GER_proletariat_uprising_modifier = {
+    	enable = { always = yes }
+    	icon = GFX_modifiers_GER_socialist_movement
+    
+    	remove_trigger = {
+    		OR = {
+    			GER = {
+    				has_government = communism
+    			}
+    			ROOT = { 
+    				NOT = {
+    					controller = { original_tag = GER }
+    				}
+    			}
+    		}
+    	}
+    
+    	state_production_speed_buildings_factor = -0.25
+    	state_resources_factor = -0.25
+    	local_factories = -0.25
+    	recruitable_population_factor = 0.15
+    }
+
+--- [原版] wuw_dynamic_modifiers.txt  ::  GER_state_supporting_resistance_modifier  L1177
+    GER_state_supporting_resistance_modifier = {
+    	enable = { always = yes  }
+    	icon = GFX_modifiers_bul_macedonian_revolutionaries
+    	resistance_damage_to_garrison = 0.15
+    	resistance_activity = 0.2
+    	resistance_growth = 0.25
+    	resistance_target = 0.8
+    	compliance_growth = -0.1
+    }
+
+--- [原版] wuw_dynamic_modifiers.txt  ::  GER_lokot_autonomy_modifier  L1775
+    GER_lokot_autonomy_modifier = { 
+    	enable = { always = yes } 
+    
+    	icon = GFX_modifiers_GER_lokot_autonomy
+    
+    	remove_trigger = {
+    		ROOT = { is_owned_and_controlled_by = SOV } # ROOT refers to the state on which the modifier is added
+    	}
+    
+    	recruitable_population_factor = 0.1
+    	resistance_target = -0.1
+    	mobilization_speed = 0.05
+    	local_resources = 0.15
+    	local_supplies = 0.1
+    
+    }
+
+--- [R56] r56_GER.txt  ::  GER_catholic_autonomy  L28
+    GER_catholic_autonomy = {
+    	enable = { always = yes }
+    	remove_trigger = {
+    		owner = {
+    			NOT = { original_tag = GER }
+    		}
+    	}
+    	icon = GFX_modifiers_GER_lokot_autonomy
+    	
+    	recruitable_population_factor = -0.2
+    	local_building_slots_factor = -0.1
+    	state_resources_factor = -0.1
+    	state_production_speed_buildings_factor = -0.025
+    }
+
+--- [R56] r56_GER.txt  ::  GER_broken_national_socialist_fervor  L43
+    GER_broken_national_socialist_fervor = {
+    	icon = GFX_idea_FIN_german_threat
+    	remove_trigger = { has_civil_war = no }
+    	war_support_factor = GER_bnsf_stats
+    	army_attack_factor = GER_bnsf_stats
+    	army_defence_factor = GER_bnsf_stats
+    }
+
+--- [R56] r56_GER.txt  ::  GER_vdp  L50
+    GER_vdp = {
+    	icon = GFX_idea_GER_fan_prussian_militarism
+    	party_popularity_stability_factor = GER_vdp_party_stab_factor
+    	political_power_factor = GER_vdp_pp_factor
+    	war_support_factor = GER_vdp_ws_factor
+    	conscription_factor = GER_vdp_conscription_factor
+    	stability_factor = GER_vdp_stab_factor 
+    	war_support_weekly = GER_vdp_ws_weekly_factor
+    	production_speed_arms_factory_factor = GER_vdp_mil_speed_factor
+    	consumer_goods_factor = GER_vdp_consumer_factor
+    	neutrality_drift = GER_vdp_neutrality_factor
+    	army_core_attack_factor = GER_vdp_core_stats_factor
+    }
+
+--- [R56] r56_GER.txt  ::  GER_prioritized_rheinland  L63
+    GER_prioritized_rheinland = {
+    	remove_trigger = {
+    		owner = { 
+    			OR = {
+    				NOT = { has_completed_focus = GER_zentrum_in_coalition}
+    				NOT = {
+    					original_tag = GER
+    				}
+    			}
+    		}
+    	}
+    	icon = GFX_modifiers_generic_city_construction
+    	local_factories = 0.1
+    	local_manpower = 0.05
+    	state_resources_factor = 0.05
+    	state_production_speed_buildings_factor = 0.1
+    }
+
+--- [R56] r56_GER.txt  ::  GER_democracy_rebuilt_in_from  L80
+    GER_democracy_rebuilt_in_from = {
+    	remove_trigger = {
+    		owner = { 
+    			NOT = {
+    				OR = {
+    					original_tag = GER
+    					original_tag = PRE
+    
+    				}
+    			}
+    		}
+    	}
+    	icon = GFX_modifiers_generic_industry
+    	local_factories = 0.05
+    	local_manpower = 0.05
+    	state_resources_factor = 0.05
+    	enemy_local_supplies = -0.25
+    	enemy_attrition = 0.01
+    	compliance_growth = -0.25
+    	resistance_growth = 0.25
+    }
+
+--- [R56] r56_GER.txt  ::  GER_antifa_state_modifier  L101
+    GER_antifa_state_modifier = {
+    	icon = GFX_modifiers_GER_socialist_movement
+    	local_factories = -0.05
+    	local_manpower = -0.15
+    	local_supplies = -0.5
+    	state_resources_factor = -0.05
+    }
+
+--- [R56] r56_GER.txt  ::  GER_sa_state_modifier  L108
+    GER_sa_state_modifier = {
+    	icon = GFX_modifiers_generic_fascist_corporatism
+    	local_factories = -0.05
+    	local_manpower = -0.15
+    	local_supplies = -0.5
+    	state_resources_factor = -0.05
+    }
+
+--- [R56] r56_GER.txt  ::  GER_sa_state_modifier_upgraded  L115
+    GER_sa_state_modifier_upgraded = {
+    	icon = GFX_modifiers_generic_fascist_corporatism
+    	local_factories = -0.1
+    	local_supplies = -0.25
+    	state_resources_factor = -0.1
+    	enemy_army_speed_factor = -0.25
+    	enemy_attrition = 0.25
+    	resistance_damage_to_garrison = 0.25
+    	army_core_defence_factor = 0.1
+    	army_core_attack_factor = 0.1
+    }
+
+--- [R56] r56_GER.txt  ::  GER_coalition_cost_modifier  L126
+    GER_coalition_cost_modifier = {
+    	icon = GFX_idea_generic_disjointed_gov
+    	political_power_cost = GER_coalition_cost
+    }
+
+--- [R56] wuw_dynamic_modifiers.txt  ::  GER_communist_intel_modifier  L907
+    GER_communist_intel_modifier = {
+    	enable = { always = yes }
+    	icon = GFX_idea_generic_spy_intel
+    
+    	drift_defence_factor = GER_communist_intel_drift_defence_factor
+    	communism_drift = GER_communist_intel_communism_drift
+    	subversive_activites_upkeep = GER_communist_intel_subversive_activities_upkeep
+    	intel_network_gain_factor = GER_communist_intel_intel_network_gain
+    	decryption_factor = GER_communist_intel_decryption_factor
+    	encryption_factor = GER_communist_intel_encryption_factor
+    }
+
+--- [R56] wuw_dynamic_modifiers.txt  ::  GER_stasi_modifier  L919
+    GER_stasi_modifier = {
+    	enable = { always = yes }
+    	icon = GFX_idea_generic_spy_intel
+    
+    	remove_trigger = {
+    		NOT = { 
+    			has_government = communism
+    		}
+    	}
+    
+    	drift_defence_factor = GER_communist_intel_drift_defence_factor
+    	communism_drift = GER_communist_intel_communism_drift
+    	operative_slot = GER_communist_intel_operative_slot
+    	stability_factor = GER_communist_intel_stability_factor 
+    	operation_cost = GER_communist_intel_operation_cost
+    	subversive_activites_upkeep = GER_communist_intel_subversive_activities_upkeep
+    	intel_network_gain_factor = GER_communist_intel_intel_network_gain
+    	decryption_factor = GER_communist_intel_decryption_factor
+    	encryption_factor = GER_communist_intel_encryption_factor
+    }
+
+--- [R56] wuw_dynamic_modifiers.txt  ::  GER_politburo_modifier  L940
+    GER_politburo_modifier = {
+    	enable = { always = yes }
+    	icon = GFX_idea_trotskyite_plot_purged
+    
+    	remove_trigger = {
+    		NOT = { 
+    			has_government = communism
+    		}
+    	}
+    
+    	defensive_war_stability_factor = GER_politburo_defensive_war_stability_factor
+    	offensive_war_stability_factor = GER_politburo_offensive_war_stability_factor
+    	party_popularity_stability_factor = GER_politburo_party_popularity_stability_factor
+    	weekly_manpower = GER_politburo_weekly_manpower
+    	stability_factor = GER_politburo_stability_factor
+    	conscription = GER_politburo_conscription
+    	democratic_drift = GER_politburo_democratic_drift
+    	political_power_factor = GER_politburo_political_power_factor
+    	resistance_growth = GER_politburo_resistance_growth
+    	compliance_growth = GER_politburo_compliance_growth
+    	subjects_autonomy_gain = GER_politburo_subjects_autonomy_gain
+    	mobilization_laws_cost_factor = GER_politburo_mobilization_laws_cost_factor
+    	conscription_factor = GER_politburo_conscription_factor
+    }
+
+--- [R56] wuw_dynamic_modifiers.txt  ::  GER_industrial_relocation_resources  L965
+    GER_industrial_relocation_resources = {
+    	enable = { always = yes }
+    	icon = GFX_idea_ARG_economic_reactivation
+    
+    	remove_trigger = {
+    		OR = {
+    			has_war_with = SOV
+    			SOV = {
+    				OR = {
+    					exists = no
+    					is_subject = yes
+    				}
+    			}
+    		}
+    		
+    	}
+    
+    	country_resource_oil = GER_industrial_relocation_resources_country_resource_oil
+    	country_resource_tungsten = GER_industrial_relocation_resources_country_resource_tungsten
+    	country_resource_chromium = GER_industrial_relocation_resources_country_resource_chromium
+    }
+
+--- [R56] wuw_dynamic_modifiers.txt  ::  GER_the_inner_circle_dm  L1008
+    GER_the_inner_circle_dm = {
+    	icon = GFX_idea_generic_fascism_drift_2
+    	enable = { always = yes }
+    	remove_trigger = {
+    		NOT = { has_government = fascism }
+    	}
+    
+    	custom_modifier_tooltip = GER_the_inner_circle_dm_tt
+    	#custom_modifier_tooltip = idea_desc|GER_todt_reich_engineer
+    }
+
+--- [R56] wuw_dynamic_modifiers.txt  ::  GER_overburdened_state_modifier  L1107
+    GER_overburdened_state_modifier = {
+    	enable = { always = yes }
+    	icon = GFX_modifiers_BRA_neglected_state
+    
+    	remove_trigger = {
+    		NOT = { controller = { original_tag = GER } }
+    	}
+    
+    	state_production_speed_buildings_factor = -0.25
+    	state_resources_factor = -0.25
+    	local_factories = -0.25
+    	compliance_growth = -0.1
+    	resistance_growth = 0.1
+    }
+
+--- [R56] wuw_dynamic_modifiers.txt  ::  GER_nationalized_industries_modifier  L1122
+    GER_nationalized_industries_modifier = { 
+    	enable = { always = yes } 
+    	icon = GFX_modifiers_SOV_civilian_labor_in_defense
+    
+    	remove_trigger = {
+    		NOT = { controller = { original_tag = GER } } 
+    	}
+    
+    	state_resources_factor = 0.1
+    	state_production_speed_buildings_factor = 0.1
+    }
+
+--- [R56] wuw_dynamic_modifiers.txt  ::  GER_reichs_labor_initiative_modifier  L1134
+    GER_reichs_labor_initiative_modifier = { 
+    	enable = { always = yes } 
+    	icon = GFX_modifiers_SOV_civilian_labor_in_defense
+    
+    	remove_trigger = {
+    		ROOT = { NOT = { is_core_of = ROOT.controller } } # ROOT refers to the state on which the modifier is added
+    	}
+    
+    	state_production_speed_buildings_factor = 0.1
+    }
+
+--- [R56] wuw_dynamic_modifiers.txt  ::  GER_public_works_modifier  L1145
+    GER_public_works_modifier = { 
+    	enable = { always = yes } 
+    	icon = GFX_modifiers_SOV_civilian_labor_in_defense
+    
+    	remove_trigger = {
+    		ROOT = { NOT = { is_core_of = ROOT.controller } } # ROOT refers to the state on which the modifier is added
+    	}
+    
+    	state_production_speed_buildings_factor = 0.1
+    }
+
+--- [R56] wuw_dynamic_modifiers.txt  ::  GER_four_year_plan_initiative_modifier  L1156
+    GER_four_year_plan_initiative_modifier = { 
+    	enable = { always = yes } 
+    	icon = GFX_modifiers_SOV_civilian_labor_in_defense
+    
+    	remove_trigger = {
+    		ROOT = { NOT = { is_core_of = ROOT.controller } } # ROOT refers to the state on which the modifier is added
+    	}
+    
+    	state_resources_factor = 0.1
+    }
+
+--- [R56] wuw_dynamic_modifiers.txt  ::  GER_south_east_asian_construction_modifier  L1167
+    GER_south_east_asian_construction_modifier = {
+    	enable = { always = yes}
+    	icon = GFX_modifiers_generic_construction
+    
+    	remove_trigger = {
+    		ROOT = { NOT = { controller = { original_tag = GER } } } 
+    	}
+    
+    	state_production_speed_infrastructure_factor = 0.1
+    	state_production_speed_bunker_factor = 0.1
+    	compliance_gain = -0.05
+    }
+
+--- [R56] wuw_dynamic_modifiers.txt  ::  GER_south_east_asian_resources_modifier  L1180
+    GER_south_east_asian_resources_modifier = {
+    	enable = { always = yes}
+    	icon = GFX_modifiers_SOV_civilian_labor_in_defense
+    
+    	remove_trigger = {
+    		ROOT = { NOT = { controller = { original_tag = GER } } } 
+    	}
+    
+    	local_building_slots_factor = -0.2
+    	state_resources_factor = 0.25
+    	compliance_gain = -0.05
+    }
+
+--- [R56] wuw_dynamic_modifiers.txt  ::  GER_sentinels_of_the_pacific_modifier  L1193
+    GER_sentinels_of_the_pacific_modifier = {
+    	enable = { always = yes }
+    	icon = GFX_modifiers_generic_construction
+    
+    	remove_trigger = {
+    		ROOT = { NOT = { controller = { original_tag = GER } } }
+    	}
+    
+    	state_production_speed_naval_base_factor = 0.1
+    	state_production_speed_coastal_bunker_factor = 0.1
+    }
+
+--- [R56] wuw_dynamic_modifiers.txt  ::  GER_qingdao_reintegrated_modifier  L1205
+    GER_qingdao_reintegrated_modifier = {
+    	enable = { always = yes }
+    	icon = GFX_modifiers_generic_construction
+    
+    	remove_trigger = {
+    		ROOT = { NOT = { controller = { original_tag = GER } } }
+    	}
+    
+    	state_production_speed_naval_base_factor = 0.25
+    	state_production_speed_coastal_bunker_factor = 0.25
+    	state_production_speed_infrastructure_factor = 0.25
+    	state_production_speed_air_base_factor = 0.25
+    	state_production_speed_bunker_factor = 0.25
+    
+    }
+
+--- [R56] wuw_dynamic_modifiers.txt  ::  GER_proletariat_uprising_modifier  L1221
+    GER_proletariat_uprising_modifier = {
+    	enable = { always = yes }
+    	icon = GFX_modifiers_GER_socialist_movement
+    
+    	remove_trigger = {
+    		OR = {
+    			GER = {
+    				has_government = communism
+    			}
+    			ROOT = { 
+    				NOT = {
+    					controller = { original_tag = GER }
+    				}
+    			}
+    		}
+    	}
+    
+    	state_production_speed_buildings_factor = -0.25
+    	state_resources_factor = -0.25
+    	local_factories = -0.25
+    	recruitable_population_factor = 0.15
+    }
+
+--- [R56] wuw_dynamic_modifiers.txt  ::  GER_state_supporting_resistance_modifier  L1244
+    GER_state_supporting_resistance_modifier = {
+    	enable = { always = yes  }
+    	icon = GFX_modifiers_bul_macedonian_revolutionaries
+    	resistance_damage_to_garrison = 0.15
+    	resistance_activity = 0.2
+    	resistance_growth = 0.25
+    	resistance_target = 0.8
+    	compliance_growth = -0.1
+    }
+
+--- [R56] wuw_dynamic_modifiers.txt  ::  GER_lokot_autonomy_modifier  L1842
+    GER_lokot_autonomy_modifier = { 
+    	enable = { always = yes } 
+    
+    	icon = GFX_modifiers_GER_lokot_autonomy
+    
+    	remove_trigger = {
+    		ROOT = { is_owned_and_controlled_by = SOV } # ROOT refers to the state on which the modifier is added
+    	}
+    
+    	recruitable_population_factor = 0.1
+    	resistance_target = -0.1
+    	mobilization_speed = 0.05
+    	local_resources = 0.15
+    	local_supplies = 0.1
+    
+    }

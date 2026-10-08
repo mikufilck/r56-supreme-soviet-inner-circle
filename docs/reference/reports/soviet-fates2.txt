@@ -1,0 +1,27 @@
+﻿==================== Khrushchev ====================
+  ? 下载失败或内容过小：D:\Users\xuwei\PycharmProjects\heart_of_Iron\tmp\probe-fates\Khrushchev.html
+
+==================== Malenkov ====================
+  ? 下载失败或内容过小：D:\Users\xuwei\PycharmProjects\heart_of_Iron\tmp\probe-fates\Malenkov.html
+
+==================== Molotov ====================
+  ? 下载失败或内容过小：D:\Users\xuwei\PycharmProjects\heart_of_Iron\tmp\probe-fates\Molotov.html
+
+==================== Voroshilov ====================
+  ? 下载失败或内容过小：D:\Users\xuwei\PycharmProjects\heart_of_Iron\tmp\probe-fates\Voroshilov.html
+
+==================== Yagoda ====================
+  ? 下载失败或内容过小：D:\Users\xuwei\PycharmProjects\heart_of_Iron\tmp\probe-fates\Yagoda.html
+
+==================== Yezhov ====================
+  ? 下载失败或内容过小：D:\Users\xuwei\PycharmProjects\heart_of_Iron\tmp\probe-fates\Yezhov.html
+
+==================== Beria ====================
+  ? 下载失败或内容过小：D:\Users\xuwei\PycharmProjects\heart_of_Iron\tmp\probe-fates\Beria.html
+
+==================== Kaganovich ====================
+  ? 下载失败或内容过小：D:\Users\xuwei\PycharmProjects\heart_of_Iron\tmp\probe-fates\Kaganovich.html
+
+==================== MoscowTrials ====================
+  ? 下载失败或内容过小：D:\Users\xuwei\PycharmProjects\heart_of_Iron\tmp\probe-fates\MoscowTrials.html
+

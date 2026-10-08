@@ -1,0 +1,183 @@
+==== SOP 第 0 步 · 斯米尔加（Idx 10）====
+
+==================== 原版 ====================
+  --- common （21 行命中 / 5 个文件）---
+    common\characters\SOV.txt:2770
+        SOV_ivar_smilga = {
+    common\characters\SOV.txt:2771
+        name = SOV_ivar_smilga
+    common\characters\SOV.txt:2774
+        small = "GFX_idea_SOV_ivar_smilga_imprisoned"
+    common\characters\SOV.txt:2792
+        idea_token = SOV_ivar_smilga
+    common\country_leader\00_traits.txt:7978
+        #Smilga
+    common\decisions\SOV.txt:16825
+        #Smilga
+    common\decisions\SOV.txt:16828
+        has_character = SOV_ivar_smilga
+    common\decisions\SOV.txt:16829
+        SOV_ivar_smilga = {
+    common\decisions\SOV.txt:16833
+        SOV_ivar_smilga = {
+    common\national_focus\soviet.txt:7532
+        #Smilga
+    common\national_focus\soviet.txt:7535
+        has_character = SOV_ivar_smilga
+    common\national_focus\soviet.txt:7537
+        SOV_ivar_smilga = {
+    common\national_focus\soviet.txt:8745
+        SOV_ivar_smilga = { #Already set as algined to left oppo
+    common\national_focus\soviet.txt:8750
+        small = "GFX_idea_SOV_ivar_smilga"
+    common\national_focus\soviet.txt:10018
+        SOV_ivar_smilga = { set_character_flag = SOV_potential_target_flag }
+    common\national_focus\soviet.txt:10392
+        IF = { limit = { has_character = SOV_ivar_smilga } SOV_ivar_smilga = { retire = yes } }
+    common\national_focus\soviet.txt:11503
+        SOV_ivar_smilga = {
+    common\national_focus\soviet.txt:11508
+        SOV_ivar_smilga = { clr_character_flag = SOV_imprisoned_flag }
+    common\national_focus\soviet.txt:11528
+        character = SOV_ivar_smilga
+    common\national_focus\soviet.txt:11530
+        small = "GFX_idea_SOV_ivar_smilga"
+    common\scripted_triggers\00_scripted_triggers_FR_loc.txt:839
+        has_country_leader = { character = SOV_ivar_smilga }
+  --- history （4 行命中 / 1 个文件）---
+    history\countries\SOV - Soviet union.txt:44
+        recruit_character = SOV_ivar_smilga
+    history\countries\SOV - Soviet union.txt:275
+        SOV_ivar_smilga = {
+    history\countries\SOV - Soviet union.txt:339
+        SOV_ivar_smilga = {
+    history\countries\SOV - Soviet union.txt:971
+        SOV_ivar_smilga = { SOV_purge_character_effect = yes }
+  --- localisation （30 行命中 / 20 个文件）---
+    localisation\braz_por\nsb_characters_l_braz_por.yml:81
+        SOV_ivar_smilga: "Ivar Smilga"
+    localisation\braz_por\nsb_focus_l_braz_por.yml:1599
+        SOV_integrate_smirnovs_bloc_tt: "§Y$SOV_ivan_smirnov$§!, §Y$SOV_ivar_smilga$§! e §Y$SOV_aleksandr_shlyapnikov$§! serão libertados da prisão e enviado ao exílio (§Gpersonagens em exílio não podem ser expurgados§!). Eles ficarão disponíveis como conselheiros quando a guerra civil começar.\nAdiciona apoio da oposição de esquerda em dois estados."
+    localisation\braz_por\nsb_focus_l_braz_por.yml:1723
+        SOV_eliminate_the_left_tt: "§Y$SOV_karl_radek$§!, §Y$SOV_ivar_smilga$§! e §Y$SOV_yevgeny_preobrazhensky$§! se tornarão alvos em potencial de um expurgo de Stalin."
+    localisation\english\nsb_characters_l_english.yml:83
+        SOV_ivar_smilga: "Ivar Smilga"
+    localisation\english\nsb_focus_l_english.yml:1620
+        SOV_integrate_smirnovs_bloc_tt: "§Y$SOV_ivan_smirnov$§!, §Y$SOV_ivar_smilga$§! and §Y$SOV_aleksandr_shlyapnikov$§! will be liberated from prison and sent into exile (§Gcharacters in exile cannot be purged§!). They will become available as advisors when the Civil War breaks out.\nAdds Left Opposition support in two states."
+    localisation\english\nsb_focus_l_english.yml:1746
+        SOV_eliminate_the_left_tt: "§Y$SOV_karl_radek$§!, §Y$SOV_ivar_smilga$§!, and §Y$SOV_yevgeny_preobrazhensky$§! become potential targets for a purge by Stalin."
+    localisation\french\nsb_characters_l_french.yml:81
+        SOV_ivar_smilga: "Ivar Smilga"
+    localisation\french\nsb_focus_l_french.yml:1599
+        SOV_integrate_smirnovs_bloc_tt: "§Y$SOV_ivan_smirnov$§!, §Y$SOV_ivar_smilga$§! et §Y$SOV_aleksandr_shlyapnikov$§! vont être libérés de prison et bannis (§Gles personnages en exil ne peuvent être victimes des purges§!). Lorsque la guerre civile éclatera, ils seront disponibles en tant que conseillers.\nDeux États vont soutenir l'Opposition de gauche."
+    localisation\french\nsb_focus_l_french.yml:1723
+        SOV_eliminate_the_left_tt: "§Y$SOV_karl_radek$§!, §Y$SOV_ivar_smilga$§! et §Y$SOV_yevgeny_preobrazhensky$§! vont devenir des cibles privilégiées pour les purges de Staline."
+    localisation\german\nsb_characters_l_german.yml:81
+        SOV_ivar_smilga: "Ivar Smilga"
+    localisation\german\nsb_focus_l_german.yml:1599
+        SOV_integrate_smirnovs_bloc_tt: "§Y$SOV_ivan_smirnov$§!, §Y$SOV_ivar_smilga$§! und §Y$SOV_aleksandr_shlyapnikov$§! werden aus dem Gefängnis befreit und ins Exil geschickt (§GCharaktere im Exil können nicht gesäubert werden§!). Sie werden als Berater verfügbar, sobald der Bürgerkrieg ausbricht.\nFügt in zwei Staaten Linke Opposition hinzu."
+    localisation\german\nsb_focus_l_german.yml:1723
+        SOV_eliminate_the_left_tt: "§Y$SOV_karl_radek$§!, §Y$SOV_ivar_smilga$§! und §Y$SOV_yevgeny_preobrazhensky$§! werden zu potenziellen Zielen für eine Säuberung durch Stalin."
+    localisation\japanese\nsb_characters_l_japanese.yml:81
+        SOV_ivar_smilga: "イーヴァル・スミールガ"
+    localisation\japanese\nsb_focus_l_japanese.yml:1599
+        SOV_integrate_smirnovs_bloc_tt: "§Y$SOV_ivan_smirnov$§!、§Y$SOV_ivar_smilga$§!、§Y$SOV_aleksandr_shlyapnikov$§!が釈放され、亡命するだろう（§G亡命中の人物は粛清されない§!）。彼らは内戦勃発後に顧問として利用可能になる。\n2つの州に左翼反対派への支持を追加する。"
+    localisation\japanese\nsb_focus_l_japanese.yml:1723
+        SOV_eliminate_the_left_tt: "§Y$SOV_karl_radek$§!、§Y$SOV_ivar_smilga$§!、§Y$SOV_yevgeny_preobrazhensky$§!がスターリンの粛清対象となる可能性がある。"
+    localisation\korean\nsb_characters_l_korean.yml:81
+        SOV_ivar_smilga: "이바르 스밀가"
+    localisation\korean\nsb_focus_l_korean.yml:1599
+        SOV_integrate_smirnovs_bloc_tt: "§Y$SOV_ivan_smirnov$§!, §Y$SOV_ivar_smilga$§!, §Y$SOV_aleksandr_shlyapnikov$§!(은)는 감옥에서 해방되어 망명 상태로 변경됩니다(§G망명 중인 인물은 숙청 대상이 되지 않습니다§!). 내전이 일어나면 이 인물들을 고문으로 활용할 수 있게 됩니다.\n두 개의 주에서 좌익반대파 지지를 얻습니다."
+    localisation\korean\nsb_focus_l_korean.yml:1723
+        SOV_eliminate_the_left_tt: "§Y$SOV_karl_radek$§!, §Y$SOV_ivar_smilga$§!, 그리고 §Y$SOV_yevgeny_preobrazhensky$§!가 스탈린의 잠재적 숙청 대상이 됩니다."
+    localisation\polish\nsb_characters_l_polish.yml:81
+        SOV_ivar_smilga: "Iwar Smilga"
+    localisation\polish\nsb_focus_l_polish.yml:1599
+        SOV_integrate_smirnovs_bloc_tt: "§Y$SOV_ivan_smirnov$§!, §Y$SOV_ivar_smilga$§! i §Y$SOV_aleksandr_shlyapnikov$§! zostaną uwolnieni z więzienia i uciekną na uchodźstwo (§Gpostaci na uchodźstwie nie można poddać czystce§!). Staną się dostępni jako doradcy po wybuchu wojny domowej.\nDodaje opozycyjną lewicę w dwóch regionach."
+    localisation\polish\nsb_focus_l_polish.yml:1723
+        SOV_eliminate_the_left_tt: "§Y$SOV_karl_radek$§!, §Y$SOV_ivar_smilga$§! i §Y$SOV_yevgeny_preobrazhensky$§! staną się potencjalnymi celami czystek Stalina."
+    localisation\russian\nsb_characters_l_russian.yml:81
+        SOV_ivar_smilga: "Ивар Смилга"
+    localisation\russian\nsb_focus_l_russian.yml:1599
+        SOV_integrate_smirnovs_bloc_tt: "§Y$SOV_ivan_smirnov$§!, §Y$SOV_ivar_smilga$§! и §Y$SOV_aleksandr_shlyapnikov$§! будут освобождены из тюрьмы и отправлены в изгнание (§Gперсонажи в изгнании не могут быть подвергнуты чистке§!). Они будут доступны в роли советников с началом гражданской войны.\nДобавляет поддержку левой оппозиции в два региона."
+    localisation\russian\nsb_focus_l_russian.yml:1723
+        SOV_eliminate_the_left_tt: "§Y$SOV_karl_radek$§!, §Y$SOV_ivar_smilga$§! и §Y$SOV_yevgeny_preobrazhensky$§! станут потенциальными целями сталинских чисток."
+    localisation\simp_chinese\nsb_characters_l_simp_chinese.yml:81
+        SOV_ivar_smilga: "伊瓦尔·斯米尔加"
+    localisation\simp_chinese\nsb_focus_l_simp_chinese.yml:1599
+        SOV_integrate_smirnovs_bloc_tt: "关押中的§Y$SOV_ivan_smirnov$§!，§Y$SOV_ivar_smilga$§!和§Y$SOV_aleksandr_shlyapnikov$§!将被流放（§G流放中的角色不会被清洗§!）。当内战开始时，他们将作为顾问可用。\n在两个地区增加左翼反对派的支持。"
+    localisation\simp_chinese\nsb_focus_l_simp_chinese.yml:1723
+        SOV_eliminate_the_left_tt: "§Y$SOV_karl_radek$§!，§Y$SOV_ivar_smilga$§!和§Y$SOV_yevgeny_preobrazhensky$§!成为斯大林的潜在清洗目标。"
+    localisation\spanish\nsb_characters_l_spanish.yml:81
+        SOV_ivar_smilga: "Ívar Smilga"
+    localisation\spanish\nsb_focus_l_spanish.yml:1599
+        SOV_integrate_smirnovs_bloc_tt: "§Y$SOV_ivan_smirnov$§!, §Y$SOV_ivar_smilga$§! y §Y$SOV_aleksandr_shlyapnikov$§! serán liberados y enviados al exilio (§Glos personajes en el exilio no pueden sufrir purgas§!). Estarán disponibles como consejeros cuando estalle la guerra civil.\nAñade apoyo a la oposición de izquierdas en dos Estados."
+    localisation\spanish\nsb_focus_l_spanish.yml:1723
+        SOV_eliminate_the_left_tt: "§Y$SOV_karl_radek$§!, §Y$SOV_ivar_smilga$§! y §Y$SOV_yevgeny_preobrazhensky$§! son objetivos potenciales de una purga de Stalin."
+  --- interface （4 行命中 / 1 个文件）---
+    interface\ideas.gfx:6171
+        name = "GFX_idea_SOV_ivar_smilga"
+    interface\ideas.gfx:6172
+        texturefile = "gfx/interface/ideas/idea_SOV_ivar_smilga.dds"
+    interface\ideas.gfx:6415
+        name = "GFX_idea_SOV_ivar_smilga_imprisoned"
+    interface\ideas.gfx:6416
+        texturefile = "gfx/interface/ideas/idea_SOV_ivar_smilga_imprisoned.dds"
+  --- gfx 下文件名命中（2 个）---
+    gfx\interface\ideas\idea_SOV_ivar_smilga.dds
+    gfx\interface\ideas\idea_SOV_ivar_smilga_imprisoned.dds
+
+==================== 原版-dlc ====================
+  --- gfx 下文件名命中（0 个）---
+
+==================== R56 ====================
+  --- common （20 行命中 / 5 个文件）---
+    common\characters\SOV.txt:4571
+        SOV_ivar_smilga = {
+    common\characters\SOV.txt:4572
+        name = SOV_ivar_smilga
+    common\characters\SOV.txt:4575
+        small = "GFX_idea_SOV_ivar_smilga_imprisoned"
+    common\characters\SOV.txt:4593
+        idea_token = SOV_ivar_smilga
+    common\country_leader\00_traits.txt:7982
+        #Smilga
+    common\decisions\SOV.txt:17496
+        #Smilga
+    common\decisions\SOV.txt:17499
+        has_character = SOV_ivar_smilga
+    common\decisions\SOV.txt:17500
+        SOV_ivar_smilga = {
+    common\decisions\SOV.txt:17504
+        SOV_ivar_smilga = {
+    common\national_focus\soviet.txt:8954
+        #Smilga
+    common\national_focus\soviet.txt:8957
+        has_character = SOV_ivar_smilga
+    common\national_focus\soviet.txt:8959
+        SOV_ivar_smilga = {
+    common\national_focus\soviet.txt:10634
+        SOV_ivar_smilga = { #Already set as algined to left oppo
+    common\national_focus\soviet.txt:10639
+        small = "GFX_idea_SOV_ivar_smilga"
+    common\national_focus\soviet.txt:12200
+        SOV_ivar_smilga = { set_character_flag = SOV_potential_target_flag }
+    common\national_focus\soviet.txt:12570
+        IF = { limit = { has_character = SOV_ivar_smilga } SOV_ivar_smilga = { retire = yes } }
+    common\national_focus\soviet.txt:13678
+        character = SOV_ivar_smilga
+    common\national_focus\soviet.txt:13680
+        small = "GFX_idea_SOV_ivar_smilga"
+    common\national_focus\soviet_old.txt:8739
+        SOV_ivar_smilga = {
+    common\national_focus\soviet_old.txt:8743
+        small = "GFX_idea_SOV_ivar_smilga"
+  --- history （3 行命中 / 1 个文件）---
+    history\countries\SOV - Soviet union.txt:106
+        recruit_character = SOV_ivar_smilga
+    history\countries\SOV - Soviet union.txt:488
+        SOV_ivar_smilga = {
+    history\countries\SOV - Soviet union.txt:563
+        SOV_ivar_smilga = {
+  --- gfx 下文件名命中（0 个）---
+

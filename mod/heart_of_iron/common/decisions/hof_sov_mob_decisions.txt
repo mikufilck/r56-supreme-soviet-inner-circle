@@ -1,0 +1,511 @@
+# ============================================================================
+#  hof_sov_mob_decisions.txt
+#  苏联「开战倒计时」决议（任务形态）
+#
+#  用户口径（2026-09-23 起）：
+#    ① 玩家扮演苏联时，与任意一个国家开战 ⇒ 触发倒计时，【不可取消】
+#    ② 和几个国家开战就有几条（一国一条）
+#    ③ ⭐ 「仍是有效的敌人」判据（2026-09-25 第二次订正，见下）
+#
+#  设计出处：docs/96-soviet-war-countdown-decision.md（查证）
+#            docs/97-soviet-war-countdown-design.md（设计 · 数值 · 逐字段说明）
+#  脚本编码：UTF-8 无 BOM + CRLF（AGENTS.md 硬性规则 3）
+#
+#  ⚠️⚠️ 「不可取消」为什么这么写（乙案，用户 2026-09-23 裁决）：
+#     写 `days_mission_timeout` ⇒ 变成 mission；mission 的 `available` **默认恒真**，
+#     恒真就会立刻执行 `complete_effect` 然后消失（官方 wiki 原文：
+#     "available … defaults to always true, making it disappear instantly"）。
+#     ⇒ 所以 `available = { always = no }` 是【必须的】，它让任务：
+#         · 一直挂在决议栏里倒计时（看得见）
+#         · 玩家永远点不动（点不了）
+#         · 只有 `timeout_effect` 会执行
+#     ⭐ 原版同型先例：common/decisions/AFG.txt 的 AFG_radical_students_countdown
+#        —— 它 `activation` 为真、`available` 为假，就是一个"看得见点不了的倒计时"。
+#
+#  🚩🚩 「仍是有效的敌人」判据与**节奏**的【九次】演变（v1〜v9，全记下来，别再走回头路）：
+#      ⭐ v11：禁止引擎自动挂载；开战钩子、周兜底和到期后一日事件逐目标校验后显式激活。
+#         `fire_only_once = yes`，显式激活会忽略它；有效敌国仍按 29 日任务 + 1 日间隔循环。
+#
+#    ⚠️ 术语先对齐（2026-09-25 查证，出处见下）——**中文界面里这两种说法指的不是同一个东西**：
+#      · **已停止抵抗** = 触发器 `has_capitulated`（`localisation/simp_chinese/triggers_l_simp_chinese.yml`
+#        `TRIGGER_HAS_CAPITULATED: "已停止抵抗"` / `..._HAS_NOT_CAPITULATED: "未停止抵抗"`；
+#        `documentation/triggers_documentation.md` "checks if the country has capitulated"）。
+#        ⭐ 它是【可逆】的：夺回首都且投降进度不高 ⇒ 状态会消失（`WAR_OVERVIEW_CAPITULATE_STATUS`）。
+#      · **投降** = 中文界面里说的是【投降进度 / 和平机制】：`TRIGGER_MORE_THAN_X_SURRENDER_PROGRESS`
+#        =「投降进度高于…」· `WAR_OVERVIEW_CAPITULATION_PROGRESS` =「投降进度」。
+#        ⭐ 两者是两层：`CAN_SURRENDER_FACTION_MEMBERS` =「只有当这场战争中该阵营的**全部主要成员国
+#        停止抵抗**时他们才会**投降**」⇒ **停止抵抗 ≠ 投降**。
+#      ⇒ 📌 本项目旧稿里写的「已投降」是**自造词**，游戏里那个状态的真名是「**已停止抵抗**」；
+#        本文件与全部相关文档自本轮起统一用「已停止抵抗」。
+#
+#    v1  ①不存在 ②不在交战            ⇒ 用户实测 bug：内战赢下、D08 那一路被打垮后卡牌反复起落
+#    v2  加 ③「`has_capitulated = yes`（已停止抵抗）」+ 新增 cancel_trigger
+#        ❌ 用户实测：卡牌【挂上后第二天就消失、隔一天又出现】（1 天闪一次）
+#           ⇒ 签名说明 `activation` 与 `cancel_trigger` **同时为真**：
+#             在 targeted decision 里 `cancel_trigger` 对 `FROM` 的绑定与 activation
+#             【不一致】(`NOT = { FROM = { … } }` 疑似恒真) ⇒ ⛔ 已把 cancel_trigger
+#             **整条删除**（2026-09-25）。
+#        ❌ 而且用户实测：D08 倒计时**照跑、照动员师** —— 说明第 ③ 条根本没挡住，
+#           因为 **D08 并没有进入 `has_capitulated`（已停止抵抗）状态**（控制台 `tag d08` 给出的是：
+#           「D08 has no provinces, switch would resign.」⇒ 它是**一个没有任何省的壳子 tag**）。
+#
+#    v3  ⭐【现行】把判据换成「**还拥有至少一个州**」——
+#        `any_owned_state = { always = yes }`（官方 triggers 文档：COUNTRY 作用域，
+#        "check if any owned state meets the trigger"；⚠️ 引擎**没有** `num_of_owned_states`）
+#        ⇒ 壳子 tag（0 州）立刻不再是有效敌人：卡牌消失、到点也不发兵；
+#          **已停止抵抗但仍有州的敌人照发**（用户口径「已投降但是还有州的可以发」）✅
+#        ⇒ 「已停止抵抗」这一条【不再单独判】—— 它被「还拥有州」包含
+#          （已停止抵抗且无州 ⇒ 无州 ⇒ 挡掉；已停止抵抗但仍有州 ⇒ 有州 ⇒ 照发）；
+#        ⭐ 而且**领土判定天然可逆**，不必去跟踪 `has_capitulated` 那个会来回翻转的状态。
+#
+#    v4  ⭐【现行】2026-09-25 用户第四轮实测：**和平状态、没有战争，卡还在；跑完又刷一个新的；
+#        图标是透明空白只有外框；100 个师哪都没去；苏联也没拿到（那 100 个师本来就是【敌方】的）**。
+#        ⇒ 两条结论（都有出处，不再是猜测）：
+#          ⛔ ① **`target_trigger` / `visible` 变假【不会撤掉】已经在跑的 mission** ⇒ 必须显式撤卡。
+#             ⇒ ✅ **把 `cancel_trigger` 加回来**，写成 **`activation` 的严格否定**（永不与它同真）。
+#                形状照原版：`common/decisions/AFG.txt` 的 `NOT = { FROM = { … } }`（30+ 处先例）。
+#          ⛔ ② **「拥有州」不等于「还活着」**：被占领时 `owner` 不变 ⇒ `any_owned_state` 一直为真，
+#             而 D08 **控制 0 省** ⇒ `capital_scope` 与 `random_owned_controlled_state` 都落不了地
+#             ⇒ `create_unit` 静默发不出兵（这就是"100 个师不知去哪了"的真相）。
+#             ⇒ ✅ 判据再加一条 **`any_controlled_state = { always = yes }`（还控制着至少一个州）**。
+#                ⭐ 出处：`triggers_documentation.md` → COUNTRY 作用域「check if any of the states
+#                   controlled by the scope country meets the trigger」；原版用了 **523 次**、R56 **859 次**。
+#        ⇒ 判据 = 4 条（exists · has_war_with · any_owned_state · 控制州计数），**六处一致**。
+#
+#    v5  ⭐【现行】2026-09-25 用户第五轮实测：「**挂载上去第二天就消失然后隔一天又挂载上去**」（1 天一闪回来了）。
+#        ⛔ 病因 = v4 那个 `cancel_trigger = { NOT = { FROM = { … } } }`：**mission 的 cancel_trigger 里 FROM 不可靠**
+#           （实测扫原版：525 个 mission，128 个有 cancel_trigger，**只有 2 个用 FROM 且其中一处被注释掉**）。
+#        ✅ v5 换思路（照用户口径「判定任务已完成…否则就不挂」）：
+#           ① `cancel_trigger = { always = no }`（原版 AST.txt 同形）⇒ 撤卡这条路彻底不用，**不可能再闪**。
+#           ② 🆕 **一次性闸门**：判据加 `NOT = { has_country_flag = hof_sov_mob_mustered }`；
+#              到点（`timeout_effect`）**无条件**给目标盖上这个 flag ⇒ **永不再挂**（循环 + 幽灵一并终结）。
+#           ③ 恢复条件 = **与它再次开战**（on_action 里 `clr_country_flag`）⇒ 语义 = **一场战争动员一次**。
+#              ⚠️ 想改成「每 30 天一轮」⇒ 把 set 改成 `set_country_flag = { flag = … days = 30 }` 即可（但会重新引入循环）。
+#
+#
+#    v6  ⭐【现行】2026-09-25 用户第六轮口径：「**悬停显示为空，那判定换为省吧，说不定州有什么 bug**」
+#        ⇒ ① 判据换成**计数式** `num_of_controlled_states > 0`（换一条引擎路径）·
+#           ② **卡面加上目标国名**（[FROM.GetName]，原版 targeted 决议的 _desc 就是这么写的，136 处先例）
+#              ⇒ 下次悬停就能直接看到「这张卡是谁的」，不再靠猜。
+#
+#
+#    v7  ⭐【现行】2026-09-25 第七轮（**根因终于查对**，前六轮都在错的作用域里打转）：
+#        ⛔ **`activation` / `visible` / `cancel_trigger` 是【拥有者作用域】** —— 原版在这些块里写**裸条件**
+#           （`INS_start_limited_war_malaya` 的 cancel_trigger = `OR = { exists = no  has_capitulated = yes … }`；
+#            `PER_core_egypt_state` 的 visible 讲的是拥有者自己的国策）⇒ 我们前六轮塞的 `FROM = { … }` **等于没写**：
+#             · `visible` 恒真 ⇒ 永不撤卡（幽灵卡）· `activation` 恒真 ⇒ 引擎天天自动重挂（跑完又回来）。
+#        ✅ v7 三件事：
+#           ① `activation = { always = no }`（照原版 INS/SIA）⇒ **引擎不再自动重挂**，开始与否全由我们的 on_action 决定；
+#           ② `visible = { always = yes }`（原版同形）+ **`cancel_trigger` 写成【裸条件 OR】**（照原版 INS/SIA）
+#              ⇒ 目标「不存在 / 丢光州 / 丢光控制」时**当场撤卡**（= 用户说的「本来就该马上终止」）；
+#           ③ `selectable_mission = no`（原版 68 处）⇒ 玩家点不动的正解（`available = always no` 继续保留做双保险）；
+#           ④ on_action 加 **`on_daily` 每日清扫**：目标一旦不算数 ⇒ 盖章（不再挂）+ `remove_targeted_decision` 撤卡。
+#
+#    v8  ⭐【历史】2026-09-25 第七轮追加 —— **两个真因**：
+#        ⛔ **`on_daily` 在本版本（1.19.2）【根本不存在】** ⇒ v7 那台「每日清扫」**一次都没跑过**
+#           （白和之后卡不撤的真因）。✅ 本版本**存在**的：`on_weekly` · `on_monthly` · `on_peace` ·
+#           `on_capitulation` · `on_uncapitulation` · `on_annex` · `on_civil_war_end` ·
+#           `on_state_control_changed` · `on_startup` · `on_war_relation_added`；
+#           ⛔ **不存在**：`on_daily` / `on_yearly` / `on_war_relation_removed`。
+#           ⇒ 清扫抽成 scripted effect `hof_sov_mob_janitor`（`common/scripted_effects/`），
+#             挂到四个**真实**钩子：`on_peace` / `on_annex` / `on_civil_war_end` / `on_weekly`。
+#        ⛔ **`fire_only_once = no` 时 mission 会自己重排下一轮** ⇒ v8 当时改成 `yes`（**那是错的，见 v9**）。
+#
+#    v9  ⭐⭐【现行】2026-09-25 第八轮 —— **用户口径「开战期间每个月都要发」+ 用户提的「两层校验」**：
+#        🔴 用户指出：「你这写的意思是开战之后只会发一百个师吗，但是我希望**开战期间每个月都给敌方发**」
+#           ⇒ v5 那个「无条件盖章」把周期变成了**一次性** —— 那是我自己选的、也没报告（判据 J 的教训）。
+#        ✅ **两层校验**（用户提的；原版逐字有先例）：
+#           **层 1【拥有者层 · 苏联自己】—— 裸条件、⛔ 无 `FROM`**：
+#               `activation = { is_ai = no  has_war = yes }`
+#               ★ 先例 = 原版 `ETH_time_based_war_escalation_mission`（`common/decisions/ETH.txt`）：
+#                 `activation = { has_war = yes  has_global_flag = …  check_variable = { … } }` ·
+#                 `available = { hidden_trigger = { always = no } }` · `selectable_mission = no` ·
+#                 `fire_only_once = no` · `days_mission_timeout = ETH_war_escalation_length` ·
+#                 `timeout_effect = { ETH_escalate_the_war_effect = yes … }`
+#                 ⇒ **一张周期性战事倒计时**，与我们要的「开战时反复计时」完全同形。
+#           **层 2【目标层 · 那个具体敌国】—— `FROM` 才 = 目标**：
+#               `target_trigger` · `timeout_effect` 的守卫 `if` · `hof_sov_mob_janitor` ·
+#               on_action 的两处 `activate_targeted_decision`。
+#        ✅ **`fire_only_once = no`** ⇒ 到点后引擎自动重排下一轮 = **每 30 天一轮**（开战期间）。
+#        ✅ **盖章只由清扫做、且只在「目标已不算数」时做** ⇒ 周期与防幽灵同时成立。
+#
+#  ⭐⭐ v9 的【两层校验】—— 谁在哪一层（写错作用域 = 六轮踩坑的根源）：
+#     层 1【拥有者层 · 裸条件】= 苏联自己：
+#         · `activation`     → `is_ai = no`（玩家控制）+ `has_war = yes`（还在打）
+#         · `visible`        → 恒真（拥有者自己的事）
+#         · `cancel_trigger` → 苏联自己没了立足之地 / 与所有人都停战 ⇒ 当场撤卡
+#     层 2【目标层 · `FROM` = 那个敌国】= 那一个敌国：
+#         · `target_trigger`（目标闸门：不匹配就不建卡）
+#         · `timeout_effect` 的 `if` 守卫（到点再判一次 ⇒ 不该发就一兵不发）
+#         · `hof_sov_mob_janitor`（清扫：不达标 ⇒ 盖章 + 撤卡；达标 ⇒ 清章）
+#         · on_actions 的两处 `activate_targeted_decision`（它**无视条件强制激活** ⇒ 必须自己带判据）
+#     ⛔ 层 1 里写 `FROM = { … }` **等于没写**（v1〜v6 六轮的幽灵卡 / 天天重挂 / 1 天一闪全由此而来）；
+#     ⛔ 层 2 里写裸条件同样没用（作用域错，判的是别的东西）。
+
+# ============================================================================
+hof_sov_mob_category = {
+
+	hof_sov_mob_war_countdown = {
+
+		icon = GFX_decision_generic_military
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		priority = 30
+
+		# ────────────────────────────────────────────────────────────────
+		#  目标：所有与苏联处于战争状态的国家 ⇒ 一国一条
+		#  ⚠️ 在 targeted decision 里【FROM = 目标国】，不是发起国
+		#     （官方 wiki："Despite what the names imply, FROM is the target"）
+		# ────────────────────────────────────────────────────────────────
+		target_array = enemies
+
+		# ── 「仍是有效的敌人」判据（v3 · 三处必须一致）──
+		#    ⚠️ 触发器名是 `has_war_with` —— `is_in_war_with` 在本版本【不存在】
+		#       （查 F:\Hearts of Iron IV\documentation\triggers_documentation.md：0 命中）
+		target_trigger = {
+			FROM = {
+				exists = yes
+				has_war_with = ROOT
+				# ⭐ v3 核心：必须【还拥有至少一个州】—— 0 州的壳子 tag（如内战输光的 D08）不是有效敌人
+				any_owned_state = {
+					always = yes
+				}
+				# ⭐⭐ v4（2026-09-25）：光"拥有州"不够，必须【还控制着至少一个州】
+				#    🚩 用户实测：D08 控制 0 省（控制台 `D08 has no provinces`）却仍挂着卡、还在循环动员
+				#       ⇒ **owns ≠ alive**：被占领时 owner 不变，所以「拥有州」一直为真。
+				#    ⇒ 没有立足之地的敌人【不挂卡 · 不发兵】（`create_unit` 也找不到落点）。
+				# ⭐ v6：计数式「还控制着至少一个州」（与 any_controlled_state 是两条不同的引擎路径）
+				num_of_controlled_states > 0
+				# ⭐ v5 一次性闸门：发过一次就盖章 ⇒ 永不再挂（这是"彻底终止"的保证）
+				NOT = {
+					has_country_flag = hof_sov_mob_mustered
+				}
+			}
+		}
+
+		target_root_trigger = {
+			is_ai = no
+		}
+
+		# ── v11：关闭拥有者层自动激活，逐目标显式启动 ──
+		#    `activation` / `visible` / `cancel_trigger` 是【拥有者作用域】（v7 查到的事实）：
+		#      · 原版 `INS_start_limited_war_malaya` 的 `cancel_trigger = { OR = { exists = no  has_capitulated = yes … } }`
+		#      · 原版 `PER_core_egypt_state` 的 `visible = { has_completed_focus = … }`（讲的是拥有者自己的事）
+		#    ⇒ 前六轮用 `FROM = { … }` 去包它们 ⇒ **等于没写**（幽灵卡 / 天天重挂 / 1 天一闪全是这么来的）。
+		#    ⭐⭐ 反而「拥有者自己的事」在这里写是**正确的**，而且原版逐字有先例：
+		#      `ETH_time_based_war_escalation_mission`（含 `days_mission_timeout` 的**周期型**战时倒计时）——
+		#        `activation = { has_war = yes  has_global_flag = …  check_variable = { … } }`
+		#        `available = { hidden_trigger = { always = no } }` · `selectable_mission = no` · `fire_only_once = no`
+		#      ⇒ **与我们要的「开战时反复计时」完全同形**，连「看得见点不了」都一模一样。
+		#    v9 的 is_ai + has_war 只判苏联仍在某场战争，不能限制 D08 或已白和的保加利亚。
+		activation = {
+			# 目标任务只能由经过逐目标校验的效果激活；拥有者层无法判某一个敌国。
+			always = no
+		}
+
+		# ── `visible`：**拥有者作用域**（原版 `PER_core_egypt_state` 的 visible 讲的是拥有者自己的事）
+		#    ⇒ 这里恒真即可；「目标不算数就撤卡」由 `cancel_trigger`（裸条件，见下）+ 我们自己的每日清扫承担。
+		#    ⛔ 别再往这里塞 `FROM = { … }` —— 那是前六轮幽灵卡的根因（FROM 在此不绑定目标 ⇒ 恒真）。
+		visible = {
+			always = yes
+		}
+
+		# ── ⛔⛔ `cancel_trigger`：**拥有者作用域 ⇒ 条件【裸写】**（照原版 `INS_start_limited_war_malaya` /
+		#    `SIA_start_limited_war_malaysia_burma`：`cancel_trigger = { OR = { exists = no  has_capitulated = yes
+		#    surrender_progress > var:global.… } }`）—— 原版全都不写 `FROM = { … }`。
+		#    ⭐ 前三条都刻意选**【对拥有者（苏联）恒为假】**的写法 ⇒ 就算作用域判断再错，也不会退化成「天天撤」：
+		#       · `exists = no`                        —— 苏联存在 ⇒ 假
+		#       · `NOT = { any_owned_state = … }`      —— 苏联有州 ⇒ 假
+		#       · `NOT = { num_of_controlled_states > 0 }` —— 苏联有立足之地 ⇒ 假
+		#    ⭐⭐ v9 新增第 4 条：`NOT = { has_war = yes }` —— **苏联和所有人都停战了** ⇒ 撤卡
+		#       （这也是【层 1 拥有者层】的写法：`has_war` 讲的是苏联自己，不是那个敌国）
+		#       ⚠️ 它只能表达「与所有人都不打了」；「与【这一个】敌国停战」无法在拥有者层表达
+		#          ⇒ 那件事交给 `hof_sov_mob_janitor`（挂 `on_peace`，作用域全在自己手里）。
+		#    ⚠️ 注意**不写** `NOT = { has_war_with = SOV }` —— 那条对苏联自己是【真】⇒ 会天天撤（v2/v4 的 1 天一闪）。
+		cancel_trigger = {
+			OR = {
+				exists = no
+				NOT = {
+					any_owned_state = {
+						always = yes
+					}
+				}
+				NOT = {
+					num_of_controlled_states > 0
+				}
+				NOT = {
+					has_war = yes
+				}
+			}
+		}
+
+
+		# ── 玩家点不了 ──
+		#    ⭐ v7：原版的「点不动」正解 = **`selectable_mission = no`**（原版用了 **68 处**：AST / PER / ITA / ETH / RAJ_GOE…），
+		#    再叠一层 `available = { always = no }`（防 mission 默认 `available` 恒真 ⇒ 立刻完成）。
+		selectable_mission = no
+
+		available = {
+			always = no
+		}
+
+		# ── 倒计时 29 天 ──
+		days_mission_timeout = 29
+
+		# v11：禁止到点后引擎自己重排；目标国隐藏事件在 1 日后重新激活。
+		# 引擎文档：activate_targeted_decision 忽略 fire_only_once，但已激活时不会重复激活。
+		fire_only_once = yes
+
+		is_good = no
+
+		# ────────────────────────────────────────────────────────────────
+		#  到点：按当年阶段给目标国 100 / 200 / 300 个师
+		# ────────────────────────────────────────────────────────────────
+		timeout_effect = {
+
+			# 给玩家看的一行干净提示；真实效果藏进 hidden_effect
+			if = {
+				limit = { date < 1941.1.1 }
+				custom_effect_tooltip = hof_sov_mob_result_tt
+			}
+			if = {
+				limit = { date > 1940.12.31 date < 1944.1.1 }
+				custom_effect_tooltip = hof_sov_mob_result_1941_tt
+			}
+			if = {
+				limit = { date > 1943.12.31 }
+				custom_effect_tooltip = hof_sov_mob_result_1944_tt
+			}
+
+			hidden_effect = {
+
+				# ⛔⛔ v9：这里**不再**盖章！
+				#    v5 曾在此处「无条件盖 `hof_sov_mob_mustered`」—— 那使卡变成【一次性】（发过一次就永不再挂），
+				#    与用户口径「**开战期间每个月都给敌方发**」直接矛盾 ⇒ 已删。
+				#    ✅ 现在盖这个章的唯一地方 = 清扫 `hof_sov_mob_janitor`，而且**只在目标已不算数时**盖
+				#       （不交战 / 无州 / 无立足之地）⇒ 周期与防幽灵同时成立。
+
+				# ⭐ 双保险（第 4 处判据）：到点后再确认一次「仍是有效的敌人」，
+				#    不该发就一兵不发 —— 不依赖 target_trigger / visible 的收回时机。
+				if = {
+					limit = {
+						FROM = {
+							exists = yes
+							has_war_with = ROOT
+							any_owned_state = {
+								always = yes
+							}
+							# ⭐ v6：计数式「还控制着至少一个州」（与 any_controlled_state 是两条不同的引擎路径）
+							num_of_controlled_states > 0
+							# ⭐ v5 建立、v9 改变语义：`hof_sov_mob_mustered` 现在 =「**这个目标已被清扫（已不算数）**」
+							#    ⇒ 有它就不挂；清扫在目标重新变得有效时会**清掉**它（或与它再次开战时由 on_action 清）。
+							NOT = {
+								has_country_flag = hof_sov_mob_mustered
+							}
+						}
+					}
+
+					FROM = {
+						# 第 29 日完成后，隔 1 日由隐藏事件重启下一轮。
+						# 周清扫若恰在间隔日运行，应跳过这个目标。
+						set_country_flag = { flag = hof_sov_mob_waiting days = 2 }
+						country_event = { id = hof_sov_mob.1 days = 1 }
+
+						# ── ① 师编制：每国只建一次（用该国自己的国家标记去重） ──
+						#    1941 年式 = 3×4 中型坦克 + 2×4 摩托化 = **20 营** + **2 个支援连**
+						#    ⭐ 2026-09-25 用户口径：原先那 5 个团属步兵炮营【移除】，改成两个支援连
+						#       id 出处：common/units/engineer.txt（工兵连）· common/units/recon.txt 的 mot_recon（摩托化侦察连）
+						#    ⚠️ 20 营落在 5×5 网格的 y = 0..3（第 5 行 y = 4 现在空着）
+						#       5×5 是引擎上限（defines: MAX_DIVISION_BRIGADE_WIDTH/HEIGHT = 5）
+						#    ⚠️ 支援连走【另一个网格】：本 mod 的 defines
+						#       MAX_DIVISION_SUPPORT_WIDTH = 1 · MAX_DIVISION_SUPPORT_HEIGHT = 7 ⇒ x 只能 0，y = 0 / 1
+						#    ⭐ 模板名 = 「1941摩托化坦克师」· 师经验度 = 第 4 级（Veterans / 久经沙场）
+						#       经验度换算（defines: UNIT_EXP_LEVELS = { 0.1, 0.3, 0.75, 0.9 } ⇒ 5 级）：
+						#         0 Green / 乌合之众 · 1 Trained / 训练初成 · 2 Regular / 训练有素
+						#         3 Seasoned / 经验丰富 = [0.75, 0.9) · ⭐ 4 Veterans / 久经沙场 = [0.9, 1.0]
+						#       ⇒ start_experience_factor 取 1（= 1.0 = 满经验）
+						#         ⭐ 原版 + R56 的 OOB 里有 90 处同样写 1 —— 有先例，不是自创写法
+						if = {
+							limit = {
+								date < 1941.1.1
+								NOT = { has_country_flag = hof_sov_mob_template_1941 }
+							}
+
+							set_country_flag = hof_sov_mob_template_1941
+
+							division_template = {
+								name = "1941摩托化坦克师"
+								is_locked = no
+								priority = 1
+
+								regiments = {
+									# 中型坦克营 3 列 × 4 行 = 12
+									medium_armor = { x = 0 y = 0 }
+									medium_armor = { x = 0 y = 1 }
+									medium_armor = { x = 0 y = 2 }
+									medium_armor = { x = 0 y = 3 }
+									medium_armor = { x = 1 y = 0 }
+									medium_armor = { x = 1 y = 1 }
+									medium_armor = { x = 1 y = 2 }
+									medium_armor = { x = 1 y = 3 }
+									medium_armor = { x = 2 y = 0 }
+									medium_armor = { x = 2 y = 1 }
+									medium_armor = { x = 2 y = 2 }
+									medium_armor = { x = 2 y = 3 }
+
+									# 摩托化步兵营 2 列 × 4 行 = 8
+									motorized = { x = 3 y = 0 }
+									motorized = { x = 3 y = 1 }
+									motorized = { x = 3 y = 2 }
+									motorized = { x = 3 y = 3 }
+									motorized = { x = 4 y = 0 }
+									motorized = { x = 4 y = 1 }
+									motorized = { x = 4 y = 2 }
+									motorized = { x = 4 y = 3 }
+								}
+
+								# 支援连 2 个（走的是另一个网格：x 只能 0，y 依次往下）
+								support = {
+									engineer = { x = 0 y = 0 }	# 工兵连
+									mot_recon = { x = 0 y = 1 }	# 摩托化侦察连
+								}
+							}
+						}
+
+						# 1941 年起的新模板：25 个战斗营 + 5 个支援连。
+						# 用独立标记创建，兼容已拥有旧式模板的存档。
+						if = {
+							limit = {
+								date > 1940.12.31
+								NOT = { has_country_flag = hof_sov_mob_template_mechanized_1941 }
+							}
+							set_country_flag = hof_sov_mob_template_mechanized_1941
+							division_template = {
+								name = "1941机械化坦克师"
+								is_locked = no
+								priority = 1
+								regiments = {
+									medium_armor = { x = 0 y = 0 }
+									medium_armor = { x = 0 y = 1 }
+									medium_armor = { x = 0 y = 2 }
+									medium_armor = { x = 0 y = 3 }
+									medium_armor = { x = 0 y = 4 }
+									medium_armor = { x = 1 y = 0 }
+									medium_armor = { x = 1 y = 1 }
+									medium_armor = { x = 1 y = 2 }
+									medium_armor = { x = 1 y = 3 }
+									medium_armor = { x = 1 y = 4 }
+									medium_armor = { x = 2 y = 0 }
+									medium_armor = { x = 2 y = 1 }
+									medium_armor = { x = 2 y = 2 }
+									medium_armor = { x = 2 y = 3 }
+									medium_armor = { x = 2 y = 4 }
+									mechanized = { x = 3 y = 0 }
+									mechanized = { x = 3 y = 1 }
+									mechanized = { x = 3 y = 2 }
+									mechanized = { x = 3 y = 3 }
+									mechanized = { x = 3 y = 4 }
+									mechanized = { x = 4 y = 0 }
+									mechanized = { x = 4 y = 1 }
+									mechanized = { x = 4 y = 2 }
+									mechanized = { x = 4 y = 3 }
+									mechanized = { x = 4 y = 4 }
+								}
+								support = {
+									engineer = { x = 0 y = 0 }
+									signal_company = { x = 0 y = 1 }
+									mot_recon = { x = 0 y = 2 }
+									logistics_company = { x = 0 y = 3 }
+									field_hospital = { x = 0 y = 4 }
+								}
+							}
+						}
+
+						# ── ② 按到期日期投放：1941 前 100、1941—1943 年 200、1944 起 300 ──
+						#    首选首都；首都若已不在自己控制下，退到任意一个自有且己方控制的州
+						#    ⚠️ create_unit 只能在 state 作用域里用
+						if = {
+							limit = {
+								capital_scope = {
+									is_controlled_by = PREV
+								}
+							}
+
+							capital_scope = {
+								if = {
+									limit = { date < 1941.1.1 }
+									create_unit = {
+										division = "division_template = \"1941摩托化坦克师\" start_experience_factor = 1 start_equipment_factor = 1"
+										owner = FROM
+										count = 100
+									}
+								}
+								if = {
+									limit = { date > 1940.12.31 date < 1944.1.1 }
+									create_unit = {
+										division = "division_template = \"1941机械化坦克师\" start_experience_factor = 1 start_equipment_factor = 1"
+										owner = FROM
+										count = 200
+									}
+								}
+								if = {
+									limit = { date > 1943.12.31 }
+									create_unit = {
+										division = "division_template = \"1941机械化坦克师\" start_experience_factor = 1 start_equipment_factor = 1"
+										owner = FROM
+										count = 300
+									}
+								}
+							}
+						}
+						else = {
+							random_owned_controlled_state = {
+								if = {
+									limit = { date < 1941.1.1 }
+									create_unit = {
+										division = "division_template = \"1941摩托化坦克师\" start_experience_factor = 1 start_equipment_factor = 1"
+										owner = FROM
+										count = 100
+									}
+								}
+								if = {
+									limit = { date > 1940.12.31 date < 1944.1.1 }
+									create_unit = {
+										division = "division_template = \"1941机械化坦克师\" start_experience_factor = 1 start_equipment_factor = 1"
+										owner = FROM
+										count = 200
+									}
+								}
+								if = {
+									limit = { date > 1943.12.31 }
+									create_unit = {
+										division = "division_template = \"1941机械化坦克师\" start_experience_factor = 1 start_equipment_factor = 1"
+										owner = FROM
+										count = 300
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		# ────────────────────────────────────────────────────────────────
+		#  ⛔⛔ **2026-09-25 起【没有】`cancel_trigger`**（v2 加过、当天就删了）。
+		#     用户实测：加上的效果是「卡牌挂上后第二天就消失、隔一天又出现」——
+		#     这个签名说明 `activation` 与 `cancel_trigger` **同时为真**：在 targeted decision 里
+		#     `cancel_trigger` 对 `FROM` 的绑定与 activation 不一致（`NOT = { FROM = { … } }` 疑似恒真）。
+		#     ⇒ 失败条件一律由【target_trigger / activation / visible / timeout_effect 守卫】承担，
+		#       **不依赖**未实测的 `cancel_trigger` 绑定语义。
+		# 失败【不给苏联任何惩罚】（用户 2026-09-23 明确否决"取消也罚"一案）
+		# ⇒ 刻意【不写】cancel_effect
+
+		ai_will_do = {
+			base = 0
+		}
+	}
+}

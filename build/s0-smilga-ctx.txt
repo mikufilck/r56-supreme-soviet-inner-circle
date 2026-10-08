@@ -1,0 +1,591 @@
+==== 斯米尔加（Idx 10）· 命中点上下文 ====
+
+==================== 原版 角色对象定义 ====================
+  F:\Hearts of Iron IV\common\characters\SOV.txt  (2755-2805)
+    2755: 					limit = {
+    2756: 						has_character_flag = SOV_exiled_flag
+    2757: 					}
+    2758: 					NOT = { has_character_flag = SOV_exiled_flag }
+    2759: 				}
+    2760: 			}
+    2761: 			traits = {
+    2762: 				head_directorate_of_new_buildings
+    2763: 			}
+    2764: 			ai_will_do = {
+    2765: 				base = 2
+    2766: 			}
+    2767: 		}
+    2768: 	}
+    2769: 
+    2770: 	SOV_ivar_smilga = {
+    2771: 		name = SOV_ivar_smilga
+    2772: 		portraits = {
+    2773: 			army = {
+    2774: 				small = "GFX_idea_SOV_ivar_smilga_imprisoned"
+    2775: 			}
+    2776: 		}
+    2777: 		allowed_civil_war = {
+    2778: 			OR = {
+    2779: 				AND = {
+    2780: 					tag = SOV
+    2781: 					has_government = communism
+    2782: 				}
+    2783: 				AND = {
+    2784: 					SOV_is_exiles = yes
+    2785: 					has_government = communism
+    2786: 				}
+    2787: 			}
+    2788: 		}
+    2789: 
+    2790: 		advisor = {
+    2791: 			slot = political_advisor
+    2792: 			idea_token = SOV_ivar_smilga
+    2793: 			allowed = {
+    2794: 				original_tag = SOV
+    2795: 			}
+    2796: 			visible = {
+    2797: 				NOT = {
+    2798: 					has_character_flag = SOV_character_purged_flag
+    2799: 				}
+    2800: 			}
+    2801: 			available = {
+    2802: 				OR = {
+    2803: 					has_completed_focus = SOV_integrate_smirnovs_bloc
+    2804: 					has_completed_focus = SOV_return_democracy_to_the_party
+    2805: 				}
+
+==================== 原版 recruit_character ====================
+  F:\Hearts of Iron IV\history\countries\SOV - Soviet union.txt  (36-50)
+      36: recruit_character = SOV_nikolay_yezhov
+      37: recruit_character = SOV_lavrenty_beriya
+      38: recruit_character = SOV_vsevolod_merkulov
+      39: recruit_character = SOV_vyacheslav_molotov
+      40: recruit_character = SOV_maksim_litvinov
+      41: 
+      42: recruit_character = SOV_lev_trotsky
+      43: recruit_character = SOV_ivan_smirnov
+      44: recruit_character = SOV_ivar_smilga
+      45: recruit_character = SOV_karl_radek
+      46: recruit_character = SOV_yevgeny_preobrazhensky
+      47: recruit_character = SOV_aleksandr_shlyapnikov
+      48: recruit_character = SOV_nikolay_bukharin
+      49: recruit_character = SOV_aleksey_rykov
+      50: recruit_character = SOV_mikhail_tomsky
+
+==================== 原版 角色初始化 A ====================
+  F:\Hearts of Iron IV\history\countries\SOV - Soviet union.txt  (265-300)
+     265: }
+     266: 
+     267: 
+     268: #Initialize character flags Part II (aka who's what)
+     269: SOV_lev_trotsky = {
+     270: 	set_character_flag = SOV_aligned_left_opposition_flag #Probably not needed, but just in case ;)
+     271: }
+     272: SOV_ivan_smirnov = {
+     273: 	set_character_flag = SOV_aligned_left_opposition_flag
+     274: }
+     275: SOV_ivar_smilga = {
+     276: 	set_character_flag = SOV_aligned_left_opposition_flag
+     277: }
+     278: SOV_karl_radek = {
+     279: 	set_character_flag = SOV_aligned_left_opposition_flag
+     280: }
+     281: SOV_yevgeny_preobrazhensky = {
+     282: 	set_character_flag = SOV_aligned_left_opposition_flag
+     283: }
+     284: SOV_aleksandr_shlyapnikov = {
+     285: 	set_character_flag = SOV_aligned_left_opposition_flag
+     286: }
+     287: SOV_nikolay_bukharin = {
+     288: 	set_character_flag = SOV_aligned_right_opposition_flag
+     289: }
+     290: SOV_aleksey_rykov = {
+     291: 	set_character_flag = SOV_aligned_right_opposition_flag
+     292: }
+     293: SOV_mikhail_tomsky = {
+     294: 	set_character_flag = SOV_aligned_right_opposition_flag
+     295: }
+     296: SOV_grigory_sokolnikov = {
+     297: 	set_character_flag = SOV_aligned_right_opposition_flag
+     298: }
+     299: #SOV_grigory_zinovyev -> Will be aligned with either left or right opposition via focus
+     300: #SOV_lev_kamenev -> Will be aligned with either left or right opposition via focus
+
+==================== 原版 角色初始化 B ====================
+  F:\Hearts of Iron IV\history\countries\SOV - Soviet union.txt  (330-350)
+     330: 		set_character_flag = SOV_aligned_the_exiles_flag
+     331: 		set_character_flag = SOV_exiled_military_advisor_flag
+     332: 	}
+     333: }
+     334: 
+     335: #Initialize character flags Part III (aka who's in prison)
+     336: SOV_ivan_smirnov = {
+     337: 	set_character_flag = SOV_imprisoned_flag
+     338: }
+     339: SOV_ivar_smilga = {
+     340: 	set_character_flag = SOV_imprisoned_flag
+     341: }
+     342: SOV_aleksandr_shlyapnikov = {
+     343: 	set_character_flag = SOV_imprisoned_flag
+     344: }
+     345: SOV_grigory_zinovyev = {
+     346: 	set_character_flag = SOV_imprisoned_flag
+     347: }
+     348: SOV_lev_kamenev = {
+     349: 	set_character_flag = SOV_imprisoned_flag
+     350: }
+
+==================== 原版 清洗 ====================
+  F:\Hearts of Iron IV\history\countries\SOV - Soviet union.txt  (960-980)
+     960: 	set_country_flag = SOV_second_moscow_trial_flag
+     961: 	set_country_flag = SOV_third_moscow_trial_flag
+     962: 	set_country_flag = SOV_trial_of_the_generals_flag
+     963: 
+     964: 	#PURGE ALL THESE PEOPLES
+     965: 	SOV_grigory_zinovyev = { SOV_purge_character_effect = yes }
+     966: 	SOV_lev_kamenev = { SOV_purge_character_effect = yes }
+     967: 	SOV_ivan_smirnov = { SOV_purge_character_effect = yes }
+     968: 	SOV_grigory_sokolnikov = { SOV_purge_character_effect = yes }
+     969: 	SOV_aleksandr_shlyapnikov = { SOV_purge_character_effect = yes }
+     970: 	SOV_karl_radek = { SOV_purge_character_effect = yes }
+     971: 	SOV_ivar_smilga = { SOV_purge_character_effect = yes }
+     972: 	SOV_yevgeny_preobrazhensky = { SOV_purge_character_effect = yes }
+     973: 	SOV_martemyan_ryutin = { SOV_purge_character_effect = yes }
+     974: 	if = {
+     975: 		limit = {
+     976: 			has_dlc = "No Step Back"
+     977: 		}
+     978: 		SOV_nikolay_ustryalov = { SOV_purge_character_effect = yes }
+     979: 	}
+     980: 	SOV_mikhail_tukhachevsky = { SOV_purge_character_effect = yes }
+
+==================== 原版 决议 ====================
+  F:\Hearts of Iron IV\common\decisions\SOV.txt  (16800-16850)
+   16800: 			}
+   16801: 		}
+   16802: 		cancel_if_not_visible = yes
+   16803: 
+   16804: 		timeout_effect = {
+   16805: 			set_country_flag = { flag = SOV_paranoia_random_purge_cooldown_from_focus_flag days = 15 } #Used to prevent random purges from popping up while this is active
+   16806: 			set_country_flag = SOV_second_moscow_trial_flag #Used to unlock the next purge focus
+   16807: 			SOV_paranoia_high_increase_effect = yes
+   16808: 			#HISTORICAL
+   16809: 			#Radek
+   16810: 			if = {
+   16811: 				limit = {
+   16812: 					has_character = SOV_karl_radek
+   16813: 					SOV_karl_radek = {
+   16814: 						SOV_character_can_be_purged = yes
+   16815: 					}
+   16816: 				}
+   16817: 				SOV_karl_radek = {
+   16818: 					set_character_flag = SOV_targeted_for_purge_flag
+   16819: 				}
+   16820: 			}
+   16821: 			else = {
+   16822: 				SOV_add_random_character_to_purge_targets_effect = yes
+   16823: 			}
+   16824: 			#NOT-SO-HISTORICAL
+   16825: 			#Smilga
+   16826: 			if = {
+   16827: 				limit = {
+   16828: 					has_character = SOV_ivar_smilga
+   16829: 					SOV_ivar_smilga = {
+   16830: 						SOV_character_can_be_purged = yes
+   16831: 					}
+   16832: 				}
+   16833: 				SOV_ivar_smilga = {
+   16834: 					set_character_flag = SOV_targeted_for_purge_flag
+   16835: 				}
+   16836: 			}
+   16837: 			else = {
+   16838: 				SOV_add_random_character_to_purge_targets_effect = yes
+   16839: 			}
+   16840: 			#Preobrazhensky
+   16841: 			if = {
+   16842: 				limit = {
+   16843: 					has_character = SOV_yevgeny_preobrazhensky
+   16844: 					SOV_yevgeny_preobrazhensky = {
+   16845: 						SOV_character_can_be_purged = yes
+   16846: 					}
+   16847: 				}
+   16848: 				SOV_yevgeny_preobrazhensky = {
+   16849: 					set_character_flag = SOV_targeted_for_purge_flag
+   16850: 				}
+
+==================== 原版 国策 A ====================
+  F:\Hearts of Iron IV\common\national_focus\soviet.txt  (7515-7550)
+    7515: 
+    7516: 			SOV_paranoia_high_increase_effect = yes
+    7517: 
+    7518: 			#HISTORICAL
+    7519: 			#Radek
+    7520: 			if = {
+    7521: 				limit = {
+    7522: 					has_character = SOV_karl_radek
+    7523: 				}
+    7524: 				SOV_karl_radek = {
+    7525: 					set_character_flag = SOV_targeted_for_purge_flag
+    7526: 				}
+    7527: 			}
+    7528: 			else = {
+    7529: 				SOV_add_random_character_to_purge_targets_effect = yes
+    7530: 			}
+    7531: 			#NOT-SO-HISTORICAL
+    7532: 			#Smilga
+    7533: 			if = {
+    7534: 				limit = {
+    7535: 					has_character = SOV_ivar_smilga
+    7536: 				}
+    7537: 				SOV_ivar_smilga = {
+    7538: 					set_character_flag = SOV_targeted_for_purge_flag
+    7539: 				}
+    7540: 			}
+    7541: 			else = {
+    7542: 				SOV_add_random_character_to_purge_targets_effect = yes
+    7543: 			}
+    7544: 			#Preobrazhensky
+    7545: 			if = {
+    7546: 				limit = {
+    7547: 					has_character = SOV_yevgeny_preobrazhensky
+    7548: 				}
+    7549: 				SOV_yevgeny_preobrazhensky = {
+    7550: 					set_character_flag = SOV_targeted_for_purge_flag
+
+==================== 原版 派系对齐 ====================
+  F:\Hearts of Iron IV\common\national_focus\soviet.txt  (8735-8760)
+    8735: 				#Liberate and exile advisors
+    8736: 				SOV_ivan_smirnov = { #Already set as algined to left oppo
+    8737: 					clr_character_flag = SOV_imprisoned_flag
+    8738: 					set_character_flag = SOV_exiled_flag
+    8739: 					set_portraits = {
+    8740: 						army = {
+    8741: 							small = "GFX_idea_SOV_ivan_smirnov"
+    8742: 						}
+    8743: 					}
+    8744: 				}
+    8745: 				SOV_ivar_smilga = { #Already set as algined to left oppo
+    8746: 					clr_character_flag = SOV_imprisoned_flag
+    8747: 					set_character_flag = SOV_exiled_flag
+    8748: 					set_portraits = {
+    8749: 						army = {
+    8750: 							small = "GFX_idea_SOV_ivar_smilga"
+    8751: 						}
+    8752: 					}
+    8753: 				}
+    8754: 				SOV_aleksandr_shlyapnikov = { #Already set as algined to left oppo
+    8755: 					clr_character_flag = SOV_imprisoned_flag
+    8756: 					set_character_flag = SOV_exiled_flag
+    8757: 					set_portraits = {
+    8758: 						army = {
+    8759: 							small = "GFX_idea_SOV_aleksandr_shlyapnikov"
+    8760: 						}
+
+==================== 原版 潜在目标 ====================
+  F:\Hearts of Iron IV\common\national_focus\soviet.txt  (10005-10030)
+   10005: 			SOV_soviet_civil_war_not_started = yes
+   10006: 		}
+   10007: 
+   10008: 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_SOV_POLITICAL_PARANOIA}
+   10009: 
+   10010: 		completion_reward = {
+   10011: 			SOV_paranoia_high_increase_effect = yes
+   10012: 			custom_effect_tooltip = SOV_eliminate_the_left_tt
+   10013: 			# custom_effect_tooltip = SOV_divert_purge_attention_tt
+   10014: 			custom_effect_tooltip = SOV_eliminate_opposition_factionalism_tt
+   10015: 			add_to_variable = { SOV_factionalism_political_power_factor = 0.05 }
+   10016: 
+   10017: 			SOV_karl_radek = { set_character_flag = SOV_potential_target_flag }
+   10018: 			SOV_ivar_smilga = { set_character_flag = SOV_potential_target_flag }
+   10019: 			SOV_yevgeny_preobrazhensky = { set_character_flag = SOV_potential_target_flag }
+   10020: 
+   10021: 		}
+   10022: 	}
+   10023: 
+   10024: 	focus = {
+   10025: 		id = SOV_concessions_to_foreign_powers
+   10026: 		icon = GFX_goal_generic_dangerous_deal
+   10027: 		prerequisite = { focus = SOV_reverse_the_collectivization_process }
+   10028: 		mutually_exclusive = { focus = SOV_covert_support_for_spanish_poum }
+   10029: 		x = -1
+   10030: 		y = 2
+
+==================== 原版 retire ====================
+  F:\Hearts of Iron IV\common\national_focus\soviet.txt  (10380-10400)
+   10380: 		relative_position_id = SOV_coup_detat
+   10381: 		cost = 10
+   10382: 		available = {
+   10383: 		}
+   10384: 
+   10385: 		search_filters = {FOCUS_FILTER_POLITICAL}
+   10386: 
+   10387: 		completion_reward = {
+   10388: 
+   10389: 			custom_effect_tooltip = SOV_right_purges_tt
+   10390: 			IF = { limit = { has_character = SOV_lev_trotsky } SOV_lev_trotsky = { retire = yes } }
+   10391: 			IF = { limit = { has_character = SOV_ivan_smirnov } SOV_ivan_smirnov = { retire = yes } }
+   10392: 			IF = { limit = { has_character = SOV_ivar_smilga } SOV_ivar_smilga = { retire = yes } }
+   10393: 			IF = { limit = { has_character = SOV_aleksandr_shlyapnikov } SOV_aleksandr_shlyapnikov = { retire = yes } }
+   10394: 			custom_effect_tooltip = SOV_left_right_purges_factionalism_tt
+   10395: 			set_variable = { SOV_factionalism_political_power_factor = 0 }
+   10396: 
+   10397: 			IF = {
+   10398: 				limit = { has_idea = trotskyite_plot_nsb}
+   10399: 				custom_effect_tooltip = generic_skip_one_line_tt
+   10400: 				remove_ideas = trotskyite_plot_nsb
+
+==================== 原版 释放 ====================
+  F:\Hearts of Iron IV\common\national_focus\soviet.txt  (11490-11545)
+   11490: 			}
+   11491: 			if = {
+   11492: 				limit = {
+   11493: 					SOV_ivan_smirnov = {
+   11494: 						NOT = { has_character_flag = SOV_character_purged_flag }
+   11495: 						has_character_flag = SOV_imprisoned_flag
+   11496: 					}
+   11497: 				}
+   11498: 				SOV_ivan_smirnov = { clr_character_flag = SOV_imprisoned_flag }
+   11499: 			}
+   11500: 
+   11501: 			if = {
+   11502: 				limit = {
+   11503: 					SOV_ivar_smilga = {
+   11504: 						NOT = { has_character_flag = SOV_character_purged_flag }
+   11505: 						has_character_flag = SOV_imprisoned_flag
+   11506: 					}
+   11507: 				}
+   11508: 				SOV_ivar_smilga = { clr_character_flag = SOV_imprisoned_flag }
+   11509: 			}
+   11510: 
+   11511: 			if = {
+   11512: 				limit = {
+   11513: 					SOV_aleksandr_shlyapnikov = {
+   11514: 						NOT = { has_character_flag = SOV_character_purged_flag }
+   11515: 						has_character_flag = SOV_imprisoned_flag
+   11516: 					}
+   11517: 				}
+   11518: 				SOV_aleksandr_shlyapnikov = {  clr_character_flag = SOV_imprisoned_flag }
+   11519: 			}
+   11520: 			hidden_effect = {
+   11521: 				set_portraits = {
+   11522: 					character = SOV_ivan_smirnov
+   11523: 					army = {
+   11524: 						small = "GFX_idea_SOV_ivan_smirnov"
+   11525: 					}
+   11526: 				}
+   11527: 				set_portraits = {
+   11528: 					character = SOV_ivar_smilga
+   11529: 					army = {
+   11530: 						small = "GFX_idea_SOV_ivar_smilga"
+   11531: 					}
+   11532: 				}
+   11533: 				set_portraits = {
+   11534: 					character = SOV_aleksandr_shlyapnikov
+   11535: 					army = {
+   11536: 						small = "GFX_idea_SOV_aleksandr_shlyapnikov"
+   11537: 					}
+   11538: 				}
+   11539: 				IF = {
+   11540: 					limit = { SOV_is_right_opposition = yes }
+   11541: 					every_character = {
+   11542: 						limit = {
+   11543: 							has_character_flag = SOV_exiled_flag
+   11544: 							has_character_flag = SOV_aligned_left_opposition_flag
+   11545: 						}
+
+==================== 原版 特质 ====================
+  F:\Hearts of Iron IV\common\country_leader\00_traits.txt  (7965-8000)
+    7965: 		army_morale_factor = 0.1
+    7966: 		compliance_growth_on_our_occupied_states = -0.15
+    7967: 	}
+    7968: 
+    7969: 	#Smirnov
+    7970: 	head_directorate_of_new_buildings = {
+    7971: 		random = no
+    7972: 		sprite = 13
+    7973: 		production_speed_buildings_factor = 0.1
+    7974: 		industrial_capacity_factory = 0.05
+    7975: 		industrial_capacity_dockyard = 0.05
+    7976: 	}
+    7977: 
+    7978: 	#Smilga
+    7979: 	soviet_economist = {
+    7980: 		random = no
+    7981: 		sprite = 13
+    7982: 		consumer_goods_factor = -0.10
+    7983: 		war_support_factor = 0.05
+    7984: 		production_speed_synthetic_refinery_factor = 0.15
+    7985: 		subversive_activites_upkeep = -0.05
+    7986: 	}
+    7987: 
+    7988: 	#Radek
+    7989: 	international_revolutionary = {
+    7990: 		random = no
+    7991: 		sprite = 13
+    7992: 		subversive_activites_upkeep = -0.1
+    7993: 		intel_network_gain_factor = 0.1
+    7994: 		boost_ideology_mission_factor = 0.1
+    7995: 		diplomatic_pressure_mission_factor = 0.1
+    7996: 	}
+    7997: 
+    7998: 	#Preobrazhensky
+    7999: 	ecomonist_publicist = {
+    8000: 		random = no
+
+==================== 原版 FR 触发器 ====================
+  F:\Hearts of Iron IV\common\scripted_triggers\00_scripted_triggers_FR_loc.txt  (825-850)
+     825: 		has_country_leader = { character = SOV_ivan_fedyuninsky }
+     826: 		has_country_leader = { character = SOV_aleksandr_gorbatov }
+     827: 		has_country_leader = { character = SOV_andrey_grechko }
+     828: 		has_country_leader = { character = SOV_arseny_golovko }
+     829: 		has_country_leader = { character = SOV_ivan_yumashev }
+     830: 		has_country_leader = { character = SOV_yakov_smushkevich }
+     831: 		has_country_leader = { character = SOV_aleksandr_golovanov }
+     832: 		has_country_leader = { character = SOV_igor_kurchatov }
+     833: 		has_country_leader = { character = SOV_aleksandr_yegorov }
+     834: 		has_country_leader = { character = SOV_aleksandr_novikov }
+     835: 		has_country_leader = { character = SOV_anton_denikin }
+     836: 		has_country_leader = { character = SOV_aleksandr_rodzyanko }
+     837: 		has_country_leader = { character = SOV_andrey_shkuro }
+     838: 		has_country_leader = { character = SOV_ivan_smirnov }
+     839: 		has_country_leader = { character = SOV_ivar_smilga }
+     840: 		has_country_leader = { character = SOV_yevgeny_preobrazhensky }
+     841: 		has_country_leader = { character = SOV_aleksandr_shlyapnikov }
+     842: 		has_country_leader = { character = SOV_aleksey_rykov }
+     843: 		has_country_leader = { character = SOV_anastasy_vonsyatsky }
+     844: 		has_country_leader = { character = SOV_aleksandr_kazembek }
+     845: 		has_country_leader = { character = SOV_aleksandr_prokofyev_seversky }
+     846: 		has_country_leader = { name = "Alexander Radó" } # Vanille
+     847: 		### SPR
+     848: 		has_country_leader = { character = SPR_alejandro_lerroux }
+     849: 		has_country_leader = { character = SPA_emilio_herrera }
+     850: 		has_country_leader = { character = SPR_antonio_cordon_garcia }
+
+==================== R56 旧版国策 ====================
+  D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125\common\national_focus\soviet_old.txt  (8725-8760)
+    8725: 							has_dlc = "No Compromise, No Surrender"
+    8726: 						}
+    8727: 					}
+    8728: 					country_event = { id = prc.66 days = 2 }
+    8729: 				}
+    8730: 			}
+    8731: 			SOV_ivan_smirnov = {
+    8732: 				clr_character_flag = SOV_imprisoned_flag
+    8733: 				set_portraits = {
+    8734: 					army = {
+    8735: 						small = "GFX_idea_SOV_ivan_smirnov"
+    8736: 					}
+    8737: 				}
+    8738: 			}
+    8739: 			SOV_ivar_smilga = {
+    8740: 				clr_character_flag = SOV_imprisoned_flag
+    8741: 				set_portraits = {
+    8742: 					army = {
+    8743: 						small = "GFX_idea_SOV_ivar_smilga"
+    8744: 					}
+    8745: 				}
+    8746: 			}
+    8747: 			SOV_aleksandr_shlyapnikov = {	#stupid trait so actually hidden
+    8748: 				clr_character_flag = SOV_imprisoned_flag
+    8749: 				set_portraits = {
+    8750: 					army = {
+    8751: 						small = "GFX_idea_SOV_aleksandr_shlyapnikov"
+    8752: 					}
+    8753: 				}
+    8754: 			}
+    8755: 		}
+    8756: 	}
+    8757: 	search_filters = { FOCUS_FILTER_POLITICAL }
+    8758: }
+    8759: focus = {
+    8760: 	id = SOV_solidify_internal_control
+
+==================== R56 角色对象定义 ====================
+  D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125\common\characters\SOV.txt  (4560-4600)
+    4560: 					NOT = {
+    4561: 						has_completed_focus = SOV_the_zinovyevite_terrorist_center
+    4562: 					}
+    4563: 				}
+    4564: 			}
+    4565: 			traits = {
+    4566: 				head_directorate_of_new_buildings
+    4567: 			}
+    4568: 		}
+    4569: 	}
+    4570: 
+    4571: 	SOV_ivar_smilga = {
+    4572: 		name = SOV_ivar_smilga
+    4573: 		portraits = {
+    4574: 			army = {
+    4575: 				small = "GFX_idea_SOV_ivar_smilga_imprisoned"
+    4576: 			}
+    4577: 		}
+    4578: 		allowed_civil_war = {
+    4579: 			OR = {
+    4580: 				AND = {
+    4581: 					tag = SOV
+    4582: 					has_government = communism
+    4583: 				}
+    4584: 				AND = {
+    4585: 					SOV_is_exiles = yes
+    4586: 					has_government = communism
+    4587: 				}
+    4588: 			}
+    4589: 		}
+    4590: 
+    4591: 		advisor = {
+    4592: 			slot = political_advisor
+    4593: 			idea_token = SOV_ivar_smilga
+    4594: 			allowed = {
+    4595: 				original_tag = SOV
+    4596: 			}
+    4597: 			visible = {
+    4598: 				NOT = {
+    4599: 					has_character_flag = SOV_character_purged_flag
+    4600: 				}
+
+==================== R56 角色初始化 A ====================
+  D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125\history\countries\SOV - Soviet union.txt  (480-500)
+     480: 
+     481: #Initialize character flags Part II (aka who's what)
+     482: SOV_lev_trotsky = {
+     483: 	set_character_flag = SOV_aligned_left_opposition_flag #Probably not needed, but just in case ;)
+     484: }
+     485: SOV_ivan_smirnov = {
+     486: 	set_character_flag = SOV_aligned_left_opposition_flag
+     487: }
+     488: SOV_ivar_smilga = {
+     489: 	set_character_flag = SOV_aligned_left_opposition_flag
+     490: }
+     491: SOV_karl_radek = {
+     492: 	set_character_flag = SOV_aligned_left_opposition_flag
+     493: }
+     494: SOV_yevgeny_preobrazhensky = {
+     495: 	set_character_flag = SOV_aligned_left_opposition_flag
+     496: }
+     497: SOV_aleksandr_shlyapnikov = {
+     498: 	set_character_flag = SOV_aligned_left_opposition_flag
+     499: }
+     500: SOV_nikolay_bukharin = {
+
+==================== R56 角色初始化 B ====================
+  D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125\history\countries\SOV - Soviet union.txt  (558-575)
+     558: 
+     559: #Initialize character flags Part III (aka who's in prison)
+     560: SOV_ivan_smirnov = {
+     561: 	set_character_flag = SOV_imprisoned_flag
+     562: }
+     563: SOV_ivar_smilga = {
+     564: 	set_character_flag = SOV_imprisoned_flag
+     565: }
+     566: SOV_aleksandr_shlyapnikov = {
+     567: 	set_character_flag = SOV_imprisoned_flag
+     568: }
+     569: SOV_grigory_zinovyev = {
+     570: 	set_character_flag = SOV_imprisoned_flag
+     571: }
+     572: SOV_lev_kamenev = {
+     573: 	set_character_flag = SOV_imprisoned_flag
+     574: }
+     575: SOV_martemyan_ryutin = {
+

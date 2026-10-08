@@ -1,0 +1,62 @@
+# =============================================================================
+# 核心圈 inlay window —— S2 空壳版
+# -----------------------------------------------------------------------------
+# S2 目标：只让窗口能显示出来，不含任何逻辑。
+#   · 所有席位恒为空白立绘（不读变量）
+#   · S3 会接上 hof_ic_slot_1..7 变量与角色立绘
+#
+# 语法依据：原版 common/focus_inlay_windows/documentation.md
+# 结构蓝本：原版 ger_inner_circle_inlay_window.txt（R56 未改动该机制）
+#
+# ⚠️ scripted_images 的键必须与 interface/hof_ic_scripted_gui.gui 里
+#    对应 iconType 的 name 完全一致，写错则静默不生效。
+# =============================================================================
+
+hof_ic_inlay_window = {
+
+	# 必须与 hof_ic_scripted_gui.gui 里 containerWindowType 的 name 一致
+	window_name = hof_ic_ui_window
+
+	# internal = yes：只有本国自己能看到这个窗口
+	internal = yes
+
+	# 可见条件：完成「最高苏维埃」国策后出现
+	# visible 为假时，引擎不对以下任何 scripted_images 求值（性能友好）
+	visible = {
+		has_completed_focus = SOV_the_supreme_soviet
+	}
+
+	scripted_images = {
+
+		# ---------------- 领袖位 ----------------
+		# S2：无逻辑，恒为空白立绘
+		hof_ic_leader_portrait = {
+			GFX_blank_leader_portrait = yes
+		}
+
+		# ---------------- 7 个席位 ----------------
+		# S3 会改为读 hof_ic_slot_N 变量，逐项匹配角色序号选立绘。
+		# 注意保留最后的 yes 兜底项，否则变量不存在时会没有立绘可选。
+		hof_ic_seat_1_portrait = {
+			GFX_blank_leader_portrait = yes
+		}
+		hof_ic_seat_2_portrait = {
+			GFX_blank_leader_portrait = yes
+		}
+		hof_ic_seat_3_portrait = {
+			GFX_blank_leader_portrait = yes
+		}
+		hof_ic_seat_4_portrait = {
+			GFX_blank_leader_portrait = yes
+		}
+		hof_ic_seat_5_portrait = {
+			GFX_blank_leader_portrait = yes
+		}
+		hof_ic_seat_6_portrait = {
+			GFX_blank_leader_portrait = yes
+		}
+		hof_ic_seat_7_portrait = {
+			GFX_blank_leader_portrait = yes
+		}
+	}
+}

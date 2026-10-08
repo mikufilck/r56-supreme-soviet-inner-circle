@@ -1,0 +1,300 @@
+﻿================================================================
+  原版 soviet.txt  #Rykov
+  F:\Hearts of Iron IV\common\national_focus\soviet.txt
+================================================================
+  --- 命中于 L7905 ---
+    7899  					set_character_flag = SOV_targeted_for_purge_flag
+    7900  				}
+    7901  			}
+    7902  			else = {
+    7903  				SOV_add_random_character_to_purge_targets_effect = yes
+    7904  			}
+    7905  			#Rykov
+    7906  			if = {
+    7907  				limit = {
+    7908  					has_character = SOV_aleksey_rykov
+    7909  				}
+    7910  				SOV_aleksey_rykov = {
+    7911  					set_character_flag = SOV_targeted_for_purge_flag
+    7912  				}
+    7913  			}
+    7914  			else = {
+    7915  				SOV_add_random_character_to_purge_targets_effect = yes
+    7916  			}
+    7917  			#NOT-SO-HISTORICAL
+    7918  			#Tomsky
+    7919  			if = {
+    7920  				limit = {
+    7921  					has_character = SOV_mikhail_tomsky
+    7922  				}
+    7923  				SOV_mikhail_tomsky = {
+    7924  					set_character_flag = SOV_targeted_for_purge_flag
+    7925  				}
+    7926  			}
+    7927  			else = {
+    7928  				SOV_add_random_character_to_purge_targets_effect = yes
+    7929  			}
+    7930  			#Litvinov
+    7931  			if = {
+    7932  				limit = {
+    7933  					has_character = SOV_maksim_litvinov
+    7934  				}
+    7935  				SOV_maksim_litvinov = {
+    7936  					set_character_flag = SOV_targeted_for_purge_flag
+    7937  				}
+    7938  			}
+    7939  			else = {
+    7940  				SOV_add_random_character_to_purge_targets_effect = yes
+    7941  			}
+    7942  
+    7943  			custom_effect_tooltip = SOV_will_trigger_a_great_purge_tt
+    7944  			hidden_effect = {
+    7945  				set_country_flag = SOV_purge_event_unavoidable_flag #No way to avoid this purge. This people are about to be purged and there's nothing you can do for them.
+
+
+================================================================
+  原版 推广为领袖的效果
+  F:\Hearts of Iron IV\common\scripted_effects\SOV_scripted_effects.txt
+================================================================
+  --- 命中于 L7400 ---
+    7398  }
+    7399  
+    7400  SOV_promote_to_country_leader_rykov = {
+    7401  	add_country_leader_role = {
+    7402  		character = "SOV_aleksey_rykov"
+    7403  		country_leader = {
+    7404  			ideology = marxism
+    7405  			traits = { labor_defense_organizer }
+    7406  			expire = "1965.1.1.1"
+    7407  		}
+    7408  		promote_leader = yes
+    7409  	}
+    7410  	SOV = { set_country_flag = SOV_rykov_country_leader_flag }
+    7411  }
+    7412  
+    7413  SOV_promote_to_country_leader_zinovyev = {
+    7414  	add_country_leader_role = {
+    7415  		character = "SOV_grigory_zinovyev"
+    7416  		country_leader = {
+    7417  			ideology = marxism
+    7418  			traits = { born_agitator }
+    7419  			expire = "1965.1.1.1"
+    7420  		}
+    7421  		promote_leader = yes
+    7422  	}
+    7423  	SOV = { set_country_flag = SOV_zinovyev_country_leader_flag }
+    7424  }
+    7425  
+
+
+================================================================
+  原版 领袖特质 #RYKOV
+  F:\Hearts of Iron IV\common\country_leader\00_traits.txt
+================================================================
+  --- 命中于 L7731 ---
+    7729  	}
+    7730  
+    7731  	#RYKOV
+    7732  	labor_defense_organizer = {
+    7733  		random = no
+    7734  		sprite = 13
+    7735  		consumer_goods_factor = -0.15
+    7736  		army_core_defence_factor = 0.05
+    7737  		experience_gain_army_factor = 0.05
+    7738  		research_speed_factor = -0.03
+    7739  	}
+    7740  
+    7741  	#ZINOVYEV
+    7742  	born_agitator = {
+    7743  		random = no
+    7744  		political_power_factor = 0.1
+    7745  		conscription_factor = 0.15
+    7746  		army_morale_factor = 0.05
+    7747  		stability_factor = -0.05
+    7748  		compliance_growth = -0.05
+    7749  	}
+    7750  
+    7751  	#KAMENEV
+    7752  	the_faded_star = {
+    7753  		random = no
+
+  --- 命中于 L8056 ---
+    8054  	}
+    8055  
+    8056  	#Rykov
+    8057  	peoples_commissar_for_posts_and_telegraphs = {
+    8058  		random = no
+    8059  		sprite = 13
+    8060  		political_power_factor = 0.05
+    8061  		land_reinforce_rate = 0.02
+    8062  	}
+    8063  
+    8064  	#Zinovyev
+    8065  	communist_theorist = {
+    8066  		random = no
+    8067  		sprite = 13
+    8068  		drift_defence_factor = 0.1
+    8069  		political_power_factor = 0.15
+    8070  	}
+    8071  
+    8072  	#Kamenev
+    8073  	appeasing_technocrat = {
+    8074  		random = no
+    8075  		sprite = 13
+    8076  		drift_defence_factor = -0.1
+    8077  		political_power_factor = 0.15
+    8078  		stability_factor = 0.1
+
+
+================================================================
+  原版 角色块
+  F:\Hearts of Iron IV\common\characters\SOV.txt
+================================================================
+  --- 命中于 L3082 ---
+    3081  	
+    3082  	SOV_aleksey_rykov = {
+    3083  		name = SOV_aleksey_rykov
+    3084  
+    3085  		portraits = {
+    3086  			civilian = {
+    3087  				large = "GFX_portrait_SOV_aleksey_rykov"
+    3088  			}
+    3089  			army = {
+    3090  				small = "GFX_idea_SOV_aleksey_rykov"
+    3091  			}
+    3092  		}
+    3093  
+    3094  		allowed_civil_war = {
+    3095  			OR = {
+    3096  				SOV_is_right_opposition = yes 
+    3097  				AND = {
+    3098  					SOV_is_left_opposition = yes 
+    3099  					has_completed_focus = SOV_cooperation_against_stalin 
+    3100  				}
+    3101  				AND = {
+    3102  					SOV_is_exiles = yes 
+    3103  					has_government = communism 
+    3104  				}
+    3105  			}
+    3106  		}
+    3107  
+    3108  		advisor = {
+    3109  			slot = political_advisor
+    3110  			idea_token = SOV_aleksey_rykov
+    3111  			allowed = {
+    3112  				original_tag = SOV
+
+
+================================================================
+  R56 soviet.txt #Rykov
+  D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125\common\national_focus\soviet.txt
+================================================================
+  --- 命中于 L9367 ---
+    9361  					set_character_flag = SOV_targeted_for_purge_flag
+    9362  				}
+    9363  			}
+    9364  			else = {
+    9365  				SOV_add_random_character_to_purge_targets_effect = yes
+    9366  			}
+    9367  			#Rykov
+    9368  			if = {
+    9369  				limit = {
+    9370  					has_character = SOV_aleksey_rykov
+    9371  				}
+    9372  				SOV_aleksey_rykov = {
+    9373  					set_character_flag = SOV_targeted_for_purge_flag
+    9374  				}
+    9375  			}
+    9376  			else = {
+    9377  				SOV_add_random_character_to_purge_targets_effect = yes
+    9378  			}
+    9379  			#NOT-SO-HISTORICAL
+    9380  			#Tomsky
+    9381  			if = {
+    9382  				limit = {
+    9383  					has_character = SOV_mikhail_tomsky
+    9384  				}
+    9385  				SOV_mikhail_tomsky = {
+    9386  					set_character_flag = SOV_targeted_for_purge_flag
+    9387  				}
+    9388  			}
+    9389  			else = {
+    9390  				SOV_add_random_character_to_purge_targets_effect = yes
+    9391  			}
+    9392  			#Litvinov was not purged, so why put him there? Died 1951... - Fantom
+    9393  
+    9394  			custom_effect_tooltip = SOV_will_trigger_a_great_purge_tt
+    9395  			hidden_effect = {
+    9396  				set_country_flag = SOV_purge_event_unavoidable_flag #No way to avoid this purge. This people are about to be purged and there's nothing you can do for them.
+    9397  				SOV_trigger_great_purge_moscow_trial_effect = yes #THIRD MOSCOW TRIAL -> Right Opposition
+    9398  			}
+    9399  			custom_effect_tooltip = SOV_trigger_third_moscow_trial_tt
+    9400  
+    9401  			SOV_remove_paranoia_effect = yes #REMOVE PARANOIA SYSTEM
+    9402  
+    9403  			custom_effect_tooltip = generic_skip_one_line_tt
+    9404  			if = {
+    9405  				limit = { NOT = { has_completed_focus = SOV_lessons_of_war } }
+    9406  				
+    9407  				custom_effect_tooltip = modify_the_red_army_tt
+
+
+================================================================
+  R56 领袖特质 #RYKOV
+  D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125\common\country_leader\00_traits.txt
+================================================================
+  --- 命中于 L7735 ---
+    7733  	}
+    7734  
+    7735  	#RYKOV
+    7736  	labor_defense_organizer = {
+    7737  		random = no
+    7738  		sprite = 13
+    7739  		consumer_goods_factor = -0.15
+    7740  		army_core_defence_factor = 0.05
+    7741  		experience_gain_army_factor = 0.05
+    7742  		research_speed_factor = -0.03
+    7743  	}
+    7744  
+    7745  	#ZINOVYEV
+    7746  	born_agitator = {
+    7747  		random = no
+    7748  		political_power_factor = 0.1
+    7749  		conscription_factor = 0.15
+    7750  		army_morale_factor = 0.05
+    7751  		stability_factor = -0.05
+    7752  		compliance_growth = -0.05
+    7753  	}
+    7754  
+    7755  	#KAMENEV
+    7756  	the_faded_star = {
+    7757  		random = no
+
+  --- 命中于 L8061 ---
+    8059  	}
+    8060  
+    8061  	#Rykov
+    8062  	peoples_commissar_for_posts_and_telegraphs = {
+    8063  		random = no
+    8064  		sprite = 13
+    8065  		political_power_factor = 0.1 #r56 was 0.05, too weak for 150 pp cost
+    8066  		land_reinforce_rate = 0.02
+    8067  		production_speed_infrastructure_factor = 0.1 #r56
+    8068  	}
+    8069  
+    8070  	#Zinovyev
+    8071  	communist_theorist = {
+    8072  		random = no
+    8073  		sprite = 13
+    8074  		drift_defence_factor = 0.1
+    8075  		political_power_factor = 0.15
+    8076  	}
+    8077  
+    8078  	#Kamenev
+    8079  	appeasing_technocrat = {
+    8080  		random = no
+    8081  		sprite = 13
+    8082  		drift_defence_factor = -0.1
+    8083  		political_power_factor = 0.15
+
+

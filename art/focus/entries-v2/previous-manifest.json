@@ -1,0 +1,716 @@
+{
+  "mode": "built-in image_gen",
+  "assets": [
+    {
+      "id": "hof_ic_seat_lev_trotsky",
+      "name": "GFX_hof_ic_seat_lev_trotsky",
+      "title": "列夫·托洛茨基",
+      "group": "entry",
+      "description": "陆海军人民委员 / 革命军事委员会主席 / 最高国民经济委员会主席",
+      "portrait_source": "D:\\Program Files (x86)\\Steam\\steamapps\\workshop\\content\\394360\\2129897125\\gfx\\leaders\\SOV\\r56_portrait_SOV_Leon_Trotsky.dds",
+      "reference": "references/lev_trotsky.png",
+      "size": [
+        100,
+        88
+      ],
+      "status": "complete",
+      "source": "transparent-v2/source/GFX_hof_ic_seat_lev_trotsky.png",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_seat_lev_trotsky.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_seat_lev_trotsky.dds",
+      "generation_record": "transparent-v2/records/GFX_hof_ic_seat_lev_trotsky.json",
+      "sha256": "0b628048e1cfad5da0776f428ef13fc589f5ff6b5424d0c647fd1067d460e556"
+    },
+    {
+      "id": "hof_ic_seat_nikolay_bukharin",
+      "name": "GFX_hof_ic_seat_nikolay_bukharin",
+      "title": "尼古拉·布哈林",
+      "group": "entry",
+      "description": "《真理报》《消息报》主编 / 共产国际执委会主席 / 1936 年宪法起草人",
+      "portrait_source": "F:\\Hearts of Iron IV\\dlc\\dlc034_no_step_back\\gfx\\leaders\\SOV\\portrait_SOV_nikolay_bukharin.dds",
+      "reference": "references/nikolay_bukharin.png",
+      "size": [
+        100,
+        88
+      ],
+      "status": "complete",
+      "source": "transparent-v2/source/GFX_hof_ic_seat_nikolay_bukharin.png",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_seat_nikolay_bukharin.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_seat_nikolay_bukharin.dds",
+      "generation_record": "transparent-v2/records/GFX_hof_ic_seat_nikolay_bukharin.json",
+      "sha256": "956a7fa7aaf7351d21759e9779dc0b871eaefd08288841f13412bef04e08949b"
+    },
+    {
+      "id": "hof_ic_seat_aleksey_rykov",
+      "name": "GFX_hof_ic_seat_aleksey_rykov",
+      "title": "阿列克谢·李可夫",
+      "group": "entry",
+      "description": "苏联人民委员会主席（1924–30）/ 最高国民经济委员会主席",
+      "portrait_source": "F:\\Hearts of Iron IV\\dlc\\dlc034_no_step_back\\gfx\\leaders\\SOV\\portrait_SOV_aleksey_rykov.dds",
+      "reference": "references/aleksey_rykov.png",
+      "size": [
+        100,
+        88
+      ],
+      "status": "complete",
+      "source": "transparent-v2/source/GFX_hof_ic_seat_aleksey_rykov.png",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_seat_aleksey_rykov.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_seat_aleksey_rykov.dds",
+      "generation_record": "transparent-v2/records/GFX_hof_ic_seat_aleksey_rykov.json",
+      "sha256": "d0472343f4dd99db2f9cd4de22559a691dafda513220edaea17760c5135a00b1"
+    },
+    {
+      "id": "hof_ic_seat_grigory_zinovyev",
+      "name": "GFX_hof_ic_seat_grigory_zinovyev",
+      "title": "格里戈里·季诺维也夫",
+      "group": "entry",
+      "description": "共产国际**首任**执委会主席 / 列宁格勒苏维埃主席",
+      "portrait_source": "F:\\Hearts of Iron IV\\gfx\\leaders\\SOV\\portrait_SOV_grigory_zinovyev.dds",
+      "reference": "references/grigory_zinovyev.png",
+      "size": [
+        100,
+        88
+      ],
+      "status": "complete",
+      "source": "transparent-v2/source/GFX_hof_ic_seat_grigory_zinovyev.png",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_seat_grigory_zinovyev.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_seat_grigory_zinovyev.dds",
+      "generation_record": "transparent-v2/records/GFX_hof_ic_seat_grigory_zinovyev.json",
+      "sha256": "c7b2b2bd77a7b47a273389c58140a9043aa9c23bfb8f8fec16c6d4facd4674cb"
+    },
+    {
+      "id": "hof_ic_seat_lev_kamenev",
+      "name": "GFX_hof_ic_seat_lev_kamenev",
+      "title": "列夫·加米涅夫",
+      "group": "entry",
+      "description": "全俄中央执行委员会**首任**主席 / 人民委员会副主席 / 莫斯科苏维埃主席",
+      "portrait_source": "F:\\Hearts of Iron IV\\gfx\\leaders\\SOV\\portrait_SOV_lev_kamenev.dds",
+      "reference": "references/lev_kamenev.png",
+      "size": [
+        100,
+        88
+      ],
+      "status": "complete",
+      "source": "transparent-v2/source/GFX_hof_ic_seat_lev_kamenev.png",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_seat_lev_kamenev.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_seat_lev_kamenev.dds",
+      "generation_record": "transparent-v2/records/GFX_hof_ic_seat_lev_kamenev.json",
+      "sha256": "d6baae8e05066e3e2494247d926ad5cdf57eb8e05b0176b801b7a05c9b1e5473"
+    },
+    {
+      "id": "hof_ic_seat_ivan_smirnov",
+      "name": "GFX_hof_ic_seat_ivan_smirnov",
+      "title": "伊万·斯米尔诺夫",
+      "group": "entry",
+      "description": "**首任**邮电人民委员 / 西伯利亚革命委员会主席",
+      "portrait_source": "F:\\Hearts of Iron IV\\gfx\\leaders\\SOV\\portrait_SOV_ivan_smirnov.dds",
+      "reference": "references/ivan_smirnov.png",
+      "size": [
+        100,
+        88
+      ],
+      "status": "complete",
+      "source": "transparent-v2/source/GFX_hof_ic_seat_ivan_smirnov.png",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_seat_ivan_smirnov.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_seat_ivan_smirnov.dds",
+      "generation_record": "transparent-v2/records/GFX_hof_ic_seat_ivan_smirnov.json",
+      "sha256": "7942b66d1e16a7957cf3c92da8e96cc8ded52d6f614863a164dbe284f9a65b26"
+    },
+    {
+      "id": "hof_ic_seat_leonid_serebryakov",
+      "name": "GFX_hof_ic_seat_leonid_serebryakov",
+      "title": "列昂尼德·谢列布里亚科夫",
+      "group": "entry",
+      "description": "中央书记处书记 / 公路与汽车运输总局局长 / **车工出身**",
+      "portrait_source": "D:\\Program Files (x86)\\Steam\\steamapps\\workshop\\content\\394360\\2129897125\\gfx\\leaders\\SOV\\r56_portrait_SOV_Leonid_Serebryakov.dds",
+      "reference": "references/leonid_serebryakov.png",
+      "size": [
+        100,
+        88
+      ],
+      "status": "complete",
+      "source": "transparent-v2/source/GFX_hof_ic_seat_leonid_serebryakov.png",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_seat_leonid_serebryakov.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_seat_leonid_serebryakov.dds",
+      "generation_record": "transparent-v2/records/GFX_hof_ic_seat_leonid_serebryakov.json",
+      "sha256": "946a5fbbec659de6b52d310e7baec8fcdc35c161fc9698e9b1b48b69c052cfca"
+    },
+    {
+      "id": "hof_ic_trotsky_build_the_red_army",
+      "name": "GFX_hof_ic_trotsky_build_the_red_army",
+      "title": "缔造红军",
+      "group": "trotsky",
+      "description": "这辆军用专列曾经是他的战地指挥部。在那决定命运的 3 年里，他乘坐这辆专列沿着 8000 公里的前线行进，哪里危险就冲向哪里，只有短暂的磋商或者出席莫斯科的公众集会才暂时打断他的行程。",
+      "size": [
+        100,
+        88
+      ],
+      "status": "complete",
+      "source": "transparent-v2/source/GFX_hof_ic_trotsky_build_the_red_army.png",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_trotsky_build_the_red_army.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_trotsky_build_the_red_army.dds",
+      "generation_record": "transparent-v2/records/GFX_hof_ic_trotsky_build_the_red_army.json",
+      "sha256": "0d87d89933991ca134a56016615157e5f96746d98b8151f2008da3524680b2fd"
+    },
+    {
+      "id": "hof_ic_trotsky_military_specialists",
+      "name": "GFX_hof_ic_trotsky_military_specialists",
+      "title": "返聘沙俄军官",
+      "group": "trotsky",
+      "description": "1919 年初，他断然反对逮捕查京将军。他写道，查京帮助苏维埃所做的工作比那些关押他的人还多，蛮横地对待这样的人则会对军官的士气具有灾难性的影响。他要求释放将军，并愿在法庭给他定罪前亲自为他作保。",
+      "size": [
+        100,
+        88
+      ],
+      "status": "complete",
+      "source": "transparent-v2/source/GFX_hof_ic_trotsky_military_specialists.png",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_trotsky_military_specialists.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_trotsky_military_specialists.dds",
+      "generation_record": "transparent-v2/records/GFX_hof_ic_trotsky_military_specialists.json",
+      "sha256": "dde2044e04bf83f1970bb549c51cd033418371df7a592cbbe484954a6e0f06fc"
+    },
+    {
+      "id": "hof_ic_trotsky_against_partisan_warfare",
+      "name": "GFX_hof_ic_trotsky_against_partisan_warfare",
+      "title": "反对游击主义",
+      "group": "trotsky",
+      "description": "正如托洛茨基所指出的，游击战的混乱反映了革命下面的农民因素，而反对它的斗争同样是为了支持无产阶级国家组织，以抵制正在瓦解它的元素化的小资产阶级无政府状态。绝大部分的军队新兵都是农民，整个国家是一片起义的农民海洋，对于这种战争方式，他们不仅有着传统，而且本能地适应。",
+      "size": [
+        100,
+        88
+      ],
+      "status": "complete",
+      "source": "transparent-v2/source/GFX_hof_ic_trotsky_against_partisan_warfare.png",
+      "source_size": [
+        1337,
+        1177
+      ],
+      "png": "GFX_hof_ic_trotsky_against_partisan_warfare.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_trotsky_against_partisan_warfare.dds",
+      "generation_record": "transparent-v2/records/GFX_hof_ic_trotsky_against_partisan_warfare.json",
+      "sha256": "7245257e749382b3533f0dbd501912d60b9b62cb062e7754292fba2587aeba9e"
+    },
+    {
+      "id": "hof_ic_trotsky_uneven_and_combined_development",
+      "name": "GFX_hof_ic_trotsky_uneven_and_combined_development",
+      "title": "不平衡与综合发展律",
+      "group": "trotsky",
+      "description": "在一些情况下，从一开始就领先者可以加强其领先地位，而在另一些情况下，同样地由于发展的步调不同，一些落后者可以赶上甚至超过那些先前享有优势者。",
+      "size": [
+        100,
+        88
+      ],
+      "status": "complete",
+      "source": "transparent-v2/source/GFX_hof_ic_trotsky_uneven_and_combined_development.png",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_trotsky_uneven_and_combined_development.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_trotsky_uneven_and_combined_development.dds",
+      "generation_record": "transparent-v2/records/GFX_hof_ic_trotsky_uneven_and_combined_development.json",
+      "sha256": "d2c66da3a72b40a400aefcb22bf0ede5576684b0f4faf330ffd40e3786477666"
+    },
+    {
+      "id": "hof_ic_trotsky_permanent_revolution",
+      "name": "GFX_hof_ic_trotsky_permanent_revolution",
+      "title": "不断革命论",
+      "group": "trotsky",
+      "description": "在狱中，他完成了对俄国革命的见解——不断革命论。认为俄国的民主革命必然要由工人阶级来领导，以无产阶级专政来完成，并由此发展成社会主义革命。其奠基性的表述最初出自马克思，1906 年由托洛茨基针对俄国的情况重新加以表述，随后又在 1928 年进一步阐发。",
+      "size": [
+        100,
+        88
+      ],
+      "status": "complete",
+      "source": "transparent-v2/source/GFX_hof_ic_trotsky_permanent_revolution.png",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_trotsky_permanent_revolution.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_trotsky_permanent_revolution.dds",
+      "generation_record": "transparent-v2/records/GFX_hof_ic_trotsky_permanent_revolution.json",
+      "sha256": "5307fafd3a944b133c3ca0479046cb771c0c0fbe1f4f2938a90b144a91c346a9"
+    },
+    {
+      "id": "hof_ic_trotsky_socialism_in_one_country",
+      "name": "GFX_hof_ic_trotsky_socialism_in_one_country",
+      "title": "驳「一国社会主义」",
+      "group": "trotsky",
+      "description": "斯大林的一国社会主义论，被他斥为放弃世界革命的借口。1926 年，他与昔日的对手季诺维也夫、加米涅夫联手组成联合反对派，主张党内民主与经济计划化，谴责领导层对资产阶级分子的让步。这场争论持续了约 18 个月。",
+      "size": [
+        100,
+        88
+      ],
+      "status": "complete",
+      "source": "transparent-v2/source/GFX_hof_ic_trotsky_socialism_in_one_country.png",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_trotsky_socialism_in_one_country.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_trotsky_socialism_in_one_country.dds",
+      "generation_record": "transparent-v2/records/GFX_hof_ic_trotsky_socialism_in_one_country.json",
+      "sha256": "4945678191669c8071cc929479ae4e1086beff39069b57a1bcadc52b709b2022"
+    },
+    {
+      "id": "hof_ic_trotsky_the_new_course",
+      "name": "GFX_hof_ic_trotsky_the_new_course",
+      "title": "新方针",
+      "group": "trotsky",
+      "description": "1923 年 10 月，他致信中央委员会提出广泛批评，特别强调党内民主遭到破坏、经济计划化不足。改革被承诺了，他随即以一封公开信详细说明改革应取的方向。而此后党组织在压制它的主要批评者时，其猛烈和狂怒在党内反对派的漫长历史上是前所未有的。",
+      "size": [
+        100,
+        88
+      ],
+      "status": "complete",
+      "source": "transparent-v2/source/GFX_hof_ic_trotsky_the_new_course.png",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_trotsky_the_new_course.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_trotsky_the_new_course.dds",
+      "generation_record": "transparent-v2/records/GFX_hof_ic_trotsky_the_new_course.json",
+      "sha256": "73e825d7bbf2fc86510aff91d065ff1dd5959e16c0e30c05c305c86696485cb4"
+    },
+    {
+      "id": "hof_ic_trotsky_against_the_bureaucracy",
+      "name": "GFX_hof_ic_trotsky_against_the_bureaucracy",
+      "title": "反对官僚化",
+      "group": "trotsky",
+      "description": "无产阶级专政将通过政党夺取政权而建立，托洛茨基认为这个政党在革命中起领导作用。但是，他警告说，一旦它的任务完成，这样的党要提防用自身代替无产阶级或是支配无产阶级。",
+      "size": [
+        100,
+        88
+      ],
+      "status": "complete",
+      "source": "transparent-v2/source/GFX_hof_ic_trotsky_against_the_bureaucracy.png",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_trotsky_against_the_bureaucracy.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_trotsky_against_the_bureaucracy.dds",
+      "generation_record": "transparent-v2/records/GFX_hof_ic_trotsky_against_the_bureaucracy.json",
+      "sha256": "514458a0565e3740050f990aabcba30251d96d5fd5533d1d0c4d5b64d6f6a68d"
+    },
+    {
+      "id": "hof_ic_trotsky_limited_market_reforms",
+      "name": "GFX_hof_ic_trotsky_limited_market_reforms",
+      "title": "有限市场化",
+      "group": "trotsky",
+      "description": "内战结束后，他把注意力转向俄国的经济重建。他首先提议放松战时共产主义严苛的集中制，允许市场力量运作。这个提议被否决之后，他才转而尝试把军事纪律应用于经济。",
+      "size": [
+        100,
+        88
+      ],
+      "status": "complete",
+      "source": "transparent-v2/source/GFX_hof_ic_trotsky_limited_market_reforms.png",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_trotsky_limited_market_reforms.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_trotsky_limited_market_reforms.dds",
+      "generation_record": "transparent-v2/records/GFX_hof_ic_trotsky_limited_market_reforms.json",
+      "sha256": "f9f318d2f94c8dda8c5e1a7894019795e31f3832c1d926b88dd153aa08b8ad05"
+    },
+    {
+      "id": "hof_ic_trotsky_labour_armies",
+      "name": "GFX_hof_ic_trotsky_labour_armies",
+      "title": "劳动军",
+      "group": "trotsky",
+      "description": "他转而尝试把军事纪律应用于经济：把士兵用作劳动军，并试图把交通运输系统的管理军事化。这个方向同样被党的十大否决，此后连他自己也不再主张它。",
+      "size": [
+        100,
+        88
+      ],
+      "status": "complete",
+      "source": "transparent-v2/source/GFX_hof_ic_trotsky_labour_armies.png",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_trotsky_labour_armies.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_trotsky_labour_armies.dds",
+      "generation_record": "transparent-v2/records/GFX_hof_ic_trotsky_labour_armies.json",
+      "sha256": "c6cfccd1b23e130a354cf13de5b21c749301c99f3817c722931041bdf8ed1306"
+    },
+    {
+      "id": "hof_ic_trotsky_state_planning",
+      "name": "GFX_hof_ic_trotsky_state_planning",
+      "title": "经济计划化",
+      "group": "trotsky",
+      "description": "他要求扩大国家计划委员会的权力，而李可夫和索柯里尼柯夫则怀疑计划性，公开指责他之所以要求扩大国家计划委员会的权力只是因为他觊觎它的领导权。他所作的报告和所提交的『提纲』是苏联经济史上最关键的文件，他在其中描绘了今后几十年的苏联经济远景。",
+      "size": [
+        100,
+        88
+      ],
+      "status": "complete",
+      "source": "transparent-v2/source/GFX_hof_ic_trotsky_state_planning.png",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_trotsky_state_planning.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_trotsky_state_planning.dds",
+      "generation_record": "transparent-v2/records/GFX_hof_ic_trotsky_state_planning.json",
+      "sha256": "932cedd66a8d056c9ed25741fabeaa9616d10271f9ed009a8dd4f3440dea2d38"
+    },
+    {
+      "id": "hof_ic_trotsky_accelerated_industrialization",
+      "name": "GFX_hof_ic_trotsky_accelerated_industrialization",
+      "title": "加速工业化",
+      "group": "trotsky",
+      "description": "国家的大粮库有一半已见了底，城市居民面临着饥饿的威胁，连军队的给养都不充足，面包店外排着长队，面包价格不断上涨。正是在这样的处境下，联合反对派要求加快工业化、反对向富农让步。1928 年，斯大林开始了第一个五年计划。",
+      "size": [
+        100,
+        88
+      ],
+      "status": "complete",
+      "source": "transparent-v2/source/GFX_hof_ic_trotsky_accelerated_industrialization.png",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_trotsky_accelerated_industrialization.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_trotsky_accelerated_industrialization.dds",
+      "generation_record": "transparent-v2/records/GFX_hof_ic_trotsky_accelerated_industrialization.json",
+      "sha256": "615a8ebc87d0bcce1e241f4fb1ff0bf8b279e17fc050c6abf66d74c6e0d0cd04"
+    },
+    {
+      "id": "hof_ic_trotsky_the_comintern_manifesto",
+      "name": "GFX_hof_ic_trotsky_the_comintern_manifesto",
+      "title": "共产国际宣言",
+      "group": "trotsky",
+      "description": "1919 年 3 月，他与列宁共同创立第三国际，并撰写了它的首篇宣言。",
+      "size": [
+        100,
+        88
+      ],
+      "status": "complete",
+      "source": "transparent-v2/source/GFX_hof_ic_trotsky_the_comintern_manifesto.png",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_trotsky_the_comintern_manifesto.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_trotsky_the_comintern_manifesto.dds",
+      "generation_record": "transparent-v2/records/GFX_hof_ic_trotsky_the_comintern_manifesto.json",
+      "sha256": "c3167c5f5d54248ef07d160bc16688d367d89b0d95b48117a432e29ec82f803e"
+    },
+    {
+      "id": "hof_ic_trotsky_the_chinese_question",
+      "name": "GFX_hof_ic_trotsky_the_chinese_question",
+      "title": "中国革命问题",
+      "group": "trotsky",
+      "description": "1927 年春天，党内斗争的火焰又一次燃烧起来。这次斗争是同到那时之前从未提出过的一个问题相联系的，但从此以后这个问题却自始至终都是斗争的中心，直到联合反对派最终被开除出党并解体为止。",
+      "size": [
+        100,
+        88
+      ],
+      "status": "complete",
+      "source": "transparent-v2/source/GFX_hof_ic_trotsky_the_chinese_question.png",
+      "source_size": [
+        1338,
+        1176
+      ],
+      "png": "GFX_hof_ic_trotsky_the_chinese_question.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_trotsky_the_chinese_question.dds",
+      "generation_record": "transparent-v2/records/GFX_hof_ic_trotsky_the_chinese_question.json",
+      "sha256": "4fdb124a0e5cd2ba58d3f6a27a0e698bfbcd904e7ef29057b72d182cfa6f74d7"
+    },
+    {
+      "id": "hof_ic_trotsky_united_front",
+      "name": "GFX_hof_ic_trotsky_united_front",
+      "title": "反法西斯统一战线",
+      "group": "trotsky",
+      "description": "第三国际不顾托洛茨基自 1930 年以来不断的警告，大大低估了纳粹党的危险性，同时拒绝社会民主党建立统一战线对抗纳粹，结果使德国工人阶级的组织毫无抵抗地被粉碎，并使法西斯势力横行十余年。",
+      "size": [
+        100,
+        88
+      ],
+      "status": "complete",
+      "source": "transparent-v2/source/GFX_hof_ic_trotsky_united_front.png",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_trotsky_united_front.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_trotsky_united_front.dds",
+      "generation_record": "transparent-v2/records/GFX_hof_ic_trotsky_united_front.json",
+      "sha256": "c5f82f6c1c3a18d44c9a20e8de9f1aa92fde7e58174242b8a65afe4ae444adba"
+    },
+    {
+      "id": "hof_ic_trotsky_the_permanent_revolutionary",
+      "name": "GFX_hof_ic_trotsky_the_permanent_revolutionary",
+      "title": "永久的革命者",
+      "group": "trotsky",
+      "description": "要求我放弃政治活动，意味着要求我放弃为全世界工人阶级利益而进行的斗争，而这一斗争我已孜孜不倦地进行了 32 年之久，也就是我自觉生命的全部时间。只有腐朽透顶的官僚集团才会要求做出这种放弃，只有卑鄙的叛徒才能做出这种承诺。",
+      "size": [
+        100,
+        88
+      ],
+      "status": "complete",
+      "source": "transparent-v2/source/GFX_hof_ic_trotsky_the_permanent_revolutionary.png",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_trotsky_the_permanent_revolutionary.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_trotsky_the_permanent_revolutionary.dds",
+      "generation_record": "transparent-v2/records/GFX_hof_ic_trotsky_the_permanent_revolutionary.json",
+      "sha256": "daa43268d72a87fd5fdd74cdf748f60b421b354eb95d28d3811bdcca33fbbaa5"
+    },
+    {
+      "id": "hof_ic_trotsky_the_builder_of_the_state",
+      "name": "GFX_hof_ic_trotsky_the_builder_of_the_state",
+      "title": "国家建设者",
+      "group": "trotsky",
+      "description": "请告诉我还有哪个人能在一年之内建立起一支堪称模范的军队而且赢得军事专家的尊重；我们有这样的人，就有了一切，我们将创造出奇迹。",
+      "size": [
+        100,
+        88
+      ],
+      "status": "complete",
+      "source": "transparent-v2/source/GFX_hof_ic_trotsky_the_builder_of_the_state.png",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_trotsky_the_builder_of_the_state.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_trotsky_the_builder_of_the_state.dds",
+      "generation_record": "transparent-v2/records/GFX_hof_ic_trotsky_the_builder_of_the_state.json",
+      "sha256": "ea37d4d6fe614666b08f240366660edaf122dda78b984b7947c9e5d5bb1b30bc"
+    },
+    {
+      "id": "hof_ic_bukharin_economics_of_transition",
+      "name": "GFX_hof_ic_bukharin_economics_of_transition",
+      "title": "过渡时期的经济",
+      "group": "bukharin",
+      "concept": "An ivory sculpted bridge linking a wheat field on the left to a compact factory on the right, unfinished final bridge segment being fitted, strong simple silhouettes. Transition and connection between agriculture and industry.",
+      "size": [
+        100,
+        88
+      ],
+      "source": "bukharin/source/GFX_hof_ic_bukharin_economics_of_transition.png",
+      "generation_record": "bukharin/records/GFX_hof_ic_bukharin_economics_of_transition.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_bukharin_economics_of_transition.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_bukharin_economics_of_transition.dds",
+      "sha256": "f192c266a6867f847bb22b447b212d929a261865087214ee203a111bdc7481ed"
+    },
+    {
+      "id": "hof_ic_bukharin_nep_is_not_a_retreat",
+      "name": "GFX_hof_ic_bukharin_nep_is_not_a_retreat",
+      "title": "新经济政策不是退却",
+      "group": "bukharin",
+      "concept": "A bold ivory road arrow sweeping FORWARD and upward, flanked by a simple worker's hammer and a sheaf of wheat, unity moving forward, no soldiers or human figures.",
+      "size": [
+        100,
+        88
+      ],
+      "source": "bukharin/source/GFX_hof_ic_bukharin_nep_is_not_a_retreat.png",
+      "generation_record": "bukharin/records/GFX_hof_ic_bukharin_nep_is_not_a_retreat.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_bukharin_nep_is_not_a_retreat.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_bukharin_nep_is_not_a_retreat.dds",
+      "sha256": "4f1727418be5b0dea8a2e8110644c6cb0d997527eb5c4ff4848585b9f973f1ae"
+    },
+    {
+      "id": "hof_ic_bukharin_abolish_the_tribute",
+      "name": "GFX_hof_ic_bukharin_abolish_the_tribute",
+      "title": "取消「贡款」",
+      "group": "bukharin",
+      "concept": "A large broken tax-collection seal beside a completely BLANK folded requisition paper, a snapped rope around a wheat sheaf in foreground. Controlled confrontational symbolism, no readable marks on seal/paper, no money.",
+      "size": [
+        100,
+        88
+      ],
+      "source": "bukharin/source/GFX_hof_ic_bukharin_abolish_the_tribute.png",
+      "generation_record": "bukharin/records/GFX_hof_ic_bukharin_abolish_the_tribute.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_bukharin_abolish_the_tribute.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_bukharin_abolish_the_tribute.dds",
+      "sha256": "fbac6b975b811584005e7e6d584a601de026f653316031811373bb2d321586a9"
+    },
+    {
+      "id": "hof_ic_bukharin_alliance_is_the_axis",
+      "name": "GFX_hof_ic_bukharin_alliance_is_the_axis",
+      "title": "工农联盟是轴心",
+      "group": "bukharin",
+      "concept": "A central solid mechanical axle and wheel hub joining an ivory worker's hammer on left and a sheaf of wheat on right, radiating sturdy spokes. Clear axis/union imagery, no handshake.",
+      "size": [
+        100,
+        88
+      ],
+      "source": "bukharin/source/GFX_hof_ic_bukharin_alliance_is_the_axis.png",
+      "generation_record": "bukharin/records/GFX_hof_ic_bukharin_alliance_is_the_axis.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_bukharin_alliance_is_the_axis.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_bukharin_alliance_is_the_axis.dds",
+      "sha256": "88a1cbace1124a59eee228a89b7211a9d68aa82004b91ad0a3cd6bcde421c126"
+    },
+    {
+      "id": "hof_ic_bukharin_enrich_yourselves",
+      "name": "GFX_hof_ic_bukharin_enrich_yourselves",
+      "title": "发财吧",
+      "group": "bukharin",
+      "concept": "An abundant ivory grain barn with open doors full of harvested wheat sheaves, one simple hand plough in foreground. Productive rural prosperity. Absolutely NO coins, money, currency, numbers or lettering.",
+      "size": [
+        100,
+        88
+      ],
+      "source": "bukharin/source/GFX_hof_ic_bukharin_enrich_yourselves.png",
+      "generation_record": "bukharin/records/GFX_hof_ic_bukharin_enrich_yourselves.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_bukharin_enrich_yourselves.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_bukharin_enrich_yourselves.dds",
+      "sha256": "b7f9b0050d01d3438790feaedcef4425ad6d6f9e25ae7f92611ba1cdc332620b"
+    },
+    {
+      "id": "hof_ic_bukharin_proportional_development",
+      "name": "GFX_hof_ic_bukharin_proportional_development",
+      "title": "按比例发展",
+      "group": "bukharin",
+      "concept": "Two equal-sized ivory intermeshing industrial gears, one enclosing a small wheat relief and the other a factory relief, measured balanced growth, a drafting divider below them. Not a weighing scale.",
+      "size": [
+        100,
+        88
+      ],
+      "source": "bukharin/source/GFX_hof_ic_bukharin_proportional_development.png",
+      "generation_record": "bukharin/records/GFX_hof_ic_bukharin_proportional_development.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_bukharin_proportional_development.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_bukharin_proportional_development.dds",
+      "sha256": "16c7c87d02f33aa66a08e3c972160fd1525e2ddc91b1bbfa6520984751897076"
+    },
+    {
+      "id": "hof_ic_bukharin_cooperatives_into_the_system",
+      "name": "GFX_hof_ic_bukharin_cooperatives_into_the_system",
+      "title": "合作社长入",
+      "group": "bukharin",
+      "concept": "Three small ivory rural cooperative houses linked by broad converging channels to a larger three-column institutional bank building behind, integration into a shared system, readable bold architectural silhouettes. No currency or coins.",
+      "size": [
+        100,
+        88
+      ],
+      "source": "bukharin/source/GFX_hof_ic_bukharin_cooperatives_into_the_system.png",
+      "generation_record": "bukharin/records/GFX_hof_ic_bukharin_cooperatives_into_the_system.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_bukharin_cooperatives_into_the_system.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_bukharin_cooperatives_into_the_system.dds",
+      "sha256": "c52553938d6a142368bee9d60ee8693b71d535585f43cbfadd3972417401091f"
+    },
+    {
+      "id": "hof_ic_bukharin_left_communism",
+      "name": "GFX_hof_ic_bukharin_left_communism",
+      "title": "左翼共产主义",
+      "group": "bukharin",
+      "concept": "A DARKER gunmetal sword and agricultural plough facing in opposition across a sharp jagged divide; small single upward assault arrow behind. Ominous compressed shield-shaped deep burgundy backing, tarnished restrained bronze laurel, much darker than other icons, stern alternate path. No blood, people, text or real-world hate symbols.",
+      "size": [
+        100,
+        88
+      ],
+      "source": "bukharin/source/GFX_hof_ic_bukharin_left_communism.png",
+      "generation_record": "bukharin/records/GFX_hof_ic_bukharin_left_communism.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_bukharin_left_communism.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_bukharin_left_communism.dds",
+      "sha256": "82ebc4242d518a5fdb40e5b736504ff3f292cfd10a238b86604f0cd14b132dbf"
+    },
+    {
+      "id": "hof_ic_bukharin_socialism_in_one_country",
+      "name": "GFX_hof_ic_bukharin_socialism_in_one_country",
+      "title": "一国建成社会主义",
+      "group": "bukharin",
+      "concept": "A complete self-contained ivory sculpted industrial-agricultural state: broad factory and new buildings rising within a continuous enclosing boundary, wheat and compact turbine in foreground, cohesive completed construction. Most full and ceremonial composition in series, dense but legible, not a globe and not a turtle.",
+      "size": [
+        100,
+        88
+      ],
+      "source": "bukharin/source/GFX_hof_ic_bukharin_socialism_in_one_country.png",
+      "generation_record": "bukharin/records/GFX_hof_ic_bukharin_socialism_in_one_country.json",
+      "status": "complete",
+      "source_size": [
+        1337,
+        1177
+      ],
+      "png": "GFX_hof_ic_bukharin_socialism_in_one_country.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_bukharin_socialism_in_one_country.dds",
+      "sha256": "31762caba89e566e932322a6c32c2b87d494207ea8623a7f37bf5faac2dcfc2a"
+    }
+  ],
+  "completed": "2026-09-15",
+  "count": 33,
+  "integration": "art textures delivered; no script edits",
+  "background": "transparent"
+}

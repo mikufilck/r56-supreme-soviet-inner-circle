@@ -1,0 +1,15 @@
+{
+  "key": "maksim_litvinov",
+  "title": "马克西姆·李维诺夫",
+  "ref": "SOV_maksim_litvinov",
+  "details": "Older clean-shaven diplomat with thinning light brown-grey hair, rounded broad face, thin small round spectacles, prominent rounded nose, sober expression, dark formal suit, pale shirt and tie. Preserve the first image's slight turn toward viewer left.",
+  "name": "hof_portrait_SOV_maksim_litvinov",
+  "prompt": "Use case: identity-preserve. Paint one full-size historical character portrait for a Hearts of Iron IV mod, 马克西姆·李维诺夫 (maksim_litvinov). Image 1 is the ONLY face/identity and clothing reference: extract the actual face from its tiny advisor-card art, discard card border and paper overlay. Images 2 and 3 are STYLE and COMPOSITION references only, NOT their facial identity. Older clean-shaven diplomat with thinning light brown-grey hair, rounded broad face, thin small round spectacles, prominent rounded nose, sober expression, dark formal suit, pale shirt and tie. Preserve the first image's slight turn toward viewer left. Reconstruct natural fine facial details faithfully to the low-resolution reference, same age, expression and direction of gaze. Match the supplied completed portraits precisely: realistic softly painted oil / subtly colorized archival photograph, low saturation brown-grey and muted blue-grey clothes, soft upper-left light, fine understated brush texture, restrained contrast. Head-and-shoulders bust, centered, top of head comfortably within frame, shoulders extend to lower corners. Plain warm grey-beige solid background identical to style references, no scene. Vertical canvas aspect 156:210. Intended final 156x210 pixels; render high resolution with clean recognizable face at small size. Opaque painted background, RGBA PNG acceptable. No text, no card, no paper, no border, no emblem frame, no watermark. One portrait only.",
+  "references": [
+    "D:/Users/xuwei/PycharmProjects/heart_of_Iron/art/portraits/v2/references/SOV_maksim_litvinov.png",
+    "D:/Users/xuwei/PycharmProjects/heart_of_Iron/art/portraits/v1/png/hof_portrait_SOV_grigory_sokolnikov.png",
+    "D:/Users/xuwei/PycharmProjects/heart_of_Iron/art/portraits/v1/png/hof_portrait_SOV_mikhail_tomsky.png"
+  ],
+  "source": "C:\\Users\\xuwei\\.codex\\generated_images\\01a09af5-fd43-79a0-a3cc-72284cd67cbc\\exec-bb1db60d-c19c-49e0-afe8-adeff54c1fbe.png",
+  "mode": "built-in image_gen"
+}

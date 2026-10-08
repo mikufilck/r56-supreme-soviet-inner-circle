@@ -1,0 +1,17 @@
+{
+  "id": "hof_ic_shlyapnikov_not_syndicalism",
+  "name": "GFX_hof_ic_shlyapnikov_not_syndicalism",
+  "title": "不是工团主义",
+  "concept": "ONE large unlabelled paper divided decisively into left and right by a thick BLACK VERTICAL ruling line. LEFT of line: small state-owned factory silhouette and a simple abstract state seal shape. RIGHT: ONE industrial cog and ONE wrench for organized workers. A single rough hand rests on EACH side, both hands stop clearly short of the dividing line and do not cross it. Central bold straight line is primary graphic, carved relief, ivory paper, charcoal ink, cool steel grey, restrained muted red. No text, no office background.",
+  "group": "shlyapnikov",
+  "size": [
+    100,
+    88
+  ],
+  "prompt": "Use case: stylized-concept. Create ONE finished Hearts of Iron IV Soviet national focus icon. Input reference is ONLY outer gold laurel and engraved sculptural relief STYLE; replace central imagery completely. Subject: ONE large unlabelled paper divided decisively into left and right by a thick BLACK VERTICAL ruling line. LEFT of line: small state-owned factory silhouette and a simple abstract state seal shape. RIGHT: ONE industrial cog and ONE wrench for organized workers. A single rough hand rests on EACH side, both hands stop clearly short of the dividing line and do not cross it. Central bold straight line is primary graphic, carved relief, ivory paper, charcoal ink, cool steel grey, restrained muted red. No text, no office background. Gold laurel open at top, small red star above, blank gold ribbon below, thin bronze-red circular rim. Ivory-grey relief with restrained scene-specific colors, highly readable at final100x88, directional upper-left light. No readable letters, names, words, numbers, faces, portraits or watermark. Project-specific forbidden imagery: confiscation, sealing tape, guns, offices for calendar scene, bureaucratic papers there, businessmen in suits, workers loitering at factory/agency gate, lathe close-up, 1937, execution, barred prison windows, interrogation, union flags and lecterns. Landscape100:88, emblem fills94%canvas. TRUE transparent RGBA background enabled, alpha0 outside emblem and all four corners,20-50% transparent area. No fake checkerboard or rectangular backdrop or external shadow.",
+  "references": [
+    "D:/Users/xuwei/PycharmProjects/heart_of_Iron/art/focus/bukharin/source/GFX_hof_ic_bukharin_proportional_development.png"
+  ],
+  "generated_path": "C:\\Users\\xuwei\\.codex\\generated_images\\01a09af5-fd43-79a0-a3cc-72284cd67cbc\\exec-caaa3ce7-d7b3-455f-bae2-5ecaed76eda8.png",
+  "mode": "built-in image_gen"
+}

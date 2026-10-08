@@ -1,0 +1,17 @@
+{
+  "id": "hof_ic_smilga_productive_forces",
+  "name": "GFX_hof_ic_smilga_productive_forces",
+  "title": "生产力布局",
+  "concept": "Top-down close-up of a teal-grey square-grid planning map with sparse contour lines. Several small iron-grey FACTORY-SHAPED miniature tokens clustered center-left. ONE anatomically correct hand pinches a single factory-shaped token between thumb and index finger, moving it toward an empty grid cell at LOWER RIGHT edge, clear empty gap between central cluster and moved token. Focus on relocating ONE discrete point across grid, no vehicles, trains or real factory landscape. Restrained dark teal and grey.",
+  "group": "smilga",
+  "size": [
+    100,
+    88
+  ],
+  "prompt": "Create ONE finished Hearts of Iron IV Soviet national focus icon. Reference is ONLY outer gold laurel framing and sculptural engraving STYLE, replace all central imagery. Subject: Top-down close-up of a teal-grey square-grid planning map with sparse contour lines. Several small iron-grey FACTORY-SHAPED miniature tokens clustered center-left. ONE anatomically correct hand pinches a single factory-shaped token between thumb and index finger, moving it toward an empty grid cell at LOWER RIGHT edge, clear empty gap between central cluster and moved token. Focus on relocating ONE discrete point across grid, no vehicles, trains or real factory landscape. Restrained dark teal and grey. Shared gold laurel open at top, small red star above, blank golden ribbon below, thin bronze circular rim. Central imagery in the specified palette, ivory-grey embossed relief and strong clear silhouettes readable at100x88, upper-left light. No readable text, letters, numbers, watermarks, faces or portraits. No scissors, scales, ledgers, grain piles, rivers, pens, newspapers, leaflets, prison-bar shadows, rail tracks, railway switches, platforms, lathes. Landscape100:88. TRUE transparent RGBA background enabled, alpha0 outside emblem and all four corners,20-50%transparent area; emblem fills94%canvas. No fake checkerboard or solid rectangle or external shadow.",
+  "references": [
+    "D:/Users/xuwei/PycharmProjects/heart_of_Iron/art/focus/bukharin/source/GFX_hof_ic_bukharin_proportional_development.png"
+  ],
+  "generated_path": "C:\\Users\\xuwei\\.codex\\generated_images\\01a09af5-fd43-79a0-a3cc-72284cd67cbc\\exec-6f19fe6f-f611-4534-aa50-9a57468f10a1.png",
+  "mode": "built-in image_gen"
+}

@@ -1,0 +1,4152 @@
+# =============================================================================
+# 核心圈 · 事件（由 build/gen-hof-ic-s3.ps1 生成，勿手改）
+# -----------------------------------------------------------------------------
+# ① 满席替换事件（蓝本：原版 events/WUW_Germany.txt 的 GER_inner_circle.01）
+# ② 个人线驱动器：每人 .01 / .02 两个隐藏事件循环推进他的国策分支
+#    （蓝本：GER_inner_circle_<name>.01 / .02）
+#    ⚠️ 只有当 $roster 里那个人的 Branch 非空时才会生成
+# =============================================================================
+
+add_namespace = heartofiron
+
+# ---------------------------------------------------------------------------
+# 满席替换：1000
+# ---------------------------------------------------------------------------
+country_event = {
+	id = heartofiron.1000
+	title = heartofiron.1000.t
+	desc = heartofiron.1000.desc
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = { set_country_flag = hof_ic_appointment_pending }
+	}
+
+	option = {   # 替换第 1 席
+		name = heartofiron.1000.a
+		ai_chance = {
+			base = 1
+		}
+		hof_ic_replace_slot_1 = yes
+		hidden_effect = { clr_country_flag = hof_ic_appointment_pending }
+	}
+
+	option = {   # 替换第 2 席
+		name = heartofiron.1000.b
+		ai_chance = {
+			base = 1
+		}
+		hof_ic_replace_slot_2 = yes
+		hidden_effect = { clr_country_flag = hof_ic_appointment_pending }
+	}
+
+	option = {   # 替换第 3 席
+		name = heartofiron.1000.c
+		ai_chance = {
+			base = 1
+		}
+		hof_ic_replace_slot_3 = yes
+		hidden_effect = { clr_country_flag = hof_ic_appointment_pending }
+	}
+
+	option = {   # 替换第 4 席
+		name = heartofiron.1000.d
+		ai_chance = {
+			base = 1
+		}
+		hof_ic_replace_slot_4 = yes
+		hidden_effect = { clr_country_flag = hof_ic_appointment_pending }
+	}
+
+	option = {   # 替换第 5 席
+		name = heartofiron.1000.e
+		ai_chance = {
+			base = 1
+		}
+		hof_ic_replace_slot_5 = yes
+		hidden_effect = { clr_country_flag = hof_ic_appointment_pending }
+	}
+
+	option = {   # 替换第 6 席
+		name = heartofiron.1000.f
+		ai_chance = {
+			base = 1
+		}
+		hof_ic_replace_slot_6 = yes
+		hidden_effect = { clr_country_flag = hof_ic_appointment_pending }
+	}
+
+	option = {   # 替换第 7 席
+		name = heartofiron.1000.g
+		ai_chance = {
+			base = 1
+		}
+		hof_ic_replace_slot_7 = yes
+		hidden_effect = { clr_country_flag = hof_ic_appointment_pending }
+	}
+
+}
+
+# ---------------------------------------------------------------------------
+# 列夫·托洛茨基 的个人线驱动器：开下一个国策
+# ---------------------------------------------------------------------------
+country_event = {
+	id = heartofiron.1110
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		hof_ic_seated_lev_trotsky = yes
+	}
+
+	immediate = {
+		if = {   # 终局：永久的革命者
+			limit = {
+				SOV_lev_trotsky = { has_character_flag = hof_ic_trotsky_ending_revolution_flag }
+				NOT = { has_completed_focus = hof_ic_trotsky_the_permanent_revolutionary }
+			}
+			activate_shine_on_focus = hof_ic_trotsky_the_permanent_revolutionary
+			set_country_flag = {
+				flag = hof_ic_lev_trotsky_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1111 days = 35 }
+		}
+		else_if = {   # 终局：国家建设者
+			limit = {
+				SOV_lev_trotsky = { has_character_flag = hof_ic_trotsky_ending_state_flag }
+				NOT = { has_completed_focus = hof_ic_trotsky_the_builder_of_the_state }
+			}
+			activate_shine_on_focus = hof_ic_trotsky_the_builder_of_the_state
+			set_country_flag = {
+				flag = hof_ic_lev_trotsky_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1111 days = 35 }
+		}
+		else_if = {   # hof_ic_trotsky_build_the_red_army
+			limit = { NOT = { has_completed_focus = hof_ic_trotsky_build_the_red_army } }
+			activate_shine_on_focus = hof_ic_trotsky_build_the_red_army
+			set_country_flag = {
+				flag = hof_ic_lev_trotsky_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1111 days = 35 }
+		}
+		else_if = {   # hof_ic_trotsky_military_specialists
+			limit = { NOT = { has_completed_focus = hof_ic_trotsky_military_specialists } }
+			activate_shine_on_focus = hof_ic_trotsky_military_specialists
+			set_country_flag = {
+				flag = hof_ic_lev_trotsky_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1111 days = 35 }
+		}
+		else_if = {   # hof_ic_trotsky_against_partisan_warfare
+			limit = { NOT = { has_completed_focus = hof_ic_trotsky_against_partisan_warfare } }
+			activate_shine_on_focus = hof_ic_trotsky_against_partisan_warfare
+			set_country_flag = {
+				flag = hof_ic_lev_trotsky_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1111 days = 35 }
+		}
+		else_if = {   # hof_ic_trotsky_uneven_and_combined_development
+			limit = { NOT = { has_completed_focus = hof_ic_trotsky_uneven_and_combined_development } }
+			activate_shine_on_focus = hof_ic_trotsky_uneven_and_combined_development
+			set_country_flag = {
+				flag = hof_ic_lev_trotsky_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1111 days = 35 }
+		}
+		else_if = {   # hof_ic_trotsky_permanent_revolution
+			limit = { NOT = { has_completed_focus = hof_ic_trotsky_permanent_revolution } }
+			activate_shine_on_focus = hof_ic_trotsky_permanent_revolution
+			set_country_flag = {
+				flag = hof_ic_lev_trotsky_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1111 days = 35 }
+		}
+		else_if = {   # hof_ic_trotsky_socialism_in_one_country
+			limit = { NOT = { has_completed_focus = hof_ic_trotsky_socialism_in_one_country } }
+			activate_shine_on_focus = hof_ic_trotsky_socialism_in_one_country
+			set_country_flag = {
+				flag = hof_ic_lev_trotsky_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1111 days = 35 }
+		}
+		else_if = {   # hof_ic_trotsky_the_new_course
+			limit = { NOT = { has_completed_focus = hof_ic_trotsky_the_new_course } }
+			activate_shine_on_focus = hof_ic_trotsky_the_new_course
+			set_country_flag = {
+				flag = hof_ic_lev_trotsky_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1111 days = 35 }
+		}
+		else_if = {   # hof_ic_trotsky_against_the_bureaucracy
+			limit = { NOT = { has_completed_focus = hof_ic_trotsky_against_the_bureaucracy } }
+			activate_shine_on_focus = hof_ic_trotsky_against_the_bureaucracy
+			set_country_flag = {
+				flag = hof_ic_lev_trotsky_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1111 days = 35 }
+		}
+		else_if = {   # 岔路未定：弹【经济的岔路口】并原地等待
+			limit = {
+				SOV_lev_trotsky = {
+					NOT = { has_character_flag = hof_ic_trotsky_path_market_flag }
+					NOT = { has_character_flag = hof_ic_trotsky_path_labour_flag }
+				}
+			}
+			country_event = { id = heartofiron.1060 days = 1 }
+			country_event = { id = heartofiron.1110 days = 5 random_days = 3 }
+		}
+		else_if = {   # 岔路已选：有限市场化
+			limit = {
+				SOV_lev_trotsky = { has_character_flag = hof_ic_trotsky_path_market_flag }
+				NOT = { has_completed_focus = hof_ic_trotsky_limited_market_reforms }
+			}
+			activate_shine_on_focus = hof_ic_trotsky_limited_market_reforms
+			set_country_flag = {
+				flag = hof_ic_lev_trotsky_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1111 days = 35 }
+		}
+		else_if = {   # 岔路已选：劳动军
+			limit = {
+				SOV_lev_trotsky = { has_character_flag = hof_ic_trotsky_path_labour_flag }
+				NOT = { has_completed_focus = hof_ic_trotsky_labour_armies }
+			}
+			activate_shine_on_focus = hof_ic_trotsky_labour_armies
+			set_country_flag = {
+				flag = hof_ic_lev_trotsky_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1111 days = 35 }
+		}
+		else_if = {   # hof_ic_trotsky_state_planning
+			limit = { NOT = { has_completed_focus = hof_ic_trotsky_state_planning } }
+			activate_shine_on_focus = hof_ic_trotsky_state_planning
+			set_country_flag = {
+				flag = hof_ic_lev_trotsky_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1111 days = 35 }
+		}
+		else_if = {   # hof_ic_trotsky_accelerated_industrialization
+			limit = { NOT = { has_completed_focus = hof_ic_trotsky_accelerated_industrialization } }
+			activate_shine_on_focus = hof_ic_trotsky_accelerated_industrialization
+			set_country_flag = {
+				flag = hof_ic_lev_trotsky_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1111 days = 35 }
+		}
+		else_if = {   # hof_ic_trotsky_the_comintern_manifesto
+			limit = { NOT = { has_completed_focus = hof_ic_trotsky_the_comintern_manifesto } }
+			activate_shine_on_focus = hof_ic_trotsky_the_comintern_manifesto
+			set_country_flag = {
+				flag = hof_ic_lev_trotsky_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1111 days = 35 }
+		}
+		else_if = {   # hof_ic_trotsky_the_chinese_question
+			limit = { NOT = { has_completed_focus = hof_ic_trotsky_the_chinese_question } }
+			activate_shine_on_focus = hof_ic_trotsky_the_chinese_question
+			set_country_flag = {
+				flag = hof_ic_lev_trotsky_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1111 days = 35 }
+		}
+		else_if = {   # hof_ic_trotsky_united_front
+			limit = { NOT = { has_completed_focus = hof_ic_trotsky_united_front } }
+			activate_shine_on_focus = hof_ic_trotsky_united_front
+			set_country_flag = {
+				flag = hof_ic_lev_trotsky_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1111 days = 35 }
+		}
+	}
+}
+
+# ---------------------------------------------------------------------------
+# 列夫·托洛茨基 的个人线驱动器：完成已点亮的国策
+# ---------------------------------------------------------------------------
+country_event = {
+	id = heartofiron.1111
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		hof_ic_seated_lev_trotsky = yes
+	}
+
+	immediate = {
+		if = {
+			limit = { has_shine_effect_on_focus = hof_ic_trotsky_build_the_red_army }
+			complete_national_focus = { focus = hof_ic_trotsky_build_the_red_army }
+			clr_country_flag = hof_ic_lev_trotsky_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1110 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_trotsky_military_specialists }
+			complete_national_focus = { focus = hof_ic_trotsky_military_specialists }
+			clr_country_flag = hof_ic_lev_trotsky_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1110 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_trotsky_against_partisan_warfare }
+			complete_national_focus = { focus = hof_ic_trotsky_against_partisan_warfare }
+			clr_country_flag = hof_ic_lev_trotsky_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1110 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_trotsky_uneven_and_combined_development }
+			complete_national_focus = { focus = hof_ic_trotsky_uneven_and_combined_development }
+			clr_country_flag = hof_ic_lev_trotsky_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1110 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_trotsky_permanent_revolution }
+			complete_national_focus = { focus = hof_ic_trotsky_permanent_revolution }
+			clr_country_flag = hof_ic_lev_trotsky_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1110 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_trotsky_socialism_in_one_country }
+			complete_national_focus = { focus = hof_ic_trotsky_socialism_in_one_country }
+			clr_country_flag = hof_ic_lev_trotsky_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1110 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_trotsky_the_new_course }
+			complete_national_focus = { focus = hof_ic_trotsky_the_new_course }
+			clr_country_flag = hof_ic_lev_trotsky_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1110 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_trotsky_against_the_bureaucracy }
+			complete_national_focus = { focus = hof_ic_trotsky_against_the_bureaucracy }
+			clr_country_flag = hof_ic_lev_trotsky_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1110 days = 3 random_days = 3 }
+		}
+		else_if = {   # 岔路选中：有限市场化
+			limit = { has_shine_effect_on_focus = hof_ic_trotsky_limited_market_reforms SOV_lev_trotsky = { has_character_flag = hof_ic_trotsky_path_market_flag } }
+			complete_national_focus = { focus = hof_ic_trotsky_limited_market_reforms }
+			clr_country_flag = hof_ic_lev_trotsky_progress
+			country_event = { id = heartofiron.1110 days = 3 random_days = 3 }
+		}
+		else_if = {   # 岔路选中：劳动军
+			limit = { has_shine_effect_on_focus = hof_ic_trotsky_labour_armies SOV_lev_trotsky = { has_character_flag = hof_ic_trotsky_path_labour_flag } }
+			complete_national_focus = { focus = hof_ic_trotsky_labour_armies }
+			clr_country_flag = hof_ic_lev_trotsky_progress
+			country_event = { id = heartofiron.1110 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_trotsky_state_planning }
+			complete_national_focus = { focus = hof_ic_trotsky_state_planning }
+			clr_country_flag = hof_ic_lev_trotsky_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1110 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_trotsky_accelerated_industrialization }
+			complete_national_focus = { focus = hof_ic_trotsky_accelerated_industrialization }
+			clr_country_flag = hof_ic_lev_trotsky_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1110 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_trotsky_the_comintern_manifesto }
+			complete_national_focus = { focus = hof_ic_trotsky_the_comintern_manifesto }
+			clr_country_flag = hof_ic_lev_trotsky_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1110 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_trotsky_the_chinese_question }
+			complete_national_focus = { focus = hof_ic_trotsky_the_chinese_question }
+			clr_country_flag = hof_ic_lev_trotsky_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1110 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_trotsky_united_front }
+			complete_national_focus = { focus = hof_ic_trotsky_united_front }
+			clr_country_flag = hof_ic_lev_trotsky_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1110 days = 3 random_days = 3 }
+		}
+		else_if = {   # 终局：永久的革命者
+			limit = { has_shine_effect_on_focus = hof_ic_trotsky_the_permanent_revolutionary SOV_lev_trotsky = { has_character_flag = hof_ic_trotsky_ending_revolution_flag } }
+			complete_national_focus = { focus = hof_ic_trotsky_the_permanent_revolutionary }
+			clr_country_flag = hof_ic_lev_trotsky_progress
+			set_country_flag = hof_ic_lev_trotsky_post_ending_resume_v1
+			if = {
+				limit = { NOT = { AND = {
+					has_completed_focus = hof_ic_trotsky_build_the_red_army
+					has_completed_focus = hof_ic_trotsky_military_specialists
+					has_completed_focus = hof_ic_trotsky_against_partisan_warfare
+					has_completed_focus = hof_ic_trotsky_uneven_and_combined_development
+					has_completed_focus = hof_ic_trotsky_permanent_revolution
+					has_completed_focus = hof_ic_trotsky_socialism_in_one_country
+					has_completed_focus = hof_ic_trotsky_the_new_course
+					has_completed_focus = hof_ic_trotsky_against_the_bureaucracy
+					has_completed_focus = hof_ic_trotsky_state_planning
+					has_completed_focus = hof_ic_trotsky_accelerated_industrialization
+					has_completed_focus = hof_ic_trotsky_the_comintern_manifesto
+					has_completed_focus = hof_ic_trotsky_the_chinese_question
+					has_completed_focus = hof_ic_trotsky_united_front
+				} } }
+				country_event = { id = heartofiron.1110 days = 3 random_days = 3 }
+			}
+		}
+		else_if = {   # 终局：国家建设者
+			limit = { has_shine_effect_on_focus = hof_ic_trotsky_the_builder_of_the_state SOV_lev_trotsky = { has_character_flag = hof_ic_trotsky_ending_state_flag } }
+			complete_national_focus = { focus = hof_ic_trotsky_the_builder_of_the_state }
+			clr_country_flag = hof_ic_lev_trotsky_progress
+			set_country_flag = hof_ic_lev_trotsky_post_ending_resume_v1
+			if = {
+				limit = { NOT = { AND = {
+					has_completed_focus = hof_ic_trotsky_build_the_red_army
+					has_completed_focus = hof_ic_trotsky_military_specialists
+					has_completed_focus = hof_ic_trotsky_against_partisan_warfare
+					has_completed_focus = hof_ic_trotsky_uneven_and_combined_development
+					has_completed_focus = hof_ic_trotsky_permanent_revolution
+					has_completed_focus = hof_ic_trotsky_socialism_in_one_country
+					has_completed_focus = hof_ic_trotsky_the_new_course
+					has_completed_focus = hof_ic_trotsky_against_the_bureaucracy
+					has_completed_focus = hof_ic_trotsky_state_planning
+					has_completed_focus = hof_ic_trotsky_accelerated_industrialization
+					has_completed_focus = hof_ic_trotsky_the_comintern_manifesto
+					has_completed_focus = hof_ic_trotsky_the_chinese_question
+					has_completed_focus = hof_ic_trotsky_united_front
+				} } }
+				country_event = { id = heartofiron.1110 days = 3 random_days = 3 }
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					NOT = {
+						AND = {
+							has_completed_focus = hof_ic_trotsky_build_the_red_army
+							has_completed_focus = hof_ic_trotsky_military_specialists
+							has_completed_focus = hof_ic_trotsky_against_partisan_warfare
+							has_completed_focus = hof_ic_trotsky_uneven_and_combined_development
+							has_completed_focus = hof_ic_trotsky_permanent_revolution
+							has_completed_focus = hof_ic_trotsky_socialism_in_one_country
+							has_completed_focus = hof_ic_trotsky_the_new_course
+							has_completed_focus = hof_ic_trotsky_against_the_bureaucracy
+							has_completed_focus = hof_ic_trotsky_state_planning
+							has_completed_focus = hof_ic_trotsky_accelerated_industrialization
+							has_completed_focus = hof_ic_trotsky_the_comintern_manifesto
+							has_completed_focus = hof_ic_trotsky_the_chinese_question
+							has_completed_focus = hof_ic_trotsky_united_front
+						}
+					}
+				}
+				country_event = { id = heartofiron.1110 days = 3 random_days = 3 }
+			}
+		}
+		# ---- 抉择：还没定过方向、且支线已走通 N 条 -> 弹二选一事件 ----
+		if = {
+			limit = {
+				NOT = {
+					OR = {
+						has_completed_focus = hof_ic_trotsky_the_permanent_revolutionary
+						has_completed_focus = hof_ic_trotsky_the_builder_of_the_state
+					}
+				}
+				count_triggers = {
+					amount = 3
+					has_completed_focus = hof_ic_trotsky_against_partisan_warfare
+					has_completed_focus = hof_ic_trotsky_socialism_in_one_country
+					has_completed_focus = hof_ic_trotsky_against_the_bureaucracy
+					has_completed_focus = hof_ic_trotsky_accelerated_industrialization
+					has_completed_focus = hof_ic_trotsky_united_front
+				}
+			}
+			country_event = { id = heartofiron.1050 days = 1 }
+		}
+	}
+}
+
+# ---------------------------------------------------------------------------
+# 列夫·托洛茨基 的终局二选一：支线走通 3 条后弹出（蓝本 GER_inner_circle_himmler.00）
+# ---------------------------------------------------------------------------
+country_event = {
+	id = heartofiron.1050
+	title = heartofiron.1050.t
+	desc = heartofiron.1050.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = { set_country_flag = hof_ic_lev_trotsky_choice_pending }
+	}
+
+	option = {   # 永久的革命者
+		name = heartofiron.1050.a
+		ai_chance = {
+			base = 10
+		}
+		custom_effect_tooltip = {
+			localization_key = hof_ic_ending_choice_tt
+			CHARACTER = SOV_lev_trotsky
+			FOCUS = hof_ic_trotsky_the_permanent_revolutionary
+		}
+		hidden_effect = {
+			SOV_lev_trotsky = { set_character_flag = hof_ic_trotsky_ending_revolution_flag }
+			clr_country_flag = hof_ic_lev_trotsky_choice_pending
+		}
+	}
+
+	option = {   # 国家建设者
+		name = heartofiron.1050.b
+		ai_chance = {
+			base = 10
+		}
+		custom_effect_tooltip = {
+			localization_key = hof_ic_ending_choice_tt
+			CHARACTER = SOV_lev_trotsky
+			FOCUS = hof_ic_trotsky_the_builder_of_the_state
+		}
+		hidden_effect = {
+			SOV_lev_trotsky = { set_character_flag = hof_ic_trotsky_ending_state_flag }
+			clr_country_flag = hof_ic_lev_trotsky_choice_pending
+		}
+	}
+}
+
+# ---------------------------------------------------------------------------
+# 列夫·托洛茨基 的岔路二选一：经济的岔路口（蓝本 GER_inner_circle_himmler.00）
+# ---------------------------------------------------------------------------
+country_event = {
+	id = heartofiron.1060
+	title = heartofiron.1060.t
+	desc = heartofiron.1060.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = { set_country_flag = hof_ic_lev_trotsky_choice_pending }
+	}
+
+	option = {   # 有限市场化
+		name = heartofiron.1060.a
+		ai_chance = {
+			base = 10
+		}
+		custom_effect_tooltip = {
+			localization_key = hof_ic_ending_choice_tt
+			CHARACTER = SOV_lev_trotsky
+			FOCUS = hof_ic_trotsky_limited_market_reforms
+		}
+		hidden_effect = {
+			SOV_lev_trotsky = { set_character_flag = hof_ic_trotsky_path_market_flag }
+			clr_country_flag = hof_ic_lev_trotsky_choice_pending
+		}
+	}
+
+	option = {   # 劳动军
+		name = heartofiron.1060.b
+		ai_chance = {
+			base = 10
+		}
+		custom_effect_tooltip = {
+			localization_key = hof_ic_ending_choice_tt
+			CHARACTER = SOV_lev_trotsky
+			FOCUS = hof_ic_trotsky_labour_armies
+		}
+		hidden_effect = {
+			SOV_lev_trotsky = { set_character_flag = hof_ic_trotsky_path_labour_flag }
+			clr_country_flag = hof_ic_lev_trotsky_choice_pending
+		}
+	}
+}
+
+# ---------------------------------------------------------------------------
+# 尼古拉·布哈林 的个人线驱动器：开下一个国策
+# ---------------------------------------------------------------------------
+country_event = {
+	id = heartofiron.1120
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		hof_ic_seated_nikolay_bukharin = yes
+	}
+
+	immediate = {
+		if = {   # 岔路未定：弹【路线之争】并原地等待
+			limit = {
+				SOV_nikolay_bukharin = {
+					NOT = { has_character_flag = hof_ic_bukharin_path_nep_flag }
+					NOT = { has_character_flag = hof_ic_bukharin_path_left_flag }
+				}
+			}
+			country_event = { id = heartofiron.1061 days = 1 }
+			country_event = { id = heartofiron.1120 days = 5 random_days = 3 }
+		}
+		else_if = {   # 岔路已选：过渡时期的经济
+			limit = {
+				SOV_nikolay_bukharin = { has_character_flag = hof_ic_bukharin_path_nep_flag }
+				NOT = { has_completed_focus = hof_ic_bukharin_economics_of_transition }
+			}
+			activate_shine_on_focus = hof_ic_bukharin_economics_of_transition
+			set_country_flag = {
+				flag = hof_ic_nikolay_bukharin_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1121 days = 35 }
+		}
+		else_if = {   # 岔路已选：左翼共产主义
+			limit = {
+				SOV_nikolay_bukharin = { has_character_flag = hof_ic_bukharin_path_left_flag }
+				NOT = { has_completed_focus = hof_ic_bukharin_left_communism }
+			}
+			activate_shine_on_focus = hof_ic_bukharin_left_communism
+			set_country_flag = {
+				flag = hof_ic_nikolay_bukharin_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1121 days = 35 }
+		}
+		else_if = {   # hof_ic_bukharin_nep_is_not_a_retreat
+			limit = {
+				SOV_nikolay_bukharin = { has_character_flag = hof_ic_bukharin_path_nep_flag }
+				NOT = { has_completed_focus = hof_ic_bukharin_nep_is_not_a_retreat }
+			}
+			activate_shine_on_focus = hof_ic_bukharin_nep_is_not_a_retreat
+			set_country_flag = {
+				flag = hof_ic_nikolay_bukharin_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1121 days = 35 }
+		}
+		else_if = {   # hof_ic_bukharin_abolish_the_tribute
+			limit = {
+				SOV_nikolay_bukharin = { has_character_flag = hof_ic_bukharin_path_nep_flag }
+				NOT = { has_completed_focus = hof_ic_bukharin_abolish_the_tribute }
+			}
+			activate_shine_on_focus = hof_ic_bukharin_abolish_the_tribute
+			set_country_flag = {
+				flag = hof_ic_nikolay_bukharin_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1121 days = 35 }
+		}
+		else_if = {   # hof_ic_bukharin_alliance_is_the_axis
+			limit = { NOT = { has_completed_focus = hof_ic_bukharin_alliance_is_the_axis } }
+			activate_shine_on_focus = hof_ic_bukharin_alliance_is_the_axis
+			set_country_flag = {
+				flag = hof_ic_nikolay_bukharin_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1121 days = 35 }
+		}
+		else_if = {   # hof_ic_bukharin_enrich_yourselves
+			limit = { NOT = { has_completed_focus = hof_ic_bukharin_enrich_yourselves } }
+			activate_shine_on_focus = hof_ic_bukharin_enrich_yourselves
+			set_country_flag = {
+				flag = hof_ic_nikolay_bukharin_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1121 days = 35 }
+		}
+		else_if = {   # hof_ic_bukharin_proportional_development
+			limit = { NOT = { has_completed_focus = hof_ic_bukharin_proportional_development } }
+			activate_shine_on_focus = hof_ic_bukharin_proportional_development
+			set_country_flag = {
+				flag = hof_ic_nikolay_bukharin_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1121 days = 35 }
+		}
+		else_if = {   # hof_ic_bukharin_cooperatives_into_the_system
+			limit = { NOT = { has_completed_focus = hof_ic_bukharin_cooperatives_into_the_system } }
+			activate_shine_on_focus = hof_ic_bukharin_cooperatives_into_the_system
+			set_country_flag = {
+				flag = hof_ic_nikolay_bukharin_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1121 days = 35 }
+		}
+		else_if = {   # hof_ic_bukharin_socialism_in_one_country
+			limit = {
+				SOV_nikolay_bukharin = { has_character_flag = hof_ic_bukharin_path_nep_flag }
+				NOT = { has_completed_focus = hof_ic_bukharin_socialism_in_one_country }
+			}
+			activate_shine_on_focus = hof_ic_bukharin_socialism_in_one_country
+			set_country_flag = {
+				flag = hof_ic_nikolay_bukharin_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1121 days = 35 }
+		}
+	}
+}
+
+# ---------------------------------------------------------------------------
+# 尼古拉·布哈林 的个人线驱动器：完成已点亮的国策
+# ---------------------------------------------------------------------------
+country_event = {
+	id = heartofiron.1121
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		hof_ic_seated_nikolay_bukharin = yes
+	}
+
+	immediate = {
+		if = {   # 岔路选中：过渡时期的经济
+			limit = { has_shine_effect_on_focus = hof_ic_bukharin_economics_of_transition SOV_nikolay_bukharin = { has_character_flag = hof_ic_bukharin_path_nep_flag } }
+			complete_national_focus = { focus = hof_ic_bukharin_economics_of_transition }
+			clr_country_flag = hof_ic_nikolay_bukharin_progress
+			country_event = { id = heartofiron.1120 days = 3 random_days = 3 }
+		}
+		else_if = {   # 岔路选中：左翼共产主义
+			limit = { has_shine_effect_on_focus = hof_ic_bukharin_left_communism SOV_nikolay_bukharin = { has_character_flag = hof_ic_bukharin_path_left_flag } }
+			complete_national_focus = { focus = hof_ic_bukharin_left_communism }
+			clr_country_flag = hof_ic_nikolay_bukharin_progress
+			country_event = { id = heartofiron.1120 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_bukharin_nep_is_not_a_retreat }
+			complete_national_focus = { focus = hof_ic_bukharin_nep_is_not_a_retreat }
+			clr_country_flag = hof_ic_nikolay_bukharin_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1120 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_bukharin_abolish_the_tribute }
+			complete_national_focus = { focus = hof_ic_bukharin_abolish_the_tribute }
+			clr_country_flag = hof_ic_nikolay_bukharin_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1120 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_bukharin_alliance_is_the_axis }
+			complete_national_focus = { focus = hof_ic_bukharin_alliance_is_the_axis }
+			clr_country_flag = hof_ic_nikolay_bukharin_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1120 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_bukharin_enrich_yourselves }
+			complete_national_focus = { focus = hof_ic_bukharin_enrich_yourselves }
+			clr_country_flag = hof_ic_nikolay_bukharin_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1120 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_bukharin_proportional_development }
+			complete_national_focus = { focus = hof_ic_bukharin_proportional_development }
+			clr_country_flag = hof_ic_nikolay_bukharin_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1120 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_bukharin_cooperatives_into_the_system }
+			complete_national_focus = { focus = hof_ic_bukharin_cooperatives_into_the_system }
+			clr_country_flag = hof_ic_nikolay_bukharin_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1120 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_bukharin_socialism_in_one_country }
+			complete_national_focus = { focus = hof_ic_bukharin_socialism_in_one_country }
+			clr_country_flag = hof_ic_nikolay_bukharin_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1120 days = 3 random_days = 3 }
+		}
+		else = {
+			if = {
+				limit = {
+					NOT = {
+						AND = {
+							has_completed_focus = hof_ic_bukharin_nep_is_not_a_retreat
+							has_completed_focus = hof_ic_bukharin_abolish_the_tribute
+							has_completed_focus = hof_ic_bukharin_alliance_is_the_axis
+							has_completed_focus = hof_ic_bukharin_enrich_yourselves
+							has_completed_focus = hof_ic_bukharin_proportional_development
+							has_completed_focus = hof_ic_bukharin_cooperatives_into_the_system
+							has_completed_focus = hof_ic_bukharin_socialism_in_one_country
+						}
+					}
+					NOT = {
+						SOV_nikolay_bukharin = { has_character_flag = hof_ic_bukharin_path_left_flag }
+					}
+				}
+				country_event = { id = heartofiron.1120 days = 3 random_days = 3 }
+			}
+		}
+	}
+}
+
+# ---------------------------------------------------------------------------
+# 尼古拉·布哈林 的岔路二选一：路线之争（蓝本 GER_inner_circle_himmler.00）
+# ---------------------------------------------------------------------------
+country_event = {
+	id = heartofiron.1061
+	title = heartofiron.1061.t
+	desc = heartofiron.1061.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = { set_country_flag = hof_ic_nikolay_bukharin_choice_pending }
+	}
+
+	option = {   # 过渡时期的经济
+		name = heartofiron.1061.a
+		ai_chance = {
+			base = 10
+		}
+		custom_effect_tooltip = {
+			localization_key = hof_ic_ending_choice_tt
+			CHARACTER = SOV_nikolay_bukharin
+			FOCUS = hof_ic_bukharin_economics_of_transition
+		}
+		hidden_effect = {
+			SOV_nikolay_bukharin = { set_character_flag = hof_ic_bukharin_path_nep_flag }
+			clr_country_flag = hof_ic_nikolay_bukharin_choice_pending
+		}
+	}
+
+	option = {   # 左翼共产主义
+		name = heartofiron.1061.b
+		ai_chance = {
+			base = 10
+		}
+		custom_effect_tooltip = {
+			localization_key = hof_ic_ending_choice_tt
+			CHARACTER = SOV_nikolay_bukharin
+			FOCUS = hof_ic_bukharin_left_communism
+		}
+		hidden_effect = {
+			SOV_nikolay_bukharin = { set_character_flag = hof_ic_bukharin_path_left_flag }
+			clr_country_flag = hof_ic_nikolay_bukharin_choice_pending
+		}
+	}
+}
+
+# ---------------------------------------------------------------------------
+# 阿列克谢·李可夫 的个人线驱动器：开下一个国策
+# ---------------------------------------------------------------------------
+country_event = {
+	id = heartofiron.1130
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		hof_ic_seated_aleksey_rykov = yes
+	}
+
+	immediate = {
+		if = {   # hof_ic_rykov_supreme_economic_council
+			limit = { NOT = { has_completed_focus = hof_ic_rykov_supreme_economic_council } }
+			activate_shine_on_focus = hof_ic_rykov_supreme_economic_council
+			set_country_flag = {
+				flag = hof_ic_aleksey_rykov_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1131 days = 35 }
+		}
+		else_if = {   # hof_ic_rykov_food_supply_commissar
+			limit = { NOT = { has_completed_focus = hof_ic_rykov_food_supply_commissar } }
+			activate_shine_on_focus = hof_ic_rykov_food_supply_commissar
+			set_country_flag = {
+				flag = hof_ic_aleksey_rykov_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1131 days = 35 }
+		}
+		else_if = {   # hof_ic_rykov_labour_defence_council
+			limit = { NOT = { has_completed_focus = hof_ic_rykov_labour_defence_council } }
+			activate_shine_on_focus = hof_ic_rykov_labour_defence_council
+			set_country_flag = {
+				flag = hof_ic_aleksey_rykov_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1131 days = 35 }
+		}
+		else_if = {   # hof_ic_rykov_sponsor_aviation
+			limit = { NOT = { has_completed_focus = hof_ic_rykov_sponsor_aviation } }
+			activate_shine_on_focus = hof_ic_rykov_sponsor_aviation
+			set_country_flag = {
+				flag = hof_ic_aleksey_rykov_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1131 days = 35 }
+		}
+		else_if = {   # hof_ic_rykov_labour_defence_chair
+			limit = { NOT = { has_completed_focus = hof_ic_rykov_labour_defence_chair } }
+			activate_shine_on_focus = hof_ic_rykov_labour_defence_chair
+			set_country_flag = {
+				flag = hof_ic_aleksey_rykov_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1131 days = 35 }
+		}
+	}
+}
+
+# ---------------------------------------------------------------------------
+# 阿列克谢·李可夫 的个人线驱动器：完成已点亮的国策
+# ---------------------------------------------------------------------------
+country_event = {
+	id = heartofiron.1131
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		hof_ic_seated_aleksey_rykov = yes
+	}
+
+	immediate = {
+		if = {
+			limit = { has_shine_effect_on_focus = hof_ic_rykov_supreme_economic_council }
+			complete_national_focus = { focus = hof_ic_rykov_supreme_economic_council }
+			clr_country_flag = hof_ic_aleksey_rykov_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1130 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_rykov_food_supply_commissar }
+			complete_national_focus = { focus = hof_ic_rykov_food_supply_commissar }
+			clr_country_flag = hof_ic_aleksey_rykov_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1130 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_rykov_labour_defence_council }
+			complete_national_focus = { focus = hof_ic_rykov_labour_defence_council }
+			clr_country_flag = hof_ic_aleksey_rykov_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1130 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_rykov_sponsor_aviation }
+			complete_national_focus = { focus = hof_ic_rykov_sponsor_aviation }
+			clr_country_flag = hof_ic_aleksey_rykov_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1130 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_rykov_labour_defence_chair }
+			complete_national_focus = { focus = hof_ic_rykov_labour_defence_chair }
+			clr_country_flag = hof_ic_aleksey_rykov_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1130 days = 3 random_days = 3 }
+		}
+		else = {
+			if = {
+				limit = {
+					NOT = {
+						AND = {
+							has_completed_focus = hof_ic_rykov_supreme_economic_council
+							has_completed_focus = hof_ic_rykov_food_supply_commissar
+							has_completed_focus = hof_ic_rykov_labour_defence_council
+							has_completed_focus = hof_ic_rykov_sponsor_aviation
+							has_completed_focus = hof_ic_rykov_labour_defence_chair
+						}
+					}
+				}
+				country_event = { id = heartofiron.1130 days = 3 random_days = 3 }
+			}
+		}
+	}
+}
+
+# ---------------------------------------------------------------------------
+# 格里戈里·季诺维也夫 的个人线驱动器：开下一个国策
+# ---------------------------------------------------------------------------
+country_event = {
+	id = heartofiron.1140
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		hof_ic_seated_grigory_zinovyev = yes
+	}
+
+	immediate = {
+		if = {   # 终局：铁板一块的国际
+			limit = {
+				SOV_grigory_zinovyev = { has_character_flag = hof_ic_zinovyev_ending_monolithic_flag }
+				NOT = { has_completed_focus = hof_ic_zinovyev_monolithic_international }
+			}
+			activate_shine_on_focus = hof_ic_zinovyev_monolithic_international
+			set_country_flag = {
+				flag = hof_ic_grigory_zinovyev_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1141 days = 35 }
+		}
+		else_if = {   # 终局：群众的国际
+			limit = {
+				SOV_grigory_zinovyev = { has_character_flag = hof_ic_zinovyev_ending_mass_flag }
+				NOT = { has_completed_focus = hof_ic_zinovyev_mass_international }
+			}
+			activate_shine_on_focus = hof_ic_zinovyev_mass_international
+			set_country_flag = {
+				flag = hof_ic_grigory_zinovyev_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1141 days = 35 }
+		}
+		else_if = {   # hof_ic_zinovyev_found_the_comintern
+			limit = { NOT = { has_completed_focus = hof_ic_zinovyev_found_the_comintern } }
+			activate_shine_on_focus = hof_ic_zinovyev_found_the_comintern
+			set_country_flag = {
+				flag = hof_ic_grigory_zinovyev_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1141 days = 35 }
+		}
+		else_if = {   # hof_ic_zinovyev_twenty_one_conditions
+			limit = { NOT = { has_completed_focus = hof_ic_zinovyev_twenty_one_conditions } }
+			activate_shine_on_focus = hof_ic_zinovyev_twenty_one_conditions
+			set_country_flag = {
+				flag = hof_ic_grigory_zinovyev_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1141 days = 35 }
+		}
+		else_if = {   # hof_ic_zinovyev_social_fascism
+			limit = { NOT = { has_completed_focus = hof_ic_zinovyev_social_fascism } }
+			activate_shine_on_focus = hof_ic_zinovyev_social_fascism
+			set_country_flag = {
+				flag = hof_ic_grigory_zinovyev_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1141 days = 35 }
+		}
+		else_if = {   # hof_ic_zinovyev_bolshevization
+			limit = { NOT = { has_completed_focus = hof_ic_zinovyev_bolshevization } }
+			activate_shine_on_focus = hof_ic_zinovyev_bolshevization
+			set_country_flag = {
+				flag = hof_ic_grigory_zinovyev_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1141 days = 35 }
+		}
+		else_if = {   # hof_ic_zinovyev_congress_of_the_east
+			limit = { NOT = { has_completed_focus = hof_ic_zinovyev_congress_of_the_east } }
+			activate_shine_on_focus = hof_ic_zinovyev_congress_of_the_east
+			set_country_flag = {
+				flag = hof_ic_grigory_zinovyev_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1141 days = 35 }
+		}
+		else_if = {   # hof_ic_zinovyev_workers_united_front
+			limit = { NOT = { has_completed_focus = hof_ic_zinovyev_workers_united_front } }
+			activate_shine_on_focus = hof_ic_zinovyev_workers_united_front
+			set_country_flag = {
+				flag = hof_ic_grigory_zinovyev_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1141 days = 35 }
+		}
+		else_if = {   # hof_ic_zinovyev_speed_and_route
+			limit = { NOT = { has_completed_focus = hof_ic_zinovyev_speed_and_route } }
+			activate_shine_on_focus = hof_ic_zinovyev_speed_and_route
+			set_country_flag = {
+				flag = hof_ic_grigory_zinovyev_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1141 days = 35 }
+		}
+		else_if = {   # hof_ic_zinovyev_party_in_revolution
+			limit = { NOT = { has_completed_focus = hof_ic_zinovyev_party_in_revolution } }
+			activate_shine_on_focus = hof_ic_zinovyev_party_in_revolution
+			set_country_flag = {
+				flag = hof_ic_grigory_zinovyev_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1141 days = 35 }
+		}
+		else_if = {   # hof_ic_zinovyev_trade_unions
+			limit = { NOT = { has_completed_focus = hof_ic_zinovyev_trade_unions } }
+			activate_shine_on_focus = hof_ic_zinovyev_trade_unions
+			set_country_flag = {
+				flag = hof_ic_grigory_zinovyev_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1141 days = 35 }
+		}
+	}
+}
+
+# ---------------------------------------------------------------------------
+# 格里戈里·季诺维也夫 的个人线驱动器：完成已点亮的国策
+# ---------------------------------------------------------------------------
+country_event = {
+	id = heartofiron.1141
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		hof_ic_seated_grigory_zinovyev = yes
+	}
+
+	immediate = {
+		if = {
+			limit = { has_shine_effect_on_focus = hof_ic_zinovyev_found_the_comintern }
+			complete_national_focus = { focus = hof_ic_zinovyev_found_the_comintern }
+			clr_country_flag = hof_ic_grigory_zinovyev_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1140 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_zinovyev_twenty_one_conditions }
+			complete_national_focus = { focus = hof_ic_zinovyev_twenty_one_conditions }
+			clr_country_flag = hof_ic_grigory_zinovyev_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1140 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_zinovyev_social_fascism }
+			complete_national_focus = { focus = hof_ic_zinovyev_social_fascism }
+			clr_country_flag = hof_ic_grigory_zinovyev_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1140 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_zinovyev_bolshevization }
+			complete_national_focus = { focus = hof_ic_zinovyev_bolshevization }
+			clr_country_flag = hof_ic_grigory_zinovyev_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1140 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_zinovyev_congress_of_the_east }
+			complete_national_focus = { focus = hof_ic_zinovyev_congress_of_the_east }
+			clr_country_flag = hof_ic_grigory_zinovyev_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1140 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_zinovyev_workers_united_front }
+			complete_national_focus = { focus = hof_ic_zinovyev_workers_united_front }
+			clr_country_flag = hof_ic_grigory_zinovyev_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1140 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_zinovyev_speed_and_route }
+			complete_national_focus = { focus = hof_ic_zinovyev_speed_and_route }
+			clr_country_flag = hof_ic_grigory_zinovyev_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1140 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_zinovyev_party_in_revolution }
+			complete_national_focus = { focus = hof_ic_zinovyev_party_in_revolution }
+			clr_country_flag = hof_ic_grigory_zinovyev_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1140 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_zinovyev_trade_unions }
+			complete_national_focus = { focus = hof_ic_zinovyev_trade_unions }
+			clr_country_flag = hof_ic_grigory_zinovyev_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1140 days = 3 random_days = 3 }
+		}
+		else_if = {   # 终局：铁板一块的国际
+			limit = { has_shine_effect_on_focus = hof_ic_zinovyev_monolithic_international SOV_grigory_zinovyev = { has_character_flag = hof_ic_zinovyev_ending_monolithic_flag } }
+			complete_national_focus = { focus = hof_ic_zinovyev_monolithic_international }
+			clr_country_flag = hof_ic_grigory_zinovyev_progress
+			set_country_flag = hof_ic_grigory_zinovyev_post_ending_resume_v1
+			if = {
+				limit = { NOT = { AND = {
+					has_completed_focus = hof_ic_zinovyev_found_the_comintern
+					has_completed_focus = hof_ic_zinovyev_twenty_one_conditions
+					has_completed_focus = hof_ic_zinovyev_social_fascism
+					has_completed_focus = hof_ic_zinovyev_bolshevization
+					has_completed_focus = hof_ic_zinovyev_congress_of_the_east
+					has_completed_focus = hof_ic_zinovyev_workers_united_front
+					has_completed_focus = hof_ic_zinovyev_speed_and_route
+					has_completed_focus = hof_ic_zinovyev_party_in_revolution
+					has_completed_focus = hof_ic_zinovyev_trade_unions
+				} } }
+				country_event = { id = heartofiron.1140 days = 3 random_days = 3 }
+			}
+		}
+		else_if = {   # 终局：群众的国际
+			limit = { has_shine_effect_on_focus = hof_ic_zinovyev_mass_international SOV_grigory_zinovyev = { has_character_flag = hof_ic_zinovyev_ending_mass_flag } }
+			complete_national_focus = { focus = hof_ic_zinovyev_mass_international }
+			clr_country_flag = hof_ic_grigory_zinovyev_progress
+			set_country_flag = hof_ic_grigory_zinovyev_post_ending_resume_v1
+			if = {
+				limit = { NOT = { AND = {
+					has_completed_focus = hof_ic_zinovyev_found_the_comintern
+					has_completed_focus = hof_ic_zinovyev_twenty_one_conditions
+					has_completed_focus = hof_ic_zinovyev_social_fascism
+					has_completed_focus = hof_ic_zinovyev_bolshevization
+					has_completed_focus = hof_ic_zinovyev_congress_of_the_east
+					has_completed_focus = hof_ic_zinovyev_workers_united_front
+					has_completed_focus = hof_ic_zinovyev_speed_and_route
+					has_completed_focus = hof_ic_zinovyev_party_in_revolution
+					has_completed_focus = hof_ic_zinovyev_trade_unions
+				} } }
+				country_event = { id = heartofiron.1140 days = 3 random_days = 3 }
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					NOT = {
+						AND = {
+							has_completed_focus = hof_ic_zinovyev_found_the_comintern
+							has_completed_focus = hof_ic_zinovyev_twenty_one_conditions
+							has_completed_focus = hof_ic_zinovyev_social_fascism
+							has_completed_focus = hof_ic_zinovyev_bolshevization
+							has_completed_focus = hof_ic_zinovyev_congress_of_the_east
+							has_completed_focus = hof_ic_zinovyev_workers_united_front
+							has_completed_focus = hof_ic_zinovyev_speed_and_route
+							has_completed_focus = hof_ic_zinovyev_party_in_revolution
+							has_completed_focus = hof_ic_zinovyev_trade_unions
+						}
+					}
+				}
+				country_event = { id = heartofiron.1140 days = 3 random_days = 3 }
+			}
+		}
+		# ---- 抉择：还没定过方向、且支线已走通 N 条 -> 弹二选一事件 ----
+		if = {
+			limit = {
+				NOT = {
+					OR = {
+						has_completed_focus = hof_ic_zinovyev_monolithic_international
+						has_completed_focus = hof_ic_zinovyev_mass_international
+					}
+				}
+				count_triggers = {
+					amount = 2
+					has_completed_focus = hof_ic_zinovyev_bolshevization
+					has_completed_focus = hof_ic_zinovyev_speed_and_route
+					has_completed_focus = hof_ic_zinovyev_trade_unions
+				}
+			}
+			country_event = { id = heartofiron.1051 days = 1 }
+		}
+	}
+}
+
+# ---------------------------------------------------------------------------
+# 格里戈里·季诺维也夫 的终局二选一：支线走通 2 条后弹出（蓝本 GER_inner_circle_himmler.00）
+# ---------------------------------------------------------------------------
+country_event = {
+	id = heartofiron.1051
+	title = heartofiron.1051.t
+	desc = heartofiron.1051.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = { set_country_flag = hof_ic_grigory_zinovyev_choice_pending }
+	}
+
+	option = {   # 铁板一块的国际
+		name = heartofiron.1051.a
+		ai_chance = {
+			base = 10
+		}
+		custom_effect_tooltip = {
+			localization_key = hof_ic_ending_choice_tt
+			CHARACTER = SOV_grigory_zinovyev
+			FOCUS = hof_ic_zinovyev_monolithic_international
+		}
+		hidden_effect = {
+			SOV_grigory_zinovyev = { set_character_flag = hof_ic_zinovyev_ending_monolithic_flag }
+			clr_country_flag = hof_ic_grigory_zinovyev_choice_pending
+		}
+	}
+
+	option = {   # 群众的国际
+		name = heartofiron.1051.b
+		ai_chance = {
+			base = 10
+		}
+		custom_effect_tooltip = {
+			localization_key = hof_ic_ending_choice_tt
+			CHARACTER = SOV_grigory_zinovyev
+			FOCUS = hof_ic_zinovyev_mass_international
+		}
+		hidden_effect = {
+			SOV_grigory_zinovyev = { set_character_flag = hof_ic_zinovyev_ending_mass_flag }
+			clr_country_flag = hof_ic_grigory_zinovyev_choice_pending
+		}
+	}
+}
+
+# ---------------------------------------------------------------------------
+# 列夫·加米涅夫 的个人线驱动器：开下一个国策
+# ---------------------------------------------------------------------------
+country_event = {
+	id = heartofiron.1150
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		hof_ic_seated_lev_kamenev = yes
+	}
+
+	immediate = {
+		if = {   # hof_ic_kamenev_lenins_charge
+			limit = { NOT = { has_completed_focus = hof_ic_kamenev_lenins_charge } }
+			activate_shine_on_focus = hof_ic_kamenev_lenins_charge
+			set_country_flag = {
+				flag = hof_ic_lev_kamenev_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1151 days = 35 }
+		}
+		else_if = {   # hof_ic_kamenev_leninism
+			limit = { NOT = { has_completed_focus = hof_ic_kamenev_leninism } }
+			activate_shine_on_focus = hof_ic_kamenev_leninism
+			set_country_flag = {
+				flag = hof_ic_lev_kamenev_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1151 days = 35 }
+		}
+		else_if = {   # hof_ic_kamenev_against_the_lessons
+			limit = { NOT = { has_completed_focus = hof_ic_kamenev_against_the_lessons } }
+			activate_shine_on_focus = hof_ic_kamenev_against_the_lessons
+			set_country_flag = {
+				flag = hof_ic_lev_kamenev_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1151 days = 35 }
+		}
+		else_if = {   # hof_ic_kamenev_lenin_institute
+			limit = { NOT = { has_completed_focus = hof_ic_kamenev_lenin_institute } }
+			activate_shine_on_focus = hof_ic_kamenev_lenin_institute
+			set_country_flag = {
+				flag = hof_ic_lev_kamenev_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1151 days = 35 }
+		}
+		else_if = {   # hof_ic_kamenev_executor_of_the_will
+			limit = { NOT = { has_completed_focus = hof_ic_kamenev_executor_of_the_will } }
+			activate_shine_on_focus = hof_ic_kamenev_executor_of_the_will
+			set_country_flag = {
+				flag = hof_ic_lev_kamenev_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1151 days = 35 }
+		}
+	}
+}
+
+# ---------------------------------------------------------------------------
+# 列夫·加米涅夫 的个人线驱动器：完成已点亮的国策
+# ---------------------------------------------------------------------------
+country_event = {
+	id = heartofiron.1151
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		hof_ic_seated_lev_kamenev = yes
+	}
+
+	immediate = {
+		if = {
+			limit = { has_shine_effect_on_focus = hof_ic_kamenev_lenins_charge }
+			complete_national_focus = { focus = hof_ic_kamenev_lenins_charge }
+			clr_country_flag = hof_ic_lev_kamenev_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1150 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_kamenev_leninism }
+			complete_national_focus = { focus = hof_ic_kamenev_leninism }
+			clr_country_flag = hof_ic_lev_kamenev_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1150 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_kamenev_against_the_lessons }
+			complete_national_focus = { focus = hof_ic_kamenev_against_the_lessons }
+			clr_country_flag = hof_ic_lev_kamenev_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1150 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_kamenev_lenin_institute }
+			complete_national_focus = { focus = hof_ic_kamenev_lenin_institute }
+			clr_country_flag = hof_ic_lev_kamenev_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1150 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_kamenev_executor_of_the_will }
+			complete_national_focus = { focus = hof_ic_kamenev_executor_of_the_will }
+			clr_country_flag = hof_ic_lev_kamenev_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1150 days = 3 random_days = 3 }
+		}
+		else = {
+			if = {
+				limit = {
+					NOT = {
+						AND = {
+							has_completed_focus = hof_ic_kamenev_lenins_charge
+							has_completed_focus = hof_ic_kamenev_leninism
+							has_completed_focus = hof_ic_kamenev_against_the_lessons
+							has_completed_focus = hof_ic_kamenev_lenin_institute
+							has_completed_focus = hof_ic_kamenev_executor_of_the_will
+						}
+					}
+				}
+				country_event = { id = heartofiron.1150 days = 3 random_days = 3 }
+			}
+		}
+	}
+}
+
+# ---------------------------------------------------------------------------
+# 伊万·斯米尔诺夫 的个人线驱动器：开下一个国策
+# ---------------------------------------------------------------------------
+country_event = {
+	id = heartofiron.1160
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		hof_ic_seated_ivan_smirnov = yes
+	}
+
+	immediate = {
+		if = {   # hof_ic_smirnov_the_volga_bridgehead
+			limit = { NOT = { has_completed_focus = hof_ic_smirnov_the_volga_bridgehead } }
+			activate_shine_on_focus = hof_ic_smirnov_the_volga_bridgehead
+			set_country_flag = {
+				flag = hof_ic_ivan_smirnov_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1161 days = 35 }
+		}
+		else_if = {   # hof_ic_smirnov_the_fifth_army
+			limit = { NOT = { has_completed_focus = hof_ic_smirnov_the_fifth_army } }
+			activate_shine_on_focus = hof_ic_smirnov_the_fifth_army
+			set_country_flag = {
+				flag = hof_ic_ivan_smirnov_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1161 days = 35 }
+		}
+		else_if = {   # hof_ic_smirnov_sibrevkom
+			limit = { NOT = { has_completed_focus = hof_ic_smirnov_sibrevkom } }
+			activate_shine_on_focus = hof_ic_smirnov_sibrevkom
+			set_country_flag = {
+				flag = hof_ic_ivan_smirnov_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1161 days = 35 }
+		}
+		else_if = {   # hof_ic_smirnov_far_eastern_republic
+			limit = { NOT = { has_completed_focus = hof_ic_smirnov_far_eastern_republic } }
+			activate_shine_on_focus = hof_ic_smirnov_far_eastern_republic
+			set_country_flag = {
+				flag = hof_ic_ivan_smirnov_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1161 days = 35 }
+		}
+		else_if = {   # hof_ic_smirnov_posts_and_telegraphs
+			limit = { NOT = { has_completed_focus = hof_ic_smirnov_posts_and_telegraphs } }
+			activate_shine_on_focus = hof_ic_smirnov_posts_and_telegraphs
+			set_country_flag = {
+				flag = hof_ic_ivan_smirnov_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1161 days = 35 }
+		}
+		else_if = {   # hof_ic_smirnov_siberian_lenin
+			limit = { NOT = { has_completed_focus = hof_ic_smirnov_siberian_lenin } }
+			activate_shine_on_focus = hof_ic_smirnov_siberian_lenin
+			set_country_flag = {
+				flag = hof_ic_ivan_smirnov_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1161 days = 35 }
+		}
+	}
+}
+
+# ---------------------------------------------------------------------------
+# 伊万·斯米尔诺夫 的个人线驱动器：完成已点亮的国策
+# ---------------------------------------------------------------------------
+country_event = {
+	id = heartofiron.1161
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		hof_ic_seated_ivan_smirnov = yes
+	}
+
+	immediate = {
+		if = {
+			limit = { has_shine_effect_on_focus = hof_ic_smirnov_the_volga_bridgehead }
+			complete_national_focus = { focus = hof_ic_smirnov_the_volga_bridgehead }
+			clr_country_flag = hof_ic_ivan_smirnov_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1160 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_smirnov_the_fifth_army }
+			complete_national_focus = { focus = hof_ic_smirnov_the_fifth_army }
+			clr_country_flag = hof_ic_ivan_smirnov_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1160 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_smirnov_sibrevkom }
+			complete_national_focus = { focus = hof_ic_smirnov_sibrevkom }
+			clr_country_flag = hof_ic_ivan_smirnov_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1160 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_smirnov_far_eastern_republic }
+			complete_national_focus = { focus = hof_ic_smirnov_far_eastern_republic }
+			clr_country_flag = hof_ic_ivan_smirnov_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1160 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_smirnov_posts_and_telegraphs }
+			complete_national_focus = { focus = hof_ic_smirnov_posts_and_telegraphs }
+			clr_country_flag = hof_ic_ivan_smirnov_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1160 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_smirnov_siberian_lenin }
+			complete_national_focus = { focus = hof_ic_smirnov_siberian_lenin }
+			clr_country_flag = hof_ic_ivan_smirnov_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1160 days = 3 random_days = 3 }
+		}
+		else = {
+			if = {
+				limit = {
+					NOT = {
+						AND = {
+							has_completed_focus = hof_ic_smirnov_the_volga_bridgehead
+							has_completed_focus = hof_ic_smirnov_the_fifth_army
+							has_completed_focus = hof_ic_smirnov_sibrevkom
+							has_completed_focus = hof_ic_smirnov_far_eastern_republic
+							has_completed_focus = hof_ic_smirnov_posts_and_telegraphs
+							has_completed_focus = hof_ic_smirnov_siberian_lenin
+						}
+					}
+				}
+				country_event = { id = heartofiron.1160 days = 3 random_days = 3 }
+			}
+		}
+	}
+}
+
+# ---------------------------------------------------------------------------
+# 列昂尼德·谢列布里亚科夫 的个人线驱动器：开下一个国策
+# ---------------------------------------------------------------------------
+country_event = {
+	id = heartofiron.1170
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		hof_ic_seated_leonid_serebryakov = yes
+	}
+
+	immediate = {
+		if = {   # hof_ic_serebryakov_kostroma
+			limit = { NOT = { has_completed_focus = hof_ic_serebryakov_kostroma } }
+			activate_shine_on_focus = hof_ic_serebryakov_kostroma
+			set_country_flag = {
+				flag = hof_ic_leonid_serebryakov_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1171 days = 35 }
+		}
+		else_if = {   # hof_ic_serebryakov_central_committee
+			limit = { NOT = { has_completed_focus = hof_ic_serebryakov_central_committee } }
+			activate_shine_on_focus = hof_ic_serebryakov_central_committee
+			set_country_flag = {
+				flag = hof_ic_leonid_serebryakov_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1171 days = 35 }
+		}
+		else_if = {   # hof_ic_serebryakov_commissariat_of_transport
+			limit = { NOT = { has_completed_focus = hof_ic_serebryakov_commissariat_of_transport } }
+			activate_shine_on_focus = hof_ic_serebryakov_commissariat_of_transport
+			set_country_flag = {
+				flag = hof_ic_leonid_serebryakov_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1171 days = 35 }
+		}
+		else_if = {   # hof_ic_serebryakov_highways_and_motor_transport
+			limit = { NOT = { has_completed_focus = hof_ic_serebryakov_highways_and_motor_transport } }
+			activate_shine_on_focus = hof_ic_serebryakov_highways_and_motor_transport
+			set_country_flag = {
+				flag = hof_ic_leonid_serebryakov_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1171 days = 35 }
+		}
+		else_if = {   # hof_ic_serebryakov_brilliant_worker
+			limit = { NOT = { has_completed_focus = hof_ic_serebryakov_brilliant_worker } }
+			activate_shine_on_focus = hof_ic_serebryakov_brilliant_worker
+			set_country_flag = {
+				flag = hof_ic_leonid_serebryakov_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1171 days = 35 }
+		}
+	}
+}
+
+# ---------------------------------------------------------------------------
+# 列昂尼德·谢列布里亚科夫 的个人线驱动器：完成已点亮的国策
+# ---------------------------------------------------------------------------
+country_event = {
+	id = heartofiron.1171
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		hof_ic_seated_leonid_serebryakov = yes
+	}
+
+	immediate = {
+		if = {
+			limit = { has_shine_effect_on_focus = hof_ic_serebryakov_kostroma }
+			complete_national_focus = { focus = hof_ic_serebryakov_kostroma }
+			clr_country_flag = hof_ic_leonid_serebryakov_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1170 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_serebryakov_central_committee }
+			complete_national_focus = { focus = hof_ic_serebryakov_central_committee }
+			clr_country_flag = hof_ic_leonid_serebryakov_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1170 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_serebryakov_commissariat_of_transport }
+			complete_national_focus = { focus = hof_ic_serebryakov_commissariat_of_transport }
+			clr_country_flag = hof_ic_leonid_serebryakov_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1170 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_serebryakov_highways_and_motor_transport }
+			complete_national_focus = { focus = hof_ic_serebryakov_highways_and_motor_transport }
+			clr_country_flag = hof_ic_leonid_serebryakov_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1170 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_serebryakov_brilliant_worker }
+			complete_national_focus = { focus = hof_ic_serebryakov_brilliant_worker }
+			clr_country_flag = hof_ic_leonid_serebryakov_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1170 days = 3 random_days = 3 }
+		}
+		else = {
+			if = {
+				limit = {
+					NOT = {
+						AND = {
+							has_completed_focus = hof_ic_serebryakov_kostroma
+							has_completed_focus = hof_ic_serebryakov_central_committee
+							has_completed_focus = hof_ic_serebryakov_commissariat_of_transport
+							has_completed_focus = hof_ic_serebryakov_highways_and_motor_transport
+							has_completed_focus = hof_ic_serebryakov_brilliant_worker
+						}
+					}
+				}
+				country_event = { id = heartofiron.1170 days = 3 random_days = 3 }
+			}
+		}
+	}
+}
+
+# ---------------------------------------------------------------------------
+# 叶夫根尼·普列奥布拉任斯基 的个人线驱动器：开下一个国策
+# ---------------------------------------------------------------------------
+country_event = {
+	id = heartofiron.1180
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		hof_ic_seated_yevgeny_preobrazhensky = yes
+	}
+
+	immediate = {
+		if = {   # hof_ic_preobrazhensky_agrarian_theses
+			limit = { NOT = { has_completed_focus = hof_ic_preobrazhensky_agrarian_theses } }
+			activate_shine_on_focus = hof_ic_preobrazhensky_agrarian_theses
+			set_country_flag = {
+				flag = hof_ic_yevgeny_preobrazhensky_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1181 days = 35 }
+		}
+		else_if = {   # hof_ic_preobrazhensky_scissors
+			limit = { NOT = { has_completed_focus = hof_ic_preobrazhensky_scissors } }
+			activate_shine_on_focus = hof_ic_preobrazhensky_scissors
+			set_country_flag = {
+				flag = hof_ic_yevgeny_preobrazhensky_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1181 days = 35 }
+		}
+		else_if = {   # hof_ic_preobrazhensky_against_nepmen
+			limit = { NOT = { has_completed_focus = hof_ic_preobrazhensky_against_nepmen } }
+			activate_shine_on_focus = hof_ic_preobrazhensky_against_nepmen
+			set_country_flag = {
+				flag = hof_ic_yevgeny_preobrazhensky_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1181 days = 35 }
+		}
+		else_if = {   # hof_ic_preobrazhensky_two_regulators
+			limit = { NOT = { has_completed_focus = hof_ic_preobrazhensky_two_regulators } }
+			activate_shine_on_focus = hof_ic_preobrazhensky_two_regulators
+			set_country_flag = {
+				flag = hof_ic_yevgeny_preobrazhensky_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1181 days = 35 }
+		}
+		else_if = {   # hof_ic_preobrazhensky_primitive_accumulation
+			limit = { NOT = { has_completed_focus = hof_ic_preobrazhensky_primitive_accumulation } }
+			activate_shine_on_focus = hof_ic_preobrazhensky_primitive_accumulation
+			set_country_flag = {
+				flag = hof_ic_yevgeny_preobrazhensky_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1181 days = 35 }
+		}
+	}
+}
+
+# ---------------------------------------------------------------------------
+# 叶夫根尼·普列奥布拉任斯基 的个人线驱动器：完成已点亮的国策
+# ---------------------------------------------------------------------------
+country_event = {
+	id = heartofiron.1181
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		hof_ic_seated_yevgeny_preobrazhensky = yes
+	}
+
+	immediate = {
+		if = {
+			limit = { has_shine_effect_on_focus = hof_ic_preobrazhensky_agrarian_theses }
+			complete_national_focus = { focus = hof_ic_preobrazhensky_agrarian_theses }
+			clr_country_flag = hof_ic_yevgeny_preobrazhensky_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1180 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_preobrazhensky_scissors }
+			complete_national_focus = { focus = hof_ic_preobrazhensky_scissors }
+			clr_country_flag = hof_ic_yevgeny_preobrazhensky_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1180 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_preobrazhensky_against_nepmen }
+			complete_national_focus = { focus = hof_ic_preobrazhensky_against_nepmen }
+			clr_country_flag = hof_ic_yevgeny_preobrazhensky_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1180 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_preobrazhensky_two_regulators }
+			complete_national_focus = { focus = hof_ic_preobrazhensky_two_regulators }
+			clr_country_flag = hof_ic_yevgeny_preobrazhensky_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1180 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_preobrazhensky_primitive_accumulation }
+			complete_national_focus = { focus = hof_ic_preobrazhensky_primitive_accumulation }
+			clr_country_flag = hof_ic_yevgeny_preobrazhensky_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1180 days = 3 random_days = 3 }
+		}
+		else = {
+			if = {
+				limit = {
+					NOT = {
+						AND = {
+							has_completed_focus = hof_ic_preobrazhensky_agrarian_theses
+							has_completed_focus = hof_ic_preobrazhensky_scissors
+							has_completed_focus = hof_ic_preobrazhensky_against_nepmen
+							has_completed_focus = hof_ic_preobrazhensky_two_regulators
+							has_completed_focus = hof_ic_preobrazhensky_primitive_accumulation
+						}
+					}
+				}
+				country_event = { id = heartofiron.1180 days = 3 random_days = 3 }
+			}
+		}
+	}
+}
+
+# ---------------------------------------------------------------------------
+# 卡尔·拉狄克 的个人线驱动器：开下一个国策
+# ---------------------------------------------------------------------------
+country_event = {
+	id = heartofiron.1190
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		hof_ic_seated_karl_radek = yes
+	}
+
+	immediate = {
+		if = {   # hof_ic_radek_central_europe_department
+			limit = { NOT = { has_completed_focus = hof_ic_radek_central_europe_department } }
+			activate_shine_on_focus = hof_ic_radek_central_europe_department
+			set_country_flag = {
+				flag = hof_ic_karl_radek_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1191 days = 35 }
+		}
+		else_if = {   # hof_ic_radek_founding_of_the_kpd
+			limit = { NOT = { has_completed_focus = hof_ic_radek_founding_of_the_kpd } }
+			activate_shine_on_focus = hof_ic_radek_founding_of_the_kpd
+			set_country_flag = {
+				flag = hof_ic_karl_radek_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1191 days = 35 }
+		}
+		else_if = {   # hof_ic_radek_seven_pamphlets
+			limit = { NOT = { has_completed_focus = hof_ic_radek_seven_pamphlets } }
+			activate_shine_on_focus = hof_ic_radek_seven_pamphlets
+			set_country_flag = {
+				flag = hof_ic_karl_radek_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1191 days = 35 }
+		}
+		else_if = {   # hof_ic_radek_german_october
+			limit = { NOT = { has_completed_focus = hof_ic_radek_german_october } }
+			activate_shine_on_focus = hof_ic_radek_german_october
+			set_country_flag = {
+				flag = hof_ic_karl_radek_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1191 days = 35 }
+		}
+		else_if = {   # hof_ic_radek_sunyatsen_university
+			limit = { NOT = { has_completed_focus = hof_ic_radek_sunyatsen_university } }
+			activate_shine_on_focus = hof_ic_radek_sunyatsen_university
+			set_country_flag = {
+				flag = hof_ic_karl_radek_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1191 days = 35 }
+		}
+		else_if = {   # hof_ic_radek_the_struggle_for_power_in_china
+			limit = { NOT = { has_completed_focus = hof_ic_radek_the_struggle_for_power_in_china } }
+			activate_shine_on_focus = hof_ic_radek_the_struggle_for_power_in_china
+			set_country_flag = {
+				flag = hof_ic_karl_radek_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1191 days = 35 }
+		}
+		else_if = {   # hof_ic_radek_the_condition_of_the_chinese_working_class
+			limit = { NOT = { has_completed_focus = hof_ic_radek_the_condition_of_the_chinese_working_class } }
+			activate_shine_on_focus = hof_ic_radek_the_condition_of_the_chinese_working_class
+			set_country_flag = {
+				flag = hof_ic_karl_radek_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1191 days = 35 }
+		}
+		else_if = {   # hof_ic_radek_social_and_political_thought
+			limit = { NOT = { has_completed_focus = hof_ic_radek_social_and_political_thought } }
+			activate_shine_on_focus = hof_ic_radek_social_and_political_thought
+			set_country_flag = {
+				flag = hof_ic_karl_radek_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1191 days = 35 }
+		}
+		else_if = {   # hof_ic_radek_red_publicist
+			limit = { NOT = { has_completed_focus = hof_ic_radek_red_publicist } }
+			activate_shine_on_focus = hof_ic_radek_red_publicist
+			set_country_flag = {
+				flag = hof_ic_karl_radek_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1191 days = 35 }
+		}
+	}
+}
+
+# ---------------------------------------------------------------------------
+# 卡尔·拉狄克 的个人线驱动器：完成已点亮的国策
+# ---------------------------------------------------------------------------
+country_event = {
+	id = heartofiron.1191
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		hof_ic_seated_karl_radek = yes
+	}
+
+	immediate = {
+		if = {
+			limit = { has_shine_effect_on_focus = hof_ic_radek_central_europe_department }
+			complete_national_focus = { focus = hof_ic_radek_central_europe_department }
+			clr_country_flag = hof_ic_karl_radek_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1190 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_radek_founding_of_the_kpd }
+			complete_national_focus = { focus = hof_ic_radek_founding_of_the_kpd }
+			clr_country_flag = hof_ic_karl_radek_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1190 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_radek_seven_pamphlets }
+			complete_national_focus = { focus = hof_ic_radek_seven_pamphlets }
+			clr_country_flag = hof_ic_karl_radek_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1190 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_radek_german_october }
+			complete_national_focus = { focus = hof_ic_radek_german_october }
+			clr_country_flag = hof_ic_karl_radek_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1190 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_radek_sunyatsen_university }
+			complete_national_focus = { focus = hof_ic_radek_sunyatsen_university }
+			clr_country_flag = hof_ic_karl_radek_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1190 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_radek_the_struggle_for_power_in_china }
+			complete_national_focus = { focus = hof_ic_radek_the_struggle_for_power_in_china }
+			clr_country_flag = hof_ic_karl_radek_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1190 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_radek_the_condition_of_the_chinese_working_class }
+			complete_national_focus = { focus = hof_ic_radek_the_condition_of_the_chinese_working_class }
+			clr_country_flag = hof_ic_karl_radek_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1190 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_radek_social_and_political_thought }
+			complete_national_focus = { focus = hof_ic_radek_social_and_political_thought }
+			clr_country_flag = hof_ic_karl_radek_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1190 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_radek_red_publicist }
+			complete_national_focus = { focus = hof_ic_radek_red_publicist }
+			clr_country_flag = hof_ic_karl_radek_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1190 days = 3 random_days = 3 }
+		}
+		else = {
+			if = {
+				limit = {
+					NOT = {
+						AND = {
+							has_completed_focus = hof_ic_radek_central_europe_department
+							has_completed_focus = hof_ic_radek_founding_of_the_kpd
+							has_completed_focus = hof_ic_radek_seven_pamphlets
+							has_completed_focus = hof_ic_radek_german_october
+							has_completed_focus = hof_ic_radek_sunyatsen_university
+							has_completed_focus = hof_ic_radek_the_struggle_for_power_in_china
+							has_completed_focus = hof_ic_radek_the_condition_of_the_chinese_working_class
+							has_completed_focus = hof_ic_radek_social_and_political_thought
+							has_completed_focus = hof_ic_radek_red_publicist
+						}
+					}
+				}
+				country_event = { id = heartofiron.1190 days = 3 random_days = 3 }
+			}
+		}
+	}
+}
+
+# ---------------------------------------------------------------------------
+# 伊瓦尔·斯米尔加 的个人线驱动器：开下一个国策
+# ---------------------------------------------------------------------------
+country_event = {
+	id = heartofiron.1200
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		hof_ic_seated_ivar_smilga = yes
+	}
+
+	immediate = {
+		if = {   # hof_ic_smilga_finland
+			limit = { NOT = { has_completed_focus = hof_ic_smilga_finland } }
+			activate_shine_on_focus = hof_ic_smilga_finland
+			set_country_flag = {
+				flag = hof_ic_ivar_smilga_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1201 days = 35 }
+		}
+		else_if = {   # hof_ic_smilga_fuel_main_directorate
+			limit = { NOT = { has_completed_focus = hof_ic_smilga_fuel_main_directorate } }
+			activate_shine_on_focus = hof_ic_smilga_fuel_main_directorate
+			set_country_flag = {
+				flag = hof_ic_ivar_smilga_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1201 days = 35 }
+		}
+		else_if = {   # hof_ic_smilga_gosplan
+			limit = { NOT = { has_completed_focus = hof_ic_smilga_gosplan } }
+			activate_shine_on_focus = hof_ic_smilga_gosplan
+			set_country_flag = {
+				flag = hof_ic_ivar_smilga_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1201 days = 35 }
+		}
+		else_if = {   # hof_ic_smilga_economics_institute
+			limit = { NOT = { has_completed_focus = hof_ic_smilga_economics_institute } }
+			activate_shine_on_focus = hof_ic_smilga_economics_institute
+			set_country_flag = {
+				flag = hof_ic_ivar_smilga_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1201 days = 35 }
+		}
+		else_if = {   # hof_ic_smilga_productive_forces
+			limit = { NOT = { has_completed_focus = hof_ic_smilga_productive_forces } }
+			activate_shine_on_focus = hof_ic_smilga_productive_forces
+			set_country_flag = {
+				flag = hof_ic_ivar_smilga_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1201 days = 35 }
+		}
+		else_if = {   # hof_ic_smilga_the_healer_of_the_gaps
+			limit = { NOT = { has_completed_focus = hof_ic_smilga_the_healer_of_the_gaps } }
+			activate_shine_on_focus = hof_ic_smilga_the_healer_of_the_gaps
+			set_country_flag = {
+				flag = hof_ic_ivar_smilga_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1201 days = 35 }
+		}
+	}
+}
+
+# ---------------------------------------------------------------------------
+# 伊瓦尔·斯米尔加 的个人线驱动器：完成已点亮的国策
+# ---------------------------------------------------------------------------
+country_event = {
+	id = heartofiron.1201
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		hof_ic_seated_ivar_smilga = yes
+	}
+
+	immediate = {
+		if = {
+			limit = { has_shine_effect_on_focus = hof_ic_smilga_finland }
+			complete_national_focus = { focus = hof_ic_smilga_finland }
+			clr_country_flag = hof_ic_ivar_smilga_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1200 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_smilga_fuel_main_directorate }
+			complete_national_focus = { focus = hof_ic_smilga_fuel_main_directorate }
+			clr_country_flag = hof_ic_ivar_smilga_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1200 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_smilga_gosplan }
+			complete_national_focus = { focus = hof_ic_smilga_gosplan }
+			clr_country_flag = hof_ic_ivar_smilga_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1200 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_smilga_economics_institute }
+			complete_national_focus = { focus = hof_ic_smilga_economics_institute }
+			clr_country_flag = hof_ic_ivar_smilga_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1200 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_smilga_productive_forces }
+			complete_national_focus = { focus = hof_ic_smilga_productive_forces }
+			clr_country_flag = hof_ic_ivar_smilga_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1200 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_smilga_the_healer_of_the_gaps }
+			complete_national_focus = { focus = hof_ic_smilga_the_healer_of_the_gaps }
+			clr_country_flag = hof_ic_ivar_smilga_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1200 days = 3 random_days = 3 }
+		}
+		else = {
+			if = {
+				limit = {
+					NOT = {
+						AND = {
+							has_completed_focus = hof_ic_smilga_finland
+							has_completed_focus = hof_ic_smilga_fuel_main_directorate
+							has_completed_focus = hof_ic_smilga_gosplan
+							has_completed_focus = hof_ic_smilga_economics_institute
+							has_completed_focus = hof_ic_smilga_productive_forces
+							has_completed_focus = hof_ic_smilga_the_healer_of_the_gaps
+						}
+					}
+				}
+				country_event = { id = heartofiron.1200 days = 3 random_days = 3 }
+			}
+		}
+	}
+}
+
+# ---------------------------------------------------------------------------
+# 米哈伊尔·托姆斯基 的个人线驱动器：开下一个国策
+# ---------------------------------------------------------------------------
+country_event = {
+	id = heartofiron.1210
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		hof_ic_seated_mikhail_tomsky = yes
+	}
+
+	immediate = {
+		if = {   # hof_ic_tomsky_printers_union
+			limit = { NOT = { has_completed_focus = hof_ic_tomsky_printers_union } }
+			activate_shine_on_focus = hof_ic_tomsky_printers_union
+			set_country_flag = {
+				flag = hof_ic_mikhail_tomsky_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1211 days = 35 }
+		}
+		else_if = {   # hof_ic_tomsky_moscow_trade_union_council
+			limit = { NOT = { has_completed_focus = hof_ic_tomsky_moscow_trade_union_council } }
+			activate_shine_on_focus = hof_ic_tomsky_moscow_trade_union_council
+			set_country_flag = {
+				flag = hof_ic_mikhail_tomsky_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1211 days = 35 }
+		}
+		else_if = {   # hof_ic_tomsky_central_council_of_trade_unions
+			limit = { NOT = { has_completed_focus = hof_ic_tomsky_central_council_of_trade_unions } }
+			activate_shine_on_focus = hof_ic_tomsky_central_council_of_trade_unions
+			set_country_flag = {
+				flag = hof_ic_mikhail_tomsky_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1211 days = 35 }
+		}
+		else_if = {   # hof_ic_tomsky_platform_of_ten
+			limit = { NOT = { has_completed_focus = hof_ic_tomsky_platform_of_ten } }
+			activate_shine_on_focus = hof_ic_tomsky_platform_of_ten
+			set_country_flag = {
+				flag = hof_ic_mikhail_tomsky_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1211 days = 35 }
+		}
+		else_if = {   # hof_ic_tomsky_the_silence_of_1921
+			limit = { NOT = { has_completed_focus = hof_ic_tomsky_the_silence_of_1921 } }
+			activate_shine_on_focus = hof_ic_tomsky_the_silence_of_1921
+			set_country_flag = {
+				flag = hof_ic_mikhail_tomsky_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1211 days = 35 }
+		}
+		else_if = {   # hof_ic_tomsky_man_from_tomsk
+			limit = { NOT = { has_completed_focus = hof_ic_tomsky_man_from_tomsk } }
+			activate_shine_on_focus = hof_ic_tomsky_man_from_tomsk
+			set_country_flag = {
+				flag = hof_ic_mikhail_tomsky_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1211 days = 35 }
+		}
+	}
+}
+
+# ---------------------------------------------------------------------------
+# 米哈伊尔·托姆斯基 的个人线驱动器：完成已点亮的国策
+# ---------------------------------------------------------------------------
+country_event = {
+	id = heartofiron.1211
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		hof_ic_seated_mikhail_tomsky = yes
+	}
+
+	immediate = {
+		if = {
+			limit = { has_shine_effect_on_focus = hof_ic_tomsky_printers_union }
+			complete_national_focus = { focus = hof_ic_tomsky_printers_union }
+			clr_country_flag = hof_ic_mikhail_tomsky_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1210 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_tomsky_moscow_trade_union_council }
+			complete_national_focus = { focus = hof_ic_tomsky_moscow_trade_union_council }
+			clr_country_flag = hof_ic_mikhail_tomsky_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1210 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_tomsky_central_council_of_trade_unions }
+			complete_national_focus = { focus = hof_ic_tomsky_central_council_of_trade_unions }
+			clr_country_flag = hof_ic_mikhail_tomsky_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1210 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_tomsky_platform_of_ten }
+			complete_national_focus = { focus = hof_ic_tomsky_platform_of_ten }
+			clr_country_flag = hof_ic_mikhail_tomsky_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1210 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_tomsky_the_silence_of_1921 }
+			complete_national_focus = { focus = hof_ic_tomsky_the_silence_of_1921 }
+			clr_country_flag = hof_ic_mikhail_tomsky_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1210 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_tomsky_man_from_tomsk }
+			complete_national_focus = { focus = hof_ic_tomsky_man_from_tomsk }
+			clr_country_flag = hof_ic_mikhail_tomsky_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1210 days = 3 random_days = 3 }
+		}
+		else = {
+			if = {
+				limit = {
+					NOT = {
+						AND = {
+							has_completed_focus = hof_ic_tomsky_printers_union
+							has_completed_focus = hof_ic_tomsky_moscow_trade_union_council
+							has_completed_focus = hof_ic_tomsky_central_council_of_trade_unions
+							has_completed_focus = hof_ic_tomsky_platform_of_ten
+							has_completed_focus = hof_ic_tomsky_the_silence_of_1921
+							has_completed_focus = hof_ic_tomsky_man_from_tomsk
+						}
+					}
+				}
+				country_event = { id = heartofiron.1210 days = 3 random_days = 3 }
+			}
+		}
+	}
+}
+
+# ---------------------------------------------------------------------------
+# 马尔特米扬·里亚京 的个人线驱动器：开下一个国策
+# ---------------------------------------------------------------------------
+country_event = {
+	id = heartofiron.1220
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		hof_ic_seated_martemyan_ryutin = yes
+	}
+
+	immediate = {
+		if = {   # hof_ic_ryutin_struggle_magazine
+			limit = { NOT = { has_completed_focus = hof_ic_ryutin_struggle_magazine } }
+			activate_shine_on_focus = hof_ic_ryutin_struggle_magazine
+			set_country_flag = {
+				flag = hof_ic_martemyan_ryutin_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1221 days = 35 }
+		}
+		else_if = {   # hof_ic_ryutin_red_star
+			limit = { NOT = { has_completed_focus = hof_ic_ryutin_red_star } }
+			activate_shine_on_focus = hof_ic_ryutin_red_star
+			set_country_flag = {
+				flag = hof_ic_martemyan_ryutin_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1221 days = 35 }
+		}
+		else_if = {   # hof_ic_ryutin_soyuzkino
+			limit = { NOT = { has_completed_focus = hof_ic_ryutin_soyuzkino } }
+			activate_shine_on_focus = hof_ic_ryutin_soyuzkino
+			set_country_flag = {
+				flag = hof_ic_martemyan_ryutin_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1221 days = 35 }
+		}
+		else_if = {   # hof_ic_ryutin_union_of_marxist_leninists
+			limit = { NOT = { has_completed_focus = hof_ic_ryutin_union_of_marxist_leninists } }
+			activate_shine_on_focus = hof_ic_ryutin_union_of_marxist_leninists
+			set_country_flag = {
+				flag = hof_ic_martemyan_ryutin_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1221 days = 35 }
+		}
+		else_if = {   # hof_ic_ryutin_verkhne_ryutino
+			limit = { NOT = { has_completed_focus = hof_ic_ryutin_verkhne_ryutino } }
+			activate_shine_on_focus = hof_ic_ryutin_verkhne_ryutino
+			set_country_flag = {
+				flag = hof_ic_martemyan_ryutin_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1221 days = 35 }
+		}
+	}
+}
+
+# ---------------------------------------------------------------------------
+# 马尔特米扬·里亚京 的个人线驱动器：完成已点亮的国策
+# ---------------------------------------------------------------------------
+country_event = {
+	id = heartofiron.1221
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		hof_ic_seated_martemyan_ryutin = yes
+	}
+
+	immediate = {
+		if = {
+			limit = { has_shine_effect_on_focus = hof_ic_ryutin_struggle_magazine }
+			complete_national_focus = { focus = hof_ic_ryutin_struggle_magazine }
+			clr_country_flag = hof_ic_martemyan_ryutin_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1220 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_ryutin_red_star }
+			complete_national_focus = { focus = hof_ic_ryutin_red_star }
+			clr_country_flag = hof_ic_martemyan_ryutin_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1220 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_ryutin_soyuzkino }
+			complete_national_focus = { focus = hof_ic_ryutin_soyuzkino }
+			clr_country_flag = hof_ic_martemyan_ryutin_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1220 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_ryutin_union_of_marxist_leninists }
+			complete_national_focus = { focus = hof_ic_ryutin_union_of_marxist_leninists }
+			clr_country_flag = hof_ic_martemyan_ryutin_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1220 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_ryutin_verkhne_ryutino }
+			complete_national_focus = { focus = hof_ic_ryutin_verkhne_ryutino }
+			clr_country_flag = hof_ic_martemyan_ryutin_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1220 days = 3 random_days = 3 }
+		}
+		else = {
+			if = {
+				limit = {
+					NOT = {
+						AND = {
+							has_completed_focus = hof_ic_ryutin_struggle_magazine
+							has_completed_focus = hof_ic_ryutin_red_star
+							has_completed_focus = hof_ic_ryutin_soyuzkino
+							has_completed_focus = hof_ic_ryutin_union_of_marxist_leninists
+							has_completed_focus = hof_ic_ryutin_verkhne_ryutino
+						}
+					}
+				}
+				country_event = { id = heartofiron.1220 days = 3 random_days = 3 }
+			}
+		}
+	}
+}
+
+# ---------------------------------------------------------------------------
+# 亚历山大·施利亚普尼科夫 的个人线驱动器：开下一个国策
+# ---------------------------------------------------------------------------
+country_event = {
+	id = heartofiron.1230
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		hof_ic_seated_aleksandr_shlyapnikov = yes
+	}
+
+	immediate = {
+		if = {   # hof_ic_shlyapnikov_workers_control
+			limit = { NOT = { has_completed_focus = hof_ic_shlyapnikov_workers_control } }
+			activate_shine_on_focus = hof_ic_shlyapnikov_workers_control
+			set_country_flag = {
+				flag = hof_ic_aleksandr_shlyapnikov_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1231 days = 35 }
+		}
+		else_if = {   # hof_ic_shlyapnikov_not_syndicalism
+			limit = { NOT = { has_completed_focus = hof_ic_shlyapnikov_not_syndicalism } }
+			activate_shine_on_focus = hof_ic_shlyapnikov_not_syndicalism
+			set_country_flag = {
+				flag = hof_ic_aleksandr_shlyapnikov_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1231 days = 35 }
+		}
+		else_if = {   # hof_ic_shlyapnikov_producers_congress
+			limit = { NOT = { has_completed_focus = hof_ic_shlyapnikov_producers_congress } }
+			activate_shine_on_focus = hof_ic_shlyapnikov_producers_congress
+			set_country_flag = {
+				flag = hof_ic_aleksandr_shlyapnikov_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1231 days = 35 }
+		}
+		else_if = {   # hof_ic_shlyapnikov_through_the_workers
+			limit = { NOT = { has_completed_focus = hof_ic_shlyapnikov_through_the_workers } }
+			activate_shine_on_focus = hof_ic_shlyapnikov_through_the_workers
+			set_country_flag = {
+				flag = hof_ic_aleksandr_shlyapnikov_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1231 days = 35 }
+		}
+		else_if = {   # hof_ic_shlyapnikov_qualification_from_the_shop
+			limit = { NOT = { has_completed_focus = hof_ic_shlyapnikov_qualification_from_the_shop } }
+			activate_shine_on_focus = hof_ic_shlyapnikov_qualification_from_the_shop
+			set_country_flag = {
+				flag = hof_ic_aleksandr_shlyapnikov_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1231 days = 35 }
+		}
+		else_if = {   # hof_ic_shlyapnikov_the_body_they_elect
+			limit = { NOT = { has_completed_focus = hof_ic_shlyapnikov_the_body_they_elect } }
+			activate_shine_on_focus = hof_ic_shlyapnikov_the_body_they_elect
+			set_country_flag = {
+				flag = hof_ic_aleksandr_shlyapnikov_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1231 days = 35 }
+		}
+	}
+}
+
+# ---------------------------------------------------------------------------
+# 亚历山大·施利亚普尼科夫 的个人线驱动器：完成已点亮的国策
+# ---------------------------------------------------------------------------
+country_event = {
+	id = heartofiron.1231
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		hof_ic_seated_aleksandr_shlyapnikov = yes
+	}
+
+	immediate = {
+		if = {
+			limit = { has_shine_effect_on_focus = hof_ic_shlyapnikov_workers_control }
+			complete_national_focus = { focus = hof_ic_shlyapnikov_workers_control }
+			clr_country_flag = hof_ic_aleksandr_shlyapnikov_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1230 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_shlyapnikov_not_syndicalism }
+			complete_national_focus = { focus = hof_ic_shlyapnikov_not_syndicalism }
+			clr_country_flag = hof_ic_aleksandr_shlyapnikov_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1230 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_shlyapnikov_producers_congress }
+			complete_national_focus = { focus = hof_ic_shlyapnikov_producers_congress }
+			clr_country_flag = hof_ic_aleksandr_shlyapnikov_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1230 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_shlyapnikov_through_the_workers }
+			complete_national_focus = { focus = hof_ic_shlyapnikov_through_the_workers }
+			clr_country_flag = hof_ic_aleksandr_shlyapnikov_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1230 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_shlyapnikov_qualification_from_the_shop }
+			complete_national_focus = { focus = hof_ic_shlyapnikov_qualification_from_the_shop }
+			clr_country_flag = hof_ic_aleksandr_shlyapnikov_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1230 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_shlyapnikov_the_body_they_elect }
+			complete_national_focus = { focus = hof_ic_shlyapnikov_the_body_they_elect }
+			clr_country_flag = hof_ic_aleksandr_shlyapnikov_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1230 days = 3 random_days = 3 }
+		}
+		else = {
+			if = {
+				limit = {
+					NOT = {
+						AND = {
+							has_completed_focus = hof_ic_shlyapnikov_workers_control
+							has_completed_focus = hof_ic_shlyapnikov_not_syndicalism
+							has_completed_focus = hof_ic_shlyapnikov_producers_congress
+							has_completed_focus = hof_ic_shlyapnikov_through_the_workers
+							has_completed_focus = hof_ic_shlyapnikov_qualification_from_the_shop
+							has_completed_focus = hof_ic_shlyapnikov_the_body_they_elect
+						}
+					}
+				}
+				country_event = { id = heartofiron.1230 days = 3 random_days = 3 }
+			}
+		}
+	}
+}
+
+# ---------------------------------------------------------------------------
+# 米哈伊尔·加里宁 的个人线驱动器：开下一个国策
+# ---------------------------------------------------------------------------
+country_event = {
+	id = heartofiron.1240
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		hof_ic_seated_mikhail_kalinin = yes
+	}
+
+	immediate = {
+		if = {   # hof_ic_kalinin_a_peasant_head_of_state
+			limit = { NOT = { has_completed_focus = hof_ic_kalinin_a_peasant_head_of_state } }
+			activate_shine_on_focus = hof_ic_kalinin_a_peasant_head_of_state
+			set_country_flag = {
+				flag = hof_ic_mikhail_kalinin_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1241 days = 35 }
+		}
+		else_if = {   # hof_ic_kalinin_down_with_illiteracy
+			limit = { NOT = { has_completed_focus = hof_ic_kalinin_down_with_illiteracy } }
+			activate_shine_on_focus = hof_ic_kalinin_down_with_illiteracy
+			set_country_flag = {
+				flag = hof_ic_mikhail_kalinin_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1241 days = 35 }
+		}
+		else_if = {   # hof_ic_kalinin_the_state_of_the_whole_people
+			limit = { NOT = { has_completed_focus = hof_ic_kalinin_the_state_of_the_whole_people } }
+			activate_shine_on_focus = hof_ic_kalinin_the_state_of_the_whole_people
+			set_country_flag = {
+				flag = hof_ic_mikhail_kalinin_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1241 days = 35 }
+		}
+		else_if = {   # hof_ic_kalinin_the_reception_room
+			limit = { NOT = { has_completed_focus = hof_ic_kalinin_the_reception_room } }
+			activate_shine_on_focus = hof_ic_kalinin_the_reception_room
+			set_country_flag = {
+				flag = hof_ic_mikhail_kalinin_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1241 days = 35 }
+		}
+		else_if = {   # hof_ic_kalinin_an_unfounded_operation
+			limit = { NOT = { has_completed_focus = hof_ic_kalinin_an_unfounded_operation } }
+			activate_shine_on_focus = hof_ic_kalinin_an_unfounded_operation
+			set_country_flag = {
+				flag = hof_ic_mikhail_kalinin_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1241 days = 35 }
+		}
+		else_if = {   # hof_ic_kalinin_the_all_union_elder
+			limit = { NOT = { has_completed_focus = hof_ic_kalinin_the_all_union_elder } }
+			activate_shine_on_focus = hof_ic_kalinin_the_all_union_elder
+			set_country_flag = {
+				flag = hof_ic_mikhail_kalinin_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1241 days = 35 }
+		}
+	}
+}
+
+# ---------------------------------------------------------------------------
+# 米哈伊尔·加里宁 的个人线驱动器：完成已点亮的国策
+# ---------------------------------------------------------------------------
+country_event = {
+	id = heartofiron.1241
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		hof_ic_seated_mikhail_kalinin = yes
+	}
+
+	immediate = {
+		if = {
+			limit = { has_shine_effect_on_focus = hof_ic_kalinin_a_peasant_head_of_state }
+			complete_national_focus = { focus = hof_ic_kalinin_a_peasant_head_of_state }
+			clr_country_flag = hof_ic_mikhail_kalinin_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1240 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_kalinin_down_with_illiteracy }
+			complete_national_focus = { focus = hof_ic_kalinin_down_with_illiteracy }
+			clr_country_flag = hof_ic_mikhail_kalinin_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1240 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_kalinin_the_state_of_the_whole_people }
+			complete_national_focus = { focus = hof_ic_kalinin_the_state_of_the_whole_people }
+			clr_country_flag = hof_ic_mikhail_kalinin_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1240 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_kalinin_the_reception_room }
+			complete_national_focus = { focus = hof_ic_kalinin_the_reception_room }
+			clr_country_flag = hof_ic_mikhail_kalinin_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1240 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_kalinin_an_unfounded_operation }
+			complete_national_focus = { focus = hof_ic_kalinin_an_unfounded_operation }
+			clr_country_flag = hof_ic_mikhail_kalinin_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1240 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_kalinin_the_all_union_elder }
+			complete_national_focus = { focus = hof_ic_kalinin_the_all_union_elder }
+			clr_country_flag = hof_ic_mikhail_kalinin_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1240 days = 3 random_days = 3 }
+		}
+		else = {
+			if = {
+				limit = {
+					NOT = {
+						AND = {
+							has_completed_focus = hof_ic_kalinin_a_peasant_head_of_state
+							has_completed_focus = hof_ic_kalinin_down_with_illiteracy
+							has_completed_focus = hof_ic_kalinin_the_state_of_the_whole_people
+							has_completed_focus = hof_ic_kalinin_the_reception_room
+							has_completed_focus = hof_ic_kalinin_an_unfounded_operation
+							has_completed_focus = hof_ic_kalinin_the_all_union_elder
+						}
+					}
+				}
+				country_event = { id = heartofiron.1240 days = 3 random_days = 3 }
+			}
+		}
+	}
+}
+
+# ---------------------------------------------------------------------------
+# 马克西姆·李维诺夫 的个人线驱动器：开下一个国策
+# ---------------------------------------------------------------------------
+country_event = {
+	id = heartofiron.1250
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		hof_ic_seated_maksim_litvinov = yes
+	}
+
+	immediate = {
+		if = {   # hof_ic_litvinov_a_courier_of_iskra
+			limit = { NOT = { has_completed_focus = hof_ic_litvinov_a_courier_of_iskra } }
+			activate_shine_on_focus = hof_ic_litvinov_a_courier_of_iskra
+			set_country_flag = {
+				flag = hof_ic_maksim_litvinov_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1251 days = 35 }
+		}
+		else_if = {   # hof_ic_litvinov_the_prisoner_exchange_agreement
+			limit = { NOT = { has_completed_focus = hof_ic_litvinov_the_prisoner_exchange_agreement } }
+			activate_shine_on_focus = hof_ic_litvinov_the_prisoner_exchange_agreement
+			set_country_flag = {
+				flag = hof_ic_maksim_litvinov_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1251 days = 35 }
+		}
+		else_if = {   # hof_ic_litvinov_the_litvinov_protocol
+			limit = { NOT = { has_completed_focus = hof_ic_litvinov_the_litvinov_protocol } }
+			activate_shine_on_focus = hof_ic_litvinov_the_litvinov_protocol
+			set_country_flag = {
+				flag = hof_ic_maksim_litvinov_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1251 days = 35 }
+		}
+		else_if = {   # hof_ic_litvinov_the_definition_of_aggression
+			limit = { NOT = { has_completed_focus = hof_ic_litvinov_the_definition_of_aggression } }
+			activate_shine_on_focus = hof_ic_litvinov_the_definition_of_aggression
+			set_country_flag = {
+				flag = hof_ic_maksim_litvinov_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1251 days = 35 }
+		}
+		else_if = {   # hof_ic_litvinov_the_franco_soviet_treaty
+			limit = { NOT = { has_completed_focus = hof_ic_litvinov_the_franco_soviet_treaty } }
+			activate_shine_on_focus = hof_ic_litvinov_the_franco_soviet_treaty
+			set_country_flag = {
+				flag = hof_ic_maksim_litvinov_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1251 days = 35 }
+		}
+		else_if = {   # hof_ic_litvinov_the_advisor_to_the_commissariat
+			limit = { NOT = { has_completed_focus = hof_ic_litvinov_the_advisor_to_the_commissariat } }
+			activate_shine_on_focus = hof_ic_litvinov_the_advisor_to_the_commissariat
+			set_country_flag = {
+				flag = hof_ic_maksim_litvinov_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1251 days = 35 }
+		}
+	}
+}
+
+# ---------------------------------------------------------------------------
+# 马克西姆·李维诺夫 的个人线驱动器：完成已点亮的国策
+# ---------------------------------------------------------------------------
+country_event = {
+	id = heartofiron.1251
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		hof_ic_seated_maksim_litvinov = yes
+	}
+
+	immediate = {
+		if = {
+			limit = { has_shine_effect_on_focus = hof_ic_litvinov_a_courier_of_iskra }
+			complete_national_focus = { focus = hof_ic_litvinov_a_courier_of_iskra }
+			clr_country_flag = hof_ic_maksim_litvinov_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1250 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_litvinov_the_prisoner_exchange_agreement }
+			complete_national_focus = { focus = hof_ic_litvinov_the_prisoner_exchange_agreement }
+			clr_country_flag = hof_ic_maksim_litvinov_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1250 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_litvinov_the_litvinov_protocol }
+			complete_national_focus = { focus = hof_ic_litvinov_the_litvinov_protocol }
+			clr_country_flag = hof_ic_maksim_litvinov_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1250 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_litvinov_the_definition_of_aggression }
+			complete_national_focus = { focus = hof_ic_litvinov_the_definition_of_aggression }
+			clr_country_flag = hof_ic_maksim_litvinov_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1250 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_litvinov_the_franco_soviet_treaty }
+			complete_national_focus = { focus = hof_ic_litvinov_the_franco_soviet_treaty }
+			clr_country_flag = hof_ic_maksim_litvinov_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1250 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_litvinov_the_advisor_to_the_commissariat }
+			complete_national_focus = { focus = hof_ic_litvinov_the_advisor_to_the_commissariat }
+			clr_country_flag = hof_ic_maksim_litvinov_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1250 days = 3 random_days = 3 }
+		}
+		else = {
+			if = {
+				limit = {
+					NOT = {
+						AND = {
+							has_completed_focus = hof_ic_litvinov_a_courier_of_iskra
+							has_completed_focus = hof_ic_litvinov_the_prisoner_exchange_agreement
+							has_completed_focus = hof_ic_litvinov_the_litvinov_protocol
+							has_completed_focus = hof_ic_litvinov_the_definition_of_aggression
+							has_completed_focus = hof_ic_litvinov_the_franco_soviet_treaty
+							has_completed_focus = hof_ic_litvinov_the_advisor_to_the_commissariat
+						}
+					}
+				}
+				country_event = { id = heartofiron.1250 days = 3 random_days = 3 }
+			}
+		}
+	}
+}
+
+# ---------------------------------------------------------------------------
+# 格里戈里·索柯里尼柯夫 的个人线驱动器：开下一个国策
+# ---------------------------------------------------------------------------
+country_event = {
+	id = heartofiron.1260
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		hof_ic_seated_grigory_sokolnikov = yes
+	}
+
+	immediate = {
+		if = {   # hof_ic_sokolnikov_the_nationalisation_of_the_banks
+			limit = { NOT = { has_completed_focus = hof_ic_sokolnikov_the_nationalisation_of_the_banks } }
+			activate_shine_on_focus = hof_ic_sokolnikov_the_nationalisation_of_the_banks
+			set_country_flag = {
+				flag = hof_ic_grigory_sokolnikov_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1261 days = 35 }
+		}
+		else_if = {   # hof_ic_sokolnikov_the_turkestan_rouble
+			limit = { NOT = { has_completed_focus = hof_ic_sokolnikov_the_turkestan_rouble } }
+			activate_shine_on_focus = hof_ic_sokolnikov_the_turkestan_rouble
+			set_country_flag = {
+				flag = hof_ic_grigory_sokolnikov_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1261 days = 35 }
+		}
+		else_if = {   # hof_ic_sokolnikov_the_chervonets
+			limit = { NOT = { has_completed_focus = hof_ic_sokolnikov_the_chervonets } }
+			activate_shine_on_focus = hof_ic_sokolnikov_the_chervonets
+			set_country_flag = {
+				flag = hof_ic_grigory_sokolnikov_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1261 days = 35 }
+		}
+		else_if = {   # hof_ic_sokolnikov_what_a_dollar_costs
+			limit = { NOT = { has_completed_focus = hof_ic_sokolnikov_what_a_dollar_costs } }
+			activate_shine_on_focus = hof_ic_sokolnikov_what_a_dollar_costs
+			set_country_flag = {
+				flag = hof_ic_grigory_sokolnikov_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1261 days = 35 }
+		}
+		else_if = {   # hof_ic_sokolnikov_state_capitalism
+			limit = { NOT = { has_completed_focus = hof_ic_sokolnikov_state_capitalism } }
+			activate_shine_on_focus = hof_ic_sokolnikov_state_capitalism
+			set_country_flag = {
+				flag = hof_ic_grigory_sokolnikov_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1261 days = 35 }
+		}
+		else_if = {   # hof_ic_sokolnikov_hard_currency
+			limit = { NOT = { has_completed_focus = hof_ic_sokolnikov_hard_currency } }
+			activate_shine_on_focus = hof_ic_sokolnikov_hard_currency
+			set_country_flag = {
+				flag = hof_ic_grigory_sokolnikov_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1261 days = 35 }
+		}
+	}
+}
+
+# ---------------------------------------------------------------------------
+# 格里戈里·索柯里尼柯夫 的个人线驱动器：完成已点亮的国策
+# ---------------------------------------------------------------------------
+country_event = {
+	id = heartofiron.1261
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		hof_ic_seated_grigory_sokolnikov = yes
+	}
+
+	immediate = {
+		if = {
+			limit = { has_shine_effect_on_focus = hof_ic_sokolnikov_the_nationalisation_of_the_banks }
+			complete_national_focus = { focus = hof_ic_sokolnikov_the_nationalisation_of_the_banks }
+			clr_country_flag = hof_ic_grigory_sokolnikov_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1260 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_sokolnikov_the_turkestan_rouble }
+			complete_national_focus = { focus = hof_ic_sokolnikov_the_turkestan_rouble }
+			clr_country_flag = hof_ic_grigory_sokolnikov_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1260 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_sokolnikov_the_chervonets }
+			complete_national_focus = { focus = hof_ic_sokolnikov_the_chervonets }
+			clr_country_flag = hof_ic_grigory_sokolnikov_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1260 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_sokolnikov_what_a_dollar_costs }
+			complete_national_focus = { focus = hof_ic_sokolnikov_what_a_dollar_costs }
+			clr_country_flag = hof_ic_grigory_sokolnikov_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1260 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_sokolnikov_state_capitalism }
+			complete_national_focus = { focus = hof_ic_sokolnikov_state_capitalism }
+			clr_country_flag = hof_ic_grigory_sokolnikov_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1260 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_sokolnikov_hard_currency }
+			complete_national_focus = { focus = hof_ic_sokolnikov_hard_currency }
+			clr_country_flag = hof_ic_grigory_sokolnikov_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1260 days = 3 random_days = 3 }
+		}
+		else = {
+			if = {
+				limit = {
+					NOT = {
+						AND = {
+							has_completed_focus = hof_ic_sokolnikov_the_nationalisation_of_the_banks
+							has_completed_focus = hof_ic_sokolnikov_the_turkestan_rouble
+							has_completed_focus = hof_ic_sokolnikov_the_chervonets
+							has_completed_focus = hof_ic_sokolnikov_what_a_dollar_costs
+							has_completed_focus = hof_ic_sokolnikov_state_capitalism
+							has_completed_focus = hof_ic_sokolnikov_hard_currency
+						}
+					}
+				}
+				country_event = { id = heartofiron.1260 days = 3 random_days = 3 }
+			}
+		}
+	}
+}
+
+# ---------------------------------------------------------------------------
+# 米哈伊尔·图哈切夫斯基 的个人线驱动器：开下一个国策
+# ---------------------------------------------------------------------------
+country_event = {
+	id = heartofiron.1270
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		hof_ic_seated_mikhail_tukhachevsky = yes
+	}
+
+	immediate = {
+		if = {   # hof_ic_tukhachevsky_the_military_academy
+			limit = { NOT = { has_completed_focus = hof_ic_tukhachevsky_the_military_academy } }
+			activate_shine_on_focus = hof_ic_tukhachevsky_the_military_academy
+			set_country_flag = {
+				flag = hof_ic_mikhail_tukhachevsky_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1271 days = 35 }
+		}
+		else_if = {   # hof_ic_tukhachevsky_the_regular_army
+			limit = { NOT = { has_completed_focus = hof_ic_tukhachevsky_the_regular_army } }
+			activate_shine_on_focus = hof_ic_tukhachevsky_the_regular_army
+			set_country_flag = {
+				flag = hof_ic_mikhail_tukhachevsky_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1271 days = 35 }
+		}
+		else_if = {   # hof_ic_tukhachevsky_airborne_and_tanks
+			limit = { NOT = { has_completed_focus = hof_ic_tukhachevsky_airborne_and_tanks } }
+			activate_shine_on_focus = hof_ic_tukhachevsky_airborne_and_tanks
+			set_country_flag = {
+				flag = hof_ic_mikhail_tukhachevsky_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1271 days = 35 }
+		}
+		else_if = {   # hof_ic_tukhachevsky_the_deep_battle_instructions
+			limit = { NOT = { has_completed_focus = hof_ic_tukhachevsky_the_deep_battle_instructions } }
+			activate_shine_on_focus = hof_ic_tukhachevsky_the_deep_battle_instructions
+			set_country_flag = {
+				flag = hof_ic_mikhail_tukhachevsky_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1271 days = 35 }
+		}
+		else_if = {   # hof_ic_tukhachevsky_the_four_echelons
+			limit = { NOT = { has_completed_focus = hof_ic_tukhachevsky_the_four_echelons } }
+			activate_shine_on_focus = hof_ic_tukhachevsky_the_four_echelons
+			set_country_flag = {
+				flag = hof_ic_mikhail_tukhachevsky_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1271 days = 35 }
+		}
+		else_if = {   # hof_ic_tukhachevsky_the_four_echelons
+			limit = { NOT = { has_completed_focus = hof_ic_tukhachevsky_the_four_echelons } }
+			activate_shine_on_focus = hof_ic_tukhachevsky_the_four_echelons
+			set_country_flag = {
+				flag = hof_ic_mikhail_tukhachevsky_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1271 days = 35 }
+		}
+		else_if = {   # hof_ic_tukhachevsky_the_defence_of_the_union
+			limit = { NOT = { has_completed_focus = hof_ic_tukhachevsky_the_defence_of_the_union } }
+			activate_shine_on_focus = hof_ic_tukhachevsky_the_defence_of_the_union
+			set_country_flag = {
+				flag = hof_ic_mikhail_tukhachevsky_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1271 days = 35 }
+		}
+		else_if = {   # hof_ic_tukhachevsky_military_economic_mobilization
+			limit = { NOT = { has_completed_focus = hof_ic_tukhachevsky_military_economic_mobilization } }
+			activate_shine_on_focus = hof_ic_tukhachevsky_military_economic_mobilization
+			set_country_flag = {
+				flag = hof_ic_mikhail_tukhachevsky_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1271 days = 35 }
+		}
+		else_if = {   # hof_ic_tukhachevsky_air_mechanization
+			limit = { NOT = { has_completed_focus = hof_ic_tukhachevsky_air_mechanization } }
+			activate_shine_on_focus = hof_ic_tukhachevsky_air_mechanization
+			set_country_flag = {
+				flag = hof_ic_mikhail_tukhachevsky_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1271 days = 35 }
+		}
+		else_if = {   # hof_ic_tukhachevsky_the_field_regulations
+			limit = { NOT = { has_completed_focus = hof_ic_tukhachevsky_the_field_regulations } }
+			activate_shine_on_focus = hof_ic_tukhachevsky_the_field_regulations
+			set_country_flag = {
+				flag = hof_ic_mikhail_tukhachevsky_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1271 days = 35 }
+		}
+	}
+}
+
+# ---------------------------------------------------------------------------
+# 米哈伊尔·图哈切夫斯基 的个人线驱动器：完成已点亮的国策
+# ---------------------------------------------------------------------------
+country_event = {
+	id = heartofiron.1271
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		hof_ic_seated_mikhail_tukhachevsky = yes
+	}
+
+	immediate = {
+		if = {
+			limit = { has_shine_effect_on_focus = hof_ic_tukhachevsky_the_military_academy }
+			complete_national_focus = { focus = hof_ic_tukhachevsky_the_military_academy }
+			clr_country_flag = hof_ic_mikhail_tukhachevsky_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1270 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_tukhachevsky_the_regular_army }
+			complete_national_focus = { focus = hof_ic_tukhachevsky_the_regular_army }
+			clr_country_flag = hof_ic_mikhail_tukhachevsky_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1270 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_tukhachevsky_airborne_and_tanks }
+			complete_national_focus = { focus = hof_ic_tukhachevsky_airborne_and_tanks }
+			clr_country_flag = hof_ic_mikhail_tukhachevsky_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1270 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_tukhachevsky_the_deep_battle_instructions }
+			complete_national_focus = { focus = hof_ic_tukhachevsky_the_deep_battle_instructions }
+			clr_country_flag = hof_ic_mikhail_tukhachevsky_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1270 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_tukhachevsky_the_four_echelons }
+			complete_national_focus = { focus = hof_ic_tukhachevsky_the_four_echelons }
+			clr_country_flag = hof_ic_mikhail_tukhachevsky_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1270 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_tukhachevsky_the_four_echelons }
+			complete_national_focus = { focus = hof_ic_tukhachevsky_the_four_echelons }
+			clr_country_flag = hof_ic_mikhail_tukhachevsky_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1270 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_tukhachevsky_the_defence_of_the_union }
+			complete_national_focus = { focus = hof_ic_tukhachevsky_the_defence_of_the_union }
+			clr_country_flag = hof_ic_mikhail_tukhachevsky_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1270 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_tukhachevsky_military_economic_mobilization }
+			complete_national_focus = { focus = hof_ic_tukhachevsky_military_economic_mobilization }
+			clr_country_flag = hof_ic_mikhail_tukhachevsky_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1270 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_tukhachevsky_air_mechanization }
+			complete_national_focus = { focus = hof_ic_tukhachevsky_air_mechanization }
+			clr_country_flag = hof_ic_mikhail_tukhachevsky_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1270 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_tukhachevsky_the_field_regulations }
+			complete_national_focus = { focus = hof_ic_tukhachevsky_the_field_regulations }
+			clr_country_flag = hof_ic_mikhail_tukhachevsky_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1270 days = 3 random_days = 3 }
+		}
+		else = {
+			if = {
+				limit = {
+					NOT = {
+						AND = {
+							has_completed_focus = hof_ic_tukhachevsky_the_military_academy
+							has_completed_focus = hof_ic_tukhachevsky_the_regular_army
+							has_completed_focus = hof_ic_tukhachevsky_airborne_and_tanks
+							has_completed_focus = hof_ic_tukhachevsky_the_deep_battle_instructions
+							has_completed_focus = hof_ic_tukhachevsky_the_four_echelons
+							has_completed_focus = hof_ic_tukhachevsky_the_four_echelons
+							has_completed_focus = hof_ic_tukhachevsky_the_defence_of_the_union
+							has_completed_focus = hof_ic_tukhachevsky_military_economic_mobilization
+							has_completed_focus = hof_ic_tukhachevsky_air_mechanization
+							has_completed_focus = hof_ic_tukhachevsky_the_field_regulations
+						}
+					}
+				}
+				country_event = { id = heartofiron.1270 days = 3 random_days = 3 }
+			}
+		}
+	}
+}
+
+# ---------------------------------------------------------------------------
+# 尼古拉·沃兹涅先斯基 的个人线驱动器：开下一个国策
+# ---------------------------------------------------------------------------
+country_event = {
+	id = heartofiron.1280
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		hof_ic_seated_nikolay_voznesensky = yes
+	}
+
+	immediate = {
+		if = {   # hof_ic_voznesensky_the_fight_for_the_plan
+			limit = { NOT = { has_completed_focus = hof_ic_voznesensky_the_fight_for_the_plan } }
+			activate_shine_on_focus = hof_ic_voznesensky_the_fight_for_the_plan
+			set_country_flag = {
+				flag = hof_ic_nikolay_voznesensky_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1281 days = 35 }
+		}
+		else_if = {   # hof_ic_voznesensky_the_leningrad_plan
+			limit = { NOT = { has_completed_focus = hof_ic_voznesensky_the_leningrad_plan } }
+			activate_shine_on_focus = hof_ic_voznesensky_the_leningrad_plan
+			set_country_flag = {
+				flag = hof_ic_nikolay_voznesensky_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1281 days = 35 }
+		}
+		else_if = {   # hof_ic_voznesensky_the_state_planning_committee
+			limit = { NOT = { has_completed_focus = hof_ic_voznesensky_the_state_planning_committee } }
+			activate_shine_on_focus = hof_ic_voznesensky_the_state_planning_committee
+			set_country_flag = {
+				flag = hof_ic_nikolay_voznesensky_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1281 days = 35 }
+		}
+		else_if = {   # hof_ic_voznesensky_the_placement_of_plants
+			limit = { NOT = { has_completed_focus = hof_ic_voznesensky_the_placement_of_plants } }
+			activate_shine_on_focus = hof_ic_voznesensky_the_placement_of_plants
+			set_country_flag = {
+				flag = hof_ic_nikolay_voznesensky_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1281 days = 35 }
+		}
+		else_if = {   # hof_ic_voznesensky_the_ammunition_plan
+			limit = { NOT = { has_completed_focus = hof_ic_voznesensky_the_ammunition_plan } }
+			activate_shine_on_focus = hof_ic_voznesensky_the_ammunition_plan
+			set_country_flag = {
+				flag = hof_ic_nikolay_voznesensky_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1281 days = 35 }
+		}
+		else_if = {   # hof_ic_voznesensky_the_war_economy
+			limit = { NOT = { has_completed_focus = hof_ic_voznesensky_the_war_economy } }
+			activate_shine_on_focus = hof_ic_voznesensky_the_war_economy
+			set_country_flag = {
+				flag = hof_ic_nikolay_voznesensky_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1281 days = 35 }
+		}
+	}
+}
+
+# ---------------------------------------------------------------------------
+# 尼古拉·沃兹涅先斯基 的个人线驱动器：完成已点亮的国策
+# ---------------------------------------------------------------------------
+country_event = {
+	id = heartofiron.1281
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		hof_ic_seated_nikolay_voznesensky = yes
+	}
+
+	immediate = {
+		if = {
+			limit = { has_shine_effect_on_focus = hof_ic_voznesensky_the_fight_for_the_plan }
+			complete_national_focus = { focus = hof_ic_voznesensky_the_fight_for_the_plan }
+			clr_country_flag = hof_ic_nikolay_voznesensky_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1280 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_voznesensky_the_leningrad_plan }
+			complete_national_focus = { focus = hof_ic_voznesensky_the_leningrad_plan }
+			clr_country_flag = hof_ic_nikolay_voznesensky_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1280 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_voznesensky_the_state_planning_committee }
+			complete_national_focus = { focus = hof_ic_voznesensky_the_state_planning_committee }
+			clr_country_flag = hof_ic_nikolay_voznesensky_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1280 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_voznesensky_the_placement_of_plants }
+			complete_national_focus = { focus = hof_ic_voznesensky_the_placement_of_plants }
+			clr_country_flag = hof_ic_nikolay_voznesensky_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1280 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_voznesensky_the_ammunition_plan }
+			complete_national_focus = { focus = hof_ic_voznesensky_the_ammunition_plan }
+			clr_country_flag = hof_ic_nikolay_voznesensky_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1280 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_voznesensky_the_war_economy }
+			complete_national_focus = { focus = hof_ic_voznesensky_the_war_economy }
+			clr_country_flag = hof_ic_nikolay_voznesensky_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1280 days = 3 random_days = 3 }
+		}
+		else = {
+			if = {
+				limit = {
+					NOT = {
+						AND = {
+							has_completed_focus = hof_ic_voznesensky_the_fight_for_the_plan
+							has_completed_focus = hof_ic_voznesensky_the_leningrad_plan
+							has_completed_focus = hof_ic_voznesensky_the_state_planning_committee
+							has_completed_focus = hof_ic_voznesensky_the_placement_of_plants
+							has_completed_focus = hof_ic_voznesensky_the_ammunition_plan
+							has_completed_focus = hof_ic_voznesensky_the_war_economy
+						}
+					}
+				}
+				country_event = { id = heartofiron.1280 days = 3 random_days = 3 }
+			}
+		}
+	}
+}
+
+# ---------------------------------------------------------------------------
+# 彼得·斯米尔诺夫 的个人线驱动器：开下一个国策
+# ---------------------------------------------------------------------------
+country_event = {
+	id = heartofiron.1290
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		hof_ic_seated_pyotr_smirnov = yes
+	}
+
+	immediate = {
+		if = {   # hof_ic_pyotr_smirnov_the_naval_directorate
+			limit = { NOT = { has_completed_focus = hof_ic_pyotr_smirnov_the_naval_directorate } }
+			activate_shine_on_focus = hof_ic_pyotr_smirnov_the_naval_directorate
+			set_country_flag = {
+				flag = hof_ic_pyotr_smirnov_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1291 days = 35 }
+		}
+		else_if = {   # hof_ic_pyotr_smirnov_the_general_staff
+			limit = { NOT = { has_completed_focus = hof_ic_pyotr_smirnov_the_general_staff } }
+			activate_shine_on_focus = hof_ic_pyotr_smirnov_the_general_staff
+			set_country_flag = {
+				flag = hof_ic_pyotr_smirnov_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1291 days = 35 }
+		}
+		else_if = {   # hof_ic_pyotr_smirnov_the_naval_aviation
+			limit = { NOT = { has_completed_focus = hof_ic_pyotr_smirnov_the_naval_aviation } }
+			activate_shine_on_focus = hof_ic_pyotr_smirnov_the_naval_aviation
+			set_country_flag = {
+				flag = hof_ic_pyotr_smirnov_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1291 days = 35 }
+		}
+		else_if = {   # hof_ic_pyotr_smirnov_the_declaration
+			limit = { NOT = { has_completed_focus = hof_ic_pyotr_smirnov_the_declaration } }
+			activate_shine_on_focus = hof_ic_pyotr_smirnov_the_declaration
+			set_country_flag = {
+				flag = hof_ic_pyotr_smirnov_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1291 days = 35 }
+		}
+		else_if = {   # hof_ic_pyotr_smirnov_the_military_council
+			limit = { NOT = { has_completed_focus = hof_ic_pyotr_smirnov_the_military_council } }
+			activate_shine_on_focus = hof_ic_pyotr_smirnov_the_military_council
+			set_country_flag = {
+				flag = hof_ic_pyotr_smirnov_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1291 days = 35 }
+		}
+		else_if = {   # hof_ic_pyotr_smirnov_the_commissariat
+			limit = { NOT = { has_completed_focus = hof_ic_pyotr_smirnov_the_commissariat } }
+			activate_shine_on_focus = hof_ic_pyotr_smirnov_the_commissariat
+			set_country_flag = {
+				flag = hof_ic_pyotr_smirnov_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1291 days = 35 }
+		}
+	}
+}
+
+# ---------------------------------------------------------------------------
+# 彼得·斯米尔诺夫 的个人线驱动器：完成已点亮的国策
+# ---------------------------------------------------------------------------
+country_event = {
+	id = heartofiron.1291
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		hof_ic_seated_pyotr_smirnov = yes
+	}
+
+	immediate = {
+		if = {
+			limit = { has_shine_effect_on_focus = hof_ic_pyotr_smirnov_the_naval_directorate }
+			complete_national_focus = { focus = hof_ic_pyotr_smirnov_the_naval_directorate }
+			clr_country_flag = hof_ic_pyotr_smirnov_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1290 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_pyotr_smirnov_the_general_staff }
+			complete_national_focus = { focus = hof_ic_pyotr_smirnov_the_general_staff }
+			clr_country_flag = hof_ic_pyotr_smirnov_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1290 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_pyotr_smirnov_the_naval_aviation }
+			complete_national_focus = { focus = hof_ic_pyotr_smirnov_the_naval_aviation }
+			clr_country_flag = hof_ic_pyotr_smirnov_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1290 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_pyotr_smirnov_the_declaration }
+			complete_national_focus = { focus = hof_ic_pyotr_smirnov_the_declaration }
+			clr_country_flag = hof_ic_pyotr_smirnov_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1290 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_pyotr_smirnov_the_military_council }
+			complete_national_focus = { focus = hof_ic_pyotr_smirnov_the_military_council }
+			clr_country_flag = hof_ic_pyotr_smirnov_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1290 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_pyotr_smirnov_the_commissariat }
+			complete_national_focus = { focus = hof_ic_pyotr_smirnov_the_commissariat }
+			clr_country_flag = hof_ic_pyotr_smirnov_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1290 days = 3 random_days = 3 }
+		}
+		else = {
+			if = {
+				limit = {
+					NOT = {
+						AND = {
+							has_completed_focus = hof_ic_pyotr_smirnov_the_naval_directorate
+							has_completed_focus = hof_ic_pyotr_smirnov_the_general_staff
+							has_completed_focus = hof_ic_pyotr_smirnov_the_naval_aviation
+							has_completed_focus = hof_ic_pyotr_smirnov_the_declaration
+							has_completed_focus = hof_ic_pyotr_smirnov_the_military_council
+							has_completed_focus = hof_ic_pyotr_smirnov_the_commissariat
+						}
+					}
+				}
+				country_event = { id = heartofiron.1290 days = 3 random_days = 3 }
+			}
+		}
+	}
+}
+
+# ---------------------------------------------------------------------------
+# 格奥尔基·马林科夫 的个人线驱动器：开下一个国策
+# ---------------------------------------------------------------------------
+country_event = {
+	id = heartofiron.1300
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		hof_ic_seated_georgy_malenkow = yes
+	}
+
+	immediate = {
+		if = {   # hof_ic_malenkow_the_party_card_index
+			limit = { NOT = { has_completed_focus = hof_ic_malenkow_the_party_card_index } }
+			activate_shine_on_focus = hof_ic_malenkow_the_party_card_index
+			set_country_flag = {
+				flag = hof_ic_georgy_malenkow_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1301 days = 35 }
+		}
+		else_if = {   # hof_ic_malenkow_the_cadres_directorate
+			limit = { NOT = { has_completed_focus = hof_ic_malenkow_the_cadres_directorate } }
+			activate_shine_on_focus = hof_ic_malenkow_the_cadres_directorate
+			set_country_flag = {
+				flag = hof_ic_georgy_malenkow_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1301 days = 35 }
+		}
+		else_if = {   # hof_ic_malenkow_the_state_defence_committee
+			limit = { NOT = { has_completed_focus = hof_ic_malenkow_the_state_defence_committee } }
+			activate_shine_on_focus = hof_ic_malenkow_the_state_defence_committee
+			set_country_flag = {
+				flag = hof_ic_georgy_malenkow_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1301 days = 35 }
+		}
+		else_if = {   # hof_ic_malenkow_the_aviation_affair
+			limit = { NOT = { has_completed_focus = hof_ic_malenkow_the_aviation_affair } }
+			activate_shine_on_focus = hof_ic_malenkow_the_aviation_affair
+			set_country_flag = {
+				flag = hof_ic_georgy_malenkow_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1301 days = 35 }
+		}
+		else_if = {   # hof_ic_malenkow_the_party_schools
+			limit = { NOT = { has_completed_focus = hof_ic_malenkow_the_party_schools } }
+			activate_shine_on_focus = hof_ic_malenkow_the_party_schools
+			set_country_flag = {
+				flag = hof_ic_georgy_malenkow_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1301 days = 35 }
+		}
+		else_if = {   # hof_ic_malenkow_the_premiership
+			limit = { NOT = { has_completed_focus = hof_ic_malenkow_the_premiership } }
+			activate_shine_on_focus = hof_ic_malenkow_the_premiership
+			set_country_flag = {
+				flag = hof_ic_georgy_malenkow_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1301 days = 35 }
+		}
+	}
+}
+
+# ---------------------------------------------------------------------------
+# 格奥尔基·马林科夫 的个人线驱动器：完成已点亮的国策
+# ---------------------------------------------------------------------------
+country_event = {
+	id = heartofiron.1301
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		hof_ic_seated_georgy_malenkow = yes
+	}
+
+	immediate = {
+		if = {
+			limit = { has_shine_effect_on_focus = hof_ic_malenkow_the_party_card_index }
+			complete_national_focus = { focus = hof_ic_malenkow_the_party_card_index }
+			clr_country_flag = hof_ic_georgy_malenkow_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1300 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_malenkow_the_cadres_directorate }
+			complete_national_focus = { focus = hof_ic_malenkow_the_cadres_directorate }
+			clr_country_flag = hof_ic_georgy_malenkow_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1300 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_malenkow_the_state_defence_committee }
+			complete_national_focus = { focus = hof_ic_malenkow_the_state_defence_committee }
+			clr_country_flag = hof_ic_georgy_malenkow_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1300 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_malenkow_the_aviation_affair }
+			complete_national_focus = { focus = hof_ic_malenkow_the_aviation_affair }
+			clr_country_flag = hof_ic_georgy_malenkow_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1300 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_malenkow_the_party_schools }
+			complete_national_focus = { focus = hof_ic_malenkow_the_party_schools }
+			clr_country_flag = hof_ic_georgy_malenkow_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1300 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_malenkow_the_premiership }
+			complete_national_focus = { focus = hof_ic_malenkow_the_premiership }
+			clr_country_flag = hof_ic_georgy_malenkow_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1300 days = 3 random_days = 3 }
+		}
+		else = {
+			if = {
+				limit = {
+					NOT = {
+						AND = {
+							has_completed_focus = hof_ic_malenkow_the_party_card_index
+							has_completed_focus = hof_ic_malenkow_the_cadres_directorate
+							has_completed_focus = hof_ic_malenkow_the_state_defence_committee
+							has_completed_focus = hof_ic_malenkow_the_aviation_affair
+							has_completed_focus = hof_ic_malenkow_the_party_schools
+							has_completed_focus = hof_ic_malenkow_the_premiership
+						}
+					}
+				}
+				country_event = { id = heartofiron.1300 days = 3 random_days = 3 }
+			}
+		}
+	}
+}
+
+# ---------------------------------------------------------------------------
+# 尼基塔·赫鲁晓夫 的个人线驱动器：开下一个国策
+# ---------------------------------------------------------------------------
+country_event = {
+	id = heartofiron.1310
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		hof_ic_seated_nikita_khrushchyov = yes
+	}
+
+	immediate = {
+		if = {   # hof_ic_khrushchev_the_workers_faculty
+			limit = { NOT = { has_completed_focus = hof_ic_khrushchev_the_workers_faculty } }
+			activate_shine_on_focus = hof_ic_khrushchev_the_workers_faculty
+			set_country_flag = {
+				flag = hof_ic_nikita_khrushchyov_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1311 days = 35 }
+		}
+		else_if = {   # hof_ic_khrushchev_the_obligatory_deliveries
+			limit = { NOT = { has_completed_focus = hof_ic_khrushchev_the_obligatory_deliveries } }
+			activate_shine_on_focus = hof_ic_khrushchev_the_obligatory_deliveries
+			set_country_flag = {
+				flag = hof_ic_nikita_khrushchyov_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1311 days = 35 }
+		}
+		else_if = {   # hof_ic_khrushchev_the_agro_towns
+			limit = { NOT = { has_completed_focus = hof_ic_khrushchev_the_agro_towns } }
+			activate_shine_on_focus = hof_ic_khrushchev_the_agro_towns
+			set_country_flag = {
+				flag = hof_ic_nikita_khrushchyov_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1311 days = 35 }
+		}
+		else_if = {   # hof_ic_khrushchev_the_purchase_prices
+			limit = { NOT = { has_completed_focus = hof_ic_khrushchev_the_purchase_prices } }
+			activate_shine_on_focus = hof_ic_khrushchev_the_purchase_prices
+			set_country_flag = {
+				flag = hof_ic_nikita_khrushchyov_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1311 days = 35 }
+		}
+		else_if = {   # hof_ic_khrushchev_the_virgin_lands
+			limit = { NOT = { has_completed_focus = hof_ic_khrushchev_the_virgin_lands } }
+			activate_shine_on_focus = hof_ic_khrushchev_the_virgin_lands
+			set_country_flag = {
+				flag = hof_ic_nikita_khrushchyov_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1311 days = 35 }
+		}
+		else_if = {   # hof_ic_khrushchev_the_economic_councils
+			limit = { NOT = { has_completed_focus = hof_ic_khrushchev_the_economic_councils } }
+			activate_shine_on_focus = hof_ic_khrushchev_the_economic_councils
+			set_country_flag = {
+				flag = hof_ic_nikita_khrushchyov_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1311 days = 35 }
+		}
+	}
+}
+
+# ---------------------------------------------------------------------------
+# 尼基塔·赫鲁晓夫 的个人线驱动器：完成已点亮的国策
+# ---------------------------------------------------------------------------
+country_event = {
+	id = heartofiron.1311
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		hof_ic_seated_nikita_khrushchyov = yes
+	}
+
+	immediate = {
+		if = {
+			limit = { has_shine_effect_on_focus = hof_ic_khrushchev_the_workers_faculty }
+			complete_national_focus = { focus = hof_ic_khrushchev_the_workers_faculty }
+			clr_country_flag = hof_ic_nikita_khrushchyov_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1310 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_khrushchev_the_obligatory_deliveries }
+			complete_national_focus = { focus = hof_ic_khrushchev_the_obligatory_deliveries }
+			clr_country_flag = hof_ic_nikita_khrushchyov_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1310 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_khrushchev_the_agro_towns }
+			complete_national_focus = { focus = hof_ic_khrushchev_the_agro_towns }
+			clr_country_flag = hof_ic_nikita_khrushchyov_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1310 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_khrushchev_the_purchase_prices }
+			complete_national_focus = { focus = hof_ic_khrushchev_the_purchase_prices }
+			clr_country_flag = hof_ic_nikita_khrushchyov_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1310 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_khrushchev_the_virgin_lands }
+			complete_national_focus = { focus = hof_ic_khrushchev_the_virgin_lands }
+			clr_country_flag = hof_ic_nikita_khrushchyov_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1310 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_khrushchev_the_economic_councils }
+			complete_national_focus = { focus = hof_ic_khrushchev_the_economic_councils }
+			clr_country_flag = hof_ic_nikita_khrushchyov_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1310 days = 3 random_days = 3 }
+		}
+		else = {
+			if = {
+				limit = {
+					NOT = {
+						AND = {
+							has_completed_focus = hof_ic_khrushchev_the_workers_faculty
+							has_completed_focus = hof_ic_khrushchev_the_obligatory_deliveries
+							has_completed_focus = hof_ic_khrushchev_the_agro_towns
+							has_completed_focus = hof_ic_khrushchev_the_purchase_prices
+							has_completed_focus = hof_ic_khrushchev_the_virgin_lands
+							has_completed_focus = hof_ic_khrushchev_the_economic_councils
+						}
+					}
+				}
+				country_event = { id = heartofiron.1310 days = 3 random_days = 3 }
+			}
+		}
+	}
+}
+
+# ---------------------------------------------------------------------------
+# 克利门特·伏罗希洛夫 的个人线驱动器：开下一个国策
+# ---------------------------------------------------------------------------
+country_event = {
+	id = heartofiron.1320
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		hof_ic_seated_kliment_voroshilov = yes
+	}
+
+	immediate = {
+		if = {   # hof_ic_voroshilov_the_red_army_commanders
+			limit = { NOT = { has_completed_focus = hof_ic_voroshilov_the_red_army_commanders } }
+			activate_shine_on_focus = hof_ic_voroshilov_the_red_army_commanders
+			set_country_flag = {
+				flag = hof_ic_kliment_voroshilov_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1321 days = 35 }
+		}
+		else_if = {   # hof_ic_voroshilov_the_marksmanship_badge
+			limit = { NOT = { has_completed_focus = hof_ic_voroshilov_the_marksmanship_badge } }
+			activate_shine_on_focus = hof_ic_voroshilov_the_marksmanship_badge
+			set_country_flag = {
+				flag = hof_ic_kliment_voroshilov_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1321 days = 35 }
+		}
+		else_if = {   # hof_ic_voroshilov_the_ranks
+			limit = { NOT = { has_completed_focus = hof_ic_voroshilov_the_ranks } }
+			activate_shine_on_focus = hof_ic_voroshilov_the_ranks
+			set_country_flag = {
+				flag = hof_ic_kliment_voroshilov_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1321 days = 35 }
+		}
+		else_if = {   # hof_ic_voroshilov_the_partisan_staff
+			limit = { NOT = { has_completed_focus = hof_ic_voroshilov_the_partisan_staff } }
+			activate_shine_on_focus = hof_ic_voroshilov_the_partisan_staff
+			set_country_flag = {
+				flag = hof_ic_kliment_voroshilov_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1321 days = 35 }
+		}
+		else_if = {   # hof_ic_voroshilov_war_trophies_regulation
+			limit = { NOT = { has_completed_focus = hof_ic_voroshilov_war_trophies_regulation } }
+			activate_shine_on_focus = hof_ic_voroshilov_war_trophies_regulation
+			set_country_flag = {
+				flag = hof_ic_kliment_voroshilov_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1321 days = 35 }
+		}
+		else_if = {   # hof_ic_voroshilov_the_allied_control_commission
+			limit = { NOT = { has_completed_focus = hof_ic_voroshilov_the_allied_control_commission } }
+			activate_shine_on_focus = hof_ic_voroshilov_the_allied_control_commission
+			set_country_flag = {
+				flag = hof_ic_kliment_voroshilov_progress
+				days = 35
+				value = 1
+			}
+			country_event = { id = heartofiron.1321 days = 35 }
+		}
+	}
+}
+
+# ---------------------------------------------------------------------------
+# 克利门特·伏罗希洛夫 的个人线驱动器：完成已点亮的国策
+# ---------------------------------------------------------------------------
+country_event = {
+	id = heartofiron.1321
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		hof_ic_seated_kliment_voroshilov = yes
+	}
+
+	immediate = {
+		if = {
+			limit = { has_shine_effect_on_focus = hof_ic_voroshilov_the_red_army_commanders }
+			complete_national_focus = { focus = hof_ic_voroshilov_the_red_army_commanders }
+			clr_country_flag = hof_ic_kliment_voroshilov_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1320 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_voroshilov_the_marksmanship_badge }
+			complete_national_focus = { focus = hof_ic_voroshilov_the_marksmanship_badge }
+			clr_country_flag = hof_ic_kliment_voroshilov_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1320 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_voroshilov_the_ranks }
+			complete_national_focus = { focus = hof_ic_voroshilov_the_ranks }
+			clr_country_flag = hof_ic_kliment_voroshilov_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1320 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_voroshilov_the_partisan_staff }
+			complete_national_focus = { focus = hof_ic_voroshilov_the_partisan_staff }
+			clr_country_flag = hof_ic_kliment_voroshilov_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1320 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_voroshilov_war_trophies_regulation }
+			complete_national_focus = { focus = hof_ic_voroshilov_war_trophies_regulation }
+			clr_country_flag = hof_ic_kliment_voroshilov_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1320 days = 3 random_days = 3 }
+		}
+		else_if = {
+			limit = { has_shine_effect_on_focus = hof_ic_voroshilov_the_allied_control_commission }
+			complete_national_focus = { focus = hof_ic_voroshilov_the_allied_control_commission }
+			clr_country_flag = hof_ic_kliment_voroshilov_progress
+			# 下一条：【国策之间】的间隔（比首次启动短，见 3 的注释）
+			country_event = { id = heartofiron.1320 days = 3 random_days = 3 }
+		}
+		else = {
+			if = {
+				limit = {
+					NOT = {
+						AND = {
+							has_completed_focus = hof_ic_voroshilov_the_red_army_commanders
+							has_completed_focus = hof_ic_voroshilov_the_marksmanship_badge
+							has_completed_focus = hof_ic_voroshilov_the_ranks
+							has_completed_focus = hof_ic_voroshilov_the_partisan_staff
+							has_completed_focus = hof_ic_voroshilov_war_trophies_regulation
+							has_completed_focus = hof_ic_voroshilov_the_allied_control_commission
+						}
+					}
+				}
+				country_event = { id = heartofiron.1320 days = 3 random_days = 3 }
+			}
+		}
+	}
+}
+country_event = {
+	id = heartofiron.1400
+	title = heartofiron.1400.t
+	desc = heartofiron.1400.desc
+	is_triggered_only = yes
+	option = {
+		name = heartofiron.1400.slot_1
+		hof_ic_promote_slot_1_chairman = yes
+	}
+	option = {
+		name = heartofiron.1400.slot_2
+		hof_ic_promote_slot_2_chairman = yes
+	}
+	option = {
+		name = heartofiron.1400.slot_3
+		hof_ic_promote_slot_3_chairman = yes
+	}
+	option = {
+		name = heartofiron.1400.slot_4
+		hof_ic_promote_slot_4_chairman = yes
+	}
+	option = {
+		name = heartofiron.1400.slot_5
+		hof_ic_promote_slot_5_chairman = yes
+	}
+	option = {
+		name = heartofiron.1400.slot_6
+		hof_ic_promote_slot_6_chairman = yes
+	}
+	option = {
+		name = heartofiron.1400.slot_7
+		hof_ic_promote_slot_7_chairman = yes
+	}
+}

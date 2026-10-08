@@ -1,0 +1,58 @@
+﻿=== 德国核心圈窗口用到的纹理（给 GPT 出图时的参考基准）===
+
+sprite                                     尺寸             纹理路径（可交给 GPT 参考）
+------------------------------------------------------------------------------------------------------------------------
+GFX_tiled_plain_bg2                        182 x 186      F:\Hearts of Iron IV\gfx/interface/tiles/tiled_plain_bg2.dds
+GFX_circular_frame_fuhrer                  165 x 165      F:\Hearts of Iron IV\gfx/interface/inner_circle/circular_frame_fuhrer.dds
+GFX_fuhrer_name_ribbon                     160 x 36       F:\Hearts of Iron IV\gfx/interface/inner_circle/fuhrer_name_ribbon.dds
+GFX_trait_box_fuhrer                       115 x 22       F:\Hearts of Iron IV\gfx/interface/inner_circle/trait_box_fuhrer.dds
+GFX_ascended_advisor_name_box              146 x 26       F:\Hearts of Iron IV\gfx/interface/inner_circle/ascended_advisor_name_box.dds
+GFX_ascended_advisor_trait_box             144 x 43       F:\Hearts of Iron IV\gfx/interface/inner_circle/ascended_advisor_trait_box.dds
+GFX_blank_leader_portrait                  156 x 210      F:\Hearts of Iron IV\gfx/interface/inner_circle/blank_leader_portrait.dds
+GFX_ascended_advisors_unappointed_frame    131 x 139      F:\Hearts of Iron IV\gfx/interface/inner_circle/ascended_advisors_unappointed_frame.dds
+GFX_inner_circle_decor_bg                  631 x 583      F:\Hearts of Iron IV\gfx/interface/inner_circle/inner_circle_decor_bg.dds
+GFX_spotlight_overlay                      588 x 538      F:\Hearts of Iron IV\gfx/interface/inner_circle/spotlight_overlay.dds
+
+=== inner_circle.gfx 里定义的全部 sprite（含未被窗口引用的）===
+  [窗口在用] GFX_circular_frame_fuhrer                    165 x 165
+  [窗口在用] GFX_fuhrer_name_ribbon                       160 x 36
+  [窗口在用] GFX_trait_box_fuhrer                         115 x 22
+              GFX_inner_circle_leader_adolf_hitler         124 x 124
+              GFX_inner_circle_leader_eva_braun            124 x 124
+              GFX_inner_circle_leader_fritz_todt           124 x 124
+              GFX_inner_circle_leader_martin_bormann       124 x 124
+              GFX_inner_circle_leader_albert_speer         124 x 124
+              GFX_inner_circle_leader_rudolf_hess          124 x 124
+              GFX_inner_circle_leader_joseph_goebbels      124 x 124
+              GFX_inner_circle_leader_hermann_goring       124 x 124
+              GFX_inner_circle_leader_heinrich_himmler     124 x 124
+              GFX_ascended_advisors_frame                  131 x 139
+  [窗口在用] GFX_ascended_advisor_name_box                146 x 26
+  [窗口在用] GFX_ascended_advisor_trait_box               144 x 43
+  [窗口在用] GFX_blank_leader_portrait                    156 x 210
+  [窗口在用] GFX_ascended_advisors_unappointed_frame      131 x 139
+              GFX_fritz_todt_available_small               58 x 58
+              GFX_albert_speer_available_small             58 x 58
+              GFX_hermann_goring_available_small           58 x 58
+              GFX_heinrich_himmler_available_small         58 x 58
+              GFX_joseph_goebbels_available_small          58 x 58
+              GFX_rudolf_hess_available_small              58 x 58
+              GFX_martin_bormann_available_small           58 x 58
+              GFX_fritz_todt_unavailable_small             58 x 58
+              GFX_albert_speer_unavailable_small           58 x 58
+              GFX_hermann_goring_unavailable_small         58 x 58
+              GFX_heinrich_himmler_unavailable_small       58 x 58
+              GFX_joseph_goebbels_unavailable_small        58 x 58
+              GFX_rudolf_hess_unavailable_small            58 x 58
+              GFX_martin_bormann_unavailable_small         58 x 58
+              GFX_rudolf_hess_fo_small                     58 x 58
+              GFX_albert_speer_selected_small              58 x 58
+              GFX_fritz_todt_selected_small                58 x 58
+              GFX_heinrich_himmler_selected_small          58 x 58
+              GFX_hermann_goring_selected_small            58 x 58
+              GFX_joseph_goebbels_selected_small           58 x 58
+              GFX_martin_bormann_selected_small            58 x 58
+              GFX_rudolf_hess_selected_small               58 x 58
+  [窗口在用] GFX_inner_circle_decor_bg                    631 x 583
+              GFX_inner_circle_decor_bg_solid              586 x 538
+  [窗口在用] GFX_spotlight_overlay                        588 x 538

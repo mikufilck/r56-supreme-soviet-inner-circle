@@ -1,0 +1,19 @@
+{
+  "id": "hof_ic_litvinov_the_litvinov_protocol",
+  "name": "GFX_hof_ic_litvinov_the_litvinov_protocol",
+  "title": "李维诺夫议定书",
+  "concept": "Close-up of ONE unfolded multilateral agreement sheet, elegant ivory paper, with a single bottom row of exactly FIVE small square signature spaces, each filled only with short abstract horizontal strokes. No readable marks. The five distinct positions and shared baseline are the visual focus. No stack of files or grid chart.",
+  "group": "litvinov",
+  "size": [
+    100,
+    88
+  ],
+  "prompt": "Create ONE finished Hearts of Iron IV Soviet national focus icon. Use the attached image only as a stylistic reference for the outer engraved gold laurel wreath, small red star and blank gold ribbon; create an entirely new central scene. Close-up of ONE unfolded multilateral agreement sheet, elegant ivory paper, with a single bottom row of exactly FIVE small square signature spaces, each filled only with short abstract horizontal strokes. No readable marks. The five distinct positions and shared baseline are the visual focus. No stack of files or grid chart. Art direction: richly painted, restrained 1930s Soviet historical relief illustration, deep red and weathered gold, tactile ivory paper and brass details, clear silhouette readable at 100×88 pixels. Visual motif is one line crossed, drawn, signed, connected or traveled. Keep important scene objects inside the laurel wreath. Exactly one emblem centered in a square canvas. TRUE RGBA transparent background outside wreath and ribbon, alpha 0 at all four corners, broad visible transparent exterior area (20–50 percent total pixels). No typography, readable letters or numbers, watermark, faces, guns, execution, family, war crime scene, badges, medal, flag, map, office interior, filing cabinet, ledger, newspaper page layout, printing press, typewriter, door, doorway, pile of letters, handshake, or human signature close-up. Render one final production asset, not a mockup or sheet.",
+  "references": [
+    "D:/Users/xuwei/PycharmProjects/heart_of_Iron/art/focus/bukharin/source/GFX_hof_ic_bukharin_proportional_development.png"
+  ],
+  "generated_path": "C:\\Users\\xuwei\\.codex\\generated_images\\01a09af5-fd43-79a0-a3cc-72284cd67cbc\\exec-f4837c9d-9b7b-413b-b66c-7363af49ee49.png",
+  "mode": "built-in image_gen",
+  "revision_prompt": "Edit this exact Soviet national focus icon of a 1929 multilateral protocol. Preserve outer gold laurels, top red star, blank lower ribbon, ivory sheet, fountain pen, and exactly five small signature squares in one bottom row. REMOVE the globe-and-laurel seal at the top of the paper completely: it resembles a United Nations emblem, which is historically impossible for 1929. Replace that seal area with plain unmarked ivory paper, perhaps only two short abstract horizontal strokes. No emblem, globe, institutional symbol, flag, or readable text anywhere on the paper. Keep true RGBA transparency outside the badge with four fully clear corners. Output one finished image.",
+  "revision_generated_path": "C:\\Users\\xuwei\\.codex\\generated_images\\01a09af5-fd43-79a0-a3cc-72284cd67cbc\\exec-5742c228-05ff-4d80-ac97-1a0b97d2f8b7.png"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "hof_ic_kalinin_an_unfounded_operation",
+  "name": "GFX_hof_ic_kalinin_an_unfounded_operation",
+  "title": "没有根据的行动",
+  "concept": "Close still-life of one paper voting sheet on a plain dark surface: a few rows of short abstract dashes where names would be, and under those one single handwritten-looking line of short unreadable strokes. A fountain pen laid horizontally across the sheet. No readable writing, signatures, square-grid chart, official decree or interior.",
+  "group": "kalinin",
+  "size": [
+    100,
+    88
+  ],
+  "prompt": "Create ONE finished Hearts of Iron IV Soviet national focus icon. Use the attached image only as a stylistic reference for the outer engraved gold laurel wreath, small red star and blank gold ribbon; create an entirely new central scene. Close still-life of one paper voting sheet on a plain dark surface: a few rows of short abstract dashes where names would be, and under those one single handwritten-looking line of short unreadable strokes. A fountain pen laid horizontally across the sheet. No readable writing, signatures, square-grid chart, official decree or interior. Art direction: richly painted, restrained 1930s Soviet historical relief illustration, deep red and weathered gold, tactile ivory paper and brass details, clear silhouette readable at 100×88 pixels. Keep all important scene objects inside the laurel wreath. Exactly one emblem centered in a square canvas. TRUE RGBA transparent background outside the wreath and ribbon, alpha 0 at all four corners, with broad visible transparent exterior area (20–50 percent of total pixels). No typography, no readable letters or numbers, no watermark. No wife, prison bars, gun, execution, train deportation, signed coercive decree, office interior, lathe, union flags, podium, newspaper layout, printing press, film studio, medals, orders, military star or ribbon insignia. Render one final production asset, not a mockup or sheet.",
+  "references": [
+    "D:/Users/xuwei/PycharmProjects/heart_of_Iron/art/focus/bukharin/source/GFX_hof_ic_bukharin_proportional_development.png"
+  ],
+  "generated_path": "C:\\Users\\xuwei\\.codex\\generated_images\\01a09af5-fd43-79a0-a3cc-72284cd67cbc\\exec-2a2f5408-b0eb-44f1-b4a4-3ca06310e747.png",
+  "mode": "built-in image_gen",
+  "revision_prompt": "Edit this exact focus icon. Preserve the gold laurel wreath, red star, blank gold ribbon, red background, sheet and fountain pen. Remove every voting checkbox and every checkmark from the sheet. Replace the checkbox column with more short gray horizontal strokes, like anonymous vote-line marks, and make the bottom handwritten line a clearly separate short sequence of unreadable dashes (not a signature). Maintain true transparent RGBA outside the badge and four clear transparent corners. No readable writing. The picture must NOT imply the document was approved. Output one finished image only.",
+  "revision_generated_path": "C:\\Users\\xuwei\\.codex\\generated_images\\01a09af5-fd43-79a0-a3cc-72284cd67cbc\\exec-82f7f873-ccc1-4e8f-abda-9e11b84afde1.png"
+}

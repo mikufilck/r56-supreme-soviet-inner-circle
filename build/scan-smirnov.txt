@@ -1,0 +1,250 @@
+﻿扫描关键词：'smirnov'（不区分大小写）
+
+====================================================================================================
+### [原版] F:\Hearts of Iron IV
+====================================================================================================
+
+--- common\national_focus\soviet.txt  （17 处）
+  L7257   #Smirnov
+  L7260   has_character = SOV_ivan_smirnov
+  L7262   SOV_ivan_smirnov = {
+  L8707   id = SOV_integrate_smirnovs_bloc
+  L8724   SOV_ivan_smirnov = { has_character_flag = SOV_character_purged_flag }
+  L8733   custom_effect_tooltip = SOV_integrate_smirnovs_bloc_tt
+  L8736   SOV_ivan_smirnov = { #Already set as algined to left oppo
+  L8741   small = "GFX_idea_SOV_ivan_smirnov"
+  L8870   prerequisite = { focus = SOV_integrate_smirnovs_bloc }
+  L8873   relative_position_id = SOV_integrate_smirnovs_bloc
+  L8964   prerequisite = { focus = SOV_integrate_smirnovs_bloc }
+  L8967   relative_position_id = SOV_integrate_smirnovs_bloc
+  L10391  IF = { limit = { has_character = SOV_ivan_smirnov } SOV_ivan_smirnov = { retire = yes } }
+  L11493  SOV_ivan_smirnov = {
+  L11498  SOV_ivan_smirnov = { clr_character_flag = SOV_imprisoned_flag }
+  L11522  character = SOV_ivan_smirnov
+  L11524  small = "GFX_idea_SOV_ivan_smirnov"
+
+--- common\characters\SOV.txt  （12 处）
+  L1696   SOV_pyotr_smirnov = {
+  L1697   name = SOV_pyotr_smirnov
+  L1700   small = "GFX_idea_pyotr_smirnov"
+  L1706   idea_token = pyotr_smirnov
+  L2677   has_completed_focus = SOV_integrate_smirnovs_bloc
+  L2705   SOV_ivan_smirnov = {
+  L2706   name = SOV_ivan_smirnov
+  L2709   large = "GFX_portrait_SOV_ivan_smirnov"
+  L2712   small = "GFX_idea_SOV_ivan_smirnov_imprisoned"
+  L2730   idea_token = SOV_ivan_smirnov
+  L2744   has_completed_focus = SOV_integrate_smirnovs_bloc
+  L2803   has_completed_focus = SOV_integrate_smirnovs_bloc
+
+--- common\scripted_effects\SOV_scripted_effects.txt  （3 处）
+  L7374   SOV_promote_to_country_leader_smirnov = {
+  L7376   character = "SOV_ivan_smirnov"
+  L7384   SOV = { set_country_flag = SOV_smirnov_country_leader_flag }
+
+--- common\scripted_triggers\00_scripted_triggers_FR_loc.txt  （1 处）
+  L838    has_country_leader = { character = SOV_ivan_smirnov }
+
+--- common\decisions\SOV.txt  （4 处）
+  L16712  #Smirnov
+  L16715  has_character = SOV_ivan_smirnov
+  L16716  SOV_ivan_smirnov = {
+  L16720  SOV_ivan_smirnov = {
+
+--- events\NSB_Soviet.txt  （7 处）
+  L8217   has_character = SOV_ivan_smirnov
+  L8218   has_completed_focus = SOV_integrate_smirnovs_bloc
+  L8228   SOV_promote_to_country_leader_smirnov = yes
+  L8248   NOT = { has_character = SOV_ivan_smirnov }
+  L8249   NOT = { has_completed_focus = SOV_integrate_smirnovs_bloc }
+  L10166  name = SOV_Smirnovabad
+  L10168  hidden_effect = { 742 = { set_state_name = SOV_Smirnovabad } }
+
+--- events\SovietUnion.txt  （2 处）
+  L869    #		show_ideas_tooltip = pyotr_smirnov
+  L877    #			remove_ideas = pyotr_smirnov
+
+--- history\countries\SOV - Soviet union.txt  （5 处）
+  L43     recruit_character = SOV_ivan_smirnov
+  L106    recruit_character = SOV_pyotr_smirnov
+  L272    SOV_ivan_smirnov = {
+  L336    SOV_ivan_smirnov = {
+  L967    SOV_ivan_smirnov = { SOV_purge_character_effect = yes }
+
+====================================================================================================
+### [R56] D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125
+====================================================================================================
+
+--- common\national_focus\soviet.txt  （15 处）
+  L8684   #Smirnov
+  L8687   has_character = SOV_ivan_smirnov
+  L8689   SOV_ivan_smirnov = {
+  L10596  id = SOV_integrate_smirnovs_bloc
+  L10613  SOV_ivan_smirnov = { has_character_flag = SOV_character_purged_flag }
+  L10622  custom_effect_tooltip = SOV_integrate_smirnovs_bloc_tt
+  L10625  SOV_ivan_smirnov = { #Already set as algined to left oppo
+  L10630  small = "GFX_idea_SOV_ivan_smirnov"
+  L10754  prerequisite = { focus = SOV_integrate_smirnovs_bloc }
+  L10757  relative_position_id = SOV_integrate_smirnovs_bloc
+  L10858  prerequisite = { focus = SOV_integrate_smirnovs_bloc }
+  L10861  relative_position_id = SOV_integrate_smirnovs_bloc
+  L12569  IF = { limit = { has_character = SOV_ivan_smirnov } SOV_ivan_smirnov = { retire = yes } }
+  L13672  character = SOV_ivan_smirnov
+  L13674  small = "GFX_idea_SOV_ivan_smirnov"
+
+--- common\national_focus\soviet_old.txt  （2 处）
+  L8731   SOV_ivan_smirnov = {
+  L8735   small = "GFX_idea_SOV_ivan_smirnov"
+
+--- common\characters\SOV.txt  （12 处）
+  L1992   SOV_pyotr_smirnov = {
+  L1993   name = SOV_pyotr_smirnov
+  L1996   small = "GFX_idea_pyotr_smirnov"
+  L2002   idea_token = pyotr_smirnov
+  L4464   has_completed_focus = SOV_integrate_smirnovs_bloc
+  L4492   SOV_ivan_smirnov = {
+  L4493   name = SOV_ivan_smirnov
+  L4496   large = "GFX_portrait_SOV_ivan_smirnov"
+  L4499   small = "GFX_idea_SOV_ivan_smirnov_imprisoned"
+  L4517   idea_token = SOV_ivan_smirnov
+  L4555   has_completed_focus = SOV_integrate_smirnovs_bloc
+  L4629   has_completed_focus = SOV_integrate_smirnovs_bloc
+
+--- common\scripted_effects\SOV_scripted_effects.txt  （3 处）
+  L7389   SOV_promote_to_country_leader_smirnov = {
+  L7391   character = "SOV_ivan_smirnov"
+  L7399   SOV = { set_country_flag = SOV_smirnov_country_leader_flag }
+
+--- common\decisions\SOV.txt  （4 处）
+  L17383  #Smirnov
+  L17386  has_character = SOV_ivan_smirnov
+  L17387  SOV_ivan_smirnov = {
+  L17391  SOV_ivan_smirnov = {
+
+--- events\NSB_Soviet.txt  （7 处）
+  L7985   has_character = SOV_ivan_smirnov
+  L7986   has_completed_focus = SOV_integrate_smirnovs_bloc
+  L7996   SOV_promote_to_country_leader_smirnov = yes
+  L8015   NOT = { has_character = SOV_ivan_smirnov }
+  L8016   NOT = { has_completed_focus = SOV_integrate_smirnovs_bloc }
+  L9824   name = SOV_Smirnovabad
+  L9826   hidden_effect = { 742 = { set_state_name = SOV_Smirnovabad } }
+
+--- events\SovietUnion.txt  （2 处）
+  L862    show_ideas_tooltip = pyotr_smirnov
+  L871    retire_character = SOV_pyotr_smirnov
+
+--- history\countries\SOV - Soviet union.txt  （4 处）
+  L105    recruit_character = SOV_ivan_smirnov
+  L179    recruit_character = SOV_pyotr_smirnov
+  L485    SOV_ivan_smirnov = {
+  L560    SOV_ivan_smirnov = {
+
+====================================================================================================
+### [我们] D:\Users\xuwei\PycharmProjects\heart_of_Iron\mod\heart_of_iron
+====================================================================================================
+
+--- common\national_focus\soviet.txt  （47 处）
+  L136    tooltip = hof_ic_not_seated_ivan_smirnov_tt
+  L137    NOT = { hof_ic_seated_ivan_smirnov = yes }
+  L212    tooltip = hof_ic_not_seated_ivan_smirnov_tt
+  L213    NOT = { hof_ic_seated_ivan_smirnov = yes }
+  L387    id = hof_ic_seat_ivan_smirnov
+  L388    icon = GFX_hof_ic_seat_ivan_smirnov
+  L400    tooltip = hof_ic_not_seated_ivan_smirnov_tt
+  L401    NOT = { hof_ic_seated_ivan_smirnov = yes }
+  L439    CHARACTER = SOV_ivan_smirnov
+  L441    show_ideas_tooltip = hof_ic_idea_ivan_smirnov
+  L447    CHARACTER = SOV_ivan_smirnov
+  L450    hof_ic_appoint_ivan_smirnov = yes
+  L748    tooltip = hof_ic_not_seated_ivan_smirnov_tt
+  L749    NOT = { hof_ic_seated_ivan_smirnov = yes }
+  L820    tooltip = hof_ic_not_seated_ivan_smirnov_tt
+  L821    NOT = { hof_ic_seated_ivan_smirnov = yes }
+  L892    tooltip = hof_ic_not_seated_ivan_smirnov_tt
+  L893    NOT = { hof_ic_seated_ivan_smirnov = yes }
+  L1127   id = hof_ic_seat_pyotr_smirnov
+  L1128   icon = GFX_hof_ic_seat_pyotr_smirnov
+  L1140   tooltip = hof_ic_not_seated_pyotr_smirnov_tt
+  L1141   NOT = { hof_ic_seated_pyotr_smirnov = yes }
+  L1147   CHARACTER = SOV_pyotr_smirnov
+  L1149   show_ideas_tooltip = hof_ic_idea_pyotr_smirnov
+        ...（还有 23 处未列）
+
+--- common\ideas\hof_ic_ideas.txt  （2 处）
+  L229    hof_ic_idea_ivan_smirnov = {
+  L372    hof_ic_idea_pyotr_smirnov = {
+
+--- common\scripted_effects\hof_ic_scripted_effects.txt  （42 处）
+  L50     add_ideas = hof_ic_idea_ivan_smirnov
+  L102    add_ideas = hof_ic_idea_pyotr_smirnov
+  L206    limit = { has_idea = hof_ic_idea_ivan_smirnov }
+  L207    remove_ideas = hof_ic_idea_ivan_smirnov
+  L297    limit = { has_idea = hof_ic_idea_pyotr_smirnov }
+  L298    remove_ideas = hof_ic_idea_pyotr_smirnov
+  L412    limit = { has_idea = hof_ic_idea_ivan_smirnov }
+  L413    remove_ideas = hof_ic_idea_ivan_smirnov
+  L503    limit = { has_idea = hof_ic_idea_pyotr_smirnov }
+  L504    remove_ideas = hof_ic_idea_pyotr_smirnov
+  L618    limit = { has_idea = hof_ic_idea_ivan_smirnov }
+  L619    remove_ideas = hof_ic_idea_ivan_smirnov
+  L709    limit = { has_idea = hof_ic_idea_pyotr_smirnov }
+  L710    remove_ideas = hof_ic_idea_pyotr_smirnov
+  L824    limit = { has_idea = hof_ic_idea_ivan_smirnov }
+  L825    remove_ideas = hof_ic_idea_ivan_smirnov
+  L915    limit = { has_idea = hof_ic_idea_pyotr_smirnov }
+  L916    remove_ideas = hof_ic_idea_pyotr_smirnov
+  L1030   limit = { has_idea = hof_ic_idea_ivan_smirnov }
+  L1031   remove_ideas = hof_ic_idea_ivan_smirnov
+  L1121   limit = { has_idea = hof_ic_idea_pyotr_smirnov }
+  L1122   remove_ideas = hof_ic_idea_pyotr_smirnov
+  L1236   limit = { has_idea = hof_ic_idea_ivan_smirnov }
+  L1237   remove_ideas = hof_ic_idea_ivan_smirnov
+        ...（还有 18 处未列）
+
+--- common\scripted_triggers\hof_ic_scripted_triggers.txt  （2 处）
+  L113    hof_ic_seated_ivan_smirnov = {
+  L282    hof_ic_seated_pyotr_smirnov = {
+
+--- common\scripted_localisation\hof_ic_scripted_loc.txt  （30 处）
+  L40     localization_key = hof_ic_name_ivan_smirnov
+  L105    localization_key = hof_ic_name_pyotr_smirnov
+  L158    localization_key = hof_ic_trait_ivan_smirnov
+  L223    localization_key = hof_ic_trait_pyotr_smirnov
+  L276    localization_key = hof_ic_name_ivan_smirnov
+  L341    localization_key = hof_ic_name_pyotr_smirnov
+  L394    localization_key = hof_ic_trait_ivan_smirnov
+  L459    localization_key = hof_ic_trait_pyotr_smirnov
+  L512    localization_key = hof_ic_name_ivan_smirnov
+  L577    localization_key = hof_ic_name_pyotr_smirnov
+  L630    localization_key = hof_ic_trait_ivan_smirnov
+  L695    localization_key = hof_ic_trait_pyotr_smirnov
+  L748    localization_key = hof_ic_name_ivan_smirnov
+  L813    localization_key = hof_ic_name_pyotr_smirnov
+  L866    localization_key = hof_ic_trait_ivan_smirnov
+  L931    localization_key = hof_ic_trait_pyotr_smirnov
+  L984    localization_key = hof_ic_name_ivan_smirnov
+  L1049   localization_key = hof_ic_name_pyotr_smirnov
+  L1102   localization_key = hof_ic_trait_ivan_smirnov
+  L1167   localization_key = hof_ic_trait_pyotr_smirnov
+  L1220   localization_key = hof_ic_name_ivan_smirnov
+  L1285   localization_key = hof_ic_name_pyotr_smirnov
+  L1338   localization_key = hof_ic_trait_ivan_smirnov
+  L1403   localization_key = hof_ic_trait_pyotr_smirnov
+        ...（还有 6 处未列）
+
+====================================================================================================
+### 汇总
+====================================================================================================
+总命中 223 处
+
+与这个人物相关的**国策 id** (1 个)：
+  SOV_integrate_smirnovs_bloc
+
+**idea id** (2 个)：
+  hof_ic_idea_ivan_smirnov
+  hof_ic_idea_pyotr_smirnov
+
+**角色 id** (2 个)：
+  SOV_ivan_smirnov
+  SOV_pyotr_smirnov

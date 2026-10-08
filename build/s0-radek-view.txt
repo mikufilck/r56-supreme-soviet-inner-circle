@@ -1,0 +1,196 @@
+==== SOP 第 0 步 · 拉狄克（Idx 9）====
+
+==================== 原版 ====================
+  --- common （23 行命中 / 7 个文件）---
+    common\characters\SOV.txt:2829
+        SOV_karl_radek = {
+    common\characters\SOV.txt:2830
+        name = SOV_karl_radek
+    common\characters\SOV.txt:2834
+        small = "GFX_idea_SOV_karl_radek"
+    common\characters\SOV.txt:2859
+        idea_token = SOV_karl_radek
+    common\country_leader\00_traits.txt:7988
+        #Radek
+    common\decisions\SOV.txt:1747
+        set_variable = { SOV.SOV_paranoia_photo_radek = 9 }
+    common\decisions\SOV.txt:16809
+        #Radek
+    common\decisions\SOV.txt:16812
+        has_character = SOV_karl_radek
+    common\decisions\SOV.txt:16813
+        SOV_karl_radek = {
+    common\decisions\SOV.txt:16817
+        SOV_karl_radek = {
+    common\national_focus\soviet.txt:7519
+        #Radek
+    common\national_focus\soviet.txt:7522
+        has_character = SOV_karl_radek
+    common\national_focus\soviet.txt:7524
+        SOV_karl_radek = {
+    common\national_focus\soviet.txt:8666
+        NOT = { has_character = SOV_karl_radek }
+    common\national_focus\soviet.txt:8678
+        custom_effect_tooltip = SOV_bring_old_trotskyists_back_effect_tt #Radek and Preobrazhensky already set as algined to left oppo
+    common\national_focus\soviet.txt:10017
+        SOV_karl_radek = { set_character_flag = SOV_potential_target_flag }
+    common\national_focus\soviet.txt:11314
+        SOV_karl_radek = {
+    common\scripted_effects\SOV_scripted_effects.txt:743
+        NOT = { has_character = SOV_karl_radek }
+    common\scripted_effects\SOV_scripted_effects.txt:744
+        check_variable = { SOV.SOV_paranoia_photo_radek = 9 compare = not_equals }
+    common\scripted_effects\SOV_scripted_effects.txt:746
+        set_variable = { SOV.SOV_paranoia_photo_radek = 9 }
+    common\scripted_guis\SOV_paranoia_system_scripted_gui.txt:12
+        paranoia_photo_radek = {
+    common\scripted_guis\SOV_paranoia_system_scripted_gui.txt:13
+        frame = SOV_paranoia_photo_radek
+    common\units\names_ships\GER_ship_name.txt:2061
+        16 = {"Radek"} # Karl Radek
+  --- history （5 行命中 / 1 个文件）---
+    history\countries\SOV - Soviet union.txt:45
+        recruit_character = SOV_karl_radek
+    history\countries\SOV - Soviet union.txt:278
+        SOV_karl_radek = {
+    history\countries\SOV - Soviet union.txt:469
+        set_variable = { SOV_paranoia_photo_radek = 1 }
+    history\countries\SOV - Soviet union.txt:933
+        set_variable = { SOV_paranoia_photo_radek = 9 }
+    history\countries\SOV - Soviet union.txt:970
+        SOV_karl_radek = { SOV_purge_character_effect = yes }
+  --- localisation （69 行命中 / 33 个文件）---
+        soviet.25.c: "A confissão de Radek aponta várias pessoas no partido."
+        SOV_karl_radek: "Karl Radek"
+        SOV_bring_old_trotskyists_back_trigger_tt: "§Y$SOV_karl_radek$§! e §Y$SOV_yevgeny_preobrazhensky$§! foram expurgados por Stalin."
+        SOV_bring_old_trotskyists_back_effect_tt: "§Y$SOV_karl_radek$§! e §Y$SOV_yevgeny_preobrazhensky$§! ficam disponíveis como conselheiros."
+        SOV_cooperation_against_stalin_right_tt: "§Y$SOV_karl_radek$§! e §Y$SOV_yevgeny_preobrazhensky$§! ficam disponíveis como conselheiros."
+        SOV_eliminate_the_left_tt: "§Y$SOV_karl_radek$§!, §Y$SOV_ivar_smilga$§! e §Y$SOV_yevgeny_preobrazhensky$§! se tornarão alvos em potencial de um expurgo de Stalin."
+    localisation\english\events_l_english.yml:2239
+        soviet.25.c: "Radek's confession points to several people within the party."
+    localisation\english\nsb_characters_l_english.yml:84
+        SOV_karl_radek: "Karl Radek"
+    localisation\english\nsb_events_l_english.yml:706
+    localisation\english\nsb_focus_l_english.yml:1612
+    localisation\english\nsb_focus_l_english.yml:1613
+        SOV_bring_old_trotskyists_back_trigger_tt: "§Y$SOV_karl_radek$§! and §Y$SOV_yevgeny_preobrazhensky$§! have been purged by Stalin."
+    localisation\english\nsb_focus_l_english.yml:1614
+        SOV_bring_old_trotskyists_back_effect_tt: "§Y$SOV_karl_radek$§! and §Y$SOV_yevgeny_preobrazhensky$§! become available as advisors."
+    localisation\english\nsb_focus_l_english.yml:1707
+        SOV_cooperation_against_stalin_right_tt: "§Y$SOV_karl_radek$§! and §Y$SOV_yevgeny_preobrazhensky$§! become available as advisors."
+    localisation\english\nsb_focus_l_english.yml:1746
+        SOV_eliminate_the_left_tt: "§Y$SOV_karl_radek$§!, §Y$SOV_ivar_smilga$§!, and §Y$SOV_yevgeny_preobrazhensky$§! become potential targets for a purge by Stalin."
+        soviet.25.c: "Les aveux de Radek impliquent\nplusieurs membres du Parti"
+        SOV_karl_radek: "Karl Radek"
+        SOV_bring_old_trotskyists_back_trigger_tt: "§Y$SOV_karl_radek$§! et §Y$SOV_yevgeny_preobrazhensky$§! ont été purgés par Staline."
+        SOV_bring_old_trotskyists_back_effect_tt: "§Y$SOV_karl_radek$§! et §Y$SOV_yevgeny_preobrazhensky$§! vont être disponibles en tant que conseillers."
+        SOV_cooperation_against_stalin_right_tt: "§Y$SOV_karl_radek$§! et §Y$SOV_yevgeny_preobrazhensky$§! vont pouvoir devenir conseillers."
+        SOV_eliminate_the_left_tt: "§Y$SOV_karl_radek$§!, §Y$SOV_ivar_smilga$§! et §Y$SOV_yevgeny_preobrazhensky$§! vont devenir des cibles privilégiées pour les purges de Staline."
+        soviet.25.c: "Radeks Geständnis belastet mehrere Parteimitglieder."
+        SOV_karl_radek: "Karl Radek"
+        SOV_bring_old_trotskyists_back_trigger_tt: "§Y$SOV_karl_radek$§! und §Y$SOV_yevgeny_preobrazhensky$§! wurden von Stalin gesäubert."
+        SOV_bring_old_trotskyists_back_effect_tt: "§Y$SOV_karl_radek$§! und §Y$SOV_yevgeny_preobrazhensky$§! werden als Berater verfügbar."
+        SOV_cooperation_against_stalin_right_tt: "§Y$SOV_karl_radek$§! und §Y$SOV_yevgeny_preobrazhensky$§! werden als Berater verfügbar."
+        SOV_eliminate_the_left_tt: "§Y$SOV_karl_radek$§!, §Y$SOV_ivar_smilga$§! und §Y$SOV_yevgeny_preobrazhensky$§! werden zu potenziellen Zielen für eine Säuberung durch Stalin."
+        SOV_karl_radek: "カール・ラデック"
+        SOV_bring_old_trotskyists_back_trigger_tt: "§Y$SOV_karl_radek$§!および§Y$SOV_yevgeny_preobrazhensky$§!がスターリンによって粛清されている。"
+        SOV_bring_old_trotskyists_back_effect_tt: "§Y$SOV_karl_radek$§!および§Y$SOV_yevgeny_preobrazhensky$§!が顧問として利用可能になる。"
+        SOV_cooperation_against_stalin_right_tt: "§Y$SOV_karl_radek$§!および§Y$SOV_yevgeny_preobrazhensky$§!が顧問として利用可能になる。"
+        SOV_eliminate_the_left_tt: "§Y$SOV_karl_radek$§!、§Y$SOV_ivar_smilga$§!、§Y$SOV_yevgeny_preobrazhensky$§!がスターリンの粛清対象となる可能性がある。"
+        SOV_karl_radek: "카를 라데크"
+        SOV_bring_old_trotskyists_back_trigger_tt: "§Y$SOV_karl_radek$§!과 §Y$SOV_yevgeny_preobrazhensky$§!은 스탈린에 의해 숙청되었습니다."
+        SOV_bring_old_trotskyists_back_effect_tt: "§Y$SOV_karl_radek$§!와 §Y$SOV_yevgeny_preobrazhensky$§!를 고문으로 사용할 수 있습니다."
+        SOV_cooperation_against_stalin_right_tt: "§Y$SOV_karl_radek$§!와 §Y$SOV_yevgeny_preobrazhensky$§!를 고문으로 사용할 수 있습니다."
+        SOV_eliminate_the_left_tt: "§Y$SOV_karl_radek$§!, §Y$SOV_ivar_smilga$§!, 그리고 §Y$SOV_yevgeny_preobrazhensky$§!가 스탈린의 잠재적 숙청 대상이 됩니다."
+        SOV_karl_radek: "Karol Radek"
+        SOV_bring_old_trotskyists_back_trigger_tt: "§Y$SOV_karl_radek$§! i §Y$SOV_yevgeny_preobrazhensky$§! padli ofiarą czystek Stalina."
+        SOV_bring_old_trotskyists_back_effect_tt: "§Y$SOV_karl_radek$§! i §Y$SOV_yevgeny_preobrazhensky$§! będą dostępni jako doradcy."
+        SOV_cooperation_against_stalin_right_tt: "§Y$SOV_karl_radek$§! i §Y$SOV_yevgeny_preobrazhensky$§! będą dostępni jako doradcy."
+        SOV_eliminate_the_left_tt: "§Y$SOV_karl_radek$§!, §Y$SOV_ivar_smilga$§! i §Y$SOV_yevgeny_preobrazhensky$§! staną się potencjalnymi celami czystek Stalina."
+        soviet.25.c: "Показания Радека указывают на нескольких членов компартии."
+        SOV_karl_radek: "Карл Радек"
+        SOV_bring_old_trotskyists_back_trigger_tt: "§Y$SOV_karl_radek$§! и §Y$SOV_yevgeny_preobrazhensky$§! уничтожены Сталиным."
+        SOV_bring_old_trotskyists_back_effect_tt: "§Y$SOV_karl_radek$§! и §Y$SOV_yevgeny_preobrazhensky$§! становятся доступны в роли советников."
+        SOV_cooperation_against_stalin_right_tt: "§Y$SOV_karl_radek$§! и §Y$SOV_yevgeny_preobrazhensky$§! становятся доступны в роли советников."
+        SOV_eliminate_the_left_tt: "§Y$SOV_karl_radek$§!, §Y$SOV_ivar_smilga$§! и §Y$SOV_yevgeny_preobrazhensky$§! станут потенциальными целями сталинских чисток."
+    localisation\simp_chinese\nsb_characters_l_simp_chinese.yml:82
+        SOV_karl_radek: "卡尔·拉狄克"
+    localisation\simp_chinese\nsb_focus_l_simp_chinese.yml:1592
+        SOV_bring_old_trotskyists_back_trigger_tt: "§Y$SOV_karl_radek$§!和§Y$SOV_yevgeny_preobrazhensky$§!已被斯大林清洗"
+    localisation\simp_chinese\nsb_focus_l_simp_chinese.yml:1593
+        SOV_bring_old_trotskyists_back_effect_tt: "§Y$SOV_karl_radek$§!和§Y$SOV_yevgeny_preobrazhensky$§!成为可用的顾问。"
+    localisation\simp_chinese\nsb_focus_l_simp_chinese.yml:1685
+        SOV_cooperation_against_stalin_right_tt: "§Y$SOV_karl_radek$§!和§Y$SOV_yevgeny_preobrazhensky$§!成为可用的顾问。"
+    localisation\simp_chinese\nsb_focus_l_simp_chinese.yml:1723
+        SOV_eliminate_the_left_tt: "§Y$SOV_karl_radek$§!，§Y$SOV_ivar_smilga$§!和§Y$SOV_yevgeny_preobrazhensky$§!成为斯大林的潜在清洗目标。"
+        soviet.25.c: "La confesión de Radek apunta a varias personas dentro del partido. "
+        SOV_karl_radek: "Karl Radek"
+        SOV_bring_old_trotskyists_back_trigger_tt: "§Y$SOV_karl_radek$§! y §Y$SOV_yevgeny_preobrazhensky$§! han sido purgados por Stalin."
+        SOV_bring_old_trotskyists_back_effect_tt: "§Y$SOV_karl_radek$§! y §Y$SOV_yevgeny_preobrazhensky$§! están disponibles como consejeros."
+        SOV_cooperation_against_stalin_right_tt: "§Y$SOV_karl_radek$§! y §Y$SOV_yevgeny_preobrazhensky$§! están disponibles como consejeros."
+        SOV_eliminate_the_left_tt: "§Y$SOV_karl_radek$§!, §Y$SOV_ivar_smilga$§! y §Y$SOV_yevgeny_preobrazhensky$§! son objetivos potenciales de una purga de Stalin."
+  --- interface （4 行命中 / 2 个文件）---
+    interface\ideas.gfx:6167
+        name = "GFX_idea_SOV_karl_radek"
+    interface\ideas.gfx:6168
+        texturefile = "gfx/interface/ideas/idea_SOV_karl_radek.dds"
+    interface\sov_paranoia_system_scripted_gui.gui:161
+        #RADEK
+    interface\sov_paranoia_system_scripted_gui.gui:163
+        name ="paranoia_photo_radek"
+  --- gfx 下文件名命中（1 个）---
+    gfx\interface\ideas\idea_SOV_karl_radek.dds
+
+==================== 原版-dlc ====================
+  --- gfx 下文件名命中（0 个）---
+
+==================== R56 ====================
+  --- common （20 行命中 / 5 个文件）---
+    common\characters\SOV.txt:4645
+        SOV_karl_radek = {
+    common\characters\SOV.txt:4646
+        name = SOV_karl_radek
+    common\characters\SOV.txt:4650
+        small = "GFX_idea_SOV_karl_radek"
+    common\characters\SOV.txt:4675
+        idea_token = SOV_karl_radek
+    common\country_leader\00_traits.txt:7992
+        #Radek
+    common\decisions\SOV.txt:2135
+        set_variable = { SOV.SOV_paranoia_photo_radek = 9 }
+    common\decisions\SOV.txt:17480
+        #Radek
+    common\decisions\SOV.txt:17483
+        has_character = SOV_karl_radek
+    common\decisions\SOV.txt:17484
+        SOV_karl_radek = {
+    common\decisions\SOV.txt:17488
+        SOV_karl_radek = {
+    common\national_focus\soviet.txt:8941
+        #Radek
+    common\national_focus\soviet.txt:8944
+        has_character = SOV_karl_radek
+    common\national_focus\soviet.txt:8946
+        SOV_karl_radek = {
+    common\national_focus\soviet.txt:10555
+        NOT = { has_character = SOV_karl_radek }
+    common\national_focus\soviet.txt:10567
+        custom_effect_tooltip = SOV_bring_old_trotskyists_back_effect_tt #Radek and Preobrazhensky already set as algined to left oppo
+    common\national_focus\soviet.txt:12199
+        SOV_karl_radek = { set_character_flag = SOV_potential_target_flag }
+    common\national_focus\soviet.txt:13495
+        SOV_karl_radek = {
+    common\scripted_effects\SOV_scripted_effects.txt:743
+        NOT = { has_character = SOV_karl_radek }
+    common\scripted_effects\SOV_scripted_effects.txt:744
+        check_variable = { SOV.SOV_paranoia_photo_radek = 9 compare = not_equals }
+    common\scripted_effects\SOV_scripted_effects.txt:746
+        set_variable = { SOV.SOV_paranoia_photo_radek = 9 }
+  --- history （3 行命中 / 1 个文件）---
+    history\countries\SOV - Soviet union.txt:107
+        recruit_character = SOV_karl_radek
+    history\countries\SOV - Soviet union.txt:491
+        SOV_karl_radek = {
+    history\countries\SOV - Soviet union.txt:697
+        set_variable = { SOV_paranoia_photo_radek = 1 }
+  --- gfx 下文件名命中（0 个）---

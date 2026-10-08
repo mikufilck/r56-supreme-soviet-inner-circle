@@ -1,0 +1,11 @@
+{
+  "name": "GFX_hof_ic_trotsky_against_partisan_warfare",
+  "id": "hof_ic_trotsky_against_partisan_warfare",
+  "title": "反对游击主义",
+  "prompt": "Use case: stylized-concept. Produce ONE production Hearts of Iron IV national focus icon, final canvas 100x88 pixels (width:height 25:22); generate high-resolution at same ratio for mechanical downsampling. Full emblem centered, bold primary silhouette fills 92 percent of canvas with all ornaments intact, no clipping. Strictly NO text, letters, numerals, pseudo-writing, watermarks or rectangular canvas border. The icon's own laurel/medallion ornament is allowed. Uniform solid very dark charcoal (#181b1e) background outside emblem, no transparency grid, no checkerboard, no backdrop texture outside emblem. Painted game UI relief, high contrast at tiny size, upper-left directional light, dark edge shadows, restrained material highlights; NOT a scene, not a poster, not a flat vector logo, no photoreal background. Match the supplied SOVIET focus reference sheet: dark blood-crimson circular medallion, two antique-gold laurel branches forming an open-topped wreath, small red star at top and short blank gold ribbon at bottom. Central subject in ivory-white / plaster-grey carved monochrome sculptural relief, clear chiseled shading, NOT naturally colored objects. Every icon should have the same rim weight, red tone, gold patina and light direction. Prioritize 1-3 large readable forms over micro-detail. No characters or portraits unless requested.\nSubject design: Three identical upright standard infantry rifles aligned in a rigid symmetrical military rank, joined by a single straight crossbar and restrained red banner behind. Ivory-grey relief; clear organization motif, no tiny figures, no words or 'no' sign.\nFocus meaning (reference only; never render as text): 反对游击主义 — 正如托洛茨基所指出的，游击战的混乱反映了革命下面的农民因素，而反对它的斗争同样是为了支持无产阶级国家组织，以抵制正在瓦解它的元素化的小资产阶级无政府状态。绝大部分的军队新兵都是农民，整个国家是一片起义的农民海洋，对于这种战争方式，他们不仅有着传统，而且本能地适应。",
+  "references": [
+    "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\docs\\reference\\icon-refs-png\\sheet_sov_style.png"
+  ],
+  "source": "C:\\Users\\xuwei\\.codex\\generated_images\\01a09af5-fd43-79a0-a3cc-72284cd67cbc\\exec-f7bc6878-814c-47b2-ac70-3483e023e574.png",
+  "mode": "built-in image_gen"
+}

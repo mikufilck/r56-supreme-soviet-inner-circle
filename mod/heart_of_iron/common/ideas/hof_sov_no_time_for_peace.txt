@@ -1,0 +1,15 @@
+# 「无暇和平」专属精神；保留通用「秘密武器计划」的外观与说明。
+ideas = {
+	country = {
+		hof_sov_no_time_for_peace = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_research_bonus
+			modifier = {
+				special_project_speed_factor = 1.20
+				production_speed_facility_factor = 1.20
+			}
+		}
+	}
+}

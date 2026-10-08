@@ -1,0 +1,12 @@
+﻿Built-in image_gen; PNG + uncompressed BGRA8 DDS; no mipmaps.
+hof_ic_leader_frame: 165x165; alpha0=19935; partial=6469; maxAlpha=255; crop=0,0,1254,1254
+hof_ic_window_bg: 631x583; alpha0=53021; partial=312645; maxAlpha=255; crop=0,0,1305,1205
+hof_ic_seat_frame_empty: 131x139; alpha0=14077; partial=3136; maxAlpha=255; crop=0,0,1216,1293
+hof_ic_leader_ribbon: 160x36; alpha0=581; partial=4804; maxAlpha=255; crop=19,246,1946,273
+hof_ic_leader_title_box: 115x22; alpha0=46; partial=2234; maxAlpha=255; crop=23,277,1853,237
+hof_ic_seat_name_box: 146x26; alpha0=80; partial=3401; maxAlpha=255; crop=19,352,1636,230
+hof_ic_seat_frame_filled: 131x139; alpha0=13955; partial=3362; maxAlpha=255; crop=0,0,1216,1294
+hof_ic_seat_trait_box: 144x43; alpha0=84; partial=5764; maxAlpha=255; crop=14,138,2142,400
+hof_ic_candidate_slot: 58x58; alpha0=2158; partial=740; maxAlpha=255; crop=0,0,1254,1254
+hof_ic_blank_portrait: 156x210; alpha0=14192; partial=17985; maxAlpha=255; crop=0,0,1081,1455
+hof_ic_spotlight: 588x538; alpha0=152082; partial=164262; maxAlpha=46; crop=0,0,1312,1199

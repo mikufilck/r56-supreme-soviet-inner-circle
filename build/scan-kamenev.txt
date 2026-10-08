@@ -1,0 +1,192 @@
+﻿扫描关键词：'kamenev'（不区分大小写）
+
+====================================================================================================
+### [原版] F:\Hearts of Iron IV
+====================================================================================================
+
+--- common\national_focus\soviet.txt  （7 处）
+  L7245   #Kamenev
+  L7248   has_character = SOV_lev_kamenev
+  L7250   SOV_lev_kamenev = {
+  L11369  SOV_lev_kamenev = {
+  L11375  small = "GFX_idea_SOV_lev_kamenev"
+  L11394  SOV_lev_kamenev = {
+  L11400  small = "GFX_idea_SOV_lev_kamenev"
+
+--- common\characters\SOV.txt  （5 处）
+  L3306   SOV_lev_kamenev = {
+  L3307   name = SOV_lev_kamenev
+  L3310   large = "GFX_portrait_SOV_lev_kamenev"
+  L3313   small = "GFX_idea_SOV_lev_kamenev_imprisoned"
+  L3331   idea_token = SOV_lev_kamenev
+
+--- common\scripted_effects\SOV_scripted_effects.txt  （3 处）
+  L7426   SOV_promote_to_country_leader_kamenev = {
+  L7428   character = "SOV_lev_kamenev"
+  L7436   SOV = { set_country_flag = SOV_kamenev_country_leader_flag }
+
+--- common\decisions\SOV.txt  （4 处）
+  L16697  #Kamenev
+  L16700  has_character = SOV_lev_kamenev
+  L16701  SOV_lev_kamenev = {
+  L16705  SOV_lev_kamenev = {
+
+--- events\NSB_Soviet.txt  （12 处）
+  L8256   NOT = { has_character = SOV_lev_kamenev }
+  L8367   # Kamenev
+  L8374   has_character = SOV_lev_kamenev
+  L8385   SOV_promote_to_country_leader_kamenev = yes
+  L8455   NOT = { has_character = SOV_lev_kamenev }
+  L8543   has_character = SOV_lev_kamenev
+  L8547   SOV_promote_to_country_leader_kamenev = yes
+  L8643   NOT = { has_character = SOV_lev_kamenev }
+  L8755   # Kamenev
+  L8762   has_character = SOV_lev_kamenev
+  L8773   SOV_promote_to_country_leader_kamenev = yes
+  L9474   has_country_leader = { character = SOV_lev_kamenev }
+
+--- history\countries\SOV - Soviet union.txt  （4 处）
+  L53     recruit_character = SOV_lev_kamenev
+  L300    #SOV_lev_kamenev -> Will be aligned with either left or right opposition via focus
+  L348    SOV_lev_kamenev = {
+  L966    SOV_lev_kamenev = { SOV_purge_character_effect = yes }
+
+====================================================================================================
+### [R56] D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125
+====================================================================================================
+
+--- common\national_focus\soviet.txt  （7 处）
+  L8672   #Kamenev
+  L8675   has_character = SOV_lev_kamenev
+  L8677   SOV_lev_kamenev = {
+  L13550  SOV_lev_kamenev = {
+  L13556  small = "GFX_idea_SOV_lev_kamenev"
+  L13575  SOV_lev_kamenev = {
+  L13581  small = "GFX_idea_SOV_lev_kamenev"
+
+--- common\characters\SOV.txt  （5 处）
+  L5189   SOV_lev_kamenev = {
+  L5190   name = SOV_lev_kamenev
+  L5193   large = "GFX_portrait_SOV_lev_kamenev"
+  L5196   small = "GFX_idea_SOV_lev_kamenev_imprisoned"
+  L5214   idea_token = SOV_lev_kamenev
+
+--- common\scripted_effects\SOV_scripted_effects.txt  （3 处）
+  L7441   SOV_promote_to_country_leader_kamenev = {
+  L7443   character = "SOV_lev_kamenev"
+  L7451   SOV = { set_country_flag = SOV_kamenev_country_leader_flag }
+
+--- common\decisions\SOV.txt  （4 处）
+  L17368  #Kamenev
+  L17371  has_character = SOV_lev_kamenev
+  L17372  SOV_lev_kamenev = {
+  L17376  SOV_lev_kamenev = {
+
+--- events\NSB_Soviet.txt  （12 处）
+  L8023   NOT = { has_character = SOV_lev_kamenev }
+  L8131   # Kamenev
+  L8138   has_character = SOV_lev_kamenev
+  L8149   SOV_promote_to_country_leader_kamenev = yes
+  L8218   NOT = { has_character = SOV_lev_kamenev }
+  L8315   has_character = SOV_lev_kamenev
+  L8319   SOV_promote_to_country_leader_kamenev = yes
+  L8412   NOT = { has_character = SOV_lev_kamenev }
+  L8521   # Kamenev
+  L8528   has_character = SOV_lev_kamenev
+  L8539   SOV_promote_to_country_leader_kamenev = yes
+  L9234   has_country_leader = { character = SOV_lev_kamenev }
+
+--- history\countries\SOV - Soviet union.txt  （3 处）
+  L115    recruit_character = SOV_lev_kamenev
+  L513    #SOV_lev_kamenev -> Will be aligned with either left or right opposition via focus
+  L572    SOV_lev_kamenev = {
+
+====================================================================================================
+### [我们] D:\Users\xuwei\PycharmProjects\heart_of_Iron\mod\heart_of_iron
+====================================================================================================
+
+--- common\national_focus\soviet.txt  （25 处）
+  L72     tooltip = hof_ic_not_seated_lev_kamenev_tt
+  L73     NOT = { hof_ic_seated_lev_kamenev = yes }
+  L292    tooltip = hof_ic_not_seated_lev_kamenev_tt
+  L293    NOT = { hof_ic_seated_lev_kamenev = yes }
+  L327    id = hof_ic_seat_lev_kamenev
+  L328    icon = GFX_hof_ic_seat_lev_kamenev
+  L340    tooltip = hof_ic_not_seated_lev_kamenev_tt
+  L341    NOT = { hof_ic_seated_lev_kamenev = yes }
+  L367    CHARACTER = SOV_lev_kamenev
+  L369    show_ideas_tooltip = hof_ic_idea_lev_kamenev
+  L375    CHARACTER = SOV_lev_kamenev
+  L378    hof_ic_appoint_lev_kamenev = yes
+  L1204   tooltip = hof_ic_not_seated_lev_kamenev_tt
+  L1205   NOT = { hof_ic_seated_lev_kamenev = yes }
+  L1292   tooltip = hof_ic_not_seated_lev_kamenev_tt
+  L1293   NOT = { hof_ic_seated_lev_kamenev = yes }
+  L1380   tooltip = hof_ic_not_seated_lev_kamenev_tt
+  L1381   NOT = { hof_ic_seated_lev_kamenev = yes }
+  L12346  #Kamenev
+  L12349  has_character = SOV_lev_kamenev
+  L12351  SOV_lev_kamenev = {
+  L17224  SOV_lev_kamenev = {
+  L17230  small = "GFX_idea_SOV_lev_kamenev"
+  L17249  SOV_lev_kamenev = {
+        ...（还有 1 处未列）
+
+--- common\ideas\hof_ic_ideas.txt  （1 处）
+  L193    hof_ic_idea_lev_kamenev = {
+
+--- common\scripted_effects\hof_ic_scripted_effects.txt  （21 处）
+  L46     add_ideas = hof_ic_idea_lev_kamenev
+  L191    limit = { has_idea = hof_ic_idea_lev_kamenev }
+  L192    remove_ideas = hof_ic_idea_lev_kamenev
+  L389    limit = { has_idea = hof_ic_idea_lev_kamenev }
+  L390    remove_ideas = hof_ic_idea_lev_kamenev
+  L587    limit = { has_idea = hof_ic_idea_lev_kamenev }
+  L588    remove_ideas = hof_ic_idea_lev_kamenev
+  L785    limit = { has_idea = hof_ic_idea_lev_kamenev }
+  L786    remove_ideas = hof_ic_idea_lev_kamenev
+  L983    limit = { has_idea = hof_ic_idea_lev_kamenev }
+  L984    remove_ideas = hof_ic_idea_lev_kamenev
+  L1181   limit = { has_idea = hof_ic_idea_lev_kamenev }
+  L1182   remove_ideas = hof_ic_idea_lev_kamenev
+  L1379   limit = { has_idea = hof_ic_idea_lev_kamenev }
+  L1380   remove_ideas = hof_ic_idea_lev_kamenev
+  L1796   hof_ic_appoint_lev_kamenev = {
+  L2877   hof_ic_idea_lev_kamenev_sync_rank = {
+  L2881   limit = { has_idea = hof_ic_idea_lev_kamenev }
+  L2882   remove_ideas = hof_ic_idea_lev_kamenev
+  L2887   limit = { hof_ic_seated_lev_kamenev = yes }
+  L2889   add_ideas = hof_ic_idea_lev_kamenev
+
+--- common\scripted_triggers\hof_ic_scripted_triggers.txt  （1 处）
+  L100    hof_ic_seated_lev_kamenev = {
+
+--- common\scripted_localisation\hof_ic_scripted_loc.txt  （15 处）
+  L35     localization_key = hof_ic_name_lev_kamenev
+  L153    localization_key = hof_ic_trait_lev_kamenev
+  L271    localization_key = hof_ic_name_lev_kamenev
+  L389    localization_key = hof_ic_trait_lev_kamenev
+  L507    localization_key = hof_ic_name_lev_kamenev
+  L625    localization_key = hof_ic_trait_lev_kamenev
+  L743    localization_key = hof_ic_name_lev_kamenev
+  L861    localization_key = hof_ic_trait_lev_kamenev
+  L979    localization_key = hof_ic_name_lev_kamenev
+  L1097   localization_key = hof_ic_trait_lev_kamenev
+  L1215   localization_key = hof_ic_name_lev_kamenev
+  L1333   localization_key = hof_ic_trait_lev_kamenev
+  L1451   localization_key = hof_ic_name_lev_kamenev
+  L1569   localization_key = hof_ic_trait_lev_kamenev
+  L1690   localization_key = hof_ic_name_lev_kamenev
+
+====================================================================================================
+### 汇总
+====================================================================================================
+总命中 132 处
+
+与这个人物相关的**国策 id** (0 个)：
+
+**idea id** (1 个)：
+  hof_ic_idea_lev_kamenev
+
+**角色 id** (1 个)：
+  SOV_lev_kamenev

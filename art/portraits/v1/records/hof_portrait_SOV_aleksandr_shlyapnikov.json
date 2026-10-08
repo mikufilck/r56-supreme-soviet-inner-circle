@@ -1,0 +1,12 @@
+{
+  "name": "hof_portrait_SOV_aleksandr_shlyapnikov",
+  "label": "Aleksandr Shlyapnikov / 亚历山大·施利亚普尼科夫",
+  "prompt": "Use case: identity-preserve. Create ONE finished HOI4 Soviet leader portrait, painted reconstruction/upscale from the supplied tiny game icon. Image 1 is the authoritative IDENTITY reference: preserve this specific face, apparent age, facial proportions, hairline, hair/facial hair and expression. Images 2 and 3 are STYLE and COMPOSITION references only (Kamenev and Trotsky); do not copy their faces. Remove all icon framing, document/paper overlays, bars and UI embellishments. Extend naturally into a head-and-shoulders portrait ending at upper chest, face prominent and fully visible, centered or slightly left, facing the same direction as the small reference. Match the large samples: restrained realistic hand-painted oil/colorized photograph, muted brown grey / cool slate palette, soft upper-left key light, fine subdued brush texture, believable skin, dignified unexaggerated features. Plain warm grey-beige background matching the reference portraits, faint subtle tonal variation only; no scenery, vignette frame, symbols, writing, borders or watermark. Portrait canvas ratio exactly 156:210, e.g. 936x1260, whole crown and shoulders inside. Final use is 156x210 px so clear recognizable facial landmarks matter more than tiny detail. PNG output; uniform background may be opaque as in samples.\nSubject: Aleksandr Shlyapnikov / 亚历山大·施利亚普尼科夫. Imprisoned small reference: REMOVE iron bars and documents. Restore the SAME man's normal healthy appearance and civilian attire, dark period jacket, off-white shirt and subdued tie. Preserve his broad high forehead with receding dark hair, prominent ears, long nose, narrow moustache and pointed short dark chin beard as seen in image 1. Keep face recognizable beneath the former bars; no emaciation, injuries, prisoner uniform, spectacles or cap.",
+  "source": "C:\\Users\\xuwei\\.codex\\generated_images\\01a09af5-fd43-79a0-a3cc-72284cd67cbc\\exec-af6ccf9e-9589-49e9-ae48-db385d837ef7.png",
+  "reference": "references/hof_portrait_SOV_aleksandr_shlyapnikov.png",
+  "size": [
+    156,
+    210
+  ],
+  "mode": "built-in image_gen"
+}

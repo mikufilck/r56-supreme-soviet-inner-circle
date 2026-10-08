@@ -1,0 +1,791 @@
+==== 第 0 步上下文展开 · 里亚京（Idx 12）====
+
+====================================================================================================
+[原版] F:\Hearts of Iron IV\common\national_focus\soviet.txt : 11395-11475
+  WHY: ⭐ SOV_liberate_ryutin 完整国策块（原版为他专门做的）
+----------------------------------------------------------------------------------------------------
+ 11395: 						set_character_flag = SOV_aligned_right_opposition_flag
+ 11396: 						clr_character_flag = SOV_imprisoned_flag
+ 11397: 						set_character_flag = SOV_exiled_flag
+ 11398: 						set_portraits = {
+ 11399: 							army = {
+ 11400: 								small = "GFX_idea_SOV_lev_kamenev"
+ 11401: 							}
+ 11402: 						}
+ 11403: 					}
+ 11404: 				}
+ 11405: 			}
+ 11406: 		}
+ 11407: 	}
+ 11408: 
+ 11409: 	focus = {
+ 11410: 		id = SOV_liberate_ryutin
+ 11411: 		icon = GFX_SOV_liberate_ryutin_ccp_2d_sov_compatibility
+ 11412: 		prerequisite = { focus = SOV_cooperation_against_stalin }
+ 11413: 		x = 1
+ 11414: 		y = 1
+ 11415: 		relative_position_id = SOV_cooperation_against_stalin
+ 11416: 		cost = 10
+ 11417: 		available = {
+ 11418: 			SOV_soviet_civil_war_not_started = yes 
+ 11419: 		}
+ 11420: 		                
+ 11421: 		search_filters = {FOCUS_FILTER_SOV_POLITICAL_PARANOIA}
+ 11422: 
+ 11423: 		completion_reward = {
+ 11424: 			SOV_paranoia_medium_increase_effect = yes 
+ 11425: 			custom_effect_tooltip = SOV_liberate_ryutin_tt 
+ 11426: 			IF = {
+ 11427: 				limit = { SOV_is_left_opposition = yes }
+ 11428: 				566 = { set_state_flag = SOV_left_opposition_state }
+ 11429: 				hidden_effect = {
+ 11430: 					SOV_martemyan_ryutin = {
+ 11431: 						set_character_flag = SOV_aligned_left_opposition_flag
+ 11432: 						clr_character_flag = SOV_imprisoned_flag
+ 11433: 						set_character_flag = SOV_exiled_flag
+ 11434: 						set_portraits = {
+ 11435: 							army = {
+ 11436: 								small = "GFX_idea_SOV_martemyan_ryutin"
+ 11437: 							}
+ 11438: 						}
+ 11439: 					}
+ 11440: 				}
+ 11441: 			}
+ 11442: 			ELSE_IF = {
+ 11443: 				limit = { SOV_is_right_opposition = yes }
+ 11444: 				566 = { set_state_flag = SOV_right_opposition_state }
+ 11445: 				hidden_effect = {
+ 11446: 					SOV_martemyan_ryutin = {
+ 11447: 						set_character_flag = SOV_aligned_right_opposition_flag
+ 11448: 						clr_character_flag = SOV_imprisoned_flag
+ 11449: 						set_character_flag = SOV_exiled_flag
+ 11450: 						set_portraits = {
+ 11451: 							army = {
+ 11452: 								small = "GFX_idea_SOV_martemyan_ryutin"
+ 11453: 							}
+ 11454: 						}
+ 11455: 					}
+ 11456: 				}
+ 11457: 			}
+ 11458: 		}
+ 11459: 	}
+ 11460: 
+ 11461: 	focus = {
+ 11462: 		id = SOV_return_democracy_to_the_party
+ 11463: 		icon = GFX_SOV_return_democracy_to_the_party_ccp_2d_sov_compatibility
+ 11464: 		prerequisite = { focus = SOV_cooperation_against_stalin }
+ 11465: 		mutually_exclusive = { focus = SOV_left_purges focus = SOV_right_purges }
+ 11466: 		x = 0
+ 11467: 		y = 4
+ 11468: 		relative_position_id = SOV_cooperation_against_stalin
+ 11469: 		cost = 10
+ 11470: 		available = {
+ 11471: 			has_global_flag = SOV_soviet_civil_war_over
+ 11472: 		}
+ 11473: 		                
+ 11474: 		search_filters = {}
+ 11475: 
+
+====================================================================================================
+[原版] F:\Hearts of Iron IV\common\national_focus\soviet.txt : 7545-7600
+  WHY: #Ryutin 国策（第一个）
+----------------------------------------------------------------------------------------------------
+  7545: 			if = {
+  7546: 				limit = {
+  7547: 					has_character = SOV_yevgeny_preobrazhensky
+  7548: 				}
+  7549: 				SOV_yevgeny_preobrazhensky = {
+  7550: 					set_character_flag = SOV_targeted_for_purge_flag
+  7551: 				}
+  7552: 			}
+  7553: 			else = {
+  7554: 				SOV_add_random_character_to_purge_targets_effect = yes
+  7555: 			}
+  7556: 			#Ryutin
+  7557: 			if = {
+  7558: 				limit = {
+  7559: 					has_character = SOV_martemyan_ryutin
+  7560: 				}
+  7561: 				SOV_martemyan_ryutin = {
+  7562: 					set_character_flag = SOV_targeted_for_purge_flag
+  7563: 				}
+  7564: 			}
+  7565: 			else = {
+  7566: 				SOV_add_random_character_to_purge_targets_effect = yes
+  7567: 			}
+  7568: 			#Ustryalov
+  7569: 			if = {
+  7570: 				limit = {
+  7571: 					has_dlc = "No Step Back"
+  7572: 				}
+  7573: 				if = {
+  7574: 					limit = {
+  7575: 						has_character = SOV_nikolay_ustryalov
+  7576: 					}
+  7577: 					SOV_nikolay_ustryalov = {
+  7578: 						set_character_flag = SOV_targeted_for_purge_flag
+  7579: 					}
+  7580: 				}
+  7581: 				else = {
+  7582: 					SOV_add_random_character_to_purge_targets_effect = yes
+  7583: 				}
+  7584: 			}
+  7585: 
+  7586: 			custom_effect_tooltip = SOV_will_trigger_a_great_purge_tt
+  7587: 			hidden_effect = {
+  7588: 				set_country_flag = SOV_purge_event_unavoidable_flag #No way to avoid this purge. This people are about to be purged and there's nothing you can do for them.
+  7589: 				SOV_trigger_great_purge_moscow_trial_effect = yes #SECOND MOSCOW TRIAL -> Left Opposition
+  7590: 			}
+  7591: 			custom_effect_tooltip = SOV_trigger_second_moscow_trial_tt
+  7592: 
+  7593: 			hidden_effect = {
+  7594: 				swap_ruler_traits = {
+  7595: 					remove = stalin_political_paranoia
+  7596: 					add = stalin_political_paranoia_advanced
+  7597: 				}
+  7598: 				add_to_variable = { SOV_paranoia_weekly_modifiers_amount = 1 }
+  7599: 				SOV_paranoia_modifier_update_gui_tooltip = yes
+  7600: 			}		
+
+====================================================================================================
+[原版] F:\Hearts of Iron IV\common\national_focus\soviet.txt : 9225-9245
+  WHY: retire_character 清洗线
+----------------------------------------------------------------------------------------------------
+  9225: 			has_global_flag = SOV_soviet_civil_war_over
+  9226: 		}
+  9227: 		
+  9228: 		search_filters = {FOCUS_FILTER_POLITICAL}
+  9229: 
+  9230: 		completion_reward = {
+  9231: 			custom_effect_tooltip = SOV_left_purges_tt
+  9232: 			IF = { limit = { has_character = SOV_nikolay_bukharin } retire_character = SOV_nikolay_bukharin }
+  9233: 			IF = { limit = { has_character = SOV_aleksey_rykov } retire_character = SOV_aleksey_rykov }
+  9234: 			IF = { limit = { has_character = SOV_mikhail_tomsky } retire_character = SOV_mikhail_tomsky }
+  9235: 			IF = { limit = { has_character = SOV_grigory_zinovyev } retire_character = SOV_grigory_zinovyev }
+  9236: 			IF = { limit = { has_character = SOV_martemyan_ryutin } retire_character = SOV_martemyan_ryutin }
+  9237: 			IF = { limit = { has_character = SOV_mikhail_kalinin } retire_character = SOV_mikhail_kalinin }
+  9238: 			IF = { limit = { has_character = SOV_nikita_khrushchyov } retire_character = SOV_nikita_khrushchyov }
+  9239: 			IF = { limit = { has_character = SOV_vsevolod_merkulov } retire_character = SOV_vsevolod_merkulov }
+  9240: 			set_variable = { SOV_factionalism_political_power_factor = 0 }
+  9241: 			custom_effect_tooltip = SOV_left_right_purges_factionalism_tt
+  9242: 			
+  9243: 				
+  9244: 		}
+  9245: 			
+
+====================================================================================================
+[原版] F:\Hearts of Iron IV\common\characters\SOV.txt : 3360-3420
+  WHY: ⭐ 完整角色对象 SOV_martemyan_ryutin
+----------------------------------------------------------------------------------------------------
+  3360: 				appeasing_technocrat 
+  3361: 			}
+  3362: 			ai_will_do = {
+  3363: 				base = 2
+  3364: 			}
+  3365: 		}
+  3366: 	}
+  3367: 
+  3368: 	SOV_martemyan_ryutin = {
+  3369: 		name = SOV_martemyan_ryutin
+  3370: 		portraits = {
+  3371: 			army = {
+  3372: 				small = "GFX_idea_SOV_martemyan_ryutin_imprisoned"
+  3373: 			}
+  3374: 		}
+  3375: 
+  3376: 		allowed_civil_war = {
+  3377: 			OR = {
+  3378: 				AND = {
+  3379: 					SOV_is_left_opposition = yes 
+  3380: 					has_completed_focus = SOV_liberate_ryutin
+  3381: 				}
+  3382: 				AND = {
+  3383: 					SOV_is_right_opposition = yes 
+  3384: 					has_completed_focus = SOV_liberate_ryutin 
+  3385: 				}
+  3386: 				AND = {
+  3387: 					SOV_is_exiles = yes 
+  3388: 					has_government = communism
+  3389: 				}
+  3390: 			}
+  3391: 		}
+  3392: 
+  3393: 
+  3394: 		advisor = {
+  3395: 			slot = political_advisor
+  3396: 			idea_token = SOV_martemyan_ryutin
+  3397: 			allowed = {
+  3398: 				original_tag = SOV
+  3399: 			}
+  3400: 			visible = {
+  3401: 				NOT = {
+  3402: 					has_character_flag = SOV_character_purged_flag 
+  3403: 				}
+  3404: 			}
+  3405: 			available = {
+  3406: 				has_completed_focus = SOV_liberate_ryutin
+  3407: 				OR = {
+  3408: 					has_global_flag = SOV_soviet_civil_war
+  3409: 					has_global_flag = SOV_soviet_civil_war_over
+  3410: 				}
+  3411: 				if = {
+  3412: 					limit = {
+  3413: 						has_character_flag = SOV_imprisoned_flag
+  3414: 					}
+  3415: 					NOT = { has_character_flag = SOV_imprisoned_flag } #For flavor purposes only -> Removed in the appropriate focus/event/dec
+  3416: 				}
+  3417: 				if = {
+  3418: 					limit = {
+  3419: 						has_character_flag = SOV_exiled_flag
+  3420: 					}
+
+====================================================================================================
+[原版] F:\Hearts of Iron IV\common\country_leader\00_traits.txt : 8060-8110
+  WHY: ⭐ #Ryutin 特质
+----------------------------------------------------------------------------------------------------
+  8060: 		political_power_factor = 0.05
+  8061: 		land_reinforce_rate = 0.02
+  8062: 	}
+  8063: 
+  8064: 	#Zinovyev
+  8065: 	communist_theorist = {
+  8066: 		random = no
+  8067: 		sprite = 13
+  8068: 		drift_defence_factor = 0.1
+  8069: 		political_power_factor = 0.15
+  8070: 	}
+  8071: 
+  8072: 	#Kamenev
+  8073: 	appeasing_technocrat = {
+  8074: 		random = no
+  8075: 		sprite = 13
+  8076: 		drift_defence_factor = -0.1
+  8077: 		political_power_factor = 0.15
+  8078: 		stability_factor = 0.1
+  8079: 		compliance_gain = 0.02
+  8080: 	}
+  8081: 
+  8082: 	#Ryutin
+  8083: 	anti_stalinist_propagandist = {
+  8084: 		random = no
+  8085: 		sprite = 13
+  8086: 		subversive_activites_upkeep = -0.15
+  8087: 		boost_resistance_factor = 0.1
+  8088: 		resistance_decay_on_our_occupied_states = -0.1
+  8089: 		intel_from_operatives_factor = 0.1
+  8090: 	}
+  8091: 
+  8092: 	#Sokolnikov
+  8093: 	peoples_commissar_of_finance = {
+  8094: 		random = no
+  8095: 		sprite = 13
+  8096: 		industrial_capacity_factory = 0.15
+  8097: 		industrial_capacity_dockyard = 0.15
+  8098: 		production_speed_buildings_factor = -0.05
+  8099: 		industry_repair_factor = -0.05
+  8100: 	}
+  8101: 
+  8102: 	#Semyonov
+  8103: 	ataman_transbaikal_host = {
+  8104: 		random = no
+  8105: 		sprite = 13
+  8106: 		army_attack_against_major_factor = 0.15
+  8107: 		stability_factor = -0.05
+  8108: 		political_power_factor = -0.05
+  8109: 		army_attack_speed_factor = 0.1
+  8110: 		unit_cavalry_design_cost_factor = -0.25
+
+====================================================================================================
+[原版] F:\Hearts of Iron IV\common\decisions\SOV.txt : 16845-16900
+  WHY: #Ryutin 决策
+----------------------------------------------------------------------------------------------------
+ 16845: 						SOV_character_can_be_purged = yes
+ 16846: 					}
+ 16847: 				}
+ 16848: 				SOV_yevgeny_preobrazhensky = {
+ 16849: 					set_character_flag = SOV_targeted_for_purge_flag
+ 16850: 				}
+ 16851: 			}
+ 16852: 			else = {
+ 16853: 				SOV_add_random_character_to_purge_targets_effect = yes
+ 16854: 			}
+ 16855: 			#Ryutin
+ 16856: 			if = {
+ 16857: 				limit = {
+ 16858: 					has_character = SOV_martemyan_ryutin
+ 16859: 					SOV_martemyan_ryutin = {
+ 16860: 						SOV_character_can_be_purged = yes
+ 16861: 					}
+ 16862: 				}
+ 16863: 				SOV_martemyan_ryutin = {
+ 16864: 					set_character_flag = SOV_targeted_for_purge_flag
+ 16865: 				}
+ 16866: 			}
+ 16867: 			else = {
+ 16868: 				SOV_add_random_character_to_purge_targets_effect = yes
+ 16869: 			}
+ 16870: 			#Ustryalov
+ 16871: 			if = {
+ 16872: 				limit = {
+ 16873: 					has_character = SOV_nikolay_ustryalov
+ 16874: 					SOV_nikolay_ustryalov = {
+ 16875: 						SOV_character_can_be_purged = yes
+ 16876: 					}
+ 16877: 				}
+ 16878: 				SOV_nikolay_ustryalov = {
+ 16879: 					set_character_flag = SOV_targeted_for_purge_flag
+ 16880: 				}
+ 16881: 			}
+ 16882: 			else = {
+ 16883: 				SOV_add_random_character_to_purge_targets_effect = yes
+ 16884: 			}
+ 16885: 
+ 16886: 			custom_effect_tooltip = SOV_will_trigger_a_great_purge_tt
+ 16887: 			hidden_effect = {
+ 16888: 				set_country_flag = SOV_purge_event_unavoidable_flag #No way to avoid this purge. This people are about to be purged and there's nothing you can do for them.
+ 16889: 				SOV_trigger_great_purge_moscow_trial_effect = yes #SECOND MOSCOW TRIAL -> Left Opposition
+ 16890: 			}
+ 16891: 			custom_effect_tooltip = SOV_trigger_second_moscow_trial_tt
+ 16892: 			set_country_flag = SOV_the_anti_soviet_trotskyist_center_completed_flag
+ 16893: 			hidden_effect = {
+ 16894: 				country_event = {
+ 16895: 					id = NSB_soviet_civil_war_common.005
+ 16896: 					days = 35
+ 16897: 					random_hours = 12
+ 16898: 				}
+ 16899: 			}
+ 16900: 		}
+
+====================================================================================================
+[原版] F:\Hearts of Iron IV\history\countries\SOV - Soviet union.txt : 340-375
+  WHY: 历史角色块
+----------------------------------------------------------------------------------------------------
+   340: 	set_character_flag = SOV_imprisoned_flag
+   341: }
+   342: SOV_aleksandr_shlyapnikov = {
+   343: 	set_character_flag = SOV_imprisoned_flag
+   344: }
+   345: SOV_grigory_zinovyev = {
+   346: 	set_character_flag = SOV_imprisoned_flag
+   347: }
+   348: SOV_lev_kamenev = {
+   349: 	set_character_flag = SOV_imprisoned_flag
+   350: }
+   351: SOV_martemyan_ryutin = {
+   352: 	set_character_flag = SOV_imprisoned_flag
+   353: }
+   354: 	
+   355: 
+   356: 
+   357: ### PROPAGANDA ###
+   358: set_variable = { SOV_new_propaganda_campaign = 0 } #Used to pick a poster slot
+   359: set_variable = { SOV_propaganda_campaign_to_remove = 0 } #Used to reset a poster slot
+   360: set_variable = { SOV_propaganda_locked_slot_index = 1 } #### === INSERT LOCKED SLOT INDEX IN STRIPE HERE === ####
+   361: set_variable = { SOV_propaganda_empty_slot_index = 2 } #### === INSERT EMPTY SLOT INDEX IN STRIPE HERE === ####
+   362: set_variable = { SOV_poster_left_icon_frame = SOV_propaganda_locked_slot_index } #Set up the appropriate empty slot GFX
+   363: set_variable = { SOV_poster_center_icon_frame = SOV_propaganda_locked_slot_index } #Set up the appropriate locked slot GFX
+   364: set_variable = { SOV_poster_right_icon_frame = SOV_propaganda_locked_slot_index } #Set up the appropriate locked slot GFX
+   365: 
+   366: set_variable = { SOV_default_propaganda_campaign_duration = 180 } #Duration days for propaganda campaigns
+   367: set_variable = { SOV_default_propaganda_campaign_cooldown = 90 } #Days of cooldown after a Propaganda Campaign has been finished.
+   368: set_variable = { SOV_default_propaganda_campaign_old_days = 150 } #A propaganda poster will age (change GFX) after this amount of days have passed since the campaign was activated
+   369: set_variable = { SOV_propaganda_cost = 15 } #Used not only to set the rest of propaganda campaign costs here, but also used to increase each campaign cost after being activated
+   370: set_variable = { SOV_propaganda_cost_increase = 2 } #This will multiply the regular propaganda_cost each time a propaganda campaign is activated, so that it's cost is increased
+   371: set_variable = { SOV_propaganda_motherland_calls_cost = SOV_propaganda_cost } # ID = 2
+   372: set_variable = { SOV_propaganda_victory_at_hand_cost = SOV_propaganda_cost } # ID = 3
+   373: set_variable = { SOV_propaganda_defend_moscow_cost = SOV_propaganda_cost } # ID = 4
+   374: set_variable = { SOV_propaganda_fight_to_the_last_cost = SOV_propaganda_cost } # ID = 5
+   375: set_variable = { SOV_propaganda_hit_of_hammer_cost = SOV_propaganda_cost } # ID = 6
+
+====================================================================================================
+[原版] F:\Hearts of Iron IV\history\countries\SOV - Soviet union.txt : 960-985
+  WHY: 第 973 行 purge
+----------------------------------------------------------------------------------------------------
+   960: 	set_country_flag = SOV_second_moscow_trial_flag
+   961: 	set_country_flag = SOV_third_moscow_trial_flag
+   962: 	set_country_flag = SOV_trial_of_the_generals_flag
+   963: 
+   964: 	#PURGE ALL THESE PEOPLES
+   965: 	SOV_grigory_zinovyev = { SOV_purge_character_effect = yes }
+   966: 	SOV_lev_kamenev = { SOV_purge_character_effect = yes }
+   967: 	SOV_ivan_smirnov = { SOV_purge_character_effect = yes }
+   968: 	SOV_grigory_sokolnikov = { SOV_purge_character_effect = yes }
+   969: 	SOV_aleksandr_shlyapnikov = { SOV_purge_character_effect = yes }
+   970: 	SOV_karl_radek = { SOV_purge_character_effect = yes }
+   971: 	SOV_ivar_smilga = { SOV_purge_character_effect = yes }
+   972: 	SOV_yevgeny_preobrazhensky = { SOV_purge_character_effect = yes }
+   973: 	SOV_martemyan_ryutin = { SOV_purge_character_effect = yes }
+   974: 	if = {
+   975: 		limit = {
+   976: 			has_dlc = "No Step Back"
+   977: 		}
+   978: 		SOV_nikolay_ustryalov = { SOV_purge_character_effect = yes }
+   979: 	}
+   980: 	SOV_mikhail_tukhachevsky = { SOV_purge_character_effect = yes }
+   981: 	SOV_aleksandr_yegorov = { SOV_purge_character_effect = yes }
+   982: 	SOV_vasily_blyukher = { SOV_purge_character_effect = yes }
+   983: 	SOV_vitaly_primakov = { SOV_purge_character_effect = yes }
+   984: 	SOV_nikolay_bukharin = { SOV_purge_character_effect = yes }
+   985: 	SOV_aleksey_rykov = { SOV_purge_character_effect = yes }
+
+====================================================================================================
+[R56] D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125\common\national_focus\soviet.txt : 13575-13655
+  WHY: ⭐ R56 的 SOV_liberate_ryutin
+----------------------------------------------------------------------------------------------------
+ 13575: 					SOV_lev_kamenev = {
+ 13576: 						set_character_flag = SOV_aligned_right_opposition_flag
+ 13577: 						clr_character_flag = SOV_imprisoned_flag
+ 13578: 						set_character_flag = SOV_exiled_flag
+ 13579: 						set_portraits = {
+ 13580: 							army = {
+ 13581: 								small = "GFX_idea_SOV_lev_kamenev"
+ 13582: 							}
+ 13583: 						}
+ 13584: 					}
+ 13585: 				}
+ 13586: 			}
+ 13587: 		}
+ 13588: 	}
+ 13589: 
+ 13590: 	focus = {
+ 13591: 		id = SOV_liberate_ryutin
+ 13592: 		icon = GFX_goal_generic_prison_break
+ 13593: 		prerequisite = { focus = SOV_cooperation_against_stalin }
+ 13594: 		x = 1
+ 13595: 		y = 1
+ 13596: 		relative_position_id = SOV_cooperation_against_stalin
+ 13597: 		cost = 5	#a single advisor is too costly for 70-days focus
+ 13598: 		available = {
+ 13599: 			SOV_soviet_civil_war_not_started = yes 
+ 13600: 		}
+ 13601: 		                
+ 13602: 		search_filters = {FOCUS_FILTER_SOV_POLITICAL_PARANOIA}
+ 13603: 
+ 13604: 		completion_reward = {
+ 13605: 			SOV_paranoia_medium_increase_effect = yes 
+ 13606: 			custom_effect_tooltip = SOV_liberate_ryutin_tt 
+ 13607: 			IF = {
+ 13608: 				limit = { SOV_is_left_opposition = yes }
+ 13609: 				566 = { set_state_flag = SOV_left_opposition_state }
+ 13610: 				hidden_effect = {
+ 13611: 					SOV_martemyan_ryutin = {
+ 13612: 						set_character_flag = SOV_aligned_left_opposition_flag
+ 13613: 						clr_character_flag = SOV_imprisoned_flag
+ 13614: 						set_character_flag = SOV_exiled_flag
+ 13615: 						set_portraits = {
+ 13616: 							army = {
+ 13617: 								small = "GFX_idea_SOV_martemyan_ryutin"
+ 13618: 							}
+ 13619: 						}
+ 13620: 					}
+ 13621: 				}
+ 13622: 			}
+ 13623: 			ELSE_IF = {
+ 13624: 				limit = { SOV_is_right_opposition = yes }
+ 13625: 				566 = { set_state_flag = SOV_right_opposition_state }
+ 13626: 				hidden_effect = {
+ 13627: 					SOV_martemyan_ryutin = {
+ 13628: 						set_character_flag = SOV_aligned_right_opposition_flag
+ 13629: 						clr_character_flag = SOV_imprisoned_flag
+ 13630: 						set_character_flag = SOV_exiled_flag
+ 13631: 						set_portraits = {
+ 13632: 							army = {
+ 13633: 								small = "GFX_idea_SOV_martemyan_ryutin"
+ 13634: 							}
+ 13635: 						}
+ 13636: 					}
+ 13637: 				}
+ 13638: 			}
+ 13639: 		}
+ 13640: 	}
+ 13641: 
+ 13642: 	focus = {
+ 13643: 		id = SOV_return_democracy_to_the_party
+ 13644: 		icon = GFX_goal_generic_neutrality_focus
+ 13645: 		prerequisite = { focus = SOV_cooperation_against_stalin }
+ 13646: 		mutually_exclusive = { focus = SOV_left_purges focus = SOV_right_purges }
+ 13647: 		x = 0
+ 13648: 		y = 4
+ 13649: 		relative_position_id = SOV_cooperation_against_stalin
+ 13650: 		cost = 10
+ 13651: 		available = {
+ 13652: 			has_global_flag = SOV_soviet_civil_war_over
+ 13653: 		}
+ 13654: 
+ 13655: 		completion_reward = {
+
+====================================================================================================
+[R56] D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125\common\national_focus\soviet.txt : 8965-9010
+  WHY: #Ryutin 国策（R56）
+----------------------------------------------------------------------------------------------------
+  8965: 			}
+  8966: 			#Preobrazhensky
+  8967: 			if = {
+  8968: 				limit = {
+  8969: 					has_character = SOV_yevgeny_preobrazhensky
+  8970: 				}
+  8971: 				SOV_yevgeny_preobrazhensky = {
+  8972: 					set_character_flag = SOV_targeted_for_purge_flag
+  8973: 				}
+  8974: 			}
+  8975: 			else = {
+  8976: 				SOV_add_random_character_to_purge_targets_effect = yes
+  8977: 			}
+  8978: 			#Ryutin
+  8979: 			if = {
+  8980: 				limit = {
+  8981: 					has_character = SOV_martemyan_ryutin
+  8982: 				}
+  8983: 				SOV_martemyan_ryutin = {
+  8984: 					set_character_flag = SOV_targeted_for_purge_flag
+  8985: 				}
+  8986: 			}
+  8987: 			else = {
+  8988: 				SOV_add_random_character_to_purge_targets_effect = yes
+  8989: 			}
+  8990: 			#Ustryalov
+  8991: 			if = {
+  8992: 				limit = {
+  8993: 					has_dlc = "No Step Back"
+  8994: 				}
+  8995: 				if = {
+  8996: 					limit = {
+  8997: 						has_character = SOV_nikolay_ustryalov
+  8998: 					}
+  8999: 					SOV_nikolay_ustryalov = {
+  9000: 						set_character_flag = SOV_targeted_for_purge_flag
+  9001: 					}
+  9002: 				}
+  9003: 				else = {
+  9004: 					SOV_add_random_character_to_purge_targets_effect = yes
+  9005: 				}
+  9006: 			}
+  9007: 
+  9008: 			custom_effect_tooltip = SOV_will_trigger_a_great_purge_tt
+  9009: 			hidden_effect = {
+  9010: 				set_country_flag = SOV_purge_event_unavoidable_flag #No way to avoid this purge. This people are about to be purged and there's nothing you can do for them.
+
+====================================================================================================
+[R56] D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125\common\characters\SOV.txt : 5245-5305
+  WHY: ⭐ R56 角色对象
+----------------------------------------------------------------------------------------------------
+  5245: 				}
+  5246: 			}
+  5247: 			traits = {
+  5248: 				appeasing_technocrat 
+  5249: 			}
+  5250: 		}
+  5251: 	}
+  5252: 
+  5253: 	SOV_martemyan_ryutin = {
+  5254: 		name = SOV_martemyan_ryutin
+  5255: 		portraits = {
+  5256: 			army = {
+  5257: 				small = "GFX_idea_SOV_martemyan_ryutin_imprisoned"
+  5258: 			}
+  5259: 		}
+  5260: 
+  5261: 		allowed_civil_war = {
+  5262: 			OR = {
+  5263: 				AND = {
+  5264: 					SOV_is_left_opposition = yes 
+  5265: 					has_completed_focus = SOV_liberate_ryutin
+  5266: 				}
+  5267: 				AND = {
+  5268: 					SOV_is_right_opposition = yes 
+  5269: 					has_completed_focus = SOV_liberate_ryutin 
+  5270: 				}
+  5271: 				AND = {
+  5272: 					SOV_is_exiles = yes 
+  5273: 					has_government = communism
+  5274: 				}
+  5275: 			}
+  5276: 		}
+  5277: 
+  5278: 
+  5279: 		advisor = {
+  5280: 			slot = political_advisor
+  5281: 			idea_token = SOV_martemyan_ryutin
+  5282: 			allowed = {
+  5283: 				original_tag = SOV
+  5284: 			}
+  5285: 			visible = {
+  5286: 				NOT = {
+  5287: 					has_character_flag = SOV_character_purged_flag 
+  5288: 					has_global_flag = sov_old_focus_tree
+  5289: 				}
+  5290: 			}
+  5291: 			available = {
+  5292: 				has_completed_focus = SOV_liberate_ryutin
+  5293: 				OR = {
+  5294: 					has_global_flag = SOV_soviet_civil_war
+  5295: 					has_global_flag = SOV_soviet_civil_war_over
+  5296: 				}
+  5297: 				if = {
+  5298: 					limit = {
+  5299: 						has_character_flag = SOV_imprisoned_flag
+  5300: 					}
+  5301: 					NOT = { has_character_flag = SOV_imprisoned_flag } #For flavor purposes only -> Removed in the appropriate focus/event/dec
+  5302: 				}
+  5303: 				if = {
+  5304: 					limit = {
+  5305: 						has_character_flag = SOV_exiled_flag
+
+====================================================================================================
+[R56] D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125\common\country_leader\00_traits.txt : 8065-8115
+  WHY: #Ryutin 特质（R56）
+----------------------------------------------------------------------------------------------------
+  8065: 		political_power_factor = 0.1 #r56 was 0.05, too weak for 150 pp cost
+  8066: 		land_reinforce_rate = 0.02
+  8067: 		production_speed_infrastructure_factor = 0.1 #r56
+  8068: 	}
+  8069: 
+  8070: 	#Zinovyev
+  8071: 	communist_theorist = {
+  8072: 		random = no
+  8073: 		sprite = 13
+  8074: 		drift_defence_factor = 0.1
+  8075: 		political_power_factor = 0.15
+  8076: 	}
+  8077: 
+  8078: 	#Kamenev
+  8079: 	appeasing_technocrat = {
+  8080: 		random = no
+  8081: 		sprite = 13
+  8082: 		drift_defence_factor = -0.1
+  8083: 		political_power_factor = 0.15
+  8084: 		stability_factor = 0.1
+  8085: 		compliance_gain = 0.02
+  8086: 	}
+  8087: 
+  8088: 	#Ryutin
+  8089: 	anti_stalinist_propagandist = {
+  8090: 		random = no
+  8091: 		sprite = 13
+  8092: 		subversive_activites_upkeep = -0.15
+  8093: 		boost_resistance_factor = 0.1
+  8094: 		resistance_decay_on_our_occupied_states = -0.1
+  8095: 		intel_from_operatives_factor = 0.1
+  8096: 	}
+  8097: 
+  8098: 	#Sokolnikov
+  8099: 	peoples_commissar_of_finance = {
+  8100: 		random = no
+  8101: 		sprite = 13
+  8102: 		industrial_capacity_factory = 0.15
+  8103: 		industrial_capacity_dockyard = 0.15
+  8104: 		production_speed_buildings_factor = -0.05
+  8105: 		industry_repair_factor = -0.05
+  8106: 	}
+  8107: 
+  8108: 	#Semyonov
+  8109: 	ataman_transbaikal_host = {
+  8110: 		random = no
+  8111: 		sprite = 13
+  8112: 		army_attack_against_major_factor = 0.15
+  8113: 		stability_factor = -0.05
+  8114: 		political_power_factor = -0.05
+  8115: 		army_attack_speed_factor = 0.1
+
+====================================================================================================
+[R56] D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125\common\decisions\SOV.txt : 17515-17570
+  WHY: #Ryutin 决策（R56）
+----------------------------------------------------------------------------------------------------
+ 17515: 					SOV_yevgeny_preobrazhensky = {
+ 17516: 						SOV_character_can_be_purged = yes
+ 17517: 					}
+ 17518: 				}
+ 17519: 				SOV_yevgeny_preobrazhensky = {
+ 17520: 					set_character_flag = SOV_targeted_for_purge_flag
+ 17521: 				}
+ 17522: 			}
+ 17523: 			else = {
+ 17524: 				SOV_add_random_character_to_purge_targets_effect = yes
+ 17525: 			}
+ 17526: 			#Ryutin
+ 17527: 			if = {
+ 17528: 				limit = {
+ 17529: 					has_character = SOV_martemyan_ryutin
+ 17530: 					SOV_martemyan_ryutin = {
+ 17531: 						SOV_character_can_be_purged = yes
+ 17532: 					}
+ 17533: 				}
+ 17534: 				SOV_martemyan_ryutin = {
+ 17535: 					set_character_flag = SOV_targeted_for_purge_flag
+ 17536: 				}
+ 17537: 			}
+ 17538: 			else = {
+ 17539: 				SOV_add_random_character_to_purge_targets_effect = yes
+ 17540: 			}
+ 17541: 			#Ustryalov
+ 17542: 			if = {
+ 17543: 				limit = {
+ 17544: 					has_character = SOV_nikolay_ustryalov
+ 17545: 					SOV_nikolay_ustryalov = {
+ 17546: 						SOV_character_can_be_purged = yes
+ 17547: 					}
+ 17548: 				}
+ 17549: 				SOV_nikolay_ustryalov = {
+ 17550: 					set_character_flag = SOV_targeted_for_purge_flag
+ 17551: 				}
+ 17552: 			}
+ 17553: 			else = {
+ 17554: 				SOV_add_random_character_to_purge_targets_effect = yes
+ 17555: 			}
+ 17556: 
+ 17557: 			custom_effect_tooltip = SOV_will_trigger_a_great_purge_tt
+ 17558: 			hidden_effect = {
+ 17559: 				set_country_flag = SOV_purge_event_unavoidable_flag #No way to avoid this purge. This people are about to be purged and there's nothing you can do for them.
+ 17560: 				SOV_trigger_great_purge_moscow_trial_effect = yes #SECOND MOSCOW TRIAL -> Left Opposition
+ 17561: 			}
+ 17562: 			custom_effect_tooltip = SOV_trigger_second_moscow_trial_tt
+ 17563: 			set_country_flag = SOV_the_anti_soviet_trotskyist_center_completed_flag
+ 17564: 			hidden_effect = {
+ 17565: 				country_event = {
+ 17566: 					id = NSB_soviet_civil_war_common.005
+ 17567: 					days = 35
+ 17568: 					random_hours = 12
+ 17569: 				}
+ 17570: 			}
+
+====================================================================================================
+[R56] D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125\history\countries\SOV - Soviet union.txt : 565-600
+  WHY: 历史角色块（R56）
+----------------------------------------------------------------------------------------------------
+   565: }
+   566: SOV_aleksandr_shlyapnikov = {
+   567: 	set_character_flag = SOV_imprisoned_flag
+   568: }
+   569: SOV_grigory_zinovyev = {
+   570: 	set_character_flag = SOV_imprisoned_flag
+   571: }
+   572: SOV_lev_kamenev = {
+   573: 	set_character_flag = SOV_imprisoned_flag
+   574: }
+   575: SOV_martemyan_ryutin = {
+   576: 	set_character_flag = SOV_imprisoned_flag
+   577: }
+   578: 
+   579: #Testeing whether he will be first on the list if military is going to be purged			- currently not purged in Trial of Generals because died in 1939, not 1938 - Fantom
+   580: SOV_aleksandr_yegorov = {
+   581: 	set_character_flag = SOV_potential_target_flag
+   582: }
+   583: 
+   584: 
+   585: ### PROPAGANDA ###
+   586: set_variable = { SOV_new_propaganda_campaign = 0 } #Used to pick a poster slot
+   587: set_variable = { SOV_propaganda_campaign_to_remove = 0 } #Used to reset a poster slot
+   588: set_variable = { SOV_propaganda_locked_slot_index = 1 } #### === INSERT LOCKED SLOT INDEX IN STRIPE HERE === ####
+   589: set_variable = { SOV_propaganda_empty_slot_index = 2 } #### === INSERT EMPTY SLOT INDEX IN STRIPE HERE === ####
+   590: set_variable = { SOV_poster_left_icon_frame = SOV_propaganda_locked_slot_index } #Set up the appropriate empty slot GFX
+   591: set_variable = { SOV_poster_center_icon_frame = SOV_propaganda_locked_slot_index } #Set up the appropriate locked slot GFX
+   592: set_variable = { SOV_poster_right_icon_frame = SOV_propaganda_locked_slot_index } #Set up the appropriate locked slot GFX
+   593: 
+   594: set_variable = { SOV_default_propaganda_campaign_duration = 180 } #Duration days for propaganda campaigns
+   595: set_variable = { SOV_default_propaganda_campaign_cooldown = 90 } #Days of cooldown after a Propaganda Campaign has been finished.
+   596: set_variable = { SOV_default_propaganda_campaign_old_days = 150 } #A propaganda poster will age (change GFX) after this amount of days have passed since the campaign was activated
+   597: set_variable = { SOV_propaganda_cost = 15 } #Used not only to set the rest of propaganda campaign costs here, but also used to increase each campaign cost after being activated
+   598: set_variable = { SOV_propaganda_cost_increase = 2 } #This will multiply the regular propaganda_cost each time a propaganda campaign is activated, so that it's cost is increased
+   599: set_variable = { SOV_propaganda_motherland_calls_cost = SOV_propaganda_cost } # ID = 2
+   600: set_variable = { SOV_propaganda_victory_at_hand_cost = SOV_propaganda_cost } # ID = 3
+

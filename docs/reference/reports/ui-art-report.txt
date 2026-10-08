@@ -1,0 +1,160 @@
+﻿interface 下 .gfx 合计 7709464 字符
+
+=== A. 中性候选 sprite（按前缀分组）===
+  [GFX_tiled]  50 个
+      GFX_tiled_bg
+      GFX_tiled_bg_1_scrollbar
+      GFX_tiled_button
+      GFX_tiled_decisions_bg_small
+      GFX_tiled_focus_bg
+      GFX_tiled_frontend_lower_bar
+      GFX_tiled_frontend_upper_bar
+      GFX_tiled_generic_bg_1
+      GFX_tiled_generic_overlay_bg1
+      GFX_tiled_generic_overlay_bg1_small
+      GFX_tiled_header
+      GFX_tiled_header_1
+      GFX_tiled_officer_corp_bg
+      GFX_tiled_paper_bg
+      GFX_tiled_paper_bg2
+      GFX_tiled_paper_flat_bg
+      GFX_tiled_paper_small_bg
+      GFX_tiled_paper_w_frame_bg
+  [GFX_generic]  64 个
+      GFX_generic_3_state_checkbox
+      GFX_generic_background
+      GFX_generic_bg
+      GFX_generic_bg_307x113
+      GFX_generic_bg_417
+      GFX_generic_bg2
+      GFX_generic_bg3
+      GFX_generic_box
+      GFX_generic_box_125
+      GFX_generic_box_80
+      GFX_generic_box_96
+      GFX_generic_box_small
+      GFX_generic_box_smallest
+      GFX_generic_checkbox
+      GFX_generic_checkbox2
+      GFX_generic_checkbox3
+      GFX_generic_checkbox3_orange
+      GFX_generic_circle_background
+  [GFX_portrait_slot]  0 个
+  [GFX_empty]  8 个
+      GFX_empty_agency_slot_glow
+      GFX_empty_button
+      GFX_empty_carrier_icon
+      GFX_empty_green_frame
+      GFX_empty_paper
+      GFX_empty_research_slot_glow
+      GFX_empty_small_button
+      GFX_empty_tactics
+  [GFX_blank]  1 个
+      GFX_blank_leader_portrait
+  [GFX_advisor]  2 个
+      GFX_advisor_role_button
+      GFX_advisor_theorist_entry
+
+=== B. 苏联偏执度系统用到的 sprite（含尺寸）===
+  --- GFX_SOV_paranoia_meter   (paranoia.gfx) ---
+      
+      spriteType = {
+      name = "GFX_SOV_paranoia_meter"
+      texturefile = "gfx/interface/paranoia/SOV_paranoia_meter.dds"
+      legacy_lazy_load = no
+      noOfFrames = 21
+      }
+      spriteType = {
+      name = "GFX_SOV_paranoia_needle"
+      texturefile = "gfx/interface/paranoia/SOV_paranoia_needle.dds"
+      legacy_lazy_load = no
+  --- GFX_SOV_paranoia_needle   (paranoia.gfx) ---
+      }
+      spriteType = {
+      name = "GFX_SOV_paranoia_needle"
+      texturefile = "gfx/interface/paranoia/SOV_paranoia_needle.dds"
+      legacy_lazy_load = no
+      noOfFrames = 21
+      }
+      spriteType = {
+      name = "GFX_SOV_paranoia_bg"
+      texturefile = "gfx/interface/paranoia/SOV_paranoia_bg.dds"
+      legacy_lazy_load = no
+  --- GFX_SOV_paranoia_bg   (paranoia.gfx) ---
+      }
+      spriteType = {
+      name = "GFX_SOV_paranoia_bg"
+      texturefile = "gfx/interface/paranoia/SOV_paranoia_bg.dds"
+      legacy_lazy_load = no
+      }
+      
+      ### Photos ###
+      
+      spriteType = {
+      name = "GFX_paranoia_photo"
+  --- GFX_paranoia_photo   (paranoia.gfx) ---
+      
+      spriteType = {
+      name = "GFX_paranoia_photo"
+      texturefile = "gfx/interface/paranoia/paranoia_portrait_strip.dds"
+      legacy_lazy_load = no
+      noOfFrames = 12
+      }
+      }
+  --- GFX_propaganda_bg   (propaganda.gfx) ---
+      
+      spriteType = {
+      name = "GFX_propaganda_bg"
+      texturefile = "gfx/interface/propaganda/propaganda_bg.dds"
+      legacy_lazy_load = no
+      }
+      
+      
+      ### SOV Posters ###
+      
+      spriteType = {
+
+=== C. 我们现在用的德国 sprite（含尺寸，供对比）===
+  --- GFX_circular_frame_fuhrer ---
+      name = "GFX_circular_frame_fuhrer"
+      texturefile = "gfx/interface/inner_circle/circular_frame_fuhrer.dds"
+      }
+      spriteType = {
+      name = "GFX_fuhrer_name_ribbon"
+      texturefile = "gfx/interface/inner_circle/fuhrer_name_ribbon.dds"
+      }
+      spriteType = {
+  --- GFX_blank_leader_portrait ---
+      name = "GFX_blank_leader_portrait"
+      texturefile = "gfx/interface/inner_circle/blank_leader_portrait.dds"
+      }
+      
+      ## Ascended Advisor Portraits ##
+      # To Come
+      
+      ## Unavailable ##
+  --- GFX_ascended_advisors_unappointed_frame ---
+      name = "GFX_ascended_advisors_unappointed_frame"
+      texturefile = "gfx/interface/inner_circle/ascended_advisors_unappointed_frame.dds"
+      }
+      
+      
+      ### Advisor Portraits ###
+      
+      ## Available ##
+  --- GFX_inner_circle_decor_bg ---
+      name = "GFX_inner_circle_decor_bg"
+      texturefile = "gfx/interface/inner_circle/inner_circle_decor_bg.dds"
+      }
+      spriteType = {
+      name = "GFX_inner_circle_decor_bg_solid"
+      texturefile = "gfx/interface/inner_circle/inner_circle_decor_bg_solid.dds"
+      }
+      spriteType = {
+  --- GFX_spotlight_overlay ---
+      name = "GFX_spotlight_overlay"
+      texturefile = "gfx/interface/inner_circle/spotlight_overlay.dds"
+      }
+      
+      
+      }

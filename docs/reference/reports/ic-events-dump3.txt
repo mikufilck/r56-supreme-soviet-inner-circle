@@ -1,0 +1,624 @@
+﻿总行数 = 24649
+
+======== GER_inner_circle_todt.02   (L23650..L23707) ========
+country_event = {
+	id = GER_inner_circle_todt.02
+
+	hidden = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_completed_focus = GER_ascension_of_todt
+		OR = {
+			check_variable = { GER_ascended_advisor_1 = 1 }
+			check_variable = { GER_ascended_advisor_2 = 1 }
+			check_variable = { GER_ascended_advisor_3 = 1 }
+		}
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				has_shine_effect_on_focus = GER_form_organization_todt
+			}
+			complete_national_focus = {
+				focus = GER_form_organization_todt
+				use_side_message = yes
+				originator_name = GER_fritz_todt
+			}
+			clr_country_flag = GER_form_organization_todt_in_progress_flag
+			country_event = { id = GER_inner_circle_todt.01 days = GER_inner_circle_days_to_start_focus random_days = GER_inner_circle_random_days }
+		}
+		else_if = {
+			limit = {
+				has_shine_effect_on_focus = GER_autonomous_organization_todt
+			}
+			complete_national_focus = {
+				focus = GER_autonomous_organization_todt
+				use_side_message = yes
+				originator_name = GER_fritz_todt
+			}
+			clr_country_flag = GER_autonomous_organization_todt_in_progress_flag
+			country_event = { id = GER_inner_circle_todt.01 days = GER_inner_circle_days_to_start_focus random_days = GER_inner_circle_random_days }
+		}
+		else_if = {
+			limit = {
+				has_shine_effect_on_focus = GER_wunderwaffe
+				check_variable = { GER_wonder_weapons_focus_advisor = 1 } #It is Todt working on it
+			}
+			complete_national_focus = {
+				focus = GER_wunderwaffe
+				use_side_message = yes
+				originator_name = GER_fritz_todt
+			}
+			clr_country_flag = GER_wunderwaffe_in_progress_flag
+		}
+		else = { #Debug logs
+			#log = "SOMETHING WENT WRONG WITH TODT's FOCUS BRANCH - Cannot complete focus"
+		}
+	}
+}
+
+======== GER_inner_circle.02   (L22023..L22583) ========
+country_event = {
+	id = GER_inner_circle.02
+	title = GER_inner_circle.02.t
+	desc = GER_inner_circle.02.desc
+	picture = "[GetFuhrerEventPortrait]"
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = GER_inner_circle_event_pending_flag
+		}
+	}
+
+	option = { # Ascended Advisor 1 becomes Country Leader
+		name = GER_inner_circle.02.a
+
+		ai_chance = {
+			base = 1
+			modifier = { #Himmler & G?ring are more likely to replace Hitler
+				add = 2
+				OR = {
+					check_variable = { GER_ascended_advisor_1 = 3 } #G?ring
+					check_variable = { GER_ascended_advisor_1 = 4 } #Himmler
+				}
+			}
+		}
+		
+		if = {
+			limit = {
+				check_variable = { GER_ascended_advisor_1 = 1 }
+			}
+			add_country_leader_role = {
+				character =  GER_fritz_todt
+				country_leader = {
+					ideology = nazism
+					expire = 1965.1.1
+					traits = { GER_todt_fuhrer } 
+				}
+				promote_leader = yes
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { GER_ascended_advisor_1 = 2 }
+			}
+			add_country_leader_role = {
+				character =  GER_albert_speer
+				country_leader = {
+					ideology = nazism
+					expire = 1965.1.1
+					traits = { GER_speer_fuhrer } 
+				}
+				promote_leader = yes
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { GER_ascended_advisor_1 = 3 }
+			}
+			add_country_leader_role = {
+				character =  GER_hermann_goring
+				country_leader = {
+					ideology = nazism
+					expire = 1965.1.1
+					traits = { GER_goring_fuhrer } 
+				}
+				promote_leader = yes
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { GER_ascended_advisor_1 = 4 }
+			}
+			if = {
+				limit = {
+					has_idea = GER_himmler_director_reich_security
+				}
+				add_country_leader_role = {
+					character =  GER_heinrich_himmler
+					country_leader = {
+						ideology = nazism
+						expire = 1965.1.1
+						traits = { GER_himmler_fuhrer_abwehr } 
+					}
+					promote_leader = yes
+				}
+			}
+			else = {
+				add_country_leader_role = {
+					character =  GER_heinrich_himmler
+					country_leader = {
+						ideology = nazism
+						expire = 1965.1.1
+						traits = { GER_himmler_fuhrer_ss } 
+					}
+					promote_leader = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { GER_ascended_advisor_1 = 5 }
+			}
+			if = {
+				limit = {
+					has_idea = GER_goebbels_reich_minister_of_propaganda_master_no_lar
+				}
+				add_country_leader_role = {
+					character =  GER_joseph_goebbels
+					country_leader = {
+						ideology = nazism
+						expire = 1965.1.1
+						traits = { GER_goebbels_fuhrer_no_lar } 
+					}
+					promote_leader = yes
+				}
+			}
+			else = {
+				add_country_leader_role = {
+					character =  GER_joseph_goebbels
+					country_leader = {
+						ideology = nazism
+						expire = 1965.1.1
+						traits = { GER_goebbels_fuhrer } 
+					}
+					promote_leader = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { GER_ascended_advisor_1 = 6 }
+			}
+			if = {
+				limit = {
+					has_idea = GER_hess_first_among_equals_no_aat
+				}
+				add_country_leader_role = {
+					character =  GER_rudolf_hess
+					country_leader = {
+						ideology = nazism
+						expire = 1965.1.1
+						traits = { GER_hess_fuhrer_no_aat } 
+					}
+					promote_leader = yes
+				}
+			}
+			else = {
+				add_country_leader_role = {
+					character =  GER_rudolf_hess
+					country_leader = {
+						ideology = nazism
+						expire = 1965.1.1
+						traits = { GER_hess_fuhrer } 
+					}
+					promote_leader = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { GER_ascended_advisor_1 = 7 }
+			}
+			add_country_leader_role = {
+				character =  GER_martin_bormann
+				country_leader = {
+					ideology = nazism
+					expire = 1965.1.1
+					traits = { GER_bormann_fuhrer } 
+				}
+				promote_leader = yes
+			}
+		}
+		else = {
+			log = "Couldn't find a valid Ascended Advisor (1) to Promote"
+		}
+
+		hidden_effect = {
+			GER_remove_replaced_advisor_1_effects = yes
+		}
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		hidden_effect = {
+			#Cleaning vars / flags / etc
+			clr_country_flag = GER_inner_circle_event_pending_flag
+		}
+	}
+
+	option = { # Ascended Advisor 2 becomes Country Leader
+		name = GER_inner_circle.02.b
+
+		ai_chance = {
+			base = 1
+			modifier = { #Himmler & G?ring are more likely to replace Hitler
+				add = 2
+				OR = {
+					check_variable = { GER_ascended_advisor_2 = 3 } #G?ring
+					check_variable = { GER_ascended_advisor_2 = 4 } #Himmler
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				check_variable = { GER_ascended_advisor_2 = 1 }
+			}
+			add_country_leader_role = {
+				character =  GER_fritz_todt
+				country_leader = {
+					ideology = nazism
+					expire = 1965.1.1
+					traits = { GER_todt_fuhrer } 
+				}
+				promote_leader = yes
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { GER_ascended_advisor_2 = 2 }
+			}
+			add_country_leader_role = {
+				character =  GER_albert_speer
+				country_leader = {
+					ideology = nazism
+					expire = 1965.1.1
+					traits = { GER_speer_fuhrer } 
+				}
+				promote_leader = yes
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { GER_ascended_advisor_2 = 3 }
+			}
+			add_country_leader_role = {
+				character =  GER_hermann_goring
+				country_leader = {
+					ideology = nazism
+					expire = 1965.1.1
+					traits = { GER_goring_fuhrer } 
+				}
+				promote_leader = yes
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { GER_ascended_advisor_2 = 4 }
+			}
+			if = {
+				limit = {
+					has_idea = GER_himmler_director_reich_security
+				}
+				add_country_leader_role = {
+					character =  GER_heinrich_himmler
+					country_leader = {
+						ideology = nazism
+						expire = 1965.1.1
+						traits = { GER_himmler_fuhrer_abwehr } 
+					}
+					promote_leader = yes
+				}
+			}
+			else = {
+				add_country_leader_role = {
+					character =  GER_heinrich_himmler
+					country_leader = {
+						ideology = nazism
+						expire = 1965.1.1
+						traits = { GER_himmler_fuhrer_ss } 
+					}
+					promote_leader = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { GER_ascended_advisor_2 = 5 }
+			}
+			if = {
+				limit = {
+					has_idea = GER_goebbels_reich_minister_of_propaganda_master_no_lar
+				}
+				add_country_leader_role = {
+					character =  GER_joseph_goebbels
+					country_leader = {
+						ideology = nazism
+						expire = 1965.1.1
+						traits = { GER_goebbels_fuhrer_no_lar } 
+					}
+					promote_leader = yes
+				}
+			}
+			else = {
+				add_country_leader_role = {
+					character =  GER_joseph_goebbels
+					country_leader = {
+						ideology = nazism
+						expire = 1965.1.1
+						traits = { GER_goebbels_fuhrer } 
+					}
+					promote_leader = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { GER_ascended_advisor_2 = 6 }
+			}
+			if = {
+				limit = {
+					has_idea = GER_hess_first_among_equals_no_aat
+				}
+				add_country_leader_role = {
+					character =  GER_rudolf_hess
+					country_leader = {
+						ideology = nazism
+						expire = 1965.1.1
+						traits = { GER_hess_fuhrer_no_aat } 
+					}
+					promote_leader = yes
+				}
+			}
+			else = {
+				add_country_leader_role = {
+					character =  GER_rudolf_hess
+					country_leader = {
+						ideology = nazism
+						expire = 1965.1.1
+						traits = { GER_hess_fuhrer } 
+					}
+					promote_leader = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { GER_ascended_advisor_2 = 7 }
+			}
+			add_country_leader_role = {
+				character =  GER_martin_bormann
+				country_leader = {
+					ideology = nazism
+					expire = 1965.1.1
+					traits = { GER_bormann_fuhrer } 
+				}
+				promote_leader = yes
+			}
+		}
+		else = {
+			log = "Couldn't find a valid Ascended Advisor (2) to Promote"
+		}
+
+		hidden_effect = {
+			GER_remove_replaced_advisor_2_effects = yes
+		}
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		hidden_effect = {
+			#Cleaning vars / flags / etc
+			clr_country_flag = GER_inner_circle_event_pending_flag
+		}
+	}
+
+	option = { # Ascended Advisor 3 becomes Country Leader
+		name = GER_inner_circle.02.c
+
+		ai_chance = {
+			base = 1
+			modifier = { #Himmler & G?ring are more likely to replace Hitler
+				add = 2
+				OR = {
+					check_variable = { GER_ascended_advisor_3 = 3 } #G?ring
+					check_variable = { GER_ascended_advisor_3 = 4 } #Himmler
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				check_variable = { GER_ascended_advisor_3 = 1 }
+			}
+			add_country_leader_role = {
+				character =  GER_fritz_todt
+				country_leader = {
+					ideology = nazism
+					expire = 1965.1.1
+					traits = { GER_todt_fuhrer } 
+				}
+				promote_leader = yes
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { GER_ascended_advisor_3 = 2 }
+			}
+			add_country_leader_role = {
+				character =  GER_albert_speer
+				country_leader = {
+					ideology = nazism
+					expire = 1965.1.1
+					traits = { GER_speer_fuhrer } 
+				}
+				promote_leader = yes
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { GER_ascended_advisor_3 = 3 }
+			}
+			add_country_leader_role = {
+				character =  GER_hermann_goring
+				country_leader = {
+					ideology = nazism
+					expire = 1965.1.1
+					traits = { GER_goring_fuhrer } 
+				}
+				promote_leader = yes
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { GER_ascended_advisor_3 = 4 }
+			}
+			if = {
+				limit = {
+					has_idea = GER_himmler_director_reich_security
+				}
+				add_country_leader_role = {
+					character =  GER_heinrich_himmler
+					country_leader = {
+						ideology = nazism
+						expire = 1965.1.1
+						traits = { GER_himmler_fuhrer_abwehr } 
+					}
+					promote_leader = yes
+				}
+			}
+			else = {
+				add_country_leader_role = {
+					character =  GER_heinrich_himmler
+					country_leader = {
+						ideology = nazism
+						expire = 1965.1.1
+						traits = { GER_himmler_fuhrer_ss } 
+					}
+					promote_leader = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { GER_ascended_advisor_3 = 5 }
+			}
+			if = {
+				limit = {
+					has_idea = GER_goebbels_reich_minister_of_propaganda_master_no_lar
+				}
+				add_country_leader_role = {
+					character =  GER_joseph_goebbels
+					country_leader = {
+						ideology = nazism
+						expire = 1965.1.1
+						traits = { GER_goebbels_fuhrer_no_lar } 
+					}
+					promote_leader = yes
+				}
+			}
+			else = {
+				add_country_leader_role = {
+					character =  GER_joseph_goebbels
+					country_leader = {
+						ideology = nazism
+						expire = 1965.1.1
+						traits = { GER_goebbels_fuhrer } 
+					}
+					promote_leader = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { GER_ascended_advisor_3 = 6 }
+			}
+			if = {
+				limit = {
+					has_idea = GER_hess_first_among_equals_no_aat
+				}
+				add_country_leader_role = {
+					character =  GER_rudolf_hess
+					country_leader = {
+						ideology = nazism
+						expire = 1965.1.1
+						traits = { GER_hess_fuhrer_no_aat } 
+					}
+					promote_leader = yes
+				}
+			}
+			else = {
+				add_country_leader_role = {
+					character =  GER_rudolf_hess
+					country_leader = {
+						ideology = nazism
+						expire = 1965.1.1
+						traits = { GER_hess_fuhrer } 
+					}
+					promote_leader = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { GER_ascended_advisor_3 = 7 }
+			}
+			add_country_leader_role = {
+				character =  GER_martin_bormann
+				country_leader = {
+					ideology = nazism
+					expire = 1965.1.1
+					traits = { GER_bormann_fuhrer } 
+				}
+				promote_leader = yes
+			}
+		}
+		else = {
+			log = "Couldn't find a valid Ascended Advisor (3) to Promote"
+		}
+
+		hidden_effect = {
+			GER_remove_replaced_advisor_3_effects = yes
+		}
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		hidden_effect = {
+			#Cleaning vars / flags / etc
+			clr_country_flag = GER_inner_circle_event_pending_flag
+		}
+	}
+
+	option = { # Abort!
+		name = GER_inner_circle.02.d
+
+		ai_chance = {
+			base = 0
+		}
+
+		uncomplete_national_focus = {
+			focus = GER_a_strong_successor
+			uncomplete_children = no
+			refund_political_power = yes
+		}
+
+		hidden_effect = {
+			#Cleaning vars / flags / etc
+			clr_country_flag = GER_inner_circle_event_pending_flag
+		}
+	}
+}

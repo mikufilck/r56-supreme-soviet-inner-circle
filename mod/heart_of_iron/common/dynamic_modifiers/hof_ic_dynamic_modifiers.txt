@@ -1,0 +1,23 @@
+# =============================================================================
+# 核心圈 · 动态民族精神容器（由 build/gen-hof-ic-s3.ps1 生成，勿手改）
+# -----------------------------------------------------------------------------
+# 机制蓝本：原版 common/dynamic_modifiers/wuw_dynamic_modifiers.txt 的
+#           GER_the_inner_circle_dm
+#
+# ⚠️ 它【故意不写 modifier = { }】。它的作用是当一个「容器 + 展示位」：
+#    真正加数值的是每个人自己的 idea（见 hof_ic_ideas.txt）。
+#    它的 tooltip 由脚本本地化渲染成"当前在任者名单"。
+# =============================================================================
+
+hof_ic_supreme_soviet_dm = {
+	icon = GFX_idea_hof_ic_supreme_soviet
+	enable = { always = yes }
+
+	# 政体变了就自动摘掉（照德国 remove_trigger 的做法）
+	remove_trigger = {
+		NOT = { has_government = communism }
+	}
+
+	# 这个键在 hof_ic_l_simp_chinese.yml 里手写，内容引用 [hof_ic_slot_N_name]
+	custom_modifier_tooltip = hof_ic_dm_tt
+}

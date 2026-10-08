@@ -1,0 +1,30 @@
+共 24 张
+
+文件                                                   尺寸         四角alpha                    透明%      不透明%              四角RGB
+--------------------------------------------------------------------------------------------------------------------------------
+GFX_hof_ic_seat_aleksey_rykov.png                    100x88     [0, 0, 0, 0]              35.8      60.1          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_seat_grigory_zinovyev.png                 100x88     [0, 0, 0, 0]              36.2      59.6          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_seat_ivan_smirnov.png                     100x88     [0, 0, 0, 0]              42.7      53.6          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_seat_leonid_serebryakov.png               100x88     [0, 0, 0, 0]              40.5      54.7          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_seat_lev_kamenev.png                      100x88     [0, 0, 0, 0]              40.5      55.4          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_seat_lev_trotsky.png                      100x88     [0, 0, 0, 0]              35.9      60.1          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_seat_nikolay_bukharin.png                 100x88     [0, 0, 0, 0]              39.9      55.9          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_trotsky_accelerated_industrialization.png 100x88     [0, 0, 0, 0]              40.4      55.2          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_trotsky_against_partisan_warfare.png      100x88     [0, 0, 0, 0]              35.7      59.4          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_trotsky_against_the_bureaucracy.png       100x88     [0, 0, 0, 0]              35.8      59.1          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_trotsky_build_the_red_army.png            100x88     [0, 0, 0, 0]              35.9      59.7          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_trotsky_labour_armies.png                 100x88     [0, 0, 0, 0]              38.5      57.5          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_trotsky_limited_market_reforms.png        100x88     [0, 0, 0, 0]              40.0      55.3          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_trotsky_military_specialists.png          100x88     [0, 0, 0, 0]              38.1      56.5          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_trotsky_permanent_revolution.png          100x88     [0, 0, 0, 0]              37.7      57.9          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_trotsky_socialism_in_one_country.png      100x88     [0, 0, 0, 0]              33.3      57.8          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_trotsky_state_planning.png                100x88     [0, 0, 0, 0]              38.1      56.5          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_trotsky_the_builder_of_the_state.png      100x88     [0, 0, 0, 0]              40.1      55.3          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_trotsky_the_chinese_question.png          100x88     [0, 0, 0, 0]              35.5      58.5          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_trotsky_the_comintern_manifesto.png       100x88     [0, 0, 0, 0]              32.5      62.3          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_trotsky_the_new_course.png                100x88     [0, 0, 0, 0]              34.9      58.5          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_trotsky_the_permanent_revolutionary.png   100x88     [0, 0, 0, 0]              35.7      59.5          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_trotsky_uneven_and_combined_development.png 100x88     [0, 0, 0, 0]              36.4      59.0          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_trotsky_united_front.png                  100x88     [0, 0, 0, 0]              34.0      61.3          (0, 0, 0)  <-- 有透明
+
+==> 结论：四角是透明的，黑框另有原因（可能是图案本身的外框）。

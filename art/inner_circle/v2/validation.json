@@ -1,0 +1,21 @@
+{
+  "result": "PASS",
+  "size": [
+    640,
+    640
+  ],
+  "alpha_min": 255,
+  "alpha_max": 255,
+  "opaque_bounds": [
+    0,
+    0,
+    640,
+    640
+  ],
+  "transparent_pixels": 0,
+  "four_edges": "fully opaque",
+  "dds": "ARGB8, no mipmaps",
+  "roundtrip": "pixel exact",
+  "other_dds_unchanged": 10,
+  "installed": "mod/heart_of_iron/gfx/interface/hof_ic/hof_ic_window_bg.dds"
+}

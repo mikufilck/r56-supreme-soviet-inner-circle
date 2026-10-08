@@ -1,0 +1,17 @@
+扫描目录：F:\Hearts of Iron IV\localisation\simp_chinese
+yml 文件数：207
+
+修饰词条                                           有_tt   出处文件:行
+------------------------------------------------------------------------------------------------
+army_morale_factor                             OK     modifiers_l_simp_chinese.yml:297
+war_support_factor                             OK     modifiers_l_simp_chinese.yml:1066
+stability_factor                               OK     modifiers_l_simp_chinese.yml:1046
+political_power_factor                         OK     modifiers_l_simp_chinese.yml:34
+production_speed_buildings_factor              OK     modifiers_l_simp_chinese.yml:447
+mobilization_speed                             OK     modifiers_l_simp_chinese.yml:969
+research_speed_factor                          OK     modifiers_l_simp_chinese.yml:640
+production_factory_max_efficiency_factor       OK     modifiers_l_simp_chinese.yml:525
+drift_defence_factor                           OK     modifiers_l_simp_chinese.yml:743
+industrial_capacity_factory                    OK     modifiers_l_simp_chinese.yml:651
+army_org_factor                                OK     modifiers_l_simp_chinese.yml:284
+conscription                                   OK     modifiers_l_simp_chinese.yml:675

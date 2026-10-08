@@ -1,0 +1,5 @@
+000 0            https://www.marxists.org/chinese/index.html
+000 0            https://en.wikipedia.org/wiki/Ivan_Nikitich_Smirnov
+000 0            https://en.wikipedia.org/wiki/Ivan_Smirnov_(politician)
+000 0            https://ru.wikipedia.org/wiki/%D0%A1%D0%BC%D0%B8%D1%80%D0%BD%D0%BE%D0%B2,_%D0%98%D0%B2%D0%B0%D0%BD_%D0%9D%D0%B8%D0%BA%D0%B8%D1%82%D0%B8%D1%87
+000 0            https://zh.wikipedia.org/wiki/%E4%BC%8A%E4%B8%87%C2%B7%E5%B0%BC%E5%9F%BA%E5%AD%A3%E5%A5%87%C2%B7%E6%96%AF%E7%B1%B3%E5%B0%94%E8%AF%BA%E5%A4%AB

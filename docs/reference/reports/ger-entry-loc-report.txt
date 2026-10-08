@@ -1,0 +1,18 @@
+﻿==== 全国领导托特 ====
+
+==== 全国领导施佩尔 ====
+
+==== 全国领导戈林 ====
+
+==== 全国领导希姆莱 ====
+
+==== 全国领导戈培尔 ====
+
+==== 党魁赫斯 ====
+  [原版] localisation\simp_chinese\WUW_focus_l_simp_chinese.yml
+      L2369: GER_party_chancellor_hess: "党魁赫斯"
+
+==== 党魁鲍曼 ====
+  [原版] localisation\simp_chinese\WUW_focus_l_simp_chinese.yml
+      L2371: GER_party_chancellor_bormann: "党魁鲍曼"
+

@@ -1,0 +1,30 @@
+# Country scope. R56 state ids; one authoritative target list for the focus and save repair.
+hof_SIA_grant_greater_thai_empire_cores = {
+	add_state_core = 924  # Champasak
+	add_state_core = 670  # Laos
+	add_state_core = 671  # Tonkin
+	add_state_core = 927  # South Annam
+	add_state_core = 928  # North Annam
+	add_state_core = 926  # Luang Prabang
+	add_state_core = 286  # Cochinchina
+	add_state_core = 741  # Cambodia
+	add_state_core = 925  # Battambang
+	add_state_core = 1020 # Tenasserim
+	add_state_core = 1018 # Kengtung
+	add_state_core = 640  # Shan States
+	add_state_core = 914  # Kedah, Perlis and Penang
+	add_state_core = 960  # Kelantan and Terengganu
+	add_state_core = 1129 # Perak
+}
+
+hof_SIA_repair_greater_thai_empire_cores = {
+	if = {
+		limit = {
+			original_tag = SIA
+			has_completed_focus = SIA_the_greater_thai_empire
+			NOT = { has_country_flag = hof_SIA_greater_thai_empire_cores_repaired_v2 }
+		}
+		hof_SIA_grant_greater_thai_empire_cores = yes
+		set_country_flag = hof_SIA_greater_thai_empire_cores_repaired_v2
+	}
+}

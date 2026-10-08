@@ -1,0 +1,102 @@
+﻿################################################################################
+# 1. 官方 modifiers_documentation.md 里所有含 combat_width 的行 + 所属 scope
+################################################################################
+  L56  [Modifiers for scope aggressive]  * [combat_width_factor](#combat_width_factor)
+  L254  [Modifiers for scope army]  * [combat_width_factor](#combat_width_factor)
+  L2232  [combat_width_factor]  ## combat_width_factor
+
+################################################################################
+# 2. 游戏里实际用了 combat_width_factor 的地方（打印所属块，看主题）
+################################################################################
+
+################################################################################
+# 3. 本地化里 combat_width_factor 的名字 / 说明
+################################################################################
+  [原版] stats_l_braz_por.yml L282: COMBAT_WIDTH: "Amplitude de combate:"
+  [原版] stats_l_braz_por.yml L283: COMBAT_WIDTH_DESC: "O tamanho da unidade de combate. A unidade precisa caber no total de §Hamplitude de combate§! de uma batalha para poder contribuir."
+  [原版] stats_l_braz_por.yml L284: COMBAT_WIDTH_DIFF: " $VALUE|=-1$"
+  [原版] stats_l_english.yml L282: COMBAT_WIDTH: "Combat Width: "
+  [原版] stats_l_english.yml L283: COMBAT_WIDTH_DESC: "The size of the fighting unit. A unit needs to be able to fit into the total §HCombat Width§! of a battle to contribute to it."
+  [原版] stats_l_english.yml L284: COMBAT_WIDTH_DIFF: " $VALUE|=-1$"
+  [原版] stats_l_french.yml L282: COMBAT_WIDTH: "Aire de combat?: "
+  [原版] stats_l_french.yml L283: COMBAT_WIDTH_DESC: "Détermine la taille d'une unité de combat. Une unité doit être en mesure de s'insérer dans l'§Haire de combat§! totale d'une bataille pour pouvoir y jouer un r?le."
+  [原版] stats_l_french.yml L284: COMBAT_WIDTH_DIFF: " $VALUE|=-1$"
+  [原版] stats_l_german.yml L282: COMBAT_WIDTH: "Gefechtsbreite: "
+  [原版] stats_l_german.yml L283: COMBAT_WIDTH_DESC: "Die Gr??e der k?mpfenden Einheit. Eine Einheit muss der gesamten §HGefechtsbreite§! eines Gefechts entsprechen, um mitwirken zu k?nnen."
+  [原版] stats_l_german.yml L284: COMBAT_WIDTH_DIFF: " $VALUE|=-1$"
+  [原版] stats_l_japanese.yml L282: COMBAT_WIDTH: "戦闘正面幅: "
+  [原版] stats_l_japanese.yml L283: COMBAT_WIDTH_DESC: "戦闘ユニットの大きさ。ユニットが戦闘に貢献するには、その戦闘正面幅が戦場の総§H戦闘正面幅§!以下でなければならない。"
+  [原版] stats_l_japanese.yml L284: COMBAT_WIDTH_DIFF: " $VALUE|=-1$"
+  [原版] stats_l_korean.yml L282: COMBAT_WIDTH: "?? ??: "
+  [原版] stats_l_korean.yml L283: COMBAT_WIDTH_DESC: "?? ??? ??? ?????. §H?? ??§!? ???? ??? ??? ??? ? ????."
+  [原版] stats_l_korean.yml L284: COMBAT_WIDTH_DIFF: " $VALUE|=-1$"
+  [原版] stats_l_polish.yml L282: COMBAT_WIDTH: "Rozpi?to?? bojowa:"
+  [原版] stats_l_polish.yml L283: COMBAT_WIDTH_DESC: "Wielko?? jednostki. Je?eli przekroczy ona §Hrozpi?to?? bojow?§! pola bitwy, ?o?nierze nie zdo?aj? wzi?? udzia?u w walce."
+  [原版] stats_l_polish.yml L284: COMBAT_WIDTH_DIFF: " $VALUE|=-1$"
+  [原版] stats_l_russian.yml L282: COMBAT_WIDTH: "Габариты: "
+  [原版] stats_l_russian.yml L283: COMBAT_WIDTH_DESC: "Габариты боевой единицы. Боевая единица должна вмещаться в общую §Hширину фронта§!, чтобы участвовать в сражении."
+  [原版] stats_l_russian.yml L284: COMBAT_WIDTH_DIFF: " $VALUE|=-1$"
+  [原版] stats_l_simp_chinese.yml L282: COMBAT_WIDTH: "战斗宽度："
+  [原版] stats_l_simp_chinese.yml L283: COMBAT_WIDTH_DESC: "战斗单位的宽度。一个单位需要不超过一场战斗总的§H战场宽度§!才能在战斗中发挥作用。"
+  [原版] stats_l_simp_chinese.yml L284: COMBAT_WIDTH_DIFF: " $VALUE|=-1$"
+  [原版] stats_l_spanish.yml L282: COMBAT_WIDTH: "Ancho de combate: "
+  [原版] stats_l_spanish.yml L283: COMBAT_WIDTH_DESC: "El tama?o de la unidad de combate. Una unidad tiene que caber en el §Hancho de combate§! total para participar en la batalla."
+  [原版] stats_l_spanish.yml L284: COMBAT_WIDTH_DIFF: " $VALUE|=-1$"
+
+################################################################################
+# 4. 战术里的 combat_width（不同层面的东西，对比用）
+################################################################################
+  [原版] L217: combat_width = 0.5		#increased combat_width
+  [原版] L284: combat_width = -0.25
+  [原版] L300: combat_width = -0.25
+  [原版] L315: combat_width = -0.25
+  [原版] L331: combat_width = -0.25
+  [原版] L347: combat_width = -0.25
+  [原版] L520: combat_width = -0.25
+  [原版] L535: combat_width = -0.25
+  [原版] L550: combat_width = -0.25
+  [原版] L565: combat_width = -0.25
+  [原版] L580: combat_width = -0.25
+  [原版] L602: combat_width = -0.25
+  [原版] L625: combat_width = -0.25
+  [原版] L640: combat_width = -0.25
+  [原版] L655: combat_width = -0.25
+  [原版] L673: combat_width = -0.25
+  [原版] L689: combat_width = -0.25
+  [原版] L708: combat_width = -0.25
+  [原版] L731: combat_width = -0.5
+  [原版] L752: combat_width = 0.5
+  [原版] L941: combat_width = 0.1
+  [原版] L1020: #combat_width = -0.1
+  [原版] L1041: combat_width = 0.05
+  [原版] L1063: combat_width = -0.05
+  [原版] L1092: combat_width = -0.1
+  [R56] L534: less_combat_width_than_opponent = yes
+  [R56] L739: combat_width = 0.5		#increased combat_width
+  [R56] L805: combat_width = -0.25
+  [R56] L821: combat_width = -0.25
+  [R56] L836: combat_width = -0.25
+  [R56] L852: combat_width = -0.25
+  [R56] L868: combat_width = -0.25
+  [R56] L1064: combat_width = -0.25
+  [R56] L1079: combat_width = -0.25
+  [R56] L1094: combat_width = -0.25
+  [R56] L1109: combat_width = -0.25
+  [R56] L1124: combat_width = -0.25
+  [R56] L1146: combat_width = -0.25
+  [R56] L1169: combat_width = -0.25
+  [R56] L1184: combat_width = -0.25
+  [R56] L1199: combat_width = -0.25
+  [R56] L1217: combat_width = -0.25
+  [R56] L1233: combat_width = -0.25
+  [R56] L1252: combat_width = -0.25
+  [R56] L1303: combat_width = -0.5
+  [R56] L1322: combat_width = 0.5
+  [R56] L1551: combat_width = 0.1
+  [R56] L2162: combat_width = -0.5
+  [R56] L2575: combat_width = 0.05
+  [R56] L2597: combat_width = -0.05
+  [R56] L2626: combat_width = -0.1
+  [R56] L2696: #combat_width = -0.1
+  [R56] L3024: #	combat_width = 0.5
+  [R56] L3067: #	combat_width = 0.5

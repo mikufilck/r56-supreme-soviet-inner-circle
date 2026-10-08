@@ -1,0 +1,77 @@
+# =============================================================================
+# 核心圈窗口的 sprite 注册（间接层）
+# -----------------------------------------------------------------------------
+# .gui 里一律使用 GFX_hof_ic_* 这些名字，而它们指向哪张纹理由本文件决定。
+# 美术迭代时【只改这里的 texturefile 路径】，.gui 一行都不用动。
+#
+# 现行底板与纵向席位框：art/inner_circle/v3/；其他组件沿用既有素材。
+#   · 尺寸与设计清单 docs/16-art-spec-inner-circle.md 逐项吻合
+#   · 32 位带 alpha
+#
+# 注意：这批是非九宫格的固定尺寸图，所以一律用普通 spriteType。
+# 与之相对，九宫格瓦片必须用 corneredTileSpriteType（见 docs/05 §5.7.1）。
+# =============================================================================
+
+spriteTypes = {
+
+	# ---------------- 窗口底板（760 x 740）----------------
+	spriteType = {
+		name = "GFX_hof_ic_window_bg"
+		texturefile = "gfx/interface/hof_ic/hof_ic_window_bg.dds"
+	}
+
+	# ---------------- 中央聚光叠加（588 x 538）----------------
+	spriteType = {
+		name = "GFX_hof_ic_spotlight"
+		texturefile = "gfx/interface/hof_ic/hof_ic_spotlight.dds"
+	}
+
+	# ---------------- 领袖位圆形框（165 x 165）----------------
+	spriteType = {
+		name = "GFX_hof_ic_leader_frame"
+		texturefile = "gfx/interface/hof_ic/hof_ic_leader_frame.dds"
+	}
+
+	# ---------------- 领袖名牌绸带（160 x 36）----------------
+	spriteType = {
+		name = "GFX_hof_ic_leader_ribbon"
+		texturefile = "gfx/interface/hof_ic/hof_ic_leader_ribbon.dds"
+	}
+
+	# ---------------- 领袖头衔框（115 x 22）----------------
+	spriteType = {
+		name = "GFX_hof_ic_leader_title_box"
+		texturefile = "gfx/interface/hof_ic/hof_ic_leader_title_box.dds"
+	}
+
+	# ---------------- 席位框 · 空席（131 x 170）----------------
+	spriteType = {
+		name = "GFX_hof_ic_seat_frame_empty"
+		texturefile = "gfx/interface/hof_ic/hof_ic_seat_frame_empty.dds"
+	}
+
+	# ---------------- 席位框 · 已占（131 x 170）----------------
+	spriteType = {
+		name = "GFX_hof_ic_seat_frame_filled"
+		texturefile = "gfx/interface/hof_ic/hof_ic_seat_frame_filled.dds"
+	}
+
+	# ---------------- 席位名牌底衬（146 x 26）----------------
+	spriteType = {
+		name = "GFX_hof_ic_seat_name_box"
+		texturefile = "gfx/interface/hof_ic/hof_ic_seat_name_box.dds"
+	}
+
+	# ---------------- 席位特质框（144 x 43）----------------
+	spriteType = {
+		name = "GFX_hof_ic_seat_trait_box"
+		texturefile = "gfx/interface/hof_ic/hof_ic_seat_trait_box.dds"
+	}
+
+	# ---------------- 空席人像剪影（156 x 210）----------------
+	spriteType = {
+		name = "GFX_hof_ic_blank_portrait"
+		texturefile = "gfx/interface/hof_ic/hof_ic_blank_portrait.dds"
+	}
+
+}

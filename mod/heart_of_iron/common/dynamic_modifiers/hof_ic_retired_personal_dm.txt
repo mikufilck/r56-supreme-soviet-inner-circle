@@ -1,0 +1,67 @@
+# Former personal dynamic modifiers; inert for compatibility with existing saves.
+hof_ic_lev_trotsky_dm = {
+	enable = { always = no }
+}
+hof_ic_nikolay_bukharin_dm = {
+	enable = { always = no }
+}
+hof_ic_aleksey_rykov_dm = {
+	enable = { always = no }
+}
+hof_ic_grigory_zinovyev_dm = {
+	enable = { always = no }
+}
+hof_ic_lev_kamenev_dm = {
+	enable = { always = no }
+}
+hof_ic_ivan_smirnov_dm = {
+	enable = { always = no }
+}
+hof_ic_leonid_serebryakov_dm = {
+	enable = { always = no }
+}
+hof_ic_yevgeny_preobrazhensky_dm = {
+	enable = { always = no }
+}
+hof_ic_karl_radek_dm = {
+	enable = { always = no }
+}
+hof_ic_ivar_smilga_dm = {
+	enable = { always = no }
+}
+hof_ic_mikhail_tomsky_dm = {
+	enable = { always = no }
+}
+hof_ic_martemyan_ryutin_dm = {
+	enable = { always = no }
+}
+hof_ic_aleksandr_shlyapnikov_dm = {
+	enable = { always = no }
+}
+hof_ic_mikhail_kalinin_dm = {
+	enable = { always = no }
+}
+hof_ic_maksim_litvinov_dm = {
+	enable = { always = no }
+}
+hof_ic_grigory_sokolnikov_dm = {
+	enable = { always = no }
+}
+hof_ic_mikhail_tukhachevsky_dm = {
+	enable = { always = no }
+}
+hof_ic_nikolay_voznesensky_dm = {
+	enable = { always = no }
+}
+hof_ic_pyotr_smirnov_dm = {
+	enable = { always = no }
+}
+hof_ic_georgy_malenkow_dm = {
+	enable = { always = no }
+}
+hof_ic_nikita_khrushchyov_dm = {
+	enable = { always = no }
+}
+hof_ic_kliment_voroshilov_dm = {
+	enable = { always = no }
+}

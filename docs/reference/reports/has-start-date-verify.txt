@@ -1,0 +1,86 @@
+﻿=== 1. 原版 + R56 里 has_start_date 的出现次数与写法 ===
+
+--- F:\Hearts of Iron IV ---
+  总命中: 330
+    switzerland.txt                                L    91  limit = { has_start_date < 1936.01.02 }
+    switzerland.txt                                L   102  limit = { has_start_date < 1936.01.02 }
+    switzerland.txt                                L   228  has_start_date < 1936.01.02
+    switzerland.txt                                L   278  has_start_date < 1936.01.02
+    switzerland.txt                                L   332  has_start_date < 1936.01.02
+    switzerland.txt                                L   392  has_start_date < 1936.01.02
+    switzerland.txt                                L   514  has_start_date < 1936.01.02
+    switzerland.txt                                L  2173  has_start_date < 1936.01.02
+    switzerland.txt                                L  2278  has_start_date < 1936.01.02
+    switzerland.txt                                L  2667  has_start_date < 1936.01.02
+    switzerland.txt                                L  2674  has_start_date < 1936.01.02
+    switzerland.txt                                L  2901  has_start_date < 1936.01.02
+    switzerland.txt                                L  2948  has_start_date < 1936.01.02
+    06_bftb_on_actions.txt                         L   284  has_start_date < 1936.1.2
+    16_taog_on_actions.txt                         L  1116  has_start_date < 1936.1.2
+    00_ribbons.txt                                 L    24  has_start_date < 1936.01.02
+    00_ribbons.txt                                 L    28  has_start_date < 1939.8.15
+    achievements.txt                               L    15  has_start_date < 1936.01.02
+    achievements.txt                               L    31  has_start_date < 1936.01.02
+    achievements.txt                               L    47  has_start_date < 1936.01.02
+    achievements.txt                               L    65  has_start_date < 1936.01.02
+    achievements.txt                               L    84  has_start_date < 1936.01.02
+    achievements.txt                               L   103  has_start_date < 1936.01.02
+    achievements.txt                               L   119  has_start_date < 1936.01.02
+    achievements.txt                               L   139  has_start_date < 1936.01.02
+
+--- D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125 ---
+  总命中: 93
+    rt56-achievements.txt                          L    11  #        has_start_date < 1936.01.02
+    rt56-achievements.txt                          L    26  #has_start_date < 1936.01.02
+    rt56-achievements.txt                          L    75  #has_start_date < 1936.01.02
+    rt56-achievements.txt                          L    91  #has_start_date < 1936.01.02
+    rt56-achievements.txt                          L   113  #has_start_date < 1936.01.02
+    rt56-achievements.txt                          L   154  #has_start_date < 1936.01.02
+    rt56-achievements.txt                          L   174  #has_start_date < 1936.01.02
+    rt56-achievements.txt                          L   203  #has_start_date < 1936.01.02
+    rt56-achievements.txt                          L   244  #has_start_date < 1936.01.02
+    rt56-achievements.txt                          L   274  #has_start_date < 1936.01.02
+    rt56-achievements.txt                          L   302  #has_start_date < 1936.01.02
+    rt56-achievements.txt                          L   325  #        has_start_date < 1936.01.02
+    rt56-achievements.txt                          L   345  #has_start_date < 1936.01.02
+    rt56-achievements.txt                          L   382  #has_start_date < 1936.01.02
+    rt56-achievements.txt                          L   405  #has_start_date < 1936.01.02
+    rt56-achievements.txt                          L   429  #has_start_date < 1936.01.02
+    rt56-achievements.txt                          L   450  #has_start_date < 1936.01.02
+    rt56-achievements.txt                          L   471  #has_start_date < 1936.01.02
+    rt56-achievements.txt                          L   507  #has_start_date < 1936.01.02
+    rt56-achievements.txt                          L   534  #has_start_date < 1936.01.02
+    rt56-achievements.txt                          L   578  #has_start_date < 1936.01.02
+    rt56-achievements.txt                          L   600  #has_start_date < 1936.01.02
+    rt56-achievements.txt                          L   658  #has_start_date < 1936.01.02
+    rt56-achievements.txt                          L   677  #has_start_date < 1936.01.02
+    rt56-achievements.txt                          L   697  #has_start_date < 1936.01.02
+
+=== 2. R56 中 has_game_started / start_date 相关触发器（对照用） ===
+    oldsov_on_actions.txt                          L    18  has_start_date > 1945.01.01 #for one of my other submods
+
+=== 3. error.log 里是否已有 has_start_date 报错（若游戏跑过） ===
+    ai.log                       has_start_date 命中 0
+    ai_trace.log                 has_start_date 命中 0
+    code_revisions.log           has_start_date 命中 0
+    error.log                    has_start_date 命中 0
+    executed_commands.log        has_start_date 命中 0
+    game.log                     has_start_date 命中 0
+    graphics.log                 has_start_date 命中 0
+    memory.log                   has_start_date 命中 0
+    message.log                  has_start_date 命中 0
+    pdxsdk.log                   has_start_date 命中 0
+    posted_commands.log          has_start_date 命中 0
+    random.log                   has_start_date 命中 0
+    random_1.log                 has_start_date 命中 0
+    random_2.log                 has_start_date 命中 0
+    random_3.log                 has_start_date 命中 0
+    random_4.log                 has_start_date 命中 0
+    received_commands.log        has_start_date 命中 0
+    scenario_testing.log         has_start_date 命中 0
+    sent_commands.log            has_start_date 命中 0
+    setup.log                    has_start_date 命中 0
+    system.log                   has_start_date 命中 0
+    system_debug.log             has_start_date 命中 0
+    text.log                     has_start_date 命中 0
+    time.log                     has_start_date 命中 0

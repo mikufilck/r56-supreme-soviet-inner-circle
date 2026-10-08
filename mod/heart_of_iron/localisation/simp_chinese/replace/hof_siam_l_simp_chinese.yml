@@ -1,0 +1,6 @@
+﻿l_simp_chinese:
+ SIA_new_territories_administration_tt: "解锁§Y8项新领土管理决议§!：5项地区开发、2项要塞建设及三角防御网络。开发决议可增加建筑，并暂时提高当地顺从度增长；防御网络可提高受控抵抗州的顺从度。这些决议§R不会添加核心§!。"
+ SIA_the_greater_thai_empire_available_trigger: "§Y[ROOT.GetName]§!须控制全部§Y9个印度支那州§!，且每州顺从度严格高于§Y[?var:SIA_greater_thai_empire_compliance_requirement]%§!。\n\n以下四州也须分别满足相同条件："
+ hof_SIA_greater_thai_empire_core_tt: "获得§Y印度支那9州§!及§Y丹那沙林、景栋、掸邦、玻璃市-吉打、吉兰丹-登嘉楼、霹雳§!的核心，合计§Y15州§!。"
+ SIA_fortress_saigon_desc: "帝国南方将由西贡保卫。这座要塞城市将作为曼谷的守护者，保护[ROOT.GetName]湾免受入侵。"
+ SIA_fortress_hanoi_desc: "我们新帝国的北部将由河内负责守卫。其北面环山，前有红河，地理位置极佳，足以阻挡任何入侵者。"

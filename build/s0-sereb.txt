@@ -1,0 +1,43 @@
+==== SOP 第 0 步 · 列昂尼德·谢列布里亚科夫（Idx 7）====
+
+==================== 原版 ====================
+  --- common （7 行命中 / 1 个文件）---
+    common\names\00_names.txt:787
+        Sagaidak Saikin Sanfirov Selin Selyanin Serebryakov Seryogin Shalayev Shambarov Shatrov
+    common\names\00_names.txt:824
+        Saikina Sanfirova Selina Selyanina Serebryakova Shalayeva Shambarova Shanina Shatrova
+    common\names\00_names.txt:922
+        Sagaidak Saikin Sanfirov Selin Selyanin Serebryakov Seryogin Shalayev Shambarov Shatrov
+    common\names\00_names.txt:950
+        Saikina Sanfirova Selina Selyanina Serebryakova Shalayeva Shambarova Shanina Shatrova
+    common\names\00_names.txt:1037
+        Sagaidak Saikin Sanfirov Selin Selyanin Serebryakov Seryogin Shalayev Shambarov Shatrov
+    common\names\00_names.txt:1065
+        Saikina Sanfirova Selina Selyanina Serebryakova Shalayeva Shambarova Shanina Shatrova
+    common\names\00_names.txt:2791
+        names = { Abatiy Aghwrbiy Albech Albot Alhx'es Alhx'o Alijiqwe Amisch Andeimir Andeimirqan Anzawir Anzoriqwe Areqshu Ashemez Axwemghwet Bagh Bale Bate Batiy Batirbiy Bat'e Bedin Bediniqwe Belatse Beletoqwe Beresbiy Beroqwe Betey Betoqwe Betrez Beizriqwe Beiqan Beird Biybeird Biybolet Biylhosten Blaneshu Bobe Bolet Bore Bot Bube Bubeird Bile Bilu Chawis Chetsu Ch'ischiqwe Dat Dawe Dariqwe Debaghwe Degwzchey Diyde Dox'wshiqwe Dizchin Discheshu Dzedzu Dzeghaschte Dzepsch Dzeshu Dzu Dzudze Dzune Dzidzu Foqwe Ghwaze Ghwch'e Ghwch'el' Ghwch'eschawe Ghwsch'ine Ghwsch'ipse Hebale Hebashe Hebexw Hebiy Hebizh Hech'ashe Hegwtsire Hemash Hemashe Hemat' Hemat'e Hemats Hemit'e Hemt'ut' Henasch'e Henaschx'we Henax'we Hepasch'e Hep'at' Hep'ot' Herebiy Hesane Hesansh Heschawe Hesch'emaxwe Heshir Heshore Hetal Hetaliy Hetaw Hetezchiqwe Hetiqe Hetiqwe Hetize Het'ox'wschiqwe Hetschiqwe Hetsile Hetsiqe Hetsiqwe Hetsu Hetu Het'ut'e Hewtiy Hezeishe Janchate Jatawe Jilax'sten Jirandiqwe Kitsu Kwrghwoqwe Kwsh Kwshbiy Kwshmez Kwshikw Lashe Lawirsen Lemashe Lhepsch Lhosten Lhostenasch Lhostenbiy L'if' L'imaxwe Mamish Mamishe Mamsir Mamsriqwe Mariqwe Mash Mashe Mat'e Mat'u Maxwe Med Men Menshaq Meshiqwe Mile Miqe Misost Mize Mut'e Nal Nalbiy Nali Napts'e Narich Nart Nartbiy Nartschawe Nartshu Nasch Naschx'we Natbiy Natrib Nawirbiy Nawriz Nax'we Nedighe Neghwey Nep'it' Nerzan Nesren Nex'wat'e Nex'wpsch Pagwe Paq Pariyqe Pashe P'at' P'it'u Pschibiy Pschimaxwe Pschimide Pschiqan Pschizebiy Psebide Qaniqwe Qanschawe Qanschobiy Qaschx'we Qeit Qeitiqwe Qex'wn Qideghaze Qilishbiy Qwbatiy Qwlhshiqwe Qwsh Schad Schaqmen Schebet Schebetiqwe Scherel'oqwe Schewey Schihbolet Schihim Schiyherbiy Scholex'w Schoqal Senjeley Serebiy Sha Shabiyix'w Shaghir Shaghirbiy Shaps Shat' Shiys Shore Shu Shumaf'e Shumaxwe Shume Shupagwe Shupashe Shuqe Shuwey Sirixw Sosriqwe Takwu Tawqan Teimbolet Teimbore Teimbot Teipsiriqwe Teirchiqwe Teiwvezh T'emashe Tighwen Tighwenbiy T'igwe Tiqe Tiqire Tolbiy Tolhesten Toqwe Tsane Tsats Tsatsu Tsiqire Tsu Tsumash Tsut'e T'ut' Werdeschawe Werdeschiqwe Wezirmes Wezirmej Wezrej Wezroqwe Wighwrli Wivzhiqwe X'imisch X'wat'e Xwemghwet X'wet Yamdezh Yapenes Yedij Yelbizdiqwe Yelhqan Yeljiriqwe Yelhix'w Yemish Yeristam Yerzhib Yetech Yex'wl'e Yinaliqwe Yinarmes Zawirbiy Zeik'we Zeik'weshu Zhaniqwe Zhanqeit Zhansex'w Zhansiyt Zhanteimir Zhantighwen Zhanx'wet Zhantiy Zhebaghi Zhembolet Zhembore Zhembot Zheriqwe Zhilebiy Zhileghwet Zhiqwe Zhore Ziramikw  }
+  --- gfx 下文件名命中（0 个）---
+
+==================== 原版-dlc ====================
+  --- gfx 下文件名命中（0 个）---
+
+==================== R56 ====================
+  --- common （5 行命中 / 1 个文件）---
+    common\names\00_names.txt:800
+        Saikina Sanfirova Selina Selyanina Serebryakova Shalayeva Shambarova Shanina Shatrova
+    common\names\00_names.txt:835
+        Sagaidak Saikin Sanfirov Selin Selyanin Serebryakov Seryogin Shalayev Shambarov Shatrov
+    common\names\00_names.txt:1062
+        Sagaidak Saikin Sanfirov Selin Selyanin Serebryakov Seryogin Shalayev Shambarov Shatrov
+    common\names\00_names.txt:1090
+        Saikina Sanfirova Selina Selyanina Serebryakova Shalayeva Shambarova Shanina Shatrova
+    common\names\00_names.txt:3326
+        names = { Abatiy Aghwrbiy Albech Albot Alhx'es Alhx'o Alijiqwe Amisch Andeimir Andeimirqan Anzawir Anzoriqwe Areqshu Ashemez Axwemghwet Bagh Bale Bate Batiy Batirbiy Bat'e Bedin Bediniqwe Belatse Beletoqwe Beresbiy Beroqwe Betey Betoqwe Betrez Beizriqwe Beiqan Beird Biybeird Biybolet Biylhosten Blaneshu Bobe Bolet Bore Bot Bube Bubeird Bile Bilu Chawis Chetsu Ch'ischiqwe Dat Dawe Dariqwe Debaghwe Degwzchey Diyde Dox'wshiqwe Dizchin Discheshu Dzedzu Dzeghaschte Dzepsch Dzeshu Dzu Dzudze Dzune Dzidzu Foqwe Ghwaze Ghwch'e Ghwch'el' Ghwch'eschawe Ghwsch'ine Ghwsch'ipse Hebale Hebashe Hebexw Hebiy Hebizh Hech'ashe Hegwtsire Hemash Hemashe Hemat' Hemat'e Hemats Hemit'e Hemt'ut' Henasch'e Henaschx'we Henax'we Hepasch'e Hep'at' Hep'ot' Herebiy Hesane Hesansh Heschawe Hesch'emaxwe Heshir Heshore Hetal Hetaliy Hetaw Hetezchiqwe Hetiqe Hetiqwe Hetize Het'ox'wschiqwe Hetschiqwe Hetsile Hetsiqe Hetsiqwe Hetsu Hetu Het'ut'e Hewtiy Hezeishe Janchate Jatawe Jilax'sten Jirandiqwe Kitsu Kwrghwoqwe Kwsh Kwshbiy Kwshmez Kwshikw Lashe Lawirsen Lemashe Lhepsch Lhosten Lhostenasch Lhostenbiy L'if' L'imaxwe Mamish Mamishe Mamsir Mamsriqwe Mariqwe Mash Mashe Mat'e Mat'u Maxwe Med Men Menshaq Meshiqwe Mile Miqe Misost Mize Mut'e Nal Nalbiy Nali Napts'e Narich Nart Nartbiy Nartschawe Nartshu Nasch Naschx'we Natbiy Natrib Nawirbiy Nawriz Nax'we Nedighe Neghwey Nep'it' Nerzan Nesren Nex'wat'e Nex'wpsch Pagwe Paq Pariyqe Pashe P'at' P'it'u Pschibiy Pschimaxwe Pschimide Pschiqan Pschizebiy Psebide Qaniqwe Qanschawe Qanschobiy Qaschx'we Qeit Qeitiqwe Qex'wn Qideghaze Qilishbiy Qwbatiy Qwlhshiqwe Qwsh Schad Schaqmen Schebet Schebetiqwe Scherel'oqwe Schewey Schihbolet Schihim Schiyherbiy Scholex'w Schoqal Senjeley Serebiy Sha Shabiyix'w Shaghir Shaghirbiy Shaps Shat' Shiys Shore Shu Shumaf'e Shumaxwe Shume Shupagwe Shupashe Shuqe Shuwey Sirixw Sosriqwe Takwu Tawqan Teimbolet Teimbore Teimbot Teipsiriqwe Teirchiqwe Teiwvezh T'emashe Tighwen Tighwenbiy T'igwe Tiqe Tiqire Tolbiy Tolhesten Toqwe Tsane Tsats Tsatsu Tsiqire Tsu Tsumash Tsut'e T'ut' Werdeschawe Werdeschiqwe Wezirmes Wezirmej Wezrej Wezroqwe Wighwrli Wivzhiqwe X'imisch X'wat'e Xwemghwet X'wet Yamdezh Yapenes Yedij Yelbizdiqwe Yelhqan Yeljiriqwe Yelhix'w Yemish Yeristam Yerzhib Yetech Yex'wl'e Yinaliqwe Yinarmes Zawirbiy Zeik'we Zeik'weshu Zhaniqwe Zhanqeit Zhansex'w Zhansiyt Zhanteimir Zhantighwen Zhanx'wet Zhantiy Zhebaghi Zhembolet Zhembore Zhembot Zheriqwe Zhilebiy Zhileghwet Zhiqwe Zhore Ziramikw  }
+  --- events （2 行命中 / 1 个文件）---
+    events\r56_Soviet.txt:1371
+        # 			name = "Leonid Serebryakov"
+    events\r56_Soviet.txt:1373
+        # 			picture = "r56_portrait_SOV_Leonid_Serebryakov.dds"
+  --- gfx 下文件名命中（1 个）---
+    gfx\leaders\SOV\r56_portrait_SOV_Leonid_Serebryakov.dds
+

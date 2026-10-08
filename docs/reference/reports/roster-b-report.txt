@@ -1,0 +1,58 @@
+﻿################ 1. gfx\leaders\SOV 下的候选立绘文件 ################
+
+  文件                         尺寸         来源        字节
+
+== 1 列夫·托洛茨基  (匹配 'trotsky') ==
+  Portrait_Leon_Trotsky.dds  156x210    原版           131,168  <<< 正好 156x210
+  r56_portrait_SOV_Leon_Trotsky.dds 156x210    R56           65,648  <<< 正好 156x210
+
+== 2 尼古拉·布哈林  (匹配 'bukharin') ==
+  （gfx\leaders\SOV 下无匹配文件）
+
+== 3 阿列克谢·李可夫  (匹配 'rykov') ==
+  （gfx\leaders\SOV 下无匹配文件）
+
+== 4 格里戈里·季诺维也夫  (匹配 'zinov') ==
+  portrait_SOV_grigory_zinovyev.dds 156x210    原版           131,168  <<< 正好 156x210
+
+== 5 列夫·加米涅夫  (匹配 'kamenev') ==
+  portrait_SOV_lev_kamenev.dds 156x210    原版           131,168  <<< 正好 156x210
+
+== 6 伊万·斯米尔诺夫  (匹配 'ivan_smirnov') ==
+  portrait_SOV_ivan_smirnov.dds 156x210    原版           131,168  <<< 正好 156x210
+
+== 7 列昂尼德·谢列布里亚科夫  (匹配 'serebryakov') ==
+  r56_portrait_SOV_Leonid_Serebryakov.dds 156x210    R56           65,648  <<< 正好 156x210
+
+
+################ 2. gfx\interface\ideas 下的匹配文件（小图备选）################
+
+  lev_trotsky    idea_SOV_leon_trotsky.dds [原版] 65x67
+  lev_trotsky    idea_SOV_lev_trotsky.dds [原版] 65x67
+  lev_trotsky    trotskyite_plot.dds [原版] 60x68
+  lev_trotsky    trotskyite_plot_purged.dds [原版] 60x68
+  nikolay_bukharin idea_SOV_nikolay_bukharin.dds [原版] 65x67
+  aleksey_rykov  idea_SOV_aleksey_rykov.dds [原版] 65x67
+  grigory_zinovyev idea_SOV_grigory_zinovyev.dds [原版] 65x67
+  grigory_zinovyev idea_SOV_grigory_zinovyev_imprisoned.dds [原版] 67x69
+  lev_kamenev    idea_SOV_lev_kamenev.dds [原版] 65x67
+  lev_kamenev    idea_SOV_lev_kamenev_imprisoned.dds [原版] 67x69
+  ivan_smirnov   idea_SOV_ivan_smirnov.dds [原版] 65x67
+  ivan_smirnov   idea_SOV_ivan_smirnov_imprisoned.dds [原版] 67x69
+  leonid_serebryakov 无
+
+
+################ 3. GFX_portrait_SOV_* 的 sprite 注册（含子目录）################
+
+  GFX_portrait_SOV_lev_trotsky             => 未注册
+  GFX_portrait_SOV_nikolay_bukharin        => 未注册
+  GFX_portrait_SOV_aleksey_rykov           => 未注册
+  GFX_portrait_SOV_grigory_zinovyev        => gfx/leaders/SOV/portrait_SOV_grigory_zinovyev.dds  (原版 : _leader_portraits.gfx)
+  GFX_portrait_SOV_lev_kamenev             => gfx/leaders/SOV/portrait_SOV_lev_kamenev.dds  (原版 : _leader_portraits.gfx)
+  GFX_portrait_SOV_ivan_smirnov            => gfx/leaders/SOV/portrait_SOV_ivan_smirnov.dds  (原版 : _leader_portraits.gfx)
+  GFX_portrait_SOV_leonid_serebryakov      => 未注册
+
+
+################ 4. mod 内是否已有新美术（portraits 目录）################
+
+  [空] 目录存在但无文件

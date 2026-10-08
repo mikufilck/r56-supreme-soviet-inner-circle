@@ -1,0 +1,17 @@
+﻿总行数 = 24649
+
+======== GER_inner_circle.01   (L21837..L21838) ========
+	id = GER_inner_circle.01
+	title = GER_inner_circle.01.t
+
+======== GER_inner_circle.02   (L22024..L22025) ========
+	id = GER_inner_circle.02
+	title = GER_inner_circle.02.t
+
+======== GER_inner_circle_todt.01   (L23597..L23598) ========
+	id = GER_inner_circle_todt.01
+
+
+======== GER_inner_circle_todt.02   (L23651..L23652) ========
+	id = GER_inner_circle_todt.02
+

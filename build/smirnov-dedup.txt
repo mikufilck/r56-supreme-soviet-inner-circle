@@ -1,0 +1,85 @@
+=== trotsky  独立 id 22 个 ===
+    build_the_red_army
+    military_specialists
+    against_partisan_warfare
+    uneven_and_combined_development
+    permanent_revolution
+    socialism_in_one_country
+    the_new_course
+    against_the_bureaucracy
+    state_planning
+    accelerated_industrialization
+    the_comintern_manifesto
+    the_chinese_question
+    united_front
+    the_permanent_revolutionary
+    ending_revolution_flag
+    the_builder_of_the_state
+    ending_state_flag
+    limited_market_reforms
+    path_market_flag
+    labour_armies
+    path_labour_flag
+    extra_effects_tt
+
+=== bukharin  独立 id 12 个 ===
+    nep_is_not_a_retreat
+    abolish_the_tribute
+    alliance_is_the_axis
+    enrich_yourselves
+    proportional_development
+    cooperatives_into_the_system
+    socialism_in_one_country
+    path_left_flag
+    economics_of_transition
+    path_nep_flag
+    left_communism
+    extra_effects_tt
+
+=== rykov  独立 id 6 个 ===
+    supreme_economic_council
+    food_supply_commissar
+    labour_defence_council
+    sponsor_aviation
+    labour_defence_chair
+    extra_effects_tt
+
+=== zinovyev  独立 id 14 个 ===
+    found_the_comintern
+    twenty_one_conditions
+    social_fascism
+    bolshevization
+    congress_of_the_east
+    workers_united_front
+    speed_and_route
+    party_in_revolution
+    trade_unions
+    monolithic_international
+    ending_monolithic_flag
+    mass_international
+    ending_mass_flag
+    extra_effects_tt
+
+=== kamenev  独立 id 6 个 ===
+    lenins_charge
+    leninism
+    against_the_lessons
+    lenin_institute
+    executor_of_the_will
+    extra_effects_tt
+
+=== 生成器里所有含 ivan_smirnov 的行 ===
+  L342    @{ Idx = 6; Key = 'ivan_smirnov';       Zh = '伊万·斯米尔诺夫';
+  L344    Dds    = 'gfx/leaders/SOV/portrait_SOV_ivan_smirnov.dds';
+  L345    NewArt = 'gfx/interface/hof_ic/portraits/hof_portrait_SOV_ivan_smirnov.dds';
+  L347    Idea   = 'hof_ic_idea_ivan_smirnov';
+  L684    left    = @('lev_trotsky','yevgeny_preobrazhensky','karl_radek','ivar_smilga','ivan_smirnov','leonid_serebryakov')
+  L1602   'grigory_zinovyev', 'lev_kamenev', 'ivan_smirnov',
+  L2892   #    花名册里有 ivan_smirnov 与 pyotr_smirnov 两个同姓，按姓氏猜会撞车。
+
+=== 生成器里含 smirnov（含彼得）的行数统计 ===
+  L462    @{ Idx = 19; Key = 'pyotr_smirnov';          Zh = '彼得·斯米尔诺夫';
+  L464    NewArt = 'gfx/interface/hof_ic/portraits/hof_portrait_SOV_pyotr_smirnov.dds';
+  L466    Idea   = 'hof_ic_idea_pyotr_smirnov';
+  L698    neutral = @('mikhail_kalinin','maksim_litvinov','grigory_sokolnikov','mikhail_tukhachevsky','nikolay_voznesensky','pyotr_smirnov')
+  L1607   'mikhail_tukhachevsky', 'nikolay_voznesensky', 'pyotr_smirnov',

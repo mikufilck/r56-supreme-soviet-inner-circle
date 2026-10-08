@@ -1,0 +1,213 @@
+# 军事/补给/进攻类词条核实（R56 + 原版）
+# 只在 common/ideas、common/dynamic_modifiers、common/scripted_effects 里找
+
+## 军事-进攻
+
+✅ `army_attack_factor`
+     R56/afghanistan.txt:168  army_attack_factor = 0.05
+     R56/afghanistan.txt:1140  army_attack_factor = 0.05
+✅ `army_core_attack_factor`
+     R56/afghanistan.txt:976  army_core_attack_factor = -0.1
+     R56/albania.txt:179  army_core_attack_factor = 0.05
+❌ `division_attack_factor`  —— 三个目录里都没出现，**不要用**
+✅ `breakthrough_factor`
+     R56/army_spirits.txt:1322  breakthrough_factor = 0.05
+     R56/british_raj.txt:2850  breakthrough_factor = 0.10
+✅ `army_artillery_attack_factor`
+     R56/bulgaria.txt:3449  army_artillery_attack_factor = 0.03
+     R56/chile.txt:409  army_artillery_attack_factor = 0.05
+✅ `army_artillery_defence_factor`
+     R56/bulgaria.txt:3450  army_artillery_defence_factor = 0.03
+     R56/chile.txt:410  army_artillery_defence_factor = 0.05
+❌ `army_sub_unit_infantry_attack_factor`  —— 三个目录里都没出现，**不要用**
+❌ `army_sub_unit_armor_attack_factor`  —— 三个目录里都没出现，**不要用**
+❌ `army_sub_unit_cavalry_attack_factor`  —— 三个目录里都没出现，**不要用**
+❌ `armor_attack_factor`  —— 三个目录里都没出现，**不要用**
+
+## 军事-防御
+
+✅ `army_defence_factor`
+     R56/afghanistan.txt:167  army_defence_factor = 0.05
+     R56/afghanistan.txt:1141  army_defence_factor = 0.05
+✅ `army_core_defence_factor`
+     R56/afghanistan.txt:111  army_core_defence_factor = 0.1
+     R56/afghanistan.txt:834  army_core_defence_factor = 0.1
+✅ `max_dig_in_factor`
+     R56/army_spirits.txt:1152  max_dig_in_factor = 0.1
+     R56/british_raj.txt:759  max_dig_in_factor = 0.15
+✅ `dig_in_speed_factor`
+     R56/abc_generic.txt:62  dig_in_speed_factor = 0.05
+     R56/army_spirits.txt:491  dig_in_speed_factor = 0.1
+✅ `surrender_limit`
+     R56/belgium.txt:140  surrender_limit = -0.50
+     R56/brazil.txt:386  surrender_limit = 0.1
+✅ `max_surrender_limit_offset`
+     R56/mongolia.txt:1570  max_surrender_limit_offset = 0.15
+     R56/r56_afghanistan.txt:724  max_surrender_limit_offset = 0.15
+✅ `cas_damage_reduction`
+     R56/army_spirits.txt:1570  cas_damage_reduction = 0.1
+     R56/burma.txt:60  cas_damage_reduction = 0.1
+✅ `army_org_regain`
+     R56/chile.txt:1581  army_org_regain = 0.1
+     R56/chile.txt:1581  army_org_regain = 0.1
+
+## 军事-组织/士气
+
+✅ `army_org_factor`
+     R56/albania.txt:221  army_org_factor = 0.02
+     R56/albania.txt:443  army_org_factor = 0.1
+✅ `army_morale_factor`
+     R56/albania.txt:101  army_morale_factor = 0.1
+     R56/albania.txt:223  army_morale_factor = 0.05
+✅ `army_org_regain`
+     R56/chile.txt:1581  army_org_regain = 0.1
+     R56/chile.txt:1581  army_org_regain = 0.1
+❌ `army_sub_unit_infantry_max_org_factor`  —— 三个目录里都没出现，**不要用**
+
+## 军事-补给/后勤
+
+✅ `supply_consumption_factor`
+     R56/abc_generic.txt:102  supply_consumption_factor = -0.02
+     R56/argentina.txt:467  supply_consumption_factor = -0.1
+✅ `out_of_supply_factor`
+     R56/army_spirits.txt:933  out_of_supply_factor = -0.10
+     R56/army_spirits.txt:1564  out_of_supply_factor = -0.10
+✅ `attrition`
+     R56/argentina.txt:466  attrition = -0.05
+     R56/army_spirits.txt:934  attrition = -0.10
+❌ `army_logistics_factor`  —— 三个目录里都没出现，**不要用**
+✅ `military_leader_cost_factor`
+     R56/army_spirits.txt:174  military_leader_cost_factor = -0.5
+     R56/bhutan.txt:9  military_leader_cost_factor = 1
+❌ `general_cost_factor`  —— 三个目录里都没出现，**不要用**
+✅ `naval_coordination`
+     R56/belgium.txt:374  naval_coordination = 0.1
+     R56/british_raj.txt:2801  naval_coordination = 0.25
+✅ `positioning`
+     R56/czechoslovakia.txt:2847  positioning = 0.05
+     R56/italy.txt:2716  positioning = 0.1
+
+## 军事-训练/动员
+
+✅ `training_time_factor`
+     R56/afghanistan.txt:957  training_time_factor = -0.1
+     R56/albania.txt:224  training_time_factor = -0.15
+✅ `conscription_factor`
+     R56/afghanistan.txt:809  conscription_factor = 0.05
+     R56/afghanistan.txt:1094  conscription_factor = 0.05
+✅ `conscription`
+     R56/abc_generic.txt:81  conscription = 0.002
+     R56/afghanistan.txt:938  conscription = 0.01
+✅ `mobilization_speed`
+     R56/arctic_generic.txt:40  mobilization_speed = 0.85
+     R56/argentina.txt:845  mobilization_speed = 0.15
+❌ `mobile_equipment_concentration`  —— 三个目录里都没出现，**不要用**
+✅ `special_forces_cap`
+     R56/army_spirits.txt:873  special_forces_cap = 0.05
+     R56/britain.txt:660  special_forces_cap = 0.05
+✅ `equipment_capture_factor`
+     R56/army_spirits.txt:1566  equipment_capture_factor = 0.10
+     R56/chile.txt:1146  equipment_capture_factor = 0.05
+
+## 军事-经验/学说
+
+✅ `experience_gain_army_factor`
+     R56/afghanistan.txt:86  experience_gain_army_factor = -0.2
+     R56/afghanistan.txt:166  experience_gain_army_factor = 0.1
+✅ `army_experience`
+     R56/ITA_scripted_effects.txt:168  army_experience = 15
+     R56/ITA_scripted_effects.txt:210  army_experience = 25
+✅ `land_doctrine_cost_factor`
+     R56/british_raj.txt:1225  land_doctrine_cost_factor = -0.1
+     R56/british_raj.txt:1245  land_doctrine_cost_factor = -0.1
+✅ `command_power_gain_mult`
+     R56/belgium.txt:117  command_power_gain_mult = -0.05
+     R56/bolivia.txt:45  command_power_gain_mult = -0.3
+✅ `max_command_power`
+     R56/army_spirits.txt:466  max_command_power = 30
+     R56/australia.txt:241  max_command_power = 20
+
+## 科研
+
+✅ `research_speed_factor`
+     R56/afghanistan.txt:145  research_speed_factor = 0.1
+     R56/afghanistan.txt:187  research_speed_factor = 0.04
+❌ `research_speed_factor_land`  —— 三个目录里都没出现，**不要用**
+❌ `breakthrough_progress_factor`  —— 三个目录里都没出现，**不要用**
+
+## 工业
+
+✅ `industrial_capacity_factory`
+     R56/afghanistan.txt:821  industrial_capacity_factory = 0.1
+     R56/afghanistan.txt:1037  industrial_capacity_factory = 0.1
+✅ `industrial_capacity_dockyard`
+     R56/albania.txt:178  industrial_capacity_dockyard = 0.05
+     R56/albania.txt:401  industrial_capacity_dockyard = -0.1
+✅ `production_speed_buildings_factor`
+     R56/afghanistan.txt:527  production_speed_buildings_factor = 0.1
+     R56/afghanistan.txt:736  production_speed_buildings_factor = 0.1
+✅ `production_speed_industrial_complex_factor`
+     R56/afghanistan.txt:1056  production_speed_industrial_complex_factor = 0.1
+     R56/argentina.txt:13  production_speed_industrial_complex_factor = -0.10
+✅ `production_speed_arms_factory_factor`
+     R56/afghanistan.txt:435  production_speed_arms_factory_factor = 0.2
+     R56/albania.txt:153  production_speed_arms_factory_factor = 0.2
+✅ `production_factory_max_efficiency_factor`
+     R56/argentina.txt:212  production_factory_max_efficiency_factor = 0.05
+     R56/argentina.txt:556  production_factory_max_efficiency_factor = 0.05
+✅ `production_factory_efficiency_gain_factor`
+     R56/afghanistan.txt:820  production_factory_efficiency_gain_factor = 0.1
+     R56/brazil.txt:128  production_factory_efficiency_gain_factor = -0.2
+✅ `line_change_production_efficiency_factor`
+     R56/armenia.txt:230  line_change_production_efficiency_factor = 0.10
+     R56/brazil.txt:914  line_change_production_efficiency_factor = 0.1
+✅ `consumer_goods_factor`
+     R56/afghanistan.txt:321  consumer_goods_factor = -0.15
+     R56/afghanistan.txt:345  consumer_goods_factor = 0.15
+✅ `conversion_cost_civ_to_mil_factor`
+     R56/australia.txt:1543  conversion_cost_civ_to_mil_factor= -0.2
+     R56/britain.txt:927  conversion_cost_civ_to_mil_factor = -0.5
+
+## 政治
+
+✅ `political_power_factor`
+     R56/afghanistan.txt:41  political_power_factor = 0.05
+     R56/afghanistan.txt:85  political_power_factor = -0.4
+✅ `political_power_gain`
+     R56/andorra.txt:34  political_power_gain = 0.05
+     R56/belgium.txt:44  political_power_gain = -0.10
+✅ `stability_factor`
+     R56/afghanistan.txt:19  stability_factor = 0.1
+     R56/afghanistan.txt:39  stability_factor = 0.1
+✅ `war_support_factor`
+     R56/afghanistan.txt:526  war_support_factor = 0.1
+     R56/afghanistan.txt:977  war_support_factor = -0.1
+✅ `communism_drift`
+     R56/afghanistan.txt:208  communism_drift = 0.02
+     R56/afghanistan.txt:246  communism_drift = 0.02
+✅ `drift_defence_factor`
+     R56/afghanistan.txt:188  drift_defence_factor = 0.3
+     R56/afghanistan.txt:407  drift_defence_factor = 0.4
+✅ `political_advisor_cost_factor`
+     R56/afghanistan.txt:62  political_advisor_cost_factor = 0.25
+     R56/afghanistan.txt:146  political_advisor_cost_factor = -0.25
+❌ `efficiency_growth_factor`  —— 三个目录里都没出现，**不要用**
+
+## 国际
+
+✅ `send_volunteer_factor`
+     R56/afghanistan.txt:1166  send_volunteer_factor = 0.25
+     R56/congo.txt:285  send_volunteer_factor = 0.25
+✅ `opinion_gain_monthly_same_ideology_factor`
+     R56/british_raj.txt:1089  opinion_gain_monthly_same_ideology_factor = 0.5
+     R56/british_raj.txt:1107  opinion_gain_monthly_same_ideology_factor = 0.5
+✅ `operative_slot`
+     R56/algeria.txt:127  operative_slot = 1
+     R56/argentina.txt:637  operative_slot = 2
+✅ `subversive_activites_upkeep`
+     R56/australia.txt:893  subversive_activites_upkeep = -0.5
+     R56/australia.txt:913  subversive_activites_upkeep = -0.5
+✅ `boost_ideology_mission_factor`
+     R56/GER.txt:11640  boost_ideology_mission_factor = 0.15
+     R56/peru.txt:3037  boost_ideology_mission_factor = 0.25
+

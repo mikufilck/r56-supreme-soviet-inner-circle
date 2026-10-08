@@ -1,0 +1,309 @@
+==== SOP 第 0 步 · 尼基塔·赫鲁晓夫（Idx 21）====
+
+==================== 原版 ====================
+  --- common （7 行命中 / 3 个文件）---
+    common\characters\SOV.txt:2177
+        SOV_nikita_khrushchyov = {
+    common\characters\SOV.txt:2178
+        name = SOV_nikita_khrushchyov
+    common\characters\SOV.txt:2181
+        small = "GFX_idea_nikita_khrushchev"
+    common\characters\SOV.txt:2195
+        idea_token = nikita_khrushchyov
+    common\characters\UKR.txt:22
+        large = GFX_portrait_Nikita_Sergeyevich_Khrushchyov
+    common\national_focus\soviet.txt:9238
+        IF = { limit = { has_character = SOV_nikita_khrushchyov } retire_character = SOV_nikita_khrushchyov }
+    common\national_focus\soviet.txt:11221
+        SOV_nikita_khrushchyov = {
+  --- events （5 行命中 / 1 个文件）---
+    events\SovietUnion.txt:807
+        #		show_ideas_tooltip = nikita_khrushchev
+    events\SovietUnion.txt:808
+        #		set_country_flag = purged_khrushchev
+    events\SovietUnion.txt:810
+        #			retire_character = SOV_nikita_khrushchyov_old
+    events\SovietUnion.txt:1031
+        #		#		has_country_flag = purged_khrushchev
+    events\SovietUnion.txt:1072
+        #		remove_ideas = nikita_khrushchev
+  --- history （2 行命中 / 1 个文件）---
+    history\countries\SOV - Soviet union.txt:32
+        recruit_character = SOV_nikita_khrushchyov
+    history\countries\SOV - Soviet union.txt:172
+        SOV_nikita_khrushchyov = {
+  --- localisation （50 行命中 / 50 个文件）---
+    localisation\braz_por\events_l_braz_por.yml:2235
+        soviet.25.b: "Khrushchev se envolveu com \"Trotskyismo\" no passado. Ele precisa ir."
+    localisation\braz_por\focus_l_braz_por.yml:1075
+        purged_khrushchev: "Expurgado por Stalin"
+    localisation\braz_por\ideas_l_braz_por.yml:225
+        nikita_khrushchev: "Nikita Khrushchev"
+    localisation\braz_por\nsb_characters_l_braz_por.yml:72
+        SOV_nikita_khrushchyov: "Nikita Khrushchyov"
+    localisation\braz_por\nsb_focus_l_braz_por.yml:1675
+        SOV_gain_support_from_party_members_tt: "§Y$SOV_vsevolod_merkulov$§!, §Y$SOV_mikhail_kalinin$§! e §Y$SOV_nikita_khrushchyov$§! entram para a oposição quando a guerra civil começar.\n§G+10%§! Estabilidade quando a guerra civil começar"
+    localisation\braz_por\WUW_characters_l_braz_por.yml:164
+        UKR_nikita_krushchyov: "Nikita Khrushchyov"
+    localisation\english\events_l_english.yml:2238
+        soviet.25.b: "Khrushchev dabbled with Trotskyism in the past. He must go."
+    localisation\english\focus_l_english.yml:1075
+        purged_khrushchev:0 " Purged by Stalin"
+    localisation\english\ideas_l_english.yml:225
+        nikita_khrushchev: "Nikita Khrushchev"
+    localisation\english\nsb_characters_l_english.yml:74
+        SOV_nikita_khrushchyov: "Nikita Khrushchyov"
+    localisation\english\nsb_focus_l_english.yml:1697
+        SOV_gain_support_from_party_members_tt: "§Y$SOV_vsevolod_merkulov$§!, §Y$SOV_mikhail_kalinin$§!, and §Y$SOV_nikita_khrushchyov$§! joins the opposition when the Civil War starts.\n§G+10%§! Stability when the Civil War starts"
+    localisation\english\WUW_characters_l_english.yml:182
+        UKR_nikita_krushchyov: "Nikita Khrushchyov"
+    localisation\french\focus_l_french.yml:1075
+        purged_khrushchev: " Victimes des purges de Staline"
+    localisation\french\ideas_l_french.yml:225
+        nikita_khrushchev: "Nikita Khrouchtchev"
+    localisation\french\nsb_characters_l_french.yml:72
+        SOV_nikita_khrushchyov: "$nikita_khrushchev$"
+    localisation\french\nsb_focus_l_french.yml:1675
+        SOV_gain_support_from_party_members_tt: "Aussitôt que la guerre civile éclatera, §Y$SOV_vsevolod_merkulov$§!, §Y$SOV_mikhail_kalinin$§! et §Y$SOV_nikita_khrushchyov$§! rejoindront l'opposition.\n§G+10%§! en £stability_texticon£stabilité lorsque la guerre éclatera."
+    localisation\german\events_l_german.yml:2235
+        soviet.25.b: "Chruschtschow hat sich in der Vergangenheit doch auch mit Trotzki eingelassen.  Er muss weg!"
+    localisation\german\focus_l_german.yml:1075
+        purged_khrushchev: " Von Stalin gesäubert"
+    localisation\german\ideas_l_german.yml:225
+        nikita_khrushchev: "Nikita Chruschtschow"
+    localisation\german\nsb_characters_l_german.yml:72
+        SOV_nikita_khrushchyov: "Nikita Khrushchyov"
+    localisation\german\nsb_focus_l_german.yml:1675
+        SOV_gain_support_from_party_members_tt: "§Y$SOV_vsevolod_merkulov$§!, §Y$SOV_mikhail_kalinin$§! und §Y$SOV_nikita_khrushchyov$§! schließen sich der Opposition an, wenn der Bürgerkrieg startet.\n§G+10%§! Stabilität, wenn der Bürgerkrieg startet"
+    localisation\german\WUW_characters_l_german.yml:164
+        UKR_nikita_krushchyov: "Nikita Khrushchyov"
+    localisation\japanese\focus_l_japanese.yml:1075
+        purged_khrushchev: " スターリンによる粛清"
+    localisation\japanese\ideas_l_japanese.yml:225
+        nikita_khrushchev: "ニキータ・フルシチョフ"
+    localisation\japanese\nsb_characters_l_japanese.yml:72
+        SOV_nikita_khrushchyov: "ニキータ・フルシチョフ"
+    localisation\japanese\nsb_focus_l_japanese.yml:1675
+        SOV_gain_support_from_party_members_tt: "§Y$SOV_vsevolod_merkulov$§!、§Y$SOV_mikhail_kalinin$§!、§Y$SOV_nikita_khrushchyov$§!は、内戦が始まると反対派に加わる。\n内戦開始時の安定度§G+10%§!"
+    localisation\korean\focus_l_korean.yml:1075
+        purged_khrushchev: " 스탈린에게 숙청됨"
+    localisation\korean\ideas_l_korean.yml:225
+        nikita_khrushchev: "니키타 흐루쇼프"
+    localisation\korean\nsb_characters_l_korean.yml:72
+        SOV_nikita_khrushchyov: "니키타 흐루쇼프"
+    localisation\korean\nsb_focus_l_korean.yml:1675
+        SOV_gain_support_from_party_members_tt: "내전 발발 시 §Y$SOV_vsevolod_merkulov$§!, §Y$SOV_mikhail_kalinin$§!, §Y$SOV_nikita_khrushchyov$§!가 반대파에 합류합니다.\n내전 발발 시 안정도 §G+10%§!"
+    localisation\polish\focus_l_polish.yml:1075
+        purged_khrushchev: "Ofiara czystki stalinowskiej"
+    localisation\polish\ideas_l_polish.yml:225
+        nikita_khrushchev: "Nikita Chruszczow"
+    localisation\polish\nsb_characters_l_polish.yml:72
+        SOV_nikita_khrushchyov: "Nikita Chruszczow"
+    localisation\polish\nsb_focus_l_polish.yml:1675
+        SOV_gain_support_from_party_members_tt: "§Y$SOV_vsevolod_merkulov$§!, §Y$SOV_mikhail_kalinin$§! i §Y$SOV_nikita_khrushchyov$§! dołączą do opozycji w momencie rozpoczęcia wojny domowej.\n§G+10%§! stabilności w momencie rozpoczęcia wojny domowej."
+    localisation\russian\events_l_russian.yml:2235
+        soviet.25.b: "Хрущев в прошлом якшался с троцкистами. Он должен уйти."
+    localisation\russian\focus_l_russian.yml:1075
+        purged_khrushchev: " Уничтожен Сталиным"
+    localisation\russian\ideas_l_russian.yml:225
+        nikita_khrushchev: "Никита Хрущев"
+    localisation\russian\nsb_characters_l_russian.yml:72
+        SOV_nikita_khrushchyov: "Никита Хрущев"
+    localisation\russian\nsb_focus_l_russian.yml:1675
+        SOV_gain_support_from_party_members_tt: "§Y$SOV_vsevolod_merkulov$§!, §Y$SOV_mikhail_kalinin$§! и §Y$SOV_nikita_khrushchyov$§! присоединяются к оппозиции с началом гражданской войны.\n§G+10%§! к стабильности с началом гражданской войны"
+    localisation\russian\WUW_characters_l_russian.yml:164
+        UKR_nikita_krushchyov: "Никита Хрущев"
+    localisation\simp_chinese\events_l_simp_chinese.yml:2235
+        soviet.25.b: "赫鲁晓夫过去和托派分子有一腿。他必须滚。"
+    localisation\simp_chinese\focus_l_simp_chinese.yml:1075
+        purged_khrushchev: " 被斯大林清洗"
+    localisation\simp_chinese\ideas_l_simp_chinese.yml:225
+        nikita_khrushchev: "尼基塔·赫鲁晓夫"
+    localisation\simp_chinese\nsb_characters_l_simp_chinese.yml:72
+        SOV_nikita_khrushchyov: "尼基塔·赫鲁晓夫"
+    localisation\simp_chinese\nsb_focus_l_simp_chinese.yml:1675
+        SOV_gain_support_from_party_members_tt: "内战开始时，§Y$SOV_vsevolod_merkulov$§!、§Y$SOV_mikhail_kalinin$§!和§Y$SOV_nikita_khrushchyov$§!加入反对派。\n内战开始时，§G+10%§!稳定度。"
+    localisation\simp_chinese\WUW_characters_l_simp_chinese.yml:164
+        UKR_nikita_krushchyov: "尼基塔·赫鲁晓夫"
+    localisation\spanish\focus_l_spanish.yml:1075
+        purged_khrushchev: " Purgado por Stalin"
+    localisation\spanish\ideas_l_spanish.yml:225
+        nikita_khrushchev: "Nikita Khrushchev"
+    localisation\spanish\nsb_characters_l_spanish.yml:72
+        SOV_nikita_khrushchyov: "Nikita Jrushchov"
+    localisation\spanish\nsb_focus_l_spanish.yml:1675
+        SOV_gain_support_from_party_members_tt: "§Y$SOV_vsevolod_merkulov$§!, §Y$SOV_mikhail_kalinin$§! y §Y$SOV_nikita_khrushchyov$§! se unen a la oposición cuando empiece la guerra civil.\n§G+10%§! de Estabilidad cuando empiece la guerra civil."
+  --- interface （3 行命中 / 2 个文件）---
+    interface\ideas.gfx:2347
+        name = "GFX_idea_nikita_khrushchev"
+    interface\ideas.gfx:2348
+        texturefile = "gfx/interface/ideas/idea_nikita_khrushchev.dds"
+    interface\_leader_portraits.gfx:8256
+        name = GFX_portrait_Nikita_Sergeyevich_Khrushchyov
+  --- gfx 下文件名命中（1 个）---
+    gfx\interface\ideas\idea_nikita_khrushchev.dds
+
+==================== 原版-dlc ====================
+  --- gfx 下文件名命中（0 个）---
+
+==================== R56 ====================
+  --- common （26 行命中 / 4 个文件）---
+    common\characters\SOV.txt:3700
+        SOV_nikita_khrushchyov = {
+    common\characters\SOV.txt:3701
+        name = SOV_nikita_khrushchyov
+    common\characters\SOV.txt:3704
+        large = "gfx/leaders/SOV/r56_portrait_SOV_Nikita_Khrushchev.dds"
+    common\characters\SOV.txt:3705
+        small = "GFX_idea_nikita_khrushchev"
+    common\characters\SOV.txt:3719
+        idea_token = nikita_khrushchyov
+    common\characters\SOV.txt:3732
+        has_country_leader = { name = "Nikita Khrushchev" ruling_only = yes }
+    common\characters\SOV.txt:4224
+        #-> Having this check (Nikita Khrushchev) breaks third (last possible) NKVD head purge - it would immediatelly remove this advisor <><>
+    common\characters\SOV.txt:4225
+        #has_country_leader = { name = "Nikita Khrushchev" ruling_only = yes } #for Grieving Stalin
+    common\national_focus\r56_soviet_civil_war.txt:254
+        id = SOV_civil_war_empower_khrushchev
+    common\national_focus\r56_soviet_civil_war.txt:255
+        icon = GFX_goal_nikita_khrushchev
+    common\national_focus\r56_soviet_civil_war.txt:281
+        name = "Nikita Khrushchev"
+    common\national_focus\r56_soviet_civil_war.txt:282
+        picture = "r56_portrait_SOV_Nikita_Khrushchev.dds"
+    common\national_focus\r56_soviet_civil_war.txt:299
+        set_country_flag = SOV_khruschev_flag
+    common\national_focus\soviet.txt:9580
+        icon = GFX_goal_nikita_khrushchev
+    common\national_focus\soviet.txt:9596
+        character = SOV_nikita_khrushchyov
+    common\national_focus\soviet.txt:11147
+        IF = { limit = { has_character = SOV_nikita_khrushchyov } retire_character = SOV_nikita_khrushchyov }
+    common\national_focus\soviet.txt:13402
+        SOV_nikita_khrushchyov = {
+    common\national_focus\soviet_old.txt:5443
+        has_country_flag = SOV_khruschev_flag
+    common\national_focus\soviet_old.txt:13838
+        mutually_exclusive = { focus = SOV_khruschev_takes_the_lead_old focus = SOV_berias_goons_strike_old }
+    common\national_focus\soviet_old.txt:13863
+        id = SOV_khruschev_takes_the_lead_old
+    common\national_focus\soviet_old.txt:13864
+        text = SOV_khruschev_takes_the_lead
+    common\national_focus\soviet_old.txt:13871
+        has_country_flag = purged_khrushchev
+    common\national_focus\soviet_old.txt:13890
+        name = "Nikita Khrushchev"
+    common\national_focus\soviet_old.txt:13891
+        desc = "POLITICS_KHRUSCHEV_DESC"
+    common\national_focus\soviet_old.txt:13892
+        picture = "gfx/leaders/SOV/r56_portrait_SOV_Nikita_Khrushchev.dds"
+    common\national_focus\soviet_old.txt:13907
+        mutually_exclusive = { focus = SOV_khruschev_takes_the_lead_old focus = SOV_consolidate_malenkovs_position_old }
+  --- events （2 行命中 / 1 个文件）---
+    events\SovietUnion.txt:804
+        retire_character = SOV_nikita_khrushchyov
+    events\SovietUnion.txt:1046
+        remove_ideas = nikita_khrushchyov
+  --- history （2 行命中 / 1 个文件）---
+    history\countries\SOV - Soviet union.txt:94
+        recruit_character = SOV_nikita_khrushchyov
+    history\countries\SOV - Soviet union.txt:294
+        SOV_nikita_khrushchyov = {
+  --- localisation （9 行命中 / 4 个文件）---
+    localisation\simp_chinese\loading_tips_l_simp_chinese.yml:179
+        LOADING_TIP_177:0 "哪儿的政客都一样，他们甚至可以在根本没有河的地方承诺建造一座桥。\n——尼基塔·赫鲁晓夫"
+    localisation\simp_chinese\loading_tips_l_simp_chinese.yml:367
+        LOADING_TIP_366:0 "不管你喜不喜欢，历史是站在我们这边的。我们会将你埋葬。\n——尼基塔·赫鲁晓夫"
+    localisation\simp_chinese\loading_tips_l_simp_chinese.yml:371
+        LOADING_TIP_370:0 "不管你喜不喜欢，历史是站在我们这边的。我们会将你埋葬。\n——尼基塔·赫鲁晓夫"
+    localisation\simp_chinese\oldsov_l_simp_chinese.yml:18
+        SOV_khruschev_takes_the_lead: "赫鲁晓夫掌权"
+    localisation\simp_chinese\r56_SOV_l_simp_chinese.yml:118
+        SOV_civil_war_empower_khrushchev:0 "授权赫鲁晓夫"
+    localisation\simp_chinese\r56_SOV_l_simp_chinese.yml:119
+        SOV_civil_war_empower_khrushchev_desc:0 "赫鲁晓夫是斯大林的最佳接班人，现在是他取代斯大林的位置并继续扩张我们国家的时候了"
+    localisation\simp_chinese\r56_SOV_l_simp_chinese.yml:517
+        SOV_forge_new_future_desc:0 "昔日的独裁者斯大林已经成为过去，那些不敢公开反对他罪行的人现在团结在尼基塔·赫鲁晓夫的麾下，这些是他在乌克兰的基本盘。赫鲁晓夫同志有才能，有正义感，可以结束其他党内巨头对苏联人民的统治，对他来说，获得足够的支持成为苏联共产党新任总书记轻而易举。"
+    localisation\simp_chinese\r56_SOV_l_simp_chinese.yml:525
+        SOV_denounce_stalinist_crimes_desc:0 "有传言称，赫鲁晓夫同志计划在不久的将来召开一次特别党代会，以纪念斯大林同志及其追随者在人民共和国的事迹。让我们看看文明世界对苏联的新共产主义统治会有什么看法！"
+    localisation\simp_chinese\SOV_l_simp_chinese.yml:29
+        SOV_khruschev_flag:0 "赫鲁晓夫在内战期间担任领导职务"
+  --- interface （7 行命中 / 3 个文件）---
+    interface\r56_goals.gfx:8912
+        name = "GFX_goal_nikita_khrushchev"
+    interface\r56_goals.gfx:8913
+        texturefile = "gfx/interface/goals/sov/r56_goal_SOV_nikita_khrushchev.dds"
+    interface\r56_goals_shine.gfx:65545
+        name = "GFX_goal_nikita_khrushchev_shine"
+    interface\r56_goals_shine.gfx:65546
+        texturefile = "gfx/interface/goals/sov/r56_goal_SOV_nikita_khrushchev.dds"
+    interface\r56_goals_shine.gfx:65549
+        animationmaskfile = "gfx/interface/goals/sov/r56_goal_SOV_nikita_khrushchev.dds"
+    interface\r56_goals_shine.gfx:65562
+        animationmaskfile = "gfx/interface/goals/sov/r56_goal_SOV_nikita_khrushchev.dds"
+    interface\_leader_portraits.gfx:8351
+        name = GFX_portrait_Nikita_Sergeyevich_Khrushchyov
+  --- gfx 下文件名命中（2 个）---
+    gfx\interface\goals\sov\r56_goal_SOV_nikita_khrushchev.dds
+    gfx\leaders\SOV\r56_portrait_SOV_Nikita_Khrushchev.dds
+
+==================== 本项目内现况 ====================
+  --- build\gen-hof-ic-s3.ps1 （10 行）---
+    1201:  #   ⛔ 不碰：1953「新方针」（让给赫鲁晓夫 Idx 21）/ 军事指挥（伏罗希洛夫 Idx 22）
+    1238:  @{ Idx = 21; Key = 'nikita_khrushchyov';     Zh = '尼基塔·赫鲁晓夫';
+    1239:  SeatDesc = '作为一名工人出身、又在乌克兰主持过一方的干部，尼基塔·赫鲁晓夫熟悉基层。如果邀请他加入最高苏维埃，我们相信他能在地方事务上发挥很大作用。';
+    1240:  Dds    = 'gfx/leaders/SOV/r56_portrait_SOV_Nikita_Khrushchev.dds';
+    1242:  Idea   = 'hof_ic_idea_nikita_khrushchyov';
+    1461:  #        nikita_khrushchyov —— 1956 秘密报告；1923-24 顿巴斯时期有托洛茨基反对派倾向
+    1468:  regime  = @('georgy_malenkow','nikita_khrushchyov','kliment_voroshilov')
+    2379:  'georgy_malenkow', 'nikita_khrushchyov', 'kliment_voroshilov')
+    4623:  #   ⛔ 丙「集体领导」已被排除：原版已占（SOV_begin_destalinization 等 10+ 条）+ 赫鲁晓夫（Idx 21）的招牌。
+    6250:  $regimeOk = @('georgy_malenkow','nikita_khrushchyov','kliment_voroshilov')
+  --- mod\heart_of_iron\common\national_focus\soviet.txt （38 行）---
+    84:  tooltip = hof_ic_not_seated_nikita_khrushchyov_tt
+    85:  NOT = { hof_ic_seated_nikita_khrushchyov = yes }
+    160:  tooltip = hof_ic_not_seated_nikita_khrushchyov_tt
+    161:  NOT = { hof_ic_seated_nikita_khrushchyov = yes }
+    236:  tooltip = hof_ic_not_seated_nikita_khrushchyov_tt
+    237:  NOT = { hof_ic_seated_nikita_khrushchyov = yes }
+    300:  tooltip = hof_ic_not_seated_nikita_khrushchyov_tt
+    301:  NOT = { hof_ic_seated_nikita_khrushchyov = yes }
+    360:  tooltip = hof_ic_not_seated_nikita_khrushchyov_tt
+    361:  NOT = { hof_ic_seated_nikita_khrushchyov = yes }
+    428:  tooltip = hof_ic_not_seated_nikita_khrushchyov_tt
+    429:  NOT = { hof_ic_seated_nikita_khrushchyov = yes }
+    500:  tooltip = hof_ic_not_seated_nikita_khrushchyov_tt
+    501:  NOT = { hof_ic_seated_nikita_khrushchyov = yes }
+    572:  tooltip = hof_ic_not_seated_nikita_khrushchyov_tt
+    573:  NOT = { hof_ic_seated_nikita_khrushchyov = yes }
+    644:  tooltip = hof_ic_not_seated_nikita_khrushchyov_tt
+    645:  NOT = { hof_ic_seated_nikita_khrushchyov = yes }
+    716:  tooltip = hof_ic_not_seated_nikita_khrushchyov_tt
+    717:  NOT = { hof_ic_seated_nikita_khrushchyov = yes }
+    792:  tooltip = hof_ic_not_seated_nikita_khrushchyov_tt
+    793:  NOT = { hof_ic_seated_nikita_khrushchyov = yes }
+    868:  tooltip = hof_ic_not_seated_nikita_khrushchyov_tt
+    869:  NOT = { hof_ic_seated_nikita_khrushchyov = yes }
+    944:  tooltip = hof_ic_not_seated_nikita_khrushchyov_tt
+    945:  NOT = { hof_ic_seated_nikita_khrushchyov = yes }
+    1319:  id = hof_ic_seat_nikita_khrushchyov
+    1320:  icon = GFX_hof_ic_seat_nikita_khrushchyov
+    1332:  tooltip = hof_ic_not_seated_nikita_khrushchyov_tt
+    1333:  NOT = { hof_ic_seated_nikita_khrushchyov = yes }
+    1391:  CHARACTER = SOV_nikita_khrushchyov
+    1393:  show_ideas_tooltip = hof_ic_idea_nikita_khrushchyov
+    1399:  CHARACTER = SOV_nikita_khrushchyov
+    1402:  hof_ic_appoint_nikita_khrushchyov = yes
+    18555:  icon = GFX_goal_nikita_khrushchev
+    18571:  character = SOV_nikita_khrushchyov
+    20122:  IF = { limit = { has_character = SOV_nikita_khrushchyov } retire_character = SOV_nikita_khrushchyov }
+    22377:  SOV_nikita_khrushchyov = {
+  --- mod\heart_of_iron\localisation\simp_chinese\hof_ic_roster_l_simp_chinese.yml （7 行）---
+    26:  hof_ic_name_nikita_khrushchyov:0 "尼基塔·赫鲁晓夫"
+    50:  hof_ic_trait_nikita_khrushchyov:0 "最高苏维埃委员"
+    74:  hof_ic_idea_nikita_khrushchyov:0 "尼基塔·赫鲁晓夫"
+    75:  hof_ic_idea_nikita_khrushchyov_desc:0 "尼基塔·赫鲁晓夫进入了最高苏维埃。他带来的专长会持续影响国家，代价是政治点收入下降。"
+    100:  hof_ic_seat_nikita_khrushchyov:0 "尼基塔·赫鲁晓夫进入最高苏维埃"
+    123:  hof_ic_seat_nikita_khrushchyov_desc:0 "作为一名工人出身、又在乌克兰主持过一方的干部，尼基塔·赫鲁晓夫熟悉基层。如果邀请他加入最高苏维埃，我们相信他能在地方事务上发挥很大作用。"
+    680:  hof_ic_not_seated_nikita_khrushchyov_tt:0 "§Y尼基塔·赫鲁晓夫§! 不在最高苏维埃中任职"

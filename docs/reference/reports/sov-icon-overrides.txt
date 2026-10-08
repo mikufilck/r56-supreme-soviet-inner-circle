@@ -1,0 +1,25 @@
+﻿==== focus_SOV_the_supreme_soviet.dds
+  [原版    ] F:\Hearts of Iron IV\gfx\interface\goals\focus_SOV_the_supreme_soviet.dds  (35328 B)
+==== focus_SOV_builder_of_the_red_army.dds
+  [原版    ] F:\Hearts of Iron IV\gfx\interface\career_profile\profile_pictures\goals\focus_SOV_builder_of_the_red_army.dds  (35328 B)
+  [原版    ] F:\Hearts of Iron IV\gfx\interface\goals\focus_SOV_builder_of_the_red_army.dds  (35328 B)
+==== focus_SOV_the_path_of_marxism_leninism.dds
+  [原版    ] F:\Hearts of Iron IV\gfx\interface\goals\focus_SOV_the_path_of_marxism_leninism.dds  (35328 B)
+==== focus_SOV_socialism_in_one_country.dds
+  [原版    ] F:\Hearts of Iron IV\gfx\interface\goals\focus_SOV_socialism_in_one_country.dds  (35328 B)
+==== focus_SOV_ally_bukharinists.dds
+  [原版    ] F:\Hearts of Iron IV\gfx\interface\goals\focus_SOV_ally_bukharinists.dds  (35328 B)
+==== focus_SOV_ally_zinovyevists.dds
+  [原版    ] F:\Hearts of Iron IV\gfx\interface\goals\focus_SOV_ally_zinovyevists.dds  (35328 B)
+==== focus_SOV_organize_wreckers.dds
+  [原版    ] F:\Hearts of Iron IV\gfx\interface\goals\focus_SOV_organize_wreckers.dds  (35328 B)
+==== focus_SOV_breadbasket_of_the_union.dds
+  [原版    ] F:\Hearts of Iron IV\gfx\interface\goals\focus_SOV_breadbasket_of_the_union.dds  (35328 B)
+==== focus_SOV_military_purge.dds
+  [原版    ] F:\Hearts of Iron IV\gfx\interface\goals\focus_SOV_military_purge.dds  (35328 B)
+==== focus_SOV_the_last_purge.dds
+  [原版    ] F:\Hearts of Iron IV\gfx\interface\goals\focus_SOV_the_last_purge.dds  (35328 B)
+==== focus_SOV_approach_tukahchevsky.dds
+  [原版    ] F:\Hearts of Iron IV\gfx\interface\goals\focus_SOV_approach_tukahchevsky.dds  (35328 B)
+==== focus_SOV_the_comecon.dds
+  [原版    ] F:\Hearts of Iron IV\gfx\interface\goals\focus_SOV_the_comecon.dds  (35328 B)

@@ -1,0 +1,69 @@
+﻿R56 interface/*.gfx 合计 7711983 字符
+
+=== A. 立绘 sprite 搜索（按角色 id 的姓名部分匹配）===
+  SOV_lev_trotsky                        -> （未找到）
+  SOV_karl_radek                         -> （未找到）
+  SOV_yevgeny_preobrazhensky             -> （未找到）
+  SOV_ivar_smilga                        -> （未找到）
+  SOV_ivan_smirnov                       -> GFX_portrait_SOV_ivan_smirnov , GFX_portrait_SOV_ivan_smirnov_small
+  SOV_grigory_zinovyev                   -> GFX_portrait_SOV_grigory_zinovyev , GFX_portrait_SOV_grigory_zinovyev_small
+  SOV_lev_kamenev                        -> GFX_portrait_SOV_lev_kamenev , GFX_portrait_SOV_lev_kamenev_small
+  SOV_nikolay_bukharin                   -> （未找到）
+  SOV_aleksey_rykov                      -> （未找到）
+  SOV_mikhail_tomsky                     -> （未找到）
+  SOV_martemyan_ryutin                   -> （未找到）
+  SOV_grigory_sokolnikov                 -> （未找到）
+  SOV_aleksandr_shlyapnikov              -> （未找到）
+
+=== B. 这些角色的 .dds 文件是否存在（按姓名模糊找）===
+  SOV_lev_trotsky                        -> r56_goal_SOV_trotsky_victory.dds , r56_portrait_SOV_Leon_Trotsky.dds
+  SOV_karl_radek                         -> 无 dds
+  SOV_yevgeny_preobrazhensky             -> 无 dds
+  SOV_ivar_smilga                        -> 无 dds
+  SOV_ivan_smirnov                       -> 无 dds
+  SOV_grigory_zinovyev                   -> 无 dds
+  SOV_lev_kamenev                        -> 无 dds
+  SOV_nikolay_bukharin                   -> 无 dds
+  SOV_aleksey_rykov                      -> 无 dds
+  SOV_mikhail_tomsky                     -> 无 dds
+  SOV_martemyan_ryutin                   -> 无 dds
+  SOV_grigory_sokolnikov                 -> 无 dds
+  SOV_aleksandr_shlyapnikov              -> 无 dds
+
+=== C. 对照：德国那套立绘的 sprite 命名长什么样 ===
+  GFX_portrait_GER_hans_von_luck
+  GFX_portrait_GER_hans_von_luck_small
+  GFX_portrait_GER_wilhelm_ritter_von_thoma
+  GFX_portrait_GER_wilhelm_ritter_von_thoma_small
+  GFX_portrait_GER_helmuth_walter
+  GFX_portrait_GER_alfred_rosenberg
+  GFX_portrait_GER_arno_schickedanz
+  GFX_portrait_GER_duke_adolf_friedrich_of_mecklenburg
+  GFX_portrait_GER_erich_koch
+  GFX_portrait_GER_franz_ritter_von_epp
+  GFX_portrait_GER_hinrich_lohse
+  GFX_portrait_GER_joseph_goebbels
+  GFX_portrait_GER_konstantin_von_neurath
+  GFX_portrait_GER_oswald_lutz
+  GFX_portrait_GER_rolf_carls
+  GFX_portrait_GER_theodor_seitz
+  GFX_portrait_GER_walther_nehring
+  GFX_portrait_GER_weli_kayum_chan
+  GFX_portrait_GER_werner_von_blomberg
+  GFX_portrait_GER_werner_von_fritsch
+  GFX_portrait_GER_heinrich_schnee
+  GFX_portrait_GER_siegfried_kasche
+  GFX_portrait_GER_albert_speer
+  GFX_portrait_GER_fritz_todt
+  GFX_portrait_GER_adolf_hitler
+  GFX_portrait_GER_eva_braun
+  GFX_portrait_GER_hermann_ehrhardt
+  GFX_portrait_GER_rudolf_hess
+  GFX_portrait_GER_wilhelm_iv
+  GFX_portrait_GER_josef_grohe
+  GFX_portrait_GER_martin_bormann
+  GFX_portrait_GER_hans_frank
+  GFX_portrait_GER_walter_warlimont
+  GFX_portrait_GER_hermann_goring
+  GFX_portrait_GER_heinrich_himmler
+  GFX_portrait_GER_hans_krebs

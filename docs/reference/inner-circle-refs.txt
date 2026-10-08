@@ -1,0 +1,1411 @@
+﻿================ GER_the_inner_circle_dm ================
+  [R56] common\dynamic_modifiers\wuw_dynamic_modifiers.txt   (2 处)
+        L1008: GER_the_inner_circle_dm = {
+        L1015: custom_modifier_tooltip = GER_the_inner_circle_dm_tt
+  [R56] common\national_focus\germany.txt   (1 处)
+        L21323: modifier = GER_the_inner_circle_dm
+  [原版] common\dynamic_modifiers\wuw_dynamic_modifiers.txt   (2 处)
+        L941: GER_the_inner_circle_dm = {
+        L948: custom_modifier_tooltip = GER_the_inner_circle_dm_tt
+  [原版] common\national_focus\germany.txt   (1 处)
+        L18276: modifier = GER_the_inner_circle_dm
+  [原版] localisation\braz_por\WUW_ideas_l_braz_por.yml   (3 处)
+        L352: GER_the_inner_circle_dm: "O círculo interno"
+        L353: GER_the_inner_circle_dm_desc: "O círculo interno do Führer é formado pela elite política d[GER.GetNameDef], lealistas fervorosos dispostos a promover a vis?o de [GER.GetLeader]. Cheios de ambi??o, todos se esfor?am para ascender no círculo interno e se tornar Reichsleiter, líder do Reich. Sua influência molda decis?es militares, industriais e políticas, orientando a dire??o do governo alem?o. No entanto, essa ambi??o também é uma fonte de tens?o, pois leva a intrigas e trai??es."
+        L354: GER_the_inner_circle_dm_tt: "Conselheiros do §Ycírculo interno§! ativos: \n[GetAscendedAdvisor1][GetAscendedAdvisor2][GetAscendedAdvisor3]"
+  [原版] localisation\english\wuw_ideas_l_english.yml   (3 处)
+        L390: GER_the_inner_circle_dm: "The Inner Circle"
+        L391: GER_the_inner_circle_dm_desc: "The Führer’s Inner Circle contains the political elite of [GER.GetNameDef], fervent loyalists ready to advance [GER.GetLeader]’s vision. Rife with ambition, they all strive to Ascend within the Inner Circle to become Reichsleiter, Reich Leader. Their influence shapes military, industrial, and political decisions alike and drives German policymaking. Their drive is also a source of tension, as ambition leads to intrigue and betrayal."
+        L392: GER_the_inner_circle_dm_tt: "Active §YInner Circle§! Advisors: \n[GetAscendedAdvisor1][GetAscendedAdvisor2][GetAscendedAdvisor3]"
+  [原版] localisation\french\WUW_ideas_l_french.yml   (3 处)
+        L352: GER_the_inner_circle_dm: "Le Cercle intime"
+        L353: GER_the_inner_circle_dm_desc: "Le Cercle intime du Führer rassemble l'élite politique [GER.GetDuDelaDelNP] [GER.GetName], des loyalistes implacables prêts à tout pour concrétiser la vision de [GER.GetLeader]. L'ambition est ma?tre ici, et tous cherchent à s'élever au sein de ce cercle jusqu'à atteindre le poste de Reichsleiter, le dirigeant ultime. Leur influence s'étend jusqu'à l'armée, l'industrie et la politique. Leur motivation sans fin peut provoquer des tensions, car on sait que de l'ambition na?t la trahison."
+        L354: GER_the_inner_circle_dm_tt: "Conseillers actifs du §YCercle Intime§!?: \n[GetAscendedAdvisor1][GetAscendedAdvisor2][GetAscendedAdvisor3]"
+  [原版] localisation\german\WUW_ideas_l_german.yml   (3 处)
+        L352: GER_the_inner_circle_dm: "Innerer Kreis"
+        L353: GER_the_inner_circle_dm_desc: "Der Innere Kreis des Führers setzt sich aus der politischen Elite von [GER.GetName] zusammen, getreuen Loyalisten, die bereit sind, die Vision von [GER.GetLeader] voranzutreiben. Jedes Mitglied des Inneren Kreises strebt danach, in ihm aufzusteigen und Reichsleiter zu werden. Der Einfluss der Mitglieder pr?gt gleicherma?en milit?rische, industrielle und politische Entscheidungen und bestimmt ma?geblich über die deutsche Politik. Ihre Ambitionen führen gelegentlich jedoch auch zu Spannungen, geschürt durch Intrigen und Verrat."
+        L354: GER_the_inner_circle_dm_tt: "Aktiviert die Berater des §YInneren Kreises§!:\n[GetAscendedAdvisor1][GetAscendedAdvisor2][GetAscendedAdvisor3]"
+  [原版] localisation\japanese\WUW_ideas_l_japanese.yml   (3 处)
+        L352: GER_the_inner_circle_dm: "側近"
+        L353: GER_the_inner_circle_dm_desc: "総統の側近には[GER.GetNameDef]の政治エリートや、[GER.GetLeader]の描く未来を推進する熱心な支持者たちが含まれている。野心に満ちた彼らは、側近内で昇格し、帝国の全国指導者になるために努力している。その影響力は軍事、産業、政治の意思決定に等しく影響を与え、ドイツの政策立案を推進している。野心は陰謀や裏切りにつながることも多く、彼らの意欲は緊張も生み出している。"
+        L354: GER_the_inner_circle_dm_tt: "活動中の相談役§Y側近§!: \n[GetAscendedAdvisor1][GetAscendedAdvisor2][GetAscendedAdvisor3]"
+  [原版] localisation\korean\wuw_ideas_l_korean.yml   (3 处)
+        L352: GER_the_inner_circle_dm: "??? ??"
+        L353: GER_the_inner_circle_dm_desc: "?? ??? ??? ??? [GER.GetLeader]? ??? ?? ??? ???? [GER.GetNameDef]? ???? ???? ??? ????? ???? ????. ???? ??? ??? ???? ???? ?? ???, ??? ???? ??? ??? ????. ??? ???? ??, ??, ??? ??? ?? ??? ??????. ??? ??? ??? ??? ??? ???? ??? ???? ????."
+        L354: GER_the_inner_circle_dm_tt: "???? §Y??? ??§! ???:\n[GetAscendedAdvisor1] [GetAscendedAdvisor2] [GetAscendedAdvisor3]"
+  [原版] localisation\polish\WUW_ideas_l_polish.yml   (3 处)
+        L352: GER_the_inner_circle_dm: "Wewn?trzny kr?g"
+        L353: GER_the_inner_circle_dm_desc: "Wewn?trzny kr?g Führera sk?ada si? z przedstawicieli [GER.GetAdjective] elity politycznej, zagorza?ych lojalistów, dla których [GER.GetLeader] i jego wizja to przysz?o??. To ludzie bardzo ambitni, pragn? awansowa? w wewn?trznym kr?gu, by obj?? stanowisko Reichsleitera, czyli przywódcy rzeszy. To oni wp?ywaj? na decyzje wojskowe, przemys?owe i polityczne, a tak?e nadaj? kierunki niemieckiemu ustawodawstwu. Ambicje tych ludzi s? te? ?ród?em napi??, poniewa? prowadz? do zdrad i intryg."
+        L354: GER_the_inner_circle_dm_tt: "Aktywni doradcy w §Ywewn?trznym kr?gu§!: \n[GetAscendedAdvisor1][GetAscendedAdvisor2][GetAscendedAdvisor3]"
+  [原版] localisation\russian\WUW_ideas_l_russian.yml   (3 处)
+        L352: GER_the_inner_circle_dm: "Внутренний круг"
+        L353: GER_the_inner_circle_dm_desc: "Во внутреннем круге фюрера находится политическая элита [GER.GetNameRuGen], пылкие лоялисты, готовые продвигать идеи, которые проповедует [GER.GetLeader]. Они полны амбиций, и каждый из них желает возвыситься во внутреннем круге и стать рейхсляйтером, лидером Рейха. Они влияют на военные, промышленные и политические решения, на политику Германии в целом. Их целеустремленность?— еще и источник напряженности, ведь амбиции?— путь к интригам и предательству."
+        L354: GER_the_inner_circle_dm_tt: "Действующие советники §Yвнутреннего круга§!: \n[GetAscendedAdvisor1][GetAscendedAdvisor2][GetAscendedAdvisor3]"
+  [原版] localisation\simp_chinese\WUW_ideas_l_simp_chinese.yml   (3 处)
+        L352: GER_the_inner_circle_dm: "核心集团"
+        L353: GER_the_inner_circle_dm_desc: "元首的核心集团囊括了[GER.GetNameDef]的政治精英，都是狂热的忠诚分子，致力于推进[GER.GetLeader]的愿景。尽管他们充满野心，努力在核心集团内晋升为“帝国领袖”，他们的影响力塑造了军事、工业和政治决策，并推动德国的政策制定。然而，他们的野心也是紧张的根源，导致了阴谋和背叛。"
+        L354: GER_the_inner_circle_dm_tt: "现任§Y核心集团§!顾问：\n[GetAscendedAdvisor1][GetAscendedAdvisor2][GetAscendedAdvisor3]"
+  [原版] localisation\spanish\WUW_ideas_l_spanish.yml   (3 处)
+        L352: GER_the_inner_circle_dm: "El círculo de confianza"
+        L353: GER_the_inner_circle_dm_desc: "En el círculo de confianza del Führer se encuentra la élite política de [GER.GetNameDef]: personas fervientes y leales dispuestas a hacer realidad la visión de [GER.GetLeader]. Su ambición los lleva a todos ellos a luchar por convertirse en Reichsleiter y liderar el Reich. Su influencia condiciona tanto las decisiones militares como las industriales y políticas, e impulsa la formulación de políticas de Alemania. Esta ambición es también una fuente de tensiones, ya que provoca conspiraciones y traiciones."
+        L354: GER_the_inner_circle_dm_tt: "Consejeros del §Ycírculo De Confianza§! activos: \n[GetAscendedAdvisor1], [GetAscendedAdvisor2], [GetAscendedAdvisor3]"
+
+================ GER_ascended_advisor ================
+  [R56] common\focus_inlay_windows\ger_inner_circle_inlay_window.txt   (69 处)
+        L71: check_variable = { GER_ascended_advisor_1 = 0 }
+        L74: check_variable = { GER_ascended_advisor_1 = 1 }
+        L77: check_variable = { GER_ascended_advisor_1 = 2 }
+        L80: check_variable = { GER_ascended_advisor_1 = 3 }
+        L83: check_variable = { GER_ascended_advisor_1 = 4 }
+        L86: check_variable = { GER_ascended_advisor_1 = 5 }
+        L89: check_variable = { GER_ascended_advisor_1 = 6 }
+        L92: check_variable = { GER_ascended_advisor_1 = 7 }
+        L97: check_variable = { GER_ascended_advisor_2 = 0 }
+        L100: check_variable = { GER_ascended_advisor_2 = 1 }
+        L103: check_variable = { GER_ascended_advisor_2 = 2 }
+        L106: check_variable = { GER_ascended_advisor_2 = 3 }
+        L109: check_variable = { GER_ascended_advisor_2 = 4 }
+        L112: check_variable = { GER_ascended_advisor_2 = 5 }
+        L115: check_variable = { GER_ascended_advisor_2 = 6 }
+        L118: check_variable = { GER_ascended_advisor_2 = 7 }
+        L123: check_variable = { GER_ascended_advisor_3 = 0 }
+        L126: check_variable = { GER_ascended_advisor_3 = 1 }
+        L129: check_variable = { GER_ascended_advisor_3 = 2 }
+        L132: check_variable = { GER_ascended_advisor_3 = 3 }
+        L135: check_variable = { GER_ascended_advisor_3 = 4 }
+        L138: check_variable = { GER_ascended_advisor_3 = 5 }
+        L141: check_variable = { GER_ascended_advisor_3 = 6 }
+        L144: check_variable = { GER_ascended_advisor_3 = 7 }
+        L150: check_variable = { GER_ascended_advisor_1 = 0 compare = not_equals }
+        L156: check_variable = { GER_ascended_advisor_2 = 0 compare = not_equals }
+        L162: check_variable = { GER_ascended_advisor_3 = 0 compare = not_equals }
+        L171: check_variable = { GER_ascended_advisor_1 = 1 }
+        L172: check_variable = { GER_ascended_advisor_2 = 1 }
+        L173: check_variable = { GER_ascended_advisor_3 = 1 }
+        L177: check_variable = { GER_ascended_advisor_1 = 0 compare = not_equals }
+        L178: check_variable = { GER_ascended_advisor_2 = 0 compare = not_equals }
+        L179: check_variable = { GER_ascended_advisor_3 = 0 compare = not_equals }
+        L186: check_variable = { GER_ascended_advisor_1 = 2 }
+        L187: check_variable = { GER_ascended_advisor_2 = 2 }
+        L188: check_variable = { GER_ascended_advisor_3 = 2 }
+        L192: check_variable = { GER_ascended_advisor_1 = 0 compare = not_equals }
+        L193: check_variable = { GER_ascended_advisor_2 = 0 compare = not_equals }
+        L194: check_variable = { GER_ascended_advisor_3 = 0 compare = not_equals }
+        L201: check_variable = { GER_ascended_advisor_1 = 3 }
+        L202: check_variable = { GER_ascended_advisor_2 = 3 }
+        L203: check_variable = { GER_ascended_advisor_3 = 3 }
+        L207: check_variable = { GER_ascended_advisor_1 = 0 compare = not_equals }
+        L208: check_variable = { GER_ascended_advisor_2 = 0 compare = not_equals }
+        L209: check_variable = { GER_ascended_advisor_3 = 0 compare = not_equals }
+        L216: check_variable = { GER_ascended_advisor_1 = 4 }
+        L217: check_variable = { GER_ascended_advisor_2 = 4 }
+        L218: check_variable = { GER_ascended_advisor_3 = 4 }
+        L222: check_variable = { GER_ascended_advisor_1 = 0 compare = not_equals }
+        L223: check_variable = { GER_ascended_advisor_2 = 0 compare = not_equals }
+        L224: check_variable = { GER_ascended_advisor_3 = 0 compare = not_equals }
+        L231: check_variable = { GER_ascended_advisor_1 = 5 }
+        L232: check_variable = { GER_ascended_advisor_2 = 5 }
+        L233: check_variable = { GER_ascended_advisor_3 = 5 }
+        L237: check_variable = { GER_ascended_advisor_1 = 0 compare = not_equals }
+        L238: check_variable = { GER_ascended_advisor_2 = 0 compare = not_equals }
+        L239: check_variable = { GER_ascended_advisor_3 = 0 compare = not_equals }
+        L249: check_variable = { GER_ascended_advisor_1 = 6 }
+        L250: check_variable = { GER_ascended_advisor_2 = 6 }
+        L251: check_variable = { GER_ascended_advisor_3 = 6 }
+        L255: check_variable = { GER_ascended_advisor_1 = 0 compare = not_equals }
+        L256: check_variable = { GER_ascended_advisor_2 = 0 compare = not_equals }
+        L257: check_variable = { GER_ascended_advisor_3 = 0 compare = not_equals }
+        L264: check_variable = { GER_ascended_advisor_1 = 7 }
+        L265: check_variable = { GER_ascended_advisor_2 = 7 }
+        L266: check_variable = { GER_ascended_advisor_3 = 7 }
+        L270: check_variable = { GER_ascended_advisor_1 = 0 compare = not_equals }
+        L271: check_variable = { GER_ascended_advisor_2 = 0 compare = not_equals }
+        L272: check_variable = { GER_ascended_advisor_3 = 0 compare = not_equals }
+  [R56] common\national_focus\germany.txt   (132 处)
+        L21393: check_variable = { GER_ascended_advisor_1 = 1 }
+        L21394: check_variable = { GER_ascended_advisor_2 = 1 }
+        L21395: check_variable = { GER_ascended_advisor_3 = 1 }
+        L21402: check_variable = { GER_ascended_advisor_1 = 0 compare = not_equals }
+        L21403: check_variable = { GER_ascended_advisor_2 = 0 compare = not_equals }
+        L21404: check_variable = { GER_ascended_advisor_3 = 0 compare = not_equals }
+        L21424: check_variable = { GER_ascended_advisor_1 = 0 }
+        L21426: set_variable = { GER_ascended_advisor_1 = 1 }
+        L21430: check_variable = { GER_ascended_advisor_2 = 0 }
+        L21432: set_variable = { GER_ascended_advisor_2 = 1 }
+        L21436: check_variable = { GER_ascended_advisor_3 = 0 }
+        L21438: set_variable = { GER_ascended_advisor_3 = 1 }
+        L21718: check_variable = { GER_ascended_advisor_1 = 2 }
+        L21719: check_variable = { GER_ascended_advisor_2 = 2 }
+        L21720: check_variable = { GER_ascended_advisor_3 = 2 }
+        L21727: check_variable = { GER_ascended_advisor_1 = 0 compare = not_equals }
+        L21728: check_variable = { GER_ascended_advisor_2 = 0 compare = not_equals }
+        L21729: check_variable = { GER_ascended_advisor_3 = 0 compare = not_equals }
+        L21749: check_variable = { GER_ascended_advisor_1 = 0 }
+        L21751: set_variable = { GER_ascended_advisor_1 = 2 }
+        L21755: check_variable = { GER_ascended_advisor_2 = 0 }
+        L21757: set_variable = { GER_ascended_advisor_2 = 2 }
+        L21761: check_variable = { GER_ascended_advisor_3 = 0 }
+        L21763: set_variable = { GER_ascended_advisor_3 = 2 }
+        L22211: check_variable = { GER_ascended_advisor_1 = 3 }
+        L22212: check_variable = { GER_ascended_advisor_2 = 3 }
+        L22213: check_variable = { GER_ascended_advisor_3 = 3 }
+        L22220: check_variable = { GER_ascended_advisor_1 = 0 compare = not_equals }
+        L22221: check_variable = { GER_ascended_advisor_2 = 0 compare = not_equals }
+        L22222: check_variable = { GER_ascended_advisor_3 = 0 compare = not_equals }
+        L22242: check_variable = { GER_ascended_advisor_1 = 0 }
+        L22244: set_variable = { GER_ascended_advisor_1 = 3 }
+        L22248: check_variable = { GER_ascended_advisor_2 = 0 }
+        L22250: set_variable = { GER_ascended_advisor_2 = 3 }
+        L22254: check_variable = { GER_ascended_advisor_3 = 0 }
+        L22256: set_variable = { GER_ascended_advisor_3 = 3 }
+        L22714: check_variable = { GER_ascended_advisor_1 = 4 }
+        L22715: check_variable = { GER_ascended_advisor_2 = 4 }
+        L22716: check_variable = { GER_ascended_advisor_3 = 4 }
+        L22723: check_variable = { GER_ascended_advisor_1 = 0 compare = not_equals }
+        L22724: check_variable = { GER_ascended_advisor_2 = 0 compare = not_equals }
+        L22725: check_variable = { GER_ascended_advisor_3 = 0 compare = not_equals }
+        L22749: check_variable = { GER_ascended_advisor_1 = 0 }
+        L22751: set_variable = { GER_ascended_advisor_1 = 4 }
+        L22755: check_variable = { GER_ascended_advisor_2 = 0 }
+        L22757: set_variable = { GER_ascended_advisor_2 = 4 }
+        L22761: check_variable = { GER_ascended_advisor_3 = 0 }
+        L22763: set_variable = { GER_ascended_advisor_3 = 4 }
+        L23450: check_variable = { GER_ascended_advisor_1 = 5 }
+        L23451: check_variable = { GER_ascended_advisor_2 = 5 }
+        L23452: check_variable = { GER_ascended_advisor_3 = 5 }
+        L23459: check_variable = { GER_ascended_advisor_1 = 0 compare = not_equals }
+        L23460: check_variable = { GER_ascended_advisor_2 = 0 compare = not_equals }
+        L23461: check_variable = { GER_ascended_advisor_3 = 0 compare = not_equals }
+        L23481: check_variable = { GER_ascended_advisor_1 = 0 }
+        L23483: set_variable = { GER_ascended_advisor_1 = 5 }
+        L23487: check_variable = { GER_ascended_advisor_2 = 0 }
+        L23489: set_variable = { GER_ascended_advisor_2 = 5 }
+        L23493: check_variable = { GER_ascended_advisor_3 = 0 }
+        L23495: set_variable = { GER_ascended_advisor_3 = 5 }
+        L23767: check_variable = { GER_ascended_advisor_1 = 6 }
+        L23768: check_variable = { GER_ascended_advisor_2 = 6 }
+        L23769: check_variable = { GER_ascended_advisor_3 = 6 }
+        L23776: check_variable = { GER_ascended_advisor_1 = 0 compare = not_equals }
+        L23777: check_variable = { GER_ascended_advisor_2 = 0 compare = not_equals }
+        L23778: check_variable = { GER_ascended_advisor_3 = 0 compare = not_equals }
+        L23798: check_variable = { GER_ascended_advisor_1 = 0 }
+        L23800: set_variable = { GER_ascended_advisor_1 = 6 }
+        L23804: check_variable = { GER_ascended_advisor_2 = 0 }
+        L23806: set_variable = { GER_ascended_advisor_2 = 6 }
+        L23810: check_variable = { GER_ascended_advisor_3 = 0 }
+        L23812: set_variable = { GER_ascended_advisor_3 = 6 }
+        L23889: check_variable = { GER_ascended_advisor_1 = 7 }
+        L23890: check_variable = { GER_ascended_advisor_2 = 7 }
+        L23891: check_variable = { GER_ascended_advisor_3 = 7 }
+        L23898: check_variable = { GER_ascended_advisor_1 = 0 compare = not_equals }
+        L23899: check_variable = { GER_ascended_advisor_2 = 0 compare = not_equals }
+        L23900: check_variable = { GER_ascended_advisor_3 = 0 compare = not_equals }
+        L23920: check_variable = { GER_ascended_advisor_1 = 0 }
+        L23922: set_variable = { GER_ascended_advisor_1 = 7 }
+        L23926: check_variable = { GER_ascended_advisor_2 = 0 }
+        L23928: set_variable = { GER_ascended_advisor_2 = 7 }
+        L23932: check_variable = { GER_ascended_advisor_3 = 0 }
+        L23934: set_variable = { GER_ascended_advisor_3 = 7 }
+        L24269: check_variable = { GER_ascended_advisor_1 = 1 }
+        L24270: check_variable = { GER_ascended_advisor_2 = 1 }
+        L24271: check_variable = { GER_ascended_advisor_3 = 1 }
+        L24272: check_variable = { GER_ascended_advisor_1 = 2 }
+        L24273: check_variable = { GER_ascended_advisor_2 = 2 }
+        L24274: check_variable = { GER_ascended_advisor_3 = 2 }
+        L24280: check_variable = { GER_ascended_advisor_1 = 3 }
+        L24281: check_variable = { GER_ascended_advisor_2 = 3 }
+        L24282: check_variable = { GER_ascended_advisor_3 = 3 }
+        L24288: check_variable = { GER_ascended_advisor_1 = 4 }
+        L24289: check_variable = { GER_ascended_advisor_2 = 4 }
+        L24290: check_variable = { GER_ascended_advisor_3 = 4 }
+        L24296: check_variable = { GER_ascended_advisor_1 = 5 }
+        L24297: check_variable = { GER_ascended_advisor_2 = 5 }
+        L24298: check_variable = { GER_ascended_advisor_3 = 5 }
+        L24304: check_variable = { GER_ascended_advisor_1 = 6 }
+        L24305: check_variable = { GER_ascended_advisor_2 = 6 }
+        L24306: check_variable = { GER_ascended_advisor_3 = 6 }
+        L24307: check_variable = { GER_ascended_advisor_1 = 7 }
+        L24308: check_variable = { GER_ascended_advisor_2 = 7 }
+        L24309: check_variable = { GER_ascended_advisor_3 = 7 }
+        L24346: check_variable = { GER_ascended_advisor_1 = 0 compare = not_equals }
+        L24347: check_variable = { GER_ascended_advisor_2 = 0 compare = not_equals }
+        L24348: check_variable = { GER_ascended_advisor_3 = 0 compare = not_equals }
+        L24380: check_variable = { GER_ascended_advisor_1 = 1 }
+        L24381: check_variable = { GER_ascended_advisor_2 = 1 }
+        L24382: check_variable = { GER_ascended_advisor_3 = 1 }
+        L24383: check_variable = { GER_ascended_advisor_1 = 2 }
+        L24384: check_variable = { GER_ascended_advisor_2 = 2 }
+        L24385: check_variable = { GER_ascended_advisor_3 = 2 }
+        L24391: check_variable = { GER_ascended_advisor_1 = 3 }
+        L24392: check_variable = { GER_ascended_advisor_2 = 3 }
+        L24393: check_variable = { GER_ascended_advisor_3 = 3 }
+        L24399: check_variable = { GER_ascended_advisor_1 = 4 }
+        L24400: check_variable = { GER_ascended_advisor_2 = 4 }
+        L24401: check_variable = { GER_ascended_advisor_3 = 4 }
+        L24407: check_variable = { GER_ascended_advisor_1 = 5 }
+        L24408: check_variable = { GER_ascended_advisor_2 = 5 }
+        L24409: check_variable = { GER_ascended_advisor_3 = 5 }
+        L24415: check_variable = { GER_ascended_advisor_1 = 6 }
+        L24416: check_variable = { GER_ascended_advisor_2 = 6 }
+        L24417: check_variable = { GER_ascended_advisor_3 = 6 }
+        L24418: check_variable = { GER_ascended_advisor_1 = 7 }
+        L24419: check_variable = { GER_ascended_advisor_2 = 7 }
+        L24420: check_variable = { GER_ascended_advisor_3 = 7 }
+        L71956: #			set_variable = { GER_ascended_advisor_1 = 0 } #Ascended Advisor Portrait
+        L71957: #			set_variable = { GER_ascended_advisor_2 = 0 } #Ascended Advisor Portrait
+        L71958: #			set_variable = { GER_ascended_advisor_3 = 0 } #Ascended Advisor Portrait
+  [R56] common\scripted_effects\GER_scripted_effects.txt   (72 处)
+        L2652: check_variable = { GER_ascended_advisor_1 = 1 }
+        L2658: check_variable = { GER_ascended_advisor_1 = 2 }
+        L2664: check_variable = { GER_ascended_advisor_1 = 3 }
+        L2670: check_variable = { GER_ascended_advisor_1 = 4 }
+        L2676: check_variable = { GER_ascended_advisor_1 = 5 }
+        L2682: check_variable = { GER_ascended_advisor_1 = 6 }
+        L2688: check_variable = { GER_ascended_advisor_1 = 7 }
+        L2693: log = "Something bad happened trying to remove advisor [?GER_ascended_advisor_1] effects."
+        L2707: check_variable = { GER_ascended_advisor_2 = 1 }
+        L2713: check_variable = { GER_ascended_advisor_2 = 2 }
+        L2719: check_variable = { GER_ascended_advisor_2 = 3 }
+        L2725: check_variable = { GER_ascended_advisor_2 = 4 }
+        L2731: check_variable = { GER_ascended_advisor_2 = 5 }
+        L2737: check_variable = { GER_ascended_advisor_2 = 6 }
+        L2743: check_variable = { GER_ascended_advisor_2 = 7 }
+        L2748: log = "Something bad happened trying to remove advisor [?GER_ascended_advisor_2] effects."
+        L2762: check_variable = { GER_ascended_advisor_3 = 1 }
+        L2768: check_variable = { GER_ascended_advisor_3 = 2 }
+        L2774: check_variable = { GER_ascended_advisor_3 = 3 }
+        L2780: check_variable = { GER_ascended_advisor_3 = 4 }
+        L2786: check_variable = { GER_ascended_advisor_3 = 5 }
+        L2792: check_variable = { GER_ascended_advisor_3 = 6 }
+        L2798: check_variable = { GER_ascended_advisor_3 = 7 }
+        L2803: log = "Something bad happened trying to remove advisor [?GER_ascended_advisor_3] effects."
+        L2923: check_variable = { GER_ascended_advisor_1 = 1 }
+        L2925: set_variable = { GER_ascended_advisor_1 = 0 }
+        L2929: check_variable = { GER_ascended_advisor_2 = 1 }
+        L2931: set_variable = { GER_ascended_advisor_2 = 0 }
+        L2935: check_variable = { GER_ascended_advisor_3 = 1 }
+        L2937: set_variable = { GER_ascended_advisor_3 = 0 }
+        L3004: check_variable = { GER_ascended_advisor_1 = 2 }
+        L3006: set_variable = { GER_ascended_advisor_1 = 0 }
+        L3010: check_variable = { GER_ascended_advisor_2 = 2 }
+        L3012: set_variable = { GER_ascended_advisor_2 = 0 }
+        L3016: check_variable = { GER_ascended_advisor_3 = 2 }
+        L3018: set_variable = { GER_ascended_advisor_3 = 0 }
+        L3083: check_variable = { GER_ascended_advisor_1 = 3 }
+        L3085: set_variable = { GER_ascended_advisor_1 = 0 }
+        L3089: check_variable = { GER_ascended_advisor_2 = 3 }
+        L3091: set_variable = { GER_ascended_advisor_2 = 0 }
+        L3095: check_variable = { GER_ascended_advisor_3 = 3 }
+        L3097: set_variable = { GER_ascended_advisor_3 = 0 }
+        L3196: check_variable = { GER_ascended_advisor_1 = 4 }
+        L3198: set_variable = { GER_ascended_advisor_1 = 0 }
+        L3202: check_variable = { GER_ascended_advisor_2 = 4 }
+        L3204: set_variable = { GER_ascended_advisor_2 = 0 }
+        L3208: check_variable = { GER_ascended_advisor_3 = 4 }
+        L3210: set_variable = { GER_ascended_advisor_3 = 0 }
+        L3299: check_variable = { GER_ascended_advisor_1 = 5 }
+        L3301: set_variable = { GER_ascended_advisor_1 = 0 }
+        L3305: check_variable = { GER_ascended_advisor_2 = 5 }
+        L3307: set_variable = { GER_ascended_advisor_2 = 0 }
+        L3311: check_variable = { GER_ascended_advisor_3 = 5 }
+        L3313: set_variable = { GER_ascended_advisor_3 = 0 }
+        L3432: check_variable = { GER_ascended_advisor_1 = 6 }
+        L3434: set_variable = { GER_ascended_advisor_1 = 0 }
+        L3438: check_variable = { GER_ascended_advisor_2 = 6 }
+        L3440: set_variable = { GER_ascended_advisor_2 = 0 }
+        L3444: check_variable = { GER_ascended_advisor_3 = 6 }
+        L3446: set_variable = { GER_ascended_advisor_3 = 0 }
+        L3527: check_variable = { GER_ascended_advisor_1 = 7 }
+        L3529: set_variable = { GER_ascended_advisor_1 = 0 }
+        L3533: check_variable = { GER_ascended_advisor_2 = 7 }
+        L3535: set_variable = { GER_ascended_advisor_2 = 0 }
+        L3539: check_variable = { GER_ascended_advisor_3 = 7 }
+        L3541: set_variable = { GER_ascended_advisor_3 = 0 }
+        L3556: check_variable = { GER_ascended_advisor_1 = 2 }
+        L3557: check_variable = { GER_ascended_advisor_2 = 2 }
+        L3558: check_variable = { GER_ascended_advisor_3 = 2 }
+        L3566: check_variable = { GER_ascended_advisor_1 = 1 }
+        L3567: check_variable = { GER_ascended_advisor_2 = 1 }
+        L3568: check_variable = { GER_ascended_advisor_3 = 1 }
+  [R56] events\WUW_Germany.txt   (192 处)
+        L21848: check_variable = { GER_ascended_advisor_1 = 7 } #Bormann ascended in this slot
+        L21856: set_variable = { GER_ascended_advisor_1 = GER_ascending_advisor }
+        L21875: check_variable = { GER_ascended_advisor_2 = 7 } #Bormann ascended in this slot
+        L21883: set_variable = { GER_ascended_advisor_2 = GER_ascending_advisor }
+        L21902: check_variable = { GER_ascended_advisor_3 = 7 } #Bormann ascended in this slot
+        L21910: set_variable = { GER_ascended_advisor_3 = GER_ascending_advisor }
+        L22034: check_variable = { GER_ascended_advisor_1 = 3 } #G?ring
+        L22035: check_variable = { GER_ascended_advisor_1 = 4 } #Himmler
+        L22042: check_variable = { GER_ascended_advisor_1 = 1 }
+        L22056: check_variable = { GER_ascended_advisor_1 = 2 }
+        L22070: check_variable = { GER_ascended_advisor_1 = 3 }
+        L22084: check_variable = { GER_ascended_advisor_1 = 4 }
+        L22114: check_variable = { GER_ascended_advisor_1 = 5 }
+        L22144: check_variable = { GER_ascended_advisor_1 = 6 }
+        L22174: check_variable = { GER_ascended_advisor_1 = 7 }
+        L22210: check_variable = { GER_ascended_advisor_2 = 3 } #G?ring
+        L22211: check_variable = { GER_ascended_advisor_2 = 4 } #Himmler
+        L22218: check_variable = { GER_ascended_advisor_2 = 1 }
+        L22232: check_variable = { GER_ascended_advisor_2 = 2 }
+        L22246: check_variable = { GER_ascended_advisor_2 = 3 }
+        L22260: check_variable = { GER_ascended_advisor_2 = 4 }
+        L22290: check_variable = { GER_ascended_advisor_2 = 5 }
+        L22320: check_variable = { GER_ascended_advisor_2 = 6 }
+        L22350: check_variable = { GER_ascended_advisor_2 = 7 }
+        L22386: check_variable = { GER_ascended_advisor_3 = 3 } #G?ring
+        L22387: check_variable = { GER_ascended_advisor_3 = 4 } #Himmler
+        L22394: check_variable = { GER_ascended_advisor_3 = 1 }
+        L22408: check_variable = { GER_ascended_advisor_3 = 2 }
+        L22422: check_variable = { GER_ascended_advisor_3 = 3 }
+        L22436: check_variable = { GER_ascended_advisor_3 = 4 }
+        L22466: check_variable = { GER_ascended_advisor_3 = 5 }
+        L22496: check_variable = { GER_ascended_advisor_3 = 6 }
+        L22526: check_variable = { GER_ascended_advisor_3 = 7 }
+        L22764: check_variable = { GER_ascended_advisor_1 = GER_intrigue_character }
+        L22769: check_variable = { GER_ascended_advisor_1 = 1 }
+        L22770: check_variable = { GER_ascended_advisor_2 = 1 }
+        L22771: check_variable = { GER_ascended_advisor_3 = 1 }
+        L22786: check_variable = { GER_ascended_advisor_1 = 0 }
+        L22787: check_variable = { GER_ascended_advisor_2 = 0 }
+        L22788: check_variable = { GER_ascended_advisor_3 = 0 }
+        L22793: check_variable = { GER_ascended_advisor_1 = 0 }
+        L22795: set_variable = { GER_ascended_advisor_1 = 1 }
+        L22799: check_variable = { GER_ascended_advisor_2 = 0 }
+        L22801: set_variable = { GER_ascended_advisor_2 = 1 }
+        L22804: set_variable = { GER_ascended_advisor_3 = 1 }
+        L22813: set_variable = { GER_ascended_advisor_1 = 1 }
+        L22840: check_variable = { GER_ascended_advisor_2 = GER_intrigue_character }
+        L22845: check_variable = { GER_ascended_advisor_1 = 1 }
+        L22846: check_variable = { GER_ascended_advisor_2 = 1 }
+        L22847: check_variable = { GER_ascended_advisor_3 = 1 }
+        L22862: check_variable = { GER_ascended_advisor_1 = 0 }
+        L22863: check_variable = { GER_ascended_advisor_2 = 0 }
+        L22864: check_variable = { GER_ascended_advisor_3 = 0 }
+        L22869: check_variable = { GER_ascended_advisor_1 = 0 }
+        L22871: set_variable = { GER_ascended_advisor_1 = 1 }
+        L22875: check_variable = { GER_ascended_advisor_2 = 0 }
+        L22877: set_variable = { GER_ascended_advisor_2 = 1 }
+        L22880: set_variable = { GER_ascended_advisor_3 = 1 }
+        L22889: set_variable = { GER_ascended_advisor_2 = 1 }
+        L22916: check_variable = { GER_ascended_advisor_3 = GER_intrigue_character }
+        L22921: check_variable = { GER_ascended_advisor_1 = 1 }
+        L22922: check_variable = { GER_ascended_advisor_2 = 1 }
+        L22923: check_variable = { GER_ascended_advisor_3 = 1 }
+        L22938: check_variable = { GER_ascended_advisor_1 = 0 }
+        L22939: check_variable = { GER_ascended_advisor_2 = 0 }
+        L22940: check_variable = { GER_ascended_advisor_3 = 0 }
+        L22945: check_variable = { GER_ascended_advisor_1 = 0 }
+        L22947: set_variable = { GER_ascended_advisor_1 = 1 }
+        L22951: check_variable = { GER_ascended_advisor_2 = 0 }
+        L22953: set_variable = { GER_ascended_advisor_2 = 1 }
+        L22956: set_variable = { GER_ascended_advisor_3 = 1 }
+        L22965: set_variable = { GER_ascended_advisor_3 = 1 }
+        L23043: check_variable = { GER_ascended_advisor_1 = GER_intrigue_character }
+        L23048: check_variable = { GER_ascended_advisor_1 = 2 }
+        L23049: check_variable = { GER_ascended_advisor_2 = 2 }
+        L23050: check_variable = { GER_ascended_advisor_3 = 2 }
+        L23065: check_variable = { GER_ascended_advisor_1 = 0 }
+        L23066: check_variable = { GER_ascended_advisor_2 = 0 }
+        L23067: check_variable = { GER_ascended_advisor_3 = 0 }
+        L23072: check_variable = { GER_ascended_advisor_1 = 0 }
+        L23074: set_variable = { GER_ascended_advisor_1 = 2 }
+        L23078: check_variable = { GER_ascended_advisor_2 = 0 }
+        L23080: set_variable = { GER_ascended_advisor_2 = 2 }
+        L23083: set_variable = { GER_ascended_advisor_3 = 2 }
+        L23092: set_variable = { GER_ascended_advisor_1 = 2 }
+        L23119: check_variable = { GER_ascended_advisor_2 = GER_intrigue_character }
+        L23124: check_variable = { GER_ascended_advisor_1 = 2 }
+        L23125: check_variable = { GER_ascended_advisor_2 = 2 }
+        L23126: check_variable = { GER_ascended_advisor_3 = 2 }
+        L23141: check_variable = { GER_ascended_advisor_1 = 0 }
+        L23142: check_variable = { GER_ascended_advisor_2 = 0 }
+        L23143: check_variable = { GER_ascended_advisor_3 = 0 }
+        L23148: check_variable = { GER_ascended_advisor_1 = 0 }
+        L23150: set_variable = { GER_ascended_advisor_1 = 2 }
+        L23154: check_variable = { GER_ascended_advisor_2 = 0 }
+        L23156: set_variable = { GER_ascended_advisor_2 = 2 }
+        L23159: set_variable = { GER_ascended_advisor_3 = 2 }
+        L23168: set_variable = { GER_ascended_advisor_2 = 2 }
+        L23195: check_variable = { GER_ascended_advisor_3 = GER_intrigue_character }
+        L23200: check_variable = { GER_ascended_advisor_1 = 2 }
+        L23201: check_variable = { GER_ascended_advisor_2 = 2 }
+        L23202: check_variable = { GER_ascended_advisor_3 = 2 }
+        L23217: check_variable = { GER_ascended_advisor_1 = 0 }
+        L23218: check_variable = { GER_ascended_advisor_2 = 0 }
+        L23219: check_variable = { GER_ascended_advisor_3 = 0 }
+        L23224: check_variable = { GER_ascended_advisor_1 = 0 }
+        L23226: set_variable = { GER_ascended_advisor_1 = 2 }
+        L23230: check_variable = { GER_ascended_advisor_2 = 0 }
+        L23232: set_variable = { GER_ascended_advisor_2 = 2 }
+        L23235: set_variable = { GER_ascended_advisor_3 = 2 }
+        L23244: set_variable = { GER_ascended_advisor_3 = 2 }
+        L23319: check_variable = { GER_ascended_advisor_1 = GER_intrigue_character }
+        L23324: check_variable = { GER_ascended_advisor_1 = 3 }
+        L23325: check_variable = { GER_ascended_advisor_2 = 3 }
+        L23326: check_variable = { GER_ascended_advisor_3 = 3 }
+        L23341: check_variable = { GER_ascended_advisor_1 = 0 }
+        L23342: check_variable = { GER_ascended_advisor_2 = 0 }
+        L23343: check_variable = { GER_ascended_advisor_3 = 0 }
+        L23348: check_variable = { GER_ascended_advisor_1 = 0 }
+        L23350: set_variable = { GER_ascended_advisor_1 = 3 }
+        L23354: check_variable = { GER_ascended_advisor_2 = 0 }
+        L23356: set_variable = { GER_ascended_advisor_2 = 3 }
+        L23359: set_variable = { GER_ascended_advisor_3 = 3 }
+        L23368: set_variable = { GER_ascended_advisor_1 = 3 }
+        L23395: check_variable = { GER_ascended_advisor_2 = GER_intrigue_character }
+        L23400: check_variable = { GER_ascended_advisor_1 = 3 }
+        L23401: check_variable = { GER_ascended_advisor_2 = 3 }
+        L23402: check_variable = { GER_ascended_advisor_3 = 3 }
+        L23417: check_variable = { GER_ascended_advisor_1 = 0 }
+        L23418: check_variable = { GER_ascended_advisor_2 = 0 }
+        L23419: check_variable = { GER_ascended_advisor_3 = 0 }
+        L23424: check_variable = { GER_ascended_advisor_1 = 0 }
+        L23426: set_variable = { GER_ascended_advisor_1 = 3 }
+        L23430: check_variable = { GER_ascended_advisor_2 = 0 }
+        L23432: set_variable = { GER_ascended_advisor_2 = 3 }
+        L23435: set_variable = { GER_ascended_advisor_3 = 3 }
+        L23444: set_variable = { GER_ascended_advisor_2 = 3 }
+        L23471: check_variable = { GER_ascended_advisor_3 = GER_intrigue_character }
+        L23476: check_variable = { GER_ascended_advisor_1 = 3 }
+        L23477: check_variable = { GER_ascended_advisor_2 = 3 }
+        L23478: check_variable = { GER_ascended_advisor_3 = 3 }
+        L23493: check_variable = { GER_ascended_advisor_1 = 0 }
+        L23494: check_variable = { GER_ascended_advisor_2 = 0 }
+        L23495: check_variable = { GER_ascended_advisor_3 = 0 }
+        L23500: check_variable = { GER_ascended_advisor_1 = 0 }
+        L23502: set_variable = { GER_ascended_advisor_1 = 3 }
+        L23506: check_variable = { GER_ascended_advisor_2 = 0 }
+        L23508: set_variable = { GER_ascended_advisor_2 = 3 }
+        L23511: set_variable = { GER_ascended_advisor_3 = 3 }
+        L23520: set_variable = { GER_ascended_advisor_3 = 3 }
+        L23595: check_variable = { GER_ascended_advisor_1 = 1 }
+        L23596: check_variable = { GER_ascended_advisor_2 = 1 }
+        L23597: check_variable = { GER_ascended_advisor_3 = 1 }
+        L23649: check_variable = { GER_ascended_advisor_1 = 1 }
+        L23650: check_variable = { GER_ascended_advisor_2 = 1 }
+        L23651: check_variable = { GER_ascended_advisor_3 = 1 }
+        L23717: check_variable = { GER_ascended_advisor_1 = 2 }
+        L23718: check_variable = { GER_ascended_advisor_2 = 2 }
+        L23719: check_variable = { GER_ascended_advisor_3 = 2 }
+        L23772: check_variable = { GER_ascended_advisor_1 = 2 }
+        L23773: check_variable = { GER_ascended_advisor_2 = 2 }
+        L23774: check_variable = { GER_ascended_advisor_3 = 2 }
+        L23839: check_variable = { GER_ascended_advisor_1 = 3 }
+        L23840: check_variable = { GER_ascended_advisor_2 = 3 }
+        L23841: check_variable = { GER_ascended_advisor_3 = 3 }
+        L23891: check_variable = { GER_ascended_advisor_1 = 3 }
+        L23892: check_variable = { GER_ascended_advisor_2 = 3 }
+        L23893: check_variable = { GER_ascended_advisor_3 = 3 }
+        L24015: check_variable = { GER_ascended_advisor_1 = 4 }
+        L24016: check_variable = { GER_ascended_advisor_2 = 4 }
+        L24017: check_variable = { GER_ascended_advisor_3 = 4 }
+        L24097: check_variable = { GER_ascended_advisor_1 = 4 }
+        L24098: check_variable = { GER_ascended_advisor_2 = 4 }
+        L24099: check_variable = { GER_ascended_advisor_3 = 4 }
+        L24188: check_variable = { GER_ascended_advisor_1 = 5 }
+        L24189: check_variable = { GER_ascended_advisor_2 = 5 }
+        L24190: check_variable = { GER_ascended_advisor_3 = 5 }
+        L24236: check_variable = { GER_ascended_advisor_1 = 5 }
+        L24237: check_variable = { GER_ascended_advisor_2 = 5 }
+        L24238: check_variable = { GER_ascended_advisor_3 = 5 }
+        L24302: check_variable = { GER_ascended_advisor_1 = 6 }
+        L24303: check_variable = { GER_ascended_advisor_2 = 6 }
+        L24304: check_variable = { GER_ascended_advisor_3 = 6 }
+        L24354: check_variable = { GER_ascended_advisor_1 = 6 }
+        L24355: check_variable = { GER_ascended_advisor_2 = 6 }
+        L24356: check_variable = { GER_ascended_advisor_3 = 6 }
+        L24422: check_variable = { GER_ascended_advisor_1 = 7 }
+        L24423: check_variable = { GER_ascended_advisor_2 = 7 }
+        L24424: check_variable = { GER_ascended_advisor_3 = 7 }
+        L24474: check_variable = { GER_ascended_advisor_1 = 7 }
+        L24475: check_variable = { GER_ascended_advisor_2 = 7 }
+        L24476: check_variable = { GER_ascended_advisor_3 = 7 }
+  [R56] history\countries\GER - Germany.txt   (3 处)
+        L366: set_variable = { GER_ascended_advisor_1 = 0 } #Ascended Advisor Portrait
+        L367: set_variable = { GER_ascended_advisor_2 = 0 } #Ascended Advisor Portrait
+        L368: set_variable = { GER_ascended_advisor_3 = 0 } #Ascended Advisor Portrait
+  [原版] common\focus_inlay_windows\ger_inner_circle_inlay_window.txt   (69 处)
+        L69: check_variable = { GER_ascended_advisor_1 = 0 }
+        L72: check_variable = { GER_ascended_advisor_1 = 1 }
+        L75: check_variable = { GER_ascended_advisor_1 = 2 }
+        L78: check_variable = { GER_ascended_advisor_1 = 3 }
+        L81: check_variable = { GER_ascended_advisor_1 = 4 }
+        L84: check_variable = { GER_ascended_advisor_1 = 5 }
+        L87: check_variable = { GER_ascended_advisor_1 = 6 }
+        L90: check_variable = { GER_ascended_advisor_1 = 7 }
+        L95: check_variable = { GER_ascended_advisor_2 = 0 }
+        L98: check_variable = { GER_ascended_advisor_2 = 1 }
+        L101: check_variable = { GER_ascended_advisor_2 = 2 }
+        L104: check_variable = { GER_ascended_advisor_2 = 3 }
+        L107: check_variable = { GER_ascended_advisor_2 = 4 }
+        L110: check_variable = { GER_ascended_advisor_2 = 5 }
+        L113: check_variable = { GER_ascended_advisor_2 = 6 }
+        L116: check_variable = { GER_ascended_advisor_2 = 7 }
+        L121: check_variable = { GER_ascended_advisor_3 = 0 }
+        L124: check_variable = { GER_ascended_advisor_3 = 1 }
+        L127: check_variable = { GER_ascended_advisor_3 = 2 }
+        L130: check_variable = { GER_ascended_advisor_3 = 3 }
+        L133: check_variable = { GER_ascended_advisor_3 = 4 }
+        L136: check_variable = { GER_ascended_advisor_3 = 5 }
+        L139: check_variable = { GER_ascended_advisor_3 = 6 }
+        L142: check_variable = { GER_ascended_advisor_3 = 7 }
+        L148: check_variable = { GER_ascended_advisor_1 = 0 compare = not_equals }
+        L154: check_variable = { GER_ascended_advisor_2 = 0 compare = not_equals }
+        L160: check_variable = { GER_ascended_advisor_3 = 0 compare = not_equals }
+        L169: check_variable = { GER_ascended_advisor_1 = 1 }
+        L170: check_variable = { GER_ascended_advisor_2 = 1 }
+        L171: check_variable = { GER_ascended_advisor_3 = 1 }
+        L175: check_variable = { GER_ascended_advisor_1 = 0 compare = not_equals }
+        L176: check_variable = { GER_ascended_advisor_2 = 0 compare = not_equals }
+        L177: check_variable = { GER_ascended_advisor_3 = 0 compare = not_equals }
+        L184: check_variable = { GER_ascended_advisor_1 = 2 }
+        L185: check_variable = { GER_ascended_advisor_2 = 2 }
+        L186: check_variable = { GER_ascended_advisor_3 = 2 }
+        L190: check_variable = { GER_ascended_advisor_1 = 0 compare = not_equals }
+        L191: check_variable = { GER_ascended_advisor_2 = 0 compare = not_equals }
+        L192: check_variable = { GER_ascended_advisor_3 = 0 compare = not_equals }
+        L199: check_variable = { GER_ascended_advisor_1 = 3 }
+        L200: check_variable = { GER_ascended_advisor_2 = 3 }
+        L201: check_variable = { GER_ascended_advisor_3 = 3 }
+        L205: check_variable = { GER_ascended_advisor_1 = 0 compare = not_equals }
+        L206: check_variable = { GER_ascended_advisor_2 = 0 compare = not_equals }
+        L207: check_variable = { GER_ascended_advisor_3 = 0 compare = not_equals }
+        L214: check_variable = { GER_ascended_advisor_1 = 4 }
+        L215: check_variable = { GER_ascended_advisor_2 = 4 }
+        L216: check_variable = { GER_ascended_advisor_3 = 4 }
+        L220: check_variable = { GER_ascended_advisor_1 = 0 compare = not_equals }
+        L221: check_variable = { GER_ascended_advisor_2 = 0 compare = not_equals }
+        L222: check_variable = { GER_ascended_advisor_3 = 0 compare = not_equals }
+        L229: check_variable = { GER_ascended_advisor_1 = 5 }
+        L230: check_variable = { GER_ascended_advisor_2 = 5 }
+        L231: check_variable = { GER_ascended_advisor_3 = 5 }
+        L235: check_variable = { GER_ascended_advisor_1 = 0 compare = not_equals }
+        L236: check_variable = { GER_ascended_advisor_2 = 0 compare = not_equals }
+        L237: check_variable = { GER_ascended_advisor_3 = 0 compare = not_equals }
+        L247: check_variable = { GER_ascended_advisor_1 = 6 }
+        L248: check_variable = { GER_ascended_advisor_2 = 6 }
+        L249: check_variable = { GER_ascended_advisor_3 = 6 }
+        L253: check_variable = { GER_ascended_advisor_1 = 0 compare = not_equals }
+        L254: check_variable = { GER_ascended_advisor_2 = 0 compare = not_equals }
+        L255: check_variable = { GER_ascended_advisor_3 = 0 compare = not_equals }
+        L262: check_variable = { GER_ascended_advisor_1 = 7 }
+        L263: check_variable = { GER_ascended_advisor_2 = 7 }
+        L264: check_variable = { GER_ascended_advisor_3 = 7 }
+        L268: check_variable = { GER_ascended_advisor_1 = 0 compare = not_equals }
+        L269: check_variable = { GER_ascended_advisor_2 = 0 compare = not_equals }
+        L270: check_variable = { GER_ascended_advisor_3 = 0 compare = not_equals }
+  [原版] common\national_focus\germany.txt   (129 处)
+        L18355: check_variable = { GER_ascended_advisor_1 = 1 }
+        L18356: check_variable = { GER_ascended_advisor_2 = 1 }
+        L18357: check_variable = { GER_ascended_advisor_3 = 1 }
+        L18364: check_variable = { GER_ascended_advisor_1 = 0 compare = not_equals }
+        L18365: check_variable = { GER_ascended_advisor_2 = 0 compare = not_equals }
+        L18366: check_variable = { GER_ascended_advisor_3 = 0 compare = not_equals }
+        L18386: check_variable = { GER_ascended_advisor_1 = 0 }
+        L18388: set_variable = { GER_ascended_advisor_1 = 1 }
+        L18392: check_variable = { GER_ascended_advisor_2 = 0 }
+        L18394: set_variable = { GER_ascended_advisor_2 = 1 }
+        L18398: check_variable = { GER_ascended_advisor_3 = 0 }
+        L18400: set_variable = { GER_ascended_advisor_3 = 1 }
+        L18703: check_variable = { GER_ascended_advisor_1 = 2 }
+        L18704: check_variable = { GER_ascended_advisor_2 = 2 }
+        L18705: check_variable = { GER_ascended_advisor_3 = 2 }
+        L18712: check_variable = { GER_ascended_advisor_1 = 0 compare = not_equals }
+        L18713: check_variable = { GER_ascended_advisor_2 = 0 compare = not_equals }
+        L18714: check_variable = { GER_ascended_advisor_3 = 0 compare = not_equals }
+        L18734: check_variable = { GER_ascended_advisor_1 = 0 }
+        L18736: set_variable = { GER_ascended_advisor_1 = 2 }
+        L18740: check_variable = { GER_ascended_advisor_2 = 0 }
+        L18742: set_variable = { GER_ascended_advisor_2 = 2 }
+        L18746: check_variable = { GER_ascended_advisor_3 = 0 }
+        L18748: set_variable = { GER_ascended_advisor_3 = 2 }
+        L19200: check_variable = { GER_ascended_advisor_1 = 3 }
+        L19201: check_variable = { GER_ascended_advisor_2 = 3 }
+        L19202: check_variable = { GER_ascended_advisor_3 = 3 }
+        L19209: check_variable = { GER_ascended_advisor_1 = 0 compare = not_equals }
+        L19210: check_variable = { GER_ascended_advisor_2 = 0 compare = not_equals }
+        L19211: check_variable = { GER_ascended_advisor_3 = 0 compare = not_equals }
+        L19231: check_variable = { GER_ascended_advisor_1 = 0 }
+        L19233: set_variable = { GER_ascended_advisor_1 = 3 }
+        L19237: check_variable = { GER_ascended_advisor_2 = 0 }
+        L19239: set_variable = { GER_ascended_advisor_2 = 3 }
+        L19243: check_variable = { GER_ascended_advisor_3 = 0 }
+        L19245: set_variable = { GER_ascended_advisor_3 = 3 }
+        L19686: check_variable = { GER_ascended_advisor_1 = 4 }
+        L19687: check_variable = { GER_ascended_advisor_2 = 4 }
+        L19688: check_variable = { GER_ascended_advisor_3 = 4 }
+        L19695: check_variable = { GER_ascended_advisor_1 = 0 compare = not_equals }
+        L19696: check_variable = { GER_ascended_advisor_2 = 0 compare = not_equals }
+        L19697: check_variable = { GER_ascended_advisor_3 = 0 compare = not_equals }
+        L19721: check_variable = { GER_ascended_advisor_1 = 0 }
+        L19723: set_variable = { GER_ascended_advisor_1 = 4 }
+        L19727: check_variable = { GER_ascended_advisor_2 = 0 }
+        L19729: set_variable = { GER_ascended_advisor_2 = 4 }
+        L19733: check_variable = { GER_ascended_advisor_3 = 0 }
+        L19735: set_variable = { GER_ascended_advisor_3 = 4 }
+        L20437: check_variable = { GER_ascended_advisor_1 = 5 }
+        L20438: check_variable = { GER_ascended_advisor_2 = 5 }
+        L20439: check_variable = { GER_ascended_advisor_3 = 5 }
+        L20446: check_variable = { GER_ascended_advisor_1 = 0 compare = not_equals }
+        L20447: check_variable = { GER_ascended_advisor_2 = 0 compare = not_equals }
+        L20448: check_variable = { GER_ascended_advisor_3 = 0 compare = not_equals }
+        L20468: check_variable = { GER_ascended_advisor_1 = 0 }
+        L20470: set_variable = { GER_ascended_advisor_1 = 5 }
+        L20474: check_variable = { GER_ascended_advisor_2 = 0 }
+        L20476: set_variable = { GER_ascended_advisor_2 = 5 }
+        L20480: check_variable = { GER_ascended_advisor_3 = 0 }
+        L20482: set_variable = { GER_ascended_advisor_3 = 5 }
+        L20769: check_variable = { GER_ascended_advisor_1 = 6 }
+        L20770: check_variable = { GER_ascended_advisor_2 = 6 }
+        L20771: check_variable = { GER_ascended_advisor_3 = 6 }
+        L20778: check_variable = { GER_ascended_advisor_1 = 0 compare = not_equals }
+        L20779: check_variable = { GER_ascended_advisor_2 = 0 compare = not_equals }
+        L20780: check_variable = { GER_ascended_advisor_3 = 0 compare = not_equals }
+        L20800: check_variable = { GER_ascended_advisor_1 = 0 }
+        L20802: set_variable = { GER_ascended_advisor_1 = 6 }
+        L20806: check_variable = { GER_ascended_advisor_2 = 0 }
+        L20808: set_variable = { GER_ascended_advisor_2 = 6 }
+        L20812: check_variable = { GER_ascended_advisor_3 = 0 }
+        L20814: set_variable = { GER_ascended_advisor_3 = 6 }
+        L20906: check_variable = { GER_ascended_advisor_1 = 7 }
+        L20907: check_variable = { GER_ascended_advisor_2 = 7 }
+        L20908: check_variable = { GER_ascended_advisor_3 = 7 }
+        L20915: check_variable = { GER_ascended_advisor_1 = 0 compare = not_equals }
+        L20916: check_variable = { GER_ascended_advisor_2 = 0 compare = not_equals }
+        L20917: check_variable = { GER_ascended_advisor_3 = 0 compare = not_equals }
+        L20937: check_variable = { GER_ascended_advisor_1 = 0 }
+        L20939: set_variable = { GER_ascended_advisor_1 = 7 }
+        L20943: check_variable = { GER_ascended_advisor_2 = 0 }
+        L20945: set_variable = { GER_ascended_advisor_2 = 7 }
+        L20949: check_variable = { GER_ascended_advisor_3 = 0 }
+        L20951: set_variable = { GER_ascended_advisor_3 = 7 }
+        L21300: check_variable = { GER_ascended_advisor_1 = 1 }
+        L21301: check_variable = { GER_ascended_advisor_2 = 1 }
+        L21302: check_variable = { GER_ascended_advisor_3 = 1 }
+        L21303: check_variable = { GER_ascended_advisor_1 = 2 }
+        L21304: check_variable = { GER_ascended_advisor_2 = 2 }
+        L21305: check_variable = { GER_ascended_advisor_3 = 2 }
+        L21311: check_variable = { GER_ascended_advisor_1 = 3 }
+        L21312: check_variable = { GER_ascended_advisor_2 = 3 }
+        L21313: check_variable = { GER_ascended_advisor_3 = 3 }
+        L21319: check_variable = { GER_ascended_advisor_1 = 4 }
+        L21320: check_variable = { GER_ascended_advisor_2 = 4 }
+        L21321: check_variable = { GER_ascended_advisor_3 = 4 }
+        L21327: check_variable = { GER_ascended_advisor_1 = 5 }
+        L21328: check_variable = { GER_ascended_advisor_2 = 5 }
+        L21329: check_variable = { GER_ascended_advisor_3 = 5 }
+        L21335: check_variable = { GER_ascended_advisor_1 = 6 }
+        L21336: check_variable = { GER_ascended_advisor_2 = 6 }
+        L21337: check_variable = { GER_ascended_advisor_3 = 6 }
+        L21338: check_variable = { GER_ascended_advisor_1 = 7 }
+        L21339: check_variable = { GER_ascended_advisor_2 = 7 }
+        L21340: check_variable = { GER_ascended_advisor_3 = 7 }
+        L21377: check_variable = { GER_ascended_advisor_1 = 0 compare = not_equals }
+        L21378: check_variable = { GER_ascended_advisor_2 = 0 compare = not_equals }
+        L21379: check_variable = { GER_ascended_advisor_3 = 0 compare = not_equals }
+        L21411: check_variable = { GER_ascended_advisor_1 = 1 }
+        L21412: check_variable = { GER_ascended_advisor_2 = 1 }
+        L21413: check_variable = { GER_ascended_advisor_3 = 1 }
+        L21414: check_variable = { GER_ascended_advisor_1 = 2 }
+        L21415: check_variable = { GER_ascended_advisor_2 = 2 }
+        L21416: check_variable = { GER_ascended_advisor_3 = 2 }
+        L21422: check_variable = { GER_ascended_advisor_1 = 3 }
+        L21423: check_variable = { GER_ascended_advisor_2 = 3 }
+        L21424: check_variable = { GER_ascended_advisor_3 = 3 }
+        L21430: check_variable = { GER_ascended_advisor_1 = 4 }
+        L21431: check_variable = { GER_ascended_advisor_2 = 4 }
+        L21432: check_variable = { GER_ascended_advisor_3 = 4 }
+        L21438: check_variable = { GER_ascended_advisor_1 = 5 }
+        L21439: check_variable = { GER_ascended_advisor_2 = 5 }
+        L21440: check_variable = { GER_ascended_advisor_3 = 5 }
+        L21446: check_variable = { GER_ascended_advisor_1 = 6 }
+        L21447: check_variable = { GER_ascended_advisor_2 = 6 }
+        L21448: check_variable = { GER_ascended_advisor_3 = 6 }
+        L21449: check_variable = { GER_ascended_advisor_1 = 7 }
+        L21450: check_variable = { GER_ascended_advisor_2 = 7 }
+        L21451: check_variable = { GER_ascended_advisor_3 = 7 }
+  [原版] common\on_actions\12_wuw_on_actions.txt   (3 处)
+        L2555: check_variable = { GER_ascended_advisor_1 = 0 compare = not_equals }
+        L2561: check_variable = { GER_ascended_advisor_2 = 0 compare = not_equals }
+        L2567: check_variable = { GER_ascended_advisor_3 = 0 compare = not_equals }
+  [原版] common\scripted_effects\GER_scripted_effects.txt   (72 处)
+        L2115: check_variable = { GER_ascended_advisor_1 = 1 }
+        L2121: check_variable = { GER_ascended_advisor_1 = 2 }
+        L2127: check_variable = { GER_ascended_advisor_1 = 3 }
+        L2133: check_variable = { GER_ascended_advisor_1 = 4 }
+        L2139: check_variable = { GER_ascended_advisor_1 = 5 }
+        L2145: check_variable = { GER_ascended_advisor_1 = 6 }
+        L2151: check_variable = { GER_ascended_advisor_1 = 7 }
+        L2156: log = "Something bad happened trying to remove advisor [?GER_ascended_advisor_1] effects."
+        L2170: check_variable = { GER_ascended_advisor_2 = 1 }
+        L2176: check_variable = { GER_ascended_advisor_2 = 2 }
+        L2182: check_variable = { GER_ascended_advisor_2 = 3 }
+        L2188: check_variable = { GER_ascended_advisor_2 = 4 }
+        L2194: check_variable = { GER_ascended_advisor_2 = 5 }
+        L2200: check_variable = { GER_ascended_advisor_2 = 6 }
+        L2206: check_variable = { GER_ascended_advisor_2 = 7 }
+        L2211: log = "Something bad happened trying to remove advisor [?GER_ascended_advisor_2] effects."
+        L2225: check_variable = { GER_ascended_advisor_3 = 1 }
+        L2231: check_variable = { GER_ascended_advisor_3 = 2 }
+        L2237: check_variable = { GER_ascended_advisor_3 = 3 }
+        L2243: check_variable = { GER_ascended_advisor_3 = 4 }
+        L2249: check_variable = { GER_ascended_advisor_3 = 5 }
+        L2255: check_variable = { GER_ascended_advisor_3 = 6 }
+        L2261: check_variable = { GER_ascended_advisor_3 = 7 }
+        L2266: log = "Something bad happened trying to remove advisor [?GER_ascended_advisor_3] effects."
+        L2386: check_variable = { GER_ascended_advisor_1 = 1 }
+        L2388: set_variable = { GER_ascended_advisor_1 = 0 }
+        L2392: check_variable = { GER_ascended_advisor_2 = 1 }
+        L2394: set_variable = { GER_ascended_advisor_2 = 0 }
+        L2398: check_variable = { GER_ascended_advisor_3 = 1 }
+        L2400: set_variable = { GER_ascended_advisor_3 = 0 }
+        L2467: check_variable = { GER_ascended_advisor_1 = 2 }
+        L2469: set_variable = { GER_ascended_advisor_1 = 0 }
+        L2473: check_variable = { GER_ascended_advisor_2 = 2 }
+        L2475: set_variable = { GER_ascended_advisor_2 = 0 }
+        L2479: check_variable = { GER_ascended_advisor_3 = 2 }
+        L2481: set_variable = { GER_ascended_advisor_3 = 0 }
+        L2546: check_variable = { GER_ascended_advisor_1 = 3 }
+        L2548: set_variable = { GER_ascended_advisor_1 = 0 }
+        L2552: check_variable = { GER_ascended_advisor_2 = 3 }
+        L2554: set_variable = { GER_ascended_advisor_2 = 0 }
+        L2558: check_variable = { GER_ascended_advisor_3 = 3 }
+        L2560: set_variable = { GER_ascended_advisor_3 = 0 }
+        L2659: check_variable = { GER_ascended_advisor_1 = 4 }
+        L2661: set_variable = { GER_ascended_advisor_1 = 0 }
+        L2665: check_variable = { GER_ascended_advisor_2 = 4 }
+        L2667: set_variable = { GER_ascended_advisor_2 = 0 }
+        L2671: check_variable = { GER_ascended_advisor_3 = 4 }
+        L2673: set_variable = { GER_ascended_advisor_3 = 0 }
+        L2762: check_variable = { GER_ascended_advisor_1 = 5 }
+        L2764: set_variable = { GER_ascended_advisor_1 = 0 }
+        L2768: check_variable = { GER_ascended_advisor_2 = 5 }
+        L2770: set_variable = { GER_ascended_advisor_2 = 0 }
+        L2774: check_variable = { GER_ascended_advisor_3 = 5 }
+        L2776: set_variable = { GER_ascended_advisor_3 = 0 }
+        L2895: check_variable = { GER_ascended_advisor_1 = 6 }
+        L2897: set_variable = { GER_ascended_advisor_1 = 0 }
+        L2901: check_variable = { GER_ascended_advisor_2 = 6 }
+        L2903: set_variable = { GER_ascended_advisor_2 = 0 }
+        L2907: check_variable = { GER_ascended_advisor_3 = 6 }
+        L2909: set_variable = { GER_ascended_advisor_3 = 0 }
+        L2990: check_variable = { GER_ascended_advisor_1 = 7 }
+        L2992: set_variable = { GER_ascended_advisor_1 = 0 }
+        L2996: check_variable = { GER_ascended_advisor_2 = 7 }
+        L2998: set_variable = { GER_ascended_advisor_2 = 0 }
+        L3002: check_variable = { GER_ascended_advisor_3 = 7 }
+        L3004: set_variable = { GER_ascended_advisor_3 = 0 }
+        L3019: check_variable = { GER_ascended_advisor_1 = 2 }
+        L3020: check_variable = { GER_ascended_advisor_2 = 2 }
+        L3021: check_variable = { GER_ascended_advisor_3 = 2 }
+        L3029: check_variable = { GER_ascended_advisor_1 = 1 }
+        L3030: check_variable = { GER_ascended_advisor_2 = 1 }
+        L3031: check_variable = { GER_ascended_advisor_3 = 1 }
+  [原版] common\scripted_localisation\WUW_GER_scripted_loc.txt   (234 处)
+        L966: check_variable = { GER_ascended_advisor_1 = 0 }
+        L972: check_variable = { GER_ascended_advisor_1 = 1 }
+        L978: check_variable = { GER_ascended_advisor_1 = 2 }
+        L984: check_variable = { GER_ascended_advisor_1 = 3 }
+        L990: check_variable = { GER_ascended_advisor_1 = 4 }
+        L996: check_variable = { GER_ascended_advisor_1 = 5 }
+        L1002: check_variable = { GER_ascended_advisor_1 = 6 }
+        L1008: check_variable = { GER_ascended_advisor_1 = 7 }
+        L1018: check_variable = { GER_ascended_advisor_2 = 0 }
+        L1024: check_variable = { GER_ascended_advisor_2 = 1 }
+        L1030: check_variable = { GER_ascended_advisor_2 = 2 }
+        L1036: check_variable = { GER_ascended_advisor_2 = 3 }
+        L1042: check_variable = { GER_ascended_advisor_2 = 4 }
+        L1048: check_variable = { GER_ascended_advisor_2 = 5 }
+        L1054: check_variable = { GER_ascended_advisor_2 = 6 }
+        L1060: check_variable = { GER_ascended_advisor_2 = 7 }
+        L1070: check_variable = { GER_ascended_advisor_3 = 0 }
+        L1076: check_variable = { GER_ascended_advisor_3 = 1 }
+        L1082: check_variable = { GER_ascended_advisor_3 = 2 }
+        L1088: check_variable = { GER_ascended_advisor_3 = 3 }
+        L1094: check_variable = { GER_ascended_advisor_3 = 4 }
+        L1100: check_variable = { GER_ascended_advisor_3 = 5 }
+        L1106: check_variable = { GER_ascended_advisor_3 = 6 }
+        L1112: check_variable = { GER_ascended_advisor_3 = 7 }
+        L1122: check_variable = { GER_ascended_advisor_1 = 0 }
+        L1130: check_variable = { GER_ascended_advisor_1 = 1 }
+        L1137: check_variable = { GER_ascended_advisor_1 = 1 }
+        L1146: check_variable = { GER_ascended_advisor_1 = 2 }
+        L1153: check_variable = { GER_ascended_advisor_1 = 2 }
+        L1162: check_variable = { GER_ascended_advisor_1 = 3 }
+        L1169: check_variable = { GER_ascended_advisor_1 = 3 }
+        L1178: check_variable = { GER_ascended_advisor_1 = 4 }
+        L1185: check_variable = { GER_ascended_advisor_1 = 4 }
+        L1192: check_variable = { GER_ascended_advisor_1 = 4 }
+        L1201: check_variable = { GER_ascended_advisor_1 = 5 }
+        L1208: check_variable = { GER_ascended_advisor_1 = 5 }
+        L1215: check_variable = { GER_ascended_advisor_1 = 5 }
+        L1222: check_variable = { GER_ascended_advisor_1 = 5 }
+        L1229: check_variable = { GER_ascended_advisor_1 = 5 }
+        L1238: check_variable = { GER_ascended_advisor_1 = 6 }
+        L1245: check_variable = { GER_ascended_advisor_1 = 6 }
+        L1252: check_variable = { GER_ascended_advisor_1 = 6 }
+        L1259: check_variable = { GER_ascended_advisor_1 = 6 }
+        L1266: check_variable = { GER_ascended_advisor_1 = 6 }
+        L1275: check_variable = { GER_ascended_advisor_1 = 7 }
+        L1282: check_variable = { GER_ascended_advisor_1 = 7 }
+        L1289: check_variable = { GER_ascended_advisor_1 = 7 }
+        L1300: check_variable = { GER_ascended_advisor_2 = 0 }
+        L1308: check_variable = { GER_ascended_advisor_2 = 1 }
+        L1315: check_variable = { GER_ascended_advisor_2 = 1 }
+        L1324: check_variable = { GER_ascended_advisor_2 = 2 }
+        L1331: check_variable = { GER_ascended_advisor_2 = 2 }
+        L1340: check_variable = { GER_ascended_advisor_2 = 3 }
+        L1347: check_variable = { GER_ascended_advisor_2 = 3 }
+        L1356: check_variable = { GER_ascended_advisor_2 = 4 }
+        L1363: check_variable = { GER_ascended_advisor_2 = 4 }
+        L1370: check_variable = { GER_ascended_advisor_2 = 4 }
+        L1379: check_variable = { GER_ascended_advisor_2 = 5 }
+        L1386: check_variable = { GER_ascended_advisor_2 = 5 }
+        L1393: check_variable = { GER_ascended_advisor_2 = 5 }
+        L1400: check_variable = { GER_ascended_advisor_2 = 5 }
+        L1407: check_variable = { GER_ascended_advisor_2 = 5 }
+        L1416: check_variable = { GER_ascended_advisor_2 = 6 }
+        L1423: check_variable = { GER_ascended_advisor_2 = 6 }
+        L1430: check_variable = { GER_ascended_advisor_2 = 6 }
+        L1437: check_variable = { GER_ascended_advisor_2 = 6 }
+        L1444: check_variable = { GER_ascended_advisor_2 = 6 }
+        L1453: check_variable = { GER_ascended_advisor_2 = 7 }
+        L1460: check_variable = { GER_ascended_advisor_2 = 7 }
+        L1467: check_variable = { GER_ascended_advisor_2 = 7 }
+        L1478: check_variable = { GER_ascended_advisor_3 = 0 }
+        L1486: check_variable = { GER_ascended_advisor_3 = 1 }
+        L1493: check_variable = { GER_ascended_advisor_3 = 1 }
+        L1502: check_variable = { GER_ascended_advisor_3 = 2 }
+        L1509: check_variable = { GER_ascended_advisor_3 = 2 }
+        L1518: check_variable = { GER_ascended_advisor_3 = 3 }
+        L1525: check_variable = { GER_ascended_advisor_3 = 3 }
+        L1534: check_variable = { GER_ascended_advisor_3 = 4 }
+        L1541: check_variable = { GER_ascended_advisor_3 = 4 }
+        L1548: check_variable = { GER_ascended_advisor_3 = 4 }
+        L1557: check_variable = { GER_ascended_advisor_3 = 5 }
+        L1564: check_variable = { GER_ascended_advisor_3 = 5 }
+        L1571: check_variable = { GER_ascended_advisor_3 = 5 }
+        L1578: check_variable = { GER_ascended_advisor_3 = 5 }
+        L1585: check_variable = { GER_ascended_advisor_3 = 5 }
+        L1594: check_variable = { GER_ascended_advisor_3 = 6 }
+        L1601: check_variable = { GER_ascended_advisor_3 = 6 }
+        L1608: check_variable = { GER_ascended_advisor_3 = 6 }
+        L1615: check_variable = { GER_ascended_advisor_3 = 6 }
+        L1622: check_variable = { GER_ascended_advisor_3 = 6 }
+        L1631: check_variable = { GER_ascended_advisor_3 = 7 }
+        L1638: check_variable = { GER_ascended_advisor_3 = 7 }
+        L1645: check_variable = { GER_ascended_advisor_3 = 7 }
+        L1656: check_variable = { GER_ascended_advisor_1 = 0 }
+        L1664: check_variable = { GER_ascended_advisor_1 = 1 }
+        L1671: check_variable = { GER_ascended_advisor_1 = 1 }
+        L1680: check_variable = { GER_ascended_advisor_1 = 2 }
+        L1687: check_variable = { GER_ascended_advisor_1 = 2 }
+        L1696: check_variable = { GER_ascended_advisor_1 = 3 }
+        L1703: check_variable = { GER_ascended_advisor_1 = 3 }
+        L1712: check_variable = { GER_ascended_advisor_1 = 4 }
+        L1719: check_variable = { GER_ascended_advisor_1 = 4 }
+        L1726: check_variable = { GER_ascended_advisor_1 = 4 }
+        L1735: check_variable = { GER_ascended_advisor_1 = 5 }
+        L1742: check_variable = { GER_ascended_advisor_1 = 5 }
+        L1749: check_variable = { GER_ascended_advisor_1 = 5 }
+        L1756: check_variable = { GER_ascended_advisor_1 = 5 }
+        L1763: check_variable = { GER_ascended_advisor_1 = 5 }
+        L1772: check_variable = { GER_ascended_advisor_1 = 6 }
+        L1779: check_variable = { GER_ascended_advisor_1 = 6 }
+        L1786: check_variable = { GER_ascended_advisor_1 = 6 }
+        L1793: check_variable = { GER_ascended_advisor_1 = 6 }
+        L1800: check_variable = { GER_ascended_advisor_1 = 6 }
+        L1809: check_variable = { GER_ascended_advisor_1 = 7 }
+        L1816: check_variable = { GER_ascended_advisor_1 = 7 }
+        L1823: check_variable = { GER_ascended_advisor_1 = 7 }
+        L1834: check_variable = { GER_ascended_advisor_2 = 0 }
+        L1842: check_variable = { GER_ascended_advisor_2 = 1 }
+        L1849: check_variable = { GER_ascended_advisor_2 = 1 }
+        L1858: check_variable = { GER_ascended_advisor_2 = 2 }
+        L1865: check_variable = { GER_ascended_advisor_2 = 2 }
+        L1874: check_variable = { GER_ascended_advisor_2 = 3 }
+        L1881: check_variable = { GER_ascended_advisor_2 = 3 }
+        L1890: check_variable = { GER_ascended_advisor_2 = 4 }
+        L1897: check_variable = { GER_ascended_advisor_2 = 4 }
+        L1904: check_variable = { GER_ascended_advisor_2 = 4 }
+        L1913: check_variable = { GER_ascended_advisor_2 = 5 }
+        L1920: check_variable = { GER_ascended_advisor_2 = 5 }
+        L1927: check_variable = { GER_ascended_advisor_2 = 5 }
+        L1934: check_variable = { GER_ascended_advisor_2 = 5 }
+        L1941: check_variable = { GER_ascended_advisor_2 = 5 }
+        L1950: check_variable = { GER_ascended_advisor_2 = 6 }
+        L1957: check_variable = { GER_ascended_advisor_2 = 6 }
+        L1964: check_variable = { GER_ascended_advisor_2 = 6 }
+        L1971: check_variable = { GER_ascended_advisor_2 = 6 }
+        L1978: check_variable = { GER_ascended_advisor_2 = 6 }
+        L1987: check_variable = { GER_ascended_advisor_2 = 7 }
+        L1994: check_variable = { GER_ascended_advisor_2 = 7 }
+        L2001: check_variable = { GER_ascended_advisor_2 = 7 }
+        L2012: check_variable = { GER_ascended_advisor_3 = 0 }
+        L2020: check_variable = { GER_ascended_advisor_3 = 1 }
+        L2027: check_variable = { GER_ascended_advisor_3 = 1 }
+        L2036: check_variable = { GER_ascended_advisor_3 = 2 }
+        L2043: check_variable = { GER_ascended_advisor_3 = 2 }
+        L2052: check_variable = { GER_ascended_advisor_3 = 3 }
+        L2059: check_variable = { GER_ascended_advisor_3 = 3 }
+        L2068: check_variable = { GER_ascended_advisor_3 = 4 }
+        L2075: check_variable = { GER_ascended_advisor_3 = 4 }
+        L2082: check_variable = { GER_ascended_advisor_3 = 4 }
+        L2091: check_variable = { GER_ascended_advisor_3 = 5 }
+        L2098: check_variable = { GER_ascended_advisor_3 = 5 }
+        L2105: check_variable = { GER_ascended_advisor_3 = 5 }
+        L2112: check_variable = { GER_ascended_advisor_3 = 5 }
+        L2119: check_variable = { GER_ascended_advisor_3 = 5 }
+        L2128: check_variable = { GER_ascended_advisor_3 = 6 }
+        L2135: check_variable = { GER_ascended_advisor_3 = 6 }
+        L2142: check_variable = { GER_ascended_advisor_3 = 6 }
+        L2149: check_variable = { GER_ascended_advisor_3 = 6 }
+        L2156: check_variable = { GER_ascended_advisor_3 = 6 }
+        L2165: check_variable = { GER_ascended_advisor_3 = 7 }
+        L2172: check_variable = { GER_ascended_advisor_3 = 7 }
+        L2179: check_variable = { GER_ascended_advisor_3 = 7 }
+        L2282: check_variable = { GER_ascended_advisor_1 = 0 }
+        L2290: check_variable = { GER_ascended_advisor_1 = 1 }
+        L2297: check_variable = { GER_ascended_advisor_1 = 1 }
+        L2306: check_variable = { GER_ascended_advisor_1 = 2 }
+        L2313: check_variable = { GER_ascended_advisor_1 = 2 }
+        L2322: check_variable = { GER_ascended_advisor_1 = 3 }
+        L2329: check_variable = { GER_ascended_advisor_1 = 3 }
+        L2338: check_variable = { GER_ascended_advisor_1 = 4 }
+        L2345: check_variable = { GER_ascended_advisor_1 = 4 }
+        L2352: check_variable = { GER_ascended_advisor_1 = 4 }
+        L2361: check_variable = { GER_ascended_advisor_1 = 5 }
+        L2368: check_variable = { GER_ascended_advisor_1 = 5 }
+        L2375: check_variable = { GER_ascended_advisor_1 = 5 }
+        L2382: check_variable = { GER_ascended_advisor_1 = 5 }
+        L2389: check_variable = { GER_ascended_advisor_1 = 5 }
+        L2398: check_variable = { GER_ascended_advisor_1 = 6 }
+        L2405: check_variable = { GER_ascended_advisor_1 = 6 }
+        L2412: check_variable = { GER_ascended_advisor_1 = 6 }
+        L2419: check_variable = { GER_ascended_advisor_1 = 6 }
+        L2426: check_variable = { GER_ascended_advisor_1 = 6 }
+        L2435: check_variable = { GER_ascended_advisor_1 = 7 }
+        L2442: check_variable = { GER_ascended_advisor_1 = 7 }
+        L2449: check_variable = { GER_ascended_advisor_1 = 7 }
+        L2460: check_variable = { GER_ascended_advisor_2 = 0 }
+        L2468: check_variable = { GER_ascended_advisor_2 = 1 }
+        L2475: check_variable = { GER_ascended_advisor_2 = 1 }
+        L2484: check_variable = { GER_ascended_advisor_2 = 2 }
+        L2491: check_variable = { GER_ascended_advisor_2 = 2 }
+        L2500: check_variable = { GER_ascended_advisor_2 = 3 }
+        L2507: check_variable = { GER_ascended_advisor_2 = 3 }
+        L2516: check_variable = { GER_ascended_advisor_2 = 4 }
+        L2523: check_variable = { GER_ascended_advisor_2 = 4 }
+        L2530: check_variable = { GER_ascended_advisor_2 = 4 }
+        L2539: check_variable = { GER_ascended_advisor_2 = 5 }
+        L2546: check_variable = { GER_ascended_advisor_2 = 5 }
+        L2553: check_variable = { GER_ascended_advisor_2 = 5 }
+        L2560: check_variable = { GER_ascended_advisor_2 = 5 }
+        L2567: check_variable = { GER_ascended_advisor_2 = 5 }
+        L2576: check_variable = { GER_ascended_advisor_2 = 6 }
+        L2583: check_variable = { GER_ascended_advisor_2 = 6 }
+        L2590: check_variable = { GER_ascended_advisor_2 = 6 }
+        L2597: check_variable = { GER_ascended_advisor_2 = 6 }
+        L2604: check_variable = { GER_ascended_advisor_2 = 6 }
+        L2613: check_variable = { GER_ascended_advisor_2 = 7 }
+        L2620: check_variable = { GER_ascended_advisor_2 = 7 }
+        L2627: check_variable = { GER_ascended_advisor_2 = 7 }
+        L2638: check_variable = { GER_ascended_advisor_3 = 0 }
+        L2646: check_variable = { GER_ascended_advisor_3 = 1 }
+        L2653: check_variable = { GER_ascended_advisor_3 = 1 }
+        L2662: check_variable = { GER_ascended_advisor_3 = 2 }
+        L2669: check_variable = { GER_ascended_advisor_3 = 2 }
+        L2678: check_variable = { GER_ascended_advisor_3 = 3 }
+        L2685: check_variable = { GER_ascended_advisor_3 = 3 }
+        L2694: check_variable = { GER_ascended_advisor_3 = 4 }
+        L2701: check_variable = { GER_ascended_advisor_3 = 4 }
+        L2708: check_variable = { GER_ascended_advisor_3 = 4 }
+        L2717: check_variable = { GER_ascended_advisor_3 = 5 }
+        L2724: check_variable = { GER_ascended_advisor_3 = 5 }
+        L2731: check_variable = { GER_ascended_advisor_3 = 5 }
+        L2738: check_variable = { GER_ascended_advisor_3 = 5 }
+        L2745: check_variable = { GER_ascended_advisor_3 = 5 }
+        L2754: check_variable = { GER_ascended_advisor_3 = 6 }
+        L2761: check_variable = { GER_ascended_advisor_3 = 6 }
+        L2768: check_variable = { GER_ascended_advisor_3 = 6 }
+        L2775: check_variable = { GER_ascended_advisor_3 = 6 }
+        L2782: check_variable = { GER_ascended_advisor_3 = 6 }
+        L2791: check_variable = { GER_ascended_advisor_3 = 7 }
+        L2798: check_variable = { GER_ascended_advisor_3 = 7 }
+        L2805: check_variable = { GER_ascended_advisor_3 = 7 }
+        L2816: check_variable = { GER_ascended_advisor_1 = 0 }
+        L2829: check_variable = { GER_ascended_advisor_2 = 0 }
+        L2842: check_variable = { GER_ascended_advisor_3 = 0 }
+  [原版] events\WUW_Germany.txt   (192 处)
+        L21859: check_variable = { GER_ascended_advisor_1 = 7 } #Bormann ascended in this slot
+        L21867: set_variable = { GER_ascended_advisor_1 = GER_ascending_advisor }
+        L21886: check_variable = { GER_ascended_advisor_2 = 7 } #Bormann ascended in this slot
+        L21894: set_variable = { GER_ascended_advisor_2 = GER_ascending_advisor }
+        L21913: check_variable = { GER_ascended_advisor_3 = 7 } #Bormann ascended in this slot
+        L21921: set_variable = { GER_ascended_advisor_3 = GER_ascending_advisor }
+        L22045: check_variable = { GER_ascended_advisor_1 = 3 } #G?ring
+        L22046: check_variable = { GER_ascended_advisor_1 = 4 } #Himmler
+        L22053: check_variable = { GER_ascended_advisor_1 = 1 }
+        L22067: check_variable = { GER_ascended_advisor_1 = 2 }
+        L22081: check_variable = { GER_ascended_advisor_1 = 3 }
+        L22095: check_variable = { GER_ascended_advisor_1 = 4 }
+        L22125: check_variable = { GER_ascended_advisor_1 = 5 }
+        L22155: check_variable = { GER_ascended_advisor_1 = 6 }
+        L22185: check_variable = { GER_ascended_advisor_1 = 7 }
+        L22221: check_variable = { GER_ascended_advisor_2 = 3 } #G?ring
+        L22222: check_variable = { GER_ascended_advisor_2 = 4 } #Himmler
+        L22229: check_variable = { GER_ascended_advisor_2 = 1 }
+        L22243: check_variable = { GER_ascended_advisor_2 = 2 }
+        L22257: check_variable = { GER_ascended_advisor_2 = 3 }
+        L22271: check_variable = { GER_ascended_advisor_2 = 4 }
+        L22301: check_variable = { GER_ascended_advisor_2 = 5 }
+        L22331: check_variable = { GER_ascended_advisor_2 = 6 }
+        L22361: check_variable = { GER_ascended_advisor_2 = 7 }
+        L22397: check_variable = { GER_ascended_advisor_3 = 3 } #G?ring
+        L22398: check_variable = { GER_ascended_advisor_3 = 4 } #Himmler
+        L22405: check_variable = { GER_ascended_advisor_3 = 1 }
+        L22419: check_variable = { GER_ascended_advisor_3 = 2 }
+        L22433: check_variable = { GER_ascended_advisor_3 = 3 }
+        L22447: check_variable = { GER_ascended_advisor_3 = 4 }
+        L22477: check_variable = { GER_ascended_advisor_3 = 5 }
+        L22507: check_variable = { GER_ascended_advisor_3 = 6 }
+        L22537: check_variable = { GER_ascended_advisor_3 = 7 }
+        L22775: check_variable = { GER_ascended_advisor_1 = GER_intrigue_character }
+        L22780: check_variable = { GER_ascended_advisor_1 = 1 }
+        L22781: check_variable = { GER_ascended_advisor_2 = 1 }
+        L22782: check_variable = { GER_ascended_advisor_3 = 1 }
+        L22797: check_variable = { GER_ascended_advisor_1 = 0 }
+        L22798: check_variable = { GER_ascended_advisor_2 = 0 }
+        L22799: check_variable = { GER_ascended_advisor_3 = 0 }
+        L22804: check_variable = { GER_ascended_advisor_1 = 0 }
+        L22806: set_variable = { GER_ascended_advisor_1 = 1 }
+        L22810: check_variable = { GER_ascended_advisor_2 = 0 }
+        L22812: set_variable = { GER_ascended_advisor_2 = 1 }
+        L22815: set_variable = { GER_ascended_advisor_3 = 1 }
+        L22824: set_variable = { GER_ascended_advisor_1 = 1 }
+        L22851: check_variable = { GER_ascended_advisor_2 = GER_intrigue_character }
+        L22856: check_variable = { GER_ascended_advisor_1 = 1 }
+        L22857: check_variable = { GER_ascended_advisor_2 = 1 }
+        L22858: check_variable = { GER_ascended_advisor_3 = 1 }
+        L22873: check_variable = { GER_ascended_advisor_1 = 0 }
+        L22874: check_variable = { GER_ascended_advisor_2 = 0 }
+        L22875: check_variable = { GER_ascended_advisor_3 = 0 }
+        L22880: check_variable = { GER_ascended_advisor_1 = 0 }
+        L22882: set_variable = { GER_ascended_advisor_1 = 1 }
+        L22886: check_variable = { GER_ascended_advisor_2 = 0 }
+        L22888: set_variable = { GER_ascended_advisor_2 = 1 }
+        L22891: set_variable = { GER_ascended_advisor_3 = 1 }
+        L22900: set_variable = { GER_ascended_advisor_2 = 1 }
+        L22927: check_variable = { GER_ascended_advisor_3 = GER_intrigue_character }
+        L22932: check_variable = { GER_ascended_advisor_1 = 1 }
+        L22933: check_variable = { GER_ascended_advisor_2 = 1 }
+        L22934: check_variable = { GER_ascended_advisor_3 = 1 }
+        L22949: check_variable = { GER_ascended_advisor_1 = 0 }
+        L22950: check_variable = { GER_ascended_advisor_2 = 0 }
+        L22951: check_variable = { GER_ascended_advisor_3 = 0 }
+        L22956: check_variable = { GER_ascended_advisor_1 = 0 }
+        L22958: set_variable = { GER_ascended_advisor_1 = 1 }
+        L22962: check_variable = { GER_ascended_advisor_2 = 0 }
+        L22964: set_variable = { GER_ascended_advisor_2 = 1 }
+        L22967: set_variable = { GER_ascended_advisor_3 = 1 }
+        L22976: set_variable = { GER_ascended_advisor_3 = 1 }
+        L23054: check_variable = { GER_ascended_advisor_1 = GER_intrigue_character }
+        L23059: check_variable = { GER_ascended_advisor_1 = 2 }
+        L23060: check_variable = { GER_ascended_advisor_2 = 2 }
+        L23061: check_variable = { GER_ascended_advisor_3 = 2 }
+        L23076: check_variable = { GER_ascended_advisor_1 = 0 }
+        L23077: check_variable = { GER_ascended_advisor_2 = 0 }
+        L23078: check_variable = { GER_ascended_advisor_3 = 0 }
+        L23083: check_variable = { GER_ascended_advisor_1 = 0 }
+        L23085: set_variable = { GER_ascended_advisor_1 = 2 }
+        L23089: check_variable = { GER_ascended_advisor_2 = 0 }
+        L23091: set_variable = { GER_ascended_advisor_2 = 2 }
+        L23094: set_variable = { GER_ascended_advisor_3 = 2 }
+        L23103: set_variable = { GER_ascended_advisor_1 = 2 }
+        L23130: check_variable = { GER_ascended_advisor_2 = GER_intrigue_character }
+        L23135: check_variable = { GER_ascended_advisor_1 = 2 }
+        L23136: check_variable = { GER_ascended_advisor_2 = 2 }
+        L23137: check_variable = { GER_ascended_advisor_3 = 2 }
+        L23152: check_variable = { GER_ascended_advisor_1 = 0 }
+        L23153: check_variable = { GER_ascended_advisor_2 = 0 }
+        L23154: check_variable = { GER_ascended_advisor_3 = 0 }
+        L23159: check_variable = { GER_ascended_advisor_1 = 0 }
+        L23161: set_variable = { GER_ascended_advisor_1 = 2 }
+        L23165: check_variable = { GER_ascended_advisor_2 = 0 }
+        L23167: set_variable = { GER_ascended_advisor_2 = 2 }
+        L23170: set_variable = { GER_ascended_advisor_3 = 2 }
+        L23179: set_variable = { GER_ascended_advisor_2 = 2 }
+        L23206: check_variable = { GER_ascended_advisor_3 = GER_intrigue_character }
+        L23211: check_variable = { GER_ascended_advisor_1 = 2 }
+        L23212: check_variable = { GER_ascended_advisor_2 = 2 }
+        L23213: check_variable = { GER_ascended_advisor_3 = 2 }
+        L23228: check_variable = { GER_ascended_advisor_1 = 0 }
+        L23229: check_variable = { GER_ascended_advisor_2 = 0 }
+        L23230: check_variable = { GER_ascended_advisor_3 = 0 }
+        L23235: check_variable = { GER_ascended_advisor_1 = 0 }
+        L23237: set_variable = { GER_ascended_advisor_1 = 2 }
+        L23241: check_variable = { GER_ascended_advisor_2 = 0 }
+        L23243: set_variable = { GER_ascended_advisor_2 = 2 }
+        L23246: set_variable = { GER_ascended_advisor_3 = 2 }
+        L23255: set_variable = { GER_ascended_advisor_3 = 2 }
+        L23330: check_variable = { GER_ascended_advisor_1 = GER_intrigue_character }
+        L23335: check_variable = { GER_ascended_advisor_1 = 3 }
+        L23336: check_variable = { GER_ascended_advisor_2 = 3 }
+        L23337: check_variable = { GER_ascended_advisor_3 = 3 }
+        L23352: check_variable = { GER_ascended_advisor_1 = 0 }
+        L23353: check_variable = { GER_ascended_advisor_2 = 0 }
+        L23354: check_variable = { GER_ascended_advisor_3 = 0 }
+        L23359: check_variable = { GER_ascended_advisor_1 = 0 }
+        L23361: set_variable = { GER_ascended_advisor_1 = 3 }
+        L23365: check_variable = { GER_ascended_advisor_2 = 0 }
+        L23367: set_variable = { GER_ascended_advisor_2 = 3 }
+        L23370: set_variable = { GER_ascended_advisor_3 = 3 }
+        L23379: set_variable = { GER_ascended_advisor_1 = 3 }
+        L23406: check_variable = { GER_ascended_advisor_2 = GER_intrigue_character }
+        L23411: check_variable = { GER_ascended_advisor_1 = 3 }
+        L23412: check_variable = { GER_ascended_advisor_2 = 3 }
+        L23413: check_variable = { GER_ascended_advisor_3 = 3 }
+        L23428: check_variable = { GER_ascended_advisor_1 = 0 }
+        L23429: check_variable = { GER_ascended_advisor_2 = 0 }
+        L23430: check_variable = { GER_ascended_advisor_3 = 0 }
+        L23435: check_variable = { GER_ascended_advisor_1 = 0 }
+        L23437: set_variable = { GER_ascended_advisor_1 = 3 }
+        L23441: check_variable = { GER_ascended_advisor_2 = 0 }
+        L23443: set_variable = { GER_ascended_advisor_2 = 3 }
+        L23446: set_variable = { GER_ascended_advisor_3 = 3 }
+        L23455: set_variable = { GER_ascended_advisor_2 = 3 }
+        L23482: check_variable = { GER_ascended_advisor_3 = GER_intrigue_character }
+        L23487: check_variable = { GER_ascended_advisor_1 = 3 }
+        L23488: check_variable = { GER_ascended_advisor_2 = 3 }
+        L23489: check_variable = { GER_ascended_advisor_3 = 3 }
+        L23504: check_variable = { GER_ascended_advisor_1 = 0 }
+        L23505: check_variable = { GER_ascended_advisor_2 = 0 }
+        L23506: check_variable = { GER_ascended_advisor_3 = 0 }
+        L23511: check_variable = { GER_ascended_advisor_1 = 0 }
+        L23513: set_variable = { GER_ascended_advisor_1 = 3 }
+        L23517: check_variable = { GER_ascended_advisor_2 = 0 }
+        L23519: set_variable = { GER_ascended_advisor_2 = 3 }
+        L23522: set_variable = { GER_ascended_advisor_3 = 3 }
+        L23531: set_variable = { GER_ascended_advisor_3 = 3 }
+        L23606: check_variable = { GER_ascended_advisor_1 = 1 }
+        L23607: check_variable = { GER_ascended_advisor_2 = 1 }
+        L23608: check_variable = { GER_ascended_advisor_3 = 1 }
+        L23660: check_variable = { GER_ascended_advisor_1 = 1 }
+        L23661: check_variable = { GER_ascended_advisor_2 = 1 }
+        L23662: check_variable = { GER_ascended_advisor_3 = 1 }
+        L23728: check_variable = { GER_ascended_advisor_1 = 2 }
+        L23729: check_variable = { GER_ascended_advisor_2 = 2 }
+        L23730: check_variable = { GER_ascended_advisor_3 = 2 }
+        L23783: check_variable = { GER_ascended_advisor_1 = 2 }
+        L23784: check_variable = { GER_ascended_advisor_2 = 2 }
+        L23785: check_variable = { GER_ascended_advisor_3 = 2 }
+        L23850: check_variable = { GER_ascended_advisor_1 = 3 }
+        L23851: check_variable = { GER_ascended_advisor_2 = 3 }
+        L23852: check_variable = { GER_ascended_advisor_3 = 3 }
+        L23902: check_variable = { GER_ascended_advisor_1 = 3 }
+        L23903: check_variable = { GER_ascended_advisor_2 = 3 }
+        L23904: check_variable = { GER_ascended_advisor_3 = 3 }
+        L24026: check_variable = { GER_ascended_advisor_1 = 4 }
+        L24027: check_variable = { GER_ascended_advisor_2 = 4 }
+        L24028: check_variable = { GER_ascended_advisor_3 = 4 }
+        L24108: check_variable = { GER_ascended_advisor_1 = 4 }
+        L24109: check_variable = { GER_ascended_advisor_2 = 4 }
+        L24110: check_variable = { GER_ascended_advisor_3 = 4 }
+        L24199: check_variable = { GER_ascended_advisor_1 = 5 }
+        L24200: check_variable = { GER_ascended_advisor_2 = 5 }
+        L24201: check_variable = { GER_ascended_advisor_3 = 5 }
+        L24247: check_variable = { GER_ascended_advisor_1 = 5 }
+        L24248: check_variable = { GER_ascended_advisor_2 = 5 }
+        L24249: check_variable = { GER_ascended_advisor_3 = 5 }
+        L24313: check_variable = { GER_ascended_advisor_1 = 6 }
+        L24314: check_variable = { GER_ascended_advisor_2 = 6 }
+        L24315: check_variable = { GER_ascended_advisor_3 = 6 }
+        L24365: check_variable = { GER_ascended_advisor_1 = 6 }
+        L24366: check_variable = { GER_ascended_advisor_2 = 6 }
+        L24367: check_variable = { GER_ascended_advisor_3 = 6 }
+        L24433: check_variable = { GER_ascended_advisor_1 = 7 }
+        L24434: check_variable = { GER_ascended_advisor_2 = 7 }
+        L24435: check_variable = { GER_ascended_advisor_3 = 7 }
+        L24485: check_variable = { GER_ascended_advisor_1 = 7 }
+        L24486: check_variable = { GER_ascended_advisor_2 = 7 }
+        L24487: check_variable = { GER_ascended_advisor_3 = 7 }
+  [原版] history\countries\GER - Germany.txt   (3 处)
+        L412: set_variable = { GER_ascended_advisor_1 = 0 } #Ascended Advisor Portrait
+        L413: set_variable = { GER_ascended_advisor_2 = 0 } #Ascended Advisor Portrait
+        L414: set_variable = { GER_ascended_advisor_3 = 0 } #Ascended Advisor Portrait
+  [原版] interface\GER_inner_circle_scripted_gui.gui   (3 处)
+        L207: context_aware_text = "GER_ascended_advisor_1_name_text"
+        L288: context_aware_text = "GER_ascended_advisor_2_name_text"
+        L368: context_aware_text = "GER_ascended_advisor_3_name_text"
+  [原版] localisation\braz_por\WUW_focus_l_braz_por.yml   (3 处)
+        L2626: GER_ascended_advisor_1_name_text: "§Y[GetAscendedAdvisorName1]§!"
+        L2627: GER_ascended_advisor_2_name_text: "§Y[GetAscendedAdvisorName2]§!"
+        L2628: GER_ascended_advisor_3_name_text: "§Y[GetAscendedAdvisorName3]§!"
+  [原版] localisation\english\wuw_focus_l_english.yml   (3 处)
+        L3567: GER_ascended_advisor_1_name_text: "§Y[GetAscendedAdvisorName1]§!"
+        L3568: GER_ascended_advisor_2_name_text: "§Y[GetAscendedAdvisorName2]§!"
+        L3569: GER_ascended_advisor_3_name_text: "§Y[GetAscendedAdvisorName3]§!"
+  [原版] localisation\french\WUW_focus_l_french.yml   (3 处)
+        L2626: GER_ascended_advisor_1_name_text: "§Y[GetAscendedAdvisorName1]§!"
+        L2627: GER_ascended_advisor_2_name_text: "§Y[GetAscendedAdvisorName2]§!"
+        L2628: GER_ascended_advisor_3_name_text: "§Y[GetAscendedAdvisorName3]§!"
+  [原版] localisation\german\WUW_focus_l_german.yml   (3 处)
+        L2626: GER_ascended_advisor_1_name_text: "§Y[GetAscendedAdvisorName1]§!"
+        L2627: GER_ascended_advisor_2_name_text: "§Y[GetAscendedAdvisorName2]§!"
+        L2628: GER_ascended_advisor_3_name_text: "§Y[GetAscendedAdvisorName3]§!"
+  [原版] localisation\japanese\WUW_focus_l_japanese.yml   (3 处)
+        L2626: GER_ascended_advisor_1_name_text: "§Y[GetAscendedAdvisorName1]§!"
+        L2627: GER_ascended_advisor_2_name_text: "§Y[GetAscendedAdvisorName2]§!"
+        L2628: GER_ascended_advisor_3_name_text: "§Y[GetAscendedAdvisorName3]§!"
+  [原版] localisation\korean\wuw_focus_l_korean.yml   (3 处)
+        L2626: GER_ascended_advisor_1_name_text: "§Y[GetAscendedAdvisorName1]§!"
+        L2627: GER_ascended_advisor_2_name_text: "§Y[GetAscendedAdvisorName2]§!"
+        L2628: GER_ascended_advisor_3_name_text: "§Y[GetAscendedAdvisorName3]§!"
+  [原版] localisation\polish\WUW_focus_l_polish.yml   (3 处)
+        L2626: GER_ascended_advisor_1_name_text: "§Y[GetAscendedAdvisorName1]§!"
+        L2627: GER_ascended_advisor_2_name_text: "§Y[GetAscendedAdvisorName2]§!"
+        L2628: GER_ascended_advisor_3_name_text: "§Y[GetAscendedAdvisorName3]§!"
+  [原版] localisation\russian\WUW_focus_l_russian.yml   (3 处)
+        L2626: GER_ascended_advisor_1_name_text: "§Y[GetAscendedAdvisorName1]§!"
+        L2627: GER_ascended_advisor_2_name_text: "§Y[GetAscendedAdvisorName2]§!"
+        L2628: GER_ascended_advisor_3_name_text: "§Y[GetAscendedAdvisorName3]§!"
+  [原版] localisation\simp_chinese\WUW_focus_l_simp_chinese.yml   (3 处)
+        L2626: GER_ascended_advisor_1_name_text: "§Y[GetAscendedAdvisorName1]§!"
+        L2627: GER_ascended_advisor_2_name_text: "§Y[GetAscendedAdvisorName2]§!"
+        L2628: GER_ascended_advisor_3_name_text: "§Y[GetAscendedAdvisorName3]§!"
+  [原版] localisation\spanish\WUW_focus_l_spanish.yml   (3 处)
+        L2626: GER_ascended_advisor_1_name_text: "§Y[GetAscendedAdvisorName1]§!"
+        L2627: GER_ascended_advisor_2_name_text: "§Y[GetAscendedAdvisorName2]§!"
+        L2628: GER_ascended_advisor_3_name_text: "§Y[GetAscendedAdvisorName3]§!"
+
+================ GER_inner_circle_set_ascension_cd ================
+  [R56] common\national_focus\germany.txt   (7 处)
+        L21447: GER_inner_circle_set_ascension_cd = yes
+        L21771: GER_inner_circle_set_ascension_cd = yes
+        L22264: GER_inner_circle_set_ascension_cd = yes
+        L22771: GER_inner_circle_set_ascension_cd = yes
+        L23503: GER_inner_circle_set_ascension_cd = yes
+        L23820: GER_inner_circle_set_ascension_cd = yes
+        L23942: GER_inner_circle_set_ascension_cd = yes
+  [R56] common\scripted_effects\GER_scripted_effects.txt   (1 处)
+        L3591: GER_inner_circle_set_ascension_cd = {
+  [原版] common\national_focus\germany.txt   (7 处)
+        L18409: GER_inner_circle_set_ascension_cd = yes
+        L18756: GER_inner_circle_set_ascension_cd = yes
+        L19253: GER_inner_circle_set_ascension_cd = yes
+        L19743: GER_inner_circle_set_ascension_cd = yes
+        L20490: GER_inner_circle_set_ascension_cd = yes
+        L20822: GER_inner_circle_set_ascension_cd = yes
+        L20959: GER_inner_circle_set_ascension_cd = yes
+  [原版] common\scripted_effects\GER_scripted_effects.txt   (1 处)
+        L3054: GER_inner_circle_set_ascension_cd = {
+
+================ GER_inner_circle_is_ascension_cd_over ================
+  [R56] common\national_focus\germany.txt   (7 处)
+        L21354: GER_inner_circle_is_ascension_cd_over = yes
+        L21679: GER_inner_circle_is_ascension_cd_over = yes
+        L22161: GER_inner_circle_is_ascension_cd_over = yes
+        L22675: GER_inner_circle_is_ascension_cd_over = yes
+        L23411: GER_inner_circle_is_ascension_cd_over = yes
+        L23728: GER_inner_circle_is_ascension_cd_over = yes
+        L23850: GER_inner_circle_is_ascension_cd_over = yes
+  [R56] common\scripted_triggers\GER_scripted_triggers.txt   (1 处)
+        L1544: GER_inner_circle_is_ascension_cd_over = {
+  [原版] common\national_focus\germany.txt   (7 处)
+        L18316: GER_inner_circle_is_ascension_cd_over = yes
+        L18664: GER_inner_circle_is_ascension_cd_over = yes
+        L19161: GER_inner_circle_is_ascension_cd_over = yes
+        L19647: GER_inner_circle_is_ascension_cd_over = yes
+        L20398: GER_inner_circle_is_ascension_cd_over = yes
+        L20730: GER_inner_circle_is_ascension_cd_over = yes
+        L20867: GER_inner_circle_is_ascension_cd_over = yes
+  [原版] common\scripted_triggers\GER_scripted_triggers.txt   (1 处)
+        L1470: GER_inner_circle_is_ascension_cd_over = {
+
+================ GER_ascending_advisor ================
+  [R56] common\national_focus\germany.txt   (7 处)
+        L21407: set_variable = { GER_ascending_advisor = 1 }
+        L21732: set_variable = { GER_ascending_advisor = 2 }
+        L22225: set_variable = { GER_ascending_advisor = 3 }
+        L22728: set_variable = { GER_ascending_advisor = 4 }
+        L23464: set_variable = { GER_ascending_advisor = 5 }
+        L23781: set_variable = { GER_ascending_advisor = 6 }
+        L23903: set_variable = { GER_ascending_advisor = 7 }
+  [R56] common\scripted_effects\GER_scripted_effects.txt   (8 处)
+        L2812: check_variable = { GER_ascending_advisor = 1 }
+        L2818: check_variable = { GER_ascending_advisor = 2 }
+        L2824: check_variable = { GER_ascending_advisor = 3 }
+        L2830: check_variable = { GER_ascending_advisor = 4 }
+        L2836: check_variable = { GER_ascending_advisor = 5 }
+        L2842: check_variable = { GER_ascending_advisor = 6 }
+        L2848: check_variable = { GER_ascending_advisor = 7 }
+        L2853: log = "Something bad happened trying to add advisor [?GER_ascending_advisor] effects."
+  [R56] events\WUW_Germany.txt   (17 处)
+        L21847: check_variable = { GER_ascending_advisor = 4 } #Himmler Ascending
+        L21856: set_variable = { GER_ascended_advisor_1 = GER_ascending_advisor }
+        L21861: clear_variable = GER_ascending_advisor
+        L21874: check_variable = { GER_ascending_advisor = 4 } #Himmler Ascending
+        L21883: set_variable = { GER_ascended_advisor_2 = GER_ascending_advisor }
+        L21888: clear_variable = GER_ascending_advisor
+        L21901: check_variable = { GER_ascending_advisor = 4 } #Himmler Ascending
+        L21910: set_variable = { GER_ascended_advisor_3 = GER_ascending_advisor }
+        L21915: clear_variable = GER_ascending_advisor
+        L21929: check_variable = { GER_ascending_advisor = 1 }
+        L21939: check_variable = { GER_ascending_advisor = 2 }
+        L21949: check_variable = { GER_ascending_advisor = 3 }
+        L21959: check_variable = { GER_ascending_advisor = 4 }
+        L21969: check_variable = { GER_ascending_advisor = 5 }
+        L21979: check_variable = { GER_ascending_advisor = 6 }
+        L21989: check_variable = { GER_ascending_advisor = 7 }
+        L22003: clear_variable = GER_ascending_advisor
+  [原版] common\national_focus\germany.txt   (7 处)
+        L18369: set_variable = { GER_ascending_advisor = 1 }
+        L18717: set_variable = { GER_ascending_advisor = 2 }
+        L19214: set_variable = { GER_ascending_advisor = 3 }
+        L19700: set_variable = { GER_ascending_advisor = 4 }
+        L20451: set_variable = { GER_ascending_advisor = 5 }
+        L20783: set_variable = { GER_ascending_advisor = 6 }
+        L20920: set_variable = { GER_ascending_advisor = 7 }
+  [原版] common\scripted_effects\GER_scripted_effects.txt   (8 处)
+        L2275: check_variable = { GER_ascending_advisor = 1 }
+        L2281: check_variable = { GER_ascending_advisor = 2 }
+        L2287: check_variable = { GER_ascending_advisor = 3 }
+        L2293: check_variable = { GER_ascending_advisor = 4 }
+        L2299: check_variable = { GER_ascending_advisor = 5 }
+        L2305: check_variable = { GER_ascending_advisor = 6 }
+        L2311: check_variable = { GER_ascending_advisor = 7 }
+        L2316: log = "Something bad happened trying to add advisor [?GER_ascending_advisor] effects."
+  [原版] common\scripted_localisation\WUW_GER_scripted_loc.txt   (14 处)
+        L2190: check_variable = { GER_ascending_advisor = 1 }
+        L2196: check_variable = { GER_ascending_advisor = 2 }
+        L2202: check_variable = { GER_ascending_advisor = 3 }
+        L2208: check_variable = { GER_ascending_advisor = 4 }
+        L2214: check_variable = { GER_ascending_advisor = 5 }
+        L2220: check_variable = { GER_ascending_advisor = 6 }
+        L2226: check_variable = { GER_ascending_advisor = 7 }
+        L2236: check_variable = { GER_ascending_advisor = 1 }
+        L2242: check_variable = { GER_ascending_advisor = 2 }
+        L2248: check_variable = { GER_ascending_advisor = 3 }
+        L2254: check_variable = { GER_ascending_advisor = 4 }
+        L2260: check_variable = { GER_ascending_advisor = 5 }
+        L2266: check_variable = { GER_ascending_advisor = 6 }
+        L2272: check_variable = { GER_ascending_advisor = 7 }
+  [原版] events\WUW_Germany.txt   (17 处)
+        L21858: check_variable = { GER_ascending_advisor = 4 } #Himmler Ascending
+        L21867: set_variable = { GER_ascended_advisor_1 = GER_ascending_advisor }
+        L21872: clear_variable = GER_ascending_advisor
+        L21885: check_variable = { GER_ascending_advisor = 4 } #Himmler Ascending
+        L21894: set_variable = { GER_ascended_advisor_2 = GER_ascending_advisor }
+        L21899: clear_variable = GER_ascending_advisor
+        L21912: check_variable = { GER_ascending_advisor = 4 } #Himmler Ascending
+        L21921: set_variable = { GER_ascended_advisor_3 = GER_ascending_advisor }
+        L21926: clear_variable = GER_ascending_advisor
+        L21940: check_variable = { GER_ascending_advisor = 1 }
+        L21950: check_variable = { GER_ascending_advisor = 2 }
+        L21960: check_variable = { GER_ascending_advisor = 3 }
+        L21970: check_variable = { GER_ascending_advisor = 4 }
+        L21980: check_variable = { GER_ascending_advisor = 5 }
+        L21990: check_variable = { GER_ascending_advisor = 6 }
+        L22000: check_variable = { GER_ascending_advisor = 7 }
+        L22014: clear_variable = GER_ascending_advisor
+

@@ -1,0 +1,22 @@
+扫描 localisation 文件数: 207  （F:\Hearts of Iron IV\localisation\simp_chinese）
+=== 词条 _tt 键实测 ===
+  [OK ] army_org_factor_tt                          modifiers_l_simp_chinese.yml
+  [OK ] army_morale_factor_tt                       modifiers_l_simp_chinese.yml
+  [OK ] army_core_attack_factor_tt                  modifiers_l_simp_chinese.yml
+  [OK ] army_core_defence_factor_tt                 modifiers_l_simp_chinese.yml
+  [OK ] max_dig_in_factor_tt                        modifiers_l_simp_chinese.yml
+  [OK ] stability_factor_tt                         modifiers_l_simp_chinese.yml
+  [OK ] drift_defence_factor_tt                     modifiers_l_simp_chinese.yml
+  [OK ] political_power_factor_tt                   modifiers_l_simp_chinese.yml
+  [OK ] research_speed_factor_tt                    modifiers_l_simp_chinese.yml
+  [OK ] production_speed_buildings_factor_tt        modifiers_l_simp_chinese.yml
+  [OK ] mobilization_speed_tt                       modifiers_l_simp_chinese.yml
+  [OK ] war_support_factor_tt                       modifiers_l_simp_chinese.yml
+  [OK ] training_time_factor_tt                     modifiers_l_simp_chinese.yml
+  [OK ] conscription_tt                             modifiers_l_simp_chinese.yml
+
+=== 参照：docs/36 已实测可用的 4 个 ===
+  political_power_factor_tt                   [OK ]
+  research_speed_factor_tt                    [OK ]
+  drift_defence_factor_tt                     [OK ]
+  stability_factor_tt                         [OK ]

@@ -1,0 +1,132 @@
+﻿==================== 国策里授予 MIO 的写法 ====================
+  --- show_mio_tooltip ---
+    [afghanistan.txt] L914  show_mio_tooltip = SOV_gaz_organization
+    [afghanistan.txt] L1405  show_mio_tooltip = AFG_khyber_pass_rifling_org
+    [afghanistan.txt] L2060  show_mio_tooltip = AFG_infantry_organization
+  --- unlock_mio ---
+    [afghanistan.txt] L1404  custom_effect_tooltip = unlock_mio_tt
+    [afghanistan.txt] L2059  custom_effect_tooltip = unlock_mio_tt
+    [australia_taog.txt] L9716  unlock_mio_trait_tooltip = AST_mio_trait_lee_enfield_no1_mark3
+  --- add_mio ---
+    [afghanistan.txt] L916  add_mio_size = 3
+    [afghanistan.txt] L1407  add_mio_size = 1
+    [afghanistan.txt] L2062  add_mio_size = 1
+
+==================== GER_organization_todt 的定义与授予 ====================
+    [common\ideas\GER.txt] L5846  GER_organization_todt = {
+    [common\ideas\GER.txt] L5848  picture = GER_organization_todt
+    [common\ideas\GER.txt] L5869  traits = { GER_organization_todt_trait }
+    [common\ideas\GER.txt] L5872  GER_organization_todt_improved = {
+    [common\ideas\GER.txt] L5873  name = GER_organization_todt
+    [common\ideas\GER.txt] L5875  picture = GER_organization_todt
+    [common\ideas\GER.txt] L5895  traits = { GER_organization_todt_improved_trait }
+    [common\national_focus\germany.txt] L18496  add_idea = GER_organization_todt
+    [common\national_focus\germany.txt] L18502  show_ideas_tooltip = GER_organization_todt
+    [common\national_focus\germany.txt] L18605  has_idea = GER_organization_todt
+    [common\national_focus\germany.txt] L18608  remove_idea = GER_organization_todt
+    [common\national_focus\germany.txt] L18609  add_idea = GER_organization_todt_improved
+
+==================== 雅科夫列夫 MIO 全定义  L2098 ====================
+     2098  SOV_yakovlev_design_bureau_organization = {
+     2099  	include = generic_naval_aircraft_organization
+     2100  	icon = GFX_idea_yakovlev_design_bureau
+     2101  	
+     2102  	allowed = {	
+     2103  		OR = {
+     2104  			original_tag = SOV
+     2105  			AND = {
+     2106  			    tag = AST
+     2107  			    has_dlc = "Thunder at Our Gates"
+     2108  			}
+     2109  		}
+     2110  	}
+     2111  
+     2112  	available = {
+     2113  		IF = { #Dissolve Bureau Purge
+     2114  			limit = {
+     2115  				FROM = { original_tag = SOV }
+     2116  			}
+     2117  			FROM = { NOT = { has_country_flag = SOV_yakovlev_design_bureau_dissolved_flag } }
+     2118  		}
+     2119  		if = {
+     2120  		    limit = { FROM = { original_tag = AST } }
+     2121  		    FROM = { has_completed_focus = AST_westward_battles }
+     2122  		}
+     2123  	}
+     2124  
+     2125  	add_trait = { 
+     2126  		token = SOV_mio_trait_merge_plant_no_28
+     2127  		name = SOV_merge_aircraft_plant_1
+     2128  		#icon = GFX_generic_mio_department_icon_facilities
+     2129  		icon = GFX_generic_mio_trait_icon_build_cost_ic
+     2130  		special_trait_background = yes
+     2131  
+     2132  		position = { x=@aircraft_1_X y=@aircraft_1_Y }
+     2133  		
+     2134  		visible = {
+     2135  			FROM = { original_tag = SOV }
+     2136  		}
+     2137  		
+     2138  		available = {
+     2139  			FROM = {
+     2140  				has_full_control_of_state = 251 #KUYBYSHEV
+     2141  			}
+     2142  			FROM = {
+     2143  				has_completed_focus = SOV_merge_aircraft_plants
+     2144  			}
+     2145  			FROM = {
+     2146  				NOT = { has_country_flag = SOV_merge_plant_no_28_flag }
+     2147  			}
+     2148  		}
+     2149  
+     2150  		on_complete = {
+     2151  			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
+     2152  			FROM = {
+     2153  				set_country_flag = SOV_merge_plant_no_28_flag
+     2154  			}
+     2155  		}
+     2156  
+     2157  		production_bonus = {
+     2158  			production_cost_factor = @aircraft_production_cost_factor
+     2159  		}
+     2160  	}
+     2161  
+     2162  	add_trait = { 
+     2163  		token = SOV_mio_trait_merge_plant_no_150
+     2164  		name = SOV_merge_aircraft_plant_2
+     2165  		#icon = GFX_generic_mio_department_icon_facilities
+     2166  		icon = GFX_generic_mio_trait_icon_air_agility
+     2167  		special_trait_background = yes
+     2168  
+
+==================== 恢复雅科夫列夫决议  [SOV.txt] L892 ====================
+      889  		}
+      890  	}
+      891  
+      892  	SOV_reinstate_yakovlev_design_bureau = {
+      893  		priority = 282
+      894  
+      895  		icon = generic_air
+      896  
+      897  		ai_will_do = {
+      898  			base = 2
+      899  		}
+      900  
+      901  		allowed = {
+      902  			original_tag = SOV
+      903  		}
+      904  
+      905  		available = {
+      906  			has_country_flag = {
+      907  				flag = SOV_yakovlev_design_bureau_dissolved_flag
+      908  				days > 365
+      909  			}
+      910  			custom_trigger_tooltip = {
+      911  				tooltip = SOV_yakovlev_design_bureau_dissolved_days_tt
+      912  				has_country_flag = {
+      913  					flag = SOV_yakovlev_design_bureau_dissolved_flag
+      914  					days > 365
+      915  				}
+      916  			}
+      917  			num_of_civilian_factories_available_for_projects > 1
+      918  		}

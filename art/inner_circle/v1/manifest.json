@@ -1,0 +1,104 @@
+{
+  "mode": "built-in image_gen",
+  "assets": [
+    {
+      "name": "hof_ic_leader_frame",
+      "prompt": "Use case: stylized-concept. Create ONE production game UI sprite for a WWII Soviet Supreme Soviet council interface, asset hof_ic_leader_frame. A front-facing circular portrait frame, aged blue-black steel with thin antique brass bevels, small deep crimson enamel five-point star centered at top, restrained wheat ear relief at lower sides, institutional collective-government dignity. Painted realistic Hearts of Iron style, subtle top-left light, crisp silhouette readable at 165x165 pixels. EMPTY central circular aperture must be truly alpha transparent, outside frame truly alpha transparent too, NO checkerboard drawn, no portrait, no text, no scene, no extra objects. Entire ornament inside square canvas with only 3 percent padding, ring has thin practical width leaving large portrait opening. Output transparent PNG, preferably 660x660 or square resolution. This is an individual usable sprite, not a mockup or asset sheet.",
+      "size": [
+        165,
+        165
+      ],
+      "source": "C:\\Users\\xuwei\\.codex\\generated_images\\01a09af5-fd43-79a0-a3cc-72284cd67cbc\\exec-65639be6-8f58-412c-8b66-24dbacf91a38.png"
+    },
+    {
+      "name": "hof_ic_window_bg",
+      "prompt": "Use case: stylized-concept. Production 2D WWII Soviet Supreme Soviet council UI sprite hof_ic_window_bg. Cohesive style: aged blue-black steel, restrained antique brass, deep crimson enamel/satin; painted realistic strategy-game UI, understated institutional dignity, subtle top-left lighting, fine crisp bevels readable at small game resolution. A single empty council WINDOW BACKPLATE, exact aspect ratio 631:583. Broad mostly plain very dark desaturated blue charcoal panel, subtle aged metal grain, thin antique brass outer trim and dark crimson enamel recessed edge, tiny Soviet wheat-and-gear relief confined strictly to four corners. Center 90 percent quiet and empty for many portraits and UI text. Rectangular frontal flat panel, 2 percent transparent margin beyond edges, no text or symbols in central field. Do not draw portraits, slots, layout, seats or lettering. ONE individual asset only, no mockup, no asset sheet, no scene, no text, no watermark. Transparent PNG with real alpha, never draw a checkerboard.",
+      "size": [
+        631,
+        583
+      ],
+      "source": "C:\\Users\\xuwei\\.codex\\generated_images\\01a09af5-fd43-79a0-a3cc-72284cd67cbc\\exec-6fcc863d-d5c7-4087-9b11-e47cb8469dd0.png"
+    },
+    {
+      "name": "hof_ic_seat_frame_empty",
+      "prompt": "Use case: stylized-concept. Production 2D WWII Soviet Supreme Soviet council UI sprite hof_ic_seat_frame_empty. Cohesive style: aged blue-black steel, restrained antique brass, deep crimson enamel/satin; painted realistic strategy-game UI, understated institutional dignity, subtle top-left lighting, fine crisp bevels readable at small game resolution. A single EMPTY COUNCIL SEAT portrait frame, aspect ratio 131:139. Rectangular with gently clipped corners, narrow blue-black steel frame, subdued tarnished brass bevel, tiny dim five-point Soviet star in top center border. Inner aperture truly TRANSPARENT for portrait, exterior truly transparent. Very subdued grey low-contrast vacancy state. NO solid backing and no symbol across inner aperture. Frame occupies canvas with 3 percent padding. Keep frame thin and aperture large. ONE individual asset only, no mockup, no asset sheet, no scene, no text, no watermark. Transparent PNG with real alpha, never draw a checkerboard.",
+      "size": [
+        131,
+        139
+      ],
+      "source": "C:\\Users\\xuwei\\.codex\\generated_images\\01a09af5-fd43-79a0-a3cc-72284cd67cbc\\exec-0d96f4fd-6f5e-4a12-9da4-95193e715c13.png"
+    },
+    {
+      "name": "hof_ic_leader_ribbon",
+      "prompt": "Use case: stylized-concept. Production 2D WWII Soviet Supreme Soviet council UI sprite hof_ic_leader_ribbon. Cohesive style: aged blue-black steel, restrained antique brass, deep crimson enamel/satin; painted realistic strategy-game UI, understated institutional dignity, subtle top-left lighting, fine crisp bevels readable at small game resolution. A single horizontal LEADER NAME RIBBON, aspect ratio 160:36, deep crimson woven satin rectangular central band, subtle antique gold piping, very short folded tails at both ends. Long central 80 percent completely blank for game-drawn name. Front-on, symmetrical, no text, no emblem. Entire ribbon visible with minimal margin, true transparent exterior. Canvas may be wide with padding if necessary but ribbon silhouette must be 4.44 times as wide as tall. ONE individual asset only, no mockup, no asset sheet, no scene, no text, no watermark. Transparent PNG with real alpha, never draw a checkerboard.",
+      "size": [
+        160,
+        36
+      ],
+      "source": "C:\\Users\\xuwei\\.codex\\generated_images\\01a09af5-fd43-79a0-a3cc-72284cd67cbc\\exec-9a311ece-b5d3-4246-a162-edb1e812989d.png"
+    },
+    {
+      "name": "hof_ic_leader_title_box",
+      "prompt": "Use case: stylized-concept. ONE production 2D WWII Soviet Supreme Soviet council UI sprite hof_ic_leader_title_box. Cohesive aged blue-black steel, restrained antique brass, deep crimson palette; painted realistic strategy-game UI, subtle top-left light, crisp restrained bevels readable at small game scale. Single narrow horizontal title plaque, intended final size 115x22 px, silhouette ratio 5.23:1. Dark oxblood inset, very thin antique brass bevel, clipped corners, tiny brass diamond rivet each end. Central 85 percent plain almost black burgundy for text. No lettering. True transparent exterior. Minimize margins. Front facing, no perspective, no mockup, no scene, no sheet, no text, no watermark. Transparent PNG with REAL alpha, no checkerboard.",
+      "size": [
+        115,
+        22
+      ],
+      "source": "C:\\Users\\xuwei\\.codex\\generated_images\\01a09af5-fd43-79a0-a3cc-72284cd67cbc\\exec-5923a130-c8e5-4b90-be4b-c69cf3c6ea92.png"
+    },
+    {
+      "name": "hof_ic_seat_name_box",
+      "prompt": "Use case: stylized-concept. ONE production 2D WWII Soviet Supreme Soviet council UI sprite hof_ic_seat_name_box. Cohesive aged blue-black steel, restrained antique brass, deep crimson palette; painted realistic strategy-game UI, subtle top-left light, crisp restrained bevels readable at small game scale. Single narrow horizontal councillor nameplate, intended final size 146x26 px, silhouette ratio 5.62:1. Flat dark crimson enamel with thin antique brass outline, short blue-black steel end caps, fine tiny rivets. Central 85 percent blank dark area for name. No lettering. True transparent exterior. Minimize margins. Front facing, no perspective, no mockup, no scene, no sheet, no text, no watermark. Transparent PNG with REAL alpha, no checkerboard.",
+      "size": [
+        146,
+        26
+      ],
+      "source": "C:\\Users\\xuwei\\.codex\\generated_images\\01a09af5-fd43-79a0-a3cc-72284cd67cbc\\exec-52fe8837-945e-42cb-8b0d-612a37c2e3a3.png"
+    },
+    {
+      "name": "hof_ic_seat_frame_filled",
+      "prompt": "Use case: precise-object-edit. Edit this exact Soviet council seat frame into its APPOINTED / FILLED state. Preserve exact frame silhouette, border geometry, aperture, canvas size and transparency. Change only finish: brighter antique brass edge highlights, richer deep crimson enamel vertical strips and a brighter red five-point star. Do NOT add a portrait, contents, background or text; center and exterior remain truly alpha transparent. It must align perfectly when swapping with the original empty frame in a game.",
+      "size": [
+        131,
+        139
+      ],
+      "source": "C:\\Users\\xuwei\\.codex\\generated_images\\01a09af5-fd43-79a0-a3cc-72284cd67cbc\\exec-23a40e81-79f3-45b7-a4a3-0cbf6d9a4274.png"
+    },
+    {
+      "name": "hof_ic_seat_trait_box",
+      "prompt": "Use case: stylized-concept. ONE production 2D Soviet WWII strategy game UI trait plaque, final 144x43 pixels, silhouette ratio 3.35:1. Broad low horizontal rectangle with clipped corners, blue-black aged steel and very thin subdued antique brass outline, tiny dark crimson corner accents. Center 85 percent plain near-black charcoal for two lines of game text. Institutional and restrained; realistic painted metal, subtle top-left highlight. No text, no symbols inside, no scene or mockup. Front facing orthographic, entire plaque with minimal margin, transparent exterior with actual PNG alpha, no checkerboard.",
+      "size": [
+        144,
+        43
+      ],
+      "source": "C:\\Users\\xuwei\\.codex\\generated_images\\01a09af5-fd43-79a0-a3cc-72284cd67cbc\\exec-9bd0c515-3b5d-4a71-bee5-e0c6b42ae7fe.png"
+    },
+    {
+      "name": "hof_ic_candidate_slot",
+      "prompt": "Use case: stylized-concept. ONE production WWII Soviet Supreme Soviet council game UI sprite hof_ic_candidate_slot. Restrained realistic painted strategy game style. Single small SQUARE portrait frame final 58x58 pixels. Very thin blue-black steel rim with antique brass bevels, restrained small crimson corner insets, no star needed at this small size. Large completely empty truly transparent square aperture and transparent exterior. Flat front facing, same line weights on all four sides, no portrait, no background. Occupy canvas with 2 percent padding. Single individual asset only, no sheet, no mockup, no watermark, no text. Transparent PNG with actual alpha.",
+      "size": [
+        58,
+        58
+      ],
+      "source": "C:\\Users\\xuwei\\.codex\\generated_images\\01a09af5-fd43-79a0-a3cc-72284cd67cbc\\exec-7c7fd579-ed65-40fd-b38a-a601cbdf7def.png"
+    },
+    {
+      "name": "hof_ic_blank_portrait",
+      "prompt": "Use case: stylized-concept. ONE production WWII Soviet Supreme Soviet council game UI sprite hof_ic_blank_portrait. Restrained realistic painted strategy game style. Single anonymous vacant-councillor bust SILHOUETTE final 156x210 pixels, portrait aspect 26:35. Head and shoulders of a generic Soviet civilian in a simple jacket, no hat, no face details or specific person. Matte dark slate grey-blue silhouette with very subtle soft lighter rim separating shoulders and head, center face entirely featureless. Crop at lower chest, centered subject fills lower 90 percent of canvas, transparent exterior. No frame, no badges, no scene, no lettering. Single individual asset only, no sheet, no mockup, no watermark, no text. Transparent PNG with actual alpha.",
+      "size": [
+        156,
+        210
+      ],
+      "source": "C:\\Users\\xuwei\\.codex\\generated_images\\01a09af5-fd43-79a0-a3cc-72284cd67cbc\\exec-8cc91dc8-2429-40e7-b16b-18ebf33a519d.png"
+    },
+    {
+      "name": "hof_ic_spotlight",
+      "prompt": "Use case: stylized-concept. ONE production WWII Soviet Supreme Soviet council game UI sprite hof_ic_spotlight. Restrained realistic painted strategy game style. Single subtle cool-white LIGHT OVERLAY texture, final aspect ratio 588:538. One large elliptical softly diffused glow in the center; very faint pale silver light at center, opacity at brightest no more than 18 percent, smoothly fading to completely transparent by outer 20 percent of canvas. Designed to lay over a dark UI panel without washing it out. NO objects, no frame, no texture grain, no rays, no lens flare, no drawing of checkerboard, no opaque background. Real alpha channel essential. Single individual asset only, no sheet, no mockup, no watermark, no text. Transparent PNG with actual alpha.",
+      "size": [
+        588,
+        538
+      ],
+      "source": "C:\\Users\\xuwei\\.codex\\generated_images\\01a09af5-fd43-79a0-a3cc-72284cd67cbc\\exec-c55fff9b-e2f2-41fb-8307-32677ac8ab9d.png"
+    }
+  ]
+}

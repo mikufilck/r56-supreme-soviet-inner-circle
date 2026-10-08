@@ -1,0 +1,158 @@
+﻿################################################################################
+# 1. 原版 gfx/interface/goals/ 里 SOV 国策图标：有没有 _shine 文件？
+################################################################################
+  [原版] focus_SOV_*.dds 共 58 个，其中带 _shine 的 0 个
+
+  [原版] 前 8 个文件名：
+      focus_SOV_ally_bukharinists.dds
+      focus_SOV_ally_zinovyevists.dds
+      focus_SOV_approach_primakov.dds
+      focus_SOV_approach_semyonov.dds
+      focus_SOV_approach_tukahchevsky.dds
+      focus_SOV_baltic_security.dds
+      focus_SOV_behead_the_snake.dds
+      focus_SOV_breadbasket_of_the_union.dds
+  [R56] focus_SOV_*.dds 共 2 个，其中带 _shine 的 0 个
+
+  [R56] 前 8 个文件名：
+      focus_SOV_reinforce_northern_naval_bases.dds
+      focus_SOV_reinforce_southern_naval_bases.dds
+
+################################################################################
+# 2. 一个具体国策图标在 .gfx 里怎么注册（找 focus_SOV_ 的 spriteType 块）
+################################################################################
+
+--- [原版] interface\goals.gfx  L3021
+    	SpriteType = { 
+    		name = "GFX_focus_SOV_ally_bukharinists"
+    		texturefile = "gfx/interface/goals/focus_SOV_ally_bukharinists.dds"
+    	}
+    
+    	SpriteType = { 
+    		name = "GFX_focus_SOV_ally_zinovyevists"
+    		texturefile = "gfx/interface/goals/focus_SOV_ally_zinovyevists.dds"
+    	}
+    
+    	SpriteType = { 
+    		name = "GFX_focus_SOV_behead_the_snake"
+    		texturefile = "gfx/interface/goals/focus_SOV_behead_the_snake.dds"
+
+--- [原版] interface\goals.gfx  L3031
+    	SpriteType = { 
+    		name = "GFX_focus_SOV_behead_the_snake"
+    		texturefile = "gfx/interface/goals/focus_SOV_behead_the_snake.dds"
+    	}
+    
+    	SpriteType = { 
+    		name = "GFX_focus_SOV_breadbasket_of_the_union"
+    		texturefile = "gfx/interface/goals/focus_SOV_breadbasket_of_the_union.dds"
+    	}
+    
+    	SpriteType = { 
+    		name = "GFX_focus_SOV_builder_of_the_red_army"
+    		texturefile = "gfx/interface/goals/focus_SOV_builder_of_the_red_army.dds"
+
+--- [原版] interface\goals.gfx  L3041
+    	SpriteType = { 
+    		name = "GFX_focus_SOV_builder_of_the_red_army"
+    		texturefile = "gfx/interface/goals/focus_SOV_builder_of_the_red_army.dds"
+    	}
+    
+    	SpriteType = { 
+    		name = "GFX_focus_SOV_bukharan_republic"
+    		texturefile = "gfx/interface/goals/focus_SOV_bukharan_republic.dds"
+    	}
+    
+    	SpriteType = { 
+    		name = "GFX_focus_SOV_bukharinists"
+    		texturefile = "gfx/interface/goals/focus_SOV_bukharinists.dds"
+
+--- [原版] interface\goals.gfx  L3051
+    	SpriteType = { 
+    		name = "GFX_focus_SOV_bukharinists"
+    		texturefile = "gfx/interface/goals/focus_SOV_bukharinists.dds"
+    	}
+    
+    	SpriteType = { 
+    		name = "GFX_focus_SOV_father_of_nations"
+    		texturefile = "gfx/interface/goals/focus_SOV_father_of_nations.dds"
+    	}
+    
+    	SpriteType = { 
+    		name = "GFX_focus_SOV_flying_clubs"
+    		texturefile = "gfx/interface/goals/focus_SOV_flying_clubs.dds"
+
+--- [原版] interface\goals.gfx  L3061
+    	SpriteType = { 
+    		name = "GFX_focus_SOV_flying_clubs"
+    		texturefile = "gfx/interface/goals/focus_SOV_flying_clubs.dds"
+    	}
+    
+    	SpriteType = { 
+    		name = "GFX_focus_SOV_free_Rutenia"
+    		texturefile = "gfx/interface/goals/focus_SOV_free_Rutenia.dds"
+    	}
+    
+    	SpriteType = { 
+    		name = "GFX_focus_SOV_ivan_plays_baseball"
+    		texturefile = "gfx/interface/goals/focus_SOV_ivan_plays_baseball.dds"
+
+--- [原版] interface\goals.gfx  L3071
+    	SpriteType = { 
+    		name = "GFX_focus_SOV_ivan_plays_baseball"
+    		texturefile = "gfx/interface/goals/focus_SOV_ivan_plays_baseball.dds"
+    	}
+    
+    	SpriteType = { 
+    		name = "GFX_focus_SOV_military_purge"
+    		texturefile = "gfx/interface/goals/focus_SOV_military_purge.dds"
+    	}
+    
+    	SpriteType = { 
+    		name = "GFX_focus_SOV_my_brothers_keeper"
+    		texturefile = "gfx/interface/goals/focus_SOV_my_brothers_keeper.dds"
+  [原版] 命中 6 处
+  [R56] 命中 0 处
+
+################################################################################
+# 3. 我们自己 mod 已有的 .gfx 文件头（照抄写法用）
+################################################################################
+
+--- hof_ic.gfx  （82 行）
+    # =============================================================================
+    # 核心圈窗口的 sprite 注册（间接层）
+    # -----------------------------------------------------------------------------
+    # .gui 里一律使用 GFX_hof_ic_* 这些名字，而它们指向哪张纹理由本文件决定。
+    # 美术迭代时【只改这里的 texturefile 路径】，.gui 一行都不用动。
+    #
+
+--- hof_ic_portraits.gfx  （92 行）
+    # =============================================================================
+    # 核心圈 · 席位立绘 sprite（由 build/gen-hof-ic-s3.ps1 生成，勿手改）
+    # 单独成文件，是为了让手写的 interface/hof_ic.gfx 保持不动。
+    # =============================================================================
+    
+    spriteTypes = {
+
+################################################################################
+# 4. 文档里 focus icon 的注册规格怎么说
+################################################################################
+  （modifiers 文档跟图标无关，改查项目文档）
+
+--- 05-gfx-and-interface.md
+    L46: | --- | --- |
+    L47: | sprite **完全透明** | 图能引用到但加载不了：`texturefile` 路径或文件名不存在、或图片本身损坏。日志中通常伴随 `Texture Handler encountered missing texture file` |
+    L48: | sprite 显示成**默认占位图** | 问题在 sprite 本身（通常是名字拼错、或没遵守命名格式，例如国策图标漏了 `_shine`） |
+    L49: | 角色用了**随机生成的头像** | 上面两种之一：sprite 无效或文件缺失 |
+    L50: 
+    L51: > ?? **国策图标必须额外提供一个以 `_shine` 结尾的光泽 sprite**，否则图标会显示异常。这是最容易漏的一条。
+    ---
+    L49: | 角色用了**随机生成的头像** | 上面两种之一：sprite 无效或文件缺失 |
+    L50: 
+    L51: > ?? **国策图标必须额外提供一个以 `_shine` 结尾的光泽 sprite**，否则图标会显示异常。这是最容易漏的一条。
+    L52: 
+    L53: ## 5.4 旗帜
+    L54: 
+    ---
+
+--- 24-focus-icon-prompts.md

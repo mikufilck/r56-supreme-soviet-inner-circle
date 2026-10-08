@@ -1,0 +1,18 @@
+=== ru_dvr.txt (35,096 字符) 里含 Смирнов 的句子 ===
+  - Идею создания республики предложили Иван Никитич Смирнов и Александр Михайлович Краснощёков.
+
+=== tmp/smirnov/wiki/ru_sibrevkom.txt 不存在 ===
+
+=== tmp/smirnov/wiki/ru_nkpt_ussr.txt (2,255 字符) 命中 1 行 ===
+  - 6 июля 1923 — 12 ноября 1927 — Иван Никитич Смирнов;
+
+=== build/smirnov-trot1936.txt (377 字符) ===
+=== 托洛茨基 1936 档案索引（链接）===
+  Trotsky Archive                                                  ../index.htm
+  Trotsky&#8217;s Writings by Date                                 ../works/index.htm
+  Encyclopedia of
+
+          Trotskyism                            ../../../history/etol/index.htm
+  Marxists Internet
+
+Archive                                       ../../../index.htm

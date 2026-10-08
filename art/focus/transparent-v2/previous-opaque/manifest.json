@@ -1,0 +1,526 @@
+{
+  "mode": "built-in image_gen",
+  "assets": [
+    {
+      "id": "hof_ic_seat_lev_trotsky",
+      "name": "GFX_hof_ic_seat_lev_trotsky",
+      "title": "列夫·托洛茨基",
+      "group": "entry",
+      "description": "陆海军人民委员 / 革命军事委员会主席 / 最高国民经济委员会主席",
+      "portrait_source": "D:\\Program Files (x86)\\Steam\\steamapps\\workshop\\content\\394360\\2129897125\\gfx\\leaders\\SOV\\r56_portrait_SOV_Leon_Trotsky.dds",
+      "reference": "references/lev_trotsky.png",
+      "size": [
+        100,
+        88
+      ],
+      "status": "complete",
+      "source": "source/GFX_hof_ic_seat_lev_trotsky.png",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_seat_lev_trotsky.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_seat_lev_trotsky.dds",
+      "generation_record": "records/GFX_hof_ic_seat_lev_trotsky-revision.json",
+      "sha256": "d8a7c7462699fb226539ef3760f55e0376a8e6514e0c2a9692d88fff3807e856"
+    },
+    {
+      "id": "hof_ic_seat_nikolay_bukharin",
+      "name": "GFX_hof_ic_seat_nikolay_bukharin",
+      "title": "尼古拉·布哈林",
+      "group": "entry",
+      "description": "《真理报》《消息报》主编 / 共产国际执委会主席 / 1936 年宪法起草人",
+      "portrait_source": "F:\\Hearts of Iron IV\\dlc\\dlc034_no_step_back\\gfx\\leaders\\SOV\\portrait_SOV_nikolay_bukharin.dds",
+      "reference": "references/nikolay_bukharin.png",
+      "size": [
+        100,
+        88
+      ],
+      "status": "complete",
+      "source": "source/GFX_hof_ic_seat_nikolay_bukharin.png",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_seat_nikolay_bukharin.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_seat_nikolay_bukharin.dds",
+      "generation_record": "records/GFX_hof_ic_seat_nikolay_bukharin.json",
+      "sha256": "afd6845dfc3c7e5f1ceafccbad3c01dee4de71c7bd08274b83dff1442f381ec5"
+    },
+    {
+      "id": "hof_ic_seat_aleksey_rykov",
+      "name": "GFX_hof_ic_seat_aleksey_rykov",
+      "title": "阿列克谢·李可夫",
+      "group": "entry",
+      "description": "苏联人民委员会主席（1924–30）/ 最高国民经济委员会主席",
+      "portrait_source": "F:\\Hearts of Iron IV\\dlc\\dlc034_no_step_back\\gfx\\leaders\\SOV\\portrait_SOV_aleksey_rykov.dds",
+      "reference": "references/aleksey_rykov.png",
+      "size": [
+        100,
+        88
+      ],
+      "status": "complete",
+      "source": "source/GFX_hof_ic_seat_aleksey_rykov.png",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_seat_aleksey_rykov.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_seat_aleksey_rykov.dds",
+      "generation_record": "records/GFX_hof_ic_seat_aleksey_rykov.json",
+      "sha256": "45210f1da047c857bdd391bd7e015431a9525b9df61d3bf0604acaf62f7bf343"
+    },
+    {
+      "id": "hof_ic_seat_grigory_zinovyev",
+      "name": "GFX_hof_ic_seat_grigory_zinovyev",
+      "title": "格里戈里·季诺维也夫",
+      "group": "entry",
+      "description": "共产国际**首任**执委会主席 / 列宁格勒苏维埃主席",
+      "portrait_source": "F:\\Hearts of Iron IV\\gfx\\leaders\\SOV\\portrait_SOV_grigory_zinovyev.dds",
+      "reference": "references/grigory_zinovyev.png",
+      "size": [
+        100,
+        88
+      ],
+      "status": "complete",
+      "source": "source/GFX_hof_ic_seat_grigory_zinovyev.png",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_seat_grigory_zinovyev.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_seat_grigory_zinovyev.dds",
+      "generation_record": "records/GFX_hof_ic_seat_grigory_zinovyev.json",
+      "sha256": "58f5aa2b0ce6e86fea8aa2123c02637e0d045024802f9038575d459d931a2467"
+    },
+    {
+      "id": "hof_ic_seat_lev_kamenev",
+      "name": "GFX_hof_ic_seat_lev_kamenev",
+      "title": "列夫·加米涅夫",
+      "group": "entry",
+      "description": "全俄中央执行委员会**首任**主席 / 人民委员会副主席 / 莫斯科苏维埃主席",
+      "portrait_source": "F:\\Hearts of Iron IV\\gfx\\leaders\\SOV\\portrait_SOV_lev_kamenev.dds",
+      "reference": "references/lev_kamenev.png",
+      "size": [
+        100,
+        88
+      ],
+      "status": "complete",
+      "source": "source/GFX_hof_ic_seat_lev_kamenev.png",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_seat_lev_kamenev.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_seat_lev_kamenev.dds",
+      "generation_record": "records/GFX_hof_ic_seat_lev_kamenev.json",
+      "sha256": "205400bbfb4f35fe05697bd9726dc3b05537c0303f9f20b5837e35ccc181434e"
+    },
+    {
+      "id": "hof_ic_seat_ivan_smirnov",
+      "name": "GFX_hof_ic_seat_ivan_smirnov",
+      "title": "伊万·斯米尔诺夫",
+      "group": "entry",
+      "description": "**首任**邮电人民委员 / 西伯利亚革命委员会主席",
+      "portrait_source": "F:\\Hearts of Iron IV\\gfx\\leaders\\SOV\\portrait_SOV_ivan_smirnov.dds",
+      "reference": "references/ivan_smirnov.png",
+      "size": [
+        100,
+        88
+      ],
+      "status": "complete",
+      "source": "source/GFX_hof_ic_seat_ivan_smirnov.png",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_seat_ivan_smirnov.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_seat_ivan_smirnov.dds",
+      "generation_record": "records/GFX_hof_ic_seat_ivan_smirnov.json",
+      "sha256": "495fe54311f924b869f5063b4823996c1d59707e34b41b8fedf961a199138fa4"
+    },
+    {
+      "id": "hof_ic_seat_leonid_serebryakov",
+      "name": "GFX_hof_ic_seat_leonid_serebryakov",
+      "title": "列昂尼德·谢列布里亚科夫",
+      "group": "entry",
+      "description": "中央书记处书记 / 公路与汽车运输总局局长 / **车工出身**",
+      "portrait_source": "D:\\Program Files (x86)\\Steam\\steamapps\\workshop\\content\\394360\\2129897125\\gfx\\leaders\\SOV\\r56_portrait_SOV_Leonid_Serebryakov.dds",
+      "reference": "references/leonid_serebryakov.png",
+      "size": [
+        100,
+        88
+      ],
+      "status": "complete",
+      "source": "source/GFX_hof_ic_seat_leonid_serebryakov.png",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_seat_leonid_serebryakov.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_seat_leonid_serebryakov.dds",
+      "generation_record": "records/GFX_hof_ic_seat_leonid_serebryakov.json",
+      "sha256": "c9b360ff2777c02f9aa310e8afdfefc20e40176fe6f9818bfa4a3f37c2ab3fd5"
+    },
+    {
+      "id": "hof_ic_trotsky_build_the_red_army",
+      "name": "GFX_hof_ic_trotsky_build_the_red_army",
+      "title": "缔造红军",
+      "group": "trotsky",
+      "description": "这辆军用专列曾经是他的战地指挥部。在那决定命运的 3 年里，他乘坐这辆专列沿着 8000 公里的前线行进，哪里危险就冲向哪里，只有短暂的磋商或者出席莫斯科的公众集会才暂时打断他的行程。",
+      "size": [
+        100,
+        88
+      ],
+      "status": "complete",
+      "source": "source/GFX_hof_ic_trotsky_build_the_red_army.png",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_trotsky_build_the_red_army.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_trotsky_build_the_red_army.dds",
+      "generation_record": "records/GFX_hof_ic_trotsky_build_the_red_army.json",
+      "sha256": "63ab48832df128417c8658cbbf803fbcc8df57a12e76b5cdd936ae03aecce6bb"
+    },
+    {
+      "id": "hof_ic_trotsky_military_specialists",
+      "name": "GFX_hof_ic_trotsky_military_specialists",
+      "title": "返聘沙俄军官",
+      "group": "trotsky",
+      "description": "1919 年初，他断然反对逮捕查京将军。他写道，查京帮助苏维埃所做的工作比那些关押他的人还多，蛮横地对待这样的人则会对军官的士气具有灾难性的影响。他要求释放将军，并愿在法庭给他定罪前亲自为他作保。",
+      "size": [
+        100,
+        88
+      ],
+      "status": "complete",
+      "source": "source/GFX_hof_ic_trotsky_military_specialists.png",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_trotsky_military_specialists.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_trotsky_military_specialists.dds",
+      "generation_record": "records/GFX_hof_ic_trotsky_military_specialists.json",
+      "sha256": "1449f320ff67ac02bde487c0090921b91a9e838e36b03b58435363bd0445ecb0"
+    },
+    {
+      "id": "hof_ic_trotsky_against_partisan_warfare",
+      "name": "GFX_hof_ic_trotsky_against_partisan_warfare",
+      "title": "反对游击主义",
+      "group": "trotsky",
+      "description": "正如托洛茨基所指出的，游击战的混乱反映了革命下面的农民因素，而反对它的斗争同样是为了支持无产阶级国家组织，以抵制正在瓦解它的元素化的小资产阶级无政府状态。绝大部分的军队新兵都是农民，整个国家是一片起义的农民海洋，对于这种战争方式，他们不仅有着传统，而且本能地适应。",
+      "size": [
+        100,
+        88
+      ],
+      "status": "complete",
+      "source": "source/GFX_hof_ic_trotsky_against_partisan_warfare.png",
+      "source_size": [
+        1337,
+        1177
+      ],
+      "png": "GFX_hof_ic_trotsky_against_partisan_warfare.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_trotsky_against_partisan_warfare.dds",
+      "generation_record": "records/GFX_hof_ic_trotsky_against_partisan_warfare.json",
+      "sha256": "43c00609c06e783221c2764545297da5cf1b767a128132d80e9545d011b89ceb"
+    },
+    {
+      "id": "hof_ic_trotsky_uneven_and_combined_development",
+      "name": "GFX_hof_ic_trotsky_uneven_and_combined_development",
+      "title": "不平衡与综合发展律",
+      "group": "trotsky",
+      "description": "在一些情况下，从一开始就领先者可以加强其领先地位，而在另一些情况下，同样地由于发展的步调不同，一些落后者可以赶上甚至超过那些先前享有优势者。",
+      "size": [
+        100,
+        88
+      ],
+      "status": "complete",
+      "source": "source/GFX_hof_ic_trotsky_uneven_and_combined_development.png",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_trotsky_uneven_and_combined_development.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_trotsky_uneven_and_combined_development.dds",
+      "generation_record": "records/GFX_hof_ic_trotsky_uneven_and_combined_development.json",
+      "sha256": "5f6103184418e5dce23ef4ba78cff1cd21c168466e7ea91a40e71fd9b587d0c4"
+    },
+    {
+      "id": "hof_ic_trotsky_permanent_revolution",
+      "name": "GFX_hof_ic_trotsky_permanent_revolution",
+      "title": "不断革命论",
+      "group": "trotsky",
+      "description": "在狱中，他完成了对俄国革命的见解——不断革命论。认为俄国的民主革命必然要由工人阶级来领导，以无产阶级专政来完成，并由此发展成社会主义革命。其奠基性的表述最初出自马克思，1906 年由托洛茨基针对俄国的情况重新加以表述，随后又在 1928 年进一步阐发。",
+      "size": [
+        100,
+        88
+      ],
+      "status": "complete",
+      "source": "source/GFX_hof_ic_trotsky_permanent_revolution.png",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_trotsky_permanent_revolution.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_trotsky_permanent_revolution.dds",
+      "generation_record": "records/GFX_hof_ic_trotsky_permanent_revolution.json",
+      "sha256": "aee6b893e21c0b000eb46cbef457abd65da7db92f0e26e5458e2513b959da228"
+    },
+    {
+      "id": "hof_ic_trotsky_socialism_in_one_country",
+      "name": "GFX_hof_ic_trotsky_socialism_in_one_country",
+      "title": "驳「一国社会主义」",
+      "group": "trotsky",
+      "description": "斯大林的一国社会主义论，被他斥为放弃世界革命的借口。1926 年，他与昔日的对手季诺维也夫、加米涅夫联手组成联合反对派，主张党内民主与经济计划化，谴责领导层对资产阶级分子的让步。这场争论持续了约 18 个月。",
+      "size": [
+        100,
+        88
+      ],
+      "status": "complete",
+      "source": "source/GFX_hof_ic_trotsky_socialism_in_one_country.png",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_trotsky_socialism_in_one_country.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_trotsky_socialism_in_one_country.dds",
+      "generation_record": "records/GFX_hof_ic_trotsky_socialism_in_one_country.json",
+      "sha256": "ccc7b18b068375eeb535cb4dc46c1055689a19f049ffe95530fca826a50eb396"
+    },
+    {
+      "id": "hof_ic_trotsky_the_new_course",
+      "name": "GFX_hof_ic_trotsky_the_new_course",
+      "title": "新方针",
+      "group": "trotsky",
+      "description": "1923 年 10 月，他致信中央委员会提出广泛批评，特别强调党内民主遭到破坏、经济计划化不足。改革被承诺了，他随即以一封公开信详细说明改革应取的方向。而此后党组织在压制它的主要批评者时，其猛烈和狂怒在党内反对派的漫长历史上是前所未有的。",
+      "size": [
+        100,
+        88
+      ],
+      "status": "complete",
+      "source": "source/GFX_hof_ic_trotsky_the_new_course.png",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_trotsky_the_new_course.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_trotsky_the_new_course.dds",
+      "generation_record": "records/GFX_hof_ic_trotsky_the_new_course.json",
+      "sha256": "95997c06794709a57c1d6baf6df0f234960d2f679ea149810f0b28ea6e5c5a49"
+    },
+    {
+      "id": "hof_ic_trotsky_against_the_bureaucracy",
+      "name": "GFX_hof_ic_trotsky_against_the_bureaucracy",
+      "title": "反对官僚化",
+      "group": "trotsky",
+      "description": "无产阶级专政将通过政党夺取政权而建立，托洛茨基认为这个政党在革命中起领导作用。但是，他警告说，一旦它的任务完成，这样的党要提防用自身代替无产阶级或是支配无产阶级。",
+      "size": [
+        100,
+        88
+      ],
+      "status": "complete",
+      "source": "source/GFX_hof_ic_trotsky_against_the_bureaucracy.png",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_trotsky_against_the_bureaucracy.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_trotsky_against_the_bureaucracy.dds",
+      "generation_record": "records/GFX_hof_ic_trotsky_against_the_bureaucracy.json",
+      "sha256": "a8ff4f30802f774ec78e7f99b9f8f916edb673ccef358dd032d81c0a8ac1544b"
+    },
+    {
+      "id": "hof_ic_trotsky_limited_market_reforms",
+      "name": "GFX_hof_ic_trotsky_limited_market_reforms",
+      "title": "有限市场化",
+      "group": "trotsky",
+      "description": "内战结束后，他把注意力转向俄国的经济重建。他首先提议放松战时共产主义严苛的集中制，允许市场力量运作。这个提议被否决之后，他才转而尝试把军事纪律应用于经济。",
+      "size": [
+        100,
+        88
+      ],
+      "status": "complete",
+      "source": "source/GFX_hof_ic_trotsky_limited_market_reforms.png",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_trotsky_limited_market_reforms.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_trotsky_limited_market_reforms.dds",
+      "generation_record": "records/GFX_hof_ic_trotsky_limited_market_reforms.json",
+      "sha256": "9b55f3769c625517405825c4e7c105e4d4d8ee774514e662dc73d0d7d5d18304"
+    },
+    {
+      "id": "hof_ic_trotsky_labour_armies",
+      "name": "GFX_hof_ic_trotsky_labour_armies",
+      "title": "劳动军",
+      "group": "trotsky",
+      "description": "他转而尝试把军事纪律应用于经济：把士兵用作劳动军，并试图把交通运输系统的管理军事化。这个方向同样被党的十大否决，此后连他自己也不再主张它。",
+      "size": [
+        100,
+        88
+      ],
+      "status": "complete",
+      "source": "source/GFX_hof_ic_trotsky_labour_armies.png",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_trotsky_labour_armies.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_trotsky_labour_armies.dds",
+      "generation_record": "records/GFX_hof_ic_trotsky_labour_armies.json",
+      "sha256": "1a381e624af59b94050f6e6a5453c3a67d5d2f231ecc21c069c17f6deaada89b"
+    },
+    {
+      "id": "hof_ic_trotsky_state_planning",
+      "name": "GFX_hof_ic_trotsky_state_planning",
+      "title": "经济计划化",
+      "group": "trotsky",
+      "description": "他要求扩大国家计划委员会的权力，而李可夫和索柯里尼柯夫则怀疑计划性，公开指责他之所以要求扩大国家计划委员会的权力只是因为他觊觎它的领导权。他所作的报告和所提交的『提纲』是苏联经济史上最关键的文件，他在其中描绘了今后几十年的苏联经济远景。",
+      "size": [
+        100,
+        88
+      ],
+      "status": "complete",
+      "source": "source/GFX_hof_ic_trotsky_state_planning.png",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_trotsky_state_planning.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_trotsky_state_planning.dds",
+      "generation_record": "records/GFX_hof_ic_trotsky_state_planning.json",
+      "sha256": "e0c6e3cc33f2c593f383bf2eb0eae0bbbdb6915fb2e7956a458c28dca4687b28"
+    },
+    {
+      "id": "hof_ic_trotsky_accelerated_industrialization",
+      "name": "GFX_hof_ic_trotsky_accelerated_industrialization",
+      "title": "加速工业化",
+      "group": "trotsky",
+      "description": "国家的大粮库有一半已见了底，城市居民面临着饥饿的威胁，连军队的给养都不充足，面包店外排着长队，面包价格不断上涨。正是在这样的处境下，联合反对派要求加快工业化、反对向富农让步。1928 年，斯大林开始了第一个五年计划。",
+      "size": [
+        100,
+        88
+      ],
+      "status": "complete",
+      "source": "source/GFX_hof_ic_trotsky_accelerated_industrialization.png",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_trotsky_accelerated_industrialization.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_trotsky_accelerated_industrialization.dds",
+      "generation_record": "records/GFX_hof_ic_trotsky_accelerated_industrialization.json",
+      "sha256": "5b0893cbee0f615efa88a659601b1e784a64ecf55659abb96028eaefe066f695"
+    },
+    {
+      "id": "hof_ic_trotsky_the_comintern_manifesto",
+      "name": "GFX_hof_ic_trotsky_the_comintern_manifesto",
+      "title": "共产国际宣言",
+      "group": "trotsky",
+      "description": "1919 年 3 月，他与列宁共同创立第三国际，并撰写了它的首篇宣言。",
+      "size": [
+        100,
+        88
+      ],
+      "status": "complete",
+      "source": "source/GFX_hof_ic_trotsky_the_comintern_manifesto.png",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_trotsky_the_comintern_manifesto.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_trotsky_the_comintern_manifesto.dds",
+      "generation_record": "records/GFX_hof_ic_trotsky_the_comintern_manifesto.json",
+      "sha256": "720e851f24b48cc641234ff8a9fd3e0bd2b23fa0bbb04df892339dcd81885e43"
+    },
+    {
+      "id": "hof_ic_trotsky_the_chinese_question",
+      "name": "GFX_hof_ic_trotsky_the_chinese_question",
+      "title": "中国革命问题",
+      "group": "trotsky",
+      "description": "1927 年春天，党内斗争的火焰又一次燃烧起来。这次斗争是同到那时之前从未提出过的一个问题相联系的，但从此以后这个问题却自始至终都是斗争的中心，直到联合反对派最终被开除出党并解体为止。",
+      "size": [
+        100,
+        88
+      ],
+      "status": "complete",
+      "source": "source/GFX_hof_ic_trotsky_the_chinese_question.png",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_trotsky_the_chinese_question.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_trotsky_the_chinese_question.dds",
+      "generation_record": "records/GFX_hof_ic_trotsky_the_chinese_question.json",
+      "sha256": "1878b9c4f8f90f13ec947d97378ec65b4c925dccfa32529edb4a5479099866ca"
+    },
+    {
+      "id": "hof_ic_trotsky_united_front",
+      "name": "GFX_hof_ic_trotsky_united_front",
+      "title": "反法西斯统一战线",
+      "group": "trotsky",
+      "description": "第三国际不顾托洛茨基自 1930 年以来不断的警告，大大低估了纳粹党的危险性，同时拒绝社会民主党建立统一战线对抗纳粹，结果使德国工人阶级的组织毫无抵抗地被粉碎，并使法西斯势力横行十余年。",
+      "size": [
+        100,
+        88
+      ],
+      "status": "complete",
+      "source": "source/GFX_hof_ic_trotsky_united_front.png",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_trotsky_united_front.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_trotsky_united_front.dds",
+      "generation_record": "records/GFX_hof_ic_trotsky_united_front.json",
+      "sha256": "47f1fce981df517393798e28b8c47f82b04edda18f788174291de02f73a46c4e"
+    },
+    {
+      "id": "hof_ic_trotsky_the_permanent_revolutionary",
+      "name": "GFX_hof_ic_trotsky_the_permanent_revolutionary",
+      "title": "永久的革命者",
+      "group": "trotsky",
+      "description": "要求我放弃政治活动，意味着要求我放弃为全世界工人阶级利益而进行的斗争，而这一斗争我已孜孜不倦地进行了 32 年之久，也就是我自觉生命的全部时间。只有腐朽透顶的官僚集团才会要求做出这种放弃，只有卑鄙的叛徒才能做出这种承诺。",
+      "size": [
+        100,
+        88
+      ],
+      "status": "complete",
+      "source": "source/GFX_hof_ic_trotsky_the_permanent_revolutionary.png",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_trotsky_the_permanent_revolutionary.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_trotsky_the_permanent_revolutionary.dds",
+      "generation_record": "records/GFX_hof_ic_trotsky_the_permanent_revolutionary.json",
+      "sha256": "2d0b1147ed79d6e8215daa04a5d86cf90669bff90d45690c8e77f59e16363b3a"
+    },
+    {
+      "id": "hof_ic_trotsky_the_builder_of_the_state",
+      "name": "GFX_hof_ic_trotsky_the_builder_of_the_state",
+      "title": "国家建设者",
+      "group": "trotsky",
+      "description": "请告诉我还有哪个人能在一年之内建立起一支堪称模范的军队而且赢得军事专家的尊重；我们有这样的人，就有了一切，我们将创造出奇迹。",
+      "size": [
+        100,
+        88
+      ],
+      "status": "complete",
+      "source": "source/GFX_hof_ic_trotsky_the_builder_of_the_state.png",
+      "source_size": [
+        1337,
+        1176
+      ],
+      "png": "GFX_hof_ic_trotsky_the_builder_of_the_state.png",
+      "dds": "mod/heart_of_iron/gfx/interface/hof_ic/focus/GFX_hof_ic_trotsky_the_builder_of_the_state.dds",
+      "generation_record": "records/GFX_hof_ic_trotsky_the_builder_of_the_state.json",
+      "sha256": "044a93ba0ae85fc224f22d83c913424fcbdab73664963f23c71f1da11952a031"
+    }
+  ],
+  "completed": "2026-09-14",
+  "count": 24,
+  "integration": "textures only; sprite registration by integration owner"
+}

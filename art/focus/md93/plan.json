@@ -1,0 +1,68 @@
+[
+  {
+    "id": "hof_ic_radek_the_struggle_for_power_in_china",
+    "name": "GFX_hof_ic_radek_the_struggle_for_power_in_china",
+    "title": "中国的夺权斗争",
+    "concept": "One opened old-yellow newspaper viewed from a gentle overhead angle, occupying 80% of central illustration. Its page is ONLY abstract column rules, short tiny strokes and blank rectangles, NO readable letters or words. A brass-rimmed magnifying glass rests directly on the newspaper's central fold slightly below midpoint, glass showing only blurred neutral gray. A short sharpened pencil rests beside the paper. Symbolizes analytical reading, no Chinese street, people, flags or map.",
+    "group": "radek",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_radek_the_condition_of_the_chinese_working_class",
+    "name": "GFX_hof_ic_radek_the_condition_of_the_chinese_working_class",
+    "title": "中国工人阶级的状况",
+    "concept": "A single blank GRID SURVEY FORM centered on plain table, all cells empty without numbers or words. Across it lies one BROKEN cotton-yarn spool with a few loose white strands and one oil-stained coarse cloth work glove with all five fingertips worn pale. In one back corner a small UNLIT miner's lamp, clean glass and black wick. Arrange three evidence objects on a diagonal. Paper ivory, yarn white, glove and lamp coal-gray. No child, worker, mine scene or factory.",
+    "group": "radek",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_radek_social_and_political_thought",
+    "name": "GFX_hof_ic_radek_social_and_political_thought",
+    "title": "社会政治思想",
+    "concept": "Exactly FIVE narrow vertical paper slips, equal height and spacing, arranged in one straight row across an OPEN thread-bound book. Each slip has a thin blank border and a DIFFERENT muted color at its very top tip only; the rest of slips and book remain warm ivory. Book's pages show vertical columns of abstract short HORIZONTAL strokes, never real text. View slightly from above, book fills lower two thirds. No portrait, flag, map or readable symbols.",
+    "group": "radek",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_tukhachevsky_the_defence_of_the_union",
+    "name": "GFX_hof_ic_tukhachevsky_the_defence_of_the_union",
+    "title": "联盟国防",
+    "concept": "One OPEN official report centered on plain tabletop, otherwise blank cover bearing only ONE short handwritten-looking anonymous horizontal signature stroke (not letters). A steel-gray SLIDE RULE lies across one page edge, sliding marker at its middle. Lower right corner holds one short cut cross-section of steel RAIL (visible I-beam profile) and one small dark iron GEAR, forming a compact triangle. No full railroad, map, soldiers, vehicles or combat. Cool blue-gray steel, white paper.",
+    "group": "tukhachevsky",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_tukhachevsky_military_economic_mobilization",
+    "name": "GFX_hof_ic_tukhachevsky_military_economic_mobilization",
+    "title": "军事经济动员",
+    "concept": "A huge EMPTY GRID production-capacity SHEET fills the tabletop, dense fine horizontal and vertical lines but absolutely no numbers or words. One long silver slide rule crosses its upper middle, sliding part pushed to the extreme RIGHT. At lower right edge, two small scale models side by side: a larger stout muddy tractor WHEEL and a smaller thin THREE-BLADE AIRPLANE PROPELLER, clearly different sizes. No full tractor, plane, factory or people. Ivory paper and cool muted steel-gray tools.",
+    "group": "tukhachevsky",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_tukhachevsky_air_mechanization",
+    "name": "GFX_hof_ic_tukhachevsky_air_mechanization",
+    "title": "空中机械化",
+    "concept": "A brown wooden-framed DRAWING BOARD occupies 80% of central image, holding one white planning sheet pinned at all four corners. Diagram has only concentric circles and several arrows radiating outward from center, NO map, topography, writing, labels, or numbers. Along lower board edge arrange exactly THREE equally spaced small objects: a tiny aircraft MODEL, a tiny tank MODEL, and one glass VACUUM TUBE. Restrained ivory and brown; ONLY vacuum tube has very faint warm orange glint. No battlefield, no poison-gas gear.",
+    "group": "tukhachevsky",
+    "size": [
+      100,
+      88
+    ]
+  }
+]

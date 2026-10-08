@@ -1,0 +1,17 @@
+{
+  "id": "hof_ic_malenkow_the_aviation_affair",
+  "name": "GFX_hof_ic_malenkow_the_aviation_affair",
+  "title": "航空案",
+  "concept": "Inside a gray-blue 1940s aircraft hangar, a SINGLE grounded aircraft visible only as a neutral gray SILHOUETTE in the distant background; absolutely no military roundel, insignia or combat scene. In the foreground a modest desk with a short STACK OF OPENED INSPECTION RECORD PAGES, abstract unreadable marks and dog-eared paper corners. The papers are the focus, aircraft is context. Gray-blue belongs only to hangar structure, neutral gray aircraft, paper cream. No red in central scene.",
+  "group": "malenkow",
+  "size": [
+    100,
+    88
+  ],
+  "prompt": "Create ONE finished Hearts of Iron IV Soviet national focus icon. Use attached image ONLY as stylistic reference for the shared outer engraved gold laurel wreath, small red star and blank gold ribbon; create a NEW central scene. Inside a gray-blue 1940s aircraft hangar, a SINGLE grounded aircraft visible only as a neutral gray SILHOUETTE in the distant background; absolutely no military roundel, insignia or combat scene. In the foreground a modest desk with a short STACK OF OPENED INSPECTION RECORD PAGES, abstract unreadable marks and dog-eared paper corners. The papers are the focus, aircraft is context. Gray-blue belongs only to hangar structure, neutral gray aircraft, paper cream. No red in central scene. Central art style: restrained, realistic 1930s-1950s Soviet sculptural relief, tactile wood, aged paper and objects. Color ONLY from depicted objects, never an overall color wash. The outer ornamental star may remain red on all six; within the central scene red is permitted ONLY on the desk stamp for the cadres directorate image and forbidden on all other images. Exactly one centered emblem in square canvas; composition must read clearly at 100x88. TRUE RGBA transparent outside wreath and ribbon, alpha 0 at all four corners, 20-50 percent broad transparent exterior. No legible typography, numerals, watermark, faces, people, uniforms, weapons, executions, prison bars, concentration camp, blacklisted or torn names, Leningrad buildings, German symbols, rockets, mushroom cloud, factory floor, warships, naval chart, hammer-and-sickle portrait, neon or glow. Output one final production icon, not mockup or sheet.",
+  "references": [
+    "D:/Users/xuwei/PycharmProjects/heart_of_Iron/art/focus/bukharin/source/GFX_hof_ic_bukharin_proportional_development.png"
+  ],
+  "generated_path": "C:\\Users\\xuwei\\.codex\\generated_images\\01a09af5-fd43-79a0-a3cc-72284cd67cbc\\exec-732e666c-ffbb-4021-8ede-6bcd02851c54.png",
+  "mode": "built-in image_gen"
+}

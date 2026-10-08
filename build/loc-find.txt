@@ -1,0 +1,16 @@
+﻿=== 本地化目录 ===
+ mod\heart_of_iron\localisation\simp_chinese\hof_ic_l_simp_chinese.yml (1354)
+ mod\heart_of_iron\localisation\simp_chinese\hof_ic_roster_l_simp_chinese.yml (34852)
+ mod\heart_of_iron\localisation\simp_chinese\hof_sino_l_simp_chinese.yml (1283)
+
+=== 含 heartofiron.106x 的文件 ===
+ hof_ic_roster_l_simp_chinese.yml L239 # 列夫·托洛茨基 的岔路二选一事件（heartofiron.1060）
+ hof_ic_roster_l_simp_chinese.yml L240 heartofiron.1060.t:0 "经济的岔路口"
+ hof_ic_roster_l_simp_chinese.yml L241 heartofiron.1060.desc:0 "经济重建已经压到了桌面上。托洛茨基手里有两种办法，而它们互相排斥——一旦走上其中一条，另一条就再也走不通了。\n\n先松开战时共产主义那套严苛的集中制，让市场力量运作起来；或者反过来，把军事纪律搬到经济上来，把士兵当作劳动军。\n\n问题是，应该走哪一条？"
+ hof_ic_roster_l_simp_chinese.yml L242 heartofiron.1060.a:0 "先让市场活起来"
+ hof_ic_roster_l_simp_chinese.yml L243 heartofiron.1060.b:0 "把军队变成劳动大军"
+ hof_ic_roster_l_simp_chinese.yml L245 # 尼古拉·布哈林 的岔路二选一事件（heartofiron.1061）
+ hof_ic_roster_l_simp_chinese.yml L246 heartofiron.1061.t:0 "路线之争"
+ hof_ic_roster_l_simp_chinese.yml L247 heartofiron.1061.desc:0 "布哈林一进门就得表明立场。他对过渡时期的判断，决定了他这条线往哪里走。\n\n「列宁教导说：工人阶级同农民的冲突根本不是不可避免的。托洛茨基教导说：这种冲突必定会发生。」\n\n话说到这个份上，只能选一边。"
+ hof_ic_roster_l_simp_chinese.yml L248 heartofiron.1061.a:0 "走过渡时期这一条路"
+ hof_ic_roster_l_simp_chinese.yml L249 heartofiron.1061.b:0 "一步跨过过渡时期"

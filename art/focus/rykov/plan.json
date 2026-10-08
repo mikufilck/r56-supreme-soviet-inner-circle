@@ -1,0 +1,57 @@
+[
+  {
+    "id": "hof_ic_rykov_supreme_economic_council",
+    "name": "GFX_hof_ic_rykov_supreme_economic_council",
+    "title": "最高国民经济委员会主席",
+    "concept": "A monumental industrial council building facade integrated with a blast furnace and factory chimneys, resting on a large cogwheel. Clear solid architectural relief, the administrative organization of industry. No portrait.",
+    "group": "rykov",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_rykov_food_supply_commissar",
+    "name": "GFX_hof_ic_rykov_food_supply_commissar",
+    "title": "劳动国防委员会粮秣特派员",
+    "concept": "A steam freight locomotive on rails coming diagonally forward, beside two large grain sacks and one supply crate, continuous supply route from warehouse to front. Logistics not combat, no soldiers or weapons firing.",
+    "group": "rykov",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_rykov_labour_defence_council",
+    "name": "GFX_hof_ic_rykov_labour_defence_council",
+    "title": "劳动与国防委员会副主席",
+    "concept": "Central distinctive emblem: a single ivory gear interlocked with a plain military shield. Below it a compact administrative desk bearing a blank folded planning map and two file folders. Tightly organized industrial and defence coordination, sober and practical.",
+    "group": "rykov",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_rykov_sponsor_aviation",
+    "name": "GFX_hof_ic_rykov_sponsor_aviation",
+    "title": "扶植航空",
+    "concept": "A large early 1920s single-engine biplane with two clearly separated wings, fixed landing gear and propeller, diagonally ascending above a drafting compass and small blank engineering blueprint. Ivory relief aircraft, optimistic brighter highlights, no letters or numbers on aircraft, no jets.",
+    "group": "rykov",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_rykov_labour_defence_chair",
+    "name": "GFX_hof_ic_rykov_labour_defence_chair",
+    "title": "劳动与国防委员会主席",
+    "concept": "The complete culmination of economic coordination. Reuse the SAME central ivory gear interlocked with plain military shield emblem from the vice-chair design. Enlarge and elevate it above a panoramic dispatch planning table. Surround its lower half with a unified compact chain of factory buildings on left, steam freight train below, early biplane on right, connected by a closed circular transport loop. Fullest composition in series yet readable at tiny size, a complete organized industrial transport defence system.",
+    "group": "rykov",
+    "size": [
+      100,
+      88
+    ]
+  }
+]

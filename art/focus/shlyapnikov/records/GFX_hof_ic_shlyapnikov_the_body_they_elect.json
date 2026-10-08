@@ -1,0 +1,17 @@
+{
+  "id": "hof_ic_shlyapnikov_the_body_they_elect",
+  "name": "GFX_hof_ic_shlyapnikov_the_body_they_elect",
+  "title": "由他们选出的机关",
+  "concept": "MOST FULL and climactic emblem: a row of many rough oil-stained WORKERS HANDS rises from BOTTOM foreground, palms supporting one large horizontal elected roster sheet held HIGH at center. Sheet contains only neat short grey horizontal dash marks arranged in rows, NO readable names or letters. Background softly blurred industrial factory silhouette on LEFT and modest institutional building on RIGHT, visually bridged by the elected list; neither building dominates. The uplifted hands and sheet are unmistakably the central action, golden warm side light on knuckles against cool charcoal buildings. No faces, flags, speech podium or writing pen.",
+  "group": "shlyapnikov",
+  "size": [
+    100,
+    88
+  ],
+  "prompt": "Use case: stylized-concept. Create ONE finished Hearts of Iron IV Soviet national focus icon. Input reference is ONLY outer gold laurel and engraved sculptural relief STYLE; replace central imagery completely. Subject: MOST FULL and climactic emblem: a row of many rough oil-stained WORKERS HANDS rises from BOTTOM foreground, palms supporting one large horizontal elected roster sheet held HIGH at center. Sheet contains only neat short grey horizontal dash marks arranged in rows, NO readable names or letters. Background softly blurred industrial factory silhouette on LEFT and modest institutional building on RIGHT, visually bridged by the elected list; neither building dominates. The uplifted hands and sheet are unmistakably the central action, golden warm side light on knuckles against cool charcoal buildings. No faces, flags, speech podium or writing pen. Gold laurel open at top, small red star above, blank gold ribbon below, thin bronze-red circular rim. Ivory-grey relief with restrained scene-specific colors, highly readable at final100x88, directional upper-left light. No readable letters, names, words, numbers, faces, portraits or watermark. Project-specific forbidden imagery: confiscation, sealing tape, guns, offices for calendar scene, bureaucratic papers there, businessmen in suits, workers loitering at factory/agency gate, lathe close-up, 1937, execution, barred prison windows, interrogation, union flags and lecterns. Landscape100:88, emblem fills94%canvas. TRUE transparent RGBA background enabled, alpha0 outside emblem and all four corners,20-50% transparent area. No fake checkerboard or rectangular backdrop or external shadow.",
+  "references": [
+    "D:/Users/xuwei/PycharmProjects/heart_of_Iron/art/focus/bukharin/source/GFX_hof_ic_bukharin_proportional_development.png"
+  ],
+  "generated_path": "C:\\Users\\xuwei\\.codex\\generated_images\\01a09af5-fd43-79a0-a3cc-72284cd67cbc\\exec-3d1ca43e-1964-4b19-87f3-a2941a1582a7.png",
+  "mode": "built-in image_gen"
+}

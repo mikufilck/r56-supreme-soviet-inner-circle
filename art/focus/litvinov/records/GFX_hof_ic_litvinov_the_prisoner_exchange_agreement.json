@@ -1,0 +1,17 @@
+{
+  "id": "hof_ic_litvinov_the_prisoner_exchange_agreement",
+  "name": "GFX_hof_ic_litvinov_the_prisoner_exchange_agreement",
+  "title": "战俘交换协议",
+  "concept": "A long diplomatic table seen at a slight elevated angle. A narrow clean beam of light splits its tabletop into two equal sides; on each side lies one DIFFERENT folded document, distinct sizes and paper tones, facing toward the other across the light boundary. The documents remain separate. Empty room, no people or flags.",
+  "group": "litvinov",
+  "size": [
+    100,
+    88
+  ],
+  "prompt": "Create ONE finished Hearts of Iron IV Soviet national focus icon. Use the attached image only as a stylistic reference for the outer engraved gold laurel wreath, small red star and blank gold ribbon; create an entirely new central scene. A long diplomatic table seen at a slight elevated angle. A narrow clean beam of light splits its tabletop into two equal sides; on each side lies one DIFFERENT folded document, distinct sizes and paper tones, facing toward the other across the light boundary. The documents remain separate. Empty room, no people or flags. Art direction: richly painted, restrained 1930s Soviet historical relief illustration, deep red and weathered gold, tactile ivory paper and brass details, clear silhouette readable at 100×88 pixels. Visual motif is one line crossed, drawn, signed, connected or traveled. Keep important scene objects inside the laurel wreath. Exactly one emblem centered in a square canvas. TRUE RGBA transparent background outside wreath and ribbon, alpha 0 at all four corners, broad visible transparent exterior area (20–50 percent total pixels). No typography, readable letters or numbers, watermark, faces, guns, execution, family, war crime scene, badges, medal, flag, map, office interior, filing cabinet, ledger, newspaper page layout, printing press, typewriter, door, doorway, pile of letters, handshake, or human signature close-up. Render one final production asset, not a mockup or sheet.",
+  "references": [
+    "D:/Users/xuwei/PycharmProjects/heart_of_Iron/art/focus/bukharin/source/GFX_hof_ic_bukharin_proportional_development.png"
+  ],
+  "generated_path": "C:\\Users\\xuwei\\.codex\\generated_images\\01a09af5-fd43-79a0-a3cc-72284cd67cbc\\exec-a5ea3b89-0705-4f3b-88d3-7cf5c01f5fb2.png",
+  "mode": "built-in image_gen"
+}

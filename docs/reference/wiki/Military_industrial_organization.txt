@@ -1,0 +1,3634 @@
+﻿Military industrial organization - Hearts of Iron 4 Wiki
+39 captures
+14 Jan 2024 - 24 Aug 2026
+Jun
+JUL
+Aug
+25
+2024
+2025
+2026
+success
+fail
+About this capture
+COLLECTED BY
+Collection:
+Save Page Now
+TIMESTAMPS
+The Wayback Machine - https://web.archive.org/web/20250725203411/https://hoi4.paradoxwikis.com/Military_industrial_organization
+Forum list
+Trending
+Latest
+New posts
+Paradox
+Store
+Mods
+Forum
+Launcher
+PDXCON
+2019
+Paradox Wikis
+Hearts of Iron 4 Wiki
+Active Wikis
+Age of Wonders 4
+Empire of Sin
+Cities: Skylines 2
+Crusader Kings 3
+Europa Universalis 4
+Hearts of Iron 4
+Hunter: The Reckoning
+Imperator: Rome
+Millennia
+Prison Architect
+Stellaris
+Surviving Mars
+Surviving the Aftermath
+Werewolf: the Apocalypse
+Vampire: The Masquerade
+Victoria 3
+Legacy Wikis
+AoW: Planetfall
+Cities: Skylines
+Crusader Kings 2
+Arsenal of Democracy
+Europa Universalis 2
+Europa Universalis 3
+Europa Universalis: Rome
+Hearts of Iron 2
+Hearts of Iron 3
+Tyranny
+Victoria 1
+Victoria 2
+Search
+Personal tools
+Log in
+Personal tools
+English
+Not logged in
+Talk
+Contributions
+Log in
+Navigation menu
+Namespaces
+Page
+Discussion
+English
+Views
+Read
+Edit
+Edit source
+View history
+More
+Navigation
+Hearts of Iron 4 Wiki
+Recent changes
+Random page
+Paradox Wikis
+- Main portal
+- Wikis discord
+- Contact us
+- Style guidelines
+HoI4 links
+- Forums
+- Game discord
+- Mods
+- Store
+- YouTube
+Tools
+What links here
+Related changes
+Special pages
+Printable version
+Permanent link
+Page information
+braze
+Military industrial organization
+From Hearts of Iron 4 Wiki
+Jump to navigation
+Jump to search
+This is a community maintained wiki. If you spot a mistake, please help with fixing it.
+Available only with the
+Arms Against Tyranny
+DLC
+enabled
+.
+For equipment designers without
+Arms Against Tyranny
+, see
+Design company
+.
+Military Industrial Organizations
+(MIOs) are a feature in the
+Arms Against Tyranny
+expansion, replacing the base game
+design companies
+. They can be used to
+research
+technologies faster, confer bonuses onto equipment, and increase the output of a
+production
+line. MIOs increase in size, or "level up", over the course of a game, allowing them to unlock new player-selected bonuses from a trait tree and eventually make use of player-selected MIO policies that can confer additional bonuses. MIOs broadly follow the same categories as the
+design companies
+present in the base game, with designers of the same type sharing the same basic trait trees. However, as opposed to
+design companies
+, multiple MIOs of the same category can be used at the same time, allowing players a lot more flexibility in terms of what they specialize in compared to needing to lock into using just one
+design company
+for each equipment type (tanks, navy, planes, materiel).
+Industrial concerns
+remain unchanged.
+Contents
+1
+Mechanics
+1.1
+Bonuses and Costs
+1.2
+Size and Funds
+1.3
+Traits
+1.4
+Policies
+1.4.1
+List of Policies
+2
+List of MIOs and Their Traits
+2.1
+Armor companies
+2.1.1
+Medium Tank Designer
+2.1.2
+Fast Tank Designer
+2.1.3
+Standardized Production
+2.1.4
+Infantry Tank Designer
+2.1.5
+Heavy Tank Designer
+2.1.6
+Tank Refurbishment Plant
+2.1.7
+Assault Guns Manufactuer
+2.2
+Naval Companies
+2.2.1
+Battle Line Ship Builders
+2.2.2
+Raiding Fleet
+2.2.3
+Escort Fleet
+2.2.4
+Task Force Ship Builders
+2.2.5
+Refurbishment Repair Manufacturer
+2.2.6
+Black Sea Fleet Designer
+2.2.7
+Submarine Designer
+2.3
+Plane Companies
+2.3.1
+Light Aircraft Designer
+2.3.2
+High Agility Fighter Designer
+2.3.3
+Range Focused Aircraft Designer
+2.3.4
+CAS Aircraft Designer
+2.3.5
+Naval Aircraft Designer
+2.3.6
+Heavy Aircraft Designer
+2.3.7
+Multi-Role Tactical Aircraft
+2.3.8
+Multi-Role Aircraft Designer
+2.3.9
+General Aircraft Designer
+2.4
+Material Companies
+2.4.1
+Infantry Weapons Manufacturer
+2.4.2
+Automotive Manufacturer
+2.4.3
+Artillery Manufacturer
+2.4.4
+Support Equipment Manufacturer
+2.4.5
+Standardized Production
+2.4.6
+Tank Refurbishment Plant
+2.4.7
+Helicopter Development
+3
+References
+Mechanics
+[
+edit
+|
+edit source
+]
+The trait tree for
+Czechoslovak
+light aircraft designer Avia
+Each country starts with a set of military industrial organizations (MIOs) that each specialize in different types of equipment. Countries can opt to use these MIOs to help design and/or
+produce
+equipment tied to their speciality, as well as to help
+research
+technologies related to their speciality. Each of these tasks accrues funds in the MIO that help increase its size, unlocking additional bonuses.
+Bonuses and Costs
+[
+edit
+|
+edit source
+]
+When assigned to a
+production line
+, a MIO can confer
+production
+bonuses to the line through its
+traits
+and/or
+policies
+when they are available. Even when no such bonuses are available, being assigned to a production line still help the MIO acquire
+funds
+. Assigning a MIO to a production line costs the country
+0
+[1]
+Political Power
+per day.
+When assigned to
+research
+a technology, a MIO can confer a
+research speed
+bonus at the cost of
+Political Power
+. The base research bonus is
++5%
+[2]
+, but is often higher thanks to MIOs' starting
+traits
+and can be increased further through unlockable
+traits
+and
+policies
+for each MIO, as well as potentially also by various
+political advisors
+and
+national focuses
+. Assigning a MIO to research a technology costs the country
+0.1
+[3]
+Political Power
+per day, but only while the technology is actively being researched. Changing the MIO assigned to research a technology, including unassigning one, costs 0
+Army experience
+for land-based technologies, 0
+Navy experience
+for
+naval
+and
+naval support
+technologies, and 0
+Air experience
+for
+air technologies
+.
+[4]
+When assigned as the designer of some equipment, a MIO can confer various stat bonuses (and in some cases, maluses) to said equipment based on its
+traits
+and/or selected
+policy
+. MIOs can be assigned to equipment
+variants
+or, when eligible, to
+armor designs
+,
+ship designs
+, or
+aircraft designs
+. This happens automatically for any equipment unlocked from a technology that was researched using that MIO. For other technologies, or if the player wants the bonuses from a different MIO, a new variant can be created from the production screen. Adding, changing, or re-applying the MIO designer of some equipment costs 0
+Army experience
+for land-based equipment and designs, 0
+Navy experience
+for naval equipment and designs, and 0
+Air experience
+for aircraft equipment and designs,
+[4]
+though this cost can be discounted by some unlockable MIO traits and/or
+national focuses
+. Newly acquired stat bonuses from traits and
+policies
+are also not retroactively applied to existing equipment. In order to apply newly unlocked bonuses, a MIO must be re-applied as the designer of the given equipment variant (with the same
+experience cost as when assigning a new designer), and production lines must switched over to the new variant. Any already-manufactured land- and air-based equipment must be
+converted
+to the new variant if so desired, and already-manufactured ships must be
+refitted
+to the new variant.
+It can be important to note that MIOs can be assigned to
+production lines
+to produce equipment designed by other MIOs. For example, this can be beneficial if one MIO's
+traits
+are better-suited for boosting stats while another's are better for increasing
+production
+. Investing into two different MIOs for the same equipment this way can be more difficult (and is only even possible for countries that have multiple MIOs available for the same piece of equipment), but if the given piece of equipment is important enough to warrant this sort of dual setup, the additional effort can be worth it.
+Size and Funds
+[
+edit
+|
+edit source
+]
+A MIO can gain
+funds
+from being assigned to
+production lines
+and/or to conducting
+research
+, which help it increase in
+size
+.
+Being assigned to a
+production line
+earns the MIO 0.1
+[5]
+funds per
+production
+per day, up to at most 100
+[6]
+funds per day.
+Being assigned to
+research
+a technology earns the MIO 500
+[7]
+funds multiplied by the base cost of technology when the technology has been researched. A technology with a base cost of 110
+[8]
+days would earn 500 funds, one with a base cost of 165 days would earn 750 funds, one with a base cost of 99 days would earn 450 funds, etc. If progress has already been made on a technology before the MIO is assigned to it, the amount of funds gained upon completion is scaled to the percentage of the research that was done with the MIO assigned. As the amount of funds that a MIO receives depends only on the technology's base cost, not the actual time required to research it, it can be beneficial to choose to research technologies with available research speed bonuses if a player wishes to rapidly increase the size of a MIO.
+Naval technologies
+and
+naval support technologies
+where bonuses can be acquired by spending
+Navy experience
+can be especially potent. On the flipside, researching technologies ahead-of-time will not provide an assigned MIO more funds, so doing so can result in a lot more
+Political Power
+having to be spent on the MIO's research relative to the amount of funds it will gain from performing that research.
+Various
+political advisors
+,
+national focuses
+, and MIO traits can increase the amount of funds that a MIO gains whenever it would normally gain funds. Some
+national focuses
+also directly add funds to certain MIOs and/or directly increase their size.
+A MIO's funds will slowly increase its size. The main benefit of a MIO increasing in size is that gains 1
+[9]
+additional trait point each time its size increases that can be spent on
+traits
+. Additionally,
+policies
+unlock when a MIO reaches size 6.
+The funds required to increase the size of the MIO increases with greater MIO size:
+[10]
+Funds Required to Increase MIO Size
+=
+100
+⋅
+(
+Current MIO Size
++
+1
+)
+1.8
++
+700
+{\displaystyle {\text{Funds Required to Increase MIO Size}}=100\cdot \left({\text{Current MIO Size}}+1\right)^{1.8}+700}
+The amount of funds required to reach the first dozen of MIO sizes is summarized in the table below.
+Amount of MIO funds required to increase size.
+MIO Size
+Funds Required for Next Size Increase
+Cumulative Funds Required to Reach This Size
+0
+800
+0
+1
+1048
+800
+2
+1422
+1848
+3
+1912
+3270
+4
+2511
+5182
+5
+3215
+7693
+6
+4020
+10908
+7
+4922
+14928
+8
+5919
+19850
+9
+7009
+25769
+10
+8190
+32778
+11
+9460
+40968
+12
+10818
+50428
+Traits
+[
+edit
+|
+edit source
+]
+Traits
+are the main source of a MIO's bonuses and modifiers.
+All MIOs start with at least one trait that always confers some bonus (or penalty) to using it. Additional traits can be acquired by increasing a MIO's size, which add trait points to the MIO that can be spent on traits made available through the MIO's trait tree. Once a trait has been purchased, the purchase cannot be undone. When a MIO has at least one unspent trait point, players will receive a notification for it near the top of their screen.
+The same MIO types across different countries will usually share the same starting traits and basic trait trees, but there are plenty of exceptions, especially in the form of unique unlockable MIO traits added onto a basic trait tree.
+Like with
+technologies
+, traits in a MIO's trait tree can be mutually exclusive with other traits and/or have prerequisites (usually other MIO traits, but sometimes also
+technologies
+). Some country-specific traits available only to MIOs of certain countries can also have additional prerequisites, usually that certain
+national focuses
+be completed.
+MIO traits in the trait tree can be queued up by shift-clicking their icons instead of clicking them (which is used to acquire those traits). When a MIO gains trait points (usually from having increased in size), it will automatically attempt to spend them on available traits in its trait queue. The current trait queue for a MIO can be viewed by clicking the
+trait queue
+button in the MIO trait tree interface. Queued traits can also be reordered through the interface made available through that button. They can also be dequeued either by clicking the X button(s) next to them in the trait queue view or by shift-clicking their icons in the trait tree.
+It can sometimes be a good idea to delay acquiring certain traits, potentially indefinitely, and leave trait points unspent. Some traits can apply maluses that outweight the benefits of their bonuses, so delaying them until their maluses have come less relevant can be a wise choice. Infantry equipment MIOs can be an especially common example of this, where the fairly minor breakthrough bonuses that come from some of their traits are often not worth the more substantial production cost maluses that come with those same traits.
+Policies
+[
+edit
+|
+edit source
+]
+When a MIO reaches size 6,
+policies
+are unlocked for it. These serve as an additional source of bonuses or modifiers for a MIO that, unlike
+traits
+, can be altered over time. Not all types of MIO have access to all types of policy, but there are some common polices that all MIOs get access to.
+Assigning a new policy to a MIO costs 25
+[11]
+Political Power
+. Only one policy can be active at a time per MIO, but a new one can be selected after at least 180
+[12]
+days have passed since a MIO has been assigned a policy.
+Unlike
+traits
+, policies cannot be queued up for MIOs. However, by queuing up 5 MIO traits for each of their MIOs, players can ensure that when they see a notification for them having an unspent MIO trait point, it will be for MIOs that are at least size 6, reminding them to select a policy for it as well as trait(s).
+List of Policies
+[
+edit
+|
+edit source
+]
+Icon
+Policy
+Effect
+Prerequisites
+Ruthless Contracts
+Funds Gain:
++10%
+鈥?
+Assembly Line Optimisers
+All MIO equipment:
+Production efficiency cap
+:
++5%
+Production efficiency growth
+:
++5%
+Not available for MIOs that only specialize in ships
+Vertical Integration
+All MIO equipment:
+Production resources need:
+-10%
+Production resource penalty:
++10%
+鈥?
+Mechanical genius
+All MIO equipment:
+Reliability:
++10%
+鈥?
+Experimental Development Team
+MIO research bonus:
++20%
+鈥?
+Permanent Industrial Revolution
+MIO research bonus:
++10%
+All MIO equipment:
+Production resource need:
+-10%
+As
+Norway
+, complete
+Norwegian Engineering
+Ordnance Factory Board
+All MIO equipment:
+Production efficiency cap
+:
++10%
+Production efficiency growth
+:
++10%
+Reliability:
+-10%
+As
+British Raj
+or one of its inheritors, complete
+The Ordnance Factories Board
+Armor Welding Specialists
+All MIO equipment:
+Armor:
++5%
+Only available for Tank MIOs
+Casting Specialists
+All MIO equipment:
+Hardness:
++2%
+Only available for Tank MIOs
+Heavy Gantry Cranes
+Train:
+Production efficiency cap
+:
++5%
+Hidden
+: Added to list of supported MIO equipment
+Railway Artillery:
+Production efficiency cap
+:
++5%
+Hidden
+: Added to list of supported MIO equipment
+Heavy Tank:
+Production efficiency cap
+:
++5%
+Hidden
+: Added to list of supported MIO equipment
+Only available for Train and Tank MIOs
+Factory Applied Camuflage
+All MIO equipment:
+Defense:
++2%
+Breakthrough:
++2%
+Only available for Tank MIOs specializing in Medium and Heavy chassis designs
+Cutting Corners
+All MIO equipment:
+Production cost
+:
+-10%
+Reliability:
+-5%
+Soft Attack:
+-5%
+Hard Attack:
+-5%
+Armor:
+-5%
+Only available for Tank MIOs
+Welding Specialists
+All MIO equipment:
+Production cost
+:
+-5%
+Only available for Ship MIOs
+Space Efficient Design
+Carrier:
+Deck Size:
++1
+Hidden
+: Added to list of supported MIO equipment
+All MIO equipment:
+Max Range:
++25%
+Only available for Ship MIOs
+Stable Gunnery Platforms
+All MIO equipment:
+Light Battery hit chance factor:
++10%
+Heavy Battery hit chance factor:
++10%
+Only available for Ship MIOs
+Great Sea Keeping
+All MIO equipment:
+Weather Penalty:
+-50%
+Only available for Ship MIOs
+Coastal Battlefleet
+All MIO equipment:
+Production cost
+:
+-10%
+Max Range:
+-25%
+Only available for Ship MIOs
+Perfect Finnish
+All MIO equipment:
+Max Speed:
++5%
+Production cost
+:
++5%
+Only available for Plane MIOs
+Heavy Gantry Cranes
+All Medium Planes:
+Production efficiency cap
+:
++10%
+Hidden
+: Added to list of supported MIO equipment
+Strategic Bombers:
+Production efficiency cap
+:
++10%
+Hidden
+: Added to list of supported MIO equipment
+Naval Patrol Bombers:
+Production efficiency cap
+:
++10%
+Hidden
+: Added to list of supported MIO equipment
+Only available for Plane MIOs specializing in Medium and Large airframes
+Propulsion Experimenters
+MIO research bonus:
++20%
+Only available for Plane MIOs
+Wind Tunnel Pioneers
+All MIO equipment:
+Agility:
++5%
+Only available for Plane MIOs
+Modular Assembly
+All MIO equipment:
+Production cost
+:
+-5%
+Only available for Plane MIOs
+List of MIOs and Their Traits
+[
+edit
+|
+edit source
+]
+Armor companies
+[
+edit
+|
+edit source
+]
+Medium Tank Designer
+[
+edit
+|
+edit source
+]
+Applies to All Medium Tank Equipment
+Starting bonuses
+Bonuses for production lines: Production output
++5%
+MIO Research Bonus:
++10%
+Possible upgrades
+Power Traverse: Breakthrough
++5%
+All-Round Copula: Breakthrough
++5%
+Simplified Turret Design: Production output
++5%
+Specialist Shells: Hard Attack
++5%
+Improved Gun Mettalurgy: Piercing
++5%
+Advanced Shells: Piercing
++5%
+Armor Steel-Working: Production output
++5%
+Improved Suspension: Reliability
++5%
+Mutually exclusive
+Spaced Armor: Armor
++5%
+or
+Crew Survival Layout: Defense
++5%
+or
+Sloped Side Armor: Breakthrough
++5%
+Truck Engines: Reliability
++5%
+or
+Aircraft Engines: Max Speed
++5%
+Unique nation upgrades
+Soviet Union - Astrov Design Bureau
+Merge Plant No, 174: Max Speed
++5%
+unlocked by focus, when complete will no longer be available in other organizations
+Merge Plant No. 112: Production output
++5%
+unlocked by focus, when complete will no longer be available in other organizations
+Merge Ural Heavy Machine Building Plant: Soft Attack
++5%
+unlocked by focus, when complete will no longer be available in other organizations
+United Kingdom - Vickers-Armstrong
+Expanded Turret Capacity: Reliability
++5%
+, Armor
++5%
+, Breakthrough
++5%
+Expanded Production Facilities: Production efficiency cap
++10%
+, Production efficiency gain
++10%
+United States - Chrysler
+Strict Design Specifications: Reliability
++10%
+Expanded Production Facilities: Production output cost
+-10%
+, Production output
++5%
+Army Ordnance Department
+Periscope Sights: Breakthrough
++10%
+, Defense
++5%
+Mass Production of Armor: Production efficiency cap
++5%
+, Production efficiency gain
++10%
+Fast Tank Designer
+[
+edit
+|
+edit source
+]
+Applies to All Tank Equipment
+Starting bonuses
+Bonuses for equipment variants: Armor
+-5%
+, Reliability
+-5%
+, Max Speed
++10%
+MIO Research Bonus:
++5%
+Possible upgrades
+Improved Boogies: Max Speed
++2%
+, Reliability
++5%
+Sloping Armor: Defense
++5%
+Quality Assurance Routines: Reliability
++5%
+,
+Production Cost
++5%
+Improved Ventilation: Defense
++5%
+Enlarged Breech: Soft Attack
++5%
+Streamlined Production: Production efficiency cap
++5%
+Improved Tracks and Suspension: Breakthrough
++5%
+, Max Speed
++5%
+Gunner Sight Improvements: Breakthrough
++5%
+, Defense
++5%
+Mutually exclusive
+Engine Optimization: Max Speed
++5%
+or
+Reduced Fuel Usage: Fuel Usage
+-5%
+Lighter Materials: Production resource penalty
+-10%
+or
+Armor Hardening Process: Armor
++5%
+Unique nation upgrades
+Soviet Union - Morozov Design Bureau
+Merge Plant No, 174: Max Speed
++5%
+unlocked by focus, when complete will no longer be available in other organizations
+Merge Plant No. 112: Production output
++5%
+unlocked by focus, when complete will no longer be available in other organizations
+Merge Ural Heavy Machine Building Plant: Soft Attack
++5%
+unlocked by focus, when complete will no longer be available in other organizations
+United States - Tank Destroyer Board
+applies all bonuses only to Destroyer variants
+Starting bonuses - Reliability
++5%
+, Hard Attack
++5%
+, Piercing
++5%
+Enlarged Breech: Hard Attack
++5%
+, Piercing
++10%
+replaces trait Enlarged Breech
+Standardized Production
+[
+edit
+|
+edit source
+]
+Applies to All Light and Medium Tank Equipment
+Starting bonuses
+Bonuses for equipment variants: Armor
+-5%
+,Defense
+-5%
+,
+Production Cost
+-5%
+MIO Research Bonus:
++10%
+Possible upgrades
+Simplified Suspension: Reliability
++5%
+Crew Ergonomics: Max Speed
++2%
+, Defense
++2%
+Defensive Equipment: Soft Attack
++2%
+, Defense
++2%
+Standardized Components: Production efficiency gain
++15%
+, Production resource need
+-15%
+Improved Tracks: Reliability
++5%
+, Max Speed
++5%
+Command Upgrades: Breakthrough
++5%
+Long-Barelled Guns: Piercing
++5%
+, Hard Attack
++5%
+Improved Tooling: Production efficiency cap
++10%
+Mutually exclusive
+Mass Production: Production output cost
+-5%
+, Production efficiency gain
++10%
+or
+Quality Improvements: Armor
++10%
+, Defense
++10%
+Anti-Tank Specialization: Armor
++5%
+, Hard Attack
++5%
+or
+Infantry Support Tanks: Soft Attack
++5%
+, Production output cost
+-2%
+Unique nation upgrades
+German Reich - Daimler Benz
+Hotrolled Armor: Production efficiency cap
++5%
+, Production efficiency gain
++5%
+Multilayer Armour: Armor
++10%
+Italy - Fiat
+New Industrialization Program: Production output
++10%
+, MIO Research Bonus:
++10%
+unlocked by focus
+Infantry Tank Designer
+[
+edit
+|
+edit source
+]
+Applies to All Tank Equipment
+Starting bonuses
+Bonuses for equipment variants: Armor
++5%
+Max Speed
+-10%
+MIO Research Bonus:
++5%
+Possible upgrades
+Light Tank Improvements: Soft Attack
++5%
+, Hard Attack
++5%
+, Armor
++5%
+only for Light Tanks
+Medium Tank Improvements: Soft Attack
++5%
+, Hard Attack
++5%
+, Armor
++5%
+only for Medium Tanks
+Heavy Tank Improvements: Soft Attack
++2%
+, Hard Attack
++5%
+, Armor
++5%
+only for Heavy Tanks
+Production Division: Production efficiency gain
++15%
+Standardized Turrets: Soft Attack
++5%
+, Defense
++5%
+, Production output cost
+-3%
+Improved Wheel Protection: Reliability
++5%
+, Defense
++10%
+only for Light Tanks
+Gun Improvements: Hard Attack
++5%
+, Piercing
++10%
+only for Medium and Heavy Tanks
+Modular Construction: Production efficiency cap
++10%
+, Production efficiency gain
++10%
+Mutually exclusive
+Speed Improvements: Max Speed
++10%
+, Breakthrough
++10%
+or
+Improved Protection: Armor
++10%
+, Defense
++10%
+Light Tank Specialization: Production output cost
+-5%
+or
+Medium Tank Specialization: Production output cost
+-5%
+or
+Heavy Tank Specialization: Production output cost
+-5%
+only for specified tank category
+Unique nation upgrades
+Soviet Union - OKMO
+Merge Plant No, 174: Max Speed
++5%
+unlocked by focus, when complete will no longer be available in other organizations
+Merge Plant No. 112: Production output
++5%
+unlocked by focus, when complete will no longer be available in other organizations
+Merge Ural Heavy Machine Building Plant: Soft Attack
++5%
+unlocked by focus, when complete will no longer be available in other organizations
+France - Renault
+Automitrailleuses: Max Speed
++10%
+, Armor
+-5%
+only for Medium Tanks
+B1 bis Suspensoin: Max Speed
++5%
+, Breakthrough
++10%
+only for Heavy Tanks
+Heavy Tank Designer
+[
+edit
+|
+edit source
+]
+Applies to All Heavy Tank Equipment
+Starting bonuses
+Bonuses for equipment variants: Armor
++5%
+, Reliability:
+-10%
+MIO Research Bonus:
++10%
+Possible upgrades
+Wide Tracks: Reliability
++5%
+One-Piece Hull Side Coverings: Production efficiency cap:
++5%
+Fully Cast Turret: Armor
++5%
+, Defense
++5%
+Simplified Transmission System: Production efficiency cap:
++5%
+, Production efficiency gain:
++5%
+Sloping Armor: Armor
++5%
+, Defense
++5%
+Fire Extinguishers: Reliability
++5%
+, Breakthrough
++2%
+Improved Engine Output: Max Speed
++5%
+, Fuel Usage
+-5%
+Mutually exclusive
+Commander Cupola: Armor
++5%
+, Defense
++5%
+or
+Simplified Layout: Production efficiency gain
++5%
+, Production resource penalty
+-10%
+Improved Crew Ergonomics: Breakthrough
++5%
+or
+Reinforced Construction: Armor
++5%
+High-Explosive Shells: Soft Attack
++5%
+, Hard Attack
++3%
+or
+APCR/HVAP Shells: Piercing
++5%
+, Hard Attack
++5%
+Unique nation upgrades
+Soviet Union - Kirov
+Merge Plant No, 174: Max Speed
++5%
+unlocked by focus, when complete will no longer be available in other organizations
+Merge Plant No. 112: Production output
++5%
+unlocked by focus, when complete will no longer be available in other organizations
+Merge Ural Heavy Machine Building Plant: Soft Attack
++5%
+unlocked by focus, when complete will no longer be available in other organizations
+Germany - Porsche
+Unorthodox Transmission Design: Max Speed
++5%
+, Reliability
+-2%
+Only for Armor Technology
+Multi-Role Tanks: Soft Attack
++5%
+, Air Attack
++5%
+Anti-Tank Specilization: Hard Attack
++5%
+, Piercing
++5%
+Hoesch Facilities: Production Output
++5%
+when complete will no longer be available in other organizations
+Involve Posche in Special Projects: MIO Reseach Bonus
++5%
+, unlocks Ferdinand Porsche as Scientist
+unlocked by reaching level 5
+Tank Refurbishment Plant
+[
+edit
+|
+edit source
+]
+Hybrid Tank/Materiel Equipment MIO
+Applies to All Tank Equipment
+Starting bonuses
+Bonuses for production lines: Production conversion speed
++15%
+, Production output cost
+-5%
+MIO Research Bonus:
++10%
+Possible upgrades
+Enemy Tank Reffiting: Production conversion speed
++15%
+, Production output cost
+-3%
+Efficient Scrap Recycling: Hardness
+-6%
+, Production resource need
+-20%
+High Volume Smelter: Production output
++6%
+High-Powered Engine Production: Max Speed
++10%
+Heavy Duty Machine Tools: Max Speed
++10%
+, Production efficiency gain
++5%
+, Production efficiency cap
++5%
+Multi-Plant Cooperation: Production efficiency gain
++8%
+Standardized Secondary Armament: Breakthrough
++5%
+Mass Small Arms Ammunition Production: Production output cost
+-5%
+for Armor and Support Equipment
+Plant Tech Exchange: MIO Research Bonus:
++6%
+24H Rotation Shifts: Production output
++6%
+for Armor, Support Equipment, Train and Railway Artillery
+Dual Plant Main Armament Production: Soft Attack
++5%
+, Reliability
+-5%
+, Production efficiency gain
++5%
+Long Distance Train Escort: Armor
++6%
+, Air Attack
++10%
+only for Train
+Barrels of Hell: Production output
++10%
+only for Railroad Artillery
+Unique nation upgrades
+Soviet Union - Mytishchy Machine Building Plant
+Merge Plant No, 174: Max Speed
++5%
+unlocked by focus, when complete will no longer be available in other organizations
+Merge Plant No. 112: Production output
++5%
+unlocked by focus, when complete will no longer be available in other organizations
+Merge Ural Heavy Machine Building Plant: Soft Attack
++5%
+unlocked by focus, when complete will no longer be available in other organizations
+Assault Guns Manufactuer
+[
+edit
+|
+edit source
+]
+Self-Propelled Howitzer producer
+The designed tank must be set to role "Artilery"
+Applies to all SPG tanks
+Starting bonuses
+All SPG variants: Soft Attack
++7%
+, Reliability
++5%
+, Armor
+-5%
+Possible upgrades
+Mobile Artillery: Light SPG: Soft Attack
++5%
+, Max Speed
++5%
+10.5cm Liechte Feldhaubitze Ammunition: Light SPG: Soft Attack
++10%
+, Reliability
++5%
+Armored Artillery: Medium SPG: Armor
++5%
+, Breakthrough
++5%
+Mobile Firebases: Heavy SPG: Max Speed
+-10%
+, Soft Attack
++15%
+Low-Slung Superstructure and Fighting Compartment: Medium SPG: Defense
++10%
+, Reliability
++10%
+, Armor
++5%
+75mm 43M Tank Gun: All SPG variants: Soft Attack
++5%
+, Breakthrough
++10%
+, Defense
++5%
+Fully Cast Turret: Heavy SPG: Defense
++5%
+, Armor
++5%
+Strengthened Tracks: Heavy SPG: Max Speed
++10%
+, Reliability
++5%
+Mounted Rocket tubes: Has Research Rocket Artillery 2: Soft Attack
++15%
+, Breakthrough
++5%
+,Reliability
+-10%
+Mutually exclusive
+High-Explosive Armored-Piercing Ammunition: Light SPG: Hard Attack
++20%
+Improved Canon stabilization: Light SPG: Soft Attack
++5%
+, Breakthrough
++10%
+Lighter Materials: All SPG variants: Production resource penalty
+-15%
+Extensive Armor Hardening Process: All SPG variants: Defense
++5%
+, Armor
++10%
+Unique nation upgrades
+Germany - Alkett
+Panzerj盲ger: Has Researched Anti-Tank 2: All SPG variants: Piercing
++5%
+, Hard Attack
++10%
+,Reliability
+-5%
+Hoesch Facilities: All SPG variants: Production Output
++5%
+Sturmhaubitze: Has completed one of the required focuses: Fate of Czek,Integrate Czek,Carve up Czek: Medium And Heavy SPG: Soft Attack
++3%
+, Hard Attack
++5%
+,Breakthrough
++5%
+Naval Companies
+[
+edit
+|
+edit source
+]
+Battle Line Ship Builders
+[
+edit
+|
+edit source
+]
+Applies to All Battleship and All Cruiser Ships
+Starting bonuses
+Production output
++5%
+MIO Research Bonus:
++10%
+Possible upgrades
+Anti-Air Layout Trait: Anti-air
++5%
+Secondary Battery Layout: Light Attack
++5%
+Primary Battery Layout: Heavy Attack
++5%
+only for Capital Ships
+Gyro-Stabilized Mounts: Anti-air
++5%
+, Light Attack
++5%
+Hardened Critical Components: Incoming Torpedo critical chance
+-5%
+Secondary Fire Director Control: Anti-air
++5%
+, Light  battery hit chance
++5%
+Combat information Center: HP
++10%
+Mutually exclusive
+External Armor Belt: Armor
++5%
+or
+Internal Armor Belt: Armor
++15%
+,
+Production Cost
++5%
+Super-Heavy Shells: Heavy Attack
++5%
+, Heavy Piercing
++5%
+or
+Semi-Armor-Piercing Shells: Light Attack
++5%
+, Light Piercing
++5%
+or
+High Velocity Guns: Light Piercing
++10%
+, Heavy Piercing
++10%
+,
+Production Cost
++5%
+Advanced Hydrodynamic Design: Max Speed
++5%
+or
+Advanced Armor Design: Armor
++5%
+Unique nation upgrades
+Italy - CRDA
+New Industrialization Program: Production output
++10%
+, MIO Research Bonus:
++10%
+unlocked by focus
+Soviet Union - Nevskoye Design Bureau
+Merge Plant No. 370: Production output cost
+-5%
+, Minelaying
++10%
+, 1x research bonus for Mine Warfare Technologies
+only for Cruiser Ships, unlocked by focus, when complete will no longer be available in other organizations
+Merge Plant No. 5: Production output cost
+-10%
+only for Cruiser Ships, unlocked by focus, when complete will no longer be available in other organizations
+United Kingdom - Cammell Laird
+Flared Bow: Weather Penalty
+-10%
+Super Charges: Heavy Piercing
++5%
+, Light Piercing
++5%
+only for Capital Ships
+Germany - Germaniawerft
+History of Battleships: Heavy Attack
++5%
+, Production output cost
+-5%
+only for Battleships, unlocked by focus
+Krupp Guns: Heavy Attack
++5%
+, Light Attack
++5%
+only for Cruiser and Battleships, unlocked by focus
+H-Class Battleship: Heavy Piercing
++5%
+, Max Speed
++5%
+, Production output cost
+-5%
+only for Battleships, unlocked by focus
+Raiding Fleet
+[
+edit
+|
+edit source
+]
+Applies to All Capital Ships, Screens and Submarines
+Starting bonuses
+Surface Visibility
+-5%
+MIO Research Bonus:
++10%
+Possible upgrades
+Diesel Powerplants: Fuel Usage
+-5%
+High Speed Operation Stores: Max Speed
++5%
+, Minelaying
++5%
+Raiding Capital Ships: Surface Visibility
+-5%
+, Heavy Attack
++5%
+only for Capital Ships
+Raiding Cruisers: Surface Visibility
+-5%
+only for Cruisers
+Raiding Submarines: Surface Visibility
+-5%
+, Sub Visibility
+-5%
+only for Submarines
+Long Range Engagement Ethos: Surface Visibility
+-5%
+, Heavy Attack
++5%
+only for Capital Ships
+Large Torpedo Banks: Torpedo Attack
++5%
+Raider Escort Requirements: Max Range
++5%
+, Max Speed
++5%
+only for Screens
+Unescorted Raider Requirements: Light Attack
++5%
+only for Capital Ships
+Mass-Produced Raiders: Production output
++5%
+Mutually exclusive
+Long Range Raiding: Max Range
++5%
+, Fuel Usage
++5%
+or
+High Speed Raiding: Max Speed
++5%
+, Fuel Usage
++5%
+High-Quality Optics: Surface detection
++5%
+or
+Spotting Tops: Surface Visibility
+-5%
+only for Capital Ships and Screens
+Unique nation upgrades
+Italy - Cantiere Navale di Ancona
+New Industrialization Program: Production output
++10%
+, MIO Research Bonus:
++10%
+unlocked by focus
+Soviet Union - Rubin Design Bureau
+Merge Plant No. 370: Production output cost
+-5%
+, Minelaying
++10%
+, 1x research bonus for Mine Warfare Technologies
+only for Cruiser, Destroyer and Submarines, unlocked by focus, when complete will no longer be available in other organizations
+Mutually exclusive
+Merge Plant No. 190: Production output cost
+-10%
+only for Submarines, unlocked by focus
+Merge Plant No. 363: Production output cost
+-10%
+only for Destroyers, unlocked by focus
+Germany - Blohm & Voss
+Heavy Raiders: Surface Visibility
+-5%
+, Max Speed
++5%
+, Max Range
++5%
+only for Cruiser, unlocked by focus
+O-Class Battlecruiser: Heavy Piercing
++5%
+, Max Speed
++5%
+Production cost
+-5%
+,
+only for Cruiser, unlocked by focu
+s
+U-Boat Yards: Production Cost
+-10%
+,
+only for submarine, unlocked by focus
+High-Test Peroxide: Max Range
++10%
+,
+only for submarine
+Escort Fleet
+[
+edit
+|
+edit source
+]
+Applies to All Screens
+Starting bonuses
+Screens: Production output
++5%
+MIO Research Bonus:
++10%
+Possible upgrades
+Submarine Hunters: Sub detection
++5%
+, Depth charges
++5%
+Fleet Escorts: Anti-air
++5%
+, Light Attack
++5%
+High-Speed Mine-Hunting Equipment: Sub detection
++5%
+, Minesweeping
++5%
+Anti-air Layout Trait: Anti-air
++5%
+Gyro-Stabilized Mounts: Anti-air
++5%
+, Light Attack
++5%
+Advanced Hadrodynamic Design: Max Speed
++5%
+Improved Anti-Air Gun Mounting: Anti-air
++5%
+Mass Production: Production output
++5%
+Improved Light Gun Mounting: Anti-air
++5%
+, Light Attack
++5%
+Mutually exclusive
+Anti-Air Ships:Anti-air
++5%
+or
+Escort In Force: Light Attack
++5%
+Unique nation upgrades
+Italy - Odero-Terni-Orlando
+New Industrialization Program: Production output
++10%
+, MIO Research Bonus:
++10%
+unlocked by focus
+Task Force Ship Builders
+[
+edit
+|
+edit source
+]
+Applies to All Carrier, Cruiser and Destroyer Ships
+Starting bonuses
+HP
++5%
+MIO Research Bonus:
++10%
+Possible upgrades
+Secondary Fire Director Control: Anti-air
++5%
+, Light Battery hit chance
++5%
+only for Screens and Carriers
+Primary Fire Director Control: Heavy Attack
++5%
+only for Cruiser Ships
+Flight Deck Edge AA Mounts: Anti-air
++5%
+only for Carrier Ships
+Splinter Protection: Armor
++5%
+only for Carrier and Cruiser Ships
+Gyro-Stabilized Mounts: Anti-air
++5%
+, Light Attack
++5%
+Advanced Fitting Works: Production output
++5%
+Carrier Flight Operations Center: HP Production output
++10%
+Mutually exclusive
+Long-Range Cruising: Max Range
++5%
+, Fuel Usage
++5%
+or
+High Speed Cruising: Max Speed
++5%
+, Fuel Usage
++5%
+Rapid Fire Guns: Anti-air
++5%
+, Light Attack
++5%
+or
+High Velocity Guns: Heavy Piercing
++5%
+only for Cruiser Ships
+Transom Stern: Max Speed
++5%
+, Fuel Usage
+-5%
+or
+Underway Replenishment Equipment: Max Range
++5%
+, Fuel Usage
+-5%
+Unique nation upgrades
+United Kingdom - Harland & Wolff
+Semi-Armor-Piercing Shells: Light Attack
++5%
+, Light Piercing
++5%
+Flared Bow: Weather Penalty
+-10%
+Germany - Deutsche Werke
+Raider Doctrine: Max Speed
++5%
+, Surface Visibility
+-5%
+only for Screens
+Fast Raiders: Max Speed
++5%
+, Max Range
++5%
+only for Screens
+Carrier Raiders: Max Speed
++5%
+, Max Range
++5%
+, Surface Visibility
+-5%
+only for Carriers
+Refurbishment Repair Manufacturer
+[
+edit
+|
+edit source
+]
+Applies to All Capital Ships and Cruisers
+Starting bonuses
+Capital Ships, Screens and Submarines HP
++3%
+MIO Research Bonus:
++6%
+Possible upgrades
+Heavy Armored Hull: Armor
++3%
+Foam Fire Extinguishers: Reliability
++3%
+Bulkhead Shoring Procedure: Reliability
++1%
+, Armor
++2%
+Advanced Scanners: Sub detection
++5%
+,Surface detection
++5%
+Isolated Firemains: Torpedo damage reduction
++3%
+Counter Flooding Systems: Incoming Torpedo critical chance
+-5%
+High Powered Steering: Reliability
++1%
+, Armor
++2%
+Flooding Boundries: HP
++3%
+High-Velocity Guns: Heavy Piercing
++3%
+only for Capital Ships
+Protected Pumps: HP
++5%
+Anti-Torpedo Bulge: Incoming Torpedo critical chance
+-5%
+, Torpedo damage reduction
++8%
+Mutually exclusive
+Capital Destroyer Shells: Heavy Piercing
++5%
+, Heavy Attack
++10%
+, Max Range
+-15%
+, Max Speed
+-8%
+only for Capital Ships
+or
+Deck Guns: Anti-air
++6%
+or
+All-Purpose Defense Systems: Anti-air
++3%
+, Armor
++3%
+, Light Attack
++3%
+, Max Range
+-5%
+, Max Speed
+-4%
+only for Capital Ships
+Unique nation upgrades
+Italy - Navalmeccanica
+New Industrialization Program: Production output
++10%
+, MIO Research Bonus:
++10%
+unlocked by focus
+Soviet Union - Sevastopol Marine Plant
+Merge Mariupol Plant: Production output cost
+-5%
+, Minelaying
++10%
+, 1x research bonus for Mine Warfare Technologies
+only for Cruiser Ships, unlocked by focus, when complete will no longer be available in other organizations
+Merge Plant No. 200: Production output cost
+-10%
+only for Cruiser Ships, unlocked by focus
+Black Sea Fleet Designer
+[
+edit
+|
+edit source
+]
+Applies to All Capital Ships, Screens and Submarines
+Starting bonuses
+Anti-air
++2%
+, Armor
++2%
+, HP
++2%
+, Max Range
+-15%
+MIO Research Bonus:
++5%
+Possible upgrades
+Submarine Hunters: Sub detection
++5%
+, Patrol Efficiency
++5%
+Anti-Air Defense: Anti-air
++6%
+only for Capital Ships and Screens
+State Sponsored Growth: Funds Gain
++10%
+Efficient Patroling Scheme: Patrol Efficiency
++10%
+, Max Range
+-5%
+Advenced Sub-Scanners: Sub detection
++5%
+only for Capital Ships and Screens
+Heavy Guns: Heavy Attack
++5%
+only for Capital Ships and Screens
+Advanced Periscope: Sub Visibility
+-3%
+, Surface detection
++3%
+only for Submarines
+High-Atlitude Catapult: Surface detection
++4%
+, Sub detection
++4%
+Armor-Piercing Guns: Light Piercing
++5%
+only for Capital Ships and Screens
+Piercing Rounds: Heavy Piercing
++5%
+only for Capital Ships
+Base Defense: Anti-air
++6%
+, Max Range
+-10%
+, Armor
++5%
+only for Capital Ships and Screens
+Brass-Case Reloader: Light Attack
++6%
+only for Capital Ships and Screens
+Deck Guns: Anti-air
++6%
+only for Capital Ships
+State Subsidizing: Design Team Assign Cost
++15%
+, Requirement for Size Up
+-25%
+Mutually exclusive
+State Sponsored Research: MIO Research Bonus:
++10%
+or
+24h Shifts: Production output
++5%
+Unique nation upgrades
+Soviet Union - Black Sea Shipyard
+Merge Mariupol Plant: Production output cost
+-5%
+, Minelaying
++10%
+, 1x research bonus for Mine Warfare Technologies
+only for Cruiser, Destroyer and Submarines, unlocked by focus, when complete will no longer be available in other organizations
+Mutually exclusive
+Merge Plant No, 340: Production output cost
+-10%
+only for Submarines, unlocked by focus
+Merge Leninskaya Kuznitsa Plant: Production output cost
+-10%
+only for Destroyers, unlocked by focus
+Submarine Designer
+[
+edit
+|
+edit source
+]
+Applies to All Submarines
+Starting bonuses
+Sub Visibility
+-5%
+MIO Research Bonus:
++10%
+Possible upgrades
+Experimental Anechoic Tiles: Surface Visibility
+-5%
+, Sub Visibility
+-5%
+,
+Production Cost
++3%
+Improved Torpedo Detonators: Torpedo Attack
++5%
+Simplified Presuure Hull Design: Production output
++10%
+Mutually exclusive
+Highly Efficient Diesel-Electric Propulsion Systems: Max Range
++6%
+or
+Open-Cycle Propulsion: Max Speed
++5%
+Long Range Raiding
+vs
+Decalin Fueled Torpedo
+Long Range Raiding: Sub Visibility
+-3%
+, Max Speed
+-1%
+Efficient Fuel Engines: Max Range
++5%
+Advanced Periscope: Surface detection
++3%
+Emergency Main Ballast Tank Blow: HP
++6%
+, Max Speed
++1%
+Radar Warning Reciever: Surface detection
+-3%
+, Sub Visibility
+-5%
+Crash-Dive Flood Tanks: HP
++8%
+, Sub Visibility
+-1%
+Decalin Fueled Torpedo: Torpedo Attack
++5%
+High-Powered Engines: Sub Visibility
++2%
+, Max Speed
++5%
+Submarine Mass Production: Production output
++7%
+Advanced Sonar: Surface detection
++6%
+, Sub Visibility
++2%
+Deck Guns: HP
++8%
+Large Torpedo Banks: Torpedo Attack
++5%
+High-Capacity Mine Storage: Minelaying
++20%
+Unique nation upgrades
+Italy - Cantieri Navali Tosi
+New Industrialization Program: Production output
++10%
+, MIO Research Bonus:
++10%
+unlocked by focus
+Plane Companies
+[
+edit
+|
+edit source
+]
+Light Aircraft Designer
+[
+edit
+|
+edit source
+]
+Applies to Fighter and Carrier Fighter
+Starting bonuses
+Agility
++5%
+, Max Speed
++5%
+, Air Attack
++5%
+MIO Research Bonus:
++5%
+Possible upgrades
+Expanded Production Facilities: Production efficiency gain
++5%
+Liquid-Cooled Engines: Max Speed
++5%
+, Agility
++5%
+Advanced Aerodynamics: Max Speed
++5%
+, Agility
++5%
+Fixed Tailwheels: Reliability
++5%
+Maritime Duties: Range
++5%
+, Naval Attack
++5%
+Ongoing Develomental Upgrades: Production efficiency gain
++5%
+, MIO Research Bonus:
++5%
+Fuselage Ordinance Rack: Max Speed
++5%
+, Agility
++5%
+Removable Wings: Reliability
++5%
+, Production efficiency gain
++5%
+Flexible Design: Range
++5%
+, Air Defense
++5%
+, Air Attack
++2%
+, Ground Attack
++2%
+requires trait Multi-Purpose Aircraft
+Fighter Expertise: Range
++5%
+, Max Speed
++5%
+, Air Attack
++5%
+requires trait Fighter Specialization
+Close Air Support Expertise: Ground Attack
++5%
+, Range
++5%
+, Air Defense
++5%
+requires trait Close Air Support Specialization
+Mutually exclusive
+Heavier Frame: Air Attack
++5%
+, Ground Attack
++5%
+, Naval Attack
++5%
+, Air Defense
++5%
+or
+Maximum Wing Loads: Max Speed
++5%
+, Agility
++5%
+or
+Gun Pods: Ground Attack
++10%
+, Agility
+-3%
+, Air Attack
++5%
+Multi-Purpose Aircraft: Air Attack
++5%
+, Ground Attack
++5%
+, Naval attack
++5%
+or
+Fighter Specialization: Air Attack
++5%
+, Agility
++3%
+, Max Speed
++5%
+or
+Close Air Support Specialization: Ground Attack
++5%
+, Air Defense
++5%
+Unique nation upgrades
+German Reich - Messerschmitt
+Maintenance First Design: Reliability
++5%
+, Production efficiency gain
++5%
+Fuselage-Based Weapons: Air Attack
++5%
+, Agility
++5%
+Hamburger Flugzeugbau: Production output
++5%
+unlocked when Blohm & Voss reach level 4
+,
+when complete will no longer be available in other organizations
+Integrated Aerodynamic Research Institute Department: MIO Research Bonus:
++10%
+unlocked by focus, when complete will no longer be available in other organizations
+Amerikabomber Learnings: Range
++10%
+only for Fighter and Carrief FIghters
+,
+unlocked by focus, when complete will no longer be available in other organizations
+Italy - Macchi
+New Industrialization Program: Production output
++10%
+, MIO Research Bonus:
++10%
+unlocked by focus
+Soviet Union - MiG Design Bureau
+Merge Plant No. 28: Production output cost
+-5%
+unlocked by focus, when complete will no longer be available in other organizations
+Merge Plant No. 150: Agility
++5%
+unlocked by focus, add production of 3
+in Moscow,
+when complete will no longer be available in other organizations
+Merge VEF Plant: Air Defense
++10%
+, Surface detection
++15%
+, Sub detection
++15%
+, 1x 100% Research bonus for RADAR Technology unlocked by focus,
+when complete will no longer be available in other organizations
+High Agility Fighter Designer
+[
+edit
+|
+edit source
+]
+Applies to All Fighter and Carrier Fighter
+Starting bonuses
+Agility
++10%
+, Range
+-10%
+MIO Research Bonus:
++5%
+Possible upgrades
+Bigger Engines: Max Speed
++5%
+Cantilever Wing Structure: Air Defense
++5%
+, Agility
++5%
+Minimum Weapon Requirements: Air Attack
++5%
+Shortened Wings: Reliability
++5%
+, Agility
++5%
+High Octane Fuels: Max Speed
++10%
+, Fuel Usage
++10%
+Fuel Injection Engines: Max Speed
++5%
+, Agility
++5%
+Stiffened Wings: Max Speed
++5%
+, Agility
++5%
+Mutually exclusive
+Fabric Skin: Production resource penalty
++5%
+, Production output
++5%
+, Agility
++5%
+or
+Metal Skin: Air Defense
++10%
+, Max Speed
++5%
+Interceptor: Air Attack
++5%
+or
+Gunboat: Ground Attack
++10%
+Subsidiary Suppliers: Production efficiency cap
++10%
+, Production efficiency gain
++5%
+or
+Fighter Interceptors: Range
++10%
+, Air Attack
++5%
+Unique nation upgrades
+United Kingdom - Supermarine
+Seaplane Origins: Sub detection
++5%
+, Surface detection
++5%
+, Naval Targeting
++10%
+Eliptical Wings: Air Defense
++10%
+Supercharger: Air Defense
++10%
+Range Focused Aircraft Designer
+[
+edit
+|
+edit source
+]
+Applies to All Small, Carrier and Medium Planes
+Starting bonuses
+Range
++10%
+MIO Research Bonus:
++5%
+Possible upgrades
+Large Rudders and Flaps: Agility
++5%
+only for Medium Planes
+Variable Dihedral: Range
++10%
+, Reliability
++10%
+only for Medium Planes
+High Capacity Ammunition: Air Attack
++10%
+Improved Air Frame Strength: Range
++10%
+only for Medium Planes
+Advanced Production Techniques: Reliability
++10%
+, Production output
++10%
+requires researched Advanced Machine Tools
+Low Drag Wings: Range
++10%
+, Max Speed
++10%
+Strafing Techniques: Ground Attack
++10%
+Long Range Modifications: Range
++10%
+Anti-Interception Tactics: Max Speed
++10%
+only for Medium Planes
+High Explosive Payload: Ground Attack
++10%
+, Strat. Bombing
++15%
+only for Medium Planes
+Long Range Fighters: Range
++15%
+, Agility
++15%
+olny for Fighter and Carrier Fighter Planes
+Heavy Fighters: Air Attack
++15%
+, Range
++10%
+only for Medium Planes
+Tactical Bombers: Strat. Bombing
++15%
+, Range
++10%
+only for Medium Planes
+Extra Cargo Doors: Production output
++10%
+only for Transport Plane
+Glider Hook Modifications: Range
++10%
+only for Transport Plane
+Unique nation upgrades
+Italy - Fiat Aviazione
+New Industrialization Program: Production output
++10%
+, MIO Research Bonus:
++10%
+unlocked by focus
+High Altitude Fighter Development: Agility
++5%
+, Air Attack
++3%
+only for Small and Carrier Planes
+United States - North American Aviation
+Outsourced Engines: Agility
++5%
+, Max Speed
++5%
+only if United States is in faction with United Kingdom
+Light Aircraft Developement: Agility
++5%
+, Ground Attack
++5%
+, Air Attack
++2%
+CAS Aircraft Designer
+[
+edit
+|
+edit source
+]
+Applies to Close Air Support and Carrier Close Air Support
+Starting bonuses
+Ground Attack
++5%
+, Max Speed
+-3%
+MIO Research Bonus:
++5%
+Possible upgrades
+Selectional Construction: Production efficiency gain
++5%
+Canopies and Firewalls: Air Defense
++5%
+, Reliability
++5%
+Low Altitude Attacks: Air Defese
++5%
+HEAT Bombs: Ground Attack
++5%
+Putomatic Pull-Out: Ground Attack
++5%
+, Reliability
++5%
+Heavily Armed Aircraft: Air Attack
++5%
+, Ground Attack
++5%
+Integrated Armor Designs: Air Defense
++5%
+Air Brakes: Ground Attack
++5%
+Wingborne Fuel Tanks: Range
++5%
+Cluster Bombs: Ground Attack
++5%
+Mutually exclusive
+Gull Wings: Ground Attack
++10%
+or
+Reinforced Wings: Ground attack
++3%
+, Air Attack
++3%
+, Air Defense
++3%
+Bombs: Ground Attack
++10%
+or
+Rockets: Ground Attack
++5%
+, Agility
++5%
+Unique nation upgrades
+German Reich - Junkers
+Psychological Warfare: Fuel Usage
+-5%
+Italy - Caproni
+New Industrialization Program: Production output
++10%
+, MIO Research Bonus:
++10%
+unlocked by focus
+Naval Aircraft Designer
+[
+edit
+|
+edit source
+]
+Applies to Naval Bomber, Carrier Fighter, Carrier Close Air Support and Carrier Naval Bomber
+Starting bonuses
+Production output
++5%
+MIO Research Bonus:
++10%
+Possible upgrades
+Navigation Equipment: Reliability
++5%
+Reinforced Fuselage: Reliability
++5%
+, Air Defense
++5%
+Air-Cooled Engines: Reliability
++5%
+, Air Defense
++5%
+High-Speed Torpedo Release: Surface detection
++5%
+only Naval Bomber and Carrier Naval Bomber
+Multi-Stage Super Charger: Agility
++5%
+, Max Speed
++5%
+only for Carrier Fighter
+Water injection: Fuel Usage
+-5%
+, Max Speed
++5%
+only Carrier Fighter
+High-Capacity Ammunition Stores: Air Attack
++5%
+Larger Bomb Loads: Ground Attack
++5%
+Advanced Materials: Production output cost
+-10%
+, Production resource need
++10%
+Mutually exclusive
+Patrol Fuel Tanks: Range
++5%
+or
+Internal Torpedo Mountings: Max Speed
++5%
+only for Naval and Carrier Bombers
+Agility Wing Design: Range
++5%
+, Agility
++5%
+or
+Strength Wing Design: Range
++5%
+, Air Defense
++5%
+Unique nation upgrades
+Italy - CRDA-CANT
+New Industrialization Program: Production output
++10%
+, MIO Research Bonus:
++10%
+unlocked by focus
+Soviet Union - Yakolev Design Bureau
+Merge Plant No. 28: Production output cost
+-5%
+unlocked by focus, when complete will no longer be available in other organizations
+Merge Plant No. 150: Agility
++5%
+unlocked by focus, add production of 3
+in Moscow,
+when complete will no longer be available in other organizations
+Merge VEF Plant: Air Defense
++10%
+, Surface detection
++15%
+, Sub detection
++15%
+, 1x 100% Research bonus for RADAR Technology unlocked by focus,
+when complete will no longer be available in other organizations
+United States - Grumman
+Smooth Finish: Agility
++5%
+, Max Speed
++5%
+Jet Fighter Design: Max Speed
++10%
+requires researched Jet Engines
+Germany - Fieseler
+Hamburger Flugzeugbau: Production output
++5%
+unlocked when Blohm & Voss reach level 5
+,
+when complete will no longer be available in other organizations
+Integrated Aerodynamic Research Institute Department: MIO Research Bonus:
++10%
+unlocked by focus, when complete will no longer be available in other organizations
+Heavy Aircraft Designer
+[
+edit
+|
+edit source
+]
+Applies to Strategic Bombers and Naval Patrol Bomber
+Starting bonuses
+Strat. Bombing
++5%
+, Agility
+-5%
+MIO Research Bonus:
++10%
+Possible upgrades
+Reinforced Frames: Air Defense
++5%
+Extended Rear Fuselage: Strat. Bombing
++5%
+, Naval Attack
++5%
+Standardized Alloys: Production efficiency gain
++5%
+, Production resource penalty
+-10%
+affects Transport Planes too
+Pressurized Cockpit: Range
++5%
+Transport Conversions: Production output
++10%
+only for Transport Plane
+Drop-Hammer Alloy Straining: Air Defense
++5%
+, Reliability
++5%
+Cockpit-Controlled Remote Gun Turrets: Air Attack
++5%
+Advanced Turbochargers: Agility
++5%
+Mutually exclusive
+Auto-Levelled Bombsights: Strat. Bombing
++5%
+or
+Air-Deployed Sonobuoys: Sub detection
++5%
+, Surface detection
++5%
+Refined Secondary Aluminium: Production output
++5%
+, Production resource need
+-15%
+or
+High-Quality Aluminium Alloys: Agility
++5%
+, Reliability
++5%
+Flying Fortress: Air Defense
++15%
+, Range
++15%
+, Agility
+-5%
+, Fuel usage
++5%
+or
+Advanced Instruments: Strat. Bombing
++5%
+, Naval Targeting
++5%
+Unique nation upgrades
+Italy - Piaggio
+New Industrialization Program: Production output
++10%
+, MIO Research Bonus:
++10%
+unlocked by focus
+Soviet Union - Tupolev Design Bureau
+Gas Tank Protection: Air Defense
++5%
+, Reliability
++3%
+Lightened Reduction Gear: Fuel Usage
+-5%
+, Reliability
++3%
+Merge Plant No. 28: Production output cost
+-5%
+unlocked by focus, when complete will no longer be available in other organizations
+Merge Plant No. 150: Agility
++5%
+unlocked by focus, add production of 3
+in Moscow,
+when complete will no longer be available in other organizations
+Merge VEF Plant: Air Defense
++10%
+, Surface detection
++15%
+, Sub detection
++15%
+, 1x 100% Research bonus for RADAR Technology unlocked by focus,
+when complete will no longer be available in other organizations
+United States - Boeing
+Superfortress: Air Defense
++10%
+, Range
++10%
+, Agility
+-5%
+, Fuel usage
++5%
+Germany - Heinkel
+Hamburger Flugzeugbau: Production output
++5%
+unlocked when Blohm & Voss reach level 5
+,
+when complete will no longer be available in other organizations
+Integrated Aerodynamic Research Institute Department: MIO Research Bonus:
++10%
+unlocked by focus, when complete will no longer be available in other organizations
+Amerikabomber Learnings: Max Range
++10%
+, Strat. Bombing
++5%
+only for Strategic Bombers, unlocked by focus, when complete will no longer be available in other organizations
+Multi-Role Tactical Aircraft
+[
+edit
+|
+edit source
+]
+Applies to All Medium Planes
+Starting bonuses
+Surface detection
++5%
+, Ground Attack
++5%
+MIO Research Bonus:
++5%
+Possible upgrades
+Narrow Build: Air Defense
++5%
+, Production efficiency gain
++5%
+Mixed Material Construction: Production efficiency gain
++5%
+Skip Bombing: Naval Attack
++3%
+Multi-Role Transport: Production efficiency gain
++5%
+, Production efficiency cap
++10%
+only for Transport Plane
+Refined Engines: Max Speed
++5%
+Extra Machine Guns: Ground Attack
++10%
+,
+Production Cost
++5%
+High-Frequency Direction Finding: Sub detection
++5%
+, Naval Attack
++3%
+Streamlines Fuselage: Air Defense
++5%
+, Max Speed
++5%
+Mutually exclusive
+Twin-Tail: Agility
++5%
+or
+Reinforced Wing Braces: Ground Attack
++5%
+Expanded Cockpit: Ground Attack
++5%
+, Strat. Bombing
++5%
+or
+Air Defense
++5%
+Adaptable Build: Range
++5%
+, Production output
++5%
+or
+Heavy Fighter Specialization: Range
++5%
+, Air Attack
++5%
+, Air Defense
++5%
+or
+Tactical Bomber Specialization: Range
++5%
+, Ground Attack
++5%
+, Air Defense
++5%
+Unique nation upgrades
+Italy - IMAM
+New Industrialization Program: Production output
++10%
+, MIO Research Bonus:
++10%
+unlocked by focus
+Soviet Union - Ilyushin Design Bureau
+Merge Plant No. 28: Production output cost
+-5%
+unlocked by focus, when complete will no longer be available in other organizations
+Merge Plant No. 150: Agility
++5%
+unlocked by focus, add production of 3
+in Moscow,
+when complete will no longer be available in other organizations
+Merge VEF Plant: Air Defense
++10%
+, Surface detection
++15%
+, Sub detection
++15%
+, 1x 100% Research bonus for RADAR Technology
+unlocked by focus
+,
+when complete will no longer be available in other organizations
+United States - Lockheed
+Mechanized Production: Production efficiency cap
++5%
+only for All Medium Planes
+Multi-Role Aircraft Designer
+[
+edit
+|
+edit source
+]
+Applies to All Small and Carrier Planes and Medium Planes
+Starting bonuses
+Ground Attack
++2%
+, Naval Attack
++2%
+, Air Attack
++2%
+, Air Defense
++2%
+MIO Research Bonus:
++5%
+Possible upgrades
+Armored Cockpit: Air Defense
++5%
+, Reliability
++5%
+Escort Designs: Range
++5%
+Upgraded Engines: Max Speed
++5%
+, Agility
++5%
+Not Enough Guns, Never Enough Guns: Air Attack
++5%
+, Ground Attack
++5%
+Lenghtened Wings: Range
++5%
+, Air Attack
++5%
+Bubble Cannopy: Air Defense
++5%
+Mutually exclusive
+Fighter Specialization: Air Attack
++5%
+, Agility
++5%
+or
+Bomber Specialization: Ground Attack
++3%
+, Naval Attack
++3%
+, Naval Targeting
++3%
+Light Airframe
+or
+Medium Airframe
+Light Airframe: Production efficiency gain
++5%
+, MIO Research Bonus:
++5%
+only for All Small and Carrier Planes
+unlocks traits
+Hardened Frames: Air Defense
++5%
+only for All Small and Carrier Planes
+Belly Shackles: Ground Attack
++5%
+, Naval Attack
++5%
+only for All Small and Carrier Planes
+Oversized Propeller: Max Speed
++5%
+only for All Small and Carrier Planes
+Medium Airframe: Production efficiency gain
++5%
+, MIO Research Bonus:
++5%
+only for Medium Planes
+unlocks traits
+Variable Pitch Propellers: Max Speed:
++5%
+, Agility
++5%
+only for medium Planes
+Upgraded Anti-Air Weapons: Air Attack
++5%
+only for Medium Planes
+Reinforced Wing Hardpoints: Ground Attack
++5%
+, Naval Attack
++5%
+, Strat. Bombing
++5%
+only for Medium Planes
+Transport Duties: Production output
++10%
+only for Transport Plane
+Unique nation upgrades
+Italy - Savoia-Marchetti
+New Industrialization Program: Production output
++10%
+, MIO Research Bonus:
++10%
+unlocked by focus
+Air Race Pedigree: Max Speed
++5%
+, Range
++15%
+only for Medium Planes
+Special Aerotorpedoes Unit: Naval Attack
++15%
+only for Medium Planes
+Remote Operated: Reliability
++10%
+, Production output cost
+-10%
+only for All Small and Carrier planes, unlocked by Experimental Rockets research
+General Aircraft Designer
+[
+edit
+|
+edit source
+]
+Applies to All Small, Carrier, Medium and Large Planes
+Starting bonuses
+Production output
++3%
+MIO Research Bonus:
++10%
+Possible upgrades
+Conservative Designs: Reliability
++5%
+Fighter Aircraft Specialists: Range
++5%
+only for Fighter, Heavy Fighter and Scout Planes
+Bomber Aircraft Specialists: Range
++5%
+only for CAS, Tactical Bomber and Strategic Bomber
+Naval Aircraft Specialists: Range
++5%
+only for Naval Bomber, All Carrier Aircraft and Naval Patrol Bomber
+Fighter Aircraft Production: Production output
++5%
+only for Fighter, Heavy Fighter and Scout Planes
+Bomber Aircraft Production: Production output
++5%
+only for CAS, Tactical Bomber and Strategic Bomber
+Naval Aircraft Production: Production output
++5%
+only for Naval Bomber, All Carrier Aircraft and Naval Patrol Bomber
+Mutually exclusive
+High Speed Design: Max Speed
++5%
+or
+Agility Wing Design: Agility
++5%
+only for Fighter, Heavy Fighter and Scout Planes
+Bomb Trucks: Air Defense
++3%
+or
+Fast Bombers: Max Speed
++5%
+only for CAS, Tactical Bomber and Strategic Bomber
+Naval Strike: Naval Targeting
++5%
+or
+Naval Air Patrol: Surface detection
++5%
+, Agility
++5%
+only for Naval Bomber, All Carrier Aircraft and Naval Patrol Bomber
+Material Companies
+[
+edit
+|
+edit source
+]
+Infantry Weapons Manufacturer
+[
+edit
+|
+edit source
+]
+Applies to Infantry Equipment
+Starting bonuses
+Production Efiiciency Cap
++3%
+, Soft Attack
++3%
+MIO Research Bonus:
++10%
+Possible upgrades
+Drum Pattern Sights: Defense
++3%
+Reinforced Stocks: Soft Attack
++2%
+, Reliability
++3%
+Heavy Anti-Tank Ammunition: Hard Attack
++10%
+, Piercing
++25%
+Quality Materials: Reliability
++5%
+Advanced Barrel Forging: Production efiiciency gain
++3%
+Mass Rifle Production: Production efficiency cap
++3%
+, Production output cost
+-3%
+, Design Team Assign Cost
+-30%
+Medium Machine Guns Production: Breakthrough
++5%
+,
+Production Cost
++8%
+Anti-Vehicle Land Mines: Defense
++4%
+, Hard Attack
++3%
+,
+Production Cost
++5%
+Mutually exclusive
+Bolt-Action Rifles: Soft Attack
+-3%
+, Production efficiency gain
++5%
+or
+Semi-Auto Rifles: Soft Attack
++3%
+, Breakthrough
++3%
+, Production efficiency gain
+-5%
+Vehicle Mounted Capabilities: Breakthrough
++6%
+,
+Production Cost
++5%
+or
+Improved Rifle Recoil: Breakthrough
++2%
+Improved Small Arms Bullet Design: Soft Attack
++5%
+, Breakthrough
++3%
+or
+Armor-Piercing Rounds: Piercing
++25%
+, Hard Attack
++5%
+Unique nation upgrades
+Italy - Beretta
+New Industrialization Program: Production output
++10%
+, MIO Research Bonus:
++10%
+unlocked by focus
+Soviet Union - Tula Arms Plant
+Merge Plant No. 622: Production output cost
+-10%
+unlocked by focus
+Merge NKMZ Plant: Production efficiency cap
++10%
+unlocked by focus
+,
+when complete will no longer be available in other organizations
+Merge Magnitogorsk Metallurgical Plant: Production output
++10%
+unlocked by focus
+,
+when complete will no longer be available in other organizations
+United Kingdom - RSAF Enfield
+STEN Submachine Guns: Reliability
++5%
+, Soft Attack
++3%
+, Piercing
++5%
+PIAT: Hard Attack
++5%
+, Defense
++5%
+, Breakthrough
++10%
+replaces trait Anti-Vehicle Land Mines
+Automotive Manufacturer
+[
+edit
+|
+edit source
+]
+Applies to Truck, Mechanized and Motorized Rocket Artillery
+Starting bonuses
+MIO Research Bonus:
++10%
+Possible upgrades
+Side-Mounted Medium Machine Guns: Breakthrough
++3%
+All Wheel Drive: Breakthrough
++3%
+only for Truck and Motorized Rocket Artillery
+Armored Pulpit Mount: Hardness
++5%
+Bulletproof panels: Hardness
++5%
+only for Mechanized
+Light Flame Projectors: Breakthrough
++3%
+only for Mechanized
+Land Mine Racks: Defense
++6%
+, Max Speed
+-2%
+Mutually exclusive
+Composite Cargo Bed: Reliability
+-7%
+,
+Production Cost
+-5%
+or
+Steel Cargo Bed: Reliability
++5%
+, Production resource need
++2%
+only for Truck and Motorized Rocket Artillery
+Open Chassi: Defense
+-2%
+,
+Production Cost
+-3%
+or
+Closed Chassi: Armor
++5%
+only for Mechanized
+Attached Wood Gas Generator: Fuel Usage
+-5%
+or
+High-Powered Engine: Fuel Usage
++5%
+, Max Speed
++5%
+only for Truck and Motorized Rocket Artillery
+Advanced Artillery Racks
+or
+Heavy Mounted Machine Gun
+or
+Mounted Light Anti-Tank Gun
+Advanced Artillery Racks: Soft Attack
++3%
+,
+Production Cost
++6%
+only for Motorized Rocket Artillery
+Heavy Mounted Machine Gun: Breakthrough
++4%
+,
+Production Cost
++1%
+only for Mechanized and Truck
+Mounted Light Anti-Tank Gun: Piercing
++10%
+, Hard Attack
++2%
+only for Mechanized
+Unique nation upgrades
+Italy - Lancia
+New Industrialization Program: Production output
++10%
+, MIO Research Bonus:
++10%
+unlocked by focus
+Italy - Officine Mecchaniche - MIO Research Bonus:
++10%
+New Ricostruzione Industriale (Motorized) :Production output
++10%
+, MIO Research Bonus:
++5%
+only for Truck and Motorized Rocket Artillery, unlocked by focus
+New Ricostruzione Industriale (Mechanized): Production output
++10%
+, MIO Research Bonus:
++5%
+only for Mechanized, unlocked by focus
+New Ricostruzione Industriale (Trains): Production output
++10%
+, MIO Research Bonus:
++5%
+only for Train, unlocked by focus
+Soviet Union - GAZ
+Merge Automobile Tool Plant: Production output cost
+-10%
+unlocked by focus
+Merge NKMZ Plant: Production efficiency cap
++10%
+unlocked by focus
+,
+when complete will no longer be available in other organizations
+Merge Magnitogorsk Metallurgical Plant: Production output
++10%
+unlocked by focus
+,
+when complete will no longer be available in other organizations
+Artillery Manufacturer
+[
+edit
+|
+edit source
+]
+Applies to Towed Artillery, Towed Anti-Tank, Towed Anti-Air and Towed Rocket Artillery
+Starting bonuses
+Production output cost
+-3%
+MIO Research Bonus:
++10%
+Possible upgrades
+Rapid Fire: Soft Attack
++10%
+, Hard Attack
++4%
+, Air Attack
++4%
+only for Towed Anti-Tank and Towed Anti-Air
+Advanced Barrel Forging: Production efficiency gain
++5%
+Big Guns: Soft Attack
++2%
+,
+Production Cost
++3%
+only for Towed Artillery and Towed Rocked Artillery
+Hydraulic Recoil System: Reliability
++5%
+Sliding Beach Block: Soft Attack
++3%
+, Breakthough
++3%
+Gun Mass Production: Production efficiency gain
++3%
+, Production efficiency cap
++3%
+, Design Team Assign Cost
+-15%
+Super Charges:  Production efficiency gain
++3%
+, Production efficiency cap
++3%
+, Design Team Assign Cost
+-15%
+only for Towed Artillery and Towed Rocked Artillery
+Light Weight Barrels: Production output cost
+-3%
+, Breakthrough
++6%
+, Defense
++10%
+Mutually exclusive
+Mobile Limbers: Breakthrough
++10%
+or
+Stable Platforms: Defense
++3%
+Improved Direct Fire Targeting
+or
+Advanced Anti-Air Targeting
+or
+Advanced Trajectory Calculations
+Improved Direct Fire Targeting: Piercing
++5%
+, Hard Attack
++5%
+only Towed Anti-Tank
+Advanced Anti-Air Targeting: Air Attack
++7%
+only for Towed Anit-Air
+Advanced Trajectory Calculations: Hard Attack
++100%
+, Breakthrough
++5%
+only for Towed Artillery and Towed Rocket Artillery
+Unique nation upgrades
+Italy - Breda
+New Industrialization Program: Production output
++10%
+, MIO Research Bonus:
++10%
+unlocked by focus
+Soviet Union - Grabin Design Bureau
+Merge Plant No. 172: Production output cost
+-10%
+unlocked by focus
+Merge NKMZ Plant: Production efficiency cap
++10%
+unlocked by focus
+,
+when complete will no longer be available in other organizations
+Merge Magnitogorsk Metallurgical Plant: Production output
++10%
+unlocked by focus
+,
+when complete will no longer be available in other organizations
+Support Equipment Manufacturer
+[
+edit
+|
+edit source
+]
+Applies to Infantry and Support Equipment
+Starting bonuses
+MIO Research Bonus:
++10%
+Possible upgrades
+Material Recycling:Production resource need
+-15%
+only for Support Equipment
+Private Scientist Program: MIO Research Bonus:
++5%
+Anti-Tank Rifle: Piercing
++10%
+only for Infantry Equipment
+Private Tenders: Funds Gain
++10%
+Pontoons: Max Speed
++5%
+,
+Production Cost
++3.5%
+only for Infantry Equipment
+Mass Production: Production efficiency gain
++5%
+only for Support Equipment
+Small Sidearms: Defense
++2%
+only for Infantry Equipment
+Mutually exclusive
+Scrap Melting: Reliability
+-10%
+, Production resource need
+-10%
+or
+High-Quality Material Blend: Production efficiency cap
++5%
+, Production resource need
++10%
+only for Support Equipment
+Research Program: MIO Research Bonus:
++6%
+or
+Efficient Scale-up: Production output
++5%
+only for Support Equipment
+Light Mortar: Breakthrough
++5%
+, Soft Attack
++2%
+,
+Production Cost
++6%
+or
+Single-Shot Man-Portable Anti-Tank System: Hard Attack
++10%
+,
+Production Cost
++5%
+only for Infantry Equipment
+Unique nation upgrades
+Italy - Beretta
+New Industrialization Program: Production output
++10%
+, MIO Research Bonus:
++10%
+unlocked by focus
+Standardized Production
+[
+edit
+|
+edit source
+]
+Applies to Armored Car
+Starting bonuses
+Armor
++5%
+, Defense
++5%
+,
+Production Cost
+-5%
+MIO Research Bonus:
++5%
+Possible upgrades
+Simplified Suspension: Reliability
++5%
+Crew Ergonomics: Max Speed
++2%
+, Defense
++2%
+Defensive Equipment: Soft Attack
++2%
+, Defense
++2%
+Standardized Components: Production efficiency gain
++15%
+, Production resource need
+-15%
+Reinforce Wheels: Reliability
++5%
+, Max Speed
++5%
+Command Upgrades: Breakthrough
++5%
+Long-Barreles Guns: Piercing
++5%
+, Hard Attack
++5%
+Improved Tooling: Production efficiency cap
++10%
+Mutually exclusive
+Mass Production: Production output cost
+-5%
+, Production Efficiency gain
++10%
+or
+Quality Improvements: Armor
++10%
+, Defense
++10%
+Heavy Anti-Tank Gun: Armor
++5%
+, Hard Attack
++5%
+or
+Officer Support Car: Soft Attack
++5%
+,
+Production Cost
+-3%
+Tank Refurbishment Plant
+[
+edit
+|
+edit source
+]
+Hybrid Tank/Materiel Equipment MIO
+Applies to All Tank Equipment
+Starting bonuses
+Bonuses for production lines: Production conversion speed
++15%
+, Production output cost
+-5%
+MIO Research Bonus:
++10%
+Possible upgrades
+Enemy Tank Reffiting: Production conversion speed
++15%
+, Production output cost
+-3%
+Efficient Scrap Recycling: Hardness
+-6%
+, Production resource need
+-20%
+High Volume Smelter: Production output
++6%
+High-Powered Engine Production: Max Speed
++10%
+Heavy Duty Machine Tools: Max Speed
++10%
+, Production efficiency gain
++5%
+, Production efficiency cap
++5%
+Multi-Plant Cooperation: Production efficiency gain
++8%
+Standardized Secondary Armament: Breakthrough
++5%
+Mass Small Arms Ammunition Production: Production output cost
+-5%
+for Armor and Support Equipment
+Plant Tech Exchange: MIO Research Bonus:
++6%
+24H Rotation Shifts: Production output
++6%
+for Armor, Support Equipment, Train and Railway Artillery
+Dual Plant Main Armament Production: Soft Attack
++5%
+, Reliability
+-5%
+, Production efficiency gain
++5%
+Long Distance Train Escort: Armor
++6%
+, Air Attack
++10%
+only for Train
+Barrels of Hell: Production output
++10%
+only for Railroad Artillery
+Unique nation upgrades
+Soviet Union - Mytishchy Machine Building Plant
+Merge Plant No, 174: Max Speed
++5%
+unlocked by focus, when complete will no longer be available in other organizations
+Merge Plant No. 112: Production output
++5%
+unlocked by focus, when complete will no longer be available in other organizations
+Merge Ural Heavy Machine Building Plant: Soft Attack
++5%
+unlocked by focus, when complete will no longer be available in other organizations
+Helicopter Development
+[
+edit
+|
+edit source
+]
+Applies to Helicopter
+Starting Bonus
+Production output cost
+-5%
+MIO Research Bonus:
++10%
+Possible upgrades
+Side-Venting Exhaust: Reliability
++5%
+Improved Engine: Reliability
++5%
+, Max Speed
++10%
+Mass Production Certification : Production output cost
+-5%
+,  Production Efficiency gain
++10%
+Mutually exclusive
+Tandem Rotor innovations: Hardness
++5%
+, Armor
++10%
+or
+Single Rotor Innovations: Production output cost
+-5%
+Extra Seating: Defense
++5%
+or
+Co-Axial Rotors: Max Speed
++10%
+Unique nation upgrades
+Germany - Focke-Achgelis
+Hamburger Flugzeugbau: Production output
++5%
+unlocked when Blohm & Voss reach level 5
+,
+when complete will no longer be available in other organizations
+Integrated Aerodynamic Research Institute Department: MIO Research Bonus:
++10%
+unlocked by focus, when complete will no longer be available in other organizations
+References
+[
+edit
+|
+edit source
+]
+鈫?/a>
+NDefines.NIndustrialOrganisation.ASSIGN_INDUSTRIAL_MANUFACTURER_PP_COST_PER_DAY = 0
+in
+Defines
+.
+鈫?/a>
+NDefines.NIndustrialOrganisation.DESIGN_TEAM_RESEARCH_BONUS = 0.05
+in
+Defines
+.
+鈫?/a>
+NDefines.NIndustrialOrganisation.ASSIGN_DESIGN_TEAM_PP_COST_PER_DAY = 0.1
+in
+Defines
+.
+鈫?
+4.0
+4.1
+NDefines.NIndustrialOrganisation.DESIGN_TEAM_CHANGE_XP_COST = 0
+in
+Defines
+鈫?/a>
+NDefines.NIndustrialOrganisation.FUNDS_FROM_MANUFACTURER_PER_IC_PER_DAY = 0.1
+in
+Defines
+.
+鈫?/a>
+NDefines.NIndustrialOrganisation.MAX_FUNDS_FROM_MANUFACTURER_PER_DAY = 100
+in
+Defines
+.
+鈫?/a>
+NDefines.NIndustrialOrganisation.FUNDS_FOR_RESEARCH_COMPLETION_PER_RESEARCH_COST = 500
+in
+Defines
+.
+鈫?/a>
+NDefines.NTechnology.BASE_TECH_COST = 110
+in
+Defines
+.
+鈫?/a>
+NDefines.NIndustrialOrganisation.UNLOCKED_TRAITS_PER_SIZE_UP = 1
+in
+Defines
+.
+鈫?/a>
+NDefines.NIndustrialOrganisation.FUNDS_FOR_SIZE_UP_LEVEL_FACTOR = 100
+,
+NDefines.NIndustrialOrganisation.FUNDS_FOR_SIZE_UP_LEVEL_POW = 1.8
+, and
+NDefines.NIndustrialOrganisation.FUNDS_FOR_SIZE_UP = 700
+in
+Defines
+鈫?/a>
+NDefines.NIndustrialOrganisation.DEFAULT_INITIAL_POLICY_ATTACH_COST = 25
+in
+Defines
+.
+鈫?/a>
+NDefines.NIndustrialOrganisation.DEFAULT_INITIAL_ATTACH_POLICY_COOLDOWN = 180
+in
+Defines
+.
+Mechanics
+Politics
+Ideology
+鈥?
+Faction
+鈥?
+National focus
+鈥?
+Ideas
+鈥?
+Government
+鈥?
+Puppet
+鈥?
+Governments in exile
+鈥?
+Diplomacy
+鈥?
+World tension
+鈥?
+Civil war
+鈥?
+Occupation
+鈥?
+Balance of power
+Production
+Trade
+鈥?
+Production
+鈥?
+Construction
+鈥?
+Equipment
+鈥?
+Fuel
+鈥?
+Military industrial organization
+鈥?
+International market
+Research and technology
+Research
+鈥?
+Infantry technology
+鈥?
+Support companies technology
+鈥?
+Armor technology
+(also
+without No Step Back
+) 鈥?
+Artillery technology
+鈥?
+Land doctrine
+鈥?
+Special forces doctrine
+鈥?
+Naval technology
+(also
+without Man the Guns
+) 鈥?
+Naval support technology
+鈥?
+Naval doctrine
+鈥?
+Air technology
+(also
+without By Blood Alone
+) 鈥?
+Air doctrine
+鈥?
+Engineering technology
+鈥?
+Industry technology
+鈥?
+Special project
+鈥?
+Scientist
+Military and warfare
+Warfare
+鈥?
+Peace conference
+鈥?
+Land units
+鈥?
+Land warfare
+鈥?
+Division designer
+鈥?
+Tank designer
+鈥?
+Army planner
+鈥?
+Command group
+鈥?
+Commander
+鈥?
+Battle plan
+鈥?
+Combat tactics
+鈥?
+Ship
+鈥?
+Ship designer
+(
+London Naval Treaty
+) 鈥?
+Naval warfare
+鈥?
+Aircraft designer
+鈥?
+Air warfare
+鈥?
+Experience
+鈥?
+Officer corps
+鈥?
+Attrition and accidents
+鈥?
+Logistics
+鈥?
+Manpower
+鈥?
+Nuclear bomb
+鈥?
+Raid
+Espionage
+Intel
+鈥?
+Intelligence agency
+鈥?
+Operatives
+鈥?
+Missions
+鈥?
+Operations
+Map
+Map
+鈥?
+Province
+鈥?
+Terrain
+鈥?
+Weather
+鈥?
+State
+Events and Decisions
+Events
+鈥?
+Decisions
+Retrieved from "
+"
+Categories
+:
+1.13
+Game concepts
+This page was last edited on 2 July 2025, at 17:44.
+Content is available under
+Attribution-ShareAlike 3.0
+unless otherwise noted.
+About Hearts of Iron 4 Wiki
+Mobile view
+Games
+Discover
+Our Brands
+Browse
+Play
+on Paradox technology
+Community
+Paradox Forums
+Paradox
+Wikis
+Support
+About
+News
+About us
+Careers
+Join our playtests
+Media contact
+Social Media
+Legal
+Information
+EU Online Dispute Resolution
+Terms & Policies
+Legal Information
+EU Online Dispute Resolution
+Frequently Asked
+Questions
+Paradox
+Interactive corporate website

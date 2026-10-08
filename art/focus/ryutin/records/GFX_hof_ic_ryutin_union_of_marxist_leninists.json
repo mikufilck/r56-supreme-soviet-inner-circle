@@ -1,0 +1,17 @@
+{
+  "id": "hof_ic_ryutin_union_of_marxist_leninists",
+  "name": "GFX_hof_ic_ryutin_union_of_marxist_leninists",
+  "title": "马列主义者联盟",
+  "concept": "A thick uneven worn stack of loose manuscript pages being HANDED from one persons cuffed hand on LEFT into a second persons receiving cuffed hand on RIGHT. Exactly two hands, anatomically correct, grip opposite edges of same heavy page stack; transfer action unmistakable. Behind in near-black shadow joined wood tables with two extra partial paper stacks. One low hanging lamp illuminates transfer. Warm white page edges, dark brown wood, confined light pool. Densest composition of batch. Pages have only abstract grey strokes, no readable writing. No prison or bars.",
+  "group": "ryutin",
+  "size": [
+    100,
+    88
+  ],
+  "prompt": "Create ONE finished Hearts of Iron IV Soviet national focus icon. Input reference is ONLY gold laurel outer frame and engraved sculptural relief STYLE; replace all central imagery. Subject: A thick uneven worn stack of loose manuscript pages being HANDED from one persons cuffed hand on LEFT into a second persons receiving cuffed hand on RIGHT. Exactly two hands, anatomically correct, grip opposite edges of same heavy page stack; transfer action unmistakable. Behind in near-black shadow joined wood tables with two extra partial paper stacks. One low hanging lamp illuminates transfer. Warm white page edges, dark brown wood, confined light pool. Densest composition of batch. Pages have only abstract grey strokes, no readable writing. No prison or bars. Gold laurel open at top, small red star above, blank gold ribbon below, thin bronze rim. Ivory-grey engraved miniature relief with specified restrained colors, strong readable shapes at final100x88, upper-left light. No readable letters, numbers, words, faces, portraits or watermark. No guns, execution, death, self-harm, prison bars, typesetting trays, loose lead type, ink brayers or lithographic stones. Landscape100:88, emblem fills94%canvas. TRUE transparent RGBA background enabled: alpha0 outside emblem and all four corners,20-50%transparent area. No fake checkerboard, rectangle background or external cast shadow.",
+  "references": [
+    "D:/Users/xuwei/PycharmProjects/heart_of_Iron/art/focus/bukharin/source/GFX_hof_ic_bukharin_proportional_development.png"
+  ],
+  "generated_path": "C:\\Users\\xuwei\\.codex\\generated_images\\01a09af5-fd43-79a0-a3cc-72284cd67cbc\\exec-9a3b808f-766e-417d-a120-a494cf7c3af2.png",
+  "mode": "built-in image_gen"
+}

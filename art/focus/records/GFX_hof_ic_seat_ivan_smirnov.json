@@ -1,0 +1,13 @@
+{
+  "name": "GFX_hof_ic_seat_ivan_smirnov",
+  "id": "hof_ic_seat_ivan_smirnov",
+  "title": "伊万·斯米尔诺夫",
+  "prompt": "Use case: stylized-concept. Produce ONE production Hearts of Iron IV national focus icon, final canvas 100x88 pixels (width:height 25:22); generate high-resolution at same ratio for mechanical downsampling. Full emblem centered, bold primary silhouette fills 92 percent of canvas with all ornaments intact, no clipping. Strictly NO text, letters, numerals, pseudo-writing, watermarks or rectangular canvas border. The icon's own laurel/medallion ornament is allowed. Uniform solid very dark charcoal (#181b1e) background outside emblem, no transparency grid, no checkerboard, no backdrop texture outside emblem. Painted game UI relief, high contrast at tiny size, upper-left directional light, dark edge shadows, restrained material highlights; NOT a scene, not a poster, not a flat vector logo, no photoreal background. Match the supplied German DLC ENTRY references only for layout/style: prominent grayscale photographic/engraved head-and-shoulders face, COLOR ornamental medallion around and one small professional emblem beneath. Use the first image as exact Soviet person's face, preserve features and apparent age; do not use faces from German style references. Soviet crimson/plum and antique gold colored trim. Face remains grayscale and recognizable, uncluttered. Replace all German heraldry with Soviet-themed small details. Face/shoulders occupy upper 75 percent, professional emblem the lower 25 percent.\nSubject design: Ivan Smirnov: preserve small round spectacles, side-parted short hair, moustache, no beard, upright jacket collar. Grayscale bust inside gold round medallion with plum/crimson leaves; bottom compact telegraph key with two lightning bolts.\nFocus meaning (reference only; never render as text): 伊万·斯米尔诺夫 — **首任**邮电人民委员 / 西伯利亚革命委员会主席",
+  "references": [
+    "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\art\\focus\\references\\ivan_smirnov.png",
+    "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\docs\\reference\\icon-refs-png\\real_asc_speer.png",
+    "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\docs\\reference\\icon-refs-png\\real_asc_goring.png"
+  ],
+  "source": "C:\\Users\\xuwei\\.codex\\generated_images\\01a09af5-fd43-79a0-a3cc-72284cd67cbc\\exec-450732ce-6ab1-424a-8eb9-ceb1b0cbab39.png",
+  "mode": "built-in image_gen"
+}

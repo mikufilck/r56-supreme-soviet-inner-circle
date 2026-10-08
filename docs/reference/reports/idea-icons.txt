@@ -1,0 +1,68 @@
+﻿################ A) 候选 idea 图标 sprite
+  GFX_idea_generic_communism                                 interface\r56_ideas.gfx
+  GFX_idea_generic_communism_banned                          interface\ideas.gfx
+  GFX_idea_generic_communism_drift_bonus                     interface\ideas.gfx
+  GFX_idea_generic_political_advisor_african_1               interface\ideas.gfx
+  GFX_idea_generic_political_advisor_african_2               interface\ideas.gfx
+  GFX_idea_generic_political_advisor_african_3               interface\ideas.gfx
+  GFX_idea_generic_political_advisor_arab_1                  interface\ideas.gfx
+  GFX_idea_generic_political_advisor_arab_2                  interface\ideas.gfx
+  GFX_idea_generic_political_advisor_arab_3                  interface\ideas.gfx
+  GFX_idea_generic_political_advisor_asia_1                  interface\ideas.gfx
+  GFX_idea_generic_political_advisor_asia_2                  interface\ideas.gfx
+  GFX_idea_generic_political_advisor_asia_3                  interface\ideas.gfx
+  GFX_idea_generic_political_advisor_europe_1                interface\ideas.gfx
+  GFX_idea_generic_political_advisor_europe_2                interface\ideas.gfx
+  GFX_idea_generic_political_advisor_europe_3                interface\ideas.gfx
+  GFX_idea_generic_political_advisor_europe_4                interface\ideas.gfx
+  GFX_idea_generic_political_advisor_europe_5                interface\ideas.gfx
+  GFX_idea_generic_political_advisor_europe_6                interface\ideas.gfx
+  GFX_idea_generic_political_advisor_female_africa           interface\ideas.gfx
+  GFX_idea_generic_political_advisor_female_arab             interface\ideas.gfx
+  GFX_idea_generic_political_advisor_female_asia             interface\ideas.gfx
+  GFX_idea_generic_political_advisor_female_europe           interface\ideas.gfx
+  GFX_idea_generic_political_advisor_female_south_america    interface\ideas.gfx
+  GFX_idea_generic_political_advisor_india_1                 interface\ideas.gfx
+  GFX_idea_generic_political_advisor_india_2                 interface\ideas.gfx
+  GFX_idea_generic_political_advisor_south_america_1         interface\ideas.gfx
+  GFX_idea_generic_political_advisor_south_america_2         interface\ideas.gfx
+  GFX_idea_generic_political_advisor_south_america_3         interface\ideas.gfx
+  GFX_idea_generic_political_support                         interface\ideas.gfx
+
+################ B) clear_variable / clear_array / set_variable 文档
+======== clear_variable  (L2773)
+## clear_variable
+
+* Supported Scopes: any
+* Supported Targets: none
+
+```
+Clears a variable
+Example: clear_variable = num_dogs
+```
+
+
+======== set_variable  (L7888)
+## set_variable
+
+* Supported Scopes: any
+* Supported Targets: none
+
+Sets a variable to a value, another variable, or a [math expression](script_math_expression.md).
+`tooltip` can be used to override tooltip title with LEFT and RIGHT tokens.
+
+### Examples
+```
+set_variable = { num_dogs = 42 }
+set_variable = {
+	var = num_dogs
+	value = 42
+	tooltip = loc_str_id_with_LEFT_and_RIGHT
+}
+set_variable = {
+	num_dogs = { value = num_cats  multiply = 2  add = 1 }
+}
+```
+
+
+

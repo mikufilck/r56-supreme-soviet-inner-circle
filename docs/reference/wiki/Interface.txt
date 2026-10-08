@@ -1,0 +1,679 @@
+﻿User interface - Hearts of Iron 4 Wiki
+4 captures
+20 Jul 2019 - 22 Jan 2022
+Dec
+JAN
+Feb
+22
+2021
+2022
+2023
+success
+fail
+About this capture
+COLLECTED BY
+Collection:
+Common Crawl
+Web crawl data from Common Crawl.
+TIMESTAMPS
+The Wayback Machine - https://web.archive.org/web/20220122025034/https://hoi4.paradoxwikis.com/Interface
+Forum list
+Trending
+Latest
+New posts
+Paradox
+Store
+Mods
+Forum
+Launcher
+PDXCON
+2019
+Paradox Wikis
+Hearts of Iron 4 Wiki
+Active Wikis
+Empire of Sin
+AoW: Planetfall
+Cities: Skylines
+Crusader Kings 3
+Europa Universalis 4
+Hearts of Iron 4
+Imperator: Rome
+Prison Architect
+Stellaris
+Surviving Mars
+Surviving the Aftermath
+Legacy Wikis
+Crusader Kings 2
+Arsenal of Democracy
+Europa Universalis 2
+Europa Universalis 3
+Europa Universalis: Rome
+Hearts of Iron 2
+Hearts of Iron 3
+Steel Division
+Tyranny
+Victoria 1
+Victoria 2
+Search
+Personal tools
+Log in
+Personal tools
+English
+Not logged in
+Talk
+Contributions
+Log in
+Navigation
+HoI4 Wiki Main Page
+Recent changes
+Random page
+Style guidelines
+Wiki support
+Paradox links
+- Wikis
+- Forums
+- Mods
+- Store
+- Twitch
+Tools
+What links here
+Related changes
+Special pages
+Printable version
+Permanent link
+Page information
+In other languages
+Deutsch
+Espa帽ol
+Fran莽ais
+Polski
+Portugu锚s
+袪褍褋褋泻懈泄
+User interface
+From Hearts of Iron 4 Wiki
+(Redirected from
+Interface
+)
+Jump to navigation
+Jump to search
+This is a community maintained wiki. If you spot a mistake then you are welcome to fix it.
+Interface tutorial with Daniel "Da9L" Sj枚berg and Christian Daflos (community manager).
+Please help improve this article or section by
+expanding it
+with: subsections for
+Intelligence agency
+and
+Officer corps
+.
+The
+user interface
+of Hearts of Iron IV will be immediately familiar to veterans of Paradox strategy games. The left hand of the screen will be used to manage large national issues, alert tabs will appear at the top of the screen as a warning of things that need attention, and the right hand side of the screen will be devoted to information about troops. The very top border of the screen will include important summary information about the state of the game and the world.
+Contents
+1
+Top information bar
+2
+Main menu bar
+2.1
+National information and development
+2.2
+Decisions
+2.3
+Research
+2.4
+Diplomacy
+2.5
+Trade
+2.6
+Constructions
+2.6.1
+State structures:
+2.6.2
+Shared structures:
+2.6.3
+Province buildings:
+2.7
+Production
+2.8
+Recruit and deploy
+2.9
+Logistics
+2.9.1
+Logistics screen
+2.9.2
+Stockpile screen
+Top information bar
+[
+edit
+|
+edit source
+]
+Across the top left to center of the main play screen, there is a row of numbers running from left to right.
+Political power
+This is the amount of political capital the nation's leadership has accumulated. Political power can be spent on completing
+national focus
+ideas, appointing
+ministers
+(political advisors, designers, theorists, and military staff), changing
+trade
+and conscription
+laws
+, and some
+diplomatic actions
+. Each
+country
+gains
++2
+points of political power per day which can be modified by
+Nation Leader traits
+,
+Political Advisors
+,
+Stability
+,
+National Spirits
+,
+National Focus
+selection,
+Political Events
+,
+Political Decisions
+, or player actions.
+Stability
+The measure of the people's support for its
+government
+. A
+country
+with low stability suffers penalties to
+factory and dockyard output
+, political power gain, and
+consumer goods
+. The
+average
+stability is 50%. A nation with 50% stability does not gain nor lose anything. Stability
+above
+50% yields positive modifiers related to factory and dockyard output, political power, and consumer goods while stability
+below
+50% yields negative modifiers in those categories.
+War support
+The measure of the people's support for war. War support directly affects mobilization speed, Command Power gain, and attack and defense on
+core
+territory. Fascist and aggressive nations generally have more initial war support, but they can eventually be surpassed by democracies fighting a defensive war.
+Countries
+gain a positive war support buff for being in a defensive war and a negative buff when being in an offensive war. War support is also affected by
+world tension
+, enemy bombing, and allied interception. Nations with low war support tend to surrender quicker.
+Manpower
+The number of men available to create and reinforce military units. This is based on the territories under the nation's control (core and occupied giving different manpower yields) and  affected by a number of factors, primarily
+conscription laws
+,
+National Spirits
+and the number of "units under construction", also known as units under
+recruitment
+.
+Factories
+Three separate numbers, listing the military factories, naval dockyards and civilian factories available for new orders. We will deal with their roles in a future section.
+Fuel
+Fuel is generated by the nation's excess oil.  Each nation has a maximum capacity for fuel which can be increased by building Silos and infrastrucure. Fuel generation is affected by
+available (domestic and traded),
+research
+and
+mobilization laws
+.
+Convoys
+The number of convoys, also known as transports, that are available. Each trade for overseas strategic resources requires the allocation of convoy units. Moving land units across oceans and seas requires an allocation of
+transports
+. The number of available transports can be increased by building new convoys in the unit production menu.
+Command power
+Command power represents the ability of the
+government
+to bypass the chain of command and directly influence the military.  Command power is used for various military operations and promotion of generals. It is capped at 100, however, the growth and cap can be increased by Doctrines and National Spirits.  Command power is limited to promotion of
+Field Marshals
+unless you have the
+Waking the Tiger
+DLC.
+Army
+,
+Navy
+and
+Air experience
+As units fight or, in the case of armies, exercise, they will gain experience. Army experience can be spent in the unit designer to edit or invent land divisions templates or modify tanks and tank variants equipment. Air experience can be spent on modifications for planes, giving them bonuses to speed, firepower, and so on. Naval experience can be spent on modifications for ships, or, with the
+Man the Guns
+DLC, to be spent in the ship designer to create new ship patterns or upgrade old ones.
+All three sorts of experience can be spend to gain research speed boosts, at a rate of 100 XP for a 100% research speed bonus for land, air and naval doctrines, respectively. Naval XP may be used to get a 50-150% research speed bonus for certain naval modules.
+Nuclear weapons
+When nuclear weapons are researched, an icon
+with a number will appear in the top information bar showing the amount of nuclear bombs a country has available.
+World tension
+World Tension at 100%
+To the upper right of the screen there is a globe
+with a percentage below it, indicating the level of
+world tension
+. This percentage is the measure of how close the world is to world war. Some diplomatic and military actions, especially for democratic or neutral nations, require world tension to reach a specific level. World tension is increased by historical
+events
+, declarations of war, and other hostile diplomatic actions. The globe can be selected and the Player can access a list of events affecting world tension and a list of ongoing wars.
+Main menu bar
+[
+edit
+|
+edit source
+]
+The Flag and 8 icon buttons (9 with
+La R茅sistance
+) to the immediate right of the Flag provide direct access to the primary menus for interaction with your country. The hotkeys for these menu buttons are noted below. They follow, from left to right, across the top row of the keyboard.
+Hotkey
+Q
+Shift+Q
+Shift+W
+W
+E
+R
+T
+Y
+U
+I
+Opens
+Government
+Decisions
+Intelligence agency
+Research
+Diplomacy
+Trade
+Construction
+Production
+Recruit & Deploy
+Logistics
+National information and development
+[
+edit
+|
+edit source
+]
+Political screen.
+To the far left of the screen is the national flag. Click on this flag to open a view of national status. This includes a portrait of the national leader, political system and level of support for each of the four
+ideologies
+, the
+National spirits
+that currently apply, and three rows of items that can be changed by spending
+political power
+. The view includes buttons for managing
+occupied territories
+, exiled governments and
+subjects
+.
+The player will be prompted to choose a
+national focus
+for the country if none is active. It normally takes 70 days to complete a national focus, and it costs one political power point per day. National focuses form a tree, like the technology tree, but rather than unlocking technology they are about the country's choice of direction. One may choose to, for the moment, focus on industrial or technological growth, or orient the country's diplomacy towards certain other countries, forming research pacts, starting factions, gaining claims, or threatening war. Some National Focus choices are mutually exclusive; for example, the
+German Reich
+cannot be friends with both
+China
+and
+Japan
+.
+This menu also allows political power to be spent in order to change government laws or hire political, military and industrial advisors. These are summarized under the term
+ideas
+.  Most changes will cost a minimum of 150 political power, and very powerful advisers may cost up to 250, with extremely powerful laws and advisers costing up to 300 political power and sometimes even more than that.
+Laws & Government
+Conscription law: Affects how much manpower is available to the country for military service, factory output, dockyard output, construction speed, and training time
+Trade law: Affects resources to market, factory output, dockyard output, construction speed, and research time
+Economy law: Affects how many factories are dedicated to consumer goods, manpower availability, civilian and military factory construction speed, and conversion speed for factories
+Up to three
+political advisors
+can be hired to give the country bonuses in different fields.
+Research & Production
+There are multiple
+design companies
+that can be added, such as a tank designer, ship designer, aircraft designer, material designer and industrial concern, to earn reductions and bonuses for the relevant field.  These bonuses can include any combination of a reduction in research time, an increase in equipment production, or an increase in equipment combat abilities.
+It is also possible to add a
+theorist
+to reduce doctrine research times and to gain Air, Army, or Navy experience. Some theorists even boost combat stats.
+Military staff
+As
+military staff
+, a Chief of Army, a Chief of Navy and a Chief of Air Force can be hired to improve combat stats in the relevant field. Up to three other members of the high command may be hired.
+Decisions
+[
+edit
+|
+edit source
+]
+The gray button
+at the top of the screen marked with a gavel opens the Events and Decisions menu.  Decisions allow a nation to do special projects such as switching ideology, conducting border wars, banning political parties, censoring the press,
+excavating for resources
+, etc.  These decisions typically cost anywhere from 25 to 150 political power.  Decisions are a middle ground between focus trees and events (allows additional modding and mechanics).
+Research
+[
+edit
+|
+edit source
+]
+The gray button
+at the top of the screen marked with a beaker opens the
+research
+menu. There will be two to four slots available to research particular technologies, but pursuing specific national focus ideas may unlock additional research slots.
+Research screen.
+There are eleven categories of research. Each nation starts with an historically appropriate level of technology and theory depending on the scenario.
+All the research trees (except for
+doctrines
+) are marked along an historical timeline. Researching a technology or unit before the historic date will take more days than if it had been researched at, or after, the historic date. This penalty may be modified by pursuing certain National Focus ideas.
+Infantry
+: research better infantry weapons and equipment and unlock specialized types of infantry divisions. This is where motorized and mechanized infantry, paratroopers, marines, mountain troops, and motorized rocket artillery (MRA) will be unlocked.
+Infantry technology screen.
+Support Companies
+: research support equipment and improve support companies that can be attached to divisions. This is also where engineers, recon, military police (MP), maintenance, field hospitals, logistics, and signal companies can be unlocked.
+Armor
+: research that unlocks and improves light (LARM), medium (MARM), heavy (HARM), super heavy (SHARM), and modern battle tanks (MBT), as well as their variants: tank destroyer (TD), self-propelled artillery/gun (SPART or SPG), and self-propelled anti-air (SPAA).
+Artillery
+: research that unlocks and improves all types of artillery including anti-tank (AT), anti-air (AA), and rocket artillery (RART).
+Land doctrine
+: research that improves units in
+land combat
+roles by providing bonuses.  All of the great powers will start with an initial land doctrine from one of the four doctrine trees: Mobile Warfare (MW), Superior Firepower (SF), Grand Battleplan (GB), or Mass Assault (MA). It is possible to change this, but all land doctrine paths are mutually exclusive.
+Land doctrine screen.
+Naval
+: research that unlocks and improves ships: destroyer (DD), light cruiser (CL), heavy cruiser (CA), battlecruiser (BC), battleship (BB), superheavy battleship (SHBB or BBB), carrier (CV), submarine (SS), or transports for naval invasions.
+With the
+Man the Guns
+DLC, the panel consists of Destroyer (DD), Cruiser (CL,CA), Heavy Ship (BB,BC), Carrier (CV) and Submarine (SS) hull technologies as well as individual module technologies, ranging from guns to special equipment, to special naval training.
+Naval doctrine
+: research that improves units in
+naval combat
+roles by providing bonuses.  All of the great powers will start with an initial naval doctrine from one of the three doctrine trees: Fleet in Being, Trade Interdiction, or Base Strike. It is possible to change this, but all naval doctrine paths are mutually exclusive.
+Air
+: research that unlocks and improves aircraft: fighter (FTR), heavy fighter (HFTR), close air support (CAS), naval bomber (NAV), tactical bomber (TAC), and strategic bomber including carrier borne variants and jet propelled versions.
+Air doctrine
+: research that improves units in
+air combat
+roles by providing bonuses. Some of the great powers will start with an initial air doctrine from one of the three doctrine trees: Strategic Destruction, Battlefield Support, or Operational Integrity. It is possible to change this, but all air doctrine paths are mutually exclusive.
+Engineering
+: research electrical engineering to improve or unlock radio (for reinforce rate bonuses and signal companies), radars (for detection bonuses), and computers (for encryption and decryption bonuses), research atomic energy to unlock nuclear reactors and nuclear bombs, and research experimental rockets to unlock and improve rocket engines (for rocket interceptors and guided missiles) and jet engines (for jet aircraft).
+Industry
+: research that improves military factories and dockyards (for output, production efficiency and retention, military equipment conversion speed, factory bomb vulnerability and repair speed), construction speed (for faster building), resource extraction (for natural resource gains), and synthetic refineries (for fuel and rubber resource gains).
+Diplomacy
+[
+edit
+|
+edit source
+]
+The gray button
+with a hand ready to be shaken opens the
+diplomacy
+menu. Here is a list of nations and a number of filter buttons to narrow down the list.
+After clicking on a nation to interact with, there will be a portrait of its leader, and a little bit of information about what the nation is up to. In the upper right corner of the menu, there will be a couple of tiny flags with arrows indicating the relationship between the two nations.
+Interacting with nations through diplomacy.
+There are a number of actions that can be taken in the diplomatic menu, provided the requirements are met. Democracies are especially limited in their abilities to undertake aggressive diplomatic actions unless the world tension meter has climbed to a high enough level.
+Hover the mouse over each option for a description of the diplomatic action and what conditions must be met.
+Trade
+[
+edit
+|
+edit source
+]
+The gray button
+with box and curved exchange arrows opens the
+trade
+menu. There will be a number of tabs and columns listing the major resources available, what is required and possible trading partners.
+There are six major
+resources
+in the game: oil, aluminum, rubber, tungsten, steel, and chromium. These are used to help in the construction of tanks, battleships, planes and so forth. Each new production line of a major weapon system will require a certain amount of resources. Though it is possible to build these units without the necessary resources, production will be much slower and less efficient.
+Trade screen.
+Resources are found in certain locations on the map and are not evenly distributed. Almost always it will be necessary to trade for what is needed.
+To trade for a resource, click on the name of the country and move the slider to determine how much is being trading for. Resources are typically traded in units of 8.  Each trade, unless conducted over land, requires a minimum of 1 convoy vessel plus additional convoys depending on naval distance and total quantity of resources.
+Every eight units of a resource imported will also cost a civilian factory, with that productive power going to the nation that is being traded with. Therefore, exports will make a country's industry stronger as civilian factory "power" is pulled from other nations, but a lot of imports will make a country weaker due to the loss of civilian factory "power".  However, it may be necessary to import resources to keep the war machine running at optimal efficiency.  Tip: trading with puppets gains considerably more than 8 resources per civilian factory traded.
+Constructions
+[
+edit
+|
+edit source
+]
+The gray button
+with the excavator opens the
+construction
+menu. This is where tasks will be assigned to the civilian factories - building infrastructure, new factories, defenses, and so on.
+Civilian factories
+make all the improvements to a State. The number of factories available for construction will depend on the size of the nation, how many factories are being dedicated to providing consumer goods for the country (the Economy Law), and how many factories that are 鈥渢raded鈥?for strategic resources.  The number of civilian factories can be increased by building more, but be careful since each province can only support a certain number of factories. A maximum of fifteen factories will be devoted to a construction project, and any left over will work on the next item in the queue.
+There are three categories of structure that can be built with civilian factories.
+State structures:
+[
+edit
+|
+edit source
+]
+These constructions
+improve the state without using up one of the shared building slots. Instead, each type of improvement here has its own level and maximum.
+Infrastructure
+: Each state has an infrastructure rating that determines how easy it is to supply units in the state, how quickly military units can move through the state, how quickly shared buildings can be constructed, and increases resource output.
+Air base
+: The larger the air base, the more planes it can effectively field. Air bases house military aircraft.
+Anti-air
+: Helps defend a state from enemy aircraft attempting to strategic bomb installations such as refineries, factories, infrastructure, etc.
+Radar station
+: Helps the air force detect and engage enemy air wings, increases detection of nearby enemy fleets at sea, and gains intel on enemy troops in nearby states.
+Shared structures:
+[
+edit
+|
+edit source
+]
+The number of shared structures
+that can be built is limited by the number of slots available in that State. The number of slots can be increased by researching Industry technologies.
+Military factory
+: Used to produce weapons, equipment, planes, and vehicles.
+Civilian factory
+: Used to produce and improve a nation's military/industrial capacity.
+Synthetic refinery
+: Produce synthetic fuel and rubber, especially useful to nations that lack either.
+Naval dockyard
+: Used to produce ships and convoys. Can only be built in coastal states.
+Rocket site
+: Locations from which to produce rockets and to launch rocket attacks on nearby nations.
+Nuclear reactor
+: Produces nuclear weapons.
+Province buildings:
+[
+edit
+|
+edit source
+]
+Province buildings
+are built on the smallest territory size in HoI4, the province.
+Naval base
+: Stations and repairs
+naval fleets
+, and can send and receive supplies and resources via convoys.  Each naval base level increases supply capacity and supply throughput.
+Land fort
+: Inflicts an attack penalty of
+-15%
+for each fort level on the attacker in combat.  Attacking from multiple directions will reduce fort's effect.
+Coastal fort
+: Inflicts an attack penalty of
+-15%
+for each fort level on the attacker in naval invasion combat.
+Production
+[
+edit
+|
+edit source
+]
+The production screen.
+The gray button
+with the wrench opens the
+production
+menu. This is where
+military factories
+and
+dockyards
+are assigned to build
+equipment
+, army vehicles,
+aircraft
+and
+ships
+.
+The more factories dedicated to building a specific item, the more will be produced. Infantry, armor and artillery units made will then be assigned to the appropriate military divisions, either for new units being constructed or reinforcement and upgrades for units in the field. Excess equipment is left in the national stockpile.  Airplanes produced will be deposited into a reserve pool. Naval units will be automatically placed in the highest level naval base, though one can assign a port or fleet if that would be preferable (recommended for the
+Soviet Union
+so they don't end up with all new ships stuck in the Black Sea).
+Factory output is dependent on the availability of strategic resources for higher end units, and on the efficiency cap of the nation's industry. New production lines will take time to be perfectly efficient, and if factories are added to a production line, some efficiency will be lost. Factory productivity and efficiency can be improved in the Industrial research tree.
+Recruit and deploy
+[
+edit
+|
+edit source
+]
+The gray button
+with the tank opens the
+army planner
+menu to recruit and deploy units. This is where it is decided what types of
+divisions
+are to be trained. These divisions will be filled by the equipment and vehicles built in the production menu. What is required to complete a new unit is shown by hovering over the green progress bars.
+The country starts with a few default divisions that can be built.
+Army experience
+can be spent to design new division templates or edit ones that already exist.
+The game starts with reinforcement and upgrades given equal weight with the creation of new units. If it is preferable focus the energy of new tanks or artillery on fresh units, instead of trickling equipment to the field, reinforcement priorities can be set on this screen as well.
+Logistics
+[
+edit
+|
+edit source
+]
+The gray button
+with the paper and pen opens the
+logistics
+menu. This menu gives an overall summary of stockpiled equipment, whatever shortages the country might have, as well as a rundown of how many strategic resources the country is missing from the production lines.
+Logistics screen
+[
+edit
+|
+edit source
+]
+Logistics screen.
+The logistics screen provides the general overview of the nation's equipment and resource situation. The center of the screen consists of the equipment, and only shows equipment that is being produced, stockpiled, or used in the nation. The following provides a description of all of the various parts of the screen.
+Average production efficiency
+, which has a
+above the column, shows the average
+production efficiency
+of all the lines of production producing that type of equipment. The yellow bar inside the area represents the average production efficiency for each equipment type.
+Equipment type
+, which says 'Equipment Type' above the column, provides the name and a picture of the equipment that is either being produced, stockpiled, or used in the nation.
+Amount produced
+, which has a wrench being held by a hand above the column, shows how much of that particular equipment is being produced per day.
+Status
+is the green bar next to the amount produced showing how much of the equipment need is being produced. There is also a slider button that lays on the left if the nation is running a surplus of that equipment each day, and on the right if the nation is running a deficit of that equipment each day.
+Need
+, with a hand at the top of the column, is how much of that equipment the nation needs each day.
+Balance
+is the surplus or deficit being ran each day by the country, represented by a scale at the top of the column. If the nation is running a surplus, it will say
++Amount
+, but if it is running a deficit,
+-Amount
+.
+Stored
+is the stockpile of the nation. It will be in
+green
+with the stockpiled amount if the nation has extra of that equipment, and will show
+red
+with the amount missing from the nation, such as the amount needed to reinforce, equip new units, or, for convoys, how much is needed for current trade.
+Resources
+shows the
+resources
+that the production line is currently using to produce that equipment. If none of that equipment is being produced, it will not show the resources.
+The bottom of the screen includes extra information.
+Military factories
+has a green bar indicating the percentage of the nation's military factories that are currently in use.
+Naval dockyards
+, like military factories to the left of it, shows the percentage of the country's naval dockyards that are in use.
+The six icons to the right hand corner show
+oil
+,
+rubber
+,
+steel
+,
+aluminum
+,
+tungsten
+, and
+chromium
+. Next to each icon will be either a
+green
+number showing the nation's surplus of that resource, or a
+red
+negative number showing that nation's deficit of the resource.
+Stockpile screen
+[
+edit
+|
+edit source
+]
+Stockpile screen.
+The stockpile screen is accessed by clicking on any of the equipment on the logistics screen. The graph in the center of the screen shows the change in the stockpile over the previous
+30 days
+,
+12 months
+, or
+7 years
+, each of which have a corresponding button above the graph. The change is represent by a
+red
+line, and the X-axis of the graph is the time variable, while the Y-axis is the stockpile variable. Below that is a mini overview of the equipment, which shows the variants of that equipment (i.e. Basic Infantry Equipment vs. Weapons I) and the amount stored of each variant and weekly production of each variant.
+Retrieved from "
+"
+Categories
+:
+1.5
+Expand
+Interface
+Toggle sidebar
+Navigation menu
+Namespaces
+Page
+Discussion
+Variants
+Views
+Read
+Edit
+Edit source
+View history
+More
+This page was last edited on 16 January 2022, at 17:08.
+Content is available under
+Attribution-ShareAlike 3.0
+unless otherwise noted.
+About Hearts of Iron 4 Wiki
+Mobile view
+Hearts of Iron 4 Wiki
+Paradox Wikis
+Privacy Policy
+Games
+Browse
+New Releases
+Coming Soon
+On
+Sale
+Play
+on Paradox technology
+Community
+Paradox Forums
+Paradox
+Wikis
+Support
+Merch
+About
+News
+About us
+Careers
+Join our playtests
+Media contact
+Social Media
+Terms & Policies
+Legal
+Information
+EU Online Dispute Resolution
+Frequently Asked Questions
+Paradox
+Interactive corporate website
+Terms & Policies
+Legal Information
+EU Online Dispute Resolution
+Frequently Asked
+Questions
+Paradox
+Interactive corporate website

@@ -1,0 +1,509 @@
+﻿=== 需裁决：同一 TAG 有多个 focus_tree（含各自 country 评分块） ===
+
+### TAG AFG  <- 2 棵树
+    afghanistan_tree                   afghanistan.txt              { factor = 0 modifier = { add = 10 tag = AFG has_dlc = "Graveyard of Empires" has_global_flag = afg_dlc_focus_tree #r56 } }
+    r56_afghanistan_focus              r56_afghanistan.txt          { factor = 0 modifier = { add = 10 tag = AFG } modifier = { add = -10 has_global_flag = afg_dlc_focus_tree } }
+
+### TAG ALB  <- 2 棵树
+    albania_focus                      albania.txt                  { factor = 0 modifier = { add = 30 tag = ALB } }
+    austro_hungarian_releasable_focus  austro_hungarian_releasable_shared.txt { factor = 0 modifier = { # Don't use this add = 0 OR = { tag = SLO tag = TRA tag = CRO tag = LBV tag = SIL tag = MNT tag = BOS tag = SLV tag = HRZ tag = ALB } has_dlc = "Gotterdammerung" } }
+
+### TAG ARG  <- 2 棵树
+    argentine_focus_tree               argentina.txt                { factor = 0 modifier = { add = 10 tag = ARG has_dlc = "Trial of Allegiance" } }
+    argentinian_focus                  r56_argentina.txt            { factor = 0 modifier = { add = 10 tag = ARG } }
+
+### TAG AST  <- 2 棵树
+    r56_australian_focus               australia.txt                { factor = 0 modifier = { add = 20 tag = AST } }
+    australia_taog_focus               australia_taog.txt           { factor = 0 modifier = { add = 1000 tag = AST has_dlc = "Thunder at Our Gates" } }
+
+### TAG AUS  <- 2 棵树
+    austria_focus_tree                 austria.txt                  { factor = 0 modifier = { add = 10 tag = AUS has_dlc = "Gotterdammerung" has_global_flag = aus_dlc_focus_tree } }
+    austrian_focus                     r56_austria.txt              { factor = 0 modifier = { add = 10 original_tag = AUS } modifier = { factor = 0 has_global_flag = aus_dlc_focus_tree } }
+
+### TAG BEL  <- 2 棵树
+    belgium_focus                      belgium.txt                  { factor = 0 modifier = { add = 10 tag = BEL has_dlc = "Gotterdammerung" has_global_flag = bel_dlc_focus_tree #56 } }
+    belgium_focus_r56                  r56_belgium.txt              { factor = 0 modifier = { add = 10 tag = BEL } modifier = { factor = 0 has_global_flag = bel_dlc_focus_tree } }
+
+### TAG BRA  <- 2 棵树
+    brazil_tree                        brazil.txt                   { factor = 0 modifier = { add = 10 tag = BRA has_dlc = "Trial of Allegiance" } }
+    brazilian_focus                    r56_brazil.txt               { factor = 0 modifier = { add = 10 tag = BRA } }
+
+### TAG BUL  <- 2 棵树
+    bulgarian_focus                    bulgaria.txt                 { factor = 0 modifier = { add = 20 tag = BUL has_dlc = "Battle for the Bosporus" has_global_flag = bul_bftb_focus_tree } }
+    bulgaria_focus_r56                 r56_bulgaria.txt             { factor = 0 modifier = { add = 10 tag = BUL } modifier = { factor = 0 has_global_flag = bul_bftb_focus_tree } }
+
+### TAG CHI  <- 2 棵树
+    china_nationalist_focus            china_nationalist.txt        { factor = 0 modifier = { add = 100 tag = CHI } }
+    china_nationalist_sea_focus        china_nationalist_sea.txt    { factor = 0 modifier = { add = 1000 tag = CHI has_global_flag = chi_dlc_focus_tree has_dlc = "No Compromise, No Surrender" } }
+
+### TAG CHL  <- 2 棵树
+    chilean_focus_tree                 chile.txt                    { factor = 0 modifier = { add = 10 tag = CHL has_dlc = "Trial of Allegiance" } }
+    chile_focus                        r56_chile.txt                { factor = 0 modifier = { add = 10 tag = CHL } }
+
+### TAG COG  <- 2 棵树
+    congo_focus                        congo.txt                    { factor = 0 modifier = { add = 10 tag = COG has_dlc = "Gotterdammerung" has_global_flag = bel_dlc_focus_tree } }
+    congo_focus_r56                    r56_congo.txt                { factor = 0 modifier = { add = 10 tag = COG } modifier = { factor = 0 has_global_flag = bel_dlc_focus_tree } }
+
+### TAG CRO  <- 2 棵树
+    austro_hungarian_releasable_focus  austro_hungarian_releasable_shared.txt { factor = 0 modifier = { # Don't use this add = 0 OR = { tag = SLO tag = TRA tag = CRO tag = LBV tag = SIL tag = MNT tag = BOS tag = SLV tag = HRZ tag = ALB } has_dlc = "Gotterdammerung" } }
+    croatia_focus                      croatia.txt                  { factor = 0 modifier = { add = 10 tag = CRO } }
+
+### TAG CZE  <- 3 棵树
+    czech_focus                        czechoslovakia.txt           { factor = 0 modifier = { add = 0 tag = CZE } }
+    mu_czech_focus                     czechoslovakia_mu.txt        { factor = 0 modifier = { add = 50 tag = CZE has_dlc = "Peace For Our Time" } }
+    czechoslovakian_focus_r56          r56_czechoslovakia.txt       { factor = 0 modifier = { add = 15 tag = CZE } }
+
+### TAG DEN  <- 4 棵树
+    danish_focus                       denmark.txt                  { factor = 0 modifier = { add = 15 tag = DEN has_dlc = "Arms Against Tyranny" has_global_flag = DEN_use_DLC_tree } }
+    denmark_focus                      r56_denmark.txt              { factor = 0 modifier = { add = 10 tag = DEN } modifier = { factor = 0 OR = { has_country_flag = DEN_use_collab_tree } } }
+    collab_denmark                     r56_denmark.txt              { factor = 0 modifier = { add = 10 tag = DEN has_country_flag = DEN_use_collab_tree } }
+    free_denmark                       r56_denmark.txt              { factor = 0 modifier = { add = 10 tag = DEN has_country_flag = DEN_use_free_tree } }
+
+### TAG DNZ  <- 2 棵树
+    danzig_focus                       Danzig.txt                   { factor = 0 modifier = { add = 30 tag = DNZ NOT = { has_global_flag = r56_DNZ_prussia_legacy } } }
+    germany_shared_focus               r56_ger_shared.txt           { factor = 0 modifier = { add = 10 OR = { tag = PRE tag = BAY tag = WUR tag = BAD tag = ALS tag = SAX tag = HES tag = HAN tag = MEK tag = SHL tag = RHI tag = THU AND = { tag = SAA is_subject = no } AND = { tag = DNZ has_global_flag = r56_DNZ_prussia_legacy } } } }
+
+### TAG EST  <- 2 棵树
+    estonia_tree                       estonia.txt                  { factor = 0 modifier = { add = 9 tag = EST has_dlc = "No Step Back" has_global_flag = EST_vanilla_focus_tree } }
+    estonian_focus                     r56_estonia.txt              { factor = 0 modifier = { add = 10 tag = EST } modifier = { factor = 0 has_global_flag = EST_vanilla_focus_tree } }
+
+### TAG ETH  <- 2 棵树
+    ethiopia_tree                      ethiopia.txt                 { factor = 0 modifier = { add = 30 # R56 original_tag = ETH has_dlc = "By Blood Alone" NOT = { any_other_country = { original_tag = ETH # There can be only one... has_government = ROOT # or four actually... } } } }
+    eth_focus                          r56_ethiopia.txt             { factor = 0 modifier = { add = 10 tag = ETH } }
+
+### TAG FRA  <- 3 棵树
+    french_focus                       france.txt                   { factor = 0 modifier = { add = 10 tag = FRA } }
+    free_french_focus                  free_france.txt              { factor = 0 modifier = { add = 1 tag = FRA } }
+    vichy_french_focus                 vichy_france.txt             { factor = 0 modifier = { add = 1 tag = FRA } }
+
+### TAG GDC  <- 2 棵树
+    new_warlord_focus                  china_warlord.txt            { factor = 0 modifier = { add = 1000 OR = { tag = KHM tag = YUN tag = SIK tag = GXC tag = SHX tag = XSM tag = SIC tag = XIC tag = GDC tag = HBC tag = SND } } }
+    china_warlord_sea_focus            china_warlord_sea.txt        { base = 0 modifier = { add = 15 OR = { tag = YUN tag = SIK tag = GXC tag = SHX tag = XSM tag = GDC tag = XIC tag = SND tag = KHM tag = NXM tag = GSM tag = SIC tag = KUM tag = HBC } has_dlc = "No Compromise, No Surrender" } }
+
+### TAG GRE  <- 2 棵树
+    greek_focus                        greece.txt                   { factor = 0 modifier = { add = 20 tag = GRE has_dlc = "Battle for the Bosporus" has_global_flag = gre_bftb_focus_tree } }
+    r56_greek_focus                    r56_greece.txt               { factor = 0 modifier = { add = 10 tag = GRE } modifier = { factor = 0 has_global_flag = gre_bftb_focus_tree } }
+
+### TAG GRN  <- 2 棵树
+    greenland_focus                    greenland.txt                { factor = 0 modifier = { add = 15 tag = GRN } }
+    r56_arctic_focus                   r56_arctic_minor.txt         { factor = 0 modifier = { add = 10 OR = { original_tag = OVO original_tag = YAM original_tag = NEN original_tag = KOM original_tag = KAR original_tag = TAY original_tag = YAK original_tag = GRN original_tag = SMI original_tag = CKK original_tag = INU } } }
+
+### TAG GXC  <- 2 棵树
+    new_warlord_focus                  china_warlord.txt            { factor = 0 modifier = { add = 1000 OR = { tag = KHM tag = YUN tag = SIK tag = GXC tag = SHX tag = XSM tag = SIC tag = XIC tag = GDC tag = HBC tag = SND } } }
+    china_warlord_sea_focus            china_warlord_sea.txt        { base = 0 modifier = { add = 15 OR = { tag = YUN tag = SIK tag = GXC tag = SHX tag = XSM tag = GDC tag = XIC tag = SND tag = KHM tag = NXM tag = GSM tag = SIC tag = KUM tag = HBC } has_dlc = "No Compromise, No Surrender" } }
+
+### TAG HBC  <- 2 棵树
+    new_warlord_focus                  china_warlord.txt            { factor = 0 modifier = { add = 1000 OR = { tag = KHM tag = YUN tag = SIK tag = GXC tag = SHX tag = XSM tag = SIC tag = XIC tag = GDC tag = HBC tag = SND } } }
+    china_warlord_sea_focus            china_warlord_sea.txt        { base = 0 modifier = { add = 15 OR = { tag = YUN tag = SIK tag = GXC tag = SHX tag = XSM tag = GDC tag = XIC tag = SND tag = KHM tag = NXM tag = GSM tag = SIC tag = KUM tag = HBC } has_dlc = "No Compromise, No Surrender" } }
+
+### TAG HUN  <- 2 棵树
+    hungarian_focus                    hungary.txt                  { factor = 0 modifier = { add = 10 tag = HUN } }
+    wuw_hungarian_focus                hungary_wuw.txt              { factor = 0 modifier = { add = 50 tag = HUN #always = no has_dlc = "Gotterdammerung" } }
+
+### TAG ICE  <- 2 棵树
+    iceland_tree                       iceland.txt                  { factor = 0 modifier = { add = 15 original_tag = ICE has_dlc = "Arms Against Tyranny" has_global_flag = ICE_use_DLC_tree } }
+    Iceland_focus                      r56_iceland.txt              { factor = 0 modifier = { add = 10 tag = ICE } }
+
+### TAG INS  <- 2 棵树
+    indonesia_focus                    indonesia.txt                { factor = 0 modifier = { add = 10 tag = INS has_global_flag = ins_dlc_focus_tree has_dlc = "Thunder at Our Gates" } }
+    indonesian_focus                   r56_indonesia.txt            { factor = 0 modifier = { add = 10 tag = INS } }
+
+### TAG IRQ  <- 2 棵树
+    iraq_focus                         iraq.txt                     { factor = 0 modifier = { add = 50 tag = IRQ has_dlc = "Graveyard of Empires" has_global_flag = irq_dlc_focus_tree } }
+    R56_iraqi_focus                    r56_iraq.txt                 { factor = 0 modifier = { add = 10 tag = IRQ } }
+
+### TAG JOR  <- 2 棵树
+    jordan_focus                       jordan.txt                   { factor = 0 modifier = { add = 10 tag = JOR } }
+    r56_arab_focus                     r56_arab_minor.txt           { factor = 0 modifier = { add = 10 OR = { original_tag = QAT original_tag = BHR original_tag = UAE #original_tag = OMA -- own focus tree file original_tag = YEM original_tag = TUN original_tag = LBA original_tag = MOR original_tag = JOR original_tag = KUW original_tag = WES original_tag = SYR original_tag = LEB original_tag = IMO } } }
+
+### TAG KHM  <- 2 棵树
+    new_warlord_focus                  china_warlord.txt            { factor = 0 modifier = { add = 1000 OR = { tag = KHM tag = YUN tag = SIK tag = GXC tag = SHX tag = XSM tag = SIC tag = XIC tag = GDC tag = HBC tag = SND } } }
+    china_warlord_sea_focus            china_warlord_sea.txt        { base = 0 modifier = { add = 15 OR = { tag = YUN tag = SIK tag = GXC tag = SHX tag = XSM tag = GDC tag = XIC tag = SND tag = KHM tag = NXM tag = GSM tag = SIC tag = KUM tag = HBC } has_dlc = "No Compromise, No Surrender" } }
+
+### TAG LAT  <- 2 棵树
+    latvia_tree                        latvia.txt                   { factor = 0 modifier = { add = 9 tag = LAT has_dlc = "No Step Back" has_global_flag = LAT_vanilla_focus_tree } }
+    latvian_focus                      r56_latvia.txt               { factor = 0 modifier = { add = 10 tag = LAT } modifier = { factor = 0 has_global_flag = LAT_vanilla_focus_tree } }
+
+### TAG LIT  <- 2 棵树
+    lithuania_tree                     lithuania.txt                { factor = 0 modifier = { add = 20 tag = LIT has_dlc = "No Step Back" has_global_flag = LIT_vanilla_focus_tree } }
+    lithuania_focus                    r56_lithuania.txt            { factor = 0 modifier = { add = 10 tag = LIT } }
+
+### TAG OMA  <- 2 棵树
+    oman_focus                         oman.txt                     { factor = 0 modifier = { add = 10 tag = OMA } }
+    r56_arab_focus                     r56_arab_minor.txt           { factor = 0 modifier = { add = 10 OR = { original_tag = QAT original_tag = BHR original_tag = UAE #original_tag = OMA -- own focus tree file original_tag = YEM original_tag = TUN original_tag = LBA original_tag = MOR original_tag = JOR original_tag = KUW original_tag = WES original_tag = SYR original_tag = LEB original_tag = IMO } } }
+
+### TAG PER  <- 2 棵树
+    persian_focus_tree                 persia.txt                   { factor = 0 modifier = { add = 10 tag = PER has_dlc = "Graveyard of Empires" } }
+    R56_persian_focus                  r56_persia.txt               { factor = 0 modifier = { add = 10 tag = PER } }
+
+### TAG PHI  <- 2 棵树
+    philippines_focus                  philippines.txt              { factor = 0 modifier = { add = 10 tag = PHI has_dlc = "No Compromise, No Surrender" } }
+    r56_philippines_focus              r56_philippines.txt          { factor = 0 modifier = { add = 10 tag = PHI } }
+
+### TAG POR  <- 2 棵树
+    portuguese_focus                   portugal.txt                 { factor = 0 modifier = { add = 30 tag = POR has_dlc = "La Resistance" NOT = { has_global_flag = POR_R56_focus_tree } } modifier = { factor = 0 NOT = { has_global_flag = por_lar_focus_tree } } }
+    r56_portuguese_focus               r56_portugal.txt             { factor = 0 modifier = { add = 10 original_tag = POR } }
+
+### TAG PRC  <- 2 棵树
+    china_communist_focus              china_communist.txt          { factor = 0 modifier = { add = 10 tag = PRC } }
+    china_communist_focus_sea          china_communist_sea.txt      { factor = 0 modifier = { add = 1000 tag = PRC has_dlc = "No Compromise, No Surrender" } }
+
+### TAG RAJ  <- 3 棵树
+    r56_india                          india.txt                    { factor = 0 modifier = { add = 9 tag = RAJ } }
+    indian_focus_goe                   india_goe.txt                { factor = 0 modifier = { add = 20 tag = RAJ has_dlc = "Graveyard of Empires" has_global_flag = raj_dlc_focus_tree } }
+    r56_indian_revolt_focus            r56_india_revolt.txt         { factor = 0 modifier = { add = 0 original_tag = RAJ } }
+
+### TAG SHX  <- 2 棵树
+    new_warlord_focus                  china_warlord.txt            { factor = 0 modifier = { add = 1000 OR = { tag = KHM tag = YUN tag = SIK tag = GXC tag = SHX tag = XSM tag = SIC tag = XIC tag = GDC tag = HBC tag = SND } } }
+    china_warlord_sea_focus            china_warlord_sea.txt        { base = 0 modifier = { add = 15 OR = { tag = YUN tag = SIK tag = GXC tag = SHX tag = XSM tag = GDC tag = XIC tag = SND tag = KHM tag = NXM tag = GSM tag = SIC tag = KUM tag = HBC } has_dlc = "No Compromise, No Surrender" } }
+
+### TAG SIA  <- 2 棵树
+    siam_focus                         siam.txt                     { factor = 0 modifier = { add = 10 tag = SIA has_dlc = "Thunder at Our Gates" has_global_flag = sia_dlc_focus_tree } }
+    siamese_focus_tree                 siam_r56.txt                 { factor = 0 modifier = { add = 20 tag = SIA } }
+
+### TAG SIC  <- 2 棵树
+    new_warlord_focus                  china_warlord.txt            { factor = 0 modifier = { add = 1000 OR = { tag = KHM tag = YUN tag = SIK tag = GXC tag = SHX tag = XSM tag = SIC tag = XIC tag = GDC tag = HBC tag = SND } } }
+    china_warlord_sea_focus            china_warlord_sea.txt        { base = 0 modifier = { add = 15 OR = { tag = YUN tag = SIK tag = GXC tag = SHX tag = XSM tag = GDC tag = XIC tag = SND tag = KHM tag = NXM tag = GSM tag = SIC tag = KUM tag = HBC } has_dlc = "No Compromise, No Surrender" } }
+
+### TAG SIK  <- 2 棵树
+    new_warlord_focus                  china_warlord.txt            { factor = 0 modifier = { add = 1000 OR = { tag = KHM tag = YUN tag = SIK tag = GXC tag = SHX tag = XSM tag = SIC tag = XIC tag = GDC tag = HBC tag = SND } } }
+    china_warlord_sea_focus            china_warlord_sea.txt        { base = 0 modifier = { add = 15 OR = { tag = YUN tag = SIK tag = GXC tag = SHX tag = XSM tag = GDC tag = XIC tag = SND tag = KHM tag = NXM tag = GSM tag = SIC tag = KUM tag = HBC } has_dlc = "No Compromise, No Surrender" } }
+
+### TAG SLO  <- 2 棵树
+    austro_hungarian_releasable_focus  austro_hungarian_releasable_shared.txt { factor = 0 modifier = { # Don't use this add = 0 OR = { tag = SLO tag = TRA tag = CRO tag = LBV tag = SIL tag = MNT tag = BOS tag = SLV tag = HRZ tag = ALB } has_dlc = "Gotterdammerung" } }
+    SLO_generic_focus                  slovakia.txt                 { factor = 0 modifier = { add = 10 tag = SLO } }
+
+### TAG SND  <- 2 棵树
+    new_warlord_focus                  china_warlord.txt            { factor = 0 modifier = { add = 1000 OR = { tag = KHM tag = YUN tag = SIK tag = GXC tag = SHX tag = XSM tag = SIC tag = XIC tag = GDC tag = HBC tag = SND } } }
+    china_warlord_sea_focus            china_warlord_sea.txt        { base = 0 modifier = { add = 15 OR = { tag = YUN tag = SIK tag = GXC tag = SHX tag = XSM tag = GDC tag = XIC tag = SND tag = KHM tag = NXM tag = GSM tag = SIC tag = KUM tag = HBC } has_dlc = "No Compromise, No Surrender" } }
+
+### TAG SOV  <- 3 棵树
+    soviet_civil_war_focus             r56_soviet_civil_war.txt     { factor = 0 modifier = { add = 5 original_tag = SOV NOT = { tag = SOV } } modifier = { #messes up with Russian NSB/BBA puppets factor = 0 NOT = { has_global_flag = sov_old_focus_tree } } }
+    soviet_focus                       soviet.txt                   { factor = 0 modifier = { add = 10 tag = SOV } }
+    soviet_focus_old                   soviet_old.txt               { factor = 0 modifier = { add = 100 tag = SOV has_global_flag = sov_old_focus_tree } }
+
+### TAG SPR  <- 3 棵树
+    r56_nationalist_spain_focus        r56_nationalist_spain.txt    { factor = 0 modifier = { add = 0 tag = SPR #if set to original_tag } }
+    Spain_focus                        r56_spain.txt                { factor = 0 modifier = { add = 10 tag = SPR OR = { has_dlc = "La Resistance" has_global_flag = SPR_R56_focus_tree } #if set to original_tag } }
+    spanish_focus                      spain.txt                    { factor = 0 modifier = { add = 20 # R56 tag = SPR has_dlc = "La Resistance" NOT = { has_global_flag = SPR_R56_focus_tree } # R56 } }
+
+### TAG SWE  <- 2 棵树
+    swe_focus                          r56_sweden.txt               { factor = 0 modifier = { add = 10 tag = SWE } }
+    sweden_focus                       sweden.txt                   { factor = 0 modifier = { add = 15 tag = SWE has_dlc = "Arms Against Tyranny" has_global_flag = SWE_use_DLC_tree } }
+
+### TAG SWI  <- 2 棵树
+    swiss_r56_focus                    r56_switzerland.txt          { factor = 0 modifier = { add = 10 original_tag = SWI } }
+    swiss_focus                        switzerland.txt              { factor = 0 modifier = { add = 30 original_tag = SWI has_dlc = "By Blood Alone" NOT = { has_global_flag = SWI_R56_focus_tree } } }
+
+### TAG TUR  <- 2 棵树
+    turkish_focus_r56                  r56_turkey.txt               { factor = 0 modifier = { add = 10 tag = TUR } modifier = { factor = 0 has_global_flag = tur_bftb_focus_tree } }
+    turkish_focus                      turkey.txt                   { factor = 0 modifier = { add = 9 tag = TUR has_dlc = "Battle for the Bosporus" has_global_flag = tur_bftb_focus_tree } }
+
+### TAG XIC  <- 2 棵树
+    new_warlord_focus                  china_warlord.txt            { factor = 0 modifier = { add = 1000 OR = { tag = KHM tag = YUN tag = SIK tag = GXC tag = SHX tag = XSM tag = SIC tag = XIC tag = GDC tag = HBC tag = SND } } }
+    china_warlord_sea_focus            china_warlord_sea.txt        { base = 0 modifier = { add = 15 OR = { tag = YUN tag = SIK tag = GXC tag = SHX tag = XSM tag = GDC tag = XIC tag = SND tag = KHM tag = NXM tag = GSM tag = SIC tag = KUM tag = HBC } has_dlc = "No Compromise, No Surrender" } }
+
+### TAG XSM  <- 2 棵树
+    new_warlord_focus                  china_warlord.txt            { factor = 0 modifier = { add = 1000 OR = { tag = KHM tag = YUN tag = SIK tag = GXC tag = SHX tag = XSM tag = SIC tag = XIC tag = GDC tag = HBC tag = SND } } }
+    china_warlord_sea_focus            china_warlord_sea.txt        { base = 0 modifier = { add = 15 OR = { tag = YUN tag = SIK tag = GXC tag = SHX tag = XSM tag = GDC tag = XIC tag = SND tag = KHM tag = NXM tag = GSM tag = SIC tag = KUM tag = HBC } has_dlc = "No Compromise, No Surrender" } }
+
+### TAG YUN  <- 2 棵树
+    new_warlord_focus                  china_warlord.txt            { factor = 0 modifier = { add = 1000 OR = { tag = KHM tag = YUN tag = SIK tag = GXC tag = SHX tag = XSM tag = SIC tag = XIC tag = GDC tag = HBC tag = SND } } }
+    china_warlord_sea_focus            china_warlord_sea.txt        { base = 0 modifier = { add = 15 OR = { tag = YUN tag = SIK tag = GXC tag = SHX tag = XSM tag = GDC tag = XIC tag = SND tag = KHM tag = NXM tag = GSM tag = SIC tag = KUM tag = HBC } has_dlc = "No Compromise, No Surrender" } }
+
+=== 全量：295 棵树 ===
+ABC_shared.txt                             ?                                
+afghanistan.txt                            afghanistan_tree                 AFG
+albania.txt                                albania_focus                    ALB
+algeria.txt                                algeria_focus                    ALG
+andalusia.txt                              andalusia_focus                  ADU
+andorra.txt                                andorra_focus                    ADR
+argentina.txt                              argentine_focus_tree             ARG
+armenia.txt                                armenian_focus                   ARM
+australia.txt                              r56_australian_focus             AST
+australia_taog.txt                         ?                                
+australia_taog.txt                         australia_taog_focus             AST
+austria.txt                                austria_focus_tree               AUS
+austro_hungarian_releasable_shared.txt     austro_hungarian_releasable_focus ALB,BOS,CRO,HRZ,LBV,MNT,SIL,SLO,SLV,TRA
+belgium.txt                                belgium_focus                    BEL
+bhutan.txt                                 bhutan_focus                     BHU
+brazil.txt                                 brazil_tree                      BRA
+bulgaria.txt                               bulgarian_focus                  BUL
+burma.txt                                  burma_focus                      BRM
+canada.txt                                 r56_canadian_focus               CAN
+chile.txt                                  chilean_focus_tree               CHL
+china_communist.txt                        china_communist_focus            PRC
+china_communist_sea.txt                    china_communist_focus_sea        PRC
+china_nationalist.txt                      china_nationalist_focus          CHI
+china_nationalist_sea.txt                  china_nationalist_sea_focus      CHI
+china_nationalist_warlord_TSR.txt          china_nationalist_warlord_focus  RNG
+china_shared_TSR.txt                       ?                                
+china_warlord.txt                          new_warlord_focus                GDC,GXC,HBC,KHM,SHX,SIC,SIK,SND,XIC,XSM,YUN
+china_warlord_sea.txt                      china_warlord_sea_focus          GDC,GSM,GXC,HBC,KHM,KUM,NXM,SHX,SIC,SIK,SND,XIC,XSM,YUN
+colombia.txt                               colombian_focus                  COL
+congo.txt                                  congo_focus                      COG
+congo_shared.txt                           ?                                
+costa_rica.txt                             r56_costa_rica_focus             COS
+croatia.txt                                croatia_focus                    CRO
+csa.txt                                    confederate_focus                CSA
+Cuba.txt                                   cuban_focus                      CUB
+czechoslovakia.txt                         czech_focus                      CZE
+czechoslovakia_mu.txt                      mu_czech_focus                   CZE
+Danzig.txt                                 danzig_focus                     DNZ
+denmark.txt                                danish_focus                     DEN
+egypt.txt                                  egypt_focus                      EGY
+estonia.txt                                estonia_tree                     EST
+ethiopia.txt                               ethiopia_tree                    ETH
+finland.txt                                finnish_focus                    FIN
+flanders.txt                               flanders_focus                   FLA
+france.txt                                 french_focus                     FRA
+free_france.txt                            free_french_focus                FRA
+FrenchIndochina.txt                        FrenchIndochina                  FRI
+generic.txt                                generic_focus                    
+germany.txt                                german_focus                     GER
+goe_shared_saadabad_branch.txt             ?                                
+goe_shared_saadabad_branch.txt             ?                                
+goe_shared_saadabad_branch.txt             ?                                
+greece.txt                                 greek_focus                      GRE
+greenland.txt                              greenland_focus                  GRN
+guatemala.txt                              Guatemala_Focus                  GUA
+habsburg_joint.txt                         ?                                
+habsburg_joint.txt                         ?                                
+habsburg_joint.txt                         ?                                
+habsburg_joint.txt                         ?                                
+habsburg_joint.txt                         ?                                
+honduras.txt                               hon_focus                        HON
+horn_of_africa.txt                         horn_of_africa_tree              AFA,BEG,GBA,HAR,ORO,QEM,SID,TIG
+hungary.txt                                hungarian_focus                  HUN
+hungary_wuw.txt                            wuw_hungarian_focus              HUN
+iceland.txt                                iceland_tree                     ICE
+india.txt                                  r56_india                        RAJ
+india.txt                                  r56_india_generic                
+india_goe.txt                              ?                                
+india_goe.txt                              indian_focus_goe                 RAJ
+india_goe.txt                              RAJ_league_against_gandhism      
+india_goe.txt                              RAJ_pledge_for_the_allies        
+india_goe.txt                              RAJ_rally_the_indian_left        
+india_goe.txt                              RAJ_the_government_of_india_act  
+indonesia.txt                              indonesia_focus                  INS
+iraq.txt                                   iraq_focus                       IRQ
+ireland.txt                                ireland_focus                    IRE
+israel.txt                                 ?                                
+israel.txt                                 ?                                
+israel.txt                                 ?                                
+israel.txt                                 ?                                
+israel.txt                                 israel_focus                     ISR
+italy.txt                                  italian_focus                    ITA,RDS,RSI
+japan.txt                                  japan_wtt_focus                  JAP
+japan_old.txt                              ?                                
+japan_old.txt                              ?                                
+japan_old.txt                              ?                                
+japan_old.txt                              ?                                
+jordan.txt                                 jordan_focus                     JOR
+kalmykia.txt                               r56_kalmykia                     KAL
+katanga.txt                                katanga_focus                    KAT
+korea.txt                                  korea_focus                      KOR
+latvia.txt                                 latvia_tree                      LAT
+liechtenstein.txt                          liechtenstein_focus              LIE
+lithuania.txt                              lithuania_tree                   LIT
+malaysia.txt                               malaysia_focus                   MAL
+manchukuo.txt                              manchukuo_focus_r56              MAN
+manchukuo_TSR.txt                          manchukuo_focus_tsr              
+mandate_of_palestine.txt                   mandate_palestine_focus          MPL
+mengkukuo.txt                              mengkukuo_focus                  MEN
+mexico.txt                                 mexico_focus_tree                MEX
+mongolia.txt                               Mongolia_focus                   MON
+nauru.txt                                  nauru_focus                      NRU
+netherlands.txt                            netherlands_focus                HOL
+new_zealand.txt                            r56_new_zealander_focus          NZL
+Nicaragua.txt                              nicaraguan_focus                 NIC
+nordic_shared.txt                          ?                                
+nordic_shared.txt                          ?                                
+nordic_shared.txt                          ?                                
+nordic_shared.txt                          ?                                
+nordic_shared.txt                          ?                                
+nordic_shared.txt                          ?                                
+nordic_shared.txt                          ?                                
+nordic_shared.txt                          ?                                
+nordic_shared.txt                          ?                                
+nordic_shared.txt                          ?                                
+nordic_shared.txt                          ?                                
+nordic_shared.txt                          ?                                
+norway.txt                                 norwegian_focus                  
+oman.txt                                   oman_focus                       OMA
+pakistan.txt                               pakistani_focus_tree             PAK
+palestine.txt                              palestine_focus                  PAL
+paraguay.txt                               paraguay_focus                   PAR
+paraguay_uruguay_shared_branch.txt         ?                                
+persia.txt                                 PER_form_sumka                   
+persia.txt                                 persian_focus_tree               PER
+peru.txt                                   r56_peru_focus                   PRU
+philippines.txt                            philippines_focus                PHI
+portugal.txt                               portuguese_focus                 POR
+quebec.txt                                 quebec_focus                     QUE
+r56_afghanistan.txt                        r56_afghanistan_focus            AFG
+r56_african_union_shared.txt               ?                                
+r56_african_union_shared.txt               ?                                
+r56_african_union_shared.txt               ?                                
+r56_arab_minor.txt                         r56_arab_focus                   BHR,IMO,JOR,KUW,LBA,LEB,MOR,OMA,QAT,SYR,TUN,UAE,WES,YEM
+r56_arab_minor_military_shared.txt         ?                                
+r56_arab_minor_military_shared.txt         ?                                
+r56_arctic_minor.txt                       r56_arctic_focus                 CKK,GRN,INU,KAR,KOM,NEN,OVO,SMI,TAY,YAK,YAM
+r56_argentina.txt                          argentinian_focus                ARG
+r56_austria.txt                            austrian_focus                   AUS
+r56_austria_hungary_shared.txt             ?                                
+r56_austria_hungary_shared.txt             ?                                
+r56_austria_hungary_shared.txt             ?                                
+r56_baltic_shared.txt                      ?                                
+r56_baltic_shared.txt                      ?                                
+r56_baltic_shared.txt                      ?                                
+r56_baltic_shared.txt                      ?                                
+r56_baltic_shared.txt                      ?                                
+r56_belgium.txt                            belgium_focus_r56                BEL
+r56_brazil.txt                             brazilian_focus                  BRA
+r56_british_monarchy_in_exile.txt          ?                                
+r56_british_monarchy_in_exile.txt          ?                                
+r56_british_monarchy_in_exile.txt          ?                                
+r56_british_monarchy_in_exile.txt          ?                                
+r56_british_monarchy_in_exile.txt          ?                                
+r56_bulgaria.txt                           bulgaria_focus_r56               BUL
+r56_caribbean_shared.txt                   ?                                
+r56_caucasus_union_shared.txt              ?                                
+r56_celtic_minor.txt                       r56_celtic_focus                 BRI,NIR,WLS
+r56_celtic_shared.txt                      ?                                
+r56_central_america_shared.txt             ?                                
+r56_central_america_shared.txt             ?                                
+r56_chile.txt                              chile_focus                      CHL
+r56_congo.txt                              congo_focus_r56                  COG
+r56_cyprus.txt                             cyprus_tree                      CYP
+r56_czechoslovakia.txt                     czechoslovakian_focus_r56        CZE
+r56_denmark.txt                            ?                                
+r56_denmark.txt                            collab_denmark                   DEN
+r56_denmark.txt                            denmark_focus                    DEN
+r56_denmark.txt                            free_denmark                     DEN
+r56_ecuador.txt                            r56_ecuadorian_focus             ECU
+r56_estonia.txt                            estonian_focus                   EST
+r56_estonia_shared.txt                     EST_the_four_year_plan           
+r56_ethiopia.txt                           eth_focus                        ETH
+r56_gen_shared.txt                         ?                                
+r56_gen_shared.txt                         ?                                
+r56_gen_shared.txt                         ?                                
+r56_gen_shared.txt                         ?                                
+r56_gen_shared.txt                         ?                                
+r56_gen_shared.txt                         ?                                
+r56_gen_shared.txt                         ?                                
+r56_gen_shared.txt                         ?                                
+r56_gen_shared.txt                         ?                                
+r56_gen_shared.txt                         ?                                
+r56_gen_shared.txt                         ?                                
+r56_gen_shared.txt                         ?                                
+r56_gen_shared.txt                         ?                                
+r56_gen_shared.txt                         ?                                
+r56_gen_shared.txt                         ?                                
+r56_gen_shared.txt                         ?                                
+r56_gen_shared.txt                         ?                                
+r56_gen_shared.txt                         ?                                
+r56_gen_shared.txt                         ?                                
+r56_gen_shared.txt                         ?                                
+r56_gen_shared.txt                         ?                                
+r56_gen_shared.txt                         ?                                
+r56_gen_shared.txt                         ?                                
+r56_gen_shared.txt                         ?                                
+r56_gen_shared.txt                         ?                                
+r56_gen_shared.txt                         ?                                
+r56_gen_shared.txt                         ?                                
+r56_gen_shared.txt                         ?                                
+r56_ger_shared.txt                         germany_shared_focus             ALS,BAD,BAY,DNZ,HAN,HES,MEK,PRE,RHI,SAA,SAX,SHL,THU,WUR
+r56_gran_colombia_shared.txt               ?                                
+r56_greece.txt                             r56_greek_focus                  GRE
+r56_iceland.txt                            Iceland_focus                    ICE
+r56_india_revolt.txt                       r56_indian_revolt_focus          RAJ
+r56_india_shared.txt                       ?                                
+r56_india_shared.txt                       ?                                
+r56_india_shared.txt                       ?                                
+r56_india_shared.txt                       ?                                
+r56_india_shared.txt                       ?                                
+r56_india_shared.txt                       ?                                
+r56_india_shared.txt                       ?                                
+r56_india_shared.txt                       ?                                
+r56_india_shared.txt                       ?                                
+r56_india_shared.txt                       ?                                
+r56_india_shared.txt                       ?                                
+r56_india_shared.txt                       ?                                
+r56_india_shared.txt                       ?                                
+r56_indian_ocean_shared.txt                r56_shared_indian_ocean_focus    MAU,MLD,SEY,SRL
+r56_indonesia.txt                          indonesian_focus                 INS
+r56_iraq.txt                               R56_iraqi_focus                  IRQ
+r56_italian_east_africa.txt                italian_east_africa              AOI
+r56_latvia.txt                             latvian_focus                    LAT
+r56_levant_shared.txt                      ?                                
+r56_levant_shared.txt                      ?                                
+r56_levant_shared.txt                      ?                                
+r56_levant_shared.txt                      ?                                
+r56_lithuania.txt                          lithuania_focus                  LIT
+r56_luxembourg.txt                         luxembourg_tree                  LUX
+r56_macedonian_empire_shared.txt           ?                                
+r56_majapahit_shared.txt                   ?                                
+r56_majapahit_shared.txt                   ?                                
+r56_microstate.txt                         r56_microstate_focus             AHV,FAR,JAN,JER,MLT,MNC,SAN
+r56_microstate_shared.txt                  ?                                
+r56_microstate_shared.txt                  ?                                
+r56_microstate_shared.txt                  ?                                
+r56_nationalist_spain.txt                  r56_nationalist_spain_focus      SPR
+r56_norway.txt                             r56_norwegian_focus              NOR
+r56_persia.txt                             R56_persian_focus                PER
+r56_persian_empire_shared.txt              ?                                
+r56_philippines.txt                        r56_philippines_focus            PHI
+r56_platine_shared.txt                     ?                                
+r56_platine_shared.txt                     ?                                
+r56_polynesia_shared.txt                   r56_polynesia_focus              CHT,FIJ,FSM,GUM,HAW,KIR,MRS,NIU,PLU,RAP,SOL,TON,TUV,VAN
+r56_portugal.txt                           r56_portuguese_focus             POR
+r56_siberian_union_shared.txt              ?                                
+r56_soviet_civil_war.txt                   soviet_civil_war_focus           SOV
+r56_spain.txt                              Spain_focus                      SPR
+r56_sweden.txt                             swe_focus                        SWE
+r56_switzerland.txt                        swiss_r56_focus                  SWI
+r56_turkestan_minor.txt                    r56_turkestan_focus              BUK,KAZ,KHI,KKP,KYR,TAJ,TMS,UZB
+r56_turkestan_shared.txt                   ?                                
+r56_turkey.txt                             turkish_focus_r56                TUR
+r56_vichy_france.txt                       vichy_france_focus               VIC
+r56_west_african_shared.txt                west_africa_focus                BIA,DAH,GAM,GHA,GNA,GNB,IVO,LIB,MLI,MRT,NGA,NGR,SEN,SIE,SOK,TOG,VOL
+romania.txt                                romanian_focus                   ROM
+ruthenia.txt                               ruthenian_focus_tree             RUT
+samoa.txt                                  samoa_focus                      SAM
+saudi_arabia.txt                           saudi_focus                      SAU
+scotland.txt                               scotland_focus                   SCO
+serbia.txt                                 serbia_focus                     SER
+siam.txt                                   siam_focus                       SIA
+siam_r56.txt                               siamese_focus_tree               SIA
+silesia.txt                                ?                                
+slovakia.txt                               SLO_generic_focus                SLO
+south_africa.txt                           r56_south_africa_focus           SAF
+soviet.txt                                 soviet_focus                     SOV
+soviet_old.txt                             soviet_focus_old                 SOV
+spain.txt                                  spanish_focus                    SPR
+sudan.txt                                  sudan_focus                      SUD
+sweden.txt                                 sweden_focus                     SWE
+switzerland.txt                            swiss_focus                      SWI
+tender_loving_empire.txt                   tender_loving_empire_focus       WHY
+the_national_catastrophe_shared.txt        ?                                
+the_national_catastrophe_shared.txt        ?                                
+the_national_catastrophe_shared.txt        ?                                
+the_national_catastrophe_shared.txt        ?                                
+the_national_catastrophe_shared.txt        ?                                
+the_national_catastrophe_shared.txt        ?                                
+the_national_catastrophe_shared.txt        KMT_winning_the_hearts_and_minds_of_the_people 
+tibet.txt                                  tibet_focus                      TIB
+turkey.txt                                 turkish_focus                    TUR
+tuva.txt                                   tuva_focus                       TAN
+uk.txt                                     british_focus                    ENG
+ukraine.txt                                ukraine_focus                    UKR
+uruguay.txt                                r56_uruguay_focus                URG
+usa.txt                                    usa_focus                        USA
+venezuela.txt                              venezuela_focus                  VEN
+venezuelan_national_government.txt         venezuela_focus_VCW              VCW
+venice.txt                                 venice_focus                     VNZ
+vichy_france.txt                           vichy_french_focus               FRA
+Vietnam.txt                                Vietnam_focus                    VIN
+wallonia.txt                               wallonia_focus                   WLL
+yugoslavia.txt                             yugoslavian_focus                YUG

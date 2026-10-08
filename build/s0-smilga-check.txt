@@ -1,0 +1,187 @@
+==== 斯米尔加（Idx 10）· 第 0 步疑点复核 ====
+
+==================== 1. 原版角色定义全文 2755-2870 ====================
+    2768: 	}
+    2769: 
+    2770: 	SOV_ivar_smilga = {
+    2771: 		name = SOV_ivar_smilga
+    2772: 		portraits = {
+    2773: 			army = {
+    2774: 				small = "GFX_idea_SOV_ivar_smilga_imprisoned"
+    2775: 			}
+    2776: 		}
+    2777: 		allowed_civil_war = {
+    2778: 			OR = {
+    2779: 				AND = {
+    2780: 					tag = SOV
+    2781: 					has_government = communism
+    2782: 				}
+    2783: 				AND = {
+    2784: 					SOV_is_exiles = yes
+    2785: 					has_government = communism
+    2786: 				}
+    2787: 			}
+    2788: 		}
+    2789: 
+    2790: 		advisor = {
+    2791: 			slot = political_advisor
+    2792: 			idea_token = SOV_ivar_smilga
+    2793: 			allowed = {
+    2794: 				original_tag = SOV
+    2795: 			}
+    2796: 			visible = {
+    2797: 				NOT = {
+    2798: 					has_character_flag = SOV_character_purged_flag
+    2799: 				}
+    2800: 			}
+    2801: 			available = {
+    2802: 				OR = {
+    2803: 					has_completed_focus = SOV_integrate_smirnovs_bloc
+    2804: 					has_completed_focus = SOV_return_democracy_to_the_party
+    2805: 				}
+    2806: 				if = {
+    2807: 					limit = {
+    2808: 						has_character_flag = SOV_imprisoned_flag
+    2809: 					}
+    2810: 					NOT = { has_character_flag = SOV_imprisoned_flag } #For flavor purposes only -> Removed in the appropriate focus/event/dec
+    2811: 				}
+    2812: 				if = {
+    2813: 					limit = {
+    2814: 						has_character_flag = SOV_exiled_flag
+    2815: 					}
+    2816: 					NOT = { has_character_flag = SOV_exiled_flag }
+    2817: 				}
+    2818: 			}
+    2819: 			traits = {
+    2820: 				soviet_economist
+    2821: 			}
+    2822: 			ai_will_do = {
+    2823: 				base = 2
+    2824: 			}
+    2825: 		}
+    2826: 	}
+    2827: 
+    2828: 
+    2829: 	SOV_karl_radek = {
+    2830: 		name = SOV_karl_radek
+    2831: 
+    2832: 		portraits = {
+    2833: 			army = {
+    2834: 				small = "GFX_idea_SOV_karl_radek"
+    2835: 			}
+    2836: 		}
+    2837: 
+    2838: 		allowed_civil_war = {
+    2839: 			OR = {
+    2840: 				AND = {
+    2841: 					tag = SOV
+    2842: 					SOV_is_left_opposition = yes
+    2843: 					has_completed_focus = SOV_bring_old_trotskyists_back
+    2844: 				}
+    2845: 				AND = {
+    2846: 					tag = SOV
+    2847: 					SOV_is_right_opposition = yes
+    2848: 					has_completed_focus = SOV_cooperation_against_stalin
+    2849: 				}
+    2850: 				AND = {
+    2851: 					SOV_is_exiles = yes
+    2852: 					has_government = communism
+    2853: 				}
+    2854: 			}
+    2855: 		}
+    2856: 
+    2857: 		advisor = {
+    2858: 			slot = political_advisor
+    2859: 			idea_token = SOV_karl_radek
+    2860: 			allowed = {
+    2861: 				original_tag = SOV
+    2862: 			}
+    2863: 			visible = {
+    2864: 				NOT = {
+    2865: 					has_character_flag = SOV_character_purged_flag
+    2866: 				}
+    2867: 			}
+    2868: 			available = {
+    2869: 				OR = {
+    2870: 					AND = {
+
+==================== 2. soviet_economist 特质的引用 ====================
+  --- 原版 （3 命中）---
+    common\characters\NZL.txt:789  soviet_economist
+    common\characters\SOV.txt:2820  soviet_economist
+    common\country_leader\00_traits.txt:7979  soviet_economist = {
+  --- R56 （2 命中）---
+    common\characters\SOV.txt:4639  soviet_economist
+    common\country_leader\00_traits.txt:7983  soviet_economist = {
+
+==================== 3. create_country_leader 提到 smilga 的地方 ====================
+  --- 原版 （0 命中）---
+  --- R56 （0 命中）---
+
+==================== 4. R56 focus 文件里 smilga 的全部位置 ====================
+  （R56 national_focus 共 212 个文件）
+    soviet.txt:8954
+        #Smilga
+    soviet.txt:8957
+        has_character = SOV_ivar_smilga
+    soviet.txt:8959
+        SOV_ivar_smilga = {
+    soviet.txt:10634
+        SOV_ivar_smilga = { #Already set as algined to left oppo
+    soviet.txt:10639
+        small = "GFX_idea_SOV_ivar_smilga"
+    soviet.txt:12200
+        SOV_ivar_smilga = { set_character_flag = SOV_potential_target_flag }
+    soviet.txt:12570
+        IF = { limit = { has_character = SOV_ivar_smilga } SOV_ivar_smilga = { retire = yes } }
+    soviet.txt:13678
+        character = SOV_ivar_smilga
+    soviet.txt:13680
+        small = "GFX_idea_SOV_ivar_smilga"
+    soviet_old.txt:8739
+        SOV_ivar_smilga = {
+    soviet_old.txt:8743
+        small = "GFX_idea_SOV_ivar_smilga"
+
+==================== 5. 本项目 mod 里的 smilga / integrate_smirnovs_bloc ====================
+  （mod 共 42 个 txt/yml）
+  --- /smilga/ （85 命中）---
+    common\focus_inlay_windows\hof_ic_inlay_window.txt:44  GFX_hof_ic_portrait_ivar_smilga = { check_variable = { hof_ic_slot_1 = 10 } }
+    common\focus_inlay_windows\hof_ic_inlay_window.txt:76  GFX_hof_ic_portrait_ivar_smilga = { check_variable = { hof_ic_slot_2 = 10 } }
+    common\focus_inlay_windows\hof_ic_inlay_window.txt:108  GFX_hof_ic_portrait_ivar_smilga = { check_variable = { hof_ic_slot_3 = 10 } }
+    common\focus_inlay_windows\hof_ic_inlay_window.txt:140  GFX_hof_ic_portrait_ivar_smilga = { check_variable = { hof_ic_slot_4 = 10 } }
+    common\focus_inlay_windows\hof_ic_inlay_window.txt:172  GFX_hof_ic_portrait_ivar_smilga = { check_variable = { hof_ic_slot_5 = 10 } }
+    common\focus_inlay_windows\hof_ic_inlay_window.txt:204  GFX_hof_ic_portrait_ivar_smilga = { check_variable = { hof_ic_slot_6 = 10 } }
+    common\focus_inlay_windows\hof_ic_inlay_window.txt:236  GFX_hof_ic_portrait_ivar_smilga = { check_variable = { hof_ic_slot_7 = 10 } }
+    common\ideas\hof_ic_ideas.txt:373  hof_ic_idea_ivar_smilga = {
+    common\national_focus\soviet.txt:140  tooltip = hof_ic_not_seated_ivar_smilga_tt
+    common\national_focus\soviet.txt:141  NOT = { hof_ic_seated_ivar_smilga = yes }
+    common\national_focus\soviet.txt:216  tooltip = hof_ic_not_seated_ivar_smilga_tt
+    common\national_focus\soviet.txt:217  NOT = { hof_ic_seated_ivar_smilga = yes }
+  --- /integrate_smirnovs_bloc/ （6 命中）---
+    common\national_focus\soviet.txt:15782  id = SOV_integrate_smirnovs_bloc
+    common\national_focus\soviet.txt:15808  custom_effect_tooltip = SOV_integrate_smirnovs_bloc_tt
+    common\national_focus\soviet.txt:15940  prerequisite = { focus = SOV_integrate_smirnovs_bloc }
+    common\national_focus\soviet.txt:15943  relative_position_id = SOV_integrate_smirnovs_bloc
+    common\national_focus\soviet.txt:16044  prerequisite = { focus = SOV_integrate_smirnovs_bloc }
+    common\national_focus\soviet.txt:16047  relative_position_id = SOV_integrate_smirnovs_bloc
+  --- /eliminate_the_left/ （3 命中）---
+    common\national_focus\soviet.txt:17364  id = SOV_eliminate_the_left
+    common\national_focus\soviet.txt:17380  custom_effect_tooltip = SOV_eliminate_the_left_tt
+    common\national_focus\soviet.txt:18648  mutually_exclusive = { focus = SOV_left_eliminate_right focus = SOV_eliminate_the_left}
+
+==================== 6. 本项目花名册 Idx 10 ====================
+     470:        Mod    = @('opinion_gain_monthly_factor = 0.03');
+     471:        # 职务分级：照 docs/47 §5 / docs/48 §4（全部史实，带起止日期）—— 三级
+     472:        #   Lv1 外交人民委员部中欧司司长（1918-03 起）        ← 入席即有
+     473:        #   Lv2 共产国际执行委员会书记（1920-03 – 1924）      ← 门槛 = A4（1923-10，正落在任内）
+     474:        #   Lv3 中山大学校长（1925 – 1927）                  ← 门槛 = A5（该级的职务就是那个节点）
+     475:        # 🚩 刻意避开的官衔（docs/48 §4）：
+     476:        #   ⛔「共产国际执委会主席」= 季诺维也夫（Idx 4）的，他的是【执委会书记】（主席 vs 书记之一）
+     477:        #   ⛔「党中央宣传鼓动部部长 / 财政委员会主席 / 租让事务总委员会副主席」= 普列奥布拉任斯基（Idx 8）的
+     478:        Tiers  = @(
+     479:            @{ Lv = 1; Id = 'hof_ic_idea_karl_radek';   Zh = '外交人民委员部中欧司司长'; Pp = -0.10; Add = @() },
+     480:            @{ Lv = 2; Id = 'hof_ic_idea_karl_radek_2'; Zh = '共产国际执行委员会书记';   Pp = -0.30;
+     481:               Add = @('stability_factor = 0.05') },
+     482:            @{ Lv = 3; Id = 'hof_ic_idea_karl_radek_3'; Zh = '中山大学校长';             Pp = -0.30;
+

@@ -1,0 +1,96 @@
+# =============================================================================
+# 需求 C：经互会通用线的三个动态民族精神（由 build/gen-hof-ma-common-lines.ps1 生成，勿手改）
+# -----------------------------------------------------------------------------
+# 🚩 值写成【变量名】，由国策 add_to_variable 累加 —— 蓝本：R56
+#    common/dynamic_modifiers/0_dynamic_modifiers.txt 的 SOV_defense_industry_dynamic_modifier
+#    原因：idea 的 modifier 是静态的、读不了变量。
+# 数值刷新：每天自动重算；add_to_variable 后要立刻生效就补 force_update_dynamic_modifier
+# 逐变量合计见 docs/un-focus/02-s5-values.md §5.1 / §7.1 / §9.1。
+# =============================================================================
+
+hof_ma_dm_eco = {
+	icon = GFX_idea_hof_ma_comecon
+	enable = {
+		has_country_flag = hof_ma_joined
+	}
+	remove_trigger = {
+		NOT = { hof_ma_eligible = yes }
+	}
+
+	consumer_goods_factor = hof_ma_eco_goods
+	industrial_capacity_factory = hof_ma_eco_industry
+	cic_construction_boost_factor = hof_ma_eco_build_boost
+	local_resource_gain_efficiency_per_infrastructure = hof_ma_eco_infra_resource
+	research_sharing_per_country_bonus_factor = hof_ma_eco_sharing
+	industry_repair_factor = hof_ma_eco_repair
+	research_speed_factor = hof_ma_eco_research
+	faction_trade_opinion_factor = hof_ma_eco_trade
+	resource_trade_cost_bonus_per_factory = hof_ma_eco_trade_cost
+	production_factory_max_efficiency_factor = hof_ma_eco_efficiency
+	production_speed_buildings_factor = hof_ma_eco_build
+	global_building_slots_factor = hof_ma_eco_slots
+	country_resource_steel = hof_ma_eco_steel
+	local_resources_factor = hof_ma_eco_resources
+	max_fuel_factor = hof_ma_eco_fuel
+	country_resource_oil = hof_ma_eco_oil
+	country_resource_coal = hof_ma_eco_coal
+}
+
+hof_ma_dm_pol = {
+	icon = GFX_idea_hof_ma_cominform
+	enable = {
+		has_country_flag = hof_ma_joined
+	}
+	remove_trigger = {
+		NOT = { hof_ma_eligible = yes }
+	}
+
+	political_power_factor = hof_ma_pol_pp
+	opinion_gain_monthly_same_ideology_factor = hof_ma_pol_opinion_ideo
+	opinion_gain_monthly_factor = hof_ma_pol_opinion
+	drift_defence_factor = hof_ma_pol_drift
+	war_support_factor = hof_ma_pol_war_support
+	stability_weekly_factor = hof_ma_pol_stability_week
+	stability_factor = hof_ma_pol_stability
+	conscription_factor = hof_ma_pol_conscription
+	weekly_manpower = hof_ma_pol_manpower
+	join_faction_tension = hof_ma_pol_join
+	research_speed_factor = hof_ma_pol_research
+	intel_network_gain_factor = hof_ma_pol_intel
+	compliance_growth_on_our_occupied_states = hof_ma_pol_compliance
+	resistance_target = hof_ma_pol_resistance
+	improve_relations_maintain_cost_factor = hof_ma_pol_improve
+	party_popularity_stability_factor = hof_ma_pol_party
+	enemy_justify_war_goal_time = hof_ma_pol_enemy_justify
+}
+
+hof_ma_dm_mil = {
+	icon = GFX_idea_hof_ma_warsawpact
+	enable = {
+		has_country_flag = hof_ma_joined
+	}
+	remove_trigger = {
+		NOT = { hof_ma_eligible = yes }
+	}
+
+	army_defence_factor = hof_ma_mil_defence
+	war_support_factor = hof_ma_mil_war_support
+	conscription_factor = hof_ma_mil_conscription
+	command_power_gain = hof_ma_mil_command
+	max_command_power = hof_ma_mil_command_max
+	army_org_factor = hof_ma_mil_org
+	max_planning_factor = hof_ma_mil_planning
+	army_attack_factor = hof_ma_mil_attack
+	weekly_manpower = hof_ma_mil_manpower
+	army_fuel_capacity_factor = hof_ma_mil_fuel
+	supply_consumption_factor = hof_ma_mil_supply
+	production_speed_arms_factory_factor = hof_ma_mil_production
+	land_equipment_upgrade_xp_cost = hof_ma_mil_equip_xp
+	static_anti_air_damage_factor = hof_ma_mil_aa
+	industry_air_damage_factor = hof_ma_mil_air_dmg
+	attrition = hof_ma_mil_attrition
+	training_time_factor = hof_ma_mil_training
+	breakthrough_factor = hof_ma_mil_breakthrough
+	supply_factor = hof_ma_mil_supply_cap
+}
+

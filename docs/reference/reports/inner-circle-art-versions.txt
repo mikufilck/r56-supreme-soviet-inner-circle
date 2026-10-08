@@ -1,0 +1,51 @@
+﻿
+====================================================================================================
+### art\inner_circle\v1
+====================================================================================================
+  export-report.txt                                   1,087  2026-09-13 21:54  
+  manifest.json                                      11,712  2026-09-13 21:49  
+  preview.html                                        7,044  2026-09-13 21:58  
+  preview.png                                       850,903  2026-09-13 21:59  
+  README.md                                           2,624  2026-09-13 21:58  
+  validation-report.txt                               1,211  2026-09-13 21:59  
+
+====================================================================================================
+### art\inner_circle\v2
+====================================================================================================
+  export_background.py                                1,930  2026-09-14 21:19  
+  generation.json                                     1,773  2026-09-14 21:18  
+  hof_ic_window_bg.dds                            1,638,528  2026-09-14 21:19  640x640
+  hof_ic_window_bg.png                              683,388  2026-09-14 21:19  
+  previous-hof_ic_window_bg.dds                   1,471,620  2026-09-13 21:54  631x583
+  README.md                                           1,000  2026-09-14 21:19  
+  validation.json                                       401  2026-09-14 21:19  
+
+====================================================================================================
+### mod\heart_of_iron\gfx\interface\hof_ic
+====================================================================================================
+  hof_ic_blank_portrait.dds                         131,168  2026-09-13 21:54  156x210
+  hof_ic_candidate_slot.dds                          13,584  2026-09-13 21:54  58x58
+  hof_ic_leader_frame.dds                           109,028  2026-09-13 21:54  165x165
+  hof_ic_leader_ribbon.dds                           23,168  2026-09-13 21:54  160x36
+  hof_ic_leader_title_box.dds                        10,248  2026-09-13 21:54  115x22
+  hof_ic_seat_frame_empty.dds                        72,964  2026-09-13 21:54  131x139
+  hof_ic_seat_frame_filled.dds                       72,964  2026-09-13 21:54  131x139
+  hof_ic_seat_name_box.dds                           15,312  2026-09-13 21:54  146x26
+  hof_ic_seat_trait_box.dds                          24,896  2026-09-13 21:54  144x43
+  hof_ic_spotlight.dds                            1,265,504  2026-09-13 21:54  588x538
+  hof_ic_window_bg.dds                            1,638,528  2026-09-14 21:19  640x640
+
+====================================================================================================
+### interface/hof_ic.gfx 里注册的 sprite -> texturefile
+====================================================================================================
+  GFX_hof_ic_window_bg                   -> gfx/interface/hof_ic/hof_ic_window_bg.dds
+  GFX_hof_ic_spotlight                   -> gfx/interface/hof_ic/hof_ic_spotlight.dds
+  GFX_hof_ic_leader_frame                -> gfx/interface/hof_ic/hof_ic_leader_frame.dds
+  GFX_hof_ic_leader_ribbon               -> gfx/interface/hof_ic/hof_ic_leader_ribbon.dds
+  GFX_hof_ic_leader_title_box            -> gfx/interface/hof_ic/hof_ic_leader_title_box.dds
+  GFX_hof_ic_seat_frame_empty            -> gfx/interface/hof_ic/hof_ic_seat_frame_empty.dds
+  GFX_hof_ic_seat_frame_filled           -> gfx/interface/hof_ic/hof_ic_seat_frame_filled.dds
+  GFX_hof_ic_seat_name_box               -> gfx/interface/hof_ic/hof_ic_seat_name_box.dds
+  GFX_hof_ic_seat_trait_box              -> gfx/interface/hof_ic/hof_ic_seat_trait_box.dds
+  GFX_hof_ic_blank_portrait              -> gfx/interface/hof_ic/hof_ic_blank_portrait.dds
+  GFX_hof_ic_candidate_slot              -> gfx/interface/hof_ic/hof_ic_candidate_slot.dds

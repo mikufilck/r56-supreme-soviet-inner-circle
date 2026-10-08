@@ -1,0 +1,10 @@
+{
+  "mode": "built-in image_gen",
+  "prompt": "Use case: precise-object-edit. Production Hearts of Iron IV Soviet inner council window BACKPLATE replacement. Input image is the OLD backplate to preserve its materials and aesthetic: aged blue-black steel empty panel, restrained antique brass wheat and partial gear ornaments in the four corners, narrow deep crimson enamel trim. Redraw as a PERFECT SQUARE for final 640x640 pixels. CRITICAL CHANGE: the physical rectangular frame MUST extend exactly to all FOUR canvas edges, completely full bleed, zero outer margin, no transparent padding, no black empty border outside the frame, square filled corners. Outermost pixel rows and columns must be the actual continuous narrow metal frame, not surrounding backdrop. Front-on orthographic flat UI texture. Thin border only about 8 pixels wide at final 640 resolution; corner ornaments small, confined to approx 45x45 pixels, so the middle remains broadly clear for portrait widgets. Empty dark cool steel surface across the entire interior, subtle fine worn texture and very subdued top-left light, no bright patches. Keep reference dark steel, antique muted gold and deep crimson colors. No text, no portraits, no slots, no badges in center, no GUI controls, no watermark, no checkerboard, no external shadow. This replacement is a solid FULLY OPAQUE panel including ALL four edges and corners. Output a single square PNG, no sheet/mockup. Keep restrained realistic painted WWII strategy UI craftsmanship, not glossy fantasy gold.",
+  "source": "C:\\Users\\xuwei\\.codex\\generated_images\\01a09af5-fd43-79a0-a3cc-72284cd67cbc\\exec-37eb4444-7687-4f30-ad1d-e42d49e4e6bf.png",
+  "reference": "art/inner_circle/v1/png/hof_ic_window_bg.png",
+  "size": [
+    640,
+    640
+  ]
+}

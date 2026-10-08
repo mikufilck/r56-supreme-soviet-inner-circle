@@ -1,0 +1,2839 @@
+﻿Ideas - Hearts of Iron 4 Wiki
+193 captures
+09 Jan 2018 - 11 Sep 2026
+Jul
+AUG
+Sep
+24
+2025
+2026
+2027
+success
+fail
+About this capture
+COLLECTED BY
+Collection:
+Save Page Now
+TIMESTAMPS
+The Wayback Machine - https://web.archive.org/web/20260824120728/https://hoi4.paradoxwikis.com/Ideas
+Forum list
+Trending
+Latest
+New posts
+Paradox
+Store
+Mods
+Forum
+Launcher
+PDXCON
+2019
+Paradox Wikis
+Hearts of Iron 4 Wiki
+Active Wikis
+Age of Wonders 4
+Empire of Sin
+Cities: Skylines 2
+Crusader Kings 3
+Europa Universalis 5
+Hearts of Iron 4
+Hunter: The Reckoning
+Imperator: Rome
+Millennia
+Prison Architect
+Stellaris
+Surviving Mars
+Surviving the Aftermath
+Werewolf: the Apocalypse
+Vampire: The Masquerade
+Victoria 3
+Legacy Wikis
+AoW: Planetfall
+Cities: Skylines
+Crusader Kings 2
+Arsenal of Democracy
+Europa Universalis 2
+Europa Universalis 3
+Europa Universalis 4
+Europa Universalis: Rome
+Hearts of Iron 2
+Hearts of Iron 3
+Tyranny
+Victoria 1
+Victoria 2
+Search
+Personal tools
+Log in
+Personal tools
+English
+Not logged in
+Talk
+Contributions
+Log in
+Navigation menu
+Namespaces
+Page
+Discussion
+English
+Views
+Read
+Edit
+Edit source
+View history
+More
+Navigation
+Hearts of Iron 4 Wiki
+Recent changes
+Random page
+Paradox Wikis
+- Main portal
+- Wikis discord
+- Contact us
+- Style guidelines
+HoI4 links
+- Forums
+- Game discord
+- Mods
+- Store
+- YouTube
+Tools
+What links here
+Related changes
+Special pages
+Printable version
+Permanent link
+Page information
+braze
+Ideas
+From Hearts of Iron 4 Wiki
+Jump to navigation
+Jump to search
+This is a community maintained wiki. If you spot a mistake, please help with fixing it.
+All countries have the opportunity to pick
+ideas
+using
+political power
+. These ideas give various bonuses, and are split between several categories:
+Conscription law: affects how much manpower is available to the country for military service, factory output, dockyard output, construction speed, and training time
+Trade law: affects resources to market, factory output, dockyard output, construction speed, and research time
+Economy law: affects how many factories are dedicated to consumer goods, manpower availability, civilian and military factory construction speed, and conversion speed for factories
+Political advisors: give a variety of bonuses, and can be used to change the political environment in a country
+Research and production companies: give reductions to research time and bonuses to equipment researched under their lead
+Military staff: give bonuses to armies, navies, and air forces
+Contents
+1
+Laws
+1.1
+Conscription laws
+1.1.1
+Special conscription laws
+1.2
+Trade laws
+1.2.1
+Special trade laws
+1.3
+Economy laws
+1.3.1
+Special economy laws
+2
+Political advisors
+3
+Design companies
+3.1
+Tank designers
+3.2
+Ship designers
+3.3
+Aircraft designers
+3.4
+Materiel designers
+4
+Industrial concerns
+5
+Military staff
+5.1
+Theorist
+5.2
+Military chiefs
+5.3
+Military high command
+6
+References
+Laws
+[
+edit
+|
+edit source
+]
+This is a community maintained wiki. If you spot a mistake, please help with fixing it.
+A country has exactly one law of each type.
+Conscription laws
+[
+edit
+|
+edit source
+]
+This is a community maintained wiki. If you spot a mistake, please help with fixing it.
+The conscription law of a country mainly determines the available
+Manpower
+for the armed forces. It can be changed for 150
+Political Power
+per level of difference between the old and new laws if the prerequisites are met, though with
+No Step Back
+,
+fascist
+countries can get a sizable discount through the
+State serves the Military
+officer corps
+spirit.
+Besides the
+Political Power
+that needs to be spent, it is fairly safe to increase conscription laws until
+Extensive Conscription
+. Starting with
+Service by Requirement
+, a country begins to experience some economic penalties that get worse with further conscription laws.
+Volunteer Only
+is the default conscription law and the starting one for most countries. However, many countries start on different laws like
+Limited Conscription
+or
+Disarmed Nation
+instead, including
+Germany
+,
+France
+,
+Italy
+, the
+United States
+, and
+Japan
+.
+Modifier
+Disarmed Nation
+Volunteer Only
+Limited Conscription
+Extensive Conscription
+Service by Requirement
+All Adults Serve
+Scraping the Barrel
+Recruitable Population
+1.0%
+1.5%
+2.5%
+5.0%
+10.0%
+20.0%
+25.0%
+Factory Output
+鈥?/td>
+鈥?/td>
+鈥?/td>
+鈥?/td>
+鈭?0%
+鈭?0%
+鈭?0%
+Dockyard Output
+鈥?/td>
+鈥?/td>
+鈥?/td>
+鈥?/td>
+鈭?0%
+鈭?0%
+鈭?0%
+Construction Speed
+鈥?/td>
+鈥?/td>
+鈥?/td>
+鈥?/td>
+鈭?0%
+鈭?0%
+鈭?0%
+Training Time
+鈥?/td>
+鈥?/td>
+鈥?/td>
++10%
++20%
++30%
++50%
+Prerequisites
+鈥?
+Does
+not
+have the Economy law:
+Undisturbed Isolation
+Isolation
+If is
+Hungary
+:
+Does not have
+national spirit
+Treaty of Trianon
+Does
+not
+have the Economy law:
+Undisturbed Isolation
+Isolation
+More than 10%
+War support
+If is
+Australia
+:
+Has completed
+Citizen Military Forces
+If is
+British Raj
+:
+Is fully independent
+If is
+Bulgaria
+:
+Does not have
+national spirit
+Army Restrictions
+If is
+Dominion of Canada
+:
+Has completed
+Commit to the War
+If is
+Hungary
+:
+Does not have
+national spirit
+Treaty of Trianon
+If is
+Spain
+:
+Has not completed
+All Must Bear the Torch
+More than 20%
+War support
+.
+One of the following must be true:
+Current
+ruling party
+is
+Fascist
+.
+Current
+ruling party
+is
+Communist
+.
+All of the following must be true:
+At war.
+Enemy has an estimated army strength ratio of 50% or more compared to this country.
+If is
+Australia
+:
+Has completed
+Citizen Military Forces
+Has completed
+Fight Work or Perish
+If is
+British Raj
+:
+Is fully independent
+If is
+Dominion of Canada
+:
+Has completed
+Commit to the War
+Has completed
+If Day
+If is
+Hungary
+:
+Does not have
+national spirit
+Treaty of Trianon
+If is
+Spain
+:
+Has not completed
+All Must Bear the Torch
+One of the following must be true:
+Current
+ruling party
+is
+Fascist
+.
+Current
+ruling party
+is
+Communist
+.
+All of the following must be true:
+At war.
+Enemy has an estimated army strength ratio of 60% or more compared to this country.
+One of the following must be true:
+More than 60%
+War support
+.
+More than 0% surrender progress.
+If is
+Australia
+:
+Has completed
+Citizen Military Forces
+Has completed
+Fight Work or Perish
+If is
+British Raj
+:
+Is fully independent
+If is
+Bulgaria
+:
+Does not have
+national spirit
+Army Restrictions
+If is
+Dominion of Canada
+:
+One of the following must be true:
+Has completed
+Compromise With Quebec
+Has completed
+Forced Quebec Conscription
+If is
+Hungary
+:
+Does not have
+national spirit
+Treaty of Trianon
+If is
+Spain
+:
+Has not completed
+All Must Bear the Torch
+At war.
+Enemy has an estimated army strength ratio of 70% or more compared to this country.
+One of the following must be true:
+More than 70%
+War support
+.
+More than 0% surrender progress.
+If is
+Australia
+:
+Has completed
+Citizen Military Forces
+Has completed
+Fight Work or Perish
+If is
+British Raj
+:
+Is fully independent
+If is
+Bulgaria
+:
+Does not have
+national spirit
+Army Restrictions
+If is
+Dominion of Canada
+:
+One of the following must be true:
+Has completed
+Compromise With Quebec
+Has completed
+Forced Quebec Conscription
+If is
+Hungary
+:
+Does not have
+national spirit
+Treaty of Trianon
+If is
+Spain
+:
+Has not completed
+All Must Bear the Torch
+At war.
+Enemy has an estimated army strength ratio of 100% or more compared to this country.
+One of the following must be true:
+More than 85%
+War support
+.
+More than 25% surrender progress.
+If is
+Australia
+:
+Has completed
+Citizen Military Forces
+Has completed
+Fight Work or Perish
+If is
+British Raj
+:
+Is fully independent
+If is
+Bulgaria
+:
+Does not have
+national spirit
+Army Restrictions
+If is
+Dominion of Canada
+:
+One of the following must be true:
+Has completed
+Compromise With Quebec
+Has completed
+Forced Quebec Conscription
+If is
+Hungary
+:
+Does not have
+national spirit
+Treaty of Trianon
+If is
+Spain
+:
+Has not completed
+All Must Bear the Torch
+Special conscription laws
+[
+edit
+|
+edit source
+]
+This is a community maintained wiki. If you spot a mistake, please help with fixing it.
+These conscription laws are available only with special requirements, and are generally for specific countries.
+Modifier
+The Chitet
+Swiss Citizen Militias
+Expanded Swiss Citizen Militias
+Recruitable Population
+4.50%
+0.50%
+10.0%
+20.0%
+Factory Output
+-5%
++5%
+鈥?/td>
+鈥?
+Dockyard Output
+-5%
++5%
+鈥?/td>
+鈥?
+Construction Speed
+-5%
++5%
+鈥?/td>
+鈥?
+AI Modifier
+Desired Divisions Factor
+鈥?/td>
+100%
+200%
+Other
+Automatic Increase of Penalties and manpower reserves when at war.
+Can raise the National Levy when at war.
+If at peace, the law changes to the secondary effects
+Cannot train regular forces outside of Citizen Militias, and cannot edit existing templates outside of the Military Readiness decisions
+Switzerland
+relies on their civilian population to take up arms when needed, A limited amount of militias can be trained, and they will have their
+Organization
+initially Capped.
+Once the focus
+Armed Neutrality
+is completed, the militias will be able to be expanded, improved and eventually, deployed using the
+Deploy Citizen Militias
+decision. While the militias are deployed, penalties to the Swiss economy will stack up over time, but they'll reset after they're recalled.
+Prerequisites
+Only for
+Ethiopia
+with
+By Blood Alone
+.
+Can only be removed by completing
+Expand the Mehal Sefari
+Only for
+Switzerland
+with
+By Blood Alone
+.
+Can only be removed by completing one of:
+Professionalize Militias
+Join the Alliance
+Join France
+Jump into Action
+Trade laws
+[
+edit
+|
+edit source
+]
+This is a community maintained wiki. If you spot a mistake, please help with fixing it.
+The trade law of a country determines how many
+resources
+of the controlled provinces are exported. Only the remaining part of the resources can be used for
+production
+or
+trade
+. Other nations can trade the exported resources versus
+Civilian factories
+.
+The more free trade is, the greater the benefits for
+Factory output
+,
+Construction Speed
+and
+Research Speed
+. A country's trade law can be changed for 150
+Political Power
+if the prerequisites are met.
+Export Focus
+is the default trade law and the starting one for most countries. However, some countries start with
+Limited Exports
+or
+Free Trade
+instead, including
+Germany
+,
+Italy
+, the
+United States
+,
+China
+, and
+Japan
+.
+Communist China
+is the only country that starts with
+Closed Economy
+.
+Modifier
+Free Trade
+Export Focus
+Limited Exports
+Closed Economy
+Resources to Market
++80%
++50%
++25%
+0%
+Factory output
++15%
++10%
++5%
+鈥?
+Dockyard output
++15%
++10%
++5%
+鈥?
+Construction Speed
++15%
++10%
++5%
+鈥?
+Research Speed
++10%
++5%
++1%
+鈥?
+Civilian Intel to Others
++40%
++20%
++10%
+鈥?
+Navy Intel to Others
++20%
++10%
++5%
+鈥?
+Base construction line speed boost
++5%
++10%
+-5%
+-10%
+Prerequisites
+If is
+Spain
+with
+La R茅sistance
+:
+Has
+not
+completed
+All Must Bear the Torch
+If is
+China
+:
+Does
+not
+have
+National Spirit
+:
+Nine Power Treaty
+If is
+Spain
+with
+La R茅sistance
+:
+Has
+not
+completed
+All Must Bear the Torch
+One of the following:
+If current
+ruling party
+is
+Democratic
+:
+At war.
+Any enemy country has more than 20% of this country's total number of factories.
+If current
+ruling party
+is
+not
+Democratic
+:
+Has one of the following economy laws:
+Partial Mobilization
+War Economy
+Total Mobilization
+If is
+British Raj
+with
+Graveyard of Empires
+:
+Has completed
+Raise Import Duties
+If is
+China
+:
+Does
+not
+have
+National Spirit
+:
+Nine Power Treaty
+If is
+Spain
+with
+La R茅sistance
+:
+Has
+not
+completed
+All Must Bear the Torch
+At war
+Either:
+Current
+ruling party
+is
+Fascist
+or
+Communist
+Has completed
+The State General Mobilization Law
+Has one of the following economy laws:
+War Economy
+Total Mobilization
+National Defense State
+If is
+Soviet Union
+:
+Has
+not
+signed the
+Molotov-Ribbentrop Pact
+If is
+China
+:
+Does
+not
+have
+National Spirit
+:
+Nine Power Treaty
+Special trade laws
+[
+edit
+|
+edit source
+]
+This is a community maintained wiki. If you spot a mistake, please help with fixing it.
+These trade laws are available only with special requirements, and are generally for specific countries.
+Modifier
+Embargoed Economy
+Autarky
+Special Economic Zones
+Resources to Market
++25%
++15%
++90%
+Factory output
+鈥?/td>
+鈥?/td>
++5%
++20%
+Dockyard output
+鈥?/td>
+鈥?/td>
++5%
++20%
+Construction Speed
+鈥?/td>
++5%
++10%
++20%
+Research Speed
+鈥?/td>
++5%
++5%
++15%
+to
+Industry
+Civilian Intel to Others
++40%
+鈥?/td>
++80%
+Navy Intel to Others
++40%
+鈥?/td>
++30%
+Base construction line speed boost
++15%
+鈥?/td>
+鈥?
+Consumer Goods Factories
++5%
+鈥?/td>
+鈥?
+Agency Upgrade Time
++15%
+鈥?/td>
+鈥?
+Lend lease tension limit
+鈥?/td>
++20%
++20%
+鈥?
+Faction trade deal opinion factor
+鈥?/td>
++25%
++50%
+鈥?
+Trade extra resource per factory
+鈥?/td>
+鈥?/td>
++1
+Prerequisites
+Only for
+Poland
+.
+Can only be removed manually if at least one of the following is true:
+Is at war
+Has completed
+Integrate Gda艅sk Industries
+Has completed
+Expand the Gdynia Seaport
+Owns neither
+Danzig
+(85)
+nor
+Gdynia
+(807)
+Owns any coastal state that is neither
+Danzig
+(85)
+nor
+Gdynia
+(807)
+Only for
+Germany
+.
+Is obtained after completing
+Autarky Efforts
+Is upgraded after completing
+Autarky Achieved
+Only for
+British Raj
+or its successors.
+Is obtained after completing
+Special Economic Zones
+Note: If you change out of this Trade Law to another Trade Law, this law will remain in the Trade Law list but will have an Always False prerequisite.  Once changed, it will be permanently unavailable
+Economy laws
+[
+edit
+|
+edit source
+]
+This is a community maintained wiki. If you spot a mistake, please help with fixing it.
+The economy law of a country defines how many
+civilian factories
+of all
+factories
+are needed to produce
+Consumer Goods
+, the
+Construction Speed
+and conversion costs of factories, and the efficiency of
+Fuel
+production. It can be changed for 150
+political power
+if the prerequisites are met.
+Higher tiers of economy law are generally more efficient than lower ones, especially when constructing factories. Although
+Total Mobilization
+reduces the amount of recruitable population available for
+Manpower
+, the effect can be counteracted with the
+Women in the Workforce
+decision
+that becomes available for 100
+Political Power
+(though it will need to be retaken should the country no longer be at war).
+Civilian Economy
+is the default economy law and the starting one for most countries. Some countries start on
+Partial Mobilization
+, however, including
+Germany
+,
+Italy
+,
+Japan
+, and
+Communist China
+.
+Modifier
+Civilian Economy
+Early Mobilization
+Partial Mobilization
+War Economy
+Total Mobilization
+Consumer Goods Factories
++35%
++30%
++25%
++20%
++15%
+Civilian Factory Construction Speed
+鈭?0%
+鈭?0%
+鈥?/td>
+鈥?/td>
+鈥?
+Military Factory Construction Speed
+鈭?0%
+鈭?0%
++10%
++20%
++30%
+Civilian Factory Conversion Cost
++30%
+鈥?/td>
+鈭?0%
+鈭?0%
+鈭?0%
+Military Factory Conversion Cost
++30%
+鈥?/td>
+鈭?0%
+鈭?0%
+鈭?0%
+Recruitable Population
+鈥?/td>
+鈥?/td>
+鈥?/td>
+鈥?/td>
+鈭?%
+Fuel Gain Per Oil
+鈭?0%
+鈭?5%
+鈭?0%
+鈥?/td>
+鈥?
+Fuel Capacity
+鈭?5%
+鈥?/td>
+鈥?/td>
+鈥?/td>
+鈥?
+Factory Energy Consumption
+鈭?0%
+鈭?5%
+鈥?/td>
++25%
++50%
+Prerequisites
+鈥?
+More than
+15%
+War support
+If is
+Hungary
+:
+Does
+not
+have
+National Spirit
+:
+Treaty of Trianon
+If is the
+United States
+, has completed
+Limited Intervention
+, and is
+not
+in a defensive war:
+More than
+30%
+War support
+Requires the support of at least 58 Senators and 261 Representatives!
+If is
+Turkey
+with
+Battle for the Bosporus
+:
+Devaluation of the Turkish Lira
+is not active
+Worsening Recession
+is not active
+Imminent Depression
+is not active
+More than
+25%
+War support
+If is
+Hungary
+:
+One of the following:
+Does
+not
+have
+National Spirit
+:
+Treaty of Trianon
+Has completed
+Secret Rearmament
+If is the
+United States
+, has completed
+Limited Intervention
+, and is
+not
+in a defensive war:
+More than
+50%
+War support
+Requires the support of at least 58 Senators and 261 Representatives!
+If is
+Turkey
+with
+Battle for the Bosporus
+:
+Devaluation of the Turkish Lira
+is not active
+Worsening Recession
+is not active
+Imminent Depression
+is not active
+More than
+50%
+War support
+.
+One of the following must be true:
+Current ruling party is
+Fascist
+or
+Communist
+.
+All of the following must be true:
+At war
+Any enemy country has more than
+40%
+of this country鈥檚 total number of factories
+If is
+Hungary
+:
+Does
+not
+have
+National Spirit
+:
+Treaty of Trianon
+If is the
+United States
+, has completed
+Limited Intervention
+, and is
+not
+in a defensive war:
+More than
+75%
+War support
+Requires the support of at least 58 Senators and 261 Representatives!
+If is
+Turkey
+with
+Battle for the Bosporus
+:
+Devaluation of the Turkish Lira
+is not active
+Worsening Recession
+is not active
+Imminent Depression
+is not active
+At war
+More than
+80%
+War support
+Any enemy country has more than
+50%
+of this country鈥檚 total number of factories
+If is
+Hungary
+:
+Does
+not
+have
+National Spirit
+:
+Treaty of Trianon
+If is the
+United States
+, has completed
+Limited Intervention
+, and is
+not
+in a defensive war:
+More than
+90%
+War support
+Requires the support of at least 58 Senators and 261 Representatives!
+If is
+Turkey
+with
+Battle for the Bosporus
+:
+Devaluation of the Turkish Lira
+is not active
+Worsening Recession
+is not active
+Imminent Depression
+is not active
+Special economy laws
+[
+edit
+|
+edit source
+]
+This is a community maintained wiki. If you spot a mistake, please help with fixing it.
+These trade laws are available only with special requirements, and are generally for specific countries.
+Modifier
+Undisturbed Isolation
+Isolation
+Collectivized Society
+New Economic Policy
+Totaler Krieg
+Capital Investment Model
+National Defense State
+War Communism
+Consumer Goods Factories
++50%
++40%
++15%
++15%
++10%
++15.0%
++15.0%
++15.0%
++15.0%
+Civilian Factory Construction Speed
+鈭?0%
+鈭?0%
++15%
+鈥?/td>
+鈥?/td>
++15%
+鈥?/td>
+-10%
+Military Factory Construction Speed
+鈭?0%
+鈭?0%
++30%
+鈥?/td>
++20%
+鈭?5%
++30%
++20%
+Dockyard Construction Speed
+鈭?0%
+鈭?0%
+鈥?/td>
+鈥?/td>
++20%
+鈥?/td>
+鈥?/td>
++20%
+Infrastructure Construction Speed
+鈥?/td>
+鈥?/td>
+鈥?/td>
+鈥?/td>
+鈥?/td>
++15%
+鈥?/td>
+鈥?
+Construction Speed
+鈥?/td>
+鈥?/td>
+鈥?/td>
+-15%
+-20%
+鈥?/td>
+鈥?/td>
+鈥?/td>
+鈥?
+Civilian Factory Conversion Cost
++50%
++40%
+鈭?0%
+鈥?/td>
+鈭?0%
+鈭?0%
+鈭?0%
+鈥?
+Military Factory Conversion Cost
++50%
++40%
+鈭?0%
+鈥?/td>
+鈭?0%
+鈥?/td>
+鈭?0%
+鈥?
+Factory Output
+鈥?/td>
+鈥?/td>
++70%
+鈥?/td>
++5%
+鈥?/td>
+鈥?/td>
++5%
+Dockyard Output
+鈥?/td>
+鈥?/td>
++70%
+鈥?/td>
++5%
+鈥?/td>
+鈥?/td>
++5%
+Max Factories In A State
+鈥?/td>
+鈥?/td>
++10%
+鈥?/td>
++10%
+鈥?/td>
+鈥?/td>
+鈥?/td>
++10%
+Production Efficiency Retention
+鈥?/td>
+鈥?/td>
++10%
+鈥?/td>
+鈥?/td>
+鈥?/td>
+鈥?/td>
+鈥?
+Production Efficiency Cap
+鈥?/td>
+鈥?/td>
+鈭?0%
+鈥?/td>
+鈥?/td>
+鈥?/td>
+鈥?/td>
+鈥?
+Production Efficiency Growth
+鈥?/td>
+鈥?/td>
+鈭?0%
+鈥?/td>
+鈥?/td>
+鈥?/td>
+鈥?/td>
+鈥?
+Recruitable Population
+鈥?/td>
+鈥?/td>
+鈥?/td>
+鈥?/td>
+鈭?%
+鈥?/td>
+鈥?/td>
++2%
+Fuel Gain Per Oil
+鈭?0%
+鈭?0%
+鈥?/td>
+鈥?/td>
+鈥?/td>
+鈥?/td>
+鈥?/td>
+鈥?
+Fuel Capacity
+鈭?5%
+鈭?5%
+鈥?/td>
+鈥?/td>
+鈥?/td>
+鈥?/td>
+鈥?/td>
+鈥?
+Agency Upgrade Time
++100%
++80%
+鈥?/td>
+鈥?/td>
+鈥?/td>
+鈥?/td>
+鈥?/td>
+鈥?
+Resistance Target
+鈥?/td>
+鈥?/td>
+鈭?0%
+鈥?/td>
+鈥?/td>
+鈥?/td>
+鈥?/td>
+鈥?
+Research Speed
+鈥?/td>
+鈥?/td>
+鈭?0%
+鈥?/td>
+鈥?/td>
+鈥?/td>
+鈥?/td>
+鈥?
+Trade
+Deal Opinion Factor
+鈥?/td>
+鈥?/td>
+鈥?/td>
+鈥?/td>
+鈥?/td>
++75%
+鈥?/td>
+鈥?
+Stability
+鈥?/td>
+鈥?/td>
+鈥?/td>
+鈥?/td>
+鈥?/td>
+-15%
+鈥?/td>
+-10%
+War support
+鈥?/td>
+鈥?/td>
+鈥?/td>
+鈥?/td>
+鈥?/td>
+鈥?/td>
++10%
+鈥?
+Political Power
+鈥?/td>
+鈥?/td>
+鈥?/td>
+鈥?/td>
+鈥?/td>
+-10%
+鈥?/td>
+鈥?
+Factory Energy Consumption
+-30%
+-30%
++45%
++25%
++35%
++50%
++35%
++45%
++30%
+Prerequisites
+Only for the
+United States
+at 1936 game start.
+Can only be removed manually if at least one of the following is true:
+[1]
+At least
+50%
+War support
+Is at war
+Has completed
+Limited Intervention
+Only for:
+Iceland
+at 1936 game start
+The
+United States
+either at the 1939 game start or by having the
+Undisturbed Isolation
+law when receiving the
+"Election: Public Demands Rearmament"
+event.
+Can only be removed manually if at least one of the following is true:
+[1]
+At least
+75%
+War support
+Is at war
+Has completed
+Limited Intervention
+Is removed after completing one of:
+International Trade
+United We Stand
+International Relations
+Only for
+Anarchist Spain
+.
+Is obtained after completing
+All Must Bear the Torch
+Cannot Remove
+Only for the
+Soviet Union
+.
+Is obtained after completing
+Back to the NEP
+Is modified after completing
+A Sustainable Economy
+May only remove if one of the following is true:
+More than
+75%
+surrender progress
+Current
+ruling party
+is
+not
+Communist
+Only for
+Germany
+.
+Is obtained after completing
+Totaler Krieg
+Requires the following to be true:
+Has completed
+Totaler Krieg
+Is at war with a major
+Has more than
+80%
+War support
+An enemy country has more than
+50%
+total factories than
+Germany
+(The requirements for the law is slightly different from the requirements of the focus)
+Only for the
+British Raj
+or its successors.
+Is obtained after completing
+New Economic Policy
+Note: If you change out of this Economy Law to another Economy Law, this law will be removed, and you will not be able to get it back.  Plan wisely.
+Only for
+Japan
+Is obtained after completing
+Prepare for the Final War
+or
+National Defense State
+and replaces "Total Mobilization".
+If removed, It also requires:
+One of the following:
+At war with a Major Country
+More than
+75%
+Any any country:
+Has more than
+50%
+of
+Japan
+'s total number of factories
+Only for
+Communist
+Japan
+Is obtained after completing
+War Communism
+The starting economy laws of the United States modifies the
+World Tension
+threshold of some
+diplomatic actions
+:
+Law
+Tension limit
+Join Faction
+Send Volunteers
+Lend-Lease
+Guarantee
+Generate war goal
+Undisturbed Isolation
+20%
+20%
+50%
+75%
+100%
+Isolation
+20%
+20%
+10%
+50%
+100%
+Political advisors
+[
+edit
+|
+edit source
+]
+This is a community maintained wiki. If you spot a mistake, please help with fixing it.
+See also:
+List of political advisors
+Up to three political advisors may be chosen. Every advisor has at least one trait, most of them have one of these common ones:
+Common traits
+Trait
+Effects
+Armaments Organizer
+Civilian
+to
+Military factory
+conversion cost:
+鈭?0.00%
+Supply hub
+construction speed:
++10.00%
+Backroom Backstabber
+Subversive activities
+cost:
+鈭?5%
+Ideology
+drift defense:
++25.0%
+Captain of Industry
+Civilian factory
+construction speed:
++10.00%
+Infrastructure
+construction speed:
++10.00%
+Railway
+construction speed:
++10.00%
+Synthetic refinery
+construction speed:
++10.00%
+Communist Revolutionary
+Daily
+Communism
+Support:
++0.10
+Compassionate Gentleman
+Improve relations
+Opinion
+:
++15%
+Compliance Growth:
++2%
+Resistance Target:
+鈭?%
+Democratic Reformer
+Daily
+Democracy
+Support:
++0.10
+Economist
+Production efficiency cap
+:
++5.00%
+Editor
+Political Power
+Gain:
++5%
+Stability
+:
++5.00%
+Fascist Demagogue
+Daily
+Fascism
+Support:
++0.10
+Financial Expert
+Consumer Goods Factories:
+-5%
+Fortification Engineer
+Land fort
+construction speed:
++20%
+Coastal fort
+construction speed:
++20%
+Anti-air
+construction speed:
++20%
+Humble Appeaser
+War support
+:
+-5.00%
+Stability
+:
++10.00%
+Ideological Crusader
+Same ideology monthly
+Opinion
+:
++100%
+Party Popularity
+Stability
+Modifier:
++10%
+Illusive Gentleman
+Operative slots
+:
++1
+Agency upgrade time
+:
+鈭?5%
+Liberal Journalist
+Daily
+Democracy
+Support:
++0.05
+Political Power
+Gain:
++5%
+Marxist Fundamentalist
+Daily
+Communism
+Support:
++0.10
+Stability
+:
++15.00%
+National Integralist
+Political Power
+Gain:
++15%
+Weekly
+Stability
+:
++0.1%
+Patriotic Socialist
+Daily
+Communism
+Support:
++0.05
+War support
+:
++10.00%
+Popular Figurehead
+Stability
+:
++15.00%
+Prince of Terror
+Damage to Garrisons:
+鈭?5.00%
+Foreign subversive activities efficiency:
+鈭?0%
+Non-core
+Manpower
+:
++2%
+Propaganda Master
+War support
+:
++10.00%
+Quartermaster General
+Air base
+construction speed:
++15%
+Naval base
+construction speed:
++15%
+Rocket site
+construction speed:
++15%
+Radar station
+construction speed:
++15%
+Nuclear reactor
+construction speed:
++15%
+Revolutionary Poet
+Daily
+Communism
+Support:
++0.05
+Political Power
+Gain:
++15%
+Silent Workhorse
+Political Power
+Gain:
++15%
+Smooth-Talking Charmer
+Improve relations maintain cost:
+鈭?0%
+Trade deal
+Opinion
+factor:
++10.00%
+Staunch Monarchist
+Daily Support for
+Unaligned
+:
++0.10
+Technocrat
+Civilian factory
+construction speed:
++5.00%
+Research Speed:
++5.00%
+Traditionalist Theorist
+Daily Support for
+Unaligned
+:
++0.05
+Political Power
+Gain:
++15%
+War Industrialist
+Military factory
+construction speed:
++10%
+Naval dockyard
+construction speed:
++10%
+Fuel silo
+construction speed:
++10%
+Design companies
+[
+edit
+|
+edit source
+]
+This is a community maintained wiki. If you spot a mistake, please help with fixing it.
+See also:
+List of design companies
+See also:
+Military Industrial Organizations
+Design companies provide bonuses to researched equipment. A country can select:
+one each of tank, naval, air, and materiel designers.
+With
+Arms Against Tyranny
+, these are not available and are instead replaced with
+military industrial organizations
+.
+one industrial concern.
+Bonuses from the tank, naval, and air design companies are only applied to equipment designed
+while
+the design company was hired. For example, if a tank design company is hired 1 day before a tank is designed, that tank will receive the design company's bonuses permanently. (However, it may be, in some cases, that which bonus is applied is instead determined by which design company was active on the in-game day when the research unlocking the chassis was completed.) If a design company is replaced with another, only the new design company's bonuses will be applied to any equipment designed or researched. A design company's bonuses will never be applied to any equipment that was fully researched
+prior
+to hiring the design company. (Note that this is different from national spirits which modify production cost: those are applied to all equipment produced while they are active, regardless of when it was researched or designed.) Design company bonuses are also applied to
+variants
+.
+This can be manipulated to maximize useful bonuses by designing tanks, ships, and airplanes at the time when the design company which gives the best bonuses for that type of equipment is hired.
+Tank designers
+[
+edit
+|
+edit source
+]
+This is a community maintained wiki. If you spot a mistake, please help with fixing it.
+See also:
+List of tank designers
+Available only with the
+Arms Against Tyranny
+DLC
+disabled
+.
+For tank designers with
+Arms Against Tyranny
+, see
+Military industrial organization
+.
+Companies also typically have
++15%
+or
++10%
+Armor
+research speed.
+Common traits
+Trait
+Effects
+Heavy Tank Designer
+Armor technology
+:
+Armor:
++5%
+Hard Attack:
++5%
+Infantry Tank Designer
+Armor technology
+:
+Soft Attack:
++5%
+Armor:
++5%
+Medium Tank Designer
+Armor technology
+:
+Reliability:
++5%
+Soft Attack:
++5%
+Mobile Tank Designer
+Armor technology
+:
+Maximum Speed:
++5%
+Reliability:
++10%
+Tank Designer
+Armor technology
+:
+Reliability:
++5%
+Ship designers
+[
+edit
+|
+edit source
+]
+This is a community maintained wiki. If you spot a mistake, please help with fixing it.
+See also:
+List of ship designers
+Available only with the
+Arms Against Tyranny
+DLC
+disabled
+.
+For ship designers with
+Arms Against Tyranny
+, see
+Military industrial organization
+.
+Companies also typically have
++15%
+or
++10%
+Naval
+research speed.
+Common traits
+Trait
+Effects
+Atlantic Fleet Designer
+Carrier
+:
+Armor:
++50%
+HP:
++10%
+Capital Ships
+:
+Armor:
++10%
+Heavy Attack:
++10%
+Battlefleet Designer
+Capital Ships
+:
+Armor:
++15%
+Heavy Attack:
++15%
+Screens
+:
+Torpedo attack:
++25%
+Sub detection:
+-25%
+Coastal Defense Fleet Designer
+Carrier
+:
+Production cost
+:
+-25.00%
+Max Range:
+-50%
+Capital Ships
+:
+Production cost
+:
+-25.00%
+Armor:
+-20%
+Heavy Attack:
+-20%
+Max Range:
+-50%
+Screens
+:
+Production cost
+:
+-25.00%
+Max Range:
+-50%
+Submarine
+:
+Production cost
+:
+-25.00%
+Max Range:
+-50%
+Escort Fleet Designer
+Screens
+:
+Max Range:
++35%
+Sub detection:
++10%
+Max Speed:
++10%
+Production cost
+:
++10.00%
+Mediterranean Fleet Designer
+Capital Ships
+:
+Max Range:
+-25%
+Max Speed:
++10%
+Screens
+:
+Max Range:
+-25%
+Max Speed:
++10%
+Pacific Fleet Designer
+Carrier
+:
+Deck size:
++1
+Armor:
+-15%
+Max Range:
++25%
+Capital Ships
+:
+Max Range:
++25%
+Screens
+:
+Max Range:
++25%
+Submarine
+:
+Max Range:
++25%
+Ship Designer
+None
+Raiding Fleet Designer
+Carrier
+:
+Surface Visibility:
+-10.00%
+Max Speed:
++10%
+Capital Ships
+:
+Surface Visibility:
+-10.00%
+Max Speed:
++10%
+Heavy Attack:
+-10%
+Screens
+:
+Surface Visibility:
+-10.00%
+Max Speed:
++10%
+Submarine
+:
+Sub Visibility:
+-10.00%
+Surface Visibility:
+-10.00%
+Max Speed:
++10%
+Aircraft designers
+[
+edit
+|
+edit source
+]
+This is a community maintained wiki. If you spot a mistake, please help with fixing it.
+See also:
+List of aircraft designers
+Available only with the
+Arms Against Tyranny
+DLC
+disabled
+.
+For aircraft designers with
+Arms Against Tyranny
+, see
+Military industrial organization
+.
+Companies also typically have
++15%
+or
++10%
+Air
+research speed.
+Common traits
+Trait
+Effects
+Aircraft Designer
+None
+CAS Designer
+Close Air Support
+:
+Ground Attack:
++10%
+Reliability:
++10%
+Carrier Close Air Support
+:
+Ground Attack:
++10%
+Reliability:
++10%
+Heavy Aircraft Designer
+Strategic Bomber
+:
+Strat. Bombing:
++10%
+Light Aircraft Designer
+Fighter
+:
+Agility:
++10%
+Max Speed:
++10%
+Carrier Fighter
+:
+Agility:
++10%
+Max Speed:
++10%
+Medium Aircraft Designer
+Heavy Fighter
+:
+Reliability:
++20%
+Tactical Bomber
+:
+Reliability:
++20%
+Scout Plane
+:
+Reliability:
++20%
+Naval Aircraft Designer
+Naval Bomber
+:
+Range:
++10%
+Naval Attack:
++10%
+Carrier Naval Bomber
+:
+Range:
++10%
+Naval Attack:
++10%
+Carrier Fighter
+:
+Range:
++10%
+Agility:
++10%
+Carrier Close Air Support
+:
+Range:
++10%
+Naval Attack:
++10%
+Materiel designers
+[
+edit
+|
+edit source
+]
+This is a community maintained wiki. If you spot a mistake, please help with fixing it.
+See also:
+List of materiel designers
+Available only with the
+Arms Against Tyranny
+DLC
+disabled
+.
+For materiel designers with
+Arms Against Tyranny
+, see
+Military industrial organization
+.
+Companies also typically have
++15%
+or
++10%
+research speed.
+Common traits
+Trait
+Effects
+Artillery Designer
+None
+Infantry Equipment Designer
+None
+Motorized Equipment Designer
+None
+Support Equipment Designer
+None
+Industrial concerns
+[
+edit
+|
+edit source
+]
+This is a community maintained wiki. If you spot a mistake, please help with fixing it.
+See also:
+List of industrial concerns
+Common Concerns
+Trait
+Effects
+Electronics Concern
+Electronics
+Research Speed:
++15%
+Industrial Concern
+Industrial
+Research Speed:
++15%
+Railway Company
+Railway
+construction speed:
++15.00%
+Supply Hub
+construction speed:
++15.00%
+Train
+:
+Production cost
+:
+-25.00%
+Armor:
++10%
+Refining Concern
+Industrial
+Research Speed:
++10%
+Synthetic resources
+Research Speed:
++15%
+Military staff
+[
+edit
+|
+edit source
+]
+This is a community maintained wiki. If you spot a mistake, please help with fixing it.
+Theorist
+[
+edit
+|
+edit source
+]
+This is a community maintained wiki. If you spot a mistake, please help with fixing it.
+See also:
+List of theorists
+Up to 1 theorist may be chosen.
+Common traits
+Trait
+Effects
+Air Warfare Theorist
+Air Doctrine
+Cost:
+-10%
+Assault Aviation
+Operational Integrity Doctrine
+Cost:
+-15%
+Blitzkrieg Theorist
+Armor technology
+Max Speed:
++10%
+Mobile Warfare Doctrine
+Cost:
+-15%
+Close Air Support Proponent
+Battlefield Support Doctrine
+Cost:
+-15%
+Dive Bomber
+Close Air Support
+Ground Attack:
++10%
+Air Doctrine
+Cost:
+-10%
+Grand Battleplan Expert
+Grand Battle Plan Doctrine
+Cost:
+-15%
+Grand Fleet Proponent
+Fleet in Being Doctrine
+Cost:
+-15%
+Mass Assault Expert
+Mass Assault Doctrine
+Cost:
+-15%
+Military Theorist
+Land Doctrine
+Cost:
+-10%
+Mobile Warfare Expert
+Mobile Warfare Doctrine
+Cost:
+-15%
+Naval Aviation Pioneer
+Base Strike Doctrine
+Cost:
+-15%
+Naval Theorist
+Naval Doctrine
+Cost:
+-10%
+Nuclear Scientist
+Nuclear Research
+Speed:
++15%
+Rocket Scientist
+Rocket Research
+Speed:
++15%
+Submarine Specialist
+Trade Interdiction
+Cost:
+-15%
+Superior Firepower Expert
+Superior Firepower
+Cost:
+-15%
+Victory Through Airpower
+Strategic Destruction
+Cost:
+-15%
+Military chiefs
+[
+edit
+|
+edit source
+]
+This is a community maintained wiki. If you spot a mistake, please help with fixing it.
+See also:
+List of military chiefs
+All countries can have one Chief of Army, one Chief of Navy, and one Chief of Airforce. In addition to their specific effects, Chiefs of Army provide daily
+Army experience
+, Chiefs of Navy provide daily
+Navy experience
+, and Chiefs of Airforce provide daily
+Air experience
+. Specialists provide
++0.2
+daily experience, Experts provide
++0.3
+daily experience, and Geniuses provide
++0.4
+daily experience.
+Chief of Army
+Trait
+Modifiers
+Specialist
+Expert
+Genius
+Old Guard
+Experience gain army factor
+Political power gain
+鈥?0%
++10%
+Army Defense
+Army defense factor
++5%
++10%
++15%
+Army Drill
+Division training time
+鈥?%
+鈥?0%
+鈥?5%
+Army Maneuver
+Divisions speed
++5%
++10%
++15%
+Army Morale
+Division recovery rate
++4%
++8%
++12%
+Army Offense
+Army attack factor
++5%
++10%
++15%
+Army Organization
+Division organization
++4%
++8%
++12%
+Army Planning
+Planning speed
++5%
++10%
++15%
+Army Reformer
+Experience gain army factor
++5%
++10%
++15%
+Chief of Navy
+Trait
+Modifiers
+Specialist
+Expert
+Genius
+Old Guard
+Experience gain navy factor
+Political power gain
+鈥?0%
++10%
+Commerce Raiding
+Convoy raiding efficiency
++10%
++15%
++20%
+Decisive Battle
+Capital ship attack
+Capital ship armor
+Screen attack
+Screen defense
++5%
++5%
++5%
++5%
++10%
++10%
++10%
++10%
++15%
++15%
++15%
++15%
+Naval Aviation
+Navy carrier air agility factor
+Navy carrier air attack factor
+Navy carrier air targeting factor
++4%
++3%
++3%
++8%
++6%
++7%
++15%
++10%
++12%
+Naval Maneuver
+Naval speed
++5%
++10%
++15%
+Naval Reformer
+Experience gain navy factor
++5%
++10%
++15%
+Chief of Airforce
+Trait
+Modifiers
+Specialist
+Expert
+Genius
+Air Reformer
+Experience gain air factor
++5%
++10%
++15%
+Air Safety
+Air accidents chance
+鈥?%
+鈥?0%
+鈥?5%
+All-Weather
+Bad weather penalty
+鈥?0%
+鈥?0%
+鈥?0%
+Ground Support
+Air support
++5%
++10%
++15%
+Night Operations
+Night operations penalty
+鈥?0%
+鈥?0%
+鈥?0%
+For chief of army, the attack modifier will be applied on both soft and hard attack regardless of being the attacker or the defender, and the defense modifier will be applied on defense and breakthrough depending on being the attacker or the defender.
+Military high command
+[
+edit
+|
+edit source
+]
+This is a community maintained wiki. If you spot a mistake, please help with fixing it.
+See also:
+List of military high command
+Up to three members of the military high command may be chosen for
+Military High Command
+positions, giving global bonuses to their branch of service.
+Some military high command advisers give bonuses to particular types of
+combat battalions
+. Their effects are weighed by the ratio of the target battalion count in the combat battalions of the target division. The attack modifier will be applied on both soft and hard attack regardless of being the attacker or the defender, and the defense modifier will be applied on defense and breakthrough depending on being the attacker or the defender. In some cases two advisers may offer the same type of bonus, and these are additive.
+Military high command
+Trait
+Modifiers
+Specialist
+Expert
+Genius
+Air Combat Training
+Ace generation chance
+鈥?/td>
++10%
++15%
+Air Superiority
+Air superiority agility
+Air superiority attack
+Air superiority defense
+鈥?
++3%
++3%
++3%
++5%
++5%
++5%
+Airborne Assault
+Paradrop agility
+Paradrop attack
+Paradrop defense
++3%
++1%
++3%
++5%
++2%
++5%
+鈥?
+Amphibious Assault
+Amphibious invasion speed
++5%
++10%
++15%
+Anti-Submarine
+Submarine detection
++10%
++15%
+鈥?
+Armor
+Armor division attack
+Armor division defense
++5%
++5%
++10%
++10%
++15%
++15%
+Army Logistics
+Division attrition
+鈥?%
+鈥?%
+鈥?
+Army Regrouping
+Division recovery rate
++4%
++8%
++12%
+Artillery
+Artillery attack
+Artillery defense
++10%
++5%
++15%
++10%
++20%
++15%
+Bomber Interception
+Interception agility
+Interception attack
+Interception defense
++2%
++2%
++2%
++3%
++3%
++3%
+鈥?
+Capital Ships
+Capital ship armor
+Capital ship attack
++5%
++5%
++10%
++10%
+鈥?
+Carriers
+Sortie efficiency
+鈥?/td>
++15%
+鈥?
+Cavalry
+Cavalry attack
+Cavalry defense
+Motorized attack
+Motorized defense
++5%
++5%
++5%
++5%
++10%
++10%
++10%
++10%
++15%
++15%
++15%
++15%
+Close Air Support
+Close air support agility
+Close air support attack
+Close air support defense
+鈥?
++3%
++3%
++3%
++5%
++5%
++5%
+Commando
+Special forces attack
+Special forces cap
++5%
++3
++10%
++6
++15%
++9
+Concealment
+Enemy air support
+鈥?%
+鈥?0%
+鈥?5%
+Entrenchment
+Entrenchment speed
+鈥?/td>
++8%
+鈥?
+Fleet Logistics
+Naval max range factor
++5%
++10%
+鈥?
+Infantry
+Infantry division attack
+Infantry division defense
++5%
++10%
++10%
++15%
++15%
++20%
+Naval Air Defense
+Naval AA attack
++8%
++15%
+鈥?
+Naval Aviation
+Naval air agility from carriers
+Naval air attacks from carriers
+Naval air targeting from carriers
+鈥?
++8%
++6%
++7%
++15%
++10%
++12%
+Naval Strike
+Naval agility
+Naval bombing
+Naval targeting
++2%
++2%
++2%
++3%
++3%
++3%
+鈥?
+Screens
+Screen attack
+Screen defense
+鈥?
++10%
++15%
+鈥?
+Strategic Bombing
+Bomber agility
+Bomber attack
+Bomber defense
+Strategic bombing
+鈥?
++2%
++2%
++2%
++5%
++3%
++3%
++3%
++9%
+Submarines
+Submarine attack
+Submarine defense
+鈥?
++15%
++10%
+鈥?
+Tactical Bombing
+Ground support
+鈥?/td>
++15%
+鈥?
+References
+[
+edit
+|
+edit source
+]
+鈫?
+1.0
+1.1
+See in
+/Hearts of Iron IV/common/ideas/_economic.txt
+Mechanics
+Politics
+Ideology
+鈥?
+Faction
+鈥?
+National focus
+鈥?
+Ideas
+鈥?
+Government
+鈥?
+Puppet
+鈥?
+Governments in exile
+鈥?
+Diplomacy
+鈥?
+World tension
+鈥?
+Civil war
+鈥?
+Occupation
+鈥?
+Balance of power
+Production
+Trade
+鈥?
+Production
+鈥?
+Construction
+鈥?
+Equipment
+鈥?
+Fuel
+鈥?
+Military industrial organization
+鈥?
+International market
+Research and technology
+Research
+鈥?
+Infantry technology
+鈥?
+Support companies technology
+鈥?
+Armor technology
+(also
+without No Step Back
+) 鈥?
+Artillery technology
+鈥?
+Land doctrine
+鈥?
+Special forces doctrine
+鈥?
+Naval technology
+(also
+without Man the Guns
+) 鈥?
+Naval support technology
+鈥?
+Naval doctrine
+鈥?
+Air technology
+(also
+without By Blood Alone
+) 鈥?
+Air doctrine
+鈥?
+Engineering technology
+鈥?
+Industry technology
+鈥?
+Special project
+鈥?
+Scientist
+Military and warfare
+Warfare
+鈥?
+Peace conference
+鈥?
+Land units
+鈥?
+Land warfare
+鈥?
+Division designer
+鈥?
+Tank designer
+鈥?
+Army planner
+鈥?
+Command group
+鈥?
+Commander
+鈥?
+Battle plan
+鈥?
+Combat tactics
+鈥?
+Ship
+鈥?
+Ship designer
+(
+London Naval Treaty
+) 鈥?
+Naval warfare
+鈥?
+Aircraft designer
+鈥?
+Air warfare
+鈥?
+Experience
+鈥?
+Officer corps
+鈥?
+Attrition and accidents
+鈥?
+Logistics
+鈥?
+Manpower
+鈥?
+Nuclear bomb
+鈥?
+Raid
+Espionage
+Intel
+鈥?
+Intelligence agency
+鈥?
+Operatives
+鈥?
+Missions
+鈥?
+Operations
+Map
+Map
+鈥?
+Province
+鈥?
+Terrain
+鈥?
+Weather
+鈥?
+State
+Events and Decisions
+Events
+鈥?
+Decisions
+Retrieved from "
+"
+Categories
+:
+1.12
+Game concepts
+Ideas
+Hidden category:
+Articles with potentially outdated sections
+This page was last edited on 18 August 2026, at 15:05.
+Content is available under
+Attribution-ShareAlike 3.0
+unless otherwise noted.
+About Hearts of Iron 4 Wiki
+Mobile view
+Games
+Discover
+Our Brands
+Browse
+Play
+on Paradox technology
+Community
+Paradox Forums
+Paradox
+Wikis
+Support
+About
+News
+About us
+Careers
+Join our playtests
+Media contact
+Social Media
+Legal
+Information
+EU Online Dispute Resolution
+Report Illegal Content
+Terms & Policies
+Legal Information
+EU Online Dispute Resolution
+Report Illegal Content
+Frequently Asked
+Questions
+Paradox
+Interactive corporate website

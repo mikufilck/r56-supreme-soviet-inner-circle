@@ -1,0 +1,30 @@
+# ============================================================================
+#  hof_sov_mob_categories.txt
+#  苏联「开战倒计时」决议 —— 分类定义
+#
+#  设计出处：docs/96-soviet-war-countdown-decision.md
+#            docs/97-soviet-war-countdown-design.md  §1
+#  脚本编码：UTF-8 无 BOM + CRLF（AGENTS.md 硬性规则 3）
+#
+#  ⚠️ 决议与分类的关联方式 = 【同名顶层块】，不是字段。
+#     实测：原版 common/decisions/*.txt 里 `decision_category = ` 出现 0 次；
+#     关联完全靠 common/decisions/*.txt 里的顶层块名与这里的分类名相同。
+#     例：原版 AFG.txt 的 `AFG_radical_students_category = { ... }`
+#         ↔ categories/AFG_decision_categories.txt 里的 `AFG_radical_students_category`
+# ============================================================================
+
+hof_sov_mob_category = {
+
+	priority = 30
+
+	# 原版现成 sprite（零缺图风险，不需要注册 interface/*.gfx）
+	# 出处：F:\Hearts of Iron IV\interface\decisions.gfx
+	icon = GFX_decision_category_sov_great_patriotic_war
+
+	allowed = {
+		original_tag = SOV
+	}
+
+	# 没有在跑倒计时时不显示这个分类页签
+	visible_when_empty = no
+}

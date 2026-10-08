@@ -1,0 +1,17 @@
+{
+  "id": "hof_ic_tomsky_man_from_tomsk",
+  "name": "GFX_hof_ic_tomsky_man_from_tomsk",
+  "title": "来自托木斯克的人",
+  "concept": "Full concluding composition about choosing a new name on a journey in 1906: wooden table foreground holds one white sheet with a SINGLE short abstract black ink-stroke shape suggesting an unreadable signature, absolutely no actual letters. ONE cuffed hand holds a short plain wooden writing pencil just lifted away after writing, tip above paper. At left an old travel satchel and a pair of worn boots. Behind an OPEN DOOR reveals a white snowy path receding to distant trees, daylight enters from outdoors. Warm-brown wood, paper-white, ink-black and cold snow-white. Hopeful onward journey, no prison, death, weapons or self-harm imagery, no date or numerals.",
+  "group": "tomsky",
+  "size": [
+    100,
+    88
+  ],
+  "prompt": "Create ONE finished Hearts of Iron IV Soviet national focus icon. Input reference is ONLY gold laurel frame and engraved sculptural relief STYLE; replace all central imagery. Subject: Full concluding composition about choosing a new name on a journey in 1906: wooden table foreground holds one white sheet with a SINGLE short abstract black ink-stroke shape suggesting an unreadable signature, absolutely no actual letters. ONE cuffed hand holds a short plain wooden writing pencil just lifted away after writing, tip above paper. At left an old travel satchel and a pair of worn boots. Behind an OPEN DOOR reveals a white snowy path receding to distant trees, daylight enters from outdoors. Warm-brown wood, paper-white, ink-black and cold snow-white. Hopeful onward journey, no prison, death, weapons or self-harm imagery, no date or numerals. Gold laurel open at top, small red star above, blank golden ribbon below, thin bronze medallion rim. Ivory-grey engraved miniature relief with specified restrained colors, clear readable shapes at final100x88, upper-left light. No readable text, numerals, letters, faces, portraits or watermarks. No guns, death or self-harm imagery anywhere. No bound books, bookcases, archive cabinets, leather book covers, dip pens, prison-bar shadows, barricades, border maps, globes or foreign flags. Landscape100:88, emblem fills94%canvas. TRUE transparent RGBA background enabled: alpha0 outside emblem and all four corners,20-50%transparent area. No fake checkerboard or solid background rectangle or external shadow.",
+  "references": [
+    "D:/Users/xuwei/PycharmProjects/heart_of_Iron/art/focus/bukharin/source/GFX_hof_ic_bukharin_proportional_development.png"
+  ],
+  "generated_path": "C:\\Users\\xuwei\\.codex\\generated_images\\01a09af5-fd43-79a0-a3cc-72284cd67cbc\\exec-7aff4cef-3123-4a2d-bdeb-f086b2556042.png",
+  "mode": "built-in image_gen"
+}

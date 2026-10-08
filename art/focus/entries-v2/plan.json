@@ -1,0 +1,212 @@
+[
+  {
+    "name": "GFX_hof_ic_seat_yevgeny_preobrazhensky",
+    "id": "hof_ic_seat_yevgeny_preobrazhensky",
+    "key": "yevgeny_preobrazhensky",
+    "title": "叶夫根尼·普列奥布拉任斯基",
+    "group": "entry",
+    "portrait_source": "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\art\\portraits\\v1\\png\\hof_portrait_SOV_yevgeny_preobrazhensky.png",
+    "reference": "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\art\\focus\\entries-v2\\references\\yevgeny_preobrazhensky.png",
+    "concept": "a ledger and wheat feeding a small factory",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "name": "GFX_hof_ic_seat_karl_radek",
+    "id": "hof_ic_seat_karl_radek",
+    "key": "karl_radek",
+    "title": "卡尔·拉狄克",
+    "group": "entry",
+    "portrait_source": "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\art\\portraits\\v1\\png\\hof_portrait_SOV_karl_radek.png",
+    "reference": "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\art\\focus\\entries-v2\\references\\karl_radek.png",
+    "concept": "a golden speaking trumpet and folded blank newspaper",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "name": "GFX_hof_ic_seat_ivar_smilga",
+    "id": "hof_ic_seat_ivar_smilga",
+    "key": "ivar_smilga",
+    "title": "伊瓦尔·斯米尔加",
+    "group": "entry",
+    "portrait_source": "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\art\\portraits\\v1\\png\\hof_portrait_SOV_ivar_smilga.png",
+    "reference": "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\art\\focus\\entries-v2\\references\\ivar_smilga.png",
+    "concept": "a gear and rising economic bar chart",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "name": "GFX_hof_ic_seat_mikhail_tomsky",
+    "id": "hof_ic_seat_mikhail_tomsky",
+    "key": "mikhail_tomsky",
+    "title": "米哈伊尔·托姆斯基",
+    "group": "entry",
+    "portrait_source": "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\art\\portraits\\v1\\png\\hof_portrait_SOV_mikhail_tomsky.png",
+    "reference": "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\art\\focus\\entries-v2\\references\\mikhail_tomsky.png",
+    "concept": "a red trade union banner on a gear",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "name": "GFX_hof_ic_seat_martemyan_ryutin",
+    "id": "hof_ic_seat_martemyan_ryutin",
+    "key": "martemyan_ryutin",
+    "title": "马尔特米扬·里亚京",
+    "group": "entry",
+    "portrait_source": "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\art\\portraits\\v1\\png\\hof_portrait_SOV_martemyan_ryutin.png",
+    "reference": "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\art\\focus\\entries-v2\\references\\martemyan_ryutin.png",
+    "concept": "a thick blank manuscript with wheat",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "name": "GFX_hof_ic_seat_aleksandr_shlyapnikov",
+    "id": "hof_ic_seat_aleksandr_shlyapnikov",
+    "key": "aleksandr_shlyapnikov",
+    "title": "亚历山大·施利亚普尼科夫",
+    "group": "entry",
+    "portrait_source": "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\art\\portraits\\v1\\png\\hof_portrait_SOV_aleksandr_shlyapnikov.png",
+    "reference": "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\art\\focus\\entries-v2\\references\\aleksandr_shlyapnikov.png",
+    "concept": "a large steel wrench across a metalworking gear",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "name": "GFX_hof_ic_seat_mikhail_kalinin",
+    "id": "hof_ic_seat_mikhail_kalinin",
+    "key": "mikhail_kalinin",
+    "title": "米哈伊尔·加里宁",
+    "group": "entry",
+    "portrait_source": "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\art\\portraits\\v2\\png\\hof_portrait_SOV_mikhail_kalinin.png",
+    "reference": "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\art\\focus\\entries-v2\\references\\mikhail_kalinin.png",
+    "concept": "a modest medal ribbon with wheat ears",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "name": "GFX_hof_ic_seat_maksim_litvinov",
+    "id": "hof_ic_seat_maksim_litvinov",
+    "key": "maksim_litvinov",
+    "title": "马克西姆·李维诺夫",
+    "group": "entry",
+    "portrait_source": "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\art\\portraits\\v2\\png\\hof_portrait_SOV_maksim_litvinov.png",
+    "reference": "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\art\\focus\\entries-v2\\references\\maksim_litvinov.png",
+    "concept": "a globe with a blank treaty scroll",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "name": "GFX_hof_ic_seat_grigory_sokolnikov",
+    "id": "hof_ic_seat_grigory_sokolnikov",
+    "key": "grigory_sokolnikov",
+    "title": "格里戈里·索柯里尼柯夫",
+    "group": "entry",
+    "portrait_source": "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\art\\portraits\\v1\\png\\hof_portrait_SOV_grigory_sokolnikov.png",
+    "reference": "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\art\\focus\\entries-v2\\references\\grigory_sokolnikov.png",
+    "concept": "gold bullion and an open treasury ledger",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "name": "GFX_hof_ic_seat_mikhail_tukhachevsky",
+    "id": "hof_ic_seat_mikhail_tukhachevsky",
+    "key": "mikhail_tukhachevsky",
+    "title": "米哈伊尔·图哈切夫斯基",
+    "group": "entry",
+    "portrait_source": "F:\\Hearts of Iron IV\\gfx\\leaders\\SOV\\Portrait_Soviet_Mikhail_Tukhachevsky.dds",
+    "reference": "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\art\\focus\\entries-v2\\references\\mikhail_tukhachevsky.png",
+    "concept": "a marshal star above tank tracks, mechanized warfare",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "name": "GFX_hof_ic_seat_nikolay_voznesensky",
+    "id": "hof_ic_seat_nikolay_voznesensky",
+    "key": "nikolay_voznesensky",
+    "title": "尼古拉·沃兹涅先斯基",
+    "group": "entry",
+    "portrait_source": "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\art\\portraits\\v2\\png\\hof_portrait_SOV_nikolay_voznesensky.png",
+    "reference": "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\art\\focus\\entries-v2\\references\\nikolay_voznesensky.png",
+    "concept": "a planning chart with a factory silhouette",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "name": "GFX_hof_ic_seat_pyotr_smirnov",
+    "id": "hof_ic_seat_pyotr_smirnov",
+    "key": "pyotr_smirnov",
+    "title": "彼得·斯米尔诺夫",
+    "group": "entry",
+    "portrait_source": "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\art\\portraits\\v2\\png\\hof_portrait_SOV_pyotr_smirnov.png",
+    "reference": "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\art\\focus\\entries-v2\\references\\pyotr_smirnov.png",
+    "concept": "a prominent naval anchor",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "name": "GFX_hof_ic_seat_georgy_malenkow",
+    "id": "hof_ic_seat_georgy_malenkow",
+    "key": "georgy_malenkow",
+    "title": "格奥尔基·马林科夫",
+    "group": "entry",
+    "portrait_source": "D:\\Program Files (x86)\\Steam\\steamapps\\workshop\\content\\394360\\2129897125\\gfx\\leaders\\SOV\\r56_portrait_SOV_Georgy_Malenkov.dds",
+    "reference": "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\art\\focus\\entries-v2\\references\\georgy_malenkow.png",
+    "concept": "an archive card drawer and small aircraft silhouette",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "name": "GFX_hof_ic_seat_nikita_khrushchyov",
+    "id": "hof_ic_seat_nikita_khrushchyov",
+    "key": "nikita_khrushchyov",
+    "title": "尼基塔·赫鲁晓夫",
+    "group": "entry",
+    "portrait_source": "D:\\Program Files (x86)\\Steam\\steamapps\\workshop\\content\\394360\\2129897125\\gfx\\leaders\\SOV\\r56_portrait_SOV_Nikita_Khrushchev.dds",
+    "reference": "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\art\\focus\\entries-v2\\references\\nikita_khrushchyov.png",
+    "concept": "wheat ears crossed with a metalworker wrench",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "name": "GFX_hof_ic_seat_kliment_voroshilov",
+    "id": "hof_ic_seat_kliment_voroshilov",
+    "key": "kliment_voroshilov",
+    "title": "克利门特·伏罗希洛夫",
+    "group": "entry",
+    "portrait_source": "F:\\Hearts of Iron IV\\gfx\\leaders\\SOV\\Portrait_Soviet_Kliment_Voroshilov.dds",
+    "reference": "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\art\\focus\\entries-v2\\references\\kliment_voroshilov.png",
+    "concept": "crossed cavalry sabres and a small horse head",
+    "size": [
+      100,
+      88
+    ]
+  }
+]

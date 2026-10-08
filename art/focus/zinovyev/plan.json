@@ -1,0 +1,123 @@
+[
+  {
+    "id": "hof_ic_zinovyev_found_the_comintern",
+    "name": "GFX_hof_ic_zinovyev_found_the_comintern",
+    "title": "缔造第三国际",
+    "concept": "A solemn symmetrical international congress: globe above a central lectern, a founding gavel prominently across its base, semicircle of delegate busts and several plain striped flags behind. Creation of a world organization, balanced ceremonial architecture.",
+    "group": "zinovyev",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_zinovyev_twenty_one_conditions",
+    "name": "GFX_hof_ic_zinovyev_twenty_one_conditions",
+    "title": "加入共产国际的条件",
+    "concept": "A large blank charter with geometric check marks but NO writing, a wax seal and stamp before a formal stone gateway; a small globe crowning the gateway establishes international membership conditions. Bold simple document and threshold silhouettes.",
+    "group": "zinovyev",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_zinovyev_social_fascism",
+    "name": "GFX_hof_ic_zinovyev_social_fascism",
+    "title": "社会法西斯主义",
+    "concept": "Historical strategy-game illustration of political division, not endorsement: two parallel blank folded banners anchored to one cold iron pedestal, a deep diagonal fissure separates them from a smaller opposing red banner; subtle Europe map relief behind. Cold dark steel relief and muted bronze frame, crimson backing retained, hardest shadows in the series. No extremist insignia, no swastikas, no text.",
+    "group": "zinovyev",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_zinovyev_bolshevization",
+    "name": "GFX_hof_ic_zinovyev_bolshevization",
+    "title": "布尔什维克化",
+    "concept": "An international organizational hierarchy: a large globe-backed central star seal linked by thick rigid branching lines to three matching smaller star medallions below, with a matching metal casting die at base. Uniform party organization across nations, orderly and disciplined, not an industrial factory scene.",
+    "group": "zinovyev",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_zinovyev_congress_of_the_east",
+    "name": "GFX_hof_ic_zinovyev_congress_of_the_east",
+    "title": "东方各民族代表大会",
+    "concept": "Three dignified congress delegate busts in early twentieth-century clothing, including a Central Asian turban, Caucasian fur cap and plain worker cap, above a relief map of Eurasia and a large compass needle pointing east to the right. International congress in Baku, varied faces, no caricature. Warm ivory sculpted relief, geographic horizon.",
+    "group": "zinovyev",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_zinovyev_workers_united_front",
+    "name": "GFX_hof_ic_zinovyev_workers_united_front",
+    "title": "工人统一战线",
+    "concept": "Three distinct streams of small worker silhouettes with differently patterned blank banners converge into one broad forward procession, with a large joined-hands relief at center and faint globe behind. Unity in practical action across national boundaries, flowing composition.",
+    "group": "zinovyev",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_zinovyev_speed_and_route",
+    "name": "GFX_hof_ic_zinovyev_speed_and_route",
+    "title": "革命的速度与路线",
+    "concept": "An unfolded relief map of Europe and Asia with two bold branching curved route arrows taking different paths, beneath a large navigational compass. One path bends away from central Europe toward the east, no labels. Geographic strategic reassessment, more complete layered composition.",
+    "group": "zinovyev",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_zinovyev_party_in_revolution",
+    "name": "GFX_hof_ic_zinovyev_party_in_revolution",
+    "title": "党在无产阶级革命中的作用",
+    "concept": "Three prominent worker figures leading at the front, rows of smaller workers behind them, with one guiding star above and three small plain international banners. Organized vanguard and rank-and-file, no weapons, neutral ivory stone relief, large clear human silhouettes.",
+    "group": "zinovyev",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_zinovyev_trade_unions",
+    "name": "GFX_hof_ic_zinovyev_trade_unions",
+    "title": "论工会的作用",
+    "concept": "A wide factory assembly gateway embraced by a large gear, five worker figures gathering through its open center beneath two plain union banners, small globe medallion overhead. Organized workers as a collective, emphasize people and assembly rather than chimneys.",
+    "group": "zinovyev",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_zinovyev_monolithic_international",
+    "name": "GFX_hof_ic_zinovyev_monolithic_international",
+    "title": "铁板一块的国际",
+    "concept": "ENDPOINT PAIR design skeleton: centered large globe at upper middle, six national blank flagpoles radiating behind globe, below globe a monumental two-pillar gateway, workers filling lower third, shared golden wreath red star and blank ribbon. COLD VERSION: blue-grey iron globe and gateway, tightly packed perfectly straight aligned worker ranks, stiff closely bundled flags, narrow closed-looking central passage, dense hard-edged unity, dark burgundy backing and muted antique gold. Full authoritative composition, no weapons.",
+    "group": "zinovyev",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_zinovyev_mass_international",
+    "name": "GFX_hof_ic_zinovyev_mass_international",
+    "title": "群众的国际",
+    "concept": "ENDPOINT PAIR: reproduce image 2 composition skeleton and positions: same central globe upper middle, six flagpoles fanned behind globe, same two-pillar gateway below globe, worker crowd lower third, identical wreath/star/ribbon outer frame. WARM OPEN VERSION: warm ivory and pale bronze rather than cold iron, gateway with broad open passage, spaced flowing streams of workers joining from left and right, unfurled gently waving flags. More breathing space and movement, crimson red backing. Equal monumental importance and quality, not weaker. No text or weapons.",
+    "group": "zinovyev",
+    "size": [
+      100,
+      88
+    ]
+  }
+]

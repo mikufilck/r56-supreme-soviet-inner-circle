@@ -1,0 +1,2822 @@
+{
+  "result": "PASS",
+  "count": 176,
+  "assets": [
+    {
+      "name": "GFX_hof_ic_seat_lev_trotsky",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 2889,
+      "opaque_pixels": 205,
+      "alpha_at_least_250_pixels": 5221,
+      "partial_alpha_pixels": 5706,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_seat_nikolay_bukharin",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3204,
+      "opaque_pixels": 195,
+      "alpha_at_least_250_pixels": 4837,
+      "partial_alpha_pixels": 5401,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_seat_aleksey_rykov",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 2850,
+      "opaque_pixels": 202,
+      "alpha_at_least_250_pixels": 5227,
+      "partial_alpha_pixels": 5748,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_seat_grigory_zinovyev",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 2880,
+      "opaque_pixels": 201,
+      "alpha_at_least_250_pixels": 5169,
+      "partial_alpha_pixels": 5719,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_seat_lev_kamenev",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3242,
+      "opaque_pixels": 184,
+      "alpha_at_least_250_pixels": 4806,
+      "partial_alpha_pixels": 5374,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_seat_ivan_smirnov",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3457,
+      "opaque_pixels": 186,
+      "alpha_at_least_250_pixels": 4643,
+      "partial_alpha_pixels": 5157,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_seat_leonid_serebryakov",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3266,
+      "opaque_pixels": 240,
+      "alpha_at_least_250_pixels": 4741,
+      "partial_alpha_pixels": 5294,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_trotsky_build_the_red_army",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 2854,
+      "opaque_pixels": 223,
+      "alpha_at_least_250_pixels": 5166,
+      "partial_alpha_pixels": 5723,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_trotsky_military_specialists",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3049,
+      "opaque_pixels": 241,
+      "alpha_at_least_250_pixels": 4907,
+      "partial_alpha_pixels": 5510,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_trotsky_against_partisan_warfare",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 2832,
+      "opaque_pixels": 218,
+      "alpha_at_least_250_pixels": 5147,
+      "partial_alpha_pixels": 5750,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_trotsky_uneven_and_combined_development",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 2873,
+      "opaque_pixels": 224,
+      "alpha_at_least_250_pixels": 5108,
+      "partial_alpha_pixels": 5703,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_trotsky_permanent_revolution",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3011,
+      "opaque_pixels": 204,
+      "alpha_at_least_250_pixels": 5020,
+      "partial_alpha_pixels": 5585,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_trotsky_socialism_in_one_country",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 2601,
+      "opaque_pixels": 452,
+      "alpha_at_least_250_pixels": 4956,
+      "partial_alpha_pixels": 5747,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_trotsky_the_new_course",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 2760,
+      "opaque_pixels": 340,
+      "alpha_at_least_250_pixels": 5050,
+      "partial_alpha_pixels": 5700,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_trotsky_against_the_bureaucracy",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 2844,
+      "opaque_pixels": 233,
+      "alpha_at_least_250_pixels": 5128,
+      "partial_alpha_pixels": 5723,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_trotsky_limited_market_reforms",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3223,
+      "opaque_pixels": 218,
+      "alpha_at_least_250_pixels": 4796,
+      "partial_alpha_pixels": 5359,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_trotsky_labour_armies",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3092,
+      "opaque_pixels": 185,
+      "alpha_at_least_250_pixels": 5001,
+      "partial_alpha_pixels": 5523,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_trotsky_state_planning",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3039,
+      "opaque_pixels": 231,
+      "alpha_at_least_250_pixels": 4898,
+      "partial_alpha_pixels": 5530,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_trotsky_accelerated_industrialization",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3267,
+      "opaque_pixels": 207,
+      "alpha_at_least_250_pixels": 4779,
+      "partial_alpha_pixels": 5326,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_trotsky_the_comintern_manifesto",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 2533,
+      "opaque_pixels": 234,
+      "alpha_at_least_250_pixels": 5413,
+      "partial_alpha_pixels": 6033,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_trotsky_the_chinese_question",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 2804,
+      "opaque_pixels": 284,
+      "alpha_at_least_250_pixels": 5053,
+      "partial_alpha_pixels": 5712,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_trotsky_united_front",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 2681,
+      "opaque_pixels": 206,
+      "alpha_at_least_250_pixels": 5324,
+      "partial_alpha_pixels": 5913,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_trotsky_the_permanent_revolutionary",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 2834,
+      "opaque_pixels": 212,
+      "alpha_at_least_250_pixels": 5165,
+      "partial_alpha_pixels": 5754,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_trotsky_the_builder_of_the_state",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3230,
+      "opaque_pixels": 217,
+      "alpha_at_least_250_pixels": 4803,
+      "partial_alpha_pixels": 5353,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_bukharin_economics_of_transition",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3184,
+      "opaque_pixels": 208,
+      "alpha_at_least_250_pixels": 4848,
+      "partial_alpha_pixels": 5408,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_bukharin_nep_is_not_a_retreat",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3133,
+      "opaque_pixels": 217,
+      "alpha_at_least_250_pixels": 4871,
+      "partial_alpha_pixels": 5450,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_bukharin_abolish_the_tribute",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3212,
+      "opaque_pixels": 210,
+      "alpha_at_least_250_pixels": 4808,
+      "partial_alpha_pixels": 5378,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_bukharin_alliance_is_the_axis",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3194,
+      "opaque_pixels": 215,
+      "alpha_at_least_250_pixels": 4820,
+      "partial_alpha_pixels": 5391,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_bukharin_enrich_yourselves",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3188,
+      "opaque_pixels": 205,
+      "alpha_at_least_250_pixels": 4824,
+      "partial_alpha_pixels": 5407,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_bukharin_proportional_development",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3108,
+      "opaque_pixels": 213,
+      "alpha_at_least_250_pixels": 4909,
+      "partial_alpha_pixels": 5479,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_bukharin_cooperatives_into_the_system",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3199,
+      "opaque_pixels": 208,
+      "alpha_at_least_250_pixels": 4833,
+      "partial_alpha_pixels": 5393,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_bukharin_left_communism",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3188,
+      "opaque_pixels": 197,
+      "alpha_at_least_250_pixels": 4872,
+      "partial_alpha_pixels": 5415,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_bukharin_socialism_in_one_country",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3148,
+      "opaque_pixels": 197,
+      "alpha_at_least_250_pixels": 4874,
+      "partial_alpha_pixels": 5455,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_seat_yevgeny_preobrazhensky",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 2504,
+      "opaque_pixels": 198,
+      "alpha_at_least_250_pixels": 5546,
+      "partial_alpha_pixels": 6098,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_seat_karl_radek",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 2633,
+      "opaque_pixels": 208,
+      "alpha_at_least_250_pixels": 5399,
+      "partial_alpha_pixels": 5959,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_seat_ivar_smilga",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 2484,
+      "opaque_pixels": 193,
+      "alpha_at_least_250_pixels": 5570,
+      "partial_alpha_pixels": 6123,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_seat_mikhail_tomsky",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 2357,
+      "opaque_pixels": 193,
+      "alpha_at_least_250_pixels": 5720,
+      "partial_alpha_pixels": 6250,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_seat_martemyan_ryutin",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 2439,
+      "opaque_pixels": 190,
+      "alpha_at_least_250_pixels": 5598,
+      "partial_alpha_pixels": 6171,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_seat_aleksandr_shlyapnikov",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 2485,
+      "opaque_pixels": 194,
+      "alpha_at_least_250_pixels": 5572,
+      "partial_alpha_pixels": 6121,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_seat_mikhail_kalinin",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 2222,
+      "opaque_pixels": 203,
+      "alpha_at_least_250_pixels": 5847,
+      "partial_alpha_pixels": 6375,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_seat_maksim_litvinov",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 2222,
+      "opaque_pixels": 206,
+      "alpha_at_least_250_pixels": 5799,
+      "partial_alpha_pixels": 6372,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_seat_grigory_sokolnikov",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 2736,
+      "opaque_pixels": 222,
+      "alpha_at_least_250_pixels": 5284,
+      "partial_alpha_pixels": 5842,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_seat_mikhail_tukhachevsky",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 2520,
+      "opaque_pixels": 216,
+      "alpha_at_least_250_pixels": 5535,
+      "partial_alpha_pixels": 6064,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_seat_nikolay_voznesensky",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 2013,
+      "opaque_pixels": 213,
+      "alpha_at_least_250_pixels": 6045,
+      "partial_alpha_pixels": 6574,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_seat_pyotr_smirnov",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 2650,
+      "opaque_pixels": 199,
+      "alpha_at_least_250_pixels": 5397,
+      "partial_alpha_pixels": 5951,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_seat_georgy_malenkow",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 2464,
+      "opaque_pixels": 208,
+      "alpha_at_least_250_pixels": 5573,
+      "partial_alpha_pixels": 6128,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_seat_nikita_khrushchyov",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 2464,
+      "opaque_pixels": 203,
+      "alpha_at_least_250_pixels": 5541,
+      "partial_alpha_pixels": 6133,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_seat_kliment_voroshilov",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 2407,
+      "opaque_pixels": 199,
+      "alpha_at_least_250_pixels": 5622,
+      "partial_alpha_pixels": 6194,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_rykov_supreme_economic_council",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3059,
+      "opaque_pixels": 213,
+      "alpha_at_least_250_pixels": 4973,
+      "partial_alpha_pixels": 5528,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_rykov_food_supply_commissar",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3020,
+      "opaque_pixels": 211,
+      "alpha_at_least_250_pixels": 4996,
+      "partial_alpha_pixels": 5569,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_rykov_labour_defence_council",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3014,
+      "opaque_pixels": 206,
+      "alpha_at_least_250_pixels": 5028,
+      "partial_alpha_pixels": 5580,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_rykov_sponsor_aviation",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3079,
+      "opaque_pixels": 209,
+      "alpha_at_least_250_pixels": 4953,
+      "partial_alpha_pixels": 5512,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_rykov_labour_defence_chair",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 2973,
+      "opaque_pixels": 203,
+      "alpha_at_least_250_pixels": 5068,
+      "partial_alpha_pixels": 5624,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_zinovyev_found_the_comintern",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3032,
+      "opaque_pixels": 204,
+      "alpha_at_least_250_pixels": 4993,
+      "partial_alpha_pixels": 5564,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_zinovyev_twenty_one_conditions",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3063,
+      "opaque_pixels": 212,
+      "alpha_at_least_250_pixels": 4963,
+      "partial_alpha_pixels": 5525,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_zinovyev_social_fascism",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3026,
+      "opaque_pixels": 209,
+      "alpha_at_least_250_pixels": 4997,
+      "partial_alpha_pixels": 5565,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_zinovyev_bolshevization",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3045,
+      "opaque_pixels": 198,
+      "alpha_at_least_250_pixels": 4976,
+      "partial_alpha_pixels": 5557,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_zinovyev_congress_of_the_east",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3063,
+      "opaque_pixels": 204,
+      "alpha_at_least_250_pixels": 4965,
+      "partial_alpha_pixels": 5533,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_zinovyev_workers_united_front",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3091,
+      "opaque_pixels": 208,
+      "alpha_at_least_250_pixels": 4935,
+      "partial_alpha_pixels": 5501,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_zinovyev_speed_and_route",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3042,
+      "opaque_pixels": 203,
+      "alpha_at_least_250_pixels": 4994,
+      "partial_alpha_pixels": 5555,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_zinovyev_party_in_revolution",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3027,
+      "opaque_pixels": 206,
+      "alpha_at_least_250_pixels": 4982,
+      "partial_alpha_pixels": 5567,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_zinovyev_trade_unions",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3065,
+      "opaque_pixels": 207,
+      "alpha_at_least_250_pixels": 4957,
+      "partial_alpha_pixels": 5528,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_zinovyev_monolithic_international",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3007,
+      "opaque_pixels": 211,
+      "alpha_at_least_250_pixels": 5008,
+      "partial_alpha_pixels": 5582,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_zinovyev_mass_international",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3060,
+      "opaque_pixels": 211,
+      "alpha_at_least_250_pixels": 4962,
+      "partial_alpha_pixels": 5529,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_kamenev_lenins_charge",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3023,
+      "opaque_pixels": 206,
+      "alpha_at_least_250_pixels": 5009,
+      "partial_alpha_pixels": 5571,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_kamenev_leninism",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3009,
+      "opaque_pixels": 204,
+      "alpha_at_least_250_pixels": 5000,
+      "partial_alpha_pixels": 5587,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_kamenev_against_the_lessons",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3056,
+      "opaque_pixels": 212,
+      "alpha_at_least_250_pixels": 4970,
+      "partial_alpha_pixels": 5532,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_kamenev_lenin_institute",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3085,
+      "opaque_pixels": 199,
+      "alpha_at_least_250_pixels": 4951,
+      "partial_alpha_pixels": 5516,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_kamenev_executor_of_the_will",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3016,
+      "opaque_pixels": 213,
+      "alpha_at_least_250_pixels": 5013,
+      "partial_alpha_pixels": 5571,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_smirnov_the_volga_bridgehead",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3122,
+      "opaque_pixels": 214,
+      "alpha_at_least_250_pixels": 4922,
+      "partial_alpha_pixels": 5464,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_smirnov_the_fifth_army",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3007,
+      "opaque_pixels": 207,
+      "alpha_at_least_250_pixels": 5031,
+      "partial_alpha_pixels": 5586,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_smirnov_sibrevkom",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3032,
+      "opaque_pixels": 211,
+      "alpha_at_least_250_pixels": 4997,
+      "partial_alpha_pixels": 5557,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_smirnov_far_eastern_republic",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3004,
+      "opaque_pixels": 205,
+      "alpha_at_least_250_pixels": 5015,
+      "partial_alpha_pixels": 5591,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_smirnov_posts_and_telegraphs",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3065,
+      "opaque_pixels": 214,
+      "alpha_at_least_250_pixels": 4976,
+      "partial_alpha_pixels": 5521,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_smirnov_siberian_lenin",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3010,
+      "opaque_pixels": 204,
+      "alpha_at_least_250_pixels": 5008,
+      "partial_alpha_pixels": 5586,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_serebryakov_kostroma",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3034,
+      "opaque_pixels": 208,
+      "alpha_at_least_250_pixels": 5002,
+      "partial_alpha_pixels": 5558,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_serebryakov_central_committee",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 2986,
+      "opaque_pixels": 218,
+      "alpha_at_least_250_pixels": 5038,
+      "partial_alpha_pixels": 5596,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_serebryakov_commissariat_of_transport",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3023,
+      "opaque_pixels": 198,
+      "alpha_at_least_250_pixels": 4995,
+      "partial_alpha_pixels": 5579,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_serebryakov_highways_and_motor_transport",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 2829,
+      "opaque_pixels": 213,
+      "alpha_at_least_250_pixels": 5220,
+      "partial_alpha_pixels": 5758,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_serebryakov_brilliant_worker",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3003,
+      "opaque_pixels": 211,
+      "alpha_at_least_250_pixels": 5052,
+      "partial_alpha_pixels": 5586,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_preobrazhensky_agrarian_theses",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3048,
+      "opaque_pixels": 204,
+      "alpha_at_least_250_pixels": 4971,
+      "partial_alpha_pixels": 5548,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_preobrazhensky_scissors",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3053,
+      "opaque_pixels": 210,
+      "alpha_at_least_250_pixels": 4978,
+      "partial_alpha_pixels": 5537,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_preobrazhensky_against_nepmen",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3017,
+      "opaque_pixels": 210,
+      "alpha_at_least_250_pixels": 4993,
+      "partial_alpha_pixels": 5573,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_preobrazhensky_two_regulators",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3067,
+      "opaque_pixels": 201,
+      "alpha_at_least_250_pixels": 4973,
+      "partial_alpha_pixels": 5532,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_preobrazhensky_primitive_accumulation",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 2932,
+      "opaque_pixels": 223,
+      "alpha_at_least_250_pixels": 5065,
+      "partial_alpha_pixels": 5645,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_radek_central_europe_department",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3031,
+      "opaque_pixels": 214,
+      "alpha_at_least_250_pixels": 5005,
+      "partial_alpha_pixels": 5555,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_radek_founding_of_the_kpd",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3050,
+      "opaque_pixels": 204,
+      "alpha_at_least_250_pixels": 4986,
+      "partial_alpha_pixels": 5546,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_radek_seven_pamphlets",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 2753,
+      "opaque_pixels": 212,
+      "alpha_at_least_250_pixels": 5247,
+      "partial_alpha_pixels": 5835,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_radek_german_october",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 2500,
+      "opaque_pixels": 226,
+      "alpha_at_least_250_pixels": 5485,
+      "partial_alpha_pixels": 6074,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_radek_sunyatsen_university",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 2482,
+      "opaque_pixels": 222,
+      "alpha_at_least_250_pixels": 5473,
+      "partial_alpha_pixels": 6096,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_radek_red_publicist",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 2808,
+      "opaque_pixels": 214,
+      "alpha_at_least_250_pixels": 5195,
+      "partial_alpha_pixels": 5778,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_smilga_finland",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3075,
+      "opaque_pixels": 206,
+      "alpha_at_least_250_pixels": 4957,
+      "partial_alpha_pixels": 5519,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_smilga_fuel_main_directorate",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 2904,
+      "opaque_pixels": 208,
+      "alpha_at_least_250_pixels": 5130,
+      "partial_alpha_pixels": 5688,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_smilga_gosplan",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3039,
+      "opaque_pixels": 217,
+      "alpha_at_least_250_pixels": 4984,
+      "partial_alpha_pixels": 5544,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_smilga_economics_institute",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 2987,
+      "opaque_pixels": 202,
+      "alpha_at_least_250_pixels": 5053,
+      "partial_alpha_pixels": 5611,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_smilga_productive_forces",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3080,
+      "opaque_pixels": 210,
+      "alpha_at_least_250_pixels": 4970,
+      "partial_alpha_pixels": 5510,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_smilga_the_healer_of_the_gaps",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3029,
+      "opaque_pixels": 216,
+      "alpha_at_least_250_pixels": 4990,
+      "partial_alpha_pixels": 5555,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_tomsky_printers_union",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3055,
+      "opaque_pixels": 206,
+      "alpha_at_least_250_pixels": 4972,
+      "partial_alpha_pixels": 5539,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_tomsky_moscow_trade_union_council",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3028,
+      "opaque_pixels": 208,
+      "alpha_at_least_250_pixels": 4996,
+      "partial_alpha_pixels": 5564,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_tomsky_central_council_of_trade_unions",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3031,
+      "opaque_pixels": 212,
+      "alpha_at_least_250_pixels": 4983,
+      "partial_alpha_pixels": 5557,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_tomsky_platform_of_ten",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 2747,
+      "opaque_pixels": 216,
+      "alpha_at_least_250_pixels": 5259,
+      "partial_alpha_pixels": 5837,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_tomsky_the_silence_of_1921",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3044,
+      "opaque_pixels": 208,
+      "alpha_at_least_250_pixels": 4999,
+      "partial_alpha_pixels": 5548,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_tomsky_man_from_tomsk",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3073,
+      "opaque_pixels": 207,
+      "alpha_at_least_250_pixels": 4963,
+      "partial_alpha_pixels": 5520,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_ryutin_struggle_magazine",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3023,
+      "opaque_pixels": 204,
+      "alpha_at_least_250_pixels": 4999,
+      "partial_alpha_pixels": 5573,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_ryutin_red_star",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3054,
+      "opaque_pixels": 208,
+      "alpha_at_least_250_pixels": 4980,
+      "partial_alpha_pixels": 5538,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_ryutin_soyuzkino",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 2895,
+      "opaque_pixels": 205,
+      "alpha_at_least_250_pixels": 5108,
+      "partial_alpha_pixels": 5700,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_ryutin_union_of_marxist_leninists",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3041,
+      "opaque_pixels": 212,
+      "alpha_at_least_250_pixels": 5009,
+      "partial_alpha_pixels": 5547,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_ryutin_verkhne_ryutino",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3063,
+      "opaque_pixels": 215,
+      "alpha_at_least_250_pixels": 4955,
+      "partial_alpha_pixels": 5522,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_shlyapnikov_workers_control",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3023,
+      "opaque_pixels": 211,
+      "alpha_at_least_250_pixels": 5013,
+      "partial_alpha_pixels": 5566,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_shlyapnikov_not_syndicalism",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3027,
+      "opaque_pixels": 217,
+      "alpha_at_least_250_pixels": 5010,
+      "partial_alpha_pixels": 5556,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_shlyapnikov_producers_congress",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3052,
+      "opaque_pixels": 208,
+      "alpha_at_least_250_pixels": 4989,
+      "partial_alpha_pixels": 5540,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_shlyapnikov_through_the_workers",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3030,
+      "opaque_pixels": 213,
+      "alpha_at_least_250_pixels": 5009,
+      "partial_alpha_pixels": 5557,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_shlyapnikov_qualification_from_the_shop",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3064,
+      "opaque_pixels": 219,
+      "alpha_at_least_250_pixels": 4965,
+      "partial_alpha_pixels": 5517,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_shlyapnikov_the_body_they_elect",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3058,
+      "opaque_pixels": 217,
+      "alpha_at_least_250_pixels": 4975,
+      "partial_alpha_pixels": 5525,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_kalinin_a_peasant_head_of_state",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3231,
+      "opaque_pixels": 219,
+      "alpha_at_least_250_pixels": 4811,
+      "partial_alpha_pixels": 5350,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_kalinin_down_with_illiteracy",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3082,
+      "opaque_pixels": 213,
+      "alpha_at_least_250_pixels": 4965,
+      "partial_alpha_pixels": 5505,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_kalinin_the_state_of_the_whole_people",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 2862,
+      "opaque_pixels": 219,
+      "alpha_at_least_250_pixels": 5161,
+      "partial_alpha_pixels": 5719,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_kalinin_the_reception_room",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3089,
+      "opaque_pixels": 219,
+      "alpha_at_least_250_pixels": 4943,
+      "partial_alpha_pixels": 5492,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_kalinin_an_unfounded_operation",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3039,
+      "opaque_pixels": 190,
+      "alpha_at_least_250_pixels": 5040,
+      "partial_alpha_pixels": 5571,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_kalinin_the_all_union_elder",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3205,
+      "opaque_pixels": 203,
+      "alpha_at_least_250_pixels": 4864,
+      "partial_alpha_pixels": 5392,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_litvinov_a_courier_of_iskra",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3377,
+      "opaque_pixels": 202,
+      "alpha_at_least_250_pixels": 4674,
+      "partial_alpha_pixels": 5221,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_litvinov_the_prisoner_exchange_agreement",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3214,
+      "opaque_pixels": 217,
+      "alpha_at_least_250_pixels": 4794,
+      "partial_alpha_pixels": 5369,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_litvinov_the_litvinov_protocol",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3351,
+      "opaque_pixels": 206,
+      "alpha_at_least_250_pixels": 4729,
+      "partial_alpha_pixels": 5243,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_litvinov_the_definition_of_aggression",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 2970,
+      "opaque_pixels": 212,
+      "alpha_at_least_250_pixels": 5081,
+      "partial_alpha_pixels": 5618,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_litvinov_the_franco_soviet_treaty",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3184,
+      "opaque_pixels": 205,
+      "alpha_at_least_250_pixels": 4865,
+      "partial_alpha_pixels": 5411,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_litvinov_the_advisor_to_the_commissariat",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3105,
+      "opaque_pixels": 214,
+      "alpha_at_least_250_pixels": 4962,
+      "partial_alpha_pixels": 5481,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_sokolnikov_the_nationalisation_of_the_banks",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 2683,
+      "opaque_pixels": 213,
+      "alpha_at_least_250_pixels": 5344,
+      "partial_alpha_pixels": 5904,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_sokolnikov_the_turkestan_rouble",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3144,
+      "opaque_pixels": 215,
+      "alpha_at_least_250_pixels": 4899,
+      "partial_alpha_pixels": 5441,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_sokolnikov_the_chervonets",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 2775,
+      "opaque_pixels": 220,
+      "alpha_at_least_250_pixels": 5265,
+      "partial_alpha_pixels": 5805,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_sokolnikov_what_a_dollar_costs",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 2895,
+      "opaque_pixels": 215,
+      "alpha_at_least_250_pixels": 5145,
+      "partial_alpha_pixels": 5690,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_sokolnikov_state_capitalism",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 2771,
+      "opaque_pixels": 209,
+      "alpha_at_least_250_pixels": 5263,
+      "partial_alpha_pixels": 5820,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_sokolnikov_hard_currency",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 2880,
+      "opaque_pixels": 216,
+      "alpha_at_least_250_pixels": 5136,
+      "partial_alpha_pixels": 5704,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_tukhachevsky_the_military_academy",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 2733,
+      "opaque_pixels": 221,
+      "alpha_at_least_250_pixels": 5298,
+      "partial_alpha_pixels": 5846,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_tukhachevsky_the_regular_army",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 2827,
+      "opaque_pixels": 224,
+      "alpha_at_least_250_pixels": 5200,
+      "partial_alpha_pixels": 5749,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_tukhachevsky_airborne_and_tanks",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 2773,
+      "opaque_pixels": 210,
+      "alpha_at_least_250_pixels": 5270,
+      "partial_alpha_pixels": 5817,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_tukhachevsky_the_deep_battle_instructions",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3035,
+      "opaque_pixels": 215,
+      "alpha_at_least_250_pixels": 4999,
+      "partial_alpha_pixels": 5550,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_tukhachevsky_the_four_echelons",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 2505,
+      "opaque_pixels": 215,
+      "alpha_at_least_250_pixels": 5520,
+      "partial_alpha_pixels": 6080,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_tukhachevsky_the_field_regulations",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3084,
+      "opaque_pixels": 203,
+      "alpha_at_least_250_pixels": 4952,
+      "partial_alpha_pixels": 5513,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_radek_the_struggle_for_power_in_china",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 2967,
+      "opaque_pixels": 213,
+      "alpha_at_least_250_pixels": 5071,
+      "partial_alpha_pixels": 5620,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_radek_the_condition_of_the_chinese_working_class",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 2806,
+      "opaque_pixels": 220,
+      "alpha_at_least_250_pixels": 5193,
+      "partial_alpha_pixels": 5774,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_radek_social_and_political_thought",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 2794,
+      "opaque_pixels": 224,
+      "alpha_at_least_250_pixels": 5244,
+      "partial_alpha_pixels": 5782,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_tukhachevsky_the_defence_of_the_union",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 2870,
+      "opaque_pixels": 217,
+      "alpha_at_least_250_pixels": 5153,
+      "partial_alpha_pixels": 5713,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_tukhachevsky_military_economic_mobilization",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 2636,
+      "opaque_pixels": 243,
+      "alpha_at_least_250_pixels": 5406,
+      "partial_alpha_pixels": 5921,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_tukhachevsky_air_mechanization",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 2751,
+      "opaque_pixels": 219,
+      "alpha_at_least_250_pixels": 5269,
+      "partial_alpha_pixels": 5830,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_voznesensky_the_fight_for_the_plan",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3077,
+      "opaque_pixels": 203,
+      "alpha_at_least_250_pixels": 4949,
+      "partial_alpha_pixels": 5520,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_voznesensky_the_leningrad_plan",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 2649,
+      "opaque_pixels": 218,
+      "alpha_at_least_250_pixels": 5362,
+      "partial_alpha_pixels": 5933,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_voznesensky_the_state_planning_committee",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 2787,
+      "opaque_pixels": 219,
+      "alpha_at_least_250_pixels": 5234,
+      "partial_alpha_pixels": 5794,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_voznesensky_the_placement_of_plants",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 2799,
+      "opaque_pixels": 223,
+      "alpha_at_least_250_pixels": 5251,
+      "partial_alpha_pixels": 5778,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_voznesensky_the_ammunition_plan",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 2677,
+      "opaque_pixels": 212,
+      "alpha_at_least_250_pixels": 5336,
+      "partial_alpha_pixels": 5911,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_voznesensky_the_war_economy",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 2739,
+      "opaque_pixels": 223,
+      "alpha_at_least_250_pixels": 5322,
+      "partial_alpha_pixels": 5838,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_pyotr_smirnov_the_naval_directorate",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 2725,
+      "opaque_pixels": 213,
+      "alpha_at_least_250_pixels": 5308,
+      "partial_alpha_pixels": 5862,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_pyotr_smirnov_the_general_staff",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3093,
+      "opaque_pixels": 213,
+      "alpha_at_least_250_pixels": 4937,
+      "partial_alpha_pixels": 5494,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_pyotr_smirnov_the_naval_aviation",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 2853,
+      "opaque_pixels": 212,
+      "alpha_at_least_250_pixels": 5138,
+      "partial_alpha_pixels": 5735,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_pyotr_smirnov_the_declaration",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 2850,
+      "opaque_pixels": 209,
+      "alpha_at_least_250_pixels": 5168,
+      "partial_alpha_pixels": 5741,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_pyotr_smirnov_the_military_council",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 2997,
+      "opaque_pixels": 201,
+      "alpha_at_least_250_pixels": 5052,
+      "partial_alpha_pixels": 5602,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_pyotr_smirnov_the_commissariat",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3041,
+      "opaque_pixels": 207,
+      "alpha_at_least_250_pixels": 4999,
+      "partial_alpha_pixels": 5552,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_malenkow_the_party_card_index",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3052,
+      "opaque_pixels": 201,
+      "alpha_at_least_250_pixels": 4986,
+      "partial_alpha_pixels": 5547,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_malenkow_the_cadres_directorate",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3046,
+      "opaque_pixels": 217,
+      "alpha_at_least_250_pixels": 4988,
+      "partial_alpha_pixels": 5537,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_malenkow_the_state_defence_committee",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3024,
+      "opaque_pixels": 202,
+      "alpha_at_least_250_pixels": 4992,
+      "partial_alpha_pixels": 5574,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_malenkow_the_aviation_affair",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3021,
+      "opaque_pixels": 204,
+      "alpha_at_least_250_pixels": 5005,
+      "partial_alpha_pixels": 5575,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_malenkow_the_party_schools",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3099,
+      "opaque_pixels": 207,
+      "alpha_at_least_250_pixels": 4948,
+      "partial_alpha_pixels": 5494,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_malenkow_the_premiership",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3082,
+      "opaque_pixels": 209,
+      "alpha_at_least_250_pixels": 4959,
+      "partial_alpha_pixels": 5509,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_khrushchev_the_workers_faculty",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3010,
+      "opaque_pixels": 209,
+      "alpha_at_least_250_pixels": 5035,
+      "partial_alpha_pixels": 5581,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_khrushchev_the_obligatory_deliveries",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 2535,
+      "opaque_pixels": 222,
+      "alpha_at_least_250_pixels": 5483,
+      "partial_alpha_pixels": 6043,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_khrushchev_the_agro_towns",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3043,
+      "opaque_pixels": 200,
+      "alpha_at_least_250_pixels": 5003,
+      "partial_alpha_pixels": 5557,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_khrushchev_the_purchase_prices",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 2751,
+      "opaque_pixels": 222,
+      "alpha_at_least_250_pixels": 5302,
+      "partial_alpha_pixels": 5827,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_khrushchev_the_virgin_lands",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 2870,
+      "opaque_pixels": 216,
+      "alpha_at_least_250_pixels": 5164,
+      "partial_alpha_pixels": 5714,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_khrushchev_the_economic_councils",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 2630,
+      "opaque_pixels": 211,
+      "alpha_at_least_250_pixels": 5412,
+      "partial_alpha_pixels": 5959,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_voroshilov_the_red_army_commanders",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3019,
+      "opaque_pixels": 199,
+      "alpha_at_least_250_pixels": 5020,
+      "partial_alpha_pixels": 5582,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_voroshilov_the_marksmanship_badge",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3060,
+      "opaque_pixels": 215,
+      "alpha_at_least_250_pixels": 4965,
+      "partial_alpha_pixels": 5525,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_voroshilov_the_ranks",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 2783,
+      "opaque_pixels": 221,
+      "alpha_at_least_250_pixels": 5247,
+      "partial_alpha_pixels": 5796,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_voroshilov_the_partisan_staff",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3045,
+      "opaque_pixels": 216,
+      "alpha_at_least_250_pixels": 4973,
+      "partial_alpha_pixels": 5539,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_voroshilov_war_trophies_regulation",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 2634,
+      "opaque_pixels": 207,
+      "alpha_at_least_250_pixels": 5411,
+      "partial_alpha_pixels": 5959,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_voroshilov_the_allied_control_commission",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3054,
+      "opaque_pixels": 214,
+      "alpha_at_least_250_pixels": 4976,
+      "partial_alpha_pixels": 5532,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_new_soviet_chairman",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3660,
+      "opaque_pixels": 202,
+      "alpha_at_least_250_pixels": 4325,
+      "partial_alpha_pixels": 4938,
+      "corner_alpha": "all zero"
+    },
+    {
+      "name": "GFX_hof_ic_united_supreme_soviet",
+      "size": [
+        100,
+        88
+      ],
+      "dds_format": "ARGB8 uncompressed",
+      "mipmaps": 0,
+      "dds_bytes": 35328,
+      "pixel_roundtrip": "PASS",
+      "transparent_pixels": 3415,
+      "opaque_pixels": 452,
+      "alpha_at_least_250_pixels": 3738,
+      "partial_alpha_pixels": 4933,
+      "corner_alpha": "all zero"
+    }
+  ]
+}

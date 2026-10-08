@@ -1,0 +1,57 @@
+[
+  {
+    "id": "hof_ic_kamenev_lenins_charge",
+    "name": "GFX_hof_ic_kamenev_lenins_charge",
+    "title": "列宁的托付",
+    "concept": "The beginning of a documentary legacy: a modest bundle of blank manuscript pages tied with thin cord being carefully handed from one hand at left into an open receiving hand below right. Only two anatomically correct hands, no faces. Warm brown-ivory paper relief, intimate simple composition with generous red interior breathing space. Manuscript is the dominant shape, no bookshelves yet.",
+    "group": "kamenev",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_kamenev_leninism",
+    "name": "GFX_hof_ic_kamenev_leninism",
+    "title": "列宁主义",
+    "concept": "An open thick scholarly encyclopedia, with three indexed bound volumes standing behind it in a neat stepped arrangement. Page tabs and geometric inset panels suggest organized knowledge, never writing. Ivory paper and grey bindings, structured balanced composition more substantial than a single manuscript. Clear book silhouettes, no portrait, no globe.",
+    "group": "kamenev",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_kamenev_against_the_lessons",
+    "name": "GFX_hof_ic_kamenev_against_the_lessons",
+    "title": "驳《十月教训》",
+    "concept": "Two thick parallel stacks of documentary evidence opened side by side on a broad editorial desk, their top pages connected by simple comparison lines, a large magnifying glass crossing the gap and a restrained fountain pen lying below. Scholarly textual debate and comparison, neutral ivory stone paper relief. More layered and substantial than a single open encyclopedia, unmistakable magnifying glass, no text, no weapons.",
+    "group": "kamenev",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_kamenev_lenin_institute",
+    "name": "GFX_hof_ic_kamenev_lenin_institute",
+    "title": "列宁研究院与全集",
+    "concept": "A complete archival institution: tall orderly wall of bound volumes and archive compartments arranged around a central shelving bay, with a compact early twentieth-century printing press in foreground feeding blank paper sheets onto an accumulating stack of books. Cool ivory and slate-grey sculpted relief, rectangular shelves and printing rollers legible, one diagonal beam of light within medallion. Dense complete composition, scholarly archives not factory chimneys.",
+    "group": "kamenev",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_kamenev_executor_of_the_will",
+    "name": "GFX_hof_ic_kamenev_executor_of_the_will",
+    "title": "列宁的遗嘱执行人",
+    "concept": "The culmination of a documentary legacy, grandest and fullest composition: a monumental very thick open collected-works volume on a formal reading pedestal, one anatomically correct hand resting firmly flat on its right page, with a precise symmetrical wall of indexed archive books behind. A classic shaded desk lamp above-left illuminates the open pages. Cool silver-grey ivory relief, crisp straight edges and highly ordered shelves, substantial book block and layered pages, calm institutional authority. No face, no readable writing or letters on pages or spines. More monumental and full than earlier icons, with dominant giant book.",
+    "group": "kamenev",
+    "size": [
+      100,
+      88
+    ]
+  }
+]

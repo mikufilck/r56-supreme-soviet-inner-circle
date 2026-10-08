@@ -1,0 +1,32 @@
+﻿l_simp_chinese:
+ hof_ic_title_text:0 "最高苏维埃"
+ hof_ic_leader_name_text:0 "最高苏维埃"
+ hof_ic_leader_title_text:0 "领袖"
+ hof_ic_seat_empty_text:0 "空席"
+ hof_ic_seat_trait_empty_text:0 "——"
+
+ # 可见民族精神：与德国核心集团一样，只显示当前席位及动态职务。
+ hof_ic_supreme_soviet_dm:0 "最高苏维埃"
+ hof_ic_dm_tt:0 "现任§Y最高苏维埃§!委员：\n[hof_ic_slot_1_dm_line][hof_ic_slot_2_dm_line][hof_ic_slot_3_dm_line][hof_ic_slot_4_dm_line][hof_ic_slot_5_dm_line][hof_ic_slot_6_dm_line][hof_ic_slot_7_dm_line]"
+ hof_ic_dm_desc_fallback:0 "最高苏维埃委员"
+ hof_ic_dm_empty_text:0 ""
+ hof_ic_dm_slot_1_line:0 "§Y[hof_ic_slot_1_name]§!，担任[hof_ic_slot_1_dm_desc]\n"
+ hof_ic_dm_slot_2_line:0 "§Y[hof_ic_slot_2_name]§!，担任[hof_ic_slot_2_dm_desc]\n"
+ hof_ic_dm_slot_3_line:0 "§Y[hof_ic_slot_3_name]§!，担任[hof_ic_slot_3_dm_desc]\n"
+ hof_ic_dm_slot_4_line:0 "§Y[hof_ic_slot_4_name]§!，担任[hof_ic_slot_4_dm_desc]\n"
+ hof_ic_dm_slot_5_line:0 "§Y[hof_ic_slot_5_name]§!，担任[hof_ic_slot_5_dm_desc]\n"
+ hof_ic_dm_slot_6_line:0 "§Y[hof_ic_slot_6_name]§!，担任[hof_ic_slot_6_dm_desc]\n"
+ hof_ic_dm_slot_7_line:0 "§Y[hof_ic_slot_7_name]§!，担任[hof_ic_slot_7_dm_desc]\n"
+
+ # ---------- 将领特质（定义在 common/unit_leader/hof_ic_traits.txt）----------
+ # I2「返聘沙俄军官」授予点名的沙俄旧军官。
+ trait_hof_ic_tsarist_officer:0 "沙俄军事专家"
+ trait_hof_ic_tsarist_officer_desc:0 "旧军队的军官团里，有人把军事当作一门需要毕生研习的技艺。苏维埃政权把他们称作「军事专家」，在共产党员政治委员的监督之下，请他们来训练和指挥这支新生的红军。"
+
+ # ---------- 外交好感修正（定义在 common/opinion_modifiers/hof_ic_opinion_modifiers.txt）----------
+ # V2「中国革命问题」授予中共。
+ hof_ic_chinese_question:0 "中国革命问题的正确路线"
+ # A5「苏法互助条约」（法国）—— 双向（苏联 → 法国 / 法国 → 苏联）
+ hof_ic_franco_soviet_treaty:0 "苏法互助条约"
+ # A5「苏捷互助条约」（捷克斯洛伐克）—— ⭐ 只给好感，不给保障（史实：捷克以法国先动为前提）
+ hof_ic_soviet_czech_treaty:0 "苏捷互助条约"

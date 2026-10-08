@@ -1,0 +1,632 @@
+========== A. 李可夫 5 个国策块 ==========
+  2734: 	id = hof_ic_rykov_supreme_economic_council
+  2735: 	icon = GFX_hof_ic_rykov_supreme_economic_council
+  2736: 	prerequisite = {
+  2737: 		focus = hof_ic_seat_aleksey_rykov
+  2738: 	}
+  2739: 	relative_position_id = hof_ic_seat_aleksey_rykov
+  2740: 	x = 0
+  2741: 	y = 1
+  2742: 	cost = 2
+  2743: 	available = {
+  2744: 		if = {
+  2745: 			limit = { has_country_flag = hof_ic_aleksey_rykov_progress }
+  2746: 			custom_override_tooltip = {
+  2747: 				tooltip = {
+  2748: 					localization_key = hof_ic_focus_in_progress_tt
+  2749: 					CHARACTER = SOV_aleksey_rykov
+  2750: 					FLAG_DAYS = [?hof_ic_aleksey_rykov_progress:days]
+  2751: 				}
+  2752: 				always = no
+  2753: 			}
+  2754: 		}
+  2755: 		else = {
+  2756: 			custom_override_tooltip = {
+  2757: 				tooltip = {
+  2758: 					localization_key = hof_ic_focus_advisor_only_tt
+  2759: 					CHARACTER = SOV_aleksey_rykov
+  2760: 					FOCUS = hof_ic_seat_aleksey_rykov
+  2761: 				}
+  2762: 				always = no
+  2763: 			}
+  2764: 		}
+  2765: 	}
+  2766: 	completion_reward = {
+  2767: 		custom_effect_tooltip = hof_ic_rykov_extra_effects_tt
+  2768: 		add_to_variable = {
+  2769: 			hof_ic_aleksey_rykov_industrial_capacity = 0.05
+  2770: 			tooltip = industrial_capacity_factory_tt
+  2771: 		}
+  2772: 		add_to_variable = {
+  2773: 			hof_ic_aleksey_rykov_production_speed_industrial_complex = 0.10
+  2774: 			tooltip = production_speed_industrial_complex_factor_tt
+  2775: 		}
+  2776: 		# 升官衔：重算等级（照德国 GER_add_*_effects 的反推法）
+  2777: 		custom_effect_tooltip = {
+  2778: 			localization_key = hof_ic_rank_up_tt
+  2779: 			CHARACTER = SOV_aleksey_rykov
+  2780: 		}
+  2781: 		effect_tooltip = {   # 照德国：引擎自己写「以 hof_ic_idea_aleksey_rykov_2 取代 hof_ic_idea_aleksey_rykov」+「效果变化:」
+  2782: 			swap_ideas = {
+  2783: 				remove_idea = hof_ic_idea_aleksey_rykov
+  2784: 				add_idea = hof_ic_idea_aleksey_rykov_2
+  2785: 			}
+  2786: 		}
+  2787: 		hof_ic_idea_aleksey_rykov_sync_rank = yes
+  2788: 	}
+  2789: }
+
+  2792: 	id = hof_ic_rykov_food_supply_commissar
+  2793: 	icon = GFX_hof_ic_rykov_food_supply_commissar
+  2794: 	prerequisite = {
+  2795: 		focus = hof_ic_rykov_supreme_economic_council
+  2796: 	}
+  2797: 	relative_position_id = hof_ic_seat_aleksey_rykov
+  2798: 	x = 0
+  2799: 	y = 2
+  2800: 	cost = 2
+  2801: 	available = {
+  2802: 		if = {
+  2803: 			limit = { has_country_flag = hof_ic_aleksey_rykov_progress }
+  2804: 			custom_override_tooltip = {
+  2805: 				tooltip = {
+  2806: 					localization_key = hof_ic_focus_in_progress_tt
+  2807: 					CHARACTER = SOV_aleksey_rykov
+  2808: 					FLAG_DAYS = [?hof_ic_aleksey_rykov_progress:days]
+  2809: 				}
+  2810: 				always = no
+  2811: 			}
+  2812: 		}
+  2813: 		else = {
+  2814: 			custom_override_tooltip = {
+  2815: 				tooltip = {
+  2816: 					localization_key = hof_ic_focus_advisor_only_tt
+  2817: 					CHARACTER = SOV_aleksey_rykov
+  2818: 					FOCUS = hof_ic_seat_aleksey_rykov
+  2819: 				}
+  2820: 				always = no
+  2821: 			}
+  2822: 		}
+  2823: 	}
+  2824: 	completion_reward = {
+  2825: 		custom_effect_tooltip = hof_ic_rykov_extra_effects_tt
+  2826: 		add_to_variable = {
+  2827: 			hof_ic_aleksey_rykov_army_org = 0.05
+  2828: 			tooltip = army_org_factor_tt
+  2829: 		}
+  2830: 		add_to_variable = {
+  2831: 			hof_ic_aleksey_rykov_war_support = 0.05
+  2832: 			tooltip = war_support_factor_tt
+  2833: 		}
+  2834: 	}
+  2835: }
+
+  2838: 	id = hof_ic_rykov_labour_defence_council
+  2839: 	icon = GFX_hof_ic_rykov_labour_defence_council
+  2840: 	prerequisite = {
+  2841: 		focus = hof_ic_rykov_food_supply_commissar
+  2842: 	}
+  2843: 	relative_position_id = hof_ic_seat_aleksey_rykov
+  2844: 	x = 0
+  2845: 	y = 3
+  2846: 	cost = 2
+  2847: 	available = {
+  2848: 		if = {
+  2849: 			limit = { has_country_flag = hof_ic_aleksey_rykov_progress }
+  2850: 			custom_override_tooltip = {
+  2851: 				tooltip = {
+  2852: 					localization_key = hof_ic_focus_in_progress_tt
+  2853: 					CHARACTER = SOV_aleksey_rykov
+  2854: 					FLAG_DAYS = [?hof_ic_aleksey_rykov_progress:days]
+  2855: 				}
+  2856: 				always = no
+  2857: 			}
+  2858: 		}
+  2859: 		else = {
+  2860: 			custom_override_tooltip = {
+  2861: 				tooltip = {
+  2862: 					localization_key = hof_ic_focus_advisor_only_tt
+  2863: 					CHARACTER = SOV_aleksey_rykov
+  2864: 					FOCUS = hof_ic_seat_aleksey_rykov
+  2865: 				}
+  2866: 				always = no
+  2867: 			}
+  2868: 		}
+  2869: 	}
+  2870: 	completion_reward = {
+  2871: 		custom_effect_tooltip = hof_ic_rykov_extra_effects_tt
+  2872: 		add_to_variable = {
+  2873: 			hof_ic_aleksey_rykov_industrial_capacity = 0.05
+  2874: 			tooltip = industrial_capacity_factory_tt
+  2875: 		}
+  2876: 		add_to_variable = {
+  2877: 			hof_ic_aleksey_rykov_consumer_goods = -0.05
+  2878: 			tooltip = consumer_goods_factor_tt
+  2879: 		}
+  2880: 		# 升官衔：重算等级（照德国 GER_add_*_effects 的反推法）
+  2881: 		custom_effect_tooltip = {
+  2882: 			localization_key = hof_ic_rank_up_tt
+  2883: 			CHARACTER = SOV_aleksey_rykov
+  2884: 		}
+  2885: 		effect_tooltip = {   # 照德国：引擎自己写「以 hof_ic_idea_aleksey_rykov_3 取代 hof_ic_idea_aleksey_rykov_2」+「效果变化:」
+  2886: 			swap_ideas = {
+  2887: 				remove_idea = hof_ic_idea_aleksey_rykov_2
+  2888: 				add_idea = hof_ic_idea_aleksey_rykov_3
+  2889: 			}
+  2890: 		}
+  2891: 		hof_ic_idea_aleksey_rykov_sync_rank = yes
+  2892: 	}
+  2893: }
+
+  2896: 	id = hof_ic_rykov_sponsor_aviation
+  2897: 	icon = GFX_hof_ic_rykov_sponsor_aviation
+  2898: 	prerequisite = {
+  2899: 		focus = hof_ic_rykov_labour_defence_council
+  2900: 	}
+  2901: 	relative_position_id = hof_ic_seat_aleksey_rykov
+  2902: 	x = 0
+  2903: 	y = 4
+  2904: 	cost = 2
+  2905: 	available = {
+  2906: 		if = {
+  2907: 			limit = { has_country_flag = hof_ic_aleksey_rykov_progress }
+  2908: 			custom_override_tooltip = {
+  2909: 				tooltip = {
+  2910: 					localization_key = hof_ic_focus_in_progress_tt
+  2911: 					CHARACTER = SOV_aleksey_rykov
+  2912: 					FLAG_DAYS = [?hof_ic_aleksey_rykov_progress:days]
+  2913: 				}
+  2914: 				always = no
+  2915: 			}
+  2916: 		}
+  2917: 		else = {
+  2918: 			custom_override_tooltip = {
+  2919: 				tooltip = {
+  2920: 					localization_key = hof_ic_focus_advisor_only_tt
+  2921: 					CHARACTER = SOV_aleksey_rykov
+  2922: 					FOCUS = hof_ic_seat_aleksey_rykov
+  2923: 				}
+  2924: 				always = no
+  2925: 			}
+  2926: 		}
+  2927: 	}
+  2928: 	completion_reward = {
+  2929: 		custom_effect_tooltip = hof_ic_rykov_extra_effects_tt
+  2930: 		add_to_variable = {
+  2931: 			hof_ic_aleksey_rykov_research_speed = 0.05
+  2932: 			tooltip = research_speed_factor_tt
+  2933: 		}
+  2934: 		if = {
+  2935: 		    limit = { has_dlc = "Arms Against Tyranny" }
+  2936: 		    custom_effect_tooltip = available_mio_tt
+  2937: 		    show_mio_tooltip = SOV_yakovlev_design_bureau_organization
+  2938: 		    mio:SOV_yakovlev_design_bureau_organization = {
+  2939: 		        add_mio_size = 2
+  2940: 		    }
+  2941: 		    custom_effect_tooltip = generic_skip_one_line_tt
+  2942: 		}
+  2943: 	}
+  2944: }
+
+  2947: 	id = hof_ic_rykov_labour_defence_chair
+  2948: 	icon = GFX_hof_ic_rykov_labour_defence_chair
+  2949: 	prerequisite = {
+  2950: 		focus = hof_ic_rykov_supreme_economic_council
+  2951: 	}
+  2952: 	prerequisite = {
+  2953: 		focus = hof_ic_rykov_food_supply_commissar
+  2954: 	}
+  2955: 	prerequisite = {
+  2956: 		focus = hof_ic_rykov_labour_defence_council
+  2957: 	}
+  2958: 	prerequisite = {
+  2959: 		focus = hof_ic_rykov_sponsor_aviation
+  2960: 	}
+  2961: 	relative_position_id = hof_ic_seat_aleksey_rykov
+  2962: 	x = 0
+  2963: 	y = 6
+  2964: 	cost = 2
+  2965: 	available = {
+  2966: 		if = {
+  2967: 			limit = { has_country_flag = hof_ic_aleksey_rykov_progress }
+  2968: 			custom_override_tooltip = {
+  2969: 				tooltip = {
+  2970: 					localization_key = hof_ic_focus_in_progress_tt
+  2971: 					CHARACTER = SOV_aleksey_rykov
+  2972: 					FLAG_DAYS = [?hof_ic_aleksey_rykov_progress:days]
+  2973: 				}
+  2974: 				always = no
+  2975: 			}
+  2976: 		}
+  2977: 		else = {
+  2978: 			custom_override_tooltip = {
+  2979: 				tooltip = {
+  2980: 					localization_key = hof_ic_focus_advisor_only_tt
+  2981: 					CHARACTER = SOV_aleksey_rykov
+  2982: 					FOCUS = hof_ic_seat_aleksey_rykov
+  2983: 				}
+  2984: 				always = no
+  2985: 			}
+  2986: 		}
+  2987: 	}
+  2988: 	completion_reward = {
+  2989: 		custom_effect_tooltip = hof_ic_rykov_extra_effects_tt
+  2990: 		add_to_variable = {
+  2991: 			hof_ic_aleksey_rykov_industrial_capacity = 0.05
+  2992: 			tooltip = industrial_capacity_factory_tt
+  2993: 		}
+  2994: 		add_to_variable = {
+  2995: 			hof_ic_aleksey_rykov_production_speed_industrial_complex = 0.10
+  2996: 			tooltip = production_speed_industrial_complex_factor_tt
+  2997: 		}
+  2998: 		add_to_variable = {
+  2999: 			hof_ic_aleksey_rykov_research_speed = 0.10
+  3000: 			tooltip = research_speed_factor_tt
+  3001: 		}
+  3002: 		add_to_variable = {
+  3003: 			hof_ic_aleksey_rykov_stability = 0.05
+  3004: 			tooltip = stability_factor_tt
+  3005: 		}
+  3006: 		# 升官衔：重算等级（照德国 GER_add_*_effects 的反推法）
+  3007: 		custom_effect_tooltip = {
+  3008: 			localization_key = hof_ic_rank_up_tt
+  3009: 			CHARACTER = SOV_aleksey_rykov
+  3010: 		}
+  3011: 		effect_tooltip = {   # 照德国：引擎自己写「以 hof_ic_idea_aleksey_rykov_4 取代 hof_ic_idea_aleksey_rykov_3」+「效果变化:」
+  3012: 			swap_ideas = {
+  3013: 				remove_idea = hof_ic_idea_aleksey_rykov_3
+  3014: 				add_idea = hof_ic_idea_aleksey_rykov_4
+  3015: 			}
+  3016: 		}
+  3017: 		hof_ic_idea_aleksey_rykov_sync_rank = yes
+  3018: 	}
+  3019: }
+
+
+========== B. 个人数值容器 ==========
+--- hof_ic_trotsky_dm.txt ---
+# =============================================================================
+# 核心圈 · 托洛茨基个人数值容器（由 build/gen-hof-ic-s3.ps1 生成，勿手改）
+# -----------------------------------------------------------------------------
+# 官衔名与职务招牌在 hidden_ideas（hof_ic_ideas.txt）；
+# 这里装的是【个人线 17 条国策逐条累加】的数值（docs/22 §4 / §8.2.4）。
+#
+# 🚩 值写成【变量名】，由国策 add_to_variable 累加 —— 蓝本：R56
+#    common/dynamic_modifiers/0_dynamic_modifiers.txt 的
+#    SOV_defense_industry_dynamic_modifier / SOV_the_politburo_good_dynamic_modifier
+#    原因：idea 的 modifier 是静态的、读不了变量。
+#
+# 数值刷新：每天自动重算；add_to_variable 后要立刻生效就补 force_update_dynamic_modifier
+# =============================================================================
+
+dynamic_modifiers = {
+
+	hof_ic_lev_trotsky_dm = {
+		icon = GFX_idea_generic_political_support
+		enable = {
+			hof_ic_seated_lev_trotsky = yes
+		}
+		remove_trigger = {
+			NOT = { has_government = communism }
+		}
+
+		army_org_factor = hof_ic_lev_trotsky_army_org
+		training_time_factor = hof_ic_lev_trotsky_training_time
+		experience_gain_army_factor = hof_ic_lev_trotsky_experience_gain_army
+		military_leader_cost_factor = hof_ic_lev_trotsky_military_leader_cost
+		land_doctrine_cost_factor = hof_ic_lev_trotsky_land_doctrine_cost
+		modifier_army_sub_unit_infantry_attack_factor = hof_ic_lev_trotsky_infantry_attack
+		modifier_army_sub_unit_cavalry_attack_factor = hof_ic_lev_trotsky_cavalry_attack
+		army_attack_factor = hof_ic_lev_trotsky_army_attack
+		supply_consumption_factor = hof_ic_lev_trotsky_supply
+		attrition = hof_ic_lev_trotsky_attrition
+		research_speed_factor = hof_ic_lev_trotsky_research_speed
+		communism_drift = hof_ic_lev_trotsky_communism_drift
+		drift_defence_factor = hof_ic_lev_trotsky_drift_defence
+		modifier_army_sub_unit_militia_attack_factor = hof_ic_lev_trotsky_militia_attack
+		army_core_attack_factor = hof_ic_lev_trotsky_army_core_attack
+		send_volunteer_factor = hof_ic_lev_trotsky_send_volunteer
+		opinion_gain_monthly_same_ideology_factor = hof_ic_lev_trotsky_opinion_same_ideology
+		political_power_factor = hof_ic_lev_trotsky_political_power
+		stability_factor = hof_ic_lev_trotsky_stability
+		political_advisor_cost_factor = hof_ic_lev_trotsky_political_advisor_cost
+		consumer_goods_factor = hof_ic_lev_trotsky_consumer_goods
+		production_speed_industrial_complex_factor = hof_ic_lev_trotsky_production_speed_industrial_complex
+		industrial_capacity_factory = hof_ic_lev_trotsky_industrial_capacity
+		war_support_factor = hof_ic_lev_trotsky_war_support
+		production_speed_buildings_factor = hof_ic_lev_trotsky_production_speed_buildings
+		line_change_production_efficiency_factor = hof_ic_lev_trotsky_line_change_efficiency
+		production_factory_max_efficiency_factor = hof_ic_lev_trotsky_factory_max_efficiency
+		production_factory_efficiency_gain_factor = hof_ic_lev_trotsky_factory_efficiency_gain
+		opinion_gain_monthly_factor = hof_ic_lev_trotsky_opinion_monthly
+		boost_ideology_mission_factor = hof_ic_lev_trotsky_boost_ideology_mission
+		subversive_activites_upkeep = hof_ic_lev_trotsky_subversive_upkeep
+		operative_slot = hof_ic_lev_trotsky_operative_slot
+		breakthrough_factor = hof_ic_lev_trotsky_breakthrough
+		combat_width_factor = hof_ic_lev_trotsky_combat_width
+		army_armor_attack_factor = hof_ic_lev_trotsky_armor_attack
+		army_defence_factor = hof_ic_lev_trotsky_army_defence
+		army_core_defence_factor = hof_ic_lev_trotsky_army_core_defence
+		max_dig_in_factor = hof_ic_lev_trotsky_max_dig_in
+		local_resources_factor = hof_ic_lev_trotsky_local_resources
+		global_building_slots_factor = hof_ic_lev_trotsky_building_slots
+	}
+
+}
+
+--- hof_ic_bukharin_dm.txt ---
+# =============================================================================
+# 核心圈 · 布哈林个人数值容器（由 build/gen-hof-ic-s3.ps1 生成，勿手改）
+# -----------------------------------------------------------------------------
+# 官衔名与职务招牌在 hidden_ideas（hof_ic_ideas.txt）；
+# 这里装的是【个人线 9 条国策逐条累加】的数值（docs/26 §4 / §7.3）。
+#
+# 🚩 值写成【变量名】，由国策 add_to_variable 累加 —— 蓝本：R56
+#    common/dynamic_modifiers/0_dynamic_modifiers.txt 的
+#    SOV_defense_industry_dynamic_modifier / SOV_the_politburo_good_dynamic_modifier
+#    原因：idea 的 modifier 是静态的、读不了变量。
+#
+# 数值刷新：每天自动重算；add_to_variable 后要立刻生效就补 force_update_dynamic_modifier
+# =============================================================================
+
+dynamic_modifiers = {
+
+	hof_ic_nikolay_bukharin_dm = {
+		icon = GFX_idea_generic_political_support
+		enable = {
+			hof_ic_seated_nikolay_bukharin = yes
+		}
+		remove_trigger = {
+			NOT = { has_government = communism }
+		}
+
+		research_speed_factor = hof_ic_nikolay_bukharin_research_speed
+		stability_factor = hof_ic_nikolay_bukharin_stability
+		consumer_goods_factor = hof_ic_nikolay_bukharin_consumer_goods
+		political_power_factor = hof_ic_nikolay_bukharin_political_power
+		production_speed_buildings_factor = hof_ic_nikolay_bukharin_buildings_speed
+		communism_drift = hof_ic_nikolay_bukharin_communism_drift
+		industrial_capacity_factory = hof_ic_nikolay_bukharin_industrial_capacity
+		war_support_factor = hof_ic_nikolay_bukharin_war_support
+		army_attack_factor = hof_ic_nikolay_bukharin_army_attack
+	}
+
+}
+
+--- hof_ic_aleksey_rykov_dm.txt ---
+# =============================================================================
+# 核心圈 · 李可夫个人数值容器（由 build/gen-hof-ic-s3.ps1 生成，勿手改）
+# -----------------------------------------------------------------------------
+# 官衔名与职务招牌在 hidden_ideas（hof_ic_ideas.txt）；
+# 这里装的是【个人线 5 条国策逐条累加】的数值（docs/29 §5.2 / §5.3 + docs/30 §4）。
+#
+# 🚩 值写成【变量名】，由国策 add_to_variable 累加 —— 蓝本：R56
+#    common/dynamic_modifiers/0_dynamic_modifiers.txt 的
+#    SOV_defense_industry_dynamic_modifier / SOV_the_politburo_good_dynamic_modifier
+#    原因：idea 的 modifier 是静态的、读不了变量。
+#
+# 数值刷新：每天自动重算；add_to_variable 后要立刻生效就补 force_update_dynamic_modifier
+# =============================================================================
+
+dynamic_modifiers = {
+
+	hof_ic_aleksey_rykov_dm = {
+		icon = GFX_idea_generic_political_support
+		enable = {
+			hof_ic_seated_aleksey_rykov = yes
+		}
+		remove_trigger = {
+			NOT = { has_government = communism }
+		}
+
+		industrial_capacity_factory = hof_ic_aleksey_rykov_industrial_capacity
+		production_speed_industrial_complex_factor = hof_ic_aleksey_rykov_production_speed_industrial_complex
+		army_org_factor = hof_ic_aleksey_rykov_army_org
+		war_support_factor = hof_ic_aleksey_rykov_war_support
+		consumer_goods_factor = hof_ic_aleksey_rykov_consumer_goods
+		research_speed_factor = hof_ic_aleksey_rykov_research_speed
+		stability_factor = hof_ic_aleksey_rykov_stability
+	}
+
+}
+
+========== C. hof_ic_ideas.txt 里李可夫那一段 ==========
+   107: 		# 阿列克谢·李可夫
+   108: 		# 职务分级 4 级：每级 = 下级全部照抄 + 追加（德国实测规律）
+   109: 		#   hof_ic_idea_aleksey_rykov  =  内务人民委员
+   110: 		hof_ic_idea_aleksey_rykov = {
+   111: 			allowed = { always = no }
+   112: 			removal_cost = -1
+   113: 			modifier = {
+   114: 				# 入圈代价：官越大越吃政治点（德国 -0.1 -> -0.3）
+   115: 				political_power_gain = -0.1
+   116: 				industrial_capacity_factory = 0.03
+   117: 			}
+   118: 		}
+
+
+========== D. 升官衔 tooltip 的 swap_ideas（三人）==========
+--- lev_trotsky ---
+    1580: 			localization_key = hof_ic_rank_up_tt
+    1581: 			CHARACTER = SOV_lev_trotsky
+    1582: 		}
+    1583: 		effect_tooltip = {   # 照德国：引擎自己写「以 hof_ic_idea_lev_trotsky_2 取代 hof_ic_idea_lev_trotsky」+「效果变化:」
+    1584: 			swap_ideas = {
+    1585: 				remove_idea = hof_ic_idea_lev_trotsky
+    1586: 				add_idea = hof_ic_idea_lev_trotsky_2
+    1587: 			}
+    1588: 		}
+    1589: 		hof_ic_idea_lev_trotsky_sync_rank = yes
+
+    2224: 			localization_key = hof_ic_rank_up_tt
+    2225: 			CHARACTER = SOV_lev_trotsky
+    2226: 		}
+    2227: 		effect_tooltip = {   # 照德国：引擎自己写「以 hof_ic_idea_lev_trotsky_3a 取代 hof_ic_idea_lev_trotsky_2」+「效果变化:」
+    2228: 			swap_ideas = {
+    2229: 				remove_idea = hof_ic_idea_lev_trotsky_2
+    2230: 				add_idea = hof_ic_idea_lev_trotsky_3a
+    2231: 			}
+    2232: 		}
+    2233: 		hof_ic_idea_lev_trotsky_sync_rank = yes
+
+    2315: 			localization_key = hof_ic_rank_up_tt
+    2316: 			CHARACTER = SOV_lev_trotsky
+    2317: 		}
+    2318: 		effect_tooltip = {   # 照德国：引擎自己写「以 hof_ic_idea_lev_trotsky_3b 取代 hof_ic_idea_lev_trotsky_2」+「效果变化:」
+    2319: 			swap_ideas = {
+    2320: 				remove_idea = hof_ic_idea_lev_trotsky_2
+    2321: 				add_idea = hof_ic_idea_lev_trotsky_3b
+    2322: 			}
+    2323: 		}
+    2324: 		hof_ic_idea_lev_trotsky_sync_rank = yes
+
+--- nikolay_bukharin ---
+--- aleksey_rykov ---
+    2778: 			localization_key = hof_ic_rank_up_tt
+    2779: 			CHARACTER = SOV_aleksey_rykov
+    2780: 		}
+    2781: 		effect_tooltip = {   # 照德国：引擎自己写「以 hof_ic_idea_aleksey_rykov_2 取代 hof_ic_idea_aleksey_rykov」+「效果变化:」
+    2782: 			swap_ideas = {
+    2783: 				remove_idea = hof_ic_idea_aleksey_rykov
+    2784: 				add_idea = hof_ic_idea_aleksey_rykov_2
+    2785: 			}
+    2786: 		}
+    2787: 		hof_ic_idea_aleksey_rykov_sync_rank = yes
+
+    2882: 			localization_key = hof_ic_rank_up_tt
+    2883: 			CHARACTER = SOV_aleksey_rykov
+    2884: 		}
+    2885: 		effect_tooltip = {   # 照德国：引擎自己写「以 hof_ic_idea_aleksey_rykov_3 取代 hof_ic_idea_aleksey_rykov_2」+「效果变化:」
+    2886: 			swap_ideas = {
+    2887: 				remove_idea = hof_ic_idea_aleksey_rykov_2
+    2888: 				add_idea = hof_ic_idea_aleksey_rykov_3
+    2889: 			}
+    2890: 		}
+    2891: 		hof_ic_idea_aleksey_rykov_sync_rank = yes
+
+    3008: 			localization_key = hof_ic_rank_up_tt
+    3009: 			CHARACTER = SOV_aleksey_rykov
+    3010: 		}
+    3011: 		effect_tooltip = {   # 照德国：引擎自己写「以 hof_ic_idea_aleksey_rykov_4 取代 hof_ic_idea_aleksey_rykov_3」+「效果变化:」
+    3012: 			swap_ideas = {
+    3013: 				remove_idea = hof_ic_idea_aleksey_rykov_3
+    3014: 				add_idea = hof_ic_idea_aleksey_rykov_4
+    3015: 			}
+    3016: 		}
+    3017: 		hof_ic_idea_aleksey_rykov_sync_rank = yes
+
+========== E. 本地化（李可夫段）==========
+ # 李可夫个人线 5 条国策（文案为史实/理论节选，来源见 docs/29 §5.2 / §5.3 + docs/30 §4）
+ # ---------------------------------------------------------------------------
+ hof_ic_rykov_supreme_economic_council:0 "最高国民经济委员会主席"
+ hof_ic_rykov_supreme_economic_council_desc:0 "「现在最高国民经济委员会担负着一项困难而又最能收效的任务。……在剥削者的反抗被彻底粉碎以后，在劳动者学会组织社会主义生产以后，这种原来意义的、狭义的管理机构，旧国家的机构，必定消亡，而最高国民经济委员会这样的机构必定成长、发展和巩固，它将担负起有组织的社会的一切最主要的活动。」"
+ hof_ic_rykov_food_supply_commissar:0 "劳动国防委员会粮秣特派员"
+ hof_ic_rykov_food_supply_commissar_desc:0 "「一个有一定效能的统一供给前线和全军的军需机构逐渐建立起来了。……同时切不可忘记，我们是在没有物资储备的情况下作战的。早在 1919 年，中央仓库已经告罄。军衬衣刚刚缝好就送上前线，枪支弹药的情况更糟。图拉的几家兵工厂的产品都是现产现运，没有总司令的签字，一车皮的弹药也不能动用。」"
+ hof_ic_rykov_labour_defence_council:0 "劳动与国防委员会副主席"
+ hof_ic_rykov_labour_defence_council_desc:0 "「国家计划委员会目前的状况根本不可能真正有计划地领导经济工作。……劳动国防委员会的任务是确定经济政策的基本原则，对经济工作进行全面监督，具体解决其他各级经济组织解决不了的棘手问题。」"
+ hof_ic_rykov_sponsor_aviation:0 "扶植航空"
+ hof_ic_rykov_sponsor_aviation_desc:0 "雅科夫列夫最初的一批飞机，家族名就叫 АИР——以阿列克谢·伊万诺维奇·李可夫命名。第一架飞机取名「А. И. 李可夫」，是为了感谢这位自学成才的设计师从 1923 年刚入航空业起，就持续得到航空之友协会（ОДВФ）及其后继者阿维阿希姆的支持；而自 ОДВФ 1923 年成立起，这一组织的主席就是李可夫本人。航空之友协会当年就发展到二百万人，АИР 这个名字一直用到 1937 年的 АИР-18。"
+ hof_ic_rykov_labour_defence_chair:0 "劳动与国防委员会主席"
+ hof_ic_rykov_labour_defence_chair_desc:0 "「这个在最高国民经济委员会内制定、还没有得到批准的五年计划，无疑将被国家计划委员会、劳动国防委员会等加以削减，因为该计划要求投入的基本建设资金和整个拨款额大大超过了党和经济领导机关的预测。」"
+
+ # 职务分级名（照德国：官衔随等级变）
+ hof_ic_idea_lev_trotsky:0 "陆海军人民委员"
+ hof_ic_idea_lev_trotsky_2:0 "革命军事委员会主席"
+ hof_ic_idea_lev_trotsky_3a:0 "共产国际执行委员会主席"
+ hof_ic_idea_lev_trotsky_3b:0 "人民委员会副主席"
+ hof_ic_idea_nikolay_bukharin:0 "《真理报》主编"
+ hof_ic_idea_nikolay_bukharin_2:0 "联共（布）中央政治局委员"
+ hof_ic_idea_nikolay_bukharin_3:0 "共产国际执行委员会主席"
+ hof_ic_idea_aleksey_rykov:0 "内务人民委员"
+ hof_ic_idea_aleksey_rykov_2:0 "最高国民经济委员会主席"
+ hof_ic_idea_aleksey_rykov_3:0 "人民委员会主席"
+ hof_ic_idea_aleksey_rykov_4:0 "劳动与国防委员会主席"
+ hof_ic_lev_trotsky_dm:0 "托洛茨基的个人威望"
+ hof_ic_lev_trotsky_dm_desc:0 "托洛茨基在最高苏维埃中的个人威望。他每完成一条个人国策，下列数值就累积一层；一旦他离开最高苏维埃，这份威望随之消散，累积的加成一并失去。"
+ hof_ic_trotsky_extra_effects_tt:0 "§Y托洛茨基的个人威望§!追加效果："
+ hof_ic_nikolay_bukharin_dm:0 "布哈林的个人威望"
+ hof_ic_nikolay_bukharin_dm_desc:0 "布哈林在最高苏维埃中的个人威望。他每完成一条个人国策，下列数值就累积一层；一旦他离开最高苏维埃，这份威望随之消散，累积的加成一并失去。"
+ hof_ic_bukharin_extra_effects_tt:0 "§Y布哈林的个人威望§!追加效果："
+ hof_ic_aleksey_rykov_dm:0 "李可夫的个人威望"
+ hof_ic_aleksey_rykov_dm_desc:0 "李可夫在最高苏维埃中的个人威望。他每完成一条个人国策，下列数值就累积一层；一旦他离开最高苏维埃，这份威望随之消散，累积的加成一并失去。"
+ hof_ic_rykov_extra_effects_tt:0 "§Y李可夫的个人威望§!追加效果："
+
+ # 终局二选一（选项 tooltip 照德国 GER_inner_circle_himmler_ss_tt 的句式）
+ hof_ic_ending_choice_tt:0 "§Y$CHARACTER$§!很快会开始致力于研究国策§Y$FOCUS$§!。"
+
+ # 列夫·托洛茨基 的终局二选一事件（heartofiron.1050）
+ heartofiron.1050.t:0 "托洛茨基的抉择"
+ heartofiron.1050.desc:0 "托洛茨基在最高苏维埃中已经站稳了脚跟。几条主张先后推行开来，剩下最后一件事没有决定：他到底要把这条路走到哪里去。\n\n「要求我放弃政治活动，意味着要求我放弃为全世界工人阶级利益而进行的斗争，而这一斗争我已孜孜不倦地进行了 32 年之久，也就是我自觉生命的全部时间。只有腐朽透顶的官僚集团才会要求做出这种放弃。」\n\n「请告诉我还有哪个人能在一年之内建立起一支堪称楷模的军队而且赢得军事专家的尊重；我们有这样的人，就有了一切，我们将创造出奇迹。」\n\n问题是，应该走哪一条路？"
+ heartofiron.1050.a:0 "把革命推向全世界"
+ heartofiron.1050.b:0 "先把这个国家建设起来"
+
+ # 列夫·托洛茨基 的岔路二选一事件（heartofiron.1060）
+ heartofiron.1060.t:0 "经济的岔路口"
+ heartofiron.1060.desc:0 "经济重建已经压到了桌面上。托洛茨基手里有两种办法，而它们互相排斥——一旦走上其中一条，另一条就再也走不通了。\n\n先松开战时共产主义那套严苛的集中制，让市场力量运作起来；或者反过来，把军事纪律搬到经济上来，把士兵当作劳动军。\n\n问题是，应该走哪一条？"
+ heartofiron.1060.a:0 "先让市场活起来"
+ heartofiron.1060.b:0 "把军队变成劳动大军"
+
+ # 尼古拉·布哈林 的岔路二选一事件（heartofiron.1061）
+ heartofiron.1061.t:0 "路线之争"
+ heartofiron.1061.desc:0 "布哈林一进门就得表明立场。他对过渡时期的判断，决定了他这条线往哪里走。\n\n「列宁教导说：工人阶级同农民的冲突根本不是不可避免的。托洛茨基教导说：这种冲突必定会发生。」\n\n话说到这个份上，只能选一边。"
+ heartofiron.1061.a:0 "走过渡时期这一条路"
+ heartofiron.1061.b:0 "一步跨过过渡时期"
+
+ # 入口国策 / 升官衔 tooltip（照德国核心圈）
+ # ⚠️ 这两条是【具名参数】写法：
+ #    custom_effect_tooltip = { localization_key = K  CHARACTER = SOV_<key> }
+ #    官方文档 documentation/loc_objects_documentation.md 把 Character 列为一种 loc scope
+ #    → CHARACTER 必须是【真实角色 id】，名字由角色自己的 name 键提供
+ hof_ic_skip_line_tt:0 " \n"
+ hof_ic_seat_note_tt:0 "获得事件§Y最高苏维埃改选§!：\n§Y$CHARACTER$§!可以在§Y核心圈§!中取代一位现任委员。"
+ hof_ic_appointment_cd_tt:0 "任命冷却已结束（距下次任命还有 [?hof_ic_appointment_cd:days_left|Y0] 天）"
+ hof_ic_seat_ascension_tt:0 "§Y$CHARACTER$§!被任命为§Y最高苏维埃委员§!，并在§Y核心圈§!中晋升为："
+ hof_ic_commissar:0 "人民委员"
+ hof_ic_commissar_desc:0 "一个人代表整个国家，本身就是不民主的做法，也是一种反革命的行为——这个作风已经被我们抛弃了。可是集体的意志仍需要一个执行者：我们在最高苏维埃的代表中选出一个常设机构，由它主持各人民委员部的日常工作。它的成员是人民委员；它只对最高苏维埃负责，也随时可以被撤换。"
+ hof_ic_commissar_inner_circle_tt:0 "激活最高苏维埃机制。"
+ hof_ic_commissar_party_discipline:0 "党纪严明"
+ hof_ic_rank_up_tt:0 "§Y$CHARACTER$§!在§Y核心圈§!中崛起："
+ hof_ic_focus_in_progress_tt:0 "§Y$CHARACTER$§!正致力于该国策。\n进度：§Y$FLAG_DAYS$§!/35 天"
+ hof_ic_focus_advisor_only_tt:0 "该国策只能由§Y$CHARACTER$§!在完成§Y$FOCUS$§!之后开始。"
+ hof_ic_ascension_focus_tt:0 "§Y$CHARACTER$§!将开始随着时间的推移处理他分支中的国策。"
+ hof_ic_not_seated_lev_trotsky_tt:0 "§Y列夫·托洛茨基§! 不在最高苏维埃中任职"
+ hof_ic_not_seated_nikolay_bukharin_tt:0 "§Y尼古拉·布哈林§! 不在最高苏维埃中任职"
+ hof_ic_not_seated_aleksey_rykov_tt:0 "§Y阿列克谢·李可夫§! 不在最高苏维埃中任职"
+ hof_ic_not_seated_grigory_zinovyev_tt:0 "§Y格里戈里·季诺维也夫§! 不在最高苏维埃中任职"
+ hof_ic_not_seated_lev_kamenev_tt:0 "§Y列夫·加米涅夫§! 不在最高苏维埃中任职"
+ hof_ic_not_seated_ivan_smirnov_tt:0 "§Y伊万·斯米尔诺夫§! 不在最高苏维埃中任职"
+ hof_ic_not_seated_leonid_serebryakov_tt:0 "§Y列昂尼德·谢列布里亚科夫§! 不在最高苏维埃中任职"
+ SOV_leonid_serebryakov:0 "列昂尼德·谢列布里亚科夫"
+ hof_ic_not_seated_yevgeny_preobrazhensky_tt:0 "§Y叶夫根尼·普列奥布拉任斯基§! 不在最高苏维埃中任职"
+ hof_ic_not_seated_karl_radek_tt:0 "§Y卡尔·拉狄克§! 不在最高苏维埃中任职"
+ hof_ic_not_seated_ivar_smilga_tt:0 "§Y伊瓦尔·斯米尔加§! 不在最高苏维埃中任职"
+ hof_ic_not_seated_mikhail_tomsky_tt:0 "§Y米哈伊尔·托姆斯基§! 不在最高苏维埃中任职"
+ hof_ic_not_seated_martemyan_ryutin_tt:0 "§Y马尔特米扬·里亚京§! 不在最高苏维埃中任职"
+ hof_ic_not_seated_aleksandr_shlyapnikov_tt:0 "§Y亚历山大·施利亚普尼科夫§! 不在最高苏维埃中任职"
+ hof_ic_not_seated_mikhail_kalinin_tt:0 "§Y米哈伊尔·加里宁§! 不在最高苏维埃中任职"
+ hof_ic_not_seated_maksim_litvinov_tt:0 "§Y马克西姆·李维诺夫§! 不在最高苏维埃中任职"
+ hof_ic_not_seated_grigory_sokolnikov_tt:0 "§Y格里戈里·索柯里尼柯夫§! 不在最高苏维埃中任职"
+ hof_ic_not_seated_mikhail_tukhachevsky_tt:0 "§Y米哈伊尔·图哈切夫斯基§! 不在最高苏维埃中任职"
+ hof_ic_not_seated_nikolay_voznesensky_tt:0 "§Y尼古拉·沃兹涅先斯基§! 不在最高苏维埃中任职"
+ hof_ic_not_seated_pyotr_smirnov_tt:0 "§Y彼得·斯米尔诺夫§! 不在最高苏维埃中任职"
+ hof_ic_not_seated_georgy_malenkow_tt:0 "§Y格奥尔基·马林科夫§! 不在最高苏维埃中任职"
+ hof_ic_not_seated_nikita_khrushchyov_tt:0 "§Y尼基塔·赫鲁晓夫§! 不在最高苏维埃中任职"
+ hof_ic_not_seated_kliment_voroshilov_tt:0 "§Y克利门特·伏罗希洛夫§! 不在最高苏维埃中任职"
+
+ # 词条 tooltip（这 5 个没有官方 <词条>_tt 键，自写）
+ hof_ic_tt_combat_width_factor:0 " 战场宽度: $RIGHT|+=%1$"
+ hof_ic_tt_opinion_gain_monthly_factor:0 " 各国好感月增长: $RIGHT|+=%1$"
+ hof_ic_tt_send_volunteer_factor:0 " 派遣志愿军规模: $RIGHT|+=%1$"
+ hof_ic_tt_modifier_army_sub_unit_infantry_attack_factor:0 " 步兵进攻: $RIGHT|+=%1$"
+ hof_ic_tt_modifier_army_sub_unit_cavalry_attack_factor:0 " 骑兵进攻: $RIGHT|+=%1$"
+
+ # 升官衔提示（照德国 GER_ascended_character_trait_swap_tt）
+ # 📌 hof_ic_rank_up_tt 是【共享】键，用 $CHARACTER$ 填人名（定义见上面「入口国策 / 升官衔 tooltip」段）
+ hof_ic_idea_aleksey_rykov_desc:0 "阿列克谢·李可夫进入了最高苏维埃。他带来的专长会持续影响国家，代价是政治点收入下降。"
+ hof_ic_idea_aleksey_rykov:0 "内务人民委员"
+ hof_ic_idea_aleksey_rykov_2:0 "最高国民经济委员会主席"
+ hof_ic_idea_aleksey_rykov_3:0 "人民委员会主席"
+ hof_ic_idea_aleksey_rykov_4:0 "劳动与国防委员会主席"
+ hof_ic_aleksey_rykov_dm:0 "李可夫的个人威望"
+ hof_ic_aleksey_rykov_dm_desc:0 "李可夫在最高苏维埃中的个人威望。他每完成一条个人国策，下列数值就累积一层；一旦他离开最高苏维埃，这份威望随之消散，累积的加成一并失去。"
+ hof_ic_rykov_extra_effects_tt:0 "§Y李可夫的个人威望§!追加效果："

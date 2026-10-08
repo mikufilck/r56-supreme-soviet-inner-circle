@@ -1,0 +1,485 @@
+﻿Decisions - Hearts of Iron 4 Wiki
+28 captures
+04 Dec 2021 - 29 Apr 2026
+Mar
+APR
+May
+29
+2025
+2026
+2027
+success
+fail
+About this capture
+COLLECTED BY
+Collection:
+Save Page Now
+TIMESTAMPS
+The Wayback Machine - https://web.archive.org/web/20260429092347/https://hoi4.paradoxwikis.com/Decisions
+Forum list
+Trending
+Latest
+New posts
+Paradox
+Store
+Mods
+Forum
+Launcher
+PDXCON
+2019
+Paradox Wikis
+Hearts of Iron 4 Wiki
+Active Wikis
+Age of Wonders 4
+Empire of Sin
+Cities: Skylines 2
+Crusader Kings 3
+Europa Universalis 5
+Hearts of Iron 4
+Hunter: The Reckoning
+Imperator: Rome
+Millennia
+Prison Architect
+Stellaris
+Surviving Mars
+Surviving the Aftermath
+Werewolf: the Apocalypse
+Vampire: The Masquerade
+Victoria 3
+Legacy Wikis
+AoW: Planetfall
+Cities: Skylines
+Crusader Kings 2
+Arsenal of Democracy
+Europa Universalis 2
+Europa Universalis 3
+Europa Universalis 4
+Europa Universalis: Rome
+Hearts of Iron 2
+Hearts of Iron 3
+Tyranny
+Victoria 1
+Victoria 2
+Search
+Personal tools
+Log in
+Personal tools
+English
+Not logged in
+Talk
+Contributions
+Log in
+Navigation menu
+Namespaces
+Page
+Discussion
+English
+Views
+Read
+Edit
+Edit source
+View history
+More
+Navigation
+Hearts of Iron 4 Wiki
+Recent changes
+Random page
+Paradox Wikis
+- Main portal
+- Wikis discord
+- Contact us
+- Style guidelines
+HoI4 links
+- Forums
+- Game discord
+- Mods
+- Store
+- YouTube
+Tools
+What links here
+Related changes
+Special pages
+Printable version
+Permanent link
+Page information
+braze
+Decisions
+From Hearts of Iron 4 Wiki
+Jump to navigation
+Jump to search
+This is a community maintained wiki. If you spot a mistake, please help with fixing it.
+Please help improve this article or section by
+expanding it
+with: Add missing decision pages [full or near-full].
+Decisions
+represent various actions that players can take or
+missions
+which have a time limit to complete an action or prevent a consequence. Decisions have a dedicated interface tab and are further divided into categories. Most decisions require spending political power and have various conditions that must be fulfilled in order to be taken.
+Contents
+1
+Decision page
+1.1
+Generic
+1.2
+Nation specific
+1.3
+Missions
+1.4
+Other
+2
+References
+Decision page
+[
+edit
+|
+edit source
+]
+The following is a list of all decision files as found in the
+/Hearts of Iron IV/common/decisions/
+folder.
+Generic
+[
+edit
+|
+edit source
+]
+This is a community maintained wiki. If you spot a mistake, please help with fixing it.
+African Union decisions
+Agent recruitment decisions LaR
+Anti-Japanese infiltration decisions
+Baltic decisions
+Border conflict decisions
+Chinese political power struggle decisions
+Exiled government decisions
+Generic decisions
+Foreign influence decisions
+Formable nation decisions
+Military industrial organization decisions AAT
+NATO decisions
+Naval treaty decisions
+Nordic decisions
+Political decisions
+Resource prospecting decisions
+Stability & war support decisions
+Trial of Allegiance shared decisions
+Nation specific
+[
+edit
+|
+edit source
+]
+This is a community maintained wiki. If you spot a mistake, please help with fixing it.
+Afghan decisions
+American decisions
+American congress decisions
+Argentinian decisions
+Austrian decisions
+Belgian decisions
+Belgian Congo decisions
+British decisions
+British Raj decisions
+British Raj decisions GoE
+Bolivian decisions
+Brazilian decisions
+Bulgarian decisions
+Chilean decisions
+Chinese decisions
+Communist Chinese decisions
+Czechoslovakian decisions
+Danish decisions
+Estonian decisions
+Ethiopian decisions
+Filipino decisions
+Finnish decisions
+French decisions
+Georgian decisions
+German decisions
+German SS recruitment decisions
+Greek decisions
+Hungarian decisions
+Hungarian decisions DoD
+Icelandic decisions
+Iranian decisions
+Iraqi decisions
+Italian decisions
+Japanese decisions
+Korean decisions
+Latvian decisions
+Lithuanian decisions
+Manchukuo decisions
+Mengjiang decisions
+Mexican decisions
+Mongolian decisions
+Netherlands decisions
+Norwegian decisions
+Omani decisions
+Paraguayan decisions
+Paraguay-Uruguay shared decisions
+Peruvian decisions
+Polish decisions
+Portuguese decisions
+Reorganized National Government decisions
+Romanian decisions
+Saudi decisions
+Second Philippine Republic decisions
+South African decisions
+Soviet decisions
+Spanish decisions
+Swedish decisions
+Swiss decisions
+Turkish decisions
+Venezuelan decisions
+Warlord decisions
+Welsh decisions
+Yugoslavian decisions
+Missions
+[
+edit
+|
+edit source
+]
+Please help improve this article or section by
+expanding it
+.
+Austrian missions
+Bulgarian missions
+British Raj missions
+Chilean missions
+Chinese missions
+Communist Chinese missions
+Chinese shared missions
+Estonian missions
+Finnish missions
+Italian missions
+Japanese missions
+Latvian missions
+Lithuanian missions
+Manchukuo missions
+Mexican missions
+Polish missions
+Spanish missions
+Nationalist Spanish missions
+Soviet missions
+Swedish missions
+Swiss missions
+Yugoslavian missions
+Other
+[
+edit
+|
+edit source
+]
+Please help improve this article or section by
+expanding it
+.
+The following nations don't have decision or mission files dedicated to them, but have events affecting them appearing in the two lists above.
+Albania
+Dutch East Indies
+Ecuador
+Luxembourg
+Mongolia
+Siam
+Syria
+Tibet
+Tannu Tuva
+to be added
+References
+[
+edit
+|
+edit source
+]
+Mechanics
+Politics
+Ideology
+鈥?
+Faction
+鈥?
+National focus
+鈥?
+Ideas
+鈥?
+Government
+鈥?
+Puppet
+鈥?
+Governments in exile
+鈥?
+Diplomacy
+鈥?
+World tension
+鈥?
+Civil war
+鈥?
+Occupation
+鈥?
+Balance of power
+Production
+Trade
+鈥?
+Production
+鈥?
+Construction
+鈥?
+Equipment
+鈥?
+Fuel
+鈥?
+Military industrial organization
+鈥?
+International market
+Research and technology
+Research
+鈥?
+Infantry technology
+鈥?
+Support companies technology
+鈥?
+Armor technology
+(also
+without No Step Back
+) 鈥?
+Artillery technology
+鈥?
+Land doctrine
+鈥?
+Special forces doctrine
+鈥?
+Naval technology
+(also
+without Man the Guns
+) 鈥?
+Naval support technology
+鈥?
+Naval doctrine
+鈥?
+Air technology
+(also
+without By Blood Alone
+) 鈥?
+Air doctrine
+鈥?
+Engineering technology
+鈥?
+Industry technology
+鈥?
+Special project
+鈥?
+Scientist
+Military and warfare
+Warfare
+鈥?
+Peace conference
+鈥?
+Land units
+鈥?
+Land warfare
+鈥?
+Division designer
+鈥?
+Tank designer
+鈥?
+Army planner
+鈥?
+Command group
+鈥?
+Commander
+鈥?
+Battle plan
+鈥?
+Combat tactics
+鈥?
+Ship
+鈥?
+Ship designer
+(
+London Naval Treaty
+) 鈥?
+Naval warfare
+鈥?
+Aircraft designer
+鈥?
+Air warfare
+鈥?
+Experience
+鈥?
+Officer corps
+鈥?
+Attrition and accidents
+鈥?
+Logistics
+鈥?
+Manpower
+鈥?
+Nuclear bomb
+鈥?
+Raid
+Espionage
+Intel
+鈥?
+Intelligence agency
+鈥?
+Operatives
+鈥?
+Missions
+鈥?
+Operations
+Map
+Map
+鈥?
+Province
+鈥?
+Terrain
+鈥?
+Weather
+鈥?
+State
+Events and Decisions
+Events
+鈥?
+Decisions
+Retrieved from "
+"
+Categories
+:
+1.4
+Expand
+Decisions
+Hidden category:
+Articles with potentially outdated sections
+This page was last edited on 28 April 2026, at 11:23.
+Content is available under
+Attribution-ShareAlike 3.0
+unless otherwise noted.
+About Hearts of Iron 4 Wiki
+Mobile view
+Games
+Discover
+Our Brands
+Browse
+Play
+on Paradox technology
+Community
+Paradox Forums
+Paradox
+Wikis
+Support
+About
+News
+About us
+Careers
+Join our playtests
+Media contact
+Social Media
+Legal
+Information
+EU Online Dispute Resolution
+Report Illegal Content
+Terms & Policies
+Legal Information
+EU Online Dispute Resolution
+Report Illegal Content
+Frequently Asked
+Questions
+Paradox
+Interactive corporate website

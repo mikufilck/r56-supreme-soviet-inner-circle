@@ -1,0 +1,623 @@
+﻿################ R56 : D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125\common\national_focus\germany.txt
+     总行数: 72008
+
+======== GER_fuhrerprinzip   (L21203..L21327) ========
+	focus = {
+		id = GER_fuhrerprinzip
+
+		dynamic = yes
+		
+		alternate_icon = GFX_focus_GER_support_the_fuhrer_historical
+
+		icon = {
+			GFX_focus_GER_fuhrerprinzip_todt = {
+				has_country_leader = {
+					ruling_only = yes
+					character = GER_fritz_todt
+				}
+			}
+			GFX_focus_GER_fuhrerprinzip_speer = {
+				has_country_leader = {
+					ruling_only = yes
+					character = GER_albert_speer
+				}
+			}
+			GFX_focus_GER_fuhrerprinzip_goring = {
+				has_country_leader = {
+					ruling_only = yes
+					character = GER_hermann_goring
+				}
+			}
+			GFX_focus_GER_fuhrerprinzip_himmler = {
+				has_country_leader = {
+					ruling_only = yes
+					character = GER_heinrich_himmler
+				}
+			}
+			GFX_focus_GER_fuhrerprinzip_goebbels = {
+				has_country_leader = {
+					ruling_only = yes
+					character = GER_joseph_goebbels
+				}
+			}
+			GFX_focus_GER_fuhrerprinzip_hess = {
+				has_country_leader = {
+					ruling_only = yes
+					character = GER_rudolf_hess
+				}
+			}
+			GFX_focus_GER_fuhrerprinzip_bormann = {
+				has_country_leader = {
+					ruling_only = yes
+					character = GER_martin_bormann
+				}
+			}
+			GFX_focus_GER_support_the_fuhrer = yes
+		}
+
+		prerequisite = { focus = GER_remilitarize_the_rhineland }
+		x = -17
+		y = 8
+		relative_position_id = GER_remilitarize_the_rhineland
+		cost = 5
+		available = {
+			has_government = fascism
+		}
+
+		search_filters = { FOCUS_FILTER_INNER_CIRCLE FOCUS_FILTER_HISTORICAL FOCUS_FILTER_POLITICAL FOCUS_FILTER_POLITICAL_CHARACTER }
+
+		completion_reward = {
+			custom_effect_tooltip = GER_fuhrerprinzip_inner_circle_tt
+			add_political_power = 50
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			if = {
+				limit = {
+					has_country_leader_with_trait = GER_der_fuhrer
+				}
+				random_character = {
+					limit = {
+						is_country_leader = yes
+					}
+					swap_country_leader_traits = {
+						remove = GER_der_fuhrer
+						add = GER_der_fuhrer_fuhrerprinzip
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_leader_with_trait = GER_der_fuhrer_wehrmacht
+				}
+				random_character = {
+					limit = {
+						is_country_leader = yes
+					}
+					swap_country_leader_traits = {
+						remove = GER_der_fuhrer_wehrmacht
+						add = GER_der_fuhrer_fuhrerprinzip_wehrmacht
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_leader_with_trait = GER_der_fuhrer_neurath
+				}
+				random_character = {
+					limit = {
+						is_country_leader = yes
+					}
+					swap_country_leader_traits = {
+						remove = GER_der_fuhrer_neurath
+						add = GER_der_fuhrer_fuhrerprinzip_neurath
+					}
+				}
+			}
+			# No fallback if country leader is not Hitler and the Werhmacht / Neurath focuses are completed
+
+			hidden_effect = {
+				add_dynamic_modifier = {
+					modifier = GER_the_inner_circle_dm
+				}
+			}
+		}
+	}
+
+======== GER_ascension_of_todt   (L21329..L21450) ========
+	focus = {
+		id = GER_ascension_of_todt
+		icon = GFX_focus_GER_ascension_of_todt
+		prerequisite = { focus = GER_fuhrerprinzip }
+
+		x = -7
+		y = 1
+		relative_position_id = GER_fuhrerprinzip
+		cost = 2
+		
+		available = {
+			has_government = fascism
+			NOT = {
+				has_country_leader = {
+					ruling_only = yes
+					character = GER_fritz_todt
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = GER_inner_circle_event_pending_flag
+				}
+				NOT = { has_country_flag = GER_inner_circle_event_pending_flag }
+			}
+
+			GER_inner_circle_is_ascension_cd_over = yes
+			if = {
+				limit = {
+					has_country_flag = GER_inner_circle_cd_flag
+				}
+				custom_trigger_tooltip = {
+					tooltip = GER_inner_circle_cd_days_tt
+					NOT = {	has_country_flag = GER_inner_circle_cd_flag }
+				}
+			}
+		}
+
+		#Focus will need to pause while events are pending
+		cancel_if_invalid = no
+		continue_if_invalid = no
+
+		search_filters = { FOCUS_FILTER_INNER_CIRCLE FOCUS_FILTER_POLITICAL_CHARACTER FOCUS_FILTER_INDUSTRY }
+
+		select_effect = { #Necessary to prevent AI from getting stuck if the focus is paused due to available trigger returning false
+			set_country_flag = GER_todt_ascension_flag
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = GER_ascension_of_character_tt
+				CHARACTER = GER_fritz_todt
+			}
+			show_ideas_tooltip = GER_todt_reich_engineer
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			custom_effect_tooltip = {
+				localization_key = GER_ascension_of_character_focus_tt
+				CHARACTER = GER_fritz_todt
+			}
+
+			if = { #Just to make it easy to debug stuff for development
+				limit = {
+					OR = {
+						check_variable = { GER_ascended_advisor_1 = 1 }
+						check_variable = { GER_ascended_advisor_2 = 1 }
+						check_variable = { GER_ascended_advisor_3 = 1 }
+					}
+				}
+				log = "Advisor was already there. STOP CHEATING!"
+			}
+			else_if = { # ASCENDED ADVISORS FULL - NEED TO REPLACE SOMEONE
+				limit = {
+					check_variable = { GER_ascended_advisor_1 = 0 compare = not_equals }
+					check_variable = { GER_ascended_advisor_2 = 0 compare = not_equals }
+					check_variable = { GER_ascended_advisor_3 = 0 compare = not_equals }
+				}
+				hidden_effect = {
+					set_variable = { GER_ascending_advisor = 1 }
+					country_event = GER_inner_circle.01
+				}
+
+				custom_effect_tooltip = generic_skip_one_line_tt
+				custom_effect_tooltip = {
+					localization_key = GER_event_to_replace_ascended_advisor_tt
+					EVENT = GER_inner_circle.01.t
+					CHARACTER = GER_fritz_todt
+				}
+			}
+			else = {
+				hidden_effect = {
+					add_ideas = GER_todt_reich_engineer
+				}
+				if = {
+					limit = {
+						check_variable = { GER_ascended_advisor_1 = 0 }
+					}
+					set_variable = { GER_ascended_advisor_1 = 1 }
+				}
+				else_if = {
+					limit = {
+						check_variable = { GER_ascended_advisor_2 = 0 }
+					}
+					set_variable = { GER_ascended_advisor_2 = 1 }
+				}
+				else_if = {
+					limit = {
+						check_variable = { GER_ascended_advisor_3 = 0 }
+					}
+					set_variable = { GER_ascended_advisor_3 = 1 }
+				}
+			}
+
+			hidden_effect = {
+				country_event = { id = GER_inner_circle_todt.01 days = GER_inner_circle_days_to_start_focus random_days = GER_inner_circle_random_days }
+
+				clr_country_flag = GER_todt_ascension_flag
+
+				GER_inner_circle_set_ascension_cd = yes
+			}
+		}
+	}
+
+======== GER_form_organization_todt   (L21452..L21530) ========
+	focus = {
+		id = GER_form_organization_todt
+		icon = GFX_focus_GER_form_organization_todt
+		prerequisite = { focus = GER_ascension_of_todt }
+
+		text_icon = GER_inner_circle_focus_style
+
+		x = 0
+		y = 1
+		relative_position_id = GER_ascension_of_todt
+		cost = @inner_circle_time_tier_1
+		
+		available = {
+			if = { #ADVISOR WORKING ON THE FOCUS (Show progress)
+				limit = {
+					has_country_flag = GER_form_organization_todt_in_progress_flag
+				}
+				set_temp_variable = { temp_focus_days = @inner_circle_time_tier_1 } #For tooltip purposes
+				multiply_temp_variable = { temp_focus_days = 7 } #The constant uses focus cost which is in weeks, so convert to days
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = GER_inner_circle_focus_in_progress_tt
+						CHARACTER = GER_fritz_todt
+						FLAG_DAYS = [?GER_form_organization_todt_in_progress_flag:days]
+					}
+					always = no 
+				}
+			}
+			else = { #NOT BEEN WORKED ON (Just Explain)
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = GER_focus_can_only_be_completed_by_advisor_tt
+						CHARACTER = GER_fritz_todt
+						FOCUS = GER_ascension_of_todt
+					}
+					always = no
+				}
+			}
+		}
+
+		search_filters = { FOCUS_FILTER_INNER_CIRCLE FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			every_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				random_select_amount = 3
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					has_idea = GER_philipp_holzmann
+				}
+				swap_ideas = {
+					remove_idea = GER_philipp_holzmann
+					add_idea = GER_organization_todt
+				}
+			}
+			else = {
+				effect_tooltip = {
+					custom_effect_tooltip = available_designer
+					show_ideas_tooltip = GER_organization_todt
+				}
+			}
+		}
+	}
+
+  --- GER_todt_reich_engineer : 未找到
+
+======== GER_a_strong_successor   (L24249..L24358) ========
+	focus = {
+		id = GER_a_strong_successor
+		icon = GFX_focus_GER_a_strong_successor
+		prerequisite = { focus = GER_hegemony_of_the_ss focus = GER_wunderwaffe focus = GER_integration_of_puppet_economies focus = GER_propaganda_master focus = GER_total_control_over_domestic_affairs }
+		mutually_exclusive = { focus = GER_loyalty_to_the_fuhrer }
+		x = -2
+		y = 5
+		relative_position_id = GER_fuhrerprinzip
+		cost = 5
+
+		available = {
+			has_government = fascism
+
+			custom_trigger_tooltip = {
+				tooltip = GER_a_strong_successor_trigger_tt
+				count_triggers = {
+					amount = 3
+					AND = {
+						has_completed_focus = GER_wunderwaffe
+						OR = {
+							check_variable = { GER_ascended_advisor_1 = 1 }
+							check_variable = { GER_ascended_advisor_2 = 1 }
+							check_variable = { GER_ascended_advisor_3 = 1 }
+							check_variable = { GER_ascended_advisor_1 = 2 }
+							check_variable = { GER_ascended_advisor_2 = 2 }
+							check_variable = { GER_ascended_advisor_3 = 2 }
+						}
+					}
+					AND = {
+						has_completed_focus = GER_integration_of_puppet_economies
+						OR = {
+							check_variable = { GER_ascended_advisor_1 = 3 }
+							check_variable = { GER_ascended_advisor_2 = 3 }
+							check_variable = { GER_ascended_advisor_3 = 3 }
+						}
+					}
+					AND = {
+						has_completed_focus = GER_hegemony_of_the_ss
+						OR = {
+							check_variable = { GER_ascended_advisor_1 = 4 }
+							check_variable = { GER_ascended_advisor_2 = 4 }
+							check_variable = { GER_ascended_advisor_3 = 4 }
+						}
+					}
+					AND = {
+						has_completed_focus = GER_propaganda_master
+						OR = {
+							check_variable = { GER_ascended_advisor_1 = 5 }
+							check_variable = { GER_ascended_advisor_2 = 5 }
+							check_variable = { GER_ascended_advisor_3 = 5 }
+						}
+					}
+					AND = {
+						has_completed_focus = GER_total_control_over_domestic_affairs
+						OR = {
+							check_variable = { GER_ascended_advisor_1 = 6 }
+							check_variable = { GER_ascended_advisor_2 = 6 }
+							check_variable = { GER_ascended_advisor_3 = 6 }
+							check_variable = { GER_ascended_advisor_1 = 7 }
+							check_variable = { GER_ascended_advisor_2 = 7 }
+							check_variable = { GER_ascended_advisor_3 = 7 }
+						}
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					has_country_flag = GER_inner_circle_event_pending_flag
+				}
+				NOT = { has_country_flag = GER_inner_circle_event_pending_flag }
+			}
+		}
+
+		#Focus will need to pause while events are pending
+		cancel_if_invalid = no
+		continue_if_invalid = no
+
+		search_filters = { FOCUS_FILTER_INNER_CIRCLE FOCUS_FILTER_POLITICAL_CHARACTER }
+
+		select_effect = { #Necessary to prevent AI from getting stuck if the focus is paused due to available trigger returning false
+			set_country_flag = GER_a_strong_successor_flag
+		}
+
+		completion_reward = {
+			hidden_effect = {
+				country_event = GER_inner_circle.02
+			}
+		
+			custom_effect_tooltip = {
+				localization_key = GER_a_strong_successor_tt
+				EVENT = GER_inner_circle.02.t
+				CHARACTER = [ROOT.GetLeader]
+			}
+			if = {
+				limit = {
+					OR = {
+						check_variable = { GER_ascended_advisor_1 = 0 compare = not_equals }
+						check_variable = { GER_ascended_advisor_2 = 0 compare = not_equals }
+						check_variable = { GER_ascended_advisor_3 = 0 compare = not_equals }
+					}
+				}
+				custom_effect_tooltip = GER_a_strong_successor_current_advisors_tt
+			}
+
+			hidden_effect = {
+				clr_country_flag = GER_a_strong_successor_flag
+			}
+		}
+	}
+
+======== GER_loyalty_to_the_fuhrer   (L24360..L24477) ========
+	focus = {
+		id = GER_loyalty_to_the_fuhrer
+		icon = GFX_focus_GER_loyalty_to_the_fuhrer
+		prerequisite = { focus = GER_hegemony_of_the_ss focus = GER_wunderwaffe focus = GER_integration_of_puppet_economies focus = GER_propaganda_master focus = GER_total_control_over_domestic_affairs }
+		mutually_exclusive = { focus = GER_a_strong_successor }
+		x = 2
+		y = 5
+		relative_position_id = GER_fuhrerprinzip
+		cost = 5
+
+		available = {
+			has_government = fascism
+
+			custom_trigger_tooltip = {
+				tooltip = GER_a_strong_successor_trigger_tt
+				count_triggers = {
+					amount = 3
+					AND = {
+						has_completed_focus = GER_wunderwaffe
+						OR = {
+							check_variable = { GER_ascended_advisor_1 = 1 }
+							check_variable = { GER_ascended_advisor_2 = 1 }
+							check_variable = { GER_ascended_advisor_3 = 1 }
+							check_variable = { GER_ascended_advisor_1 = 2 }
+							check_variable = { GER_ascended_advisor_2 = 2 }
+							check_variable = { GER_ascended_advisor_3 = 2 }
+						}
+					}
+					AND = {
+						has_completed_focus = GER_integration_of_puppet_economies
+						OR = {
+							check_variable = { GER_ascended_advisor_1 = 3 }
+							check_variable = { GER_ascended_advisor_2 = 3 }
+							check_variable = { GER_ascended_advisor_3 = 3 }
+						}
+					}
+					AND = {
+						has_completed_focus = GER_hegemony_of_the_ss
+						OR = {
+							check_variable = { GER_ascended_advisor_1 = 4 }
+							check_variable = { GER_ascended_advisor_2 = 4 }
+							check_variable = { GER_ascended_advisor_3 = 4 }
+						}
+					}
+					AND = {
+						has_completed_focus = GER_propaganda_master
+						OR = {
+							check_variable = { GER_ascended_advisor_1 = 5 }
+							check_variable = { GER_ascended_advisor_2 = 5 }
+							check_variable = { GER_ascended_advisor_3 = 5 }
+						}
+					}
+					AND = {
+						has_completed_focus = GER_total_control_over_domestic_affairs
+						OR = {
+							check_variable = { GER_ascended_advisor_1 = 6 }
+							check_variable = { GER_ascended_advisor_2 = 6 }
+							check_variable = { GER_ascended_advisor_3 = 6 }
+							check_variable = { GER_ascended_advisor_1 = 7 }
+							check_variable = { GER_ascended_advisor_2 = 7 }
+							check_variable = { GER_ascended_advisor_3 = 7 }
+						}
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					has_country_flag = GER_inner_circle_event_pending_flag
+				}
+				NOT = { has_country_flag = GER_inner_circle_event_pending_flag }
+			}
+		}
+
+		#Focus will need to pause while events are pending
+		cancel_if_invalid = no
+		continue_if_invalid = no
+
+		search_filters = { FOCUS_FILTER_INNER_CIRCLE FOCUS_FILTER_POLITICAL_CHARACTER FOCUS_FILTER_MANPOWER FOCUS_FILTER_POLITICAL FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+
+		select_effect = { #Necessary to prevent AI from getting stuck if the focus is paused due to available trigger returning false
+			set_country_flag = GER_loyalty_to_the_fuhrer_flag
+		}
+
+		completion_reward = {
+			add_political_power = 100
+
+			add_country_leader_trait = GER_loyal_inner_circle
+
+			if = {
+				limit = {
+					capital_scope = {
+						state = 64 #BRANDENBURG
+					}
+					controls_province = 6521 #BERLIN
+					64 = {
+						free_building_slots = {
+							building = bunker
+							size > 1
+							province = 6521
+						}
+					}
+				}
+				64 = {
+					add_building_construction = {
+						type = bunker
+						level = 2
+						instant_build = yes
+						province =  6521
+					}
+				}
+			}
+
+			hidden_effect = {
+				clr_country_flag = GER_loyalty_to_the_fuhrer_flag
+			}
+		}
+	}
+
+
+################ dynamic_modifiers 文件清单
+  --- [R56] D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125\common\dynamic_modifiers
+      0_dynamic_modifiers.txt
+      AFG.txt
+      AST.txt
+      AUS.txt
+      cw_dynamic_modifiers.txt
+      DEN.txt
+      EGY.txt
+      LIE.txt
+      NaW_unique_dynamic_modifiers.txt
+      NMB.txt
+      r56_china_and_co_dm.txt
+      r56_CYP.txt
+      r56_CZE.txt
+      r56_dynamic_modifiers.txt
+      r56_GER.txt
+      r56_HOL.txt
+      r56_LUX.txt
+      r56_MEN.txt
+      r56_PRU.txt
+      r56_ROM.txt
+      r56_SLO.txt
+      RAJ.txt
+      SAM.txt
+      SEA_dynamic_modifiers.txt
+      SIA_r56.txt
+      TAOG_dynamic_modifiers.txt
+      toa_dynamic_modifiers.txt
+      TUR.txt
+      VEN.txt
+      wuw_dynamic_modifiers.txt
+  --- [原版] F:\Hearts of Iron IV\common\dynamic_modifiers
+      0_dynamic_modifiers.txt
+      aat_dynamic_modifiers.txt
+      ABDA_dynamic_modifiers.txt
+      bba_dynamic_modifiers.txt
+      GoE_dynamic_modifiers.txt
+      HABSBURG_dynamic_modifiers.txt
+      mun_dynamic_modifiers.txt
+      SEA_dynamic_modifiers.txt
+      TAOG_dynamic_modifiers.txt
+      toa_dynamic_modifiers.txt
+      wuw_dynamic_modifiers.txt
+
+################ dynamic_modifiers 里含 GER / inner_circle / fuhrer / ascension 的文件
+  [R56] D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125\common\dynamic_modifiers\r56_china_and_co_dm.txt
+  [R56] D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125\common\dynamic_modifiers\r56_GER.txt
+  [R56] D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125\common\dynamic_modifiers\SEA_dynamic_modifiers.txt
+  [R56] D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125\common\dynamic_modifiers\wuw_dynamic_modifiers.txt
+  [原版] F:\Hearts of Iron IV\common\dynamic_modifiers\aat_dynamic_modifiers.txt
+  [原版] F:\Hearts of Iron IV\common\dynamic_modifiers\SEA_dynamic_modifiers.txt
+  [原版] F:\Hearts of Iron IV\common\dynamic_modifiers\wuw_dynamic_modifiers.txt

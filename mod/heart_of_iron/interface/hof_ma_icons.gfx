@@ -1,0 +1,538 @@
+# =============================================================================
+# S5 经互会通用线的图标 sprite（由 build/gen-hof-ma-icons.ps1 生成，勿手改）
+# -----------------------------------------------------------------------------
+# 两类：
+#   ① 国策版 GFX_hof_ma_<名>（100x88）+ 同名 _shine —— 国策 icon 用
+#   ② 民族精神版 GFX_idea_hof_ma_<名>（60x60）—— idea 的 picture / DM 的 icon 用
+# 素材：真实历史徽标（经互会旗徽 / 华约徽 / 共产国际徽 / 国际学联旗），
+#       见 docs/un-focus/06-s5-emblem-icons.md
+# =============================================================================
+
+spriteTypes = {
+
+	# ---------------- GFX_hof_ma_cominform ----------------
+	SpriteType = {
+		name = "GFX_hof_ma_cominform"
+		texturefile = "gfx/interface/hof_ma/focus/GFX_hof_ma_cominform.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_hof_ma_cominform_shine"
+		texturefile = "gfx/interface/hof_ma/focus/GFX_hof_ma_cominform.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/hof_ma/focus/GFX_hof_ma_cominform.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/hof_ma/focus/GFX_hof_ma_cominform.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	# ---------------- GFX_hof_ma_druzhba ----------------
+	SpriteType = {
+		name = "GFX_hof_ma_druzhba"
+		texturefile = "gfx/interface/hof_ma/focus/GFX_hof_ma_druzhba.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_hof_ma_druzhba_shine"
+		texturefile = "gfx/interface/hof_ma/focus/GFX_hof_ma_druzhba.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/hof_ma/focus/GFX_hof_ma_druzhba.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/hof_ma/focus/GFX_hof_ma_druzhba.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	# ---------------- GFX_hof_ma_ibec ----------------
+	SpriteType = {
+		name = "GFX_hof_ma_ibec"
+		texturefile = "gfx/interface/hof_ma/focus/GFX_hof_ma_ibec.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_hof_ma_ibec_shine"
+		texturefile = "gfx/interface/hof_ma/focus/GFX_hof_ma_ibec.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/hof_ma/focus/GFX_hof_ma_ibec.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/hof_ma/focus/GFX_hof_ma_ibec.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	# ---------------- GFX_hof_ma_iib ----------------
+	SpriteType = {
+		name = "GFX_hof_ma_iib"
+		texturefile = "gfx/interface/hof_ma/focus/GFX_hof_ma_iib.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_hof_ma_iib_shine"
+		texturefile = "gfx/interface/hof_ma/focus/GFX_hof_ma_iib.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/hof_ma/focus/GFX_hof_ma_iib.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/hof_ma/focus/GFX_hof_ma_iib.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	# ---------------- GFX_hof_ma_intermetall ----------------
+	SpriteType = {
+		name = "GFX_hof_ma_intermetall"
+		texturefile = "gfx/interface/hof_ma/focus/GFX_hof_ma_intermetall.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_hof_ma_intermetall_shine"
+		texturefile = "gfx/interface/hof_ma/focus/GFX_hof_ma_intermetall.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/hof_ma/focus/GFX_hof_ma_intermetall.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/hof_ma/focus/GFX_hof_ma_intermetall.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	# ---------------- GFX_hof_ma_ioj ----------------
+	SpriteType = {
+		name = "GFX_hof_ma_ioj"
+		texturefile = "gfx/interface/hof_ma/focus/GFX_hof_ma_ioj.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_hof_ma_ioj_shine"
+		texturefile = "gfx/interface/hof_ma/focus/GFX_hof_ma_ioj.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/hof_ma/focus/GFX_hof_ma_ioj.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/hof_ma/focus/GFX_hof_ma_ioj.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	# ---------------- GFX_hof_ma_ius ----------------
+	SpriteType = {
+		name = "GFX_hof_ma_ius"
+		texturefile = "gfx/interface/hof_ma/focus/GFX_hof_ma_ius.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_hof_ma_ius_shine"
+		texturefile = "gfx/interface/hof_ma/focus/GFX_hof_ma_ius.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/hof_ma/focus/GFX_hof_ma_ius.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/hof_ma/focus/GFX_hof_ma_ius.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	# ---------------- GFX_hof_ma_oirt ----------------
+	SpriteType = {
+		name = "GFX_hof_ma_oirt"
+		texturefile = "gfx/interface/hof_ma/focus/GFX_hof_ma_oirt.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_hof_ma_oirt_shine"
+		texturefile = "gfx/interface/hof_ma/focus/GFX_hof_ma_oirt.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/hof_ma/focus/GFX_hof_ma_oirt.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/hof_ma/focus/GFX_hof_ma_oirt.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	# ---------------- GFX_hof_ma_osce ----------------
+	SpriteType = {
+		name = "GFX_hof_ma_osce"
+		texturefile = "gfx/interface/hof_ma/focus/GFX_hof_ma_osce.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_hof_ma_osce_shine"
+		texturefile = "gfx/interface/hof_ma/focus/GFX_hof_ma_osce.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/hof_ma/focus/GFX_hof_ma_osce.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/hof_ma/focus/GFX_hof_ma_osce.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	# ---------------- GFX_hof_ma_wfdy ----------------
+	SpriteType = {
+		name = "GFX_hof_ma_wfdy"
+		texturefile = "gfx/interface/hof_ma/focus/GFX_hof_ma_wfdy.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_hof_ma_wfdy_shine"
+		texturefile = "gfx/interface/hof_ma/focus/GFX_hof_ma_wfdy.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/hof_ma/focus/GFX_hof_ma_wfdy.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/hof_ma/focus/GFX_hof_ma_wfdy.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	# ---------------- GFX_hof_ma_wftu ----------------
+	SpriteType = {
+		name = "GFX_hof_ma_wftu"
+		texturefile = "gfx/interface/hof_ma/focus/GFX_hof_ma_wftu.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_hof_ma_wftu_shine"
+		texturefile = "gfx/interface/hof_ma/focus/GFX_hof_ma_wftu.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/hof_ma/focus/GFX_hof_ma_wftu.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/hof_ma/focus/GFX_hof_ma_wftu.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	# ---------------- GFX_hof_ma_widf ----------------
+	SpriteType = {
+		name = "GFX_hof_ma_widf"
+		texturefile = "gfx/interface/hof_ma/focus/GFX_hof_ma_widf.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_hof_ma_widf_shine"
+		texturefile = "gfx/interface/hof_ma/focus/GFX_hof_ma_widf.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/hof_ma/focus/GFX_hof_ma_widf.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/hof_ma/focus/GFX_hof_ma_widf.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	# ---------------- GFX_hof_ma_wpc ----------------
+	SpriteType = {
+		name = "GFX_hof_ma_wpc"
+		texturefile = "gfx/interface/hof_ma/focus/GFX_hof_ma_wpc.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_hof_ma_wpc_shine"
+		texturefile = "gfx/interface/hof_ma/focus/GFX_hof_ma_wpc.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/hof_ma/focus/GFX_hof_ma_wpc.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/hof_ma/focus/GFX_hof_ma_wpc.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+
+	# ========== 民族精神版（idea 的 picture / DM 的 icon 用；不需要 _shine）==========
+	# ---------------- GFX_idea_hof_ma_comecon ----------------
+	SpriteType = {
+		name = "GFX_idea_hof_ma_comecon"
+		texturefile = "gfx/interface/hof_ma/ideas/GFX_idea_hof_ma_comecon.dds"
+	}
+
+	# ---------------- GFX_idea_hof_ma_cominform ----------------
+	SpriteType = {
+		name = "GFX_idea_hof_ma_cominform"
+		texturefile = "gfx/interface/hof_ma/ideas/GFX_idea_hof_ma_cominform.dds"
+	}
+
+	# ---------------- GFX_idea_hof_ma_ius ----------------
+	SpriteType = {
+		name = "GFX_idea_hof_ma_ius"
+		texturefile = "gfx/interface/hof_ma/ideas/GFX_idea_hof_ma_ius.dds"
+	}
+
+	# ---------------- GFX_idea_hof_ma_oirt ----------------
+	SpriteType = {
+		name = "GFX_idea_hof_ma_oirt"
+		texturefile = "gfx/interface/hof_ma/ideas/GFX_idea_hof_ma_oirt.dds"
+	}
+
+	# ---------------- GFX_idea_hof_ma_osce ----------------
+	SpriteType = {
+		name = "GFX_idea_hof_ma_osce"
+		texturefile = "gfx/interface/hof_ma/ideas/GFX_idea_hof_ma_osce.dds"
+	}
+
+	# ---------------- GFX_idea_hof_ma_warsawpact ----------------
+	SpriteType = {
+		name = "GFX_idea_hof_ma_warsawpact"
+		texturefile = "gfx/interface/hof_ma/ideas/GFX_idea_hof_ma_warsawpact.dds"
+	}
+
+	# ---------------- GFX_idea_hof_ma_wpc ----------------
+	SpriteType = {
+		name = "GFX_idea_hof_ma_wpc"
+		texturefile = "gfx/interface/hof_ma/ideas/GFX_idea_hof_ma_wpc.dds"
+	}
+
+}

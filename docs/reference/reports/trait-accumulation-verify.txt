@@ -1,0 +1,207 @@
+# dynamic_modifier 定义（角色特质累积容器）—— 看 modifier 里怎么引用变量
+
+======== [R56] SOV_the_red_fleet_dynamic_modifier   (0_dynamic_modifiers.txt L883) ========
+SOV_the_red_fleet_dynamic_modifier = { #NATIONAL SPIRIT
+	enable = { always = yes }
+
+	icon = GFX_idea_generic_navy_bonus
+
+	#INITIAL
+	refit_ic_cost = SOV_red_fleet_navy_refit_ic_cost #-0.05
+	repair_speed_factor = SOV_red_fleet_repair_speed_factor #0.05
+
+	#FUTURE
+	naval_coordination = SOV_red_fleet_naval_coordination #0.1 -> Advanced Manevuers
+	navy_visibility = SOV_red_fleet_navy_visibility #-0.05 -> Advanced Manevuers
+	positioning = SOV_red_fleet_positioning #0.1 -> Advanced Manevuers
+	screening_efficiency = SOV_red_fleet_screening_efficiency #0.1 -> Advanced Manevuers
+	naval_invasion_capacity = SOV_red_fleet_naval_invasion_capacity #10 -> Marines
+	invasion_preparation = SOV_red_fleet_invasion_preparation #-0.1 -> Marines
+	special_forces_cap = SOV_red_fleet_special_forces_cap #0.1 -> Marines
+}
+
+======== [R56] SOV_defense_industry_dynamic_modifier   (0_dynamic_modifiers.txt L1089) ========
+SOV_defense_industry_dynamic_modifier = { #NATIONAL SPIRIT
+	enable = { always = yes }
+
+	icon = GFX_idea_man_five_year_plan_tank
+
+	#INITIAL
+	conversion_cost_civ_to_mil_factor = SOV_defense_industry_conversion_cost_civ_to_mil_factor #-0.2
+	production_factory_max_efficiency_factor = SOV_defense_industry_production_factory_max_efficiency_factor #0.05
+	production_factory_efficiency_gain_factor = SOV_defense_industry_production_factory_efficiency_gain_factor #-0.05
+	line_change_production_efficiency_factor = SOV_defense_industry_line_change_production_efficiency_factor #-0.1
+
+	#FUTURE
+	tank_manufacturer_cost_factor = SOV_defense_industry_tank_manufacturer_cost_factor #-0.25 -> Tank Designer focus
+	land_equipment_upgrade_xp_cost = SOV_defense_industry_land_equipment_upgrade_xp_cost #-0.1 -> Tankograd
+	materiel_manufacturer_cost_factor = SOV_defense_industry_materiel_manufacturer_cost_factor #-0.25 -> Equipment Designers focus
+	breakthrough_factor = SOV_defense_industry_breakthrough_factor #0.05 -> PC of Mortar Armament
+	army_artillery_defence_factor = SOV_defense_industry_army_artillery_defence_factor #0.05 -> PC of Mortar Armament
+
+	production_speed_coastal_bunker_factor = SOV_defense_industry_production_speed_coastal_bunker_factor #0.05 -> Military Engineering University
+	production_speed_bunker_factor = SOV_defense_industry_production_speed_bunker_factor #0.05 -> Military Engineering University
+	max_dig_in_factor = SOV_defense_industry_max_dig_in_factor #0.05 -> Military Engineering University
+}
+
+======== [R56] SOV_the_politburo_good_dynamic_modifier   (0_dynamic_modifiers.txt L1182) ========
+SOV_the_politburo_good_dynamic_modifier = {
+	enable = { always = yes }
+
+	icon = GFX_idea_POL_ideology_drift_defence
+	
+	#INITIAL
+	drift_defence_factor = SOV_the_politburo_drift_defence_factor #0.05
+
+	#FUTURE
+	defensive_war_stability_factor = SOV_the_politburo_defensive_war_stability_factor #-0.25 -> Socialism in One Country
+	communism_drift = SOV_the_politburo_communism_drift #0.05 -> Socialism in One Country
+	political_power_factor = SOV_the_politburo_political_power_factor #0.05 -> The Stalin Constitution
+	economy_cost_factor = SOV_the_politburo_economy_cost_factor #0.2 -> Secure the Administration
+	trade_laws_cost_factor = SOV_the_politburo_trade_laws_cost_factor #-0.2 -> Secure the Administration
+	mobilization_laws_cost_factor = SOV_the_politburo_mobilization_laws_cost_factor #-0.2 -> Secure the Administration
+	consumer_goods_factor = SOV_the_politburo_good_consumer_goods_factor #0.05 -> Collectivization Process
+	production_speed_buildings_factor = SOV_the_politburo_production_speed_buildings_factor #0.05 -> Collectivization Process
+	global_building_slots_factor = SOV_the_politburo_global_building_slots_factor #0.1 -> Collectivization Process
+	max_surrender_limit_offset = SOV_the_politburo_max_surrender_limit_offset #0.05 -> The Workers Dictatorship
+	max_command_power = SOV_the_politburo_max_command_power # 20 -> Organization, Centralization, Discipline
+	mobilization_speed = SOV_the_politburo_mobilization_speed # 0.1 -> Organization, Centralization, Discipline
+	operative_slot = SOV_the_politburo_operative_slot # 1 -> Behead the Snake
+	political_advisor_cost_factor = SOV_the_politburo_political_advisor_cost_factor #-0.15 -> Freedom of Debate, Unity of Action
+	opinion_gain_monthly_same_ideology_factor = SOV_the_politburo_opinion_gain_monthly_same_ideology_factor #0.25 -> The Construction of Communism
+}
+
+======== [R56] GER_the_inner_circle_dm   (wuw_dynamic_modifiers.txt L1008) ========
+GER_the_inner_circle_dm = {
+	icon = GFX_idea_generic_fascism_drift_2
+	enable = { always = yes }
+	remove_trigger = {
+		NOT = { has_government = fascism }
+	}
+
+	custom_modifier_tooltip = GER_the_inner_circle_dm_tt
+	#custom_modifier_tooltip = idea_desc|GER_todt_reich_engineer
+}
+
+======== [R56] GER_four_year_plan_initiative_modifier   (wuw_dynamic_modifiers.txt L1156) ========
+GER_four_year_plan_initiative_modifier = { 
+	enable = { always = yes } 
+	icon = GFX_modifiers_SOV_civilian_labor_in_defense
+
+	remove_trigger = {
+		ROOT = { NOT = { is_core_of = ROOT.controller } } # ROOT refers to the state on which the modifier is added
+	}
+
+	state_resources_factor = 0.1
+}
+
+======== [VANILLA] SOV_the_red_fleet_dynamic_modifier   (0_dynamic_modifiers.txt L874) ========
+SOV_the_red_fleet_dynamic_modifier = { #NATIONAL SPIRIT
+	enable = { always = yes }
+
+	icon = GFX_idea_SOV_red_navy_ccp_2d_sov_compatibility
+
+	#INITIAL
+	refit_ic_cost = SOV_red_fleet_navy_refit_ic_cost #-0.05
+	repair_speed_factor = SOV_red_fleet_repair_speed_factor #0.05
+
+	#FUTURE
+	naval_coordination = SOV_red_fleet_naval_coordination #0.1 -> Advanced Manevuers
+	navy_visibility = SOV_red_fleet_navy_visibility #-0.05 -> Advanced Manevuers
+	positioning = SOV_red_fleet_positioning #0.1 -> Advanced Manevuers
+	screening_efficiency = SOV_red_fleet_screening_efficiency #0.1 -> Advanced Manevuers
+	naval_invasion_capacity = SOV_red_fleet_naval_invasion_capacity #10 -> Marines
+	invasion_preparation = SOV_red_fleet_invasion_preparation #-0.1 -> Marines
+	special_forces_cap = SOV_red_fleet_special_forces_cap #0.1 -> Marines
+}
+
+======== [VANILLA] SOV_defense_industry_dynamic_modifier   (0_dynamic_modifiers.txt L1080) ========
+SOV_defense_industry_dynamic_modifier = { #NATIONAL SPIRIT
+	enable = { always = yes }
+
+	icon = GFX_idea_SOV_defense_industry_ccp_2d_sov_compatibility
+
+	#INITIAL
+	conversion_cost_civ_to_mil_factor = SOV_defense_industry_conversion_cost_civ_to_mil_factor #-0.2
+	production_factory_max_efficiency_factor = SOV_defense_industry_production_factory_max_efficiency_factor #0.05
+	production_factory_efficiency_gain_factor = SOV_defense_industry_production_factory_efficiency_gain_factor #-0.05
+	line_change_production_efficiency_factor = SOV_defense_industry_line_change_production_efficiency_factor #-0.1
+
+	#FUTURE
+	tank_manufacturer_cost_factor = SOV_defense_industry_tank_manufacturer_cost_factor #-0.25 -> Tank Designer focus
+	land_equipment_upgrade_xp_cost = SOV_defense_industry_land_equipment_upgrade_xp_cost #-0.1 -> Tankograd
+	materiel_manufacturer_cost_factor = SOV_defense_industry_materiel_manufacturer_cost_factor #-0.25 -> Equipment Designers focus
+	breakthrough_factor = SOV_defense_industry_breakthrough_factor #0.05 -> PC of Mortar Armament
+	army_artillery_defence_factor = SOV_defense_industry_army_artillery_defence_factor #0.05 -> PC of Mortar Armament
+
+	production_speed_coastal_bunker_factor = SOV_defense_industry_production_speed_coastal_bunker_factor #0.05 -> Military Engineering University
+	production_speed_bunker_factor = SOV_defense_industry_production_speed_bunker_factor #0.05 -> Military Engineering University
+	max_dig_in_factor = SOV_defense_industry_max_dig_in_factor #0.05 -> Military Engineering University
+}
+
+======== [VANILLA] SOV_the_politburo_good_dynamic_modifier   (0_dynamic_modifiers.txt L1173) ========
+SOV_the_politburo_good_dynamic_modifier = {
+	enable = { always = yes }
+
+	icon = GFX_idea_SOV_the_politburo_ccp_2d_sov_compatibility
+	
+	#INITIAL
+	drift_defence_factor = SOV_the_politburo_drift_defence_factor #0.05
+
+	#FUTURE
+	defensive_war_stability_factor = SOV_the_politburo_defensive_war_stability_factor #-0.25 -> Socialism in One Country
+	communism_drift = SOV_the_politburo_communism_drift #0.05 -> Socialism in One Country
+	political_power_factor = SOV_the_politburo_political_power_factor #0.05 -> The Stalin Constitution
+	economy_cost_factor = SOV_the_politburo_economy_cost_factor #0.2 -> Secure the Administration
+	trade_laws_cost_factor = SOV_the_politburo_trade_laws_cost_factor #-0.2 -> Secure the Administration
+	mobilization_laws_cost_factor = SOV_the_politburo_mobilization_laws_cost_factor #-0.2 -> Secure the Administration
+	consumer_goods_factor = SOV_the_politburo_good_consumer_goods_factor #0.05 -> Collectivization Process
+	production_speed_buildings_factor = SOV_the_politburo_production_speed_buildings_factor #0.05 -> Collectivization Process
+	global_building_slots_factor = SOV_the_politburo_global_building_slots_factor #0.1 -> Collectivization Process
+	max_surrender_limit_offset = SOV_the_politburo_max_surrender_limit_offset #0.05 -> The Workers Dictatorship
+	max_command_power = SOV_the_politburo_max_command_power # 20 -> Organization, Centralization, Discipline
+	mobilization_speed = SOV_the_politburo_mobilization_speed # 0.1 -> Organization, Centralization, Discipline
+	operative_slot = SOV_the_politburo_operative_slot # 1 -> Behead the Snake
+	political_advisor_cost_factor = SOV_the_politburo_political_advisor_cost_factor #-0.15 -> Freedom of Debate, Unity of Action
+	opinion_gain_monthly_same_ideology_factor = SOV_the_politburo_opinion_gain_monthly_same_ideology_factor #0.25 -> The Construction of Communism
+}
+
+======== [VANILLA] GER_the_inner_circle_dm   (wuw_dynamic_modifiers.txt L941) ========
+GER_the_inner_circle_dm = {
+	icon = GFX_idea_generic_fascism_drift_2
+	enable = { always = yes }
+	remove_trigger = {
+		NOT = { has_government = fascism }
+	}
+
+	custom_modifier_tooltip = GER_the_inner_circle_dm_tt
+	#custom_modifier_tooltip = idea_desc|GER_todt_reich_engineer
+}
+
+======== [VANILLA] GER_four_year_plan_initiative_modifier   (wuw_dynamic_modifiers.txt L1089) ========
+GER_four_year_plan_initiative_modifier = { 
+	enable = { always = yes } 
+	icon = GFX_modifiers_SOV_civilian_labor_in_defense
+
+	remove_trigger = {
+		ROOT = { NOT = { is_core_of = ROOT.controller } } # ROOT refers to the state on which the modifier is added
+	}
+
+	state_resources_factor = 0.1
+}
+
+
+# 对照组：R56 国策里 add_to_variable 的写法样本（证明国策能往变量里加值）
+
+soviet.txt L4556: add_to_variable = { SOV_defense_industry_production_factory_max_efficiency_factor = 0.05 }
+soviet.txt L4557: add_to_variable = { SOV_defense_industry_production_factory_efficiency_gain_factor = -0.05 }
+soviet.txt L5165: add_to_variable = { SOV_defense_industry_breakthrough_factor = 0.05 }
+soviet.txt L5166: add_to_variable = { SOV_defense_industry_army_artillery_defence_factor = 0.05 }
+soviet.txt L5226: add_to_variable = { SOV_defense_industry_land_equipment_upgrade_xp_cost = -0.1 }
+soviet.txt L5540: add_to_variable = { SOV_defense_industry_production_speed_coastal_bunker_factor = 0.05 }
+soviet.txt L5541: add_to_variable = { SOV_defense_industry_production_speed_bunker_factor = 0.05 }
+soviet.txt L5542: add_to_variable = { SOV_defense_industry_max_dig_in_factor = 0.05 }
+soviet.txt L8594: add_to_variable = { SOV_the_politburo_communism_drift = 0.05 }
+soviet.txt L8595: add_to_variable = { SOV_the_politburo_drift_defence_factor = 0.05 }
+soviet.txt L8596: add_to_variable = { SOV_the_politburo_defensive_war_stability_factor = 0.25 }
+soviet.txt L8624: add_to_variable = { SOV_the_politburo_political_power_factor = 0.05 }

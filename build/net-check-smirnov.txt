@@ -1,0 +1,4 @@
+代理端口 7993 通 = True
+直连 baidu        = 200
+代理 marxists     = 000
+代理 wikipedia    = 000

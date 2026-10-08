@@ -1,0 +1,672 @@
+==== 第 0 步上下文展开 · 米哈伊尔·加里宁（Idx 14）====
+
+====================================================================================================
+[原版] F:\Hearts of Iron IV\common\characters\SOV.txt : 2125-2165
+  WHY: ⭐ 完整角色对象 SOV_mikhail_kalinin（看 roles）
+----------------------------------------------------------------------------------------------------
+  2125: 	###   ##  #   ### ### ###  ##   ##  #        ##  ###  #   # ###  ##  ##  ###   ## 
+  2126: 	#  # #  # #    #   #   #  #  # #  # #       #  # #  # #   #  #  #   #  # #  # #   
+  2127: 	###  #  # #    #   #   #  #    #### #       #### #  #  # #   #   #  #  # ###   #  
+  2128: 	#    #  # #    #   #   #  #  # #  # #       #  # #  #  # #   #    # #  # #  #   # 
+  2129: 	#     ##  ### ###  #  ###  ##  #  # ###     #  # ###    #   ### ##   ##  #  # ##  
+  2130: 
+  2131: 
+  2132: 	SOV_mikhail_kalinin = {
+  2133: 		name = SOV_mikhail_kalinin
+  2134: 		portraits = {
+  2135: 			army = {
+  2136: 				small = "GFX_idea_mikhail_kalinin"
+  2137: 			}
+  2138: 		}
+  2139: 		allowed_civil_war = {
+  2140: 			OR = {
+  2141: 				SOV_advisor_is_aligned_left = yes 
+  2142: 				SOV_advisor_is_aligned_right = yes 
+  2143: 				SOV_advisor_is_aligned_centre = yes 
+  2144: 			}
+  2145: 			has_government = communism
+  2146: 		}
+  2147: 
+  2148: 		advisor = {
+  2149: 			slot = political_advisor
+  2150: 			idea_token = mikhail_kalinin
+  2151: 			allowed = {
+  2152: 				original_tag = SOV
+  2153: 			}
+  2154: 			
+  2155: 			visible = {
+  2156: 				NOT = {
+  2157: 					has_character_flag = SOV_character_purged_flag 
+  2158: 				}
+  2159: 			}
+  2160: 			available = {
+  2161: 				if = {
+  2162: 					limit = {
+  2163: 						has_character_flag = SOV_exiled_flag
+  2164: 					}
+  2165: 					NOT = { has_character_flag = SOV_exiled_flag }
+
+====================================================================================================
+[原版] F:\Hearts of Iron IV\common\national_focus\soviet.txt : 11200-11245
+  WHY: 🚩 SOV_mikhail_kalinin = { } 是什么
+----------------------------------------------------------------------------------------------------
+ 11200: 		                
+ 11201: 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_SOV_POLITICAL_PARANOIA FOCUS_FILTER_STABILITY}
+ 11202: 
+ 11203: 		completion_reward = {
+ 11204: 			SOV_paranoia_low_increase_effect = yes 
+ 11205: 			add_political_power = 100
+ 11206: 			custom_effect_tooltip = SOV_gain_support_from_party_members_tt
+ 11207: 			
+ 11208: 			hidden_effect = {
+ 11209: 				if = {
+ 11210: 					limit = {
+ 11211: 						SOV_is_left_opposition = yes 
+ 11212: 					}
+ 11213: 					SOV_mikhail_kalinin = {
+ 11214: 						set_character_flag = SOV_aligned_left_opposition_flag
+ 11215: 						clr_character_flag = SOV_safe_from_purge_flag
+ 11216: 					}
+ 11217: 					SOV_vsevolod_merkulov = {
+ 11218: 						set_character_flag = SOV_aligned_left_opposition_flag
+ 11219: 						clr_character_flag = SOV_safe_from_purge_flag
+ 11220: 					}
+ 11221: 					SOV_nikita_khrushchyov = {
+ 11222: 						set_character_flag = SOV_aligned_left_opposition_flag
+ 11223: 						clr_character_flag = SOV_safe_from_purge_flag
+ 11224: 					}
+ 11225: 				}
+ 11226: 			}
+ 11227: 		}
+ 11228: 	}
+ 11229: 
+ 11230: 	focus = {
+ 11231: 		id = SOV_sway_the_railway_workers
+ 11232: 		icon = GFX_goal_generic_construction2
+ 11233: 		prerequisite = { focus = SOV_the_left_opposition focus = SOV_the_right_opposition } 
+ 11234: 		x = 3
+ 11235: 		y = 1
+ 11236: 		relative_position_id = SOV_the_left_opposition
+ 11237: 		cost = 5
+ 11238: 		available = {
+ 11239: 			SOV_has_selected_hq = yes 
+ 11240: 			SOV_soviet_civil_war_not_started = yes 
+ 11241: 		}
+ 11242: 		                
+ 11243: 		search_filters = {FOCUS_FILTER_SOV_POLITICAL_PARANOIA FOCUS_FILTER_INDUSTRY}
+ 11244: 
+ 11245: 		completion_reward = {
+
+====================================================================================================
+[原版] F:\Hearts of Iron IV\common\national_focus\soviet.txt : 9210-9255
+  WHY: 🚩 清洗线：retire_character（soviet.txt:9237）
+----------------------------------------------------------------------------------------------------
+  9210: 			create_faction_from_template = faction_template_fourth_international
+  9211: 		}
+  9212: 	}
+  9213: 
+  9214: 	focus = {
+  9215: 		id = SOV_left_purges
+  9216: 		icon = GFX_focus_SOV_the_last_purge
+  9217: 		prerequisite = { focus = SOV_left_opposition_coup }
+  9218: 		mutually_exclusive = { focus = SOV_return_democracy_to_the_party }
+  9219: 		x = 3
+  9220: 		y = 1
+  9221: 		relative_position_id = SOV_left_opposition_coup
+  9222: 		cost = 10
+  9223: 
+  9224: 		available = {
+  9225: 			has_global_flag = SOV_soviet_civil_war_over
+  9226: 		}
+  9227: 		
+  9228: 		search_filters = {FOCUS_FILTER_POLITICAL}
+  9229: 
+  9230: 		completion_reward = {
+  9231: 			custom_effect_tooltip = SOV_left_purges_tt
+  9232: 			IF = { limit = { has_character = SOV_nikolay_bukharin } retire_character = SOV_nikolay_bukharin }
+  9233: 			IF = { limit = { has_character = SOV_aleksey_rykov } retire_character = SOV_aleksey_rykov }
+  9234: 			IF = { limit = { has_character = SOV_mikhail_tomsky } retire_character = SOV_mikhail_tomsky }
+  9235: 			IF = { limit = { has_character = SOV_grigory_zinovyev } retire_character = SOV_grigory_zinovyev }
+  9236: 			IF = { limit = { has_character = SOV_martemyan_ryutin } retire_character = SOV_martemyan_ryutin }
+  9237: 			IF = { limit = { has_character = SOV_mikhail_kalinin } retire_character = SOV_mikhail_kalinin }
+  9238: 			IF = { limit = { has_character = SOV_nikita_khrushchyov } retire_character = SOV_nikita_khrushchyov }
+  9239: 			IF = { limit = { has_character = SOV_vsevolod_merkulov } retire_character = SOV_vsevolod_merkulov }
+  9240: 			set_variable = { SOV_factionalism_political_power_factor = 0 }
+  9241: 			custom_effect_tooltip = SOV_left_right_purges_factionalism_tt
+  9242: 			
+  9243: 				
+  9244: 		}
+  9245: 			
+  9246: 	}
+  9247: 
+  9248: 	focus = {
+  9249: 		id = SOV_the_builder_of_the_red_army
+  9250: 		icon = GFX_focus_SOV_builder_of_the_red_army
+  9251: 		prerequisite = { focus = SOV_long_live_the_workers_government }
+  9252: 		x = -1
+  9253: 		y = 1
+  9254: 		relative_position_id = SOV_long_live_the_workers_government
+  9255: 		mutually_exclusive = { focus = SOV_reigniting_the_revolutionary_spirit }
+
+====================================================================================================
+[原版] F:\Hearts of Iron IV\history\countries\SOV - Soviet union.txt : 25-40
+  WHY: recruit_character（:31）
+----------------------------------------------------------------------------------------------------
+    25: 	}
+    26: 	recruit_character = SOV_provisional_government # United Exiles
+    27: 	set_country_flag = vlasov_owner_flag
+    28: }
+    29: 
+    30: #POLITICAL ADVISORS
+    31: recruit_character = SOV_mikhail_kalinin
+    32: recruit_character = SOV_nikita_khrushchyov
+    33: recruit_character = SOV_nikolay_voznesensky
+    34: recruit_character = SOV_lazar_kaganovich
+    35: recruit_character = SOV_genrikh_yagoda
+    36: recruit_character = SOV_nikolay_yezhov
+    37: recruit_character = SOV_lavrenty_beriya
+    38: recruit_character = SOV_vsevolod_merkulov
+    39: recruit_character = SOV_vyacheslav_molotov
+    40: recruit_character = SOV_maksim_litvinov
+
+====================================================================================================
+[原版] F:\Hearts of Iron IV\history\countries\SOV - Soviet union.txt : 160-190
+  WHY: ⭐ 历史角色块（:169）
+----------------------------------------------------------------------------------------------------
+   160: 	recruit_character = SOV_tsar_vladimir_kirillovich
+   161: 	recruit_character = SOV_aleksandr_rodzyanko
+   162: 	recruit_character = SOV_vladimir_kosmin
+   163: 	recruit_character = SOV_andrey_shkuro
+   164: 	recruit_character = SOV_anton_denikin
+   165: }
+   166: 
+   167: 
+   168: #Initialize character flags Part I (aka who's safe)
+   169: SOV_mikhail_kalinin = {
+   170: 	set_character_flag = SOV_safe_from_purge_flag
+   171: }
+   172: SOV_nikita_khrushchyov = {
+   173: 	set_character_flag = SOV_safe_from_purge_flag
+   174: }
+   175: SOV_lazar_kaganovich = {
+   176: 	set_character_flag = SOV_safe_from_purge_flag
+   177: }
+   178: SOV_genrikh_yagoda = { #NKVD Chiefs are always safe from regular purges, they'll be handled by a special purge event
+   179: 	set_character_flag = SOV_safe_from_purge_flag
+   180: }
+   181: SOV_nikolay_yezhov = { #NKVD Chiefs are always safe from regular purges, they'll be handled by a special purge event
+   182: 	set_character_flag = SOV_safe_from_purge_flag
+   183: }
+   184: SOV_lavrenty_beriya = { #NKVD Chiefs are always safe from regular purges, they'll be handled by a special purge event. Beriya will always be safe.
+   185: 	set_character_flag = SOV_safe_from_purge_flag
+   186: }
+   187: SOV_vsevolod_merkulov = {
+   188: 	set_character_flag = SOV_safe_from_purge_flag
+   189: }
+   190: SOV_vyacheslav_molotov = {
+
+====================================================================================================
+[原版] F:\Hearts of Iron IV\events\SovietUnion.txt : 775-815
+  WHY: ⚠️ 被注释掉的 purged_kalinin 草稿（:795）
+----------------------------------------------------------------------------------------------------
+   775: #	
+   776: #	trigger = {
+   777: #		tag = SOV
+   778: #		NOT = { has_completed_focus = SOV_great_purge }
+   779: #		focus_progress = {
+   780: #			focus = SOV_great_purge
+   781: #			progress > 0.25
+   782: #		}
+   783: #	}
+   784: #
+   785: #	mean_time_to_happen = {
+   786: #		days = 1
+   787: #	}
+   788: #
+   789: #	option = {
+   790: #		ai_chance = {
+   791: #			factor = 30
+   792: #		}
+   793: #		name = soviet.25.a
+   794: #		custom_effect_tooltip = remove_political_advisor
+   795: #		show_ideas_tooltip = mikhail_kalinin
+   796: #		set_country_flag = purged_kalinin
+   797: #		hidden_effect = {
+   798: #			retire_character = SOV_mikhail_kalinin_old
+   799: #		}
+   800: #	}
+   801: #	option = {
+   802: #		ai_chance = {
+   803: #			factor = 30
+   804: #		}
+   805: #		name = soviet.25.b
+   806: #		custom_effect_tooltip = remove_political_advisor
+   807: #		show_ideas_tooltip = nikita_khrushchev
+   808: #		set_country_flag = purged_khrushchev
+   809: #		hidden_effect = {
+   810: #			retire_character = SOV_nikita_khrushchyov_old
+   811: #		}
+   812: #	}
+   813: #	option = {
+   814: #		ai_chance = {
+   815: #			factor = 30
+
+====================================================================================================
+[原版] F:\Hearts of Iron IV\events\SovietUnion.txt : 1015-1075
+  WHY: ⚠️ 被注释掉的 remove_ideas / purged（:1030）
+----------------------------------------------------------------------------------------------------
+  1015: #	trigger = {
+  1016: #		has_country_flag = SOV_soviet.48_trotsky
+  1017: #		tag = SOV
+  1018: #		NOT = {
+  1019: #			MEX = {
+  1020: #				has_country_leader = { character = SOV_lev_trotsky ruling_only = yes }
+  1021: #			}
+  1022: #		}
+  1023: #	}
+  1024: #
+  1025: #	mean_time_to_happen = {
+  1026: #		days = 90
+  1027: #		#modifier = {
+  1028: #		#	factor = 1.25
+  1029: #		#	OR = {
+  1030: #		#		has_country_flag = purged_kalinin
+  1031: #		#		has_country_flag = purged_khrushchev
+  1032: #		#		has_country_flag = purged_party_members
+  1033: #		#	}
+  1034: #		#}	
+  1035: #	}
+  1036: #
+  1037: #	option = {
+  1038: #		name = soviet.28.a
+  1039: #		set_country_flag = counter_purge
+  1040: #		if = {
+  1041: #			limit = { has_idea = trotskyite_plot_purged }
+  1042: #			remove_ideas = trotskyite_plot_purged
+  1043: #		}
+  1044: #		if = {
+  1045: #			limit = { has_idea = trotskyite_plot }
+  1046: #			remove_ideas = trotskyite_plot
+  1047: #		}
+  1048: #		kill_country_leader = yes
+  1049: #		add_country_leader_role = {
+  1050: #			character = MEX_leon_trotsky
+  1051: #			country_leader = {
+  1052: #				expire = "1965.1.1"
+  1053: #				ideology = leninism
+  1054: #				traits = {
+  1055: #					permanent_revolutionary
+  1056: #				}
+  1057: #			}
+  1058: #			promote_leader = yes
+  1059: #		}
+  1060: #		remove_ideas = mikhail_kalinin
+  1061: #		remove_ideas = ivan_konev
+  1062: #		remove_unit_leader = 408
+  1063: #		remove_ideas = pavel_zhigarev
+  1064: #		remove_ideas = stepan_krasovsky
+  1065: #		remove_ideas = arseniy_golovko
+  1066: #		remove_unit_leader = 409
+  1067: #		remove_ideas = georgy_zhukov
+  1068: #		remove_unit_leader = 410
+  1069: #		remove_ideas = sergey_gorshkov
+  1070: #		remove_unit_leader = 411
+  1071: #		remove_ideas = sergei_rudenko
+  1072: #		remove_ideas = nikita_khrushchev
+  1073: #		remove_ideas = konstantin_rodzaevsky
+  1074: #		add_timed_idea = {
+  1075: #			idea = officers_purged_7
+
+====================================================================================================
+[原版] F:\Hearts of Iron IV\localisation\simp_chinese\focus_l_simp_chinese.yml : 1070-1080
+  WHY: 🚩 purged_kalinin 本地化
+----------------------------------------------------------------------------------------------------
+  1070:  nuclear_bonus: "核研究加成"
+  1071:  SOV_nkvd_upgrade_tooltip: "§Y内务人民委员部§!现在与我们的军队更紧密地结合在一起了，他们将保证士兵们的士气以及对党的忠诚。\n"
+  1072:  ger_sov_buddies_tooltip_2: "这将解散[Root.GetFactionName]并创立§Y柏林-莫斯科§!阵营。\n"
+  1073:  ger_sov_buddies_tooltip: "§R如果[SOV.GetAdjective]接受了我们的要求，那我们会因为政治变动而损失一些稳定度。不言而喻的是，国内的法西斯主义者以及民主国家同样不会对形势的这一变化感到高兴。§!\n"
+  1074:  purged_kalinin: " 被斯大林清洗"
+  1075:  purged_khrushchev: " 被斯大林清洗"
+  1076:  purged_yezhov: " 被斯大林清洗"
+  1077:  purged_beria: " 被斯大林清洗"
+  1078:  purge_1_group_a: " 被斯大林清洗"
+  1079:  purge_1_group_b: " 被斯大林清洗"
+  1080:  purge_2_group_a: " 被斯大林清洗"
+
+====================================================================================================
+[原版] F:\Hearts of Iron IV\localisation\simp_chinese\events_l_simp_chinese.yml : 2225-2245
+  WHY: 🚩 soviet.25「加里宁的妻子也有嫌疑」事件
+----------------------------------------------------------------------------------------------------
+  2225:  soviet.22.a: "这样的话，中国的敌人便可个个击破他们了。"
+  2226:  soviet.23.t: "[SOV.GetNameDefCap]移交领土"
+  2227:  soviet.23.d: "[SOV.GetNameDefCap]有别的威胁需要对付，并且不想和我们进一步敌对下去。作为希冀与我们和平的信号，他们割让给我们一些领土，希望这能增强我们之间的外交联系。"
+  2228:  soviet.23.a: "也许这可以成为一个转折点。"
+  2229:  soviet.24.t: "第五纵队"
+  2230:  soviet.24.d: "清洗人民的敌人，清洗那些可能背叛或破坏革命的人，自党上台后已成为现行的政策。紧随而来的内部权力斗争转移了我们的注意力，在托洛茨基逃亡后，清洗党的队伍已经越发紧迫。斯大林将他自己塑造成一个图腾，作为代价，他需要制造大量现实中的敌人和无数想象中的敌人。\n\n在意识到内部权力斗争落败的结果之后，最轻微的嫌疑都会令总书记大动干戈。被清洗出党意味着监禁或死亡。黑暗时代来到了表现出不忠的人——或者是表现得太忠诚所以不可信的人面前。"
+  2231:  soviet.24.a: "季诺维也夫和他的党羽还在联系托洛茨基吗？"
+  2232:  soviet.25.t: "审讯反苏维埃托洛茨基派核心"
+  2233:  soviet.25.d: "尽管列夫·托洛茨基已经被迫流亡，$SOV_iosif_stalin$仍担心他有秘密的支持者残留在党内。在一系列迅速的逮捕和血腥的审讯后，逼供出来的自白和证据很轻易地便指向了斯大林的反对者们。然而秘密警察们审问得越多，对嫌疑人的书信和行踪调查得越多，被牵连的人，哪怕只是间接被牵连的人也越来越多了。\n\n党员们已经开始坚信斯大林是绝对的统治者，而妻子的趋势令斯大林陷入了怀疑所有人为威胁的孤独境地，但那不正是叛徒才会说的话吗？"
+  2234:  soviet.25.a: "加里宁的妻子也有嫌疑，所以他也不可信。"
+  2235:  soviet.25.b: "赫鲁晓夫过去和托派分子有一腿。他必须滚。"
+  2236:  soviet.25.c: "拉迪克的供词指向了党内的一些人。"
+  2237:  soviet.25.e: "党员们是可信的。这个偏执狂该消停了。"
+  2238:  soviet.26.t: "秘密审讯军队领导人"
+  2239:  soviet.26.d: "红军一直是破坏分子的老巢，甚至连托洛茨基都曾经当过政委。内务人民委员部获得的文件不仅牵连了数位高级军官，他们不仅是叛徒，还是间谍。米哈伊尔·图哈切夫斯基是嫌疑人中最突出的，而且斯大林极力想把他赶出军队。与此同时，海军和外国之间频繁的联系也令他们中的许多人遭到逮捕。\n\n尽管有我们敌人那里得来的文件证明他们的罪孽，但如果这些文件都是伪造的话，那便毫无意义。也许这些都是希望发动清洗运动的人制造的假消息。"
+  2240:  soviet.26.a: "图哈切夫斯基必须被秘密审讯并立即处决。"
+  2241:  soviet.26.b: "罗科索夫斯基拒绝供认，但仍不让他活下去。"
+  2242:  soviet.26.c: "伪造的文件和屈打成招不是证据。"
+  2243:  soviet.27.t: "二十一人审判"
+  2244:  soviet.27_tt: "增加§Y军官被肃清§!的惩罚"
+  2245:  soviet.27_tt2: "§R将来会发生内战。§!"
+
+====================================================================================================
+[原版] F:\Hearts of Iron IV\common\characters\SOV.txt : 1-12
+  WHY: （参考）文件头
+----------------------------------------------------------------------------------------------------
+     1: # Aleksandra Kollontay has an unsed portrait
+     2: # Viktor Baydalakov has an unused portrait
+     3: 
+     4: characters = {
+     5: 
+     6: 
+     7:   ####    ####   #    #  #    #  #####  #####   #   #      #       ######    ##    #####   ######  #####    ####  
+     8:  #    #  #    #  #    #  ##   #    #    #    #   # #       #       #        #  #   #    #  #       #    #  #      
+     9:  #       #    #  #    #  # #  #    #    #    #    #        #       #####   #    #  #    #  #####   #    #   ####  
+    10:  #       #    #  #    #  #  # #    #    #####     #        #       #       ######  #    #  #       #####        # 
+    11:  #    #  #    #  #    #  #   ##    #    #   #     #        #       #       #    #  #    #  #       #   #   #    # 
+    12:   ####    ####    ####   #    #    #    #    #    #        ######  ######  #    #  #####   ######  #    #   ####  
+
+====================================================================================================
+[R56] D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125\common\characters\SOV.txt : 3650-3692
+  WHY: ⭐ R56 角色对象
+----------------------------------------------------------------------------------------------------
+  3650: 
+  3651: 	###   ##  #   ### ### ###  ##   ##  #        ##  ###  #   # ###  ##  ##  ###   ## 
+  3652: 	#  # #  # #    #   #   #  #  # #  # #       #  # #  # #   #  #  #   #  # #  # #   
+  3653: 	###  #  # #    #   #   #  #    #### #       #### #  #  # #   #   #  #  # ###   #  
+  3654: 	#    #  # #    #   #   #  #  # #  # #       #  # #  #  # #   #    # #  # #  #   # 
+  3655: 	#     ##  ### ###  #  ###  ##  #  # ###     #  # ###    #   ### ##   ##  #  # ##  
+  3656: 
+  3657: 
+  3658: 	SOV_mikhail_kalinin = {
+  3659: 		name = SOV_mikhail_kalinin
+  3660: 		portraits = {
+  3661: 			army = {
+  3662: 				small = "GFX_idea_mikhail_kalinin"
+  3663: 			}
+  3664: 		}
+  3665: 		allowed_civil_war = {
+  3666: 			OR = {
+  3667: 				SOV_advisor_is_aligned_left = yes 
+  3668: 				SOV_advisor_is_aligned_right = yes 
+  3669: 				SOV_advisor_is_aligned_centre = yes 
+  3670: 			}
+  3671: 			has_government = communism
+  3672: 		}
+  3673: 
+  3674: 		advisor = {
+  3675: 			slot = political_advisor
+  3676: 			idea_token = mikhail_kalinin
+  3677: 			allowed = {
+  3678: 				original_tag = SOV
+  3679: 			}
+  3680: 			
+  3681: 			visible = {
+  3682: 				NOT = {
+  3683: 					has_character_flag = SOV_character_purged_flag 
+  3684: 				}
+  3685: 			}
+  3686: 			available = {
+  3687: 				if = {
+  3688: 					limit = {
+  3689: 						has_character_flag = SOV_exiled_flag
+  3690: 					}
+  3691: 					NOT = { has_character_flag = SOV_exiled_flag }
+  3692: 				}
+
+====================================================================================================
+[R56] D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125\common\national_focus\soviet.txt : 13380-13420
+  WHY: 🚩 R56 SOV_mikhail_kalinin = { }
+----------------------------------------------------------------------------------------------------
+ 13380: 		}
+ 13381: 		                
+ 13382: 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_SOV_POLITICAL_PARANOIA FOCUS_FILTER_STABILITY}
+ 13383: 
+ 13384: 		completion_reward = {
+ 13385: 			SOV_paranoia_low_increase_effect = yes 
+ 13386: 			add_political_power = 100
+ 13387: 			custom_effect_tooltip = SOV_gain_support_from_party_members_tt
+ 13388: 			
+ 13389: 			hidden_effect = {
+ 13390: 				if = {
+ 13391: 					limit = {
+ 13392: 						SOV_is_left_opposition = yes 
+ 13393: 					}
+ 13394: 					SOV_mikhail_kalinin = {
+ 13395: 						set_character_flag = SOV_aligned_left_opposition_flag
+ 13396: 						clr_character_flag = SOV_safe_from_purge_flag
+ 13397: 					}
+ 13398: 					SOV_vsevolod_merkulov = {
+ 13399: 						set_character_flag = SOV_aligned_left_opposition_flag
+ 13400: 						clr_character_flag = SOV_safe_from_purge_flag
+ 13401: 					}
+ 13402: 					SOV_nikita_khrushchyov = {
+ 13403: 						set_character_flag = SOV_aligned_left_opposition_flag
+ 13404: 						clr_character_flag = SOV_safe_from_purge_flag
+ 13405: 					}
+ 13406: 				}
+ 13407: 			}
+ 13408: 		}
+ 13409: 	}
+ 13410: 
+ 13411: 	focus = {
+ 13412: 		id = SOV_sway_the_railway_workers
+ 13413: 		icon = GFX_focus_generic_public_works_A
+ 13414: 		prerequisite = { focus = SOV_the_left_opposition focus = SOV_the_right_opposition } 
+ 13415: 		x = 3
+ 13416: 		y = 1
+ 13417: 		relative_position_id = SOV_the_left_opposition
+ 13418: 		cost = 5
+ 13419: 		available = {
+ 13420: 			SOV_has_selected_hq = yes 
+
+====================================================================================================
+[R56] D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125\events\SovietUnion.txt : 775-815
+  WHY: 🚩 R56 启用了 purged_kalinin（不再注释）
+----------------------------------------------------------------------------------------------------
+   775: 	trigger = {
+   776: 		tag = SOV
+   777: 		NOT = { has_completed_focus = SOV_great_purge }
+   778: 		focus_progress = {
+   779: 			focus = SOV_great_purge
+   780: 			progress > 0.25
+   781: 		}
+   782: 	}
+   783: 
+   784: 	mean_time_to_happen = {
+   785: 		days = 1
+   786: 	}
+   787: 
+   788: 	option = {
+   789: 		ai_chance = {
+   790: 			factor = 30
+   791: 		}
+   792: 		name = soviet.25.a
+   793: 		custom_effect_tooltip = remove_political_advisor
+   794: 		show_ideas_tooltip = mikhail_kalinin
+   795: 		hidden_effect = {
+   796: 			retire_character = SOV_mikhail_kalinin
+   797: 		}
+   798: 	}
+   799: 	option = {
+   800: 		ai_chance = {
+   801: 			factor = 30
+   802: 		}
+   803: 		name = soviet.25.b
+   804: 		retire_character = SOV_nikita_khrushchyov
+   805: 	}
+   806: 	option = {
+   807: 		ai_chance = {
+   808: 			factor = 30
+   809: 		}
+   810: 		name = soviet.25.c
+   811: 		add_political_power = -75
+   812: 		set_country_flag = purged_party_members
+   813: 	}
+   814: 	option = {
+   815: 		ai_chance = {
+
+====================================================================================================
+[R56] D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125\history\countries\SOV - Soviet union.txt : 85-100
+  WHY: recruit_character（:93）
+----------------------------------------------------------------------------------------------------
+    85: 	}
+    86: 	recruit_character = SOV_provisional_government # United Exiles
+    87: 	set_country_flag = vlasov_owner_flag
+    88: }
+    89: 
+    90: country_event = { id = prc.5 days = 6273 } #Death of Stalin	-	historical date
+    91: 
+    92: #POLITICAL ADVISORS
+    93: recruit_character = SOV_mikhail_kalinin
+    94: recruit_character = SOV_nikita_khrushchyov
+    95: recruit_character = SOV_nikolay_voznesensky
+    96: recruit_character = SOV_lazar_kaganovich
+    97: recruit_character = SOV_genrikh_yagoda
+    98: recruit_character = SOV_nikolay_yezhov
+    99: recruit_character = SOV_lavrenty_beriya
+   100: recruit_character = SOV_vsevolod_merkulov
+
+====================================================================================================
+[R56] D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125\history\countries\SOV - Soviet union.txt : 282-310
+  WHY: ⭐ R56 历史角色块（:291）
+----------------------------------------------------------------------------------------------------
+   282: }
+   283: 
+   284: every_character = { #used to send Soviet commanders back to the USSR tag in case of fragmentation game rule
+   285: 	set_character_flag = soviet_character_flag
+   286: }
+   287: 
+   288: 
+   289: 
+   290: #Initialize character flags Part I (aka who's safe)
+   291: SOV_mikhail_kalinin = {
+   292: 	set_character_flag = SOV_safe_from_purge_flag
+   293: }
+   294: SOV_nikita_khrushchyov = {
+   295: 	set_character_flag = SOV_safe_from_purge_flag
+   296: }
+   297: SOV_lazar_kaganovich = {
+   298: 	set_character_flag = SOV_safe_from_purge_flag
+   299: }
+   300: SOV_genrikh_yagoda = { #NKVD Chiefs are always safe from regular purges, they'll be handled by a special purge event
+   301: 	set_character_flag = SOV_safe_from_purge_flag
+   302: }
+   303: SOV_nikolay_yezhov = { #NKVD Chiefs are always safe from regular purges, they'll be handled by a special purge event
+   304: 	set_character_flag = SOV_safe_from_purge_flag
+   305: }
+   306: SOV_lavrenty_beriya = { #NKVD Chiefs are always safe from regular purges, they'll be handled by a special purge event. Beriya will always be safe.
+   307: 	set_character_flag = SOV_safe_from_purge_flag
+   308: }
+   309: SOV_vsevolod_merkulov = {
+   310: 	set_character_flag = SOV_safe_from_purge_flag
+
+====================================================================================================
+[追查] SOV_gain_support_from_party_members_tt 的施用点（原版 + R56）
+----------------------------------------------------------------------------------------------------
+  [F:\Hearts of Iron IV] 命中 4 处
+     11185: 			}
+     11186: 		}
+     11187: 	}
+     11188: 
+     11189: 	focus = {
+     11190: 		id = SOV_gain_support_from_party_members
+     11191: 		icon = GFX_focus_generic_soviet_politics
+     11192: 		prerequisite = { focus = SOV_the_left_opposition focus = SOV_the_right_opposition } 
+     11193: 		x = 7
+     11194: 		y = 1
+    ---
+     11201: 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_SOV_POLITICAL_PARANOIA FOCUS_FILTER_STABILITY}
+     11202: 
+     11203: 		completion_reward = {
+     11204: 			SOV_paranoia_low_increase_effect = yes 
+     11205: 			add_political_power = 100
+     11206: 			custom_effect_tooltip = SOV_gain_support_from_party_members_tt
+     11207: 			
+     11208: 			hidden_effect = {
+     11209: 				if = {
+     11210: 					limit = {
+    ---
+     11275: 	}
+     11276: 
+     11277: 	focus = {
+     11278: 		id = SOV_cooperation_against_stalin
+     11279: 		icon = GFX_goal_generic_national_unity
+     11280: 		prerequisite = { focus = SOV_gain_support_from_party_members }
+     11281: 		mutually_exclusive = { focus = SOV_left_eliminate_right focus = SOV_eliminate_the_left}
+     11282: 		x = 0
+     11283: 		y = 1
+     11284: 		relative_position_id = SOV_gain_support_from_party_members
+    ---
+     11279: 		icon = GFX_goal_generic_national_unity
+     11280: 		prerequisite = { focus = SOV_gain_support_from_party_members }
+     11281: 		mutually_exclusive = { focus = SOV_left_eliminate_right focus = SOV_eliminate_the_left}
+     11282: 		x = 0
+     11283: 		y = 1
+     11284: 		relative_position_id = SOV_gain_support_from_party_members
+     11285: 		cost = 10
+     11286: 		available = {
+     11287: 			SOV_soviet_civil_war_not_started = yes 
+     11288: 		}
+    ---
+  [D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125] 命中 4 处
+     13366: 			}
+     13367: 		}
+     13368: 	}
+     13369: 
+     13370: 	focus = {
+     13371: 		id = SOV_gain_support_from_party_members
+     13372: 		icon = GFX_focus_generic_soviet_politics
+     13373: 		prerequisite = { focus = SOV_the_left_opposition focus = SOV_the_right_opposition } 
+     13374: 		x = 7
+     13375: 		y = 1
+    ---
+     13382: 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_SOV_POLITICAL_PARANOIA FOCUS_FILTER_STABILITY}
+     13383: 
+     13384: 		completion_reward = {
+     13385: 			SOV_paranoia_low_increase_effect = yes 
+     13386: 			add_political_power = 100
+     13387: 			custom_effect_tooltip = SOV_gain_support_from_party_members_tt
+     13388: 			
+     13389: 			hidden_effect = {
+     13390: 				if = {
+     13391: 					limit = {
+    ---
+     13456: 	}
+     13457: 
+     13458: 	focus = {
+     13459: 		id = SOV_cooperation_against_stalin
+     13460: 		icon = GFX_goal_generic_national_unity
+     13461: 		prerequisite = { focus = SOV_gain_support_from_party_members }
+     13462: 		mutually_exclusive = { focus = SOV_left_eliminate_right focus = SOV_eliminate_the_left}
+     13463: 		x = 0
+     13464: 		y = 1
+     13465: 		relative_position_id = SOV_gain_support_from_party_members
+    ---
+     13460: 		icon = GFX_goal_generic_national_unity
+     13461: 		prerequisite = { focus = SOV_gain_support_from_party_members }
+     13462: 		mutually_exclusive = { focus = SOV_left_eliminate_right focus = SOV_eliminate_the_left}
+     13463: 		x = 0
+     13464: 		y = 1
+     13465: 		relative_position_id = SOV_gain_support_from_party_members
+     13466: 		cost = 7.16	#was 10, forcing you to rush the focus if you wanted to get Zinoviets in charge 
+     13467: 		available = {
+     13468: 			SOV_soviet_civil_war_not_started = yes 
+     13469: 		}
+    ---
+
+====================================================================================================
+[追查] idea mikhail_kalinin 的定义（原版 ideas/ 下）
+----------------------------------------------------------------------------------------------------
+  [F:\Hearts of Iron IV] 命中 0 处
+  [D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125] 命中 0 处

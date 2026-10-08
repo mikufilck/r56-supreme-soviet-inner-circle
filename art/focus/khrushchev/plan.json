@@ -1,0 +1,68 @@
+[
+  {
+    "id": "hof_ic_khrushchev_the_workers_faculty",
+    "name": "GFX_hof_ic_khrushchev_the_workers_faculty",
+    "title": "工人预科",
+    "concept": "An empty 1930s workers' classroom. On a modest LOW TEACHER DESK, not a speech podium or political lectern, lies ONE OPEN NOTEBOOK and ONE small white chalk stick. Through a high classroom WINDOW in background one sees a coal-mine winding headframe silhouette, with ONE tiny warm incandescent bulb behind the window, the only warm element in the CENTRAL scene. Cool gray slate and aged off-white paper elsewhere. Notebook marks are abstract unreadable strokes. No people, microphones, portraits, flags.",
+    "group": "khrushchev",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_khrushchev_the_obligatory_deliveries",
+    "name": "GFX_hof_ic_khrushchev_the_obligatory_deliveries",
+    "title": "义务交售制",
+    "concept": "ONE old mechanical grain-collection BALANCE SCALE, shown close and clearly readable. Its pan holds ONLY a small dark-yellow pile of loose grain kernels, and its beam is visibly pressed very low, almost bottomed out under the compulsory quota. Beside the scale lies ONE cream quota sheet with close gray abstract tally marks but NO readable numerals or letters. Overall cool gray and restrained; grain is subdued ochre rather than cheerful gold. No harvest machine, corn, sickle or person.",
+    "group": "khrushchev",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_khrushchev_the_agro_towns",
+    "name": "GFX_hof_ic_khrushchev_the_agro_towns",
+    "title": "农业城镇",
+    "concept": "A large OFF-WHITE PAPER RURAL PLANNING DIAGRAM fills the central roundel, showing EXACTLY THREE tiny village symbols grouped inside ONE hand-drawn pencil rectangle. The boundary line separating town from village has been half erased with visible graphite smudge and a small natural rubber eraser resting nearby. Paper and gray pencil only; no legible place names, numerals, coastlines, Crimea, flags, buildings outside the plan or people. Emphasize the physical paper, penciled frame and partially erased line.",
+    "group": "khrushchev",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_khrushchev_the_purchase_prices",
+    "name": "GFX_hof_ic_khrushchev_the_purchase_prices",
+    "title": "收购价格",
+    "concept": "A single open purchase-price SHEET on a cool gray desk, its price rows represented by small illegible gray marks and a neutral embossed seal with NO RED INK. Beside the sheet lies a SMALL BUNDLE OF REAL WHEAT EARS laid flat diagonally, tactile and wheat-yellow. The wheat is the sole vivid CENTRAL color, brighter than the preceding icons. A still-life of paper and agricultural produce, not a heraldic central sheaf, no corn, no people, no legible text.",
+    "group": "khrushchev",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_khrushchev_the_virgin_lands",
+    "name": "GFX_hof_ic_khrushchev_the_virgin_lands",
+    "title": "处女地",
+    "concept": "A flat unfolded neutral-gray inland MAP on a desk, with its eastern half almost BLANK and unmarked; no identifiable coastlines, Crimea, Black Sea or place names. ONE metal pushpin is planted on the blank east. Exactly beneath the pin on the paper lies a small rough PINCH OF BROWN SOIL, tactile crumbs pressing into the map. Cool and somber, soil-brown the only modest central accent. No tractor, farm tools, people, wheat, flags or legible text.",
+    "group": "khrushchev",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_khrushchev_the_economic_councils",
+    "name": "GFX_hof_ic_khrushchev_the_economic_councils",
+    "title": "国民经济委员会",
+    "concept": "In a bare gray interior wall corner stand several REMOVED GOVERNMENT OFFICE DOOR PLAQUES leaning against the plaster. The plaques are physical metal/enamel rectangles with worn screws and ONLY faint indistinct brush marks, absolutely no readable letters. ONE plaque has been flipped FACE DOWN on the floor, showing its plain gray reverse and fixings. Nearby just a FEW tiny chips of old dark RED PAINT shed from the plaques; these are the only red accents within the central scene. No doorway crowd, person, long table, meeting room, portraits, flags or other bright color.",
+    "group": "khrushchev",
+    "size": [
+      100,
+      88
+    ]
+  }
+]

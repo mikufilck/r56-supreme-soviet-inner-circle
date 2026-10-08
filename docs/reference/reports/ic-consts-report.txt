@@ -1,0 +1,118 @@
+﻿
+=== inner_circle_time_tier ===
+common\national_focus\germany.txt                                      L20     @inner_circle_time_tier_1 = 20
+common\national_focus\germany.txt                                      L21     @inner_circle_time_tier_2 = 20
+common\national_focus\germany.txt                                      L22     @inner_circle_time_tier_3 = 40
+common\national_focus\germany.txt                                      L18438  cost = @inner_circle_time_tier_1
+common\national_focus\germany.txt                                      L18445  set_temp_variable = { temp_focus_days = @inner_circle_time_tier_1 } #For tooltip purposes
+common\national_focus\germany.txt                                      L18519  cost = @inner_circle_time_tier_2
+common\national_focus\germany.txt                                      L18526  set_temp_variable = { temp_focus_days = @inner_circle_time_tier_2 } #For tooltip purposes
+common\national_focus\germany.txt                                      L18777  cost = @inner_circle_time_tier_1
+common\national_focus\germany.txt                                      L18784  set_temp_variable = { temp_focus_days = @inner_circle_time_tier_1 } #For tooltip purposes
+common\national_focus\germany.txt                                      L18861  cost = @inner_circle_time_tier_2
+common\national_focus\germany.txt                                      L18868  set_temp_variable = { temp_focus_days = @inner_circle_time_tier_2 } #For tooltip purposes
+common\national_focus\germany.txt                                      L19004  cost = @inner_circle_time_tier_3
+common\national_focus\germany.txt                                      L19011  set_temp_variable = { temp_focus_days = @inner_circle_time_tier_3 } #For tooltip purposes
+common\national_focus\germany.txt                                      L19274  cost = @inner_circle_time_tier_1
+common\national_focus\germany.txt                                      L19281  set_temp_variable = { temp_focus_days = @inner_circle_time_tier_1 } #For tooltip purposes
+common\national_focus\germany.txt                                      L19444  cost = @inner_circle_time_tier_2
+common\national_focus\germany.txt                                      L19451  set_temp_variable = { temp_focus_days = @inner_circle_time_tier_2 } #For tooltip purposes
+common\national_focus\germany.txt                                      L19573  cost = @inner_circle_time_tier_3
+common\national_focus\germany.txt                                      L19580  set_temp_variable = { temp_focus_days = @inner_circle_time_tier_3 } #For tooltip purposes
+common\national_focus\germany.txt                                      L19765  cost = @inner_circle_time_tier_1
+common\national_focus\germany.txt                                      L19772  set_temp_variable = { temp_focus_days = @inner_circle_time_tier_1 } #For tooltip purposes
+common\national_focus\germany.txt                                      L19835  cost = @inner_circle_time_tier_2
+common\national_focus\germany.txt                                      L19842  set_temp_variable = { temp_focus_days = @inner_circle_time_tier_2 } #For tooltip purposes
+common\national_focus\germany.txt                                      L19897  cost = @inner_circle_time_tier_1
+common\national_focus\germany.txt                                      L19904  set_temp_variable = { temp_focus_days = @inner_circle_time_tier_1 } #For tooltip purposes
+
+=== inner_circle_focus_style ===
+common\national_focus\00_titlebar_styles.txt                           L63     name = GER_inner_circle_focus_style
+common\national_focus\germany.txt                                      L18433  text_icon = GER_inner_circle_focus_style
+common\national_focus\germany.txt                                      L18514  text_icon = GER_inner_circle_focus_style
+common\national_focus\germany.txt                                      L18772  text_icon = GER_inner_circle_focus_style
+common\national_focus\germany.txt                                      L18856  text_icon = GER_inner_circle_focus_style
+common\national_focus\germany.txt                                      L18999  text_icon = GER_inner_circle_focus_style
+common\national_focus\germany.txt                                      L19269  text_icon = GER_inner_circle_focus_style
+common\national_focus\germany.txt                                      L19439  text_icon = GER_inner_circle_focus_style
+common\national_focus\germany.txt                                      L19568  text_icon = GER_inner_circle_focus_style
+common\national_focus\germany.txt                                      L19760  text_icon = GER_inner_circle_focus_style
+common\national_focus\germany.txt                                      L19830  text_icon = GER_inner_circle_focus_style
+common\national_focus\germany.txt                                      L19892  text_icon = GER_inner_circle_focus_style
+common\national_focus\germany.txt                                      L19962  text_icon = GER_inner_circle_focus_style
+common\national_focus\germany.txt                                      L20298  text_icon = GER_inner_circle_focus_style
+common\national_focus\germany.txt                                      L20506  text_icon = GER_inner_circle_focus_style
+common\national_focus\germany.txt                                      L20564  text_icon = GER_inner_circle_focus_style
+common\national_focus\germany.txt                                      L20625  text_icon = GER_inner_circle_focus_style
+common\national_focus\germany.txt                                      L20983  text_icon = GER_inner_circle_focus_style
+common\national_focus\germany.txt                                      L21048  text_icon = GER_inner_circle_focus_style
+common\national_focus\germany.txt                                      L21114  text_icon = GER_inner_circle_focus_style
+common\national_focus\germany.txt                                      L21167  text_icon = GER_inner_circle_focus_style
+common\national_focus\germany.txt                                      L21457  text_icon = GER_inner_circle_focus_style
+common\national_focus\germany.txt                                      L21538  text_icon = GER_inner_circle_focus_style
+common\national_focus\germany.txt                                      L21781  text_icon = GER_inner_circle_focus_style
+common\national_focus\germany.txt                                      L21865  text_icon = GER_inner_circle_focus_style
+
+=== inner_circle_days_to_start_focus ===
+common\national_focus\germany.txt                                      L18405  country_event = { id = GER_inner_circle_todt.01 days = GER_inner_circle_days_to_start_focus random_days = GER_inner_circle_random_days }
+common\national_focus\germany.txt                                      L18753  country_event = { id = GER_inner_circle_speer.01 days = GER_inner_circle_days_to_start_focus random_days = GER_inner_circle_random_days }
+common\national_focus\germany.txt                                      L19250  country_event = { id = GER_inner_circle_goring.01 days = GER_inner_circle_days_to_start_focus random_days = GER_inner_circle_random_days }
+common\national_focus\germany.txt                                      L19740  country_event = { id = GER_inner_circle_himmler.01 days = GER_inner_circle_days_to_start_focus random_days = GER_inner_circle_random_days }
+common\national_focus\germany.txt                                      L20487  country_event = { id = GER_inner_circle_goebbels.01 days = GER_inner_circle_days_to_start_focus random_days = GER_inner_circle_random_days }
+common\national_focus\germany.txt                                      L20819  country_event = { id = GER_inner_circle_hess.01 days = GER_inner_circle_days_to_start_focus random_days = GER_inner_circle_random_days }
+common\national_focus\germany.txt                                      L20956  country_event = { id = GER_inner_circle_bormann.01 days = GER_inner_circle_days_to_start_focus random_days = GER_inner_circle_random_days }
+events\WUW_Germany.txt                                                 L22845  country_event = { id = GER_inner_circle_todt.01 days = GER_inner_circle_days_to_start_focus random_days = GER_inner_circle_random_days }
+events\WUW_Germany.txt                                                 L22921  country_event = { id = GER_inner_circle_todt.01 days = GER_inner_circle_days_to_start_focus random_days = GER_inner_circle_random_days }
+events\WUW_Germany.txt                                                 L22997  country_event = { id = GER_inner_circle_todt.01 days = GER_inner_circle_days_to_start_focus random_days = GER_inner_circle_random_days }
+events\WUW_Germany.txt                                                 L23124  country_event = { id = GER_inner_circle_speer.01 days = GER_inner_circle_days_to_start_focus random_days = GER_inner_circle_random_days }
+events\WUW_Germany.txt                                                 L23200  country_event = { id = GER_inner_circle_speer.01 days = GER_inner_circle_days_to_start_focus random_days = GER_inner_circle_random_days }
+events\WUW_Germany.txt                                                 L23276  country_event = { id = GER_inner_circle_speer.01 days = GER_inner_circle_days_to_start_focus random_days = GER_inner_circle_random_days }
+events\WUW_Germany.txt                                                 L23400  country_event = { id = GER_inner_circle_goring.01 days = GER_inner_circle_days_to_start_focus random_days = GER_inner_circle_random_days }
+events\WUW_Germany.txt                                                 L23476  country_event = { id = GER_inner_circle_goring.01 days = GER_inner_circle_days_to_start_focus random_days = GER_inner_circle_random_days }
+events\WUW_Germany.txt                                                 L23552  country_event = { id = GER_inner_circle_goring.01 days = GER_inner_circle_days_to_start_focus random_days = GER_inner_circle_random_days }
+events\WUW_Germany.txt                                                 L23677  country_event = { id = GER_inner_circle_todt.01 days = GER_inner_circle_days_to_start_focus random_days = GER_inner_circle_random_days }
+events\WUW_Germany.txt                                                 L23689  country_event = { id = GER_inner_circle_todt.01 days = GER_inner_circle_days_to_start_focus random_days = GER_inner_circle_random_days }
+events\WUW_Germany.txt                                                 L23800  country_event = { id = GER_inner_circle_speer.01 days = GER_inner_circle_days_to_start_focus random_days = GER_inner_circle_random_days }
+events\WUW_Germany.txt                                                 L23812  country_event = { id = GER_inner_circle_speer.01 days = GER_inner_circle_days_to_start_focus random_days = GER_inner_circle_random_days }
+events\WUW_Germany.txt                                                 L23919  country_event = { id = GER_inner_circle_goring.01 days = GER_inner_circle_days_to_start_focus random_days = GER_inner_circle_random_days }
+events\WUW_Germany.txt                                                 L23931  country_event = { id = GER_inner_circle_goring.01 days = GER_inner_circle_days_to_start_focus random_days = GER_inner_circle_random_days }
+events\WUW_Germany.txt                                                 L23986  country_event = { id = GER_inner_circle_himmler.01 days = GER_inner_circle_days_to_start_focus random_days = GER_inner_circle_random_days }
+events\WUW_Germany.txt                                                 L24007  country_event = { id = GER_inner_circle_himmler.01 days = GER_inner_circle_days_to_start_focus random_days = GER_inner_circle_random_days }
+events\WUW_Germany.txt                                                 L24125  country_event = { id = GER_inner_circle_himmler.01 days = GER_inner_circle_days_to_start_focus random_days = GER_inner_circle_random_days }
+
+=== inner_circle_random_days ===
+common\national_focus\germany.txt                                      L18405  country_event = { id = GER_inner_circle_todt.01 days = GER_inner_circle_days_to_start_focus random_days = GER_inner_circle_random_days }
+common\national_focus\germany.txt                                      L18753  country_event = { id = GER_inner_circle_speer.01 days = GER_inner_circle_days_to_start_focus random_days = GER_inner_circle_random_days }
+common\national_focus\germany.txt                                      L19250  country_event = { id = GER_inner_circle_goring.01 days = GER_inner_circle_days_to_start_focus random_days = GER_inner_circle_random_days }
+common\national_focus\germany.txt                                      L19740  country_event = { id = GER_inner_circle_himmler.01 days = GER_inner_circle_days_to_start_focus random_days = GER_inner_circle_random_days }
+common\national_focus\germany.txt                                      L20487  country_event = { id = GER_inner_circle_goebbels.01 days = GER_inner_circle_days_to_start_focus random_days = GER_inner_circle_random_days }
+common\national_focus\germany.txt                                      L20819  country_event = { id = GER_inner_circle_hess.01 days = GER_inner_circle_days_to_start_focus random_days = GER_inner_circle_random_days }
+common\national_focus\germany.txt                                      L20956  country_event = { id = GER_inner_circle_bormann.01 days = GER_inner_circle_days_to_start_focus random_days = GER_inner_circle_random_days }
+events\WUW_Germany.txt                                                 L22845  country_event = { id = GER_inner_circle_todt.01 days = GER_inner_circle_days_to_start_focus random_days = GER_inner_circle_random_days }
+events\WUW_Germany.txt                                                 L22921  country_event = { id = GER_inner_circle_todt.01 days = GER_inner_circle_days_to_start_focus random_days = GER_inner_circle_random_days }
+events\WUW_Germany.txt                                                 L22997  country_event = { id = GER_inner_circle_todt.01 days = GER_inner_circle_days_to_start_focus random_days = GER_inner_circle_random_days }
+events\WUW_Germany.txt                                                 L23124  country_event = { id = GER_inner_circle_speer.01 days = GER_inner_circle_days_to_start_focus random_days = GER_inner_circle_random_days }
+events\WUW_Germany.txt                                                 L23200  country_event = { id = GER_inner_circle_speer.01 days = GER_inner_circle_days_to_start_focus random_days = GER_inner_circle_random_days }
+events\WUW_Germany.txt                                                 L23276  country_event = { id = GER_inner_circle_speer.01 days = GER_inner_circle_days_to_start_focus random_days = GER_inner_circle_random_days }
+events\WUW_Germany.txt                                                 L23400  country_event = { id = GER_inner_circle_goring.01 days = GER_inner_circle_days_to_start_focus random_days = GER_inner_circle_random_days }
+events\WUW_Germany.txt                                                 L23476  country_event = { id = GER_inner_circle_goring.01 days = GER_inner_circle_days_to_start_focus random_days = GER_inner_circle_random_days }
+events\WUW_Germany.txt                                                 L23552  country_event = { id = GER_inner_circle_goring.01 days = GER_inner_circle_days_to_start_focus random_days = GER_inner_circle_random_days }
+events\WUW_Germany.txt                                                 L23677  country_event = { id = GER_inner_circle_todt.01 days = GER_inner_circle_days_to_start_focus random_days = GER_inner_circle_random_days }
+events\WUW_Germany.txt                                                 L23689  country_event = { id = GER_inner_circle_todt.01 days = GER_inner_circle_days_to_start_focus random_days = GER_inner_circle_random_days }
+events\WUW_Germany.txt                                                 L23800  country_event = { id = GER_inner_circle_speer.01 days = GER_inner_circle_days_to_start_focus random_days = GER_inner_circle_random_days }
+events\WUW_Germany.txt                                                 L23812  country_event = { id = GER_inner_circle_speer.01 days = GER_inner_circle_days_to_start_focus random_days = GER_inner_circle_random_days }
+events\WUW_Germany.txt                                                 L23919  country_event = { id = GER_inner_circle_goring.01 days = GER_inner_circle_days_to_start_focus random_days = GER_inner_circle_random_days }
+events\WUW_Germany.txt                                                 L23931  country_event = { id = GER_inner_circle_goring.01 days = GER_inner_circle_days_to_start_focus random_days = GER_inner_circle_random_days }
+events\WUW_Germany.txt                                                 L23986  country_event = { id = GER_inner_circle_himmler.01 days = GER_inner_circle_days_to_start_focus random_days = GER_inner_circle_random_days }
+events\WUW_Germany.txt                                                 L24007  country_event = { id = GER_inner_circle_himmler.01 days = GER_inner_circle_days_to_start_focus random_days = GER_inner_circle_random_days }
+events\WUW_Germany.txt                                                 L24125  country_event = { id = GER_inner_circle_himmler.01 days = GER_inner_circle_days_to_start_focus random_days = GER_inner_circle_random_days }
+
+=== 相关 script_constants 文件 ===
+--- F:\Hearts of Iron IV\common\script_constants
+    country_groups.txt
+    documentation.md
+    propaganda_campaigns.txt
+    special_project_constants.txt
+    state_groups.txt
+--- D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125\common\script_constants
+    r56_script_constants.txt

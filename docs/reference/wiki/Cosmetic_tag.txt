@@ -1,0 +1,384 @@
+﻿Cosmetic tag modding - Hearts of Iron 4 Wiki
+4 captures
+29 Mar 2023 - 21 Jul 2025
+Apr
+MAY
+Jun
+28
+2022
+2023
+2024
+success
+fail
+About this capture
+COLLECTED BY
+Collection:
+Save Page Now
+TIMESTAMPS
+The Wayback Machine - https://web.archive.org/web/20230528165757/https://hoi4.paradoxwikis.com/Cosmetic_tag
+Forum list
+Trending
+Latest
+New posts
+Paradox
+Store
+Mods
+Forum
+Launcher
+PDXCON
+2019
+Paradox Wikis
+Hearts of Iron 4 Wiki
+Active Wikis
+Age of Wonders 4
+Empire of Sin
+Cities: Skylines
+Crusader Kings 3
+Europa Universalis 4
+Hearts of Iron 4
+Imperator: Rome
+Prison Architect
+Stellaris
+Surviving Mars
+Surviving the Aftermath
+Vampire: The Masquerade
+Victoria 3
+Legacy Wikis
+AoW: Planetfall
+Crusader Kings 2
+Arsenal of Democracy
+Europa Universalis 2
+Europa Universalis 3
+Europa Universalis: Rome
+Hearts of Iron 2
+Hearts of Iron 3
+Tyranny
+Victoria 1
+Victoria 2
+Search
+Personal tools
+Log in
+Personal tools
+English
+Not logged in
+Talk
+Contributions
+Log in
+Navigation
+HoI4 Wiki Main Page
+Recent changes
+Random page
+Style guidelines
+Wiki support
+Paradox links
+- Wikis
+- Forums
+- Mods
+- Store
+- Twitch
+Tools
+What links here
+Related changes
+Special pages
+Printable version
+Permanent link
+Page information
+Cosmetic tag modding
+From Hearts of Iron 4 Wiki
+(Redirected from
+Cosmetic tag
+)
+Jump to navigation
+Jump to search
+This is a community maintained wiki. If you spot a mistake then you are welcome to fix it.
+Contents
+1
+Cosmetic tag
+2
+Flag
+3
+Map color
+4
+Localisation
+4.1
+By using vanilla files
+4.2
+By using your own file
+5
+Adding the cosmetic tag into the game
+5.1
+Implementing the tag
+Cosmetic tag
+[
+edit
+|
+edit source
+]
+Creating cosmetic tags is much easier than creating a complete country.
+Whereas a complete country requires the chosen tag to be declared in the vanilla file in
+/Hearts of Iron IV/common/country_tags
+, a cosmetic tag is completely dynamic in this sense and scripting the tag is not required. The tag is also not required to be of 3 characters, but spaces should not be used in the tag as the game will not recognize it as one tag (the tag is not what you see in-game though once you add in localisation).
+Flag
+[
+edit
+|
+edit source
+]
+Flags are added in for cosmetic countries the same way as one would for regular countries:
+Three flags need to be added:
+A large one (82x52 pixel) in
+/Hearts of Iron IV/gfx/flags
+A medium one (41x26 pixel) in
+/Hearts of Iron IV/gfx/flags/medium
+A small one (10x7 pixel) in
+/Hearts of Iron IV/gfx/flags/small
+All three should be in
+TGA-file
+format and named as follows:
+<your dynamic tag>_<ideology>.tga
+So for instance:
+GCA_democratic.tga
+It is recommended that add in flags for all 4 ideologies (_neutrality, _communism, _democratic and _fascism) are added in, as it is not possible to use only your cosmetic tag as a fallback; the flag would not change. It is possible however to use the same flags for different ideologies, as long as all 4 flags are there.
+Map color
+[
+edit
+|
+edit source
+]
+The color of a cosmetic tag can be changed by adding an entry to the game's common\countries\cosmetic.txt file:
+<your cosmetic tag> = {
+color = rgb { 201 56 93 }
+color_ui = rgb { 255 73 121 }
+}
+Localisation
+[
+edit
+|
+edit source
+]
+In order to change the name of your country when your scripted cosmetic tag becomes in use, one should add in localisation.
+To do so, go to
+/Hearts of Iron IV/localisation/
+. It is recommended to use a hex-editor such as
+Notepad++
+By using vanilla files
+[
+edit
+|
+edit source
+]
+If one uses the vanilla file
+/Hearts of Iron IV/localisation/countries_cosmetic_l_<language>.yml
+, the process is fairly straightforward; one should simply add their localisation the same way the others are set up:
+<your cosmetic tag>_<ideology>:0 "<your desired name>"
+<your cosmetic tag>_<ideology>_ADJ:0 "<your desired name's adjective>"
+<your cosmetic tag>_<ideology>_DEF:0 "<your desired name as used in events>" #'
+the
+United States of America' instead of 'United States of America'
+For instance:
+GCA_democratic:0 "Gran Colombia"
+GCA_democratic_ADJ:0 "Gran Colombian"
+GCA_democratic_DEF:0 "Gran Colombia" #Gran Colombia doesn't need 'the'
+By using your own file
+[
+edit
+|
+edit source
+]
+For compatibility-purposes, it may be wise to add in your own file.
+It does not matter what name for your localisation file is chosen, but it has to end in '_l_<language>.yml', with <language> being the language your localisation is in. It is important to have at least english as the game will then default to that instead of the keys used by the game data when an unsupported language is used.
+Once inside the file, it should be set up as follows:
+l_<language>: #Should be the same as your file name's l_<language>
+<your dynamic tag>_<ideology>:0 "<your desired name>"
+From here on one can follow the vanilla file guide.
+Adding the cosmetic tag into the game
+[
+edit
+|
+edit source
+]
+Adding a cosmetic tag to the game is done via
+Commands
+(aka Effects)
+Effects are mostly used in:
+- National Focuses
+- Event Options/Immediate
+- On Actions
+- Decisions
+- History/Countries Files
+Implementing the tag
+[
+edit
+|
+edit source
+]
+The cosmetic tag is enabled through the following command:
+set_cosmetic_tag = < Your Cosmetic Tag >
+You can also target the effect to another country by targeting the TAG as shown below:
+TAG = { set_cosmetic_tag = < Your Cosmetic Tag > }
+Using set_cosmetic_tag in a history/countries file is practically the same except the ability to have cosmetic tags be assigned after dates by doing the way shown below:
+1939.1.1 = { set_cosmetic_tag = < Your Cosmetic Tag > }
+This code will give the country the cosmetic tag if the starting date is January 1st 1939 or any time after
+Modding
+Documentation
+Effects
+鈥?
+Triggers
+鈥?
+Defines
+鈥?
+Modifiers
+鈥?
+List of modifiers
+鈥?
+Scopes
+鈥?
+Localisation
+鈥?
+On actions
+鈥?
+Data structures
+(
+Flags
+,
+Event targets
+,
+Country tag aliases
+,
+Variables
+,
+Arrays
+)
+Scripting
+Achievements
+鈥?
+AI
+鈥?
+AI focuses
+鈥?
+Autonomous states
+鈥?
+Balances of power
+鈥?
+Bookmarks (Scenarios)
+鈥?
+Buildings
+鈥?
+Characters and traits
+鈥?
+Cosmetic tags
+鈥?
+Countries
+鈥?
+Divisions
+鈥?
+Decisions
+鈥?
+Equipment
+鈥?
+Events
+鈥?
+Ideas
+鈥?
+Ideologies
+鈥?
+National focuses
+鈥?
+Resources
+鈥?
+Scripted GUI
+鈥?
+Technologies and doctrines
+鈥?
+Units
+Map
+Map
+鈥?
+States
+鈥?
+Supply areas
+鈥?
+Strategic regions
+Graphical
+Interface
+鈥?
+Graphical assets
+鈥?
+Entities
+鈥?
+Posteffects
+鈥?
+Particles
+鈥?
+Fonts
+Cosmetic
+Portraits
+鈥?
+Namelists
+鈥?
+Music
+鈥?
+Sound
+Other
+Console commands
+鈥?
+Troubleshooting
+鈥?
+Mod structure
+鈥?
+Mods
+Retrieved from "
+"
+Categories
+:
+1.7
+Modding
+Toggle sidebar
+Navigation menu
+Namespaces
+Page
+Discussion
+Variants
+Views
+Read
+Edit
+Edit source
+View history
+More
+This page was last edited on 10 January 2021, at 05:53.
+Content is available under
+Attribution-ShareAlike 3.0
+unless otherwise noted.
+About Hearts of Iron 4 Wiki
+Mobile view
+Hearts of Iron 4 Wiki
+Paradox Wikis
+Privacy Policy
+Games
+Discover
+Our Brands
+Browse
+Play
+on Paradox technology
+Community
+Paradox Forums
+Paradox
+Wikis
+Support
+About
+News
+About us
+Careers
+Join our playtests
+Media contact
+Social Media
+Legal
+Information
+EU Online Dispute Resolution
+Terms & Policies
+Legal Information
+EU Online Dispute Resolution
+Frequently Asked
+Questions
+Paradox
+Interactive corporate website

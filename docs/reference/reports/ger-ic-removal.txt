@@ -1,0 +1,320 @@
+﻿################################################################################
+# 1. 哪些文件引用了这些职务 idea，引用行长什么样
+################################################################################
+[R56] common\scripted_effects\GER_scripted_effects.txt L2863: add_ideas = GER_todt_reich_minister_of_armaments
+[R56] common\scripted_effects\GER_scripted_effects.txt L2869: add_ideas = GER_todt_reich_engineer
+[R56] common\scripted_effects\GER_scripted_effects.txt L2876: has_idea = GER_todt_reich_minister_of_armaments
+[R56] common\scripted_effects\GER_scripted_effects.txt L2878: remove_ideas = GER_todt_reich_minister_of_armaments
+[R56] common\scripted_effects\GER_scripted_effects.txt L2882: has_idea = GER_todt_reich_engineer
+[R56] common\scripted_effects\GER_scripted_effects.txt L2884: remove_ideas = GER_todt_reich_engineer
+[R56] common\scripted_effects\GER_scripted_effects.txt L2947: add_ideas = GER_speer_reich_minister_of_armaments
+[R56] common\scripted_effects\GER_scripted_effects.txt L2953: add_ideas = GER_speer_reich_architect
+[R56] common\scripted_effects\GER_scripted_effects.txt L2960: has_idea = GER_speer_reich_minister_of_armaments
+[R56] common\scripted_effects\GER_scripted_effects.txt L2962: remove_ideas = GER_speer_reich_minister_of_armaments
+[R56] common\scripted_effects\GER_scripted_effects.txt L2966: has_idea = GER_speer_reich_architect
+[R56] common\scripted_effects\GER_scripted_effects.txt L2968: remove_ideas = GER_speer_reich_architect
+[R56] common\scripted_effects\GER_scripted_effects.txt L3028: add_ideas = GER_goring_four_year_plan_plenipotentiary
+[R56] common\scripted_effects\GER_scripted_effects.txt L3034: add_ideas = GER_goring_overseer_four_year_plan
+[R56] common\scripted_effects\GER_scripted_effects.txt L3041: has_idea = GER_goring_four_year_plan_plenipotentiary
+[R56] common\scripted_effects\GER_scripted_effects.txt L3043: remove_ideas = GER_goring_four_year_plan_plenipotentiary
+[R56] common\scripted_effects\GER_scripted_effects.txt L3047: has_idea = GER_goring_overseer_four_year_plan
+[R56] common\scripted_effects\GER_scripted_effects.txt L3049: remove_ideas = GER_goring_overseer_four_year_plan
+[R56] common\scripted_effects\GER_scripted_effects.txt L3108: add_ideas = GER_himmler_reichsfuhrer_ss
+[R56] common\scripted_effects\GER_scripted_effects.txt L3117: add_ideas = GER_himmler_director_reich_security
+[R56] common\scripted_effects\GER_scripted_effects.txt L3123: add_ideas = GER_himmler_chief_of_german_police
+[R56] common\scripted_effects\GER_scripted_effects.txt L3134: has_idea = GER_himmler_reichsfuhrer_ss
+[R56] common\scripted_effects\GER_scripted_effects.txt L3136: remove_ideas = GER_himmler_reichsfuhrer_ss
+[R56] common\scripted_effects\GER_scripted_effects.txt L3140: has_idea = GER_himmler_director_reich_security
+[R56] common\scripted_effects\GER_scripted_effects.txt L3142: remove_ideas = GER_himmler_director_reich_security
+[R56] common\scripted_effects\GER_scripted_effects.txt L3146: has_idea = GER_himmler_chief_of_german_police
+[R56] common\scripted_effects\GER_scripted_effects.txt L3148: remove_ideas = GER_himmler_chief_of_german_police
+[R56] common\scripted_effects\GER_scripted_effects.txt L3341: add_ideas = GER_hess_party_chancellor_improved
+[R56] common\scripted_effects\GER_scripted_effects.txt L3344: add_ideas = GER_hess_party_chancellor_improved_no_aat
+[R56] common\scripted_effects\GER_scripted_effects.txt L3351: add_ideas = GER_hess_party_chancellor
+[R56] common\scripted_effects\GER_scripted_effects.txt L3376: has_idea = GER_hess_party_chancellor_improved
+[R56] common\scripted_effects\GER_scripted_effects.txt L3377: has_idea = GER_hess_party_chancellor_improved_no_aat
+[R56] common\scripted_effects\GER_scripted_effects.txt L3382: has_idea = GER_hess_party_chancellor_improved
+[R56] common\scripted_effects\GER_scripted_effects.txt L3384: remove_ideas = GER_hess_party_chancellor_improved
+[R56] common\scripted_effects\GER_scripted_effects.txt L3387: remove_ideas = GER_hess_party_chancellor_improved_no_aat
+[R56] common\scripted_effects\GER_scripted_effects.txt L3392: has_idea = GER_hess_party_chancellor
+[R56] common\scripted_effects\GER_scripted_effects.txt L3394: remove_ideas = GER_hess_party_chancellor
+[R56] common\scripted_effects\GER_scripted_effects.txt L3462: add_ideas = GER_bormann_secretary_to_the_fuhrer_improved
+[R56] common\scripted_effects\GER_scripted_effects.txt L3468: add_ideas = GER_bormann_secretary_to_the_fuhrer
+[R56] common\scripted_effects\GER_scripted_effects.txt L3481: has_idea = GER_bormann_secretary_to_the_fuhrer_improved
+[R56] common\scripted_effects\GER_scripted_effects.txt L3483: remove_ideas = GER_bormann_secretary_to_the_fuhrer_improved
+[R56] common\scripted_effects\GER_scripted_effects.txt L3487: has_idea = GER_bormann_secretary_to_the_fuhrer
+[R56] common\scripted_effects\GER_scripted_effects.txt L3489: remove_ideas = GER_bormann_secretary_to_the_fuhrer
+[R56] common\national_focus\germany.txt L21381: show_ideas_tooltip = GER_todt_reich_engineer
+[R56] common\national_focus\germany.txt L21420: add_ideas = GER_todt_reich_engineer
+[R56] common\national_focus\germany.txt L21623: remove_idea = GER_todt_reich_engineer
+[R56] common\national_focus\germany.txt L21624: add_idea = GER_todt_reich_minister_of_armaments
+[R56] common\national_focus\germany.txt L21706: show_ideas_tooltip = GER_speer_reich_architect
+[R56] common\national_focus\germany.txt L21745: add_ideas = GER_speer_reich_architect
+[R56] common\national_focus\germany.txt L21950: remove_idea = GER_speer_reich_architect
+[R56] common\national_focus\germany.txt L21951: add_idea = GER_speer_reich_minister_of_armaments
+[R56] common\national_focus\germany.txt L22188: show_ideas_tooltip = GER_goring_overseer_four_year_plan
+[R56] common\national_focus\germany.txt L22238: add_ideas = GER_goring_overseer_four_year_plan
+[R56] common\national_focus\germany.txt L22538: remove_idea = GER_goring_overseer_four_year_plan
+[R56] common\national_focus\germany.txt L22539: add_idea = GER_goring_four_year_plan_plenipotentiary
+[R56] common\national_focus\germany.txt L22702: show_ideas_tooltip = GER_himmler_chief_of_german_police
+[R56] common\national_focus\germany.txt L22745: add_ideas = GER_himmler_chief_of_german_police
+[R56] common\national_focus\germany.txt L22895: remove_idea = GER_himmler_chief_of_german_police
+[R56] common\national_focus\germany.txt L22896: add_idea = GER_himmler_director_reich_security
+[R56] common\national_focus\germany.txt L22957: remove_idea = GER_himmler_chief_of_german_police
+[R56] common\national_focus\germany.txt L22958: add_idea = GER_himmler_director_reich_security
+[R56] common\national_focus\germany.txt L23038: remove_idea = GER_himmler_director_reich_security
+[R56] common\national_focus\germany.txt L23039: add_idea = GER_himmler_reichsfuhrer_ss
+[R56] common\national_focus\germany.txt L23755: show_ideas_tooltip = GER_hess_party_chancellor
+[R56] common\national_focus\germany.txt L23794: add_ideas = GER_hess_party_chancellor
+[R56] common\national_focus\germany.txt L23877: show_ideas_tooltip = GER_bormann_secretary_to_the_fuhrer
+[R56] common\national_focus\germany.txt L23916: add_ideas = GER_bormann_secretary_to_the_fuhrer
+[R56] common\national_focus\germany.txt L24063: remove_idea = GER_hess_party_chancellor
+[R56] common\national_focus\germany.txt L24064: add_idea = GER_hess_party_chancellor_improved
+[R56] common\national_focus\germany.txt L24069: remove_idea = GER_hess_party_chancellor
+[R56] common\national_focus\germany.txt L24070: add_idea = GER_hess_party_chancellor_improved_no_aat
+[R56] common\national_focus\germany.txt L24125: remove_idea = GER_bormann_secretary_to_the_fuhrer
+[R56] common\national_focus\germany.txt L24126: add_idea = GER_bormann_secretary_to_the_fuhrer_improved
+[R56] common\national_focus\germany.txt L24217: remove_idea = GER_hess_party_chancellor_improved
+[R56] common\national_focus\germany.txt L24227: remove_idea = GER_hess_party_chancellor_improved_no_aat
+[R56] common\national_focus\germany.txt L24242: remove_idea = GER_bormann_secretary_to_the_fuhrer_improved
+[R56] events\WUW_Germany.txt L22088: has_idea = GER_himmler_director_reich_security
+[R56] events\WUW_Germany.txt L22264: has_idea = GER_himmler_director_reich_security
+[R56] events\WUW_Germany.txt L22440: has_idea = GER_himmler_director_reich_security
+[R56] events\WUW_Germany.txt L22823: IDEA = idea_desc|GER_todt_reich_engineer
+[R56] events\WUW_Germany.txt L22899: IDEA = idea_desc|GER_todt_reich_engineer
+[R56] events\WUW_Germany.txt L22975: IDEA = idea_desc|GER_todt_reich_engineer
+[R56] events\WUW_Germany.txt L23102: IDEA = idea_desc|GER_speer_reich_architect
+[R56] events\WUW_Germany.txt L23178: IDEA = idea_desc|GER_speer_reich_architect
+[R56] events\WUW_Germany.txt L23254: IDEA = idea_desc|GER_speer_reich_architect
+[R56] events\WUW_Germany.txt L23378: IDEA = idea_desc|GER_goring_overseer_four_year_plan
+[R56] events\WUW_Germany.txt L23454: IDEA = idea_desc|GER_goring_overseer_four_year_plan
+[R56] events\WUW_Germany.txt L23530: IDEA = idea_desc|GER_goring_overseer_four_year_plan
+[R56] common\dynamic_modifiers\wuw_dynamic_modifiers.txt L1016: #custom_modifier_tooltip = idea_desc|GER_todt_reich_engineer
+[R56] common\ideas\GER.txt L11350: GER_todt_reich_engineer = {
+[R56] common\ideas\GER.txt L11370: GER_todt_reich_minister_of_armaments = { # Should match country leader trait GER_todt_fuhrer
+[R56] common\ideas\GER.txt L11392: GER_speer_reich_architect = {
+[R56] common\ideas\GER.txt L11411: GER_speer_reich_minister_of_armaments = { # Should match country leader trait GER_speer_fuhrer
+[R56] common\ideas\GER.txt L11432: GER_goring_overseer_four_year_plan = {
+[R56] common\ideas\GER.txt L11452: GER_goring_four_year_plan_plenipotentiary = { # Should match country leader trait GER_goring_fuhrer
+[R56] common\ideas\GER.txt L11476: GER_himmler_chief_of_german_police = {
+[R56] common\ideas\GER.txt L11496: GER_himmler_director_reich_security = { # Should match country leader trait GER_himmler_fuhrer_abwehr
+[R56] common\ideas\GER.txt L11521: GER_himmler_reichsfuhrer_ss = { # Should match country leader trait GER_himmler_fuhrer_ss
+[R56] common\ideas\GER.txt L11671: GER_hess_party_chancellor = {
+[R56] common\ideas\GER.txt L11689: GER_hess_party_chancellor_improved = {
+[R56] common\ideas\GER.txt L11690: #name = GER_hess_party_chancellor #Requires actual string defined to work with scripted loc properly (scripted GUI)
+[R56] common\ideas\GER.txt L11711: GER_hess_party_chancellor_improved_no_aat = {
+[R56] common\ideas\GER.txt L11712: #name = GER_hess_party_chancellor #Requires actual string defined to work with scripted loc properly (scripted GUI)
+[R56] common\ideas\GER.txt L11793: GER_bormann_secretary_to_the_fuhrer = {
+[R56] common\ideas\GER.txt L11811: GER_bormann_secretary_to_the_fuhrer_improved = {
+[R56] common\ideas\GER.txt L11812: #name = GER_bormann_secretary_to_the_fuhrer #Requires actual string defined to work with scripted loc properly (scripted GUI)
+[原版] common\scripted_effects\GER_scripted_effects.txt L2326: add_ideas = GER_todt_reich_minister_of_armaments
+[原版] common\scripted_effects\GER_scripted_effects.txt L2332: add_ideas = GER_todt_reich_engineer
+[原版] common\scripted_effects\GER_scripted_effects.txt L2339: has_idea = GER_todt_reich_minister_of_armaments
+[原版] common\scripted_effects\GER_scripted_effects.txt L2341: remove_ideas = GER_todt_reich_minister_of_armaments
+[原版] common\scripted_effects\GER_scripted_effects.txt L2345: has_idea = GER_todt_reich_engineer
+[原版] common\scripted_effects\GER_scripted_effects.txt L2347: remove_ideas = GER_todt_reich_engineer
+[原版] common\scripted_effects\GER_scripted_effects.txt L2410: add_ideas = GER_speer_reich_minister_of_armaments
+[原版] common\scripted_effects\GER_scripted_effects.txt L2416: add_ideas = GER_speer_reich_architect
+[原版] common\scripted_effects\GER_scripted_effects.txt L2423: has_idea = GER_speer_reich_minister_of_armaments
+[原版] common\scripted_effects\GER_scripted_effects.txt L2425: remove_ideas = GER_speer_reich_minister_of_armaments
+[原版] common\scripted_effects\GER_scripted_effects.txt L2429: has_idea = GER_speer_reich_architect
+[原版] common\scripted_effects\GER_scripted_effects.txt L2431: remove_ideas = GER_speer_reich_architect
+[原版] common\scripted_effects\GER_scripted_effects.txt L2491: add_ideas = GER_goring_four_year_plan_plenipotentiary
+[原版] common\scripted_effects\GER_scripted_effects.txt L2497: add_ideas = GER_goring_overseer_four_year_plan
+[原版] common\scripted_effects\GER_scripted_effects.txt L2504: has_idea = GER_goring_four_year_plan_plenipotentiary
+[原版] common\scripted_effects\GER_scripted_effects.txt L2506: remove_ideas = GER_goring_four_year_plan_plenipotentiary
+[原版] common\scripted_effects\GER_scripted_effects.txt L2510: has_idea = GER_goring_overseer_four_year_plan
+[原版] common\scripted_effects\GER_scripted_effects.txt L2512: remove_ideas = GER_goring_overseer_four_year_plan
+[原版] common\scripted_effects\GER_scripted_effects.txt L2571: add_ideas = GER_himmler_reichsfuhrer_ss
+[原版] common\scripted_effects\GER_scripted_effects.txt L2580: add_ideas = GER_himmler_director_reich_security
+[原版] common\scripted_effects\GER_scripted_effects.txt L2586: add_ideas = GER_himmler_chief_of_german_police
+[原版] common\scripted_effects\GER_scripted_effects.txt L2597: has_idea = GER_himmler_reichsfuhrer_ss
+[原版] common\scripted_effects\GER_scripted_effects.txt L2599: remove_ideas = GER_himmler_reichsfuhrer_ss
+[原版] common\scripted_effects\GER_scripted_effects.txt L2603: has_idea = GER_himmler_director_reich_security
+[原版] common\scripted_effects\GER_scripted_effects.txt L2605: remove_ideas = GER_himmler_director_reich_security
+[原版] common\scripted_effects\GER_scripted_effects.txt L2609: has_idea = GER_himmler_chief_of_german_police
+[原版] common\scripted_effects\GER_scripted_effects.txt L2611: remove_ideas = GER_himmler_chief_of_german_police
+[原版] common\scripted_effects\GER_scripted_effects.txt L2804: add_ideas = GER_hess_party_chancellor_improved
+[原版] common\scripted_effects\GER_scripted_effects.txt L2807: add_ideas = GER_hess_party_chancellor_improved_no_aat
+[原版] common\scripted_effects\GER_scripted_effects.txt L2814: add_ideas = GER_hess_party_chancellor
+[原版] common\scripted_effects\GER_scripted_effects.txt L2839: has_idea = GER_hess_party_chancellor_improved
+[原版] common\scripted_effects\GER_scripted_effects.txt L2840: has_idea = GER_hess_party_chancellor_improved_no_aat
+[原版] common\scripted_effects\GER_scripted_effects.txt L2845: has_idea = GER_hess_party_chancellor_improved
+[原版] common\scripted_effects\GER_scripted_effects.txt L2847: remove_ideas = GER_hess_party_chancellor_improved
+[原版] common\scripted_effects\GER_scripted_effects.txt L2850: remove_ideas = GER_hess_party_chancellor_improved_no_aat
+[原版] common\scripted_effects\GER_scripted_effects.txt L2855: has_idea = GER_hess_party_chancellor
+[原版] common\scripted_effects\GER_scripted_effects.txt L2857: remove_ideas = GER_hess_party_chancellor
+[原版] common\scripted_effects\GER_scripted_effects.txt L2925: add_ideas = GER_bormann_secretary_to_the_fuhrer_improved
+[原版] common\scripted_effects\GER_scripted_effects.txt L2931: add_ideas = GER_bormann_secretary_to_the_fuhrer
+[原版] common\scripted_effects\GER_scripted_effects.txt L2944: has_idea = GER_bormann_secretary_to_the_fuhrer_improved
+[原版] common\scripted_effects\GER_scripted_effects.txt L2946: remove_ideas = GER_bormann_secretary_to_the_fuhrer_improved
+[原版] common\scripted_effects\GER_scripted_effects.txt L2950: has_idea = GER_bormann_secretary_to_the_fuhrer
+[原版] common\scripted_effects\GER_scripted_effects.txt L2952: remove_ideas = GER_bormann_secretary_to_the_fuhrer
+[原版] common\national_focus\germany.txt L18343: show_ideas_tooltip = GER_todt_reich_engineer
+[原版] common\national_focus\germany.txt L18382: add_ideas = GER_todt_reich_engineer
+[原版] common\national_focus\germany.txt L18599: remove_idea = GER_todt_reich_engineer
+[原版] common\national_focus\germany.txt L18600: add_idea = GER_todt_reich_minister_of_armaments
+[原版] common\national_focus\germany.txt L18691: show_ideas_tooltip = GER_speer_reich_architect
+[原版] common\national_focus\germany.txt L18730: add_ideas = GER_speer_reich_architect
+[原版] common\national_focus\germany.txt L18941: remove_idea = GER_speer_reich_architect
+[原版] common\national_focus\germany.txt L18942: add_idea = GER_speer_reich_minister_of_armaments
+[原版] common\national_focus\germany.txt L19188: show_ideas_tooltip = GER_goring_overseer_four_year_plan
+[原版] common\national_focus\germany.txt L19227: add_ideas = GER_goring_overseer_four_year_plan
+[原版] common\national_focus\germany.txt L19524: remove_idea = GER_goring_overseer_four_year_plan
+[原版] common\national_focus\germany.txt L19525: add_idea = GER_goring_four_year_plan_plenipotentiary
+[原版] common\national_focus\germany.txt L19674: show_ideas_tooltip = GER_himmler_chief_of_german_police
+[原版] common\national_focus\germany.txt L19717: add_ideas = GER_himmler_chief_of_german_police
+[原版] common\national_focus\germany.txt L19873: remove_idea = GER_himmler_chief_of_german_police
+[原版] common\national_focus\germany.txt L19874: add_idea = GER_himmler_director_reich_security
+[原版] common\national_focus\germany.txt L19935: remove_idea = GER_himmler_chief_of_german_police
+[原版] common\national_focus\germany.txt L19936: add_idea = GER_himmler_director_reich_security
+[原版] common\national_focus\germany.txt L20016: remove_idea = GER_himmler_director_reich_security
+[原版] common\national_focus\germany.txt L20017: add_idea = GER_himmler_reichsfuhrer_ss
+[原版] common\national_focus\germany.txt L20757: show_ideas_tooltip = GER_hess_party_chancellor
+[原版] common\national_focus\germany.txt L20796: add_ideas = GER_hess_party_chancellor
+[原版] common\national_focus\germany.txt L20894: show_ideas_tooltip = GER_bormann_secretary_to_the_fuhrer
+[原版] common\national_focus\germany.txt L20933: add_ideas = GER_bormann_secretary_to_the_fuhrer
+[原版] common\national_focus\germany.txt L21094: remove_idea = GER_hess_party_chancellor
+[原版] common\national_focus\germany.txt L21095: add_idea = GER_hess_party_chancellor_improved
+[原版] common\national_focus\germany.txt L21100: remove_idea = GER_hess_party_chancellor
+[原版] common\national_focus\germany.txt L21101: add_idea = GER_hess_party_chancellor_improved_no_aat
+[原版] common\national_focus\germany.txt L21156: remove_idea = GER_bormann_secretary_to_the_fuhrer
+[原版] common\national_focus\germany.txt L21157: add_idea = GER_bormann_secretary_to_the_fuhrer_improved
+[原版] common\national_focus\germany.txt L21248: remove_idea = GER_hess_party_chancellor_improved
+[原版] common\national_focus\germany.txt L21258: remove_idea = GER_hess_party_chancellor_improved_no_aat
+[原版] common\national_focus\germany.txt L21273: remove_idea = GER_bormann_secretary_to_the_fuhrer_improved
+[原版] events\WUW_Germany.txt L22099: has_idea = GER_himmler_director_reich_security
+[原版] events\WUW_Germany.txt L22275: has_idea = GER_himmler_director_reich_security
+[原版] events\WUW_Germany.txt L22451: has_idea = GER_himmler_director_reich_security
+[原版] events\WUW_Germany.txt L22834: IDEA = idea_desc|GER_todt_reich_engineer
+[原版] events\WUW_Germany.txt L22910: IDEA = idea_desc|GER_todt_reich_engineer
+[原版] events\WUW_Germany.txt L22986: IDEA = idea_desc|GER_todt_reich_engineer
+[原版] events\WUW_Germany.txt L23113: IDEA = idea_desc|GER_speer_reich_architect
+[原版] events\WUW_Germany.txt L23189: IDEA = idea_desc|GER_speer_reich_architect
+[原版] events\WUW_Germany.txt L23265: IDEA = idea_desc|GER_speer_reich_architect
+[原版] events\WUW_Germany.txt L23389: IDEA = idea_desc|GER_goring_overseer_four_year_plan
+[原版] events\WUW_Germany.txt L23465: IDEA = idea_desc|GER_goring_overseer_four_year_plan
+[原版] events\WUW_Germany.txt L23541: IDEA = idea_desc|GER_goring_overseer_four_year_plan
+[原版] common\dynamic_modifiers\wuw_dynamic_modifiers.txt L949: #custom_modifier_tooltip = idea_desc|GER_todt_reich_engineer
+[原版] common\ideas\GER.txt L6045: GER_todt_reich_engineer = {
+[原版] common\ideas\GER.txt L6065: GER_todt_reich_minister_of_armaments = { # Should match country leader trait GER_todt_fuhrer
+[原版] common\ideas\GER.txt L6087: GER_speer_reich_architect = {
+[原版] common\ideas\GER.txt L6106: GER_speer_reich_minister_of_armaments = { # Should match country leader trait GER_speer_fuhrer
+[原版] common\ideas\GER.txt L6127: GER_goring_overseer_four_year_plan = {
+[原版] common\ideas\GER.txt L6147: GER_goring_four_year_plan_plenipotentiary = { # Should match country leader trait GER_goring_fuhrer
+[原版] common\ideas\GER.txt L6171: GER_himmler_chief_of_german_police = {
+[原版] common\ideas\GER.txt L6191: GER_himmler_director_reich_security = { # Should match country leader trait GER_himmler_fuhrer_abwehr
+[原版] common\ideas\GER.txt L6216: GER_himmler_reichsfuhrer_ss = { # Should match country leader trait GER_himmler_fuhrer_ss
+[原版] common\ideas\GER.txt L6366: GER_hess_party_chancellor = {
+[原版] common\ideas\GER.txt L6384: GER_hess_party_chancellor_improved = {
+[原版] common\ideas\GER.txt L6385: #name = GER_hess_party_chancellor #Requires actual string defined to work with scripted loc properly (scripted GUI)
+[原版] common\ideas\GER.txt L6406: GER_hess_party_chancellor_improved_no_aat = {
+[原版] common\ideas\GER.txt L6407: #name = GER_hess_party_chancellor #Requires actual string defined to work with scripted loc properly (scripted GUI)
+[原版] common\ideas\GER.txt L6488: GER_bormann_secretary_to_the_fuhrer = {
+[原版] common\ideas\GER.txt L6506: GER_bormann_secretary_to_the_fuhrer_improved = {
+[原版] common\ideas\GER.txt L6507: #name = GER_bormann_secretary_to_the_fuhrer #Requires actual string defined to work with scripted loc properly (scripted GUI)
+
+################################################################################
+# 2. 吃变量的辅助动态修正原文（德国个人线额外数值就住在这里）
+################################################################################
+
+--- [原版] wuw_dynamic_modifiers.txt :: GER_four_year_plan_initiative_modifier  L1089
+    GER_four_year_plan_initiative_modifier = { 
+    	enable = { always = yes } 
+    	icon = GFX_modifiers_SOV_civilian_labor_in_defense
+    
+    	remove_trigger = {
+    		ROOT = { NOT = { is_core_of = ROOT.controller } } # ROOT refers to the state on which the modifier is added
+    	}
+    
+    	state_resources_factor = 0.1
+    }
+
+--- [R56] wuw_dynamic_modifiers.txt :: GER_four_year_plan_initiative_modifier  L1156
+    GER_four_year_plan_initiative_modifier = { 
+    	enable = { always = yes } 
+    	icon = GFX_modifiers_SOV_civilian_labor_in_defense
+    
+    	remove_trigger = {
+    		ROOT = { NOT = { is_core_of = ROOT.controller } } # ROOT refers to the state on which the modifier is added
+    	}
+    
+    	state_resources_factor = 0.1
+    }
+
+################################################################################
+# 3. 卡片：add_to_variable / remove_ideas / swap_ideas 的官方签名
+################################################################################
+
+--- ## add_ideas ---
+    ## add_ideas
+    
+    * Supported Scopes: COUNTRY
+    * Supported Targets: none
+    
+    ```
+    add idea(s) to country
+    ```
+    
+    ## add_intel
+
+--- ## add_to_variable ---
+    ## add_to_variable
+    
+    * Supported Scopes: any
+    * Supported Targets: none
+    
+    Adds a value, a variable, or a [math expression](script_math_expression.md) to a variable.
+    
+    ### Examples
+    ```
+    add_to_variable = { num_dogs = 42 }
+    add_to_variable = {
+    	num_dogs = { value = num_cats  multiply = 2 }
+    }
+    ```
+    
+    
+    ## add_to_war
+
+--- ## remove_ideas ---
+    ## remove_ideas
+    
+    * Supported Scopes: COUNTRY
+    * Supported Targets: none
+    
+    ```
+    remove idea(s) from country
+    ```
+    
+    ## remove_ideas_with_trait
+
+--- ## remove_ideas_with_trait ---
+    ## remove_ideas_with_trait
+    
+    * Supported Scopes: COUNTRY
+    * Supported Targets: THIS, ROOT, PREV, FROM, OWNER, CONTROLLER, OCCUPIED, CAPITAL
+    
+    ```
+    Remove all ideas with specified trait from country
+    ```
+    
+    ## remove_mission
+
+--- ## swap_ideas ---
+    ## swap_ideas
+    
+    * Supported Scopes: COUNTRY
+    * Supported Targets: none
+    
+    ```
+    swap 2 ideas. 
+     Syntax: swap_idea = {
+      remove_idea = <idea>
+      add_idea = <idea>
+      add_days = 10 #optional, will add/subtract duration for new idea that replaces the old one with duration
+      days = 25 #optional, will set the duration for the new idea
+    }
+    ```
+    
+    ## swap_ruler_traits

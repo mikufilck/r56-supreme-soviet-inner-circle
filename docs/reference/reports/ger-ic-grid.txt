@@ -1,0 +1,57 @@
+﻿germany.txt 行数：38872
+切出 focus 块：438
+
+=== 含 FOCUS_FILTER_INNER_CIRCLE 的国策：23 个 ===
+
+id                                             relative_to                            dx    dy    absX  absY
+----------------------------------------------------------------------------------------------------------------
+GER_a_strong_successor                         GER_fuhrerprinzip                      -2     5      59    13
+GER_absorb_the_abwehr                          GER_expand_gestapo                      0     1      60    11
+GER_autonomous_organization_todt               GER_form_organization_todt              0     1      54    11
+GER_employ_philipp_holzmann                    GER_ascension_of_speer                  0     1      56    10
+GER_expand_gestapo                             GER_ascension_of_himmler               -1     1      60    10
+GER_expand_ss_security_duties                  GER_ascension_of_himmler                1     1      62    10
+GER_form_organization_todt                     GER_ascension_of_todt                   0     1      54    10
+GER_fuhrerprinzip                              GER_remilitarize_the_rhineland        -17     8      61     8
+GER_fund_the_film_department                   GER_ministry_of_public_enlightenment      0     1      64    11
+GER_glorify_party_rallies                      GER_optimize_reich_labour_service       1     1      68    11
+GER_hegemony_of_the_ss                         GER_absorb_the_abwehr                   1     1      61    12
+GER_integration_of_puppet_economies            GER_plenipotentiary_of_the_four_year_plan      0     1      58    12
+GER_loyalty_to_the_fuhrer                      GER_fuhrerprinzip                       2     5      63    13
+GER_ministry_of_public_enlightenment           GER_ascension_of_goebbels               0     1      64    10
+GER_optimize_reich_labour_service              GER_party_chancellor_hess               1     1      67    10
+GER_plenipotentiary_of_armaments               GER_employ_philipp_holzmann             0     1      56    11
+GER_plenipotentiary_of_the_four_year_plan      GER_prioritize_the_four_year_plan       0     1      58    11
+GER_prioritize_the_four_year_plan              GER_ascension_of_goring                 0     1      58    10
+GER_propaganda_master                          GER_fund_the_film_department            0     1      64    12
+GER_rally_the_industrialists                   GER_optimize_reich_labour_service      -1     1      66    11
+GER_strengthen_the_waffen_ss                   GER_expand_ss_security_duties           0     1      62    11
+GER_total_control_over_domestic_affairs        GER_rally_the_industrialists            1     1      67    12
+GER_wunderwaffe                                GER_autonomous_organization_todt        1     1      55    12
+
+=== 网格图（行 = 绝对 y，列 = 绝对 x）===
+
+x 范围 54..68（宽 15）   y 范围 8..13（高 6）
+
+y=  8  [x=  61] fuhrerprinzip   
+y=  9  
+y= 10  [x=  54] form_organization_todt   [x=  56] employ_philipp_holzmann   [x=  58] prioritize_the_four_year_p   [x=  60] expand_gestapo   [x=  62] expand_ss_security_duties   [x=  64] ministry_of_public_enlight   [x=  67] optimize_reich_labour_serv   
+y= 11  [x=  54] autonomous_organization_to   [x=  56] plenipotentiary_of_armamen   [x=  58] plenipotentiary_of_the_fou   [x=  60] absorb_the_abwehr   [x=  62] strengthen_the_waffen_ss   [x=  64] fund_the_film_department   [x=  66] rally_the_industrialists   [x=  68] glorify_party_rallies   
+y= 12  [x=  55] wunderwaffe   [x=  58] integration_of_puppet_econ   [x=  61] hegemony_of_the_ss   [x=  64] propaganda_master   [x=  67] total_control_over_domesti   
+y= 13  [x=  59] a_strong_successor   [x=  63] loyalty_to_the_fuhrer   
+
+=== 同行相邻国策的 |dx| 分布 ===
+  dx =   2  : 12 次
+  dx =   3  : 5 次
+  dx =   4  : 1 次
+
+=== 纵向：每个国策到其 prerequisite[0] 的 (dx, dy) ===
+(需要另一份提 prerequisite 的扫描，此处仅给同族纵向间隔)
+  x=  60 : y 序列 10,11  间隔 1
+  x=  54 : y 序列 10,11  间隔 1
+  x=  56 : y 序列 10,11  间隔 1
+  x=  62 : y 序列 10,11  间隔 1
+  x=  61 : y 序列 8,12  间隔 4
+  x=  64 : y 序列 10,11,12  间隔 1,1
+  x=  58 : y 序列 10,11,12  间隔 1,1
+  x=  67 : y 序列 10,12  间隔 2

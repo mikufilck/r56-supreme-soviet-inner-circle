@@ -1,0 +1,162 @@
+# =============================================================================
+# 需求 C：经互会通用线的机构 idea（由 build/gen-hof-ma-common-lines.ps1 生成，勿手改）
+# -----------------------------------------------------------------------------
+# 这些都是【可见的民族精神】（照原版 NORDIC_command_ns 那一类）：国策「直接奖励」
+# 那一列的载体 —— 点下去，玩家在精神格里多出这一个机构。
+# ⚠️ 它们的数值【不进】docs/un-focus/02 §5.1/§7.1/§9.1 的逐变量合计（另见 §5.2/§7.2/§9.2）。
+# =============================================================================
+
+ideas = {
+
+	country = {
+
+		hof_ma_idea_comecon = {
+			name = hof_ma_idea_comecon
+			picture = hof_ma_comecon
+			cancel = { NOT = { hof_ma_eligible = yes } }
+
+			modifier = {
+				production_speed_industrial_complex_factor = 0.05
+			}
+		}
+
+		hof_ma_idea_division_of_labour = {
+			name = hof_ma_idea_division_of_labour
+			picture = hof_ma_comecon
+			cancel = { NOT = { hof_ma_eligible = yes } }
+
+			modifier = {
+				production_speed_industrial_complex_factor = 0.05
+			}
+		}
+
+		hof_ma_idea_integration_programme = {
+			name = hof_ma_idea_integration_programme
+			picture = hof_ma_comecon
+			cancel = { NOT = { hof_ma_eligible = yes } }
+
+			modifier = {
+				production_speed_industrial_complex_factor = 0.05
+				industrial_capacity_dockyard = 0.05
+			}
+		}
+
+		hof_ma_idea_joint_research_org = {
+			name = hof_ma_idea_joint_research_org
+			picture = hof_ma_comecon
+			cancel = { NOT = { hof_ma_eligible = yes } }
+
+			modifier = {
+				research_speed_factor = 0.05
+				research_sharing_per_country_bonus_factor = 0.05
+			}
+		}
+
+		hof_ma_idea_cominform = {
+			name = hof_ma_idea_cominform
+			picture = hof_ma_cominform
+			cancel = { NOT = { hof_ma_eligible = yes } }
+
+			modifier = {
+				political_power_factor = 0.05
+			}
+		}
+
+		hof_ma_idea_cominform_press = {
+			name = hof_ma_idea_cominform_press
+			picture = generic_communist_army
+			cancel = { NOT = { hof_ma_eligible = yes } }
+
+			modifier = {
+				opinion_gain_monthly_factor = 0.05
+			}
+		}
+
+		hof_ma_idea_wpc = {
+			name = hof_ma_idea_wpc
+			picture = hof_ma_wpc
+			cancel = { NOT = { hof_ma_eligible = yes } }
+
+			modifier = {
+				opinion_gain_monthly_factor = 0.05
+			}
+		}
+
+		hof_ma_idea_oir = {
+			name = hof_ma_idea_oir
+			picture = hof_ma_oirt
+			cancel = { NOT = { hof_ma_eligible = yes } }
+
+			modifier = {
+				drift_defence_factor = 0.05
+				compliance_growth_on_our_occupied_states = 0.05
+			}
+		}
+
+		hof_ma_idea_friendship_societies = {
+			name = hof_ma_idea_friendship_societies
+			picture = generic_communist_army
+			cancel = { NOT = { hof_ma_eligible = yes } }
+
+			modifier = {
+				opinion_gain_monthly_factor = 0.05
+				improve_relations_maintain_cost_factor = -0.05
+			}
+		}
+
+		hof_ma_idea_first_secretaries = {
+			name = hof_ma_idea_first_secretaries
+			picture = generic_communist_army
+			cancel = { NOT = { hof_ma_eligible = yes } }
+
+			modifier = {
+				political_power_factor = 0.05
+				stability_factor = 0.05
+			}
+		}
+
+		hof_ma_idea_warsaw_treaty = {
+			name = hof_ma_idea_warsaw_treaty
+			picture = hof_ma_warsawpact
+			cancel = { NOT = { hof_ma_eligible = yes } }
+
+			modifier = {
+				army_defence_factor = 0.05
+				war_support_factor = 0.05
+			}
+		}
+
+		hof_ma_idea_joint_command = {
+			name = hof_ma_idea_joint_command
+			picture = hof_ma_warsawpact
+			cancel = { NOT = { hof_ma_eligible = yes } }
+
+			modifier = {
+				command_power_gain = 0.05
+				army_org_factor = 0.05
+			}
+		}
+
+		hof_ma_idea_csce = {
+			name = hof_ma_idea_csce
+			picture = hof_ma_osce
+			cancel = { NOT = { hof_ma_eligible = yes } }
+
+			modifier = {
+				war_support_factor = 0.05
+				stability_factor = 0.05
+			}
+		}
+
+		hof_ma_idea_nuclear_umbrella = {
+			name = hof_ma_idea_nuclear_umbrella
+			picture = hof_ma_warsawpact
+			cancel = { NOT = { hof_ma_eligible = yes } }
+
+			modifier = {
+				army_attack_factor = 0.05
+			}
+		}
+
+	}
+}

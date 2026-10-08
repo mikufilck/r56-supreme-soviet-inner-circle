@@ -1,0 +1,17 @@
+{
+  "id": "hof_ic_shlyapnikov_qualification_from_the_shop",
+  "name": "GFX_hof_ic_shlyapnikov_qualification_from_the_shop",
+  "title": "生产的资格",
+  "concept": "A plain dark workers COAT hanging on a wooden TOOL RACK in workshop, with a small old LATHE only in far background side silhouette, partly obscured and definitely NOT a close-up. Directly ABOVE coat a blank wall calendar grid with EXACTLY THREE adjacent square cells visibly crossed through with bold black diagonal strokes; no numbers, text, dates. Workbench tools on rack are subtle. Industrial grey and warm worn wood with cool wall. No person, office interior or documents.",
+  "group": "shlyapnikov",
+  "size": [
+    100,
+    88
+  ],
+  "prompt": "Use case: stylized-concept. Create ONE finished Hearts of Iron IV Soviet national focus icon. Input reference is ONLY outer gold laurel and engraved sculptural relief STYLE; replace central imagery completely. Subject: A plain dark workers COAT hanging on a wooden TOOL RACK in workshop, with a small old LATHE only in far background side silhouette, partly obscured and definitely NOT a close-up. Directly ABOVE coat a blank wall calendar grid with EXACTLY THREE adjacent square cells visibly crossed through with bold black diagonal strokes; no numbers, text, dates. Workbench tools on rack are subtle. Industrial grey and warm worn wood with cool wall. No person, office interior or documents. Gold laurel open at top, small red star above, blank gold ribbon below, thin bronze-red circular rim. Ivory-grey relief with restrained scene-specific colors, highly readable at final100x88, directional upper-left light. No readable letters, names, words, numbers, faces, portraits or watermark. Project-specific forbidden imagery: confiscation, sealing tape, guns, offices for calendar scene, bureaucratic papers there, businessmen in suits, workers loitering at factory/agency gate, lathe close-up, 1937, execution, barred prison windows, interrogation, union flags and lecterns. Landscape100:88, emblem fills94%canvas. TRUE transparent RGBA background enabled, alpha0 outside emblem and all four corners,20-50% transparent area. No fake checkerboard or rectangular backdrop or external shadow.",
+  "references": [
+    "D:/Users/xuwei/PycharmProjects/heart_of_Iron/art/focus/bukharin/source/GFX_hof_ic_bukharin_proportional_development.png"
+  ],
+  "generated_path": "C:\\Users\\xuwei\\.codex\\generated_images\\01a09af5-fd43-79a0-a3cc-72284cd67cbc\\exec-7b1d9d75-bebe-48a5-9b44-3a69f8a40a25.png",
+  "mode": "built-in image_gen"
+}

@@ -1,0 +1,10 @@
+ideas = {
+	country = {
+		hof_ic_cinema_counterplan = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = generic_production_bonus
+			modifier = { production_factory_efficiency_gain_factor = 0.05 }
+		}
+	}
+}

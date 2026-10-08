@@ -1,0 +1,103 @@
+﻿扫描 sprite 注册表……
+  sprite 注册 34462 条
+索引磁盘立绘文件……
+  大图 3650 个 / 小图 6695 个
+
+=== 逐个候选核对 ===
+角色 id                          姓名                     营        角色块      立绘
+----------------------------------------------------------------------------------------------------------------------
+SOV_lev_trotsky                列夫·托洛茨基                left     有        仅小图（需补大图）
+       小图：F:\Hearts of Iron IV\gfx\interface\ideas\idea_SOV_lev_trotsky.dds  [角色块 small]
+SOV_yevgeny_preobrazhensky     叶夫根尼·普列奥布拉任斯基          left     有        仅小图（需补大图）
+       小图：F:\Hearts of Iron IV\gfx\interface\ideas\idea_SOV_yevgeny_preobrazhensky.dds  [角色块 small]
+SOV_karl_radek                 卡尔·拉狄克                 left     有        仅小图（需补大图）
+       小图：F:\Hearts of Iron IV\gfx\interface\ideas\idea_SOV_karl_radek.dds  [角色块 small]
+SOV_ivar_smilga                伊瓦尔·斯米尔加               left     有        仅小图（需补大图）
+       小图：F:\Hearts of Iron IV\gfx\interface\ideas\idea_SOV_ivar_smilga_imprisoned.dds  [角色块 small]
+SOV_ivan_smirnov               伊万·斯米尔诺夫               left     有        大图+小图
+       大图：F:\Hearts of Iron IV\gfx\leaders\SOV\portrait_SOV_ivan_smirnov.dds  [角色块 large]
+       小图：F:\Hearts of Iron IV\gfx\interface\ideas\idea_SOV_ivan_smirnov_imprisoned.dds  [角色块 small]
+SOV_leonid_serebryakov         列昂尼德·谢列布里亚科夫           left     无        仅大图
+       大图：D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125\gfx\leaders\SOV\r56_portrait_SOV_Leonid_Serebryakov.dds  [文件名匹配]
+SOV_nikolay_bukharin           尼古拉·布哈林                right    有        仅小图（需补大图）
+       小图：F:\Hearts of Iron IV\gfx\interface\ideas\idea_SOV_nikolay_bukharin.dds  [角色块 small]
+SOV_aleksey_rykov              阿列克谢·李可夫               right    有        仅小图（需补大图）
+       小图：F:\Hearts of Iron IV\gfx\interface\ideas\idea_SOV_aleksey_rykov.dds  [角色块 small]
+SOV_mikhail_tomsky             米哈伊尔·托姆斯基              right    有        仅小图（需补大图）
+       小图：F:\Hearts of Iron IV\gfx\interface\ideas\idea_SOV_mikhail_tomsky.dds  [角色块 small]
+SOV_martemyan_ryutin           马尔特米扬·里亚京              right    有        仅小图（需补大图）
+       小图：F:\Hearts of Iron IV\gfx\interface\ideas\idea_SOV_martemyan_ryutin_imprisoned.dds  [角色块 small]
+SOV_grigory_zinovyev           格里戈里·季诺维也夫             united   有        大图+小图
+       大图：F:\Hearts of Iron IV\gfx\leaders\SOV\portrait_SOV_grigory_zinovyev.dds  [角色块 large]
+       小图：F:\Hearts of Iron IV\gfx\interface\ideas\idea_SOV_grigory_zinovyev_imprisoned.dds  [角色块 small]
+SOV_lev_kamenev                列夫·加米涅夫                united   有        大图+小图
+       大图：F:\Hearts of Iron IV\gfx\leaders\SOV\portrait_SOV_lev_kamenev.dds  [角色块 large]
+       小图：F:\Hearts of Iron IV\gfx\interface\ideas\idea_SOV_lev_kamenev_imprisoned.dds  [角色块 small]
+SOV_aleksandr_shlyapnikov      亚历山大·施利亚普尼科夫           workers  有        仅小图（需补大图）
+       小图：F:\Hearts of Iron IV\gfx\interface\ideas\idea_SOV_aleksandr_shlyapnikov_imprisoned.dds  [角色块 small]
+SOV_mikhail_kalinin            米哈伊尔·加里宁               neutral  有        仅小图（需补大图）
+       小图：F:\Hearts of Iron IV\gfx\interface\ideas\idea_mikhail_kalinin.dds  [角色块 small]
+SOV_maksim_litvinov            马克西姆·李维诺夫              neutral  有        仅小图（需补大图）
+       小图：F:\Hearts of Iron IV\gfx\interface\ideas\idea_SOV_maksim_litvinov.dds  [角色块 small]
+SOV_grigory_sokolnikov         格里戈里·索柯里尼柯夫            neutral  有        仅小图（需补大图）
+       小图：F:\Hearts of Iron IV\gfx\interface\ideas\idea_SOV_grigory_sokolnikov.dds  [角色块 small]
+SOV_mikhail_tukhachevsky       米哈伊尔·图哈切夫斯基            neutral  有        大图+小图
+       大图：F:\Hearts of Iron IV\gfx\leaders\SOV\Portrait_Soviet_Mikhail_Tukhachevsky.dds  [文件名匹配]
+       小图：F:\Hearts of Iron IV\gfx\interface\ideas\idea_mikhail_tukhachevsky.dds  [角色块 small]
+SOV_nikolay_voznesensky        尼古拉·沃兹涅先斯基             neutral  有        仅小图（需补大图）
+       小图：F:\Hearts of Iron IV\gfx\interface\ideas\idea_SOV_nikolay_voznesensky.dds  [角色块 small]
+SOV_pyotr_smirnov              彼得·斯米尔诺夫               neutral  有        仅小图（需补大图）
+       小图：F:\Hearts of Iron IV\gfx\interface\ideas\idea_pyotr_smirnov.dds  [角色块 small]
+SOV_grigory_ordzhonikidze      格里戈里·奥尔忠尼启则            neutral  无        ★ 无立绘 → 删
+SOV_felix_dzerzhinsky          费利克斯·捷尔任斯基             neutral  无        ★ 无立绘 → 删
+SOV_valerian_kuibyshev         瓦列里安·古比雪夫              neutral  无        ★ 无立绘 → 删
+SOV_sergei_kirov               谢尔盖·基洛夫                neutral  无        ★ 无立绘 → 删
+SOV_anastas_mikoyan            阿纳斯塔斯·米高扬              neutral  无        ★ 无立绘 → 删
+SOV_grigory_pyatakov           格里戈里·皮达可夫              neutral  无        ★ 无立绘 → 删
+SOV_nikolai_muralov            尼古拉·穆拉洛夫               neutral  无        ★ 无立绘 → 删
+SOV_alexandra_kollontai        亚历山德拉·柯伦泰              neutral  无        ★ 无立绘 → 删
+
+======================================================================================================================
+### 结论
+======================================================================================================================
+
+【保留】19 人
+
+  · left 营（6 人）
+      SOV_lev_trotsky                  列夫·托洛茨基                仅小
+      SOV_yevgeny_preobrazhensky       叶夫根尼·普列奥布拉任斯基          仅小
+      SOV_karl_radek                   卡尔·拉狄克                 仅小
+      SOV_ivar_smilga                  伊瓦尔·斯米尔加               仅小
+      SOV_ivan_smirnov                 伊万·斯米尔诺夫               大+小
+      SOV_leonid_serebryakov           列昂尼德·谢列布里亚科夫           仅大  ??无角色块，需新建
+
+  · right 营（4 人）
+      SOV_nikolay_bukharin             尼古拉·布哈林                仅小
+      SOV_aleksey_rykov                阿列克谢·李可夫               仅小
+      SOV_mikhail_tomsky               米哈伊尔·托姆斯基              仅小
+      SOV_martemyan_ryutin             马尔特米扬·里亚京              仅小
+
+  · united 营（2 人）
+      SOV_grigory_zinovyev             格里戈里·季诺维也夫             大+小
+      SOV_lev_kamenev                  列夫·加米涅夫                大+小
+
+  · workers 营（1 人）
+      SOV_aleksandr_shlyapnikov        亚历山大·施利亚普尼科夫           仅小
+
+  · neutral 营（6 人）
+      SOV_mikhail_kalinin              米哈伊尔·加里宁               仅小
+      SOV_maksim_litvinov              马克西姆·李维诺夫              仅小
+      SOV_grigory_sokolnikov           格里戈里·索柯里尼柯夫            仅小
+      SOV_mikhail_tukhachevsky         米哈伊尔·图哈切夫斯基            大+小
+      SOV_nikolay_voznesensky          尼古拉·沃兹涅先斯基             仅小
+      SOV_pyotr_smirnov                彼得·斯米尔诺夫               仅小
+
+【删除】8 人（大图小图都没有）
+      SOV_grigory_ordzhonikidze        格里戈里·奥尔忠尼启则            neutral营
+      SOV_felix_dzerzhinsky            费利克斯·捷尔任斯基             neutral营
+      SOV_valerian_kuibyshev           瓦列里安·古比雪夫              neutral营
+      SOV_sergei_kirov                 谢尔盖·基洛夫                neutral营
+      SOV_anastas_mikoyan              阿纳斯塔斯·米高扬              neutral营
+      SOV_grigory_pyatakov             格里戈里·皮达可夫              neutral营
+      SOV_nikolai_muralov              尼古拉·穆拉洛夫               neutral营
+      SOV_alexandra_kollontai          亚历山德拉·柯伦泰              neutral营

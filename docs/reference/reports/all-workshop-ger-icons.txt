@@ -1,0 +1,20 @@
+﻿================ GFX_focus_GER_ascension_of_himmler ================
+  --- mod 2129897125
+      common\national_focus\germany.txt
+
+================ GER_ascension_of_himmler ================
+  --- mod 2129897125
+      common\ai_strategy_plans\GER_alternate_strategy_plan.txt
+      common\ai_strategy_plans\GER_historical_strategy_plan.txt
+      common\characters\GER.txt
+      common\national_focus\germany.txt
+      common\scripted_effects\GER_scripted_effects.txt
+      events\WUW_Germany.txt
+
+================ GER_fuhrerprinzip ================
+  --- mod 2129897125
+      common\ai_strategy_plans\GER_alternate_strategy_plan.txt
+      common\ai_strategy_plans\GER_historical_strategy_plan.txt
+      common\bookmarks\the_gathering_storm.txt
+      common\national_focus\germany.txt
+

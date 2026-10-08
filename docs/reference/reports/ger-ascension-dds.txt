@@ -1,0 +1,29 @@
+﻿######## F:\Hearts of Iron IV
+  F:\Hearts of Iron IV\dlc\dlc001_german_historical_portraits\gfx\interface\goals\focus_GER_ascension_of_goebbels.dds   35328 B
+  F:\Hearts of Iron IV\dlc\dlc001_german_historical_portraits\gfx\interface\goals\focus_GER_ascension_of_goring.dds   35328 B
+  F:\Hearts of Iron IV\dlc\dlc001_german_historical_portraits\gfx\interface\goals\focus_GER_ascension_of_himmler.dds   35328 B
+  F:\Hearts of Iron IV\dlc\dlc001_german_historical_portraits\gfx\interface\goals\focus_GER_ascension_of_speer.dds   35328 B
+  F:\Hearts of Iron IV\dlc\dlc001_german_historical_portraits\gfx\interface\goals\focus_GER_ascension_of_todt.dds   35328 B
+  F:\Hearts of Iron IV\dlc\dlc001_german_historical_portraits\gfx\interface\goals\focus_GER_fuhrerprinzip_bormann.dds   35328 B
+  F:\Hearts of Iron IV\dlc\dlc001_german_historical_portraits\gfx\interface\goals\focus_GER_fuhrerprinzip_goebbels.dds   35328 B
+  F:\Hearts of Iron IV\dlc\dlc001_german_historical_portraits\gfx\interface\goals\focus_GER_fuhrerprinzip_goring.dds   35328 B
+  F:\Hearts of Iron IV\dlc\dlc001_german_historical_portraits\gfx\interface\goals\focus_GER_fuhrerprinzip_hess.dds   35328 B
+  F:\Hearts of Iron IV\dlc\dlc001_german_historical_portraits\gfx\interface\goals\focus_GER_fuhrerprinzip_himmler.dds   35328 B
+  F:\Hearts of Iron IV\dlc\dlc001_german_historical_portraits\gfx\interface\goals\focus_GER_fuhrerprinzip_speer.dds   35328 B
+  F:\Hearts of Iron IV\dlc\dlc001_german_historical_portraits\gfx\interface\goals\focus_GER_fuhrerprinzip_todt.dds   35328 B
+  F:\Hearts of Iron IV\gfx\interface\goals\focus_GER_ascension_of_goebbels.dds   30584 B
+  F:\Hearts of Iron IV\gfx\interface\goals\focus_GER_ascension_of_goring.dds   29360 B
+  F:\Hearts of Iron IV\gfx\interface\goals\focus_GER_ascension_of_himmler.dds   35328 B
+  F:\Hearts of Iron IV\gfx\interface\goals\focus_GER_ascension_of_speer.dds   25056 B
+  F:\Hearts of Iron IV\gfx\interface\goals\focus_GER_ascension_of_todt.dds   36848 B
+  F:\Hearts of Iron IV\gfx\interface\goals\focus_GER_fuhrerprinzip_bormann.dds   24488 B
+  F:\Hearts of Iron IV\gfx\interface\goals\focus_GER_fuhrerprinzip_braun.dds   35328 B
+  F:\Hearts of Iron IV\gfx\interface\goals\focus_GER_fuhrerprinzip_goebbels.dds   24488 B
+  F:\Hearts of Iron IV\gfx\interface\goals\focus_GER_fuhrerprinzip_goring.dds   24488 B
+  F:\Hearts of Iron IV\gfx\interface\goals\focus_GER_fuhrerprinzip_hess.dds   24488 B
+  F:\Hearts of Iron IV\gfx\interface\goals\focus_GER_fuhrerprinzip_himmler.dds   24488 B
+  F:\Hearts of Iron IV\gfx\interface\goals\focus_GER_fuhrerprinzip_speer.dds   24488 B
+  F:\Hearts of Iron IV\gfx\interface\goals\focus_GER_fuhrerprinzip_todt.dds   24488 B
+
+######## D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125
+

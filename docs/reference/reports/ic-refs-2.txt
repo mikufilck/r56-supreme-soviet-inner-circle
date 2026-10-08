@@ -1,0 +1,1153 @@
+﻿######## [R56] 待扫文件数 = 780
+  ====== GER_the_inner_circle_dm  (3 处)
+      common\dynamic_modifiers\wuw_dynamic_modifiers.txt  L1008 : GER_the_inner_circle_dm = {
+      common\dynamic_modifiers\wuw_dynamic_modifiers.txt  L1015 : custom_modifier_tooltip = GER_the_inner_circle_dm_tt
+      common\national_focus\germany.txt  L21323 : modifier = GER_the_inner_circle_dm
+  ====== GER_ascended_advisor  (396 处)
+      common\scripted_effects\GER_scripted_effects.txt  L2652 : check_variable = { GER_ascended_advisor_1 = 1 }
+      common\scripted_effects\GER_scripted_effects.txt  L2658 : check_variable = { GER_ascended_advisor_1 = 2 }
+      common\scripted_effects\GER_scripted_effects.txt  L2664 : check_variable = { GER_ascended_advisor_1 = 3 }
+      common\scripted_effects\GER_scripted_effects.txt  L2670 : check_variable = { GER_ascended_advisor_1 = 4 }
+      common\scripted_effects\GER_scripted_effects.txt  L2676 : check_variable = { GER_ascended_advisor_1 = 5 }
+      common\scripted_effects\GER_scripted_effects.txt  L2682 : check_variable = { GER_ascended_advisor_1 = 6 }
+      common\scripted_effects\GER_scripted_effects.txt  L2688 : check_variable = { GER_ascended_advisor_1 = 7 }
+      common\scripted_effects\GER_scripted_effects.txt  L2693 : log = "Something bad happened trying to remove advisor [?GER_ascended_advisor_1] effects."
+      common\scripted_effects\GER_scripted_effects.txt  L2707 : check_variable = { GER_ascended_advisor_2 = 1 }
+      common\scripted_effects\GER_scripted_effects.txt  L2713 : check_variable = { GER_ascended_advisor_2 = 2 }
+      common\scripted_effects\GER_scripted_effects.txt  L2719 : check_variable = { GER_ascended_advisor_2 = 3 }
+      common\scripted_effects\GER_scripted_effects.txt  L2725 : check_variable = { GER_ascended_advisor_2 = 4 }
+      common\scripted_effects\GER_scripted_effects.txt  L2731 : check_variable = { GER_ascended_advisor_2 = 5 }
+      common\scripted_effects\GER_scripted_effects.txt  L2737 : check_variable = { GER_ascended_advisor_2 = 6 }
+      common\scripted_effects\GER_scripted_effects.txt  L2743 : check_variable = { GER_ascended_advisor_2 = 7 }
+      common\scripted_effects\GER_scripted_effects.txt  L2748 : log = "Something bad happened trying to remove advisor [?GER_ascended_advisor_2] effects."
+      common\scripted_effects\GER_scripted_effects.txt  L2762 : check_variable = { GER_ascended_advisor_3 = 1 }
+      common\scripted_effects\GER_scripted_effects.txt  L2768 : check_variable = { GER_ascended_advisor_3 = 2 }
+      common\scripted_effects\GER_scripted_effects.txt  L2774 : check_variable = { GER_ascended_advisor_3 = 3 }
+      common\scripted_effects\GER_scripted_effects.txt  L2780 : check_variable = { GER_ascended_advisor_3 = 4 }
+      common\scripted_effects\GER_scripted_effects.txt  L2786 : check_variable = { GER_ascended_advisor_3 = 5 }
+      common\scripted_effects\GER_scripted_effects.txt  L2792 : check_variable = { GER_ascended_advisor_3 = 6 }
+      common\scripted_effects\GER_scripted_effects.txt  L2798 : check_variable = { GER_ascended_advisor_3 = 7 }
+      common\scripted_effects\GER_scripted_effects.txt  L2803 : log = "Something bad happened trying to remove advisor [?GER_ascended_advisor_3] effects."
+      common\scripted_effects\GER_scripted_effects.txt  L2923 : check_variable = { GER_ascended_advisor_1 = 1 }
+      common\scripted_effects\GER_scripted_effects.txt  L2925 : set_variable = { GER_ascended_advisor_1 = 0 }
+      common\scripted_effects\GER_scripted_effects.txt  L2929 : check_variable = { GER_ascended_advisor_2 = 1 }
+      common\scripted_effects\GER_scripted_effects.txt  L2931 : set_variable = { GER_ascended_advisor_2 = 0 }
+      common\scripted_effects\GER_scripted_effects.txt  L2935 : check_variable = { GER_ascended_advisor_3 = 1 }
+      common\scripted_effects\GER_scripted_effects.txt  L2937 : set_variable = { GER_ascended_advisor_3 = 0 }
+      common\scripted_effects\GER_scripted_effects.txt  L3004 : check_variable = { GER_ascended_advisor_1 = 2 }
+      common\scripted_effects\GER_scripted_effects.txt  L3006 : set_variable = { GER_ascended_advisor_1 = 0 }
+      common\scripted_effects\GER_scripted_effects.txt  L3010 : check_variable = { GER_ascended_advisor_2 = 2 }
+      common\scripted_effects\GER_scripted_effects.txt  L3012 : set_variable = { GER_ascended_advisor_2 = 0 }
+      common\scripted_effects\GER_scripted_effects.txt  L3016 : check_variable = { GER_ascended_advisor_3 = 2 }
+      common\scripted_effects\GER_scripted_effects.txt  L3018 : set_variable = { GER_ascended_advisor_3 = 0 }
+      common\scripted_effects\GER_scripted_effects.txt  L3083 : check_variable = { GER_ascended_advisor_1 = 3 }
+      common\scripted_effects\GER_scripted_effects.txt  L3085 : set_variable = { GER_ascended_advisor_1 = 0 }
+      common\scripted_effects\GER_scripted_effects.txt  L3089 : check_variable = { GER_ascended_advisor_2 = 3 }
+      common\scripted_effects\GER_scripted_effects.txt  L3091 : set_variable = { GER_ascended_advisor_2 = 0 }
+      common\scripted_effects\GER_scripted_effects.txt  L3095 : check_variable = { GER_ascended_advisor_3 = 3 }
+      common\scripted_effects\GER_scripted_effects.txt  L3097 : set_variable = { GER_ascended_advisor_3 = 0 }
+      common\scripted_effects\GER_scripted_effects.txt  L3196 : check_variable = { GER_ascended_advisor_1 = 4 }
+      common\scripted_effects\GER_scripted_effects.txt  L3198 : set_variable = { GER_ascended_advisor_1 = 0 }
+      common\scripted_effects\GER_scripted_effects.txt  L3202 : check_variable = { GER_ascended_advisor_2 = 4 }
+      common\scripted_effects\GER_scripted_effects.txt  L3204 : set_variable = { GER_ascended_advisor_2 = 0 }
+      common\scripted_effects\GER_scripted_effects.txt  L3208 : check_variable = { GER_ascended_advisor_3 = 4 }
+      common\scripted_effects\GER_scripted_effects.txt  L3210 : set_variable = { GER_ascended_advisor_3 = 0 }
+      common\scripted_effects\GER_scripted_effects.txt  L3299 : check_variable = { GER_ascended_advisor_1 = 5 }
+      common\scripted_effects\GER_scripted_effects.txt  L3301 : set_variable = { GER_ascended_advisor_1 = 0 }
+      common\scripted_effects\GER_scripted_effects.txt  L3305 : check_variable = { GER_ascended_advisor_2 = 5 }
+      common\scripted_effects\GER_scripted_effects.txt  L3307 : set_variable = { GER_ascended_advisor_2 = 0 }
+      common\scripted_effects\GER_scripted_effects.txt  L3311 : check_variable = { GER_ascended_advisor_3 = 5 }
+      common\scripted_effects\GER_scripted_effects.txt  L3313 : set_variable = { GER_ascended_advisor_3 = 0 }
+      common\scripted_effects\GER_scripted_effects.txt  L3432 : check_variable = { GER_ascended_advisor_1 = 6 }
+      common\scripted_effects\GER_scripted_effects.txt  L3434 : set_variable = { GER_ascended_advisor_1 = 0 }
+      common\scripted_effects\GER_scripted_effects.txt  L3438 : check_variable = { GER_ascended_advisor_2 = 6 }
+      common\scripted_effects\GER_scripted_effects.txt  L3440 : set_variable = { GER_ascended_advisor_2 = 0 }
+      common\scripted_effects\GER_scripted_effects.txt  L3444 : check_variable = { GER_ascended_advisor_3 = 6 }
+      common\scripted_effects\GER_scripted_effects.txt  L3446 : set_variable = { GER_ascended_advisor_3 = 0 }
+      common\scripted_effects\GER_scripted_effects.txt  L3527 : check_variable = { GER_ascended_advisor_1 = 7 }
+      common\scripted_effects\GER_scripted_effects.txt  L3529 : set_variable = { GER_ascended_advisor_1 = 0 }
+      common\scripted_effects\GER_scripted_effects.txt  L3533 : check_variable = { GER_ascended_advisor_2 = 7 }
+      common\scripted_effects\GER_scripted_effects.txt  L3535 : set_variable = { GER_ascended_advisor_2 = 0 }
+      common\scripted_effects\GER_scripted_effects.txt  L3539 : check_variable = { GER_ascended_advisor_3 = 7 }
+      common\scripted_effects\GER_scripted_effects.txt  L3541 : set_variable = { GER_ascended_advisor_3 = 0 }
+      common\scripted_effects\GER_scripted_effects.txt  L3556 : check_variable = { GER_ascended_advisor_1 = 2 }
+      common\scripted_effects\GER_scripted_effects.txt  L3557 : check_variable = { GER_ascended_advisor_2 = 2 }
+      common\scripted_effects\GER_scripted_effects.txt  L3558 : check_variable = { GER_ascended_advisor_3 = 2 }
+      common\scripted_effects\GER_scripted_effects.txt  L3566 : check_variable = { GER_ascended_advisor_1 = 1 }
+      common\scripted_effects\GER_scripted_effects.txt  L3567 : check_variable = { GER_ascended_advisor_2 = 1 }
+      common\scripted_effects\GER_scripted_effects.txt  L3568 : check_variable = { GER_ascended_advisor_3 = 1 }
+      common\national_focus\germany.txt  L21393 : check_variable = { GER_ascended_advisor_1 = 1 }
+      common\national_focus\germany.txt  L21394 : check_variable = { GER_ascended_advisor_2 = 1 }
+      common\national_focus\germany.txt  L21395 : check_variable = { GER_ascended_advisor_3 = 1 }
+      common\national_focus\germany.txt  L21402 : check_variable = { GER_ascended_advisor_1 = 0 compare = not_equals }
+      common\national_focus\germany.txt  L21403 : check_variable = { GER_ascended_advisor_2 = 0 compare = not_equals }
+      common\national_focus\germany.txt  L21404 : check_variable = { GER_ascended_advisor_3 = 0 compare = not_equals }
+      common\national_focus\germany.txt  L21424 : check_variable = { GER_ascended_advisor_1 = 0 }
+      common\national_focus\germany.txt  L21426 : set_variable = { GER_ascended_advisor_1 = 1 }
+      common\national_focus\germany.txt  L21430 : check_variable = { GER_ascended_advisor_2 = 0 }
+      common\national_focus\germany.txt  L21432 : set_variable = { GER_ascended_advisor_2 = 1 }
+      common\national_focus\germany.txt  L21436 : check_variable = { GER_ascended_advisor_3 = 0 }
+      common\national_focus\germany.txt  L21438 : set_variable = { GER_ascended_advisor_3 = 1 }
+      common\national_focus\germany.txt  L21718 : check_variable = { GER_ascended_advisor_1 = 2 }
+      common\national_focus\germany.txt  L21719 : check_variable = { GER_ascended_advisor_2 = 2 }
+      common\national_focus\germany.txt  L21720 : check_variable = { GER_ascended_advisor_3 = 2 }
+      common\national_focus\germany.txt  L21727 : check_variable = { GER_ascended_advisor_1 = 0 compare = not_equals }
+      common\national_focus\germany.txt  L21728 : check_variable = { GER_ascended_advisor_2 = 0 compare = not_equals }
+      common\national_focus\germany.txt  L21729 : check_variable = { GER_ascended_advisor_3 = 0 compare = not_equals }
+      common\national_focus\germany.txt  L21749 : check_variable = { GER_ascended_advisor_1 = 0 }
+      common\national_focus\germany.txt  L21751 : set_variable = { GER_ascended_advisor_1 = 2 }
+      common\national_focus\germany.txt  L21755 : check_variable = { GER_ascended_advisor_2 = 0 }
+      common\national_focus\germany.txt  L21757 : set_variable = { GER_ascended_advisor_2 = 2 }
+      common\national_focus\germany.txt  L21761 : check_variable = { GER_ascended_advisor_3 = 0 }
+      common\national_focus\germany.txt  L21763 : set_variable = { GER_ascended_advisor_3 = 2 }
+      common\national_focus\germany.txt  L22211 : check_variable = { GER_ascended_advisor_1 = 3 }
+      common\national_focus\germany.txt  L22212 : check_variable = { GER_ascended_advisor_2 = 3 }
+      common\national_focus\germany.txt  L22213 : check_variable = { GER_ascended_advisor_3 = 3 }
+      common\national_focus\germany.txt  L22220 : check_variable = { GER_ascended_advisor_1 = 0 compare = not_equals }
+      common\national_focus\germany.txt  L22221 : check_variable = { GER_ascended_advisor_2 = 0 compare = not_equals }
+      common\national_focus\germany.txt  L22222 : check_variable = { GER_ascended_advisor_3 = 0 compare = not_equals }
+      common\national_focus\germany.txt  L22242 : check_variable = { GER_ascended_advisor_1 = 0 }
+      common\national_focus\germany.txt  L22244 : set_variable = { GER_ascended_advisor_1 = 3 }
+      common\national_focus\germany.txt  L22248 : check_variable = { GER_ascended_advisor_2 = 0 }
+      common\national_focus\germany.txt  L22250 : set_variable = { GER_ascended_advisor_2 = 3 }
+      common\national_focus\germany.txt  L22254 : check_variable = { GER_ascended_advisor_3 = 0 }
+      common\national_focus\germany.txt  L22256 : set_variable = { GER_ascended_advisor_3 = 3 }
+      common\national_focus\germany.txt  L22714 : check_variable = { GER_ascended_advisor_1 = 4 }
+      common\national_focus\germany.txt  L22715 : check_variable = { GER_ascended_advisor_2 = 4 }
+      common\national_focus\germany.txt  L22716 : check_variable = { GER_ascended_advisor_3 = 4 }
+      common\national_focus\germany.txt  L22723 : check_variable = { GER_ascended_advisor_1 = 0 compare = not_equals }
+      common\national_focus\germany.txt  L22724 : check_variable = { GER_ascended_advisor_2 = 0 compare = not_equals }
+      common\national_focus\germany.txt  L22725 : check_variable = { GER_ascended_advisor_3 = 0 compare = not_equals }
+      common\national_focus\germany.txt  L22749 : check_variable = { GER_ascended_advisor_1 = 0 }
+      common\national_focus\germany.txt  L22751 : set_variable = { GER_ascended_advisor_1 = 4 }
+      common\national_focus\germany.txt  L22755 : check_variable = { GER_ascended_advisor_2 = 0 }
+      common\national_focus\germany.txt  L22757 : set_variable = { GER_ascended_advisor_2 = 4 }
+      common\national_focus\germany.txt  L22761 : check_variable = { GER_ascended_advisor_3 = 0 }
+      common\national_focus\germany.txt  L22763 : set_variable = { GER_ascended_advisor_3 = 4 }
+      common\national_focus\germany.txt  L23450 : check_variable = { GER_ascended_advisor_1 = 5 }
+      common\national_focus\germany.txt  L23451 : check_variable = { GER_ascended_advisor_2 = 5 }
+      common\national_focus\germany.txt  L23452 : check_variable = { GER_ascended_advisor_3 = 5 }
+      common\national_focus\germany.txt  L23459 : check_variable = { GER_ascended_advisor_1 = 0 compare = not_equals }
+      common\national_focus\germany.txt  L23460 : check_variable = { GER_ascended_advisor_2 = 0 compare = not_equals }
+      common\national_focus\germany.txt  L23461 : check_variable = { GER_ascended_advisor_3 = 0 compare = not_equals }
+      common\national_focus\germany.txt  L23481 : check_variable = { GER_ascended_advisor_1 = 0 }
+      common\national_focus\germany.txt  L23483 : set_variable = { GER_ascended_advisor_1 = 5 }
+      common\national_focus\germany.txt  L23487 : check_variable = { GER_ascended_advisor_2 = 0 }
+      common\national_focus\germany.txt  L23489 : set_variable = { GER_ascended_advisor_2 = 5 }
+      common\national_focus\germany.txt  L23493 : check_variable = { GER_ascended_advisor_3 = 0 }
+      common\national_focus\germany.txt  L23495 : set_variable = { GER_ascended_advisor_3 = 5 }
+      common\national_focus\germany.txt  L23767 : check_variable = { GER_ascended_advisor_1 = 6 }
+      common\national_focus\germany.txt  L23768 : check_variable = { GER_ascended_advisor_2 = 6 }
+      common\national_focus\germany.txt  L23769 : check_variable = { GER_ascended_advisor_3 = 6 }
+      common\national_focus\germany.txt  L23776 : check_variable = { GER_ascended_advisor_1 = 0 compare = not_equals }
+      common\national_focus\germany.txt  L23777 : check_variable = { GER_ascended_advisor_2 = 0 compare = not_equals }
+      common\national_focus\germany.txt  L23778 : check_variable = { GER_ascended_advisor_3 = 0 compare = not_equals }
+      common\national_focus\germany.txt  L23798 : check_variable = { GER_ascended_advisor_1 = 0 }
+      common\national_focus\germany.txt  L23800 : set_variable = { GER_ascended_advisor_1 = 6 }
+      common\national_focus\germany.txt  L23804 : check_variable = { GER_ascended_advisor_2 = 0 }
+      common\national_focus\germany.txt  L23806 : set_variable = { GER_ascended_advisor_2 = 6 }
+      common\national_focus\germany.txt  L23810 : check_variable = { GER_ascended_advisor_3 = 0 }
+      common\national_focus\germany.txt  L23812 : set_variable = { GER_ascended_advisor_3 = 6 }
+      common\national_focus\germany.txt  L23889 : check_variable = { GER_ascended_advisor_1 = 7 }
+      common\national_focus\germany.txt  L23890 : check_variable = { GER_ascended_advisor_2 = 7 }
+      common\national_focus\germany.txt  L23891 : check_variable = { GER_ascended_advisor_3 = 7 }
+      common\national_focus\germany.txt  L23898 : check_variable = { GER_ascended_advisor_1 = 0 compare = not_equals }
+      common\national_focus\germany.txt  L23899 : check_variable = { GER_ascended_advisor_2 = 0 compare = not_equals }
+      common\national_focus\germany.txt  L23900 : check_variable = { GER_ascended_advisor_3 = 0 compare = not_equals }
+      common\national_focus\germany.txt  L23920 : check_variable = { GER_ascended_advisor_1 = 0 }
+      common\national_focus\germany.txt  L23922 : set_variable = { GER_ascended_advisor_1 = 7 }
+      common\national_focus\germany.txt  L23926 : check_variable = { GER_ascended_advisor_2 = 0 }
+      common\national_focus\germany.txt  L23928 : set_variable = { GER_ascended_advisor_2 = 7 }
+      common\national_focus\germany.txt  L23932 : check_variable = { GER_ascended_advisor_3 = 0 }
+      common\national_focus\germany.txt  L23934 : set_variable = { GER_ascended_advisor_3 = 7 }
+      common\national_focus\germany.txt  L24269 : check_variable = { GER_ascended_advisor_1 = 1 }
+      common\national_focus\germany.txt  L24270 : check_variable = { GER_ascended_advisor_2 = 1 }
+      common\national_focus\germany.txt  L24271 : check_variable = { GER_ascended_advisor_3 = 1 }
+      common\national_focus\germany.txt  L24272 : check_variable = { GER_ascended_advisor_1 = 2 }
+      common\national_focus\germany.txt  L24273 : check_variable = { GER_ascended_advisor_2 = 2 }
+      common\national_focus\germany.txt  L24274 : check_variable = { GER_ascended_advisor_3 = 2 }
+      common\national_focus\germany.txt  L24280 : check_variable = { GER_ascended_advisor_1 = 3 }
+      common\national_focus\germany.txt  L24281 : check_variable = { GER_ascended_advisor_2 = 3 }
+      common\national_focus\germany.txt  L24282 : check_variable = { GER_ascended_advisor_3 = 3 }
+      common\national_focus\germany.txt  L24288 : check_variable = { GER_ascended_advisor_1 = 4 }
+      common\national_focus\germany.txt  L24289 : check_variable = { GER_ascended_advisor_2 = 4 }
+      common\national_focus\germany.txt  L24290 : check_variable = { GER_ascended_advisor_3 = 4 }
+      common\national_focus\germany.txt  L24296 : check_variable = { GER_ascended_advisor_1 = 5 }
+      common\national_focus\germany.txt  L24297 : check_variable = { GER_ascended_advisor_2 = 5 }
+      common\national_focus\germany.txt  L24298 : check_variable = { GER_ascended_advisor_3 = 5 }
+      common\national_focus\germany.txt  L24304 : check_variable = { GER_ascended_advisor_1 = 6 }
+      common\national_focus\germany.txt  L24305 : check_variable = { GER_ascended_advisor_2 = 6 }
+      common\national_focus\germany.txt  L24306 : check_variable = { GER_ascended_advisor_3 = 6 }
+      common\national_focus\germany.txt  L24307 : check_variable = { GER_ascended_advisor_1 = 7 }
+      common\national_focus\germany.txt  L24308 : check_variable = { GER_ascended_advisor_2 = 7 }
+      common\national_focus\germany.txt  L24309 : check_variable = { GER_ascended_advisor_3 = 7 }
+      common\national_focus\germany.txt  L24346 : check_variable = { GER_ascended_advisor_1 = 0 compare = not_equals }
+      common\national_focus\germany.txt  L24347 : check_variable = { GER_ascended_advisor_2 = 0 compare = not_equals }
+      common\national_focus\germany.txt  L24348 : check_variable = { GER_ascended_advisor_3 = 0 compare = not_equals }
+      common\national_focus\germany.txt  L24380 : check_variable = { GER_ascended_advisor_1 = 1 }
+      common\national_focus\germany.txt  L24381 : check_variable = { GER_ascended_advisor_2 = 1 }
+      common\national_focus\germany.txt  L24382 : check_variable = { GER_ascended_advisor_3 = 1 }
+      common\national_focus\germany.txt  L24383 : check_variable = { GER_ascended_advisor_1 = 2 }
+      common\national_focus\germany.txt  L24384 : check_variable = { GER_ascended_advisor_2 = 2 }
+      common\national_focus\germany.txt  L24385 : check_variable = { GER_ascended_advisor_3 = 2 }
+      common\national_focus\germany.txt  L24391 : check_variable = { GER_ascended_advisor_1 = 3 }
+      common\national_focus\germany.txt  L24392 : check_variable = { GER_ascended_advisor_2 = 3 }
+      common\national_focus\germany.txt  L24393 : check_variable = { GER_ascended_advisor_3 = 3 }
+      common\national_focus\germany.txt  L24399 : check_variable = { GER_ascended_advisor_1 = 4 }
+      common\national_focus\germany.txt  L24400 : check_variable = { GER_ascended_advisor_2 = 4 }
+      common\national_focus\germany.txt  L24401 : check_variable = { GER_ascended_advisor_3 = 4 }
+      common\national_focus\germany.txt  L24407 : check_variable = { GER_ascended_advisor_1 = 5 }
+      common\national_focus\germany.txt  L24408 : check_variable = { GER_ascended_advisor_2 = 5 }
+      common\national_focus\germany.txt  L24409 : check_variable = { GER_ascended_advisor_3 = 5 }
+      common\national_focus\germany.txt  L24415 : check_variable = { GER_ascended_advisor_1 = 6 }
+      common\national_focus\germany.txt  L24416 : check_variable = { GER_ascended_advisor_2 = 6 }
+      common\national_focus\germany.txt  L24417 : check_variable = { GER_ascended_advisor_3 = 6 }
+      common\national_focus\germany.txt  L24418 : check_variable = { GER_ascended_advisor_1 = 7 }
+      common\national_focus\germany.txt  L24419 : check_variable = { GER_ascended_advisor_2 = 7 }
+      common\national_focus\germany.txt  L24420 : check_variable = { GER_ascended_advisor_3 = 7 }
+      common\national_focus\germany.txt  L71956 : #			set_variable = { GER_ascended_advisor_1 = 0 } #Ascended Advisor Portrait
+      common\national_focus\germany.txt  L71957 : #			set_variable = { GER_ascended_advisor_2 = 0 } #Ascended Advisor Portrait
+      common\national_focus\germany.txt  L71958 : #			set_variable = { GER_ascended_advisor_3 = 0 } #Ascended Advisor Portrait
+      events\WUW_Germany.txt  L21848 : check_variable = { GER_ascended_advisor_1 = 7 } #Bormann ascended in this slot
+      events\WUW_Germany.txt  L21856 : set_variable = { GER_ascended_advisor_1 = GER_ascending_advisor }
+      events\WUW_Germany.txt  L21875 : check_variable = { GER_ascended_advisor_2 = 7 } #Bormann ascended in this slot
+      events\WUW_Germany.txt  L21883 : set_variable = { GER_ascended_advisor_2 = GER_ascending_advisor }
+      events\WUW_Germany.txt  L21902 : check_variable = { GER_ascended_advisor_3 = 7 } #Bormann ascended in this slot
+      events\WUW_Germany.txt  L21910 : set_variable = { GER_ascended_advisor_3 = GER_ascending_advisor }
+      events\WUW_Germany.txt  L22034 : check_variable = { GER_ascended_advisor_1 = 3 } #G?ring
+      events\WUW_Germany.txt  L22035 : check_variable = { GER_ascended_advisor_1 = 4 } #Himmler
+      events\WUW_Germany.txt  L22042 : check_variable = { GER_ascended_advisor_1 = 1 }
+      events\WUW_Germany.txt  L22056 : check_variable = { GER_ascended_advisor_1 = 2 }
+      events\WUW_Germany.txt  L22070 : check_variable = { GER_ascended_advisor_1 = 3 }
+      events\WUW_Germany.txt  L22084 : check_variable = { GER_ascended_advisor_1 = 4 }
+      events\WUW_Germany.txt  L22114 : check_variable = { GER_ascended_advisor_1 = 5 }
+      events\WUW_Germany.txt  L22144 : check_variable = { GER_ascended_advisor_1 = 6 }
+      events\WUW_Germany.txt  L22174 : check_variable = { GER_ascended_advisor_1 = 7 }
+      events\WUW_Germany.txt  L22210 : check_variable = { GER_ascended_advisor_2 = 3 } #G?ring
+      events\WUW_Germany.txt  L22211 : check_variable = { GER_ascended_advisor_2 = 4 } #Himmler
+      events\WUW_Germany.txt  L22218 : check_variable = { GER_ascended_advisor_2 = 1 }
+      events\WUW_Germany.txt  L22232 : check_variable = { GER_ascended_advisor_2 = 2 }
+      events\WUW_Germany.txt  L22246 : check_variable = { GER_ascended_advisor_2 = 3 }
+      events\WUW_Germany.txt  L22260 : check_variable = { GER_ascended_advisor_2 = 4 }
+      events\WUW_Germany.txt  L22290 : check_variable = { GER_ascended_advisor_2 = 5 }
+      events\WUW_Germany.txt  L22320 : check_variable = { GER_ascended_advisor_2 = 6 }
+      events\WUW_Germany.txt  L22350 : check_variable = { GER_ascended_advisor_2 = 7 }
+      events\WUW_Germany.txt  L22386 : check_variable = { GER_ascended_advisor_3 = 3 } #G?ring
+      events\WUW_Germany.txt  L22387 : check_variable = { GER_ascended_advisor_3 = 4 } #Himmler
+      events\WUW_Germany.txt  L22394 : check_variable = { GER_ascended_advisor_3 = 1 }
+      events\WUW_Germany.txt  L22408 : check_variable = { GER_ascended_advisor_3 = 2 }
+      events\WUW_Germany.txt  L22422 : check_variable = { GER_ascended_advisor_3 = 3 }
+      events\WUW_Germany.txt  L22436 : check_variable = { GER_ascended_advisor_3 = 4 }
+      events\WUW_Germany.txt  L22466 : check_variable = { GER_ascended_advisor_3 = 5 }
+      events\WUW_Germany.txt  L22496 : check_variable = { GER_ascended_advisor_3 = 6 }
+      events\WUW_Germany.txt  L22526 : check_variable = { GER_ascended_advisor_3 = 7 }
+      events\WUW_Germany.txt  L22764 : check_variable = { GER_ascended_advisor_1 = GER_intrigue_character }
+      events\WUW_Germany.txt  L22769 : check_variable = { GER_ascended_advisor_1 = 1 }
+      events\WUW_Germany.txt  L22770 : check_variable = { GER_ascended_advisor_2 = 1 }
+      events\WUW_Germany.txt  L22771 : check_variable = { GER_ascended_advisor_3 = 1 }
+      events\WUW_Germany.txt  L22786 : check_variable = { GER_ascended_advisor_1 = 0 }
+      events\WUW_Germany.txt  L22787 : check_variable = { GER_ascended_advisor_2 = 0 }
+      events\WUW_Germany.txt  L22788 : check_variable = { GER_ascended_advisor_3 = 0 }
+      events\WUW_Germany.txt  L22793 : check_variable = { GER_ascended_advisor_1 = 0 }
+      events\WUW_Germany.txt  L22795 : set_variable = { GER_ascended_advisor_1 = 1 }
+      events\WUW_Germany.txt  L22799 : check_variable = { GER_ascended_advisor_2 = 0 }
+      events\WUW_Germany.txt  L22801 : set_variable = { GER_ascended_advisor_2 = 1 }
+      events\WUW_Germany.txt  L22804 : set_variable = { GER_ascended_advisor_3 = 1 }
+      events\WUW_Germany.txt  L22813 : set_variable = { GER_ascended_advisor_1 = 1 }
+      events\WUW_Germany.txt  L22840 : check_variable = { GER_ascended_advisor_2 = GER_intrigue_character }
+      events\WUW_Germany.txt  L22845 : check_variable = { GER_ascended_advisor_1 = 1 }
+      events\WUW_Germany.txt  L22846 : check_variable = { GER_ascended_advisor_2 = 1 }
+      events\WUW_Germany.txt  L22847 : check_variable = { GER_ascended_advisor_3 = 1 }
+      events\WUW_Germany.txt  L22862 : check_variable = { GER_ascended_advisor_1 = 0 }
+      events\WUW_Germany.txt  L22863 : check_variable = { GER_ascended_advisor_2 = 0 }
+      events\WUW_Germany.txt  L22864 : check_variable = { GER_ascended_advisor_3 = 0 }
+      events\WUW_Germany.txt  L22869 : check_variable = { GER_ascended_advisor_1 = 0 }
+      events\WUW_Germany.txt  L22871 : set_variable = { GER_ascended_advisor_1 = 1 }
+      events\WUW_Germany.txt  L22875 : check_variable = { GER_ascended_advisor_2 = 0 }
+      events\WUW_Germany.txt  L22877 : set_variable = { GER_ascended_advisor_2 = 1 }
+      events\WUW_Germany.txt  L22880 : set_variable = { GER_ascended_advisor_3 = 1 }
+      events\WUW_Germany.txt  L22889 : set_variable = { GER_ascended_advisor_2 = 1 }
+      events\WUW_Germany.txt  L22916 : check_variable = { GER_ascended_advisor_3 = GER_intrigue_character }
+      events\WUW_Germany.txt  L22921 : check_variable = { GER_ascended_advisor_1 = 1 }
+      events\WUW_Germany.txt  L22922 : check_variable = { GER_ascended_advisor_2 = 1 }
+      events\WUW_Germany.txt  L22923 : check_variable = { GER_ascended_advisor_3 = 1 }
+      events\WUW_Germany.txt  L22938 : check_variable = { GER_ascended_advisor_1 = 0 }
+      events\WUW_Germany.txt  L22939 : check_variable = { GER_ascended_advisor_2 = 0 }
+      events\WUW_Germany.txt  L22940 : check_variable = { GER_ascended_advisor_3 = 0 }
+      events\WUW_Germany.txt  L22945 : check_variable = { GER_ascended_advisor_1 = 0 }
+      events\WUW_Germany.txt  L22947 : set_variable = { GER_ascended_advisor_1 = 1 }
+      events\WUW_Germany.txt  L22951 : check_variable = { GER_ascended_advisor_2 = 0 }
+      events\WUW_Germany.txt  L22953 : set_variable = { GER_ascended_advisor_2 = 1 }
+      events\WUW_Germany.txt  L22956 : set_variable = { GER_ascended_advisor_3 = 1 }
+      events\WUW_Germany.txt  L22965 : set_variable = { GER_ascended_advisor_3 = 1 }
+      events\WUW_Germany.txt  L23043 : check_variable = { GER_ascended_advisor_1 = GER_intrigue_character }
+      events\WUW_Germany.txt  L23048 : check_variable = { GER_ascended_advisor_1 = 2 }
+      events\WUW_Germany.txt  L23049 : check_variable = { GER_ascended_advisor_2 = 2 }
+      events\WUW_Germany.txt  L23050 : check_variable = { GER_ascended_advisor_3 = 2 }
+      events\WUW_Germany.txt  L23065 : check_variable = { GER_ascended_advisor_1 = 0 }
+      events\WUW_Germany.txt  L23066 : check_variable = { GER_ascended_advisor_2 = 0 }
+      events\WUW_Germany.txt  L23067 : check_variable = { GER_ascended_advisor_3 = 0 }
+      events\WUW_Germany.txt  L23072 : check_variable = { GER_ascended_advisor_1 = 0 }
+      events\WUW_Germany.txt  L23074 : set_variable = { GER_ascended_advisor_1 = 2 }
+      events\WUW_Germany.txt  L23078 : check_variable = { GER_ascended_advisor_2 = 0 }
+      events\WUW_Germany.txt  L23080 : set_variable = { GER_ascended_advisor_2 = 2 }
+      events\WUW_Germany.txt  L23083 : set_variable = { GER_ascended_advisor_3 = 2 }
+      events\WUW_Germany.txt  L23092 : set_variable = { GER_ascended_advisor_1 = 2 }
+      events\WUW_Germany.txt  L23119 : check_variable = { GER_ascended_advisor_2 = GER_intrigue_character }
+      events\WUW_Germany.txt  L23124 : check_variable = { GER_ascended_advisor_1 = 2 }
+      events\WUW_Germany.txt  L23125 : check_variable = { GER_ascended_advisor_2 = 2 }
+      events\WUW_Germany.txt  L23126 : check_variable = { GER_ascended_advisor_3 = 2 }
+      events\WUW_Germany.txt  L23141 : check_variable = { GER_ascended_advisor_1 = 0 }
+      events\WUW_Germany.txt  L23142 : check_variable = { GER_ascended_advisor_2 = 0 }
+      events\WUW_Germany.txt  L23143 : check_variable = { GER_ascended_advisor_3 = 0 }
+      events\WUW_Germany.txt  L23148 : check_variable = { GER_ascended_advisor_1 = 0 }
+      events\WUW_Germany.txt  L23150 : set_variable = { GER_ascended_advisor_1 = 2 }
+      events\WUW_Germany.txt  L23154 : check_variable = { GER_ascended_advisor_2 = 0 }
+      events\WUW_Germany.txt  L23156 : set_variable = { GER_ascended_advisor_2 = 2 }
+      events\WUW_Germany.txt  L23159 : set_variable = { GER_ascended_advisor_3 = 2 }
+      events\WUW_Germany.txt  L23168 : set_variable = { GER_ascended_advisor_2 = 2 }
+      events\WUW_Germany.txt  L23195 : check_variable = { GER_ascended_advisor_3 = GER_intrigue_character }
+      events\WUW_Germany.txt  L23200 : check_variable = { GER_ascended_advisor_1 = 2 }
+      events\WUW_Germany.txt  L23201 : check_variable = { GER_ascended_advisor_2 = 2 }
+      events\WUW_Germany.txt  L23202 : check_variable = { GER_ascended_advisor_3 = 2 }
+      events\WUW_Germany.txt  L23217 : check_variable = { GER_ascended_advisor_1 = 0 }
+      events\WUW_Germany.txt  L23218 : check_variable = { GER_ascended_advisor_2 = 0 }
+      events\WUW_Germany.txt  L23219 : check_variable = { GER_ascended_advisor_3 = 0 }
+      events\WUW_Germany.txt  L23224 : check_variable = { GER_ascended_advisor_1 = 0 }
+      events\WUW_Germany.txt  L23226 : set_variable = { GER_ascended_advisor_1 = 2 }
+      events\WUW_Germany.txt  L23230 : check_variable = { GER_ascended_advisor_2 = 0 }
+      events\WUW_Germany.txt  L23232 : set_variable = { GER_ascended_advisor_2 = 2 }
+      events\WUW_Germany.txt  L23235 : set_variable = { GER_ascended_advisor_3 = 2 }
+      events\WUW_Germany.txt  L23244 : set_variable = { GER_ascended_advisor_3 = 2 }
+      events\WUW_Germany.txt  L23319 : check_variable = { GER_ascended_advisor_1 = GER_intrigue_character }
+      events\WUW_Germany.txt  L23324 : check_variable = { GER_ascended_advisor_1 = 3 }
+      events\WUW_Germany.txt  L23325 : check_variable = { GER_ascended_advisor_2 = 3 }
+      events\WUW_Germany.txt  L23326 : check_variable = { GER_ascended_advisor_3 = 3 }
+      events\WUW_Germany.txt  L23341 : check_variable = { GER_ascended_advisor_1 = 0 }
+      events\WUW_Germany.txt  L23342 : check_variable = { GER_ascended_advisor_2 = 0 }
+      events\WUW_Germany.txt  L23343 : check_variable = { GER_ascended_advisor_3 = 0 }
+      events\WUW_Germany.txt  L23348 : check_variable = { GER_ascended_advisor_1 = 0 }
+      events\WUW_Germany.txt  L23350 : set_variable = { GER_ascended_advisor_1 = 3 }
+      events\WUW_Germany.txt  L23354 : check_variable = { GER_ascended_advisor_2 = 0 }
+      events\WUW_Germany.txt  L23356 : set_variable = { GER_ascended_advisor_2 = 3 }
+      events\WUW_Germany.txt  L23359 : set_variable = { GER_ascended_advisor_3 = 3 }
+      events\WUW_Germany.txt  L23368 : set_variable = { GER_ascended_advisor_1 = 3 }
+      events\WUW_Germany.txt  L23395 : check_variable = { GER_ascended_advisor_2 = GER_intrigue_character }
+      events\WUW_Germany.txt  L23400 : check_variable = { GER_ascended_advisor_1 = 3 }
+      events\WUW_Germany.txt  L23401 : check_variable = { GER_ascended_advisor_2 = 3 }
+      events\WUW_Germany.txt  L23402 : check_variable = { GER_ascended_advisor_3 = 3 }
+      events\WUW_Germany.txt  L23417 : check_variable = { GER_ascended_advisor_1 = 0 }
+      events\WUW_Germany.txt  L23418 : check_variable = { GER_ascended_advisor_2 = 0 }
+      events\WUW_Germany.txt  L23419 : check_variable = { GER_ascended_advisor_3 = 0 }
+      events\WUW_Germany.txt  L23424 : check_variable = { GER_ascended_advisor_1 = 0 }
+      events\WUW_Germany.txt  L23426 : set_variable = { GER_ascended_advisor_1 = 3 }
+      events\WUW_Germany.txt  L23430 : check_variable = { GER_ascended_advisor_2 = 0 }
+      events\WUW_Germany.txt  L23432 : set_variable = { GER_ascended_advisor_2 = 3 }
+      events\WUW_Germany.txt  L23435 : set_variable = { GER_ascended_advisor_3 = 3 }
+      events\WUW_Germany.txt  L23444 : set_variable = { GER_ascended_advisor_2 = 3 }
+      events\WUW_Germany.txt  L23471 : check_variable = { GER_ascended_advisor_3 = GER_intrigue_character }
+      events\WUW_Germany.txt  L23476 : check_variable = { GER_ascended_advisor_1 = 3 }
+      events\WUW_Germany.txt  L23477 : check_variable = { GER_ascended_advisor_2 = 3 }
+      events\WUW_Germany.txt  L23478 : check_variable = { GER_ascended_advisor_3 = 3 }
+      events\WUW_Germany.txt  L23493 : check_variable = { GER_ascended_advisor_1 = 0 }
+      events\WUW_Germany.txt  L23494 : check_variable = { GER_ascended_advisor_2 = 0 }
+      events\WUW_Germany.txt  L23495 : check_variable = { GER_ascended_advisor_3 = 0 }
+      events\WUW_Germany.txt  L23500 : check_variable = { GER_ascended_advisor_1 = 0 }
+      events\WUW_Germany.txt  L23502 : set_variable = { GER_ascended_advisor_1 = 3 }
+      events\WUW_Germany.txt  L23506 : check_variable = { GER_ascended_advisor_2 = 0 }
+      events\WUW_Germany.txt  L23508 : set_variable = { GER_ascended_advisor_2 = 3 }
+      events\WUW_Germany.txt  L23511 : set_variable = { GER_ascended_advisor_3 = 3 }
+      events\WUW_Germany.txt  L23520 : set_variable = { GER_ascended_advisor_3 = 3 }
+      events\WUW_Germany.txt  L23595 : check_variable = { GER_ascended_advisor_1 = 1 }
+      events\WUW_Germany.txt  L23596 : check_variable = { GER_ascended_advisor_2 = 1 }
+      events\WUW_Germany.txt  L23597 : check_variable = { GER_ascended_advisor_3 = 1 }
+      events\WUW_Germany.txt  L23649 : check_variable = { GER_ascended_advisor_1 = 1 }
+      events\WUW_Germany.txt  L23650 : check_variable = { GER_ascended_advisor_2 = 1 }
+      events\WUW_Germany.txt  L23651 : check_variable = { GER_ascended_advisor_3 = 1 }
+      events\WUW_Germany.txt  L23717 : check_variable = { GER_ascended_advisor_1 = 2 }
+      events\WUW_Germany.txt  L23718 : check_variable = { GER_ascended_advisor_2 = 2 }
+      events\WUW_Germany.txt  L23719 : check_variable = { GER_ascended_advisor_3 = 2 }
+      events\WUW_Germany.txt  L23772 : check_variable = { GER_ascended_advisor_1 = 2 }
+      events\WUW_Germany.txt  L23773 : check_variable = { GER_ascended_advisor_2 = 2 }
+      events\WUW_Germany.txt  L23774 : check_variable = { GER_ascended_advisor_3 = 2 }
+      events\WUW_Germany.txt  L23839 : check_variable = { GER_ascended_advisor_1 = 3 }
+      events\WUW_Germany.txt  L23840 : check_variable = { GER_ascended_advisor_2 = 3 }
+      events\WUW_Germany.txt  L23841 : check_variable = { GER_ascended_advisor_3 = 3 }
+      events\WUW_Germany.txt  L23891 : check_variable = { GER_ascended_advisor_1 = 3 }
+      events\WUW_Germany.txt  L23892 : check_variable = { GER_ascended_advisor_2 = 3 }
+      events\WUW_Germany.txt  L23893 : check_variable = { GER_ascended_advisor_3 = 3 }
+      events\WUW_Germany.txt  L24015 : check_variable = { GER_ascended_advisor_1 = 4 }
+      events\WUW_Germany.txt  L24016 : check_variable = { GER_ascended_advisor_2 = 4 }
+      events\WUW_Germany.txt  L24017 : check_variable = { GER_ascended_advisor_3 = 4 }
+      events\WUW_Germany.txt  L24097 : check_variable = { GER_ascended_advisor_1 = 4 }
+      events\WUW_Germany.txt  L24098 : check_variable = { GER_ascended_advisor_2 = 4 }
+      events\WUW_Germany.txt  L24099 : check_variable = { GER_ascended_advisor_3 = 4 }
+      events\WUW_Germany.txt  L24188 : check_variable = { GER_ascended_advisor_1 = 5 }
+      events\WUW_Germany.txt  L24189 : check_variable = { GER_ascended_advisor_2 = 5 }
+      events\WUW_Germany.txt  L24190 : check_variable = { GER_ascended_advisor_3 = 5 }
+      events\WUW_Germany.txt  L24236 : check_variable = { GER_ascended_advisor_1 = 5 }
+      events\WUW_Germany.txt  L24237 : check_variable = { GER_ascended_advisor_2 = 5 }
+      events\WUW_Germany.txt  L24238 : check_variable = { GER_ascended_advisor_3 = 5 }
+      events\WUW_Germany.txt  L24302 : check_variable = { GER_ascended_advisor_1 = 6 }
+      events\WUW_Germany.txt  L24303 : check_variable = { GER_ascended_advisor_2 = 6 }
+      events\WUW_Germany.txt  L24304 : check_variable = { GER_ascended_advisor_3 = 6 }
+      events\WUW_Germany.txt  L24354 : check_variable = { GER_ascended_advisor_1 = 6 }
+      events\WUW_Germany.txt  L24355 : check_variable = { GER_ascended_advisor_2 = 6 }
+      events\WUW_Germany.txt  L24356 : check_variable = { GER_ascended_advisor_3 = 6 }
+      events\WUW_Germany.txt  L24422 : check_variable = { GER_ascended_advisor_1 = 7 }
+      events\WUW_Germany.txt  L24423 : check_variable = { GER_ascended_advisor_2 = 7 }
+      events\WUW_Germany.txt  L24424 : check_variable = { GER_ascended_advisor_3 = 7 }
+      events\WUW_Germany.txt  L24474 : check_variable = { GER_ascended_advisor_1 = 7 }
+      events\WUW_Germany.txt  L24475 : check_variable = { GER_ascended_advisor_2 = 7 }
+      events\WUW_Germany.txt  L24476 : check_variable = { GER_ascended_advisor_3 = 7 }
+  ====== GER_inner_circle_set_ascension_cd  (8 处)
+      common\scripted_effects\GER_scripted_effects.txt  L3591 : GER_inner_circle_set_ascension_cd = {
+      common\national_focus\germany.txt  L21447 : GER_inner_circle_set_ascension_cd = yes
+      common\national_focus\germany.txt  L21771 : GER_inner_circle_set_ascension_cd = yes
+      common\national_focus\germany.txt  L22264 : GER_inner_circle_set_ascension_cd = yes
+      common\national_focus\germany.txt  L22771 : GER_inner_circle_set_ascension_cd = yes
+      common\national_focus\germany.txt  L23503 : GER_inner_circle_set_ascension_cd = yes
+      common\national_focus\germany.txt  L23820 : GER_inner_circle_set_ascension_cd = yes
+      common\national_focus\germany.txt  L23942 : GER_inner_circle_set_ascension_cd = yes
+  ====== GER_inner_circle_is_ascension_cd_over  (8 处)
+      common\scripted_triggers\GER_scripted_triggers.txt  L1544 : GER_inner_circle_is_ascension_cd_over = {
+      common\national_focus\germany.txt  L21354 : GER_inner_circle_is_ascension_cd_over = yes
+      common\national_focus\germany.txt  L21679 : GER_inner_circle_is_ascension_cd_over = yes
+      common\national_focus\germany.txt  L22161 : GER_inner_circle_is_ascension_cd_over = yes
+      common\national_focus\germany.txt  L22675 : GER_inner_circle_is_ascension_cd_over = yes
+      common\national_focus\germany.txt  L23411 : GER_inner_circle_is_ascension_cd_over = yes
+      common\national_focus\germany.txt  L23728 : GER_inner_circle_is_ascension_cd_over = yes
+      common\national_focus\germany.txt  L23850 : GER_inner_circle_is_ascension_cd_over = yes
+  ====== GER_ascending_advisor  (32 处)
+      common\scripted_effects\GER_scripted_effects.txt  L2812 : check_variable = { GER_ascending_advisor = 1 }
+      common\scripted_effects\GER_scripted_effects.txt  L2818 : check_variable = { GER_ascending_advisor = 2 }
+      common\scripted_effects\GER_scripted_effects.txt  L2824 : check_variable = { GER_ascending_advisor = 3 }
+      common\scripted_effects\GER_scripted_effects.txt  L2830 : check_variable = { GER_ascending_advisor = 4 }
+      common\scripted_effects\GER_scripted_effects.txt  L2836 : check_variable = { GER_ascending_advisor = 5 }
+      common\scripted_effects\GER_scripted_effects.txt  L2842 : check_variable = { GER_ascending_advisor = 6 }
+      common\scripted_effects\GER_scripted_effects.txt  L2848 : check_variable = { GER_ascending_advisor = 7 }
+      common\scripted_effects\GER_scripted_effects.txt  L2853 : log = "Something bad happened trying to add advisor [?GER_ascending_advisor] effects."
+      common\national_focus\germany.txt  L21407 : set_variable = { GER_ascending_advisor = 1 }
+      common\national_focus\germany.txt  L21732 : set_variable = { GER_ascending_advisor = 2 }
+      common\national_focus\germany.txt  L22225 : set_variable = { GER_ascending_advisor = 3 }
+      common\national_focus\germany.txt  L22728 : set_variable = { GER_ascending_advisor = 4 }
+      common\national_focus\germany.txt  L23464 : set_variable = { GER_ascending_advisor = 5 }
+      common\national_focus\germany.txt  L23781 : set_variable = { GER_ascending_advisor = 6 }
+      common\national_focus\germany.txt  L23903 : set_variable = { GER_ascending_advisor = 7 }
+      events\WUW_Germany.txt  L21847 : check_variable = { GER_ascending_advisor = 4 } #Himmler Ascending
+      events\WUW_Germany.txt  L21856 : set_variable = { GER_ascended_advisor_1 = GER_ascending_advisor }
+      events\WUW_Germany.txt  L21861 : clear_variable = GER_ascending_advisor
+      events\WUW_Germany.txt  L21874 : check_variable = { GER_ascending_advisor = 4 } #Himmler Ascending
+      events\WUW_Germany.txt  L21883 : set_variable = { GER_ascended_advisor_2 = GER_ascending_advisor }
+      events\WUW_Germany.txt  L21888 : clear_variable = GER_ascending_advisor
+      events\WUW_Germany.txt  L21901 : check_variable = { GER_ascending_advisor = 4 } #Himmler Ascending
+      events\WUW_Germany.txt  L21910 : set_variable = { GER_ascended_advisor_3 = GER_ascending_advisor }
+      events\WUW_Germany.txt  L21915 : clear_variable = GER_ascending_advisor
+      events\WUW_Germany.txt  L21929 : check_variable = { GER_ascending_advisor = 1 }
+      events\WUW_Germany.txt  L21939 : check_variable = { GER_ascending_advisor = 2 }
+      events\WUW_Germany.txt  L21949 : check_variable = { GER_ascending_advisor = 3 }
+      events\WUW_Germany.txt  L21959 : check_variable = { GER_ascending_advisor = 4 }
+      events\WUW_Germany.txt  L21969 : check_variable = { GER_ascending_advisor = 5 }
+      events\WUW_Germany.txt  L21979 : check_variable = { GER_ascending_advisor = 6 }
+      events\WUW_Germany.txt  L21989 : check_variable = { GER_ascending_advisor = 7 }
+      events\WUW_Germany.txt  L22003 : clear_variable = GER_ascending_advisor
+
+######## [原版] 待扫文件数 = 581
+  ====== GER_the_inner_circle_dm  (3 处)
+      common\dynamic_modifiers\wuw_dynamic_modifiers.txt  L941 : GER_the_inner_circle_dm = {
+      common\dynamic_modifiers\wuw_dynamic_modifiers.txt  L948 : custom_modifier_tooltip = GER_the_inner_circle_dm_tt
+      common\national_focus\germany.txt  L18276 : modifier = GER_the_inner_circle_dm
+  ====== GER_ascended_advisor  (627 处)
+      common\scripted_effects\GER_scripted_effects.txt  L2115 : check_variable = { GER_ascended_advisor_1 = 1 }
+      common\scripted_effects\GER_scripted_effects.txt  L2121 : check_variable = { GER_ascended_advisor_1 = 2 }
+      common\scripted_effects\GER_scripted_effects.txt  L2127 : check_variable = { GER_ascended_advisor_1 = 3 }
+      common\scripted_effects\GER_scripted_effects.txt  L2133 : check_variable = { GER_ascended_advisor_1 = 4 }
+      common\scripted_effects\GER_scripted_effects.txt  L2139 : check_variable = { GER_ascended_advisor_1 = 5 }
+      common\scripted_effects\GER_scripted_effects.txt  L2145 : check_variable = { GER_ascended_advisor_1 = 6 }
+      common\scripted_effects\GER_scripted_effects.txt  L2151 : check_variable = { GER_ascended_advisor_1 = 7 }
+      common\scripted_effects\GER_scripted_effects.txt  L2156 : log = "Something bad happened trying to remove advisor [?GER_ascended_advisor_1] effects."
+      common\scripted_effects\GER_scripted_effects.txt  L2170 : check_variable = { GER_ascended_advisor_2 = 1 }
+      common\scripted_effects\GER_scripted_effects.txt  L2176 : check_variable = { GER_ascended_advisor_2 = 2 }
+      common\scripted_effects\GER_scripted_effects.txt  L2182 : check_variable = { GER_ascended_advisor_2 = 3 }
+      common\scripted_effects\GER_scripted_effects.txt  L2188 : check_variable = { GER_ascended_advisor_2 = 4 }
+      common\scripted_effects\GER_scripted_effects.txt  L2194 : check_variable = { GER_ascended_advisor_2 = 5 }
+      common\scripted_effects\GER_scripted_effects.txt  L2200 : check_variable = { GER_ascended_advisor_2 = 6 }
+      common\scripted_effects\GER_scripted_effects.txt  L2206 : check_variable = { GER_ascended_advisor_2 = 7 }
+      common\scripted_effects\GER_scripted_effects.txt  L2211 : log = "Something bad happened trying to remove advisor [?GER_ascended_advisor_2] effects."
+      common\scripted_effects\GER_scripted_effects.txt  L2225 : check_variable = { GER_ascended_advisor_3 = 1 }
+      common\scripted_effects\GER_scripted_effects.txt  L2231 : check_variable = { GER_ascended_advisor_3 = 2 }
+      common\scripted_effects\GER_scripted_effects.txt  L2237 : check_variable = { GER_ascended_advisor_3 = 3 }
+      common\scripted_effects\GER_scripted_effects.txt  L2243 : check_variable = { GER_ascended_advisor_3 = 4 }
+      common\scripted_effects\GER_scripted_effects.txt  L2249 : check_variable = { GER_ascended_advisor_3 = 5 }
+      common\scripted_effects\GER_scripted_effects.txt  L2255 : check_variable = { GER_ascended_advisor_3 = 6 }
+      common\scripted_effects\GER_scripted_effects.txt  L2261 : check_variable = { GER_ascended_advisor_3 = 7 }
+      common\scripted_effects\GER_scripted_effects.txt  L2266 : log = "Something bad happened trying to remove advisor [?GER_ascended_advisor_3] effects."
+      common\scripted_effects\GER_scripted_effects.txt  L2386 : check_variable = { GER_ascended_advisor_1 = 1 }
+      common\scripted_effects\GER_scripted_effects.txt  L2388 : set_variable = { GER_ascended_advisor_1 = 0 }
+      common\scripted_effects\GER_scripted_effects.txt  L2392 : check_variable = { GER_ascended_advisor_2 = 1 }
+      common\scripted_effects\GER_scripted_effects.txt  L2394 : set_variable = { GER_ascended_advisor_2 = 0 }
+      common\scripted_effects\GER_scripted_effects.txt  L2398 : check_variable = { GER_ascended_advisor_3 = 1 }
+      common\scripted_effects\GER_scripted_effects.txt  L2400 : set_variable = { GER_ascended_advisor_3 = 0 }
+      common\scripted_effects\GER_scripted_effects.txt  L2467 : check_variable = { GER_ascended_advisor_1 = 2 }
+      common\scripted_effects\GER_scripted_effects.txt  L2469 : set_variable = { GER_ascended_advisor_1 = 0 }
+      common\scripted_effects\GER_scripted_effects.txt  L2473 : check_variable = { GER_ascended_advisor_2 = 2 }
+      common\scripted_effects\GER_scripted_effects.txt  L2475 : set_variable = { GER_ascended_advisor_2 = 0 }
+      common\scripted_effects\GER_scripted_effects.txt  L2479 : check_variable = { GER_ascended_advisor_3 = 2 }
+      common\scripted_effects\GER_scripted_effects.txt  L2481 : set_variable = { GER_ascended_advisor_3 = 0 }
+      common\scripted_effects\GER_scripted_effects.txt  L2546 : check_variable = { GER_ascended_advisor_1 = 3 }
+      common\scripted_effects\GER_scripted_effects.txt  L2548 : set_variable = { GER_ascended_advisor_1 = 0 }
+      common\scripted_effects\GER_scripted_effects.txt  L2552 : check_variable = { GER_ascended_advisor_2 = 3 }
+      common\scripted_effects\GER_scripted_effects.txt  L2554 : set_variable = { GER_ascended_advisor_2 = 0 }
+      common\scripted_effects\GER_scripted_effects.txt  L2558 : check_variable = { GER_ascended_advisor_3 = 3 }
+      common\scripted_effects\GER_scripted_effects.txt  L2560 : set_variable = { GER_ascended_advisor_3 = 0 }
+      common\scripted_effects\GER_scripted_effects.txt  L2659 : check_variable = { GER_ascended_advisor_1 = 4 }
+      common\scripted_effects\GER_scripted_effects.txt  L2661 : set_variable = { GER_ascended_advisor_1 = 0 }
+      common\scripted_effects\GER_scripted_effects.txt  L2665 : check_variable = { GER_ascended_advisor_2 = 4 }
+      common\scripted_effects\GER_scripted_effects.txt  L2667 : set_variable = { GER_ascended_advisor_2 = 0 }
+      common\scripted_effects\GER_scripted_effects.txt  L2671 : check_variable = { GER_ascended_advisor_3 = 4 }
+      common\scripted_effects\GER_scripted_effects.txt  L2673 : set_variable = { GER_ascended_advisor_3 = 0 }
+      common\scripted_effects\GER_scripted_effects.txt  L2762 : check_variable = { GER_ascended_advisor_1 = 5 }
+      common\scripted_effects\GER_scripted_effects.txt  L2764 : set_variable = { GER_ascended_advisor_1 = 0 }
+      common\scripted_effects\GER_scripted_effects.txt  L2768 : check_variable = { GER_ascended_advisor_2 = 5 }
+      common\scripted_effects\GER_scripted_effects.txt  L2770 : set_variable = { GER_ascended_advisor_2 = 0 }
+      common\scripted_effects\GER_scripted_effects.txt  L2774 : check_variable = { GER_ascended_advisor_3 = 5 }
+      common\scripted_effects\GER_scripted_effects.txt  L2776 : set_variable = { GER_ascended_advisor_3 = 0 }
+      common\scripted_effects\GER_scripted_effects.txt  L2895 : check_variable = { GER_ascended_advisor_1 = 6 }
+      common\scripted_effects\GER_scripted_effects.txt  L2897 : set_variable = { GER_ascended_advisor_1 = 0 }
+      common\scripted_effects\GER_scripted_effects.txt  L2901 : check_variable = { GER_ascended_advisor_2 = 6 }
+      common\scripted_effects\GER_scripted_effects.txt  L2903 : set_variable = { GER_ascended_advisor_2 = 0 }
+      common\scripted_effects\GER_scripted_effects.txt  L2907 : check_variable = { GER_ascended_advisor_3 = 6 }
+      common\scripted_effects\GER_scripted_effects.txt  L2909 : set_variable = { GER_ascended_advisor_3 = 0 }
+      common\scripted_effects\GER_scripted_effects.txt  L2990 : check_variable = { GER_ascended_advisor_1 = 7 }
+      common\scripted_effects\GER_scripted_effects.txt  L2992 : set_variable = { GER_ascended_advisor_1 = 0 }
+      common\scripted_effects\GER_scripted_effects.txt  L2996 : check_variable = { GER_ascended_advisor_2 = 7 }
+      common\scripted_effects\GER_scripted_effects.txt  L2998 : set_variable = { GER_ascended_advisor_2 = 0 }
+      common\scripted_effects\GER_scripted_effects.txt  L3002 : check_variable = { GER_ascended_advisor_3 = 7 }
+      common\scripted_effects\GER_scripted_effects.txt  L3004 : set_variable = { GER_ascended_advisor_3 = 0 }
+      common\scripted_effects\GER_scripted_effects.txt  L3019 : check_variable = { GER_ascended_advisor_1 = 2 }
+      common\scripted_effects\GER_scripted_effects.txt  L3020 : check_variable = { GER_ascended_advisor_2 = 2 }
+      common\scripted_effects\GER_scripted_effects.txt  L3021 : check_variable = { GER_ascended_advisor_3 = 2 }
+      common\scripted_effects\GER_scripted_effects.txt  L3029 : check_variable = { GER_ascended_advisor_1 = 1 }
+      common\scripted_effects\GER_scripted_effects.txt  L3030 : check_variable = { GER_ascended_advisor_2 = 1 }
+      common\scripted_effects\GER_scripted_effects.txt  L3031 : check_variable = { GER_ascended_advisor_3 = 1 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L966 : check_variable = { GER_ascended_advisor_1 = 0 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L972 : check_variable = { GER_ascended_advisor_1 = 1 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L978 : check_variable = { GER_ascended_advisor_1 = 2 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L984 : check_variable = { GER_ascended_advisor_1 = 3 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L990 : check_variable = { GER_ascended_advisor_1 = 4 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L996 : check_variable = { GER_ascended_advisor_1 = 5 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1002 : check_variable = { GER_ascended_advisor_1 = 6 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1008 : check_variable = { GER_ascended_advisor_1 = 7 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1018 : check_variable = { GER_ascended_advisor_2 = 0 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1024 : check_variable = { GER_ascended_advisor_2 = 1 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1030 : check_variable = { GER_ascended_advisor_2 = 2 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1036 : check_variable = { GER_ascended_advisor_2 = 3 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1042 : check_variable = { GER_ascended_advisor_2 = 4 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1048 : check_variable = { GER_ascended_advisor_2 = 5 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1054 : check_variable = { GER_ascended_advisor_2 = 6 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1060 : check_variable = { GER_ascended_advisor_2 = 7 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1070 : check_variable = { GER_ascended_advisor_3 = 0 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1076 : check_variable = { GER_ascended_advisor_3 = 1 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1082 : check_variable = { GER_ascended_advisor_3 = 2 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1088 : check_variable = { GER_ascended_advisor_3 = 3 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1094 : check_variable = { GER_ascended_advisor_3 = 4 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1100 : check_variable = { GER_ascended_advisor_3 = 5 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1106 : check_variable = { GER_ascended_advisor_3 = 6 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1112 : check_variable = { GER_ascended_advisor_3 = 7 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1122 : check_variable = { GER_ascended_advisor_1 = 0 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1130 : check_variable = { GER_ascended_advisor_1 = 1 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1137 : check_variable = { GER_ascended_advisor_1 = 1 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1146 : check_variable = { GER_ascended_advisor_1 = 2 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1153 : check_variable = { GER_ascended_advisor_1 = 2 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1162 : check_variable = { GER_ascended_advisor_1 = 3 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1169 : check_variable = { GER_ascended_advisor_1 = 3 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1178 : check_variable = { GER_ascended_advisor_1 = 4 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1185 : check_variable = { GER_ascended_advisor_1 = 4 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1192 : check_variable = { GER_ascended_advisor_1 = 4 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1201 : check_variable = { GER_ascended_advisor_1 = 5 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1208 : check_variable = { GER_ascended_advisor_1 = 5 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1215 : check_variable = { GER_ascended_advisor_1 = 5 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1222 : check_variable = { GER_ascended_advisor_1 = 5 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1229 : check_variable = { GER_ascended_advisor_1 = 5 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1238 : check_variable = { GER_ascended_advisor_1 = 6 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1245 : check_variable = { GER_ascended_advisor_1 = 6 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1252 : check_variable = { GER_ascended_advisor_1 = 6 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1259 : check_variable = { GER_ascended_advisor_1 = 6 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1266 : check_variable = { GER_ascended_advisor_1 = 6 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1275 : check_variable = { GER_ascended_advisor_1 = 7 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1282 : check_variable = { GER_ascended_advisor_1 = 7 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1289 : check_variable = { GER_ascended_advisor_1 = 7 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1300 : check_variable = { GER_ascended_advisor_2 = 0 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1308 : check_variable = { GER_ascended_advisor_2 = 1 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1315 : check_variable = { GER_ascended_advisor_2 = 1 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1324 : check_variable = { GER_ascended_advisor_2 = 2 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1331 : check_variable = { GER_ascended_advisor_2 = 2 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1340 : check_variable = { GER_ascended_advisor_2 = 3 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1347 : check_variable = { GER_ascended_advisor_2 = 3 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1356 : check_variable = { GER_ascended_advisor_2 = 4 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1363 : check_variable = { GER_ascended_advisor_2 = 4 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1370 : check_variable = { GER_ascended_advisor_2 = 4 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1379 : check_variable = { GER_ascended_advisor_2 = 5 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1386 : check_variable = { GER_ascended_advisor_2 = 5 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1393 : check_variable = { GER_ascended_advisor_2 = 5 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1400 : check_variable = { GER_ascended_advisor_2 = 5 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1407 : check_variable = { GER_ascended_advisor_2 = 5 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1416 : check_variable = { GER_ascended_advisor_2 = 6 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1423 : check_variable = { GER_ascended_advisor_2 = 6 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1430 : check_variable = { GER_ascended_advisor_2 = 6 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1437 : check_variable = { GER_ascended_advisor_2 = 6 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1444 : check_variable = { GER_ascended_advisor_2 = 6 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1453 : check_variable = { GER_ascended_advisor_2 = 7 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1460 : check_variable = { GER_ascended_advisor_2 = 7 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1467 : check_variable = { GER_ascended_advisor_2 = 7 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1478 : check_variable = { GER_ascended_advisor_3 = 0 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1486 : check_variable = { GER_ascended_advisor_3 = 1 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1493 : check_variable = { GER_ascended_advisor_3 = 1 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1502 : check_variable = { GER_ascended_advisor_3 = 2 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1509 : check_variable = { GER_ascended_advisor_3 = 2 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1518 : check_variable = { GER_ascended_advisor_3 = 3 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1525 : check_variable = { GER_ascended_advisor_3 = 3 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1534 : check_variable = { GER_ascended_advisor_3 = 4 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1541 : check_variable = { GER_ascended_advisor_3 = 4 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1548 : check_variable = { GER_ascended_advisor_3 = 4 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1557 : check_variable = { GER_ascended_advisor_3 = 5 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1564 : check_variable = { GER_ascended_advisor_3 = 5 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1571 : check_variable = { GER_ascended_advisor_3 = 5 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1578 : check_variable = { GER_ascended_advisor_3 = 5 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1585 : check_variable = { GER_ascended_advisor_3 = 5 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1594 : check_variable = { GER_ascended_advisor_3 = 6 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1601 : check_variable = { GER_ascended_advisor_3 = 6 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1608 : check_variable = { GER_ascended_advisor_3 = 6 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1615 : check_variable = { GER_ascended_advisor_3 = 6 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1622 : check_variable = { GER_ascended_advisor_3 = 6 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1631 : check_variable = { GER_ascended_advisor_3 = 7 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1638 : check_variable = { GER_ascended_advisor_3 = 7 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1645 : check_variable = { GER_ascended_advisor_3 = 7 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1656 : check_variable = { GER_ascended_advisor_1 = 0 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1664 : check_variable = { GER_ascended_advisor_1 = 1 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1671 : check_variable = { GER_ascended_advisor_1 = 1 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1680 : check_variable = { GER_ascended_advisor_1 = 2 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1687 : check_variable = { GER_ascended_advisor_1 = 2 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1696 : check_variable = { GER_ascended_advisor_1 = 3 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1703 : check_variable = { GER_ascended_advisor_1 = 3 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1712 : check_variable = { GER_ascended_advisor_1 = 4 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1719 : check_variable = { GER_ascended_advisor_1 = 4 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1726 : check_variable = { GER_ascended_advisor_1 = 4 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1735 : check_variable = { GER_ascended_advisor_1 = 5 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1742 : check_variable = { GER_ascended_advisor_1 = 5 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1749 : check_variable = { GER_ascended_advisor_1 = 5 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1756 : check_variable = { GER_ascended_advisor_1 = 5 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1763 : check_variable = { GER_ascended_advisor_1 = 5 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1772 : check_variable = { GER_ascended_advisor_1 = 6 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1779 : check_variable = { GER_ascended_advisor_1 = 6 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1786 : check_variable = { GER_ascended_advisor_1 = 6 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1793 : check_variable = { GER_ascended_advisor_1 = 6 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1800 : check_variable = { GER_ascended_advisor_1 = 6 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1809 : check_variable = { GER_ascended_advisor_1 = 7 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1816 : check_variable = { GER_ascended_advisor_1 = 7 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1823 : check_variable = { GER_ascended_advisor_1 = 7 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1834 : check_variable = { GER_ascended_advisor_2 = 0 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1842 : check_variable = { GER_ascended_advisor_2 = 1 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1849 : check_variable = { GER_ascended_advisor_2 = 1 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1858 : check_variable = { GER_ascended_advisor_2 = 2 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1865 : check_variable = { GER_ascended_advisor_2 = 2 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1874 : check_variable = { GER_ascended_advisor_2 = 3 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1881 : check_variable = { GER_ascended_advisor_2 = 3 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1890 : check_variable = { GER_ascended_advisor_2 = 4 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1897 : check_variable = { GER_ascended_advisor_2 = 4 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1904 : check_variable = { GER_ascended_advisor_2 = 4 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1913 : check_variable = { GER_ascended_advisor_2 = 5 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1920 : check_variable = { GER_ascended_advisor_2 = 5 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1927 : check_variable = { GER_ascended_advisor_2 = 5 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1934 : check_variable = { GER_ascended_advisor_2 = 5 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1941 : check_variable = { GER_ascended_advisor_2 = 5 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1950 : check_variable = { GER_ascended_advisor_2 = 6 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1957 : check_variable = { GER_ascended_advisor_2 = 6 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1964 : check_variable = { GER_ascended_advisor_2 = 6 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1971 : check_variable = { GER_ascended_advisor_2 = 6 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1978 : check_variable = { GER_ascended_advisor_2 = 6 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1987 : check_variable = { GER_ascended_advisor_2 = 7 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L1994 : check_variable = { GER_ascended_advisor_2 = 7 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2001 : check_variable = { GER_ascended_advisor_2 = 7 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2012 : check_variable = { GER_ascended_advisor_3 = 0 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2020 : check_variable = { GER_ascended_advisor_3 = 1 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2027 : check_variable = { GER_ascended_advisor_3 = 1 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2036 : check_variable = { GER_ascended_advisor_3 = 2 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2043 : check_variable = { GER_ascended_advisor_3 = 2 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2052 : check_variable = { GER_ascended_advisor_3 = 3 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2059 : check_variable = { GER_ascended_advisor_3 = 3 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2068 : check_variable = { GER_ascended_advisor_3 = 4 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2075 : check_variable = { GER_ascended_advisor_3 = 4 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2082 : check_variable = { GER_ascended_advisor_3 = 4 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2091 : check_variable = { GER_ascended_advisor_3 = 5 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2098 : check_variable = { GER_ascended_advisor_3 = 5 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2105 : check_variable = { GER_ascended_advisor_3 = 5 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2112 : check_variable = { GER_ascended_advisor_3 = 5 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2119 : check_variable = { GER_ascended_advisor_3 = 5 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2128 : check_variable = { GER_ascended_advisor_3 = 6 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2135 : check_variable = { GER_ascended_advisor_3 = 6 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2142 : check_variable = { GER_ascended_advisor_3 = 6 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2149 : check_variable = { GER_ascended_advisor_3 = 6 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2156 : check_variable = { GER_ascended_advisor_3 = 6 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2165 : check_variable = { GER_ascended_advisor_3 = 7 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2172 : check_variable = { GER_ascended_advisor_3 = 7 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2179 : check_variable = { GER_ascended_advisor_3 = 7 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2282 : check_variable = { GER_ascended_advisor_1 = 0 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2290 : check_variable = { GER_ascended_advisor_1 = 1 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2297 : check_variable = { GER_ascended_advisor_1 = 1 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2306 : check_variable = { GER_ascended_advisor_1 = 2 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2313 : check_variable = { GER_ascended_advisor_1 = 2 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2322 : check_variable = { GER_ascended_advisor_1 = 3 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2329 : check_variable = { GER_ascended_advisor_1 = 3 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2338 : check_variable = { GER_ascended_advisor_1 = 4 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2345 : check_variable = { GER_ascended_advisor_1 = 4 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2352 : check_variable = { GER_ascended_advisor_1 = 4 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2361 : check_variable = { GER_ascended_advisor_1 = 5 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2368 : check_variable = { GER_ascended_advisor_1 = 5 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2375 : check_variable = { GER_ascended_advisor_1 = 5 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2382 : check_variable = { GER_ascended_advisor_1 = 5 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2389 : check_variable = { GER_ascended_advisor_1 = 5 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2398 : check_variable = { GER_ascended_advisor_1 = 6 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2405 : check_variable = { GER_ascended_advisor_1 = 6 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2412 : check_variable = { GER_ascended_advisor_1 = 6 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2419 : check_variable = { GER_ascended_advisor_1 = 6 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2426 : check_variable = { GER_ascended_advisor_1 = 6 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2435 : check_variable = { GER_ascended_advisor_1 = 7 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2442 : check_variable = { GER_ascended_advisor_1 = 7 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2449 : check_variable = { GER_ascended_advisor_1 = 7 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2460 : check_variable = { GER_ascended_advisor_2 = 0 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2468 : check_variable = { GER_ascended_advisor_2 = 1 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2475 : check_variable = { GER_ascended_advisor_2 = 1 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2484 : check_variable = { GER_ascended_advisor_2 = 2 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2491 : check_variable = { GER_ascended_advisor_2 = 2 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2500 : check_variable = { GER_ascended_advisor_2 = 3 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2507 : check_variable = { GER_ascended_advisor_2 = 3 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2516 : check_variable = { GER_ascended_advisor_2 = 4 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2523 : check_variable = { GER_ascended_advisor_2 = 4 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2530 : check_variable = { GER_ascended_advisor_2 = 4 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2539 : check_variable = { GER_ascended_advisor_2 = 5 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2546 : check_variable = { GER_ascended_advisor_2 = 5 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2553 : check_variable = { GER_ascended_advisor_2 = 5 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2560 : check_variable = { GER_ascended_advisor_2 = 5 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2567 : check_variable = { GER_ascended_advisor_2 = 5 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2576 : check_variable = { GER_ascended_advisor_2 = 6 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2583 : check_variable = { GER_ascended_advisor_2 = 6 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2590 : check_variable = { GER_ascended_advisor_2 = 6 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2597 : check_variable = { GER_ascended_advisor_2 = 6 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2604 : check_variable = { GER_ascended_advisor_2 = 6 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2613 : check_variable = { GER_ascended_advisor_2 = 7 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2620 : check_variable = { GER_ascended_advisor_2 = 7 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2627 : check_variable = { GER_ascended_advisor_2 = 7 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2638 : check_variable = { GER_ascended_advisor_3 = 0 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2646 : check_variable = { GER_ascended_advisor_3 = 1 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2653 : check_variable = { GER_ascended_advisor_3 = 1 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2662 : check_variable = { GER_ascended_advisor_3 = 2 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2669 : check_variable = { GER_ascended_advisor_3 = 2 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2678 : check_variable = { GER_ascended_advisor_3 = 3 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2685 : check_variable = { GER_ascended_advisor_3 = 3 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2694 : check_variable = { GER_ascended_advisor_3 = 4 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2701 : check_variable = { GER_ascended_advisor_3 = 4 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2708 : check_variable = { GER_ascended_advisor_3 = 4 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2717 : check_variable = { GER_ascended_advisor_3 = 5 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2724 : check_variable = { GER_ascended_advisor_3 = 5 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2731 : check_variable = { GER_ascended_advisor_3 = 5 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2738 : check_variable = { GER_ascended_advisor_3 = 5 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2745 : check_variable = { GER_ascended_advisor_3 = 5 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2754 : check_variable = { GER_ascended_advisor_3 = 6 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2761 : check_variable = { GER_ascended_advisor_3 = 6 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2768 : check_variable = { GER_ascended_advisor_3 = 6 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2775 : check_variable = { GER_ascended_advisor_3 = 6 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2782 : check_variable = { GER_ascended_advisor_3 = 6 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2791 : check_variable = { GER_ascended_advisor_3 = 7 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2798 : check_variable = { GER_ascended_advisor_3 = 7 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2805 : check_variable = { GER_ascended_advisor_3 = 7 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2816 : check_variable = { GER_ascended_advisor_1 = 0 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2829 : check_variable = { GER_ascended_advisor_2 = 0 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2842 : check_variable = { GER_ascended_advisor_3 = 0 }
+      common\national_focus\germany.txt  L18355 : check_variable = { GER_ascended_advisor_1 = 1 }
+      common\national_focus\germany.txt  L18356 : check_variable = { GER_ascended_advisor_2 = 1 }
+      common\national_focus\germany.txt  L18357 : check_variable = { GER_ascended_advisor_3 = 1 }
+      common\national_focus\germany.txt  L18364 : check_variable = { GER_ascended_advisor_1 = 0 compare = not_equals }
+      common\national_focus\germany.txt  L18365 : check_variable = { GER_ascended_advisor_2 = 0 compare = not_equals }
+      common\national_focus\germany.txt  L18366 : check_variable = { GER_ascended_advisor_3 = 0 compare = not_equals }
+      common\national_focus\germany.txt  L18386 : check_variable = { GER_ascended_advisor_1 = 0 }
+      common\national_focus\germany.txt  L18388 : set_variable = { GER_ascended_advisor_1 = 1 }
+      common\national_focus\germany.txt  L18392 : check_variable = { GER_ascended_advisor_2 = 0 }
+      common\national_focus\germany.txt  L18394 : set_variable = { GER_ascended_advisor_2 = 1 }
+      common\national_focus\germany.txt  L18398 : check_variable = { GER_ascended_advisor_3 = 0 }
+      common\national_focus\germany.txt  L18400 : set_variable = { GER_ascended_advisor_3 = 1 }
+      common\national_focus\germany.txt  L18703 : check_variable = { GER_ascended_advisor_1 = 2 }
+      common\national_focus\germany.txt  L18704 : check_variable = { GER_ascended_advisor_2 = 2 }
+      common\national_focus\germany.txt  L18705 : check_variable = { GER_ascended_advisor_3 = 2 }
+      common\national_focus\germany.txt  L18712 : check_variable = { GER_ascended_advisor_1 = 0 compare = not_equals }
+      common\national_focus\germany.txt  L18713 : check_variable = { GER_ascended_advisor_2 = 0 compare = not_equals }
+      common\national_focus\germany.txt  L18714 : check_variable = { GER_ascended_advisor_3 = 0 compare = not_equals }
+      common\national_focus\germany.txt  L18734 : check_variable = { GER_ascended_advisor_1 = 0 }
+      common\national_focus\germany.txt  L18736 : set_variable = { GER_ascended_advisor_1 = 2 }
+      common\national_focus\germany.txt  L18740 : check_variable = { GER_ascended_advisor_2 = 0 }
+      common\national_focus\germany.txt  L18742 : set_variable = { GER_ascended_advisor_2 = 2 }
+      common\national_focus\germany.txt  L18746 : check_variable = { GER_ascended_advisor_3 = 0 }
+      common\national_focus\germany.txt  L18748 : set_variable = { GER_ascended_advisor_3 = 2 }
+      common\national_focus\germany.txt  L19200 : check_variable = { GER_ascended_advisor_1 = 3 }
+      common\national_focus\germany.txt  L19201 : check_variable = { GER_ascended_advisor_2 = 3 }
+      common\national_focus\germany.txt  L19202 : check_variable = { GER_ascended_advisor_3 = 3 }
+      common\national_focus\germany.txt  L19209 : check_variable = { GER_ascended_advisor_1 = 0 compare = not_equals }
+      common\national_focus\germany.txt  L19210 : check_variable = { GER_ascended_advisor_2 = 0 compare = not_equals }
+      common\national_focus\germany.txt  L19211 : check_variable = { GER_ascended_advisor_3 = 0 compare = not_equals }
+      common\national_focus\germany.txt  L19231 : check_variable = { GER_ascended_advisor_1 = 0 }
+      common\national_focus\germany.txt  L19233 : set_variable = { GER_ascended_advisor_1 = 3 }
+      common\national_focus\germany.txt  L19237 : check_variable = { GER_ascended_advisor_2 = 0 }
+      common\national_focus\germany.txt  L19239 : set_variable = { GER_ascended_advisor_2 = 3 }
+      common\national_focus\germany.txt  L19243 : check_variable = { GER_ascended_advisor_3 = 0 }
+      common\national_focus\germany.txt  L19245 : set_variable = { GER_ascended_advisor_3 = 3 }
+      common\national_focus\germany.txt  L19686 : check_variable = { GER_ascended_advisor_1 = 4 }
+      common\national_focus\germany.txt  L19687 : check_variable = { GER_ascended_advisor_2 = 4 }
+      common\national_focus\germany.txt  L19688 : check_variable = { GER_ascended_advisor_3 = 4 }
+      common\national_focus\germany.txt  L19695 : check_variable = { GER_ascended_advisor_1 = 0 compare = not_equals }
+      common\national_focus\germany.txt  L19696 : check_variable = { GER_ascended_advisor_2 = 0 compare = not_equals }
+      common\national_focus\germany.txt  L19697 : check_variable = { GER_ascended_advisor_3 = 0 compare = not_equals }
+      common\national_focus\germany.txt  L19721 : check_variable = { GER_ascended_advisor_1 = 0 }
+      common\national_focus\germany.txt  L19723 : set_variable = { GER_ascended_advisor_1 = 4 }
+      common\national_focus\germany.txt  L19727 : check_variable = { GER_ascended_advisor_2 = 0 }
+      common\national_focus\germany.txt  L19729 : set_variable = { GER_ascended_advisor_2 = 4 }
+      common\national_focus\germany.txt  L19733 : check_variable = { GER_ascended_advisor_3 = 0 }
+      common\national_focus\germany.txt  L19735 : set_variable = { GER_ascended_advisor_3 = 4 }
+      common\national_focus\germany.txt  L20437 : check_variable = { GER_ascended_advisor_1 = 5 }
+      common\national_focus\germany.txt  L20438 : check_variable = { GER_ascended_advisor_2 = 5 }
+      common\national_focus\germany.txt  L20439 : check_variable = { GER_ascended_advisor_3 = 5 }
+      common\national_focus\germany.txt  L20446 : check_variable = { GER_ascended_advisor_1 = 0 compare = not_equals }
+      common\national_focus\germany.txt  L20447 : check_variable = { GER_ascended_advisor_2 = 0 compare = not_equals }
+      common\national_focus\germany.txt  L20448 : check_variable = { GER_ascended_advisor_3 = 0 compare = not_equals }
+      common\national_focus\germany.txt  L20468 : check_variable = { GER_ascended_advisor_1 = 0 }
+      common\national_focus\germany.txt  L20470 : set_variable = { GER_ascended_advisor_1 = 5 }
+      common\national_focus\germany.txt  L20474 : check_variable = { GER_ascended_advisor_2 = 0 }
+      common\national_focus\germany.txt  L20476 : set_variable = { GER_ascended_advisor_2 = 5 }
+      common\national_focus\germany.txt  L20480 : check_variable = { GER_ascended_advisor_3 = 0 }
+      common\national_focus\germany.txt  L20482 : set_variable = { GER_ascended_advisor_3 = 5 }
+      common\national_focus\germany.txt  L20769 : check_variable = { GER_ascended_advisor_1 = 6 }
+      common\national_focus\germany.txt  L20770 : check_variable = { GER_ascended_advisor_2 = 6 }
+      common\national_focus\germany.txt  L20771 : check_variable = { GER_ascended_advisor_3 = 6 }
+      common\national_focus\germany.txt  L20778 : check_variable = { GER_ascended_advisor_1 = 0 compare = not_equals }
+      common\national_focus\germany.txt  L20779 : check_variable = { GER_ascended_advisor_2 = 0 compare = not_equals }
+      common\national_focus\germany.txt  L20780 : check_variable = { GER_ascended_advisor_3 = 0 compare = not_equals }
+      common\national_focus\germany.txt  L20800 : check_variable = { GER_ascended_advisor_1 = 0 }
+      common\national_focus\germany.txt  L20802 : set_variable = { GER_ascended_advisor_1 = 6 }
+      common\national_focus\germany.txt  L20806 : check_variable = { GER_ascended_advisor_2 = 0 }
+      common\national_focus\germany.txt  L20808 : set_variable = { GER_ascended_advisor_2 = 6 }
+      common\national_focus\germany.txt  L20812 : check_variable = { GER_ascended_advisor_3 = 0 }
+      common\national_focus\germany.txt  L20814 : set_variable = { GER_ascended_advisor_3 = 6 }
+      common\national_focus\germany.txt  L20906 : check_variable = { GER_ascended_advisor_1 = 7 }
+      common\national_focus\germany.txt  L20907 : check_variable = { GER_ascended_advisor_2 = 7 }
+      common\national_focus\germany.txt  L20908 : check_variable = { GER_ascended_advisor_3 = 7 }
+      common\national_focus\germany.txt  L20915 : check_variable = { GER_ascended_advisor_1 = 0 compare = not_equals }
+      common\national_focus\germany.txt  L20916 : check_variable = { GER_ascended_advisor_2 = 0 compare = not_equals }
+      common\national_focus\germany.txt  L20917 : check_variable = { GER_ascended_advisor_3 = 0 compare = not_equals }
+      common\national_focus\germany.txt  L20937 : check_variable = { GER_ascended_advisor_1 = 0 }
+      common\national_focus\germany.txt  L20939 : set_variable = { GER_ascended_advisor_1 = 7 }
+      common\national_focus\germany.txt  L20943 : check_variable = { GER_ascended_advisor_2 = 0 }
+      common\national_focus\germany.txt  L20945 : set_variable = { GER_ascended_advisor_2 = 7 }
+      common\national_focus\germany.txt  L20949 : check_variable = { GER_ascended_advisor_3 = 0 }
+      common\national_focus\germany.txt  L20951 : set_variable = { GER_ascended_advisor_3 = 7 }
+      common\national_focus\germany.txt  L21300 : check_variable = { GER_ascended_advisor_1 = 1 }
+      common\national_focus\germany.txt  L21301 : check_variable = { GER_ascended_advisor_2 = 1 }
+      common\national_focus\germany.txt  L21302 : check_variable = { GER_ascended_advisor_3 = 1 }
+      common\national_focus\germany.txt  L21303 : check_variable = { GER_ascended_advisor_1 = 2 }
+      common\national_focus\germany.txt  L21304 : check_variable = { GER_ascended_advisor_2 = 2 }
+      common\national_focus\germany.txt  L21305 : check_variable = { GER_ascended_advisor_3 = 2 }
+      common\national_focus\germany.txt  L21311 : check_variable = { GER_ascended_advisor_1 = 3 }
+      common\national_focus\germany.txt  L21312 : check_variable = { GER_ascended_advisor_2 = 3 }
+      common\national_focus\germany.txt  L21313 : check_variable = { GER_ascended_advisor_3 = 3 }
+      common\national_focus\germany.txt  L21319 : check_variable = { GER_ascended_advisor_1 = 4 }
+      common\national_focus\germany.txt  L21320 : check_variable = { GER_ascended_advisor_2 = 4 }
+      common\national_focus\germany.txt  L21321 : check_variable = { GER_ascended_advisor_3 = 4 }
+      common\national_focus\germany.txt  L21327 : check_variable = { GER_ascended_advisor_1 = 5 }
+      common\national_focus\germany.txt  L21328 : check_variable = { GER_ascended_advisor_2 = 5 }
+      common\national_focus\germany.txt  L21329 : check_variable = { GER_ascended_advisor_3 = 5 }
+      common\national_focus\germany.txt  L21335 : check_variable = { GER_ascended_advisor_1 = 6 }
+      common\national_focus\germany.txt  L21336 : check_variable = { GER_ascended_advisor_2 = 6 }
+      common\national_focus\germany.txt  L21337 : check_variable = { GER_ascended_advisor_3 = 6 }
+      common\national_focus\germany.txt  L21338 : check_variable = { GER_ascended_advisor_1 = 7 }
+      common\national_focus\germany.txt  L21339 : check_variable = { GER_ascended_advisor_2 = 7 }
+      common\national_focus\germany.txt  L21340 : check_variable = { GER_ascended_advisor_3 = 7 }
+      common\national_focus\germany.txt  L21377 : check_variable = { GER_ascended_advisor_1 = 0 compare = not_equals }
+      common\national_focus\germany.txt  L21378 : check_variable = { GER_ascended_advisor_2 = 0 compare = not_equals }
+      common\national_focus\germany.txt  L21379 : check_variable = { GER_ascended_advisor_3 = 0 compare = not_equals }
+      common\national_focus\germany.txt  L21411 : check_variable = { GER_ascended_advisor_1 = 1 }
+      common\national_focus\germany.txt  L21412 : check_variable = { GER_ascended_advisor_2 = 1 }
+      common\national_focus\germany.txt  L21413 : check_variable = { GER_ascended_advisor_3 = 1 }
+      common\national_focus\germany.txt  L21414 : check_variable = { GER_ascended_advisor_1 = 2 }
+      common\national_focus\germany.txt  L21415 : check_variable = { GER_ascended_advisor_2 = 2 }
+      common\national_focus\germany.txt  L21416 : check_variable = { GER_ascended_advisor_3 = 2 }
+      common\national_focus\germany.txt  L21422 : check_variable = { GER_ascended_advisor_1 = 3 }
+      common\national_focus\germany.txt  L21423 : check_variable = { GER_ascended_advisor_2 = 3 }
+      common\national_focus\germany.txt  L21424 : check_variable = { GER_ascended_advisor_3 = 3 }
+      common\national_focus\germany.txt  L21430 : check_variable = { GER_ascended_advisor_1 = 4 }
+      common\national_focus\germany.txt  L21431 : check_variable = { GER_ascended_advisor_2 = 4 }
+      common\national_focus\germany.txt  L21432 : check_variable = { GER_ascended_advisor_3 = 4 }
+      common\national_focus\germany.txt  L21438 : check_variable = { GER_ascended_advisor_1 = 5 }
+      common\national_focus\germany.txt  L21439 : check_variable = { GER_ascended_advisor_2 = 5 }
+      common\national_focus\germany.txt  L21440 : check_variable = { GER_ascended_advisor_3 = 5 }
+      common\national_focus\germany.txt  L21446 : check_variable = { GER_ascended_advisor_1 = 6 }
+      common\national_focus\germany.txt  L21447 : check_variable = { GER_ascended_advisor_2 = 6 }
+      common\national_focus\germany.txt  L21448 : check_variable = { GER_ascended_advisor_3 = 6 }
+      common\national_focus\germany.txt  L21449 : check_variable = { GER_ascended_advisor_1 = 7 }
+      common\national_focus\germany.txt  L21450 : check_variable = { GER_ascended_advisor_2 = 7 }
+      common\national_focus\germany.txt  L21451 : check_variable = { GER_ascended_advisor_3 = 7 }
+      events\WUW_Germany.txt  L21859 : check_variable = { GER_ascended_advisor_1 = 7 } #Bormann ascended in this slot
+      events\WUW_Germany.txt  L21867 : set_variable = { GER_ascended_advisor_1 = GER_ascending_advisor }
+      events\WUW_Germany.txt  L21886 : check_variable = { GER_ascended_advisor_2 = 7 } #Bormann ascended in this slot
+      events\WUW_Germany.txt  L21894 : set_variable = { GER_ascended_advisor_2 = GER_ascending_advisor }
+      events\WUW_Germany.txt  L21913 : check_variable = { GER_ascended_advisor_3 = 7 } #Bormann ascended in this slot
+      events\WUW_Germany.txt  L21921 : set_variable = { GER_ascended_advisor_3 = GER_ascending_advisor }
+      events\WUW_Germany.txt  L22045 : check_variable = { GER_ascended_advisor_1 = 3 } #G?ring
+      events\WUW_Germany.txt  L22046 : check_variable = { GER_ascended_advisor_1 = 4 } #Himmler
+      events\WUW_Germany.txt  L22053 : check_variable = { GER_ascended_advisor_1 = 1 }
+      events\WUW_Germany.txt  L22067 : check_variable = { GER_ascended_advisor_1 = 2 }
+      events\WUW_Germany.txt  L22081 : check_variable = { GER_ascended_advisor_1 = 3 }
+      events\WUW_Germany.txt  L22095 : check_variable = { GER_ascended_advisor_1 = 4 }
+      events\WUW_Germany.txt  L22125 : check_variable = { GER_ascended_advisor_1 = 5 }
+      events\WUW_Germany.txt  L22155 : check_variable = { GER_ascended_advisor_1 = 6 }
+      events\WUW_Germany.txt  L22185 : check_variable = { GER_ascended_advisor_1 = 7 }
+      events\WUW_Germany.txt  L22221 : check_variable = { GER_ascended_advisor_2 = 3 } #G?ring
+      events\WUW_Germany.txt  L22222 : check_variable = { GER_ascended_advisor_2 = 4 } #Himmler
+      events\WUW_Germany.txt  L22229 : check_variable = { GER_ascended_advisor_2 = 1 }
+      events\WUW_Germany.txt  L22243 : check_variable = { GER_ascended_advisor_2 = 2 }
+      events\WUW_Germany.txt  L22257 : check_variable = { GER_ascended_advisor_2 = 3 }
+      events\WUW_Germany.txt  L22271 : check_variable = { GER_ascended_advisor_2 = 4 }
+      events\WUW_Germany.txt  L22301 : check_variable = { GER_ascended_advisor_2 = 5 }
+      events\WUW_Germany.txt  L22331 : check_variable = { GER_ascended_advisor_2 = 6 }
+      events\WUW_Germany.txt  L22361 : check_variable = { GER_ascended_advisor_2 = 7 }
+      events\WUW_Germany.txt  L22397 : check_variable = { GER_ascended_advisor_3 = 3 } #G?ring
+      events\WUW_Germany.txt  L22398 : check_variable = { GER_ascended_advisor_3 = 4 } #Himmler
+      events\WUW_Germany.txt  L22405 : check_variable = { GER_ascended_advisor_3 = 1 }
+      events\WUW_Germany.txt  L22419 : check_variable = { GER_ascended_advisor_3 = 2 }
+      events\WUW_Germany.txt  L22433 : check_variable = { GER_ascended_advisor_3 = 3 }
+      events\WUW_Germany.txt  L22447 : check_variable = { GER_ascended_advisor_3 = 4 }
+      events\WUW_Germany.txt  L22477 : check_variable = { GER_ascended_advisor_3 = 5 }
+      events\WUW_Germany.txt  L22507 : check_variable = { GER_ascended_advisor_3 = 6 }
+      events\WUW_Germany.txt  L22537 : check_variable = { GER_ascended_advisor_3 = 7 }
+      events\WUW_Germany.txt  L22775 : check_variable = { GER_ascended_advisor_1 = GER_intrigue_character }
+      events\WUW_Germany.txt  L22780 : check_variable = { GER_ascended_advisor_1 = 1 }
+      events\WUW_Germany.txt  L22781 : check_variable = { GER_ascended_advisor_2 = 1 }
+      events\WUW_Germany.txt  L22782 : check_variable = { GER_ascended_advisor_3 = 1 }
+      events\WUW_Germany.txt  L22797 : check_variable = { GER_ascended_advisor_1 = 0 }
+      events\WUW_Germany.txt  L22798 : check_variable = { GER_ascended_advisor_2 = 0 }
+      events\WUW_Germany.txt  L22799 : check_variable = { GER_ascended_advisor_3 = 0 }
+      events\WUW_Germany.txt  L22804 : check_variable = { GER_ascended_advisor_1 = 0 }
+      events\WUW_Germany.txt  L22806 : set_variable = { GER_ascended_advisor_1 = 1 }
+      events\WUW_Germany.txt  L22810 : check_variable = { GER_ascended_advisor_2 = 0 }
+      events\WUW_Germany.txt  L22812 : set_variable = { GER_ascended_advisor_2 = 1 }
+      events\WUW_Germany.txt  L22815 : set_variable = { GER_ascended_advisor_3 = 1 }
+      events\WUW_Germany.txt  L22824 : set_variable = { GER_ascended_advisor_1 = 1 }
+      events\WUW_Germany.txt  L22851 : check_variable = { GER_ascended_advisor_2 = GER_intrigue_character }
+      events\WUW_Germany.txt  L22856 : check_variable = { GER_ascended_advisor_1 = 1 }
+      events\WUW_Germany.txt  L22857 : check_variable = { GER_ascended_advisor_2 = 1 }
+      events\WUW_Germany.txt  L22858 : check_variable = { GER_ascended_advisor_3 = 1 }
+      events\WUW_Germany.txt  L22873 : check_variable = { GER_ascended_advisor_1 = 0 }
+      events\WUW_Germany.txt  L22874 : check_variable = { GER_ascended_advisor_2 = 0 }
+      events\WUW_Germany.txt  L22875 : check_variable = { GER_ascended_advisor_3 = 0 }
+      events\WUW_Germany.txt  L22880 : check_variable = { GER_ascended_advisor_1 = 0 }
+      events\WUW_Germany.txt  L22882 : set_variable = { GER_ascended_advisor_1 = 1 }
+      events\WUW_Germany.txt  L22886 : check_variable = { GER_ascended_advisor_2 = 0 }
+      events\WUW_Germany.txt  L22888 : set_variable = { GER_ascended_advisor_2 = 1 }
+      events\WUW_Germany.txt  L22891 : set_variable = { GER_ascended_advisor_3 = 1 }
+      events\WUW_Germany.txt  L22900 : set_variable = { GER_ascended_advisor_2 = 1 }
+      events\WUW_Germany.txt  L22927 : check_variable = { GER_ascended_advisor_3 = GER_intrigue_character }
+      events\WUW_Germany.txt  L22932 : check_variable = { GER_ascended_advisor_1 = 1 }
+      events\WUW_Germany.txt  L22933 : check_variable = { GER_ascended_advisor_2 = 1 }
+      events\WUW_Germany.txt  L22934 : check_variable = { GER_ascended_advisor_3 = 1 }
+      events\WUW_Germany.txt  L22949 : check_variable = { GER_ascended_advisor_1 = 0 }
+      events\WUW_Germany.txt  L22950 : check_variable = { GER_ascended_advisor_2 = 0 }
+      events\WUW_Germany.txt  L22951 : check_variable = { GER_ascended_advisor_3 = 0 }
+      events\WUW_Germany.txt  L22956 : check_variable = { GER_ascended_advisor_1 = 0 }
+      events\WUW_Germany.txt  L22958 : set_variable = { GER_ascended_advisor_1 = 1 }
+      events\WUW_Germany.txt  L22962 : check_variable = { GER_ascended_advisor_2 = 0 }
+      events\WUW_Germany.txt  L22964 : set_variable = { GER_ascended_advisor_2 = 1 }
+      events\WUW_Germany.txt  L22967 : set_variable = { GER_ascended_advisor_3 = 1 }
+      events\WUW_Germany.txt  L22976 : set_variable = { GER_ascended_advisor_3 = 1 }
+      events\WUW_Germany.txt  L23054 : check_variable = { GER_ascended_advisor_1 = GER_intrigue_character }
+      events\WUW_Germany.txt  L23059 : check_variable = { GER_ascended_advisor_1 = 2 }
+      events\WUW_Germany.txt  L23060 : check_variable = { GER_ascended_advisor_2 = 2 }
+      events\WUW_Germany.txt  L23061 : check_variable = { GER_ascended_advisor_3 = 2 }
+      events\WUW_Germany.txt  L23076 : check_variable = { GER_ascended_advisor_1 = 0 }
+      events\WUW_Germany.txt  L23077 : check_variable = { GER_ascended_advisor_2 = 0 }
+      events\WUW_Germany.txt  L23078 : check_variable = { GER_ascended_advisor_3 = 0 }
+      events\WUW_Germany.txt  L23083 : check_variable = { GER_ascended_advisor_1 = 0 }
+      events\WUW_Germany.txt  L23085 : set_variable = { GER_ascended_advisor_1 = 2 }
+      events\WUW_Germany.txt  L23089 : check_variable = { GER_ascended_advisor_2 = 0 }
+      events\WUW_Germany.txt  L23091 : set_variable = { GER_ascended_advisor_2 = 2 }
+      events\WUW_Germany.txt  L23094 : set_variable = { GER_ascended_advisor_3 = 2 }
+      events\WUW_Germany.txt  L23103 : set_variable = { GER_ascended_advisor_1 = 2 }
+      events\WUW_Germany.txt  L23130 : check_variable = { GER_ascended_advisor_2 = GER_intrigue_character }
+      events\WUW_Germany.txt  L23135 : check_variable = { GER_ascended_advisor_1 = 2 }
+      events\WUW_Germany.txt  L23136 : check_variable = { GER_ascended_advisor_2 = 2 }
+      events\WUW_Germany.txt  L23137 : check_variable = { GER_ascended_advisor_3 = 2 }
+      events\WUW_Germany.txt  L23152 : check_variable = { GER_ascended_advisor_1 = 0 }
+      events\WUW_Germany.txt  L23153 : check_variable = { GER_ascended_advisor_2 = 0 }
+      events\WUW_Germany.txt  L23154 : check_variable = { GER_ascended_advisor_3 = 0 }
+      events\WUW_Germany.txt  L23159 : check_variable = { GER_ascended_advisor_1 = 0 }
+      events\WUW_Germany.txt  L23161 : set_variable = { GER_ascended_advisor_1 = 2 }
+      events\WUW_Germany.txt  L23165 : check_variable = { GER_ascended_advisor_2 = 0 }
+      events\WUW_Germany.txt  L23167 : set_variable = { GER_ascended_advisor_2 = 2 }
+      events\WUW_Germany.txt  L23170 : set_variable = { GER_ascended_advisor_3 = 2 }
+      events\WUW_Germany.txt  L23179 : set_variable = { GER_ascended_advisor_2 = 2 }
+      events\WUW_Germany.txt  L23206 : check_variable = { GER_ascended_advisor_3 = GER_intrigue_character }
+      events\WUW_Germany.txt  L23211 : check_variable = { GER_ascended_advisor_1 = 2 }
+      events\WUW_Germany.txt  L23212 : check_variable = { GER_ascended_advisor_2 = 2 }
+      events\WUW_Germany.txt  L23213 : check_variable = { GER_ascended_advisor_3 = 2 }
+      events\WUW_Germany.txt  L23228 : check_variable = { GER_ascended_advisor_1 = 0 }
+      events\WUW_Germany.txt  L23229 : check_variable = { GER_ascended_advisor_2 = 0 }
+      events\WUW_Germany.txt  L23230 : check_variable = { GER_ascended_advisor_3 = 0 }
+      events\WUW_Germany.txt  L23235 : check_variable = { GER_ascended_advisor_1 = 0 }
+      events\WUW_Germany.txt  L23237 : set_variable = { GER_ascended_advisor_1 = 2 }
+      events\WUW_Germany.txt  L23241 : check_variable = { GER_ascended_advisor_2 = 0 }
+      events\WUW_Germany.txt  L23243 : set_variable = { GER_ascended_advisor_2 = 2 }
+      events\WUW_Germany.txt  L23246 : set_variable = { GER_ascended_advisor_3 = 2 }
+      events\WUW_Germany.txt  L23255 : set_variable = { GER_ascended_advisor_3 = 2 }
+      events\WUW_Germany.txt  L23330 : check_variable = { GER_ascended_advisor_1 = GER_intrigue_character }
+      events\WUW_Germany.txt  L23335 : check_variable = { GER_ascended_advisor_1 = 3 }
+      events\WUW_Germany.txt  L23336 : check_variable = { GER_ascended_advisor_2 = 3 }
+      events\WUW_Germany.txt  L23337 : check_variable = { GER_ascended_advisor_3 = 3 }
+      events\WUW_Germany.txt  L23352 : check_variable = { GER_ascended_advisor_1 = 0 }
+      events\WUW_Germany.txt  L23353 : check_variable = { GER_ascended_advisor_2 = 0 }
+      events\WUW_Germany.txt  L23354 : check_variable = { GER_ascended_advisor_3 = 0 }
+      events\WUW_Germany.txt  L23359 : check_variable = { GER_ascended_advisor_1 = 0 }
+      events\WUW_Germany.txt  L23361 : set_variable = { GER_ascended_advisor_1 = 3 }
+      events\WUW_Germany.txt  L23365 : check_variable = { GER_ascended_advisor_2 = 0 }
+      events\WUW_Germany.txt  L23367 : set_variable = { GER_ascended_advisor_2 = 3 }
+      events\WUW_Germany.txt  L23370 : set_variable = { GER_ascended_advisor_3 = 3 }
+      events\WUW_Germany.txt  L23379 : set_variable = { GER_ascended_advisor_1 = 3 }
+      events\WUW_Germany.txt  L23406 : check_variable = { GER_ascended_advisor_2 = GER_intrigue_character }
+      events\WUW_Germany.txt  L23411 : check_variable = { GER_ascended_advisor_1 = 3 }
+      events\WUW_Germany.txt  L23412 : check_variable = { GER_ascended_advisor_2 = 3 }
+      events\WUW_Germany.txt  L23413 : check_variable = { GER_ascended_advisor_3 = 3 }
+      events\WUW_Germany.txt  L23428 : check_variable = { GER_ascended_advisor_1 = 0 }
+      events\WUW_Germany.txt  L23429 : check_variable = { GER_ascended_advisor_2 = 0 }
+      events\WUW_Germany.txt  L23430 : check_variable = { GER_ascended_advisor_3 = 0 }
+      events\WUW_Germany.txt  L23435 : check_variable = { GER_ascended_advisor_1 = 0 }
+      events\WUW_Germany.txt  L23437 : set_variable = { GER_ascended_advisor_1 = 3 }
+      events\WUW_Germany.txt  L23441 : check_variable = { GER_ascended_advisor_2 = 0 }
+      events\WUW_Germany.txt  L23443 : set_variable = { GER_ascended_advisor_2 = 3 }
+      events\WUW_Germany.txt  L23446 : set_variable = { GER_ascended_advisor_3 = 3 }
+      events\WUW_Germany.txt  L23455 : set_variable = { GER_ascended_advisor_2 = 3 }
+      events\WUW_Germany.txt  L23482 : check_variable = { GER_ascended_advisor_3 = GER_intrigue_character }
+      events\WUW_Germany.txt  L23487 : check_variable = { GER_ascended_advisor_1 = 3 }
+      events\WUW_Germany.txt  L23488 : check_variable = { GER_ascended_advisor_2 = 3 }
+      events\WUW_Germany.txt  L23489 : check_variable = { GER_ascended_advisor_3 = 3 }
+      events\WUW_Germany.txt  L23504 : check_variable = { GER_ascended_advisor_1 = 0 }
+      events\WUW_Germany.txt  L23505 : check_variable = { GER_ascended_advisor_2 = 0 }
+      events\WUW_Germany.txt  L23506 : check_variable = { GER_ascended_advisor_3 = 0 }
+      events\WUW_Germany.txt  L23511 : check_variable = { GER_ascended_advisor_1 = 0 }
+      events\WUW_Germany.txt  L23513 : set_variable = { GER_ascended_advisor_1 = 3 }
+      events\WUW_Germany.txt  L23517 : check_variable = { GER_ascended_advisor_2 = 0 }
+      events\WUW_Germany.txt  L23519 : set_variable = { GER_ascended_advisor_2 = 3 }
+      events\WUW_Germany.txt  L23522 : set_variable = { GER_ascended_advisor_3 = 3 }
+      events\WUW_Germany.txt  L23531 : set_variable = { GER_ascended_advisor_3 = 3 }
+      events\WUW_Germany.txt  L23606 : check_variable = { GER_ascended_advisor_1 = 1 }
+      events\WUW_Germany.txt  L23607 : check_variable = { GER_ascended_advisor_2 = 1 }
+      events\WUW_Germany.txt  L23608 : check_variable = { GER_ascended_advisor_3 = 1 }
+      events\WUW_Germany.txt  L23660 : check_variable = { GER_ascended_advisor_1 = 1 }
+      events\WUW_Germany.txt  L23661 : check_variable = { GER_ascended_advisor_2 = 1 }
+      events\WUW_Germany.txt  L23662 : check_variable = { GER_ascended_advisor_3 = 1 }
+      events\WUW_Germany.txt  L23728 : check_variable = { GER_ascended_advisor_1 = 2 }
+      events\WUW_Germany.txt  L23729 : check_variable = { GER_ascended_advisor_2 = 2 }
+      events\WUW_Germany.txt  L23730 : check_variable = { GER_ascended_advisor_3 = 2 }
+      events\WUW_Germany.txt  L23783 : check_variable = { GER_ascended_advisor_1 = 2 }
+      events\WUW_Germany.txt  L23784 : check_variable = { GER_ascended_advisor_2 = 2 }
+      events\WUW_Germany.txt  L23785 : check_variable = { GER_ascended_advisor_3 = 2 }
+      events\WUW_Germany.txt  L23850 : check_variable = { GER_ascended_advisor_1 = 3 }
+      events\WUW_Germany.txt  L23851 : check_variable = { GER_ascended_advisor_2 = 3 }
+      events\WUW_Germany.txt  L23852 : check_variable = { GER_ascended_advisor_3 = 3 }
+      events\WUW_Germany.txt  L23902 : check_variable = { GER_ascended_advisor_1 = 3 }
+      events\WUW_Germany.txt  L23903 : check_variable = { GER_ascended_advisor_2 = 3 }
+      events\WUW_Germany.txt  L23904 : check_variable = { GER_ascended_advisor_3 = 3 }
+      events\WUW_Germany.txt  L24026 : check_variable = { GER_ascended_advisor_1 = 4 }
+      events\WUW_Germany.txt  L24027 : check_variable = { GER_ascended_advisor_2 = 4 }
+      events\WUW_Germany.txt  L24028 : check_variable = { GER_ascended_advisor_3 = 4 }
+      events\WUW_Germany.txt  L24108 : check_variable = { GER_ascended_advisor_1 = 4 }
+      events\WUW_Germany.txt  L24109 : check_variable = { GER_ascended_advisor_2 = 4 }
+      events\WUW_Germany.txt  L24110 : check_variable = { GER_ascended_advisor_3 = 4 }
+      events\WUW_Germany.txt  L24199 : check_variable = { GER_ascended_advisor_1 = 5 }
+      events\WUW_Germany.txt  L24200 : check_variable = { GER_ascended_advisor_2 = 5 }
+      events\WUW_Germany.txt  L24201 : check_variable = { GER_ascended_advisor_3 = 5 }
+      events\WUW_Germany.txt  L24247 : check_variable = { GER_ascended_advisor_1 = 5 }
+      events\WUW_Germany.txt  L24248 : check_variable = { GER_ascended_advisor_2 = 5 }
+      events\WUW_Germany.txt  L24249 : check_variable = { GER_ascended_advisor_3 = 5 }
+      events\WUW_Germany.txt  L24313 : check_variable = { GER_ascended_advisor_1 = 6 }
+      events\WUW_Germany.txt  L24314 : check_variable = { GER_ascended_advisor_2 = 6 }
+      events\WUW_Germany.txt  L24315 : check_variable = { GER_ascended_advisor_3 = 6 }
+      events\WUW_Germany.txt  L24365 : check_variable = { GER_ascended_advisor_1 = 6 }
+      events\WUW_Germany.txt  L24366 : check_variable = { GER_ascended_advisor_2 = 6 }
+      events\WUW_Germany.txt  L24367 : check_variable = { GER_ascended_advisor_3 = 6 }
+      events\WUW_Germany.txt  L24433 : check_variable = { GER_ascended_advisor_1 = 7 }
+      events\WUW_Germany.txt  L24434 : check_variable = { GER_ascended_advisor_2 = 7 }
+      events\WUW_Germany.txt  L24435 : check_variable = { GER_ascended_advisor_3 = 7 }
+      events\WUW_Germany.txt  L24485 : check_variable = { GER_ascended_advisor_1 = 7 }
+      events\WUW_Germany.txt  L24486 : check_variable = { GER_ascended_advisor_2 = 7 }
+      events\WUW_Germany.txt  L24487 : check_variable = { GER_ascended_advisor_3 = 7 }
+  ====== GER_inner_circle_set_ascension_cd  (8 处)
+      common\scripted_effects\GER_scripted_effects.txt  L3054 : GER_inner_circle_set_ascension_cd = {
+      common\national_focus\germany.txt  L18409 : GER_inner_circle_set_ascension_cd = yes
+      common\national_focus\germany.txt  L18756 : GER_inner_circle_set_ascension_cd = yes
+      common\national_focus\germany.txt  L19253 : GER_inner_circle_set_ascension_cd = yes
+      common\national_focus\germany.txt  L19743 : GER_inner_circle_set_ascension_cd = yes
+      common\national_focus\germany.txt  L20490 : GER_inner_circle_set_ascension_cd = yes
+      common\national_focus\germany.txt  L20822 : GER_inner_circle_set_ascension_cd = yes
+      common\national_focus\germany.txt  L20959 : GER_inner_circle_set_ascension_cd = yes
+  ====== GER_inner_circle_is_ascension_cd_over  (8 处)
+      common\scripted_triggers\GER_scripted_triggers.txt  L1470 : GER_inner_circle_is_ascension_cd_over = {
+      common\national_focus\germany.txt  L18316 : GER_inner_circle_is_ascension_cd_over = yes
+      common\national_focus\germany.txt  L18664 : GER_inner_circle_is_ascension_cd_over = yes
+      common\national_focus\germany.txt  L19161 : GER_inner_circle_is_ascension_cd_over = yes
+      common\national_focus\germany.txt  L19647 : GER_inner_circle_is_ascension_cd_over = yes
+      common\national_focus\germany.txt  L20398 : GER_inner_circle_is_ascension_cd_over = yes
+      common\national_focus\germany.txt  L20730 : GER_inner_circle_is_ascension_cd_over = yes
+      common\national_focus\germany.txt  L20867 : GER_inner_circle_is_ascension_cd_over = yes
+  ====== GER_ascending_advisor  (46 处)
+      common\scripted_effects\GER_scripted_effects.txt  L2275 : check_variable = { GER_ascending_advisor = 1 }
+      common\scripted_effects\GER_scripted_effects.txt  L2281 : check_variable = { GER_ascending_advisor = 2 }
+      common\scripted_effects\GER_scripted_effects.txt  L2287 : check_variable = { GER_ascending_advisor = 3 }
+      common\scripted_effects\GER_scripted_effects.txt  L2293 : check_variable = { GER_ascending_advisor = 4 }
+      common\scripted_effects\GER_scripted_effects.txt  L2299 : check_variable = { GER_ascending_advisor = 5 }
+      common\scripted_effects\GER_scripted_effects.txt  L2305 : check_variable = { GER_ascending_advisor = 6 }
+      common\scripted_effects\GER_scripted_effects.txt  L2311 : check_variable = { GER_ascending_advisor = 7 }
+      common\scripted_effects\GER_scripted_effects.txt  L2316 : log = "Something bad happened trying to add advisor [?GER_ascending_advisor] effects."
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2190 : check_variable = { GER_ascending_advisor = 1 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2196 : check_variable = { GER_ascending_advisor = 2 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2202 : check_variable = { GER_ascending_advisor = 3 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2208 : check_variable = { GER_ascending_advisor = 4 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2214 : check_variable = { GER_ascending_advisor = 5 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2220 : check_variable = { GER_ascending_advisor = 6 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2226 : check_variable = { GER_ascending_advisor = 7 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2236 : check_variable = { GER_ascending_advisor = 1 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2242 : check_variable = { GER_ascending_advisor = 2 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2248 : check_variable = { GER_ascending_advisor = 3 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2254 : check_variable = { GER_ascending_advisor = 4 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2260 : check_variable = { GER_ascending_advisor = 5 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2266 : check_variable = { GER_ascending_advisor = 6 }
+      common\scripted_localisation\WUW_GER_scripted_loc.txt  L2272 : check_variable = { GER_ascending_advisor = 7 }
+      common\national_focus\germany.txt  L18369 : set_variable = { GER_ascending_advisor = 1 }
+      common\national_focus\germany.txt  L18717 : set_variable = { GER_ascending_advisor = 2 }
+      common\national_focus\germany.txt  L19214 : set_variable = { GER_ascending_advisor = 3 }
+      common\national_focus\germany.txt  L19700 : set_variable = { GER_ascending_advisor = 4 }
+      common\national_focus\germany.txt  L20451 : set_variable = { GER_ascending_advisor = 5 }
+      common\national_focus\germany.txt  L20783 : set_variable = { GER_ascending_advisor = 6 }
+      common\national_focus\germany.txt  L20920 : set_variable = { GER_ascending_advisor = 7 }
+      events\WUW_Germany.txt  L21858 : check_variable = { GER_ascending_advisor = 4 } #Himmler Ascending
+      events\WUW_Germany.txt  L21867 : set_variable = { GER_ascended_advisor_1 = GER_ascending_advisor }
+      events\WUW_Germany.txt  L21872 : clear_variable = GER_ascending_advisor
+      events\WUW_Germany.txt  L21885 : check_variable = { GER_ascending_advisor = 4 } #Himmler Ascending
+      events\WUW_Germany.txt  L21894 : set_variable = { GER_ascended_advisor_2 = GER_ascending_advisor }
+      events\WUW_Germany.txt  L21899 : clear_variable = GER_ascending_advisor
+      events\WUW_Germany.txt  L21912 : check_variable = { GER_ascending_advisor = 4 } #Himmler Ascending
+      events\WUW_Germany.txt  L21921 : set_variable = { GER_ascended_advisor_3 = GER_ascending_advisor }
+      events\WUW_Germany.txt  L21926 : clear_variable = GER_ascending_advisor
+      events\WUW_Germany.txt  L21940 : check_variable = { GER_ascending_advisor = 1 }
+      events\WUW_Germany.txt  L21950 : check_variable = { GER_ascending_advisor = 2 }
+      events\WUW_Germany.txt  L21960 : check_variable = { GER_ascending_advisor = 3 }
+      events\WUW_Germany.txt  L21970 : check_variable = { GER_ascending_advisor = 4 }
+      events\WUW_Germany.txt  L21980 : check_variable = { GER_ascending_advisor = 5 }
+      events\WUW_Germany.txt  L21990 : check_variable = { GER_ascending_advisor = 6 }
+      events\WUW_Germany.txt  L22000 : check_variable = { GER_ascending_advisor = 7 }
+      events\WUW_Germany.txt  L22014 : clear_variable = GER_ascending_advisor
+

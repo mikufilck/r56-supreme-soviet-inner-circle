@@ -1,0 +1,128 @@
+[
+  {
+    "id": "hof_ic_bukharin_economics_of_transition",
+    "name": "GFX_hof_ic_bukharin_economics_of_transition",
+    "title": "过渡时期的经济",
+    "group": "bukharin",
+    "concept": "An ivory sculpted bridge linking a wheat field on the left to a compact factory on the right, unfinished final bridge segment being fitted, strong simple silhouettes. Transition and connection between agriculture and industry.",
+    "size": [
+      100,
+      88
+    ],
+    "source": "bukharin/source/GFX_hof_ic_bukharin_economics_of_transition.png",
+    "generation_record": "bukharin/records/GFX_hof_ic_bukharin_economics_of_transition.json",
+    "status": "pending"
+  },
+  {
+    "id": "hof_ic_bukharin_nep_is_not_a_retreat",
+    "name": "GFX_hof_ic_bukharin_nep_is_not_a_retreat",
+    "title": "新经济政策不是退却",
+    "group": "bukharin",
+    "concept": "A bold ivory road arrow sweeping FORWARD and upward, flanked by a simple worker's hammer and a sheaf of wheat, unity moving forward, no soldiers or human figures.",
+    "size": [
+      100,
+      88
+    ],
+    "source": "bukharin/source/GFX_hof_ic_bukharin_nep_is_not_a_retreat.png",
+    "generation_record": "bukharin/records/GFX_hof_ic_bukharin_nep_is_not_a_retreat.json",
+    "status": "pending"
+  },
+  {
+    "id": "hof_ic_bukharin_abolish_the_tribute",
+    "name": "GFX_hof_ic_bukharin_abolish_the_tribute",
+    "title": "取消「贡款」",
+    "group": "bukharin",
+    "concept": "A large broken tax-collection seal beside a completely BLANK folded requisition paper, a snapped rope around a wheat sheaf in foreground. Controlled confrontational symbolism, no readable marks on seal/paper, no money.",
+    "size": [
+      100,
+      88
+    ],
+    "source": "bukharin/source/GFX_hof_ic_bukharin_abolish_the_tribute.png",
+    "generation_record": "bukharin/records/GFX_hof_ic_bukharin_abolish_the_tribute.json",
+    "status": "pending"
+  },
+  {
+    "id": "hof_ic_bukharin_alliance_is_the_axis",
+    "name": "GFX_hof_ic_bukharin_alliance_is_the_axis",
+    "title": "工农联盟是轴心",
+    "group": "bukharin",
+    "concept": "A central solid mechanical axle and wheel hub joining an ivory worker's hammer on left and a sheaf of wheat on right, radiating sturdy spokes. Clear axis/union imagery, no handshake.",
+    "size": [
+      100,
+      88
+    ],
+    "source": "bukharin/source/GFX_hof_ic_bukharin_alliance_is_the_axis.png",
+    "generation_record": "bukharin/records/GFX_hof_ic_bukharin_alliance_is_the_axis.json",
+    "status": "pending"
+  },
+  {
+    "id": "hof_ic_bukharin_enrich_yourselves",
+    "name": "GFX_hof_ic_bukharin_enrich_yourselves",
+    "title": "发财吧",
+    "group": "bukharin",
+    "concept": "An abundant ivory grain barn with open doors full of harvested wheat sheaves, one simple hand plough in foreground. Productive rural prosperity. Absolutely NO coins, money, currency, numbers or lettering.",
+    "size": [
+      100,
+      88
+    ],
+    "source": "bukharin/source/GFX_hof_ic_bukharin_enrich_yourselves.png",
+    "generation_record": "bukharin/records/GFX_hof_ic_bukharin_enrich_yourselves.json",
+    "status": "pending"
+  },
+  {
+    "id": "hof_ic_bukharin_proportional_development",
+    "name": "GFX_hof_ic_bukharin_proportional_development",
+    "title": "按比例发展",
+    "group": "bukharin",
+    "concept": "Two equal-sized ivory intermeshing industrial gears, one enclosing a small wheat relief and the other a factory relief, measured balanced growth, a drafting divider below them. Not a weighing scale.",
+    "size": [
+      100,
+      88
+    ],
+    "source": "bukharin/source/GFX_hof_ic_bukharin_proportional_development.png",
+    "generation_record": "bukharin/records/GFX_hof_ic_bukharin_proportional_development.json",
+    "status": "pending"
+  },
+  {
+    "id": "hof_ic_bukharin_cooperatives_into_the_system",
+    "name": "GFX_hof_ic_bukharin_cooperatives_into_the_system",
+    "title": "合作社长入",
+    "group": "bukharin",
+    "concept": "Three small ivory rural cooperative houses linked by broad converging channels to a larger three-column institutional bank building behind, integration into a shared system, readable bold architectural silhouettes. No currency or coins.",
+    "size": [
+      100,
+      88
+    ],
+    "source": "bukharin/source/GFX_hof_ic_bukharin_cooperatives_into_the_system.png",
+    "generation_record": "bukharin/records/GFX_hof_ic_bukharin_cooperatives_into_the_system.json",
+    "status": "pending"
+  },
+  {
+    "id": "hof_ic_bukharin_left_communism",
+    "name": "GFX_hof_ic_bukharin_left_communism",
+    "title": "左翼共产主义",
+    "group": "bukharin",
+    "concept": "A DARKER gunmetal sword and agricultural plough facing in opposition across a sharp jagged divide; small single upward assault arrow behind. Ominous compressed shield-shaped deep burgundy backing, tarnished restrained bronze laurel, much darker than other icons, stern alternate path. No blood, people, text or real-world hate symbols.",
+    "size": [
+      100,
+      88
+    ],
+    "source": "bukharin/source/GFX_hof_ic_bukharin_left_communism.png",
+    "generation_record": "bukharin/records/GFX_hof_ic_bukharin_left_communism.json",
+    "status": "pending"
+  },
+  {
+    "id": "hof_ic_bukharin_socialism_in_one_country",
+    "name": "GFX_hof_ic_bukharin_socialism_in_one_country",
+    "title": "一国建成社会主义",
+    "group": "bukharin",
+    "concept": "A complete self-contained ivory sculpted industrial-agricultural state: broad factory and new buildings rising within a continuous enclosing boundary, wheat and compact turbine in foreground, cohesive completed construction. Most full and ceremonial composition in series, dense but legible, not a globe and not a turtle.",
+    "size": [
+      100,
+      88
+    ],
+    "source": "bukharin/source/GFX_hof_ic_bukharin_socialism_in_one_country.png",
+    "generation_record": "bukharin/records/GFX_hof_ic_bukharin_socialism_in_one_country.json",
+    "status": "pending"
+  }
+]

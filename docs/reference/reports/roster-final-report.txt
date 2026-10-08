@@ -1,0 +1,92 @@
+﻿角色                             civilian.large                     army.large                         结论
+--------------------------------------------------------------------------------------------------------------------------
+SOV_lev_trotsky                gfx/leaders/SOV/r56_portrait_SOV_Leon_Trotsky.dds gfx/leaders/SOV/r56_portrait_SOV_Leon_Trotsky.dds ? 有可用大幅立绘（.dds）
+SOV_karl_radek                 -                                  -                                  ? 只有小图，需补大图
+SOV_yevgeny_preobrazhensky     -                                  -                                  ? 只有小图，需补大图
+SOV_ivar_smilga                -                                  -                                  ? 只有小图，需补大图
+SOV_ivan_smirnov               GFX_portrait_SOV_ivan_smirnov      -                                  ? 有可用大幅立绘（sprite）
+SOV_grigory_zinovyev           GFX_portrait_SOV_grigory_zinovyev  -                                  ? 有可用大幅立绘（sprite）
+SOV_lev_kamenev                GFX_portrait_SOV_lev_kamenev       -                                  ? 有可用大幅立绘（sprite）
+SOV_nikolay_bukharin           GFX_portrait_SOV_nikolay_bukharin  -                                  ? 有可用大幅立绘（sprite）
+SOV_aleksey_rykov              GFX_portrait_SOV_aleksey_rykov     -                                  ? 有可用大幅立绘（sprite）
+SOV_mikhail_tomsky             -                                  -                                  ? 只有小图，需补大图
+SOV_martemyan_ryutin           -                                  -                                  ? 只有小图，需补大图
+SOV_grigory_sokolnikov         -                                  -                                  ? 只有小图，需补大图
+SOV_aleksandr_shlyapnikov      -                                  -                                  ? 只有小图，需补大图
+SOV_vyacheslav_molotov         -                                  -                                  ? 只有小图，需补大图
+SOV_lazar_kaganovich           -                                  -                                  ? 只有小图，需补大图
+SOV_mikhail_kalinin            -                                  -                                  ? 只有小图，需补大图
+SOV_kliment_voroshilov         -                                  GFX_portrait_SOV_kliment_voroshilov ? 有可用大幅立绘（sprite）
+SOV_mikhail_tukhachevsky       -                                  gfx/leaders/SOV/Portrait_Soviet_Mikhail_Tukhachevsky.dds ? 有可用大幅立绘（.dds）
+SOV_maksim_litvinov            -                                  -                                  ? 只有小图，需补大图
+SOV_supreme_soviet             GFX_portrait_SOV_supreme_soviet    -                                  ? 有可用大幅立绘（sprite）
+SOV_genrikh_yagoda             -                                  -                                  ? 只有小图，需补大图
+SOV_nikolay_yezhov             -                                  gfx/leaders/SOV/r56_portrait_SOV_Nikolai_Yezhov.dds ? 有可用大幅立绘（.dds）
+SOV_lavrenty_beriya            GFX_portrait_SOV_lavrenty_beriya   -                                  ? 有可用大幅立绘（sprite）
+SOV_georgy_malenkow            gfx/leaders/SOV/r56_portrait_SOV_Georgy_Malenkov.dds -                                  ? 有可用大幅立绘（.dds）
+SOV_nikita_khrushchyov         gfx/leaders/SOV/r56_portrait_SOV_Nikita_Khrushchev.dds -                                  ? 有可用大幅立绘（.dds）
+SOV_nikolay_voznesensky        -                                  -                                  ? 只有小图，需补大图
+SOV_pyotr_smirnov              -                                  -                                  ? 只有小图，需补大图
+SOV_vsevolod_merkulov          -                                  -                                  ? 只有小图，需补大图
+--------------------------------------------------------------------------------------------------------------------------
+有大幅立绘 13 个 / 只有小图 15 个 / 角色块不存在 9 个
+
+=== 有大幅立绘的 ===
+   SOV_lev_trotsky
+   SOV_ivan_smirnov
+   SOV_grigory_zinovyev
+   SOV_lev_kamenev
+   SOV_nikolay_bukharin
+   SOV_aleksey_rykov
+   SOV_kliment_voroshilov
+   SOV_mikhail_tukhachevsky
+   SOV_supreme_soviet
+   SOV_nikolay_yezhov
+   SOV_lavrenty_beriya
+   SOV_georgy_malenkow
+   SOV_nikita_khrushchyov
+
+=== 只有小图、需要补的 ===
+   SOV_karl_radek
+   SOV_yevgeny_preobrazhensky
+   SOV_ivar_smilga
+   SOV_mikhail_tomsky
+   SOV_martemyan_ryutin
+   SOV_grigory_sokolnikov
+   SOV_aleksandr_shlyapnikov
+   SOV_vyacheslav_molotov
+   SOV_lazar_kaganovich
+   SOV_mikhail_kalinin
+   SOV_maksim_litvinov
+   SOV_genrikh_yagoda
+   SOV_nikolay_voznesensky
+   SOV_pyotr_smirnov
+   SOV_vsevolod_merkulov
+
+=== 角色块不存在的（需新建）===
+   SOV_leonid_serebryakov
+   SOV_grigory_ordzhonikidze
+   SOV_felix_dzerzhinsky
+   SOV_valerian_kuibyshev
+   SOV_sergei_kirov
+   SOV_anastas_mikoyan
+   SOV_grigory_pyatakov
+   SOV_nikolai_muralov
+   SOV_alexandra_kollontai
+
+=== 需补图角色的「小图」sprite 与文件路径（给 GPT 当参考用）===
+   SOV_karl_radek                 GFX_idea_SOV_karl_radek                  F:\Hearts of Iron IV\gfx\interface\ideas\idea_SOV_karl_radek.dds
+   SOV_yevgeny_preobrazhensky     GFX_idea_SOV_yevgeny_preobrazhensky      F:\Hearts of Iron IV\gfx\interface\ideas\idea_SOV_yevgeny_preobrazhensky.dds
+   SOV_ivar_smilga                GFX_idea_SOV_ivar_smilga_imprisoned      F:\Hearts of Iron IV\gfx\interface\ideas\idea_SOV_ivar_smilga_imprisoned.dds
+   SOV_mikhail_tomsky             GFX_idea_SOV_mikhail_tomsky              F:\Hearts of Iron IV\gfx\interface\ideas\idea_SOV_mikhail_tomsky.dds
+   SOV_martemyan_ryutin           GFX_idea_SOV_martemyan_ryutin_imprisoned F:\Hearts of Iron IV\gfx\interface\ideas\idea_SOV_martemyan_ryutin_imprisoned.dds
+   SOV_grigory_sokolnikov         GFX_idea_SOV_grigory_sokolnikov          F:\Hearts of Iron IV\gfx\interface\ideas\idea_SOV_grigory_sokolnikov.dds
+   SOV_aleksandr_shlyapnikov      GFX_idea_SOV_aleksandr_shlyapnikov_imprisoned F:\Hearts of Iron IV\gfx\interface\ideas\idea_SOV_aleksandr_shlyapnikov_imprisoned.dds
+   SOV_vyacheslav_molotov         GFX_idea_SOV_vyacheslav_molotov          F:\Hearts of Iron IV\gfx\interface\ideas\idea_SOV_vyacheslav_molotov.dds
+   SOV_lazar_kaganovich           GFX_idea_SOV_lazar_kaganovich            F:\Hearts of Iron IV\gfx\interface\ideas\idea_SOV_lazar_kaganovich.dds
+   SOV_mikhail_kalinin            GFX_idea_mikhail_kalinin                 F:\Hearts of Iron IV\gfx\interface\ideas\idea_mikhail_kalinin.dds
+   SOV_maksim_litvinov            GFX_idea_SOV_maksim_litvinov             F:\Hearts of Iron IV\gfx\interface\ideas\idea_SOV_maksim_litvinov.dds
+   SOV_genrikh_yagoda             GFX_idea_SOV_genrikh_yagoda              F:\Hearts of Iron IV\gfx\interface\ideas\idea_SOV_genrikh_yagoda.dds
+   SOV_nikolay_voznesensky        GFX_idea_SOV_nikolay_voznesensky         F:\Hearts of Iron IV\gfx\interface\ideas\idea_SOV_nikolay_voznesensky.dds
+   SOV_pyotr_smirnov              GFX_idea_pyotr_smirnov                   F:\Hearts of Iron IV\gfx\interface\ideas\idea_pyotr_smirnov.dds
+   SOV_vsevolod_merkulov          GFX_idea_soviet_vsevolod_merkulov        F:\Hearts of Iron IV\gfx\interface\ideas\idea_soviet_vsevolod_merkulov.dds

@@ -1,0 +1,57 @@
+[
+  {
+    "id": "hof_ic_serebryakov_kostroma",
+    "name": "GFX_hof_ic_serebryakov_kostroma",
+    "title": "科斯特罗马的驻军",
+    "concept": "Low ground-level view of many boots and lower legs of a tightly grouped 1917 Russian garrison walking OUT through an open snowy barracks gate. Only lower bodies, coat hems and slung rifle silhouettes, no torsos or faces. Strong foreground boots and tracks, snowy barracks behind, crowded outward movement, cold blue-grey ivory relief.",
+    "group": "serebryakov",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_serebryakov_central_committee",
+    "name": "GFX_hof_ic_serebryakov_central_committee",
+    "title": "党中央书记处",
+    "concept": "Pure abstract organizational network with no physical objects: many thin silver-grey embossed strands enter from all four sides, weave and intersect through small nodes, then converge onto ONE large crimson red circular central hub. Deep charcoal textured backing inside medallion. Structured yet interwoven connections, clear red hub dominating. No books, papers, stamps, buildings, maps or people.",
+    "group": "serebryakov",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_serebryakov_commissariat_of_transport",
+    "name": "GFX_hof_ic_serebryakov_commissariat_of_transport",
+    "title": "交通人民委员部",
+    "concept": "Railway junction seen from an elevated oblique angle: three clearly constructed railway tracks merge through working switch points into ONE line toward horizon, large switch lever in foreground, compact signal tower at side and tiny distant freight wagons. Main subject is merging rails and switch mechanism, not locomotive. Rust-brown and smoke-grey ivory relief. No water, no river, NO BRIDGE, no snow.",
+    "group": "serebryakov",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_serebryakov_highways_and_motor_transport",
+    "name": "GFX_hof_ic_serebryakov_highways_and_motor_transport",
+    "title": "公路与汽车运输总局",
+    "concept": "A straight early 1930s paved/gravel highway extends from broad lower edge to distant horizon through open dry grasslands. ONE vintage 1930s boxy truck viewed from behind, small plain blank milestone posts at roadsides. Broad continuous road surface clearly distinct from railway rails, warm ochre ground and pale blue far sky, engraved miniature relief. No railways or snow.",
+    "group": "serebryakov",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_serebryakov_brilliant_worker",
+    "name": "GFX_hof_ic_serebryakov_brilliant_worker",
+    "title": "天才的工人",
+    "concept": "Closest and warmest culmination: a mechanically plausible old manual metal-turning LATHE close-up, prominent three-jaw chuck firmly holding a freshly turned stepped cylindrical steel workpiece, aligned tool post and cutting tool on carriage. A worker's ONE bare anatomically correct hand operates a handwheel safely away from rotating chuck. No head or face. Warm golden highlights on polished metal against cool workshop shadows, faint workshop window and city silhouettes behind. Lathe and finished part dominate, fullest intricate composition, clear machine geometry, no gears floating as symbols.",
+    "group": "serebryakov",
+    "size": [
+      100,
+      88
+    ]
+  }
+]

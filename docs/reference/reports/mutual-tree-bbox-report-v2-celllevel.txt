@@ -1,0 +1,85 @@
+!!! 2026-09-21 作废警告 !!!
+
+本文件的【Ymax】栏是错的 —— 它只是把每个 focus 块的 `y =` 字面值取了最大，
+**没有沿 `relative_position_id` 链式累加**。HOI4 里 `x`/`y` 是【相对父节点】的增量，
+所以必须链式解析。
+
+实测：soviet_focus 里最深的节点是 y = 23（我们自己的个人线结局
+`hof_ic_kalinin_the_all_union_elder` 等，`relative_position_id = hof_ic_seat_<人>`、16 + 7），
+而本文件写的是 7。⇒ **本文件的 Ymax 全部不可信**（X 栏亦有同类风险）。
+
+✅ 现在这条检查已改成【每次自检现场实测】，见 `build/verify-s2.ps1` §13h。
+📌 教训与 `docs/99` §47.14（旧 MaxX 表错）同型：**一次性报告会静默过期，能现场算就不要写死。**
+
+=============================================================================
+=============================================================================
+ 互助会联合国策（需求 C）选址勘查 —— 21 棵树【逐格】实测（v2 · 2026-09-20）
+ 生成者：本次会话的 Python 逐格解析（brace-match，只取 focus_tree 下一层的 focus 块）
+ ⚠️ 本文件【取代】旧版 mutual-tree-bbox-report.txt 的 X/Y 数 —— 旧版不可信，见文末「旧版错在哪」
+=============================================================================
+
+挂载点            TAG  树 id                          节点          实测 X   旧表 Xmax  实测 Ymax
+--------------------------------------------------------------------------------
+sov_core       SOV  soviet_focus                 624    -24..61            81        7
+prc_sino       PRC  china_communist_focus_sea    203    -24..39            64        3
+mon_mutual     MON  Mongolia_focus               292    -52..30            36        4
+fin_mutual     FIN  finnish_focus                205     -6..17            41        3
+swe_std        SWE  sweden_focus                 169    -17..14            35        7
+nor_std        NOR  norwegian_focus              194     -6..20            94        4
+den_std        DEN  danish_focus                 175    -10..30            67        5
+ice_std        ICE  iceland_tree                  90     -3..35            37        1
+afg_r56        AFG  r56_afghanistan_focus        251    -14..87            87        2
+sau_mutual     SAU  saudi_focus                   65     -6..11             6        3
+phi_std        PHI  philippines_focus            170     -7..65            73       11
+cub_mutual     CUB  cuban_focus                  136    -10..48            72        5
+arg_std        ARG  argentine_focus_tree         150    -12..34            39        3
+eth_std        ETH  ethiopia_tree                204     -6..69            75        3
+fra_std        FRA  french_focus                 231    -10..67            20        7
+pol_mutual     POL  polish_focus                 339     -8..54            46        4
+hun_wuw        HUN  wuw_hungarian_focus          238     -7..55            90        4
+est_std        EST  estonia_tree                  59     -5..45            49        3
+lat_std        LAT  latvia_tree                   57     -2..34            48        2
+lit_std        LIT  lithuania_tree                86     -5..34            56        3
+ast_std        AST  australia_taog_focus         217     -9..125          127        3
+
+=== 关键结论 ===
+① **21 棵树真实 Y 最大 = 11（philippines_focus）**，不是旧版说的 22。
+   ⇒ S5 通用线带子放在 y = 24..30，对【全部 21 棵树】都是空区（最少空出 13 行）。
+② **旧版 X 最大普遍是错的**，最离谱三处直接导致带子压进树身：
+   · french_focus    旧表 20 → 实测 67（带子 [23,65] ⇒ 压 2 格）
+   · saudi_focus     旧表  6 → 实测 11（带子 [ 9,51] ⇒ 压 1 格）
+   · polish_focus    旧表 46 → 实测 54（带子 [49,91] ⇒ 压 1 格）
+   ⭐ 而 **r56_afghanistan_focus 旧表 87 = 实测 87（唯一完全对上的）**
+      —— 这正是用户观察到「**阿富汗的经互会是正常的，有些国家的就会重叠**」的原因。
+
+=== 旧版错在哪 ===
+旧报告 mutual-tree-bbox-report.txt 由 build/../docs/reference/tools/scan-mutual-tree-bbox.ps1 生成。
+它把文件里【所有】`x = <数>` 行都算进了包围盒 —— 包括 focus 块内部的
+`offset = { x = … }` / `initial_show_position = { x = … }` 等，于是 X 最大被抬高
+（如 norwegian_focus 旧 94 / 实测 20）；而个别树反而偏小（french_focus 20 / 实测 67），
+说明它还有别的解析缺口。
+⇒ ⛔ **该脚本的读数不要再用于选址**。要用就改成「brace-match 只取 focus_tree 下一层的 focus 块」。
+📌 S5 v7 的对策是【彻底不用这张表】—— 带子放在所有树下方，不做逐国微调。
+
+=== 逐棵树的撞格明细（旧 v6 的 offset 落点）===
+  soviet_focus               带子 x[84,126] × y[0,6]  撞格 0
+  china_communist_focus_sea  带子 x[67,109] × y[0,6]  撞格 0
+  Mongolia_focus             带子 x[39,81] × y[0,6]  撞格 0
+  finnish_focus              带子 x[44,86] × y[0,6]  撞格 0
+  sweden_focus               带子 x[38,80] × y[0,6]  撞格 0
+  norwegian_focus            带子 x[97,139] × y[0,6]  撞格 0
+  danish_focus               带子 x[70,112] × y[0,6]  撞格 0
+  iceland_tree               带子 x[40,82] × y[0,6]  撞格 0
+  r56_afghanistan_focus      带子 x[90,132] × y[0,6]  撞格 0
+  saudi_focus                带子 x[9,51] × y[0,6]  撞格 1
+  philippines_focus          带子 x[76,118] × y[0,6]  撞格 0
+  cuban_focus                带子 x[75,117] × y[0,6]  撞格 0
+  argentine_focus_tree       带子 x[42,84] × y[0,6]  撞格 0
+  ethiopia_tree              带子 x[78,120] × y[0,6]  撞格 0
+  french_focus               带子 x[23,65] × y[0,6]  撞格 2
+  polish_focus               带子 x[49,91] × y[0,6]  撞格 1
+  wuw_hungarian_focus        带子 x[93,135] × y[0,6]  撞格 0
+  estonia_tree               带子 x[52,94] × y[0,6]  撞格 0
+  latvia_tree                带子 x[51,93] × y[0,6]  撞格 0
+  lithuania_tree             带子 x[59,101] × y[0,6]  撞格 0
+  australia_taog_focus       带子 x[130,172] × y[0,6]  撞格 0

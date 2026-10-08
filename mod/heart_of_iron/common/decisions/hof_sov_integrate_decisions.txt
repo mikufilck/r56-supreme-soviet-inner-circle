@@ -1,0 +1,388 @@
+# ============================================================================
+#  hof_sov_integrate_decisions.txt
+#  苏联「整合加盟共和国」决议组 —— 决议定义
+#
+#  用户口径（2026-09-25，原文）：
+#    「我要给苏联加一个决议组，仿照中华民国的整合军阀
+#      决议组名叫整合加盟共和国
+#      当波罗的海三国是苏联的附庸且为共产主义政体时，可以点击决议，决议持续15天，
+#      其所有科学家，没有"反布尔什维克老兵"特质的陆军和海军将领将加入苏联，同时被苏联吞并
+#      当斯堪的那维亚四国和土耳其是苏联的附庸且为共产主义政体时，可以点击决议，
+#      决议持续30天，其所有科学家，陆军和海军将领将加入苏联，同时被苏联吞并
+#      当波兰是苏联的附庸且为共产主义政体时，可以点击决议，决议持续15天，
+#      其所有科学家，没有"萨纳齐亚右派指挥官"特质的陆军和海军将领加入苏联，同时被苏联吞并
+#      这个决议组在完成"宣称波罗的海"国策后可用」
+#
+#  用户第二道口径（同日，**拆开** —— 本文件据此改为【一国一条】）：
+#    「是去掉丹麦冰岛，挪威瑞典芬兰，还有是要拆出来的，
+#      波罗的海也是也要拆出来三个国家，不是全部一起」
+#    ⇒ ① 去掉 DEN / ICE；北欧三国 = 挪威 / 瑞典 / 芬兰（土耳其照原口径保留）
+#      ② ⭐ **一国一条决议**（共 8 条），不再「全部一起」
+#
+#  设计出处：docs/101-sov-integrate-union-republics.md
+#  脚本编码：UTF-8 无 BOM + CRLF（AGENTS.md 硬性规则 3）
+#
+#  ⚠️ 决议与分类的关联方式 = 【同名顶层块】，不是字段。
+#     本文件里的 `hof_sov_integrate_category = { ... }` 是【决议容器】；
+#     分类属性写在 common/decisions/categories/hof_sov_integrate_categories.txt 的【同名块】里。
+#
+#  ⭐ 语法全部照原版先例（不臆造）：
+#    · 模板 = 原版 common/decisions/CHI_decisions.txt 的 CHI_integrate_the_warlords
+#      （中华民国「整合军阀」）：targeted decision + `target_array = subjects`
+#      + `target_root_trigger` / `target_trigger` + `days_remove` + `remove_effect`
+#    · 角色转移 = `every_unit_leader = { set_nationality = ROOT }`
+#      —— 原版 CHI_decisions.txt L2447-2451 逐字同款
+#      · set_nationality 文档（effects_documentation.md #set_nationality）：
+#        "Transfer from one country to another for the character in scope."
+#      · 原版【决议】里 set_nationality 的先例：common/decisions/BUL.txt L4115
+#    · 吞并 = `annex_country = { target = FROM transfer_troops = yes }`
+#      —— 原版 CHI_decisions.txt L2927 / BUL.txt L8899-9022 同款
+#    · 特质过滤 = `NOT = { has_trait = X }`
+#      —— 原版 common/scripted_effects/POL_scripted_effects.txt L369 逐字同款
+#    · `every_scientist` —— R56 common/national_focus/australia.txt L3912 在用（无 DLC 保护）
+#
+#  ⚠️ 两个特质 id 都是【裸 id、没有 trait_ 前缀】，出处：
+#     common/unit_leader/NSB_traits.txt 的 `BALTIC_anti_bolshevik = { type = all ... }`
+#     / `POL_sanation_right_leader = { type = all ... }`
+#
+#  ⚠️ **一条决议只许有一个 tag** —— 这就是用户要的「不是全部一起」。
+#     verify-s2 §18 会断言每个块里的 `tag = ` 恰好 1 处；多写就会被判失败。
+# ============================================================================
+
+hof_sov_integrate_category = {
+
+	# ════════════════════════════════════════════════════════════════
+	#  A. 波罗的海三国 —— 各 15 天（EST / LAT / LIT 各一条）
+	#     排除带 `BALTIC_anti_bolshevik`（「反布尔什维克老兵」）的将领
+	#     昵称「整合爱沙尼亚 / 拉脱维亚 / 立陶宛加盟共和国」
+	# ════════════════════════════════════════════════════════════════
+
+	hof_sov_integrate_estonia = {
+		icon = GFX_decision_generic_form_nation
+		cost = 100
+		days_remove = 15
+		fire_only_once = yes
+		cancel_if_not_visible = yes
+		ai_will_do = { base = 1 }
+		target_array = subjects
+
+		target_root_trigger = { has_completed_focus = SOV_claims_in_baltic }
+		target_trigger = { FROM = { tag = EST } }
+
+		visible = {
+			FROM = {
+				is_subject_of = ROOT
+				has_government = communism
+			}
+		}
+		available = {
+			FROM = {
+				is_subject_of = ROOT
+				has_government = communism
+			}
+		}
+
+		remove_effect = {
+			# ⚠️ 先转角色、后吞并 —— 顺序不能反（吞并后角色就没了）
+			FROM = {
+				every_scientist = {
+					set_nationality = ROOT
+				}
+				every_unit_leader = {
+					include_invisible = yes
+					limit = { NOT = { has_trait = BALTIC_anti_bolshevik } }
+					set_nationality = ROOT
+				}
+			}
+			ROOT = { annex_country = { target = FROM transfer_troops = yes } }
+		}
+	}
+
+	hof_sov_integrate_latvia = {
+		icon = GFX_decision_generic_form_nation
+		cost = 100
+		days_remove = 15
+		fire_only_once = yes
+		cancel_if_not_visible = yes
+		ai_will_do = { base = 1 }
+		target_array = subjects
+
+		target_root_trigger = { has_completed_focus = SOV_claims_in_baltic }
+		target_trigger = { FROM = { tag = LAT } }
+
+		visible = {
+			FROM = {
+				is_subject_of = ROOT
+				has_government = communism
+			}
+		}
+		available = {
+			FROM = {
+				is_subject_of = ROOT
+				has_government = communism
+			}
+		}
+
+		remove_effect = {
+			FROM = {
+				every_scientist = {
+					set_nationality = ROOT
+				}
+				every_unit_leader = {
+					include_invisible = yes
+					limit = { NOT = { has_trait = BALTIC_anti_bolshevik } }
+					set_nationality = ROOT
+				}
+			}
+			ROOT = { annex_country = { target = FROM transfer_troops = yes } }
+		}
+	}
+
+	hof_sov_integrate_lithuania = {
+		icon = GFX_decision_generic_form_nation
+		cost = 100
+		days_remove = 15
+		fire_only_once = yes
+		cancel_if_not_visible = yes
+		ai_will_do = { base = 1 }
+		target_array = subjects
+
+		target_root_trigger = { has_completed_focus = SOV_claims_in_baltic }
+		target_trigger = { FROM = { tag = LIT } }
+
+		visible = {
+			FROM = {
+				is_subject_of = ROOT
+				has_government = communism
+			}
+		}
+		available = {
+			FROM = {
+				is_subject_of = ROOT
+				has_government = communism
+			}
+		}
+
+		remove_effect = {
+			FROM = {
+				every_scientist = {
+					set_nationality = ROOT
+				}
+				every_unit_leader = {
+					include_invisible = yes
+					limit = { NOT = { has_trait = BALTIC_anti_bolshevik } }
+					set_nationality = ROOT
+				}
+			}
+			ROOT = { annex_country = { target = FROM transfer_troops = yes } }
+		}
+	}
+
+	# ════════════════════════════════════════════════════════════════
+	#  B. 挪威 / 瑞典 / 芬兰 / 土耳其 —— 各 30 天
+	#     ⭐ 无特质过滤：所有科学家与全部陆军 / 海军将领都来
+	#     ⚠️ 用户 2026-09-25 第二道口径：**去掉丹麦与冰岛**
+	# ════════════════════════════════════════════════════════════════
+
+	hof_sov_integrate_norway = {
+		icon = GFX_decision_generic_form_nation
+		cost = 150
+		days_remove = 30
+		fire_only_once = yes
+		cancel_if_not_visible = yes
+		ai_will_do = { base = 1 }
+		target_array = subjects
+
+		target_root_trigger = { has_completed_focus = SOV_claims_in_baltic }
+		target_trigger = { FROM = { tag = NOR } }
+
+		visible = {
+			FROM = {
+				is_subject_of = ROOT
+				has_government = communism
+			}
+		}
+		available = {
+			FROM = {
+				is_subject_of = ROOT
+				has_government = communism
+			}
+		}
+
+		remove_effect = {
+			FROM = {
+				every_scientist = {
+					set_nationality = ROOT
+				}
+				every_unit_leader = {
+					include_invisible = yes
+					set_nationality = ROOT
+				}
+			}
+			ROOT = { annex_country = { target = FROM transfer_troops = yes } }
+		}
+	}
+
+	hof_sov_integrate_sweden = {
+		icon = GFX_decision_generic_form_nation
+		cost = 150
+		days_remove = 30
+		fire_only_once = yes
+		cancel_if_not_visible = yes
+		ai_will_do = { base = 1 }
+		target_array = subjects
+
+		target_root_trigger = { has_completed_focus = SOV_claims_in_baltic }
+		target_trigger = { FROM = { tag = SWE } }
+
+		visible = {
+			FROM = {
+				is_subject_of = ROOT
+				has_government = communism
+			}
+		}
+		available = {
+			FROM = {
+				is_subject_of = ROOT
+				has_government = communism
+			}
+		}
+
+		remove_effect = {
+			FROM = {
+				every_scientist = {
+					set_nationality = ROOT
+				}
+				every_unit_leader = {
+					include_invisible = yes
+					set_nationality = ROOT
+				}
+			}
+			ROOT = { annex_country = { target = FROM transfer_troops = yes } }
+		}
+	}
+
+	hof_sov_integrate_finland = {
+		icon = GFX_decision_generic_form_nation
+		cost = 150
+		days_remove = 30
+		fire_only_once = yes
+		cancel_if_not_visible = yes
+		ai_will_do = { base = 1 }
+		target_array = subjects
+
+		target_root_trigger = { has_completed_focus = SOV_claims_in_baltic }
+		target_trigger = { FROM = { tag = FIN } }
+
+		visible = {
+			FROM = {
+				is_subject_of = ROOT
+				has_government = communism
+			}
+		}
+		available = {
+			FROM = {
+				is_subject_of = ROOT
+				has_government = communism
+			}
+		}
+
+		remove_effect = {
+			FROM = {
+				every_scientist = {
+					set_nationality = ROOT
+				}
+				every_unit_leader = {
+					include_invisible = yes
+					set_nationality = ROOT
+				}
+			}
+			ROOT = { annex_country = { target = FROM transfer_troops = yes } }
+		}
+	}
+
+	hof_sov_integrate_turkey = {
+		icon = GFX_decision_generic_form_nation
+		cost = 150
+		days_remove = 30
+		fire_only_once = yes
+		cancel_if_not_visible = yes
+		ai_will_do = { base = 1 }
+		target_array = subjects
+
+		target_root_trigger = { has_completed_focus = SOV_claims_in_baltic }
+		target_trigger = { FROM = { tag = TUR } }
+
+		visible = {
+			FROM = {
+				is_subject_of = ROOT
+				has_government = communism
+			}
+		}
+		available = {
+			FROM = {
+				is_subject_of = ROOT
+				has_government = communism
+			}
+		}
+
+		remove_effect = {
+			FROM = {
+				every_scientist = {
+					set_nationality = ROOT
+				}
+				every_unit_leader = {
+					include_invisible = yes
+					set_nationality = ROOT
+				}
+			}
+			ROOT = { annex_country = { target = FROM transfer_troops = yes } }
+		}
+	}
+
+	# ════════════════════════════════════════════════════════════════
+	#  C. 波兰 —— 15 天
+	#     排除带 `POL_sanation_right_leader`（「萨纳齐亚右派指挥官」）的将领
+	#     🚩 判据 K：显示名不能叫「整合波兰」（原版 SOV_integrate_poland 占着）
+	# ════════════════════════════════════════════════════════════════
+
+	hof_sov_integrate_poland = {
+		icon = GFX_decision_generic_form_nation
+		cost = 100
+		days_remove = 15
+		fire_only_once = yes
+		cancel_if_not_visible = yes
+		ai_will_do = { base = 1 }
+		target_array = subjects
+
+		target_root_trigger = { has_completed_focus = SOV_claims_in_baltic }
+		target_trigger = { FROM = { tag = POL } }
+
+		visible = {
+			FROM = {
+				is_subject_of = ROOT
+				has_government = communism
+			}
+		}
+		available = {
+			FROM = {
+				is_subject_of = ROOT
+				has_government = communism
+			}
+		}
+
+		remove_effect = {
+			FROM = {
+				every_scientist = {
+					set_nationality = ROOT
+				}
+				every_unit_leader = {
+					include_invisible = yes
+					limit = { NOT = { has_trait = POL_sanation_right_leader } }
+					set_nationality = ROOT
+				}
+			}
+			ROOT = { annex_country = { target = FROM transfer_troops = yes } }
+		}
+	}
+}

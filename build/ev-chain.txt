@@ -1,0 +1,41 @@
+﻿=== .1110 的链结构（L94..L301）===
+ L103  if = {   # hof_ic_trotsky_build_the_red_army
+ L113  else_if = {   # hof_ic_trotsky_military_specialists
+ L123  else_if = {   # hof_ic_trotsky_against_partisan_warfare
+ L133  else_if = {   # hof_ic_trotsky_uneven_and_combined_development
+ L143  else_if = {   # hof_ic_trotsky_permanent_revolution
+ L153  else_if = {   # hof_ic_trotsky_socialism_in_one_country
+ L163  else_if = {   # hof_ic_trotsky_the_new_course
+ L173  else_if = {   # hof_ic_trotsky_against_the_bureaucracy
+ L183  else_if = {   # 宀旇矾鏈畾锛氬脊銆愮粡娴庣殑宀旇矾鍙ｃ€戝苟鍘熷湴绛夊緟
+ L193  else_if = {   # 宀旇矾宸查€夛細鏈夐檺甯傚満鍖?
+ L206  else_if = {   # 宀旇矾宸查€夛細鍔冲姩鍐?
+ L219  else_if = {   # hof_ic_trotsky_state_planning
+ L229  else_if = {   # hof_ic_trotsky_accelerated_industrialization
+ L239  else_if = {   # hof_ic_trotsky_the_comintern_manifesto
+ L249  else_if = {   # hof_ic_trotsky_the_chinese_question
+ L259  else_if = {   # hof_ic_trotsky_united_front
+ L269  else_if = {   # 缁堝眬锛氭案涔呯殑闈╁懡鑰?
+ L282  else_if = {   # 缁堝眬锛氬浗瀹跺缓璁捐€?
+
+=== .1111 的链结构（L302..L474）===
+ L311  if = {
+ L318  else_if = {
+ L325  else_if = {
+ L332  else_if = {
+ L339  else_if = {
+ L346  else_if = {
+ L353  else_if = {
+ L360  else_if = {
+ L367  else_if = {   # 宀旇矾閫変腑锛氭湁闄愬競鍦哄寲
+ L373  else_if = {   # 宀旇矾閫変腑锛氬姵鍔ㄥ啗
+ L379  else_if = {
+ L386  else_if = {
+ L393  else_if = {
+ L400  else_if = {
+ L407  else_if = {
+ L414  else_if = {   # 缁堝眬锛氭案涔呯殑闈╁懡鑰?
+ L419  else_if = {   # 缁堝眬锛氬浗瀹跺缓璁捐€?
+ L424  else = {
+ L425  if = {
+ L449  if = {

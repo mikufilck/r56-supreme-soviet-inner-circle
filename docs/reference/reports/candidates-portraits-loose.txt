@@ -1,0 +1,59 @@
+﻿全盘 dds 索引：10345 个
+
+姓氏                 对应全名                         命中文件
+--------------------------------------------------------------------------------------------------------------
+ordzhonikidze      grigory_ordzhonikidze        ★ 无任何文件名命中
+dzerzhinsky        felix_dzerzhinsky            ★ 无任何文件名命中
+kuibyshev          valerian_kuibyshev           ★ 无任何文件名命中
+kirov              sergei_kirov                 1 个
+      F:\Hearts of Iron IV\gfx\interface\ideas\idea_SOV_kirov.dds
+mikoyan            anastas_mikoyan              ★ 无任何文件名命中
+pyatakov           grigory_pyatakov             ★ 无任何文件名命中
+muralov            nikolai_muralov              ★ 无任何文件名命中
+kollontai          alexandra_kollontai          ★ 无任何文件名命中
+trotsky            lev_trotsky                  6 个
+      D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125\gfx\leaders\SOV\r56_portrait_SOV_Leon_Trotsky.dds
+      F:\Hearts of Iron IV\gfx\leaders\SOV\Portrait_Leon_Trotsky.dds
+      F:\Hearts of Iron IV\gfx\interface\ideas\idea_SOV_leon_trotsky.dds
+      F:\Hearts of Iron IV\gfx\interface\ideas\idea_SOV_lev_trotsky.dds
+      F:\Hearts of Iron IV\gfx\interface\ideas\trotskyite_plot.dds
+      F:\Hearts of Iron IV\gfx\interface\ideas\trotskyite_plot_purged.dds
+preobrazhensky     yevgeny_preobrazhensky       1 个
+      F:\Hearts of Iron IV\gfx\interface\ideas\idea_SOV_yevgeny_preobrazhensky.dds
+radek              karl_radek                   1 个
+      F:\Hearts of Iron IV\gfx\interface\ideas\idea_SOV_karl_radek.dds
+smilga             ivar_smilga                  2 个
+      F:\Hearts of Iron IV\gfx\interface\ideas\idea_SOV_ivar_smilga.dds
+      F:\Hearts of Iron IV\gfx\interface\ideas\idea_SOV_ivar_smilga_imprisoned.dds
+bukharin           nikolay_bukharin             1 个
+      F:\Hearts of Iron IV\gfx\interface\ideas\idea_SOV_nikolay_bukharin.dds
+rykov              aleksey_rykov                1 个
+      F:\Hearts of Iron IV\gfx\interface\ideas\idea_SOV_aleksey_rykov.dds
+tomsky             mikhail_tomsky               1 个
+      F:\Hearts of Iron IV\gfx\interface\ideas\idea_SOV_mikhail_tomsky.dds
+ryutin             martemyan_ryutin             2 个
+      F:\Hearts of Iron IV\gfx\interface\ideas\idea_SOV_martemyan_ryutin.dds
+      F:\Hearts of Iron IV\gfx\interface\ideas\idea_SOV_martemyan_ryutin_imprisoned.dds
+shlyapnikov        aleksandr_shlyapnikov        2 个
+      F:\Hearts of Iron IV\gfx\interface\ideas\idea_SOV_aleksandr_shlyapnikov.dds
+      F:\Hearts of Iron IV\gfx\interface\ideas\idea_SOV_aleksandr_shlyapnikov_imprisoned.dds
+kalinin            mikhail_kalinin              1 个
+      F:\Hearts of Iron IV\gfx\interface\ideas\idea_mikhail_kalinin.dds
+litvinov           maksim_litvinov              1 个
+      F:\Hearts of Iron IV\gfx\interface\ideas\idea_SOV_maksim_litvinov.dds
+sokolnikov         grigory_sokolnikov           1 个
+      F:\Hearts of Iron IV\gfx\interface\ideas\idea_SOV_grigory_sokolnikov.dds
+voznesensky        nikolay_voznesensky          1 个
+      F:\Hearts of Iron IV\gfx\interface\ideas\idea_SOV_nikolay_voznesensky.dds
+serebryakov        leonid_serebryakov           1 个
+      D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125\gfx\leaders\SOV\r56_portrait_SOV_Leonid_Serebryakov.dds
+
+=== R56 角色块里是否存在这 8 人的名字（宽泛文本搜索）===
+Ordzhonikidze    角色文件中无提及
+Dzerzhinsky      角色文件中无提及
+Kuibyshev        角色文件中无提及
+Kirov            角色文件中无提及
+Mikoyan          ARM.txt:898 | ARM.txt:900 | ARM.txt:908
+Pyatakov         角色文件中无提及
+Muralov          角色文件中无提及
+Kollontai        角色文件中无提及

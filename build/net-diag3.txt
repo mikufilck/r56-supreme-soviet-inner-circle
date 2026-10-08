@@ -1,0 +1,10 @@
+﻿=== 代理协议矩阵（探 api.ipify.org）===
+  http://127.0.0.1:7993            : curl: (28) Connection timed out after 20017 milliseconds | 000
+  socks5://127.0.0.1:7993          : curl: (35) schannel: failed to receive handshake, SSL/TLS connection failed | 000
+  socks5h://127.0.0.1:7993         : curl: (28) Connection timed out after 20015 milliseconds | 000
+
+=== 直连对照 ===
+  -4 直连 : curl: (28) Connection timed out after 20016 milliseconds|000
+
+=== 7993 端口是什么协议（手工 HTTP CONNECT 探测）===
+  CONNECT 响应: HTTP/1.1 200 Connection established /  / 

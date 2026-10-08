@@ -1,0 +1,57 @@
+[
+  {
+    "id": "hof_ic_ryutin_struggle_magazine",
+    "name": "GFX_hof_ic_ryutin_struggle_magazine",
+    "title": "《斗争》杂志",
+    "concept": "A thin freshly printed magazine opened wide on wooden desk, grey abstract column bars only, no readable print. Plain round Soviet office seal weighs on one corner, one cuffed hand rests on paper edge. Window behind reveals low early20th-century Harbin mixed Chinese/Russian rooftops and chimneys under cold northeast winter-white sky. Paper-grey, ink-black, cold window-white. Thin magazine dominates, no typesetting tools.",
+    "group": "ryutin",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_ryutin_red_star",
+    "name": "GFX_hof_ic_ryutin_red_star",
+    "title": "《红星报》",
+    "concept": "ONE finished neatly folded newspaper diagonally filling foreground. Masthead has ONE dark red five-pointed star inside a small square, all other printed matter only grey horizontal column bars. ONE cuffed pointing hand touches near star masthead. Background a simple industrial paper-feed machine with two clean steel paper-feed cylinders and a fresh blank paper strip emerging, not an ink roller or lithography tools. White paper, ink-grey and dark red star. Newspaper product is dominant, no loose metal type.",
+    "group": "ryutin",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_ryutin_soyuzkino",
+    "name": "GFX_hof_ic_ryutin_soyuzkino",
+    "title": "苏联电影",
+    "concept": "A 1930 sound-film studio: LEFT a vintage hand-cranked movie camera with film magazines on tripod, RIGHT a prominent early condenser microphone in cylindrical housing on stand and one film reel with blank film strip. Above a huge studio lamp casts ONE bright warm-white conical light beam through visible dust into dark studio. Camera AND microphone both large and clearly recognizable, iron-grey fixtures and dark-brown film reel. No people or images on film, no modern electronics.",
+    "group": "ryutin",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_ryutin_union_of_marxist_leninists",
+    "name": "GFX_hof_ic_ryutin_union_of_marxist_leninists",
+    "title": "马列主义者联盟",
+    "concept": "A thick uneven worn stack of loose manuscript pages being HANDED from one persons cuffed hand on LEFT into a second persons receiving cuffed hand on RIGHT. Exactly two hands, anatomically correct, grip opposite edges of same heavy page stack; transfer action unmistakable. Behind in near-black shadow joined wood tables with two extra partial paper stacks. One low hanging lamp illuminates transfer. Warm white page edges, dark brown wood, confined light pool. Densest composition of batch. Pages have only abstract grey strokes, no readable writing. No prison or bars.",
+    "group": "ryutin",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_ryutin_verkhne_ryutino",
+    "name": "GFX_hof_ic_ryutin_verkhne_ryutino",
+    "title": "上留京诺的留京",
+    "concept": "Restrained quiet ending: small stack of transcript papers on a mostly EMPTY dark brown desktop, upper page has grey abstract horizontal rules ONLY in upper portion and a clearly framed EMPTY signature field below. Signature field pure blank white, NO mark whatsoever. A plain fountain pen lies horizontally across top edge of stack with its nib projecting BEYOND paper edge into open air, not touching paper; no hand. To RIGHT a half-open wooden window reveals cold white snow, low village timber rooftops and a single chimney. Small paper stack and blank signature field dominate through negative space, dark brown interior and paper-white/snow-white. No lectern, audience chairs, prison, weapons, death or dates.",
+    "group": "ryutin",
+    "size": [
+      100,
+      88
+    ]
+  }
+]

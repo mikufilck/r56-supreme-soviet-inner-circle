@@ -1,0 +1,77 @@
+﻿germany.txt 共切出 focus 块: 909
+
+=== 含 FOCUS_FILTER_INNER_CIRCLE 的国策（按出现顺序）===
+  1. GER_fuhrerprinzip                            cost=5   idea=-                                  <- GER_remilitarize_the_rhineland
+         filter: FOCUS_FILTER_HISTORICAL FOCUS_FILTER_POLITICAL FOCUS_FILTER_POLITICAL_CHARACTER
+  2. GER_ascension_of_todt                        cost=2   idea=GER_todt_reich_engineer            <- GER_fuhrerprinzip
+         filter: FOCUS_FILTER_POLITICAL_CHARACTER FOCUS_FILTER_INDUSTRY
+  3. GER_form_organization_todt                   cost=-   idea=GER_organization_todt              <- GER_ascension_of_todt
+         filter: FOCUS_FILTER_INDUSTRY
+  4. GER_autonomous_organization_todt             cost=-   idea=-                                  <- GER_form_organization_todt
+         filter: FOCUS_FILTER_POLITICAL_CHARACTER FOCUS_FILTER_INDUSTRY
+  5. GER_ascension_of_speer                       cost=2   idea=GER_speer_reich_architect          <- GER_fuhrerprinzip
+         filter: FOCUS_FILTER_POLITICAL_CHARACTER FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL
+  6. GER_employ_philipp_holzmann                  cost=-   idea=-                                  <- GER_ascension_of_speer
+         filter: FOCUS_FILTER_INDUSTRY
+  7. GER_plenipotentiary_of_armaments             cost=-   idea=-                                  <- GER_form_organization_todt
+         filter: FOCUS_FILTER_POLITICAL_CHARACTER FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL
+  8. GER_wunderwaffe                              cost=-   idea=GER_walter_dornberger              <- GER_autonomous_organization_todt
+         filter: FOCUS_FILTER_MILITARY_CHARACTER FOCUS_FILTER_RESEARCH
+  9. GER_ascension_of_goring                      cost=2   idea=GER_goring_overseer_four_year_plan <- GER_fuhrerprinzip
+         filter: FOCUS_FILTER_POLITICAL_CHARACTER FOCUS_FILTER_INDUSTRY
+ 10. GER_prioritize_the_four_year_plan            cost=-   idea=-                                  <- GER_ascension_of_goring
+         filter: FOCUS_FILTER_INDUSTRY
+ 11. GER_plenipotentiary_of_the_four_year_plan    cost=-   idea=-                                  <- GER_prioritize_the_four_year_plan
+         filter: FOCUS_FILTER_POLITICAL_CHARACTER FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH
+ 12. GER_integration_of_puppet_economies          cost=-   idea=-                                  <- GER_plenipotentiary_of_the_four_year_plan
+         filter: FOCUS_FILTER_INDUSTRY
+ 13. GER_ascension_of_himmler                     cost=2   idea=GER_himmler_chief_of_german_police <- GER_fuhrerprinzip
+         filter: FOCUS_FILTER_POLITICAL_CHARACTER FOCUS_FILTER_MANPOWER
+ 14. GER_expand_gestapo                           cost=-   idea=-                                  <- GER_ascension_of_himmler
+         filter: FOCUS_FILTER_INDUSTRY
+ 15. GER_absorb_the_abwehr                        cost=-   idea=-                                  <- GER_expand_gestapo
+         filter: FOCUS_FILTER_POLITICAL_CHARACTER
+ 16. GER_expand_ss_security_duties                cost=-   idea=-                                  <- GER_ascension_of_himmler
+         filter: FOCUS_FILTER_POLITICAL_CHARACTER FOCUS_FILTER_RESEARCH
+ 17. GER_strengthen_the_waffen_ss                 cost=-   idea=-                                  <- GER_expand_ss_security_duties
+         filter: FOCUS_FILTER_POLITICAL_CHARACTER FOCUS_FILTER_ARMY_XP FOCUS_FILTER_MANPOWER FOCUS_FILTER_MILITARY_CHARACTER
+ 18. GER_hegemony_of_the_ss                       cost=-   idea=-                                  <- GER_absorb_the_abwehr
+         filter: FOCUS_FILTER_MILITARY_CHARACTER
+ 19. GER_ascension_of_goebbels                    cost=2   idea=GER_goebbels_reich_minister_of_propaganda <- GER_fuhrerprinzip
+         filter: FOCUS_FILTER_POLITICAL_CHARACTER FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_POLITICAL
+ 20. GER_ministry_of_public_enlightenment         cost=-   idea=-                                  <- GER_ascension_of_goebbels
+         filter: FOCUS_FILTER_POLITICAL_CHARACTER FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL
+ 21. GER_fund_the_film_department                 cost=-   idea=GER_leni_riefenstahl               <- GER_ministry_of_public_enlightenment
+         filter: FOCUS_FILTER_POLITICAL_CHARACTER FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_POLITICAL
+ 22. GER_propaganda_master                        cost=-   idea=-                                  <- GER_fund_the_film_department
+         filter: FOCUS_FILTER_POLITICAL_CHARACTER FOCUS_FILTER_WAR_SUPPORT
+ 23. GER_party_chancellor_hess                    cost=2   idea=GER_hess_party_chancellor          <- GER_fuhrerprinzip
+         filter: FOCUS_FILTER_POLITICAL_CHARACTER FOCUS_FILTER_POLITICAL
+ 24. GER_party_chancellor_bormann                 cost=2   idea=GER_bormann_secretary_to_the_fuhrer <- GER_fuhrerprinzip
+         filter: FOCUS_FILTER_POLITICAL_CHARACTER FOCUS_FILTER_POLITICAL
+ 25. GER_optimize_reich_labour_service            cost=-   idea=-                                  <- GER_party_chancellor_hess
+         filter: FOCUS_FILTER_INDUSTRY
+ 26. GER_rally_the_industrialists                 cost=-   idea=-                                  <- GER_optimize_reich_labour_service
+         filter: FOCUS_FILTER_POLITICAL_CHARACTER FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH FOCUS_FILTER_POLITICAL
+ 27. GER_glorify_party_rallies                    cost=-   idea=-                                  <- GER_optimize_reich_labour_service
+         filter: FOCUS_FILTER_POLITICAL_CHARACTER FOCUS_FILTER_POLITICAL
+ 28. GER_total_control_over_domestic_affairs      cost=-   idea=-                                  <- GER_glorify_party_rallies
+         filter: FOCUS_FILTER_POLITICAL_CHARACTER FOCUS_FILTER_MANPOWER FOCUS_FILTER_RESEARCH
+ 29. GER_a_strong_successor                       cost=5   idea=-                                  <- GER_hegemony_of_the_ss
+         filter: FOCUS_FILTER_POLITICAL_CHARACTER
+ 30. GER_loyalty_to_the_fuhrer                    cost=5   idea=-                                  <- GER_hegemony_of_the_ss
+         filter: FOCUS_FILTER_POLITICAL_CHARACTER FOCUS_FILTER_MANPOWER FOCUS_FILTER_POLITICAL FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY
+
+合计 30 个核心圈国策
+
+=== 核对：每个 idea 被几个国策引用 ===
+GER_bormann_secretary_to_the_fuhrer <- GER_party_chancellor_bormann
+GER_goebbels_reich_minister_of_propaganda <- GER_ascension_of_goebbels
+GER_goring_overseer_four_year_plan <- GER_ascension_of_goring
+GER_hess_party_chancellor          <- GER_party_chancellor_hess
+GER_himmler_chief_of_german_police <- GER_ascension_of_himmler
+GER_leni_riefenstahl               <- GER_fund_the_film_department
+GER_organization_todt              <- GER_form_organization_todt
+GER_speer_reich_architect          <- GER_ascension_of_speer
+GER_todt_reich_engineer            <- GER_ascension_of_todt
+GER_walter_dornberger              <- GER_wunderwaffe

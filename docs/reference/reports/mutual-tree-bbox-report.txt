@@ -1,0 +1,75 @@
+=============================================================================
+ 🚩🚩 【本报告的 X/Y 数已作废，不要再用】—— 2026-09-20
+   实测它把 focus 块【内部】的 `offset = { x = … }` 等 x 行也算进了包围盒，
+   所以 X 最大普遍是错的（norwegian_focus 旧 94 / 实测 20），
+   个别树反而偏小（french_focus 旧 20 / 实测 67）⇒ 直接导致 SAU/FRA/POL 三棵树的重叠。
+   ✅ 请改用：docs/reference/reports/mutual-tree-bbox-report-v2-celllevel.txt
+   （逐格解析，只取 focus_tree 下一层的 focus 块）· 详见 docs/99 §47.14
+=============================================================================
+=============================================================================
+ 互助会联合国策（需求 C）选址勘查 —— 16 棵挂载树的绝对坐标包围盒
+ 生成者：docs/reference/tools/scan-mutual-tree-bbox.ps1
+ 数据源：build/attach-points.json + mod/heart_of_iron/common/national_focus/*.txt
+=============================================================================
+
+OK sov_core
+OK prc_sino
+OK mon_mutual
+OK fin_mutual
+OK swe_std
+OK nor_std
+OK den_std
+OK ice_std
+OK afg_r56
+OK sau_mutual
+OK phi_std
+OK cub_mutual
+OK arg_std
+OK eth_std
+OK fra_std
+OK pol_mutual
+OK hun_wuw
+OK est_std
+OK lat_std
+OK lit_std
+OK ast_std
+
+=== 1. 每棵挂载树的包围盒（单位：国策网格）===
+
+  挂载点            TAG   树 id                              节点数     X 最小    X 最大     Y 最小    Y 最大  环
+  --------------------------------------------------------------------------------------------------------------------------
+  swe_std        SWE   sweden_focus                      169      -36      35        0      22  0
+  prc_sino       PRC   china_communist_focus_sea         203       -6      64        0      21  0
+  arg_std        ARG   argentine_focus_tree              150      -17      39        0      17  0
+  phi_std        PHI   philippines_focus                 170        0      73        0      15  0
+  sov_core       SOV   soviet_focus                      624      -18      81        0      15  0
+  eth_std        ETH   ethiopia_tree                     203       -1      75        0      14  0
+  mon_mutual     MON   Mongolia_focus                    292      -66      36        0      14  0
+  pol_mutual     POL   polish_focus                      339      -10      46        0      14  0
+  nor_std        NOR   norwegian_focus                   194       -4      94        0      13  0
+  cub_mutual     CUB   cuban_focus                       136        0      72        0      13  0
+  hun_wuw        HUN   wuw_hungarian_focus               238        0      90        0      13  0
+  ast_std        AST   australia_taog_focus              217        2     127        0      12  0
+  lit_std        LIT   lithuania_tree                     86       28      56        0      11  0
+  lat_std        LAT   latvia_tree                        57       31      48        0      10  0
+  den_std        DEN   danish_focus                      175        0      67        0      10  0
+  est_std        EST   estonia_tree                       59       30      49        0       9  0
+  ice_std        ICE   iceland_tree                       90        2      37        0       9  0
+  fin_mutual     FIN   finnish_focus                     205       -8      41        0       8  0
+  fra_std        FRA   french_focus                      231       -7      20        0       7  0
+  afg_r56        AFG   r56_afghanistan_focus             251      -14      87        0       5  0
+  sau_mutual     SAU   saudi_focus                        65       -2       6        0       3  0
+
+=== 2. 结论：两种摆法的安全边界 ===
+
+  共 21 棵树；Y 的最大值 = 22（来源：SWE）
+  ⇒ 【摆在树下方】的基准 y 取 24（= maxY + 2）即可不与任何一棵树重叠
+  ⇒ 【摆在树右侧】（2026-09-20 用户口径，S5 经互会通用线采用）：头部 x = 该树 X 最大 + 4，
+     子节点相对 x 取 0..+2 ⇒ 整条带子落在 [maxX+2, maxX+6]，永远在树右侧、永不重叠；
+     基准（无 offset 命中时的落点）取 ( x = 0 , y = 24 ) —— 比 Y 最大值还低 2 格，压不到任何一棵树。
+
+=== 3. X 宽度参考（最宽的树有多宽）===
+
+  最宽的树：126 格（X 2 .. 127）
+  X 的全局范围：-66 .. 127
+

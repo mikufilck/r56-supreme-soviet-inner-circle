@@ -1,0 +1,12 @@
+# Shared old-save migration effect; GER country scope.
+hof_ger_rebuild_anschluss_focus_tree = {
+	load_focus_tree = { tree = german_focus keep_completed = yes }
+	mark_focus_tree_layout_dirty = yes
+	set_country_flag = hof_ger_anschluss_tree_reloaded_v3
+}
+
+# Console command: hof_reload_german_focus
+# The explicit GER scope also works while playing another country.
+d_hof_reload_german_focus = {
+	GER = { hof_ger_rebuild_anschluss_focus_tree = yes }
+}

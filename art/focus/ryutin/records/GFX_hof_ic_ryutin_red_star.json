@@ -1,0 +1,17 @@
+{
+  "id": "hof_ic_ryutin_red_star",
+  "name": "GFX_hof_ic_ryutin_red_star",
+  "title": "《红星报》",
+  "concept": "ONE finished neatly folded newspaper diagonally filling foreground. Masthead has ONE dark red five-pointed star inside a small square, all other printed matter only grey horizontal column bars. ONE cuffed pointing hand touches near star masthead. Background a simple industrial paper-feed machine with two clean steel paper-feed cylinders and a fresh blank paper strip emerging, not an ink roller or lithography tools. White paper, ink-grey and dark red star. Newspaper product is dominant, no loose metal type.",
+  "group": "ryutin",
+  "size": [
+    100,
+    88
+  ],
+  "prompt": "Create ONE finished Hearts of Iron IV Soviet national focus icon. Input reference is ONLY gold laurel outer frame and engraved sculptural relief STYLE; replace all central imagery. Subject: ONE finished neatly folded newspaper diagonally filling foreground. Masthead has ONE dark red five-pointed star inside a small square, all other printed matter only grey horizontal column bars. ONE cuffed pointing hand touches near star masthead. Background a simple industrial paper-feed machine with two clean steel paper-feed cylinders and a fresh blank paper strip emerging, not an ink roller or lithography tools. White paper, ink-grey and dark red star. Newspaper product is dominant, no loose metal type. Gold laurel open at top, small red star above, blank gold ribbon below, thin bronze rim. Ivory-grey engraved miniature relief with specified restrained colors, strong readable shapes at final100x88, upper-left light. No readable letters, numbers, words, faces, portraits or watermark. No guns, execution, death, self-harm, prison bars, typesetting trays, loose lead type, ink brayers or lithographic stones. Landscape100:88, emblem fills94%canvas. TRUE transparent RGBA background enabled: alpha0 outside emblem and all four corners,20-50%transparent area. No fake checkerboard, rectangle background or external cast shadow.",
+  "references": [
+    "D:/Users/xuwei/PycharmProjects/heart_of_Iron/art/focus/bukharin/source/GFX_hof_ic_bukharin_proportional_development.png"
+  ],
+  "generated_path": "C:\\Users\\xuwei\\.codex\\generated_images\\01a09af5-fd43-79a0-a3cc-72284cd67cbc\\exec-002cf35f-cce0-424b-97d5-f926e25893c0.png",
+  "mode": "built-in image_gen"
+}

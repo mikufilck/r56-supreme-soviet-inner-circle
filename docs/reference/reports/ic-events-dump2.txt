@@ -1,0 +1,242 @@
+﻿总行数 = 24649
+
+======== GER_inner_circle_todt.01   (L23596..L23647) ========
+country_event = {
+	id = GER_inner_circle_todt.01
+
+	hidden = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_completed_focus = GER_ascension_of_todt
+		OR = {
+			check_variable = { GER_ascended_advisor_1 = 1 }
+			check_variable = { GER_ascended_advisor_2 = 1 }
+			check_variable = { GER_ascended_advisor_3 = 1 }
+		}
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				NOT = { has_completed_focus = GER_form_organization_todt }
+			}
+			activate_shine_on_focus = GER_form_organization_todt
+			set_country_flag = { flag = GER_form_organization_todt_in_progress_flag days = @inner_circle_time_tier_1_flag value = 1 }
+			country_event = { id = GER_inner_circle_todt.02 days = @inner_circle_time_tier_1 }
+		}
+		else_if = {
+			limit = {
+				NOT = { has_completed_focus = GER_autonomous_organization_todt }
+				NOT = { check_variable = { GER_industrialist_prevailed = 2 } } #Speer Prevailed in the Industrialist Intrigue
+				NOT = { check_variable = { GER_industrialist_prevailed = 3 } } #G?ring Prevailed in the Industrialist Intrigue
+			}
+			activate_shine_on_focus = GER_autonomous_organization_todt
+			set_country_flag = { flag = GER_autonomous_organization_todt_in_progress_flag days = @inner_circle_time_tier_2_flag value = 1 }
+			country_event = { id = GER_inner_circle_todt.02 days = @inner_circle_time_tier_2 }
+		}
+		else_if = {
+			limit = {
+				NOT = { has_completed_focus = GER_wunderwaffe }
+				NOT = { has_shine_effect_on_focus = GER_wunderwaffe } #Speer is working on this already
+				NOT = { check_variable = { GER_industrialist_prevailed = 2 } } #Speer Prevailed in the Industrialist Intrigue
+				NOT = { check_variable = { GER_industrialist_prevailed = 3 } } #G?ring Prevailed in the Industrialist Intrigue
+			}
+			activate_shine_on_focus = GER_wunderwaffe
+			set_country_flag = { flag = GER_wunderwaffe_in_progress_flag days = @inner_circle_time_tier_3_flag value = 1 }
+			country_event = { id = GER_inner_circle_todt.02 days = @inner_circle_time_tier_3 }
+			set_variable = { GER_wonder_weapons_focus_advisor = 1 }
+		}
+		else = { #Debug logs
+			#log = "SOMETHING WENT WRONG WITH TODT's FOCUS BRANCH - Cannot start new focus"
+		}
+	}
+}
+
+======== GER_inner_circle.01   (L21836..L22020) ========
+country_event = {
+	id = GER_inner_circle.01
+	title = GER_inner_circle.01.t
+	desc = GER_inner_circle.01.desc
+	picture = "[GetAscendingAdvisorPortrait]"
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = GER_inner_circle_event_pending_flag
+		}
+	}
+
+	option = { #Replace Ascended Advisor 1
+		name = GER_inner_circle.01.a
+
+		ai_chance = {
+			base = 1
+			modifier = { #Himmler should replace Bormann on Historical when he ascends
+				factor = 100
+				GER_is_historical_ai = yes
+				check_variable = { GER_ascending_advisor = 4 } #Himmler Ascending
+				check_variable = { GER_ascended_advisor_1 = 7 } #Bormann ascended in this slot
+			}
+		}
+		
+		GER_remove_replaced_advisor_1_effects = yes
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		set_variable = { GER_ascended_advisor_1 = GER_ascending_advisor }
+		GER_add_replacing_advisor_effects = yes
+
+		hidden_effect = {
+			#Cleaning vars / flags / etc
+			clear_variable = GER_ascending_advisor
+			clr_country_flag = GER_inner_circle_event_pending_flag
+		}
+	}
+
+	option = { #Replace Ascended Advisor 2
+		name = GER_inner_circle.01.b
+
+		ai_chance = {
+			base = 1
+			modifier = { #Himmler should replace Bormann on Historical when he ascends
+				factor = 100
+				GER_is_historical_ai = yes
+				check_variable = { GER_ascending_advisor = 4 } #Himmler Ascending
+				check_variable = { GER_ascended_advisor_2 = 7 } #Bormann ascended in this slot
+			}
+		}
+
+		GER_remove_replaced_advisor_2_effects = yes
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		set_variable = { GER_ascended_advisor_2 = GER_ascending_advisor }
+		GER_add_replacing_advisor_effects = yes
+
+		hidden_effect = {
+			#Cleaning vars / flags / etc
+			clear_variable = GER_ascending_advisor
+			clr_country_flag = GER_inner_circle_event_pending_flag
+		}
+	}
+
+	option = { #Replace Ascended Advisor 3
+		name = GER_inner_circle.01.c
+
+		ai_chance = {
+			base = 1
+			modifier = { #Himmler should replace Bormann on Historical when he ascends
+				factor = 100
+				GER_is_historical_ai = yes
+				check_variable = { GER_ascending_advisor = 4 } #Himmler Ascending
+				check_variable = { GER_ascended_advisor_3 = 7 } #Bormann ascended in this slot
+			}
+		}
+
+		GER_remove_replaced_advisor_3_effects = yes
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		set_variable = { GER_ascended_advisor_3 = GER_ascending_advisor }
+		GER_add_replacing_advisor_effects = yes
+
+		hidden_effect = {
+			#Cleaning vars / flags / etc
+			clear_variable = GER_ascending_advisor
+			clr_country_flag = GER_inner_circle_event_pending_flag
+		}
+	}
+
+	option = { # Abort - Ditch this advisor
+		name = GER_inner_circle.01.d
+
+		ai_chance = { #AI "knows" what its doing (pffff)
+			base = 0
+		}
+
+		if = {
+			limit = {
+				check_variable = { GER_ascending_advisor = 1 }
+			}
+			uncomplete_national_focus = {
+				focus = GER_ascension_of_todt
+				uncomplete_children = no
+				refund_political_power = yes
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { GER_ascending_advisor = 2 }
+			}
+			uncomplete_national_focus = {
+				focus = GER_ascension_of_speer
+				uncomplete_children = no
+				refund_political_power = yes
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { GER_ascending_advisor = 3 }
+			}
+			uncomplete_national_focus = {
+				focus = GER_ascension_of_goring
+				uncomplete_children = no
+				refund_political_power = yes
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { GER_ascending_advisor = 4 }
+			}
+			uncomplete_national_focus = {
+				focus = GER_ascension_of_himmler
+				uncomplete_children = no
+				refund_political_power = yes
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { GER_ascending_advisor = 5 }
+			}
+			uncomplete_national_focus = {
+				focus = GER_ascension_of_goebbels
+				uncomplete_children = no
+				refund_political_power = yes
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { GER_ascending_advisor = 6 }
+			}
+			uncomplete_national_focus = {
+				focus = GER_party_chancellor_hess
+				uncomplete_children = no
+				refund_political_power = yes
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { GER_ascending_advisor = 7 }
+			}
+			uncomplete_national_focus = {
+				focus = GER_party_chancellor_bormann
+				uncomplete_children = no
+				refund_political_power = yes
+			}
+		}
+		else = {
+			log = "Something went terribly wrong with your nazis (no wonder)"
+		}
+
+		hidden_effect = {
+			#Cleaning vars / flags / etc
+			clear_variable = GER_ascending_advisor
+			clr_country_flag = GER_inner_circle_event_pending_flag
+
+			clr_country_flag = GER_inner_circle_cd_flag
+		}
+	}
+}

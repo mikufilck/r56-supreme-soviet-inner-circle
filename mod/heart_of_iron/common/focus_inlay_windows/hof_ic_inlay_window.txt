@@ -1,0 +1,252 @@
+# =============================================================================
+# 核心圈 inlay window（由 build/gen-hof-ic-s3.ps1 生成，勿手改）
+# -----------------------------------------------------------------------------
+# 语法依据：原版 common/focus_inlay_windows/documentation.md
+# 结构蓝本：原版 ger_inner_circle_inlay_window.txt（纯展示，无 scripted_buttons）
+#
+# ⚠️ scripted_images 的键必须与 interface/hof_ic_scripted_gui.gui 里
+#    对应 iconType 的 name 完全一致，写错则静默不生效。
+# =============================================================================
+
+hof_ic_inlay_window = {
+
+	window_name = hof_ic_ui_window
+	internal = yes
+
+	# 可见条件：完成「最高苏维埃」国策后出现（容器精神也在那时挂上）
+	visible = {
+		has_completed_focus = hof_ic_commissar
+	}
+
+	scripted_images = {
+
+		# ---------------- 领袖位 ----------------
+		hof_ic_leader_portrait = {
+			GFX_portrait_SOV_supreme_soviet = yes
+		}
+
+		# ---------------- 席位 1 ----------------
+		hof_ic_seat_1_frame = {
+			GFX_hof_ic_seat_frame_empty = { check_variable = { hof_ic_slot_1 = 0 } }
+			GFX_hof_ic_seat_frame_filled = yes
+		}
+
+		hof_ic_seat_1_portrait = {
+			GFX_hof_ic_portrait_lev_trotsky = { check_variable = { hof_ic_slot_1 = 1 } }
+			GFX_hof_ic_portrait_nikolay_bukharin = { check_variable = { hof_ic_slot_1 = 2 } }
+			GFX_hof_ic_portrait_aleksey_rykov = { check_variable = { hof_ic_slot_1 = 3 } }
+			GFX_hof_ic_portrait_grigory_zinovyev = { check_variable = { hof_ic_slot_1 = 4 } }
+			GFX_hof_ic_portrait_lev_kamenev = { check_variable = { hof_ic_slot_1 = 5 } }
+			GFX_hof_ic_portrait_ivan_smirnov = { check_variable = { hof_ic_slot_1 = 6 } }
+			GFX_hof_ic_portrait_leonid_serebryakov = { check_variable = { hof_ic_slot_1 = 7 } }
+			GFX_hof_ic_portrait_yevgeny_preobrazhensky = { check_variable = { hof_ic_slot_1 = 8 } }
+			GFX_hof_ic_portrait_karl_radek = { check_variable = { hof_ic_slot_1 = 9 } }
+			GFX_hof_ic_portrait_ivar_smilga = { check_variable = { hof_ic_slot_1 = 10 } }
+			GFX_hof_ic_portrait_mikhail_tomsky = { check_variable = { hof_ic_slot_1 = 11 } }
+			GFX_hof_ic_portrait_martemyan_ryutin = { check_variable = { hof_ic_slot_1 = 12 } }
+			GFX_hof_ic_portrait_aleksandr_shlyapnikov = { check_variable = { hof_ic_slot_1 = 13 } }
+			GFX_hof_ic_portrait_mikhail_kalinin = { check_variable = { hof_ic_slot_1 = 14 } }
+			GFX_hof_ic_portrait_maksim_litvinov = { check_variable = { hof_ic_slot_1 = 15 } }
+			GFX_hof_ic_portrait_grigory_sokolnikov = { check_variable = { hof_ic_slot_1 = 16 } }
+			GFX_hof_ic_portrait_mikhail_tukhachevsky = { check_variable = { hof_ic_slot_1 = 17 } }
+			GFX_hof_ic_portrait_nikolay_voznesensky = { check_variable = { hof_ic_slot_1 = 18 } }
+			GFX_hof_ic_portrait_pyotr_smirnov = { check_variable = { hof_ic_slot_1 = 19 } }
+			GFX_hof_ic_portrait_georgy_malenkow = { check_variable = { hof_ic_slot_1 = 20 } }
+			GFX_hof_ic_portrait_nikita_khrushchyov = { check_variable = { hof_ic_slot_1 = 21 } }
+			GFX_hof_ic_portrait_kliment_voroshilov = { check_variable = { hof_ic_slot_1 = 22 } }
+			GFX_hof_ic_blank_portrait = yes
+		}
+
+		# ---------------- 席位 2 ----------------
+		hof_ic_seat_2_frame = {
+			GFX_hof_ic_seat_frame_empty = { check_variable = { hof_ic_slot_2 = 0 } }
+			GFX_hof_ic_seat_frame_filled = yes
+		}
+
+		hof_ic_seat_2_portrait = {
+			GFX_hof_ic_portrait_lev_trotsky = { check_variable = { hof_ic_slot_2 = 1 } }
+			GFX_hof_ic_portrait_nikolay_bukharin = { check_variable = { hof_ic_slot_2 = 2 } }
+			GFX_hof_ic_portrait_aleksey_rykov = { check_variable = { hof_ic_slot_2 = 3 } }
+			GFX_hof_ic_portrait_grigory_zinovyev = { check_variable = { hof_ic_slot_2 = 4 } }
+			GFX_hof_ic_portrait_lev_kamenev = { check_variable = { hof_ic_slot_2 = 5 } }
+			GFX_hof_ic_portrait_ivan_smirnov = { check_variable = { hof_ic_slot_2 = 6 } }
+			GFX_hof_ic_portrait_leonid_serebryakov = { check_variable = { hof_ic_slot_2 = 7 } }
+			GFX_hof_ic_portrait_yevgeny_preobrazhensky = { check_variable = { hof_ic_slot_2 = 8 } }
+			GFX_hof_ic_portrait_karl_radek = { check_variable = { hof_ic_slot_2 = 9 } }
+			GFX_hof_ic_portrait_ivar_smilga = { check_variable = { hof_ic_slot_2 = 10 } }
+			GFX_hof_ic_portrait_mikhail_tomsky = { check_variable = { hof_ic_slot_2 = 11 } }
+			GFX_hof_ic_portrait_martemyan_ryutin = { check_variable = { hof_ic_slot_2 = 12 } }
+			GFX_hof_ic_portrait_aleksandr_shlyapnikov = { check_variable = { hof_ic_slot_2 = 13 } }
+			GFX_hof_ic_portrait_mikhail_kalinin = { check_variable = { hof_ic_slot_2 = 14 } }
+			GFX_hof_ic_portrait_maksim_litvinov = { check_variable = { hof_ic_slot_2 = 15 } }
+			GFX_hof_ic_portrait_grigory_sokolnikov = { check_variable = { hof_ic_slot_2 = 16 } }
+			GFX_hof_ic_portrait_mikhail_tukhachevsky = { check_variable = { hof_ic_slot_2 = 17 } }
+			GFX_hof_ic_portrait_nikolay_voznesensky = { check_variable = { hof_ic_slot_2 = 18 } }
+			GFX_hof_ic_portrait_pyotr_smirnov = { check_variable = { hof_ic_slot_2 = 19 } }
+			GFX_hof_ic_portrait_georgy_malenkow = { check_variable = { hof_ic_slot_2 = 20 } }
+			GFX_hof_ic_portrait_nikita_khrushchyov = { check_variable = { hof_ic_slot_2 = 21 } }
+			GFX_hof_ic_portrait_kliment_voroshilov = { check_variable = { hof_ic_slot_2 = 22 } }
+			GFX_hof_ic_blank_portrait = yes
+		}
+
+		# ---------------- 席位 3 ----------------
+		hof_ic_seat_3_frame = {
+			GFX_hof_ic_seat_frame_empty = { check_variable = { hof_ic_slot_3 = 0 } }
+			GFX_hof_ic_seat_frame_filled = yes
+		}
+
+		hof_ic_seat_3_portrait = {
+			GFX_hof_ic_portrait_lev_trotsky = { check_variable = { hof_ic_slot_3 = 1 } }
+			GFX_hof_ic_portrait_nikolay_bukharin = { check_variable = { hof_ic_slot_3 = 2 } }
+			GFX_hof_ic_portrait_aleksey_rykov = { check_variable = { hof_ic_slot_3 = 3 } }
+			GFX_hof_ic_portrait_grigory_zinovyev = { check_variable = { hof_ic_slot_3 = 4 } }
+			GFX_hof_ic_portrait_lev_kamenev = { check_variable = { hof_ic_slot_3 = 5 } }
+			GFX_hof_ic_portrait_ivan_smirnov = { check_variable = { hof_ic_slot_3 = 6 } }
+			GFX_hof_ic_portrait_leonid_serebryakov = { check_variable = { hof_ic_slot_3 = 7 } }
+			GFX_hof_ic_portrait_yevgeny_preobrazhensky = { check_variable = { hof_ic_slot_3 = 8 } }
+			GFX_hof_ic_portrait_karl_radek = { check_variable = { hof_ic_slot_3 = 9 } }
+			GFX_hof_ic_portrait_ivar_smilga = { check_variable = { hof_ic_slot_3 = 10 } }
+			GFX_hof_ic_portrait_mikhail_tomsky = { check_variable = { hof_ic_slot_3 = 11 } }
+			GFX_hof_ic_portrait_martemyan_ryutin = { check_variable = { hof_ic_slot_3 = 12 } }
+			GFX_hof_ic_portrait_aleksandr_shlyapnikov = { check_variable = { hof_ic_slot_3 = 13 } }
+			GFX_hof_ic_portrait_mikhail_kalinin = { check_variable = { hof_ic_slot_3 = 14 } }
+			GFX_hof_ic_portrait_maksim_litvinov = { check_variable = { hof_ic_slot_3 = 15 } }
+			GFX_hof_ic_portrait_grigory_sokolnikov = { check_variable = { hof_ic_slot_3 = 16 } }
+			GFX_hof_ic_portrait_mikhail_tukhachevsky = { check_variable = { hof_ic_slot_3 = 17 } }
+			GFX_hof_ic_portrait_nikolay_voznesensky = { check_variable = { hof_ic_slot_3 = 18 } }
+			GFX_hof_ic_portrait_pyotr_smirnov = { check_variable = { hof_ic_slot_3 = 19 } }
+			GFX_hof_ic_portrait_georgy_malenkow = { check_variable = { hof_ic_slot_3 = 20 } }
+			GFX_hof_ic_portrait_nikita_khrushchyov = { check_variable = { hof_ic_slot_3 = 21 } }
+			GFX_hof_ic_portrait_kliment_voroshilov = { check_variable = { hof_ic_slot_3 = 22 } }
+			GFX_hof_ic_blank_portrait = yes
+		}
+
+		# ---------------- 席位 4 ----------------
+		hof_ic_seat_4_frame = {
+			GFX_hof_ic_seat_frame_empty = { check_variable = { hof_ic_slot_4 = 0 } }
+			GFX_hof_ic_seat_frame_filled = yes
+		}
+
+		hof_ic_seat_4_portrait = {
+			GFX_hof_ic_portrait_lev_trotsky = { check_variable = { hof_ic_slot_4 = 1 } }
+			GFX_hof_ic_portrait_nikolay_bukharin = { check_variable = { hof_ic_slot_4 = 2 } }
+			GFX_hof_ic_portrait_aleksey_rykov = { check_variable = { hof_ic_slot_4 = 3 } }
+			GFX_hof_ic_portrait_grigory_zinovyev = { check_variable = { hof_ic_slot_4 = 4 } }
+			GFX_hof_ic_portrait_lev_kamenev = { check_variable = { hof_ic_slot_4 = 5 } }
+			GFX_hof_ic_portrait_ivan_smirnov = { check_variable = { hof_ic_slot_4 = 6 } }
+			GFX_hof_ic_portrait_leonid_serebryakov = { check_variable = { hof_ic_slot_4 = 7 } }
+			GFX_hof_ic_portrait_yevgeny_preobrazhensky = { check_variable = { hof_ic_slot_4 = 8 } }
+			GFX_hof_ic_portrait_karl_radek = { check_variable = { hof_ic_slot_4 = 9 } }
+			GFX_hof_ic_portrait_ivar_smilga = { check_variable = { hof_ic_slot_4 = 10 } }
+			GFX_hof_ic_portrait_mikhail_tomsky = { check_variable = { hof_ic_slot_4 = 11 } }
+			GFX_hof_ic_portrait_martemyan_ryutin = { check_variable = { hof_ic_slot_4 = 12 } }
+			GFX_hof_ic_portrait_aleksandr_shlyapnikov = { check_variable = { hof_ic_slot_4 = 13 } }
+			GFX_hof_ic_portrait_mikhail_kalinin = { check_variable = { hof_ic_slot_4 = 14 } }
+			GFX_hof_ic_portrait_maksim_litvinov = { check_variable = { hof_ic_slot_4 = 15 } }
+			GFX_hof_ic_portrait_grigory_sokolnikov = { check_variable = { hof_ic_slot_4 = 16 } }
+			GFX_hof_ic_portrait_mikhail_tukhachevsky = { check_variable = { hof_ic_slot_4 = 17 } }
+			GFX_hof_ic_portrait_nikolay_voznesensky = { check_variable = { hof_ic_slot_4 = 18 } }
+			GFX_hof_ic_portrait_pyotr_smirnov = { check_variable = { hof_ic_slot_4 = 19 } }
+			GFX_hof_ic_portrait_georgy_malenkow = { check_variable = { hof_ic_slot_4 = 20 } }
+			GFX_hof_ic_portrait_nikita_khrushchyov = { check_variable = { hof_ic_slot_4 = 21 } }
+			GFX_hof_ic_portrait_kliment_voroshilov = { check_variable = { hof_ic_slot_4 = 22 } }
+			GFX_hof_ic_blank_portrait = yes
+		}
+
+		# ---------------- 席位 5 ----------------
+		hof_ic_seat_5_frame = {
+			GFX_hof_ic_seat_frame_empty = { check_variable = { hof_ic_slot_5 = 0 } }
+			GFX_hof_ic_seat_frame_filled = yes
+		}
+
+		hof_ic_seat_5_portrait = {
+			GFX_hof_ic_portrait_lev_trotsky = { check_variable = { hof_ic_slot_5 = 1 } }
+			GFX_hof_ic_portrait_nikolay_bukharin = { check_variable = { hof_ic_slot_5 = 2 } }
+			GFX_hof_ic_portrait_aleksey_rykov = { check_variable = { hof_ic_slot_5 = 3 } }
+			GFX_hof_ic_portrait_grigory_zinovyev = { check_variable = { hof_ic_slot_5 = 4 } }
+			GFX_hof_ic_portrait_lev_kamenev = { check_variable = { hof_ic_slot_5 = 5 } }
+			GFX_hof_ic_portrait_ivan_smirnov = { check_variable = { hof_ic_slot_5 = 6 } }
+			GFX_hof_ic_portrait_leonid_serebryakov = { check_variable = { hof_ic_slot_5 = 7 } }
+			GFX_hof_ic_portrait_yevgeny_preobrazhensky = { check_variable = { hof_ic_slot_5 = 8 } }
+			GFX_hof_ic_portrait_karl_radek = { check_variable = { hof_ic_slot_5 = 9 } }
+			GFX_hof_ic_portrait_ivar_smilga = { check_variable = { hof_ic_slot_5 = 10 } }
+			GFX_hof_ic_portrait_mikhail_tomsky = { check_variable = { hof_ic_slot_5 = 11 } }
+			GFX_hof_ic_portrait_martemyan_ryutin = { check_variable = { hof_ic_slot_5 = 12 } }
+			GFX_hof_ic_portrait_aleksandr_shlyapnikov = { check_variable = { hof_ic_slot_5 = 13 } }
+			GFX_hof_ic_portrait_mikhail_kalinin = { check_variable = { hof_ic_slot_5 = 14 } }
+			GFX_hof_ic_portrait_maksim_litvinov = { check_variable = { hof_ic_slot_5 = 15 } }
+			GFX_hof_ic_portrait_grigory_sokolnikov = { check_variable = { hof_ic_slot_5 = 16 } }
+			GFX_hof_ic_portrait_mikhail_tukhachevsky = { check_variable = { hof_ic_slot_5 = 17 } }
+			GFX_hof_ic_portrait_nikolay_voznesensky = { check_variable = { hof_ic_slot_5 = 18 } }
+			GFX_hof_ic_portrait_pyotr_smirnov = { check_variable = { hof_ic_slot_5 = 19 } }
+			GFX_hof_ic_portrait_georgy_malenkow = { check_variable = { hof_ic_slot_5 = 20 } }
+			GFX_hof_ic_portrait_nikita_khrushchyov = { check_variable = { hof_ic_slot_5 = 21 } }
+			GFX_hof_ic_portrait_kliment_voroshilov = { check_variable = { hof_ic_slot_5 = 22 } }
+			GFX_hof_ic_blank_portrait = yes
+		}
+
+		# ---------------- 席位 6 ----------------
+		hof_ic_seat_6_frame = {
+			GFX_hof_ic_seat_frame_empty = { check_variable = { hof_ic_slot_6 = 0 } }
+			GFX_hof_ic_seat_frame_filled = yes
+		}
+
+		hof_ic_seat_6_portrait = {
+			GFX_hof_ic_portrait_lev_trotsky = { check_variable = { hof_ic_slot_6 = 1 } }
+			GFX_hof_ic_portrait_nikolay_bukharin = { check_variable = { hof_ic_slot_6 = 2 } }
+			GFX_hof_ic_portrait_aleksey_rykov = { check_variable = { hof_ic_slot_6 = 3 } }
+			GFX_hof_ic_portrait_grigory_zinovyev = { check_variable = { hof_ic_slot_6 = 4 } }
+			GFX_hof_ic_portrait_lev_kamenev = { check_variable = { hof_ic_slot_6 = 5 } }
+			GFX_hof_ic_portrait_ivan_smirnov = { check_variable = { hof_ic_slot_6 = 6 } }
+			GFX_hof_ic_portrait_leonid_serebryakov = { check_variable = { hof_ic_slot_6 = 7 } }
+			GFX_hof_ic_portrait_yevgeny_preobrazhensky = { check_variable = { hof_ic_slot_6 = 8 } }
+			GFX_hof_ic_portrait_karl_radek = { check_variable = { hof_ic_slot_6 = 9 } }
+			GFX_hof_ic_portrait_ivar_smilga = { check_variable = { hof_ic_slot_6 = 10 } }
+			GFX_hof_ic_portrait_mikhail_tomsky = { check_variable = { hof_ic_slot_6 = 11 } }
+			GFX_hof_ic_portrait_martemyan_ryutin = { check_variable = { hof_ic_slot_6 = 12 } }
+			GFX_hof_ic_portrait_aleksandr_shlyapnikov = { check_variable = { hof_ic_slot_6 = 13 } }
+			GFX_hof_ic_portrait_mikhail_kalinin = { check_variable = { hof_ic_slot_6 = 14 } }
+			GFX_hof_ic_portrait_maksim_litvinov = { check_variable = { hof_ic_slot_6 = 15 } }
+			GFX_hof_ic_portrait_grigory_sokolnikov = { check_variable = { hof_ic_slot_6 = 16 } }
+			GFX_hof_ic_portrait_mikhail_tukhachevsky = { check_variable = { hof_ic_slot_6 = 17 } }
+			GFX_hof_ic_portrait_nikolay_voznesensky = { check_variable = { hof_ic_slot_6 = 18 } }
+			GFX_hof_ic_portrait_pyotr_smirnov = { check_variable = { hof_ic_slot_6 = 19 } }
+			GFX_hof_ic_portrait_georgy_malenkow = { check_variable = { hof_ic_slot_6 = 20 } }
+			GFX_hof_ic_portrait_nikita_khrushchyov = { check_variable = { hof_ic_slot_6 = 21 } }
+			GFX_hof_ic_portrait_kliment_voroshilov = { check_variable = { hof_ic_slot_6 = 22 } }
+			GFX_hof_ic_blank_portrait = yes
+		}
+
+		# ---------------- 席位 7 ----------------
+		hof_ic_seat_7_frame = {
+			GFX_hof_ic_seat_frame_empty = { check_variable = { hof_ic_slot_7 = 0 } }
+			GFX_hof_ic_seat_frame_filled = yes
+		}
+
+		hof_ic_seat_7_portrait = {
+			GFX_hof_ic_portrait_lev_trotsky = { check_variable = { hof_ic_slot_7 = 1 } }
+			GFX_hof_ic_portrait_nikolay_bukharin = { check_variable = { hof_ic_slot_7 = 2 } }
+			GFX_hof_ic_portrait_aleksey_rykov = { check_variable = { hof_ic_slot_7 = 3 } }
+			GFX_hof_ic_portrait_grigory_zinovyev = { check_variable = { hof_ic_slot_7 = 4 } }
+			GFX_hof_ic_portrait_lev_kamenev = { check_variable = { hof_ic_slot_7 = 5 } }
+			GFX_hof_ic_portrait_ivan_smirnov = { check_variable = { hof_ic_slot_7 = 6 } }
+			GFX_hof_ic_portrait_leonid_serebryakov = { check_variable = { hof_ic_slot_7 = 7 } }
+			GFX_hof_ic_portrait_yevgeny_preobrazhensky = { check_variable = { hof_ic_slot_7 = 8 } }
+			GFX_hof_ic_portrait_karl_radek = { check_variable = { hof_ic_slot_7 = 9 } }
+			GFX_hof_ic_portrait_ivar_smilga = { check_variable = { hof_ic_slot_7 = 10 } }
+			GFX_hof_ic_portrait_mikhail_tomsky = { check_variable = { hof_ic_slot_7 = 11 } }
+			GFX_hof_ic_portrait_martemyan_ryutin = { check_variable = { hof_ic_slot_7 = 12 } }
+			GFX_hof_ic_portrait_aleksandr_shlyapnikov = { check_variable = { hof_ic_slot_7 = 13 } }
+			GFX_hof_ic_portrait_mikhail_kalinin = { check_variable = { hof_ic_slot_7 = 14 } }
+			GFX_hof_ic_portrait_maksim_litvinov = { check_variable = { hof_ic_slot_7 = 15 } }
+			GFX_hof_ic_portrait_grigory_sokolnikov = { check_variable = { hof_ic_slot_7 = 16 } }
+			GFX_hof_ic_portrait_mikhail_tukhachevsky = { check_variable = { hof_ic_slot_7 = 17 } }
+			GFX_hof_ic_portrait_nikolay_voznesensky = { check_variable = { hof_ic_slot_7 = 18 } }
+			GFX_hof_ic_portrait_pyotr_smirnov = { check_variable = { hof_ic_slot_7 = 19 } }
+			GFX_hof_ic_portrait_georgy_malenkow = { check_variable = { hof_ic_slot_7 = 20 } }
+			GFX_hof_ic_portrait_nikita_khrushchyov = { check_variable = { hof_ic_slot_7 = 21 } }
+			GFX_hof_ic_portrait_kliment_voroshilov = { check_variable = { hof_ic_slot_7 = 22 } }
+			GFX_hof_ic_blank_portrait = yes
+		}
+	}
+}

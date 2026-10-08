@@ -1,0 +1,119 @@
+==== SOP 第 0 步 · 格奥尔基·马林科夫（Idx 20）====
+
+==================== 原版 ====================
+  --- gfx 下文件名命中（0 个）---
+
+==================== 原版-dlc ====================
+  --- gfx 下文件名命中（0 个）---
+
+==================== R56 ====================
+  --- common （15 行命中 / 4 个文件）---
+    common\characters\SOV.txt:113
+        SOV_georgy_malenkow = { #Country Leader role added via focus
+    common\characters\SOV.txt:114
+        name = "Georgy Malenkow"
+    common\characters\SOV.txt:118
+        large = "gfx/leaders/SOV/r56_portrait_SOV_Georgy_Malenkov.dds"
+    common\decisions\SOV.txt:1151
+        character = SOV_georgy_malenkow
+    common\decisions\SOV.txt:1205
+        character = SOV_georgy_malenkow
+    common\decisions\SOV.txt:1259
+        character = SOV_georgy_malenkow
+    common\decisions\SOV.txt:1313
+        character = SOV_georgy_malenkow
+    common\national_focus\soviet.txt:9729
+        character = SOV_georgy_malenkow
+    common\national_focus\soviet.txt:9740
+        SOV_georgy_malenkow = {
+    common\national_focus\soviet.txt:9745
+        character = SOV_georgy_malenkow
+    common\national_focus\soviet.txt:10220
+        if = { #demoting to simulate the Malenkows desire to oppose the Leningrads defenders and power struggle - Fantom
+    common\national_focus\soviet_old.txt:13834
+        id = SOV_consolidate_malenkovs_position_old
+    common\national_focus\soviet_old.txt:13835
+        text = SOV_consolidate_malenkovs_position
+    common\national_focus\soviet_old.txt:13867
+        mutually_exclusive = { focus = SOV_consolidate_malenkovs_position_old focus = SOV_berias_goons_strike_old }
+    common\national_focus\soviet_old.txt:13907
+        mutually_exclusive = { focus = SOV_khruschev_takes_the_lead_old focus = SOV_consolidate_malenkovs_position_old }
+  --- events （2 行命中 / 1 个文件）---
+    events\r56_prc.txt:247
+        character = SOV_georgy_malenkow
+    events\r56_prc.txt:262
+        character = SOV_georgy_malenkow
+  --- history （1 行命中 / 1 个文件）---
+    history\countries\SOV - Soviet union.txt:80
+        recruit_character = SOV_georgy_malenkow	#r56 for post-Stalin government
+  --- localisation （5 行命中 / 2 个文件）---
+    localisation\simp_chinese\oldsov_l_simp_chinese.yml:19
+        SOV_consolidate_malenkovs_position: "巩固马林科夫的地位"
+    localisation\simp_chinese\r56_SOV_l_simp_chinese.yml:521
+        SOV_prolong_the_stalin_legacy_desc:0 "伟大的斯大林同志已经离开了我们，苏联部长会议主席格奥尔基·马克西米连诺维奇·马林科夫必须获得足够的支持，以免被党内的修正主义者排挤。作为斯大林的亲密战友，他态度坚决，可以约束像贝利亚这样鲁莽的人，而贝利亚缺乏作为部长会议主席所需的克制。"
+    localisation\simp_chinese\r56_SOV_l_simp_chinese.yml:551
+        r56_kill_stalin.1.desc:0 "在一次前往马采斯塔宅第的散步中，约瑟夫·斯大林的公寓被街上的一些激进分子发现，他们抓起一把左轮手枪并试图射杀领袖，但很快被保镖解除了武装。内务部官员随后说服斯大林上车，在事态进一步升级之前开车回家。\n\n汽车在急转弯时意外地被一辆重载卡车撞到了。斯大林身受重伤，当场死亡。卡车司机目前正在接受关于可能参与阴谋的审讯。\n\n消息传到莫斯科后，最高苏维埃在举行新的选举前任命格奥尔基·马林科夫为第一书记。"
+    localisation\simp_chinese\r56_SOV_l_simp_chinese.yml:557
+        r56_kill_stalin.3.desc:0 "随着消息的传播，[SOV.getNameDef]全国乌云密布：近日，共产党的领导人约瑟夫·维萨里奥诺维奇·斯大林在马采斯塔的宅第中平静地去世。\n\n最近几周，由于患有心脏病，斯大林决定在位于黑海阳光海岸休息，远离繁忙的政治局办公室，以恢复其精力。宅第的工作人员被告知不要打扰领导，因为他想自己一个人安静地呆一会。要是有人知道这会导致什么后果就好了……\n格奥尔基·马林科夫将暂时掌权，确保国家从如此巨大的损失中稳定下来。"
+    localisation\simp_chinese\r56_SOV_l_simp_chinese.yml:560
+        r56_kill_stalin.4.desc:0 "马采斯塔晴朗的一天变成了一场可怕的噩梦，一名海岸警卫误以为约瑟夫·斯大林的船是走私船，并在后者拒绝提供当天的安全代码后开火。\n几发大炮将小游艇变成了燃烧的残骸，随后沉入黑海海底。一小时后，总书记的尸体被发现。\n\n警卫人员目前正接受内务部调查，调查是否可能有针对大元帅的阴谋。与此同时，格奥尔基·马林科夫被任命为[SOV.getNameDef]暂时的第一书记。"
+  --- gfx 下文件名命中（1 个）---
+    gfx\leaders\SOV\r56_portrait_SOV_Georgy_Malenkov.dds
+
+==================== 本项目内现况 ====================
+  --- build\gen-hof-ic-s3.ps1 （8 行）---
+    1181:  @{ Idx = 20; Key = 'georgy_malenkow';        Zh = '格奥尔基·马林科夫';
+    1182:  SeatDesc = '一名熟悉党的档案与人事的人，在任何领导机构里都用得上。格奥尔基·马林科夫长年在组织局主持干部工作；邀请他加入最高苏维埃，对我们来说将是非常有利的。';
+    1183:  Dds    = 'gfx/leaders/SOV/r56_portrait_SOV_Georgy_Malenkov.dds';
+    1185:  Idea   = 'hof_ic_idea_georgy_malenkow';
+    1411:  #        georgy_malenkow    —— 1953「新方针」＝布哈林路线（均衡增长 / 优先轻工业）
+    1419:  regime  = @('georgy_malenkow','nikita_khrushchyov','kliment_voroshilov')
+    2318:  'georgy_malenkow', 'nikita_khrushchyov', 'kliment_voroshilov')
+    6051:  $regimeOk = @('georgy_malenkow','nikita_khrushchyov','kliment_voroshilov')
+  --- mod\heart_of_iron\common\national_focus\soviet.txt （38 行）---
+    60:  tooltip = hof_ic_not_seated_georgy_malenkow_tt
+    61:  NOT = { hof_ic_seated_georgy_malenkow = yes }
+    132:  tooltip = hof_ic_not_seated_georgy_malenkow_tt
+    133:  NOT = { hof_ic_seated_georgy_malenkow = yes }
+    208:  tooltip = hof_ic_not_seated_georgy_malenkow_tt
+    209:  NOT = { hof_ic_seated_georgy_malenkow = yes }
+    284:  tooltip = hof_ic_not_seated_georgy_malenkow_tt
+    285:  NOT = { hof_ic_seated_georgy_malenkow = yes }
+    344:  tooltip = hof_ic_not_seated_georgy_malenkow_tt
+    345:  NOT = { hof_ic_seated_georgy_malenkow = yes }
+    412:  tooltip = hof_ic_not_seated_georgy_malenkow_tt
+    413:  NOT = { hof_ic_seated_georgy_malenkow = yes }
+    484:  tooltip = hof_ic_not_seated_georgy_malenkow_tt
+    485:  NOT = { hof_ic_seated_georgy_malenkow = yes }
+    556:  tooltip = hof_ic_not_seated_georgy_malenkow_tt
+    557:  NOT = { hof_ic_seated_georgy_malenkow = yes }
+    628:  tooltip = hof_ic_not_seated_georgy_malenkow_tt
+    629:  NOT = { hof_ic_seated_georgy_malenkow = yes }
+    700:  tooltip = hof_ic_not_seated_georgy_malenkow_tt
+    701:  NOT = { hof_ic_seated_georgy_malenkow = yes }
+    764:  tooltip = hof_ic_not_seated_georgy_malenkow_tt
+    765:  NOT = { hof_ic_seated_georgy_malenkow = yes }
+    840:  tooltip = hof_ic_not_seated_georgy_malenkow_tt
+    841:  NOT = { hof_ic_seated_georgy_malenkow = yes }
+    916:  tooltip = hof_ic_not_seated_georgy_malenkow_tt
+    917:  NOT = { hof_ic_seated_georgy_malenkow = yes }
+    1219:  id = hof_ic_seat_georgy_malenkow
+    1220:  icon = GFX_hof_ic_seat_georgy_malenkow
+    1232:  tooltip = hof_ic_not_seated_georgy_malenkow_tt
+    1233:  NOT = { hof_ic_seated_georgy_malenkow = yes }
+    1291:  CHARACTER = SOV_georgy_malenkow
+    1293:  show_ideas_tooltip = hof_ic_idea_georgy_malenkow
+    1299:  CHARACTER = SOV_georgy_malenkow
+    1302:  hof_ic_appoint_georgy_malenkow = yes
+    18329:  character = SOV_georgy_malenkow
+    18340:  SOV_georgy_malenkow = {
+    18345:  character = SOV_georgy_malenkow
+    18820:  if = { #demoting to simulate the Malenkows desire to oppose the Leningrads defenders and power struggle - Fantom
+  --- mod\heart_of_iron\localisation\simp_chinese\hof_ic_roster_l_simp_chinese.yml （7 行）---
+    25:  hof_ic_name_georgy_malenkow:0 "格奥尔基·马林科夫"
+    49:  hof_ic_trait_georgy_malenkow:0 "最高苏维埃委员"
+    73:  hof_ic_idea_georgy_malenkow:0 "格奥尔基·马林科夫"
+    74:  hof_ic_idea_georgy_malenkow_desc:0 "格奥尔基·马林科夫进入了最高苏维埃。他带来的专长会持续影响国家，代价是政治点收入下降。"
+    100:  hof_ic_seat_georgy_malenkow:0 "格奥尔基·马林科夫进入最高苏维埃"
+    123:  hof_ic_seat_georgy_malenkow_desc:0 "一名熟悉党的档案与人事的人，在任何领导机构里都用得上。格奥尔基·马林科夫长年在组织局主持干部工作；邀请他加入最高苏维埃，对我们来说将是非常有利的。"
+    657:  hof_ic_not_seated_georgy_malenkow_tt:0 "§Y格奥尔基·马林科夫§! 不在最高苏维埃中任职"

@@ -1,0 +1,17 @@
+{
+  "id": "hof_ic_radek_german_october",
+  "name": "GFX_hof_ic_radek_german_october",
+  "title": "德国十月",
+  "concept": "An EMPTY German cobblestone street at night, incomplete low barricade of a few wooden crates, overturned handcart and scattered stones on LEFT foreground. Large open passage leads out to RIGHT. All street lamps visibly unlit; just two tiny distant amber house windows. No people, weapons, flags, fire or combat. Restrained abandoned unfinished mood, cold midnight blue, engraved silver edge highlights keep shapes legible.",
+  "group": "radek",
+  "size": [
+    100,
+    88
+  ],
+  "prompt": "Create ONE Hearts of Iron IV Soviet national focus icon. Reference is engraved relief style and outer laurel silhouette ONLY. CRITICAL palette override: NO RED star or red medallion or red frame; star is antique GOLD, inner rim bronze. There must be NO saturated red anywhere. Subject: An EMPTY German cobblestone street at night, incomplete low barricade of a few wooden crates, overturned handcart and scattered stones on LEFT foreground. Large open passage leads out to RIGHT. All street lamps visibly unlit; just two tiny distant amber house windows. No people, weapons, flags, fire or combat. Restrained abandoned unfinished mood, cold midnight blue, engraved silver edge highlights keep shapes legible. Gold laurel open at top, small GOLD star above, blank gold ribbon below. Sculptural engraved miniature relief, high readable contrast and clear shapes at final 100x88. No faces, readable text, letters, numbers, watermark. No archive cabinets, bookcase walls, printing machinery or bookbinding. Landscape100:88. TRUE transparent RGBA background, alpha0 outside emblem and all four corners,20-50% transparent area; emblem fills94%canvas. No fake checkerboard, no background rectangle or external shadow.",
+  "references": [
+    "D:/Users/xuwei/PycharmProjects/heart_of_Iron/art/focus/bukharin/source/GFX_hof_ic_bukharin_proportional_development.png"
+  ],
+  "generated_path": "C:\\Users\\xuwei\\.codex\\generated_images\\01a09af5-fd43-79a0-a3cc-72284cd67cbc\\exec-a5ee38d8-31e6-4332-859a-677d04295b8c.png",
+  "mode": "built-in image_gen"
+}

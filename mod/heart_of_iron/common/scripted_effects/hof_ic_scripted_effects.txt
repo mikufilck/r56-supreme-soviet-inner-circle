@@ -1,0 +1,3572 @@
+# =============================================================================
+# 核心圈 · 席位效果（由 build/gen-hof-ic-s3.ps1 生成，勿手改）
+# -----------------------------------------------------------------------------
+# 数据模型：hof_ic_slot_1 .. hof_ic_slot_7 = 角色序号；0 / 未赋值 = 空席
+#           hof_ic_appointing            = 正在办理入席的人（替换流程用，用完即清）
+#
+# ⚠️ 三个已验证的写法要点（不要改）：
+#   1. 本文件【没有】包装层，效果直接顶层写 名称 = { }
+#   2. 不做初始化。check_variable 对未赋值变量按 0 处理（原版德国同款）
+#   3. scripted_effect 调用写法是 名称 = yes
+# =============================================================================
+
+# ---------------------------------------------------------------------------
+# 任命冷却：设一个带 days 的国策 flag（原版 GER_inner_circle_set_ascension_cd 同款）
+# ---------------------------------------------------------------------------
+hof_ic_set_appointment_cd = {
+	set_country_flag = {
+		flag = hof_ic_appointment_cd
+		days = 60
+		value = 1
+	}
+}
+
+# ---------------------------------------------------------------------------
+# 给 hof_ic_appointing 指向的那个人加上他的 idea（查表）
+# ---------------------------------------------------------------------------
+hof_ic_add_appointee_idea = {
+	if = { limit = { check_variable = { hof_ic_appointing = 1 } } hof_ic_role_refresh_lev_trotsky = yes }
+	else_if = { limit = { check_variable = { hof_ic_appointing = 2 } } hof_ic_role_refresh_nikolay_bukharin = yes }
+	else_if = { limit = { check_variable = { hof_ic_appointing = 3 } } hof_ic_role_refresh_aleksey_rykov = yes }
+	else_if = { limit = { check_variable = { hof_ic_appointing = 4 } } hof_ic_role_refresh_grigory_zinovyev = yes }
+	else_if = { limit = { check_variable = { hof_ic_appointing = 5 } } hof_ic_role_refresh_lev_kamenev = yes }
+	else_if = { limit = { check_variable = { hof_ic_appointing = 6 } } hof_ic_role_refresh_ivan_smirnov = yes }
+	else_if = { limit = { check_variable = { hof_ic_appointing = 7 } } hof_ic_role_refresh_leonid_serebryakov = yes }
+	else_if = { limit = { check_variable = { hof_ic_appointing = 8 } } hof_ic_role_refresh_yevgeny_preobrazhensky = yes }
+	else_if = { limit = { check_variable = { hof_ic_appointing = 9 } } hof_ic_role_refresh_karl_radek = yes }
+	else_if = { limit = { check_variable = { hof_ic_appointing = 10 } } hof_ic_role_refresh_ivar_smilga = yes }
+	else_if = { limit = { check_variable = { hof_ic_appointing = 11 } } hof_ic_role_refresh_mikhail_tomsky = yes }
+	else_if = { limit = { check_variable = { hof_ic_appointing = 12 } } hof_ic_role_refresh_martemyan_ryutin = yes }
+	else_if = { limit = { check_variable = { hof_ic_appointing = 13 } } hof_ic_role_refresh_aleksandr_shlyapnikov = yes }
+	else_if = { limit = { check_variable = { hof_ic_appointing = 14 } } hof_ic_role_refresh_mikhail_kalinin = yes }
+	else_if = { limit = { check_variable = { hof_ic_appointing = 15 } } hof_ic_role_refresh_maksim_litvinov = yes }
+	else_if = { limit = { check_variable = { hof_ic_appointing = 16 } } hof_ic_role_refresh_grigory_sokolnikov = yes }
+	else_if = { limit = { check_variable = { hof_ic_appointing = 17 } } hof_ic_role_refresh_mikhail_tukhachevsky = yes }
+	else_if = { limit = { check_variable = { hof_ic_appointing = 18 } } hof_ic_role_refresh_nikolay_voznesensky = yes }
+	else_if = { limit = { check_variable = { hof_ic_appointing = 19 } } hof_ic_role_refresh_pyotr_smirnov = yes }
+	else_if = { limit = { check_variable = { hof_ic_appointing = 20 } } hof_ic_role_refresh_georgy_malenkow = yes }
+	else_if = { limit = { check_variable = { hof_ic_appointing = 21 } } hof_ic_role_refresh_nikita_khrushchyov = yes }
+	else_if = { limit = { check_variable = { hof_ic_appointing = 22 } } hof_ic_role_refresh_kliment_voroshilov = yes }
+}
+
+# 卸掉第 1 席当前占位者的 idea
+hof_ic_remove_slot_1_idea = {
+	if = { limit = { check_variable = { hof_ic_slot_1 = 1 } } hof_ic_role_remove_lev_trotsky = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_1 = 2 } } hof_ic_role_remove_nikolay_bukharin = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_1 = 3 } } hof_ic_role_remove_aleksey_rykov = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_1 = 4 } } hof_ic_role_remove_grigory_zinovyev = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_1 = 5 } } hof_ic_role_remove_lev_kamenev = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_1 = 6 } } hof_ic_role_remove_ivan_smirnov = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_1 = 7 } } hof_ic_role_remove_leonid_serebryakov = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_1 = 8 } } hof_ic_role_remove_yevgeny_preobrazhensky = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_1 = 9 } } hof_ic_role_remove_karl_radek = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_1 = 10 } } hof_ic_role_remove_ivar_smilga = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_1 = 11 } } hof_ic_role_remove_mikhail_tomsky = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_1 = 12 } } hof_ic_role_remove_martemyan_ryutin = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_1 = 13 } } hof_ic_role_remove_aleksandr_shlyapnikov = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_1 = 14 } } hof_ic_role_remove_mikhail_kalinin = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_1 = 15 } } hof_ic_role_remove_maksim_litvinov = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_1 = 16 } } hof_ic_role_remove_grigory_sokolnikov = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_1 = 17 } } hof_ic_role_remove_mikhail_tukhachevsky = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_1 = 18 } } hof_ic_role_remove_nikolay_voznesensky = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_1 = 19 } } hof_ic_role_remove_pyotr_smirnov = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_1 = 20 } } hof_ic_role_remove_georgy_malenkow = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_1 = 21 } } hof_ic_role_remove_nikita_khrushchyov = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_1 = 22 } } hof_ic_role_remove_kliment_voroshilov = yes }
+}
+
+# 卸掉第 2 席当前占位者的 idea
+hof_ic_remove_slot_2_idea = {
+	if = { limit = { check_variable = { hof_ic_slot_2 = 1 } } hof_ic_role_remove_lev_trotsky = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_2 = 2 } } hof_ic_role_remove_nikolay_bukharin = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_2 = 3 } } hof_ic_role_remove_aleksey_rykov = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_2 = 4 } } hof_ic_role_remove_grigory_zinovyev = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_2 = 5 } } hof_ic_role_remove_lev_kamenev = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_2 = 6 } } hof_ic_role_remove_ivan_smirnov = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_2 = 7 } } hof_ic_role_remove_leonid_serebryakov = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_2 = 8 } } hof_ic_role_remove_yevgeny_preobrazhensky = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_2 = 9 } } hof_ic_role_remove_karl_radek = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_2 = 10 } } hof_ic_role_remove_ivar_smilga = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_2 = 11 } } hof_ic_role_remove_mikhail_tomsky = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_2 = 12 } } hof_ic_role_remove_martemyan_ryutin = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_2 = 13 } } hof_ic_role_remove_aleksandr_shlyapnikov = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_2 = 14 } } hof_ic_role_remove_mikhail_kalinin = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_2 = 15 } } hof_ic_role_remove_maksim_litvinov = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_2 = 16 } } hof_ic_role_remove_grigory_sokolnikov = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_2 = 17 } } hof_ic_role_remove_mikhail_tukhachevsky = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_2 = 18 } } hof_ic_role_remove_nikolay_voznesensky = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_2 = 19 } } hof_ic_role_remove_pyotr_smirnov = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_2 = 20 } } hof_ic_role_remove_georgy_malenkow = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_2 = 21 } } hof_ic_role_remove_nikita_khrushchyov = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_2 = 22 } } hof_ic_role_remove_kliment_voroshilov = yes }
+}
+
+# 卸掉第 3 席当前占位者的 idea
+hof_ic_remove_slot_3_idea = {
+	if = { limit = { check_variable = { hof_ic_slot_3 = 1 } } hof_ic_role_remove_lev_trotsky = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_3 = 2 } } hof_ic_role_remove_nikolay_bukharin = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_3 = 3 } } hof_ic_role_remove_aleksey_rykov = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_3 = 4 } } hof_ic_role_remove_grigory_zinovyev = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_3 = 5 } } hof_ic_role_remove_lev_kamenev = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_3 = 6 } } hof_ic_role_remove_ivan_smirnov = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_3 = 7 } } hof_ic_role_remove_leonid_serebryakov = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_3 = 8 } } hof_ic_role_remove_yevgeny_preobrazhensky = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_3 = 9 } } hof_ic_role_remove_karl_radek = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_3 = 10 } } hof_ic_role_remove_ivar_smilga = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_3 = 11 } } hof_ic_role_remove_mikhail_tomsky = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_3 = 12 } } hof_ic_role_remove_martemyan_ryutin = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_3 = 13 } } hof_ic_role_remove_aleksandr_shlyapnikov = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_3 = 14 } } hof_ic_role_remove_mikhail_kalinin = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_3 = 15 } } hof_ic_role_remove_maksim_litvinov = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_3 = 16 } } hof_ic_role_remove_grigory_sokolnikov = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_3 = 17 } } hof_ic_role_remove_mikhail_tukhachevsky = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_3 = 18 } } hof_ic_role_remove_nikolay_voznesensky = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_3 = 19 } } hof_ic_role_remove_pyotr_smirnov = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_3 = 20 } } hof_ic_role_remove_georgy_malenkow = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_3 = 21 } } hof_ic_role_remove_nikita_khrushchyov = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_3 = 22 } } hof_ic_role_remove_kliment_voroshilov = yes }
+}
+
+# 卸掉第 4 席当前占位者的 idea
+hof_ic_remove_slot_4_idea = {
+	if = { limit = { check_variable = { hof_ic_slot_4 = 1 } } hof_ic_role_remove_lev_trotsky = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_4 = 2 } } hof_ic_role_remove_nikolay_bukharin = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_4 = 3 } } hof_ic_role_remove_aleksey_rykov = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_4 = 4 } } hof_ic_role_remove_grigory_zinovyev = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_4 = 5 } } hof_ic_role_remove_lev_kamenev = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_4 = 6 } } hof_ic_role_remove_ivan_smirnov = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_4 = 7 } } hof_ic_role_remove_leonid_serebryakov = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_4 = 8 } } hof_ic_role_remove_yevgeny_preobrazhensky = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_4 = 9 } } hof_ic_role_remove_karl_radek = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_4 = 10 } } hof_ic_role_remove_ivar_smilga = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_4 = 11 } } hof_ic_role_remove_mikhail_tomsky = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_4 = 12 } } hof_ic_role_remove_martemyan_ryutin = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_4 = 13 } } hof_ic_role_remove_aleksandr_shlyapnikov = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_4 = 14 } } hof_ic_role_remove_mikhail_kalinin = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_4 = 15 } } hof_ic_role_remove_maksim_litvinov = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_4 = 16 } } hof_ic_role_remove_grigory_sokolnikov = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_4 = 17 } } hof_ic_role_remove_mikhail_tukhachevsky = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_4 = 18 } } hof_ic_role_remove_nikolay_voznesensky = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_4 = 19 } } hof_ic_role_remove_pyotr_smirnov = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_4 = 20 } } hof_ic_role_remove_georgy_malenkow = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_4 = 21 } } hof_ic_role_remove_nikita_khrushchyov = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_4 = 22 } } hof_ic_role_remove_kliment_voroshilov = yes }
+}
+
+# 卸掉第 5 席当前占位者的 idea
+hof_ic_remove_slot_5_idea = {
+	if = { limit = { check_variable = { hof_ic_slot_5 = 1 } } hof_ic_role_remove_lev_trotsky = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_5 = 2 } } hof_ic_role_remove_nikolay_bukharin = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_5 = 3 } } hof_ic_role_remove_aleksey_rykov = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_5 = 4 } } hof_ic_role_remove_grigory_zinovyev = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_5 = 5 } } hof_ic_role_remove_lev_kamenev = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_5 = 6 } } hof_ic_role_remove_ivan_smirnov = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_5 = 7 } } hof_ic_role_remove_leonid_serebryakov = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_5 = 8 } } hof_ic_role_remove_yevgeny_preobrazhensky = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_5 = 9 } } hof_ic_role_remove_karl_radek = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_5 = 10 } } hof_ic_role_remove_ivar_smilga = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_5 = 11 } } hof_ic_role_remove_mikhail_tomsky = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_5 = 12 } } hof_ic_role_remove_martemyan_ryutin = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_5 = 13 } } hof_ic_role_remove_aleksandr_shlyapnikov = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_5 = 14 } } hof_ic_role_remove_mikhail_kalinin = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_5 = 15 } } hof_ic_role_remove_maksim_litvinov = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_5 = 16 } } hof_ic_role_remove_grigory_sokolnikov = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_5 = 17 } } hof_ic_role_remove_mikhail_tukhachevsky = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_5 = 18 } } hof_ic_role_remove_nikolay_voznesensky = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_5 = 19 } } hof_ic_role_remove_pyotr_smirnov = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_5 = 20 } } hof_ic_role_remove_georgy_malenkow = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_5 = 21 } } hof_ic_role_remove_nikita_khrushchyov = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_5 = 22 } } hof_ic_role_remove_kliment_voroshilov = yes }
+}
+
+# 卸掉第 6 席当前占位者的 idea
+hof_ic_remove_slot_6_idea = {
+	if = { limit = { check_variable = { hof_ic_slot_6 = 1 } } hof_ic_role_remove_lev_trotsky = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_6 = 2 } } hof_ic_role_remove_nikolay_bukharin = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_6 = 3 } } hof_ic_role_remove_aleksey_rykov = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_6 = 4 } } hof_ic_role_remove_grigory_zinovyev = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_6 = 5 } } hof_ic_role_remove_lev_kamenev = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_6 = 6 } } hof_ic_role_remove_ivan_smirnov = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_6 = 7 } } hof_ic_role_remove_leonid_serebryakov = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_6 = 8 } } hof_ic_role_remove_yevgeny_preobrazhensky = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_6 = 9 } } hof_ic_role_remove_karl_radek = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_6 = 10 } } hof_ic_role_remove_ivar_smilga = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_6 = 11 } } hof_ic_role_remove_mikhail_tomsky = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_6 = 12 } } hof_ic_role_remove_martemyan_ryutin = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_6 = 13 } } hof_ic_role_remove_aleksandr_shlyapnikov = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_6 = 14 } } hof_ic_role_remove_mikhail_kalinin = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_6 = 15 } } hof_ic_role_remove_maksim_litvinov = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_6 = 16 } } hof_ic_role_remove_grigory_sokolnikov = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_6 = 17 } } hof_ic_role_remove_mikhail_tukhachevsky = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_6 = 18 } } hof_ic_role_remove_nikolay_voznesensky = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_6 = 19 } } hof_ic_role_remove_pyotr_smirnov = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_6 = 20 } } hof_ic_role_remove_georgy_malenkow = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_6 = 21 } } hof_ic_role_remove_nikita_khrushchyov = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_6 = 22 } } hof_ic_role_remove_kliment_voroshilov = yes }
+}
+
+# 卸掉第 7 席当前占位者的 idea
+hof_ic_remove_slot_7_idea = {
+	if = { limit = { check_variable = { hof_ic_slot_7 = 1 } } hof_ic_role_remove_lev_trotsky = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_7 = 2 } } hof_ic_role_remove_nikolay_bukharin = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_7 = 3 } } hof_ic_role_remove_aleksey_rykov = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_7 = 4 } } hof_ic_role_remove_grigory_zinovyev = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_7 = 5 } } hof_ic_role_remove_lev_kamenev = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_7 = 6 } } hof_ic_role_remove_ivan_smirnov = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_7 = 7 } } hof_ic_role_remove_leonid_serebryakov = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_7 = 8 } } hof_ic_role_remove_yevgeny_preobrazhensky = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_7 = 9 } } hof_ic_role_remove_karl_radek = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_7 = 10 } } hof_ic_role_remove_ivar_smilga = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_7 = 11 } } hof_ic_role_remove_mikhail_tomsky = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_7 = 12 } } hof_ic_role_remove_martemyan_ryutin = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_7 = 13 } } hof_ic_role_remove_aleksandr_shlyapnikov = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_7 = 14 } } hof_ic_role_remove_mikhail_kalinin = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_7 = 15 } } hof_ic_role_remove_maksim_litvinov = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_7 = 16 } } hof_ic_role_remove_grigory_sokolnikov = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_7 = 17 } } hof_ic_role_remove_mikhail_tukhachevsky = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_7 = 18 } } hof_ic_role_remove_nikolay_voznesensky = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_7 = 19 } } hof_ic_role_remove_pyotr_smirnov = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_7 = 20 } } hof_ic_role_remove_georgy_malenkow = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_7 = 21 } } hof_ic_role_remove_nikita_khrushchyov = yes }
+	else_if = { limit = { check_variable = { hof_ic_slot_7 = 22 } } hof_ic_role_remove_kliment_voroshilov = yes }
+}
+
+hof_ic_begin_lev_trotsky_line = {
+	if = {
+		limit = {
+			SOV_lev_trotsky = {
+				NOT = { has_character_flag = hof_ic_trotsky_path_market_flag }
+				NOT = { has_character_flag = hof_ic_trotsky_path_labour_flag }
+			}
+		}
+		country_event = heartofiron.1060
+	}
+	country_event = { id = heartofiron.1110 days = 7 random_days = 7 }
+}
+
+hof_ic_begin_nikolay_bukharin_line = {
+	if = {
+		limit = {
+			SOV_nikolay_bukharin = {
+				NOT = { has_character_flag = hof_ic_bukharin_path_nep_flag }
+				NOT = { has_character_flag = hof_ic_bukharin_path_left_flag }
+			}
+		}
+		country_event = heartofiron.1061
+	}
+	country_event = { id = heartofiron.1120 days = 7 random_days = 7 }
+}
+
+hof_ic_begin_aleksey_rykov_line = {
+	country_event = { id = heartofiron.1130 days = 7 random_days = 7 }
+}
+
+hof_ic_begin_grigory_zinovyev_line = {
+	country_event = { id = heartofiron.1140 days = 7 random_days = 7 }
+}
+
+hof_ic_begin_lev_kamenev_line = {
+	country_event = { id = heartofiron.1150 days = 7 random_days = 7 }
+}
+
+hof_ic_begin_ivan_smirnov_line = {
+	country_event = { id = heartofiron.1160 days = 7 random_days = 7 }
+}
+
+hof_ic_begin_leonid_serebryakov_line = {
+	country_event = { id = heartofiron.1170 days = 7 random_days = 7 }
+}
+
+hof_ic_begin_yevgeny_preobrazhensky_line = {
+	country_event = { id = heartofiron.1180 days = 7 random_days = 7 }
+}
+
+hof_ic_begin_karl_radek_line = {
+	country_event = { id = heartofiron.1190 days = 7 random_days = 7 }
+}
+
+hof_ic_begin_ivar_smilga_line = {
+	country_event = { id = heartofiron.1200 days = 7 random_days = 7 }
+}
+
+hof_ic_begin_mikhail_tomsky_line = {
+	country_event = { id = heartofiron.1210 days = 7 random_days = 7 }
+}
+
+hof_ic_begin_martemyan_ryutin_line = {
+	country_event = { id = heartofiron.1220 days = 7 random_days = 7 }
+}
+
+hof_ic_begin_aleksandr_shlyapnikov_line = {
+	country_event = { id = heartofiron.1230 days = 7 random_days = 7 }
+}
+
+hof_ic_begin_mikhail_kalinin_line = {
+	country_event = { id = heartofiron.1240 days = 7 random_days = 7 }
+}
+
+hof_ic_begin_maksim_litvinov_line = {
+	country_event = { id = heartofiron.1250 days = 7 random_days = 7 }
+}
+
+hof_ic_begin_grigory_sokolnikov_line = {
+	country_event = { id = heartofiron.1260 days = 7 random_days = 7 }
+}
+
+hof_ic_begin_mikhail_tukhachevsky_line = {
+	country_event = { id = heartofiron.1270 days = 7 random_days = 7 }
+}
+
+hof_ic_begin_nikolay_voznesensky_line = {
+	country_event = { id = heartofiron.1280 days = 7 random_days = 7 }
+}
+
+hof_ic_begin_pyotr_smirnov_line = {
+	country_event = { id = heartofiron.1290 days = 7 random_days = 7 }
+}
+
+hof_ic_begin_georgy_malenkow_line = {
+	country_event = { id = heartofiron.1300 days = 7 random_days = 7 }
+}
+
+hof_ic_begin_nikita_khrushchyov_line = {
+	country_event = { id = heartofiron.1310 days = 7 random_days = 7 }
+}
+
+hof_ic_begin_kliment_voroshilov_line = {
+	country_event = { id = heartofiron.1320 days = 7 random_days = 7 }
+}
+
+hof_ic_begin_appointee_line = {
+	if = { limit = { check_variable = { hof_ic_appointing = 1 } } hof_ic_begin_lev_trotsky_line = yes }
+	if = { limit = { check_variable = { hof_ic_appointing = 2 } } hof_ic_begin_nikolay_bukharin_line = yes }
+	if = { limit = { check_variable = { hof_ic_appointing = 3 } } hof_ic_begin_aleksey_rykov_line = yes }
+	if = { limit = { check_variable = { hof_ic_appointing = 4 } } hof_ic_begin_grigory_zinovyev_line = yes }
+	if = { limit = { check_variable = { hof_ic_appointing = 5 } } hof_ic_begin_lev_kamenev_line = yes }
+	if = { limit = { check_variable = { hof_ic_appointing = 6 } } hof_ic_begin_ivan_smirnov_line = yes }
+	if = { limit = { check_variable = { hof_ic_appointing = 7 } } hof_ic_begin_leonid_serebryakov_line = yes }
+	if = { limit = { check_variable = { hof_ic_appointing = 8 } } hof_ic_begin_yevgeny_preobrazhensky_line = yes }
+	if = { limit = { check_variable = { hof_ic_appointing = 9 } } hof_ic_begin_karl_radek_line = yes }
+	if = { limit = { check_variable = { hof_ic_appointing = 10 } } hof_ic_begin_ivar_smilga_line = yes }
+	if = { limit = { check_variable = { hof_ic_appointing = 11 } } hof_ic_begin_mikhail_tomsky_line = yes }
+	if = { limit = { check_variable = { hof_ic_appointing = 12 } } hof_ic_begin_martemyan_ryutin_line = yes }
+	if = { limit = { check_variable = { hof_ic_appointing = 13 } } hof_ic_begin_aleksandr_shlyapnikov_line = yes }
+	if = { limit = { check_variable = { hof_ic_appointing = 14 } } hof_ic_begin_mikhail_kalinin_line = yes }
+	if = { limit = { check_variable = { hof_ic_appointing = 15 } } hof_ic_begin_maksim_litvinov_line = yes }
+	if = { limit = { check_variable = { hof_ic_appointing = 16 } } hof_ic_begin_grigory_sokolnikov_line = yes }
+	if = { limit = { check_variable = { hof_ic_appointing = 17 } } hof_ic_begin_mikhail_tukhachevsky_line = yes }
+	if = { limit = { check_variable = { hof_ic_appointing = 18 } } hof_ic_begin_nikolay_voznesensky_line = yes }
+	if = { limit = { check_variable = { hof_ic_appointing = 19 } } hof_ic_begin_pyotr_smirnov_line = yes }
+	if = { limit = { check_variable = { hof_ic_appointing = 20 } } hof_ic_begin_georgy_malenkow_line = yes }
+	if = { limit = { check_variable = { hof_ic_appointing = 21 } } hof_ic_begin_nikita_khrushchyov_line = yes }
+	if = { limit = { check_variable = { hof_ic_appointing = 22 } } hof_ic_begin_kliment_voroshilov_line = yes }
+}
+
+# 把第 1 席的人换成 hof_ic_appointing（替换事件用）
+hof_ic_replace_slot_1 = {
+	hof_ic_remove_slot_1_idea = yes
+	set_variable = { hof_ic_slot_1 = hof_ic_appointing }
+	hof_ic_add_appointee_idea = yes
+	hof_ic_begin_appointee_line = yes
+	clear_variable = hof_ic_appointing
+}
+
+# 把第 2 席的人换成 hof_ic_appointing（替换事件用）
+hof_ic_replace_slot_2 = {
+	hof_ic_remove_slot_2_idea = yes
+	set_variable = { hof_ic_slot_2 = hof_ic_appointing }
+	hof_ic_add_appointee_idea = yes
+	hof_ic_begin_appointee_line = yes
+	clear_variable = hof_ic_appointing
+}
+
+# 把第 3 席的人换成 hof_ic_appointing（替换事件用）
+hof_ic_replace_slot_3 = {
+	hof_ic_remove_slot_3_idea = yes
+	set_variable = { hof_ic_slot_3 = hof_ic_appointing }
+	hof_ic_add_appointee_idea = yes
+	hof_ic_begin_appointee_line = yes
+	clear_variable = hof_ic_appointing
+}
+
+# 把第 4 席的人换成 hof_ic_appointing（替换事件用）
+hof_ic_replace_slot_4 = {
+	hof_ic_remove_slot_4_idea = yes
+	set_variable = { hof_ic_slot_4 = hof_ic_appointing }
+	hof_ic_add_appointee_idea = yes
+	hof_ic_begin_appointee_line = yes
+	clear_variable = hof_ic_appointing
+}
+
+# 把第 5 席的人换成 hof_ic_appointing（替换事件用）
+hof_ic_replace_slot_5 = {
+	hof_ic_remove_slot_5_idea = yes
+	set_variable = { hof_ic_slot_5 = hof_ic_appointing }
+	hof_ic_add_appointee_idea = yes
+	hof_ic_begin_appointee_line = yes
+	clear_variable = hof_ic_appointing
+}
+
+# 把第 6 席的人换成 hof_ic_appointing（替换事件用）
+hof_ic_replace_slot_6 = {
+	hof_ic_remove_slot_6_idea = yes
+	set_variable = { hof_ic_slot_6 = hof_ic_appointing }
+	hof_ic_add_appointee_idea = yes
+	hof_ic_begin_appointee_line = yes
+	clear_variable = hof_ic_appointing
+}
+
+# 把第 7 席的人换成 hof_ic_appointing（替换事件用）
+hof_ic_replace_slot_7 = {
+	hof_ic_remove_slot_7_idea = yes
+	set_variable = { hof_ic_slot_7 = hof_ic_appointing }
+	hof_ic_add_appointee_idea = yes
+	hof_ic_begin_appointee_line = yes
+	clear_variable = hof_ic_appointing
+}
+
+# ---------------------------------------------------------------------------
+# 序号 1 —— 列夫·托洛茨基
+#   个人线 13 个国策，入席后由 hof_ic_lev_trotsky.01 / .02 自动推进
+# ---------------------------------------------------------------------------
+hof_ic_appoint_lev_trotsky = {
+	set_variable = { hof_ic_appointing = 1 }
+
+	if = {
+		limit = { hof_ic_has_empty_seat = yes }
+
+		if = {
+			limit = { check_variable = { hof_ic_slot_1 = 0 } }
+			set_variable = { hof_ic_slot_1 = 1 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_2 = 0 } }
+			set_variable = { hof_ic_slot_2 = 1 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_3 = 0 } }
+			set_variable = { hof_ic_slot_3 = 1 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_4 = 0 } }
+			set_variable = { hof_ic_slot_4 = 1 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_5 = 0 } }
+			set_variable = { hof_ic_slot_5 = 1 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_6 = 0 } }
+			set_variable = { hof_ic_slot_6 = 1 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_7 = 0 } }
+			set_variable = { hof_ic_slot_7 = 1 }
+		}
+
+		hof_ic_add_appointee_idea = yes
+		clear_variable = hof_ic_appointing
+	}
+	else = {
+		# 七席已满 -> 走替换事件，让玩家挑一个人换掉（照德国 GER_inner_circle.01）
+		country_event = heartofiron.1000
+	}
+
+	# 不管坐进去还是走替换流程，都进冷却
+	hof_ic_set_appointment_cd = yes
+}
+
+# ---------------------------------------------------------------------------
+# 序号 2 —— 尼古拉·布哈林
+#   个人线 7 个国策，入席后由 hof_ic_nikolay_bukharin.01 / .02 自动推进
+# ---------------------------------------------------------------------------
+hof_ic_appoint_nikolay_bukharin = {
+	set_variable = { hof_ic_appointing = 2 }
+
+	if = {
+		limit = { hof_ic_has_empty_seat = yes }
+
+		if = {
+			limit = { check_variable = { hof_ic_slot_1 = 0 } }
+			set_variable = { hof_ic_slot_1 = 2 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_2 = 0 } }
+			set_variable = { hof_ic_slot_2 = 2 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_3 = 0 } }
+			set_variable = { hof_ic_slot_3 = 2 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_4 = 0 } }
+			set_variable = { hof_ic_slot_4 = 2 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_5 = 0 } }
+			set_variable = { hof_ic_slot_5 = 2 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_6 = 0 } }
+			set_variable = { hof_ic_slot_6 = 2 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_7 = 0 } }
+			set_variable = { hof_ic_slot_7 = 2 }
+		}
+
+		hof_ic_add_appointee_idea = yes
+		clear_variable = hof_ic_appointing
+	}
+	else = {
+		# 七席已满 -> 走替换事件，让玩家挑一个人换掉（照德国 GER_inner_circle.01）
+		country_event = heartofiron.1000
+	}
+
+	# 不管坐进去还是走替换流程，都进冷却
+	hof_ic_set_appointment_cd = yes
+}
+
+# ---------------------------------------------------------------------------
+# 序号 3 —— 阿列克谢·李可夫
+#   个人线 5 个国策，入席后由 hof_ic_aleksey_rykov.01 / .02 自动推进
+# ---------------------------------------------------------------------------
+hof_ic_appoint_aleksey_rykov = {
+	set_variable = { hof_ic_appointing = 3 }
+
+	if = {
+		limit = { hof_ic_has_empty_seat = yes }
+
+		if = {
+			limit = { check_variable = { hof_ic_slot_1 = 0 } }
+			set_variable = { hof_ic_slot_1 = 3 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_2 = 0 } }
+			set_variable = { hof_ic_slot_2 = 3 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_3 = 0 } }
+			set_variable = { hof_ic_slot_3 = 3 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_4 = 0 } }
+			set_variable = { hof_ic_slot_4 = 3 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_5 = 0 } }
+			set_variable = { hof_ic_slot_5 = 3 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_6 = 0 } }
+			set_variable = { hof_ic_slot_6 = 3 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_7 = 0 } }
+			set_variable = { hof_ic_slot_7 = 3 }
+		}
+
+		hof_ic_add_appointee_idea = yes
+		clear_variable = hof_ic_appointing
+	}
+	else = {
+		# 七席已满 -> 走替换事件，让玩家挑一个人换掉（照德国 GER_inner_circle.01）
+		country_event = heartofiron.1000
+	}
+
+	# 不管坐进去还是走替换流程，都进冷却
+	hof_ic_set_appointment_cd = yes
+}
+
+# ---------------------------------------------------------------------------
+# 序号 4 —— 格里戈里·季诺维也夫
+#   个人线 9 个国策，入席后由 hof_ic_grigory_zinovyev.01 / .02 自动推进
+# ---------------------------------------------------------------------------
+hof_ic_appoint_grigory_zinovyev = {
+	set_variable = { hof_ic_appointing = 4 }
+
+	if = {
+		limit = { hof_ic_has_empty_seat = yes }
+
+		if = {
+			limit = { check_variable = { hof_ic_slot_1 = 0 } }
+			set_variable = { hof_ic_slot_1 = 4 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_2 = 0 } }
+			set_variable = { hof_ic_slot_2 = 4 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_3 = 0 } }
+			set_variable = { hof_ic_slot_3 = 4 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_4 = 0 } }
+			set_variable = { hof_ic_slot_4 = 4 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_5 = 0 } }
+			set_variable = { hof_ic_slot_5 = 4 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_6 = 0 } }
+			set_variable = { hof_ic_slot_6 = 4 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_7 = 0 } }
+			set_variable = { hof_ic_slot_7 = 4 }
+		}
+
+		hof_ic_add_appointee_idea = yes
+		clear_variable = hof_ic_appointing
+	}
+	else = {
+		# 七席已满 -> 走替换事件，让玩家挑一个人换掉（照德国 GER_inner_circle.01）
+		country_event = heartofiron.1000
+	}
+
+	# 不管坐进去还是走替换流程，都进冷却
+	hof_ic_set_appointment_cd = yes
+}
+
+# ---------------------------------------------------------------------------
+# 序号 5 —— 列夫·加米涅夫
+#   个人线 5 个国策，入席后由 hof_ic_lev_kamenev.01 / .02 自动推进
+# ---------------------------------------------------------------------------
+hof_ic_appoint_lev_kamenev = {
+	set_variable = { hof_ic_appointing = 5 }
+
+	if = {
+		limit = { hof_ic_has_empty_seat = yes }
+
+		if = {
+			limit = { check_variable = { hof_ic_slot_1 = 0 } }
+			set_variable = { hof_ic_slot_1 = 5 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_2 = 0 } }
+			set_variable = { hof_ic_slot_2 = 5 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_3 = 0 } }
+			set_variable = { hof_ic_slot_3 = 5 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_4 = 0 } }
+			set_variable = { hof_ic_slot_4 = 5 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_5 = 0 } }
+			set_variable = { hof_ic_slot_5 = 5 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_6 = 0 } }
+			set_variable = { hof_ic_slot_6 = 5 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_7 = 0 } }
+			set_variable = { hof_ic_slot_7 = 5 }
+		}
+
+		hof_ic_add_appointee_idea = yes
+		clear_variable = hof_ic_appointing
+	}
+	else = {
+		# 七席已满 -> 走替换事件，让玩家挑一个人换掉（照德国 GER_inner_circle.01）
+		country_event = heartofiron.1000
+	}
+
+	# 不管坐进去还是走替换流程，都进冷却
+	hof_ic_set_appointment_cd = yes
+}
+
+# ---------------------------------------------------------------------------
+# 序号 6 —— 伊万·斯米尔诺夫
+#   个人线 6 个国策，入席后由 hof_ic_ivan_smirnov.01 / .02 自动推进
+# ---------------------------------------------------------------------------
+hof_ic_appoint_ivan_smirnov = {
+	set_variable = { hof_ic_appointing = 6 }
+
+	if = {
+		limit = { hof_ic_has_empty_seat = yes }
+
+		if = {
+			limit = { check_variable = { hof_ic_slot_1 = 0 } }
+			set_variable = { hof_ic_slot_1 = 6 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_2 = 0 } }
+			set_variable = { hof_ic_slot_2 = 6 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_3 = 0 } }
+			set_variable = { hof_ic_slot_3 = 6 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_4 = 0 } }
+			set_variable = { hof_ic_slot_4 = 6 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_5 = 0 } }
+			set_variable = { hof_ic_slot_5 = 6 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_6 = 0 } }
+			set_variable = { hof_ic_slot_6 = 6 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_7 = 0 } }
+			set_variable = { hof_ic_slot_7 = 6 }
+		}
+
+		hof_ic_add_appointee_idea = yes
+		clear_variable = hof_ic_appointing
+	}
+	else = {
+		# 七席已满 -> 走替换事件，让玩家挑一个人换掉（照德国 GER_inner_circle.01）
+		country_event = heartofiron.1000
+	}
+
+	# 不管坐进去还是走替换流程，都进冷却
+	hof_ic_set_appointment_cd = yes
+}
+
+# ---------------------------------------------------------------------------
+# 序号 7 —— 列昂尼德·谢列布里亚科夫
+#   个人线 5 个国策，入席后由 hof_ic_leonid_serebryakov.01 / .02 自动推进
+# ---------------------------------------------------------------------------
+hof_ic_appoint_leonid_serebryakov = {
+	set_variable = { hof_ic_appointing = 7 }
+
+	if = {
+		limit = { hof_ic_has_empty_seat = yes }
+
+		if = {
+			limit = { check_variable = { hof_ic_slot_1 = 0 } }
+			set_variable = { hof_ic_slot_1 = 7 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_2 = 0 } }
+			set_variable = { hof_ic_slot_2 = 7 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_3 = 0 } }
+			set_variable = { hof_ic_slot_3 = 7 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_4 = 0 } }
+			set_variable = { hof_ic_slot_4 = 7 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_5 = 0 } }
+			set_variable = { hof_ic_slot_5 = 7 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_6 = 0 } }
+			set_variable = { hof_ic_slot_6 = 7 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_7 = 0 } }
+			set_variable = { hof_ic_slot_7 = 7 }
+		}
+
+		hof_ic_add_appointee_idea = yes
+		clear_variable = hof_ic_appointing
+	}
+	else = {
+		# 七席已满 -> 走替换事件，让玩家挑一个人换掉（照德国 GER_inner_circle.01）
+		country_event = heartofiron.1000
+	}
+
+	# 不管坐进去还是走替换流程，都进冷却
+	hof_ic_set_appointment_cd = yes
+}
+
+# ---------------------------------------------------------------------------
+# 序号 8 —— 叶夫根尼·普列奥布拉任斯基
+#   个人线 5 个国策，入席后由 hof_ic_yevgeny_preobrazhensky.01 / .02 自动推进
+# ---------------------------------------------------------------------------
+hof_ic_appoint_yevgeny_preobrazhensky = {
+	set_variable = { hof_ic_appointing = 8 }
+
+	if = {
+		limit = { hof_ic_has_empty_seat = yes }
+
+		if = {
+			limit = { check_variable = { hof_ic_slot_1 = 0 } }
+			set_variable = { hof_ic_slot_1 = 8 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_2 = 0 } }
+			set_variable = { hof_ic_slot_2 = 8 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_3 = 0 } }
+			set_variable = { hof_ic_slot_3 = 8 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_4 = 0 } }
+			set_variable = { hof_ic_slot_4 = 8 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_5 = 0 } }
+			set_variable = { hof_ic_slot_5 = 8 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_6 = 0 } }
+			set_variable = { hof_ic_slot_6 = 8 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_7 = 0 } }
+			set_variable = { hof_ic_slot_7 = 8 }
+		}
+
+		hof_ic_add_appointee_idea = yes
+		clear_variable = hof_ic_appointing
+	}
+	else = {
+		# 七席已满 -> 走替换事件，让玩家挑一个人换掉（照德国 GER_inner_circle.01）
+		country_event = heartofiron.1000
+	}
+
+	# 不管坐进去还是走替换流程，都进冷却
+	hof_ic_set_appointment_cd = yes
+}
+
+# ---------------------------------------------------------------------------
+# 序号 9 —— 卡尔·拉狄克
+#   个人线 9 个国策，入席后由 hof_ic_karl_radek.01 / .02 自动推进
+# ---------------------------------------------------------------------------
+hof_ic_appoint_karl_radek = {
+	set_variable = { hof_ic_appointing = 9 }
+
+	if = {
+		limit = { hof_ic_has_empty_seat = yes }
+
+		if = {
+			limit = { check_variable = { hof_ic_slot_1 = 0 } }
+			set_variable = { hof_ic_slot_1 = 9 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_2 = 0 } }
+			set_variable = { hof_ic_slot_2 = 9 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_3 = 0 } }
+			set_variable = { hof_ic_slot_3 = 9 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_4 = 0 } }
+			set_variable = { hof_ic_slot_4 = 9 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_5 = 0 } }
+			set_variable = { hof_ic_slot_5 = 9 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_6 = 0 } }
+			set_variable = { hof_ic_slot_6 = 9 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_7 = 0 } }
+			set_variable = { hof_ic_slot_7 = 9 }
+		}
+
+		hof_ic_add_appointee_idea = yes
+		clear_variable = hof_ic_appointing
+	}
+	else = {
+		# 七席已满 -> 走替换事件，让玩家挑一个人换掉（照德国 GER_inner_circle.01）
+		country_event = heartofiron.1000
+	}
+
+	# 不管坐进去还是走替换流程，都进冷却
+	hof_ic_set_appointment_cd = yes
+}
+
+# ---------------------------------------------------------------------------
+# 序号 10 —— 伊瓦尔·斯米尔加
+#   个人线 6 个国策，入席后由 hof_ic_ivar_smilga.01 / .02 自动推进
+# ---------------------------------------------------------------------------
+hof_ic_appoint_ivar_smilga = {
+	set_variable = { hof_ic_appointing = 10 }
+
+	if = {
+		limit = { hof_ic_has_empty_seat = yes }
+
+		if = {
+			limit = { check_variable = { hof_ic_slot_1 = 0 } }
+			set_variable = { hof_ic_slot_1 = 10 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_2 = 0 } }
+			set_variable = { hof_ic_slot_2 = 10 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_3 = 0 } }
+			set_variable = { hof_ic_slot_3 = 10 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_4 = 0 } }
+			set_variable = { hof_ic_slot_4 = 10 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_5 = 0 } }
+			set_variable = { hof_ic_slot_5 = 10 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_6 = 0 } }
+			set_variable = { hof_ic_slot_6 = 10 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_7 = 0 } }
+			set_variable = { hof_ic_slot_7 = 10 }
+		}
+
+		hof_ic_add_appointee_idea = yes
+		clear_variable = hof_ic_appointing
+	}
+	else = {
+		# 七席已满 -> 走替换事件，让玩家挑一个人换掉（照德国 GER_inner_circle.01）
+		country_event = heartofiron.1000
+	}
+
+	# 不管坐进去还是走替换流程，都进冷却
+	hof_ic_set_appointment_cd = yes
+}
+
+# ---------------------------------------------------------------------------
+# 序号 11 —— 米哈伊尔·托姆斯基
+#   个人线 6 个国策，入席后由 hof_ic_mikhail_tomsky.01 / .02 自动推进
+# ---------------------------------------------------------------------------
+hof_ic_appoint_mikhail_tomsky = {
+	set_variable = { hof_ic_appointing = 11 }
+
+	if = {
+		limit = { hof_ic_has_empty_seat = yes }
+
+		if = {
+			limit = { check_variable = { hof_ic_slot_1 = 0 } }
+			set_variable = { hof_ic_slot_1 = 11 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_2 = 0 } }
+			set_variable = { hof_ic_slot_2 = 11 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_3 = 0 } }
+			set_variable = { hof_ic_slot_3 = 11 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_4 = 0 } }
+			set_variable = { hof_ic_slot_4 = 11 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_5 = 0 } }
+			set_variable = { hof_ic_slot_5 = 11 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_6 = 0 } }
+			set_variable = { hof_ic_slot_6 = 11 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_7 = 0 } }
+			set_variable = { hof_ic_slot_7 = 11 }
+		}
+
+		hof_ic_add_appointee_idea = yes
+		clear_variable = hof_ic_appointing
+	}
+	else = {
+		# 七席已满 -> 走替换事件，让玩家挑一个人换掉（照德国 GER_inner_circle.01）
+		country_event = heartofiron.1000
+	}
+
+	# 不管坐进去还是走替换流程，都进冷却
+	hof_ic_set_appointment_cd = yes
+}
+
+# ---------------------------------------------------------------------------
+# 序号 12 —— 马尔特米扬·里亚京
+#   个人线 5 个国策，入席后由 hof_ic_martemyan_ryutin.01 / .02 自动推进
+# ---------------------------------------------------------------------------
+hof_ic_appoint_martemyan_ryutin = {
+	set_variable = { hof_ic_appointing = 12 }
+
+	if = {
+		limit = { hof_ic_has_empty_seat = yes }
+
+		if = {
+			limit = { check_variable = { hof_ic_slot_1 = 0 } }
+			set_variable = { hof_ic_slot_1 = 12 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_2 = 0 } }
+			set_variable = { hof_ic_slot_2 = 12 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_3 = 0 } }
+			set_variable = { hof_ic_slot_3 = 12 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_4 = 0 } }
+			set_variable = { hof_ic_slot_4 = 12 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_5 = 0 } }
+			set_variable = { hof_ic_slot_5 = 12 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_6 = 0 } }
+			set_variable = { hof_ic_slot_6 = 12 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_7 = 0 } }
+			set_variable = { hof_ic_slot_7 = 12 }
+		}
+
+		hof_ic_add_appointee_idea = yes
+		clear_variable = hof_ic_appointing
+	}
+	else = {
+		# 七席已满 -> 走替换事件，让玩家挑一个人换掉（照德国 GER_inner_circle.01）
+		country_event = heartofiron.1000
+	}
+
+	# 不管坐进去还是走替换流程，都进冷却
+	hof_ic_set_appointment_cd = yes
+}
+
+# ---------------------------------------------------------------------------
+# 序号 13 —— 亚历山大·施利亚普尼科夫
+#   个人线 6 个国策，入席后由 hof_ic_aleksandr_shlyapnikov.01 / .02 自动推进
+# ---------------------------------------------------------------------------
+hof_ic_appoint_aleksandr_shlyapnikov = {
+	set_variable = { hof_ic_appointing = 13 }
+
+	if = {
+		limit = { hof_ic_has_empty_seat = yes }
+
+		if = {
+			limit = { check_variable = { hof_ic_slot_1 = 0 } }
+			set_variable = { hof_ic_slot_1 = 13 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_2 = 0 } }
+			set_variable = { hof_ic_slot_2 = 13 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_3 = 0 } }
+			set_variable = { hof_ic_slot_3 = 13 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_4 = 0 } }
+			set_variable = { hof_ic_slot_4 = 13 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_5 = 0 } }
+			set_variable = { hof_ic_slot_5 = 13 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_6 = 0 } }
+			set_variable = { hof_ic_slot_6 = 13 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_7 = 0 } }
+			set_variable = { hof_ic_slot_7 = 13 }
+		}
+
+		hof_ic_add_appointee_idea = yes
+		clear_variable = hof_ic_appointing
+	}
+	else = {
+		# 七席已满 -> 走替换事件，让玩家挑一个人换掉（照德国 GER_inner_circle.01）
+		country_event = heartofiron.1000
+	}
+
+	# 不管坐进去还是走替换流程，都进冷却
+	hof_ic_set_appointment_cd = yes
+}
+
+# ---------------------------------------------------------------------------
+# 序号 14 —— 米哈伊尔·加里宁
+#   个人线 6 个国策，入席后由 hof_ic_mikhail_kalinin.01 / .02 自动推进
+# ---------------------------------------------------------------------------
+hof_ic_appoint_mikhail_kalinin = {
+	set_variable = { hof_ic_appointing = 14 }
+
+	if = {
+		limit = { hof_ic_has_empty_seat = yes }
+
+		if = {
+			limit = { check_variable = { hof_ic_slot_1 = 0 } }
+			set_variable = { hof_ic_slot_1 = 14 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_2 = 0 } }
+			set_variable = { hof_ic_slot_2 = 14 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_3 = 0 } }
+			set_variable = { hof_ic_slot_3 = 14 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_4 = 0 } }
+			set_variable = { hof_ic_slot_4 = 14 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_5 = 0 } }
+			set_variable = { hof_ic_slot_5 = 14 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_6 = 0 } }
+			set_variable = { hof_ic_slot_6 = 14 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_7 = 0 } }
+			set_variable = { hof_ic_slot_7 = 14 }
+		}
+
+		hof_ic_add_appointee_idea = yes
+		clear_variable = hof_ic_appointing
+	}
+	else = {
+		# 七席已满 -> 走替换事件，让玩家挑一个人换掉（照德国 GER_inner_circle.01）
+		country_event = heartofiron.1000
+	}
+
+	# 不管坐进去还是走替换流程，都进冷却
+	hof_ic_set_appointment_cd = yes
+}
+
+# ---------------------------------------------------------------------------
+# 序号 15 —— 马克西姆·李维诺夫
+#   个人线 6 个国策，入席后由 hof_ic_maksim_litvinov.01 / .02 自动推进
+# ---------------------------------------------------------------------------
+hof_ic_appoint_maksim_litvinov = {
+	set_variable = { hof_ic_appointing = 15 }
+
+	if = {
+		limit = { hof_ic_has_empty_seat = yes }
+
+		if = {
+			limit = { check_variable = { hof_ic_slot_1 = 0 } }
+			set_variable = { hof_ic_slot_1 = 15 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_2 = 0 } }
+			set_variable = { hof_ic_slot_2 = 15 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_3 = 0 } }
+			set_variable = { hof_ic_slot_3 = 15 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_4 = 0 } }
+			set_variable = { hof_ic_slot_4 = 15 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_5 = 0 } }
+			set_variable = { hof_ic_slot_5 = 15 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_6 = 0 } }
+			set_variable = { hof_ic_slot_6 = 15 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_7 = 0 } }
+			set_variable = { hof_ic_slot_7 = 15 }
+		}
+
+		hof_ic_add_appointee_idea = yes
+		clear_variable = hof_ic_appointing
+	}
+	else = {
+		# 七席已满 -> 走替换事件，让玩家挑一个人换掉（照德国 GER_inner_circle.01）
+		country_event = heartofiron.1000
+	}
+
+	# 不管坐进去还是走替换流程，都进冷却
+	hof_ic_set_appointment_cd = yes
+}
+
+# ---------------------------------------------------------------------------
+# 序号 16 —— 格里戈里·索柯里尼柯夫
+#   个人线 6 个国策，入席后由 hof_ic_grigory_sokolnikov.01 / .02 自动推进
+# ---------------------------------------------------------------------------
+hof_ic_appoint_grigory_sokolnikov = {
+	set_variable = { hof_ic_appointing = 16 }
+
+	if = {
+		limit = { hof_ic_has_empty_seat = yes }
+
+		if = {
+			limit = { check_variable = { hof_ic_slot_1 = 0 } }
+			set_variable = { hof_ic_slot_1 = 16 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_2 = 0 } }
+			set_variable = { hof_ic_slot_2 = 16 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_3 = 0 } }
+			set_variable = { hof_ic_slot_3 = 16 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_4 = 0 } }
+			set_variable = { hof_ic_slot_4 = 16 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_5 = 0 } }
+			set_variable = { hof_ic_slot_5 = 16 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_6 = 0 } }
+			set_variable = { hof_ic_slot_6 = 16 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_7 = 0 } }
+			set_variable = { hof_ic_slot_7 = 16 }
+		}
+
+		hof_ic_add_appointee_idea = yes
+		clear_variable = hof_ic_appointing
+	}
+	else = {
+		# 七席已满 -> 走替换事件，让玩家挑一个人换掉（照德国 GER_inner_circle.01）
+		country_event = heartofiron.1000
+	}
+
+	# 不管坐进去还是走替换流程，都进冷却
+	hof_ic_set_appointment_cd = yes
+}
+
+# ---------------------------------------------------------------------------
+# 序号 17 —— 米哈伊尔·图哈切夫斯基
+#   个人线 10 个国策，入席后由 hof_ic_mikhail_tukhachevsky.01 / .02 自动推进
+# ---------------------------------------------------------------------------
+hof_ic_appoint_mikhail_tukhachevsky = {
+	set_variable = { hof_ic_appointing = 17 }
+
+	if = {
+		limit = { hof_ic_has_empty_seat = yes }
+
+		if = {
+			limit = { check_variable = { hof_ic_slot_1 = 0 } }
+			set_variable = { hof_ic_slot_1 = 17 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_2 = 0 } }
+			set_variable = { hof_ic_slot_2 = 17 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_3 = 0 } }
+			set_variable = { hof_ic_slot_3 = 17 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_4 = 0 } }
+			set_variable = { hof_ic_slot_4 = 17 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_5 = 0 } }
+			set_variable = { hof_ic_slot_5 = 17 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_6 = 0 } }
+			set_variable = { hof_ic_slot_6 = 17 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_7 = 0 } }
+			set_variable = { hof_ic_slot_7 = 17 }
+		}
+
+		hof_ic_add_appointee_idea = yes
+		clear_variable = hof_ic_appointing
+	}
+	else = {
+		# 七席已满 -> 走替换事件，让玩家挑一个人换掉（照德国 GER_inner_circle.01）
+		country_event = heartofiron.1000
+	}
+
+	# 不管坐进去还是走替换流程，都进冷却
+	hof_ic_set_appointment_cd = yes
+}
+
+# ---------------------------------------------------------------------------
+# 序号 18 —— 尼古拉·沃兹涅先斯基
+#   个人线 6 个国策，入席后由 hof_ic_nikolay_voznesensky.01 / .02 自动推进
+# ---------------------------------------------------------------------------
+hof_ic_appoint_nikolay_voznesensky = {
+	set_variable = { hof_ic_appointing = 18 }
+
+	if = {
+		limit = { hof_ic_has_empty_seat = yes }
+
+		if = {
+			limit = { check_variable = { hof_ic_slot_1 = 0 } }
+			set_variable = { hof_ic_slot_1 = 18 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_2 = 0 } }
+			set_variable = { hof_ic_slot_2 = 18 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_3 = 0 } }
+			set_variable = { hof_ic_slot_3 = 18 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_4 = 0 } }
+			set_variable = { hof_ic_slot_4 = 18 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_5 = 0 } }
+			set_variable = { hof_ic_slot_5 = 18 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_6 = 0 } }
+			set_variable = { hof_ic_slot_6 = 18 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_7 = 0 } }
+			set_variable = { hof_ic_slot_7 = 18 }
+		}
+
+		hof_ic_add_appointee_idea = yes
+		clear_variable = hof_ic_appointing
+	}
+	else = {
+		# 七席已满 -> 走替换事件，让玩家挑一个人换掉（照德国 GER_inner_circle.01）
+		country_event = heartofiron.1000
+	}
+
+	# 不管坐进去还是走替换流程，都进冷却
+	hof_ic_set_appointment_cd = yes
+}
+
+# ---------------------------------------------------------------------------
+# 序号 19 —— 彼得·斯米尔诺夫
+#   个人线 6 个国策，入席后由 hof_ic_pyotr_smirnov.01 / .02 自动推进
+# ---------------------------------------------------------------------------
+hof_ic_appoint_pyotr_smirnov = {
+	set_variable = { hof_ic_appointing = 19 }
+
+	if = {
+		limit = { hof_ic_has_empty_seat = yes }
+
+		if = {
+			limit = { check_variable = { hof_ic_slot_1 = 0 } }
+			set_variable = { hof_ic_slot_1 = 19 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_2 = 0 } }
+			set_variable = { hof_ic_slot_2 = 19 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_3 = 0 } }
+			set_variable = { hof_ic_slot_3 = 19 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_4 = 0 } }
+			set_variable = { hof_ic_slot_4 = 19 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_5 = 0 } }
+			set_variable = { hof_ic_slot_5 = 19 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_6 = 0 } }
+			set_variable = { hof_ic_slot_6 = 19 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_7 = 0 } }
+			set_variable = { hof_ic_slot_7 = 19 }
+		}
+
+		hof_ic_add_appointee_idea = yes
+		clear_variable = hof_ic_appointing
+	}
+	else = {
+		# 七席已满 -> 走替换事件，让玩家挑一个人换掉（照德国 GER_inner_circle.01）
+		country_event = heartofiron.1000
+	}
+
+	# 不管坐进去还是走替换流程，都进冷却
+	hof_ic_set_appointment_cd = yes
+}
+
+# ---------------------------------------------------------------------------
+# 序号 20 —— 格奥尔基·马林科夫
+#   个人线 6 个国策，入席后由 hof_ic_georgy_malenkow.01 / .02 自动推进
+# ---------------------------------------------------------------------------
+hof_ic_appoint_georgy_malenkow = {
+	set_variable = { hof_ic_appointing = 20 }
+
+	if = {
+		limit = { hof_ic_has_empty_seat = yes }
+
+		if = {
+			limit = { check_variable = { hof_ic_slot_1 = 0 } }
+			set_variable = { hof_ic_slot_1 = 20 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_2 = 0 } }
+			set_variable = { hof_ic_slot_2 = 20 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_3 = 0 } }
+			set_variable = { hof_ic_slot_3 = 20 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_4 = 0 } }
+			set_variable = { hof_ic_slot_4 = 20 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_5 = 0 } }
+			set_variable = { hof_ic_slot_5 = 20 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_6 = 0 } }
+			set_variable = { hof_ic_slot_6 = 20 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_7 = 0 } }
+			set_variable = { hof_ic_slot_7 = 20 }
+		}
+
+		hof_ic_add_appointee_idea = yes
+		clear_variable = hof_ic_appointing
+	}
+	else = {
+		# 七席已满 -> 走替换事件，让玩家挑一个人换掉（照德国 GER_inner_circle.01）
+		country_event = heartofiron.1000
+	}
+
+	# 不管坐进去还是走替换流程，都进冷却
+	hof_ic_set_appointment_cd = yes
+}
+
+# ---------------------------------------------------------------------------
+# 序号 21 —— 尼基塔·赫鲁晓夫
+#   个人线 6 个国策，入席后由 hof_ic_nikita_khrushchyov.01 / .02 自动推进
+# ---------------------------------------------------------------------------
+hof_ic_appoint_nikita_khrushchyov = {
+	set_variable = { hof_ic_appointing = 21 }
+
+	if = {
+		limit = { hof_ic_has_empty_seat = yes }
+
+		if = {
+			limit = { check_variable = { hof_ic_slot_1 = 0 } }
+			set_variable = { hof_ic_slot_1 = 21 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_2 = 0 } }
+			set_variable = { hof_ic_slot_2 = 21 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_3 = 0 } }
+			set_variable = { hof_ic_slot_3 = 21 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_4 = 0 } }
+			set_variable = { hof_ic_slot_4 = 21 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_5 = 0 } }
+			set_variable = { hof_ic_slot_5 = 21 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_6 = 0 } }
+			set_variable = { hof_ic_slot_6 = 21 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_7 = 0 } }
+			set_variable = { hof_ic_slot_7 = 21 }
+		}
+
+		hof_ic_add_appointee_idea = yes
+		clear_variable = hof_ic_appointing
+	}
+	else = {
+		# 七席已满 -> 走替换事件，让玩家挑一个人换掉（照德国 GER_inner_circle.01）
+		country_event = heartofiron.1000
+	}
+
+	# 不管坐进去还是走替换流程，都进冷却
+	hof_ic_set_appointment_cd = yes
+}
+
+# ---------------------------------------------------------------------------
+# 序号 22 —— 克利门特·伏罗希洛夫
+#   个人线 6 个国策，入席后由 hof_ic_kliment_voroshilov.01 / .02 自动推进
+# ---------------------------------------------------------------------------
+hof_ic_appoint_kliment_voroshilov = {
+	set_variable = { hof_ic_appointing = 22 }
+
+	if = {
+		limit = { hof_ic_has_empty_seat = yes }
+
+		if = {
+			limit = { check_variable = { hof_ic_slot_1 = 0 } }
+			set_variable = { hof_ic_slot_1 = 22 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_2 = 0 } }
+			set_variable = { hof_ic_slot_2 = 22 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_3 = 0 } }
+			set_variable = { hof_ic_slot_3 = 22 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_4 = 0 } }
+			set_variable = { hof_ic_slot_4 = 22 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_5 = 0 } }
+			set_variable = { hof_ic_slot_5 = 22 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_6 = 0 } }
+			set_variable = { hof_ic_slot_6 = 22 }
+		}
+		else_if = {
+			limit = { check_variable = { hof_ic_slot_7 = 0 } }
+			set_variable = { hof_ic_slot_7 = 22 }
+		}
+
+		hof_ic_add_appointee_idea = yes
+		clear_variable = hof_ic_appointing
+	}
+	else = {
+		# 七席已满 -> 走替换事件，让玩家挑一个人换掉（照德国 GER_inner_circle.01）
+		country_event = heartofiron.1000
+	}
+
+	# 不管坐进去还是走替换流程，都进冷却
+	hof_ic_set_appointment_cd = yes
+}
+
+# ---------------------------------------------------------------------------
+# 列夫·托洛茨基 —— 职务分级同步（4 级）
+# ---------------------------------------------------------------------------
+hof_ic_idea_lev_trotsky_sync_rank = {
+	hof_ic_role_refresh_lev_trotsky = yes
+}
+
+# ---------------------------------------------------------------------------
+# 尼古拉·布哈林 —— 职务分级同步（3 级）
+# ---------------------------------------------------------------------------
+hof_ic_idea_nikolay_bukharin_sync_rank = {
+	hof_ic_role_refresh_nikolay_bukharin = yes
+}
+
+# ---------------------------------------------------------------------------
+# 阿列克谢·李可夫 —— 职务分级同步（4 级）
+# ---------------------------------------------------------------------------
+hof_ic_idea_aleksey_rykov_sync_rank = {
+	hof_ic_role_refresh_aleksey_rykov = yes
+}
+
+# ---------------------------------------------------------------------------
+# 格里戈里·季诺维也夫 —— 职务分级同步（3 级）
+# ---------------------------------------------------------------------------
+hof_ic_idea_grigory_zinovyev_sync_rank = {
+	hof_ic_role_refresh_grigory_zinovyev = yes
+}
+
+# ---------------------------------------------------------------------------
+# 列夫·加米涅夫 —— 职务分级同步（3 级）
+# ---------------------------------------------------------------------------
+hof_ic_idea_lev_kamenev_sync_rank = {
+	hof_ic_role_refresh_lev_kamenev = yes
+}
+
+# ---------------------------------------------------------------------------
+# 伊万·斯米尔诺夫 —— 职务分级同步（3 级）
+# ---------------------------------------------------------------------------
+hof_ic_idea_ivan_smirnov_sync_rank = {
+	hof_ic_role_refresh_ivan_smirnov = yes
+}
+
+# ---------------------------------------------------------------------------
+# 列昂尼德·谢列布里亚科夫 —— 职务分级同步（3 级）
+# ---------------------------------------------------------------------------
+hof_ic_idea_leonid_serebryakov_sync_rank = {
+	hof_ic_role_refresh_leonid_serebryakov = yes
+}
+
+# ---------------------------------------------------------------------------
+# 叶夫根尼·普列奥布拉任斯基 —— 职务分级同步（3 级）
+# ---------------------------------------------------------------------------
+hof_ic_idea_yevgeny_preobrazhensky_sync_rank = {
+	hof_ic_role_refresh_yevgeny_preobrazhensky = yes
+}
+
+# ---------------------------------------------------------------------------
+# 卡尔·拉狄克 —— 职务分级同步（3 级）
+# ---------------------------------------------------------------------------
+hof_ic_idea_karl_radek_sync_rank = {
+	hof_ic_role_refresh_karl_radek = yes
+}
+
+# ---------------------------------------------------------------------------
+# 伊瓦尔·斯米尔加 —— 职务分级同步（3 级）
+# ---------------------------------------------------------------------------
+hof_ic_idea_ivar_smilga_sync_rank = {
+	hof_ic_role_refresh_ivar_smilga = yes
+}
+
+# ---------------------------------------------------------------------------
+# 米哈伊尔·托姆斯基 —— 职务分级同步（3 级）
+# ---------------------------------------------------------------------------
+hof_ic_idea_mikhail_tomsky_sync_rank = {
+	hof_ic_role_refresh_mikhail_tomsky = yes
+}
+
+# ---------------------------------------------------------------------------
+# 马尔特米扬·里亚京 —— 职务分级同步（3 级）
+# ---------------------------------------------------------------------------
+hof_ic_idea_martemyan_ryutin_sync_rank = {
+	hof_ic_role_refresh_martemyan_ryutin = yes
+}
+
+# ---------------------------------------------------------------------------
+# 亚历山大·施利亚普尼科夫 —— 职务分级同步（3 级）
+# ---------------------------------------------------------------------------
+hof_ic_idea_aleksandr_shlyapnikov_sync_rank = {
+	hof_ic_role_refresh_aleksandr_shlyapnikov = yes
+}
+
+# ---------------------------------------------------------------------------
+# 米哈伊尔·加里宁 —— 职务分级同步（4 级）
+# ---------------------------------------------------------------------------
+hof_ic_idea_mikhail_kalinin_sync_rank = {
+	hof_ic_role_refresh_mikhail_kalinin = yes
+}
+
+# ---------------------------------------------------------------------------
+# 马克西姆·李维诺夫 —— 职务分级同步（4 级）
+# ---------------------------------------------------------------------------
+hof_ic_idea_maksim_litvinov_sync_rank = {
+	hof_ic_role_refresh_maksim_litvinov = yes
+}
+
+# ---------------------------------------------------------------------------
+# 格里戈里·索柯里尼柯夫 —— 职务分级同步（3 级）
+# ---------------------------------------------------------------------------
+hof_ic_idea_grigory_sokolnikov_sync_rank = {
+	hof_ic_role_refresh_grigory_sokolnikov = yes
+}
+
+# ---------------------------------------------------------------------------
+# 米哈伊尔·图哈切夫斯基 —— 职务分级同步（4 级）
+# ---------------------------------------------------------------------------
+hof_ic_idea_mikhail_tukhachevsky_sync_rank = {
+	hof_ic_role_refresh_mikhail_tukhachevsky = yes
+}
+
+# ---------------------------------------------------------------------------
+# 尼古拉·沃兹涅先斯基 —— 职务分级同步（4 级）
+# ---------------------------------------------------------------------------
+hof_ic_idea_nikolay_voznesensky_sync_rank = {
+	hof_ic_role_refresh_nikolay_voznesensky = yes
+}
+
+# ---------------------------------------------------------------------------
+# 彼得·斯米尔诺夫 —— 职务分级同步（4 级）
+# ---------------------------------------------------------------------------
+hof_ic_idea_pyotr_smirnov_sync_rank = {
+	hof_ic_role_refresh_pyotr_smirnov = yes
+}
+
+# ---------------------------------------------------------------------------
+# 格奥尔基·马林科夫 —— 职务分级同步（4 级）
+# ---------------------------------------------------------------------------
+hof_ic_idea_georgy_malenkow_sync_rank = {
+	hof_ic_role_refresh_georgy_malenkow = yes
+}
+
+# ---------------------------------------------------------------------------
+# 尼基塔·赫鲁晓夫 —— 职务分级同步（4 级）
+# ---------------------------------------------------------------------------
+hof_ic_idea_nikita_khrushchyov_sync_rank = {
+	hof_ic_role_refresh_nikita_khrushchyov = yes
+}
+
+# ---------------------------------------------------------------------------
+# 克利门特·伏罗希洛夫 —— 职务分级同步（4 级）
+# ---------------------------------------------------------------------------
+hof_ic_idea_kliment_voroshilov_sync_rank = {
+	hof_ic_role_refresh_kliment_voroshilov = yes
+}
+
+hof_ic_promote_slot_1_chairman = {
+	if = {
+		limit = { check_variable = { hof_ic_slot_1 = 1 } }
+		add_country_leader_role = {
+			character = SOV_lev_trotsky
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_1 = 2 } }
+		add_country_leader_role = {
+			character = SOV_nikolay_bukharin
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_1 = 3 } }
+		add_country_leader_role = {
+			character = SOV_aleksey_rykov
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_1 = 4 } }
+		add_country_leader_role = {
+			character = SOV_grigory_zinovyev
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_1 = 5 } }
+		add_country_leader_role = {
+			character = SOV_lev_kamenev
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_1 = 6 } }
+		add_country_leader_role = {
+			character = SOV_ivan_smirnov
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_1 = 7 } }
+		add_country_leader_role = {
+			character = SOV_leonid_serebryakov
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_1 = 8 } }
+		add_country_leader_role = {
+			character = SOV_yevgeny_preobrazhensky
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_1 = 9 } }
+		add_country_leader_role = {
+			character = SOV_karl_radek
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_1 = 10 } }
+		add_country_leader_role = {
+			character = SOV_ivar_smilga
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_1 = 11 } }
+		add_country_leader_role = {
+			character = SOV_mikhail_tomsky
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_1 = 12 } }
+		add_country_leader_role = {
+			character = SOV_martemyan_ryutin
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_1 = 13 } }
+		add_country_leader_role = {
+			character = SOV_aleksandr_shlyapnikov
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_1 = 14 } }
+		add_country_leader_role = {
+			character = SOV_mikhail_kalinin
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_1 = 15 } }
+		add_country_leader_role = {
+			character = SOV_maksim_litvinov
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_1 = 16 } }
+		add_country_leader_role = {
+			character = SOV_grigory_sokolnikov
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_1 = 17 } }
+		add_country_leader_role = {
+			character = SOV_mikhail_tukhachevsky
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_1 = 18 } }
+		add_country_leader_role = {
+			character = SOV_nikolay_voznesensky
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_1 = 19 } }
+		add_country_leader_role = {
+			character = SOV_pyotr_smirnov
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_1 = 20 } }
+		add_country_leader_role = {
+			character = SOV_georgy_malenkow
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_1 = 21 } }
+		add_country_leader_role = {
+			character = SOV_nikita_khrushchyov
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_1 = 22 } }
+		add_country_leader_role = {
+			character = SOV_kliment_voroshilov
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+}
+
+hof_ic_promote_slot_2_chairman = {
+	if = {
+		limit = { check_variable = { hof_ic_slot_2 = 1 } }
+		add_country_leader_role = {
+			character = SOV_lev_trotsky
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_2 = 2 } }
+		add_country_leader_role = {
+			character = SOV_nikolay_bukharin
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_2 = 3 } }
+		add_country_leader_role = {
+			character = SOV_aleksey_rykov
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_2 = 4 } }
+		add_country_leader_role = {
+			character = SOV_grigory_zinovyev
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_2 = 5 } }
+		add_country_leader_role = {
+			character = SOV_lev_kamenev
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_2 = 6 } }
+		add_country_leader_role = {
+			character = SOV_ivan_smirnov
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_2 = 7 } }
+		add_country_leader_role = {
+			character = SOV_leonid_serebryakov
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_2 = 8 } }
+		add_country_leader_role = {
+			character = SOV_yevgeny_preobrazhensky
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_2 = 9 } }
+		add_country_leader_role = {
+			character = SOV_karl_radek
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_2 = 10 } }
+		add_country_leader_role = {
+			character = SOV_ivar_smilga
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_2 = 11 } }
+		add_country_leader_role = {
+			character = SOV_mikhail_tomsky
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_2 = 12 } }
+		add_country_leader_role = {
+			character = SOV_martemyan_ryutin
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_2 = 13 } }
+		add_country_leader_role = {
+			character = SOV_aleksandr_shlyapnikov
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_2 = 14 } }
+		add_country_leader_role = {
+			character = SOV_mikhail_kalinin
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_2 = 15 } }
+		add_country_leader_role = {
+			character = SOV_maksim_litvinov
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_2 = 16 } }
+		add_country_leader_role = {
+			character = SOV_grigory_sokolnikov
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_2 = 17 } }
+		add_country_leader_role = {
+			character = SOV_mikhail_tukhachevsky
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_2 = 18 } }
+		add_country_leader_role = {
+			character = SOV_nikolay_voznesensky
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_2 = 19 } }
+		add_country_leader_role = {
+			character = SOV_pyotr_smirnov
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_2 = 20 } }
+		add_country_leader_role = {
+			character = SOV_georgy_malenkow
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_2 = 21 } }
+		add_country_leader_role = {
+			character = SOV_nikita_khrushchyov
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_2 = 22 } }
+		add_country_leader_role = {
+			character = SOV_kliment_voroshilov
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+}
+
+hof_ic_promote_slot_3_chairman = {
+	if = {
+		limit = { check_variable = { hof_ic_slot_3 = 1 } }
+		add_country_leader_role = {
+			character = SOV_lev_trotsky
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_3 = 2 } }
+		add_country_leader_role = {
+			character = SOV_nikolay_bukharin
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_3 = 3 } }
+		add_country_leader_role = {
+			character = SOV_aleksey_rykov
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_3 = 4 } }
+		add_country_leader_role = {
+			character = SOV_grigory_zinovyev
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_3 = 5 } }
+		add_country_leader_role = {
+			character = SOV_lev_kamenev
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_3 = 6 } }
+		add_country_leader_role = {
+			character = SOV_ivan_smirnov
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_3 = 7 } }
+		add_country_leader_role = {
+			character = SOV_leonid_serebryakov
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_3 = 8 } }
+		add_country_leader_role = {
+			character = SOV_yevgeny_preobrazhensky
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_3 = 9 } }
+		add_country_leader_role = {
+			character = SOV_karl_radek
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_3 = 10 } }
+		add_country_leader_role = {
+			character = SOV_ivar_smilga
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_3 = 11 } }
+		add_country_leader_role = {
+			character = SOV_mikhail_tomsky
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_3 = 12 } }
+		add_country_leader_role = {
+			character = SOV_martemyan_ryutin
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_3 = 13 } }
+		add_country_leader_role = {
+			character = SOV_aleksandr_shlyapnikov
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_3 = 14 } }
+		add_country_leader_role = {
+			character = SOV_mikhail_kalinin
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_3 = 15 } }
+		add_country_leader_role = {
+			character = SOV_maksim_litvinov
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_3 = 16 } }
+		add_country_leader_role = {
+			character = SOV_grigory_sokolnikov
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_3 = 17 } }
+		add_country_leader_role = {
+			character = SOV_mikhail_tukhachevsky
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_3 = 18 } }
+		add_country_leader_role = {
+			character = SOV_nikolay_voznesensky
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_3 = 19 } }
+		add_country_leader_role = {
+			character = SOV_pyotr_smirnov
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_3 = 20 } }
+		add_country_leader_role = {
+			character = SOV_georgy_malenkow
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_3 = 21 } }
+		add_country_leader_role = {
+			character = SOV_nikita_khrushchyov
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_3 = 22 } }
+		add_country_leader_role = {
+			character = SOV_kliment_voroshilov
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+}
+
+hof_ic_promote_slot_4_chairman = {
+	if = {
+		limit = { check_variable = { hof_ic_slot_4 = 1 } }
+		add_country_leader_role = {
+			character = SOV_lev_trotsky
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_4 = 2 } }
+		add_country_leader_role = {
+			character = SOV_nikolay_bukharin
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_4 = 3 } }
+		add_country_leader_role = {
+			character = SOV_aleksey_rykov
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_4 = 4 } }
+		add_country_leader_role = {
+			character = SOV_grigory_zinovyev
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_4 = 5 } }
+		add_country_leader_role = {
+			character = SOV_lev_kamenev
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_4 = 6 } }
+		add_country_leader_role = {
+			character = SOV_ivan_smirnov
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_4 = 7 } }
+		add_country_leader_role = {
+			character = SOV_leonid_serebryakov
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_4 = 8 } }
+		add_country_leader_role = {
+			character = SOV_yevgeny_preobrazhensky
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_4 = 9 } }
+		add_country_leader_role = {
+			character = SOV_karl_radek
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_4 = 10 } }
+		add_country_leader_role = {
+			character = SOV_ivar_smilga
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_4 = 11 } }
+		add_country_leader_role = {
+			character = SOV_mikhail_tomsky
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_4 = 12 } }
+		add_country_leader_role = {
+			character = SOV_martemyan_ryutin
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_4 = 13 } }
+		add_country_leader_role = {
+			character = SOV_aleksandr_shlyapnikov
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_4 = 14 } }
+		add_country_leader_role = {
+			character = SOV_mikhail_kalinin
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_4 = 15 } }
+		add_country_leader_role = {
+			character = SOV_maksim_litvinov
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_4 = 16 } }
+		add_country_leader_role = {
+			character = SOV_grigory_sokolnikov
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_4 = 17 } }
+		add_country_leader_role = {
+			character = SOV_mikhail_tukhachevsky
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_4 = 18 } }
+		add_country_leader_role = {
+			character = SOV_nikolay_voznesensky
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_4 = 19 } }
+		add_country_leader_role = {
+			character = SOV_pyotr_smirnov
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_4 = 20 } }
+		add_country_leader_role = {
+			character = SOV_georgy_malenkow
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_4 = 21 } }
+		add_country_leader_role = {
+			character = SOV_nikita_khrushchyov
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_4 = 22 } }
+		add_country_leader_role = {
+			character = SOV_kliment_voroshilov
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+}
+
+hof_ic_promote_slot_5_chairman = {
+	if = {
+		limit = { check_variable = { hof_ic_slot_5 = 1 } }
+		add_country_leader_role = {
+			character = SOV_lev_trotsky
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_5 = 2 } }
+		add_country_leader_role = {
+			character = SOV_nikolay_bukharin
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_5 = 3 } }
+		add_country_leader_role = {
+			character = SOV_aleksey_rykov
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_5 = 4 } }
+		add_country_leader_role = {
+			character = SOV_grigory_zinovyev
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_5 = 5 } }
+		add_country_leader_role = {
+			character = SOV_lev_kamenev
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_5 = 6 } }
+		add_country_leader_role = {
+			character = SOV_ivan_smirnov
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_5 = 7 } }
+		add_country_leader_role = {
+			character = SOV_leonid_serebryakov
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_5 = 8 } }
+		add_country_leader_role = {
+			character = SOV_yevgeny_preobrazhensky
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_5 = 9 } }
+		add_country_leader_role = {
+			character = SOV_karl_radek
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_5 = 10 } }
+		add_country_leader_role = {
+			character = SOV_ivar_smilga
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_5 = 11 } }
+		add_country_leader_role = {
+			character = SOV_mikhail_tomsky
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_5 = 12 } }
+		add_country_leader_role = {
+			character = SOV_martemyan_ryutin
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_5 = 13 } }
+		add_country_leader_role = {
+			character = SOV_aleksandr_shlyapnikov
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_5 = 14 } }
+		add_country_leader_role = {
+			character = SOV_mikhail_kalinin
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_5 = 15 } }
+		add_country_leader_role = {
+			character = SOV_maksim_litvinov
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_5 = 16 } }
+		add_country_leader_role = {
+			character = SOV_grigory_sokolnikov
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_5 = 17 } }
+		add_country_leader_role = {
+			character = SOV_mikhail_tukhachevsky
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_5 = 18 } }
+		add_country_leader_role = {
+			character = SOV_nikolay_voznesensky
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_5 = 19 } }
+		add_country_leader_role = {
+			character = SOV_pyotr_smirnov
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_5 = 20 } }
+		add_country_leader_role = {
+			character = SOV_georgy_malenkow
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_5 = 21 } }
+		add_country_leader_role = {
+			character = SOV_nikita_khrushchyov
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_5 = 22 } }
+		add_country_leader_role = {
+			character = SOV_kliment_voroshilov
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+}
+
+hof_ic_promote_slot_6_chairman = {
+	if = {
+		limit = { check_variable = { hof_ic_slot_6 = 1 } }
+		add_country_leader_role = {
+			character = SOV_lev_trotsky
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_6 = 2 } }
+		add_country_leader_role = {
+			character = SOV_nikolay_bukharin
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_6 = 3 } }
+		add_country_leader_role = {
+			character = SOV_aleksey_rykov
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_6 = 4 } }
+		add_country_leader_role = {
+			character = SOV_grigory_zinovyev
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_6 = 5 } }
+		add_country_leader_role = {
+			character = SOV_lev_kamenev
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_6 = 6 } }
+		add_country_leader_role = {
+			character = SOV_ivan_smirnov
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_6 = 7 } }
+		add_country_leader_role = {
+			character = SOV_leonid_serebryakov
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_6 = 8 } }
+		add_country_leader_role = {
+			character = SOV_yevgeny_preobrazhensky
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_6 = 9 } }
+		add_country_leader_role = {
+			character = SOV_karl_radek
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_6 = 10 } }
+		add_country_leader_role = {
+			character = SOV_ivar_smilga
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_6 = 11 } }
+		add_country_leader_role = {
+			character = SOV_mikhail_tomsky
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_6 = 12 } }
+		add_country_leader_role = {
+			character = SOV_martemyan_ryutin
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_6 = 13 } }
+		add_country_leader_role = {
+			character = SOV_aleksandr_shlyapnikov
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_6 = 14 } }
+		add_country_leader_role = {
+			character = SOV_mikhail_kalinin
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_6 = 15 } }
+		add_country_leader_role = {
+			character = SOV_maksim_litvinov
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_6 = 16 } }
+		add_country_leader_role = {
+			character = SOV_grigory_sokolnikov
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_6 = 17 } }
+		add_country_leader_role = {
+			character = SOV_mikhail_tukhachevsky
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_6 = 18 } }
+		add_country_leader_role = {
+			character = SOV_nikolay_voznesensky
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_6 = 19 } }
+		add_country_leader_role = {
+			character = SOV_pyotr_smirnov
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_6 = 20 } }
+		add_country_leader_role = {
+			character = SOV_georgy_malenkow
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_6 = 21 } }
+		add_country_leader_role = {
+			character = SOV_nikita_khrushchyov
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_6 = 22 } }
+		add_country_leader_role = {
+			character = SOV_kliment_voroshilov
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+}
+
+hof_ic_promote_slot_7_chairman = {
+	if = {
+		limit = { check_variable = { hof_ic_slot_7 = 1 } }
+		add_country_leader_role = {
+			character = SOV_lev_trotsky
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_7 = 2 } }
+		add_country_leader_role = {
+			character = SOV_nikolay_bukharin
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_7 = 3 } }
+		add_country_leader_role = {
+			character = SOV_aleksey_rykov
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_7 = 4 } }
+		add_country_leader_role = {
+			character = SOV_grigory_zinovyev
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_7 = 5 } }
+		add_country_leader_role = {
+			character = SOV_lev_kamenev
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_7 = 6 } }
+		add_country_leader_role = {
+			character = SOV_ivan_smirnov
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_7 = 7 } }
+		add_country_leader_role = {
+			character = SOV_leonid_serebryakov
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_7 = 8 } }
+		add_country_leader_role = {
+			character = SOV_yevgeny_preobrazhensky
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_7 = 9 } }
+		add_country_leader_role = {
+			character = SOV_karl_radek
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_7 = 10 } }
+		add_country_leader_role = {
+			character = SOV_ivar_smilga
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_7 = 11 } }
+		add_country_leader_role = {
+			character = SOV_mikhail_tomsky
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_7 = 12 } }
+		add_country_leader_role = {
+			character = SOV_martemyan_ryutin
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_7 = 13 } }
+		add_country_leader_role = {
+			character = SOV_aleksandr_shlyapnikov
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_7 = 14 } }
+		add_country_leader_role = {
+			character = SOV_mikhail_kalinin
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_7 = 15 } }
+		add_country_leader_role = {
+			character = SOV_maksim_litvinov
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_7 = 16 } }
+		add_country_leader_role = {
+			character = SOV_grigory_sokolnikov
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_7 = 17 } }
+		add_country_leader_role = {
+			character = SOV_mikhail_tukhachevsky
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_7 = 18 } }
+		add_country_leader_role = {
+			character = SOV_nikolay_voznesensky
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_7 = 19 } }
+		add_country_leader_role = {
+			character = SOV_pyotr_smirnov
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_7 = 20 } }
+		add_country_leader_role = {
+			character = SOV_georgy_malenkow
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_7 = 21 } }
+		add_country_leader_role = {
+			character = SOV_nikita_khrushchyov
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { hof_ic_slot_7 = 22 } }
+		add_country_leader_role = {
+			character = SOV_kliment_voroshilov
+			country_leader = {
+				ideology = marxism
+				expire = 1965.3.1.1
+				traits = { hof_ic_commissar_party_discipline hof_ic_new_soviet_chairman_trait }
+			}
+			promote_leader = yes
+		}
+	}
+}
+

@@ -1,0 +1,51 @@
+﻿l_simp_chinese:
+ # ============================================================================
+ #  hof_sov_integrate_l_simp_chinese.yml
+ #  苏联「整合加盟共和国」决议组 —— 本地化（一国一条，共 8 条）
+ #
+ #  设计出处：docs/101-sov-integrate-union-republics.md
+ #  编码红线（AGENTS.md 硬性规则 3）：UTF-8 【带 BOM】+ CRLF
+ #                                    文件名必须含 _l_simp_chinese
+ #                                    首行必须是 l_simp_chinese:
+ #
+ #  ⚠️ 文案口径：_desc 是【机制说明】，不冒充史实、不引历史评价
+ #     ⇒ 不属于硬性规则 9（"描述文本必须是节选"）的适用范围，因为它在陈述规则而非历史。
+ #
+ #  🚩 判据 K：这 8 个显示名【统一】写成「整合XX加盟共和国」。
+ #     原版 / R56 里「整合爱沙尼亚」（baltic_integrate_estonia_r56）·
+ #     「整合挪威」（den_integrate_norway_r56 / SWE_integrate_norway）·
+ #     「整合芬兰」（den_integrate_finland_r56 / SWE_integrate_finland）·
+ #     「整合波兰」（SOV_integrate_poland）都已被占用（**完全相同** = 禁区）
+ #     ⇒ 统一加「加盟共和国」，与那四个都不完全相同。
+ # ============================================================================
+
+ # ── 分类（决议面板里的页签） ──
+ hof_sov_integrate_category:0 "整合加盟共和国"
+ hof_sov_integrate_category_desc:0 "把已经成为苏联附庸、并且已经建立共产主义政权的国家正式并入联盟。\n\n完成「宣称波罗的海」国策后启用。"
+
+ # ── ① 波罗的海三国（各 15 天） ──
+ hof_sov_integrate_estonia:0 "整合爱沙尼亚加盟共和国"
+ hof_sov_integrate_estonia_desc:0 "爱沙尼亚在成为苏联附庸并转为共产主义政体后，可以启动整合程序。\n\n程序持续 §Y15 天§!；完成时：该国所有科学家、以及不带「反布尔什维克老兵」特质的陆军与海军将领转入苏联，该国随后被苏联吞并。"
+
+ hof_sov_integrate_latvia:0 "整合拉脱维亚加盟共和国"
+ hof_sov_integrate_latvia_desc:0 "拉脱维亚在成为苏联附庸并转为共产主义政体后，可以启动整合程序。\n\n程序持续 §Y15 天§!；完成时：该国所有科学家、以及不带「反布尔什维克老兵」特质的陆军与海军将领转入苏联，该国随后被苏联吞并。"
+
+ hof_sov_integrate_lithuania:0 "整合立陶宛加盟共和国"
+ hof_sov_integrate_lithuania_desc:0 "立陶宛在成为苏联附庸并转为共产主义政体后，可以启动整合程序。\n\n程序持续 §Y15 天§!；完成时：该国所有科学家、以及不带「反布尔什维克老兵」特质的陆军与海军将领转入苏联，该国随后被苏联吞并。"
+
+ # ── ② 挪威 / 瑞典 / 芬兰 / 土耳其（各 30 天） ──
+ hof_sov_integrate_norway:0 "整合挪威加盟共和国"
+ hof_sov_integrate_norway_desc:0 "挪威在成为苏联附庸并转为共产主义政体后，可以启动整合程序。\n\n程序持续 §Y30 天§!；完成时：该国所有科学家、全部陆军与海军将领转入苏联，该国随后被苏联吞并。"
+
+ hof_sov_integrate_sweden:0 "整合瑞典加盟共和国"
+ hof_sov_integrate_sweden_desc:0 "瑞典在成为苏联附庸并转为共产主义政体后，可以启动整合程序。\n\n程序持续 §Y30 天§!；完成时：该国所有科学家、全部陆军与海军将领转入苏联，该国随后被苏联吞并。"
+
+ hof_sov_integrate_finland:0 "整合芬兰加盟共和国"
+ hof_sov_integrate_finland_desc:0 "芬兰在成为苏联附庸并转为共产主义政体后，可以启动整合程序。\n\n程序持续 §Y30 天§!；完成时：该国所有科学家、全部陆军与海军将领转入苏联，该国随后被苏联吞并。"
+
+ hof_sov_integrate_turkey:0 "整合土耳其加盟共和国"
+ hof_sov_integrate_turkey_desc:0 "土耳其在成为苏联附庸并转为共产主义政体后，可以启动整合程序。\n\n程序持续 §Y30 天§!；完成时：该国所有科学家、全部陆军与海军将领转入苏联，该国随后被苏联吞并。"
+
+ # ── ③ 波兰（15 天） ──
+ hof_sov_integrate_poland:0 "整合波兰加盟共和国"
+ hof_sov_integrate_poland_desc:0 "波兰在成为苏联附庸并转为共产主义政体后，可以启动整合程序。\n\n程序持续 §Y15 天§!；完成时：该国所有科学家、以及不带「萨纳齐亚右派指挥官」特质的陆军与海军将领转入苏联，该国随后被苏联吞并。"

@@ -1,0 +1,68 @@
+[
+  {
+    "id": "hof_ic_shlyapnikov_workers_control",
+    "name": "GFX_hof_ic_shlyapnikov_workers_control",
+    "title": "工人监督",
+    "concept": "One wooden tabletop holds TWO DISTINCT documents side by side: LEFT an OPEN factory account ledger with abstract ruled cells and dark ink dashes, RIGHT a large square-grid production planning sheet with blank color-coded blocks. ONE coarse worker hand presses on the ledger, fingertips visible. No other person. The joint physical act of inspecting accounts and making a production plan dominates. Warm paper ivory, dark ink-grey and restrained red marker; quiet institutional relief. No confiscation, seals, guns or police.",
+    "group": "shlyapnikov",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_shlyapnikov_not_syndicalism",
+    "name": "GFX_hof_ic_shlyapnikov_not_syndicalism",
+    "title": "不是工团主义",
+    "concept": "ONE large unlabelled paper divided decisively into left and right by a thick BLACK VERTICAL ruling line. LEFT of line: small state-owned factory silhouette and a simple abstract state seal shape. RIGHT: ONE industrial cog and ONE wrench for organized workers. A single rough hand rests on EACH side, both hands stop clearly short of the dividing line and do not cross it. Central bold straight line is primary graphic, carved relief, ivory paper, charcoal ink, cool steel grey, restrained muted red. No text, no office background.",
+    "group": "shlyapnikov",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_shlyapnikov_producers_congress",
+    "name": "GFX_hof_ic_shlyapnikov_producers_congress",
+    "title": "生产者代表大会",
+    "concept": "Interior of a FULL but intimate 1920s producers congress hall viewed from above rear: dozens of industrial workers in dark jackets and caps, seen only from behind or as faceless silhouette; they face inward toward one another as active representatives, not merely an audience watching a stage. In CENTER FRONT one modest wood TABLE with a conspicuous loose election roster sheet showing only short grey abstract dashes. Light falls from domed skylight above, warm golden dust beams, orderly seated rows but varied worker postures. No suits, ties, flags, rostrum, lectern, banners or visible words.",
+    "group": "shlyapnikov",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_shlyapnikov_through_the_workers",
+    "name": "GFX_hof_ic_shlyapnikov_through_the_workers",
+    "title": "通过工人，还是瞒着工人",
+    "concept": "One symbolic document shown in TWO horizontal story panels separated by a strong straight line. UPPER panel: a rough hand clearly passes a short anonymous paper through a WORKSHOP DOORWAY where several faceless workers in caps extend their hands to receive it. LOWER panel: the SAME rough hand slides an identical anonymous paper into a DARK HALF-CLOSED DESK DRAWER through a narrow horizontal gap, hidden away. Make open delivery above vs concealed drawer below instantly clear at icon size. Ivory document, brown workshop, near-black drawer, spare red accent in open half. No text or faces.",
+    "group": "shlyapnikov",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_shlyapnikov_qualification_from_the_shop",
+    "name": "GFX_hof_ic_shlyapnikov_qualification_from_the_shop",
+    "title": "生产的资格",
+    "concept": "A plain dark workers COAT hanging on a wooden TOOL RACK in workshop, with a small old LATHE only in far background side silhouette, partly obscured and definitely NOT a close-up. Directly ABOVE coat a blank wall calendar grid with EXACTLY THREE adjacent square cells visibly crossed through with bold black diagonal strokes; no numbers, text, dates. Workbench tools on rack are subtle. Industrial grey and warm worn wood with cool wall. No person, office interior or documents.",
+    "group": "shlyapnikov",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_shlyapnikov_the_body_they_elect",
+    "name": "GFX_hof_ic_shlyapnikov_the_body_they_elect",
+    "title": "由他们选出的机关",
+    "concept": "MOST FULL and climactic emblem: a row of many rough oil-stained WORKERS HANDS rises from BOTTOM foreground, palms supporting one large horizontal elected roster sheet held HIGH at center. Sheet contains only neat short grey horizontal dash marks arranged in rows, NO readable names or letters. Background softly blurred industrial factory silhouette on LEFT and modest institutional building on RIGHT, visually bridged by the elected list; neither building dominates. The uplifted hands and sheet are unmistakably the central action, golden warm side light on knuckles against cool charcoal buildings. No faces, flags, speech podium or writing pen.",
+    "group": "shlyapnikov",
+    "size": [
+      100,
+      88
+    ]
+  }
+]

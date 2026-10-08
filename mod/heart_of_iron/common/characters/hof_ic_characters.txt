@@ -1,0 +1,43 @@
+# =============================================================================
+# 核心圈 · 自建角色对象（由 build/gen-hof-ic-s3.ps1 生成，勿手改）
+# -----------------------------------------------------------------------------
+# 只放【原版/R56 没有】的人。角色 id 一律 SOV_ + 花名册 Key，
+# 与另外 6 人保持一致（这样生成器里 CHARACTER = SOV_<key> 人人通用）。
+# 蓝本：原版 common/characters/SOV.txt 的 SOV_nikolay_bukharin 块。
+# =============================================================================
+
+characters = {
+
+	# ---- 列昂尼德·谢列布里亚科夫（原版/R56 查无此角色，由我们补）----
+	SOV_leonid_serebryakov = {
+		name = SOV_leonid_serebryakov
+		portraits = {
+			civilian = {
+				large = GFX_hof_ic_portrait_leonid_serebryakov
+			}
+			army = {
+				small = GFX_hof_ic_portrait_leonid_serebryakov
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = SOV_leonid_serebryakov
+			allowed = {
+				original_tag = SOV
+			}
+			# 只有坐进最高苏维埃之后才会出现在顾问列表里
+			visible = {
+				hof_ic_seated_leonid_serebryakov = yes
+			}
+			available = {
+				hof_ic_seated_leonid_serebryakov = yes
+			}
+			traits = { }
+			ai_will_do = {
+				base = 1
+			}
+		}
+	}
+
+}

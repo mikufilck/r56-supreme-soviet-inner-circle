@@ -1,0 +1,20 @@
+﻿=== 布哈林 .1120 链结构（L573..L703）===
+ L582  if = {   # 宀旇矾鏈畾锛氬脊銆愯矾绾夸箣浜夈€戝苟鍘熷湴绛夊緟
+ L592  else_if = {   # 宀旇矾宸查€夛細杩囨浮鏃舵湡鐨勭粡娴?
+ L605  else_if = {   # 宀旇矾宸查€夛細宸︾考鍏变骇涓讳箟
+ L618  else_if = {   # hof_ic_bukharin_nep_is_not_a_retreat
+ L631  else_if = {   # hof_ic_bukharin_abolish_the_tribute
+ L644  else_if = {   # hof_ic_bukharin_alliance_is_the_axis
+ L654  else_if = {   # hof_ic_bukharin_enrich_yourselves
+ L664  else_if = {   # hof_ic_bukharin_proportional_development
+ L674  else_if = {   # hof_ic_bukharin_cooperatives_into_the_system
+ L684  else_if = {   # hof_ic_bukharin_socialism_in_one_country
+
+=== 布哈林 Branch 里带 flag 门控的段落原文 ===
+ L585  NOT = { has_character_flag = hof_ic_bukharin_path_nep_flag }
+ L594  SOV_nikolay_bukharin = { has_character_flag = hof_ic_bukharin_path_nep_flag }
+ L620  SOV_nikolay_bukharin = { has_character_flag = hof_ic_bukharin_path_nep_flag }
+ L633  SOV_nikolay_bukharin = { has_character_flag = hof_ic_bukharin_path_nep_flag }
+ L686  SOV_nikolay_bukharin = { has_character_flag = hof_ic_bukharin_path_nep_flag }
+
+=== 本地化键（1060 / 1061）===

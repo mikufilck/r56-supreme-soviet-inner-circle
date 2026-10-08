@@ -1,0 +1,148 @@
+﻿SOV.txt 大小: 140093 字符
+解析到角色块: 163 个
+
+=== 目标角色的立绘 sprite ===
+角色 id                                  portraits 里的 sprite
+----------------------------------------------------------------------------------------------------
+SOV_lev_trotsky                        GFX_idea_SOV_lev_trotsky
+SOV_karl_radek                         GFX_idea_SOV_karl_radek
+SOV_yevgeny_preobrazhensky             GFX_idea_SOV_yevgeny_preobrazhensky
+SOV_ivar_smilga                        GFX_idea_SOV_ivar_smilga_imprisoned
+SOV_ivan_smirnov                       GFX_idea_SOV_ivan_smirnov_imprisoned , GFX_portrait_SOV_ivan_smirnov
+SOV_grigory_zinovyev                   GFX_idea_SOV_grigory_zinovyev_imprisoned , GFX_portrait_SOV_grigory_zinovyev
+SOV_lev_kamenev                        GFX_idea_SOV_lev_kamenev_imprisoned , GFX_portrait_SOV_lev_kamenev
+SOV_nikolay_bukharin                   GFX_idea_SOV_nikolay_bukharin , GFX_portrait_SOV_nikolay_bukharin
+SOV_aleksey_rykov                      GFX_idea_SOV_aleksey_rykov , GFX_portrait_SOV_aleksey_rykov
+SOV_mikhail_tomsky                     GFX_idea_SOV_mikhail_tomsky
+SOV_martemyan_ryutin                   GFX_idea_SOV_martemyan_ryutin_imprisoned
+SOV_grigory_sokolnikov                 GFX_idea_SOV_grigory_sokolnikov
+SOV_aleksandr_shlyapnikov              GFX_idea_SOV_aleksandr_shlyapnikov_imprisoned
+SOV_supreme_soviet                     （块内无 sprite 引用）
+SOV_vyacheslav_molotov                 GFX_idea_SOV_vyacheslav_molotov
+SOV_lazar_kaganovich                   GFX_idea_SOV_lazar_kaganovich
+SOV_mikhail_kalinin                    GFX_idea_mikhail_kalinin
+SOV_kliment_voroshilov                 GFX_idea_kliment_voroshilov
+SOV_mikhail_tukhachevsky               GFX_idea_mikhail_tukhachevsky
+SOV_maksim_litvinov                    GFX_idea_SOV_maksim_litvinov
+SOV_genrikh_yagoda                     GFX_idea_SOV_genrikh_yagoda
+SOV_nikolay_yezhov                     GFX_idea_SOV_nikolay_yezhov
+SOV_lavrenty_beriya                    GFX_idea_SOV_lavrenty_beriya , GFX_portrait_SOV_lavrenty_beriya
+
+=== 对照：R56 里所有 r56_portrait_SOV_* 的 sprite（含大小图）===
+   GFX_portrait_SOV_abram_ioffe
+   GFX_portrait_SOV_aleksandr_vasilevsky
+   GFX_portrait_SOV_aleksandr_vasilevsky_small
+   GFX_portrait_SOV_aleksandr_yegorov
+   GFX_portrait_SOV_aleksandr_yegorov_small
+   GFX_portrait_SOV_andrey_grechko
+   GFX_portrait_SOV_andrey_grechko_small
+   GFX_portrait_SOV_andrey_shkuro
+   GFX_portrait_SOV_andrey_yeryomenko
+   GFX_portrait_SOV_andrey_yeryomenko_small
+   GFX_portrait_SOV_arkady_nazarov
+   GFX_portrait_SOV_blyukher
+   GFX_portrait_SOV_blyukher_small
+   GFX_portrait_SOV_boris_shteifon
+   GFX_portrait_SOV_boris_shteifon_small
+   GFX_portrait_SOV_boris_stechkin
+   GFX_portrait_SOV_bronislav_kaminski
+   GFX_portrait_SOV_bronislav_kaminski_small
+   GFX_portrait_SOV_filipp_golikov
+   GFX_portrait_SOV_filipp_golikov_small
+   GFX_portrait_SOV_generic_marine_infantry
+   GFX_portrait_SOV_grigory_zinovyev
+   GFX_portrait_SOV_grigory_zinovyev_small
+   GFX_portrait_SOV_igor_kurchatov
+   GFX_portrait_SOV_issa_pliyev
+   GFX_portrait_SOV_issa_pliyev_small
+   GFX_portrait_SOV_ivan_chernyakhovsky
+   GFX_portrait_SOV_ivan_chernyakhovsky_small
+   GFX_portrait_SOV_ivan_konev
+   GFX_portrait_SOV_ivan_konev_small
+   GFX_portrait_SOV_ivan_smirnov
+   GFX_portrait_SOV_ivan_smirnov_small
+   GFX_portrait_SOV_konstantin_voskoboinik
+   GFX_portrait_SOV_konstantin_voskoboinik_small
+   GFX_portrait_SOV_lavrenty_beriya
+   GFX_portrait_SOV_lavrenty_beriya_small
+   GFX_portrait_SOV_leonid_govorov
+   GFX_portrait_SOV_leonid_govorov_small
+   GFX_portrait_SOV_lev_dovator
+   GFX_portrait_SOV_lev_dovator_small
+   GFX_portrait_SOV_lev_kamenev
+   GFX_portrait_SOV_lev_kamenev_small
+   GFX_portrait_SOV_maks_reyter
+   GFX_portrait_SOV_maks_reyter_small
+   GFX_portrait_SOV_pavel_rybalko
+   GFX_portrait_SOV_pavel_rybalko_small
+   GFX_portrait_SOV_pyotr_krasnov
+   GFX_portrait_SOV_semyon_budyonny
+   GFX_portrait_SOV_semyon_budyonny_small
+   GFX_portrait_SOV_semyon_timoshenko
+   GFX_portrait_SOV_semyon_timoshenko_small
+   GFX_portrait_SOV_sergei_korolev
+   GFX_portrait_SOV_sidor_kovpak
+   GFX_portrait_SOV_sidor_kovpak_small
+   GFX_portrait_SOV_supreme_soviet
+   GFX_portrait_SOV_vasily_flug
+   GFX_portrait_SOV_vasily_flug_small
+   GFX_portrait_SOV_vasily_korzh
+   GFX_portrait_SOV_vasily_korzh_small
+   GFX_portrait_SOV_vasily_kuznetsov
+   GFX_portrait_SOV_vasily_kuznetsov_small
+   GFX_portrait_SOV_vasily_primakov
+   GFX_portrait_SOV_vasily_primakov_small
+   GFX_portrait_SOV_vladimir_kotelnikov
+   GFX_portrait_SOV_yakov_cherevichenko
+   GFX_portrait_SOV_yakov_cherevichenko_small
+   GFX_r56_portrait_anatoly_gurevitch
+   GFX_r56_portrait_asia_generic_operative_m_1
+   GFX_r56_portrait_asia_generic_operative_m_2
+   GFX_r56_portrait_asia_generic_operative_m_3
+   GFX_r56_portrait_christopher_lee
+   GFX_r56_portrait_ENG_Barnes_Wallis
+   GFX_r56_portrait_ENG_generic_operative_m_1
+   GFX_r56_portrait_europe_generic_operative_m_1
+   GFX_r56_portrait_europe_generic_operative_m_10
+   GFX_r56_portrait_europe_generic_operative_m_11
+   GFX_r56_portrait_europe_generic_operative_m_2
+   GFX_r56_portrait_europe_generic_operative_m_3
+   GFX_r56_portrait_europe_generic_operative_m_4
+   GFX_r56_portrait_europe_generic_operative_m_5
+   GFX_r56_portrait_europe_generic_operative_m_6
+   GFX_r56_portrait_europe_generic_operative_m_7
+   GFX_r56_portrait_europe_generic_operative_m_8
+   GFX_r56_portrait_europe_generic_operative_m_9
+   GFX_r56_portrait_FRA_generic_operative_m_1
+   GFX_r56_portrait_generic_navy_europe_1
+   GFX_r56_portrait_generic_navy_europe_1_small
+   GFX_r56_portrait_generic_navy_europe_2
+   GFX_r56_portrait_generic_navy_europe_2_small
+   GFX_r56_portrait_generic_navy_europe_3
+   GFX_r56_portrait_generic_navy_europe_3_small
+   GFX_r56_portrait_generic_navy_europe_4
+   GFX_r56_portrait_generic_navy_europe_4_small
+   GFX_r56_portrait_generic_navy_europe_5
+   GFX_r56_portrait_generic_navy_europe_5_small
+   GFX_r56_portrait_generic_navy_europe_6
+   GFX_r56_portrait_generic_navy_europe_6_small
+   GFX_r56_portrait_konstantin_jeffremov
+   GFX_r56_portrait_lazar_israeliesky
+   GFX_r56_portrait_leopold_trepper
+   GFX_r56_portrait_moe_berg
+   GFX_r56_portrait_nahum_eitingon
+   GFX_r56_portrait_peter_tennant
+   GFX_r56_portrait_RAJ_jawaharlal_nehru
+   GFX_r56_portrait_south_america_generic_operative_m_1
+   GFX_r56_portrait_south_america_generic_operative_m_2
+   GFX_r56_portrait_south_america_generic_operative_m_3
+   GFX_r56_portrait_south_america_generic_operative_m_4
+   GFX_r56_portrait_south_america_generic_operative_m_5
+   GFX_r56_portrait_south_america_generic_operative_m_6
+   GFX_r56_portrait_SOV_vladimir_kirillovich
+   GFX_r56_portrait_TAN_Kenden_Khomushku
+   GFX_r56_portrait_TAN_Sat_Churmit_Dazhy
+   GFX_r56_portrait_usa_benjamin_o_davis
+   GFX_r56_portrait_USA_Gladeon_Barnes
+   GFX_r56_portrait_USA_james_gavin
+   GFX_r56_portrait_yan_chernyak

@@ -1,0 +1,290 @@
+﻿================================================================
+  德国国策：托特组织相关
+  F:\Hearts of Iron IV\common\national_focus\germany.txt
+================================================================
+  --- 命中于 L18298 ---
+    18294  				limit = {
+    18295  					is_ai = yes
+    18296  				}
+    18297  				hidden_trigger = {
+    18298  					NOT = { has_country_flag = GER_todt_was_ascended_flag } #Flag to prevent AI from taking the focus again after advisor has been replaced}
+    18299  				}
+    18300  			}
+    18301  
+    18302  			has_government = fascism
+    18303  			NOT = {
+    18304  				has_country_leader = {
+    18305  					ruling_only = yes
+    18306  					character = GER_fritz_todt
+    18307  				}
+    18308  			}
+    18309  			if = {
+    18310  				limit = {
+    18311  					has_country_flag = GER_inner_circle_event_pending_flag
+    18312  				}
+    18313  				NOT = { has_country_flag = GER_inner_circle_event_pending_flag }
+    18314  			}
+    18315  
+    18316  			GER_inner_circle_is_ascension_cd_over = yes
+    18317  			if = {
+    18318  				limit = {
+    18319  					has_country_flag = GER_inner_circle_cd_flag
+    18320  				}
+    18321  				custom_trigger_tooltip = {
+    18322  					tooltip = GER_inner_circle_cd_days_tt
+    18323  					NOT = {	has_country_flag = GER_inner_circle_cd_flag }
+    18324  				}
+    18325  			}
+    18326  		}
+    18327  
+    18328  		#Focus will need to pause while events are pending
+    18329  		cancel_if_invalid = no
+    18330  		continue_if_invalid = no
+    18331  
+    18332  		search_filters = { FOCUS_FILTER_INNER_CIRCLE FOCUS_FILTER_POLITICAL_CHARACTER FOCUS_FILTER_INDUSTRY }
+    18333  
+    18334  		select_effect = { #Necessary to prevent AI from getting stuck if the focus is paused due to available trigger returning false
+    18335  			set_country_flag = GER_todt_ascension_flag
+    18336  		}
+    18337  
+    18338  		completion_reward = {
+    18339  			custom_effect_tooltip = {
+    18340  				localization_key = GER_ascension_of_character_tt
+    18341  				CHARACTER = GER_fritz_todt
+    18342  			}
+    18343  			show_ideas_tooltip = GER_todt_reich_engineer
+
+  --- 命中于 L18335 ---
+    18331  
+    18332  		search_filters = { FOCUS_FILTER_INNER_CIRCLE FOCUS_FILTER_POLITICAL_CHARACTER FOCUS_FILTER_INDUSTRY }
+    18333  
+    18334  		select_effect = { #Necessary to prevent AI from getting stuck if the focus is paused due to available trigger returning false
+    18335  			set_country_flag = GER_todt_ascension_flag
+    18336  		}
+    18337  
+    18338  		completion_reward = {
+    18339  			custom_effect_tooltip = {
+    18340  				localization_key = GER_ascension_of_character_tt
+    18341  				CHARACTER = GER_fritz_todt
+    18342  			}
+    18343  			show_ideas_tooltip = GER_todt_reich_engineer
+    18344  
+    18345  			custom_effect_tooltip = generic_skip_one_line_tt
+    18346  
+    18347  			custom_effect_tooltip = {
+    18348  				localization_key = GER_ascension_of_character_focus_tt
+    18349  				CHARACTER = GER_fritz_todt
+    18350  			}
+    18351  
+    18352  			if = { #Just to make it easy to debug stuff for development
+    18353  				limit = {
+    18354  					OR = {
+    18355  						check_variable = { GER_ascended_advisor_1 = 1 }
+    18356  						check_variable = { GER_ascended_advisor_2 = 1 }
+    18357  						check_variable = { GER_ascended_advisor_3 = 1 }
+    18358  					}
+    18359  				}
+    18360  				log = "Advisor was already there. STOP CHEATING!"
+    18361  			}
+    18362  			else_if = { # ASCENDED ADVISORS FULL - NEED TO REPLACE SOMEONE
+    18363  				limit = {
+    18364  					check_variable = { GER_ascended_advisor_1 = 0 compare = not_equals }
+    18365  					check_variable = { GER_ascended_advisor_2 = 0 compare = not_equals }
+    18366  					check_variable = { GER_ascended_advisor_3 = 0 compare = not_equals }
+    18367  				}
+    18368  				hidden_effect = {
+    18369  					set_variable = { GER_ascending_advisor = 1 }
+    18370  					country_event = GER_inner_circle.01
+    18371  				}
+    18372  
+    18373  				custom_effect_tooltip = generic_skip_one_line_tt
+    18374  				custom_effect_tooltip = {
+    18375  					localization_key = GER_event_to_replace_ascended_advisor_tt
+    18376  					EVENT = GER_inner_circle.01.t
+    18377  					CHARACTER = GER_fritz_todt
+    18378  				}
+    18379  			}
+    18380  			else = {
+
+  --- 命中于 L18343 ---
+    18339  			custom_effect_tooltip = {
+    18340  				localization_key = GER_ascension_of_character_tt
+    18341  				CHARACTER = GER_fritz_todt
+    18342  			}
+    18343  			show_ideas_tooltip = GER_todt_reich_engineer
+    18344  
+    18345  			custom_effect_tooltip = generic_skip_one_line_tt
+    18346  
+    18347  			custom_effect_tooltip = {
+    18348  				localization_key = GER_ascension_of_character_focus_tt
+    18349  				CHARACTER = GER_fritz_todt
+    18350  			}
+    18351  
+    18352  			if = { #Just to make it easy to debug stuff for development
+    18353  				limit = {
+    18354  					OR = {
+    18355  						check_variable = { GER_ascended_advisor_1 = 1 }
+    18356  						check_variable = { GER_ascended_advisor_2 = 1 }
+    18357  						check_variable = { GER_ascended_advisor_3 = 1 }
+    18358  					}
+    18359  				}
+    18360  				log = "Advisor was already there. STOP CHEATING!"
+    18361  			}
+    18362  			else_if = { # ASCENDED ADVISORS FULL - NEED TO REPLACE SOMEONE
+    18363  				limit = {
+    18364  					check_variable = { GER_ascended_advisor_1 = 0 compare = not_equals }
+    18365  					check_variable = { GER_ascended_advisor_2 = 0 compare = not_equals }
+    18366  					check_variable = { GER_ascended_advisor_3 = 0 compare = not_equals }
+    18367  				}
+    18368  				hidden_effect = {
+    18369  					set_variable = { GER_ascending_advisor = 1 }
+    18370  					country_event = GER_inner_circle.01
+    18371  				}
+    18372  
+    18373  				custom_effect_tooltip = generic_skip_one_line_tt
+    18374  				custom_effect_tooltip = {
+    18375  					localization_key = GER_event_to_replace_ascended_advisor_tt
+    18376  					EVENT = GER_inner_circle.01.t
+    18377  					CHARACTER = GER_fritz_todt
+    18378  				}
+    18379  			}
+    18380  			else = {
+    18381  				hidden_effect = {
+    18382  					add_ideas = GER_todt_reich_engineer
+    18383  				}
+    18384  				if = {
+    18385  					limit = {
+    18386  						check_variable = { GER_ascended_advisor_1 = 0 }
+    18387  					}
+    18388  					set_variable = { GER_ascended_advisor_1 = 1 }
+
+  --- 命中于 L18382 ---
+    18378  				}
+    18379  			}
+    18380  			else = {
+    18381  				hidden_effect = {
+    18382  					add_ideas = GER_todt_reich_engineer
+    18383  				}
+    18384  				if = {
+    18385  					limit = {
+    18386  						check_variable = { GER_ascended_advisor_1 = 0 }
+    18387  					}
+    18388  					set_variable = { GER_ascended_advisor_1 = 1 }
+    18389  				}
+    18390  				else_if = {
+    18391  					limit = {
+    18392  						check_variable = { GER_ascended_advisor_2 = 0 }
+    18393  					}
+    18394  					set_variable = { GER_ascended_advisor_2 = 1 }
+    18395  				}
+    18396  				else_if = {
+    18397  					limit = {
+    18398  						check_variable = { GER_ascended_advisor_3 = 0 }
+    18399  					}
+    18400  					set_variable = { GER_ascended_advisor_3 = 1 }
+    18401  				}
+    18402  			}
+    18403  
+    18404  			hidden_effect = {
+    18405  				country_event = { id = GER_inner_circle_todt.01 days = GER_inner_circle_days_to_start_focus random_days = GER_inner_circle_random_days }
+    18406  
+    18407  				clr_country_flag = GER_todt_ascension_flag
+    18408  
+    18409  				GER_inner_circle_set_ascension_cd = yes
+    18410  
+    18411  				if = { #If historical make sure Todt is not picked ever after being replaced by Speer in the Intrigue Event
+    18412  					limit = {
+    18413  						GER_is_historical_ai = yes
+    18414  					}
+    18415  					set_country_flag = GER_todt_was_ascended_flag #Flag to prevent AI from taking the focus again after advisor has been replaced
+    18416  				}
+    18417  				else = {
+    18418  					set_country_flag = { #Flag to prevent AI from taking the focus again after advisor has been replaced
+    18419  						flag = GER_todt_was_ascended_flag
+    18420  						days = 1500 # Clear after ~4 years 
+    18421  						value = 1
+    18422  					}
+    18423  				}
+    18424  			}
+    18425  		}
+    18426  	}
+    18427  
+
+================================================================
+  雅科夫列夫 MIO 定义
+  F:\Hearts of Iron IV\common\military_industrial_organization\organizations\SOV_organization.txt
+================================================================
+  --- 命中于 L2098 ---
+     2096  }
+     2097  
+     2098  SOV_yakovlev_design_bureau_organization = {
+     2099  	include = generic_naval_aircraft_organization
+     2100  	icon = GFX_idea_yakovlev_design_bureau
+     2101  	
+     2102  	allowed = {	
+     2103  		OR = {
+     2104  			original_tag = SOV
+     2105  			AND = {
+     2106  			    tag = AST
+     2107  			    has_dlc = "Thunder at Our Gates"
+     2108  			}
+     2109  		}
+     2110  	}
+     2111  
+     2112  	available = {
+     2113  		IF = { #Dissolve Bureau Purge
+     2114  			limit = {
+     2115  				FROM = { original_tag = SOV }
+     2116  			}
+     2117  			FROM = { NOT = { has_country_flag = SOV_yakovlev_design_bureau_dissolved_flag } }
+     2118  		}
+     2119  		if = {
+     2120  		    limit = { FROM = { original_tag = AST } }
+     2121  		    FROM = { has_completed_focus = AST_westward_battles }
+     2122  		}
+     2123  	}
+     2124  
+     2125  	add_trait = { 
+     2126  		token = SOV_mio_trait_merge_plant_no_28
+     2127  		name = SOV_merge_aircraft_plant_1
+     2128  		#icon = GFX_generic_mio_department_icon_facilities
+     2129  		icon = GFX_generic_mio_trait_icon_build_cost_ic
+     2130  		special_trait_background = yes
+     2131  
+     2132  		position = { x=@aircraft_1_X y=@aircraft_1_Y }
+     2133  		
+     2134  		visible = {
+     2135  			FROM = { original_tag = SOV }
+     2136  		}
+     2137  		
+     2138  		available = {
+     2139  			FROM = {
+     2140  				has_full_control_of_state = 251 #KUYBYSHEV
+     2141  			}
+     2142  			FROM = {
+     2143  				has_completed_focus = SOV_merge_aircraft_plants
+     2144  			}
+     2145  			FROM = {
+     2146  				NOT = { has_country_flag = SOV_merge_plant_no_28_flag }
+     2147  			}
+     2148  		}
+     2149  
+     2150  		on_complete = {
+     2151  			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
+     2152  			FROM = {
+     2153  				set_country_flag = SOV_merge_plant_no_28_flag
+     2154  			}
+     2155  		}
+     2156  
+     2157  		production_bonus = {
+     2158  			production_cost_factor = @aircraft_production_cost_factor
+
+==================== 托特组织相关本地化 ====================
+  [traits_l_simp_chinese.yml] GER_organization_todt_trait: "$construction_company$"
+  [traits_l_simp_chinese.yml] GER_organization_todt_improved_trait: "$construction_company$"
+  [WUW_focus_l_simp_chinese.yml] GER_form_organization_todt: "成立托特组织"
+  [WUW_focus_l_simp_chinese.yml] GER_form_organization_todt_desc: "尽管元首希望看到几个大型建设项目完成，但大多数项目将不得不等待。最紧迫的是[ROOT.GetNameDef]急需更多的军事工业。在弗里茨·托德手中进行规划，我们相信结果会很不错。"
+  [WUW_focus_l_simp_chinese.yml] GER_autonomous_organization_todt: "托特组织自治"
+  [WUW_focus_l_simp_chinese.yml] GER_autonomous_organization_todt_desc: "弗里茨·托特的倡议——托特组织，已经证明非常有效。建设项目快速完成，甚至连元首本人也感到满意。托特组织作为德国军备和战争的帝国全权代表，将成为我国的真正资产。"
+  [WUW_ideas_l_simp_chinese.yml] GER_organization_todt: "托特组织"
+

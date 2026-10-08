@@ -1,0 +1,210 @@
+# ============================================================================
+#  hof_sov_mob_on_actions.txt
+#  苏联「开战倒计时」决议 —— 开战当天立刻激活
+#
+#  设计出处：docs/96-soviet-war-countdown-decision.md §2.5
+#            docs/97-soviet-war-countdown-design.md §2
+#  脚本编码：UTF-8 无 BOM + CRLF（AGENTS.md 硬性规则 3）
+#
+#  ⚠️⚠️ 必须套 `on_actions = { }` 外壳 —— 本项目 2026-09-23 实测：
+#     原版 common/on_actions/ 下 **17 个文件【全部】套壳，0 个不套**；
+#     R56 的 **21 个文件也全部套壳**。
+#     ⇒ 顶层直接写 `on_war_relation_added = { }` 会【静默不触发】（error.log 也不一定报）。
+#     ⚠️ 同时实测：同名 on_action（如 `on_war_relation_added`）在**原版 12 个文件里都有**
+#     ⇒ 引擎是**合并**所有文件里的同名块（所以新增文件**不会覆盖**原版 / R56）。
+#
+#  ⚠️ 为什么用 on_war_relation_added 而不是 on_war：
+#     原版 00_on_actions.txt 自己的注释原文 ——
+#     "on_war is fired when a country goes to war against anyone and is not fired again
+#      when it enters war against another country unless it went to peace first"
+#     ⇒ 多国同时开战时 on_war 只会响一次，做不出"一国一条"。
+#     ⇒ on_war_relation_added 每【一对】国家开战都响，ROOT = 攻方 · FROM = 守方。
+#
+#  ⚠️ 为什么还要 activate_targeted_decision：
+#     targeted decision 的目标数组是【每天】复查的 ⇒ 纯数据路线会晚一天。
+#     官方 wiki 对 activate_targeted_decision 的原文：
+#       "Only works on missions; regular decisions targeted this way become
+#        visible but do not activate."
+#     ⇒ 本决议【是 mission】（写了 days_mission_timeout）⇒ 这条路走得通。
+#
+#  🚩🚩 2026-09-25 补修（用户实测 bug：苏联内战赢下之后，那个被打垮的 tag 的卡牌反复出现又消失）：
+#     ⭐ activate_targeted_decision 的官方原文还有【上半句】——
+#        "Activates the specified decision for the current scope, **ignoring triggers
+#         for the decision**."（documentation\effects_documentation.md）
+#        ⇒ 它【无视条件强制激活】⇒ 如果目标已经不该出现，不校验就会【强行把卡牌挂上】。
+#     ⇒ 所以下面两处强制激活都补上【与决议同一套】的有效性校验：
+#        目标 exists = yes · 仍 has_war_with 对方 · **any_owned_state = { always = yes }**（还拥有州）
+#        · **num_of_controlled_states > 0**（⭐ v4/v6：还控制着至少一个州 —— 光拥有不够）
+#        ⭐ **六处条件必须始终一致**（target_trigger / activation / visible / cancel_trigger /
+#          timeout_effect 的守卫 / 本文件的两处强制激活）。
+#
+#  🚩🚩 2026-09-25 第二次订正（用户实测：D08 没有任何省却仍在动员师）：
+#     ⚠️ **术语先对齐**（2026-09-25 查证）：中文界面里「**已停止抵抗**」才是触发器
+#        `has_capitulated` 的名字（`TRIGGER_HAS_CAPITULATED: "已停止抵抗"`，
+#        localisation/simp_chinese/triggers_l_simp_chinese.yml）；而「**投降**」在中文界面里
+#        指的是【投降进度 / 和平机制】（`TRIGGER_MORE_THAN_X_SURRENDER_PROGRESS` =「投降进度高于…」）。
+#        `CAN_SURRENDER_FACTION_MEMBERS` 那句「只有当…全部主要成员国停止抵抗时他们才会投降」
+#        ⇒ **停止抵抗 ≠ 投降**。本项目旧稿写的「已投降」是自造词，现统一改成「已停止抵抗」。
+#     ⛔ **`has_capitulated`（已停止抵抗）不是正确的判据** —— 控制台 `tag d08` 给出的是
+#        「D08 has no provinces, switch would resign.」⇒ 它是**一个没有任何省的壳子 tag**，
+#        而且**并没有进入 `has_capitulated`（已停止抵抗）状态** ⇒ v2 那条根本没挡住它。
+#     ✅ 现行判据 = **「还拥有至少一个州」**（`any_owned_state = { always = yes }`，官方
+#        triggers 文档：COUNTRY 作用域 "check if any owned state meets the trigger"；
+#        ⚠️ 引擎**没有** `num_of_owned_states`）。它把用户的规则完整包含进来：
+#        已停止抵抗且无州 ⇒ 无州 ⇒ 挡掉 · 已停止抵抗但仍有州 ⇒ 有州 ⇒ 照发 ✔
+# ============================================================================
+
+#  ⭐⭐ v5（2026-09-25 第五轮）→ ⭐⭐⭐ v9 校正：
+#     **本文件多了「清章」这一件事**。`hof_sov_mob_mustered` 的语义在 v9 改了：
+#       · v5：「已经发过一次」⇒ 一场战争动员一次（一次性）
+#       · ⭐ v9：「**已被清扫**（已不算数）」⇒ 开战期间**每 30 天一轮**照发（用户口径）
+#     ⇒ 这里「开战就清章」的意义变成：**与它再次开战时，把它上次被清扫的章清掉**，
+#       卡牌才能重新挂上（否则会被 `target_trigger` 里的 `NOT = { has_country_flag = … }` 挡住）。
+#     📌 v9 起，决议侧的 `fire_only_once = no` 负责「周期」，本文件负责「开战当天立刻开始」。
+
+#  ⭐⭐⭐ v8（2026-09-25 第八轮）：**清扫改挂四个【真实存在】的钩子**（见文件末尾）——
+#     `on_peace` / `on_annex` / `on_civil_war_end` / `on_weekly`；逻辑写在
+#     `common/scripted_effects/hof_sov_mob_effects.txt` 的 `hof_sov_mob_janitor` 里。
+#     🚩 第七轮挂在 **`on_daily`** 上是错的 —— **本版本（1.19.2）没有这个钩子**
+#        （扫原版 + R56 的 `common/on_actions/*.txt` 顶层键实测：无 `on_daily` / `on_yearly` /
+#         `on_war_relation_removed`），所以那台「每日清扫」**根本没跑**。
+
+on_actions = {
+
+	on_war_relation_added = {
+
+		effect = {
+
+			# ── ① 玩家扮演的苏联【主动】宣战 ⇒ 目标是 FROM（守方） ──
+			#    ⭐ 2026-09-25：加【目标仍有效】校验（见文件头）——
+			#       没有这道校验，activate_targeted_decision 会给不该出现的目标硬挂卡。
+			#    ⭐⭐ v5/v9：**开战先清掉「已被清扫」的章** ⇒ 与它再次开战时卡牌能重新挂上。
+			#    ⚠️ v9 给清章加了 SOV 守卫：以前它对**全世界每一对开战国**都无条件清章
+			#       （无害但脏）——现在只有「苏联作为主角的那场战争」才清。
+			if = {
+				limit = {
+					tag = SOV
+					is_ai = no
+				}
+
+				FROM = {
+					clr_country_flag = hof_sov_mob_mustered
+				}
+			}
+
+			# ⭐ 清完章再校验【目标仍有效】⇒ 才强制激活（activate_targeted_decision 无视条件）
+			if = {
+				limit = {
+					tag = SOV
+					is_ai = no
+					FROM = {
+						exists = yes
+						has_war_with = ROOT
+						# ⭐ v3 判据：还必须【还拥有至少一个州】（0 州的壳子 tag 不是有效敌人）
+						any_owned_state = {
+							always = yes
+						}
+						num_of_controlled_states > 0
+						# ⭐ v9：`hof_sov_mob_mustered` =「已被清扫」⇒ 有它就不挂（清扫在目标重新有效时会清掉）
+						NOT = {
+							has_country_flag = hof_sov_mob_mustered
+						}
+					}
+				}
+
+				activate_targeted_decision = {
+					target = FROM
+					decision = hof_sov_mob_war_countdown
+				}
+			}
+
+			# ── ② 玩家扮演的苏联【被动】被宣战 ⇒ 目标是 ROOT（攻方） ──
+			#    本块作用域切到 FROM（= 守方 = 苏联），而 ROOT 仍是攻方
+			#    ⭐ 同上：校验【目标（= ROOT）仍有效】
+			#    ⭐⭐ v5/v9：同上 —— 开战先清章（这里目标 = ROOT），同样加 SOV 守卫
+			if = {
+				limit = {
+					FROM = {
+						tag = SOV
+						is_ai = no
+					}
+				}
+				ROOT = {
+					clr_country_flag = hof_sov_mob_mustered
+				}
+			}
+
+			if = {
+				limit = {
+					FROM = {
+						tag = SOV
+						is_ai = no
+					}
+					ROOT = {
+						exists = yes
+						has_war_with = FROM
+						# ⭐ v3 判据：同决议（见文件头）
+						any_owned_state = {
+							always = yes
+						}
+						num_of_controlled_states > 0
+						# ⭐ v9：`hof_sov_mob_mustered` =「已被清扫」⇒ 有它就不挂（清扫在目标重新有效时会清掉）
+						NOT = {
+							has_country_flag = hof_sov_mob_mustered
+						}
+					}
+				}
+
+				FROM = {
+					activate_targeted_decision = {
+						target = ROOT
+						decision = hof_sov_mob_war_countdown
+					}
+				}
+			}
+		}
+	}
+
+	# ════════════════════════════════════════════════════════════════════════
+	#  ⭐⭐⭐ v8：**清扫**（回答用户「本来就应该国家不存在或者停止战争之后马上终止」）
+	#  ────────────────────────────────────────────────────────────────────────
+	#  🚩🚩 第七轮踩的坑：当时挂在 **`on_daily`** 上 —— 而**本版本（1.19.2）没有这个钩子**
+	#     （扫原版 + R56 的 `common/on_actions/*.txt` 顶层键实测：⛔ 无 `on_daily` / `on_war_relation_removed`）
+	#     ⇒ 那台「每日清扫」**根本没跑**，于是「白和之后卡不撤」。
+	#  ✅ v8 改成挂**本版本确实存在**的四个钩子（同一个 effect 调四次，不再抄代码）：
+	#     · `on_peace`           —— 停战/白和 ⇒ **马上**撤卡（用户实测场景）
+	#     · `on_annex`           —— 目标被吞并
+	#     · `on_civil_war_end`   —— 内战结束（D08 那种内战残渣 tag 就死在这一刻）
+	#     · `on_weekly`          —— 兜底（最多 7 天）
+	#  ⚠️ 四个钩子的 ROOT/FROM 语义各不相同，所以 effect 内部**不依赖任何绑定**
+	#     （见 `common/scripted_effects/hof_sov_mob_effects.txt` 的 `hof_sov_mob_janitor`：
+	#      `SOV = { every_country = { … } }`，条件全在遍历到的那国身上判，撤卡用 `PREV` 指回它）。
+	#  ⭐ ⚠️ 与决议侧的配合（v9 校正）：**「不重挂」不能靠 `fire_only_once = yes`** ——
+	#     那个字段管的是「要不要周期重排」，写 `yes` 会连用户要的「每月一轮」一起杀掉。
+	#     ✅ 防幽灵靠两件事：① 决议侧 `activation = { is_ai = no  has_war = yes }`（拥有者层）
+	#     ② 本文件 + `hof_sov_mob_janitor` 的清扫（层 2 · 目标层）。
+	on_peace = {
+		effect = {
+			hof_sov_mob_janitor = yes
+		}
+	}
+	on_annex = {
+		effect = {
+			hof_sov_mob_janitor = yes
+		}
+	}
+	on_civil_war_end = {
+		effect = {
+			hof_sov_mob_janitor = yes
+		}
+	}
+	on_weekly = {
+		effect = {
+			if = {
+				limit = { tag = SOV }
+				hof_sov_mob_janitor = yes
+				hof_sov_mob_rearm = yes
+			}
+		}
+	}
+}

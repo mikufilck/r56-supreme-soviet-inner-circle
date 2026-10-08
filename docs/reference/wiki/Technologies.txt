@@ -1,0 +1,883 @@
+﻿Research - Hearts of Iron 4 Wiki
+11 captures
+16 Jun 2018 - 24 Dec 2024
+Jul
+AUG
+Sep
+23
+2023
+2024
+2025
+success
+fail
+About this capture
+COLLECTED BY
+Collection:
+Save Page Now Outlinks
+TIMESTAMPS
+The Wayback Machine - https://web.archive.org/web/20240823020937/https://hoi4.paradoxwikis.com/Technologies
+Forum list
+Trending
+Latest
+New posts
+Paradox
+Store
+Mods
+Forum
+Launcher
+PDXCON
+2019
+Paradox Wikis
+Hearts of Iron 4 Wiki
+Active Wikis
+Age of Wonders 4
+Empire of Sin
+Cities: Skylines 2
+Crusader Kings 3
+Europa Universalis 4
+Hearts of Iron 4
+Hunter: The Reckoning
+Imperator: Rome
+Millennia
+Prison Architect
+Stellaris
+Surviving Mars
+Surviving the Aftermath
+Werewolf: the Apocalypse
+Vampire: The Masquerade
+Victoria 3
+Legacy Wikis
+AoW: Planetfall
+Cities: Skylines
+Crusader Kings 2
+Arsenal of Democracy
+Europa Universalis 2
+Europa Universalis 3
+Europa Universalis: Rome
+Hearts of Iron 2
+Hearts of Iron 3
+Tyranny
+Victoria 1
+Victoria 2
+Search
+Personal tools
+Log in
+Personal tools
+English
+Not logged in
+Talk
+Contributions
+Log in
+Navigation menu
+Namespaces
+Page
+Discussion
+English
+Views
+Read
+Edit
+Edit source
+View history
+More
+Navigation
+HoI4 Wiki Main Page
+Recent changes
+Random page
+Style guidelines
+Wiki support
+Paradox links
+- Wikis
+- Forums
+- Mods
+- Store
+- YouTube
+Tools
+What links here
+Related changes
+Special pages
+Printable version
+Permanent link
+Page information
+braze
+In other languages
+Deutsch
+Espa帽ol
+Fran莽ais
+Polski
+Portugu锚s
+袪褍褋褋泻懈泄
+Research
+From Hearts of Iron 4 Wiki
+(Redirected from
+Technologies
+)
+Jump to navigation
+Jump to search
+This is a community maintained wiki. If you spot a mistake, please help with fixing it.
+Research is used to unlock technologies. These can serve to unlock new units, equipment or structures or to improve the performance of existing units, equipment and structures.
+Contents
+1
+Technologies
+2
+Research slots
+3
+Research time
+4
+Research speed
+5
+Research modifiers
+5.1
+Difficulty
+5.2
+Trade law
+5.3
+Technologies that increase research speed
+5.4
+Limited-use bonuses
+5.5
+Equipment licensing
+5.6
+Technology sharing
+5.7
+Other sources of research bonus
+6
+Ahead-of-time penalty
+7
+References
+Technologies
+[
+edit
+|
+edit source
+]
+This is a community maintained wiki. If you spot a mistake, please help with fixing it.
+Land
+Infantry technology
+: Technologies that improve infantry weapons and equipment, unlock or improve motorized and mechanized units as well as special forces (marines, mountaineers and paratroopers).
+Artillery technology
+: Technologies that unlock and improve all types of artillery, including anti-tank, anti-air and rocket artillery.
+Support Companies technology
+: Technologies that unlock and improve all types of support battalions: Engineers, Reconnaissance, Military Police, Maintenance, Field Hospital, Logistics and Signal companies.
+Armor technology
+: Technologies that unlock all types and models of tanks, from light to super heavy chassis, as well as their variants: tank destroyer, self-propelled artillery and self-propelled anti-air.
+Naval
+Naval technology
+: Technologies that unlock or improve all kinds of ship units: destroyers, cruisers, battlecruisers battleships, carriers, submarines or improve transports for naval invasions.
+Air
+Air technology
+: Technologies that unlock or improve all types of airframes: light, medium or heavy, as well as their jet propulsion versions.
+Industry
+Engineering technology
+: Groups all technologies related to electronic engineering (computers, radios, cryptography), rockets and atomic research.
+Industry technology
+: Groups all technologies that improve production efficiency and volume of all
+factories
+, resources excavation and unlocks
+synthetic refineries
+.
+Research slots
+[
+edit
+|
+edit source
+]
+Technology is unlocked by assigning a research slot to it for the required number of days.
+Some countries are defined with the base numbers of research slots, while other European countries have 3 and non-European countries have 2 by default. In addition to the base slots, countries can unlock additional research slots via their
+national focus
+trees (1~3 depending on the country). For most countries, they can not complete all these focuses in a game because they belong to different branches. Some of these focuses require some conditions, like having a substantial number of factories (usually 50+), and the Commonwealth countries must additionally become fully independent to maximize their available research slots.
+Country
+Base research slots
+Adding 1 slot by
+East Germany
+4
+Generic national focus tree:
+Extra Research Slot
+Extra Research Slot II
+Germany
+Extra Research Slot
+Reverse the Brain Drain (
+)
+Italy
+Expand National Universities
+Il Sol dell'Avvenire (
+)
+Scientific Cooperation (
+)
+Japan
+Open Up the Universities (
+)
+National Research Policy (
+/
+)
+Research Spending (
+)
+United Kingdom
+Extra Research Slot
+United States
+Scientific Research & Development Office (requires
+Continue the New Deal)
+Scientist Haven
+American Institute of Sciences (requires
+Reestablish the Gold Standard)
+West Germany
+Generic national focus tree:
+Extra Research Slot
+Extra Research Slot II
+Italian State of East Africa
+3
+Generics
+Bulgaria
+Expand Sofia University
+Vasil Levsky National Military University
+Canada
+Fund the National Research Council
+Defense Research Grants
+Communist China
+Literacy Programs
+China Medical University
+Form the Academy of Sciences
+Czechoslovakia
+Czech Technical University
+Knowledge Sharing Teams
+War College
+Denmark
+Expand Institut for Teoretisk Fysik
+Welcome Foreign Scientists
+Expand K酶benhavns Universitet
+Experimental Technology
+Estonia
+Technology Sharing
+Unchain Our Education
+Finland
+Finnish Learned Societies
+Joint Scientific Program
+Intellectual Elite
+Suomen Akatemia
+France
+Support the Grandes 脡coles
+Form the National Research Center
+Greece
+The Die is Cast!
+The Greek Industrial Revolution
+Expansion of Athens University
+Cement Greco-German Ties
+Academy of Athens
+Hungary
+Institute for Industrial Techniques
+Expand the Technical University of Budapest
+Aeronautic Technology Institute
+Latvia
+Technology Sharing
+Unchain Our Education
+Lithuania
+Technology Sharing
+Unchain Our Education
+Netherlands
+Expand R&D Facilities
+Domestic Innovation
+Norway
+Expand Norges Tekniske H酶gskole
+Poland
+Polish School of Mathematics
+Expand the University of Warsaw
+Portugal
+(without
+)
+Generics
+Romania
+Expand the University of Bucharest
+The Royal Foundation
+Soviet Union
+The USSR Academy of Sciences
+Leningrad Polytechnical Institute
+Socialist Humanism
+Republican Spain
+Develop All Talent
+Exemplify the Art And Science of Warfare
+Utilize the Intellectuals
+Direct the Universities
+Found the Academia V谩zquez De Mella
+Nationalist Spain
+Literacy Programs
+Freedom of Thought
+Invite Socialist Intellectuals
+Beacon of Socialism
+A Frontline Suited for Intellectuals
+Restore Higher Education
+Sweden
+The Royal Institute of Technology
+Expand the University of Uppsala
+Switzerland
+Swiss decision
+Expand Arms Industry
+Weapons of Democracy
+Turkey
+Utilize Foreign Capital
+Reinstate the Dar眉lf眉n没n-u 艦ah芒ne
+Edirne Research Exchange
+Expanded Credit on Our Debts
+Increase German Military Aid
+The International of Proletarian Freethinkers
+Yugoslavia
+Expand the University of Zagreb
+Expand the University of Ljubljana
+Expand the University of Belgrade
+Most other European countries
+Iceland
+2
+Industrial Research School
+Expanding the University of Reykjavik
+International Research Community
+Paraguay
+National Academy of Sciences
+[THIS.GetAdjective] Mechanical University
+The South American Higher University
+Portugal
+(with
+)
+Instituto Superior T茅cnico
+Military Research Facilities
+Naval Research Institute
+Countries outside of Europe
+Generics
+Each research slot can store up to 30 points of "Days Saved" without being assigned to a specific tech.
+[1]
+"Days Saved" functions as days added to research progress once a tech is chosen for the slot. See
+research speed
+.
+Research time
+[
+edit
+|
+edit source
+]
+This is a community maintained wiki. If you spot a mistake, please help with fixing it.
+Each technology has a base time cost. They are multiples of the standard base cost of 100 days.
+[2]
+Cost (days)
+Techs
+50
+Armor Submodels
+100
+Armored Car Upgrade; Artillery (II) & Upgrades (II,III,IV); Anti-Air Artillery (II,III) & Upgrades;
+Rocket Artillery (II) & Upgrades; Anti-Tank Artillery (II,III) & Upgrades;
+Support Equipment; Carrier Airplanes;
+Electronic Mechanical Engineering; Encryption ; Fuel Storage
+125
+Support Companies (I); Decimetric Radar (I,II); Centimetric Radar (I,II,III)
+150
+Infantry Weapons (I) & Upgrades (I,III); Support & Anti-Tank Weapons; Motorised Rocket Artillery;
+Marines (II), Mountain Infantry (II), Paratroopers (II); Support Companies (II);
+Artillery (I) & Upgrades (I); Anti-Air Artillery (I); Anti-Tank Artillery (I);
+Early Truck; Train (Civilian, War Austerity); Shiphulls (I); Transports (I);
+Decryption; Experimental Rockets; Rocket Engines (II,III);
+Machine Tools (I,II); Equipment Conversion; Oil Processing; Rubber Processing
+175
+Radio, Radio Detection
+200
+Infantry Weapons (II,III) & Upgrade (II); Support Companies (III,IV); Motorised & Mechanized (I,II);
+Armored Car (I,II,III); Amtrac (Basic,Improved); Marines (I,III), Mountain Infantry (I,III), Paratroopers (I,III);
+Special Forces Programs; Night Vision (II); Truck
+Artillery (III); Rocket Artillery (I); Great War Tank, Light, Medium & Heavy (I) Armor;
+Shiphulls (II,III,IV); Transports (II,III); Airplanes; Rocket Engines(I); Jet Engines;
+Machine Tools(III); Production Line (I); Industry; Construction; Excavation
+250
+Night Vision (I); Modern, Super Heavy & Heavy (II,III) Armor; Computing; Production Line (II)
+300
+Mechanized (III); Fuel Refining; Synthetic Oil Experiments
+500
+Atomic Research, Nuclear Reactor, Nuclear Bombs
+Research speed
+[
+edit
+|
+edit source
+]
+This is a community maintained wiki. If you spot a mistake, please help with fixing it.
+Base research cost represents the time it takes to research a specific technology. In practice, this cost will likely vary each time due to different research modifiers being applied (for better or for worse).
+Research speed modifiers stack additively to research speed (rather than subtractively to research cost). For example, 106 days base cost at 15% research speed bonus will take:
+⌈
+106
+1
++
+15
+%
+⌉
+=
+93
+{\displaystyle \left\lceil {\frac {106}{1+15\%}}\right\rceil =93}
+days.
+"Days Saved" are subtracted from the modified expected number of days. Thus, "Days Saved" benefit from (or are penalized by) the same research speed modifiers.
+The aggregate research bonus is calculated and updated every day. Thus changes in research speed (except limited-use bonuses) apply to all ongoing research.
+Research speed can not fall below 10% of the default speed.
+[3]
+Research modifiers
+[
+edit
+|
+edit source
+]
+Difficulty
+[
+edit
+|
+edit source
+]
+The player can get a research speed bonus or penalty depending on the game difficulty setting as follows:
+Civilian:
++15%
+bonus
+Recruit:
++7%
+bonus
+Regular: no bonus or penalty
+Veteran:
+鈥?5%
+penalty
+Elite:
+鈥?0%
+penalty
+Trade law
+[
+edit
+|
+edit source
+]
+Main article:
+Ideas#Trade_laws
+Trade laws can also increase research speed. The more open the trade the higher the reduction as can be seen below.
+Free Trade:
++10%
+bonus
+Export Focus:
++5%
+bonus
+Limited Exports:
++1%
+bonus
+Technologies that increase research speed
+[
+edit
+|
+edit source
+]
+Technology
+Year
+Research speed
+Electronic mechanical engineering
+1936
++3%
+Mechanical computing
+1936
++4%
+Computing machine
+1938
++5%
+Improved computing machine
+1940
++8%
+Atomic research
+1940
++4%
+Advanced computing machine
+1942
++8%
+Limited-use bonuses
+[
+edit
+|
+edit source
+]
+Limited-use bonuses are awarded by National Focus. Once available, a limited-use research bonus is activated when a Research Slot is assigned to an applicable technology. Once activated, the limited-use bonus is tied to the technology even if the slot is re-assigned.
+A limited-use bonus can additionally act as an
+ahead-of-time
+bonus, reducing the ahead-of-time penalty by the stated amount.
+Equipment licensing
+[
+edit
+|
+edit source
+]
+When licensing equipment from another country, researching that equipment gets a speed bonus of
+20%
+.
+[4]
+Technology sharing
+[
+edit
+|
+edit source
+]
+This is a community maintained wiki. If you spot a mistake, please help with fixing it.
+When a country is part of a research group, it gets a research speed bonus for each other country in the group that has already unlocked that technology, up to
+50%
+.
+[5]
+Tech sharing bonus functions in the same way as Limited-use bonus: once applied, the bonus is locked to the tech; changes in the country's tech sharing situation will only reflect in future research. Aside,
+subjects
+benefit less from technology sharing, depending on their
+autonomy
+level.
+Other sources of research bonus
+[
+edit
+|
+edit source
+]
+Various national
+ideas
+, like designers, theorist, and concerns continuously improve the research speed for applicable technologies while they are active. Design companies can additionally improve equipment being unlocked while they are active.
+Ahead-of-time penalty
+[
+edit
+|
+edit source
+]
+All technologies have a date attached to them when they become current. Researching them earlier comes at the cost of reduced research speed. Each year ahead adds
+200%
+ahead-of-time (AOT) penalty.
+[6]
+Ahead-of-time bonuses from National Focus reduce this penalty modifier. For research ahead of time, the in-game tool-tip displays estimated time to completion using the formula below.
+With yearly AOT at 2, a technology starting to research
+T
+{\displaystyle T}
+years before the date it becomes current, with a base research cost of
+N
+{\displaystyle N}
+days and aggregate research bonus at
+B
+{\displaystyle B}
+% will take
+365
+(
+T
++
+1
+2
+)
+(
+1
+−
+e
+−
+2
+N
+365
+1
+1
++
+B
+%
+)
+{\displaystyle 365\left(T+{\frac {1}{2}}\right)\left(1-e^{-{\frac {2N}{365}}{\frac {1}{1+B\%}}}\right)}
+days to complete. This assumes the research starts with a speed higher than the minimum and finishes before the technology becomes current. It is also subject to a small approximation error (unlikely to be noticed in-game). The formula is derived by solving
+N
+=
+365
+∫
+0
+t
+1
++
+B
+%
+AOT
+⋅
+(
+T
+−
+x
+)
++
+1
+d
+x
+{\displaystyle N=365\int _{0}^{t}{\frac {1+B\%}{{\text{AOT}}\cdot (T-x)+1}}dx}
+for
+t
+{\displaystyle t}
+.
+If part of the research is not under penalty (ie.
+T}">
+t
+>
+T
+{\displaystyle t>T}
+T}"/>
+from the above integral), the estimated time-to-completion is
+365
+(
+T
++
+N
+365
+(
+1
++
+B
+%
+)
+−
+l
+n
+(
+2
+T
++
+1
+)
+2
+)
+{\displaystyle 365\left(T+{\frac {N}{365(1+B\%)}}-{\frac {ln(2T+1)}{2}}\right)}
+days.
+For example, at exactly one year before a tech becomes current, research speed on that tech is modified by multiplicative factor of
+1
+/
+3
+{\displaystyle 1/3}
+. As research speed is re-calculated every day, the speed penalty goes down while a technology is being researched. Half a year later, the penalty is down to
+1
+/
+2
+{\displaystyle 1/2}
+. Regular research speed modifiers apply linearly. Thus regular country-wide research bonus does not alleviate AOT penalties. If a 50% ahead-of-time bonus is active as shown in in-game tooltip, 0.5 is taken off the AOT penalty. Thus, at 1 year ahead-of-time, the research speed is modified by
+1
+(
+2
+⋅
+1
+−
+50
+%
+)
++
+1
+=
+2
+/
+5
+{\displaystyle {\frac {1}{(2\cdot 1-50\%)+1}}=2/5}
+instead of
+1
+/
+3
+{\displaystyle 1/3}
+without the bonus; similarly, at half a year ahead-of-time, the AOT penalty is reduced to
+1
+(
+2
+⋅
+0.5
+−
+50
+%
+)
++
+1
+=
+2
+/
+3
+{\displaystyle {\frac {1}{(2\cdot 0.5-50\%)+1}}=2/3}
+from
+1
+/
+2
+{\displaystyle 1/2}
+without bonus.
+Below is a Python script to calculate the time it will take to research a technology, given its base cost, bonuses and AOT penalty.
+res_perc = 0.0
+time = 0
+base = 170      # Base Cost
+bonus = 0.34    # Research Speed Bonus
+aot = 0.47      # Ahead-of-time penalty (not years ahead)
+base /= 1+bonus
+while res_perc<1:
+res_perc += 1/base/(1+aot)
+aot -= 2/365
+if aot<0: aot = 0
+time += 1
+print(time)     # Prints total time needed
+References
+[
+edit
+|
+edit source
+]
+鈫?/a>
+NDefines.NTechnology.BASE_RESEARCH_POINTS_SAVED = 30
+鈫?/a>
+NDefines.NTechnology.BASE_TECH_COST = 100
+鈫?/a>
+NDefines.NTechnology.MIN_RESEARCH_SPEED = 0.1
+鈫?/a>
+NDefines.NTechnology.LICENSE_PRODUCTION_TECH_BONUS = 0.2
+鈫?/a>
+NDefines.NTechnology.MAX_TECH_SHARING_BONUS = 0.5
+鈫?/a>
+NDefines.NTechnology.BASE_YEAR_AHEAD_PENALTY_FACTOR = 2
+Mechanics
+Politics
+Ideology
+鈥?
+Faction
+鈥?
+National focus
+鈥?
+Ideas
+鈥?
+Government
+鈥?
+Puppet
+鈥?
+Diplomacy
+鈥?
+World tension
+鈥?
+Civil war
+鈥?
+Occupation
+鈥?
+Intelligence agency
+鈥?
+Balance of power
+Production
+Trade
+鈥?
+Production
+鈥?
+Construction
+鈥?
+Equipment
+鈥?
+Fuel
+鈥?
+Military industrial organization
+鈥?
+International market
+Research and technology
+Research
+鈥?
+Infantry technology
+鈥?
+Support Companies technology
+鈥?
+Armor technology
+鈥?
+Artillery technology
+鈥?
+Land doctrine
+鈥?
+Special forces doctrine
+鈥?
+Naval technology
+鈥?
+Naval doctrine
+鈥?
+Air technology
+鈥?
+Air doctrine
+鈥?
+Engineering technology
+鈥?
+Industry technology
+Military and warfare
+Warfare
+鈥?
+Peace conference
+鈥?
+Land units
+鈥?
+Land warfare
+鈥?
+Division designer
+鈥?
+Tank designer
+鈥?
+Army planner
+鈥?
+Command group
+鈥?
+Commander
+鈥?
+Battle plan
+鈥?
+Combat tactics
+鈥?
+Ship
+鈥?
+Ship designer
+鈥?
+Naval warfare
+鈥?
+Aircraft designer
+鈥?
+Air warfare
+鈥?
+Experience
+鈥?
+Officer corps
+鈥?
+Attrition and accidents
+鈥?
+Logistics
+鈥?
+Manpower
+鈥?
+Nuclear bomb
+Map
+Map
+鈥?
+Province
+鈥?
+Terrain
+鈥?
+Weather
+鈥?
+State
+Events and Decisions
+Events
+鈥?
+Decisions
+Retrieved from "
+"
+Categories
+:
+1.12
+Technology
+Hidden category:
+Articles with potentially outdated sections
+This page was last edited on 19 August 2024, at 21:07.
+Content is available under
+Attribution-ShareAlike 3.0
+unless otherwise noted.
+About Hearts of Iron 4 Wiki
+Mobile view
+Games
+Discover
+Our Brands
+Browse
+Play
+on Paradox technology
+Community
+Paradox Forums
+Paradox
+Wikis
+Support
+About
+News
+About us
+Careers
+Join our playtests
+Media contact
+Social Media
+Legal
+Information
+EU Online Dispute Resolution
+Terms & Policies
+Legal Information
+EU Online Dispute Resolution
+Frequently Asked
+Questions
+Paradox
+Interactive corporate website

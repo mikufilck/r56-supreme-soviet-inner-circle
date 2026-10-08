@@ -1,0 +1,266 @@
+==== SOP 第 0 步 · 拉狄克（Idx 9）====
+
+==================== 原版 ====================
+  --- common （23 行命中 / 7 个文件）---
+    common\characters\SOV.txt:2829
+        SOV_karl_radek = {
+    common\characters\SOV.txt:2830
+        name = SOV_karl_radek
+    common\characters\SOV.txt:2834
+        small = "GFX_idea_SOV_karl_radek"
+    common\characters\SOV.txt:2859
+        idea_token = SOV_karl_radek
+    common\country_leader\00_traits.txt:7988
+        #Radek
+    common\decisions\SOV.txt:1747
+        set_variable = { SOV.SOV_paranoia_photo_radek = 9 }
+    common\decisions\SOV.txt:16809
+        #Radek
+    common\decisions\SOV.txt:16812
+        has_character = SOV_karl_radek
+    common\decisions\SOV.txt:16813
+        SOV_karl_radek = {
+    common\decisions\SOV.txt:16817
+        SOV_karl_radek = {
+    common\national_focus\soviet.txt:7519
+        #Radek
+    common\national_focus\soviet.txt:7522
+        has_character = SOV_karl_radek
+    common\national_focus\soviet.txt:7524
+        SOV_karl_radek = {
+    common\national_focus\soviet.txt:8666
+        NOT = { has_character = SOV_karl_radek }
+    common\national_focus\soviet.txt:8678
+        custom_effect_tooltip = SOV_bring_old_trotskyists_back_effect_tt #Radek and Preobrazhensky already set as algined to left oppo
+    common\national_focus\soviet.txt:10017
+        SOV_karl_radek = { set_character_flag = SOV_potential_target_flag }
+    common\national_focus\soviet.txt:11314
+        SOV_karl_radek = {
+    common\scripted_effects\SOV_scripted_effects.txt:743
+        NOT = { has_character = SOV_karl_radek }
+    common\scripted_effects\SOV_scripted_effects.txt:744
+        check_variable = { SOV.SOV_paranoia_photo_radek = 9 compare = not_equals }
+    common\scripted_effects\SOV_scripted_effects.txt:746
+        set_variable = { SOV.SOV_paranoia_photo_radek = 9 }
+    common\scripted_guis\SOV_paranoia_system_scripted_gui.txt:12
+        paranoia_photo_radek = {
+    common\scripted_guis\SOV_paranoia_system_scripted_gui.txt:13
+        frame = SOV_paranoia_photo_radek
+    common\units\names_ships\GER_ship_name.txt:2061
+        16 = {"Radek"} # Karl Radek
+  --- history （5 行命中 / 1 个文件）---
+    history\countries\SOV - Soviet union.txt:45
+        recruit_character = SOV_karl_radek
+    history\countries\SOV - Soviet union.txt:278
+        SOV_karl_radek = {
+    history\countries\SOV - Soviet union.txt:469
+        set_variable = { SOV_paranoia_photo_radek = 1 }
+    history\countries\SOV - Soviet union.txt:933
+        set_variable = { SOV_paranoia_photo_radek = 9 }
+    history\countries\SOV - Soviet union.txt:970
+        SOV_karl_radek = { SOV_purge_character_effect = yes }
+  --- localisation （69 行命中 / 33 个文件）---
+    localisation\braz_por\events_l_braz_por.yml:2236
+        soviet.25.c: "A confissão de Radek aponta várias pessoas no partido."
+    localisation\braz_por\nsb_characters_l_braz_por.yml:82
+        SOV_karl_radek: "Karl Radek"
+    localisation\braz_por\nsb_events_l_braz_por.yml:701
+        NSB_soviet_paranoia_system_events.19.desc_2: "Seguindo o julgamento do primeiro grupo de terroristas e Trotskyistas, as investigações da NKVD continuaram e descobriram ainda mais evidências.  Karl Radek foi preso e eventualmente revelou tudo durante o interrogatório. Ele revelou a existência de uma ampla rede de pessoas trabalhando total ou parcialmente com Trotsky em praticamente todas as áreas do governo, incluindo o exército. Os líderes já foram presos e confessaram sob interrogatório.\n\nEsses líderes, incluindo Radek, agora serão julgados. Seus crimes são menores que os do último julgamento, mas a pena de morte ainda é certamente uma possibilidade."
+    localisation\braz_por\nsb_focus_l_braz_por.yml:1591
+        SOV_bring_old_trotskyists_back_desc: "Nos primeiros anos da revolução, houveram muitos debates calorosos entre diversas fações no partido. Algumas pessoas que não estavam tão alinhadas com o partido, como Karl Radek e Yevgeny Preobrazhensky foram até expulsas por desentendimentos menores. Talvez um gesto de arrependimento por parte desses membros de longa data do partido pudesse ser o suficiente para trazê-los de volta."
+    localisation\braz_por\nsb_focus_l_braz_por.yml:1592
+        SOV_bring_old_trotskyists_back_trigger_tt: "§Y$SOV_karl_radek$§! e §Y$SOV_yevgeny_preobrazhensky$§! foram expurgados por Stalin."
+    localisation\braz_por\nsb_focus_l_braz_por.yml:1593
+        SOV_bring_old_trotskyists_back_effect_tt: "§Y$SOV_karl_radek$§! e §Y$SOV_yevgeny_preobrazhensky$§! ficam disponíveis como conselheiros."
+    localisation\braz_por\nsb_focus_l_braz_por.yml:1685
+        SOV_cooperation_against_stalin_right_tt: "§Y$SOV_karl_radek$§! e §Y$SOV_yevgeny_preobrazhensky$§! ficam disponíveis como conselheiros."
+    localisation\braz_por\nsb_focus_l_braz_por.yml:1723
+        SOV_eliminate_the_left_tt: "§Y$SOV_karl_radek$§!, §Y$SOV_ivar_smilga$§! e §Y$SOV_yevgeny_preobrazhensky$§! se tornarão alvos em potencial de um expurgo de Stalin."
+    localisation\english\events_l_english.yml:2239
+        soviet.25.c: "Radek's confession points to several people within the party."
+    localisation\english\nsb_characters_l_english.yml:84
+        SOV_karl_radek: "Karl Radek"
+    localisation\english\nsb_events_l_english.yml:706
+        NSB_soviet_paranoia_system_events.19.desc_2: "Following the trial of the first group of Trotskyists and terrorists, investigations by the NKVD have continued and uncovered more evidence. Karl Radek was arrested and eventually cracked during interrogation. He has revealed the existence of a wide-spread network of people fully or partially working with Trotsky in practically all areas of government, including the military. The ringleaders have already been arrested and confessed under interrogation.\n\nThese ringleaders, including Radek, are now on trial. Their crimes are less than the ones charged in the last trial - but the death penalty is certainly a possibility."
+    localisation\english\nsb_focus_l_english.yml:1612
+        SOV_bring_old_trotskyists_back_desc: "In the early years of the revolution, there have been many heated debates between various factions inside the party. Some people who were not quite on the party line, like Karl Radek and Yevgeny Preobrazhensky, were even expelled over minor disagreements. Perhaps a gesture of contrition from these long-serving party members could be enough to bring them back into the fold."
+    localisation\english\nsb_focus_l_english.yml:1613
+        SOV_bring_old_trotskyists_back_trigger_tt: "§Y$SOV_karl_radek$§! and §Y$SOV_yevgeny_preobrazhensky$§! have been purged by Stalin."
+    localisation\english\nsb_focus_l_english.yml:1614
+        SOV_bring_old_trotskyists_back_effect_tt: "§Y$SOV_karl_radek$§! and §Y$SOV_yevgeny_preobrazhensky$§! become available as advisors."
+    localisation\english\nsb_focus_l_english.yml:1707
+        SOV_cooperation_against_stalin_right_tt: "§Y$SOV_karl_radek$§! and §Y$SOV_yevgeny_preobrazhensky$§! become available as advisors."
+    localisation\english\nsb_focus_l_english.yml:1746
+        SOV_eliminate_the_left_tt: "§Y$SOV_karl_radek$§!, §Y$SOV_ivar_smilga$§!, and §Y$SOV_yevgeny_preobrazhensky$§! become potential targets for a purge by Stalin."
+    localisation\french\events_l_french.yml:2236
+        soviet.25.c: "Les aveux de Radek impliquent\nplusieurs membres du Parti"
+    localisation\french\nsb_characters_l_french.yml:82
+        SOV_karl_radek: "Karl Radek"
+    localisation\french\nsb_events_l_french.yml:701
+        NSB_soviet_paranoia_system_events.19.desc_2: "À la suite du procès d'un premier groupe de terroristes et de trotskistes, les enquêtes menées par le NKVD se sont poursuivies, permettant de découvrir de nouvelles preuves et d'incriminer davantage encore de conspirateurs. Karl Radek a été arrêté, et a fini par craquer lors de son interrogatoire. Il a révélé l'existence d'un vaste réseau regroupant des personnes plus ou moins proches de Trotski, et disposant de fonctions dans quasiment toutes les administrations de l'État – y compris l'armée. Les meneurs du complot ont déjà été arrêtés et ont confessé leurs crimes.\n\nTous, y compris Radek, comparaissent maintenant. Leurs crimes sont certes moindres que ceux des premiers accusés, mais peuvent-ils, doivent-ils échapper pour autant à la mort ?"
+    localisation\french\nsb_focus_l_french.yml:1591
+        SOV_bring_old_trotskyists_back_desc: "Au cours des premières années de la Révolution, de nombreux débats ont eu lieu entre les tendances internes au Parti. Certains, comme Karl Radek et Evgueni Préobrajenski, en désaccord avec la ligne, ont même été expulsés. Un geste de réconciliation devrait être fait pour tenter de les faire revenir."
+    localisation\french\nsb_focus_l_french.yml:1592
+        SOV_bring_old_trotskyists_back_trigger_tt: "§Y$SOV_karl_radek$§! et §Y$SOV_yevgeny_preobrazhensky$§! ont été purgés par Staline."
+    localisation\french\nsb_focus_l_french.yml:1593
+        SOV_bring_old_trotskyists_back_effect_tt: "§Y$SOV_karl_radek$§! et §Y$SOV_yevgeny_preobrazhensky$§! vont être disponibles en tant que conseillers."
+    localisation\french\nsb_focus_l_french.yml:1685
+        SOV_cooperation_against_stalin_right_tt: "§Y$SOV_karl_radek$§! et §Y$SOV_yevgeny_preobrazhensky$§! vont pouvoir devenir conseillers."
+    localisation\french\nsb_focus_l_french.yml:1723
+        SOV_eliminate_the_left_tt: "§Y$SOV_karl_radek$§!, §Y$SOV_ivar_smilga$§! et §Y$SOV_yevgeny_preobrazhensky$§! vont devenir des cibles privilégiées pour les purges de Staline."
+    localisation\german\events_l_german.yml:2236
+        soviet.25.c: "Radeks Geständnis belastet mehrere Parteimitglieder."
+    localisation\german\nsb_characters_l_german.yml:82
+        SOV_karl_radek: "Karl Radek"
+    localisation\german\nsb_events_l_german.yml:701
+        NSB_soviet_paranoia_system_events.19.desc_2: "Nach dem Prozess gegen die erste Gruppe von Trotzkisten und Terroristen wurden die Ermittlungen des NKWD fortgesetzt und es sind weitere Beweise zu Tage getreten. Karl Radek wurde verhaftet und brach im Verhör schließlich zusammen. Er hat die Existenz eines weitverzweigten Netzwerks von Menschen in nahezu allen Bereichen der Regierung gestanden, auch im Militär, die vollständig oder teilweise mit Trotzki zusammenarbeiten. Die Rädelsführer wurden bereits verhaftet und haben im Verhör gestanden.\n\nDiesen Rädelsführern, Radek eingeschlossen, wird nun der Prozess gemacht. Ihre Verbrechen sind weniger schwerwiegend als die im letzten Prozess verhandelten, doch die Todesstrafe steht gewiss im Raum."
+    localisation\german\nsb_focus_l_german.yml:1591
+        SOV_bring_old_trotskyists_back_desc: "In den Anfangsjahren der Revolution gab es viele hitzige Debatten zwischen verschiedenen Gruppierungen innerhalb der Partei. Einige, die nicht ganz der Parteilinie folgten, beispielsweise Karl Radek und Jewgeni Preobraschenski, wurden sogar wegen kleinerer Meinungsverschiedenheiten hinausgeworfen. Vielleicht reicht eine reumütige Geste dieser langjährigen Parteimitglieder aus, um sie wieder zurückzuholen."
+    localisation\german\nsb_focus_l_german.yml:1592
+        SOV_bring_old_trotskyists_back_trigger_tt: "§Y$SOV_karl_radek$§! und §Y$SOV_yevgeny_preobrazhensky$§! wurden von Stalin gesäubert."
+    localisation\german\nsb_focus_l_german.yml:1593
+        SOV_bring_old_trotskyists_back_effect_tt: "§Y$SOV_karl_radek$§! und §Y$SOV_yevgeny_preobrazhensky$§! werden als Berater verfügbar."
+    localisation\german\nsb_focus_l_german.yml:1685
+        SOV_cooperation_against_stalin_right_tt: "§Y$SOV_karl_radek$§! und §Y$SOV_yevgeny_preobrazhensky$§! werden als Berater verfügbar."
+    localisation\german\nsb_focus_l_german.yml:1723
+        SOV_eliminate_the_left_tt: "§Y$SOV_karl_radek$§!, §Y$SOV_ivar_smilga$§! und §Y$SOV_yevgeny_preobrazhensky$§! werden zu potenziellen Zielen für eine Säuberung durch Stalin."
+    localisation\japanese\nsb_characters_l_japanese.yml:82
+        SOV_karl_radek: "カール・ラデック"
+    localisation\japanese\nsb_focus_l_japanese.yml:1592
+        SOV_bring_old_trotskyists_back_trigger_tt: "§Y$SOV_karl_radek$§!および§Y$SOV_yevgeny_preobrazhensky$§!がスターリンによって粛清されている。"
+    localisation\japanese\nsb_focus_l_japanese.yml:1593
+        SOV_bring_old_trotskyists_back_effect_tt: "§Y$SOV_karl_radek$§!および§Y$SOV_yevgeny_preobrazhensky$§!が顧問として利用可能になる。"
+    localisation\japanese\nsb_focus_l_japanese.yml:1685
+        SOV_cooperation_against_stalin_right_tt: "§Y$SOV_karl_radek$§!および§Y$SOV_yevgeny_preobrazhensky$§!が顧問として利用可能になる。"
+    localisation\japanese\nsb_focus_l_japanese.yml:1723
+        SOV_eliminate_the_left_tt: "§Y$SOV_karl_radek$§!、§Y$SOV_ivar_smilga$§!、§Y$SOV_yevgeny_preobrazhensky$§!がスターリンの粛清対象となる可能性がある。"
+    localisation\korean\nsb_characters_l_korean.yml:82
+        SOV_karl_radek: "카를 라데크"
+    localisation\korean\nsb_focus_l_korean.yml:1592
+        SOV_bring_old_trotskyists_back_trigger_tt: "§Y$SOV_karl_radek$§!과 §Y$SOV_yevgeny_preobrazhensky$§!은 스탈린에 의해 숙청되었습니다."
+    localisation\korean\nsb_focus_l_korean.yml:1593
+        SOV_bring_old_trotskyists_back_effect_tt: "§Y$SOV_karl_radek$§!와 §Y$SOV_yevgeny_preobrazhensky$§!를 고문으로 사용할 수 있습니다."
+    localisation\korean\nsb_focus_l_korean.yml:1685
+        SOV_cooperation_against_stalin_right_tt: "§Y$SOV_karl_radek$§!와 §Y$SOV_yevgeny_preobrazhensky$§!를 고문으로 사용할 수 있습니다."
+    localisation\korean\nsb_focus_l_korean.yml:1723
+        SOV_eliminate_the_left_tt: "§Y$SOV_karl_radek$§!, §Y$SOV_ivar_smilga$§!, 그리고 §Y$SOV_yevgeny_preobrazhensky$§!가 스탈린의 잠재적 숙청 대상이 됩니다."
+    localisation\polish\nsb_characters_l_polish.yml:82
+        SOV_karl_radek: "Karol Radek"
+    localisation\polish\nsb_events_l_polish.yml:701
+        NSB_soviet_paranoia_system_events.19.desc_2: "Po procesie pierwszej grupy trockistów oraz terrorystów NKWD kontynuowało śledztwa i natrafiło na jeszcze więcej dowodów. Karl Radek został aresztowany i pękł w trakcie przesłuchania. Ujawnił istnienie rozległej sieci ludzi w pełni lub częściowo współpracujących z Trockim praktycznie w każdej sekcji rządu, a także w wojsku. Przywódcy spisku zostali już aresztowani i po przesłuchaniach przyznali się do winy.\n\nCi liderzy, w tym Radek, są teraz sądzeni. Ich przestępstwa nie są tak poważne jak te z poprzedniego procesu, ale zasądzenie kary śmierci nie jest wykluczone."
+    localisation\polish\nsb_focus_l_polish.yml:1591
+        SOV_bring_old_trotskyists_back_desc: "W pierwszych latach rewolucji rozgorzało wiele debat pomiędzy różnymi frakcjami wewnątrz partii. Niektórzy, jak np. Karol Radek czy Jewgienij Prieobrażenski, nie do końca wpisywali się w partyjną linię i zostali wydaleni z powodu małych nieporozumień. Może jeśli ci wieloletni członkowie okażą choć odrobinę skruchy, zostaną z powrotem przyjęci do partii."
+    localisation\polish\nsb_focus_l_polish.yml:1592
+        SOV_bring_old_trotskyists_back_trigger_tt: "§Y$SOV_karl_radek$§! i §Y$SOV_yevgeny_preobrazhensky$§! padli ofiarą czystek Stalina."
+    localisation\polish\nsb_focus_l_polish.yml:1593
+        SOV_bring_old_trotskyists_back_effect_tt: "§Y$SOV_karl_radek$§! i §Y$SOV_yevgeny_preobrazhensky$§! będą dostępni jako doradcy."
+    localisation\polish\nsb_focus_l_polish.yml:1685
+        SOV_cooperation_against_stalin_right_tt: "§Y$SOV_karl_radek$§! i §Y$SOV_yevgeny_preobrazhensky$§! będą dostępni jako doradcy."
+    localisation\polish\nsb_focus_l_polish.yml:1723
+        SOV_eliminate_the_left_tt: "§Y$SOV_karl_radek$§!, §Y$SOV_ivar_smilga$§! i §Y$SOV_yevgeny_preobrazhensky$§! staną się potencjalnymi celami czystek Stalina."
+    localisation\russian\events_l_russian.yml:2236
+        soviet.25.c: "Показания Радека указывают на нескольких членов компартии."
+    localisation\russian\nsb_characters_l_russian.yml:82
+        SOV_karl_radek: "Карл Радек"
+    localisation\russian\nsb_events_l_russian.yml:701
+        NSB_soviet_paranoia_system_events.19.desc_2: "После процесса над первой группой троцкистов и террористов следователи НКВД обнаружили новые улики. Карл Радек был арестован и впоследствии на допросе признался во всем. Он раскрыл существование широкой сети агентов, полностью или частично сотрудничающих с Троцким практически по всем правительственным вопросам, включая военные. Главари уже арестованы и во всем признались на допросах.\n\nНад главарями, включая и Радека, сейчас идет суд. Их преступления не так серьезны, как те, что разбирались на предыдущем процессе, но смертная казнь вполне вероятна."
+    localisation\russian\nsb_focus_l_russian.yml:1591
+        SOV_bring_old_trotskyists_back_desc: "В ранние годы революции среди разных группировок в партии были часты напряженные споры. Некоторых несогласных с линией партии — в частности, Карла Радека и Евгения Преображенского — даже изгнали из ее рядов из-за незначительных разногласий. Возможно, простого жеста раскаяния от этих давних членов партии было бы достаточно, чтобы принять их обратно."
+    localisation\russian\nsb_focus_l_russian.yml:1592
+        SOV_bring_old_trotskyists_back_trigger_tt: "§Y$SOV_karl_radek$§! и §Y$SOV_yevgeny_preobrazhensky$§! уничтожены Сталиным."
+    localisation\russian\nsb_focus_l_russian.yml:1593
+        SOV_bring_old_trotskyists_back_effect_tt: "§Y$SOV_karl_radek$§! и §Y$SOV_yevgeny_preobrazhensky$§! становятся доступны в роли советников."
+    localisation\russian\nsb_focus_l_russian.yml:1685
+        SOV_cooperation_against_stalin_right_tt: "§Y$SOV_karl_radek$§! и §Y$SOV_yevgeny_preobrazhensky$§! становятся доступны в роли советников."
+    localisation\russian\nsb_focus_l_russian.yml:1723
+        SOV_eliminate_the_left_tt: "§Y$SOV_karl_radek$§!, §Y$SOV_ivar_smilga$§! и §Y$SOV_yevgeny_preobrazhensky$§! станут потенциальными целями сталинских чисток."
+    localisation\simp_chinese\nsb_characters_l_simp_chinese.yml:82
+        SOV_karl_radek: "卡尔·拉狄克"
+    localisation\simp_chinese\nsb_focus_l_simp_chinese.yml:1592
+        SOV_bring_old_trotskyists_back_trigger_tt: "§Y$SOV_karl_radek$§!和§Y$SOV_yevgeny_preobrazhensky$§!已被斯大林清洗"
+    localisation\simp_chinese\nsb_focus_l_simp_chinese.yml:1593
+        SOV_bring_old_trotskyists_back_effect_tt: "§Y$SOV_karl_radek$§!和§Y$SOV_yevgeny_preobrazhensky$§!成为可用的顾问。"
+    localisation\simp_chinese\nsb_focus_l_simp_chinese.yml:1685
+        SOV_cooperation_against_stalin_right_tt: "§Y$SOV_karl_radek$§!和§Y$SOV_yevgeny_preobrazhensky$§!成为可用的顾问。"
+    localisation\simp_chinese\nsb_focus_l_simp_chinese.yml:1723
+        SOV_eliminate_the_left_tt: "§Y$SOV_karl_radek$§!，§Y$SOV_ivar_smilga$§!和§Y$SOV_yevgeny_preobrazhensky$§!成为斯大林的潜在清洗目标。"
+    localisation\spanish\events_l_spanish.yml:2236
+        soviet.25.c: "La confesión de Radek apunta a varias personas dentro del partido. "
+    localisation\spanish\nsb_characters_l_spanish.yml:82
+        SOV_karl_radek: "Karl Radek"
+    localisation\spanish\nsb_events_l_spanish.yml:701
+        NSB_soviet_paranoia_system_events.19.desc_2: "Tras los juicios del primer grupo de trotskistas y terroristas, el NKVD ha seguido con sus investigaciones y ha descubierto más evidencia. Karl Radek ha sido arrestado y no ha aguantado el interrogatorio. Ha revelado la existencia de una red de gran alcance de gente que colabora en distintos grados con Trotsky en prácticamente todas las áreas del gobierno, incluido el sector militar. Los cabecillas ya han sido arrestados y han confesado en el interrogatorio.\n\nEstos cabecillas, incluido Radek, serán juzgados. Sus crímenes son menores que los de los acusados del último juicio, pero la pena de muerte es sin duda una posibilidad."
+    localisation\spanish\nsb_focus_l_spanish.yml:1592
+        SOV_bring_old_trotskyists_back_trigger_tt: "§Y$SOV_karl_radek$§! y §Y$SOV_yevgeny_preobrazhensky$§! han sido purgados por Stalin."
+    localisation\spanish\nsb_focus_l_spanish.yml:1593
+        SOV_bring_old_trotskyists_back_effect_tt: "§Y$SOV_karl_radek$§! y §Y$SOV_yevgeny_preobrazhensky$§! están disponibles como consejeros."
+    localisation\spanish\nsb_focus_l_spanish.yml:1685
+        SOV_cooperation_against_stalin_right_tt: "§Y$SOV_karl_radek$§! y §Y$SOV_yevgeny_preobrazhensky$§! están disponibles como consejeros."
+    localisation\spanish\nsb_focus_l_spanish.yml:1723
+        SOV_eliminate_the_left_tt: "§Y$SOV_karl_radek$§!, §Y$SOV_ivar_smilga$§! y §Y$SOV_yevgeny_preobrazhensky$§! son objetivos potenciales de una purga de Stalin."
+  --- interface （4 行命中 / 2 个文件）---
+    interface\ideas.gfx:6167
+        name = "GFX_idea_SOV_karl_radek"
+    interface\ideas.gfx:6168
+        texturefile = "gfx/interface/ideas/idea_SOV_karl_radek.dds"
+    interface\sov_paranoia_system_scripted_gui.gui:161
+        #RADEK
+    interface\sov_paranoia_system_scripted_gui.gui:163
+        name ="paranoia_photo_radek"
+  --- gfx 下文件名命中（1 个）---
+    gfx\interface\ideas\idea_SOV_karl_radek.dds
+
+==================== 原版-dlc ====================
+  --- gfx 下文件名命中（0 个）---
+
+==================== R56 ====================
+  --- common （20 行命中 / 5 个文件）---
+    common\characters\SOV.txt:4645
+        SOV_karl_radek = {
+    common\characters\SOV.txt:4646
+        name = SOV_karl_radek
+    common\characters\SOV.txt:4650
+        small = "GFX_idea_SOV_karl_radek"
+    common\characters\SOV.txt:4675
+        idea_token = SOV_karl_radek
+    common\country_leader\00_traits.txt:7992
+        #Radek
+    common\decisions\SOV.txt:2135
+        set_variable = { SOV.SOV_paranoia_photo_radek = 9 }
+    common\decisions\SOV.txt:17480
+        #Radek
+    common\decisions\SOV.txt:17483
+        has_character = SOV_karl_radek
+    common\decisions\SOV.txt:17484
+        SOV_karl_radek = {
+    common\decisions\SOV.txt:17488
+        SOV_karl_radek = {
+    common\national_focus\soviet.txt:8941
+        #Radek
+    common\national_focus\soviet.txt:8944
+        has_character = SOV_karl_radek
+    common\national_focus\soviet.txt:8946
+        SOV_karl_radek = {
+    common\national_focus\soviet.txt:10555
+        NOT = { has_character = SOV_karl_radek }
+    common\national_focus\soviet.txt:10567
+        custom_effect_tooltip = SOV_bring_old_trotskyists_back_effect_tt #Radek and Preobrazhensky already set as algined to left oppo
+    common\national_focus\soviet.txt:12199
+        SOV_karl_radek = { set_character_flag = SOV_potential_target_flag }
+    common\national_focus\soviet.txt:13495
+        SOV_karl_radek = {
+    common\scripted_effects\SOV_scripted_effects.txt:743
+        NOT = { has_character = SOV_karl_radek }
+    common\scripted_effects\SOV_scripted_effects.txt:744
+        check_variable = { SOV.SOV_paranoia_photo_radek = 9 compare = not_equals }
+    common\scripted_effects\SOV_scripted_effects.txt:746
+        set_variable = { SOV.SOV_paranoia_photo_radek = 9 }
+  --- history （3 行命中 / 1 个文件）---
+    history\countries\SOV - Soviet union.txt:107
+        recruit_character = SOV_karl_radek
+    history\countries\SOV - Soviet union.txt:491
+        SOV_karl_radek = {
+    history\countries\SOV - Soviet union.txt:697
+        set_variable = { SOV_paranoia_photo_radek = 1 }
+  --- gfx 下文件名命中（0 个）---
+

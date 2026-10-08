@@ -1,0 +1,13 @@
+{
+  "name": "GFX_hof_ic_seat_aleksey_rykov",
+  "id": "hof_ic_seat_aleksey_rykov",
+  "title": "阿列克谢·李可夫",
+  "prompt": "Use case: stylized-concept. Produce ONE production Hearts of Iron IV national focus icon, final canvas 100x88 pixels (width:height 25:22); generate high-resolution at same ratio for mechanical downsampling. Full emblem centered, bold primary silhouette fills 92 percent of canvas with all ornaments intact, no clipping. Strictly NO text, letters, numerals, pseudo-writing, watermarks or rectangular canvas border. The icon's own laurel/medallion ornament is allowed. Uniform solid very dark charcoal (#181b1e) background outside emblem, no transparency grid, no checkerboard, no backdrop texture outside emblem. Painted game UI relief, high contrast at tiny size, upper-left directional light, dark edge shadows, restrained material highlights; NOT a scene, not a poster, not a flat vector logo, no photoreal background. Match the supplied German DLC ENTRY references only for layout/style: prominent grayscale photographic/engraved head-and-shoulders face, COLOR ornamental medallion around and one small professional emblem beneath. Use the first image as exact Soviet person's face, preserve features and apparent age; do not use faces from German style references. Soviet crimson/plum and antique gold colored trim. Face remains grayscale and recognizable, uncluttered. Replace all German heraldry with Soviet-themed small details. Face/shoulders occupy upper 75 percent, professional emblem the lower 25 percent.\nSubject design: Rykov: preserve strong dark swept hair, long face and tapered full beard. Grayscale bust in gold round frame with muted burgundy leaves, dark red inset; bottom small classical government portico backed by a single cog.\nFocus meaning (reference only; never render as text): 阿列克谢·李可夫 — 苏联人民委员会主席（1924–30）/ 最高国民经济委员会主席",
+  "references": [
+    "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\art\\focus\\references\\aleksey_rykov.png",
+    "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\docs\\reference\\icon-refs-png\\real_asc_speer.png",
+    "D:\\Users\\xuwei\\PycharmProjects\\heart_of_Iron\\docs\\reference\\icon-refs-png\\real_asc_goring.png"
+  ],
+  "source": "C:\\Users\\xuwei\\.codex\\generated_images\\01a09af5-fd43-79a0-a3cc-72284cd67cbc\\exec-09d5a02e-741f-4f65-b227-65ec6bb64f6c.png",
+  "mode": "built-in image_gen"
+}

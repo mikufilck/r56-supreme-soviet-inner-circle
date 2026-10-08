@@ -1,0 +1,36 @@
+﻿国家               文件                              行数       KB
+--------------------------------------------------------------
+SOV 苏联           soviet.txt                   29564      700
+PRC 中共           china_communist_sea.txt      14652      297
+                 china_communist.txt           7591      158
+MON 蒙古           mongolia.txt                 12393      274
+FIN 芬兰           finland.txt                  17126      417
+SWE 瑞典           r56_sweden.txt                7233      170
+                 sweden.txt                    8659      183
+NOR 挪威           r56_norway.txt                8787      188
+                 norway.txt                    8837      194
+DEN 丹麦           denmark.txt                  11578      262
+                 r56_denmark.txt               9054      187
+ICE 冰岛           iceland.txt                   3268       71
+                 r56_iceland.txt               3340       63
+AFG 阿富汗          r56_afghanistan.txt          14615      295
+                 afghanistan.txt              12176      265
+SAU 沙特           saudi_arabia.txt              2489       55
+PHI 菲律宾          r56_philippines.txt           4668       94
+                 philippines.txt               9849      213
+CUB 古巴           Cuba.txt                      4970      105
+ARG 阿根廷          r56_argentina.txt             4652      105
+                 argentina.txt                 6366      131
+ETH 埃塞俄比亚        r56_ethiopia.txt              2153       45
+                 ethiopia.txt                  8786      206
+FRA 法国           france.txt                   12520      243
+                 free_france.txt               1225       24
+                 vichy_france.txt               975       18
+POL 波兰           poland.txt                   19892      430
+HUN 匈牙利          hungary_wuw.txt              20119      418
+                 hungary.txt                   8145      160
+--------------------------------------------------------------
+合计 29 个文件                                    275682     5969
+
+=== 变体对照 ===
+全部支持（含可选树）: 29 个文件 / 275682 行

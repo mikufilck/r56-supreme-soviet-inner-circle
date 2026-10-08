@@ -1,0 +1,66 @@
+﻿=== 1. 全 mod 搜索 'SOV_focus_tree_selection'（引用处会暴露是否可达） ===
+  common\game_rules\00_game_rules.txt
+  common\on_actions\oldsov_on_actions.txt
+  localisation\simp_chinese\oldsov_l_simp_chinese.yml
+
+=== 2. 全 mod 搜索 'soviet_focus_old'（树名被谁引用） ===
+  common\national_focus\soviet_old.txt
+  common\on_actions\oldsov_on_actions.txt
+
+=== 3. 全 mod 搜索 'sov_old_focus_tree'（MTTH 里的开关 flag） ===
+  common\ai_strategy_plans\SOV_alternate_strategy_plan.txt
+  common\ai_strategy_plans\SOV_historical_strategy_plan.txt
+  common\ai_strategy_plans\SOV_old_alternate_strategy_plan.txt
+  common\ai_strategy_plans\SOV_old_historical_strategy_plan.txt
+  common\characters\KAZ.txt
+  common\characters\LIE.txt
+  common\characters\SOV.txt
+  common\decisions\GRE.txt
+  common\decisions\r56_JAP.txt
+  common\decisions\r56_POR_decisions.txt
+  common\decisions\SIA_r56.txt
+  common\ideas\r56_soviet.txt
+  common\ideas\SOV.txt
+  common\national_focus\finland.txt
+  common\national_focus\germany.txt
+  common\national_focus\israel.txt
+  common\national_focus\norway.txt
+  common\national_focus\poland.txt
+  common\national_focus\r56_luxembourg.txt
+  common\national_focus\r56_norway.txt
+  common\national_focus\r56_soviet_civil_war.txt
+  common\national_focus\soviet_old.txt
+  common\national_focus\uk.txt
+  common\on_actions\07_nsb_on_actions.txt
+  common\on_actions\oldsov_on_actions.txt
+  events\NSB_Soviet.txt
+  events\r56_Soviet.txt
+  events\SovietUnion.txt
+
+=== 4. 三个 SOV 树文件规模 ===
+  soviet.txt                     29564 行
+  soviet_old.txt                 13942 行
+  r56_soviet_civil_war.txt        1734 行
+
+=== 5. on_actions 目录全部文件（找是否存在其它树选用文件） ===
+  00_on_actions.txt
+  01_tfv_on_actions.txt
+  03_wtt_on_actions.txt
+  04_mtg_on_actions.txt
+  05_lar_on_actions.txt
+  06_bftb_on_actions.txt
+  07_nsb_on_actions.txt
+  08_bba_on_actions.txt
+  09_aat_on_actions.txt
+  10_toa_on_actions.txt
+  14_sea_on_actions.txt
+  15_mun_on_actions.txt
+  16_taog_on_actions.txt
+  austrian_gui_on_actions.txt
+  chinese_gui_on_actions.txt
+  oldsov_on_actions.txt
+  r56_achievements_on_actions.txt
+  r56_AFG_on_actions.txt
+  r56_china_and_co_on_actions.txt
+  r56_focus_tree_selection_on_actions.txt
+  r56_on_actions.txt

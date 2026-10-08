@@ -1,0 +1,68 @@
+[
+  {
+    "id": "hof_ic_sokolnikov_the_nationalisation_of_the_banks",
+    "name": "GFX_hof_ic_sokolnikov_the_nationalisation_of_the_banks",
+    "title": "银行国有化",
+    "concept": "Close view through an open cold-gray steel BANK VAULT cabinet, showing bundles of various old banknotes with different abstract decorative borders being pushed together into a single central pile. An unlettered riveted metal inventory tag stands beside the opening. Focus on bills converging, no person, abacus, ledger, imposing bank-front gateway or readable text. Palette within scene cold iron gray, old-paper ocher and neutral ivory.",
+    "group": "sokolnikov",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_sokolnikov_the_turkestan_rouble",
+    "name": "GFX_hof_ic_sokolnikov_the_turkestan_rouble",
+    "title": "突厥卢布",
+    "concept": "On one plain dark tabletop, two separate FLAT stacks of paper currency seen from slightly above: left stack old, ornate, dark ocher banknote border motifs; right stack newer, simpler, consistent ivory banknote motifs. A conspicuous empty gap separates them. No coin, map, camel, cotton, words or numerals. Palette only old ocher and ivory.",
+    "group": "sokolnikov",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_sokolnikov_the_chervonets",
+    "name": "GFX_hof_ic_sokolnikov_the_chervonets",
+    "title": "切尔沃涅茨",
+    "concept": "One old GOLD COIN overlaps the upper-left QUARTER of one freshly printed ivory banknote, leaving three quarters of that banknote visibly uncovered. Strong clear 1:3 area composition; one coin and one note only. Paper has abstract security ornaments, no readable currency symbols, numbers, or text. The coin alone provides the single prominent gold accent in this six-icon set.",
+    "group": "sokolnikov",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_sokolnikov_what_a_dollar_costs",
+    "name": "GFX_hof_ic_sokolnikov_what_a_dollar_costs",
+    "title": "一美元值多少",
+    "concept": "Two distinct silver-gray coins standing on their edges side by side on a simple dark tabletop, one with old Russian-style abstract edge ornament, other with different foreign-style edge ornament but NO flag or lettering. In front of them a narrow aged-white paper strip bears EXACTLY two rows of evenly spaced abstract short dashes and nothing else. No scales, rulers or people.",
+    "group": "sokolnikov",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_sokolnikov_state_capitalism",
+    "name": "GFX_hof_ic_sokolnikov_state_capitalism",
+    "title": "国家资本主义",
+    "concept": "A single silver-gray metal coin STANDING upright in the exact center of a dark plane, casting a long shadow behind it that has the crisp recognizable silhouette of a factory complex: a low row of sheds and a few unlit smokestacks. The factory exists ONLY as the coin's dark shadow, no real buildings, no smoke or gears, no workers, no second coin or money pile. Limited metallic gray palette.",
+    "group": "sokolnikov",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_sokolnikov_hard_currency",
+    "name": "GFX_hof_ic_sokolnikov_hard_currency",
+    "title": "硬通货",
+    "concept": "Three separate forms of value arranged at equal height LEFT TO RIGHT on one dark flat surface: a worn soft old-yellow paper banknote; a single silver-gray metal coin; a rough-cast warm-gold metal ingot, visibly unminted. The three objects must be equally visible, with clear gaps. Restrained palette old yellow to silver gray to warm gold. No vault, balance scales, human portrait, text or numbers.",
+    "group": "sokolnikov",
+    "size": [
+      100,
+      88
+    ]
+  }
+]

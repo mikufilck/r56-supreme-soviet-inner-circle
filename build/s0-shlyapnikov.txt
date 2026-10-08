@@ -1,0 +1,202 @@
+==== SOP 第 0 步 · 施利亚普尼科夫（Idx 13）====
+
+==================== 原版 ====================
+  --- common （20 行命中 / 5 个文件）---
+    common\characters\SOV.txt:2962
+        SOV_aleksandr_shlyapnikov = {
+    common\characters\SOV.txt:2963
+        name = SOV_aleksandr_shlyapnikov
+    common\characters\SOV.txt:2966
+        small = "GFX_idea_SOV_aleksandr_shlyapnikov_imprisoned"
+    common\characters\SOV.txt:2984
+        idea_token = SOV_aleksandr_shlyapnikov
+    common\country_leader\00_traits.txt:8007
+        #Shlyapnikov
+    common\decisions\SOV.txt:16744
+        #Shlyapnikov
+    common\decisions\SOV.txt:16747
+        has_character = SOV_aleksandr_shlyapnikov
+    common\decisions\SOV.txt:16748
+        SOV_aleksandr_shlyapnikov = {
+    common\decisions\SOV.txt:16752
+        SOV_aleksandr_shlyapnikov = {
+    common\national_focus\soviet.txt:7283
+        #Shlyapnikov
+    common\national_focus\soviet.txt:7286
+        has_character = SOV_aleksandr_shlyapnikov
+    common\national_focus\soviet.txt:7288
+        SOV_aleksandr_shlyapnikov = {
+    common\national_focus\soviet.txt:8754
+        SOV_aleksandr_shlyapnikov = { #Already set as algined to left oppo
+    common\national_focus\soviet.txt:8759
+        small = "GFX_idea_SOV_aleksandr_shlyapnikov"
+    common\national_focus\soviet.txt:10393
+        IF = { limit = { has_character = SOV_aleksandr_shlyapnikov } SOV_aleksandr_shlyapnikov = { retire = yes } }
+    common\national_focus\soviet.txt:11513
+        SOV_aleksandr_shlyapnikov = {
+    common\national_focus\soviet.txt:11518
+        SOV_aleksandr_shlyapnikov = {  clr_character_flag = SOV_imprisoned_flag }
+    common\national_focus\soviet.txt:11534
+        character = SOV_aleksandr_shlyapnikov
+    common\national_focus\soviet.txt:11536
+        small = "GFX_idea_SOV_aleksandr_shlyapnikov"
+    common\scripted_triggers\00_scripted_triggers_FR_loc.txt:841
+        has_country_leader = { character = SOV_aleksandr_shlyapnikov }
+  --- history （4 行命中 / 1 个文件）---
+    history\countries\SOV - Soviet union.txt:47
+        recruit_character = SOV_aleksandr_shlyapnikov
+    history\countries\SOV - Soviet union.txt:284
+        SOV_aleksandr_shlyapnikov = {
+    history\countries\SOV - Soviet union.txt:342
+        SOV_aleksandr_shlyapnikov = {
+    history\countries\SOV - Soviet union.txt:969
+        SOV_aleksandr_shlyapnikov = { SOV_purge_character_effect = yes }
+  --- localisation （20 行命中 / 20 个文件）---
+    localisation\braz_por\nsb_characters_l_braz_por.yml:84
+        SOV_aleksandr_shlyapnikov: "Aleksandr Shlyapnikov"
+    localisation\braz_por\nsb_focus_l_braz_por.yml:1599
+        SOV_integrate_smirnovs_bloc_tt: "§Y$SOV_ivan_smirnov$§!, §Y$SOV_ivar_smilga$§! e §Y$SOV_aleksandr_shlyapnikov$§! serão libertados da prisão e enviado ao exílio (§Gpersonagens em exílio não podem ser expurgados§!). Eles ficarão disponíveis como conselheiros quando a guerra civil começar.\nAdiciona apoio da oposição de esquerda em dois estados."
+    localisation\english\nsb_characters_l_english.yml:86
+        SOV_aleksandr_shlyapnikov: "Aleksandr Shlyapnikov"
+    localisation\english\nsb_focus_l_english.yml:1620
+        SOV_integrate_smirnovs_bloc_tt: "§Y$SOV_ivan_smirnov$§!, §Y$SOV_ivar_smilga$§! and §Y$SOV_aleksandr_shlyapnikov$§! will be liberated from prison and sent into exile (§Gcharacters in exile cannot be purged§!). They will become available as advisors when the Civil War breaks out.\nAdds Left Opposition support in two states."
+    localisation\french\nsb_characters_l_french.yml:84
+        SOV_aleksandr_shlyapnikov: "Aleksandr Chliapnikov"
+    localisation\french\nsb_focus_l_french.yml:1599
+        SOV_integrate_smirnovs_bloc_tt: "§Y$SOV_ivan_smirnov$§!, §Y$SOV_ivar_smilga$§! et §Y$SOV_aleksandr_shlyapnikov$§! vont être libérés de prison et bannis (§Gles personnages en exil ne peuvent être victimes des purges§!). Lorsque la guerre civile éclatera, ils seront disponibles en tant que conseillers.\nDeux États vont soutenir l'Opposition de gauche."
+    localisation\german\nsb_characters_l_german.yml:84
+        SOV_aleksandr_shlyapnikov: "Aleksandr Shlyapnikov"
+    localisation\german\nsb_focus_l_german.yml:1599
+        SOV_integrate_smirnovs_bloc_tt: "§Y$SOV_ivan_smirnov$§!, §Y$SOV_ivar_smilga$§! und §Y$SOV_aleksandr_shlyapnikov$§! werden aus dem Gefängnis befreit und ins Exil geschickt (§GCharaktere im Exil können nicht gesäubert werden§!). Sie werden als Berater verfügbar, sobald der Bürgerkrieg ausbricht.\nFügt in zwei Staaten Linke Opposition hinzu."
+    localisation\japanese\nsb_characters_l_japanese.yml:84
+        SOV_aleksandr_shlyapnikov: "アレクサンドル・シュリャープニコフ"
+    localisation\japanese\nsb_focus_l_japanese.yml:1599
+        SOV_integrate_smirnovs_bloc_tt: "§Y$SOV_ivan_smirnov$§!、§Y$SOV_ivar_smilga$§!、§Y$SOV_aleksandr_shlyapnikov$§!が釈放され、亡命するだろう（§G亡命中の人物は粛清されない§!）。彼らは内戦勃発後に顧問として利用可能になる。\n2つの州に左翼反対派への支持を追加する。"
+    localisation\korean\nsb_characters_l_korean.yml:84
+        SOV_aleksandr_shlyapnikov: "알렉산드르 실랴프니코프"
+    localisation\korean\nsb_focus_l_korean.yml:1599
+        SOV_integrate_smirnovs_bloc_tt: "§Y$SOV_ivan_smirnov$§!, §Y$SOV_ivar_smilga$§!, §Y$SOV_aleksandr_shlyapnikov$§!(은)는 감옥에서 해방되어 망명 상태로 변경됩니다(§G망명 중인 인물은 숙청 대상이 되지 않습니다§!). 내전이 일어나면 이 인물들을 고문으로 활용할 수 있게 됩니다.\n두 개의 주에서 좌익반대파 지지를 얻습니다."
+    localisation\polish\nsb_characters_l_polish.yml:84
+        SOV_aleksandr_shlyapnikov: "Aleksandr Szlapnikow"
+    localisation\polish\nsb_focus_l_polish.yml:1599
+        SOV_integrate_smirnovs_bloc_tt: "§Y$SOV_ivan_smirnov$§!, §Y$SOV_ivar_smilga$§! i §Y$SOV_aleksandr_shlyapnikov$§! zostaną uwolnieni z więzienia i uciekną na uchodźstwo (§Gpostaci na uchodźstwie nie można poddać czystce§!). Staną się dostępni jako doradcy po wybuchu wojny domowej.\nDodaje opozycyjną lewicę w dwóch regionach."
+    localisation\russian\nsb_characters_l_russian.yml:84
+        SOV_aleksandr_shlyapnikov: "Александр Шляпников"
+    localisation\russian\nsb_focus_l_russian.yml:1599
+        SOV_integrate_smirnovs_bloc_tt: "§Y$SOV_ivan_smirnov$§!, §Y$SOV_ivar_smilga$§! и §Y$SOV_aleksandr_shlyapnikov$§! будут освобождены из тюрьмы и отправлены в изгнание (§Gперсонажи в изгнании не могут быть подвергнуты чистке§!). Они будут доступны в роли советников с началом гражданской войны.\nДобавляет поддержку левой оппозиции в два региона."
+    localisation\simp_chinese\nsb_characters_l_simp_chinese.yml:84
+        SOV_aleksandr_shlyapnikov: "亚历山大·什利亚普尼科夫"
+    localisation\simp_chinese\nsb_focus_l_simp_chinese.yml:1599
+        SOV_integrate_smirnovs_bloc_tt: "关押中的§Y$SOV_ivan_smirnov$§!，§Y$SOV_ivar_smilga$§!和§Y$SOV_aleksandr_shlyapnikov$§!将被流放（§G流放中的角色不会被清洗§!）。当内战开始时，他们将作为顾问可用。\n在两个地区增加左翼反对派的支持。"
+    localisation\spanish\nsb_characters_l_spanish.yml:84
+        SOV_aleksandr_shlyapnikov: "Aleksándr Shliápnikov"
+    localisation\spanish\nsb_focus_l_spanish.yml:1599
+        SOV_integrate_smirnovs_bloc_tt: "§Y$SOV_ivan_smirnov$§!, §Y$SOV_ivar_smilga$§! y §Y$SOV_aleksandr_shlyapnikov$§! serán liberados y enviados al exilio (§Glos personajes en el exilio no pueden sufrir purgas§!). Estarán disponibles como consejeros cuando estalle la guerra civil.\nAñade apoyo a la oposición de izquierdas en dos Estados."
+  --- interface （4 行命中 / 1 个文件）---
+    interface\ideas.gfx:6159
+        name = "GFX_idea_SOV_aleksandr_shlyapnikov"
+    interface\ideas.gfx:6160
+        texturefile = "gfx/interface/ideas/idea_SOV_aleksandr_shlyapnikov.dds"
+    interface\ideas.gfx:6411
+        name = "GFX_idea_SOV_aleksandr_shlyapnikov_imprisoned"
+    interface\ideas.gfx:6412
+        texturefile = "gfx/interface/ideas/idea_SOV_aleksandr_shlyapnikov_imprisoned.dds"
+  --- gfx 下文件名命中（2 个）---
+    gfx\interface\ideas\idea_SOV_aleksandr_shlyapnikov.dds
+    gfx\interface\ideas\idea_SOV_aleksandr_shlyapnikov_imprisoned.dds
+
+==================== 原版-dlc ====================
+  --- gfx 下文件名命中（0 个）---
+
+==================== R56 ====================
+  --- common （19 行命中 / 5 个文件）---
+    common\characters\SOV.txt:4812
+        SOV_aleksandr_shlyapnikov = {
+    common\characters\SOV.txt:4813
+        name = SOV_aleksandr_shlyapnikov
+    common\characters\SOV.txt:4816
+        small = "GFX_idea_SOV_aleksandr_shlyapnikov_imprisoned"
+    common\characters\SOV.txt:4834
+        idea_token = SOV_aleksandr_shlyapnikov
+    common\country_leader\00_traits.txt:8012
+        #Shlyapnikov
+    common\decisions\SOV.txt:17415
+        #Shlyapnikov
+    common\decisions\SOV.txt:17418
+        has_character = SOV_aleksandr_shlyapnikov
+    common\decisions\SOV.txt:17419
+        SOV_aleksandr_shlyapnikov = {
+    common\decisions\SOV.txt:17423
+        SOV_aleksandr_shlyapnikov = {
+    common\national_focus\soviet.txt:8710
+        #Shlyapnikov
+    common\national_focus\soviet.txt:8713
+        has_character = SOV_aleksandr_shlyapnikov
+    common\national_focus\soviet.txt:8715
+        SOV_aleksandr_shlyapnikov = {
+    common\national_focus\soviet.txt:10643
+        SOV_aleksandr_shlyapnikov = { #Already set as algined to left oppo
+    common\national_focus\soviet.txt:10648
+        small = "GFX_idea_SOV_aleksandr_shlyapnikov"
+    common\national_focus\soviet.txt:12571
+        IF = { limit = { has_character = SOV_aleksandr_shlyapnikov } SOV_aleksandr_shlyapnikov = { retire = yes } }
+    common\national_focus\soviet.txt:13684
+        character = SOV_aleksandr_shlyapnikov
+    common\national_focus\soviet.txt:13686
+        small = "GFX_idea_SOV_aleksandr_shlyapnikov"
+    common\national_focus\soviet_old.txt:8747
+        SOV_aleksandr_shlyapnikov = {	#stupid trait so actually hidden
+    common\national_focus\soviet_old.txt:8751
+        small = "GFX_idea_SOV_aleksandr_shlyapnikov"
+  --- history （3 行命中 / 1 个文件）---
+    history\countries\SOV - Soviet union.txt:109
+        recruit_character = SOV_aleksandr_shlyapnikov
+    history\countries\SOV - Soviet union.txt:497
+        SOV_aleksandr_shlyapnikov = {
+    history\countries\SOV - Soviet union.txt:566
+        SOV_aleksandr_shlyapnikov = {
+  --- gfx 下文件名命中（0 个）---
+
+==================== 本项目内现况 ====================
+  （缺）mod\heart_of_iron\common\characters\hof_ic_own_characters.txt
+  --- mod\heart_of_iron\common\national_focus\soviet.txt （34 行）---
+    52:  tooltip = hof_ic_not_seated_aleksandr_shlyapnikov_tt
+    53:  NOT = { hof_ic_seated_aleksandr_shlyapnikov = yes }
+    404:  tooltip = hof_ic_not_seated_aleksandr_shlyapnikov_tt
+    405:  NOT = { hof_ic_seated_aleksandr_shlyapnikov = yes }
+    476:  tooltip = hof_ic_not_seated_aleksandr_shlyapnikov_tt
+    477:  NOT = { hof_ic_seated_aleksandr_shlyapnikov = yes }
+    548:  tooltip = hof_ic_not_seated_aleksandr_shlyapnikov_tt
+    549:  NOT = { hof_ic_seated_aleksandr_shlyapnikov = yes }
+    620:  tooltip = hof_ic_not_seated_aleksandr_shlyapnikov_tt
+    621:  NOT = { hof_ic_seated_aleksandr_shlyapnikov = yes }
+    692:  tooltip = hof_ic_not_seated_aleksandr_shlyapnikov_tt
+    693:  NOT = { hof_ic_seated_aleksandr_shlyapnikov = yes }
+    899:  id = hof_ic_seat_aleksandr_shlyapnikov
+    900:  icon = GFX_hof_ic_seat_aleksandr_shlyapnikov
+    912:  tooltip = hof_ic_not_seated_aleksandr_shlyapnikov_tt
+    913:  NOT = { hof_ic_seated_aleksandr_shlyapnikov = yes }
+    955:  CHARACTER = SOV_aleksandr_shlyapnikov
+    957:  show_ideas_tooltip = hof_ic_idea_aleksandr_shlyapnikov
+    963:  CHARACTER = SOV_aleksandr_shlyapnikov
+    966:  hof_ic_appoint_aleksandr_shlyapnikov = yes
+    1208:  tooltip = hof_ic_not_seated_aleksandr_shlyapnikov_tt
+    1209:  NOT = { hof_ic_seated_aleksandr_shlyapnikov = yes }
+    1296:  tooltip = hof_ic_not_seated_aleksandr_shlyapnikov_tt
+    1297:  NOT = { hof_ic_seated_aleksandr_shlyapnikov = yes }
+    1384:  tooltip = hof_ic_not_seated_aleksandr_shlyapnikov_tt
+    1385:  NOT = { hof_ic_seated_aleksandr_shlyapnikov = yes }
+    14840:  #Shlyapnikov
+    14843:  has_character = SOV_aleksandr_shlyapnikov
+    14845:  SOV_aleksandr_shlyapnikov = {
+    16773:  SOV_aleksandr_shlyapnikov = { #Already set as algined to left oppo
+    16778:  small = "GFX_idea_SOV_aleksandr_shlyapnikov"
+    18701:  IF = { limit = { has_character = SOV_aleksandr_shlyapnikov } SOV_aleksandr_shlyapnikov = { retire = yes } }
+    19814:  character = SOV_aleksandr_shlyapnikov
+    19816:  small = "GFX_idea_SOV_aleksandr_shlyapnikov"
+  --- build\gen-hof-ic-s3.ps1 （5 行）---
+    658:  @{ Idx = 13; Key = 'aleksandr_shlyapnikov';  Zh = '亚历山大·施利亚普尼科夫';
+    660:  NewArt = 'gfx/interface/hof_ic/portraits/hof_portrait_SOV_aleksandr_shlyapnikov.dds';
+    662:  Idea   = 'hof_ic_idea_aleksandr_shlyapnikov';
+    935:  workers = @('aleksandr_shlyapnikov')
+    1850:  'mikhail_tomsky', 'martemyan_ryutin', 'aleksandr_shlyapnikov',

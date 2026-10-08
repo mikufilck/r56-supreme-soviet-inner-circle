@@ -1,0 +1,19 @@
+{
+  "id": "hof_ic_radek_social_and_political_thought",
+  "name": "GFX_hof_ic_radek_social_and_political_thought",
+  "title": "社会政治思想",
+  "concept": "Exactly FIVE narrow vertical paper slips, equal height and spacing, arranged in one straight row across an OPEN thread-bound book. Each slip has a thin blank border and a DIFFERENT muted color at its very top tip only; the rest of slips and book remain warm ivory. Book's pages show vertical columns of abstract short HORIZONTAL strokes, never real text. View slightly from above, book fills lower two thirds. No portrait, flag, map or readable symbols.",
+  "group": "radek",
+  "size": [
+    100,
+    88
+  ],
+  "prompt": "Create ONE finished Hearts of Iron IV Soviet national focus icon. Use attached image ONLY as stylistic reference for the common outer engraved gold laurel wreath, small red star and blank gold ribbon; create an entirely NEW central scene. Exactly FIVE narrow vertical paper slips, equal height and spacing, arranged in one straight row across an OPEN thread-bound book. Each slip has a thin blank border and a DIFFERENT muted color at its very top tip only; the rest of slips and book remain warm ivory. Book's pages show vertical columns of abstract short HORIZONTAL strokes, never real text. View slightly from above, book fills lower two thirds. No portrait, flag, map or readable symbols. Central art style: low-saturation ivory/plaster-gray relief, fine historically plausible materials, realistic tactile evidence on a simple dark surface, coherent silhouette readable at 100×88. Color comes ONLY from the individual depicted object, never a full-image color wash. Keep important objects well within wreath. One centered emblem in square canvas. TRUE RGBA transparent outside wreath/ribbon, all four corners alpha 0, broad transparent exterior area 20–50%. No readable typography, letters, numbers or watermark. No real human, face, street, Chinese monument, Kremlin, flag, raised-hand propaganda, battle, live aircraft/tank in action, geographical map, stamped order, library shelves, bound collected works, poison-gas mask, or city skyline. Output one final production asset, not mockup or sheet.",
+  "references": [
+    "D:/Users/xuwei/PycharmProjects/heart_of_Iron/art/focus/bukharin/source/GFX_hof_ic_bukharin_proportional_development.png"
+  ],
+  "generated_path": "C:\\Users\\xuwei\\.codex\\generated_images\\01a09af5-fd43-79a0-a3cc-72284cd67cbc\\exec-c07ca24a-06f6-43b1-aa9a-8e55d25a9865.png",
+  "mode": "built-in image_gen",
+  "revision_prompt": "Edit this exact Soviet focus icon. Keep the common gold laurel wreath, red star, blank gold ribbon, open thread-bound book, and exactly FIVE equally spaced long vertical paper slips with five small differently muted colored heads. REMOVE ALL gray strokes or lines from the five slips themselves; each slip interior must be COMPLETELY BLANK ivory paper, with only a very fine border. Retain abstract short horizontal marks ONLY on the underlying open book pages visible around slips. No readable text, no symbols. True RGBA transparency outside the emblem, four alpha-zero corners. Output one finished icon.",
+  "revision_generated_path": "C:\\Users\\xuwei\\.codex\\generated_images\\01a09af5-fd43-79a0-a3cc-72284cd67cbc\\exec-bc81c83d-ab52-4f36-a2ce-6fcf150b9679.png"
+}

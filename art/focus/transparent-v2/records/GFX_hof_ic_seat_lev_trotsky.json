@@ -1,0 +1,6 @@
+{
+  "prompt": "Remove background from this emblem. Return a transparent-background PNG with actual alpha transparency. Keep original emblem identical, all colors, portrait and geometry unchanged. Outside the emblem is empty transparent space. Do not visualize transparency using a checker pattern. Transparent background enabled. Isolated cutout asset.",
+  "source": "C:\\Users\\xuwei\\.codex\\generated_images\\01a09af5-fd43-79a0-a3cc-72284cd67cbc\\exec-0cd462a8-1e4a-428a-b8ad-228ee9629e1b.png",
+  "mode": "built-in image_gen",
+  "alpha": "verified RGBA 0..255"
+}

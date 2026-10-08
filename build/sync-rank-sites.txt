@@ -1,0 +1,11 @@
+=== 生成物里对 sync_rank 的调用点 ===
+--- build\inject-sov-seats.txt ---
+  L1589: hof_ic_idea_lev_trotsky_sync_rank = yes
+  L2233: hof_ic_idea_lev_trotsky_sync_rank = yes
+  L2324: hof_ic_idea_lev_trotsky_sync_rank = yes
+  L2787: hof_ic_idea_aleksey_rykov_sync_rank = yes
+  L2891: hof_ic_idea_aleksey_rykov_sync_rank = yes
+  L3017: hof_ic_idea_aleksey_rykov_sync_rank = yes
+--- mod\heart_of_iron\common\scripted_effects\hof_ic_scripted_effects.txt ---
+
+=== $bukhLine 里有没有 Sync ===

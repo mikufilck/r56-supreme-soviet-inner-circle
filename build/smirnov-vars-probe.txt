@@ -1,0 +1,41 @@
+=== 已有的 modifier|后缀 组合 ===
+
+=== Get-LineVars / DM 文件生成处 ===
+L30     #   · 原版 common/dynamic_modifiers/wuw_dynamic_modifiers.txt：GER_the_inner_circle_dm
+L659    $dmId = 'hof_ic_supreme_soviet_dm'
+L831    $null = $sb.AppendLine('# 机制蓝本：原版 common/dynamic_modifiers/wuw_dynamic_modifiers.txt 的')
+L839    $null = $sb.AppendLine("$dmId = {")
+L851    Write-ModFile 'common/dynamic_modifiers/hof_ic_dynamic_modifiers.txt' $sb.ToString()
+L1961   $trotDmId   = 'hof_ic_lev_trotsky_dm'
+L2168   $bukhDmId   = 'hof_ic_nikolay_bukharin_dm'
+L2258   $rykovDmId   = 'hof_ic_aleksey_rykov_dm'
+L2337   $zinDmId   = 'hof_ic_grigory_zinovyev_dm'
+L2445   $kamDmId   = 'hof_ic_lev_kamenev_dm'
+L2511   function Get-LineVars($line) {    $list = New-Object System.Collections.Generic.List[string]
+L2522   $trotVars = Get-LineVars $trotLine
+L2523   $bukhVars = Get-LineVars $bukhLine
+L2524   $rykovVars = Get-LineVars $rykovLine
+L2525   $zinVars   = Get-LineVars $zinLine
+L2526   $kamVars   = Get-LineVars $kamLine
+L2535   @{ Name = '托洛茨基'; Line = $trotLine; Prefix = $trotPrefix; DmId = $trotDmId;
+L2539   File = 'hof_ic_trotsky_dm.txt';
+L2543   @{ Name = '布哈林'; Line = $bukhLine; Prefix = $bukhPrefix; DmId = $bukhDmId;
+L2547   File = 'hof_ic_bukharin_dm.txt';
+L2552   @{ Name = '李可夫'; Line = $rykovLine; Prefix = $rykovPrefix; DmId = $rykovDmId;
+L2556   File = 'hof_ic_aleksey_rykov_dm.txt';
+L2561   @{ Name = '季诺维也夫'; Line = $zinLine; Prefix = $zinPrefix; DmId = $zinDmId;
+L2565   File = 'hof_ic_grigory_zinovyev_dm.txt';
+L2570   @{ Name = '加米涅夫'; Line = $kamLine; Prefix = $kamPrefix; DmId = $kamDmId;
+L2574   File = 'hof_ic_lev_kamenev_dm.txt';
+L2589   $null = $sb.AppendLine("# 数值全部 add_to_variable 进 $($ls0.DmId)（个人数值容器见 common/dynamic_modifiers/）")
+L2860   $null = $sb.AppendLine("`t`t`tadd_dynamic_modifier = { modifier = $dmId }")
+L2863   $null = $sb.AppendLine("`t`t`tadd_dynamic_modifier = { modifier = $($ls.DmId) }")
+L2919   $null = $sb.AppendLine('#    common/dynamic_modifiers/0_dynamic_modifiers.txt 的')
+L2926   $null = $sb.AppendLine('dynamic_modifiers = {')
+L2928   $null = $sb.AppendLine("`t$($ls.DmId) = {")
+L2944   Write-ModFile "common/dynamic_modifiers/$($ls.File)" $sb.ToString()
+L3147   # 🚩🚩 踩过：PowerShell 把 "$trotDmId:0" 里的 `名:字` 当成【作用域/驱动器限定的变量名】
+L3158   $null = $sb2.AppendLine(" $($ls0.DmId):0 `"$($ls0.DmName)`"")
+L3159   $null = $sb2.AppendLine(" $($ls0.DmId)_desc:0 `"$($ls0.DmDesc)`"")
+L3297   @{ F = 'common/dynamic_modifiers/hof_ic_dynamic_modifiers.txt'; Pat = "^$dmId = \{";        Exp = 1 },
+L3329   $checks += @{ F = "common/dynamic_modifiers/$($ls0.File)"; Pat = "^\t$($ls0.DmId) = \{"; Exp = 1 }

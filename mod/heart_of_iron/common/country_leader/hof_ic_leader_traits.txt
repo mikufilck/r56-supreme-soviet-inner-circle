@@ -1,0 +1,41 @@
+# =============================================================================
+# 核心圈 · 领袖特质升级（由 build/gen-hof-ic-s3.ps1 生成，勿手改）
+# -----------------------------------------------------------------------------
+# 机制蓝本：原版 common/national_focus/germany.txt 的 GER_fuhrerprinzip
+#   GER_der_fuhrer  ->  GER_der_fuhrer_fuhrerprinzip
+# 德国的手法：【照抄原特质全部效果】+【升级一项】+【新增一项】。
+# 我们：strong_party_discipline（党纪严明）-> 本文件里的 hof_ic_commissar_party_discipline
+# 升级点 = 中间国策 hof_ic_commissar（人民委员）的 completion_reward。
+# =============================================================================
+
+leader_traits = {
+
+	# 入党严明（升级版）—— 原版 strong_party_discipline 的全部效果照抄，再追加两条
+	hof_ic_commissar_party_discipline = {
+		random = no
+		# ---- 照抄原版 strong_party_discipline（党纪严明）----
+		drift_defence_factor = 0.15
+		compliance_gain = 0.05
+		resistance_decay = 0.1
+		stability_factor = 0.1
+		surrender_limit = 0.1
+		# ---- 人民委员带来的追加（数值照德国 GER_der_fuhrer_fuhrerprinzip 的增量）----
+		political_power_factor = 0.15
+		party_popularity_stability_factor = 0.1
+	}
+
+	# 两条全联盟终局国策的领袖特质
+	hof_ic_new_soviet_chairman_trait = {
+		random = no
+		political_power_factor = 0.10
+		stability_factor = 0.05
+	}
+	hof_ic_united_supreme_soviet_trait = {
+		random = no
+		max_command_power_mult = 0.25
+		justify_war_goal_time = -0.20
+		non_core_manpower = 0.15
+		conscription = 0.05
+		offensive_war_stability_factor = 0.15
+	}
+}

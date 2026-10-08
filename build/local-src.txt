@@ -1,0 +1,80 @@
+﻿=== tmp/bukharin 全部文件 ===
+ tmp\bukharin\abc-links.txt (2235)
+ tmp\bukharin\index.htm (13375)
+ tmp\bukharin\trotskyidx.htm (71051)
+ tmp\bukharin\html\19210806.htm (15174)
+ tmp\bukharin\html\1924b.htm (50514)
+ tmp\bukharin\html\19250225.htm (27351)
+ tmp\bukharin\html\19250424.htm (23296)
+ tmp\bukharin\html\19251219.htm (3829)
+ tmp\bukharin\html\1925econ.htm (65094)
+ tmp\bukharin\html\19280710.htm (30523)
+ tmp\bukharin\html\19290418.htm (102699)
+ tmp\bukharin\html\abc_02_htm.htm (9757)
+ tmp\bukharin\html\abc_07_1_htm.htm (10743)
+ tmp\bukharin\html\abc_index.htm (6924)
+ tmp\bukharin\html\court1938.htm (30457)
+ tmp\bukharin\html\last1936.htm (3503)
+ tmp\bukharin\html\wiki_zh_bukharin.htm (247496)
+ tmp\bukharin\html\wiki_zh_bukharin.txt (49698)
+ tmp\bukharin\txt\19210806.txt (20148)
+ tmp\bukharin\txt\1924b.txt (68965)
+ tmp\bukharin\txt\19250225.txt (32611)
+ tmp\bukharin\txt\19250424.txt (32519)
+ tmp\bukharin\txt\19251219.txt (4388)
+ tmp\bukharin\txt\1925econ.txt (87027)
+ tmp\bukharin\txt\19280710.txt (41952)
+ tmp\bukharin\txt\19290418.txt (139062)
+ tmp\bukharin\txt\court1938.txt (39318)
+ tmp\bukharin\txt\last1936.txt (3939)
+
+=== tmp/figures 里有谁 ===
+ aleksandr_shlyapnikov.en.txt
+ georgy_malenkow.en.txt
+ georgy_malenkow.zh.txt
+ grigory_sokolnikov.en.txt
+ grigory_sokolnikov.zh.txt
+ ivar_smilga.en.txt
+ ivar_smilga.zh.txt
+ karl_radek.en.txt
+ karl_radek.zh.txt
+ kliment_voroshilov.en.txt
+ kliment_voroshilov.zh.txt
+ maksim_litvinov.en.txt
+ maksim_litvinov.zh.txt
+ martemyan_ryutin.en.txt
+ mikhail_kalinin.en.txt
+ mikhail_kalinin.zh.txt
+ mikhail_tomsky.en.txt
+ mikhail_tomsky.zh.txt
+ mikhail_tukhachevsky.en.txt
+ mikhail_tukhachevsky.zh.txt
+ nikita_khrushchyov.en.txt
+ nikita_khrushchyov.zh.txt
+ nikolay_voznesensky.en.txt
+ nikolay_voznesensky.zh.txt
+ pyotr_smirnov.zh.txt
+ yevgeny_preobrazhensky.en.txt
+ yevgeny_preobrazhensky.zh.txt
+ _raw_en.json
+ _raw_zh.json
+
+=== docs/reference/notes 内容 ===
+ docs\reference\notes\hoi4-modifier-glossary-zh.md (19861)
+ docs\reference\notes\r56-notes.md (4991)
+
+=== docs/21 来源节 ===
+## 0. 来源
+
+| 标记 | 来源 |
+| --- | --- |
+| `[辞]` | **《马克思主义思想辞典》**（博托莫尔等编，中文马克思主义文库）—— 条目级权威，用于**理论定位** |
+| `[先]` | 多伊彻《武装的先知 1879–1921》`[解]`《被解除武装的先知 1921–1929》 |
+| `[B]` | Britannica 人物条目 |
+| `[中]` | 中文马克思主义文库其它（年谱、怀特《如何组织红军》） |
+| `[待核实]` | 未抓到一手来源 |
+
+> ⚠️ 本文所有「关系判断」都尽量给出出处。凡我自己推导的连接，一律标 `【推断】`。
+
+---
+

@@ -1,0 +1,21 @@
+# =============================================================================
+# 需求 C：经互会通用线的好感修正（由 build/gen-hof-ma-common-lines.ps1 生成，勿手改）
+# -----------------------------------------------------------------------------
+# 蓝本：原版 common/opinion_modifiers/nsb_opinion_modifiers.txt
+# 🚨 外层 opinion_modifiers = { } 绝对不能漏 —— 漏了游戏不报错、静默无效。
+# 名称的本地化键就是修正名本身，写在 localisation/simp_chinese/hof_ma_l_simp_chinese.yml。
+# =============================================================================
+
+opinion_modifiers = {
+
+	# 1988-06-25 经互会国家获准直接与欧共体谈贸易协定 —— 对西欧四国
+	hof_ma_eec_trade_agreement = {
+		value = 30
+	}
+
+	# 1973-10-30 维也纳中欧相互均衡裁军谈判（MBFR）—— 对四国谈判对手
+	hof_ma_mbfr_detente = {
+		value = 30
+	}
+
+}

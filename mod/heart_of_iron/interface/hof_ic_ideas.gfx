@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_hof_ic_supreme_soviet"
+		texturefile = "gfx/interface/hof_ic/ideas/GFX_idea_hof_ic_supreme_soviet.dds"
+	}
+}

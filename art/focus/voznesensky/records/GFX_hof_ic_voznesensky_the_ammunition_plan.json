@@ -1,0 +1,17 @@
+{
+  "id": "hof_ic_voznesensky_the_ammunition_plan",
+  "name": "GFX_hof_ic_voznesensky_the_ammunition_plan",
+  "title": "弹药生产计划",
+  "concept": "A single orderly ROW of five EMPTY brass artillery SHELL CASINGS standing upright from large to small, equidistant, highly visible warm brass reflections and machined concentric rings at casing bases. At the very front, smallest in image, the SAME little black-lacquer hand-cranked mechanical calculator with brass side crank, its crank freshly stopped. Shell cases are empty metal objects, no projectile tips, no guns, cannon, smoke, battle or people.",
+  "group": "voznesensky",
+  "size": [
+    100,
+    88
+  ],
+  "prompt": "Create ONE finished Hearts of Iron IV Soviet national focus icon. Use attached image as a reference for the common outer engraved gold laurel wreath, small red star, blank gold ribbon, and if present the recurring black-lacquer brass-crank mechanical calculator. Create a NEW central scene as specified. A single orderly ROW of five EMPTY brass artillery SHELL CASINGS standing upright from large to small, equidistant, highly visible warm brass reflections and machined concentric rings at casing bases. At the very front, smallest in image, the SAME little black-lacquer hand-cranked mechanical calculator with brass side crank, its crank freshly stopped. Shell cases are empty metal objects, no projectile tips, no guns, cannon, smoke, battle or people. Central art style: restrained low-saturation 1930s historical sculptural relief with realistic tactile materials. Colors only from depicted objects, never full-image color grading. Clear iconic silhouette readable at 100×88. Exactly one centered emblem in square canvas. TRUE RGBA transparency outside wreath and ribbon, all four corners alpha 0, broad transparent exterior 20–50%. No readable letters, numerals or watermark, no ruler, slide rule, linear scale, ledger, ruled grid table, train, railway, city map, office room, person/face, propaganda banner, political badge or five-point star in central scene. Only ornamental frame's star. Output one final production icon, not mockup or sheet.",
+  "references": [
+    "D:/Users/xuwei/PycharmProjects/heart_of_Iron/art/focus/voznesensky/source/GFX_hof_ic_voznesensky_the_fight_for_the_plan.png"
+  ],
+  "generated_path": "C:\\Users\\xuwei\\.codex\\generated_images\\01a09af5-fd43-79a0-a3cc-72284cd67cbc\\exec-411d47b9-4cd6-41d3-842b-f86836e3129f.png",
+  "mode": "built-in image_gen"
+}

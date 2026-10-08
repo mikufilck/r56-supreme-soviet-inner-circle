@@ -1,0 +1,99 @@
+=== 李可夫的驱动器事件 ===
+  L94: id = heartofiron.1110
+  L111: country_event = { id = heartofiron.1111 days = 35 }
+  L121: country_event = { id = heartofiron.1111 days = 35 }
+  L131: country_event = { id = heartofiron.1111 days = 35 }
+  L141: country_event = { id = heartofiron.1111 days = 35 }
+  L151: country_event = { id = heartofiron.1111 days = 35 }
+  L161: country_event = { id = heartofiron.1111 days = 35 }
+  L171: country_event = { id = heartofiron.1111 days = 35 }
+  L181: country_event = { id = heartofiron.1111 days = 35 }
+  L191: country_event = { id = heartofiron.1110 days = 5 random_days = 3 }
+  L204: country_event = { id = heartofiron.1111 days = 35 }
+  L217: country_event = { id = heartofiron.1111 days = 35 }
+  L227: country_event = { id = heartofiron.1111 days = 35 }
+  L237: country_event = { id = heartofiron.1111 days = 35 }
+  L247: country_event = { id = heartofiron.1111 days = 35 }
+  L257: country_event = { id = heartofiron.1111 days = 35 }
+  L267: country_event = { id = heartofiron.1111 days = 35 }
+  L280: country_event = { id = heartofiron.1111 days = 35 }
+  L293: country_event = { id = heartofiron.1111 days = 35 }
+  L302: id = heartofiron.1111
+  L316: country_event = { id = heartofiron.1110 days = 3 random_days = 3 }
+  L323: country_event = { id = heartofiron.1110 days = 3 random_days = 3 }
+  L330: country_event = { id = heartofiron.1110 days = 3 random_days = 3 }
+  L337: country_event = { id = heartofiron.1110 days = 3 random_days = 3 }
+  L344: country_event = { id = heartofiron.1110 days = 3 random_days = 3 }
+  L351: country_event = { id = heartofiron.1110 days = 3 random_days = 3 }
+  L358: country_event = { id = heartofiron.1110 days = 3 random_days = 3 }
+  L365: country_event = { id = heartofiron.1110 days = 3 random_days = 3 }
+  L371: country_event = { id = heartofiron.1110 days = 3 random_days = 3 }
+  L377: country_event = { id = heartofiron.1110 days = 3 random_days = 3 }
+  L384: country_event = { id = heartofiron.1110 days = 3 random_days = 3 }
+  L391: country_event = { id = heartofiron.1110 days = 3 random_days = 3 }
+  L398: country_event = { id = heartofiron.1110 days = 3 random_days = 3 }
+  L405: country_event = { id = heartofiron.1110 days = 3 random_days = 3 }
+  L412: country_event = { id = heartofiron.1110 days = 3 random_days = 3 }
+  L445: country_event = { id = heartofiron.1110 days = 3 random_days = 3 }
+  L497: country_event = { id = heartofiron.1110 days = 1 }
+  L514: country_event = { id = heartofiron.1110 days = 1 }
+  L546: country_event = { id = heartofiron.1110 days = 1 }
+  L563: country_event = { id = heartofiron.1110 days = 1 }
+  L573: id = heartofiron.1120
+  L590: country_event = { id = heartofiron.1120 days = 5 random_days = 3 }
+  L603: country_event = { id = heartofiron.1121 days = 35 }
+  L616: country_event = { id = heartofiron.1121 days = 35 }
+  L629: country_event = { id = heartofiron.1121 days = 35 }
+  L642: country_event = { id = heartofiron.1121 days = 35 }
+  L652: country_event = { id = heartofiron.1121 days = 35 }
+  L662: country_event = { id = heartofiron.1121 days = 35 }
+  L672: country_event = { id = heartofiron.1121 days = 35 }
+  L682: country_event = { id = heartofiron.1121 days = 35 }
+  L695: country_event = { id = heartofiron.1121 days = 35 }
+  L704: id = heartofiron.1121
+  L717: country_event = { id = heartofiron.1120 days = 3 random_days = 3 }
+  L723: country_event = { id = heartofiron.1120 days = 3 random_days = 3 }
+  L730: country_event = { id = heartofiron.1120 days = 3 random_days = 3 }
+  L737: country_event = { id = heartofiron.1120 days = 3 random_days = 3 }
+  L744: country_event = { id = heartofiron.1120 days = 3 random_days = 3 }
+  L751: country_event = { id = heartofiron.1120 days = 3 random_days = 3 }
+  L758: country_event = { id = heartofiron.1120 days = 3 random_days = 3 }
+  L765: country_event = { id = heartofiron.1120 days = 3 random_days = 3 }
+  L772: country_event = { id = heartofiron.1120 days = 3 random_days = 3 }
+  L792: country_event = { id = heartofiron.1120 days = 3 random_days = 3 }
+  L824: country_event = { id = heartofiron.1120 days = 1 }
+  L841: country_event = { id = heartofiron.1120 days = 1 }
+  L851: id = heartofiron.1130
+  L868: country_event = { id = heartofiron.1131 days = 35 }
+  L878: country_event = { id = heartofiron.1131 days = 35 }
+  L888: country_event = { id = heartofiron.1131 days = 35 }
+  L898: country_event = { id = heartofiron.1131 days = 35 }
+  L908: country_event = { id = heartofiron.1131 days = 35 }
+  L917: id = heartofiron.1131
+  L931: country_event = { id = heartofiron.1130 days = 3 random_days = 3 }
+  L938: country_event = { id = heartofiron.1130 days = 3 random_days = 3 }
+  L945: country_event = { id = heartofiron.1130 days = 3 random_days = 3 }
+  L952: country_event = { id = heartofiron.1130 days = 3 random_days = 3 }
+  L959: country_event = { id = heartofiron.1130 days = 3 random_days = 3 }
+  L974: country_event = { id = heartofiron.1130 days = 3 random_days = 3 }
+
+=== events 文件里李可夫相关的 immediate 分支（前 24 行）===
+  851: 	id = heartofiron.1130
+  852: 	hidden = yes
+  853: 	is_triggered_only = yes
+  854: 
+  855: 	trigger = {
+  856: 		hof_ic_seated_aleksey_rykov = yes
+  857: 	}
+  858: 
+  859: 	immediate = {
+  860: 		if = {   # hof_ic_rykov_supreme_economic_council
+  861: 			limit = { NOT = { has_completed_focus = hof_ic_rykov_supreme_economic_council } }
+  862: 			activate_shine_on_focus = hof_ic_rykov_supreme_economic_council
+  863: 			set_country_flag = {
+  864: 				flag = hof_ic_aleksey_rykov_progress
+  865: 				days = 35
+  866: 				value = 1
+  867: 			}
+  868: 			country_event = { id = heartofiron.1131 days = 35 }
+   ...（1131 紧跟其后）

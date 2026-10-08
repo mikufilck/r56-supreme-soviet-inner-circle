@@ -1,0 +1,17 @@
+{
+  "id": "hof_ic_radek_the_struggle_for_power_in_china",
+  "name": "GFX_hof_ic_radek_the_struggle_for_power_in_china",
+  "title": "中国的夺权斗争",
+  "concept": "One opened old-yellow newspaper viewed from a gentle overhead angle, occupying 80% of central illustration. Its page is ONLY abstract column rules, short tiny strokes and blank rectangles, NO readable letters or words. A brass-rimmed magnifying glass rests directly on the newspaper's central fold slightly below midpoint, glass showing only blurred neutral gray. A short sharpened pencil rests beside the paper. Symbolizes analytical reading, no Chinese street, people, flags or map.",
+  "group": "radek",
+  "size": [
+    100,
+    88
+  ],
+  "prompt": "Create ONE finished Hearts of Iron IV Soviet national focus icon. Use attached image ONLY as stylistic reference for the common outer engraved gold laurel wreath, small red star and blank gold ribbon; create an entirely NEW central scene. One opened old-yellow newspaper viewed from a gentle overhead angle, occupying 80% of central illustration. Its page is ONLY abstract column rules, short tiny strokes and blank rectangles, NO readable letters or words. A brass-rimmed magnifying glass rests directly on the newspaper's central fold slightly below midpoint, glass showing only blurred neutral gray. A short sharpened pencil rests beside the paper. Symbolizes analytical reading, no Chinese street, people, flags or map. Central art style: low-saturation ivory/plaster-gray relief, fine historically plausible materials, realistic tactile evidence on a simple dark surface, coherent silhouette readable at 100×88. Color comes ONLY from the individual depicted object, never a full-image color wash. Keep important objects well within wreath. One centered emblem in square canvas. TRUE RGBA transparent outside wreath/ribbon, all four corners alpha 0, broad transparent exterior area 20–50%. No readable typography, letters, numbers or watermark. No real human, face, street, Chinese monument, Kremlin, flag, raised-hand propaganda, battle, live aircraft/tank in action, geographical map, stamped order, library shelves, bound collected works, poison-gas mask, or city skyline. Output one final production asset, not mockup or sheet.",
+  "references": [
+    "D:/Users/xuwei/PycharmProjects/heart_of_Iron/art/focus/bukharin/source/GFX_hof_ic_bukharin_proportional_development.png"
+  ],
+  "generated_path": "C:\\Users\\xuwei\\.codex\\generated_images\\01a09af5-fd43-79a0-a3cc-72284cd67cbc\\exec-3863dc77-419b-44d8-a4ae-d4a037b17491.png",
+  "mode": "built-in image_gen"
+}

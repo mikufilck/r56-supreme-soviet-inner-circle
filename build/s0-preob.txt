@@ -1,0 +1,206 @@
+==== SOP 第 0 步 · 普列奥布拉任斯基（Idx 8）====
+
+==================== 原版 ====================
+  --- common （17 行命中 / 5 个文件）---
+    common\characters\SOV.txt:2895
+        SOV_yevgeny_preobrazhensky = {
+    common\characters\SOV.txt:2896
+        name = SOV_yevgeny_preobrazhensky
+    common\characters\SOV.txt:2899
+        small = "GFX_idea_SOV_yevgeny_preobrazhensky"
+    common\characters\SOV.txt:2924
+        idea_token = SOV_yevgeny_preobrazhensky
+    common\country_leader\00_traits.txt:7998
+        #Preobrazhensky
+    common\decisions\SOV.txt:16840
+        #Preobrazhensky
+    common\decisions\SOV.txt:16843
+        has_character = SOV_yevgeny_preobrazhensky
+    common\decisions\SOV.txt:16844
+        SOV_yevgeny_preobrazhensky = {
+    common\decisions\SOV.txt:16848
+        SOV_yevgeny_preobrazhensky = {
+    common\national_focus\soviet.txt:7544
+        #Preobrazhensky
+    common\national_focus\soviet.txt:7547
+        has_character = SOV_yevgeny_preobrazhensky
+    common\national_focus\soviet.txt:7549
+        SOV_yevgeny_preobrazhensky = {
+    common\national_focus\soviet.txt:8667
+        NOT = { has_character = SOV_yevgeny_preobrazhensky }
+    common\national_focus\soviet.txt:8678
+        custom_effect_tooltip = SOV_bring_old_trotskyists_back_effect_tt #Radek and Preobrazhensky already set as algined to left oppo
+    common\national_focus\soviet.txt:10019
+        SOV_yevgeny_preobrazhensky = { set_character_flag = SOV_potential_target_flag }
+    common\national_focus\soviet.txt:11317
+        SOV_yevgeny_preobrazhensky = {
+    common\scripted_triggers\00_scripted_triggers_FR_loc.txt:840
+        has_country_leader = { character = SOV_yevgeny_preobrazhensky }
+  --- history （3 行命中 / 1 个文件）---
+    history\countries\SOV - Soviet union.txt:46
+        recruit_character = SOV_yevgeny_preobrazhensky
+    history\countries\SOV - Soviet union.txt:281
+        SOV_yevgeny_preobrazhensky = {
+    history\countries\SOV - Soviet union.txt:972
+        SOV_yevgeny_preobrazhensky = { SOV_purge_character_effect = yes }
+  --- localisation （54 行命中 / 20 个文件）---
+    localisation\braz_por\nsb_characters_l_braz_por.yml:83
+        SOV_yevgeny_preobrazhensky: "Yevgeni Preobrazhensky"
+    localisation\braz_por\nsb_focus_l_braz_por.yml:1591
+        SOV_bring_old_trotskyists_back_desc: "Nos primeiros anos da revolução, houveram muitos debates calorosos entre diversas fações no partido. Algumas pessoas que não estavam tão alinhadas com o partido, como Karl Radek e Yevgeny Preobrazhensky foram até expulsas por desentendimentos menores. Talvez um gesto de arrependimento por parte desses membros de longa data do partido pudesse ser o suficiente para trazê-los de volta."
+    localisation\braz_por\nsb_focus_l_braz_por.yml:1592
+        SOV_bring_old_trotskyists_back_trigger_tt: "§Y$SOV_karl_radek$§! e §Y$SOV_yevgeny_preobrazhensky$§! foram expurgados por Stalin."
+    localisation\braz_por\nsb_focus_l_braz_por.yml:1593
+        SOV_bring_old_trotskyists_back_effect_tt: "§Y$SOV_karl_radek$§! e §Y$SOV_yevgeny_preobrazhensky$§! ficam disponíveis como conselheiros."
+    localisation\braz_por\nsb_focus_l_braz_por.yml:1685
+        SOV_cooperation_against_stalin_right_tt: "§Y$SOV_karl_radek$§! e §Y$SOV_yevgeny_preobrazhensky$§! ficam disponíveis como conselheiros."
+    localisation\braz_por\nsb_focus_l_braz_por.yml:1723
+        SOV_eliminate_the_left_tt: "§Y$SOV_karl_radek$§!, §Y$SOV_ivar_smilga$§! e §Y$SOV_yevgeny_preobrazhensky$§! se tornarão alvos em potencial de um expurgo de Stalin."
+    localisation\english\nsb_characters_l_english.yml:85
+        SOV_yevgeny_preobrazhensky: "Yevgeni Preobrazhensky"
+    localisation\english\nsb_focus_l_english.yml:1612
+        SOV_bring_old_trotskyists_back_desc: "In the early years of the revolution, there have been many heated debates between various factions inside the party. Some people who were not quite on the party line, like Karl Radek and Yevgeny Preobrazhensky, were even expelled over minor disagreements. Perhaps a gesture of contrition from these long-serving party members could be enough to bring them back into the fold."
+    localisation\english\nsb_focus_l_english.yml:1613
+        SOV_bring_old_trotskyists_back_trigger_tt: "§Y$SOV_karl_radek$§! and §Y$SOV_yevgeny_preobrazhensky$§! have been purged by Stalin."
+    localisation\english\nsb_focus_l_english.yml:1614
+        SOV_bring_old_trotskyists_back_effect_tt: "§Y$SOV_karl_radek$§! and §Y$SOV_yevgeny_preobrazhensky$§! become available as advisors."
+    localisation\english\nsb_focus_l_english.yml:1707
+        SOV_cooperation_against_stalin_right_tt: "§Y$SOV_karl_radek$§! and §Y$SOV_yevgeny_preobrazhensky$§! become available as advisors."
+    localisation\english\nsb_focus_l_english.yml:1746
+        SOV_eliminate_the_left_tt: "§Y$SOV_karl_radek$§!, §Y$SOV_ivar_smilga$§!, and §Y$SOV_yevgeny_preobrazhensky$§! become potential targets for a purge by Stalin."
+    localisation\french\nsb_characters_l_french.yml:83
+        SOV_yevgeny_preobrazhensky: "Evgueni Préobrajenski"
+    localisation\french\nsb_focus_l_french.yml:1592
+        SOV_bring_old_trotskyists_back_trigger_tt: "§Y$SOV_karl_radek$§! et §Y$SOV_yevgeny_preobrazhensky$§! ont été purgés par Staline."
+    localisation\french\nsb_focus_l_french.yml:1593
+        SOV_bring_old_trotskyists_back_effect_tt: "§Y$SOV_karl_radek$§! et §Y$SOV_yevgeny_preobrazhensky$§! vont être disponibles en tant que conseillers."
+    localisation\french\nsb_focus_l_french.yml:1685
+        SOV_cooperation_against_stalin_right_tt: "§Y$SOV_karl_radek$§! et §Y$SOV_yevgeny_preobrazhensky$§! vont pouvoir devenir conseillers."
+    localisation\french\nsb_focus_l_french.yml:1723
+        SOV_eliminate_the_left_tt: "§Y$SOV_karl_radek$§!, §Y$SOV_ivar_smilga$§! et §Y$SOV_yevgeny_preobrazhensky$§! vont devenir des cibles privilégiées pour les purges de Staline."
+    localisation\german\nsb_characters_l_german.yml:83
+        SOV_yevgeny_preobrazhensky: "Yevgeni Preobrazhensky"
+    localisation\german\nsb_focus_l_german.yml:1592
+        SOV_bring_old_trotskyists_back_trigger_tt: "§Y$SOV_karl_radek$§! und §Y$SOV_yevgeny_preobrazhensky$§! wurden von Stalin gesäubert."
+    localisation\german\nsb_focus_l_german.yml:1593
+        SOV_bring_old_trotskyists_back_effect_tt: "§Y$SOV_karl_radek$§! und §Y$SOV_yevgeny_preobrazhensky$§! werden als Berater verfügbar."
+    localisation\german\nsb_focus_l_german.yml:1685
+        SOV_cooperation_against_stalin_right_tt: "§Y$SOV_karl_radek$§! und §Y$SOV_yevgeny_preobrazhensky$§! werden als Berater verfügbar."
+    localisation\german\nsb_focus_l_german.yml:1723
+        SOV_eliminate_the_left_tt: "§Y$SOV_karl_radek$§!, §Y$SOV_ivar_smilga$§! und §Y$SOV_yevgeny_preobrazhensky$§! werden zu potenziellen Zielen für eine Säuberung durch Stalin."
+    localisation\japanese\nsb_characters_l_japanese.yml:83
+        SOV_yevgeny_preobrazhensky: "エフゲニー・プレオブラジェンスキー"
+    localisation\japanese\nsb_focus_l_japanese.yml:1592
+        SOV_bring_old_trotskyists_back_trigger_tt: "§Y$SOV_karl_radek$§!および§Y$SOV_yevgeny_preobrazhensky$§!がスターリンによって粛清されている。"
+    localisation\japanese\nsb_focus_l_japanese.yml:1593
+        SOV_bring_old_trotskyists_back_effect_tt: "§Y$SOV_karl_radek$§!および§Y$SOV_yevgeny_preobrazhensky$§!が顧問として利用可能になる。"
+    localisation\japanese\nsb_focus_l_japanese.yml:1685
+        SOV_cooperation_against_stalin_right_tt: "§Y$SOV_karl_radek$§!および§Y$SOV_yevgeny_preobrazhensky$§!が顧問として利用可能になる。"
+    localisation\japanese\nsb_focus_l_japanese.yml:1723
+        SOV_eliminate_the_left_tt: "§Y$SOV_karl_radek$§!、§Y$SOV_ivar_smilga$§!、§Y$SOV_yevgeny_preobrazhensky$§!がスターリンの粛清対象となる可能性がある。"
+    localisation\korean\nsb_characters_l_korean.yml:83
+        SOV_yevgeny_preobrazhensky: "예브게니 프레오브라젠스키"
+    localisation\korean\nsb_focus_l_korean.yml:1592
+        SOV_bring_old_trotskyists_back_trigger_tt: "§Y$SOV_karl_radek$§!과 §Y$SOV_yevgeny_preobrazhensky$§!은 스탈린에 의해 숙청되었습니다."
+    localisation\korean\nsb_focus_l_korean.yml:1593
+        SOV_bring_old_trotskyists_back_effect_tt: "§Y$SOV_karl_radek$§!와 §Y$SOV_yevgeny_preobrazhensky$§!를 고문으로 사용할 수 있습니다."
+    localisation\korean\nsb_focus_l_korean.yml:1685
+        SOV_cooperation_against_stalin_right_tt: "§Y$SOV_karl_radek$§!와 §Y$SOV_yevgeny_preobrazhensky$§!를 고문으로 사용할 수 있습니다."
+    localisation\korean\nsb_focus_l_korean.yml:1723
+        SOV_eliminate_the_left_tt: "§Y$SOV_karl_radek$§!, §Y$SOV_ivar_smilga$§!, 그리고 §Y$SOV_yevgeny_preobrazhensky$§!가 스탈린의 잠재적 숙청 대상이 됩니다."
+    localisation\polish\nsb_characters_l_polish.yml:83
+        SOV_yevgeny_preobrazhensky: "Jewgienij Prieobrażenski"
+    localisation\polish\nsb_focus_l_polish.yml:1592
+        SOV_bring_old_trotskyists_back_trigger_tt: "§Y$SOV_karl_radek$§! i §Y$SOV_yevgeny_preobrazhensky$§! padli ofiarą czystek Stalina."
+    localisation\polish\nsb_focus_l_polish.yml:1593
+        SOV_bring_old_trotskyists_back_effect_tt: "§Y$SOV_karl_radek$§! i §Y$SOV_yevgeny_preobrazhensky$§! będą dostępni jako doradcy."
+    localisation\polish\nsb_focus_l_polish.yml:1685
+        SOV_cooperation_against_stalin_right_tt: "§Y$SOV_karl_radek$§! i §Y$SOV_yevgeny_preobrazhensky$§! będą dostępni jako doradcy."
+    localisation\polish\nsb_focus_l_polish.yml:1723
+        SOV_eliminate_the_left_tt: "§Y$SOV_karl_radek$§!, §Y$SOV_ivar_smilga$§! i §Y$SOV_yevgeny_preobrazhensky$§! staną się potencjalnymi celami czystek Stalina."
+    localisation\russian\nsb_characters_l_russian.yml:83
+        SOV_yevgeny_preobrazhensky: "Евгений Преображенский"
+    localisation\russian\nsb_focus_l_russian.yml:1591
+        SOV_bring_old_trotskyists_back_desc: "В ранние годы революции среди разных группировок в партии были часты напряженные споры. Некоторых несогласных с линией партии — в частности, Карла Радека и Евгения Преображенского — даже изгнали из ее рядов из-за незначительных разногласий. Возможно, простого жеста раскаяния от этих давних членов партии было бы достаточно, чтобы принять их обратно."
+    localisation\russian\nsb_focus_l_russian.yml:1592
+        SOV_bring_old_trotskyists_back_trigger_tt: "§Y$SOV_karl_radek$§! и §Y$SOV_yevgeny_preobrazhensky$§! уничтожены Сталиным."
+    localisation\russian\nsb_focus_l_russian.yml:1593
+        SOV_bring_old_trotskyists_back_effect_tt: "§Y$SOV_karl_radek$§! и §Y$SOV_yevgeny_preobrazhensky$§! становятся доступны в роли советников."
+    localisation\russian\nsb_focus_l_russian.yml:1685
+        SOV_cooperation_against_stalin_right_tt: "§Y$SOV_karl_radek$§! и §Y$SOV_yevgeny_preobrazhensky$§! становятся доступны в роли советников."
+    localisation\russian\nsb_focus_l_russian.yml:1723
+        SOV_eliminate_the_left_tt: "§Y$SOV_karl_radek$§!, §Y$SOV_ivar_smilga$§! и §Y$SOV_yevgeny_preobrazhensky$§! станут потенциальными целями сталинских чисток."
+    localisation\simp_chinese\nsb_characters_l_simp_chinese.yml:83
+        SOV_yevgeny_preobrazhensky: "叶夫根尼·普列奥布拉任斯基"
+    localisation\simp_chinese\nsb_focus_l_simp_chinese.yml:1592
+        SOV_bring_old_trotskyists_back_trigger_tt: "§Y$SOV_karl_radek$§!和§Y$SOV_yevgeny_preobrazhensky$§!已被斯大林清洗"
+    localisation\simp_chinese\nsb_focus_l_simp_chinese.yml:1593
+        SOV_bring_old_trotskyists_back_effect_tt: "§Y$SOV_karl_radek$§!和§Y$SOV_yevgeny_preobrazhensky$§!成为可用的顾问。"
+    localisation\simp_chinese\nsb_focus_l_simp_chinese.yml:1685
+        SOV_cooperation_against_stalin_right_tt: "§Y$SOV_karl_radek$§!和§Y$SOV_yevgeny_preobrazhensky$§!成为可用的顾问。"
+    localisation\simp_chinese\nsb_focus_l_simp_chinese.yml:1723
+        SOV_eliminate_the_left_tt: "§Y$SOV_karl_radek$§!，§Y$SOV_ivar_smilga$§!和§Y$SOV_yevgeny_preobrazhensky$§!成为斯大林的潜在清洗目标。"
+    localisation\spanish\nsb_characters_l_spanish.yml:83
+        SOV_yevgeny_preobrazhensky: "Yevgueni Preobrazhenski"
+    localisation\spanish\nsb_focus_l_spanish.yml:1591
+        SOV_bring_old_trotskyists_back_desc: "En los primeros años de la revolución, hubo muchos debates acalorados entre las diversas facciones del partido. Algunos que se apartaban de la línea del partido, como Karl Rádek y Yevgueni Preobrazhenski, fueron expulsados por diferencias poco importantes. Quizá un gesto de contrición de esos miembros del partido con larga trayectoria de servicio bastaría para devolverlos al grupo."
+    localisation\spanish\nsb_focus_l_spanish.yml:1592
+        SOV_bring_old_trotskyists_back_trigger_tt: "§Y$SOV_karl_radek$§! y §Y$SOV_yevgeny_preobrazhensky$§! han sido purgados por Stalin."
+    localisation\spanish\nsb_focus_l_spanish.yml:1593
+        SOV_bring_old_trotskyists_back_effect_tt: "§Y$SOV_karl_radek$§! y §Y$SOV_yevgeny_preobrazhensky$§! están disponibles como consejeros."
+    localisation\spanish\nsb_focus_l_spanish.yml:1685
+        SOV_cooperation_against_stalin_right_tt: "§Y$SOV_karl_radek$§! y §Y$SOV_yevgeny_preobrazhensky$§! están disponibles como consejeros."
+    localisation\spanish\nsb_focus_l_spanish.yml:1723
+        SOV_eliminate_the_left_tt: "§Y$SOV_karl_radek$§!, §Y$SOV_ivar_smilga$§! y §Y$SOV_yevgeny_preobrazhensky$§! son objetivos potenciales de una purga de Stalin."
+  --- interface （2 行命中 / 1 个文件）---
+    interface\ideas.gfx:6163
+        name = "GFX_idea_SOV_yevgeny_preobrazhensky"
+    interface\ideas.gfx:6164
+        texturefile = "gfx/interface/ideas/idea_SOV_yevgeny_preobrazhensky.dds"
+  --- gfx 下文件名命中（1 个）---
+    gfx\interface\ideas\idea_SOV_yevgeny_preobrazhensky.dds
+
+==================== 原版-dlc ====================
+  --- gfx 下文件名命中（0 个）---
+
+==================== R56 ====================
+  --- common （16 行命中 / 4 个文件）---
+    common\characters\SOV.txt:4727
+        SOV_yevgeny_preobrazhensky = {
+    common\characters\SOV.txt:4728
+        name = SOV_yevgeny_preobrazhensky
+    common\characters\SOV.txt:4731
+        small = "GFX_idea_SOV_yevgeny_preobrazhensky"
+    common\characters\SOV.txt:4756
+        idea_token = SOV_yevgeny_preobrazhensky
+    common\country_leader\00_traits.txt:8003
+        #Preobrazhensky
+    common\decisions\SOV.txt:17511
+        #Preobrazhensky
+    common\decisions\SOV.txt:17514
+        has_character = SOV_yevgeny_preobrazhensky
+    common\decisions\SOV.txt:17515
+        SOV_yevgeny_preobrazhensky = {
+    common\decisions\SOV.txt:17519
+        SOV_yevgeny_preobrazhensky = {
+    common\national_focus\soviet.txt:8966
+        #Preobrazhensky
+    common\national_focus\soviet.txt:8969
+        has_character = SOV_yevgeny_preobrazhensky
+    common\national_focus\soviet.txt:8971
+        SOV_yevgeny_preobrazhensky = {
+    common\national_focus\soviet.txt:10556
+        NOT = { has_character = SOV_yevgeny_preobrazhensky }
+    common\national_focus\soviet.txt:10567
+        custom_effect_tooltip = SOV_bring_old_trotskyists_back_effect_tt #Radek and Preobrazhensky already set as algined to left oppo
+    common\national_focus\soviet.txt:12201
+        SOV_yevgeny_preobrazhensky = { set_character_flag = SOV_potential_target_flag }
+    common\national_focus\soviet.txt:13498
+        SOV_yevgeny_preobrazhensky = {
+  --- history （2 行命中 / 1 个文件）---
+    history\countries\SOV - Soviet union.txt:108
+        recruit_character = SOV_yevgeny_preobrazhensky
+    history\countries\SOV - Soviet union.txt:494
+        SOV_yevgeny_preobrazhensky = {
+  --- gfx 下文件名命中（0 个）---
+

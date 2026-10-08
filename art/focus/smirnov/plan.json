@@ -1,0 +1,68 @@
+[
+  {
+    "id": "hof_ic_smirnov_the_volga_bridgehead",
+    "name": "GFX_hof_ic_smirnov_the_volga_bridgehead",
+    "title": "斯维亚日斯克桥头堡",
+    "concept": "Wide cold river crossed by a strong railway truss bridge, viewed diagonally toward right horizon, tiny station hut and clearly sculpted sandbag barricade at near bridgehead. Sparse defensible landscape, damp mist, cold grey-blue ivory relief. Bridge and water dominate horizontally. No people.",
+    "group": "smirnov",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_smirnov_the_fifth_army",
+    "name": "GFX_hof_ic_smirnov_the_fifth_army",
+    "title": "第五集团军与五军将士",
+    "concept": "A diagonal column of five early Russian civil-war soldiers marching away to the RIGHT into a first-snow plain, seen strictly from behind, backpacks and puttees, rifles slung on shoulders, no faces or facial features. Cohesive marching silhouettes, small distant village and smoke, cold brown-grey ivory relief. No combat, no wounded.",
+    "group": "smirnov",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_smirnov_sibrevkom",
+    "name": "GFX_hof_ic_smirnov_sibrevkom",
+    "title": "西伯利亚革命委员会",
+    "concept": "Inside a rustic Siberian log cabin: substantial long committee table with a blank folded map and several blank document sheets, empty chairs, plain dark red flag on rear wall, large window showing snowy conifer forest. Governance taking root, intimate structured indoor scene, muted wood-brown and ivory sculpted relief. No people, no writing.",
+    "group": "smirnov",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_smirnov_far_eastern_republic",
+    "name": "GFX_hof_ic_smirnov_far_eastern_republic",
+    "title": "远东共和国",
+    "concept": "One large striped wooden border post in foreground, a short wooden barrier and fence receding diagonally toward the RIGHT Pacific coastline, misty sea beyond. Tiny faceless sentry silhouette seen from behind at the boundary. Strong vertical border marker, boundary restraint rather than advance. Pale cyan-grey and ivory sculptural landscape, colder and later dusk.",
+    "group": "smirnov",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_smirnov_posts_and_telegraphs",
+    "name": "GFX_hof_ic_smirnov_posts_and_telegraphs",
+    "title": "苏联邮电人民委员部",
+    "concept": "A bold row of ice-covered telegraph poles and connecting wires recedes alongside railway toward RIGHT horizon across snowy land, small brick post office and early 1920s postal truck at foreground, single warm amber window glow contrasting cold blue-grey night. Clear branching wire network and pole silhouettes dominate, connected territory, no text, no people.",
+    "group": "smirnov",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_smirnov_siberian_lenin",
+    "name": "GFX_hof_ic_smirnov_siberian_lenin",
+    "title": "西伯利亚的列宁",
+    "concept": "Final culmination: one solitary small full-body human BACK silhouette in long winter coat walking away toward RIGHT distant horizon along a broad snow road with deep twin wheel ruts and footprints. Vast cold-white snowy plain, distant forest and low rolling hills, very dark winter dusk sky with a thin restrained golden horizon light. Monumental layered landscape fills medallion, generous open snow negative space around tiny person. Journey continuing, quiet duty, no victory pose, no memorial, no face, no portrait. Richest complete landscape of series without clutter.",
+    "group": "smirnov",
+    "size": [
+      100,
+      88
+    ]
+  }
+]

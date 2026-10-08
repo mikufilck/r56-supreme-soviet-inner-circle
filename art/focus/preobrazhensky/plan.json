@@ -1,0 +1,57 @@
+[
+  {
+    "id": "hof_ic_preobrazhensky_agrarian_theses",
+    "name": "GFX_hof_ic_preobrazhensky_agrarian_theses",
+    "title": "农村政策提纲",
+    "concept": "A heavy small stack of loose taxation slips bearing ONLY blank horizontal ruled rows, spread over a low heap of grain in the lower-left foreground. A single accounting pen beside the slips; no book or bound manuscript. Sparse dry grey-ochre rural horizon behind. Quiet weighty composition, ochre grain and dark grey, ivory embossed paper. The relationship of taxation extracting grain is the subject.",
+    "group": "preobrazhensky",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_preobrazhensky_scissors",
+    "name": "GFX_hof_ic_preobrazhensky_scissors",
+    "title": "压缩剪刀差",
+    "concept": "ONE large open vintage steel pair of scissors in clear close-up, two blades poised to close, realistic single pivot and two finger loops. Between the open blades lie exactly two simple embossed price curves, one curving upward and one downward. Clean minimal anvil-grey backing, iron-grey metal and restrained rust-red curves. The scissors silhouette must read immediately. No numerals or labels.",
+    "group": "preobrazhensky",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_preobrazhensky_against_nepmen",
+    "name": "GFX_hof_ic_preobrazhensky_against_nepmen",
+    "title": "反对耐普曼的积累",
+    "concept": "ONE antique balance scale with clearly tilted beam: left lowered pan holds a plain tied merchant moneybag and a compact iron weight, right raised pan holds an ivory industrial cog with small factory silhouette. ONE anatomically correct hand enters from upper left pressing down the moneybag pan, unmistakable downward pressure. No person or face. Dark brown metal and cool teal shadows. No currency symbols, no shop.",
+    "group": "preobrazhensky",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_preobrazhensky_two_regulators",
+    "name": "GFX_hof_ic_preobrazhensky_two_regulators",
+    "title": "两种规律的斗争",
+    "concept": "An entirely abstract statistical relief: exactly TWO broad flowing curves, one bright golden-yellow and one deep blue with subtly lighter edging, repeatedly intertwine and cross in tension, neither dominates. They sweep diagonally upward over fine horizontal statistical graph rules. Readable overlapping curves, not DNA or ropes or physical objects. No axes labels or numbers, no books, scales, scissors, buildings, hands. Bright yellow and deep blue.",
+    "group": "preobrazhensky",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_preobrazhensky_primitive_accumulation",
+    "name": "GFX_hof_ic_preobrazhensky_primitive_accumulation",
+    "title": "社会主义原始积累",
+    "concept": "Fullest concluding composition: a broad dark-gold stream of grain and material resources visibly pulled from low village huts, fields and grain heaps in LOWER LEFT, sweeping in one powerful diagonal curve across the horizon and condensing into newly forming iron-grey factories in UPPER RIGHT. Make direction from rural foreground to industrial background legible through flow and taper, not letters. Dawn-orange glow behind the factories. This is a symbolic resource flow, not a water river or railway. Rich miniature engraved relief, dark gold, iron grey, orange dawn; factories and countryside subordinate to the connecting resource stream.",
+    "group": "preobrazhensky",
+    "size": [
+      100,
+      88
+    ]
+  }
+]

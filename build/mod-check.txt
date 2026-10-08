@@ -1,0 +1,4 @@
+﻿ [OK ] stability_factor_tt                                  stability_factor_tt: "$MODIFIER_STABILITY_FACTOR$$RIGHT|+=%1$"
+ [OK ] production_speed_industrial_complex_factor_tt        production_speed_industrial_complex_factor_tt: "$modifier_production_speed_industrial_complex_factor$$RIGHT|+=%1$"
+ [OK ] consumer_goods_factor_tt                             consumer_goods_factor_tt: "$MODIFIER_CONSUMER_GOODS_FACTOR$：$RIGHT|Y=%1$"
+ [OK ] war_support_factor_tt                                war_support_factor_tt: " $MODIFIER_WAR_SUPPORT_FACTOR$ $RIGHT|+=%1$"

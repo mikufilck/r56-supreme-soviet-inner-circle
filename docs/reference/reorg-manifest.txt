@@ -1,0 +1,5 @@
+# docs/reference 重排清单
+
+| 原位置 | 新位置 |
+| --- | --- |
+| `reference/inner-circle-refs.txt` | `reference/reports/inner-circle-refs.txt` |

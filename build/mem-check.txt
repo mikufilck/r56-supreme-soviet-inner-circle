@@ -1,0 +1,27 @@
+﻿IV1 国策块起始 L1840
+		id = hof_ic_trotsky_limited_market_reforms
+		icon = GFX_hof_ic_trotsky_limited_market_reforms
+		mutually_exclusive = { focus = hof_ic_trotsky_labour_armies }
+		prerequisite = {
+			focus = hof_ic_seat_lev_trotsky
+		}
+		relative_position_id = hof_ic_seat_lev_trotsky
+		x = -2
+		y = 1
+		cost = 2
+		completion_reward = {
+			custom_effect_tooltip = hof_ic_trotsky_extra_effects_tt
+			add_to_variable = {
+				hof_ic_lev_trotsky_consumer_goods = -0.05
+				tooltip = consumer_goods_factor_tt
+			}
+			add_to_variable = {
+				hof_ic_lev_trotsky_stability = 0.05
+				tooltip = stability_factor_tt
+			}
+			add_to_variable = {
+				hof_ic_lev_trotsky_production_speed_industrial_complex = 0.10
+				tooltip = production_speed_industrial_complex_factor_tt
+			}
+		}
+	}

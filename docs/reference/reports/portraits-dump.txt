@@ -1,0 +1,140 @@
+﻿
+########## SOV_lev_trotsky ##########
+  {
+  civilian = {
+  large = "gfx/leaders/SOV/r56_portrait_SOV_Leon_Trotsky.dds"
+  }
+  army = {
+  large = "gfx/leaders/SOV/r56_portrait_SOV_Leon_Trotsky.dds"
+  small = "GFX_idea_SOV_lev_trotsky"
+  }
+  }
+
+########## SOV_karl_radek ##########
+  {
+  army = {
+  small = "GFX_idea_SOV_karl_radek"
+  }
+  }
+
+########## SOV_yevgeny_preobrazhensky ##########
+  {
+  army = {
+  small = "GFX_idea_SOV_yevgeny_preobrazhensky"
+  }
+  }
+
+########## SOV_ivar_smilga ##########
+  {
+  army = {
+  small = "GFX_idea_SOV_ivar_smilga_imprisoned"
+  }
+  }
+
+########## SOV_ivan_smirnov ##########
+  {
+  civilian = {
+  large = "GFX_portrait_SOV_ivan_smirnov"
+  }
+  army = {
+  small = "GFX_idea_SOV_ivan_smirnov_imprisoned"
+  }
+  }
+
+########## SOV_grigory_zinovyev ##########
+  {
+  civilian = {
+  large = "GFX_portrait_SOV_grigory_zinovyev"
+  }
+  army = {
+  small = "GFX_idea_SOV_grigory_zinovyev_imprisoned"
+  }
+  }
+
+########## SOV_lev_kamenev ##########
+  {
+  civilian = {
+  large = "GFX_portrait_SOV_lev_kamenev"
+  }
+  army = {
+  small = "GFX_idea_SOV_lev_kamenev_imprisoned"
+  }
+  }
+
+########## SOV_nikolay_bukharin ##########
+  {
+  civilian = {
+  large = "GFX_portrait_SOV_nikolay_bukharin"
+  }
+  army = {
+  small = "GFX_idea_SOV_nikolay_bukharin"
+  }
+  }
+
+########## SOV_aleksey_rykov ##########
+  {
+  civilian = {
+  large = "GFX_portrait_SOV_aleksey_rykov"
+  }
+  army = {
+  small = "GFX_idea_SOV_aleksey_rykov"
+  }
+  }
+
+########## SOV_mikhail_tomsky ##########
+  {
+  army = {
+  small = "GFX_idea_SOV_mikhail_tomsky"
+  }
+  }
+
+########## SOV_martemyan_ryutin ##########
+  {
+  army = {
+  small = "GFX_idea_SOV_martemyan_ryutin_imprisoned"
+  }
+  }
+
+########## SOV_grigory_sokolnikov ##########
+  {
+  army = {
+  small = "GFX_idea_SOV_grigory_sokolnikov"
+  }
+  }
+
+########## SOV_aleksandr_shlyapnikov ##########
+  {
+  army = {
+  small = "GFX_idea_SOV_aleksandr_shlyapnikov_imprisoned"
+  }
+  }
+
+########## SOV_vyacheslav_molotov ##########
+  {
+  army = {
+  small = "GFX_idea_SOV_vyacheslav_molotov"
+  }
+  }
+
+########## SOV_mikhail_tukhachevsky ##########
+  {
+  army = {
+  small = "GFX_idea_mikhail_tukhachevsky"
+  large = "gfx/leaders/SOV/Portrait_Soviet_Mikhail_Tukhachevsky.dds"
+  }
+  }
+
+########## SOV_kliment_voroshilov ##########
+  {
+  army = {
+  large = GFX_portrait_SOV_kliment_voroshilov
+  small = "GFX_idea_kliment_voroshilov"
+  }
+  }
+
+########## SOV_boris_shteifon ##########
+  {
+  army = {
+  large = "gfx/leaders/SOV/r56_portrait_SOV_Boris_A._Shteifon.dds"
+  }
+  }

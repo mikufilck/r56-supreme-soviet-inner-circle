@@ -1,0 +1,237 @@
+==== SOP 第 0 步 · 里亚京（Idx 12）====
+
+==================== 原版 ====================
+  --- common （28 行命中 / 6 个文件）---
+    common\ai_strategy_plans\SOV_alternate_strategy_plan.txt:321
+        SOV_liberate_ryutin
+    common\ai_strategy_plans\SOV_alternate_strategy_plan.txt:580
+        SOV_liberate_ryutin
+    common\ai_strategy_plans\SOV_alternate_strategy_plan.txt:846
+        #SOV_liberate_ryutin
+    common\ai_strategy_plans\SOV_alternate_strategy_plan.txt:979
+        #SOV_liberate_ryutin
+    common\ai_strategy_plans\SOV_historical_strategy_plan.txt:350
+        #SOV_liberate_ryutin
+    common\characters\SOV.txt:3368
+        SOV_martemyan_ryutin = {
+    common\characters\SOV.txt:3369
+        name = SOV_martemyan_ryutin
+    common\characters\SOV.txt:3372
+        small = "GFX_idea_SOV_martemyan_ryutin_imprisoned"
+    common\characters\SOV.txt:3380
+        has_completed_focus = SOV_liberate_ryutin
+    common\characters\SOV.txt:3384
+        has_completed_focus = SOV_liberate_ryutin
+    common\characters\SOV.txt:3396
+        idea_token = SOV_martemyan_ryutin
+    common\characters\SOV.txt:3406
+        has_completed_focus = SOV_liberate_ryutin
+    common\country_leader\00_traits.txt:8082
+        #Ryutin
+    common\decisions\SOV.txt:16855
+        #Ryutin
+    common\decisions\SOV.txt:16858
+        has_character = SOV_martemyan_ryutin
+    common\decisions\SOV.txt:16859
+        SOV_martemyan_ryutin = {
+    common\decisions\SOV.txt:16863
+        SOV_martemyan_ryutin = {
+    common\national_focus\soviet.txt:7556
+        #Ryutin
+    common\national_focus\soviet.txt:7559
+        has_character = SOV_martemyan_ryutin
+    common\national_focus\soviet.txt:7561
+        SOV_martemyan_ryutin = {
+    common\national_focus\soviet.txt:9236
+        IF = { limit = { has_character = SOV_martemyan_ryutin } retire_character = SOV_martemyan_ryutin }
+    common\national_focus\soviet.txt:11410
+        id = SOV_liberate_ryutin
+    common\national_focus\soviet.txt:11411
+        icon = GFX_SOV_liberate_ryutin_ccp_2d_sov_compatibility
+    common\national_focus\soviet.txt:11425
+        custom_effect_tooltip = SOV_liberate_ryutin_tt
+    common\national_focus\soviet.txt:11430
+        SOV_martemyan_ryutin = {
+    common\national_focus\soviet.txt:11436
+        small = "GFX_idea_SOV_martemyan_ryutin"
+    common\national_focus\soviet.txt:11446
+        SOV_martemyan_ryutin = {
+    common\national_focus\soviet.txt:11452
+        small = "GFX_idea_SOV_martemyan_ryutin"
+  --- history （4 行命中 / 1 个文件）---
+    history\countries\SOV - Soviet union.txt:54
+        recruit_character = SOV_martemyan_ryutin
+    history\countries\SOV - Soviet union.txt:301
+        #SOV_martemyan_ryutin -> Will be aligned with either left or right opposition via focus
+    history\countries\SOV - Soviet union.txt:351
+        SOV_martemyan_ryutin = {
+    history\countries\SOV - Soviet union.txt:973
+        SOV_martemyan_ryutin = { SOV_purge_character_effect = yes }
+  --- localisation （40 行命中 / 20 个文件）---
+    localisation\braz_por\nsb_characters_l_braz_por.yml:91
+        SOV_martemyan_ryutin: "Martemyan Ryutin"
+    localisation\braz_por\nsb_focus_l_braz_por.yml:1693
+        SOV_liberate_ryutin: "Libertar Ryutin"
+    localisation\braz_por\nsb_focus_l_braz_por.yml:1694
+        SOV_liberate_ryutin_desc: "O camarada Ryutin nunca hesitou em apontar as diversas falhas e defeitos de Stalin. Talvez não seja surpreendente que Stalin decidiu fazê-lo de exemplo. Agora porém, devemos mexer alguns pauzinhos para levá-lo para o exterior até que Stalin seja removido, para que ele possa nos ajudar a governar o país depois que Stalin se for."
+    localisation\braz_por\nsb_focus_l_braz_por.yml:1695
+        SOV_liberate_ryutin_tt: "§Y$SOV_martemyan_ryutin$§! será libertado da prisão e enviado ao exílio (§Gpersonagens em exílio não podem ser expurgados§!). Ele ficará disponível como conselheiro assim que a guerra civil começar e seus apoiadores entrarão para a oposição."
+    localisation\english\nsb_characters_l_english.yml:93
+        SOV_martemyan_ryutin: "Martemyan Ryutin"
+    localisation\english\nsb_focus_l_english.yml:1715
+        SOV_liberate_ryutin: "Liberate Ryutin"
+    localisation\english\nsb_focus_l_english.yml:1716
+        SOV_liberate_ryutin_desc: "Comrade Ryutin has never hesitated to call out the many flaws and shortcomings of Stalin. It is perhaps unsurprising that Stalin decided to make an example of him. Now however, we should pull some strings to move him abroad until Stalin is removed, so that he can help us run the country after Stalin is gone."
+    localisation\english\nsb_focus_l_english.yml:1717
+        SOV_liberate_ryutin_tt: "§Y$SOV_martemyan_ryutin$§! will be liberated from prison and sent into exile (§Gcharacters in exile cannot be purged§!). He will become available as an advisor once the civil war starts, and his supporters will join the opposition."
+    localisation\french\nsb_characters_l_french.yml:91
+        SOV_martemyan_ryutin: "Martémiane Rioutine"
+    localisation\french\nsb_focus_l_french.yml:1693
+        SOV_liberate_ryutin: "Faire libérer Rioutine"
+    localisation\french\nsb_focus_l_french.yml:1694
+        SOV_liberate_ryutin_desc: "Le camarade Rioutine n'a jamais hésité à critiquer les défauts et erreurs de Staline, aussi n'est-il guère surprenant qu'il ait fait un exemple de lui. Mais nous devrions maintenant tirer quelques ficelles pour le faire passer à l'étranger, afin qu'il puisse nous aider à gouverner le pays une fois que nous serons débarrassés de Staline."
+    localisation\french\nsb_focus_l_french.yml:1695
+        SOV_liberate_ryutin_tt: "§Y$SOV_martemyan_ryutin$§! va être libéré de prison et banni (§Gles personnages en exil ne peuvent être victimes des purges§!). Lorsque la guerre civile éclatera, il sera disponible en tant que conseiller, et ses partisans rejoindront l'Opposition."
+    localisation\german\nsb_characters_l_german.yml:91
+        SOV_martemyan_ryutin: "Martemyan Ryutin"
+    localisation\german\nsb_focus_l_german.yml:1693
+        SOV_liberate_ryutin: "Rjutin befreien"
+    localisation\german\nsb_focus_l_german.yml:1694
+        SOV_liberate_ryutin_desc: "Genosse Rjutin hat nie gezögert, die vielen Fehler und Schwächen Stalins beim Namen zu nennen. Da kam es wenig überraschend, dass Stalin entschieden hat, ein Exempel an ihm zu statuieren. Nun jedoch sollten wir ein paar Hebel in Bewegung setzen, um ihn ins Ausland zu bringen, bis Stalin entfernt wurde. Damit er anschließend wieder zurückkehren und uns helfen kann, das Land zu führen."
+    localisation\german\nsb_focus_l_german.yml:1695
+        SOV_liberate_ryutin_tt: "§Y$SOV_martemyan_ryutin$§! wird aus dem Gefängnis befreit und ins Exil geschickt (§GCharaktere im Exil können nicht gesäubert werden§!). Er wird als Berater verfügbar, sobald der Bürgerkrieg startet, und seine Unterstützer schließen sich der Opposition an."
+    localisation\japanese\nsb_characters_l_japanese.yml:91
+        SOV_martemyan_ryutin: "マルチェミャーン・リューチン"
+    localisation\japanese\nsb_focus_l_japanese.yml:1693
+        SOV_liberate_ryutin: "リューチンの解放"
+    localisation\japanese\nsb_focus_l_japanese.yml:1694
+        SOV_liberate_ryutin_desc: "同志リューチンはスターリンの多くの欠点や短所を躊躇なく非難してきた。スターリンが彼を見せしめにしたのは当然といえば当然かもしれない。しかし今は、彼がスターリン亡き後の国家運営に協力できるように、スターリンが排除されるまでの間海外に逃亡させるよう裏から手を回すべきだ。"
+    localisation\japanese\nsb_focus_l_japanese.yml:1695
+        SOV_liberate_ryutin_tt: "§Y$SOV_martemyan_ryutin$§!が釈放され、亡命する（§G亡命中の人物は粛清されない§!）。内戦が始まれば顧問として利用可能になり、その支持者は反対派に加わるだろう。"
+    localisation\korean\nsb_characters_l_korean.yml:91
+        SOV_martemyan_ryutin: "마르테미얀 류틴"
+    localisation\korean\nsb_focus_l_korean.yml:1693
+        SOV_liberate_ryutin: "류틴 해방"
+    localisation\korean\nsb_focus_l_korean.yml:1694
+        SOV_liberate_ryutin_desc: "류틴 동지는 스탈린의 결함과 단점을 지적하는 것을 결코 주저하지 않았습니다. 그렇기에 스탈린이 그를 본보기로 삼은 것은 그리 놀라운 일도 아닙니다. 우리는 그를 해외로 피신시켜 스탈린 축출 이후 국가 운영에 힘을 보탤 수 있도록 대비해야 합니다."
+    localisation\korean\nsb_focus_l_korean.yml:1695
+        SOV_liberate_ryutin_tt: "§Y$SOV_martemyan_ryutin$§!(은)는 석방되어 추방될 것입니다(§G망명 중인 인물은 숙청 대상이 되지 않습니다§!). 내전이 시작되면 그들을 고문으로 사용할 수 있고, 그의 지지자들은 반대파에 합류할 것입니다."
+    localisation\polish\nsb_characters_l_polish.yml:91
+        SOV_martemyan_ryutin: "Martemian Riutin"
+    localisation\polish\nsb_focus_l_polish.yml:1693
+        SOV_liberate_ryutin: "Uwolnienie Riutina"
+    localisation\polish\nsb_focus_l_polish.yml:1694
+        SOV_liberate_ryutin_desc: "Towarzysz Riutin nigdy nie bał się podkreślać niedostatków i wad Stalina. Nic więc dziwnego, że Stalin postanowił przykładnie go ukarać. Teraz jednak powinniśmy wykorzystać nasze koneksje, by wywieźć go za granicę, aż nie usuniemy Stalina. Wtedy pomoże nam rządzić krajem."
+    localisation\polish\nsb_focus_l_polish.yml:1695
+        SOV_liberate_ryutin_tt: "§Y$SOV_martemyan_ryutin$§! zostanie uwolniony z więzienia i ucieknie na uchodźstwo (§Gpostaci na uchodźstwie nie można poddać czystce§!). Stanie się dostępny jako doradca po wybuchu wojny domowej, a jego zwolennicy dołączą do opozycji."
+    localisation\russian\nsb_characters_l_russian.yml:91
+        SOV_martemyan_ryutin: "Мартемьян Рютин"
+    localisation\russian\nsb_focus_l_russian.yml:1693
+        SOV_liberate_ryutin: "Освободить Рютина"
+    localisation\russian\nsb_focus_l_russian.yml:1694
+        SOV_liberate_ryutin_desc: "Товарищ Рютин всегда без колебаний указывал на ошибки и недоработки Сталина. Пожалуй и неудивительно, что Сталин решил наказать его в назидание другим. Нам надо воспользоваться своим влиянием и вывезти Рютина за границу, пока Сталин не будет свергнут, чтобы потом Рютин помог нам управлять страной."
+    localisation\russian\nsb_focus_l_russian.yml:1695
+        SOV_liberate_ryutin_tt: "§Y$SOV_martemyan_ryutin$§! выйдет из тюрьмы и отправится в изгнание (§Gперсонажи в изгнании не могут быть подвергнуты чистке§!). Он будет доступен в роли советника с началом гражданской войны, а его сторонники вступят в оппозицию."
+    localisation\simp_chinese\nsb_characters_l_simp_chinese.yml:91
+        SOV_martemyan_ryutin: "马特米扬·柳廷"
+    localisation\simp_chinese\nsb_focus_l_simp_chinese.yml:1693
+        SOV_liberate_ryutin: "释放柳廷"
+    localisation\simp_chinese\nsb_focus_l_simp_chinese.yml:1694
+        SOV_liberate_ryutin_desc: "柳廷同志一针见血毫不犹豫地指出了斯大林的许多错误和缺点。毫无疑问斯大林决定拿他来杀一儆百。不过现在，我们应当找关系将他送到国外直到斯大林被干掉再回来，这样他就可以在斯大林死后帮助我们管理国家。"
+    localisation\simp_chinese\nsb_focus_l_simp_chinese.yml:1695
+        SOV_liberate_ryutin_tt: "关押中的§Y$SOV_martemyan_ryutin$§!将被流放（§G流放中的角色不会被清洗§!）。当内战开始时，他将作为顾问可用，并且其支持者将加入反对派。"
+    localisation\spanish\nsb_characters_l_spanish.yml:91
+        SOV_martemyan_ryutin: "Martemyan Ryutin"
+    localisation\spanish\nsb_focus_l_spanish.yml:1693
+        SOV_liberate_ryutin: "Liberar a Ryutin"
+    localisation\spanish\nsb_focus_l_spanish.yml:1694
+        SOV_liberate_ryutin_desc: "El camarada Ryutin nunca ha dudado en destacar los muchos defectos y limitaciones de Stalin. No es sorprendente que ese último decidiese utilizarlo para dar ejemplo. Sin embargo, podemos tirar de algunos hilos para llevarlo al extranjero hasta que nos deshagamos de Stalin. Así podrá ayudarnos a dirigir el país cuando este ya no esté."
+    localisation\spanish\nsb_focus_l_spanish.yml:1695
+        SOV_liberate_ryutin_tt: "§Y$SOV_martemyan_ryutin$§! será liberado y enviado al exilio (§Glos personajes en el exilio no pueden sufrir purgas§!). Estará disponible como consejero cuando estalle la guerra civil y sus partidarios se unirán a la oposición."
+  --- interface （6 行命中 / 3 个文件）---
+    interface\goals.gfx:7072
+        name = "GFX_SOV_liberate_ryutin_ccp_2d_sov_compatibility"
+    interface\goals_shine.gfx:50389
+        name = "GFX_SOV_liberate_ryutin_ccp_2d_sov_compatibility_shine"
+    interface\ideas.gfx:6131
+        name = "GFX_idea_SOV_martemyan_ryutin"
+    interface\ideas.gfx:6132
+        texturefile = "gfx/interface/ideas/idea_SOV_martemyan_ryutin.dds"
+    interface\ideas.gfx:6431
+        name = "GFX_idea_SOV_martemyan_ryutin_imprisoned"
+    interface\ideas.gfx:6432
+        texturefile = "gfx/interface/ideas/idea_SOV_martemyan_ryutin_imprisoned.dds"
+  --- gfx 下文件名命中（2 个）---
+    gfx\interface\ideas\idea_SOV_martemyan_ryutin.dds
+    gfx\interface\ideas\idea_SOV_martemyan_ryutin_imprisoned.dds
+
+==================== 原版-dlc ====================
+  --- gfx 下文件名命中（0 个）---
+
+==================== R56 ====================
+  --- common （28 行命中 / 7 个文件）---
+    common\ai_strategy_plans\CHL_historical_strategy_plan.txt:313
+        #SOV_liberate_ryutin
+    common\ai_strategy_plans\SOV_alternate_strategy_plan.txt:166
+        SOV_liberate_ryutin
+    common\ai_strategy_plans\SOV_alternate_strategy_plan.txt:412
+        SOV_liberate_ryutin
+    common\ai_strategy_plans\SOV_alternate_strategy_plan.txt:665
+        #SOV_liberate_ryutin
+    common\ai_strategy_plans\SOV_alternate_strategy_plan.txt:798
+        #SOV_liberate_ryutin
+    common\ai_strategy_plans\SOV_historical_strategy_plan.txt:337
+        #SOV_liberate_ryutin
+    common\characters\SOV.txt:5253
+        SOV_martemyan_ryutin = {
+    common\characters\SOV.txt:5254
+        name = SOV_martemyan_ryutin
+    common\characters\SOV.txt:5257
+        small = "GFX_idea_SOV_martemyan_ryutin_imprisoned"
+    common\characters\SOV.txt:5265
+        has_completed_focus = SOV_liberate_ryutin
+    common\characters\SOV.txt:5269
+        has_completed_focus = SOV_liberate_ryutin
+    common\characters\SOV.txt:5281
+        idea_token = SOV_martemyan_ryutin
+    common\characters\SOV.txt:5292
+        has_completed_focus = SOV_liberate_ryutin
+    common\country_leader\00_traits.txt:8088
+        #Ryutin
+    common\decisions\SOV.txt:17526
+        #Ryutin
+    common\decisions\SOV.txt:17529
+        has_character = SOV_martemyan_ryutin
+    common\decisions\SOV.txt:17530
+        SOV_martemyan_ryutin = {
+    common\decisions\SOV.txt:17534
+        SOV_martemyan_ryutin = {
+    common\national_focus\soviet.txt:8978
+        #Ryutin
+    common\national_focus\soviet.txt:8981
+        has_character = SOV_martemyan_ryutin
+    common\national_focus\soviet.txt:8983
+        SOV_martemyan_ryutin = {
+    common\national_focus\soviet.txt:11145
+        IF = { limit = { has_character = SOV_martemyan_ryutin } retire_character = SOV_martemyan_ryutin }
+    common\national_focus\soviet.txt:13591
+        id = SOV_liberate_ryutin
+    common\national_focus\soviet.txt:13606
+        custom_effect_tooltip = SOV_liberate_ryutin_tt
+    common\national_focus\soviet.txt:13611
+        SOV_martemyan_ryutin = {
+    common\national_focus\soviet.txt:13617
+        small = "GFX_idea_SOV_martemyan_ryutin"
+    common\national_focus\soviet.txt:13627
+        SOV_martemyan_ryutin = {
+    common\national_focus\soviet.txt:13633
+        small = "GFX_idea_SOV_martemyan_ryutin"
+  --- history （3 行命中 / 1 个文件）---
+    history\countries\SOV - Soviet union.txt:116
+        recruit_character = SOV_martemyan_ryutin
+    history\countries\SOV - Soviet union.txt:514
+        #SOV_martemyan_ryutin -> Will be aligned with either left or right opposition via focus
+    history\countries\SOV - Soviet union.txt:575
+        SOV_martemyan_ryutin = {
+  --- gfx 下文件名命中（0 个）---
+

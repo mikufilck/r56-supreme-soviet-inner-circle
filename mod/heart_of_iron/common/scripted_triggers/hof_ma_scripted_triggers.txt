@@ -1,0 +1,21 @@
+# =============================================================================
+# 需求 C：经互会通用线的触发器（由 build/gen-hof-ma-common-lines.ps1 生成，勿手改）
+# -----------------------------------------------------------------------------
+# 本文件【没有】包装层，触发器直接顶层写 名称 = { }（同 common/scripted_triggers 的官方写法）
+# =============================================================================
+
+# 谁是「经互会」的一员（= 已完成头节点）—— 逐国求值。
+# ⚠️ 刻意写得【宽松】：如果要求「至少还有一个同阵营成员也完成了头节点」，
+#    1936 年开局的苏联（没有任何共产主义盟友）就一条都点不动 —— 那是功能性的坏掉。
+hof_ma_joint_trigger = {
+	hof_ma_eligible = yes
+	custom_trigger_tooltip = {
+		tooltip = hof_ma_joint_trigger_tt
+		has_completed_focus = hof_ma_founding
+	}
+}
+
+hof_ma_eligible = {
+	has_government = communism
+	OR = { tag = SOV is_in_faction_with = SOV is_subject_of = SOV }
+}

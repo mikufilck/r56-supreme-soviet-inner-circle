@@ -1,0 +1,511 @@
+﻿Events - Hearts of Iron 4 Wiki
+90 captures
+29 Mar 2018 - 19 Aug 2026
+Apr
+MAY
+Jun
+21
+2025
+2026
+2027
+success
+fail
+About this capture
+COLLECTED BY
+Collection:
+Save Page Now
+TIMESTAMPS
+The Wayback Machine - https://web.archive.org/web/20260521102237/https://hoi4.paradoxwikis.com/Events
+Forum list
+Trending
+Latest
+New posts
+Paradox
+Store
+Mods
+Forum
+Launcher
+PDXCON
+2019
+Paradox Wikis
+Hearts of Iron 4 Wiki
+Active Wikis
+Age of Wonders 4
+Empire of Sin
+Cities: Skylines 2
+Crusader Kings 3
+Europa Universalis 5
+Hearts of Iron 4
+Hunter: The Reckoning
+Imperator: Rome
+Millennia
+Prison Architect
+Stellaris
+Surviving Mars
+Surviving the Aftermath
+Werewolf: the Apocalypse
+Vampire: The Masquerade
+Victoria 3
+Legacy Wikis
+AoW: Planetfall
+Cities: Skylines
+Crusader Kings 2
+Arsenal of Democracy
+Europa Universalis 2
+Europa Universalis 3
+Europa Universalis 4
+Europa Universalis: Rome
+Hearts of Iron 2
+Hearts of Iron 3
+Tyranny
+Victoria 1
+Victoria 2
+Search
+Personal tools
+Log in
+Personal tools
+English
+Not logged in
+Talk
+Contributions
+Log in
+Navigation menu
+Namespaces
+Page
+Discussion
+English
+Views
+Read
+Edit
+Edit source
+View history
+More
+Navigation
+Hearts of Iron 4 Wiki
+Recent changes
+Random page
+Paradox Wikis
+- Main portal
+- Wikis discord
+- Contact us
+- Style guidelines
+HoI4 links
+- Forums
+- Game discord
+- Mods
+- Store
+- YouTube
+Tools
+What links here
+Related changes
+Special pages
+Printable version
+Permanent link
+Page information
+braze
+Events
+From Hearts of Iron 4 Wiki
+Jump to navigation
+Jump to search
+This is a community maintained wiki. If you spot a mistake, please help with fixing it.
+Please help improve this article or section by
+expanding it
+with: Add missing event pages [full or near-full].
+Events
+occur throughout the course of play. There are a whole range of events in the game, which can result in positive, negative and mixed outcomes for a player's country. They take the form of a pop-up notification on the player's screen, which may present a player with a choice, or may simply inform the player of the consequences and require they acknowledge the event has occurred.
+Contents
+1
+Event pages
+1.1
+Generic
+1.2
+Nation specific
+1.3
+Other
+2
+References
+Event pages
+[
+edit
+|
+edit source
+]
+The following is a list of all events files as found in the
+/Hearts of Iron IV/events/
+folder.
+Generic
+[
+edit
+|
+edit source
+]
+This is a community maintained wiki. If you spot a mistake, please help with fixing it.
+Ace pilots events
+African union events
+Agent events
+Baltic events
+Baltic events
+Border conflict events
+Capitulation events
+Chinese political power struggle events
+Decision events
+Election events
+Espionage operation events
+Exiled government events
+Generic events
+Generic events MtG
+Generic events
+Generic events
+Generic events
+Generic events
+Guay events
+Italo-Ethiopian war events
+Low Countries events
+NATO events
+Naval treaty events
+News events 1
+(id 1-100)
+News events 2
+(id 101-200)
+News events 3
+(id 201-300)
+News events 4
+(id 301-400)
+News events DoD
+News events WtT
+News events MtG
+News events
+News events
+News events
+News events
+News events
+News events
+News events
+Nordic events
+Nuke events
+Occupation events
+Political events
+Special Project Events
+Stability events
+War justification events
+Warlord events
+Nation specific
+[
+edit
+|
+edit source
+]
+This is a community maintained wiki. If you spot a mistake, please help with fixing it.
+Afghan events
+American events
+American events MtG
+Argentinean events
+Austrian events
+Australian events
+Belgian Congo events
+Belgian events
+Brazilian events
+British events
+British events WtT
+British events MtG
+British Raj events
+British Raj events
+Bulgarian events
+Bulgarian events
+Canadian events
+Chilean events
+Chinese events
+Chinese events WtT
+Chinese events
+Communist Chinese events
+Communist Chinese events
+Czechoslovakian events
+Czechoslovakian events
+Danish events
+Danish events
+Estonian events
+Ethiopian events
+Ethiopian events
+Finnish events
+Finnish events
+French events
+French events
+German events
+German events WtT
+German events MtG
+German events
+German SS recruitment events
+Greek events
+Greek events
+Hungarian events
+Hungarian events DoD 1
+(id 1-100)
+Hungarian events DoD 2
+(id 101-200)
+Hungarian events
+Italian events
+Italian events
+Icelandic events
+Iranian events
+Iraqi events
+Japanese events
+Japanese events WtT
+Japanese events
+Latvian events
+Lithuanian events
+Manchukou events
+Mexican events
+Netherlands events
+Norwegian events
+New Zealand events
+Philippine events
+Polish events
+Polish events
+Portuguese events
+Romanian events
+Romanian events DoD
+South African events
+Soviet events
+Soviet events WtT
+Soviet events
+Soviet events 2
+Spanish events
+Spanish events
+Swedish events
+Swiss events
+Turkish events
+Yugoslavian events
+Yugoslavian events DoD
+Other
+[
+edit
+|
+edit source
+]
+The following nations don't have event files dedicated to them, but have events affecting them appearing in the two lists above.
+Aussa
+Albania
+Bhutan
+Bolivia
+British Burma
+British Malaya
+Chinese Warlord States
+Dutch East Indies
+Ecuador
+Georgia
+Kuwait
+Lebanon
+Luxembourg
+Mengjiang
+Mongolia
+Nepal
+Palestine
+Paraguay
+Peru
+Siam
+Syria
+Tannu Tuva
+Tibet
+Transjordan
+Uruguay
+to be added
+References
+[
+edit
+|
+edit source
+]
+Mechanics
+Politics
+Ideology
+鈥?
+Faction
+鈥?
+National focus
+鈥?
+Ideas
+鈥?
+Government
+鈥?
+Puppet
+鈥?
+Governments in exile
+鈥?
+Diplomacy
+鈥?
+World tension
+鈥?
+Civil war
+鈥?
+Occupation
+鈥?
+Balance of power
+Production
+Trade
+鈥?
+Production
+鈥?
+Construction
+鈥?
+Equipment
+鈥?
+Fuel
+鈥?
+Military industrial organization
+鈥?
+International market
+Research and technology
+Research
+鈥?
+Infantry technology
+鈥?
+Support companies technology
+鈥?
+Armor technology
+(also
+without No Step Back
+) 鈥?
+Artillery technology
+鈥?
+Land doctrine
+鈥?
+Special forces doctrine
+鈥?
+Naval technology
+(also
+without Man the Guns
+) 鈥?
+Naval support technology
+鈥?
+Naval doctrine
+鈥?
+Air technology
+(also
+without By Blood Alone
+) 鈥?
+Air doctrine
+鈥?
+Engineering technology
+鈥?
+Industry technology
+鈥?
+Special project
+鈥?
+Scientist
+Military and warfare
+Warfare
+鈥?
+Peace conference
+鈥?
+Land units
+鈥?
+Land warfare
+鈥?
+Division designer
+鈥?
+Tank designer
+鈥?
+Army planner
+鈥?
+Command group
+鈥?
+Commander
+鈥?
+Battle plan
+鈥?
+Combat tactics
+鈥?
+Ship
+鈥?
+Ship designer
+(
+London Naval Treaty
+) 鈥?
+Naval warfare
+鈥?
+Aircraft designer
+鈥?
+Air warfare
+鈥?
+Experience
+鈥?
+Officer corps
+鈥?
+Attrition and accidents
+鈥?
+Logistics
+鈥?
+Manpower
+鈥?
+Nuclear bomb
+鈥?
+Raid
+Espionage
+Intel
+鈥?
+Intelligence agency
+鈥?
+Operatives
+鈥?
+Missions
+鈥?
+Operations
+Map
+Map
+鈥?
+Province
+鈥?
+Terrain
+鈥?
+Weather
+鈥?
+State
+Events and Decisions
+Events
+鈥?
+Decisions
+Retrieved from "
+"
+Categories
+:
+1.17
+Expand
+Events
+Hidden category:
+Articles with potentially outdated sections
+This page was last edited on 28 April 2026, at 11:29.
+Content is available under
+Attribution-ShareAlike 3.0
+unless otherwise noted.
+About Hearts of Iron 4 Wiki
+Mobile view
+Games
+Discover
+Our Brands
+Browse
+Play
+on Paradox technology
+Community
+Paradox Forums
+Paradox
+Wikis
+Support
+About
+News
+About us
+Careers
+Join our playtests
+Media contact
+Social Media
+Legal
+Information
+EU Online Dispute Resolution
+Report Illegal Content
+Terms & Policies
+Legal Information
+EU Online Dispute Resolution
+Report Illegal Content
+Frequently Asked
+Questions
+Paradox
+Interactive corporate website

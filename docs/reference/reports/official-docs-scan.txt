@@ -1,0 +1,90 @@
+﻿################ F:\Hearts of Iron IV\documentation
+  console_commands_documentation.html                59,911 B
+  console_commands_documentation.md                  40,406 B
+  dynamic_variables_documentation.html               69,281 B
+  dynamic_variables_documentation.md                 48,410 B
+  effects_documentation.html                        281,018 B
+  effects_documentation.md                          222,533 B
+  loc_formatter_documentation.html                    4,924 B
+  loc_formatter_documentation.md                      3,406 B
+  loc_objects_documentation.html                     18,026 B
+  loc_objects_documentation.md                       12,272 B
+  modifiers_documentation.html                      325,316 B
+  modifiers_documentation.md                        242,947 B
+  script_collection_input.html                        2,741 B
+  script_collection_input.md                          1,676 B
+  script_collection_operator.html                     2,771 B
+  script_collection_operator.md                       1,837 B
+  script_concept_documentation.html                  14,767 B
+  script_concept_documentation.md                    12,511 B
+  script_math_functions.html                          8,965 B
+  script_math_functions.md                            6,059 B
+  triggers_documentation.html                       239,439 B
+  triggers_documentation.md                         180,523 B
+
+  [无] D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125\documentation
+
+################ 含 'dynamic' 的行（只看 .md）
+  --- console_commands_documentation.md  (1 处)
+      L707: Will print the data type for all dynamic reference objects. Can only be used if using RTTI.
+  --- dynamic_variables_documentation.md  (15 处)
+      L1: # Dynamic Variables
+      L3: Dynamic variables are read only variables that can be used in effects &
+      L6: When they are used, the game will compute and return the value of the dynamic
+      L11: * [global](#dynamic-variables-for-scope-global)
+      L12: * [country](#dynamic-variables-for-scope-country)
+      L13: * [state](#dynamic-variables-for-scope-state)
+      L14: * [unit_leader](#dynamic-variables-for-scope-unit_leader)
+      L15: * [military_industrial_organization](#dynamic-variables-for-scope-military_industrial_organization)
+      L16: * [special_project](#dynamic-variables-for-scope-special_project)
+      L18: ## Dynamic variables for scope country
+      L972: ## Dynamic variables for scope global
+      L1058: ## Dynamic variables for scope military_industrial_organization
+      L1085: ## Dynamic variables for scope special_project
+      L1096: ## Dynamic variables for scope state
+      L1176: ## Dynamic variables for scope unit_leader
+  --- effects_documentation.md  (39 处)
+      L25: * [add_dynamic_modifier](#add_dynamic_modifier)
+      L48: * [force_update_dynamic_modifier](#force_update_dynamic_modifier)
+      L64: * [remove_dynamic_modifier](#remove_dynamic_modifier)
+      L116: * [add_dynamic_modifier](#add_dynamic_modifier)
+      L227: * [force_update_dynamic_modifier](#force_update_dynamic_modifier)
+      L300: * [remove_dynamic_modifier](#remove_dynamic_modifier)
+      L321: * [reserve_dynamic_country](#reserve_dynamic_country)
+      L458: * [add_dynamic_modifier](#add_dynamic_modifier)
+      L462: * [force_update_dynamic_modifier](#force_update_dynamic_modifier)
+      L464: * [remove_dynamic_modifier](#remove_dynamic_modifier)
+      L475: * [add_dynamic_modifier](#add_dynamic_modifier)
+      L491: * [force_update_dynamic_modifier](#force_update_dynamic_modifier)
+      L501: * [remove_dynamic_modifier](#remove_dynamic_modifier)
+      L554: * [create_dynamic_country](#create_dynamic_country)
+      L1153: ## add_dynamic_modifier
+      L1159: adds a dynamic modifier to the containing scope (country / state / unit-leader / special-project).
+      L1161: Optionaly you can give a scope that will restrict the dynamic modifier to it.
+      L1164: add_dynamic_modifier = {
+      L1165: modifier = dynamic_modifier_name
+      L1168: # if specified the dynamic variable will target that scope
+      L2216: Can only use modifiers from the resistance_modifiers.txt/compliance_modifiers.txt that are marked as is_dynamic = yes
+      L2221: modifier = dynamic_modifier_name
+      L3033: ## create_dynamic_country
+      L3039: creates a dynamic country and runs child effects on it. example :
+      L3040: create_dynamic_country = {
+  --- triggers_documentation.md  (11 处)
+      L39: * [has_dynamic_modifier](#has_dynamic_modifier)
+      L293: * [has_dynamic_modifier](#has_dynamic_modifier)
+      L374: * [is_dynamic_country](#is_dynamic_country)
+      L550: * [has_dynamic_modifier](#has_dynamic_modifier)
+      L3775: ## has_dynamic_modifier
+      L3780: Checks if scope has a dynamic modifier.
+      L3784: has_dynamic_modifier = dynamic_modifier_name
+      L3789: has_dynamic_modifier = {
+      L3790: modifier = dynamic_modifier_name
+      L5462: ## is_dynamic_country
+      L5468: returns true if the country is a dynamic country (tag is D01-D50)
+
+################ 含 'focus' 的 .md 文件与其行数
+  console_commands_documentation.md              13 处
+  effects_documentation.md                       38 处
+  modifiers_documentation.md                     19 处
+  script_concept_documentation.md                1 处
+  triggers_documentation.md                      17 处

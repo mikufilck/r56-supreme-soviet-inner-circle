@@ -1,0 +1,13 @@
+﻿=== 外网站点矩阵（走代理 20s）===
+  https://en.wikipedia.org/wiki/Leon_Trotsky                     : curl: (28) Connection timed out after 20013 milliseconds | 000
+  https://zh.wikipedia.org/wiki/%E5%88%97%E5%A4%AB%C2%B7%E6%89%98%E6%B4%9B%E8%8C%A8%E5%9F%BA : curl: (35) schannel: failed to receive handshake, SSL/TLS connection failed | 000
+  https://www.google.com                                         : curl: (28) Connection timed out after 20011 milliseconds | 000
+  https://github.com                                             : curl: (35) schannel: failed to receive handshake, SSL/TLS connection failed | 000
+  https://www.marxists.org                                       : curl: (28) Connection timed out after 20004 milliseconds | 000
+  https://www.marxists.org/chinese/                              : curl: (35) schannel: failed to receive handshake, SSL/TLS connection failed | 000
+  https://marxists.org                                           : curl: (35) schannel: failed to receive handshake, SSL/TLS connection failed | 000
+
+=== DNS 解析（看是否被污染）===
+  www.marxists.org       -> 198.18.0.16
+  en.wikipedia.org       -> 198.18.0.20
+  www.google.com         -> 198.18.0.21

@@ -1,0 +1,172 @@
+﻿Unit - Hearts of Iron 4 Wiki
+11 captures
+13 Jan 2018 - 21 Jun 2025
+May
+JUN
+Jul
+21
+2020
+2021
+2022
+success
+fail
+About this capture
+COLLECTED BY
+Collection:
+Common Crawl
+Web crawl data from Common Crawl.
+TIMESTAMPS
+The Wayback Machine - https://web.archive.org/web/20210621164043/https://hoi4.paradoxwikis.com/Units
+Forum list
+Trending
+Latest
+New posts
+Paradox
+Store
+Mods
+Forum
+Launcher
+PDXCON 2019
+Paradox Wikis
+Hearts of Iron 4 Wiki
+Active Wikis
+Empire of Sin
+AoW: Planetfall
+Cities: Skylines
+Crusader Kings 3
+Europa Universalis 4
+Hearts of Iron 4
+Imperator: Rome
+Prison Architect
+Stellaris
+Surviving Mars
+Surviving the Aftermath
+Legacy Wikis
+Crusader Kings 2
+Arsenal of Democracy
+Europa Universalis 2
+Europa Universalis 3
+Europa Universalis: Rome
+Hearts of Iron 2
+Hearts of Iron 3
+Steel Division
+Tyranny
+Victoria 1
+Victoria 2
+Search
+Personal tools
+Log in
+Talk
+Contributions
+Log in
+Navigation menu
+Namespaces
+Page
+Discussion
+Variants
+Views
+Read
+Edit
+View history
+More
+Navigation
+HoI4 Wiki Main Page
+Style guidelines
+Recent changes
+Random page
+Paradox links
+- Wikis
+- Forums
+- Mods
+- Twitch
+Tools
+What links here
+Related changes
+Special pages
+Printable version
+Permanent link
+Page information
+In other languages
+Deutsch
+Espa帽ol
+Fran莽ais
+Polski
+Portugu锚s
+袪褍褋褋泻懈泄
+Unit
+From Hearts of Iron 4 Wiki
+(Redirected from
+Units
+)
+Jump to navigation
+Jump to search
+This is a community maintained wiki. If you spot a mistake then you are welcome to fix it.
+In Hearts of Iron IV,
+units
+are the basic instrument through which the player wages war. As such, they are extremely important.
+Land
+[
+edit
+]
+Main article:
+Land units
+Land units in Hearts of Iron IV are represented on the map by
+divisions
+. Divisions subdivide into regiments and then into battalions, and can be customized via the Division Designer. There is a maximum of five battalions in a regiment and five regiments in a division. Such regiments are in some countries referred to as "brigades". Also, up to five support companies can be attached to a division. Land units can be split into four groups: leg infantry, mobile infantry (e.g. cavalry and motorised infantry), tanks and support units (artillery, anti-tank guns, etc).
+Naval
+[
+edit
+]
+Main article:
+Naval units
+Naval units are represented by single ships, and - unlike land and air units - are produced with shipyards. Naval units are assigned to strategic areas but operate in individual sea zones. Ships are divided into destroyers, cruisers (both heavy and light), battlecruisers, battleships (both normal and super-heavy), carriers, submarines, transports, and convoys. The latter two have no direct on-map presence. As in Hearts of Iron 3, more obscure ship classes (e.g. pre-dreadnought battleships or armoured cruisers) have been abstracted into the previously listed types.
+Air
+[
+edit
+]
+Main article:
+Air units
+Unlike in previous Hearts of Iron games, the atomic unit for air units is not air wings or squadrons. Instead, each air unit represents an individual aircraft. Aircraft are deployed into strategic regions, and to obtain air superiority opposing air units in a strategic region must be overwhelmed. Aircraft divide into light, medium, and heavy airframes filling multiple roles, and can be customized with experience.
+Retrieved from "
+"
+Categories
+:
+Timeless
+Military
+This page was last edited on 29 March 2019, at 06:51.
+Content is available under
+Attribution-ShareAlike 3.0
+unless otherwise noted.
+About Hearts of Iron 4 Wiki
+Hearts of Iron 4 Wiki
+Paradox Wikis
+Privacy Policy
+Mobile view
+Games
+Browse
+New Releases
+Coming Soon
+On Sale
+Play on Paradox technology
+Community
+Paradox Forums
+Paradox Wikis
+Support
+Merch
+About
+News
+About us
+Careers
+Join our playtests
+Media contact
+Social Media
+Terms & Policies
+Legal Information
+EU Online Dispute Resolution
+Frequently Asked Questions
+Paradox Interactive corporate website
+Terms & Policies
+Legal Information
+EU Online Dispute Resolution
+Frequently Asked Questions
+Paradox Interactive corporate website

@@ -1,0 +1,75 @@
+共 69 张
+
+文件                                                   尺寸         四角alpha                    透明%      不透明%              四角RGB
+--------------------------------------------------------------------------------------------------------------------------------
+GFX_hof_ic_bukharin_abolish_the_tribute.png          100x88     [0, 0, 0, 0]              40.0      55.5          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_bukharin_alliance_is_the_axis.png         100x88     [0, 0, 0, 0]              39.7      55.7          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_bukharin_cooperatives_into_the_system.png 100x88     [0, 0, 0, 0]              39.8      55.7          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_bukharin_economics_of_transition.png      100x88     [0, 0, 0, 0]              39.5      56.0          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_bukharin_enrich_yourselves.png            100x88     [0, 0, 0, 0]              39.8      55.8          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_bukharin_left_communism.png               100x88     [0, 0, 0, 0]              39.7      56.1          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_bukharin_nep_is_not_a_retreat.png         100x88     [0, 0, 0, 0]              38.9      56.4          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_bukharin_proportional_development.png     100x88     [0, 0, 0, 0]              38.7      56.7          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_bukharin_socialism_in_one_country.png     100x88     [0, 0, 0, 0]              39.2      56.4          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_rykov_food_supply_commissar.png           100x88     [0, 0, 0, 0]              37.8      57.8          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_rykov_labour_defence_chair.png            100x88     [0, 0, 0, 0]              37.1      58.5          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_rykov_labour_defence_council.png          100x88     [0, 0, 0, 0]              37.7      58.0          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_rykov_sponsor_aviation.png                100x88     [0, 0, 0, 0]              38.4      57.2          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_rykov_supreme_economic_council.png        100x88     [0, 0, 0, 0]              38.3      57.4          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_seat_aleksandr_shlyapnikov.png            100x88     [0, 0, 0, 0]              31.8      64.2          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_seat_aleksey_rykov.png                    100x88     [0, 0, 0, 0]              35.8      60.1          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_seat_georgy_malenkow.png                  100x88     [0, 0, 0, 0]              31.5      64.3          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_seat_grigory_sokolnikov.png               100x88     [0, 0, 0, 0]              34.7      60.8          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_seat_grigory_zinovyev.png                 100x88     [0, 0, 0, 0]              36.2      59.6          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_seat_ivan_smirnov.png                     100x88     [0, 0, 0, 0]              42.7      53.6          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_seat_ivar_smilga.png                      100x88     [0, 0, 0, 0]              31.8      64.3          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_seat_karl_radek.png                       100x88     [0, 0, 0, 0]              33.7      62.3          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_seat_kliment_voroshilov.png               100x88     [0, 0, 0, 0]              31.0      64.9          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_seat_leonid_serebryakov.png               100x88     [0, 0, 0, 0]              40.5      54.7          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_seat_lev_kamenev.png                      100x88     [0, 0, 0, 0]              40.5      55.4          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_seat_lev_trotsky.png                      100x88     [0, 0, 0, 0]              35.9      60.1          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_seat_maksim_litvinov.png                  100x88     [0, 0, 0, 0]              28.9      66.8          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_seat_martemyan_ryutin.png                 100x88     [0, 0, 0, 0]              31.4      64.4          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_seat_mikhail_kalinin.png                  100x88     [0, 0, 0, 0]              28.7      67.3          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_seat_mikhail_tomsky.png                   100x88     [0, 0, 0, 0]              30.1      65.9          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_seat_mikhail_tukhachevsky.png             100x88     [0, 0, 0, 0]              32.2      63.8          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_seat_nikita_khrushchyov.png               100x88     [0, 0, 0, 0]              31.8      63.8          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_seat_nikolay_bukharin.png                 100x88     [0, 0, 0, 0]              39.9      55.9          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_seat_nikolay_voznesensky.png              100x88     [0, 0, 0, 0]              26.0      69.8          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_seat_pyotr_smirnov.png                    100x88     [0, 0, 0, 0]              33.7      62.3          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_seat_yevgeny_preobrazhensky.png           100x88     [0, 0, 0, 0]              31.9      63.9          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_trotsky_accelerated_industrialization.png 100x88     [0, 0, 0, 0]              40.4      55.2          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_trotsky_against_partisan_warfare.png      100x88     [0, 0, 0, 0]              35.7      59.4          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_trotsky_against_the_bureaucracy.png       100x88     [0, 0, 0, 0]              35.8      59.1          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_trotsky_build_the_red_army.png            100x88     [0, 0, 0, 0]              35.9      59.7          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_trotsky_labour_armies.png                 100x88     [0, 0, 0, 0]              38.5      57.5          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_trotsky_limited_market_reforms.png        100x88     [0, 0, 0, 0]              40.0      55.3          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_trotsky_military_specialists.png          100x88     [0, 0, 0, 0]              38.1      56.5          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_trotsky_permanent_revolution.png          100x88     [0, 0, 0, 0]              37.7      57.9          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_trotsky_socialism_in_one_country.png      100x88     [0, 0, 0, 0]              33.3      57.8          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_trotsky_state_planning.png                100x88     [0, 0, 0, 0]              38.1      56.5          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_trotsky_the_builder_of_the_state.png      100x88     [0, 0, 0, 0]              40.1      55.3          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_trotsky_the_chinese_question.png          100x88     [0, 0, 0, 0]              35.5      58.5          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_trotsky_the_comintern_manifesto.png       100x88     [0, 0, 0, 0]              32.5      62.3          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_trotsky_the_new_course.png                100x88     [0, 0, 0, 0]              34.9      58.5          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_trotsky_the_permanent_revolutionary.png   100x88     [0, 0, 0, 0]              35.7      59.5          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_trotsky_uneven_and_combined_development.png 100x88     [0, 0, 0, 0]              36.4      59.0          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_trotsky_united_front.png                  100x88     [0, 0, 0, 0]              34.0      61.3          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_kamenev_against_the_lessons.png           100x88     [0, 0, 0, 0]              38.2      57.5          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_kamenev_executor_of_the_will.png          100x88     [0, 0, 0, 0]              37.8      57.9          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_kamenev_lenin_institute.png               100x88     [0, 0, 0, 0]              38.5      57.1          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_kamenev_leninism.png                      100x88     [0, 0, 0, 0]              37.7      57.8          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_kamenev_lenins_charge.png                 100x88     [0, 0, 0, 0]              37.7      57.8          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_zinovyev_bolshevization.png               100x88     [0, 0, 0, 0]              38.0      57.6          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_zinovyev_congress_of_the_east.png         100x88     [0, 0, 0, 0]              38.3      57.4          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_zinovyev_found_the_comintern.png          100x88     [0, 0, 0, 0]              38.0      57.7          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_zinovyev_mass_international.png           100x88     [0, 0, 0, 0]              38.3      57.2          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_zinovyev_monolithic_international.png     100x88     [0, 0, 0, 0]              37.7      57.7          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_zinovyev_party_in_revolution.png          100x88     [0, 0, 0, 0]              37.9      57.7          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_zinovyev_social_fascism.png               100x88     [0, 0, 0, 0]              37.8      57.8          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_zinovyev_speed_and_route.png              100x88     [0, 0, 0, 0]              38.0      57.5          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_zinovyev_trade_unions.png                 100x88     [0, 0, 0, 0]              38.3      57.3          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_zinovyev_twenty_one_conditions.png        100x88     [0, 0, 0, 0]              38.5      57.1          (0, 0, 0)  <-- 有透明
+GFX_hof_ic_zinovyev_workers_united_front.png         100x88     [0, 0, 0, 0]              38.5      57.1          (0, 0, 0)  <-- 有透明
+
+==> 结论：四角是透明的，黑框另有原因（可能是图案本身的外框）。

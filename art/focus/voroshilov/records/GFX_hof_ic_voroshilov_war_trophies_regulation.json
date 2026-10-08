@@ -1,0 +1,17 @@
+{
+  "id": "hof_ic_voroshilov_war_trophies_regulation",
+  "name": "GFX_hof_ic_voroshilov_war_trophies_regulation",
+  "title": "战利品机关条例",
+  "concept": "Side-on still-life of an OPEN-TOP RAIL WAGON occupying upper two-thirds of central scene. In wagon a modest mound of EMPTY SPENT BRASS SHELL CASINGS, visibly hollow at open ends, no live shells or shells with bullets. Rust-brown iron wagon. Lower foreground: an OPEN LEDGER and gridded inventory sheet with blank abstract marks, with ONLY ONE GLOVED HAND entering from the edge to check a line, absolutely no arm beyond cuff, torso, face or person. Brass gold and rust brown local to shells and wagon. No captured German equipment, swastika, prisoners or battle.",
+  "group": "voroshilov",
+  "size": [
+    100,
+    88
+  ],
+  "prompt": "Create ONE finished Hearts of Iron IV Soviet national focus icon. Use attached image ONLY as stylistic reference for the shared outer engraved gold laurel wreath, small red star and blank gold ribbon; create a NEW central scene. Side-on still-life of an OPEN-TOP RAIL WAGON occupying upper two-thirds of central scene. In wagon a modest mound of EMPTY SPENT BRASS SHELL CASINGS, visibly hollow at open ends, no live shells or shells with bullets. Rust-brown iron wagon. Lower foreground: an OPEN LEDGER and gridded inventory sheet with blank abstract marks, with ONLY ONE GLOVED HAND entering from the edge to check a line, absolutely no arm beyond cuff, torso, face or person. Brass gold and rust brown local to shells and wagon. No captured German equipment, swastika, prisoners or battle. Central art style: restrained, low-saturation ivory-white and plaster-gray sculptural relief with realistic tactile cloth, paper, metal and wood. Each limited color comes from a depicted object, never an overall color wash or glow. Exactly one centered emblem in square canvas; central scene must read clearly at 100x88. TRUE RGBA transparent outside wreath and ribbon, alpha 0 at all four corners, 20-50 percent broad transparent exterior. No legible typography or numerals, no watermark, faces, portrait, statue, monument, execution, prison, blood, Stalin, Kremlin, Red Square, Leningrad, Finland, Kronstadt, battle scene, trench, gunfire, charging soldiers or tanks, navy, warships, sailors, harbor, forest guerrillas, explosives, captured German insignia, swastika, prisoners of war, German or Berlin landmarks, array of national flags, typewriter or newspaper front page. The ornamental small red star in the common frame is okay. Output one final production icon, not mockup or sheet.",
+  "references": [
+    "D:/Users/xuwei/PycharmProjects/heart_of_Iron/art/focus/bukharin/source/GFX_hof_ic_bukharin_proportional_development.png"
+  ],
+  "generated_path": "C:\\Users\\xuwei\\.codex\\generated_images\\01a09af5-fd43-79a0-a3cc-72284cd67cbc\\exec-c38cb946-881a-4acb-88e2-3f99fa8b6948.png",
+  "mode": "built-in image_gen"
+}

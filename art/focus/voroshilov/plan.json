@@ -1,0 +1,68 @@
+[
+  {
+    "id": "hof_ic_voroshilov_the_red_army_commanders",
+    "name": "GFX_hof_ic_voroshilov_the_red_army_commanders",
+    "title": "工农红军指挥员",
+    "concept": "FRONT VIEW of one simple long wooden bench taking lower two thirds of the central scene. On the bench sit a soft worn Soviet-style military field CAP with its small RED STAR badge facing up, a neatly FOLDED gray-green-brown military overcoat, and beside them one OPEN NOTEBOOK with ONLY loose unreadable horizontal scrawl. Plain unadorned plaster wall behind, no wall map. No person, parade, podium, medal or battle. Natural cloth gray-green-brown and aged paper yellow only.",
+    "group": "voroshilov",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_voroshilov_the_marksmanship_badge",
+    "name": "GFX_hof_ic_voroshilov_the_marksmanship_badge",
+    "title": "伏罗希洛夫射手",
+    "concept": "CLOSE UP still-life of one CIRCULAR red-enamel marksmanship BADGE pinned to the front of an old patched gray quilted coat, no wearer. The badge has one simple WHITE TARGET RING motif, no portrait, gun, writing or complicated emblem. Its fastening PIN is visibly half-open and not fully secured, a small specific detail. Badge just above center, blurred gray wall behind, the only central saturated red belongs to the enamel badge; coat stays worn gray. No firing range or person.",
+    "group": "voroshilov",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_voroshilov_the_ranks",
+    "name": "GFX_hof_ic_voroshilov_the_ranks",
+    "title": "个人军衔制",
+    "concept": "A tabletop three-quarter overhead still-life of EXACTLY FIVE PAIRS of military shoulder boards, i.e. TEN individual cloth shoulder boards carefully arranged as FIVE adjacent pairs in one clear ordered group, on a softly wrinkled muted BLUE TABLECLOTH. Beside them lies one OPEN paper personnel register with only abstract unreadable rows. Small metallic golden trim and tiny stars on shoulder boards, but NO single giant marshal star, no cap, no ceremony. Keep five pairs count unmistakable and legible at small scale; no people.",
+    "group": "voroshilov",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_voroshilov_the_partisan_staff",
+    "name": "GFX_hof_ic_voroshilov_the_partisan_staff",
+    "title": "中央游击运动总参谋部",
+    "concept": "Inside a modest low-ceiling WOODEN HUT, an old OIL LAMP at upper left lights a HAND-DRAWN CONTACT DIAGRAM spread flat at center on a table. The diagram contains ONLY abstract connecting lines and dots, not geographic map labels or city names. One pencil and one plain ruler hold the paper edge. Warm butter-yellow light belongs locally to lamp and close wood planks, NOT an overall yellow tint. Slight overhead angle, no people, forest fighters, bombs, rail sabotage, weapons, flags or legible text.",
+    "group": "voroshilov",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_voroshilov_war_trophies_regulation",
+    "name": "GFX_hof_ic_voroshilov_war_trophies_regulation",
+    "title": "战利品机关条例",
+    "concept": "Side-on still-life of an OPEN-TOP RAIL WAGON occupying upper two-thirds of central scene. In wagon a modest mound of EMPTY SPENT BRASS SHELL CASINGS, visibly hollow at open ends, no live shells or shells with bullets. Rust-brown iron wagon. Lower foreground: an OPEN LEDGER and gridded inventory sheet with blank abstract marks, with ONLY ONE GLOVED HAND entering from the edge to check a line, absolutely no arm beyond cuff, torso, face or person. Brass gold and rust brown local to shells and wagon. No captured German equipment, swastika, prisoners or battle.",
+    "group": "voroshilov",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_voroshilov_the_allied_control_commission",
+    "name": "GFX_hof_ic_voroshilov_the_allied_control_commission",
+    "title": "盟国管制委员会",
+    "concept": "A quiet EMPTY ADMINISTRATIVE OFFICE, NOT a surrender signing ceremony. One long narrow wooden working table leads in perspective toward an OPEN WINDOW at far end. On tabletop lies ONE OPEN FORMAL DOCUMENT with no readable text, held down by ONE simple fountain PEN; NO delegates, nameplates, extra chairs or flags. Outside the window a low row of generic foreign HUNGARIAN-STYLE clay roof tiles, dark brick red, with no German or Berlin landmark. One small completely BLANK plaque on interior wall. Cool-gray wall, paper-white document, subdued brick-red roof tiles; no people, uniforms, swastika or readable words.",
+    "group": "voroshilov",
+    "size": [
+      100,
+      88
+    ]
+  }
+]

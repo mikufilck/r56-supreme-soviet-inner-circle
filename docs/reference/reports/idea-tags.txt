@@ -1,0 +1,86 @@
+﻿
+==========================================================================================
+### [原版] F:\Hearts of Iron IV\common\idea_tags
+==========================================================================================
+  · 00_idea.txt
+
+  --- 各文件里 category 名（缩进 1 个 Tab 的块头）---
+    hidden_ideas                             L8  [00_idea.txt]
+    country                                  L17  [00_idea.txt]
+    government                               L26  [00_idea.txt]
+    research_production                      L40  [00_idea.txt]
+    military_staff                           L54  [00_idea.txt]
+    academy_spirit                           L68  [00_idea.txt]
+    army_spirit                              L81  [00_idea.txt]
+    division_command_spirit                  L93  [00_idea.txt]
+    naval_academy_spirit                     L105  [00_idea.txt]
+    navy_spirit                              L117  [00_idea.txt]
+    naval_command_spirit                     L129  [00_idea.txt]
+    air_force_academy_spirit                 L141  [00_idea.txt]
+    air_force_spirit                         L153  [00_idea.txt]
+    air_force_command_spirit                 L165  [00_idea.txt]
+
+==========================================================================================
+### [R56] D:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2129897125\common\idea_tags
+==========================================================================================
+  · 00_idea.txt
+
+  --- 各文件里 category 名（缩进 1 个 Tab 的块头）---
+    hidden_ideas                             L10  [00_idea.txt]
+    country                                  L19  [00_idea.txt]
+    government                               L28  [00_idea.txt]
+    research_production                      L42  [00_idea.txt]
+    military_staff                           L56  [00_idea.txt]
+    etgi_ideas                               L71  [00_idea.txt]
+    academy_spirit                           L84  [00_idea.txt]
+    army_spirit                              L97  [00_idea.txt]
+    division_command_spirit                  L109  [00_idea.txt]
+    naval_academy_spirit                     L121  [00_idea.txt]
+    navy_spirit                              L133  [00_idea.txt]
+    naval_command_spirit                     L145  [00_idea.txt]
+    air_force_academy_spirit                 L157  [00_idea.txt]
+    air_force_spirit                         L169  [00_idea.txt]
+    air_force_command_spirit                 L181  [00_idea.txt]
+
+################################################################################
+# hidden_ideas 原文块
+################################################################################
+
+--- [原版] 00_idea.txt  L8
+    	hidden_ideas = {
+    		hidden = yes
+    	
+    		cost = 0
+    		removal_cost = -1
+    		
+    		ledger = hidden
+    	}
+
+--- [R56] 00_idea.txt  L10
+    	hidden_ideas = {
+    		hidden = yes
+    	
+    		cost = 0
+    		removal_cost = -1
+    		
+    		ledger = hidden
+    	}
+
+################################################################################
+# 我自己 mod 的 idea 文件外层结构（检查有没有 ideas/{category} 包裹）
+################################################################################
+  总行数 88
+  L13 缩进0: hof_ic_idea_lev_trotsky = {
+  L16 缩进1: modifier = {
+  L24 缩进0: hof_ic_idea_nikolay_bukharin = {
+  L27 缩进1: modifier = {
+  L35 缩进0: hof_ic_idea_aleksey_rykov = {
+  L38 缩进1: modifier = {
+  L46 缩进0: hof_ic_idea_grigory_zinovyev = {
+  L49 缩进1: modifier = {
+  L57 缩进0: hof_ic_idea_lev_kamenev = {
+  L60 缩进1: modifier = {
+  L68 缩进0: hof_ic_idea_ivan_smirnov = {
+  L71 缩进1: modifier = {
+  L79 缩进0: hof_ic_idea_leonid_serebryakov = {
+  L82 缩进1: modifier = {

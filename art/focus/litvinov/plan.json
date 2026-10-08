@@ -1,0 +1,68 @@
+[
+  {
+    "id": "hof_ic_litvinov_a_courier_of_iskra",
+    "name": "GFX_hof_ic_litvinov_a_courier_of_iskra",
+    "title": "火星报的代办员",
+    "concept": "A rough brick wall seen close, with one small bundle of folded newspapers tightly tied with twine being passed across the top of the wall from outside to inside. Show the boundary crossing and the bundle, only an anonymous gloved forearm if needed; no faces, no visible headlines or newspaper layout. No prison wall or bars.",
+    "group": "litvinov",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_litvinov_the_prisoner_exchange_agreement",
+    "name": "GFX_hof_ic_litvinov_the_prisoner_exchange_agreement",
+    "title": "战俘交换协议",
+    "concept": "A long diplomatic table seen at a slight elevated angle. A narrow clean beam of light splits its tabletop into two equal sides; on each side lies one DIFFERENT folded document, distinct sizes and paper tones, facing toward the other across the light boundary. The documents remain separate. Empty room, no people or flags.",
+    "group": "litvinov",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_litvinov_the_litvinov_protocol",
+    "name": "GFX_hof_ic_litvinov_the_litvinov_protocol",
+    "title": "李维诺夫议定书",
+    "concept": "Close-up of ONE unfolded multilateral agreement sheet, elegant ivory paper, with a single bottom row of exactly FIVE small square signature spaces, each filled only with short abstract horizontal strokes. No readable marks. The five distinct positions and shared baseline are the visual focus. No stack of files or grid chart.",
+    "group": "litvinov",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_litvinov_the_definition_of_aggression",
+    "name": "GFX_hof_ic_litvinov_the_definition_of_aggression",
+    "title": "侵略的定义",
+    "concept": "An antique brass straightedge ruler laid firmly across an ivory document, aligned with one clearly visible unnumbered graduated line on the page. One small brass drawing pin holds down one end of the ruler. Precise geometry of drawing a boundary and definition; no map, people, soldiers, weapons, letters or numerals.",
+    "group": "litvinov",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_litvinov_the_franco_soviet_treaty",
+    "name": "GFX_hof_ic_litvinov_the_franco_soviet_treaty",
+    "title": "苏法互助条约",
+    "concept": "Two DIFFERENT ivory treaty sheets laid side by side, left and right, connected by one fine red line between them. The RIGHT sheet has a clearly visible small additional page attached at its LOWER RIGHT corner. Make the attachment legible as a separate flap at icon size. No writing, signatures, flags, maps, hands or people.",
+    "group": "litvinov",
+    "size": [
+      100,
+      88
+    ]
+  },
+  {
+    "id": "hof_ic_litvinov_the_advisor_to_the_commissariat",
+    "name": "GFX_hof_ic_litvinov_the_advisor_to_the_commissariat",
+    "title": "外交人民委员会顾问",
+    "concept": "A single worn brown leather travel suitcase with an already-used long-distance train ticket resting across its lid; a neatly folded wool overcoat lies immediately beside it. Quiet upward feeling of onward travel, not exile or death. The ticket has no readable words or numbers; no person, flag or map.",
+    "group": "litvinov",
+    "size": [
+      100,
+      88
+    ]
+  }
+]

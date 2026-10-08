@@ -1,0 +1,216 @@
+﻿我们从 hof_ic_trotsky_dm.txt 读到 39 个词条
+
+本地化键总数（三处合计去重）：217199
+
+=== A) 词条 tooltip 键存在性 ===
+词条                                                         _tt 键    裸键       结论
+----------------------------------------------------------------------------------------------------
+army_armor_attack_factor                                   True     False    有 _tt，直接可用
+army_attack_factor                                         True     False    有 _tt，直接可用
+army_core_attack_factor                                    True     False    有 _tt，直接可用
+army_core_defence_factor                                   True     False    有 _tt，直接可用
+army_defence_factor                                        True     False    有 _tt，直接可用
+army_org_factor                                            True     False    有 _tt，直接可用
+attrition                                                  True     True     有 _tt，直接可用
+boost_ideology_mission_factor                              True     False    有 _tt，直接可用
+breakthrough_factor                                        True     False    有 _tt，直接可用
+combat_width_factor                                        False    False    两个都没有 —— 要自己写本地化
+communism_drift                                            True     True     有 _tt，直接可用
+consumer_goods_factor                                      True     False    有 _tt，直接可用
+drift_defence_factor                                       True     False    有 _tt，直接可用
+experience_gain_army_factor                                True     False    有 _tt，直接可用
+global_building_slots_factor                               True     False    有 _tt，直接可用
+industrial_capacity_factory                                True     False    有 _tt，直接可用
+land_doctrine_cost_factor                                  True     True     有 _tt，直接可用
+line_change_production_efficiency_factor                   True     False    有 _tt，直接可用
+local_resources_factor                                     True     False    有 _tt，直接可用
+max_dig_in_factor                                          True     False    有 _tt，直接可用
+military_leader_cost_factor                                True     False    有 _tt，直接可用
+modifier_army_sub_unit_cavalry_attack_factor               False    True     只有裸键（也许能当 tooltip 用，需实测）
+modifier_army_sub_unit_infantry_attack_factor              False    True     只有裸键（也许能当 tooltip 用，需实测）
+modifier_army_sub_unit_militia_attack_factor               True     True     有 _tt，直接可用
+operative_slot                                             True     True     有 _tt，直接可用
+opinion_gain_monthly_factor                                False    False    两个都没有 —— 要自己写本地化
+opinion_gain_monthly_same_ideology_factor                  True     False    有 _tt，直接可用
+political_advisor_cost_factor                              True     True     有 _tt，直接可用
+political_power_factor                                     True     False    有 _tt，直接可用
+production_factory_efficiency_gain_factor                  True     False    有 _tt，直接可用
+production_factory_max_efficiency_factor                   True     False    有 _tt，直接可用
+production_speed_buildings_factor                          True     False    有 _tt，直接可用
+research_speed_factor                                      True     False    有 _tt，直接可用
+send_volunteer_factor                                      False    False    两个都没有 —— 要自己写本地化
+stability_factor                                           True     False    有 _tt，直接可用
+subversive_activites_upkeep                                True     False    有 _tt，直接可用
+supply_consumption_factor                                  True     False    有 _tt，直接可用
+training_time_factor                                       True     False    有 _tt，直接可用
+war_support_factor                                         True     False    有 _tt，直接可用
+
+小结：有 <词条>_tt 的 34 个 / 共 39 个
+
+################################################################################
+# B) 德国席位容器原文（第③步重排布局的基准）
+################################################################################
+
+--- L156 起 ---
+		containerWindowType = {
+			name = "ascended_advisor_1_container"
+			orientation = center_up
+			position = { x = -210 y = @ASCENDED_ADVISOR_CONTAINER_POS_Y }
+			size = { width = @ASCENDED_ADVISOR_CONTAINER_WIDTH height = @ASCENDED_ADVISOR_CONTAINER_HEIGHT }
+			clipping = no
+			
+			containerWindowType = {
+				name = "ascended_advisor_1_portrait_container"
+				orientation = center_up
+				position = { x = -46 y = 0}
+				size = { width = 91 height = 119 }
+				clipping = no
+				
+				#FRAME
+				iconType = {
+					name ="ascended_advisor_1_frame"
+					spriteType = "GFX_ascended_advisors_unappointed_frame"
+					orientation = center
+					position = { x=0	 y=@ASCENDED_ADVISOR_FRAME_POS_Y }
+					centerPosition = yes
+					context_aware_tooltip = [GetAscendedAdvisorTrait1]
+				}
+
+				#PORTRAIT
+				iconType = {
+					name ="ascended_advisor_1_portrait"
+					spriteType = ""
+					orientation = upper_left
+					position = { x=7	 y=6 }
+					scale = 0.5
+					alwaystransparent = yes
+				}
+			}
+
+			#ASCENDED ADVISOR NAME BOX
+			iconType = {
+				name ="ascended_advisor_1_name_box"
+				spriteType = "GFX_ascended_advisor_name_box"
+				orientation = center
+				position = { x=0	 y=71 }
+				centerposition = yes
+				context_aware_tooltip = [GetAscendedAdvisorTrait1]
+			} 
+
+			#ASCENDED ADVISOR NAME
+			instantTextBoxType = {
+				name ="ascended_advisor_1_name"
+				orientation = center_down
+				position = { x = @ASCENDED_ADVISOR_TEXT_POS_X y = 0 }
+				font = "hoi_20b"
+				context_aware_text = "GER_ascended_advisor_1_name_text"
+				format = center
+				maxWidth = 150
+				alwaystransparent = yes
+			}
+
+			#ASCENDED ADVISOR TRAIT BOX
+			iconType = {
+				name ="ascended_advisor_1_trait_box"
+				spriteType = "GFX_ascended_advisor_trait_box"
+				orientation = center
+				position = { x=0	 y=102 }
+				centerposition = yes
+				context_aware_tooltip = [GetAscendedAdvisorTrait1]
+			}
+
+			#TRAIT
+			instantTextBoxType = {
+				name ="ascended_advisor_1_trait"
+				orientation = center_down
+				position = { x = @ASCENDED_ADVISOR_TEXT_POS_X y = @ASCENDED_ADVISOR_TEXT_POS_Y }
+				font = "hoi_18mbs"
+				context_aware_text = [GetAscendedAdvisorTraitName1]
+				format = center
+				maxWidth = 150
+				fixedsize = yes
+				alwaystransparent = yes
+			}
+		}
+
+--- L156 起 ---
+		containerWindowType = {
+			name = "ascended_advisor_1_container"
+			orientation = center_up
+			position = { x = -210 y = @ASCENDED_ADVISOR_CONTAINER_POS_Y }
+			size = { width = @ASCENDED_ADVISOR_CONTAINER_WIDTH height = @ASCENDED_ADVISOR_CONTAINER_HEIGHT }
+			clipping = no
+			
+			containerWindowType = {
+				name = "ascended_advisor_1_portrait_container"
+				orientation = center_up
+				position = { x = -46 y = 0}
+				size = { width = 91 height = 119 }
+				clipping = no
+				
+				#FRAME
+				iconType = {
+					name ="ascended_advisor_1_frame"
+					spriteType = "GFX_ascended_advisors_unappointed_frame"
+					orientation = center
+					position = { x=0	 y=@ASCENDED_ADVISOR_FRAME_POS_Y }
+					centerPosition = yes
+					context_aware_tooltip = [GetAscendedAdvisorTrait1]
+				}
+
+				#PORTRAIT
+				iconType = {
+					name ="ascended_advisor_1_portrait"
+					spriteType = ""
+					orientation = upper_left
+					position = { x=7	 y=6 }
+					scale = 0.5
+					alwaystransparent = yes
+				}
+			}
+
+			#ASCENDED ADVISOR NAME BOX
+			iconType = {
+				name ="ascended_advisor_1_name_box"
+				spriteType = "GFX_ascended_advisor_name_box"
+				orientation = center
+				position = { x=0	 y=71 }
+				centerposition = yes
+				context_aware_tooltip = [GetAscendedAdvisorTrait1]
+			} 
+
+			#ASCENDED ADVISOR NAME
+			instantTextBoxType = {
+				name ="ascended_advisor_1_name"
+				orientation = center_down
+				position = { x = @ASCENDED_ADVISOR_TEXT_POS_X y = 0 }
+				font = "hoi_20b"
+				context_aware_text = "GER_ascended_advisor_1_name_text"
+				format = center
+				maxWidth = 150
+				alwaystransparent = yes
+			}
+
+			#ASCENDED ADVISOR TRAIT BOX
+			iconType = {
+				name ="ascended_advisor_1_trait_box"
+				spriteType = "GFX_ascended_advisor_trait_box"
+				orientation = center
+				position = { x=0	 y=102 }
+				centerposition = yes
+				context_aware_tooltip = [GetAscendedAdvisorTrait1]
+			}
+
+			#TRAIT
+			instantTextBoxType = {
+				name ="ascended_advisor_1_trait"
+				orientation = center_down
+				position = { x = @ASCENDED_ADVISOR_TEXT_POS_X y = @ASCENDED_ADVISOR_TEXT_POS_Y }
+				font = "hoi_18mbs"
+				context_aware_text = [GetAscendedAdvisorTraitName1]
+				format = center
+				maxWidth = 150
+				fixedsize = yes
+				alwaystransparent = yes
+			}
+		}

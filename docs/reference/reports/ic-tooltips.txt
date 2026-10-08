@@ -1,0 +1,32 @@
+﻿######## F:\Hearts of Iron IV\localisation\simp_chinese\WUW_focus_l_simp_chinese.yml
+  L2603: GER_focus_can_only_be_completed_by_advisor_tt: "该国策只能由§Y$CHARACTER$§!在完成§Y$FOCUS$§!之后开始。"
+  L2619: GER_inner_circle_focus_in_progress_tt: "§Y$CHARACTER$§!正致力于该国策。\n进度：§Y$FLAG_DAYS$§!/[?temp_focus_days]天"
+  L2618: GER_inner_circle_cd_days_tt: "到可以任命下一位§Y$GER_inner_circle_member_title$§!的天数：[?GER_inner_circle_cd_flag:days_left|Y0]"
+  L2594: GER_fuhrerprinzip_inner_circle_tt: "激活§Y核心集团§!机制。\n\n"
+  L2606: GER_ascension_of_character_tt: "§Y$CHARACTER$§!被任命为§Y全国领导§!，并在§Y核心集团§!中晋升为："
+  L2605: GER_ascension_of_character_focus_tt: "§Y$CHARACTER$§!将开始随着时间的推移处理他分支中的国策。"
+  L2609: GER_event_to_replace_ascended_advisor_tt: "获得事件§Y$CHARACTER$的崛起§!'：\n§Y$CHARACTER$§!可以在§Y核心集团§!中取代§Y[GetAscendedAdvisorName1]§!、§Y[GetAscendedAdvisorName2]§!或§Y[GetAscendedAdvisorName3]§!。"
+  L2600: GER_a_strong_successor_trigger_tt: "§Y核心集团§!中所有§Y3§!名高级顾问均已完成其终极国策。"
+
+######## F:\Hearts of Iron IV\localisation\english\wuw_focus_l_english.yml
+  L3541: GER_focus_can_only_be_completed_by_advisor_tt: "This focus can only be started by §Y$CHARACTER$§! after having completed the focus §Y$FOCUS$§!."
+  L3559: GER_inner_circle_focus_in_progress_tt: "§Y$CHARACTER$§! is working on this focus. \nProgress: §Y$FLAG_DAYS$§!/[?temp_focus_days] days"
+  L3558: GER_inner_circle_cd_days_tt: "Days until next §Y$GER_inner_circle_member_title$§! can be appointed: [?GER_inner_circle_cd_flag:days_left|Y0]"
+  L3531: GER_fuhrerprinzip_inner_circle_tt: "Activates the §YInner Circle§! Mechanic.\n\n"
+  L3545: GER_ascension_of_character_tt: "§Y$CHARACTER$§! is appointed §YReichsleiter§! and ascends within the §YInner Circle§! as:"
+  L3544: GER_ascension_of_character_focus_tt: "§Y$CHARACTER$§! will start working on the focuses in his branch over time."
+  L3549: GER_event_to_replace_ascended_advisor_tt: "Gets event '§YThe Rise of $CHARACTER$§!': \n§Y$CHARACTER$§! can replace §Y[GetAscendedAdvisorName1]§!, §Y[GetAscendedAdvisorName2]§! or §Y[GetAscendedAdvisorName3]§! within the §YInner Circle§!."
+  L3537: GER_a_strong_successor_trigger_tt: "All §Y3§! Ascended Advisors within the §YInner Circle§! have completed their capstone focus."
+
+######## F:\Hearts of Iron IV\localisation\english\WUW_focus_l_english.yml
+  L3541: GER_focus_can_only_be_completed_by_advisor_tt: "This focus can only be started by §Y$CHARACTER$§! after having completed the focus §Y$FOCUS$§!."
+  L3559: GER_inner_circle_focus_in_progress_tt: "§Y$CHARACTER$§! is working on this focus. \nProgress: §Y$FLAG_DAYS$§!/[?temp_focus_days] days"
+  L3558: GER_inner_circle_cd_days_tt: "Days until next §Y$GER_inner_circle_member_title$§! can be appointed: [?GER_inner_circle_cd_flag:days_left|Y0]"
+  L3531: GER_fuhrerprinzip_inner_circle_tt: "Activates the §YInner Circle§! Mechanic.\n\n"
+  L3545: GER_ascension_of_character_tt: "§Y$CHARACTER$§! is appointed §YReichsleiter§! and ascends within the §YInner Circle§! as:"
+  L3544: GER_ascension_of_character_focus_tt: "§Y$CHARACTER$§! will start working on the focuses in his branch over time."
+  L3549: GER_event_to_replace_ascended_advisor_tt: "Gets event '§YThe Rise of $CHARACTER$§!': \n§Y$CHARACTER$§! can replace §Y[GetAscendedAdvisorName1]§!, §Y[GetAscendedAdvisorName2]§! or §Y[GetAscendedAdvisorName3]§! within the §YInner Circle§!."
+  L3537: GER_a_strong_successor_trigger_tt: "All §Y3§! Ascended Advisors within the §YInner Circle§! have completed their capstone focus."
+
+######## F:\Hearts of Iron IV\localisation\simp_chinese\WUW_ideas_l_simp_chinese.yml
+

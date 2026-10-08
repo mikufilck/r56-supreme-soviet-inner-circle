@@ -1,0 +1,7 @@
+hof_ic_cinema_category = {
+	priority = 45
+	icon = GFX_decision_category_generic_communism
+	allowed = { original_tag = SOV }
+	visible = { has_completed_focus = hof_ic_ryutin_soyuzkino }
+	visible_when_empty = no
+}

@@ -1,0 +1,36 @@
+# ============================================================================
+#  hof_sov_integrate_categories.txt
+#  苏联「整合加盟共和国」决议组 —— 分类定义
+#
+#  用户口径（2026-09-25）：
+#    「决议组名叫**整合加盟共和国**」+「这个决议组在完成**宣称波罗的海**国策后可用」
+#
+#  设计出处：docs/101-sov-integrate-union-republics.md
+#  脚本编码：UTF-8 无 BOM + CRLF（AGENTS.md 硬性规则 3）
+#
+#  ⚠️ 决议与分类的关联方式 = 【同名顶层块】，不是字段。
+#     实测：原版 common/decisions/*.txt 里 `decision_category = ` 出现 0 次；
+#     关联完全靠 common/decisions/hof_sov_integrate_decisions.txt 里的顶层块名
+#     与这里的分类名【相同】。
+# ============================================================================
+
+hof_sov_integrate_category = {
+
+	priority = 40
+
+	# 原版现成 sprite（零缺图风险，不需要注册 interface/*.gfx）
+	# 出处：F:\Hearts of Iron IV\interface\decisions.gfx
+	icon = GFX_decision_category_generic_communism
+
+	allowed = {
+		original_tag = SOV
+	}
+
+	# ⭐ 用户口径：完成「宣称波罗的海」（SOV_claims_in_baltic）后这个页签才出现
+	visible = {
+		has_completed_focus = SOV_claims_in_baltic
+	}
+
+	# 没有可点的决议时收起页签（照原版惯例，多数分类都写 no）
+	visible_when_empty = no
+}

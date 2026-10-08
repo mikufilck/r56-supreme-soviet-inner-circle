@@ -1,0 +1,17 @@
+{
+  "id": "hof_ic_khrushchev_the_agro_towns",
+  "name": "GFX_hof_ic_khrushchev_the_agro_towns",
+  "title": "农业城镇",
+  "concept": "A large OFF-WHITE PAPER RURAL PLANNING DIAGRAM fills the central roundel, showing EXACTLY THREE tiny village symbols grouped inside ONE hand-drawn pencil rectangle. The boundary line separating town from village has been half erased with visible graphite smudge and a small natural rubber eraser resting nearby. Paper and gray pencil only; no legible place names, numerals, coastlines, Crimea, flags, buildings outside the plan or people. Emphasize the physical paper, penciled frame and partially erased line.",
+  "group": "khrushchev",
+  "size": [
+    100,
+    88
+  ],
+  "prompt": "Create ONE finished Hearts of Iron IV Soviet national focus icon. Use attached image ONLY as stylistic reference for the shared outer engraved GOLD laurel wreath, small RED star and blank gold ribbon; create a NEW central scene. A large OFF-WHITE PAPER RURAL PLANNING DIAGRAM fills the central roundel, showing EXACTLY THREE tiny village symbols grouped inside ONE hand-drawn pencil rectangle. The boundary line separating town from village has been half erased with visible graphite smudge and a small natural rubber eraser resting nearby. Paper and gray pencil only; no legible place names, numerals, coastlines, Crimea, flags, buildings outside the plan or people. Emphasize the physical paper, penciled frame and partially erased line. Central art style: restrained tactile 1930s-1950s Soviet sculptural relief. Color only from central objects themselves, never an overall wash, gradient or glow. The frame star remains red as in the attached reference, but follow the concept's strict central palette. Exactly one centered emblem in square canvas; composition must remain readable at 100x88. TRUE RGBA transparent outside wreath and ribbon, alpha 0 at all four corners, 20-50 percent broad transparent exterior. No legible typography, numerals, watermark, faces, people, uniforms, weapons, executions, prison bars, purge lists, signature, Lenin or Stalin portrait, secret-report podium, microphone, political congress insignia, corn, tractors, plows, rockets, satellites, warships, naval charts, card-index drawers, filing cabinets, abacus, factory floor, black-and-white split design, Ukraine flag or costume. Avoid any recognizable printed text on the image. Output one final production icon, not mockup or sheet.",
+  "references": [
+    "D:/Users/xuwei/PycharmProjects/heart_of_Iron/art/focus/bukharin/source/GFX_hof_ic_bukharin_proportional_development.png"
+  ],
+  "generated_path": "C:\\Users\\xuwei\\.codex\\generated_images\\01a09af5-fd43-79a0-a3cc-72284cd67cbc\\exec-85af728b-37fc-4ae9-b4ca-d41b718058f0.png",
+  "mode": "built-in image_gen"
+}

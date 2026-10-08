@@ -1,0 +1,10 @@
+# 国策「空降兵与战车」授予的组织度加成；不开放独立科研。
+# 原版 common/technologies/support.txt 的 SWI_saint_bernard_tech 同样由国策设定。
+technologies = {
+	hof_ic_tukhachevsky_tank_org_tech = {
+		allow = { always = no }
+		light_armor = { max_organisation = 5 }
+		medium_armor = { max_organisation = 5 }
+		heavy_armor = { max_organisation = 5 }
+	}
+}
